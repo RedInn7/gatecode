@@ -9,6 +9,7 @@ import (
 type ProblemRepository interface {
 	Create(problem *model.Problem) error
 	GetAll() ([]model.Problem, error)
+	GetAllForList() ([]model.ProblemListItem, error)
 	GetBySlug(slug string) (*model.Problem, error)
 }
 
@@ -24,10 +25,21 @@ func NewProblemRepository(db *gorm.DB) ProblemRepository {
 	}
 }
 
-// GetAll 实现接口方法：获取所有题目
+// GetAllForList 只查询列表页需要的字段，避免拉取 content / template_code 大字段
+func (r *problemRepository) GetAllForList() ([]model.ProblemListItem, error) {
+	var items []model.ProblemListItem
+	err := r.db.Model(&model.Problem{}).
+		Select("id", "frontend_question_id", "title", "slug", "difficulty", "is_vip_only").
+		Find(&items).Error
+	if err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
+// GetAll 实现接口方法：获取所有题目（含全部字段）
 func (r *problemRepository) GetAll() ([]model.Problem, error) {
 	var problems []model.Problem
-	// 注意：这里使用的是 r.db，而不是全局的 database.DB
 	if err := r.db.Find(&problems).Error; err != nil {
 		return nil, err
 	}

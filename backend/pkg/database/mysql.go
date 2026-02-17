@@ -1,33 +1,33 @@
 package database
 
 import (
-	"database/sql"
 	"fmt"
 	"time"
 
-	_ "github.com/go-sql-driver/mysql"
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
 )
 
-var DB *sql.DB
+var DB *gorm.DB
 
-func InitDB() error {
-
+func InitDB() *gorm.DB {
 	dsn := "root:@tcp(127.0.0.1:3306)/gatecode?charset=utf8mb4&parseTime=True&loc=Local"
-	db, err := sql.Open("mysql", dsn)
+	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
-		return err
+		panic(fmt.Sprintf("数据库连接失败: %v", err))
+	}
+
+	sqlDB, err := db.DB()
+	if err != nil {
+		panic(fmt.Sprintf("获取底层 DB 失败: %v", err))
 	}
 
 	// 设置连接池以应对 OJ 高并发
-	db.SetMaxOpenConns(100)
-	db.SetMaxIdleConns(10)
-	db.SetConnMaxLifetime(time.Hour)
-
-	if err := db.Ping(); err != nil {
-		return err
-	}
+	sqlDB.SetMaxOpenConns(100)
+	sqlDB.SetMaxIdleConns(10)
+	sqlDB.SetConnMaxLifetime(time.Hour)
 
 	DB = db
 	fmt.Println("✅ 数据库连接成功")
-	return nil
+	return db
 }

@@ -6,7 +6,7 @@ import (
 )
 
 type ProblemService interface {
-	GetProblemList() ([]model.Problem, error)
+	GetProblemList() ([]model.ProblemListItem, error)
 }
 
 type problemService struct {
@@ -17,7 +17,6 @@ func NewProblemService(repo repository.ProblemRepository) ProblemService {
 	return &problemService{repo: repo}
 }
 
-func (s *problemService) GetProblemList() ([]model.Problem, error) {
-	// 这里可以加逻辑：比如排序、VIP 过滤等
-	return s.repo.GetAll()
+func (s *problemService) GetProblemList() ([]model.ProblemListItem, error) {
+	return s.repo.GetAllForList()
 }
