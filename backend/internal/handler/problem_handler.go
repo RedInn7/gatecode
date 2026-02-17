@@ -4,6 +4,7 @@ import (
 	"github.com/RedInn7/gatecode/backend/internal/service"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"strconv"
 )
 
 type ProblemHandler struct {
@@ -15,12 +16,15 @@ func NewProblemHandler(svc service.ProblemService) *ProblemHandler {
 }
 
 func (h *ProblemHandler) GetProblems(c *gin.Context) {
-	problems, err := h.svc.GetProblemList()
+	page, _ := strconv.Atoi(c.DefaultQuery("page", "1"))
+	limit, _ := strconv.Atoi(c.DefaultQuery("limit", "100"))
+
+	resp, err := h.svc.GetProblemPage(page, limit)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "获取题目失败"})
 		return
 	}
-	c.JSON(http.StatusOK, problems)
+	c.JSON(http.StatusOK, resp)
 }
 
 func (h *ProblemHandler) GetProblemBySlug(c *gin.Context) {

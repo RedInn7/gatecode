@@ -23,3 +23,9 @@ type ProblemListItem struct {
 	Difficulty         string `json:"difficulty"`
 	IsVipOnly          bool   `json:"is_vip_only"`
 }
+
+// ProblemListResponse 是分页列表接口的响应结构
+type ProblemListResponse struct {
+	Total    int64             `json:"total"`
+	Problems []ProblemListItem `json:"problems"`
+}
