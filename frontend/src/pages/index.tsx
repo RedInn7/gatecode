@@ -43,7 +43,7 @@ export default function Home() {
 									</th>
 
 									<th scope='col' className='px-6 py-3 w-0 font-medium'>
-										Category
+										类型
 									</th>
 									<th scope='col' className='px-6 py-3 w-0 font-medium'>
 										Solution

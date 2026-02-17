@@ -22,3 +22,13 @@ func (h *ProblemHandler) GetProblems(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, problems)
 }
+
+func (h *ProblemHandler) GetProblemBySlug(c *gin.Context) {
+	slug := c.Param("slug")
+	problem, err := h.svc.GetProblemBySlug(slug)
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "题目不存在"})
+		return
+	}
+	c.JSON(http.StatusOK, problem)
+}

@@ -1,8 +1,9 @@
 import Topbar from "@/components/Topbar/Topbar";
 import Workspace from "@/components/Workspace/Workspace";
 import useHasMounted from "@/hooks/useHasMounted";
-import { problems } from "@/utils/problems";
-import { Problem } from "@/utils/types/problem";
+import { problems as localProblems } from "@/utils/problems";
+import { BackendProblemDetail, Problem } from "@/utils/types/problem";
+import { GetServerSideProps } from "next";
 import React from "react";
 
 type ProblemPageProps = {
@@ -23,35 +24,53 @@ const ProblemPage: React.FC<ProblemPageProps> = ({ problem }) => {
 };
 export default ProblemPage;
 
-// fetch the local data
-//  SSG
-// getStaticPaths => it create the dynamic routes
-export async function getStaticPaths() {
-	const paths = Object.keys(problems).map((key) => ({
-		params: { pid: key },
-	}));
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+	const pid = params?.pid as string;
 
-	return {
-		paths,
-		fallback: false,
-	};
-}
-
-// getStaticProps => it fetch the data
-
-export async function getStaticProps({ params }: { params: { pid: string } }) {
-	const { pid } = params;
-	const problem = problems[pid];
-
-	if (!problem) {
+	// 优先使用本地题目（含 handlerFunction，支持本地测试）
+	const localProblem = localProblems[pid];
+	if (localProblem) {
 		return {
-			notFound: true,
+			props: {
+				problem: {
+					...localProblem,
+					handlerFunction: localProblem.handlerFunction.toString(),
+				},
+			},
 		};
 	}
-	problem.handlerFunction = problem.handlerFunction.toString();
-	return {
-		props: {
-			problem,
-		},
-	};
-}
+
+	// 从后端 API 获取题目详情
+	const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8081";
+	try {
+		const res = await fetch(`${backendUrl}/api/v1/problems/${pid}`);
+		if (!res.ok) {
+			return { notFound: true };
+		}
+		const bp: BackendProblemDetail = await res.json();
+
+		// 提取模板代码（优先 JavaScript，其次 Python3）
+		const templateCode = bp.template_code || {};
+		const starterCode =
+			templateCode["javascript"] ||
+			templateCode["python3"] ||
+			templateCode[Object.keys(templateCode)[0]] ||
+			"// 暂无模板代码";
+
+		const problem: Problem = {
+			id: bp.slug,
+			title: bp.title,
+			problemStatement: bp.content,
+			examples: [],
+			constraints: "",
+			order: bp.frontend_question_id,
+			starterCode,
+			handlerFunction: "",
+			starterFunctionName: "",
+		};
+
+		return { props: { problem } };
+	} catch {
+		return { notFound: true };
+	}
+};
