@@ -1,0 +1,89 @@
+{
+  "questionId": "1890",
+  "questionFrontendId": "1781",
+  "title": "Sum of Beauty of All Substrings",
+  "titleSlug": "sum-of-beauty-of-all-substrings",
+  "content": "<p>The <strong>beauty</strong> of a string is the difference in frequencies between the most frequent and least frequent characters.</p>\n\n<ul>\n\t<li>For example, the beauty of <code>&quot;abaacc&quot;</code> is <code>3 - 1 = 2</code>.</li>\n</ul>\n\n<p>Given a string <code>s</code>, return <em>the sum of <strong>beauty</strong> of all of its substrings.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aabcb&quot;\n<strong>Output:</strong> 5\n<strong>Explanation: </strong>The substrings with non-zero beauty are [&quot;aab&quot;,&quot;aabc&quot;,&quot;aabcb&quot;,&quot;abcb&quot;,&quot;bcb&quot;], each with beauty equal to 1.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aabcbaa&quot;\n<strong>Output:</strong> 17\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;=<sup> </sup>500</code></li>\n\t<li><code>s</code> consists of only lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int beautySum(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int beautySum(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def beautySum(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def beautySum(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar beautySum = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function beautySum(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int BeautySum(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int beautySum(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func beautySum(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun beautySum(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func beautySum(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn beauty_sum(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef beauty_sum(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function beautySum($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int beautySum(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def beautySum(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec beauty_sum(s :: String.t) :: integer\n  def beauty_sum(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec beauty_sum(S :: unicode:unicode_binary()) -> integer().\nbeauty_sum(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (beauty-sum s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"173.3K\", \"totalSubmission\": \"235.9K\", \"totalAcceptedRaw\": 173303, \"totalSubmissionRaw\": 235879, \"acRate\": \"73.5%\"}",
+  "metaData": "{\n  \"name\": \"beautySum\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"aabcb\""
+}

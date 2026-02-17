@@ -1,0 +1,89 @@
+{
+  "questionId": "264",
+  "questionFrontendId": "264",
+  "title": "Ugly Number II",
+  "titleSlug": "ugly-number-ii",
+  "content": "<p>An <strong>ugly number</strong> is a positive integer whose prime factors are limited to <code>2</code>, <code>3</code>, and <code>5</code>.</p>\n\n<p>Given an integer <code>n</code>, return <em>the</em> <code>n<sup>th</sup></code> <em><strong>ugly number</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 10\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> [1, 2, 3, 4, 5, 6, 8, 9, 10, 12] is the sequence of the first 10 ugly numbers.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 1690</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int nthUglyNumber(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int nthUglyNumber(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nthUglyNumber(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nthUglyNumber(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar nthUglyNumber = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function nthUglyNumber(n: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NthUglyNumber(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int nthUglyNumber(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nthUglyNumber(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nthUglyNumber(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nthUglyNumber(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nth_ugly_number(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef nth_ugly_number(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function nthUglyNumber($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int nthUglyNumber(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nthUglyNumber(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec nth_ugly_number(n :: integer) :: integer\n  def nth_ugly_number(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec nth_ugly_number(N :: integer()) -> integer().\nnth_ugly_number(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (nth-ugly-number n)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"526.8K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 526816, \"totalSubmissionRaw\": 1064579, \"acRate\": \"49.5%\"}",
+  "metaData": "{\r\n  \"name\": \"nthUglyNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "10"
+}

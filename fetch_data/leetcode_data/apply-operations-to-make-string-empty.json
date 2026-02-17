@@ -1,0 +1,89 @@
+{
+  "questionId": "3308",
+  "questionFrontendId": "3039",
+  "title": "Apply Operations to Make String Empty",
+  "titleSlug": "apply-operations-to-make-string-empty",
+  "content": "<p>You are given a string <code>s</code>.</p>\n\n<p>Consider performing the following operation until <code>s</code> becomes <strong>empty</strong>:</p>\n\n<ul>\n\t<li>For <strong>every</strong> alphabet character from <code>&#39;a&#39;</code> to <code>&#39;z&#39;</code>, remove the <strong>first</strong> occurrence of that character in <code>s</code> (if it exists).</li>\n</ul>\n\n<p>For example, let initially <code>s = &quot;aabcbbca&quot;</code>. We do the following operations:</p>\n\n<ul>\n\t<li>Remove the underlined characters <code>s = &quot;<u><strong>a</strong></u>a<strong><u>bc</u></strong>bbca&quot;</code>. The resulting string is <code>s = &quot;abbca&quot;</code>.</li>\n\t<li>Remove the underlined characters <code>s = &quot;<u><strong>ab</strong></u>b<u><strong>c</strong></u>a&quot;</code>. The resulting string is <code>s = &quot;ba&quot;</code>.</li>\n\t<li>Remove the underlined characters <code>s = &quot;<u><strong>ba</strong></u>&quot;</code>. The resulting string is <code>s = &quot;&quot;</code>.</li>\n</ul>\n\n<p>Return <em>the value of the string </em><code>s</code><em> right <strong>before</strong> applying the <strong>last</strong> operation</em>. In the example above, answer is <code>&quot;ba&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aabcbbca&quot;\n<strong>Output:</strong> &quot;ba&quot;\n<strong>Explanation:</strong> Explained in the statement.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcd&quot;\n<strong>Output:</strong> &quot;abcd&quot;\n<strong>Explanation:</strong> We do the following operation:\n- Remove the underlined characters s = &quot;<u><strong>abcd</strong></u>&quot;. The resulting string is s = &quot;&quot;.\nThe string just before the last operation is &quot;abcd&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 5 * 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists only of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string lastNonEmptyString(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String lastNonEmptyString(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lastNonEmptyString(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lastNonEmptyString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar lastNonEmptyString = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function lastNonEmptyString(s: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string LastNonEmptyString(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* lastNonEmptyString(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lastNonEmptyString(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun lastNonEmptyString(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func lastNonEmptyString(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn last_non_empty_string(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef last_non_empty_string(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function lastNonEmptyString($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String lastNonEmptyString(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def lastNonEmptyString(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec last_non_empty_string(s :: String.t) :: String.t\n  def last_non_empty_string(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec last_non_empty_string(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlast_non_empty_string(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (last-non-empty-string s)\n  (-> string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"32.1K\", \"totalSubmission\": \"56K\", \"totalAcceptedRaw\": 32104, \"totalSubmissionRaw\": 55998, \"acRate\": \"57.3%\"}",
+  "metaData": "{\n  \"name\": \"lastNonEmptyString\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"aabcbbca\""
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "187",
+  "questionFrontendId": "187",
+  "title": "Repeated DNA Sequences",
+  "titleSlug": "repeated-dna-sequences",
+  "content": "<p>The <strong>DNA sequence</strong> is composed of a series of nucleotides abbreviated as <code>&#39;A&#39;</code>, <code>&#39;C&#39;</code>, <code>&#39;G&#39;</code>, and <code>&#39;T&#39;</code>.</p>\n\n<ul>\n\t<li>For example, <code>&quot;ACGAATTCCG&quot;</code> is a <strong>DNA sequence</strong>.</li>\n</ul>\n\n<p>When studying <strong>DNA</strong>, it is useful to identify repeated sequences within the DNA.</p>\n\n<p>Given a string <code>s</code> that represents a <strong>DNA sequence</strong>, return all the <strong><code>10</code>-letter-long</strong> sequences (substrings) that occur more than once in a DNA molecule. You may return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"\n<strong>Output:</strong> [\"AAAAACCCCC\",\"CCCCCAAAAA\"]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"AAAAAAAAAAAAA\"\n<strong>Output:</strong> [\"AAAAAAAAAA\"]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s[i]</code> is either <code>&#39;A&#39;</code>, <code>&#39;C&#39;</code>, <code>&#39;G&#39;</code>, or <code>&#39;T&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> findRepeatedDnaSequences(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> findRepeatedDnaSequences(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findRepeatedDnaSequences(self, s: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findRepeatedDnaSequences(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar findRepeatedDnaSequences = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findRepeatedDnaSequences(s: string): string[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> FindRepeatedDnaSequences(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** findRepeatedDnaSequences(char* s, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findRepeatedDnaSequences(s string) []string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findRepeatedDnaSequences(s: String): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findRepeatedDnaSequences(_ s: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_repeated_dna_sequences(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String[]}\ndef find_repeated_dna_sequences(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function findRepeatedDnaSequences($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<String> findRepeatedDnaSequences(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findRepeatedDnaSequences(s: String): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_repeated_dna_sequences(s :: String.t) :: [String.t]\n  def find_repeated_dna_sequences(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_repeated_dna_sequences(S :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\nfind_repeated_dna_sequences(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-repeated-dna-sequences s)\n  (-> string? (listof string?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"513.8K\", \"totalSubmission\": \"972.8K\", \"totalAcceptedRaw\": 513838, \"totalSubmissionRaw\": 972826, \"acRate\": \"52.8%\"}",
+  "metaData": "{\r\n  \"name\": \"findRepeatedDnaSequences\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "sampleTestCase": "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\""
+}

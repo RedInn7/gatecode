@@ -1,0 +1,89 @@
+{
+  "questionId": "2902",
+  "questionFrontendId": "2815",
+  "title": "Max Pair Sum in an Array",
+  "titleSlug": "max-pair-sum-in-an-array",
+  "content": "<p>You are given an integer array <code>nums</code>. You have to find the <strong>maximum</strong> sum of a pair of numbers from <code>nums</code> such that the <strong>largest digit </strong>in both numbers is equal.</p>\n\n<p>For example, 2373 is made up of three distinct digits: 2, 3, and 7, where 7 is the largest among them.</p>\n\n<p>Return the <strong>maximum</strong> sum or -1 if no such pair exists.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [112,131,411]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Each numbers largest digit in order is [2,3,4].</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2536,1613,3366,162]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5902</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>All the numbers have 6 as their largest digit, so the answer is <span class=\"example-io\">2536 + 3366 = 5902.</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [51,71,17,24,42]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">88</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Each number&#39;s largest digit in order is [5,7,7,4,4].</p>\n\n<p>So we have only two possible pairs, 71 + 17 = 88 and 24 + 42 = 66.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSum(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSum(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSum(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSum(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxSum = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxSum(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSum(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxSum(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSum(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSum(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSum(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_sum(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxSum($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxSum(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSum(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_sum(nums :: [integer]) :: integer\n  def max_sum(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_sum(Nums :: [integer()]) -> integer().\nmax_sum(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-sum nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"59.4K\", \"totalSubmission\": \"98.5K\", \"totalAcceptedRaw\": 59434, \"totalSubmissionRaw\": 98478, \"acRate\": \"60.4%\"}",
+  "metaData": "{\n  \"name\": \"maxSum\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[112,131,411]"
+}

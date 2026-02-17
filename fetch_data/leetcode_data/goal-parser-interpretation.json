@@ -1,0 +1,73 @@
+{
+  "questionId": "1797",
+  "questionFrontendId": "1678",
+  "title": "Goal Parser Interpretation",
+  "titleSlug": "goal-parser-interpretation",
+  "content": "<p>You own a <strong>Goal Parser</strong> that can interpret a string <code>command</code>. The <code>command</code> consists of an alphabet of <code>&quot;G&quot;</code>, <code>&quot;()&quot;</code> and/or <code>&quot;(al)&quot;</code> in some order. The Goal Parser will interpret <code>&quot;G&quot;</code> as the string <code>&quot;G&quot;</code>, <code>&quot;()&quot;</code> as the string <code>&quot;o&quot;</code>, and <code>&quot;(al)&quot;</code> as the string <code>&quot;al&quot;</code>. The interpreted strings are then concatenated in the original order.</p>\n\n<p>Given the string <code>command</code>, return <em>the <strong>Goal Parser</strong>&#39;s interpretation of </em><code>command</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> command = &quot;G()(al)&quot;\n<strong>Output:</strong> &quot;Goal&quot;\n<strong>Explanation:</strong>&nbsp;The Goal Parser interprets the command as follows:\nG -&gt; G\n() -&gt; o\n(al) -&gt; al\nThe final concatenated result is &quot;Goal&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> command = &quot;G()()()()(al)&quot;\n<strong>Output:</strong> &quot;Gooooal&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> command = &quot;(al)G(al)()()G&quot;\n<strong>Output:</strong> &quot;alGalooG&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= command.length &lt;= 100</code></li>\n\t<li><code>command</code> consists of <code>&quot;G&quot;</code>, <code>&quot;()&quot;</code>, and/or <code>&quot;(al)&quot;</code> in some order.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string interpret(string command) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String interpret(String command) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def interpret(self, command: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def interpret(self, command):\n        \"\"\"\n        :type command: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} command\n * @return {string}\n */\nvar interpret = function(command) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function interpret(command: string): string {\n\n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string Interpret(string command) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * interpret(char * command){\n\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func interpret(command string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun interpret(command: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func interpret(_ command: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn interpret(command: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} command\n# @return {String}\ndef interpret(command)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $command\n     * @return String\n     */\n    function interpret($command) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def interpret(command: String): String = {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"319.2K\", \"totalSubmission\": \"362.8K\", \"totalAcceptedRaw\": 319184, \"totalSubmissionRaw\": 362794, \"acRate\": \"88.0%\"}",
+  "metaData": "{\n  \"name\": \"interpret\",\n  \"params\": [\n    {\n      \"name\": \"command\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"G()(al)\""
+}

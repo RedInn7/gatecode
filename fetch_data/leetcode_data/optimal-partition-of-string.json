@@ -1,0 +1,89 @@
+{
+  "questionId": "2487",
+  "questionFrontendId": "2405",
+  "title": "Optimal Partition of String",
+  "titleSlug": "optimal-partition-of-string",
+  "content": "<p>Given a string <code>s</code>, partition the string into one or more <strong>substrings</strong> such that the characters in each substring are <strong>unique</strong>. That is, no letter appears in a single substring more than <strong>once</strong>.</p>\n\n<p>Return <em>the <strong>minimum</strong> number of substrings in such a partition.</em></p>\n\n<p>Note that each character should belong to exactly one substring in a partition.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abacaba&quot;\n<strong>Output:</strong> 4\n<strong>Explanation:</strong>\nTwo possible partitions are (&quot;a&quot;,&quot;ba&quot;,&quot;cab&quot;,&quot;a&quot;) and (&quot;ab&quot;,&quot;a&quot;,&quot;ca&quot;,&quot;ba&quot;).\nIt can be shown that 4 is the minimum number of substrings needed.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ssssss&quot;\n<strong>Output:</strong> 6\n<strong>Explanation:\n</strong>The only valid partition is (&quot;s&quot;,&quot;s&quot;,&quot;s&quot;,&quot;s&quot;,&quot;s&quot;,&quot;s&quot;).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of only English lowercase letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int partitionString(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int partitionString(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def partitionString(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def partitionString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar partitionString = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function partitionString(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PartitionString(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int partitionString(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func partitionString(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun partitionString(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func partitionString(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn partition_string(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef partition_string(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function partitionString($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int partitionString(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def partitionString(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec partition_string(s :: String.t) :: integer\n  def partition_string(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec partition_string(S :: unicode:unicode_binary()) -> integer().\npartition_string(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (partition-string s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"273K\", \"totalSubmission\": \"348.3K\", \"totalAcceptedRaw\": 272975, \"totalSubmissionRaw\": 348311, \"acRate\": \"78.4%\"}",
+  "metaData": "{\n  \"name\": \"partitionString\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"manual\": false\n}",
+  "sampleTestCase": "\"abacaba\""
+}

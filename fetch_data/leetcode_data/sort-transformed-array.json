@@ -1,0 +1,89 @@
+{
+  "questionId": "360",
+  "questionFrontendId": "360",
+  "title": "Sort Transformed Array",
+  "titleSlug": "sort-transformed-array",
+  "content": "<p>Given a <strong>sorted</strong> integer array <code>nums</code> and three integers <code>a</code>, <code>b</code> and <code>c</code>, apply a quadratic function of the form <code>f(x) = ax<sup>2</sup> + bx + c</code> to each element <code>nums[i]</code> in the array, and return <em>the array in a sorted order</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [-4,-2,2,4], a = 1, b = 3, c = 5\n<strong>Output:</strong> [3,9,15,33]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [-4,-2,2,4], a = -1, b = 3, c = 5\n<strong>Output:</strong> [-23,-5,1,7]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 200</code></li>\n\t<li><code>-100 &lt;= nums[i], a, b, c &lt;= 100</code></li>\n\t<li><code>nums</code> is sorted in <strong>ascending</strong> order.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Could you solve it in <code>O(n)</code> time?</p>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sortTransformedArray(vector<int>& nums, int a, int b, int c) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] sortTransformedArray(int[] nums, int a, int b, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sortTransformedArray(self, nums: List[int], a: int, b: int, c: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sortTransformedArray(self, nums, a, b, c):\n        \"\"\"\n        :type nums: List[int]\n        :type a: int\n        :type b: int\n        :type c: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @return {number[]}\n */\nvar sortTransformedArray = function(nums, a, b, c) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function sortTransformedArray(nums: number[], a: number, b: number, c: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SortTransformedArray(int[] nums, int a, int b, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sortTransformedArray(int* nums, int numsSize, int a, int b, int c, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sortTransformedArray(nums []int, a int, b int, c int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sortTransformedArray(nums: IntArray, a: Int, b: Int, c: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sortTransformedArray(_ nums: [Int], _ a: Int, _ b: Int, _ c: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sort_transformed_array(nums: Vec<i32>, a: i32, b: i32, c: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} a\n# @param {Integer} b\n# @param {Integer} c\n# @return {Integer[]}\ndef sort_transformed_array(nums, a, b, c)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $a\n     * @param Integer $b\n     * @param Integer $c\n     * @return Integer[]\n     */\n    function sortTransformedArray($nums, $a, $b, $c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> sortTransformedArray(List<int> nums, int a, int b, int c) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sortTransformedArray(nums: Array[Int], a: Int, b: Int, c: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec sort_transformed_array(nums :: [integer], a :: integer, b :: integer, c :: integer) :: [integer]\n  def sort_transformed_array(nums, a, b, c) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec sort_transformed_array(Nums :: [integer()], A :: integer(), B :: integer(), C :: integer()) -> [integer()].\nsort_transformed_array(Nums, A, B, C) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (sort-transformed-array nums a b c)\n  (-> (listof exact-integer?) exact-integer? exact-integer? exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"75.3K\", \"totalSubmission\": \"130.2K\", \"totalAcceptedRaw\": 75307, \"totalSubmissionRaw\": 130250, \"acRate\": \"57.8%\"}",
+  "metaData": "{\r\n  \"name\": \"sortTransformedArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"a\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"b\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"c\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "sampleTestCase": "[-4,-2,2,4]\n1\n3\n5"
+}

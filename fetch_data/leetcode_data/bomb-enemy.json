@@ -1,0 +1,89 @@
+{
+  "questionId": "361",
+  "questionFrontendId": "361",
+  "title": "Bomb Enemy",
+  "titleSlug": "bomb-enemy",
+  "content": "<p>Given an <code>m x n</code> matrix <code>grid</code> where each cell is either a wall <code>&#39;W&#39;</code>, an enemy <code>&#39;E&#39;</code> or empty <code>&#39;0&#39;</code>, return <em>the maximum enemies you can kill using one bomb</em>. You can only place the bomb in an empty cell.</p>\n\n<p>The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since it is too strong to be destroyed.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/27/bomb1-grid.jpg\" style=\"width: 600px; height: 187px;\" />\n<pre>\n<strong>Input:</strong> grid = [[&quot;0&quot;,&quot;E&quot;,&quot;0&quot;,&quot;0&quot;],[&quot;E&quot;,&quot;0&quot;,&quot;W&quot;,&quot;E&quot;],[&quot;0&quot;,&quot;E&quot;,&quot;0&quot;,&quot;0&quot;]]\n<strong>Output:</strong> 3\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/27/bomb2-grid.jpg\" style=\"width: 500px; height: 194px;\" />\n<pre>\n<strong>Input:</strong> grid = [[&quot;W&quot;,&quot;W&quot;,&quot;W&quot;],[&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],[&quot;E&quot;,&quot;E&quot;,&quot;E&quot;]]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 500</code></li>\n\t<li><code>grid[i][j]</code> is either <code>&#39;W&#39;</code>, <code>&#39;E&#39;</code>, or <code>&#39;0&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxKilledEnemies(vector<vector<char>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxKilledEnemies(char[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxKilledEnemies(self, grid: List[List[str]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxKilledEnemies(self, grid):\n        \"\"\"\n        :type grid: List[List[str]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} grid\n * @return {number}\n */\nvar maxKilledEnemies = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxKilledEnemies(grid: string[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxKilledEnemies(char[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxKilledEnemies(char** grid, int gridSize, int* gridColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxKilledEnemies(grid [][]byte) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxKilledEnemies(grid: Array<CharArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxKilledEnemies(_ grid: [[Character]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_killed_enemies(grid: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} grid\n# @return {Integer}\ndef max_killed_enemies(grid)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $grid\n     * @return Integer\n     */\n    function maxKilledEnemies($grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxKilledEnemies(List<List<String>> grid) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxKilledEnemies(grid: Array[Array[Char]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_killed_enemies(grid :: [[char]]) :: integer\n  def max_killed_enemies(grid) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_killed_enemies(Grid :: [[char()]]) -> integer().\nmax_killed_enemies(Grid) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-killed-enemies grid)\n  (-> (listof (listof char?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"86.4K\", \"totalSubmission\": \"163.7K\", \"totalAcceptedRaw\": 86369, \"totalSubmissionRaw\": 163668, \"acRate\": \"52.8%\"}",
+  "metaData": "{\r\n  \"name\": \"maxKilledEnemies\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "[[\"0\",\"E\",\"0\",\"0\"],[\"E\",\"0\",\"W\",\"E\"],[\"0\",\"E\",\"0\",\"0\"]]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "1143",
+  "questionFrontendId": "1198",
+  "title": "Find Smallest Common Element in All Rows",
+  "titleSlug": "find-smallest-common-element-in-all-rows",
+  "content": "<p>Given an <code>m x n</code> matrix <code>mat</code> where every row is sorted in <strong>strictly</strong> <strong>increasing</strong> order, return <em>the <strong>smallest common element</strong> in all rows</em>.</p>\n\n<p>If there is no common element, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> mat = [[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]]\n<strong>Output:</strong> 5\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> mat = [[1,2,3],[2,3,4],[2,3,5]]\n<strong>Output:</strong> 2\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == mat.length</code></li>\n\t<li><code>n == mat[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 500</code></li>\n\t<li><code>1 &lt;= mat[i][j] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>mat[i]</code> is sorted in strictly increasing order.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int smallestCommonElement(vector<vector<int>>& mat) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int smallestCommonElement(int[][] mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestCommonElement(self, mat: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestCommonElement(self, mat):\n        \"\"\"\n        :type mat: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} mat\n * @return {number}\n */\nvar smallestCommonElement = function(mat) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function smallestCommonElement(mat: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SmallestCommonElement(int[][] mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int smallestCommonElement(int** mat, int matSize, int* matColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestCommonElement(mat [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestCommonElement(mat: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestCommonElement(_ mat: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_common_element(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} mat\n# @return {Integer}\ndef smallest_common_element(mat)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $mat\n     * @return Integer\n     */\n    function smallestCommonElement($mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int smallestCommonElement(List<List<int>> mat) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestCommonElement(mat: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec smallest_common_element(mat :: [[integer]]) :: integer\n  def smallest_common_element(mat) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec smallest_common_element(Mat :: [[integer()]]) -> integer().\nsmallest_common_element(Mat) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (smallest-common-element mat)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"55K\", \"totalSubmission\": \"71.7K\", \"totalAcceptedRaw\": 55021, \"totalSubmissionRaw\": 71657, \"acRate\": \"76.8%\"}",
+  "metaData": "{\n  \"name\": \"smallestCommonElement\",\n  \"params\": [\n    {\n      \"name\": \"mat\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]]"
+}

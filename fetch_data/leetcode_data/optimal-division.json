@@ -1,0 +1,89 @@
+{
+  "questionId": "553",
+  "questionFrontendId": "553",
+  "title": "Optimal Division",
+  "titleSlug": "optimal-division",
+  "content": "<p>You are given an integer array <code>nums</code>. The adjacent integers in <code>nums</code> will perform the float division.</p>\n\n<ul>\n\t<li>For example, for <code>nums = [2,3,4]</code>, we will evaluate the expression <code>&quot;2/3/4&quot;</code>.</li>\n</ul>\n\n<p>However, you can add any number of parenthesis at any position to change the priority of operations. You want to add these parentheses such the value of the expression after the evaluation is maximum.</p>\n\n<p>Return <em>the corresponding expression that has the maximum value in string format</em>.</p>\n\n<p><strong>Note:</strong> your expression should not contain redundant parenthesis.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1000,100,10,2]\n<strong>Output:</strong> &quot;1000/(100/10/2)&quot;\n<strong>Explanation:</strong> 1000/(100/10/2) = 1000/((100/10)/2) = 200\nHowever, the bold parenthesis in &quot;1000/(<strong>(</strong>100/10<strong>)</strong>/2)&quot; are redundant since they do not influence the operation priority.\nSo you should return &quot;1000/(100/10/2)&quot;.\nOther cases:\n1000/(100/10)/2 = 50\n1000/(100/(10/2)) = 50\n1000/100/10/2 = 0.5\n1000/100/(10/2) = 2\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,4]\n<strong>Output:</strong> &quot;2/(3/4)&quot;\n<strong>Explanation:</strong> (2/(3/4)) = 8/3 = 2.667\nIt can be shown that after trying all possibilities, we cannot get an expression with evaluation greater than 2.667\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10</code></li>\n\t<li><code>2 &lt;= nums[i] &lt;= 1000</code></li>\n\t<li>There is only one optimal division for the given input.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string optimalDivision(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String optimalDivision(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def optimalDivision(self, nums: List[int]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def optimalDivision(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {string}\n */\nvar optimalDivision = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function optimalDivision(nums: number[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string OptimalDivision(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* optimalDivision(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func optimalDivision(nums []int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun optimalDivision(nums: IntArray): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func optimalDivision(_ nums: [Int]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn optimal_division(nums: Vec<i32>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {String}\ndef optimal_division(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return String\n     */\n    function optimalDivision($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String optimalDivision(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def optimalDivision(nums: Array[Int]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec optimal_division(nums :: [integer]) :: String.t\n  def optimal_division(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec optimal_division(Nums :: [integer()]) -> unicode:unicode_binary().\noptimal_division(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (optimal-division nums)\n  (-> (listof exact-integer?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"50.6K\", \"totalSubmission\": \"80.7K\", \"totalAcceptedRaw\": 50642, \"totalSubmissionRaw\": 80711, \"acRate\": \"62.7%\"}",
+  "metaData": "{\r\n  \"name\": \"optimalDivision\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "[1000,100,10,2]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "625",
+  "questionFrontendId": "625",
+  "title": "Minimum Factorization",
+  "titleSlug": "minimum-factorization",
+  "content": "<p>Given a positive integer num, return <em>the smallest positive integer </em><code>x</code><em> whose multiplication of each digit equals </em><code>num</code>. If there is no answer or the answer is not fit in <strong>32-bit</strong> signed integer, return <code>0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> num = 48\n<strong>Output:</strong> 68\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> num = 15\n<strong>Output:</strong> 35\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int smallestFactorization(int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int smallestFactorization(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestFactorization(self, num: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestFactorization(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar smallestFactorization = function(num) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function smallestFactorization(num: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SmallestFactorization(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int smallestFactorization(int num) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestFactorization(num int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestFactorization(num: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestFactorization(_ num: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_factorization(num: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {Integer}\ndef smallest_factorization(num)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Integer\n     */\n    function smallestFactorization($num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int smallestFactorization(int num) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestFactorization(num: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec smallest_factorization(num :: integer) :: integer\n  def smallest_factorization(num) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec smallest_factorization(Num :: integer()) -> integer().\nsmallest_factorization(Num) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (smallest-factorization num)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.2K\", \"totalSubmission\": \"35.9K\", \"totalAcceptedRaw\": 12171, \"totalSubmissionRaw\": 35877, \"acRate\": \"33.9%\"}",
+  "metaData": "{\n  \"name\": \"smallestFactorization\",\n  \"params\": [\n    {\n      \"name\": \"num\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "48"
+}

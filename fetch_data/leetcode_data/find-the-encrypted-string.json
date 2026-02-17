@@ -1,0 +1,89 @@
+{
+  "questionId": "3468",
+  "questionFrontendId": "3210",
+  "title": "Find the Encrypted String",
+  "titleSlug": "find-the-encrypted-string",
+  "content": "<p>You are given a string <code>s</code> and an integer <code>k</code>. Encrypt the string using the following algorithm:</p>\n\n<ul>\n\t<li>For each character <code>c</code> in <code>s</code>, replace <code>c</code> with the <code>k<sup>th</sup></code> character after <code>c</code> in the string (in a cyclic manner).</li>\n</ul>\n\n<p>Return the <em>encrypted string</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;dart&quot;, k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;tdar&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>For <code>i = 0</code>, the 3<sup>rd</sup> character after <code>&#39;d&#39;</code> is <code>&#39;t&#39;</code>.</li>\n\t<li>For <code>i = 1</code>, the 3<sup>rd</sup> character after <code>&#39;a&#39;</code> is <code>&#39;d&#39;</code>.</li>\n\t<li>For <code>i = 2</code>, the 3<sup>rd</sup> character after <code>&#39;r&#39;</code> is <code>&#39;a&#39;</code>.</li>\n\t<li>For <code>i = 3</code>, the 3<sup>rd</sup> character after <code>&#39;t&#39;</code> is <code>&#39;r&#39;</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aaa&quot;, k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;aaa&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>As all the characters are the same, the encrypted string will also be the same.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists only of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string getEncryptedString(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String getEncryptedString(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def getEncryptedString(self, s: str, k: int) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def getEncryptedString(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar getEncryptedString = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function getEncryptedString(s: string, k: number): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string GetEncryptedString(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* getEncryptedString(char* s, int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func getEncryptedString(s string, k int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun getEncryptedString(s: String, k: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func getEncryptedString(_ s: String, _ k: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn get_encrypted_string(s: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef get_encrypted_string(s, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function getEncryptedString($s, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String getEncryptedString(String s, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def getEncryptedString(s: String, k: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec get_encrypted_string(s :: String.t, k :: integer) :: String.t\n  def get_encrypted_string(s, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec get_encrypted_string(S :: unicode:unicode_binary(), K :: integer()) -> unicode:unicode_binary().\nget_encrypted_string(S, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (get-encrypted-string s k)\n  (-> string? exact-integer? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"67K\", \"totalSubmission\": \"98.3K\", \"totalAcceptedRaw\": 66989, \"totalSubmissionRaw\": 98340, \"acRate\": \"68.1%\"}",
+  "metaData": "{\n  \"name\": \"getEncryptedString\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"dart\"\n3"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "2405",
+  "questionFrontendId": "2268",
+  "title": "Minimum Number of Keypresses",
+  "titleSlug": "minimum-number-of-keypresses",
+  "content": "<p>You have a keypad with <code>9</code> buttons, numbered from <code>1</code> to <code>9</code>, each mapped to lowercase English letters. You can choose which characters each button is matched to as long as:</p>\n\n<ul>\n\t<li>All 26 lowercase English letters are mapped to.</li>\n\t<li>Each character is mapped to by <strong>exactly</strong> <code>1</code> button.</li>\n\t<li>Each button maps to <strong>at most</strong> <code>3</code> characters.</li>\n</ul>\n\n<p>To type the first character matched to a button, you press the button once. To type the second character, you press the button twice, and so on.</p>\n\n<p>Given a string <code>s</code>, return <em>the <strong>minimum</strong> number of keypresses needed to type </em><code>s</code><em> using your keypad.</em></p>\n\n<p><strong>Note</strong> that the characters mapped to by each button, and the order they are mapped in cannot be changed.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2022/05/05/image-20220505184346-1.png\" style=\"width: 300px; height: 293px;\" />\n<pre>\n<strong>Input:</strong> s = &quot;apple&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> One optimal way to setup your keypad is shown above.\nType &#39;a&#39; by pressing button 1 once.\nType &#39;p&#39; by pressing button 6 once.\nType &#39;p&#39; by pressing button 6 once.\nType &#39;l&#39; by pressing button 5 once.\nType &#39;e&#39; by pressing button 3 once.\nA total of 5 button presses are needed, so return 5.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2022/05/05/image-20220505203823-1.png\" style=\"width: 300px; height: 288px;\" />\n<pre>\n<strong>Input:</strong> s = &quot;abcdefghijkl&quot;\n<strong>Output:</strong> 15\n<strong>Explanation:</strong> One optimal way to setup your keypad is shown above.\nThe letters &#39;a&#39; to &#39;i&#39; can each be typed by pressing a button once.\nType &#39;j&#39; by pressing button 1 twice.\nType &#39;k&#39; by pressing button 2 twice.\nType &#39;l&#39; by pressing button 3 twice.\nA total of 15 button presses are needed, so return 15.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minimumKeypresses(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minimumKeypresses(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimumKeypresses(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimumKeypresses(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minimumKeypresses = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minimumKeypresses(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinimumKeypresses(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minimumKeypresses(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimumKeypresses(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minimumKeypresses(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minimumKeypresses(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimum_keypresses(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef minimum_keypresses(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function minimumKeypresses($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minimumKeypresses(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minimumKeypresses(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec minimum_keypresses(s :: String.t) :: integer\n  def minimum_keypresses(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec minimum_keypresses(S :: unicode:unicode_binary()) -> integer().\nminimum_keypresses(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (minimum-keypresses s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"37K\", \"totalSubmission\": \"51.8K\", \"totalAcceptedRaw\": 36973, \"totalSubmissionRaw\": 51755, \"acRate\": \"71.4%\"}",
+  "metaData": "{\n  \"name\": \"minimumKeypresses\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"apple\""
+}

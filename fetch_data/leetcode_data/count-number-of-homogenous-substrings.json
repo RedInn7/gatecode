@@ -1,0 +1,89 @@
+{
+  "questionId": "1885",
+  "questionFrontendId": "1759",
+  "title": "Count Number of Homogenous Substrings",
+  "titleSlug": "count-number-of-homogenous-substrings",
+  "content": "<p>Given a string <code>s</code>, return <em>the number of <strong>homogenous</strong> substrings of </em><code>s</code><em>.</em> Since the answer may be too large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>A string is <strong>homogenous</strong> if all the characters of the string are the same.</p>\n\n<p>A <strong>substring</strong> is a contiguous sequence of characters within a string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abbcccaa&quot;\n<strong>Output:</strong> 13\n<strong>Explanation:</strong> The homogenous substrings are listed as below:\n&quot;a&quot;   appears 3 times.\n&quot;aa&quot;  appears 1 time.\n&quot;b&quot;   appears 2 times.\n&quot;bb&quot;  appears 1 time.\n&quot;c&quot;   appears 3 times.\n&quot;cc&quot;  appears 2 times.\n&quot;ccc&quot; appears 1 time.\n3 + 1 + 2 + 1 + 3 + 2 + 1 = 13.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;xy&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The homogenous substrings are &quot;x&quot; and &quot;y&quot;.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;zzzzz&quot;\n<strong>Output:</strong> 15\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of lowercase letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countHomogenous(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countHomogenous(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countHomogenous(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countHomogenous(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar countHomogenous = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function countHomogenous(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountHomogenous(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int countHomogenous(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countHomogenous(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countHomogenous(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countHomogenous(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_homogenous(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef count_homogenous(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function countHomogenous($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int countHomogenous(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countHomogenous(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec count_homogenous(s :: String.t) :: integer\n  def count_homogenous(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec count_homogenous(S :: unicode:unicode_binary()) -> integer().\ncount_homogenous(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (count-homogenous s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"130.9K\", \"totalSubmission\": \"228.1K\", \"totalAcceptedRaw\": 130864, \"totalSubmissionRaw\": 228054, \"acRate\": \"57.4%\"}",
+  "metaData": "{\n  \"name\": \"countHomogenous\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"abbcccaa\""
+}

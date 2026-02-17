@@ -1,0 +1,89 @@
+{
+  "questionId": "1329",
+  "questionFrontendId": "1217",
+  "title": "Minimum Cost to Move Chips to The Same Position",
+  "titleSlug": "minimum-cost-to-move-chips-to-the-same-position",
+  "content": "<p>We have <code>n</code> chips, where the position of the <code>i<sup>th</sup></code> chip is <code>position[i]</code>.</p>\n\n<p>We need to move all the chips to <strong>the same position</strong>. In one step, we can change the position of the <code>i<sup>th</sup></code> chip from <code>position[i]</code> to:</p>\n\n<ul>\n\t<li><code>position[i] + 2</code> or <code>position[i] - 2</code> with <code>cost = 0</code>.</li>\n\t<li><code>position[i] + 1</code> or <code>position[i] - 1</code> with <code>cost = 1</code>.</li>\n</ul>\n\n<p>Return <em>the minimum cost</em> needed to move all the chips to the same position.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/15/chips_e1.jpg\" style=\"width: 750px; height: 217px;\" />\n<pre>\n<strong>Input:</strong> position = [1,2,3]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> First step: Move the chip at position 3 to position 1 with cost = 0.\nSecond step: Move the chip at position 2 to position 1 with cost = 1.\nTotal cost is 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/15/chip_e2.jpg\" style=\"width: 750px; height: 306px;\" />\n<pre>\n<strong>Input:</strong> position = [2,2,2,3,3]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> We can move the two chips at position  3 to position 2. Each move has cost = 1. The total cost = 2.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> position = [1,1000000000]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= position.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= position[i] &lt;= 10^9</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minCostToMoveChips(vector<int>& position) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minCostToMoveChips(int[] position) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minCostToMoveChips(self, position: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minCostToMoveChips(self, position):\n        \"\"\"\n        :type position: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} position\n * @return {number}\n */\nvar minCostToMoveChips = function(position) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minCostToMoveChips(position: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinCostToMoveChips(int[] position) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minCostToMoveChips(int* position, int positionSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minCostToMoveChips(position []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minCostToMoveChips(position: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minCostToMoveChips(_ position: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_cost_to_move_chips(position: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} position\n# @return {Integer}\ndef min_cost_to_move_chips(position)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $position\n     * @return Integer\n     */\n    function minCostToMoveChips($position) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minCostToMoveChips(List<int> position) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minCostToMoveChips(position: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_cost_to_move_chips(position :: [integer]) :: integer\n  def min_cost_to_move_chips(position) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_cost_to_move_chips(Position :: [integer()]) -> integer().\nmin_cost_to_move_chips(Position) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-cost-to-move-chips position)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"166.4K\", \"totalSubmission\": \"228.8K\", \"totalAcceptedRaw\": 166414, \"totalSubmissionRaw\": 228770, \"acRate\": \"72.7%\"}",
+  "metaData": "{\n  \"name\": \"minCostToMoveChips\",\n  \"params\": [\n    {\n      \"name\": \"position\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,2,3]"
+}

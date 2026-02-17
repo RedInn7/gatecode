@@ -1,0 +1,21 @@
+{
+  "questionId": "2901",
+  "questionFrontendId": "2803",
+  "title": "Factorial Generator",
+  "titleSlug": "factorial-generator",
+  "content": "<p>Write a generator function that takes an integer <code>n</code> as an argument and returns a generator object which yields the <strong>factorial sequence</strong>.</p>\n\n<p>The&nbsp;<strong>factorial sequence</strong>&nbsp;is defined by the relation <code>n!&nbsp;= n *&nbsp;<span style=\"font-size: 13px;\">(</span>n-1)&nbsp;* (n-2)&nbsp;*&nbsp;...&nbsp;* 2 * 1​​​.</code></p>\n\n<p>The factorial of 0 is defined as 1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5\n<strong>Output:</strong> [1,2,6,24,120]\n<strong>Explanation:</strong> \nconst gen = factorial(5)\ngen.next().value // 1\ngen.next().value // 2\ngen.next().value // 6\ngen.next().value // 24\ngen.next().value // 120\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2\n<strong>Output:</strong> [1,2]\n<strong>Explanation:</strong> \nconst gen = factorial(2) \ngen.next().value // 1 \ngen.next().value // 2 \n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 0\n<strong>Output:</strong> [1]\n<strong>Explanation:</strong> \nconst gen = factorial(0) \ngen.next().value // 1 \n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 18</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @yields {number}\n */\nfunction* factorial(n) {\n    \n};\n\n/**\n * const gen = factorial(2);\n * gen.next().value; // 1\n * gen.next().value; // 2\n */"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function* factorial(n: number): Generator<number> {\n    \n};\n\n/**\n * const gen = factorial(2);\n * gen.next().value; // 1\n * gen.next().value; // 2\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"1.8K\", \"totalAcceptedRaw\": 1552, \"totalSubmissionRaw\": 1807, \"acRate\": \"85.9%\"}",
+  "metaData": "{\n  \"name\": \"factorial\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"javascript\",\n    \"typescript\"\n  ],\n  \"manual\": true\n}",
+  "sampleTestCase": "5"
+}

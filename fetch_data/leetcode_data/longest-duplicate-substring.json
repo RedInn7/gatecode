@@ -1,0 +1,89 @@
+{
+  "questionId": "1122",
+  "questionFrontendId": "1044",
+  "title": "Longest Duplicate Substring",
+  "titleSlug": "longest-duplicate-substring",
+  "content": "<p>Given a string <code>s</code>, consider all <em>duplicated substrings</em>: (contiguous) substrings of s that occur 2 or more times.&nbsp;The occurrences&nbsp;may overlap.</p>\n\n<p>Return <strong>any</strong> duplicated&nbsp;substring that has the longest possible length.&nbsp;If <code>s</code> does not have a duplicated substring, the answer is <code>&quot;&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"banana\"\n<strong>Output:</strong> \"ana\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abcd\"\n<strong>Output:</strong> \"\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string longestDupSubstring(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String longestDupSubstring(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestDupSubstring(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestDupSubstring(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar longestDupSubstring = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function longestDupSubstring(s: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string LongestDupSubstring(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* longestDupSubstring(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestDupSubstring(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestDupSubstring(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestDupSubstring(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_dup_substring(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef longest_dup_substring(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function longestDupSubstring($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String longestDupSubstring(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestDupSubstring(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec longest_dup_substring(s :: String.t) :: String.t\n  def longest_dup_substring(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec longest_dup_substring(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlongest_dup_substring(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (longest-dup-substring s)\n  (-> string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"83.2K\", \"totalSubmission\": \"267.8K\", \"totalAcceptedRaw\": 83230, \"totalSubmissionRaw\": 267781, \"acRate\": \"31.1%\"}",
+  "metaData": "{\n  \"name\": \"longestDupSubstring\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"banana\""
+}

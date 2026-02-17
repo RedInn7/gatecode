@@ -1,0 +1,89 @@
+{
+  "questionId": "3737",
+  "questionFrontendId": "3429",
+  "title": "Paint House IV",
+  "titleSlug": "paint-house-iv",
+  "content": "<p>You are given an <strong>even</strong> integer <code>n</code> representing the number of houses arranged in a straight line, and a 2D array <code>cost</code> of size <code>n x 3</code>, where <code>cost[i][j]</code> represents the cost of painting house <code>i</code> with color <code>j + 1</code>.</p>\n\n<p>The houses will look <strong>beautiful</strong> if they satisfy the following conditions:</p>\n\n<ul>\n\t<li>No <strong>two</strong> adjacent houses are painted the same color.</li>\n\t<li>Houses <strong>equidistant</strong> from the ends of the row are <strong>not</strong> painted the same color. For example, if <code>n = 6</code>, houses at positions <code>(0, 5)</code>, <code>(1, 4)</code>, and <code>(2, 3)</code> are considered equidistant.</li>\n</ul>\n\n<p>Return the <strong>minimum</strong> cost to paint the houses such that they look <strong>beautiful</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 4, cost = [[3,5,7],[6,2,9],[4,8,1],[7,3,5]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">9</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The optimal painting sequence is <code>[1, 2, 3, 2]</code> with corresponding costs <code>[3, 2, 1, 3]</code>. This satisfies the following conditions:</p>\n\n<ul>\n\t<li>No adjacent houses have the same color.</li>\n\t<li>Houses at positions 0 and 3 (equidistant from the ends) are not painted the same color <code>(1 != 2)</code>.</li>\n\t<li>Houses at positions 1 and 2 (equidistant from the ends) are not painted the same color <code>(2 != 3)</code>.</li>\n</ul>\n\n<p>The minimum cost to paint the houses so that they look beautiful is <code>3 + 2 + 1 + 3 = 9</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 6, cost = [[2,4,6],[5,3,8],[7,1,9],[4,6,2],[3,5,7],[8,2,4]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">18</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The optimal painting sequence is <code>[1, 3, 2, 3, 1, 2]</code> with corresponding costs <code>[2, 8, 1, 2, 3, 2]</code>. This satisfies the following conditions:</p>\n\n<ul>\n\t<li>No adjacent houses have the same color.</li>\n\t<li>Houses at positions 0 and 5 (equidistant from the ends) are not painted the same color <code>(1 != 2)</code>.</li>\n\t<li>Houses at positions 1 and 4 (equidistant from the ends) are not painted the same color <code>(3 != 1)</code>.</li>\n\t<li>Houses at positions 2 and 3 (equidistant from the ends) are not painted the same color <code>(2 != 3)</code>.</li>\n</ul>\n\n<p>The minimum cost to paint the houses so that they look beautiful is <code>2 + 8 + 1 + 2 + 3 + 2 = 18</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>n</code> is even.</li>\n\t<li><code>cost.length == n</code></li>\n\t<li><code>cost[i].length == 3</code></li>\n\t<li><code>0 &lt;= cost[i][j] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long minCost(int n, vector<vector<int>>& cost) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long minCost(int n, int[][] cost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minCost(self, n: int, cost: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minCost(self, n, cost):\n        \"\"\"\n        :type n: int\n        :type cost: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number[][]} cost\n * @return {number}\n */\nvar minCost = function(n, cost) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minCost(n: number, cost: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MinCost(int n, int[][] cost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long minCost(int n, int** cost, int costSize, int* costColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minCost(n int, cost [][]int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minCost(n: Int, cost: Array<IntArray>): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minCost(_ n: Int, _ cost: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_cost(n: i32, cost: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[][]} cost\n# @return {Integer}\ndef min_cost(n, cost)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[][] $cost\n     * @return Integer\n     */\n    function minCost($n, $cost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minCost(int n, List<List<int>> cost) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minCost(n: Int, cost: Array[Array[Int]]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_cost(n :: integer, cost :: [[integer]]) :: integer\n  def min_cost(n, cost) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_cost(N :: integer(), Cost :: [[integer()]]) -> integer().\nmin_cost(N, Cost) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-cost n cost)\n  (-> exact-integer? (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.6K\", \"totalSubmission\": \"23.6K\", \"totalAcceptedRaw\": 10640, \"totalSubmissionRaw\": 23640, \"acRate\": \"45.0%\"}",
+  "metaData": "{\n  \"name\": \"minCost\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"cost\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "4\n[[3,5,7],[6,2,9],[4,8,1],[7,3,5]]"
+}

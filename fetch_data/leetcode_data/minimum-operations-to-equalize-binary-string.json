@@ -1,0 +1,89 @@
+{
+  "questionId": "3983",
+  "questionFrontendId": "3666",
+  "title": "Minimum Operations to Equalize Binary String",
+  "titleSlug": "minimum-operations-to-equalize-binary-string",
+  "content": "<p>You are given a binary string <code>s</code>, and an integer <code>k</code>.</p>\n\n<p>In one operation, you must choose <strong>exactly</strong> <code>k</code> <strong>different</strong> indices and <strong>flip</strong> each <code>&#39;0&#39;</code> to <code>&#39;1&#39;</code> and each <code>&#39;1&#39;</code> to <code>&#39;0&#39;</code>.</p>\n\n<p>Return the <strong>minimum</strong> number of operations required to make all characters in the string equal to <code>&#39;1&#39;</code>. If it is not possible, return -1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;110&quot;, k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>There is one <code>&#39;0&#39;</code> in <code>s</code>.</li>\n\t<li>Since <code>k = 1</code>, we can flip it directly in one operation.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;0101&quot;, k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal set of operations choosing <code>k = 3</code> indices in each operation is:</p>\n\n<ul>\n\t<li><strong>Operation 1</strong>: Flip indices <code>[0, 1, 3]</code>. <code>s</code> changes from <code>&quot;0101&quot;</code> to <code>&quot;1000&quot;</code>.</li>\n\t<li><strong>Operation 2</strong>: Flip indices <code>[1, 2, 3]</code>. <code>s</code> changes from <code>&quot;1000&quot;</code> to <code>&quot;1111&quot;</code>.</li>\n</ul>\n\n<p>Thus, the minimum number of operations is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;101&quot;, k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Since <code>k = 2</code> and <code>s</code> has only one <code>&#39;0&#39;</code>, it is impossible to flip exactly <code>k</code> indices to make all <code>&#39;1&#39;</code>. Hence, the answer is -1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>​​​​​​​5</sup></code></li>\n\t<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>\n\t<li><code>1 &lt;= k &lt;= s.length</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minOperations(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minOperations(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minOperations(self, s: str, k: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minOperations(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar minOperations = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minOperations(s: string, k: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinOperations(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minOperations(char* s, int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minOperations(s string, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minOperations(s: String, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minOperations(_ s: String, _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_operations(s: String, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {Integer}\ndef min_operations(s, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return Integer\n     */\n    function minOperations($s, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minOperations(String s, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minOperations(s: String, k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_operations(s :: String.t, k :: integer) :: integer\n  def min_operations(s, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_operations(S :: unicode:unicode_binary(), K :: integer()) -> integer().\nmin_operations(S, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-operations s k)\n  (-> string? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.2K\", \"totalSubmission\": \"15.5K\", \"totalAcceptedRaw\": 3153, \"totalSubmissionRaw\": 15529, \"acRate\": \"20.3%\"}",
+  "metaData": "{\n  \"name\": \"minOperations\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"110\"\n1"
+}

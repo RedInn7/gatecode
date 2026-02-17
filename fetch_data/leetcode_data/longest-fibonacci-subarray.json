@@ -1,0 +1,89 @@
+{
+  "questionId": "4003",
+  "questionFrontendId": "3708",
+  "title": "Longest Fibonacci Subarray",
+  "titleSlug": "longest-fibonacci-subarray",
+  "content": "<p>You are given an array of <strong>positive</strong> integers <code>nums</code>.</p>\n\n<p>A <strong>Fibonacci</strong> array is a contiguous sequence whose third and subsequent terms each equal the sum of the two preceding terms.</p>\n\n<p>Return the length of the longest <strong>Fibonacci</strong> <strong><span data-keyword=\"subarray-nonempty\">subarray</span></strong> in <code>nums</code>.</p>\n\n<p><strong>Note:</strong> Subarrays of length 1 or 2 are always <strong>Fibonacci</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,1,1,2,3,5,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The longest Fibonacci subarray is <code>nums[2..6] = [1, 1, 2, 3, 5]</code>.</p>\n\n<p><code>[1, 1, 2, 3, 5]</code> is Fibonacci because <code>1 + 1 = 2</code>, <code>1 + 2 = 3</code>, and <code>2 + 3 = 5</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,2,7,9,16]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The longest Fibonacci subarray is <code>nums[0..4] = [5, 2, 7, 9, 16]</code>.</p>\n\n<p><code>[5, 2, 7, 9, 16]</code> is Fibonacci because <code>5 + 2 = 7</code>, <code>2 + 7 = 9</code>, and <code>7 + 9 = 16</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1000000000,1000000000,1000000000]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The longest Fibonacci subarray is <code>nums[1..2] = [1000000000, 1000000000]</code>.</p>\n\n<p><code>[1000000000, 1000000000]</code> is Fibonacci because its length is 2.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestSubarray(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestSubarray(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestSubarray(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestSubarray = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function longestSubarray(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestSubarray(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int longestSubarray(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestSubarray(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestSubarray(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestSubarray(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef longest_subarray(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function longestSubarray($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int longestSubarray(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestSubarray(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec longest_subarray(nums :: [integer]) :: integer\n  def longest_subarray(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec longest_subarray(Nums :: [integer()]) -> integer().\nlongest_subarray(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (longest-subarray nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.5K\", \"totalSubmission\": \"45.4K\", \"totalAcceptedRaw\": 31508, \"totalSubmissionRaw\": 45399, \"acRate\": \"69.4%\"}",
+  "metaData": "{\n  \"name\": \"longestSubarray\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,1,1,1,2,3,5,1]"
+}

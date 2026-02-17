@@ -1,0 +1,89 @@
+{
+  "questionId": "1147",
+  "questionFrontendId": "1072",
+  "title": "Flip Columns For Maximum Number of Equal Rows",
+  "titleSlug": "flip-columns-for-maximum-number-of-equal-rows",
+  "content": "<p>You are given an <code>m x n</code> binary matrix <code>matrix</code>.</p>\n\n<p>You can choose any number of columns in the matrix and flip every cell in that column (i.e., Change the value of the cell from <code>0</code> to <code>1</code> or vice versa).</p>\n\n<p>Return <em>the maximum number of rows that have all values equal after some number of flips</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[0,1],[1,1]]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> After flipping no values, 1 row has all values equal.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[0,1],[1,0]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> After flipping values in the first column, both rows have equal values.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[0,0,0],[0,0,1],[1,1,0]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> After flipping values in the first two columns, the last two rows have equal values.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 300</code></li>\n\t<li><code>matrix[i][j]</code> is either&nbsp;<code>0</code> or <code>1</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxEqualRowsAfterFlips(vector<vector<int>>& matrix) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxEqualRowsAfterFlips(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxEqualRowsAfterFlips(self, matrix: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxEqualRowsAfterFlips(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @return {number}\n */\nvar maxEqualRowsAfterFlips = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxEqualRowsAfterFlips(matrix: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxEqualRowsAfterFlips(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxEqualRowsAfterFlips(int** matrix, int matrixSize, int* matrixColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxEqualRowsAfterFlips(matrix [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxEqualRowsAfterFlips(matrix: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxEqualRowsAfterFlips(_ matrix: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_equal_rows_after_flips(matrix: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\n# @return {Integer}\ndef max_equal_rows_after_flips(matrix)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return Integer\n     */\n    function maxEqualRowsAfterFlips($matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxEqualRowsAfterFlips(List<List<int>> matrix) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxEqualRowsAfterFlips(matrix: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_equal_rows_after_flips(matrix :: [[integer]]) :: integer\n  def max_equal_rows_after_flips(matrix) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_equal_rows_after_flips(Matrix :: [[integer()]]) -> integer().\nmax_equal_rows_after_flips(Matrix) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-equal-rows-after-flips matrix)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"118.1K\", \"totalSubmission\": \"150.3K\", \"totalAcceptedRaw\": 118074, \"totalSubmissionRaw\": 150282, \"acRate\": \"78.6%\"}",
+  "metaData": "{\n  \"name\": \"maxEqualRowsAfterFlips\",\n  \"params\": [\n    {\n      \"name\": \"matrix\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "sampleTestCase": "[[0,1],[1,1]]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "3194",
+  "questionFrontendId": "2942",
+  "title": "Find Words Containing Character",
+  "titleSlug": "find-words-containing-character",
+  "content": "<p>You are given a <strong>0-indexed</strong> array of strings <code>words</code> and a character <code>x</code>.</p>\n\n<p>Return <em>an <strong>array of indices</strong> representing the words that contain the character </em><code>x</code>.</p>\n\n<p><strong>Note</strong> that the returned array may be in <strong>any</strong> order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;leet&quot;,&quot;code&quot;], x = &quot;e&quot;\n<strong>Output:</strong> [0,1]\n<strong>Explanation:</strong> &quot;e&quot; occurs in both words: &quot;l<strong><u>ee</u></strong>t&quot;, and &quot;cod<u><strong>e</strong></u>&quot;. Hence, we return indices 0 and 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;a&quot;\n<strong>Output:</strong> [0,2]\n<strong>Explanation:</strong> &quot;a&quot; occurs in &quot;<strong><u>a</u></strong>bc&quot;, and &quot;<u><strong>aaaa</strong></u>&quot;. Hence, we return indices 0 and 2.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;z&quot;\n<strong>Output:</strong> []\n<strong>Explanation:</strong> &quot;z&quot; does not occur in any of the words. Hence, we return an empty array.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 50</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 50</code></li>\n\t<li><code>x</code> is a lowercase English letter.</li>\n\t<li><code>words[i]</code> consists only of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> findWordsContaining(vector<string>& words, char x) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> findWordsContaining(String[] words, char x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findWordsContaining(self, words: List[str], x: str) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findWordsContaining(self, words, x):\n        \"\"\"\n        :type words: List[str]\n        :type x: str\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @param {character} x\n * @return {number[]}\n */\nvar findWordsContaining = function(words, x) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findWordsContaining(words: string[], x: string): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> FindWordsContaining(string[] words, char x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findWordsContaining(char** words, int wordsSize, char x, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findWordsContaining(words []string, x byte) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findWordsContaining(words: Array<String>, x: Char): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findWordsContaining(_ words: [String], _ x: Character) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_words_containing(words: Vec<String>, x: char) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @param {Character} x\n# @return {Integer[]}\ndef find_words_containing(words, x)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $x\n     * @return Integer[]\n     */\n    function findWordsContaining($words, $x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> findWordsContaining(List<String> words, String x) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findWordsContaining(words: Array[String], x: Char): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_words_containing(words :: [String.t], x :: char) :: [integer]\n  def find_words_containing(words, x) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_words_containing(Words :: [unicode:unicode_binary()], X :: char()) -> [integer()].\nfind_words_containing(Words, X) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-words-containing words x)\n  (-> (listof string?) char? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"382.4K\", \"totalSubmission\": \"423K\", \"totalAcceptedRaw\": 382421, \"totalSubmissionRaw\": 422989, \"acRate\": \"90.4%\"}",
+  "metaData": "{\n  \"name\": \"findWordsContaining\",\n  \"params\": [\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"type\": \"character\",\n      \"name\": \"x\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "sampleTestCase": "[\"leet\",\"code\"]\n\"e\""
+}

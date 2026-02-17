@@ -1,0 +1,89 @@
+{
+  "questionId": "989",
+  "questionFrontendId": "952",
+  "title": "Largest Component Size by Common Factor",
+  "titleSlug": "largest-component-size-by-common-factor",
+  "content": "<p>You are given an integer array of unique positive integers <code>nums</code>. Consider the following graph:</p>\n\n<ul>\n\t<li>There are <code>nums.length</code> nodes, labeled <code>nums[0]</code> to <code>nums[nums.length - 1]</code>,</li>\n\t<li>There is an undirected edge between <code>nums[i]</code> and <code>nums[j]</code> if <code>nums[i]</code> and <code>nums[j]</code> share a common factor greater than <code>1</code>.</li>\n</ul>\n\n<p>Return <em>the size of the largest connected component in the graph</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/01/ex1.png\" style=\"width: 500px; height: 97px;\" />\n<pre>\n<strong>Input:</strong> nums = [4,6,15,35]\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/01/ex2.png\" style=\"width: 500px; height: 85px;\" />\n<pre>\n<strong>Input:</strong> nums = [20,50,9,63]\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/01/ex3.png\" style=\"width: 500px; height: 260px;\" />\n<pre>\n<strong>Input:</strong> nums = [2,3,6,7,4,12,21,39]\n<strong>Output:</strong> 8\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li>All the values of <code>nums</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int largestComponentSize(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int largestComponentSize(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestComponentSize(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestComponentSize(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar largestComponentSize = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function largestComponentSize(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LargestComponentSize(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int largestComponentSize(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestComponentSize(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestComponentSize(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestComponentSize(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_component_size(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef largest_component_size(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function largestComponentSize($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int largestComponentSize(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestComponentSize(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec largest_component_size(nums :: [integer]) :: integer\n  def largest_component_size(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec largest_component_size(Nums :: [integer()]) -> integer().\nlargest_component_size(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (largest-component-size nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"65.1K\", \"totalSubmission\": \"153.7K\", \"totalAcceptedRaw\": 65103, \"totalSubmissionRaw\": 153739, \"acRate\": \"42.3%\"}",
+  "metaData": "{\n  \"name\": \"largestComponentSize\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[4,6,15,35]"
+}

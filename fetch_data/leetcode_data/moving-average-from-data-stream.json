@@ -1,0 +1,89 @@
+{
+  "questionId": "346",
+  "questionFrontendId": "346",
+  "title": "Moving Average from Data Stream",
+  "titleSlug": "moving-average-from-data-stream",
+  "content": "<p>Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.</p>\n\n<p>Implement the&nbsp;<code>MovingAverage</code> class:</p>\n\n<ul>\n\t<li><code>MovingAverage(int size)</code> Initializes&nbsp;the object with the size of the window <code>size</code>.</li>\n\t<li><code>double next(int val)</code> Returns the moving average of the last <code>size</code> values of the stream.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MovingAverage&quot;, &quot;next&quot;, &quot;next&quot;, &quot;next&quot;, &quot;next&quot;]\n[[3], [1], [10], [3], [5]]\n<strong>Output</strong>\n[null, 1.0, 5.5, 4.66667, 6.0]\n\n<strong>Explanation</strong>\nMovingAverage movingAverage = new MovingAverage(3);\nmovingAverage.next(1); // return 1.0 = 1 / 1\nmovingAverage.next(10); // return 5.5 = (1 + 10) / 2\nmovingAverage.next(3); // return 4.66667 = (1 + 10 + 3) / 3\nmovingAverage.next(5); // return 6.0 = (10 + 3 + 5) / 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= size &lt;= 1000</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= val &lt;= 10<sup>5</sup></code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>next</code>.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MovingAverage {\npublic:\n    MovingAverage(int size) {\n        \n    }\n    \n    double next(int val) {\n        \n    }\n};\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * MovingAverage* obj = new MovingAverage(size);\n * double param_1 = obj->next(val);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MovingAverage {\n\n    public MovingAverage(int size) {\n        \n    }\n    \n    public double next(int val) {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * MovingAverage obj = new MovingAverage(size);\n * double param_1 = obj.next(val);\n */"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MovingAverage:\n\n    def __init__(self, size: int):\n        \n\n    def next(self, val: int) -> float:\n        \n\n\n# Your MovingAverage object will be instantiated and called as such:\n# obj = MovingAverage(size)\n# param_1 = obj.next(val)"
+    },
+    {
+      "lang": "Python",
+      "code": "class MovingAverage(object):\n\n    def __init__(self, size):\n        \"\"\"\n        :type size: int\n        \"\"\"\n        \n\n    def next(self, val):\n        \"\"\"\n        :type val: int\n        :rtype: float\n        \"\"\"\n        \n\n\n# Your MovingAverage object will be instantiated and called as such:\n# obj = MovingAverage(size)\n# param_1 = obj.next(val)"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} size\n */\nvar MovingAverage = function(size) {\n    \n};\n\n/** \n * @param {number} val\n * @return {number}\n */\nMovingAverage.prototype.next = function(val) {\n    \n};\n\n/** \n * Your MovingAverage object will be instantiated and called as such:\n * var obj = new MovingAverage(size)\n * var param_1 = obj.next(val)\n */"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "class MovingAverage {\n    constructor(size: number) {\n        \n    }\n\n    next(val: number): number {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * var obj = new MovingAverage(size)\n * var param_1 = obj.next(val)\n */"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MovingAverage {\n\n    public MovingAverage(int size) {\n        \n    }\n    \n    public double Next(int val) {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * MovingAverage obj = new MovingAverage(size);\n * double param_1 = obj.Next(val);\n */"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MovingAverage;\n\n\nMovingAverage* movingAverageCreate(int size) {\n    \n}\n\ndouble movingAverageNext(MovingAverage* obj, int val) {\n    \n}\n\nvoid movingAverageFree(MovingAverage* obj) {\n    \n}\n\n/**\n * Your MovingAverage struct will be instantiated and called as such:\n * MovingAverage* obj = movingAverageCreate(size);\n * double param_1 = movingAverageNext(obj, val);\n \n * movingAverageFree(obj);\n*/"
+    },
+    {
+      "lang": "Go",
+      "code": "type MovingAverage struct {\n    \n}\n\n\nfunc Constructor(size int) MovingAverage {\n    \n}\n\n\nfunc (this *MovingAverage) Next(val int) float64 {\n    \n}\n\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * obj := Constructor(size);\n * param_1 := obj.Next(val);\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MovingAverage(size: Int) {\n\n    fun next(`val`: Int): Double {\n        \n    }\n\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * var obj = MovingAverage(size)\n * var param_1 = obj.next(`val`)\n */"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass MovingAverage {\n\n    init(_ size: Int) {\n        \n    }\n    \n    func next(_ val: Int) -> Double {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * let obj = MovingAverage(size)\n * let ret_1: Double = obj.next(val)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MovingAverage {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MovingAverage {\n\n    fn new(size: i32) -> Self {\n        \n    }\n    \n    fn next(&self, val: i32) -> f64 {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * let obj = MovingAverage::new(size);\n * let ret_1: f64 = obj.next(val);\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MovingAverage\n\n=begin\n    :type size: Integer\n=end\n    def initialize(size)\n        \n    end\n\n\n=begin\n    :type val: Integer\n    :rtype: Float\n=end\n    def next(val)\n        \n    end\n\n\nend\n\n# Your MovingAverage object will be instantiated and called as such:\n# obj = MovingAverage.new(size)\n# param_1 = obj.next(val)"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MovingAverage {\n    /**\n     * @param Integer $size\n     */\n    function __construct($size) {\n        \n    }\n  \n    /**\n     * @param Integer $val\n     * @return Float\n     */\n    function next($val) {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * $obj = MovingAverage($size);\n * $ret_1 = $obj->next($val);\n */"
+    },
+    {
+      "lang": "Dart",
+      "code": "class MovingAverage {\n\n  MovingAverage(int size) {\n    \n  }\n  \n  double next(int val) {\n    \n  }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * MovingAverage obj = MovingAverage(size);\n * double param1 = obj.next(val);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MovingAverage(_size: Int) {\n\n    def next(`val`: Int): Double = {\n        \n    }\n\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * val obj = new MovingAverage(size)\n * val param_1 = obj.next(`val`)\n */"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule MovingAverage do\n  @spec init_(size :: integer) :: any\n  def init_(size) do\n    \n  end\n\n  @spec next(val :: integer) :: float\n  def next(val) do\n    \n  end\nend\n\n# Your functions will be called as such:\n# MovingAverage.init_(size)\n# param_1 = MovingAverage.next(val)\n\n# MovingAverage.init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec moving_average_init_(Size :: integer()) -> any().\nmoving_average_init_(Size) ->\n  .\n\n-spec moving_average_next(Val :: integer()) -> float().\nmoving_average_next(Val) ->\n  .\n\n\n%% Your functions will be called as such:\n%% moving_average_init_(Size),\n%% Param_1 = moving_average_next(Val),\n\n%% moving_average_init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define moving-average%\n  (class object%\n    (super-new)\n    \n    ; size : exact-integer?\n    (init-field\n      size)\n    \n    ; next : exact-integer? -> flonum?\n    (define/public (next val)\n      )))\n\n;; Your moving-average% object will be instantiated and called as such:\n;; (define obj (new moving-average% [size size]))\n;; (define param_1 (send obj next val))"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"525.6K\", \"totalSubmission\": \"655.5K\", \"totalAcceptedRaw\": 525605, \"totalSubmissionRaw\": 655504, \"acRate\": \"80.2%\"}",
+  "metaData": "{\n  \"classname\": \"MovingAverage\",\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"integer\",\n        \"name\": \"size\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"val\"\n        }\n      ],\n      \"name\": \"next\",\n      \"return\": {\n        \"type\": \"double\"\n      }\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"systemdesign\": true\n}",
+  "sampleTestCase": "[\"MovingAverage\",\"next\",\"next\",\"next\",\"next\"]\n[[3],[1],[10],[3],[5]]"
+}

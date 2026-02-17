@@ -1,0 +1,89 @@
+{
+  "questionId": "1141",
+  "questionFrontendId": "1196",
+  "title": "How Many Apples Can You Put into the Basket",
+  "titleSlug": "how-many-apples-can-you-put-into-the-basket",
+  "content": "<p>You have some apples and a basket that can carry up to <code>5000</code> units of weight.</p>\n\n<p>Given an integer array <code>weight</code> where <code>weight[i]</code> is the weight of the <code>i<sup>th</sup></code> apple, return <em>the maximum number of apples you can put in the basket</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> weight = [100,200,150,1000]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> All 4 apples can be carried by the basket since their sum of weights is 1450.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> weight = [900,950,800,1000,700,800]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> The sum of weights of the 6 apples exceeds 5000 so we choose any 5 of them.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= weight.length &lt;= 10<sup>3</sup></code></li>\n\t<li><code>1 &lt;= weight[i] &lt;= 10<sup>3</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxNumberOfApples(vector<int>& weight) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxNumberOfApples(int[] weight) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxNumberOfApples(self, weight: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxNumberOfApples(self, weight):\n        \"\"\"\n        :type weight: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} weight\n * @return {number}\n */\nvar maxNumberOfApples = function(weight) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxNumberOfApples(weight: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxNumberOfApples(int[] weight) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxNumberOfApples(int* weight, int weightSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxNumberOfApples(weight []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxNumberOfApples(weight: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxNumberOfApples(_ weight: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_number_of_apples(weight: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} weight\n# @return {Integer}\ndef max_number_of_apples(weight)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $weight\n     * @return Integer\n     */\n    function maxNumberOfApples($weight) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxNumberOfApples(List<int> weight) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxNumberOfApples(weight: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_number_of_apples(weight :: [integer]) :: integer\n  def max_number_of_apples(weight) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_number_of_apples(Weight :: [integer()]) -> integer().\nmax_number_of_apples(Weight) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-number-of-apples weight)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"50.8K\", \"totalSubmission\": \"75.7K\", \"totalAcceptedRaw\": 50751, \"totalSubmissionRaw\": 75703, \"acRate\": \"67.0%\"}",
+  "metaData": "{\n  \"name\": \"maxNumberOfApples\",\n  \"params\": [\n    {\n      \"name\": \"weight\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[100,200,150,1000]"
+}

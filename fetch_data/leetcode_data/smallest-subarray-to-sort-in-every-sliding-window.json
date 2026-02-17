@@ -1,0 +1,89 @@
+{
+  "questionId": "3890",
+  "questionFrontendId": "3555",
+  "title": "Smallest Subarray to Sort in Every Sliding Window",
+  "titleSlug": "smallest-subarray-to-sort-in-every-sliding-window",
+  "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>For each contiguous <span data-keyword=\"subarray\">subarray</span> of length <code>k</code>, determine the <strong>minimum</strong> length of a continuous segment that must be sorted so that the entire window becomes <strong>non‑decreasing</strong>; if the window is already sorted, its required length is zero.</p>\n\n<p>Return an array of length <code>n &minus; k + 1</code> where each element corresponds to the answer for its window.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,3,2,4,5], k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[2,2,0]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><code>nums[0...2] = [1, 3, 2]</code>. Sort <code>[3, 2]</code> to get <code>[1, 2, 3]</code>, the answer is 2.</li>\n\t<li><code>nums[1...3] = [3, 2, 4]</code>. Sort <code>[3, 2]</code> to get <code>[2, 3, 4]</code>, the answer is 2.</li>\n\t<li><code>nums[2...4] = [2, 4, 5]</code> is already sorted, so the answer is 0.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,4,3,2,1], k = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[4,4]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><code>nums[0...3] = [5, 4, 3, 2]</code>. The whole subarray must be sorted, so the answer is 4.</li>\n\t<li><code>nums[1...4] = [4, 3, 2, 1]</code>. The whole subarray must be sorted, so the answer is 4.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= k &lt;= nums.length</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> minSubarraySort(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] minSubarraySort(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minSubarraySort(self, nums: List[int], k: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minSubarraySort(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar minSubarraySort = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minSubarraySort(nums: number[], k: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] MinSubarraySort(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* minSubarraySort(int* nums, int numsSize, int k, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minSubarraySort(nums []int, k int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minSubarraySort(nums: IntArray, k: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minSubarraySort(_ nums: [Int], _ k: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_subarray_sort(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer[]}\ndef min_subarray_sort(nums, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function minSubarraySort($nums, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> minSubarraySort(List<int> nums, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minSubarraySort(nums: Array[Int], k: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_subarray_sort(nums :: [integer], k :: integer) :: [integer]\n  def min_subarray_sort(nums, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_subarray_sort(Nums :: [integer()], K :: integer()) -> [integer()].\nmin_subarray_sort(Nums, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-subarray-sort nums k)\n  (-> (listof exact-integer?) exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"695\", \"totalSubmission\": \"1.2K\", \"totalAcceptedRaw\": 695, \"totalSubmissionRaw\": 1172, \"acRate\": \"59.3%\"}",
+  "metaData": "{\n  \"name\": \"minSubarraySort\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[1,3,2,4,5]\n3"
+}

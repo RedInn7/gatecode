@@ -1,0 +1,33 @@
+{
+  "questionId": "578",
+  "questionFrontendId": "578",
+  "title": "Get Highest Answer Rate Question",
+  "titleSlug": "get-highest-answer-rate-question",
+  "content": "<p>Table: <code>SurveyLog</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| id          | int  |\n| action      | ENUM |\n| question_id | int  |\n| answer_id   | int  |\n| q_num       | int  |\n| timestamp   | int  |\n+-------------+------+\nThis table may contain duplicate rows.\naction is an ENUM (category) of the type: &quot;show&quot;, &quot;answer&quot;, or &quot;skip&quot;.\nEach row of this table indicates the user with ID = id has taken an action with the question question_id at time timestamp.\nIf the action taken by the user is &quot;answer&quot;, answer_id will contain the id of that answer, otherwise, it will be null.\nq_num is the numeral order of the question in the current session.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>The <strong>answer rate</strong> for a question is the number of times a user answered the question by the number of times a user showed the question.</p>\n\n<p>Write a solution to report the question that has the highest <strong>answer rate</strong>. If multiple questions have the same maximum <strong>answer rate</strong>, report the question with the smallest <code>question_id</code>.</p>\n\n<p>The&nbsp;result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nSurveyLog table:\n+----+--------+-------------+-----------+-------+-----------+\n| id | action | question_id | answer_id | q_num | timestamp |\n+----+--------+-------------+-----------+-------+-----------+\n| 5  | show   | 285         | null      | 1     | 123       |\n| 5  | answer | 285         | 124124    | 1     | 124       |\n| 5  | show   | 369         | null      | 2     | 125       |\n| 5  | skip   | 369         | null      | 2     | 126       |\n+----+--------+-------------+-----------+-------+-----------+\n<strong>Output:</strong> \n+------------+\n| survey_log |\n+------------+\n| 285        |\n+------------+\n<strong>Explanation:</strong> \nQuestion 285 was showed 1 time and answered 1 time. The answer rate of question 285 is 1.0\nQuestion 369 was showed 1 time and was not answered. The answer rate of question 369 is 0.0\nQuestion 285 has the highest answer rate.</pre>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef get_the_question(survey_log: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"68.3K\", \"totalSubmission\": \"170.5K\", \"totalAcceptedRaw\": 68283, \"totalSubmissionRaw\": 170519, \"acRate\": \"40.0%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists SurveyLog (id int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)\"], \"mssql\": [\"Create table SurveyLog (id int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)\"], \"oraclesql\": [\"Create table SurveyLog (id int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)\"], \"database\": true, \"name\": \"get_the_question\", \"pythondata\": [\"SurveyLog = pd.DataFrame([], columns=['id', 'action', 'question_id', 'answer_id', 'q_num', 'timestamp']).astype({'id':'Int64', 'action':'object', 'question_id':'Int64', 'answer_id':'Int64', 'q_num':'Int64', 'timestamp':'Int64'})\"], \"postgresql\": [\"\\nCreate table If Not Exists SurveyLog (id int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)\"], \"database_schema\": {\"SurveyLog\": {\"id\": \"INT\", \"action\": \"VARCHAR(255)\", \"question_id\": \"INT\", \"answer_id\": \"INT\", \"q_num\": \"INT\", \"timestamp\": \"INT\"}}}",
+  "sampleTestCase": "{\"headers\": {\"SurveyLog\": [\"id\", \"action\", \"question_id\", \"answer_id\", \"q_num\", \"timestamp\"]},\"rows\": {\"SurveyLog\": [[5, \"show\", 285, null, 1, 123], [5, \"answer\", 285, 124124, 1, 124], [5, \"show\", 369, null, 2, 125], [5, \"skip\", 369, null, 2, 126]]}}"
+}

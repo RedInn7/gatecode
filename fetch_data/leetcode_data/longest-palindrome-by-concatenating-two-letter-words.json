@@ -1,0 +1,89 @@
+{
+  "questionId": "2237",
+  "questionFrontendId": "2131",
+  "title": "Longest Palindrome by Concatenating Two Letter Words",
+  "titleSlug": "longest-palindrome-by-concatenating-two-letter-words",
+  "content": "<p>You are given an array of strings <code>words</code>. Each element of <code>words</code> consists of <strong>two</strong> lowercase English letters.</p>\n\n<p>Create the <strong>longest possible palindrome</strong> by selecting some elements from <code>words</code> and concatenating them in <strong>any order</strong>. Each element can be selected <strong>at most once</strong>.</p>\n\n<p>Return <em>the <strong>length</strong> of the longest palindrome that you can create</em>. If it is impossible to create any palindrome, return <code>0</code>.</p>\n\n<p>A <strong>palindrome</strong> is a string that reads the same forward and backward.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;lc&quot;,&quot;cl&quot;,&quot;gg&quot;]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> One longest palindrome is &quot;lc&quot; + &quot;gg&quot; + &quot;cl&quot; = &quot;lcggcl&quot;, of length 6.\nNote that &quot;clgglc&quot; is another longest palindrome that can be created.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;ab&quot;,&quot;ty&quot;,&quot;yt&quot;,&quot;lc&quot;,&quot;cl&quot;,&quot;ab&quot;]\n<strong>Output:</strong> 8\n<strong>Explanation:</strong> One longest palindrome is &quot;ty&quot; + &quot;lc&quot; + &quot;cl&quot; + &quot;yt&quot; = &quot;tylcclyt&quot;, of length 8.\nNote that &quot;lcyttycl&quot; is another longest palindrome that can be created.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;cc&quot;,&quot;ll&quot;,&quot;xx&quot;]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> One longest palindrome is &quot;cc&quot;, of length 2.\nNote that &quot;ll&quot; is another longest palindrome that can be created, and so is &quot;xx&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>words[i].length == 2</code></li>\n\t<li><code>words[i]</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestPalindrome(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestPalindrome(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestPalindrome(self, words: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestPalindrome(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar longestPalindrome = function(words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function longestPalindrome(words: string[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestPalindrome(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int longestPalindrome(char** words, int wordsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestPalindrome(words []string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestPalindrome(words: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestPalindrome(_ words: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_palindrome(words: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {Integer}\ndef longest_palindrome(words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Integer\n     */\n    function longestPalindrome($words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int longestPalindrome(List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestPalindrome(words: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec longest_palindrome(words :: [String.t]) :: integer\n  def longest_palindrome(words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec longest_palindrome(Words :: [unicode:unicode_binary()]) -> integer().\nlongest_palindrome(Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (longest-palindrome words)\n  (-> (listof string?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"242K\", \"totalSubmission\": \"452K\", \"totalAcceptedRaw\": 242022, \"totalSubmissionRaw\": 451977, \"acRate\": \"53.5%\"}",
+  "metaData": "{\n  \"name\": \"longestPalindrome\",\n  \"params\": [\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[\"lc\",\"cl\",\"gg\"]"
+}

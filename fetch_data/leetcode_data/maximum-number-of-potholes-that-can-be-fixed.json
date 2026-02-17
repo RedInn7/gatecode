@@ -1,0 +1,89 @@
+{
+  "questionId": "3425",
+  "questionFrontendId": "3119",
+  "title": "Maximum Number of Potholes That Can Be Fixed",
+  "titleSlug": "maximum-number-of-potholes-that-can-be-fixed",
+  "content": "<p>You are given a string <code>road</code>, consisting only of characters <code>&quot;x&quot;</code> and <code>&quot;.&quot;</code>, where each <code>&quot;x&quot;</code> denotes a <em>pothole</em> and each <code>&quot;.&quot;</code> denotes a smooth road, and an integer <code>budget</code>.</p>\n\n<p>In one repair operation, you can repair <code>n</code> <strong>consecutive</strong> potholes for a price of <code>n + 1</code>.</p>\n\n<p>Return the <strong>maximum</strong> number of potholes that can be fixed such that the sum of the prices of all of the fixes <strong>doesn&#39;t go over</strong> the given budget.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">road = &quot;..&quot;, budget = 5</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are no potholes to be fixed.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">road = &quot;..xxxxx&quot;, budget = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We fix the first three potholes (they are consecutive). The budget needed for this task is <code>3 + 1 = 4</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">road = &quot;x.x.xxx...x&quot;, budget = 14</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We can fix all the potholes. The total cost would be <code>(1 + 1) + (1 + 1) + (3 + 1) + (1 + 1) = 10</code> which is within our budget of 14.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= road.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= budget &lt;= 10<sup>5</sup> + 1</code></li>\n\t<li><code>road</code> consists only of characters <code>&#39;.&#39;</code> and <code>&#39;x&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxPotholes(string road, int budget) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxPotholes(String road, int budget) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxPotholes(self, road: str, budget: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxPotholes(self, road, budget):\n        \"\"\"\n        :type road: str\n        :type budget: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} road\n * @param {number} budget\n * @return {number}\n */\nvar maxPotholes = function(road, budget) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxPotholes(road: string, budget: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxPotholes(string road, int budget) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxPotholes(char* road, int budget) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxPotholes(road string, budget int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxPotholes(road: String, budget: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxPotholes(_ road: String, _ budget: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_potholes(road: String, budget: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} road\n# @param {Integer} budget\n# @return {Integer}\ndef max_potholes(road, budget)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $road\n     * @param Integer $budget\n     * @return Integer\n     */\n    function maxPotholes($road, $budget) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxPotholes(String road, int budget) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxPotholes(road: String, budget: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_potholes(road :: String.t, budget :: integer) :: integer\n  def max_potholes(road, budget) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_potholes(Road :: unicode:unicode_binary(), Budget :: integer()) -> integer().\nmax_potholes(Road, Budget) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-potholes road budget)\n  (-> string? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.9K\", \"totalSubmission\": \"7.3K\", \"totalAcceptedRaw\": 3910, \"totalSubmissionRaw\": 7337, \"acRate\": \"53.3%\"}",
+  "metaData": "{\n  \"name\": \"maxPotholes\",\n  \"params\": [\n    {\n      \"name\": \"road\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"budget\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"..\"\n5"
+}

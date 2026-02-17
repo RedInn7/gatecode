@@ -1,0 +1,89 @@
+{
+  "questionId": "2490",
+  "questionFrontendId": "2355",
+  "title": "Maximum Number of Books You Can Take",
+  "titleSlug": "maximum-number-of-books-you-can-take",
+  "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>books</code> of length <code>n</code> where <code>books[i]</code> denotes the number of books on the <code>i<sup>th</sup></code> shelf of a bookshelf.</p>\n\n<p>You are going to take books from a <strong>contiguous</strong> section of the bookshelf spanning from <code>l</code> to <code>r</code> where <code>0 &lt;= l &lt;= r &lt; n</code>. For each index <code>i</code> in the range <code>l &lt;= i &lt; r</code>, you must take <strong>strictly fewer</strong> books from shelf <code>i</code> than shelf <code>i + 1</code>.</p>\n\n<p>Return <em>the <strong>maximum</strong> number of books you can take from the bookshelf.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> books = [8,5,2,7,9]\n<strong>Output:</strong> 19\n<strong>Explanation:</strong>\n- Take 1 book from shelf 1.\n- Take 2 books from shelf 2.\n- Take 7 books from shelf 3.\n- Take 9 books from shelf 4.\nYou have taken 19 books, so return 19.\nIt can be proven that 19 is the maximum number of books you can take.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> books = [7,0,3,4,5]\n<strong>Output:</strong> 12\n<strong>Explanation:</strong>\n- Take 3 books from shelf 2.\n- Take 4 books from shelf 3.\n- Take 5 books from shelf 4.\nYou have taken 12 books so return 12.\nIt can be proven that 12 is the maximum number of books you can take.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> books = [8,2,3,7,3,4,0,1,4,3]\n<strong>Output:</strong> 13\n<strong>Explanation:</strong>\n- Take 1 book from shelf 0.\n- Take 2 books from shelf 1.\n- Take 3 books from shelf 2.\n- Take 7 books from shelf 3.\nYou have taken 13 books so return 13.\nIt can be proven that 13 is the maximum number of books you can take.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= books.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= books[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long maximumBooks(vector<int>& books) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long maximumBooks(int[] books) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximumBooks(self, books: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximumBooks(self, books):\n        \"\"\"\n        :type books: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} books\n * @return {number}\n */\nvar maximumBooks = function(books) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maximumBooks(books: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MaximumBooks(int[] books) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long maximumBooks(int* books, int booksSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximumBooks(books []int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximumBooks(books: IntArray): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximumBooks(_ books: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximum_books(books: Vec<i32>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} books\n# @return {Integer}\ndef maximum_books(books)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $books\n     * @return Integer\n     */\n    function maximumBooks($books) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maximumBooks(List<int> books) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximumBooks(books: Array[Int]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec maximum_books(books :: [integer]) :: integer\n  def maximum_books(books) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec maximum_books(Books :: [integer()]) -> integer().\nmaximum_books(Books) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (maximum-books books)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.4K\", \"totalSubmission\": \"33.9K\", \"totalAcceptedRaw\": 13367, \"totalSubmissionRaw\": 33883, \"acRate\": \"39.5%\"}",
+  "metaData": "{\n  \"name\": \"maximumBooks\",\n  \"params\": [\n    {\n      \"name\": \"books\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[8,5,2,7,9]"
+}

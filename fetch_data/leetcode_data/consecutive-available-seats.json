@@ -1,0 +1,33 @@
+{
+  "questionId": "603",
+  "questionFrontendId": "603",
+  "title": "Consecutive Available Seats",
+  "titleSlug": "consecutive-available-seats",
+  "content": "<p>Table: <code>Cinema</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| seat_id     | int  |\n| free        | bool |\n+-------------+------+\nseat_id is an auto-increment column for this table.\nEach row of this table indicates whether the i<sup>th</sup> seat is free or not. 1 means free while 0 means occupied.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Find all the consecutive available seats in the cinema.</p>\n\n<p>Return the result table <strong>ordered</strong> by <code>seat_id</code> <strong>in ascending order</strong>.</p>\n\n<p>The test cases are generated so that more than two seats are consecutively available.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCinema table:\n+---------+------+\n| seat_id | free |\n+---------+------+\n| 1       | 1    |\n| 2       | 0    |\n| 3       | 1    |\n| 4       | 1    |\n| 5       | 1    |\n+---------+------+\n<strong>Output:</strong> \n+---------+\n| seat_id |\n+---------+\n| 3       |\n| 4       |\n| 5       |\n+---------+\n</pre>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef consecutive_available_seats(cinema: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"102K\", \"totalSubmission\": \"156.8K\", \"totalAcceptedRaw\": 101980, \"totalSubmissionRaw\": 156771, \"acRate\": \"65.1%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Cinema (seat_id int primary key auto_increment, free bool)\"], \"mssql\": [\"Create table Cinema (seat_id int primary key, free BIT)\"], \"oraclesql\": [\"Create table Cinema (seat_id int primary key, free NUMBER(1))\"], \"database\": true, \"name\": \"consecutive_available_seats\", \"pythondata\": [\"Cinema = pd.DataFrame([], columns=['seat_id', 'free']).astype({'seat_id':'Int64', 'free':'int'})\"], \"postgresql\": [\"Create table If Not Exists Cinema (seat_id int, free int)\\n\"], \"manual\": false, \"database_schema\": {\"Cinema\": {\"seat_id\": \"INT\", \"free\": \"BOOLEAN\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Cinema\":[\"seat_id\",\"free\"]},\"rows\":{\"Cinema\":[[1,1],[2,0],[3,1],[4,1],[5,1]]}}"
+}

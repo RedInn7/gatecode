@@ -1,0 +1,89 @@
+{
+  "questionId": "2665",
+  "questionFrontendId": "2594",
+  "title": "Minimum Time to Repair Cars",
+  "titleSlug": "minimum-time-to-repair-cars",
+  "content": "<p>You are given an integer array <code>ranks</code> representing the <strong>ranks</strong> of some mechanics. <font face=\"monospace\">ranks<sub>i</sub></font> is the rank of the <font face=\"monospace\">i<sup>th</sup></font> mechanic<font face=\"monospace\">.</font> A mechanic with a rank <code>r</code> can repair <font face=\"monospace\">n</font> cars in <code>r * n<sup>2</sup></code> minutes.</p>\n\n<p>You are also given an integer <code>cars</code> representing the total number of cars waiting in the garage to be repaired.</p>\n\n<p>Return <em>the <strong>minimum</strong> time taken to repair all the cars.</em></p>\n\n<p><strong>Note:</strong> All the mechanics can repair the cars simultaneously.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> ranks = [4,2,3,1], cars = 10\n<strong>Output:</strong> 16\n<strong>Explanation:</strong> \n- The first mechanic will repair two cars. The time required is 4 * 2 * 2 = 16 minutes.\n- The second mechanic will repair two cars. The time required is 2 * 2 * 2 = 8 minutes.\n- The third mechanic will repair two cars. The time required is 3 * 2 * 2 = 12 minutes.\n- The fourth mechanic will repair four cars. The time required is 1 * 4 * 4 = 16 minutes.\nIt can be proved that the cars cannot be repaired in less than 16 minutes.​​​​​\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> ranks = [5,1,8], cars = 6\n<strong>Output:</strong> 16\n<strong>Explanation:</strong> \n- The first mechanic will repair one car. The time required is 5 * 1 * 1 = 5 minutes.\n- The second mechanic will repair four cars. The time required is 1 * 4 * 4 = 16 minutes.\n- The third mechanic will repair one car. The time required is 8 * 1 * 1 = 8 minutes.\nIt can be proved that the cars cannot be repaired in less than 16 minutes.​​​​​\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= ranks.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= ranks[i] &lt;= 100</code></li>\n\t<li><code>1 &lt;= cars &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long repairCars(vector<int>& ranks, int cars) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long repairCars(int[] ranks, int cars) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def repairCars(self, ranks: List[int], cars: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def repairCars(self, ranks, cars):\n        \"\"\"\n        :type ranks: List[int]\n        :type cars: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} ranks\n * @param {number} cars\n * @return {number}\n */\nvar repairCars = function(ranks, cars) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function repairCars(ranks: number[], cars: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long RepairCars(int[] ranks, int cars) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long repairCars(int* ranks, int ranksSize, int cars) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func repairCars(ranks []int, cars int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun repairCars(ranks: IntArray, cars: Int): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func repairCars(_ ranks: [Int], _ cars: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn repair_cars(ranks: Vec<i32>, cars: i32) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} ranks\n# @param {Integer} cars\n# @return {Integer}\ndef repair_cars(ranks, cars)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $ranks\n     * @param Integer $cars\n     * @return Integer\n     */\n    function repairCars($ranks, $cars) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int repairCars(List<int> ranks, int cars) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def repairCars(ranks: Array[Int], cars: Int): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec repair_cars(ranks :: [integer], cars :: integer) :: integer\n  def repair_cars(ranks, cars) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec repair_cars(Ranks :: [integer()], Cars :: integer()) -> integer().\nrepair_cars(Ranks, Cars) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (repair-cars ranks cars)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"153.4K\", \"totalSubmission\": \"257.2K\", \"totalAcceptedRaw\": 153415, \"totalSubmissionRaw\": 257204, \"acRate\": \"59.6%\"}",
+  "metaData": "{\n  \"name\": \"repairCars\",\n  \"params\": [\n    {\n      \"name\": \"ranks\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"cars\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[4,2,3,1]\n10"
+}

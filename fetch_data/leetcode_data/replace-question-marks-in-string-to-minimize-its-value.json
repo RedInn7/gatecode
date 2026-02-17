@@ -1,0 +1,89 @@
+{
+  "questionId": "3354",
+  "questionFrontendId": "3081",
+  "title": "Replace Question Marks in String to Minimize Its Value",
+  "titleSlug": "replace-question-marks-in-string-to-minimize-its-value",
+  "content": "<p>You are given a string <code>s</code>. <code>s[i]</code> is either a lowercase English letter or <code>&#39;?&#39;</code>.</p>\n\n<p>For a string <code>t</code> having length <code>m</code> containing <strong>only</strong> lowercase English letters, we define the function <code>cost(i)</code> for an index <code>i</code>&nbsp;as the number of characters <strong>equal</strong> to <code>t[i]</code>&nbsp;that appeared before it, i.e. in the range <code>[0, i - 1]</code>.</p>\n\n<p>The <strong>value</strong> of <code>t</code> is the <strong>sum</strong> of <code>cost(i)</code> for all indices <code>i</code>.</p>\n\n<p>For example, for the string <code>t = &quot;aab&quot;</code>:</p>\n\n<ul>\n\t<li><code>cost(0) = 0</code></li>\n\t<li><code>cost(1) = 1</code></li>\n\t<li><code>cost(2) = 0</code></li>\n\t<li>Hence, the value of <code>&quot;aab&quot;</code> is <code>0 + 1 + 0 = 1</code>.</li>\n</ul>\n\n<p>Your task is to <strong>replace all</strong> occurrences of <code>&#39;?&#39;</code> in <code>s</code> with any lowercase English letter so that the <strong>value</strong> of <code>s</code> is <strong>minimized</strong>.</p>\n\n<p>Return <em>a string denoting the modified string with replaced occurrences of </em><code>&#39;?&#39;</code><em>. If there are multiple strings resulting in the <strong>minimum value</strong>, return the <span data-keyword=\"lexicographically-smaller-string\">lexicographically smallest</span> one.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\" style=\"border-color: var(--border-tertiary); border-left-width: 2px; color: var(--text-secondary); font-size: .875rem; margin-bottom: 1rem; margin-top: 1rem; overflow: visible; padding-left: 1rem;\">\n<p><strong>Input: </strong> <span class=\"example-io\" style=\"font-family: Menlo,sans-serif; font-size: 0.85rem;\"> s = &quot;???&quot; </span></p>\n\n<p><strong>Output: </strong> <span class=\"example-io\" style=\"font-family: Menlo,sans-serif; font-size: 0.85rem;\"> &quot;abc&quot; </span></p>\n\n<p><strong>Explanation: </strong> In this example, we can replace the occurrences of <code>&#39;?&#39;</code> to make <code>s</code> equal to <code>&quot;abc&quot;</code>.</p>\n\n<p>For <code>&quot;abc&quot;</code>, <code>cost(0) = 0</code>, <code>cost(1) = 0</code>, and <code>cost(2) = 0</code>.</p>\n\n<p>The value of <code>&quot;abc&quot;</code> is <code>0</code>.</p>\n\n<p>Some other modifications of <code>s</code> that have a value of <code>0</code> are <code>&quot;cba&quot;</code>, <code>&quot;abz&quot;</code>, and, <code>&quot;hey&quot;</code>.</p>\n\n<p>Among all of them, we choose the lexicographically smallest.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\" style=\"border-color: var(--border-tertiary); border-left-width: 2px; color: var(--text-secondary); font-size: .875rem; margin-bottom: 1rem; margin-top: 1rem; overflow: visible; padding-left: 1rem;\">\n<p><strong>Input: </strong> <span class=\"example-io\" style=\"font-family: Menlo,sans-serif; font-size: 0.85rem;\">s = &quot;a?a?&quot;</span></p>\n\n<p><strong>Output: </strong> <span class=\"example-io\" style=\"font-family: Menlo,sans-serif; font-size: 0.85rem;\">&quot;abac&quot;</span></p>\n\n<p><strong>Explanation: </strong> In this example, the occurrences of <code>&#39;?&#39;</code> can be replaced to make <code>s</code> equal to <code>&quot;abac&quot;</code>.</p>\n\n<p>For <code>&quot;abac&quot;</code>, <code>cost(0) = 0</code>, <code>cost(1) = 0</code>, <code>cost(2) = 1</code>, and <code>cost(3) = 0</code>.</p>\n\n<p>The value of <code>&quot;abac&quot;</code> is&nbsp;<code>1</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s[i]</code> is either a lowercase English letter or <code>&#39;?&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string minimizeStringValue(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String minimizeStringValue(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimizeStringValue(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimizeStringValue(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar minimizeStringValue = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minimizeStringValue(s: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string MinimizeStringValue(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* minimizeStringValue(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimizeStringValue(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minimizeStringValue(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minimizeStringValue(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimize_string_value(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef minimize_string_value(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function minimizeStringValue($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String minimizeStringValue(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minimizeStringValue(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec minimize_string_value(s :: String.t) :: String.t\n  def minimize_string_value(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec minimize_string_value(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nminimize_string_value(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (minimize-string-value s)\n  (-> string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.5K\", \"totalSubmission\": \"60.6K\", \"totalAcceptedRaw\": 17534, \"totalSubmissionRaw\": 60595, \"acRate\": \"28.9%\"}",
+  "metaData": "{\n  \"name\": \"minimizeStringValue\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"???\""
+}

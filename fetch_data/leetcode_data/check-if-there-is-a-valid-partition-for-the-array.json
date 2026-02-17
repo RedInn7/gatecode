@@ -1,0 +1,89 @@
+{
+  "questionId": "2443",
+  "questionFrontendId": "2369",
+  "title": "Check if There is a Valid Partition For The Array",
+  "titleSlug": "check-if-there-is-a-valid-partition-for-the-array",
+  "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>. You have to partition the array into one or more <strong>contiguous</strong> subarrays.</p>\n\n<p>We call a partition of the array <strong>valid</strong> if each of the obtained subarrays satisfies <strong>one</strong> of the following conditions:</p>\n\n<ol>\n\t<li>The subarray consists of <strong>exactly</strong> <code>2,</code> equal elements. For example, the subarray <code>[2,2]</code> is good.</li>\n\t<li>The subarray consists of <strong>exactly</strong> <code>3,</code> equal elements. For example, the subarray <code>[4,4,4]</code> is good.</li>\n\t<li>The subarray consists of <strong>exactly</strong> <code>3</code> consecutive increasing elements, that is, the difference between adjacent elements is <code>1</code>. For example, the subarray <code>[3,4,5]</code> is good, but the subarray <code>[1,3,5]</code> is not.</li>\n</ol>\n\n<p>Return <code>true</code><em> if the array has <strong>at least</strong> one valid partition</em>. Otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [4,4,4,5,6]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> The array can be partitioned into the subarrays [4,4] and [4,5,6].\nThis partition is valid, so we return true.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,1,2]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> There is no valid partition for this array.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool validPartition(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean validPartition(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validPartition(self, nums: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validPartition(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar validPartition = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function validPartition(nums: number[]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ValidPartition(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool validPartition(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validPartition(nums []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun validPartition(nums: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func validPartition(_ nums: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_partition(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Boolean}\ndef valid_partition(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Boolean\n     */\n    function validPartition($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool validPartition(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def validPartition(nums: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec valid_partition(nums :: [integer]) :: boolean\n  def valid_partition(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec valid_partition(Nums :: [integer()]) -> boolean().\nvalid_partition(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (valid-partition nums)\n  (-> (listof exact-integer?) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"100.5K\", \"totalSubmission\": \"192.4K\", \"totalAcceptedRaw\": 100502, \"totalSubmissionRaw\": 192436, \"acRate\": \"52.2%\"}",
+  "metaData": "{\n  \"name\": \"validPartition\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "[4,4,4,5,6]"
+}

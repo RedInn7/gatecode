@@ -1,0 +1,89 @@
+{
+  "questionId": "4012",
+  "questionFrontendId": "3683",
+  "title": "Earliest Time to Finish One Task",
+  "titleSlug": "earliest-time-to-finish-one-task",
+  "content": "<p>You are given a 2D integer array <code>tasks</code> where <code>tasks[i] = [s<sub>i</sub>, t<sub>i</sub>]</code>.</p>\n\n<p>Each <code>[s<sub>i</sub>, t<sub>i</sub>]</code> in <code>tasks</code> represents a task with start time <code>s<sub>i</sub></code> that takes <code>t<sub>i</sub></code> units of time to finish.</p>\n\n<p>Return the earliest time at which at least one task is finished.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">tasks = [[1,6],[2,3]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The first task starts at time <code>t = 1</code> and finishes at time <code>1 + 6 = 7</code>. The second task finishes at time <code>2 + 3 = 5</code>. You can finish one task at time 5.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">tasks = [[100,100],[100,100],[100,100]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">200</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>All three tasks finish at time <code>100 + 100 = 200</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= tasks.length &lt;= 100</code></li>\n\t<li><code>tasks[i] = [s<sub>i</sub>, t<sub>i</sub>]</code></li>\n\t<li><code>1 &lt;= s<sub>i</sub>, t<sub>i</sub> &lt;= 100</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int earliestTime(vector<vector<int>>& tasks) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int earliestTime(int[][] tasks) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def earliestTime(self, tasks: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def earliestTime(self, tasks):\n        \"\"\"\n        :type tasks: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} tasks\n * @return {number}\n */\nvar earliestTime = function(tasks) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function earliestTime(tasks: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int EarliestTime(int[][] tasks) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int earliestTime(int** tasks, int tasksSize, int* tasksColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func earliestTime(tasks [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun earliestTime(tasks: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func earliestTime(_ tasks: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn earliest_time(tasks: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} tasks\n# @return {Integer}\ndef earliest_time(tasks)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $tasks\n     * @return Integer\n     */\n    function earliestTime($tasks) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int earliestTime(List<List<int>> tasks) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def earliestTime(tasks: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec earliest_time(tasks :: [[integer]]) :: integer\n  def earliest_time(tasks) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec earliest_time(Tasks :: [[integer()]]) -> integer().\nearliest_time(Tasks) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (earliest-time tasks)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"68.7K\", \"totalSubmission\": \"81.4K\", \"totalAcceptedRaw\": 68667, \"totalSubmissionRaw\": 81439, \"acRate\": \"84.3%\"}",
+  "metaData": "{\n  \"name\": \"earliestTime\",\n  \"params\": [\n    {\n      \"name\": \"tasks\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[1,6],[2,3]]"
+}

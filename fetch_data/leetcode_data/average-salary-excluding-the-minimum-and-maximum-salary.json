@@ -1,0 +1,89 @@
+{
+  "questionId": "1584",
+  "questionFrontendId": "1491",
+  "title": "Average Salary Excluding the Minimum and Maximum Salary",
+  "titleSlug": "average-salary-excluding-the-minimum-and-maximum-salary",
+  "content": "<p>You are given an array of <strong>unique</strong> integers <code>salary</code> where <code>salary[i]</code> is the salary of the <code>i<sup>th</sup></code> employee.</p>\n\n<p>Return <em>the average salary of employees excluding the minimum and maximum salary</em>. Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> salary = [4000,3000,1000,2000]\n<strong>Output:</strong> 2500.00000\n<strong>Explanation:</strong> Minimum salary and maximum salary are 1000 and 4000 respectively.\nAverage salary excluding minimum and maximum salary is (2000+3000) / 2 = 2500\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> salary = [1000,2000,3000]\n<strong>Output:</strong> 2000.00000\n<strong>Explanation:</strong> Minimum salary and maximum salary are 1000 and 3000 respectively.\nAverage salary excluding minimum and maximum salary is (2000) / 1 = 2000\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= salary.length &lt;= 100</code></li>\n\t<li><code>1000 &lt;= salary[i] &lt;= 10<sup>6</sup></code></li>\n\t<li>All the integers of <code>salary</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double average(vector<int>& salary) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double average(int[] salary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def average(self, salary: List[int]) -> float:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def average(self, salary):\n        \"\"\"\n        :type salary: List[int]\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} salary\n * @return {number}\n */\nvar average = function(salary) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function average(salary: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double Average(int[] salary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "double average(int* salary, int salarySize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func average(salary []int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun average(salary: IntArray): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func average(_ salary: [Int]) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn average(salary: Vec<i32>) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} salary\n# @return {Float}\ndef average(salary)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $salary\n     * @return Float\n     */\n    function average($salary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  double average(List<int> salary) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def average(salary: Array[Int]): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec average(salary :: [integer]) :: float\n  def average(salary) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec average(Salary :: [integer()]) -> float().\naverage(Salary) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (average salary)\n  (-> (listof exact-integer?) flonum?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"388.7K\", \"totalSubmission\": \"611.9K\", \"totalAcceptedRaw\": 388717, \"totalSubmissionRaw\": 611868, \"acRate\": \"63.5%\"}",
+  "metaData": "{\n  \"name\": \"average\",\n  \"params\": [\n    {\n      \"name\": \"salary\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"double\"\n  }\n}",
+  "sampleTestCase": "[4000,3000,1000,2000]"
+}

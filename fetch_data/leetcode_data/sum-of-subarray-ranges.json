@@ -1,0 +1,89 @@
+{
+  "questionId": "2227",
+  "questionFrontendId": "2104",
+  "title": "Sum of Subarray Ranges",
+  "titleSlug": "sum-of-subarray-ranges",
+  "content": "<p>You are given an integer array <code>nums</code>. The <strong>range</strong> of a subarray of <code>nums</code> is the difference between the largest and smallest element in the subarray.</p>\n\n<p>Return <em>the <strong>sum of all</strong> subarray ranges of </em><code>nums</code><em>.</em></p>\n\n<p>A subarray is a contiguous <strong>non-empty</strong> sequence of elements within an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The 6 subarrays of nums are the following:\n[1], range = largest - smallest = 1 - 1 = 0 \n[2], range = 2 - 2 = 0\n[3], range = 3 - 3 = 0\n[1,2], range = 2 - 1 = 1\n[2,3], range = 3 - 2 = 1\n[1,2,3], range = 3 - 1 = 2\nSo the sum of all ranges is 0 + 0 + 0 + 1 + 1 + 2 = 4.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,3,3]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The 6 subarrays of nums are the following:\n[1], range = largest - smallest = 1 - 1 = 0\n[3], range = 3 - 3 = 0\n[3], range = 3 - 3 = 0\n[1,3], range = 3 - 1 = 2\n[3,3], range = 3 - 3 = 0\n[1,3,3], range = 3 - 1 = 2\nSo the sum of all ranges is 0 + 0 + 0 + 2 + 0 + 2 = 4.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [4,-2,-3,4,1]\n<strong>Output:</strong> 59\n<strong>Explanation:</strong> The sum of all subarray ranges of nums is 59.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow-up:</strong> Could you find a solution with <code>O(n)</code> time complexity?</p>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long subArrayRanges(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long subArrayRanges(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def subArrayRanges(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def subArrayRanges(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar subArrayRanges = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function subArrayRanges(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long SubArrayRanges(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long subArrayRanges(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func subArrayRanges(nums []int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun subArrayRanges(nums: IntArray): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func subArrayRanges(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sub_array_ranges(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef sub_array_ranges(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function subArrayRanges($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int subArrayRanges(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def subArrayRanges(nums: Array[Int]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec sub_array_ranges(nums :: [integer]) :: integer\n  def sub_array_ranges(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec sub_array_ranges(Nums :: [integer()]) -> integer().\nsub_array_ranges(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (sub-array-ranges nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"210.8K\", \"totalSubmission\": \"347.2K\", \"totalAcceptedRaw\": 210761, \"totalSubmissionRaw\": 347168, \"acRate\": \"60.7%\"}",
+  "metaData": "{\n  \"name\": \"subArrayRanges\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[1,2,3]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "4194",
+  "questionFrontendId": "3827",
+  "title": "Count Monobit Integers",
+  "titleSlug": "count-monobit-integers",
+  "content": "<p>You are given an integer <code>n</code>.</p>\n\n<p>An integer is called <strong>Monobit</strong> if all bits in its binary representation are the same.</p>\n\n<p>Return the count of <strong>Monobit</strong> integers in the range <code>[0, n]</code> (inclusive).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The integers in the range <code>[0, 1]</code> have binary representations <code>&quot;0&quot;</code> and <code>&quot;1&quot;</code>.</li>\n\t<li>Each representation consists of identical bits. Thus, the answer is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The integers in the range <code>[0, 4]</code> include binaries <code>&quot;0&quot;</code>, <code>&quot;1&quot;</code>, <code>&quot;10&quot;</code>, <code>&quot;11&quot;</code>, and <code>&quot;100&quot;</code>.</li>\n\t<li>Only 0, 1 and 3 satisfy the Monobit condition. Thus, the answer is 3.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 1000</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countMonobit(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countMonobit(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countMonobit(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countMonobit(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countMonobit = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function countMonobit(n: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountMonobit(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int countMonobit(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countMonobit(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countMonobit(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countMonobit(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_monobit(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef count_monobit(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function countMonobit($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int countMonobit(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countMonobit(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec count_monobit(n :: integer) :: integer\n  def count_monobit(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec count_monobit(N :: integer()) -> integer().\ncount_monobit(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (count-monobit n)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"48.3K\", \"totalSubmission\": \"73.2K\", \"totalAcceptedRaw\": 48265, \"totalSubmissionRaw\": 73160, \"acRate\": \"66.0%\"}",
+  "metaData": "{\n  \"name\": \"countMonobit\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "1"
+}

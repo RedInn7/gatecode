@@ -1,0 +1,89 @@
+{
+  "questionId": "1515",
+  "questionFrontendId": "1414",
+  "title": "Find the Minimum Number of Fibonacci Numbers Whose Sum Is K",
+  "titleSlug": "find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k",
+  "content": "<p>Given an integer&nbsp;<code>k</code>, <em>return the minimum number of Fibonacci numbers whose sum is equal to </em><code>k</code>. The same Fibonacci number can be used multiple times.</p>\n\n<p>The Fibonacci numbers are defined as:</p>\n\n<ul>\n\t<li><code>F<sub>1</sub> = 1</code></li>\n\t<li><code>F<sub>2</sub> = 1</code></li>\n\t<li><code>F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub></code> for <code>n &gt; 2.</code></li>\n</ul>\nIt is guaranteed that for the given constraints we can always find such Fibonacci numbers that sum up to <code>k</code>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 7\n<strong>Output:</strong> 2 \n<strong>Explanation:</strong> The Fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13, ... \nFor k = 7 we can use 2 + 5 = 7.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 10\n<strong>Output:</strong> 2 \n<strong>Explanation:</strong> For k = 10 we can use 2 + 8 = 10.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 19\n<strong>Output:</strong> 3 \n<strong>Explanation:</strong> For k = 19 we can use 1 + 5 + 13 = 19.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMinFibonacciNumbers(int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMinFibonacciNumbers(int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMinFibonacciNumbers(self, k: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMinFibonacciNumbers(self, k):\n        \"\"\"\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} k\n * @return {number}\n */\nvar findMinFibonacciNumbers = function(k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findMinFibonacciNumbers(k: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMinFibonacciNumbers(int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int findMinFibonacciNumbers(int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMinFibonacciNumbers(k int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMinFibonacciNumbers(k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMinFibonacciNumbers(_ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_min_fibonacci_numbers(k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} k\n# @return {Integer}\ndef find_min_fibonacci_numbers(k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $k\n     * @return Integer\n     */\n    function findMinFibonacciNumbers($k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int findMinFibonacciNumbers(int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMinFibonacciNumbers(k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_min_fibonacci_numbers(k :: integer) :: integer\n  def find_min_fibonacci_numbers(k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_min_fibonacci_numbers(K :: integer()) -> integer().\nfind_min_fibonacci_numbers(K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-min-fibonacci-numbers k)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"51.5K\", \"totalSubmission\": \"79.6K\", \"totalAcceptedRaw\": 51549, \"totalSubmissionRaw\": 79562, \"acRate\": \"64.8%\"}",
+  "metaData": "{\n  \"name\": \"findMinFibonacciNumbers\",\n  \"params\": [\n    {\n      \"name\": \"k\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "7"
+}

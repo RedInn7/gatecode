@@ -1,0 +1,89 @@
+{
+  "questionId": "3657",
+  "questionFrontendId": "3394",
+  "title": "Check if Grid can be Cut into Sections",
+  "titleSlug": "check-if-grid-can-be-cut-into-sections",
+  "content": "<p>You are given an integer <code>n</code> representing the dimensions of an <code>n x n</code><!-- notionvc: fa9fe4ed-dff8-4410-8196-346f2d430795 --> grid, with the origin at the bottom-left corner of the grid. You are also given a 2D array of coordinates <code>rectangles</code>, where <code>rectangles[i]</code> is in the form <code>[start<sub>x</sub>, start<sub>y</sub>, end<sub>x</sub>, end<sub>y</sub>]</code>, representing a rectangle on the grid. Each rectangle is defined as follows:</p>\n\n<ul>\n\t<li><code>(start<sub>x</sub>, start<sub>y</sub>)</code>: The bottom-left corner of the rectangle.</li>\n\t<li><code>(end<sub>x</sub>, end<sub>y</sub>)</code>: The top-right corner of the rectangle.</li>\n</ul>\n\n<p><strong>Note </strong>that the rectangles do not overlap. Your task is to determine if it is possible to make <strong>either two horizontal or two vertical cuts</strong> on the grid such that:</p>\n\n<ul>\n\t<li>Each of the three resulting sections formed by the cuts contains <strong>at least</strong> one rectangle.</li>\n\t<li>Every rectangle belongs to <strong>exactly</strong> one section.</li>\n</ul>\n\n<p>Return <code>true</code> if such cuts can be made; otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 5, rectangles = [[1,0,5,2],[0,2,2,4],[3,2,5,3],[0,4,4,5]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/10/23/tt1drawio.png\" style=\"width: 285px; height: 280px;\" /></p>\n\n<p>The grid is shown in the diagram. We can make horizontal cuts at <code>y = 2</code> and <code>y = 4</code>. Hence, output is true.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 4, rectangles = [[0,0,1,1],[2,0,3,4],[0,2,2,3],[3,0,4,3]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/10/23/tc2drawio.png\" style=\"width: 240px; height: 240px;\" /></p>\n\n<p>We can make vertical cuts at <code>x = 2</code> and <code>x = 3</code>. Hence, output is true.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 4, rectangles = [[0,2,2,4],[1,0,3,2],[2,2,3,4],[3,0,4,2],[3,2,4,4]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We cannot make two horizontal or two vertical cuts that satisfy the conditions. Hence, output is false.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= n &lt;= 10<sup>9</sup></code></li>\n\t<li><code>3 &lt;= rectangles.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= rectangles[i][0] &lt; rectangles[i][2] &lt;= n</code></li>\n\t<li><code>0 &lt;= rectangles[i][1] &lt; rectangles[i][3] &lt;= n</code></li>\n\t<li>No two rectangles overlap.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool checkValidCuts(int n, vector<vector<int>>& rectangles) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkValidCuts(int n, int[][] rectangles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkValidCuts(self, n: int, rectangles: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkValidCuts(self, n, rectangles):\n        \"\"\"\n        :type n: int\n        :type rectangles: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number[][]} rectangles\n * @return {boolean}\n */\nvar checkValidCuts = function(n, rectangles) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function checkValidCuts(n: number, rectangles: number[][]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CheckValidCuts(int n, int[][] rectangles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool checkValidCuts(int n, int** rectangles, int rectanglesSize, int* rectanglesColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkValidCuts(n int, rectangles [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun checkValidCuts(n: Int, rectangles: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func checkValidCuts(_ n: Int, _ rectangles: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_valid_cuts(n: i32, rectangles: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[][]} rectangles\n# @return {Boolean}\ndef check_valid_cuts(n, rectangles)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[][] $rectangles\n     * @return Boolean\n     */\n    function checkValidCuts($n, $rectangles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool checkValidCuts(int n, List<List<int>> rectangles) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def checkValidCuts(n: Int, rectangles: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec check_valid_cuts(n :: integer, rectangles :: [[integer]]) :: boolean\n  def check_valid_cuts(n, rectangles) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec check_valid_cuts(N :: integer(), Rectangles :: [[integer()]]) -> boolean().\ncheck_valid_cuts(N, Rectangles) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (check-valid-cuts n rectangles)\n  (-> exact-integer? (listof (listof exact-integer?)) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"112.9K\", \"totalSubmission\": \"165.3K\", \"totalAcceptedRaw\": 112862, \"totalSubmissionRaw\": 165325, \"acRate\": \"68.3%\"}",
+  "metaData": "{\n  \"name\": \"checkValidCuts\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"rectangles\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "5\n[[1,0,5,2],[0,2,2,4],[3,2,5,3],[0,4,4,5]]"
+}

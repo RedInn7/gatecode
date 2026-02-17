@@ -1,0 +1,89 @@
+{
+  "questionId": "979",
+  "questionFrontendId": "942",
+  "title": "DI String Match",
+  "titleSlug": "di-string-match",
+  "content": "<p>A permutation <code>perm</code> of <code>n + 1</code> integers of all the integers in the range <code>[0, n]</code> can be represented as a string <code>s</code> of length <code>n</code> where:</p>\n\n<ul>\n\t<li><code>s[i] == &#39;I&#39;</code> if <code>perm[i] &lt; perm[i + 1]</code>, and</li>\n\t<li><code>s[i] == &#39;D&#39;</code> if <code>perm[i] &gt; perm[i + 1]</code>.</li>\n</ul>\n\n<p>Given a string <code>s</code>, reconstruct the permutation <code>perm</code> and return it. If there are multiple valid permutations perm, return <strong>any of them</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"IDID\"\n<strong>Output:</strong> [0,4,1,3,2]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"III\"\n<strong>Output:</strong> [0,1,2,3]\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> s = \"DDI\"\n<strong>Output:</strong> [3,2,0,1]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s[i]</code> is either <code>&#39;I&#39;</code> or <code>&#39;D&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> diStringMatch(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] diStringMatch(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def diStringMatch(self, s: str) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def diStringMatch(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number[]}\n */\nvar diStringMatch = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function diStringMatch(s: string): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] DiStringMatch(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* diStringMatch(char* s, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func diStringMatch(s string) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun diStringMatch(s: String): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func diStringMatch(_ s: String) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn di_string_match(s: String) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer[]}\ndef di_string_match(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer[]\n     */\n    function diStringMatch($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> diStringMatch(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def diStringMatch(s: String): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec di_string_match(s :: String.t) :: [integer]\n  def di_string_match(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec di_string_match(S :: unicode:unicode_binary()) -> [integer()].\ndi_string_match(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (di-string-match s)\n  (-> string? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"204.2K\", \"totalSubmission\": \"252.5K\", \"totalAcceptedRaw\": 204196, \"totalSubmissionRaw\": 252490, \"acRate\": \"80.9%\"}",
+  "metaData": "{\n  \"name\": \"diStringMatch\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "\"IDID\""
+}

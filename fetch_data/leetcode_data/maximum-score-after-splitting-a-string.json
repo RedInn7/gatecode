@@ -1,0 +1,89 @@
+{
+  "questionId": "1537",
+  "questionFrontendId": "1422",
+  "title": "Maximum Score After Splitting a String",
+  "titleSlug": "maximum-score-after-splitting-a-string",
+  "content": "<p>Given a&nbsp;string <code>s</code>&nbsp;of zeros and ones, <em>return the maximum score after splitting the string into two <strong>non-empty</strong> substrings</em> (i.e. <strong>left</strong> substring and <strong>right</strong> substring).</p>\n\n<p>The score after splitting a string is the number of <strong>zeros</strong> in the <strong>left</strong> substring plus the number of <strong>ones</strong> in the <strong>right</strong> substring.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;011101&quot;\n<strong>Output:</strong> 5 \n<strong>Explanation:</strong> \nAll possible ways of splitting s into two non-empty substrings are:\nleft = &quot;0&quot; and right = &quot;11101&quot;, score = 1 + 4 = 5 \nleft = &quot;01&quot; and right = &quot;1101&quot;, score = 1 + 3 = 4 \nleft = &quot;011&quot; and right = &quot;101&quot;, score = 1 + 2 = 3 \nleft = &quot;0111&quot; and right = &quot;01&quot;, score = 1 + 1 = 2 \nleft = &quot;01110&quot; and right = &quot;1&quot;, score = 2 + 1 = 3\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;00111&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> When left = &quot;00&quot; and right = &quot;111&quot;, we get the maximum score = 2 + 3 = 5\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;1111&quot;\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 500</code></li>\n\t<li>The string <code>s</code> consists of characters <code>&#39;0&#39;</code> and <code>&#39;1&#39;</code> only.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxScore(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxScore(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxScore(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxScore(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxScore = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxScore(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxScore(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxScore(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxScore(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxScore(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxScore(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_score(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef max_score(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function maxScore($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxScore(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxScore(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_score(s :: String.t) :: integer\n  def max_score(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_score(S :: unicode:unicode_binary()) -> integer().\nmax_score(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-score s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"369.1K\", \"totalSubmission\": \"567.3K\", \"totalAcceptedRaw\": 369108, \"totalSubmissionRaw\": 567278, \"acRate\": \"65.1%\"}",
+  "metaData": "{\n  \"name\": \"maxScore\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"011101\""
+}

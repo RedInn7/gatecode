@@ -1,0 +1,21 @@
+{
+  "questionId": "2851",
+  "questionFrontendId": "2759",
+  "title": "Convert JSON String to Object",
+  "titleSlug": "convert-json-string-to-object",
+  "content": "<p>Given a string <code>str</code>, return parsed JSON&nbsp;<code>parsedStr</code>.&nbsp;You may assume the <code>str</code>&nbsp;is a valid JSON string hence it only includes strings, numbers, arrays, objects, booleans, and null. <code>str</code>&nbsp;will not include invisible characters and escape characters.&nbsp;</p>\n\n<p>Please solve it without using the built-in&nbsp;<code>JSON.parse</code>&nbsp;method.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> str = &#39;{&quot;a&quot;:2,&quot;b&quot;:[1,2,3]}&#39;\n<strong>Output:</strong> {&quot;a&quot;:2,&quot;b&quot;:[1,2,3]}\n<strong>Explanation:</strong>&nbsp;Returns the object represented by the JSON string.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> str = &#39;true&#39;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Primitive types are valid JSON.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> str = &#39;[1,5,&quot;false&quot;,{&quot;a&quot;:2}]&#39;\n<strong>Output:</strong> [1,5,&quot;false&quot;,{&quot;a&quot;:2}]\n<strong>Explanation:</strong> Returns the array represented by the JSON string.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>str</code> is a valid JSON string</li>\n\t<li><code>1 &lt;= str.length &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} str\n * @return {null|boolean|number|string|Array|Object}\n */\nvar jsonParse = function(str) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "type JSONValue = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };\n\nfunction jsonParse(str: string): JSONValue {\n    \n};"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"889\", \"totalSubmission\": \"1.5K\", \"totalAcceptedRaw\": 889, \"totalSubmissionRaw\": 1458, \"acRate\": \"61.0%\"}",
+  "metaData": "{\n  \"name\": \"jsonParse\",\n  \"params\": [\n    {\n      \"name\": \"str\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"javascript\",\n    \"typescript\"\n  ],\n  \"manual\": true\n}",
+  "sampleTestCase": "'{\"a\":2,\"b\":[1,2,3]}'"
+}

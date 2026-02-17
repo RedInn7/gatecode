@@ -1,0 +1,89 @@
+{
+  "questionId": "2465",
+  "questionFrontendId": "2381",
+  "title": "Shifting Letters II",
+  "titleSlug": "shifting-letters-ii",
+  "content": "<p>You are given a string <code>s</code> of lowercase English letters and a 2D integer array <code>shifts</code> where <code>shifts[i] = [start<sub>i</sub>, end<sub>i</sub>, direction<sub>i</sub>]</code>. For every <code>i</code>, <strong>shift</strong> the characters in <code>s</code> from the index <code>start<sub>i</sub></code> to the index <code>end<sub>i</sub></code> (<strong>inclusive</strong>) forward if <code>direction<sub>i</sub> = 1</code>, or shift the characters backward if <code>direction<sub>i</sub> = 0</code>.</p>\n\n<p>Shifting a character <strong>forward</strong> means replacing it with the <strong>next</strong> letter in the alphabet (wrapping around so that <code>&#39;z&#39;</code> becomes <code>&#39;a&#39;</code>). Similarly, shifting a character <strong>backward</strong> means replacing it with the <strong>previous</strong> letter in the alphabet (wrapping around so that <code>&#39;a&#39;</code> becomes <code>&#39;z&#39;</code>).</p>\n\n<p>Return <em>the final string after all such shifts to </em><code>s</code><em> are applied</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abc&quot;, shifts = [[0,1,0],[1,2,1],[0,2,1]]\n<strong>Output:</strong> &quot;ace&quot;\n<strong>Explanation:</strong> Firstly, shift the characters from index 0 to index 1 backward. Now s = &quot;zac&quot;.\nSecondly, shift the characters from index 1 to index 2 forward. Now s = &quot;zbd&quot;.\nFinally, shift the characters from index 0 to index 2 forward. Now s = &quot;ace&quot;.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;dztz&quot;, shifts = [[0,0,0],[1,1,1]]\n<strong>Output:</strong> &quot;catz&quot;\n<strong>Explanation:</strong> Firstly, shift the characters from index 0 to index 0 backward. Now s = &quot;cztz&quot;.\nFinally, shift the characters from index 1 to index 1 forward. Now s = &quot;catz&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length, shifts.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>shifts[i].length == 3</code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt; s.length</code></li>\n\t<li><code>0 &lt;= direction<sub>i</sub> &lt;= 1</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string shiftingLetters(string s, vector<vector<int>>& shifts) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String shiftingLetters(String s, int[][] shifts) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shiftingLetters(self, s: str, shifts: List[List[int]]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shiftingLetters(self, s, shifts):\n        \"\"\"\n        :type s: str\n        :type shifts: List[List[int]]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number[][]} shifts\n * @return {string}\n */\nvar shiftingLetters = function(s, shifts) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function shiftingLetters(s: string, shifts: number[][]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ShiftingLetters(string s, int[][] shifts) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* shiftingLetters(char* s, int** shifts, int shiftsSize, int* shiftsColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shiftingLetters(s string, shifts [][]int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shiftingLetters(s: String, shifts: Array<IntArray>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shiftingLetters(_ s: String, _ shifts: [[Int]]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shifting_letters(s: String, shifts: Vec<Vec<i32>>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer[][]} shifts\n# @return {String}\ndef shifting_letters(s, shifts)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer[][] $shifts\n     * @return String\n     */\n    function shiftingLetters($s, $shifts) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String shiftingLetters(String s, List<List<int>> shifts) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shiftingLetters(s: String, shifts: Array[Array[Int]]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec shifting_letters(s :: String.t, shifts :: [[integer]]) :: String.t\n  def shifting_letters(s, shifts) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec shifting_letters(S :: unicode:unicode_binary(), Shifts :: [[integer()]]) -> unicode:unicode_binary().\nshifting_letters(S, Shifts) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (shifting-letters s shifts)\n  (-> string? (listof (listof exact-integer?)) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"159.1K\", \"totalSubmission\": \"297.3K\", \"totalAcceptedRaw\": 159090, \"totalSubmissionRaw\": 297293, \"acRate\": \"53.5%\"}",
+  "metaData": "{\n  \"name\": \"shiftingLetters\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"shifts\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"abc\"\n[[0,1,0],[1,2,1],[0,2,1]]"
+}

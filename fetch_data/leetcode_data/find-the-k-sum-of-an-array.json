@@ -1,0 +1,89 @@
+{
+  "questionId": "2462",
+  "questionFrontendId": "2386",
+  "title": "Find the K-Sum of an Array",
+  "titleSlug": "find-the-k-sum-of-an-array",
+  "content": "<p>You are given an integer array <code>nums</code> and a <strong>positive</strong> integer <code>k</code>. You can choose any <strong>subsequence</strong> of the array and sum all of its elements together.</p>\n\n<p>We define the <strong>K-Sum</strong> of the array as the <code>k<sup>th</sup></code> <strong>largest</strong> subsequence sum that can be obtained (<strong>not</strong> necessarily distinct).</p>\n\n<p>Return <em>the K-Sum of the array</em>.</p>\n\n<p>A <strong>subsequence</strong> is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.</p>\n\n<p><strong>Note</strong> that the empty subsequence is considered to have a sum of <code>0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,4,-2], k = 5\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> All the possible subsequence sums that we can obtain are the following sorted in decreasing order:\n6, 4, 4, 2, <u>2</u>, 0, 0, -2.\nThe 5-Sum of the array is 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,-2,3,4,-10,12], k = 16\n<strong>Output:</strong> 10\n<strong>Explanation:</strong> The 16-Sum of the array is 10.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= min(2000, 2<sup>n</sup>)</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long kSum(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long kSum(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def kSum(self, nums: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def kSum(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar kSum = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function kSum(nums: number[], k: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long KSum(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long kSum(int* nums, int numsSize, int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func kSum(nums []int, k int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun kSum(nums: IntArray, k: Int): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func kSum(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn k_sum(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef k_sum(nums, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function kSum($nums, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int kSum(List<int> nums, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def kSum(nums: Array[Int], k: Int): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec k_sum(nums :: [integer], k :: integer) :: integer\n  def k_sum(nums, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec k_sum(Nums :: [integer()], K :: integer()) -> integer().\nk_sum(Nums, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (k-sum nums k)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.4K\", \"totalSubmission\": \"32.7K\", \"totalAcceptedRaw\": 13407, \"totalSubmissionRaw\": 32703, \"acRate\": \"41.0%\"}",
+  "metaData": "{\n  \"name\": \"kSum\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[2,4,-2]\n5"
+}

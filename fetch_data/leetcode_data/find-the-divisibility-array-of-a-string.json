@@ -1,0 +1,89 @@
+{
+  "questionId": "2713",
+  "questionFrontendId": "2575",
+  "title": "Find the Divisibility Array of a String",
+  "titleSlug": "find-the-divisibility-array-of-a-string",
+  "content": "<p>You are given a <strong>0-indexed</strong> string <code>word</code> of length <code>n</code>&nbsp;consisting of digits, and a positive integer&nbsp;<code>m</code>.</p>\n\n<p>The <strong>divisibility array</strong> <code>div</code> of <code>word</code> is an integer array of length <code>n</code> such that:</p>\n\n<ul>\n\t<li><code>div[i] = 1</code> if the&nbsp;<strong>numeric value</strong>&nbsp;of&nbsp;<code>word[0,...,i]</code> is divisible by <code>m</code>, or</li>\n\t<li><code>div[i] = 0</code> otherwise.</li>\n</ul>\n\n<p>Return<em> the divisibility array of</em><em> </em><code>word</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> word = &quot;998244353&quot;, m = 3\n<strong>Output:</strong> [1,1,0,0,0,1,1,0,0]\n<strong>Explanation:</strong> There are only 4 prefixes that are divisible by 3: &quot;9&quot;, &quot;99&quot;, &quot;998244&quot;, and &quot;9982443&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> word = &quot;1010&quot;, m = 10\n<strong>Output:</strong> [0,1,0,1]\n<strong>Explanation:</strong> There are only 2 prefixes that are divisible by 10: &quot;10&quot;, and &quot;1010&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code><font face=\"monospace\">word.length == n</font></code></li>\n\t<li><code><font face=\"monospace\">word</font></code><font face=\"monospace\"> consists of digits from <code>0</code>&nbsp;to <code>9</code></font></li>\n\t<li><code><font face=\"monospace\">1 &lt;= m &lt;= 10<sup>9</sup></font></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> divisibilityArray(string word, int m) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] divisibilityArray(String word, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def divisibilityArray(self, word: str, m: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def divisibilityArray(self, word, m):\n        \"\"\"\n        :type word: str\n        :type m: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} word\n * @param {number} m\n * @return {number[]}\n */\nvar divisibilityArray = function(word, m) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function divisibilityArray(word: string, m: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] DivisibilityArray(string word, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* divisibilityArray(char* word, int m, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func divisibilityArray(word string, m int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun divisibilityArray(word: String, m: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func divisibilityArray(_ word: String, _ m: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn divisibility_array(word: String, m: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} word\n# @param {Integer} m\n# @return {Integer[]}\ndef divisibility_array(word, m)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $word\n     * @param Integer $m\n     * @return Integer[]\n     */\n    function divisibilityArray($word, $m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> divisibilityArray(String word, int m) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def divisibilityArray(word: String, m: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec divisibility_array(word :: String.t, m :: integer) :: [integer]\n  def divisibility_array(word, m) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec divisibility_array(Word :: unicode:unicode_binary(), M :: integer()) -> [integer()].\ndivisibility_array(Word, M) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (divisibility-array word m)\n  (-> string? exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"38.1K\", \"totalSubmission\": \"106.7K\", \"totalAcceptedRaw\": 38056, \"totalSubmissionRaw\": 106707, \"acRate\": \"35.7%\"}",
+  "metaData": "{\n  \"name\": \"divisibilityArray\",\n  \"params\": [\n    {\n      \"name\": \"word\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"m\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "\"998244353\"\n3"
+}

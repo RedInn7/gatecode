@@ -1,0 +1,89 @@
+{
+  "questionId": "2134",
+  "questionFrontendId": "2024",
+  "title": "Maximize the Confusion of an Exam",
+  "titleSlug": "maximize-the-confusion-of-an-exam",
+  "content": "<p>A teacher is writing a test with <code>n</code> true/false questions, with <code>&#39;T&#39;</code> denoting true and <code>&#39;F&#39;</code> denoting false. He wants to confuse the students by <strong>maximizing</strong> the number of <strong>consecutive</strong> questions with the <strong>same</strong> answer (multiple trues or multiple falses in a row).</p>\n\n<p>You are given a string <code>answerKey</code>, where <code>answerKey[i]</code> is the original answer to the <code>i<sup>th</sup></code> question. In addition, you are given an integer <code>k</code>, the maximum number of times you may perform the following operation:</p>\n\n<ul>\n\t<li>Change the answer key for any question to <code>&#39;T&#39;</code> or <code>&#39;F&#39;</code> (i.e., set <code>answerKey[i]</code> to <code>&#39;T&#39;</code> or <code>&#39;F&#39;</code>).</li>\n</ul>\n\n<p>Return <em>the <strong>maximum</strong> number of consecutive</em> <code>&#39;T&#39;</code>s or <code>&#39;F&#39;</code>s <em>in the answer key after performing the operation at most</em> <code>k</code> <em>times</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> answerKey = &quot;TTFF&quot;, k = 2\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> We can replace both the &#39;F&#39;s with &#39;T&#39;s to make answerKey = &quot;<u>TTTT</u>&quot;.\nThere are four consecutive &#39;T&#39;s.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> answerKey = &quot;TFFT&quot;, k = 1\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> We can replace the first &#39;T&#39; with an &#39;F&#39; to make answerKey = &quot;<u>FFF</u>T&quot;.\nAlternatively, we can replace the second &#39;T&#39; with an &#39;F&#39; to make answerKey = &quot;T<u>FFF</u>&quot;.\nIn both cases, there are three consecutive &#39;F&#39;s.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> answerKey = &quot;TTFTTFTT&quot;, k = 1\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> We can replace the first &#39;F&#39; to make answerKey = &quot;<u>TTTTT</u>FTT&quot;\nAlternatively, we can replace the second &#39;F&#39; to make answerKey = &quot;TTF<u>TTTTT</u>&quot;. \nIn both cases, there are five consecutive &#39;T&#39;s.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == answerKey.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>answerKey[i]</code> is either <code>&#39;T&#39;</code> or <code>&#39;F&#39;</code></li>\n\t<li><code>1 &lt;= k &lt;= n</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxConsecutiveAnswers(string answerKey, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxConsecutiveAnswers(String answerKey, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxConsecutiveAnswers(self, answerKey: str, k: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxConsecutiveAnswers(self, answerKey, k):\n        \"\"\"\n        :type answerKey: str\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} answerKey\n * @param {number} k\n * @return {number}\n */\nvar maxConsecutiveAnswers = function(answerKey, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxConsecutiveAnswers(answerKey: string, k: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxConsecutiveAnswers(string answerKey, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxConsecutiveAnswers(char* answerKey, int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxConsecutiveAnswers(answerKey string, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxConsecutiveAnswers(answerKey: String, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxConsecutiveAnswers(_ answerKey: String, _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_consecutive_answers(answer_key: String, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} answer_key\n# @param {Integer} k\n# @return {Integer}\ndef max_consecutive_answers(answer_key, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $answerKey\n     * @param Integer $k\n     * @return Integer\n     */\n    function maxConsecutiveAnswers($answerKey, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxConsecutiveAnswers(String answerKey, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxConsecutiveAnswers(answerKey: String, k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_consecutive_answers(answer_key :: String.t, k :: integer) :: integer\n  def max_consecutive_answers(answer_key, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_consecutive_answers(AnswerKey :: unicode:unicode_binary(), K :: integer()) -> integer().\nmax_consecutive_answers(AnswerKey, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-consecutive-answers answerKey k)\n  (-> string? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"141.4K\", \"totalSubmission\": \"203K\", \"totalAcceptedRaw\": 141393, \"totalSubmissionRaw\": 202957, \"acRate\": \"69.7%\"}",
+  "metaData": "{\n  \"name\": \"maxConsecutiveAnswers\",\n  \"params\": [\n    {\n      \"name\": \"answerKey\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"TTFF\"\n2"
+}

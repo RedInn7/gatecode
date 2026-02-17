@@ -1,0 +1,89 @@
+{
+  "questionId": "2693",
+  "questionFrontendId": "2548",
+  "title": "Maximum Price to Fill a Bag",
+  "titleSlug": "maximum-price-to-fill-a-bag",
+  "content": "<p>You are given a 2D integer array <code>items</code> where <code>items[i] = [price<sub>i</sub>, weight<sub>i</sub>]</code> denotes the price and weight of the <code>i<sup>th</sup></code> item, respectively.</p>\n\n<p>You are also given a <strong>positive</strong> integer <code>capacity</code>.</p>\n\n<p>Each item can be divided into two items with ratios <code>part1</code> and <code>part2</code>, where <code>part1 + part2 == 1</code>.</p>\n\n<ul>\n\t<li>The weight of the first item is <code>weight<sub>i</sub> * part1</code> and the price of the first item is <code>price<sub>i</sub> * part1</code>.</li>\n\t<li>Similarly, the weight of the second item is <code>weight<sub>i</sub> * part2</code> and the price of the second item is <code>price<sub>i</sub> * part2</code>.</li>\n</ul>\n\n<p>Return <em><strong>the maximum total price</strong> to fill a bag of capacity</em> <code>capacity</code> <em>with given items</em>. If it is impossible to fill a bag return <code>-1</code>. Answers within <code>10<sup>-5</sup></code> of the <strong>actual answer</strong> will be considered accepted.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> items = [[50,1],[10,8]], capacity = 5\n<strong>Output:</strong> 55.00000\n<strong>Explanation:</strong> \nWe divide the 2<sup>nd</sup> item into two parts with part1 = 0.5 and part2 = 0.5.\nThe price and weight of the 1<sup>st</sup> item are 5, 4. And similarly, the price and the weight of the 2<sup>nd</sup> item are 5, 4.\nThe array items after operation becomes [[50,1],[5,4],[5,4]]. \nTo fill a bag with capacity 5 we take the 1<sup>st</sup> element with a price of 50 and the 2<sup>nd</sup> element with a price of 5.\nIt can be proved that 55.0 is the maximum total price that we can achieve.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> items = [[100,30]], capacity = 50\n<strong>Output:</strong> -1.00000\n<strong>Explanation:</strong> It is impossible to fill a bag with the given item.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= items.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>items[i].length == 2</code></li>\n\t<li><code>1 &lt;= price<sub>i</sub>, weight<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= capacity &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double maxPrice(vector<vector<int>>& items, int capacity) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double maxPrice(int[][] items, int capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxPrice(self, items: List[List[int]], capacity: int) -> float:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxPrice(self, items, capacity):\n        \"\"\"\n        :type items: List[List[int]]\n        :type capacity: int\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} items\n * @param {number} capacity\n * @return {number}\n */\nvar maxPrice = function(items, capacity) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxPrice(items: number[][], capacity: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double MaxPrice(int[][] items, int capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "double maxPrice(int** items, int itemsSize, int* itemsColSize, int capacity) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxPrice(items [][]int, capacity int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxPrice(items: Array<IntArray>, capacity: Int): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxPrice(_ items: [[Int]], _ capacity: Int) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_price(items: Vec<Vec<i32>>, capacity: i32) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} items\n# @param {Integer} capacity\n# @return {Float}\ndef max_price(items, capacity)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $items\n     * @param Integer $capacity\n     * @return Float\n     */\n    function maxPrice($items, $capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  double maxPrice(List<List<int>> items, int capacity) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxPrice(items: Array[Array[Int]], capacity: Int): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_price(items :: [[integer]], capacity :: integer) :: float\n  def max_price(items, capacity) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_price(Items :: [[integer()]], Capacity :: integer()) -> float().\nmax_price(Items, Capacity) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-price items capacity)\n  (-> (listof (listof exact-integer?)) exact-integer? flonum?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.9K\", \"totalSubmission\": \"3K\", \"totalAcceptedRaw\": 1924, \"totalSubmissionRaw\": 2985, \"acRate\": \"64.5%\"}",
+  "metaData": "{\n  \"name\": \"maxPrice\",\n  \"params\": [\n    {\n      \"name\": \"items\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"capacity\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"double\"\n  }\n}",
+  "sampleTestCase": "[[50,1],[10,8]]\n5"
+}

@@ -1,0 +1,33 @@
+{
+  "questionId": "1494",
+  "questionFrontendId": "1355",
+  "title": "Activity Participants",
+  "titleSlug": "activity-participants",
+  "content": "<p>Table: <code>Friends</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| id            | int     |\n| name          | varchar |\n| activity      | varchar |\n+---------------+---------+\nid is the id of the friend and the primary key for this table in SQL.\nname is the name of the friend.\nactivity is the name of the activity which the friend takes part in.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Activities</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| id            | int     |\n| name          | varchar |\n+---------------+---------+\nIn SQL, id is the primary key for this table.\nname is the name of the activity.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Find the names of all the activities with neither the maximum nor the minimum number of participants.</p>\n\n<p>Each activity in the <code>Activities</code> table is performed by any person in the table Friends.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The&nbsp;result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nFriends table:\n+------+--------------+---------------+\n| id   | name         | activity      |\n+------+--------------+---------------+\n| 1    | Jonathan D.  | Eating        |\n| 2    | Jade W.      | Singing       |\n| 3    | Victor J.    | Singing       |\n| 4    | Elvis Q.     | Eating        |\n| 5    | Daniel A.    | Eating        |\n| 6    | Bob B.       | Horse Riding  |\n+------+--------------+---------------+\nActivities table:\n+------+--------------+\n| id   | name         |\n+------+--------------+\n| 1    | Eating       |\n| 2    | Singing      |\n| 3    | Horse Riding |\n+------+--------------+\n<strong>Output:</strong> \n+--------------+\n| activity     |\n+--------------+\n| Singing      |\n+--------------+\n<strong>Explanation:</strong> \nEating activity is performed by 3 friends, maximum number of participants, (Jonathan D. , Elvis Q. and Daniel A.)\nHorse Riding activity is performed by 1 friend, minimum number of participants, (Bob B.)\nSinging is performed by 2 friends (Victor J. and Jade W.)\n</pre>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef activity_participants(friends: pd.DataFrame, activities: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"35.1K\", \"totalSubmission\": \"48.7K\", \"totalAcceptedRaw\": 35085, \"totalSubmissionRaw\": 48727, \"acRate\": \"72.0%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Friends (id int, name varchar(30), activity varchar(30))\", \"Create table If Not Exists Activities (id int, name varchar(30))\"], \"mssql\": [\"Create table Friends (id int, name varchar(30), activity varchar(30))\", \"Create table Activities (id int, name varchar(30))\"], \"oraclesql\": [\"Create table Friends (id int, name varchar(30), activity varchar(30))\", \"Create table Activities (id int, name varchar(30))\"], \"database\": true, \"name\": \"activity_participants\", \"pythondata\": [\"Friends = pd.DataFrame([], columns=['id', 'name', 'activity']).astype({'id':'Int64', 'name':'object', 'activity':'object'})\", \"Activities = pd.DataFrame([], columns=['id', 'name']).astype({'id':'Int64', 'name':'object'})\"], \"postgresql\": [\"Create table If Not Exists Friends (id int, name varchar(30), activity varchar(30))\", \"Create table If Not Exists Activities (id int, name varchar(30))\"], \"database_schema\": {\"Friends\": {\"id\": \"INT\", \"name\": \"VARCHAR(30)\", \"activity\": \"VARCHAR(30)\"}, \"Activities\": {\"id\": \"INT\", \"name\": \"VARCHAR(30)\"}}}",
+  "sampleTestCase": "{\"headers\": {\"Friends\": [\"id\", \"name\", \"activity\"], \"Activities\": [\"id\", \"name\"]}, \"rows\": {\"Friends\": [[1, \"Jonathan D.\", \"Eating\"], [2, \"Jade W.\", \"Singing\"], [3, \"Victor J.\", \"Singing\"], [4, \"Elvis Q.\", \"Eating\"], [5, \"Daniel A.\", \"Eating\"], [6, \"Bob B.\", \"Horse Riding\"]], \"Activities\": [[1, \"Eating\"], [2, \"Singing\"], [3, \"Horse Riding\"]]}}"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "29",
+  "questionFrontendId": "29",
+  "title": "Divide Two Integers",
+  "titleSlug": "divide-two-integers",
+  "content": "<p>Given two integers <code>dividend</code> and <code>divisor</code>, divide two integers <strong>without</strong> using multiplication, division, and mod operator.</p>\n\n<p>The integer division should truncate toward zero, which means losing its fractional part. For example, <code>8.345</code> would be truncated to <code>8</code>, and <code>-2.7335</code> would be truncated to <code>-2</code>.</p>\n\n<p>Return <em>the <strong>quotient</strong> after dividing </em><code>dividend</code><em> by </em><code>divisor</code>.</p>\n\n<p><strong>Note: </strong>Assume we are dealing with an environment that could only store integers within the <strong>32-bit</strong> signed integer range: <code>[&minus;2<sup>31</sup>, 2<sup>31</sup> &minus; 1]</code>. For this problem, if the quotient is <strong>strictly greater than</strong> <code>2<sup>31</sup> - 1</code>, then return <code>2<sup>31</sup> - 1</code>, and if the quotient is <strong>strictly less than</strong> <code>-2<sup>31</sup></code>, then return <code>-2<sup>31</sup></code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> dividend = 10, divisor = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> 10/3 = 3.33333.. which is truncated to 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> dividend = 7, divisor = -3\n<strong>Output:</strong> -2\n<strong>Explanation:</strong> 7/-3 = -2.33333.. which is truncated to -2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-2<sup>31</sup> &lt;= dividend, divisor &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li><code>divisor != 0</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int divide(int dividend, int divisor) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int divide(int dividend, int divisor) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def divide(self, dividend: int, divisor: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def divide(self, dividend, divisor):\n        \"\"\"\n        :type dividend: int\n        :type divisor: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} dividend\n * @param {number} divisor\n * @return {number}\n */\nvar divide = function(dividend, divisor) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function divide(dividend: number, divisor: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Divide(int dividend, int divisor) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int divide(int dividend, int divisor) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func divide(dividend int, divisor int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun divide(dividend: Int, divisor: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func divide(_ dividend: Int, _ divisor: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn divide(dividend: i32, divisor: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} dividend\n# @param {Integer} divisor\n# @return {Integer}\ndef divide(dividend, divisor)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $dividend\n     * @param Integer $divisor\n     * @return Integer\n     */\n    function divide($dividend, $divisor) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int divide(int dividend, int divisor) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def divide(dividend: Int, divisor: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec divide(dividend :: integer, divisor :: integer) :: integer\n  def divide(dividend, divisor) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec divide(Dividend :: integer(), Divisor :: integer()) -> integer().\ndivide(Dividend, Divisor) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (divide dividend divisor)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.1M\", \"totalSubmission\": \"5.7M\", \"totalAcceptedRaw\": 1110839, \"totalSubmissionRaw\": 5743800, \"acRate\": \"19.3%\"}",
+  "metaData": "{\r\n  \"name\": \"divide\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"dividend\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"divisor\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "10\n3"
+}

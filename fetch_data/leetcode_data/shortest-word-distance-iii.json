@@ -1,0 +1,89 @@
+{
+  "questionId": "245",
+  "questionFrontendId": "245",
+  "title": "Shortest Word Distance III",
+  "titleSlug": "shortest-word-distance-iii",
+  "content": "<p>Given an array of strings <code>wordsDict</code> and two strings that already exist in the array <code>word1</code> and <code>word2</code>, return <em>the shortest distance between the occurrence of these two words in the list</em>.</p>\n\n<p><strong>Note</strong> that <code>word1</code> and <code>word2</code> may be the same. It is guaranteed that they represent <strong>two individual words</strong> in the list.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> wordsDict = [\"practice\", \"makes\", \"perfect\", \"coding\", \"makes\"], word1 = \"makes\", word2 = \"coding\"\n<strong>Output:</strong> 1\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> wordsDict = [\"practice\", \"makes\", \"perfect\", \"coding\", \"makes\"], word1 = \"makes\", word2 = \"makes\"\n<strong>Output:</strong> 3\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= wordsDict.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= wordsDict[i].length &lt;= 10</code></li>\n\t<li><code>wordsDict[i]</code> consists of lowercase English letters.</li>\n\t<li><code>word1</code> and <code>word2</code> are in <code>wordsDict</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestWordDistance(vector<string>& wordsDict, string word1, string word2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestWordDistance(String[] wordsDict, String word1, String word2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestWordDistance(self, wordsDict: List[str], word1: str, word2: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestWordDistance(self, wordsDict, word1, word2):\n        \"\"\"\n        :type wordsDict: List[str]\n        :type word1: str\n        :type word2: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} wordsDict\n * @param {string} word1\n * @param {string} word2\n * @return {number}\n */\nvar shortestWordDistance = function(wordsDict, word1, word2) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function shortestWordDistance(wordsDict: string[], word1: string, word2: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestWordDistance(string[] wordsDict, string word1, string word2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int shortestWordDistance(char** wordsDict, int wordsDictSize, char* word1, char* word2) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestWordDistance(wordsDict []string, word1 string, word2 string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestWordDistance(wordsDict: Array<String>, word1: String, word2: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestWordDistance(_ wordsDict: [String], _ word1: String, _ word2: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_word_distance(words_dict: Vec<String>, word1: String, word2: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words_dict\n# @param {String} word1\n# @param {String} word2\n# @return {Integer}\ndef shortest_word_distance(words_dict, word1, word2)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $wordsDict\n     * @param String $word1\n     * @param String $word2\n     * @return Integer\n     */\n    function shortestWordDistance($wordsDict, $word1, $word2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int shortestWordDistance(List<String> wordsDict, String word1, String word2) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestWordDistance(wordsDict: Array[String], word1: String, word2: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec shortest_word_distance(words_dict :: [String.t], word1 :: String.t, word2 :: String.t) :: integer\n  def shortest_word_distance(words_dict, word1, word2) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec shortest_word_distance(WordsDict :: [unicode:unicode_binary()], Word1 :: unicode:unicode_binary(), Word2 :: unicode:unicode_binary()) -> integer().\nshortest_word_distance(WordsDict, Word1, Word2) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (shortest-word-distance wordsDict word1 word2)\n  (-> (listof string?) string? string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"93.6K\", \"totalSubmission\": \"157.6K\", \"totalAcceptedRaw\": 93561, \"totalSubmissionRaw\": 157550, \"acRate\": \"59.4%\"}",
+  "metaData": "{\n  \"name\": \"shortestWordDistance\",\n  \"params\": [\n    {\n      \"name\": \"wordsDict\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"name\": \"word1\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"word2\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[\"practice\", \"makes\", \"perfect\", \"coding\", \"makes\"]\n\"makes\"\n\"coding\""
+}

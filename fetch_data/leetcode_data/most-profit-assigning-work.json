@@ -1,0 +1,89 @@
+{
+  "questionId": "853",
+  "questionFrontendId": "826",
+  "title": "Most Profit Assigning Work",
+  "titleSlug": "most-profit-assigning-work",
+  "content": "<p>You have <code>n</code> jobs and <code>m</code> workers. You are given three arrays: <code>difficulty</code>, <code>profit</code>, and <code>worker</code> where:</p>\n\n<ul>\n\t<li><code>difficulty[i]</code> and <code>profit[i]</code> are the difficulty and the profit of the <code>i<sup>th</sup></code> job, and</li>\n\t<li><code>worker[j]</code> is the ability of <code>j<sup>th</sup></code> worker (i.e., the <code>j<sup>th</sup></code> worker can only complete a job with difficulty at most <code>worker[j]</code>).</li>\n</ul>\n\n<p>Every worker can be assigned <strong>at most one job</strong>, but one job can be <strong>completed multiple times</strong>.</p>\n\n<ul>\n\t<li>For example, if three workers attempt the same job that pays <code>$1</code>, then the total profit will be <code>$3</code>. If a worker cannot complete any job, their profit is <code>$0</code>.</li>\n</ul>\n\n<p>Return the maximum profit we can achieve after assigning the workers to the jobs.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]\n<strong>Output:</strong> 100\n<strong>Explanation:</strong> Workers are assigned jobs of difficulty [4,4,6,6] and they get a profit of [20,20,30,30] separately.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> difficulty = [85,47,57], profit = [24,66,99], worker = [40,25,25]\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == difficulty.length</code></li>\n\t<li><code>n == profit.length</code></li>\n\t<li><code>m == worker.length</code></li>\n\t<li><code>1 &lt;= n, m &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= difficulty[i], profit[i], worker[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxProfitAssignment(self, difficulty: List[int], profit: List[int], worker: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxProfitAssignment(self, difficulty, profit, worker):\n        \"\"\"\n        :type difficulty: List[int]\n        :type profit: List[int]\n        :type worker: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} difficulty\n * @param {number[]} profit\n * @param {number[]} worker\n * @return {number}\n */\nvar maxProfitAssignment = function(difficulty, profit, worker) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxProfitAssignment(difficulty: number[], profit: number[], worker: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxProfitAssignment(int* difficulty, int difficultySize, int* profit, int profitSize, int* worker, int workerSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxProfitAssignment(difficulty: IntArray, profit: IntArray, worker: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxProfitAssignment(_ difficulty: [Int], _ profit: [Int], _ worker: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_profit_assignment(difficulty: Vec<i32>, profit: Vec<i32>, worker: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} difficulty\n# @param {Integer[]} profit\n# @param {Integer[]} worker\n# @return {Integer}\ndef max_profit_assignment(difficulty, profit, worker)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $difficulty\n     * @param Integer[] $profit\n     * @param Integer[] $worker\n     * @return Integer\n     */\n    function maxProfitAssignment($difficulty, $profit, $worker) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxProfitAssignment(List<int> difficulty, List<int> profit, List<int> worker) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxProfitAssignment(difficulty: Array[Int], profit: Array[Int], worker: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_profit_assignment(difficulty :: [integer], profit :: [integer], worker :: [integer]) :: integer\n  def max_profit_assignment(difficulty, profit, worker) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_profit_assignment(Difficulty :: [integer()], Profit :: [integer()], Worker :: [integer()]) -> integer().\nmax_profit_assignment(Difficulty, Profit, Worker) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-profit-assignment difficulty profit worker)\n  (-> (listof exact-integer?) (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"241.9K\", \"totalSubmission\": \"430.9K\", \"totalAcceptedRaw\": 241874, \"totalSubmissionRaw\": 430949, \"acRate\": \"56.1%\"}",
+  "metaData": "{\r\n  \"name\": \"maxProfitAssignment\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"difficulty\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"profit\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"worker\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "[2,4,6,8,10]\n[10,20,30,40,50]\n[4,5,6,7]"
+}

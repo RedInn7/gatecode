@@ -1,0 +1,89 @@
+{
+  "questionId": "2808",
+  "questionFrontendId": "2742",
+  "title": "Painting the Walls",
+  "titleSlug": "painting-the-walls",
+  "content": "<p>You are given two <strong>0-indexed</strong> integer arrays,&nbsp;<code>cost</code> and <code>time</code>, of size <code>n</code> representing the costs and the time taken to paint <code>n</code> different walls respectively. There are two painters available:</p>\n\n<ul>\n\t<li>A<strong>&nbsp;paid painter</strong>&nbsp;that paints the <code>i<sup>th</sup></code> wall in <code>time[i]</code> units of time and takes <code>cost[i]</code> units of money.</li>\n\t<li>A<strong>&nbsp;free painter</strong> that paints&nbsp;<strong>any</strong> wall in <code>1</code> unit of time at a cost of <code>0</code>. But the&nbsp;free painter can only be used if the paid painter is already <strong>occupied</strong>.</li>\n</ul>\n\n<p>Return <em>the minimum amount of money required to paint the </em><code>n</code><em>&nbsp;walls.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> cost = [1,2,3,2], time = [1,2,3,2]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The walls at index 0 and 1 will be painted by the paid painter, and it will take 3 units of time; meanwhile, the free painter will paint the walls at index 2 and 3, free of cost in 2 units of time. Thus, the total cost is 1 + 2 = 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> cost = [2,3,4,2], time = [1,1,1,1]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The walls at index 0 and 3 will be painted by the paid painter, and it will take 2 units of time; meanwhile, the free painter will paint the walls at index 1 and 2, free of cost in 2 units of time. Thus, the total cost is 2 + 2 = 4.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= cost.length &lt;= 500</code></li>\n\t<li><code>cost.length == time.length</code></li>\n\t<li><code>1 &lt;= cost[i] &lt;= 10<sup>6</sup></code></li>\n\t<li><code>1 &lt;= time[i] &lt;= 500</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int paintWalls(vector<int>& cost, vector<int>& time) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int paintWalls(int[] cost, int[] time) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def paintWalls(self, cost: List[int], time: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def paintWalls(self, cost, time):\n        \"\"\"\n        :type cost: List[int]\n        :type time: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} cost\n * @param {number[]} time\n * @return {number}\n */\nvar paintWalls = function(cost, time) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function paintWalls(cost: number[], time: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PaintWalls(int[] cost, int[] time) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int paintWalls(int* cost, int costSize, int* time, int timeSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func paintWalls(cost []int, time []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun paintWalls(cost: IntArray, time: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func paintWalls(_ cost: [Int], _ time: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn paint_walls(cost: Vec<i32>, time: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} cost\n# @param {Integer[]} time\n# @return {Integer}\ndef paint_walls(cost, time)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $cost\n     * @param Integer[] $time\n     * @return Integer\n     */\n    function paintWalls($cost, $time) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int paintWalls(List<int> cost, List<int> time) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def paintWalls(cost: Array[Int], time: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec paint_walls(cost :: [integer], time :: [integer]) :: integer\n  def paint_walls(cost, time) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec paint_walls(Cost :: [integer()], Time :: [integer()]) -> integer().\npaint_walls(Cost, Time) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (paint-walls cost time)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"78.5K\", \"totalSubmission\": \"160.6K\", \"totalAcceptedRaw\": 78531, \"totalSubmissionRaw\": 160630, \"acRate\": \"48.9%\"}",
+  "metaData": "{\n  \"name\": \"paintWalls\",\n  \"params\": [\n    {\n      \"name\": \"cost\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"time\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,2,3,2]\n[1,2,3,2]"
+}

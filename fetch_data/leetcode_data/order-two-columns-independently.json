@@ -1,0 +1,33 @@
+{
+  "questionId": "2302",
+  "questionFrontendId": "2159",
+  "title": "Order Two Columns Independently",
+  "titleSlug": "order-two-columns-independently",
+  "content": "<p>Table: <code>Data</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| first_col   | int  |\n| second_col  | int  |\n+-------------+------+\nThis table may contain duplicate rows.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to independently:</p>\n\n<ul>\n\t<li>order <code>first_col</code> in <strong>ascending order</strong>.</li>\n\t<li>order <code>second_col</code> in <strong>descending order</strong>.</li>\n</ul>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nData table:\n+-----------+------------+\n| first_col | second_col |\n+-----------+------------+\n| 4         | 2          |\n| 2         | 3          |\n| 3         | 1          |\n| 1         | 4          |\n+-----------+------------+\n<strong>Output:</strong> \n+-----------+------------+\n| first_col | second_col |\n+-----------+------------+\n| 1         | 4          |\n| 2         | 3          |\n| 3         | 2          |\n| 4         | 1          |\n+-----------+------------+\n</pre>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef order_two_columns(data: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.6K\", \"totalSubmission\": \"17.3K\", \"totalAcceptedRaw\": 10644, \"totalSubmissionRaw\": 17314, \"acRate\": \"61.5%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Data (first_col int, second_col int)\"], \"mssql\": [\"Create table Data (first_col int, second_col int)\"], \"oraclesql\": [\"Create table Data (first_col int, second_col int)\"], \"database\": true, \"name\": \"order_two_columns\", \"pythondata\": [\"Data = pd.DataFrame([], columns=['first_col', 'second_col']).astype({'first_col':'Int64', 'second_col':'Int64'})\"], \"postgresql\": [\"Create table If Not Exists Data (first_col int, second_col int)\"], \"database_schema\": {\"Data\": {\"first_col\": \"INT\", \"second_col\": \"INT\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Data\":[\"first_col\",\"second_col\"]},\"rows\":{\"Data\":[[4,2],[2,3],[3,1],[1,4]]}}"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "214",
+  "questionFrontendId": "214",
+  "title": "Shortest Palindrome",
+  "titleSlug": "shortest-palindrome",
+  "content": "<p>You are given a string <code>s</code>. You can convert <code>s</code> to a <span data-keyword=\"palindrome-string\">palindrome</span> by adding characters in front of it.</p>\n\n<p>Return <em>the shortest palindrome you can find by performing this transformation</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aacecaaa\"\n<strong>Output:</strong> \"aaacecaaa\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abcd\"\n<strong>Output:</strong> \"dcbabcd\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters only.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string shortestPalindrome(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String shortestPalindrome(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestPalindrome(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestPalindrome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar shortestPalindrome = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function shortestPalindrome(s: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ShortestPalindrome(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* shortestPalindrome(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestPalindrome(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestPalindrome(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestPalindrome(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_palindrome(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef shortest_palindrome(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function shortestPalindrome($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String shortestPalindrome(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestPalindrome(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec shortest_palindrome(s :: String.t) :: String.t\n  def shortest_palindrome(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec shortest_palindrome(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nshortest_palindrome(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (shortest-palindrome s)\n  (-> string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"343.9K\", \"totalSubmission\": \"822.6K\", \"totalAcceptedRaw\": 343869, \"totalSubmissionRaw\": 822560, \"acRate\": \"41.8%\"}",
+  "metaData": "{\r\n  \"name\": \"shortestPalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "sampleTestCase": "\"aacecaaa\""
+}

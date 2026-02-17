@@ -1,0 +1,33 @@
+{
+  "questionId": "1898",
+  "questionFrontendId": "1747",
+  "title": "Leetflex Banned Accounts",
+  "titleSlug": "leetflex-banned-accounts",
+  "content": "<p>Table: <code>LogInfo</code></p>\n\n<pre>\n+-------------+----------+\n| Column Name | Type     |\n+-------------+----------+\n| account_id  | int      |\n| ip_address  | int      |\n| login       | datetime |\n| logout      | datetime |\n+-------------+----------+\nThis table may contain duplicate rows.\nThe table contains information about the login and logout dates of Leetflex accounts. It also contains the IP address from which the account was logged in and out.\nIt is guaranteed that the logout time is after the login time.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution&nbsp;to find the <code>account_id</code> of the accounts that should be banned from Leetflex. An account should be banned if it was logged in at some moment from two different IP addresses.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The&nbsp;result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nLogInfo table:\n+------------+------------+---------------------+---------------------+\n| account_id | ip_address | login               | logout              |\n+------------+------------+---------------------+---------------------+\n| 1          | 1          | 2021-02-01 09:00:00 | 2021-02-01 09:30:00 |\n| 1          | 2          | 2021-02-01 08:00:00 | 2021-02-01 11:30:00 |\n| 2          | 6          | 2021-02-01 20:30:00 | 2021-02-01 22:00:00 |\n| 2          | 7          | 2021-02-02 20:30:00 | 2021-02-02 22:00:00 |\n| 3          | 9          | 2021-02-01 16:00:00 | 2021-02-01 16:59:59 |\n| 3          | 13         | 2021-02-01 17:00:00 | 2021-02-01 17:59:59 |\n| 4          | 10         | 2021-02-01 16:00:00 | 2021-02-01 17:00:00 |\n| 4          | 11         | 2021-02-01 17:00:00 | 2021-02-01 17:59:59 |\n+------------+------------+---------------------+---------------------+\n<strong>Output:</strong> \n+------------+\n| account_id |\n+------------+\n| 1          |\n| 4          |\n+------------+\n<strong>Explanation:</strong> \nAccount ID 1 --&gt; The account was active from &quot;2021-02-01 09:00:00&quot; to &quot;2021-02-01 09:30:00&quot; with two different IP addresses (1 and 2). It should be banned.\nAccount ID 2 --&gt; The account was active from two different addresses (6, 7) but in <strong>two different times</strong>.\nAccount ID 3 --&gt; The account was active from two different addresses (9, 13) on the same day but <strong>they do not intersect at any moment</strong>.\nAccount ID 4 --&gt; The account was active from &quot;2021-02-01 17:00:00&quot; to &quot;2021-02-01 17:00:00&quot; with two different IP addresses (10 and 11). It should be banned.\n</pre>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef leetflex_banned_accnts(log_info: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"30.2K\", \"totalSubmission\": \"48.9K\", \"totalAcceptedRaw\": 30229, \"totalSubmissionRaw\": 48898, \"acRate\": \"61.8%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists LogInfo (account_id int, ip_address int, login datetime, logout datetime)\"], \"mssql\": [\"Create table LogInfo (account_id int, ip_address int, login datetime, logout datetime)\"], \"oraclesql\": [\"Create table LogInfo (account_id int, ip_address int, login date, logout date)\", \"ALTER SESSION SET nls_date_format='YYYY-MM-DD HH24:MI:SS'\"], \"database\": true, \"manual\": true, \"name\": \"leetflex_banned_accnts\", \"pythondata\": [\"LogInfo = pd.DataFrame([], columns=['account_id', 'ip_address', 'login', 'logout']).astype({'account_id':'Int64', 'ip_address':'Int64', 'login':'datetime64[ns]', 'logout':'datetime64[ns]'})\"], \"postgresql\": [\"Create table If Not Exists LogInfo (account_id int, ip_address int, login timestamp, logout timestamp)\\n\"], \"database_schema\": {\"LogInfo\": {\"account_id\": \"INT\", \"ip_address\": \"INT\", \"login\": \"DATETIME\", \"logout\": \"DATETIME\"}}}",
+  "sampleTestCase": "{\"headers\":{\"LogInfo\":[\"account_id\",\"ip_address\",\"login\",\"logout\"]},\"rows\":{\"LogInfo\":[[1,1,\"2021-02-01 09:00:00\",\"2021-02-01 09:30:00\"],[1,2,\"2021-02-01 08:00:00\",\"2021-02-01 11:30:00\"],[2,6,\"2021-02-01 20:30:00\",\"2021-02-01 22:00:00\"],[2,7,\"2021-02-02 20:30:00\",\"2021-02-02 22:00:00\"],[3,9,\"2021-02-01 16:00:00\",\"2021-02-01 16:59:59\"],[3,13,\"2021-02-01 17:00:00\",\"2021-02-01 17:59:59\"],[4,10,\"2021-02-01 16:00:00\",\"2021-02-01 17:00:00\"],[4,11,\"2021-02-01 17:00:00\",\"2021-02-01 17:59:59\"]]}}"
+}

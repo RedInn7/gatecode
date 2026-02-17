@@ -1,0 +1,89 @@
+{
+  "questionId": "267",
+  "questionFrontendId": "267",
+  "title": "Palindrome Permutation II",
+  "titleSlug": "palindrome-permutation-ii",
+  "content": "<p>Given a string s, return <em>all the palindromic permutations (without duplicates) of it</em>.</p>\n\n<p>You may return the answer in <strong>any order</strong>. If <code>s</code> has no palindromic permutation, return an empty list.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aabb\"\n<strong>Output:</strong> [\"abba\",\"baab\"]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abc\"\n<strong>Output:</strong> []\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 16</code></li>\n\t<li><code>s</code> consists of only lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> generatePalindromes(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> generatePalindromes(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def generatePalindromes(self, s: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def generatePalindromes(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar generatePalindromes = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function generatePalindromes(s: string): string[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> GeneratePalindromes(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** generatePalindromes(char* s, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func generatePalindromes(s string) []string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun generatePalindromes(s: String): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func generatePalindromes(_ s: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn generate_palindromes(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String[]}\ndef generate_palindromes(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function generatePalindromes($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<String> generatePalindromes(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def generatePalindromes(s: String): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec generate_palindromes(s :: String.t) :: [String.t]\n  def generate_palindromes(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec generate_palindromes(S :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\ngenerate_palindromes(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (generate-palindromes s)\n  (-> string? (listof string?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"75.6K\", \"totalSubmission\": \"178.6K\", \"totalAcceptedRaw\": 75571, \"totalSubmissionRaw\": 178628, \"acRate\": \"42.3%\"}",
+  "metaData": "{\r\n  \"name\": \"generatePalindromes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "sampleTestCase": "\"aabb\""
+}

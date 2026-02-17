@@ -1,0 +1,89 @@
+{
+  "questionId": "2492",
+  "questionFrontendId": "2414",
+  "title": "Length of the Longest Alphabetical Continuous Substring",
+  "titleSlug": "length-of-the-longest-alphabetical-continuous-substring",
+  "content": "<p>An <strong>alphabetical continuous string</strong> is a string consisting of consecutive letters in the alphabet. In other words, it is any substring of the string <code>&quot;abcdefghijklmnopqrstuvwxyz&quot;</code>.</p>\n\n<ul>\n\t<li>For example, <code>&quot;abc&quot;</code> is an alphabetical continuous string, while <code>&quot;acb&quot;</code> and <code>&quot;za&quot;</code> are not.</li>\n</ul>\n\n<p>Given a string <code>s</code> consisting of lowercase letters only, return the <em>length of the <strong>longest</strong> alphabetical continuous substring.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abacaba&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are 4 distinct continuous substrings: &quot;a&quot;, &quot;b&quot;, &quot;c&quot; and &quot;ab&quot;.\n&quot;ab&quot; is the longest continuous substring.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcde&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> &quot;abcde&quot; is the longest continuous substring.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of only English lowercase letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestContinuousSubstring(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestContinuousSubstring(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestContinuousSubstring(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestContinuousSubstring(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestContinuousSubstring = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function longestContinuousSubstring(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestContinuousSubstring(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int longestContinuousSubstring(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestContinuousSubstring(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestContinuousSubstring(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestContinuousSubstring(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_continuous_substring(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef longest_continuous_substring(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function longestContinuousSubstring($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int longestContinuousSubstring(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestContinuousSubstring(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec longest_continuous_substring(s :: String.t) :: integer\n  def longest_continuous_substring(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec longest_continuous_substring(S :: unicode:unicode_binary()) -> integer().\nlongest_continuous_substring(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (longest-continuous-substring s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"62.4K\", \"totalSubmission\": \"103.4K\", \"totalAcceptedRaw\": 62369, \"totalSubmissionRaw\": 103449, \"acRate\": \"60.3%\"}",
+  "metaData": "{\n  \"name\": \"longestContinuousSubstring\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"abacaba\""
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "1471",
+  "questionFrontendId": "1349",
+  "title": "Maximum Students Taking Exam",
+  "titleSlug": "maximum-students-taking-exam",
+  "content": "<p>Given a <code>m&nbsp;* n</code>&nbsp;matrix <code>seats</code>&nbsp;&nbsp;that represent seats distributions&nbsp;in a classroom.&nbsp;If a seat&nbsp;is&nbsp;broken, it is denoted by <code>&#39;#&#39;</code> character otherwise it is denoted by a <code>&#39;.&#39;</code> character.</p>\n\n<p>Students can see the answers of those sitting next to the left, right, upper left and upper right, but he cannot see the answers of the student sitting&nbsp;directly in front or behind him. Return the <strong>maximum </strong>number of students that can take the exam together&nbsp;without any cheating being possible.</p>\n\n<p>Students must be placed in seats in good condition.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img height=\"200\" src=\"https://assets.leetcode.com/uploads/2020/01/29/image.png\" width=\"339\" />\n<pre>\n<strong>Input:</strong> seats = [[&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;],\n&nbsp;               [&quot;.&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;],\n&nbsp;               [&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;]]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Teacher can place 4 students in available seats so they don&#39;t cheat on the exam. \n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> seats = [[&quot;.&quot;,&quot;#&quot;],\n&nbsp;               [&quot;#&quot;,&quot;#&quot;],\n&nbsp;               [&quot;#&quot;,&quot;.&quot;],\n&nbsp;               [&quot;#&quot;,&quot;#&quot;],\n&nbsp;               [&quot;.&quot;,&quot;#&quot;]]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Place all students in available seats. \n\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> seats = [[&quot;#&quot;,&quot;.&quot;,&quot;<strong>.</strong>&quot;,&quot;.&quot;,&quot;#&quot;],\n&nbsp;               [&quot;<strong>.</strong>&quot;,&quot;#&quot;,&quot;<strong>.</strong>&quot;,&quot;#&quot;,&quot;<strong>.</strong>&quot;],\n&nbsp;               [&quot;<strong>.</strong>&quot;,&quot;.&quot;,&quot;#&quot;,&quot;.&quot;,&quot;<strong>.</strong>&quot;],\n&nbsp;               [&quot;<strong>.</strong>&quot;,&quot;#&quot;,&quot;<strong>.</strong>&quot;,&quot;#&quot;,&quot;<strong>.</strong>&quot;],\n&nbsp;               [&quot;#&quot;,&quot;.&quot;,&quot;<strong>.</strong>&quot;,&quot;.&quot;,&quot;#&quot;]]\n<strong>Output:</strong> 10\n<strong>Explanation:</strong> Place students in available seats in column 1, 3 and 5.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>seats</code>&nbsp;contains only characters&nbsp;<code>&#39;.&#39;<font face=\"sans-serif, Arial, Verdana, Trebuchet MS\">&nbsp;and</font></code><code>&#39;#&#39;.</code></li>\n\t<li><code>m ==&nbsp;seats.length</code></li>\n\t<li><code>n ==&nbsp;seats[i].length</code></li>\n\t<li><code>1 &lt;= m &lt;= 8</code></li>\n\t<li><code>1 &lt;= n &lt;= 8</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxStudents(vector<vector<char>>& seats) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxStudents(char[][] seats) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxStudents(self, seats: List[List[str]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxStudents(self, seats):\n        \"\"\"\n        :type seats: List[List[str]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} seats\n * @return {number}\n */\nvar maxStudents = function(seats) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxStudents(seats: string[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxStudents(char[][] seats) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxStudents(char** seats, int seatsSize, int* seatsColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxStudents(seats [][]byte) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxStudents(seats: Array<CharArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxStudents(_ seats: [[Character]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_students(seats: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} seats\n# @return {Integer}\ndef max_students(seats)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $seats\n     * @return Integer\n     */\n    function maxStudents($seats) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxStudents(List<List<String>> seats) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxStudents(seats: Array[Array[Char]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_students(seats :: [[char]]) :: integer\n  def max_students(seats) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_students(Seats :: [[char()]]) -> integer().\nmax_students(Seats) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-students seats)\n  (-> (listof (listof char?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"22.7K\", \"totalSubmission\": \"42.6K\", \"totalAcceptedRaw\": 22734, \"totalSubmissionRaw\": 42592, \"acRate\": \"53.4%\"}",
+  "metaData": "{\n  \"name\": \"maxStudents\",\n  \"params\": [\n    {\n      \"name\": \"seats\",\n      \"type\": \"character[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[\"#\",\".\",\"#\",\"#\",\".\",\"#\"],[\".\",\"#\",\"#\",\"#\",\"#\",\".\"],[\"#\",\".\",\"#\",\"#\",\".\",\"#\"]]"
+}

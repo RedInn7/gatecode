@@ -1,0 +1,89 @@
+{
+  "questionId": "246",
+  "questionFrontendId": "246",
+  "title": "Strobogrammatic Number",
+  "titleSlug": "strobogrammatic-number",
+  "content": "<p>Given a string <code>num</code> which represents an integer, return <code>true</code> <em>if</em> <code>num</code> <em>is a <strong>strobogrammatic number</strong></em>.</p>\n\n<p>A <strong>strobogrammatic number</strong> is a number that looks the same when rotated <code>180</code> degrees (looked at upside down).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;69&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;88&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;962&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num.length &lt;= 50</code></li>\n\t<li><code>num</code> consists of only digits.</li>\n\t<li><code>num</code> does not contain any leading zeros except for zero itself.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isStrobogrammatic(string num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isStrobogrammatic(String num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isStrobogrammatic(self, num: str) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isStrobogrammatic(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} num\n * @return {boolean}\n */\nvar isStrobogrammatic = function(num) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function isStrobogrammatic(num: string): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsStrobogrammatic(string num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool isStrobogrammatic(char* num) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isStrobogrammatic(num string) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isStrobogrammatic(num: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isStrobogrammatic(_ num: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_strobogrammatic(num: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} num\n# @return {Boolean}\ndef is_strobogrammatic(num)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $num\n     * @return Boolean\n     */\n    function isStrobogrammatic($num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool isStrobogrammatic(String num) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isStrobogrammatic(num: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec is_strobogrammatic(num :: String.t) :: boolean\n  def is_strobogrammatic(num) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec is_strobogrammatic(Num :: unicode:unicode_binary()) -> boolean().\nis_strobogrammatic(Num) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (is-strobogrammatic num)\n  (-> string? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"210.4K\", \"totalSubmission\": \"442.5K\", \"totalAcceptedRaw\": 210428, \"totalSubmissionRaw\": 442540, \"acRate\": \"47.6%\"}",
+  "metaData": "{\r\n  \"name\": \"isStrobogrammatic\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "sampleTestCase": "\"69\""
+}

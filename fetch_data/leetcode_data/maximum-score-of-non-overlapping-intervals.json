@@ -1,0 +1,89 @@
+{
+  "questionId": "3562",
+  "questionFrontendId": "3414",
+  "title": "Maximum Score of Non-overlapping Intervals",
+  "titleSlug": "maximum-score-of-non-overlapping-intervals",
+  "content": "<p>You are given a 2D integer array <code>intervals</code>, where <code>intervals[i] = [l<sub>i</sub>, r<sub>i</sub>, weight<sub>i</sub>]</code>. Interval <code>i</code> starts at position <code>l<sub>i</sub></code> and ends at <code>r<sub>i</sub></code>, and has a weight of <code>weight<sub>i</sub></code>. You can choose <em>up to</em> 4 <strong>non-overlapping</strong> intervals. The <strong>score</strong> of the chosen intervals is defined as the total sum of their weights.</p>\n\n<p>Return the <span data-keyword=\"lexicographically-smaller-array\">lexicographically smallest</span> array of at most 4 indices from <code>intervals</code> with <strong>maximum</strong> score, representing your choice of non-overlapping intervals.</p>\n\n<p>Two intervals are said to be <strong>non-overlapping</strong> if they do not share any points. In particular, intervals sharing a left or right boundary are considered overlapping.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">intervals = [[1,3,2],[4,5,2],[1,5,5],[6,9,3],[6,7,1],[8,9,1]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[2,3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>You can choose the intervals with indices 2, and 3 with respective weights of 5, and 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">intervals = [[5,8,1],[6,7,7],[4,7,3],[9,10,6],[7,8,2],[11,14,3],[3,5,5]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,3,5,6]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>You can choose the intervals with indices 1, 3, 5, and 6 with respective weights of 7, 6, 3, and 5.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= intevals.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>intervals[i].length == 3</code></li>\n\t<li><code>intervals[i] = [l<sub>i</sub>, r<sub>i</sub>, weight<sub>i</sub>]</code></li>\n\t<li><code>1 &lt;= l<sub>i</sub> &lt;= r<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= weight<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> maximumWeight(vector<vector<int>>& intervals) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] maximumWeight(List<List<Integer>> intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximumWeight(self, intervals: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximumWeight(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} intervals\n * @return {number[]}\n */\nvar maximumWeight = function(intervals) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maximumWeight(intervals: number[][]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] MaximumWeight(IList<IList<int>> intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* maximumWeight(int** intervals, int intervalsSize, int* intervalsColSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximumWeight(intervals [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximumWeight(intervals: List<List<Int>>): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximumWeight(_ intervals: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximum_weight(intervals: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} intervals\n# @return {Integer[]}\ndef maximum_weight(intervals)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @return Integer[]\n     */\n    function maximumWeight($intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> maximumWeight(List<List<int>> intervals) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximumWeight(intervals: List[List[Int]]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec maximum_weight(intervals :: [[integer]]) :: [integer]\n  def maximum_weight(intervals) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec maximum_weight(Intervals :: [[integer()]]) -> [integer()].\nmaximum_weight(Intervals) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (maximum-weight intervals)\n  (-> (listof (listof exact-integer?)) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.1K\", \"totalSubmission\": \"13.4K\", \"totalAcceptedRaw\": 4148, \"totalSubmissionRaw\": 13378, \"acRate\": \"31.0%\"}",
+  "metaData": "{\n  \"name\": \"maximumWeight\",\n  \"params\": [\n    {\n      \"name\": \"intervals\",\n      \"type\": \"list<list<integer>>\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[[1,3,2],[4,5,2],[1,5,5],[6,9,3],[6,7,1],[8,9,1]]"
+}

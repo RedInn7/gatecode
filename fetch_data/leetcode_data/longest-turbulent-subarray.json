@@ -1,0 +1,89 @@
+{
+  "questionId": "1020",
+  "questionFrontendId": "978",
+  "title": "Longest Turbulent Subarray",
+  "titleSlug": "longest-turbulent-subarray",
+  "content": "<p>Given an integer array <code>arr</code>, return <em>the length of a maximum size turbulent subarray of</em> <code>arr</code>.</p>\n\n<p>A subarray is <strong>turbulent</strong> if the comparison sign flips between each adjacent pair of elements in the subarray.</p>\n\n<p>More formally, a subarray <code>[arr[i], arr[i + 1], ..., arr[j]]</code> of <code>arr</code> is said to be turbulent if and only if:</p>\n\n<ul>\n\t<li>For <code>i &lt;= k &lt; j</code>:\n\n\t<ul>\n\t\t<li><code>arr[k] &gt; arr[k + 1]</code> when <code>k</code> is odd, and</li>\n\t\t<li><code>arr[k] &lt; arr[k + 1]</code> when <code>k</code> is even.</li>\n\t</ul>\n\t</li>\n\t<li>Or, for <code>i &lt;= k &lt; j</code>:\n\t<ul>\n\t\t<li><code>arr[k] &gt; arr[k + 1]</code> when <code>k</code> is even, and</li>\n\t\t<li><code>arr[k] &lt; arr[k + 1]</code> when <code>k</code> is odd.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [9,4,2,10,7,8,8,1,9]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> arr[1] &gt; arr[2] &lt; arr[3] &gt; arr[4] &lt; arr[5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [4,8,12,16]\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [100]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 4 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= arr[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxTurbulenceSize(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxTurbulenceSize(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxTurbulenceSize(self, arr: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxTurbulenceSize(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar maxTurbulenceSize = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxTurbulenceSize(arr: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxTurbulenceSize(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxTurbulenceSize(int* arr, int arrSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxTurbulenceSize(arr []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxTurbulenceSize(arr: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxTurbulenceSize(_ arr: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_turbulence_size(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer}\ndef max_turbulence_size(arr)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer\n     */\n    function maxTurbulenceSize($arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxTurbulenceSize(List<int> arr) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxTurbulenceSize(arr: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_turbulence_size(arr :: [integer]) :: integer\n  def max_turbulence_size(arr) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_turbulence_size(Arr :: [integer()]) -> integer().\nmax_turbulence_size(Arr) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-turbulence-size arr)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"135.5K\", \"totalSubmission\": \"277.3K\", \"totalAcceptedRaw\": 135470, \"totalSubmissionRaw\": 277348, \"acRate\": \"48.8%\"}",
+  "metaData": "{\n  \"name\": \"maxTurbulenceSize\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[9,4,2,10,7,8,8,1,9]"
+}

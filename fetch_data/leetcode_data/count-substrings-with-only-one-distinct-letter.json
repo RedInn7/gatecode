@@ -1,0 +1,89 @@
+{
+  "questionId": "1131",
+  "questionFrontendId": "1180",
+  "title": "Count Substrings with Only One Distinct Letter",
+  "titleSlug": "count-substrings-with-only-one-distinct-letter",
+  "content": "<p>Given a string <code>s</code>, return <em>the number of substrings that have only <strong>one distinct</strong> letter</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaaba&quot;\n<strong>Output:</strong> 8\n<strong>Explanation: </strong>The substrings with one distinct letter are &quot;aaa&quot;, &quot;aa&quot;, &quot;a&quot;, &quot;b&quot;.\n&quot;aaa&quot; occurs 1 time.\n&quot;aa&quot; occurs 2 times.\n&quot;a&quot; occurs 4 times.\n&quot;b&quot; occurs 1 time.\nSo the answer is 1 + 2 + 4 + 1 = 8.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaaaaaaaaa&quot;\n<strong>Output:</strong> 55\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s[i]</code> consists of only lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countLetters(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countLetters(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countLetters(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countLetters(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar countLetters = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function countLetters(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountLetters(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int countLetters(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countLetters(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countLetters(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countLetters(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_letters(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef count_letters(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function countLetters($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int countLetters(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countLetters(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec count_letters(s :: String.t) :: integer\n  def count_letters(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec count_letters(S :: unicode:unicode_binary()) -> integer().\ncount_letters(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (count-letters s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.1K\", \"totalSubmission\": \"38.4K\", \"totalAcceptedRaw\": 31091, \"totalSubmissionRaw\": 38431, \"acRate\": \"80.9%\"}",
+  "metaData": "{\n  \"name\": \"countLetters\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"aaaba\""
+}

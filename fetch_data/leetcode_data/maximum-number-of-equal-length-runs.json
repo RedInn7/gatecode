@@ -1,0 +1,89 @@
+{
+  "questionId": "4155",
+  "questionFrontendId": "3773",
+  "title": "Maximum Number of Equal Length Runs",
+  "titleSlug": "maximum-number-of-equal-length-runs",
+  "content": "<p>You are given a string <code>s</code> consisting of lowercase English letters.</p>\n\n<p>A <strong>run</strong> in <code>s</code> is a <strong><span data-keyword=\"substring-nonempty\">substring</span></strong> of <strong>equal</strong> letters that cannot be extended further. For example, the runs in <code>&quot;hello&quot;</code> are <code>&quot;h&quot;</code>, <code>&quot;e&quot;</code>, <code>&quot;ll&quot;</code>, and <code>&quot;o&quot;</code>.</p>\n\n<p>You can <strong>select</strong> runs that have the <strong>same</strong> length in <code>s</code>.</p>\n\n<p>Return an integer denoting the <strong>maximum</strong> number of runs you can select in <code>s</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;hello&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The runs in <code>s</code> are <code>&quot;h&quot;</code>, <code>&quot;e&quot;</code>, <code>&quot;ll&quot;</code>, and <code>&quot;o&quot;</code>. You can select <code>&quot;h&quot;</code>, <code>&quot;e&quot;</code>, and <code>&quot;o&quot;</code> because they have the same length 1.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aaabaaa&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The runs in <code>s</code> are <code>&quot;aaa&quot;</code>, <code>&quot;b&quot;</code>, and <code>&quot;aaa&quot;</code>. You can select <code>&quot;aaa&quot;</code> and <code>&quot;aaa&quot;</code> because they have the same length 3.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters only.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSameLengthRuns(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSameLengthRuns(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSameLengthRuns(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSameLengthRuns(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxSameLengthRuns = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxSameLengthRuns(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSameLengthRuns(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxSameLengthRuns(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSameLengthRuns(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSameLengthRuns(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSameLengthRuns(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_same_length_runs(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef max_same_length_runs(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function maxSameLengthRuns($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxSameLengthRuns(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSameLengthRuns(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_same_length_runs(s :: String.t) :: integer\n  def max_same_length_runs(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_same_length_runs(S :: unicode:unicode_binary()) -> integer().\nmax_same_length_runs(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-same-length-runs s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"582\", \"totalSubmission\": \"689\", \"totalAcceptedRaw\": 582, \"totalSubmissionRaw\": 689, \"acRate\": \"84.5%\"}",
+  "metaData": "{\n  \"name\": \"maxSameLengthRuns\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"hello\""
+}

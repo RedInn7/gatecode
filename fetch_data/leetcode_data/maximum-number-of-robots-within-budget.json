@@ -1,0 +1,89 @@
+{
+  "questionId": "2449",
+  "questionFrontendId": "2398",
+  "title": "Maximum Number of Robots Within Budget",
+  "titleSlug": "maximum-number-of-robots-within-budget",
+  "content": "<p>You have <code>n</code> robots. You are given two <strong>0-indexed</strong> integer arrays, <code>chargeTimes</code> and <code>runningCosts</code>, both of length <code>n</code>. The <code>i<sup>th</sup></code> robot costs <code>chargeTimes[i]</code> units to charge and costs <code>runningCosts[i]</code> units to run. You are also given an integer <code>budget</code>.</p>\n\n<p>The <strong>total cost</strong> of running <code>k</code> chosen robots is equal to <code>max(chargeTimes) + k * sum(runningCosts)</code>, where <code>max(chargeTimes)</code> is the largest charge cost among the <code>k</code> robots and <code>sum(runningCosts)</code> is the sum of running costs among the <code>k</code> robots.</p>\n\n<p>Return<em> the <strong>maximum</strong> number of <strong>consecutive</strong> robots you can run such that the total cost <strong>does not</strong> exceed </em><code>budget</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> chargeTimes = [3,6,1,3,4], runningCosts = [2,1,3,4,5], budget = 25\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> \nIt is possible to run all individual and consecutive pairs of robots within budget.\nTo obtain answer 3, consider the first 3 robots. The total cost will be max(3,6,1) + 3 * sum(2,1,3) = 6 + 3 * 6 = 24 which is less than 25.\nIt can be shown that it is not possible to run more than 3 consecutive robots within budget, so we return 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> chargeTimes = [11,12,19], runningCosts = [10,8,7], budget = 19\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> No robot can be run that does not exceed the budget, so we return 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>chargeTimes.length == runningCosts.length == n</code></li>\n\t<li><code>1 &lt;= n &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= chargeTimes[i], runningCosts[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= budget &lt;= 10<sup>15</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maximumRobots(vector<int>& chargeTimes, vector<int>& runningCosts, long long budget) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maximumRobots(int[] chargeTimes, int[] runningCosts, long budget) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximumRobots(self, chargeTimes: List[int], runningCosts: List[int], budget: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximumRobots(self, chargeTimes, runningCosts, budget):\n        \"\"\"\n        :type chargeTimes: List[int]\n        :type runningCosts: List[int]\n        :type budget: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} chargeTimes\n * @param {number[]} runningCosts\n * @param {number} budget\n * @return {number}\n */\nvar maximumRobots = function(chargeTimes, runningCosts, budget) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maximumRobots(chargeTimes: number[], runningCosts: number[], budget: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaximumRobots(int[] chargeTimes, int[] runningCosts, long budget) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maximumRobots(int* chargeTimes, int chargeTimesSize, int* runningCosts, int runningCostsSize, long long budget) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximumRobots(chargeTimes []int, runningCosts []int, budget int64) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximumRobots(chargeTimes: IntArray, runningCosts: IntArray, budget: Long): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximumRobots(_ chargeTimes: [Int], _ runningCosts: [Int], _ budget: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximum_robots(charge_times: Vec<i32>, running_costs: Vec<i32>, budget: i64) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} charge_times\n# @param {Integer[]} running_costs\n# @param {Integer} budget\n# @return {Integer}\ndef maximum_robots(charge_times, running_costs, budget)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $chargeTimes\n     * @param Integer[] $runningCosts\n     * @param Integer $budget\n     * @return Integer\n     */\n    function maximumRobots($chargeTimes, $runningCosts, $budget) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maximumRobots(List<int> chargeTimes, List<int> runningCosts, int budget) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximumRobots(chargeTimes: Array[Int], runningCosts: Array[Int], budget: Long): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec maximum_robots(charge_times :: [integer], running_costs :: [integer], budget :: integer) :: integer\n  def maximum_robots(charge_times, running_costs, budget) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec maximum_robots(ChargeTimes :: [integer()], RunningCosts :: [integer()], Budget :: integer()) -> integer().\nmaximum_robots(ChargeTimes, RunningCosts, Budget) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (maximum-robots chargeTimes runningCosts budget)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"33.5K\", \"totalSubmission\": \"88.2K\", \"totalAcceptedRaw\": 33468, \"totalSubmissionRaw\": 88183, \"acRate\": \"38.0%\"}",
+  "metaData": "{\n  \"name\": \"maximumRobots\",\n  \"params\": [\n    {\n      \"name\": \"chargeTimes\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"runningCosts\"\n    },\n    {\n      \"type\": \"long\",\n      \"name\": \"budget\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[3,6,1,3,4]\n[2,1,3,4,5]\n25"
+}

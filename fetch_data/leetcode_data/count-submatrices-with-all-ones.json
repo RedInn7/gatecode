@@ -1,0 +1,89 @@
+{
+  "questionId": "1628",
+  "questionFrontendId": "1504",
+  "title": "Count Submatrices With All Ones",
+  "titleSlug": "count-submatrices-with-all-ones",
+  "content": "<p>Given an <code>m x n</code> binary matrix <code>mat</code>, <em>return the number of <strong>submatrices</strong> that have all ones</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/10/27/ones1-grid.jpg\" style=\"width: 244px; height: 245px;\" />\n<pre>\n<strong>Input:</strong> mat = [[1,0,1],[1,1,0],[1,1,0]]\n<strong>Output:</strong> 13\n<strong>Explanation:</strong> \nThere are 6 rectangles of side 1x1.\nThere are 2 rectangles of side 1x2.\nThere are 3 rectangles of side 2x1.\nThere is 1 rectangle of side 2x2. \nThere is 1 rectangle of side 3x1.\nTotal number of rectangles = 6 + 2 + 3 + 1 + 1 = 13.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/10/27/ones2-grid.jpg\" style=\"width: 324px; height: 245px;\" />\n<pre>\n<strong>Input:</strong> mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]\n<strong>Output:</strong> 24\n<strong>Explanation:</strong> \nThere are 8 rectangles of side 1x1.\nThere are 5 rectangles of side 1x2.\nThere are 2 rectangles of side 1x3. \nThere are 4 rectangles of side 2x1.\nThere are 2 rectangles of side 2x2. \nThere are 2 rectangles of side 3x1. \nThere is 1 rectangle of side 3x2. \nTotal number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m, n &lt;= 150</code></li>\n\t<li><code>mat[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numSubmat(vector<vector<int>>& mat) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numSubmat(int[][] mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numSubmat(self, mat: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numSubmat(self, mat):\n        \"\"\"\n        :type mat: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} mat\n * @return {number}\n */\nvar numSubmat = function(mat) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function numSubmat(mat: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumSubmat(int[][] mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int numSubmat(int** mat, int matSize, int* matColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numSubmat(mat [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numSubmat(mat: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numSubmat(_ mat: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_submat(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} mat\n# @return {Integer}\ndef num_submat(mat)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $mat\n     * @return Integer\n     */\n    function numSubmat($mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int numSubmat(List<List<int>> mat) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numSubmat(mat: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec num_submat(mat :: [[integer]]) :: integer\n  def num_submat(mat) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec num_submat(Mat :: [[integer()]]) -> integer().\nnum_submat(Mat) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (num-submat mat)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"146.9K\", \"totalSubmission\": \"206.7K\", \"totalAcceptedRaw\": 146900, \"totalSubmissionRaw\": 206714, \"acRate\": \"71.1%\"}",
+  "metaData": "{\n  \"name\": \"numSubmat\",\n  \"params\": [\n    {\n      \"name\": \"mat\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[1,0,1],[1,1,0],[1,1,0]]"
+}

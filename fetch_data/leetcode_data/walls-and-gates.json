@@ -1,0 +1,77 @@
+{
+  "questionId": "286",
+  "questionFrontendId": "286",
+  "title": "Walls and Gates",
+  "titleSlug": "walls-and-gates",
+  "content": "<p>You are given an <code>m x n</code> grid <code>rooms</code>&nbsp;initialized with these three possible values.</p>\n\n<ul>\n\t<li><code>-1</code>&nbsp;A wall or an obstacle.</li>\n\t<li><code>0</code> A gate.</li>\n\t<li><code>INF</code> Infinity means an empty room. We use the value <code>2<sup>31</sup> - 1 = 2147483647</code> to represent <code>INF</code> as you may assume that the distance to a gate is less than <code>2147483647</code>.</li>\n</ul>\n\n<p>Fill each empty room with the distance to <em>its nearest gate</em>. If it is impossible to reach a gate, it should be filled with <code>INF</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/03/grid.jpg\" style=\"width: 500px; height: 223px;\" />\n<pre>\n<strong>Input:</strong> rooms = [[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]\n<strong>Output:</strong> [[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> rooms = [[-1]]\n<strong>Output:</strong> [[-1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == rooms.length</code></li>\n\t<li><code>n == rooms[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 250</code></li>\n\t<li><code>rooms[i][j]</code> is <code>-1</code>, <code>0</code>, or <code>2<sup>31</sup> - 1</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void wallsAndGates(vector<vector<int>>& rooms) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void wallsAndGates(int[][] rooms) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wallsAndGates(self, rooms: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify rooms in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wallsAndGates(self, rooms):\n        \"\"\"\n        :type rooms: List[List[int]]\n        :rtype: None Do not return anything, modify rooms in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} rooms\n * @return {void} Do not return anything, modify rooms in-place instead.\n */\nvar wallsAndGates = function(rooms) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "/**\n Do not return anything, modify rooms in-place instead.\n */\nfunction wallsAndGates(rooms: number[][]): void {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void WallsAndGates(int[][] rooms) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "void wallsAndGates(int** rooms, int roomsSize, int* roomsColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wallsAndGates(rooms [][]int)  {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wallsAndGates(rooms: Array<IntArray>): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wallsAndGates(_ rooms: inout [[Int]]) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} rooms\n# @return {Void} Do not return anything, modify rooms in-place instead.\ndef walls_and_gates(rooms)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $rooms\n     * @return NULL\n     */\n    function wallsAndGates(&$rooms) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  void wallsAndGates(List<List<int>> rooms) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wallsAndGates(rooms: Array[Array[Int]]): Unit = {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"419.4K\", \"totalSubmission\": \"657.8K\", \"totalAcceptedRaw\": 419404, \"totalSubmissionRaw\": 657757, \"acRate\": \"63.8%\"}",
+  "metaData": "{\n  \"name\": \"wallsAndGates\",\n  \"params\": [\n    {\n      \"name\": \"rooms\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"void\"\n  },\n  \"output\": {\n    \"paramindex\": 0\n  }\n}",
+  "sampleTestCase": "[[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]"
+}

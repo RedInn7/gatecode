@@ -1,0 +1,89 @@
+{
+  "questionId": "1802",
+  "questionFrontendId": "1700",
+  "title": "Number of Students Unable to Eat Lunch",
+  "titleSlug": "number-of-students-unable-to-eat-lunch",
+  "content": "<p>The school cafeteria offers circular and square sandwiches at lunch break, referred to by numbers <code>0</code> and <code>1</code> respectively. All students stand in a queue. Each student either prefers square or circular sandwiches.</p>\n\n<p>The number of sandwiches in the cafeteria is equal to the number of students. The sandwiches are placed in a <strong>stack</strong>. At each step:</p>\n\n<ul>\n\t<li>If the student at the front of the queue <strong>prefers</strong> the sandwich on the top of the stack, they will <strong>take it</strong> and leave the queue.</li>\n\t<li>Otherwise, they will <strong>leave it</strong> and go to the queue&#39;s end.</li>\n</ul>\n\n<p>This continues until none of the queue students want to take the top sandwich and are thus unable to eat.</p>\n\n<p>You are given two integer arrays <code>students</code> and <code>sandwiches</code> where <code>sandwiches[i]</code> is the type of the <code>i<sup>​​​​​​th</sup></code> sandwich in the stack (<code>i = 0</code> is the top of the stack) and <code>students[j]</code> is the preference of the <code>j<sup>​​​​​​th</sup></code> student in the initial queue (<code>j = 0</code> is the front of the queue). Return <em>the number of students that are unable to eat.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> students = [1,1,0,0], sandwiches = [0,1,0,1]\n<strong>Output:</strong> 0<strong> \nExplanation:</strong>\n- Front student leaves the top sandwich and returns to the end of the line making students = [1,0,0,1].\n- Front student leaves the top sandwich and returns to the end of the line making students = [0,0,1,1].\n- Front student takes the top sandwich and leaves the line making students = [0,1,1] and sandwiches = [1,0,1].\n- Front student leaves the top sandwich and returns to the end of the line making students = [1,1,0].\n- Front student takes the top sandwich and leaves the line making students = [1,0] and sandwiches = [0,1].\n- Front student leaves the top sandwich and returns to the end of the line making students = [0,1].\n- Front student takes the top sandwich and leaves the line making students = [1] and sandwiches = [1].\n- Front student takes the top sandwich and leaves the line making students = [] and sandwiches = [].\nHence all students are able to eat.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= students.length, sandwiches.length &lt;= 100</code></li>\n\t<li><code>students.length == sandwiches.length</code></li>\n\t<li><code>sandwiches[i]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li><code>students[i]</code> is <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countStudents(vector<int>& students, vector<int>& sandwiches) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countStudents(int[] students, int[] sandwiches) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countStudents(self, students: List[int], sandwiches: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countStudents(self, students, sandwiches):\n        \"\"\"\n        :type students: List[int]\n        :type sandwiches: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} students\n * @param {number[]} sandwiches\n * @return {number}\n */\nvar countStudents = function(students, sandwiches) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function countStudents(students: number[], sandwiches: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountStudents(int[] students, int[] sandwiches) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int countStudents(int* students, int studentsSize, int* sandwiches, int sandwichesSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countStudents(students []int, sandwiches []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countStudents(students: IntArray, sandwiches: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countStudents(_ students: [Int], _ sandwiches: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_students(students: Vec<i32>, sandwiches: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} students\n# @param {Integer[]} sandwiches\n# @return {Integer}\ndef count_students(students, sandwiches)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $students\n     * @param Integer[] $sandwiches\n     * @return Integer\n     */\n    function countStudents($students, $sandwiches) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int countStudents(List<int> students, List<int> sandwiches) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countStudents(students: Array[Int], sandwiches: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec count_students(students :: [integer], sandwiches :: [integer]) :: integer\n  def count_students(students, sandwiches) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec count_students(Students :: [integer()], Sandwiches :: [integer()]) -> integer().\ncount_students(Students, Sandwiches) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (count-students students sandwiches)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"355.7K\", \"totalSubmission\": \"448.4K\", \"totalAcceptedRaw\": 355683, \"totalSubmissionRaw\": 448359, \"acRate\": \"79.3%\"}",
+  "metaData": "{\n  \"name\": \"countStudents\",\n  \"params\": [\n    {\n      \"name\": \"students\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"sandwiches\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,1,0,0]\n[0,1,0,1]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "2666",
+  "questionFrontendId": "2604",
+  "title": "Minimum Time to Eat All Grains",
+  "titleSlug": "minimum-time-to-eat-all-grains",
+  "content": "<p>There are <code>n</code> hens and <code>m</code> grains on a line. You are given the initial positions of the hens and the grains in two integer arrays <code>hens</code> and <code>grains</code> of size <code>n</code> and <code>m</code> respectively.</p>\n\n<p>Any hen can eat a grain if they are on the same position. The time taken for this is negligible. One hen can also eat multiple grains.</p>\n\n<p>In <code>1</code> second, a hen can move right or left by <code>1</code> unit. The hens can move simultaneously and independently of each other.</p>\n\n<p>Return <em>the <strong>minimum</strong> time to eat all grains if the hens act optimally.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> hens = [3,6,7], grains = [2,4,7,9]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> \nOne of the ways hens eat all grains in 2 seconds is described below:\n- The first hen eats the grain at position 2 in 1 second. \n- The second hen eats the grain at position 4 in 2 seconds. \n- The third hen eats the grains at positions 7 and 9 in 2 seconds. \nSo, the maximum time needed is 2.\nIt can be proven that the hens cannot eat all grains before 2 seconds.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> hens = [4,6,109,111,213,215], grains = [5,110,214]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> \nOne of the ways hens eat all grains in 1 second is described below:\n- The first hen eats the grain at position 5 in 1 second. \n- The fourth hen eats the grain at position 110 in 1 second.\n- The sixth hen eats the grain at position 214 in 1 second. \n- The other hens do not move. \nSo, the maximum time needed is 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= hens.length, grains.length &lt;= 2*10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= hens[i], grains[j] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minimumTime(vector<int>& hens, vector<int>& grains) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minimumTime(int[] hens, int[] grains) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimumTime(self, hens: List[int], grains: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimumTime(self, hens, grains):\n        \"\"\"\n        :type hens: List[int]\n        :type grains: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} hens\n * @param {number[]} grains\n * @return {number}\n */\nvar minimumTime = function(hens, grains) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minimumTime(hens: number[], grains: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinimumTime(int[] hens, int[] grains) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minimumTime(int* hens, int hensSize, int* grains, int grainsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimumTime(hens []int, grains []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minimumTime(hens: IntArray, grains: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minimumTime(_ hens: [Int], _ grains: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimum_time(hens: Vec<i32>, grains: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} hens\n# @param {Integer[]} grains\n# @return {Integer}\ndef minimum_time(hens, grains)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $hens\n     * @param Integer[] $grains\n     * @return Integer\n     */\n    function minimumTime($hens, $grains) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minimumTime(List<int> hens, List<int> grains) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minimumTime(hens: Array[Int], grains: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec minimum_time(hens :: [integer], grains :: [integer]) :: integer\n  def minimum_time(hens, grains) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec minimum_time(Hens :: [integer()], Grains :: [integer()]) -> integer().\nminimum_time(Hens, Grains) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (minimum-time hens grains)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.2K\", \"totalSubmission\": \"5.3K\", \"totalAcceptedRaw\": 2162, \"totalSubmissionRaw\": 5345, \"acRate\": \"40.4%\"}",
+  "metaData": "{\n  \"name\": \"minimumTime\",\n  \"params\": [\n    {\n      \"name\": \"hens\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"grains\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[3,6,7]\n[2,4,7,9]"
+}

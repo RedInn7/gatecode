@@ -1,0 +1,89 @@
+{
+  "questionId": "2062",
+  "questionFrontendId": "1908",
+  "title": "Game of Nim",
+  "titleSlug": "game-of-nim",
+  "content": "<p>Alice and Bob take turns playing a game with <strong>Alice starting first</strong>.</p>\n\n<p>In this game, there are <code>n</code> piles of stones. On each player&#39;s turn, the player should remove any <strong>positive</strong> number of stones from a non-empty pile <strong>of his or her choice</strong>. The first player who cannot make a move loses, and the other player wins.</p>\n\n<p>Given an integer array <code>piles</code>, where <code>piles[i]</code> is the number of stones in the <code>i<sup>th</sup></code> pile, return <code>true</code><em> if Alice wins, or </em><code>false</code><em> if Bob wins</em>.</p>\n\n<p>Both Alice and Bob play <strong>optimally</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [1]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> There is only one possible scenario:\n- On the first turn, Alice removes one stone from the first pile. piles = [0].\n- On the second turn, there are no stones left for Bob to remove. Alice wins.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [1,1]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> It can be proven that Bob will always win. One possible scenario is:\n- On the first turn, Alice removes one stone from the first pile. piles = [0,1].\n- On the second turn, Bob removes one stone from the second pile. piles = [0,0].\n- On the third turn, there are no stones left for Alice to remove. Bob wins.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [1,2,3]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> It can be proven that Bob will always win. One possible scenario is:\n- On the first turn, Alice removes three stones from the third pile. piles = [1,2,0].\n- On the second turn, Bob removes one stone from the second pile. piles = [1,1,0].\n- On the third turn, Alice removes one stone from the first pile. piles = [0,1,0].\n- On the fourth turn, Bob removes one stone from the second pile. piles = [0,0,0].\n- On the fifth turn, there are no stones left for Alice to remove. Bob wins.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == piles.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 7</code></li>\n\t<li><code>1 &lt;= piles[i] &lt;= 7</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow-up:</strong> Could you find a linear time solution? Although the linear time solution may be beyond the scope of an interview, it could be interesting to know.</p>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool nimGame(vector<int>& piles) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean nimGame(int[] piles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nimGame(self, piles: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nimGame(self, piles):\n        \"\"\"\n        :type piles: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} piles\n * @return {boolean}\n */\nvar nimGame = function(piles) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function nimGame(piles: number[]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool NimGame(int[] piles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool nimGame(int* piles, int pilesSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nimGame(piles []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nimGame(piles: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nimGame(_ piles: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nim_game(piles: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} piles\n# @return {Boolean}\ndef nim_game(piles)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $piles\n     * @return Boolean\n     */\n    function nimGame($piles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool nimGame(List<int> piles) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nimGame(piles: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec nim_game(piles :: [integer]) :: boolean\n  def nim_game(piles) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec nim_game(Piles :: [integer()]) -> boolean().\nnim_game(Piles) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (nim-game piles)\n  (-> (listof exact-integer?) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.1K\", \"totalSubmission\": \"8.2K\", \"totalAcceptedRaw\": 5147, \"totalSubmissionRaw\": 8226, \"acRate\": \"62.6%\"}",
+  "metaData": "{\n  \"name\": \"nimGame\",\n  \"params\": [\n    {\n      \"name\": \"piles\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "[1]"
+}

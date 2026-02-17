@@ -1,0 +1,89 @@
+{
+  "questionId": "1859",
+  "questionFrontendId": "1737",
+  "title": "Change Minimum Characters to Satisfy One of Three Conditions",
+  "titleSlug": "change-minimum-characters-to-satisfy-one-of-three-conditions",
+  "content": "<p>You are given two strings <code>a</code> and <code>b</code> that consist of lowercase letters. In one operation, you can change any character in <code>a</code> or <code>b</code> to <strong>any lowercase letter</strong>.</p>\n\n<p>Your goal is to satisfy <strong>one</strong> of the following three conditions:</p>\n\n<ul>\n\t<li><strong>Every</strong> letter in <code>a</code> is <strong>strictly less</strong> than <strong>every</strong> letter in <code>b</code> in the alphabet.</li>\n\t<li><strong>Every</strong> letter in <code>b</code> is <strong>strictly less</strong> than <strong>every</strong> letter in <code>a</code> in the alphabet.</li>\n\t<li><strong>Both</strong> <code>a</code> and <code>b</code> consist of <strong>only one</strong> distinct letter.</li>\n</ul>\n\n<p>Return <em>the <strong>minimum</strong> number of operations needed to achieve your goal.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> a = &quot;aba&quot;, b = &quot;caa&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Consider the best way to make each condition true:\n1) Change b to &quot;ccc&quot; in 2 operations, then every letter in a is less than every letter in b.\n2) Change a to &quot;bbb&quot; and b to &quot;aaa&quot; in 3 operations, then every letter in b is less than every letter in a.\n3) Change a to &quot;aaa&quot; and b to &quot;aaa&quot; in 2 operations, then a and b consist of one distinct letter.\nThe best way was done in 2 operations (either condition 1 or condition 3).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> a = &quot;dabadd&quot;, b = &quot;cda&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The best way is to make condition 1 true by changing b to &quot;eee&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= a.length, b.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>a</code> and <code>b</code> consist only of lowercase letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minCharacters(string a, string b) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minCharacters(String a, String b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minCharacters(self, a: str, b: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minCharacters(self, a, b):\n        \"\"\"\n        :type a: str\n        :type b: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} a\n * @param {string} b\n * @return {number}\n */\nvar minCharacters = function(a, b) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minCharacters(a: string, b: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinCharacters(string a, string b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minCharacters(char* a, char* b) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minCharacters(a string, b string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minCharacters(a: String, b: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minCharacters(_ a: String, _ b: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_characters(a: String, b: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\n# @param {String} b\n# @return {Integer}\ndef min_characters(a, b)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $a\n     * @param String $b\n     * @return Integer\n     */\n    function minCharacters($a, $b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minCharacters(String a, String b) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minCharacters(a: String, b: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_characters(a :: String.t, b :: String.t) :: integer\n  def min_characters(a, b) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_characters(A :: unicode:unicode_binary(), B :: unicode:unicode_binary()) -> integer().\nmin_characters(A, B) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-characters a b)\n  (-> string? string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.3K\", \"totalSubmission\": \"43.1K\", \"totalAcceptedRaw\": 16273, \"totalSubmissionRaw\": 43123, \"acRate\": \"37.7%\"}",
+  "metaData": "{\n  \"name\": \"minCharacters\",\n  \"params\": [\n    {\n      \"name\": \"a\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"b\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"aba\"\n\"caa\""
+}

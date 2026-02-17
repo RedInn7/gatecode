@@ -1,0 +1,89 @@
+{
+  "questionId": "4077",
+  "questionFrontendId": "3752",
+  "title": "Lexicographically Smallest Negated Permutation that Sums to Target",
+  "titleSlug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+  "content": "<p>You are given a positive integer <code>n</code> and an integer <code>target</code>.</p>\n\n<p>Return the <strong><span data-keyword=\"lexicographically-smaller-array\">lexicographically smallest</span></strong> array of integers of size <code>n</code> such that:</p>\n\n<ul>\n\t<li>The <strong>sum</strong> of its elements equals <code>target</code>.</li>\n\t<li>The <strong>absolute values</strong> of its elements form a <strong>permutation</strong> of size <code>n</code>.</li>\n</ul>\n\n<p>If no such array exists, return an empty array.</p>\n\n<p>A <strong>permutation</strong> of size <code>n</code> is a rearrangement of integers <code>1, 2, ..., n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 3, target = 0</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[-3,1,2]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The arrays that sum to 0 and whose absolute values form a permutation of size 3 are:</p>\n\n<ul>\n\t<li><code>[-3, 1, 2]</code></li>\n\t<li><code>[-3, 2, 1]</code></li>\n\t<li><code>[-2, -1, 3]</code></li>\n\t<li><code>[-2, 3, -1]</code></li>\n\t<li><code>[-1, -2, 3]</code></li>\n\t<li><code>[-1, 3, -2]</code></li>\n\t<li><code>[1, -3, 2]</code></li>\n\t<li><code>[1, 2, -3]</code></li>\n\t<li><code>[2, -3, 1]</code></li>\n\t<li><code>[2, 1, -3]</code></li>\n\t<li><code>[3, -2, -1]</code></li>\n\t<li><code>[3, -1, -2]</code></li>\n</ul>\n\n<p>The lexicographically smallest one is <code>[-3, 1, 2]</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 1, target = 10000000000</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are no arrays that sum to <span class=\"example-io\">10000000000 and whose absolute values form a permutation of size 1. Therefore, the answer is <code>[]</code>.</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>10</sup> &lt;= target &lt;= 10<sup>10</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> lexSmallestNegatedPerm(int n, long long target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] lexSmallestNegatedPerm(int n, long target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lexSmallestNegatedPerm(self, n: int, target: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lexSmallestNegatedPerm(self, n, target):\n        \"\"\"\n        :type n: int\n        :type target: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} target\n * @return {number[]}\n */\nvar lexSmallestNegatedPerm = function(n, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function lexSmallestNegatedPerm(n: number, target: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] LexSmallestNegatedPerm(int n, long target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* lexSmallestNegatedPerm(int n, long long target, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lexSmallestNegatedPerm(n int, target int64) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun lexSmallestNegatedPerm(n: Int, target: Long): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func lexSmallestNegatedPerm(_ n: Int, _ target: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn lex_smallest_negated_perm(n: i32, target: i64) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} target\n# @return {Integer[]}\ndef lex_smallest_negated_perm(n, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $target\n     * @return Integer[]\n     */\n    function lexSmallestNegatedPerm($n, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> lexSmallestNegatedPerm(int n, int target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def lexSmallestNegatedPerm(n: Int, target: Long): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec lex_smallest_negated_perm(n :: integer, target :: integer) :: [integer]\n  def lex_smallest_negated_perm(n, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec lex_smallest_negated_perm(N :: integer(), Target :: integer()) -> [integer()].\nlex_smallest_negated_perm(N, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (lex-smallest-negated-perm n target)\n  (-> exact-integer? exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.6K\", \"totalSubmission\": \"41.1K\", \"totalAcceptedRaw\": 12629, \"totalSubmissionRaw\": 41105, \"acRate\": \"30.7%\"}",
+  "metaData": "{\n  \"name\": \"lexSmallestNegatedPerm\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"long\",\n      \"name\": \"target\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "3\n0"
+}

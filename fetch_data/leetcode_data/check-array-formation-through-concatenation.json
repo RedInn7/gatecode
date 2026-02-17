@@ -1,0 +1,89 @@
+{
+  "questionId": "1760",
+  "questionFrontendId": "1640",
+  "title": "Check Array Formation Through Concatenation",
+  "titleSlug": "check-array-formation-through-concatenation",
+  "content": "<p>You are given an array of <strong>distinct</strong> integers <code>arr</code> and an array of integer arrays <code>pieces</code>, where the integers in <code>pieces</code> are <strong>distinct</strong>. Your goal is to form <code>arr</code> by concatenating the arrays in <code>pieces</code> <strong>in any order</strong>. However, you are <strong>not</strong> allowed to reorder the integers in each array <code>pieces[i]</code>.</p>\n\n<p>Return <code>true</code> <em>if it is possible </em><em>to form the array </em><code>arr</code><em> from </em><code>pieces</code>. Otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [15,88], pieces = [[88],[15]]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Concatenate [15] then [88]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [49,18,16], pieces = [[16,18,49]]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> Even though the numbers match, we cannot reorder pieces[0].\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [91,4,64,78], pieces = [[78],[4,64],[91]]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Concatenate [91] then [4,64] then [78]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= pieces.length &lt;= arr.length &lt;= 100</code></li>\n\t<li><code>sum(pieces[i].length) == arr.length</code></li>\n\t<li><code>1 &lt;= pieces[i].length &lt;= arr.length</code></li>\n\t<li><code>1 &lt;= arr[i], pieces[i][j] &lt;= 100</code></li>\n\t<li>The integers in <code>arr</code> are <strong>distinct</strong>.</li>\n\t<li>The integers in <code>pieces</code> are <strong>distinct</strong> (i.e., If we flatten pieces in a 1D array, all the integers in this array are distinct).</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canFormArray(vector<int>& arr, vector<vector<int>>& pieces) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canFormArray(int[] arr, int[][] pieces) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canFormArray(self, arr: List[int], pieces: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canFormArray(self, arr, pieces):\n        \"\"\"\n        :type arr: List[int]\n        :type pieces: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @param {number[][]} pieces\n * @return {boolean}\n */\nvar canFormArray = function(arr, pieces) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function canFormArray(arr: number[], pieces: number[][]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanFormArray(int[] arr, int[][] pieces) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool canFormArray(int* arr, int arrSize, int** pieces, int piecesSize, int* piecesColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canFormArray(arr []int, pieces [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canFormArray(arr: IntArray, pieces: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canFormArray(_ arr: [Int], _ pieces: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_form_array(arr: Vec<i32>, pieces: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @param {Integer[][]} pieces\n# @return {Boolean}\ndef can_form_array(arr, pieces)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @param Integer[][] $pieces\n     * @return Boolean\n     */\n    function canFormArray($arr, $pieces) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool canFormArray(List<int> arr, List<List<int>> pieces) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canFormArray(arr: Array[Int], pieces: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec can_form_array(arr :: [integer], pieces :: [[integer]]) :: boolean\n  def can_form_array(arr, pieces) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec can_form_array(Arr :: [integer()], Pieces :: [[integer()]]) -> boolean().\ncan_form_array(Arr, Pieces) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (can-form-array arr pieces)\n  (-> (listof exact-integer?) (listof (listof exact-integer?)) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"91.7K\", \"totalSubmission\": \"160.1K\", \"totalAcceptedRaw\": 91655, \"totalSubmissionRaw\": 160062, \"acRate\": \"57.3%\"}",
+  "metaData": "{\n  \"name\": \"canFormArray\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"pieces\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "[15,88]\n[[88],[15]]"
+}

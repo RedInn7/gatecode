@@ -1,0 +1,89 @@
+{
+  "questionId": "3538",
+  "questionFrontendId": "3237",
+  "title": "Alt and Tab Simulation",
+  "titleSlug": "alt-and-tab-simulation",
+  "content": "<p>There are <code>n</code> windows open numbered from <code>1</code> to <code>n</code>, we want to simulate using alt + tab to navigate between the windows.</p>\n\n<p>You are given an array <code>windows</code> which contains the initial order of the windows (the first element is at the top and the last one is at the bottom).</p>\n\n<p>You are also given an array <code>queries</code> where for each query, the window <code>queries[i]</code> is brought to the top.</p>\n\n<p>Return the final state of the array <code>windows</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">windows = [1,2,3], queries = [3,3,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[2,3,1]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Here is the window array after each query:</p>\n\n<ul>\n\t<li>Initial order: <code>[1,2,3]</code></li>\n\t<li>After the first query: <code>[<u><strong>3</strong></u>,1,2]</code></li>\n\t<li>After the second query: <code>[<u><strong>3</strong></u>,1,2]</code></li>\n\t<li>After the last query: <code>[<u><strong>2</strong></u>,3,1]</code></li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">windows = [1,4,2,3], queries = [4,1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[3,1,4,2]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Here is the window array after each query:</p>\n\n<ul>\n\t<li>Initial order: <code>[1,4,2,3]</code></li>\n\t<li>After the first query: <code>[<u><strong>4</strong></u>,1,2,3]</code></li>\n\t<li>After the second query: <code>[<u><strong>1</strong></u>,4,2,3]</code></li>\n\t<li>After the last query: <code>[<u><strong>3</strong></u>,1,4,2]</code></li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == windows.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>windows</code> is a permutation of <code>[1, n]</code>.</li>\n\t<li><code>1 &lt;= queries.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= queries[i] &lt;= n</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> simulationResult(vector<int>& windows, vector<int>& queries) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] simulationResult(int[] windows, int[] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def simulationResult(self, windows: List[int], queries: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def simulationResult(self, windows, queries):\n        \"\"\"\n        :type windows: List[int]\n        :type queries: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} windows\n * @param {number[]} queries\n * @return {number[]}\n */\nvar simulationResult = function(windows, queries) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function simulationResult(windows: number[], queries: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SimulationResult(int[] windows, int[] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* simulationResult(int* windows, int windowsSize, int* queries, int queriesSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func simulationResult(windows []int, queries []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun simulationResult(windows: IntArray, queries: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func simulationResult(_ windows: [Int], _ queries: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn simulation_result(windows: Vec<i32>, queries: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} windows\n# @param {Integer[]} queries\n# @return {Integer[]}\ndef simulation_result(windows, queries)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $windows\n     * @param Integer[] $queries\n     * @return Integer[]\n     */\n    function simulationResult($windows, $queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> simulationResult(List<int> windows, List<int> queries) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def simulationResult(windows: Array[Int], queries: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec simulation_result(windows :: [integer], queries :: [integer]) :: [integer]\n  def simulation_result(windows, queries) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec simulation_result(Windows :: [integer()], Queries :: [integer()]) -> [integer()].\nsimulation_result(Windows, Queries) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (simulation-result windows queries)\n  (-> (listof exact-integer?) (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.2K\", \"totalSubmission\": \"2.3K\", \"totalAcceptedRaw\": 1189, \"totalSubmissionRaw\": 2278, \"acRate\": \"52.2%\"}",
+  "metaData": "{\n  \"name\": \"simulationResult\",\n  \"params\": [\n    {\n      \"name\": \"windows\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"queries\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[1,2,3]\n[3,3,2]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "660",
+  "questionFrontendId": "660",
+  "title": "Remove 9",
+  "titleSlug": "remove-9",
+  "content": "<p>Start from integer <code>1</code>, remove any integer that contains <code>9</code> such as <code>9</code>, <code>19</code>, <code>29</code>...</p>\n\n<p>Now, you will have a new integer sequence <code>[1, 2, 3, 4, 5, 6, 7, 8, 10, 11, ...]</code>.</p>\n\n<p>Given an integer <code>n</code>, return <em>the</em> <code>n<sup>th</sup></code> (<strong>1-indexed</strong>) integer in the new sequence.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 9\n<strong>Output:</strong> 10\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 10\n<strong>Output:</strong> 11\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 8 * 10<sup>8</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int newInteger(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int newInteger(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def newInteger(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def newInteger(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar newInteger = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function newInteger(n: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NewInteger(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int newInteger(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func newInteger(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun newInteger(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func newInteger(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn new_integer(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef new_integer(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function newInteger($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int newInteger(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def newInteger(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec new_integer(n :: integer) :: integer\n  def new_integer(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec new_integer(N :: integer()) -> integer().\nnew_integer(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (new-integer n)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.3K\", \"totalSubmission\": \"19.7K\", \"totalAcceptedRaw\": 11289, \"totalSubmissionRaw\": 19653, \"acRate\": \"57.4%\"}",
+  "metaData": "{\r\n  \"name\": \"newInteger\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "9"
+}

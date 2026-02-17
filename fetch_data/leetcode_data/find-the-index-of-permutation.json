@@ -1,0 +1,89 @@
+{
+  "questionId": "3417",
+  "questionFrontendId": "3109",
+  "title": "Find the Index of Permutation",
+  "titleSlug": "find-the-index-of-permutation",
+  "content": "<p>Given an array <code>perm</code> of length <code>n</code> which is a permutation of <code>[1, 2, ..., n]</code>, return the index of <code>perm</code> in the <span data-keyword=\"lexicographically-sorted-array\">lexicographically sorted</span> array of all of the permutations of <code>[1, 2, ..., n]</code>.</p>\n\n<p>Since the answer may be very large, return it <strong>modulo</strong> <code>10<sup>9</sup>&nbsp;+ 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">perm = [1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are only two permutations in the following order:</p>\n\n<p><code>[1,2]</code>, <code>[2,1]</code><br />\n<br />\nAnd <code>[1,2]</code> is at index 0.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">perm = [3,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are only six permutations in the following order:</p>\n\n<p><code>[1,2,3]</code>, <code>[1,3,2]</code>, <code>[2,1,3]</code>, <code>[2,3,1]</code>, <code>[3,1,2]</code>, <code>[3,2,1]</code><br />\n<br />\nAnd <code>[3,1,2]</code> is at index 4.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == perm.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>perm</code> is a permutation of <code>[1, 2, ..., n]</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int getPermutationIndex(vector<int>& perm) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int getPermutationIndex(int[] perm) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def getPermutationIndex(self, perm: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def getPermutationIndex(self, perm):\n        \"\"\"\n        :type perm: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} perm\n * @return {number}\n */\nvar getPermutationIndex = function(perm) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function getPermutationIndex(perm: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int GetPermutationIndex(int[] perm) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int getPermutationIndex(int* perm, int permSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func getPermutationIndex(perm []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun getPermutationIndex(perm: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func getPermutationIndex(_ perm: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn get_permutation_index(perm: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} perm\n# @return {Integer}\ndef get_permutation_index(perm)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $perm\n     * @return Integer\n     */\n    function getPermutationIndex($perm) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int getPermutationIndex(List<int> perm) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def getPermutationIndex(perm: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec get_permutation_index(perm :: [integer]) :: integer\n  def get_permutation_index(perm) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec get_permutation_index(Perm :: [integer()]) -> integer().\nget_permutation_index(Perm) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (get-permutation-index perm)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"832\", \"totalSubmission\": \"2.3K\", \"totalAcceptedRaw\": 832, \"totalSubmissionRaw\": 2311, \"acRate\": \"36.0%\"}",
+  "metaData": "{\n  \"name\": \"getPermutationIndex\",\n  \"params\": [\n    {\n      \"name\": \"perm\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,2]"
+}

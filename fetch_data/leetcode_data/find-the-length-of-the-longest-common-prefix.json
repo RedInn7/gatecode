@@ -1,0 +1,89 @@
+{
+  "questionId": "3329",
+  "questionFrontendId": "3043",
+  "title": "Find the Length of the Longest Common Prefix",
+  "titleSlug": "find-the-length-of-the-longest-common-prefix",
+  "content": "<p>You are given two arrays with <strong>positive</strong> integers <code>arr1</code> and <code>arr2</code>.</p>\n\n<p>A <strong>prefix</strong> of a positive integer is an integer formed by one or more of its digits, starting from its <strong>leftmost</strong> digit. For example, <code>123</code> is a prefix of the integer <code>12345</code>, while <code>234</code> is <strong>not</strong>.</p>\n\n<p>A <strong>common prefix</strong> of two integers <code>a</code> and <code>b</code> is an integer <code>c</code>, such that <code>c</code> is a prefix of both <code>a</code> and <code>b</code>. For example, <code>5655359</code> and <code>56554</code> have common prefixes <code>565</code> and <code>5655</code> while <code>1223</code> and <code>43456</code> <strong>do not</strong> have a common prefix.</p>\n\n<p>You need to find the length of the <strong>longest common prefix</strong> between all pairs of integers <code>(x, y)</code> such that <code>x</code> belongs to <code>arr1</code> and <code>y</code> belongs to <code>arr2</code>.</p>\n\n<p>Return <em>the length of the <strong>longest</strong> common prefix among all pairs</em>.<em> If no common prefix exists among them</em>, <em>return</em> <code>0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr1 = [1,10,100], arr2 = [1000]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> There are 3 pairs (arr1[i], arr2[j]):\n- The longest common prefix of (1, 1000) is 1.\n- The longest common prefix of (10, 1000) is 10.\n- The longest common prefix of (100, 1000) is 100.\nThe longest common prefix is 100 with a length of 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr1 = [1,2,3], arr2 = [4,4,4]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> There exists no common prefix for any pair (arr1[i], arr2[j]), hence we return 0.\nNote that common prefixes between elements of the same array do not count.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr1.length, arr2.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= arr1[i], arr2[i] &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestCommonPrefix(vector<int>& arr1, vector<int>& arr2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestCommonPrefix(int[] arr1, int[] arr2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestCommonPrefix(self, arr1: List[int], arr2: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestCommonPrefix(self, arr1, arr2):\n        \"\"\"\n        :type arr1: List[int]\n        :type arr2: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr1\n * @param {number[]} arr2\n * @return {number}\n */\nvar longestCommonPrefix = function(arr1, arr2) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function longestCommonPrefix(arr1: number[], arr2: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestCommonPrefix(int[] arr1, int[] arr2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int longestCommonPrefix(int* arr1, int arr1Size, int* arr2, int arr2Size) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestCommonPrefix(arr1 []int, arr2 []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestCommonPrefix(arr1: IntArray, arr2: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestCommonPrefix(_ arr1: [Int], _ arr2: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_common_prefix(arr1: Vec<i32>, arr2: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr1\n# @param {Integer[]} arr2\n# @return {Integer}\ndef longest_common_prefix(arr1, arr2)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr1\n     * @param Integer[] $arr2\n     * @return Integer\n     */\n    function longestCommonPrefix($arr1, $arr2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int longestCommonPrefix(List<int> arr1, List<int> arr2) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestCommonPrefix(arr1: Array[Int], arr2: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec longest_common_prefix(arr1 :: [integer], arr2 :: [integer]) :: integer\n  def longest_common_prefix(arr1, arr2) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec longest_common_prefix(Arr1 :: [integer()], Arr2 :: [integer()]) -> integer().\nlongest_common_prefix(Arr1, Arr2) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (longest-common-prefix arr1 arr2)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"173.8K\", \"totalSubmission\": \"305K\", \"totalAcceptedRaw\": 173829, \"totalSubmissionRaw\": 304982, \"acRate\": \"57.0%\"}",
+  "metaData": "{\n  \"name\": \"longestCommonPrefix\",\n  \"params\": [\n    {\n      \"name\": \"arr1\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"arr2\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,10,100]\n[1000]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "2687",
+  "questionFrontendId": "2663",
+  "title": "Lexicographically Smallest Beautiful String",
+  "titleSlug": "lexicographically-smallest-beautiful-string",
+  "content": "<p>A string is <strong>beautiful</strong> if:</p>\n\n<ul>\n\t<li>It consists of the first <code>k</code> letters of the English lowercase alphabet.</li>\n\t<li>It does not contain any substring of length <code>2</code> or more which is a palindrome.</li>\n</ul>\n\n<p>You are given a beautiful string <code>s</code> of length <code>n</code> and a positive integer <code>k</code>.</p>\n\n<p>Return <em>the lexicographically smallest string of length </em><code>n</code><em>, which is larger than </em><code>s</code><em> and is <strong>beautiful</strong></em>. If there is no such string, return an empty string.</p>\n\n<p>A string <code>a</code> is lexicographically larger than a string <code>b</code> (of the same length) if in the first position where <code>a</code> and <code>b</code> differ, <code>a</code> has a character strictly larger than the corresponding character in <code>b</code>.</p>\n\n<ul>\n\t<li>For example, <code>&quot;abcd&quot;</code> is lexicographically larger than <code>&quot;abcc&quot;</code> because the first position they differ is at the fourth character, and <code>d</code> is greater than <code>c</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcz&quot;, k = 26\n<strong>Output:</strong> &quot;abda&quot;\n<strong>Explanation:</strong> The string &quot;abda&quot; is beautiful and lexicographically larger than the string &quot;abcz&quot;.\nIt can be proven that there is no string that is lexicographically larger than the string &quot;abcz&quot;, beautiful, and lexicographically smaller than the string &quot;abda&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;dc&quot;, k = 4\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> It can be proven that there is no string that is lexicographically larger than the string &quot;dc&quot; and is beautiful.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>4 &lt;= k &lt;= 26</code></li>\n\t<li><code>s</code> is a beautiful string.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string smallestBeautifulString(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String smallestBeautifulString(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestBeautifulString(self, s: str, k: int) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestBeautifulString(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar smallestBeautifulString = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function smallestBeautifulString(s: string, k: number): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string SmallestBeautifulString(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* smallestBeautifulString(char* s, int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestBeautifulString(s string, k int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestBeautifulString(s: String, k: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestBeautifulString(_ s: String, _ k: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_beautiful_string(s: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef smallest_beautiful_string(s, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function smallestBeautifulString($s, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String smallestBeautifulString(String s, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestBeautifulString(s: String, k: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec smallest_beautiful_string(s :: String.t, k :: integer) :: String.t\n  def smallest_beautiful_string(s, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec smallest_beautiful_string(S :: unicode:unicode_binary(), K :: integer()) -> unicode:unicode_binary().\nsmallest_beautiful_string(S, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (smallest-beautiful-string s k)\n  (-> string? exact-integer? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.8K\", \"totalSubmission\": \"28.3K\", \"totalAcceptedRaw\": 10762, \"totalSubmissionRaw\": 28311, \"acRate\": \"38.0%\"}",
+  "metaData": "{\n  \"name\": \"smallestBeautifulString\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"abcz\"\n26"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "2661",
+  "questionFrontendId": "2598",
+  "title": "Smallest Missing Non-negative Integer After Operations",
+  "titleSlug": "smallest-missing-non-negative-integer-after-operations",
+  "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code> and an integer <code>value</code>.</p>\n\n<p>In one operation, you can add or subtract <code>value</code> from any element of <code>nums</code>.</p>\n\n<ul>\n\t<li>For example, if <code>nums = [1,2,3]</code> and <code>value = 2</code>, you can choose to subtract <code>value</code> from <code>nums[0]</code> to make <code>nums = [-1,2,3]</code>.</li>\n</ul>\n\n<p>The MEX (minimum excluded) of an array is the smallest missing <strong>non-negative</strong> integer in it.</p>\n\n<ul>\n\t<li>For example, the MEX of <code>[-1,2,3]</code> is <code>0</code> while the MEX of <code>[1,0,3]</code> is <code>2</code>.</li>\n</ul>\n\n<p>Return <em>the maximum MEX of </em><code>nums</code><em> after applying the mentioned operation <strong>any number of times</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,-10,7,13,6,8], value = 5\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> One can achieve this result by applying the following operations:\n- Add value to nums[1] twice to make nums = [1,<strong><u>0</u></strong>,7,13,6,8]\n- Subtract value from nums[2] once to make nums = [1,0,<strong><u>2</u></strong>,13,6,8]\n- Subtract value from nums[3] twice to make nums = [1,0,2,<strong><u>3</u></strong>,6,8]\nThe MEX of nums is 4. It can be shown that 4 is the maximum MEX we can achieve.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,-10,7,13,6,8], value = 7\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> One can achieve this result by applying the following operation:\n- subtract value from nums[2] once to make nums = [1,-10,<u><strong>0</strong></u>,13,6,8]\nThe MEX of nums is 2. It can be shown that 2 is the maximum MEX we can achieve.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length, value &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findSmallestInteger(vector<int>& nums, int value) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findSmallestInteger(int[] nums, int value) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findSmallestInteger(self, nums: List[int], value: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findSmallestInteger(self, nums, value):\n        \"\"\"\n        :type nums: List[int]\n        :type value: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} value\n * @return {number}\n */\nvar findSmallestInteger = function(nums, value) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findSmallestInteger(nums: number[], value: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindSmallestInteger(int[] nums, int value) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int findSmallestInteger(int* nums, int numsSize, int value) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findSmallestInteger(nums []int, value int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findSmallestInteger(nums: IntArray, value: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findSmallestInteger(_ nums: [Int], _ value: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_smallest_integer(nums: Vec<i32>, value: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} value\n# @return {Integer}\ndef find_smallest_integer(nums, value)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $value\n     * @return Integer\n     */\n    function findSmallestInteger($nums, $value) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int findSmallestInteger(List<int> nums, int value) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findSmallestInteger(nums: Array[Int], value: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_smallest_integer(nums :: [integer], value :: integer) :: integer\n  def find_smallest_integer(nums, value) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_smallest_integer(Nums :: [integer()], Value :: integer()) -> integer().\nfind_smallest_integer(Nums, Value) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-smallest-integer nums value)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"112.9K\", \"totalSubmission\": \"201.8K\", \"totalAcceptedRaw\": 112874, \"totalSubmissionRaw\": 201840, \"acRate\": \"55.9%\"}",
+  "metaData": "{\n  \"name\": \"findSmallestInteger\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"value\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,-10,7,13,6,8]\n5"
+}

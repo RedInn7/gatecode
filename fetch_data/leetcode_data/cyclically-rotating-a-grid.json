@@ -1,0 +1,77 @@
+{
+  "questionId": "2043",
+  "questionFrontendId": "1914",
+  "title": "Cyclically Rotating a Grid",
+  "titleSlug": "cyclically-rotating-a-grid",
+  "content": "<p>You are given an <code>m x n</code> integer matrix <code>grid</code>​​​, where <code>m</code> and <code>n</code> are both <strong>even</strong> integers, and an integer <code>k</code>.</p>\r\n\r\n<p>The matrix is composed of several layers, which is shown in the below image, where each color is its own layer:</p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid.png\" style=\"width: 231px; height: 258px;\" /></p>\r\n\r\n<p>A cyclic rotation of the matrix is done by cyclically rotating <strong>each layer</strong> in the matrix. To cyclically rotate a layer once, each element in the layer will take the place of the adjacent element in the <strong>counter-clockwise</strong> direction. An example rotation is shown below:</p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/22/explanation_grid.jpg\" style=\"width: 500px; height: 268px;\" />\r\n<p>Return <em>the matrix after applying </em><code>k</code> <em>cyclic rotations to it</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/19/rod2.png\" style=\"width: 421px; height: 191px;\" />\r\n<pre>\r\n<strong>Input:</strong> grid = [[40,10],[30,20]], k = 1\r\n<strong>Output:</strong> [[10,20],[40,30]]\r\n<strong>Explanation:</strong> The figures above represent the grid at every state.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid5.png\" style=\"width: 231px; height: 262px;\" /></strong> <strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid6.png\" style=\"width: 231px; height: 262px;\" /></strong> <strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid7.png\" style=\"width: 231px; height: 262px;\" /></strong>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], k = 2\r\n<strong>Output:</strong> [[3,4,8,12],[2,11,10,16],[1,7,6,15],[5,9,13,14]]\r\n<strong>Explanation:</strong> The figures above represent the grid at every state.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>m == grid.length</code></li>\r\n\t<li><code>n == grid[i].length</code></li>\r\n\t<li><code>2 &lt;= m, n &lt;= 50</code></li>\r\n\t<li>Both <code>m</code> and <code>n</code> are <strong>even</strong> integers.</li>\r\n\t<li><code>1 &lt;= grid[i][j] &lt;=<sup> </sup>5000</code></li>\r\n\t<li><code>1 &lt;= k &lt;= 10<sup>9</sup></code></li>\r\n</ul>",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> rotateGrid(vector<vector<int>>& grid, int k) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\r\n    public int[][] rotateGrid(int[][] grid, int k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def rotateGrid(self, grid, k):\r\n        \"\"\"\r\n        :type grid: List[List[int]]\r\n        :type k: int\r\n        :rtype: List[List[int]]\r\n        \"\"\""
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number[][]} grid\r\n * @param {number} k\r\n * @return {number[][]}\r\n */\r\nvar rotateGrid = function(grid, k) {\r\n    \r\n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function rotateGrid(grid: number[][], k: number): number[][] {\r\n\r\n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[][] RotateGrid(int[][] grid, int k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\r\n * Return an array of arrays of size *returnSize.\r\n * The sizes of the arrays are returned as *returnColumnSizes array.\r\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\r\n */\r\nint** rotateGrid(int** grid, int gridSize, int* gridColSize, int k, int* returnSize, int** returnColumnSizes){\r\n\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func rotateGrid(grid [][]int, k int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun rotateGrid(grid: Array<IntArray>, k: Int): Array<IntArray> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func rotateGrid(_ grid: [[Int]], _ k: Int) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn rotate_grid(grid: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\r\n# @param {Integer} k\r\n# @return {Integer[][]}\r\ndef rotate_grid(grid, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer[][] $grid\r\n     * @param Integer $k\r\n     * @return Integer[][]\r\n     */\r\n    function rotateGrid($grid, $k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def rotateGrid(grid: Array[Array[Int]], k: Int): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (rotate-grid grid k)\r\n  (-> (listof (listof exact-integer?)) exact-integer? (listof (listof exact-integer?)))\r\n\r\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16K\", \"totalSubmission\": \"31.1K\", \"totalAcceptedRaw\": 16014, \"totalSubmissionRaw\": 31090, \"acRate\": \"51.5%\"}",
+  "metaData": "{\n  \"name\": \"rotateGrid\",\n  \"params\": [\n    {\n      \"name\": \"grid\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[][]\"\n  }\n}",
+  "sampleTestCase": "[[40,10],[30,20]]\n1"
+}

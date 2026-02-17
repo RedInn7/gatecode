@@ -1,0 +1,89 @@
+{
+  "questionId": "3560",
+  "questionFrontendId": "3283",
+  "title": "Maximum Number of Moves to Kill All Pawns",
+  "titleSlug": "maximum-number-of-moves-to-kill-all-pawns",
+  "content": "<p>There is a <code>50 x 50</code> chessboard with <strong>one</strong> knight and some pawns on it. You are given two integers <code>kx</code> and <code>ky</code> where <code>(kx, ky)</code> denotes the position of the knight, and a 2D array <code>positions</code> where <code>positions[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> denotes the position of the pawns on the chessboard.</p>\n\n<p>Alice and Bob play a <em>turn-based</em> game, where Alice goes first. In each player&#39;s turn:</p>\n\n<ul>\n\t<li>The player <em>selects </em>a pawn that still exists on the board and captures it with the knight in the <strong>fewest</strong> possible <strong>moves</strong>. <strong>Note</strong> that the player can select <strong>any</strong> pawn, it <strong>might not</strong> be one that can be captured in the <strong>least</strong> number of moves.</li>\n\t<li><span>In the process of capturing the <em>selected</em> pawn, the knight <strong>may</strong> pass other pawns <strong>without</strong> capturing them</span>. <strong>Only</strong> the <em>selected</em> pawn can be captured in <em>this</em> turn.</li>\n</ul>\n\n<p>Alice is trying to <strong>maximize</strong> the <strong>sum</strong> of the number of moves made by <em>both</em> players until there are no more pawns on the board, whereas Bob tries to <strong>minimize</strong> them.</p>\n\n<p>Return the <strong>maximum</strong> <em>total</em> number of moves made during the game that Alice can achieve, assuming both players play <strong>optimally</strong>.</p>\n\n<p>Note that in one <strong>move, </strong>a chess knight has eight possible positions it can move to, as illustrated below. Each move is two cells in a cardinal direction, then one cell in an orthogonal direction.</p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2024/08/01/chess_knight.jpg\" style=\"width: 275px; height: 273px;\" /></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">kx = 1, ky = 1, positions = [[0,0]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/08/16/gif3.gif\" style=\"width: 275px; height: 275px;\" /></p>\n\n<p>The knight takes 4 moves to reach the pawn at <code>(0, 0)</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">kx = 0, ky = 2, positions = [[1,1],[2,2],[3,3]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">8</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/08/16/gif4.gif\" style=\"width: 320px; height: 320px;\" /></strong></p>\n\n<ul>\n\t<li>Alice picks the pawn at <code>(2, 2)</code> and captures it in two moves: <code>(0, 2) -&gt; (1, 4) -&gt; (2, 2)</code>.</li>\n\t<li>Bob picks the pawn at <code>(3, 3)</code> and captures it in two moves: <code>(2, 2) -&gt; (4, 1) -&gt; (3, 3)</code>.</li>\n\t<li>Alice picks the pawn at <code>(1, 1)</code> and captures it in four moves: <code>(3, 3) -&gt; (4, 1) -&gt; (2, 2) -&gt; (0, 3) -&gt; (1, 1)</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">kx = 0, ky = 0, positions = [[1,2],[2,4]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Alice picks the pawn at <code>(2, 4)</code> and captures it in two moves: <code>(0, 0) -&gt; (1, 2) -&gt; (2, 4)</code>. Note that the pawn at <code>(1, 2)</code> is not captured.</li>\n\t<li>Bob picks the pawn at <code>(1, 2)</code> and captures it in one move: <code>(2, 4) -&gt; (1, 2)</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= kx, ky &lt;= 49</code></li>\n\t<li><code>1 &lt;= positions.length &lt;= 15</code></li>\n\t<li><code>positions[i].length == 2</code></li>\n\t<li><code>0 &lt;= positions[i][0], positions[i][1] &lt;= 49</code></li>\n\t<li>All <code>positions[i]</code> are unique.</li>\n\t<li>The input is generated such that <code>positions[i] != [kx, ky]</code> for all <code>0 &lt;= i &lt; positions.length</code>.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxMoves(int kx, int ky, vector<vector<int>>& positions) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxMoves(int kx, int ky, int[][] positions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxMoves(self, kx: int, ky: int, positions: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxMoves(self, kx, ky, positions):\n        \"\"\"\n        :type kx: int\n        :type ky: int\n        :type positions: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} kx\n * @param {number} ky\n * @param {number[][]} positions\n * @return {number}\n */\nvar maxMoves = function(kx, ky, positions) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxMoves(kx: number, ky: number, positions: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxMoves(int kx, int ky, int[][] positions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxMoves(int kx, int ky, int** positions, int positionsSize, int* positionsColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxMoves(kx int, ky int, positions [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxMoves(kx: Int, ky: Int, positions: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxMoves(_ kx: Int, _ ky: Int, _ positions: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_moves(kx: i32, ky: i32, positions: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} kx\n# @param {Integer} ky\n# @param {Integer[][]} positions\n# @return {Integer}\ndef max_moves(kx, ky, positions)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $kx\n     * @param Integer $ky\n     * @param Integer[][] $positions\n     * @return Integer\n     */\n    function maxMoves($kx, $ky, $positions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxMoves(int kx, int ky, List<List<int>> positions) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxMoves(kx: Int, ky: Int, positions: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_moves(kx :: integer, ky :: integer, positions :: [[integer]]) :: integer\n  def max_moves(kx, ky, positions) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_moves(Kx :: integer(), Ky :: integer(), Positions :: [[integer()]]) -> integer().\nmax_moves(Kx, Ky, Positions) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-moves kx ky positions)\n  (-> exact-integer? exact-integer? (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.2K\", \"totalSubmission\": \"21.3K\", \"totalAcceptedRaw\": 7173, \"totalSubmissionRaw\": 21346, \"acRate\": \"33.6%\"}",
+  "metaData": "{\n  \"name\": \"maxMoves\",\n  \"params\": [\n    {\n      \"name\": \"kx\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"ky\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"positions\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "1\n1\n[[0,0]]"
+}

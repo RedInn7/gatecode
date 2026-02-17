@@ -1,0 +1,89 @@
+{
+  "questionId": "1156",
+  "questionFrontendId": "1078",
+  "title": "Occurrences After Bigram",
+  "titleSlug": "occurrences-after-bigram",
+  "content": "<p>Given two strings <code>first</code> and <code>second</code>, consider occurrences in some text of the form <code>&quot;first second third&quot;</code>, where <code>second</code> comes immediately after <code>first</code>, and <code>third</code> comes immediately after <code>second</code>.</p>\n\n<p>Return <em>an array of all the words</em> <code>third</code> <em>for each occurrence of</em> <code>&quot;first second third&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> text = \"alice is a good girl she is a good student\", first = \"a\", second = \"good\"\n<strong>Output:</strong> [\"girl\",\"student\"]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> text = \"we will we will rock you\", first = \"we\", second = \"will\"\n<strong>Output:</strong> [\"we\",\"rock\"]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= text.length &lt;= 1000</code></li>\n\t<li><code>text</code> consists of lowercase English letters and spaces.</li>\n\t<li>All the words in <code>text</code> are separated by <strong>a single space</strong>.</li>\n\t<li><code>1 &lt;= first.length, second.length &lt;= 10</code></li>\n\t<li><code>first</code> and <code>second</code> consist of lowercase English letters.</li>\n\t<li><code>text</code> will not have any leading or trailing spaces.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> findOcurrences(string text, string first, string second) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String[] findOcurrences(String text, String first, String second) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findOcurrences(self, text: str, first: str, second: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findOcurrences(self, text, first, second):\n        \"\"\"\n        :type text: str\n        :type first: str\n        :type second: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} text\n * @param {string} first\n * @param {string} second\n * @return {string[]}\n */\nvar findOcurrences = function(text, first, second) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findOcurrences(text: string, first: string, second: string): string[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string[] FindOcurrences(string text, string first, string second) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** findOcurrences(char* text, char* first, char* second, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findOcurrences(text string, first string, second string) []string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findOcurrences(text: String, first: String, second: String): Array<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findOcurrences(_ text: String, _ first: String, _ second: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_ocurrences(text: String, first: String, second: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} text\n# @param {String} first\n# @param {String} second\n# @return {String[]}\ndef find_ocurrences(text, first, second)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @param String $first\n     * @param String $second\n     * @return String[]\n     */\n    function findOcurrences($text, $first, $second) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<String> findOcurrences(String text, String first, String second) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findOcurrences(text: String, first: String, second: String): Array[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_ocurrences(text :: String.t, first :: String.t, second :: String.t) :: [String.t]\n  def find_ocurrences(text, first, second) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_ocurrences(Text :: unicode:unicode_binary(), First :: unicode:unicode_binary(), Second :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\nfind_ocurrences(Text, First, Second) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-ocurrences text first second)\n  (-> string? string? string? (listof string?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"89.6K\", \"totalSubmission\": \"140.3K\", \"totalAcceptedRaw\": 89578, \"totalSubmissionRaw\": 140282, \"acRate\": \"63.9%\"}",
+  "metaData": "{\r\n  \"name\": \"findOcurrences\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"text\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"first\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"second\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string[]\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "\"alice is a good girl she is a good student\"\n\"a\"\n\"good\""
+}

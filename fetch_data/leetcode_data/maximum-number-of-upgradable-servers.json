@@ -1,0 +1,89 @@
+{
+  "questionId": "3458",
+  "questionFrontendId": "3155",
+  "title": "Maximum Number of Upgradable Servers",
+  "titleSlug": "maximum-number-of-upgradable-servers",
+  "content": "<p>You have <code>n</code> data centers and need to upgrade their servers.</p>\n\n<p>You are given four arrays <code>count</code>, <code>upgrade</code>, <code>sell</code>, and <code>money</code> of length <code>n</code>, which show:</p>\n\n<ul>\n\t<li>The number of servers</li>\n\t<li>The cost of upgrading a single server</li>\n\t<li>The money you get by selling a server</li>\n\t<li>The money you initially have</li>\n</ul>\n\n<p>for each data center respectively.</p>\n\n<p>Return an array <code>answer</code>, where for each data center, the corresponding element in <code>answer</code> represents the <strong>maximum</strong> number of servers that can be upgraded.</p>\n\n<p>Note that the money from one data center <strong>cannot</strong> be used for another data center.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">count = [4,3], upgrade = [3,5], sell = [4,2], money = [8,9]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[3,2]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>For the first data center, if we sell one server, we&#39;ll have <code>8 + 4 = 12</code> units of money and we can upgrade the remaining 3 servers.</p>\n\n<p>For the second data center, if we sell one server, we&#39;ll have <code>9 + 2 = 11</code> units of money and we can upgrade the remaining 2 servers.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">count = [1], upgrade = [2], sell = [1], money = [1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[0]</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= count.length == upgrade.length == sell.length == money.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= count[i], upgrade[i], sell[i], money[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> maxUpgrades(vector<int>& count, vector<int>& upgrade, vector<int>& sell, vector<int>& money) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] maxUpgrades(int[] count, int[] upgrade, int[] sell, int[] money) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxUpgrades(self, count: List[int], upgrade: List[int], sell: List[int], money: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxUpgrades(self, count, upgrade, sell, money):\n        \"\"\"\n        :type count: List[int]\n        :type upgrade: List[int]\n        :type sell: List[int]\n        :type money: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} count\n * @param {number[]} upgrade\n * @param {number[]} sell\n * @param {number[]} money\n * @return {number[]}\n */\nvar maxUpgrades = function(count, upgrade, sell, money) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxUpgrades(count: number[], upgrade: number[], sell: number[], money: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] MaxUpgrades(int[] count, int[] upgrade, int[] sell, int[] money) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* maxUpgrades(int* count, int countSize, int* upgrade, int upgradeSize, int* sell, int sellSize, int* money, int moneySize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxUpgrades(count []int, upgrade []int, sell []int, money []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxUpgrades(count: IntArray, upgrade: IntArray, sell: IntArray, money: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxUpgrades(_ count: [Int], _ upgrade: [Int], _ sell: [Int], _ money: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_upgrades(count: Vec<i32>, upgrade: Vec<i32>, sell: Vec<i32>, money: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} count\n# @param {Integer[]} upgrade\n# @param {Integer[]} sell\n# @param {Integer[]} money\n# @return {Integer[]}\ndef max_upgrades(count, upgrade, sell, money)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $count\n     * @param Integer[] $upgrade\n     * @param Integer[] $sell\n     * @param Integer[] $money\n     * @return Integer[]\n     */\n    function maxUpgrades($count, $upgrade, $sell, $money) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> maxUpgrades(List<int> count, List<int> upgrade, List<int> sell, List<int> money) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxUpgrades(count: Array[Int], upgrade: Array[Int], sell: Array[Int], money: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_upgrades(count :: [integer], upgrade :: [integer], sell :: [integer], money :: [integer]) :: [integer]\n  def max_upgrades(count, upgrade, sell, money) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_upgrades(Count :: [integer()], Upgrade :: [integer()], Sell :: [integer()], Money :: [integer()]) -> [integer()].\nmax_upgrades(Count, Upgrade, Sell, Money) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-upgrades count upgrade sell money)\n  (-> (listof exact-integer?) (listof exact-integer?) (listof exact-integer?) (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.2K\", \"totalSubmission\": \"7.4K\", \"totalAcceptedRaw\": 3202, \"totalSubmissionRaw\": 7436, \"acRate\": \"43.1%\"}",
+  "metaData": "{\n  \"name\": \"maxUpgrades\",\n  \"params\": [\n    {\n      \"name\": \"count\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"upgrade\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"sell\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"money\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[4,3]\n[3,5]\n[4,2]\n[8,9]"
+}

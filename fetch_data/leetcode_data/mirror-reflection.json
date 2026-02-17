@@ -1,0 +1,89 @@
+{
+  "questionId": "888",
+  "questionFrontendId": "858",
+  "title": "Mirror Reflection",
+  "titleSlug": "mirror-reflection",
+  "content": "<p>There is a special square room with mirrors on each of the four walls. Except for the southwest corner, there are receptors on each of the remaining corners, numbered <code>0</code>, <code>1</code>, and <code>2</code>.</p>\n\n<p>The square room has walls of length <code>p</code>&nbsp;and a laser ray from the southwest corner first meets the east wall at a distance <code>q</code> from the <code>0<sup>th</sup></code> receptor.</p>\n\n<p>Given the two integers <code>p</code> and <code>q</code>, return <em>the number of the receptor that the ray meets first</em>.</p>\n\n<p>The test cases are guaranteed so that the ray will meet a receptor eventually.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/18/reflection.png\" style=\"width: 218px; height: 217px;\" />\n<pre>\n<strong>Input:</strong> p = 2, q = 1\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The ray meets receptor 2 the first time it gets reflected back to the left wall.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> p = 3, q = 1\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= q &lt;= p &lt;= 1000</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int mirrorReflection(int p, int q) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int mirrorReflection(int p, int q) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def mirrorReflection(self, p: int, q: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def mirrorReflection(self, p, q):\n        \"\"\"\n        :type p: int\n        :type q: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} p\n * @param {number} q\n * @return {number}\n */\nvar mirrorReflection = function(p, q) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function mirrorReflection(p: number, q: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MirrorReflection(int p, int q) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int mirrorReflection(int p, int q) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func mirrorReflection(p int, q int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun mirrorReflection(p: Int, q: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func mirrorReflection(_ p: Int, _ q: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn mirror_reflection(p: i32, q: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} p\n# @param {Integer} q\n# @return {Integer}\ndef mirror_reflection(p, q)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $p\n     * @param Integer $q\n     * @return Integer\n     */\n    function mirrorReflection($p, $q) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int mirrorReflection(int p, int q) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def mirrorReflection(p: Int, q: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec mirror_reflection(p :: integer, q :: integer) :: integer\n  def mirror_reflection(p, q) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec mirror_reflection(P :: integer(), Q :: integer()) -> integer().\nmirror_reflection(P, Q) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (mirror-reflection p q)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"87.1K\", \"totalSubmission\": \"140.7K\", \"totalAcceptedRaw\": 87068, \"totalSubmissionRaw\": 140731, \"acRate\": \"61.9%\"}",
+  "metaData": "{\r\n  \"name\": \"mirrorReflection\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"p\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"q\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "2\n1"
+}

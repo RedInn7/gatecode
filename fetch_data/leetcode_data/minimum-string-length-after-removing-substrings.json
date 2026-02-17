@@ -1,0 +1,89 @@
+{
+  "questionId": "2800",
+  "questionFrontendId": "2696",
+  "title": "Minimum String Length After Removing Substrings",
+  "titleSlug": "minimum-string-length-after-removing-substrings",
+  "content": "<p>You are given a string <code>s</code> consisting only of <strong>uppercase</strong> English letters.</p>\n\n<p>You can apply some operations to this string where, in one operation, you can remove <strong>any</strong> occurrence of one of the substrings <code>&quot;AB&quot;</code> or <code>&quot;CD&quot;</code> from <code>s</code>.</p>\n\n<p>Return <em>the <strong>minimum</strong> possible length of the resulting string that you can obtain</em>.</p>\n\n<p><strong>Note</strong> that the string concatenates after removing the substring and could produce new <code>&quot;AB&quot;</code> or <code>&quot;CD&quot;</code> substrings.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ABFCACDB&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> We can do the following operations:\n- Remove the substring &quot;<u>AB</u>FCACDB&quot;, so s = &quot;FCACDB&quot;.\n- Remove the substring &quot;FCA<u>CD</u>B&quot;, so s = &quot;FCAB&quot;.\n- Remove the substring &quot;FC<u>AB</u>&quot;, so s = &quot;FC&quot;.\nSo the resulting length of the string is 2.\nIt can be shown that it is the minimum length that we can obtain.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ACBBD&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> We cannot do any operations on the string so the length remains the same.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code>&nbsp;consists only of uppercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minLength(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minLength(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minLength(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minLength(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minLength = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minLength(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinLength(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minLength(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minLength(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minLength(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minLength(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_length(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef min_length(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function minLength($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minLength(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minLength(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_length(s :: String.t) :: integer\n  def min_length(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_length(S :: unicode:unicode_binary()) -> integer().\nmin_length(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-length s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"245.1K\", \"totalSubmission\": \"317.9K\", \"totalAcceptedRaw\": 245147, \"totalSubmissionRaw\": 317861, \"acRate\": \"77.1%\"}",
+  "metaData": "{\n  \"name\": \"minLength\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"ABFCACDB\""
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "1448",
+  "questionFrontendId": "1323",
+  "title": "Maximum 69 Number",
+  "titleSlug": "maximum-69-number",
+  "content": "<p>You are given a positive integer <code>num</code> consisting only of digits <code>6</code> and <code>9</code>.</p>\n\n<p>Return <em>the maximum number you can get by changing <strong>at most</strong> one digit (</em><code>6</code><em> becomes </em><code>9</code><em>, and </em><code>9</code><em> becomes </em><code>6</code><em>)</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 9669\n<strong>Output:</strong> 9969\n<strong>Explanation:</strong> \nChanging the first digit results in 6669.\nChanging the second digit results in 9969.\nChanging the third digit results in 9699.\nChanging the fourth digit results in 9666.\nThe maximum number is 9969.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 9996\n<strong>Output:</strong> 9999\n<strong>Explanation:</strong> Changing the last digit 6 to 9 results in the maximum number.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 9999\n<strong>Output:</strong> 9999\n<strong>Explanation:</strong> It is better not to apply any change.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num &lt;= 10<sup>4</sup></code></li>\n\t<li><code>num</code>&nbsp;consists of only <code>6</code> and <code>9</code> digits.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maximum69Number (int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maximum69Number (int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximum69Number (self, num: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximum69Number (self, num):\n        \"\"\"\n        :type num: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar maximum69Number  = function(num) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maximum69Number (num: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Maximum69Number (int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maximum69Number (int num) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximum69Number (num int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximum69Number (num: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximum69Number (_ num: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximum69_number (num: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {Integer}\ndef maximum69_number (num)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Integer\n     */\n    function maximum69Number ($num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maximum69Number (int num) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximum69Number (num: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec maximum69_number (num :: integer) :: integer\n  def maximum69_number (num) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec maximum69_number (Num :: integer()) -> integer().\nmaximum69_number (Num) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (maximum69-number  num)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"481.2K\", \"totalSubmission\": \"569.4K\", \"totalAcceptedRaw\": 481187, \"totalSubmissionRaw\": 569432, \"acRate\": \"84.5%\"}",
+  "metaData": "{\n  \"name\": \"maximum69Number \",\n  \"params\": [\n    {\n      \"name\": \"num\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "9669"
+}

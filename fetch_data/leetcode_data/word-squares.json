@@ -1,0 +1,89 @@
+{
+  "questionId": "425",
+  "questionFrontendId": "425",
+  "title": "Word Squares",
+  "titleSlug": "word-squares",
+  "content": "<p>Given an array of <strong>unique</strong> strings <code>words</code>, return <em>all the </em><strong><a href=\"https://en.wikipedia.org/wiki/Word_square\" target=\"_blank\">word squares</a></strong><em> you can build from </em><code>words</code>. The same word from <code>words</code> can be used <strong>multiple times</strong>. You can return the answer in <strong>any order</strong>.</p>\n\n<p>A sequence of strings forms a valid <strong>word square</strong> if the <code>k<sup>th</sup></code> row and column read the same string, where <code>0 &lt;= k &lt; max(numRows, numColumns)</code>.</p>\n\n<ul>\n\t<li>For example, the word sequence <code>[&quot;ball&quot;,&quot;area&quot;,&quot;lead&quot;,&quot;lady&quot;]</code> forms a word square because each word reads the same both horizontally and vertically.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;area&quot;,&quot;lead&quot;,&quot;wall&quot;,&quot;lady&quot;,&quot;ball&quot;]\n<strong>Output:</strong> [[&quot;ball&quot;,&quot;area&quot;,&quot;lead&quot;,&quot;lady&quot;],[&quot;wall&quot;,&quot;area&quot;,&quot;lead&quot;,&quot;lady&quot;]]\n<strong>Explanation:</strong>\nThe output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;abat&quot;,&quot;baba&quot;,&quot;atan&quot;,&quot;atal&quot;]\n<strong>Output:</strong> [[&quot;baba&quot;,&quot;abat&quot;,&quot;baba&quot;,&quot;atal&quot;],[&quot;baba&quot;,&quot;abat&quot;,&quot;baba&quot;,&quot;atan&quot;]]\n<strong>Explanation:</strong>\nThe output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 4</code></li>\n\t<li>All <code>words[i]</code> have the same length.</li>\n\t<li><code>words[i]</code> consists of only lowercase English letters.</li>\n\t<li>All <code>words[i]</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<string>> wordSquares(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<List<String>> wordSquares(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wordSquares(self, words: List[str]) -> List[List[str]]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wordSquares(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: List[List[str]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {string[][]}\n */\nvar wordSquares = function(words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function wordSquares(words: string[]): string[][] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<IList<string>> WordSquares(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nchar*** wordSquares(char** words, int wordsSize, int* returnSize, int** returnColumnSizes) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wordSquares(words []string) [][]string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wordSquares(words: Array<String>): List<List<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wordSquares(_ words: [String]) -> [[String]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn word_squares(words: Vec<String>) -> Vec<Vec<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {String[][]}\ndef word_squares(words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return String[][]\n     */\n    function wordSquares($words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<List<String>> wordSquares(List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wordSquares(words: Array[String]): List[List[String]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec word_squares(words :: [String.t]) :: [[String.t]]\n  def word_squares(words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec word_squares(Words :: [unicode:unicode_binary()]) -> [[unicode:unicode_binary()]].\nword_squares(Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (word-squares words)\n  (-> (listof string?) (listof (listof string?)))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"83K\", \"totalSubmission\": \"151.9K\", \"totalAcceptedRaw\": 82971, \"totalSubmissionRaw\": 151923, \"acRate\": \"54.6%\"}",
+  "metaData": "{\r\n  \"name\": \"wordSquares\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<string>>\"\r\n  }\r\n}",
+  "sampleTestCase": "[\"area\",\"lead\",\"wall\",\"lady\",\"ball\"]"
+}

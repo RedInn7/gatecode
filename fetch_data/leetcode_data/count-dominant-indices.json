@@ -1,0 +1,89 @@
+{
+  "questionId": "4214",
+  "questionFrontendId": "3833",
+  "title": "Count Dominant Indices",
+  "titleSlug": "count-dominant-indices",
+  "content": "<p>You are given an integer array <code>nums</code> of length <code>n</code>.</p>\n\n<p>An element at index <code>i</code> is called <strong>dominant</strong> if: <code>nums[i] &gt; average(nums[i + 1], nums[i + 2], ..., nums[n - 1])</code></p>\n\n<p>Your task is to count the number of indices <code>i</code> that are <strong>dominant</strong>.</p>\n\n<p>The <strong>average</strong> of a set of numbers is the value obtained by adding all the numbers together and dividing the sum by the total number of numbers.</p>\n\n<p><strong>Note</strong>: The <strong>rightmost</strong> element of any array is <strong>not</strong> <strong>dominant</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,4,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>At index <code>i = 0</code>, the value 5 is dominant as <code>5 &gt; average(4, 3) = 3.5</code>.</li>\n\t<li>At index <code>i = 1</code>, the value 4 is dominant over the subarray <code>[3]</code>.</li>\n\t<li>Index <code>i = 2</code> is not dominant as there are no elements to its right. Thus, the answer is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>At index <code>i = 0</code>, the value 4 is dominant over the subarray <code>[1, 2]</code>.</li>\n\t<li>At index <code>i = 1</code>, the value 1 is not dominant.</li>\n\t<li>Index <code>i = 2</code> is not dominant as there are no elements to its right. Thus, the answer is 1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code>​​​​​​​</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int dominantIndices(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int dominantIndices(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def dominantIndices(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def dominantIndices(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar dominantIndices = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function dominantIndices(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int DominantIndices(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int dominantIndices(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func dominantIndices(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun dominantIndices(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func dominantIndices(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn dominant_indices(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef dominant_indices(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function dominantIndices($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int dominantIndices(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def dominantIndices(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec dominant_indices(nums :: [integer]) :: integer\n  def dominant_indices(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec dominant_indices(Nums :: [integer()]) -> integer().\ndominant_indices(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (dominant-indices nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"51.7K\", \"totalSubmission\": \"78.9K\", \"totalAcceptedRaw\": 51738, \"totalSubmissionRaw\": 78947, \"acRate\": \"65.5%\"}",
+  "metaData": "{\n  \"name\": \"dominantIndices\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[5,4,3]"
+}

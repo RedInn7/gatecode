@@ -1,0 +1,89 @@
+{
+  "questionId": "259",
+  "questionFrontendId": "259",
+  "title": "3Sum Smaller",
+  "titleSlug": "3sum-smaller",
+  "content": "<p>Given an array of <code>n</code> integers <code>nums</code> and an integer&nbsp;<code>target</code>, find the number of index triplets <code>i</code>, <code>j</code>, <code>k</code> with <code>0 &lt;= i &lt; j &lt; k &lt; n</code> that satisfy the condition <code>nums[i] + nums[j] + nums[k] &lt; target</code>.</p>\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-2,0,1,3], target = 2\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Because there are two triplets which sums are less than 2:\n[-2,0,1]\n[-2,0,3]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [], target = 0\n<strong>Output:</strong> 0\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0], target = 0\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>0 &lt;= n &lt;= 3500</code></li>\n\t<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>\n\t<li><code>-100 &lt;= target &lt;= 100</code></li>\n\t<li>The input is generated such that the answer is less than or equal to 10<sup>9</sup>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int threeSumSmaller(vector<int>& nums, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int threeSumSmaller(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def threeSumSmaller(self, nums: List[int], target: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def threeSumSmaller(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar threeSumSmaller = function(nums, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function threeSumSmaller(nums: number[], target: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ThreeSumSmaller(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int threeSumSmaller(int* nums, int numsSize, int target) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func threeSumSmaller(nums []int, target int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun threeSumSmaller(nums: IntArray, target: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func threeSumSmaller(_ nums: [Int], _ target: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn three_sum_smaller(nums: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} target\n# @return {Integer}\ndef three_sum_smaller(nums, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $target\n     * @return Integer\n     */\n    function threeSumSmaller($nums, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int threeSumSmaller(List<int> nums, int target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def threeSumSmaller(nums: Array[Int], target: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec three_sum_smaller(nums :: [integer], target :: integer) :: integer\n  def three_sum_smaller(nums, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec three_sum_smaller(Nums :: [integer()], Target :: integer()) -> integer().\nthree_sum_smaller(Nums, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (three-sum-smaller nums target)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"173.5K\", \"totalSubmission\": \"338.1K\", \"totalAcceptedRaw\": 173505, \"totalSubmissionRaw\": 338122, \"acRate\": \"51.3%\"}",
+  "metaData": "{\r\n  \"name\": \"threeSumSmaller\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n        \"name\": \"target\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "[-2,0,1,3]\n2"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "524",
+  "questionFrontendId": "524",
+  "title": "Longest Word in Dictionary through Deleting",
+  "titleSlug": "longest-word-in-dictionary-through-deleting",
+  "content": "<p>Given a string <code>s</code> and a string array <code>dictionary</code>, return <em>the longest string in the dictionary that can be formed by deleting some of the given string characters</em>. If there is more than one possible result, return the longest word with the smallest lexicographical order. If there is no possible result, return the empty string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abpcplea&quot;, dictionary = [&quot;ale&quot;,&quot;apple&quot;,&quot;monkey&quot;,&quot;plea&quot;]\n<strong>Output:</strong> &quot;apple&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abpcplea&quot;, dictionary = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]\n<strong>Output:</strong> &quot;a&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= dictionary.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= dictionary[i].length &lt;= 1000</code></li>\n\t<li><code>s</code> and <code>dictionary[i]</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string findLongestWord(string s, vector<string>& dictionary) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String findLongestWord(String s, List<String> dictionary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findLongestWord(self, s: str, dictionary: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findLongestWord(self, s, dictionary):\n        \"\"\"\n        :type s: str\n        :type dictionary: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string[]} dictionary\n * @return {string}\n */\nvar findLongestWord = function(s, dictionary) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findLongestWord(s: string, dictionary: string[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FindLongestWord(string s, IList<string> dictionary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* findLongestWord(char* s, char** dictionary, int dictionarySize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findLongestWord(s string, dictionary []string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findLongestWord(s: String, dictionary: List<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findLongestWord(_ s: String, _ dictionary: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_longest_word(s: String, dictionary: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String[]} dictionary\n# @return {String}\ndef find_longest_word(s, dictionary)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String[] $dictionary\n     * @return String\n     */\n    function findLongestWord($s, $dictionary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String findLongestWord(String s, List<String> dictionary) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findLongestWord(s: String, dictionary: List[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_longest_word(s :: String.t, dictionary :: [String.t]) :: String.t\n  def find_longest_word(s, dictionary) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_longest_word(S :: unicode:unicode_binary(), Dictionary :: [unicode:unicode_binary()]) -> unicode:unicode_binary().\nfind_longest_word(S, Dictionary) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-longest-word s dictionary)\n  (-> string? (listof string?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"181K\", \"totalSubmission\": \"344.8K\", \"totalAcceptedRaw\": 181035, \"totalSubmissionRaw\": 344790, \"acRate\": \"52.5%\"}",
+  "metaData": "{\n  \"name\": \"findLongestWord\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"dictionary\",\n      \"type\": \"list<string>\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"abpcplea\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]"
+}

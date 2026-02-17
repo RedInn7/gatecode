@@ -1,0 +1,21 @@
+{
+  "questionId": "2770",
+  "questionFrontendId": "2754",
+  "title": "Bind Function to Context",
+  "titleSlug": "bind-function-to-context",
+  "content": "<p>Enhance all functions to have the&nbsp;<code>bindPolyfill</code>&nbsp;method. When&nbsp;<code>bindPolyfill</code>&nbsp;is called with a passed&nbsp;object <code>obj</code>, that object becomes the&nbsp;<code>this</code>&nbsp;context for the function.</p>\n\n<p>For example, if you had the code:</p>\n\n<pre>\nfunction f() {\n  console.log(&#39;My context is &#39; + this.ctx);\n}\nf();\n</pre>\n\n<p>The output would be <code>&quot;My context is undefined&quot;</code>. However, if you bound the function:</p>\n\n<pre>\nfunction f() {\n  console.log(&#39;My context is &#39; + this.ctx);\n}\nconst boundFunc = f.boundPolyfill({ &quot;ctx&quot;: &quot;My Object&quot; })\nboundFunc();\n</pre>\n\n<p>The output should be&nbsp;<code>&quot;My context is My Object&quot;</code>.</p>\n\n<p>You may assume that a single non-null object will be passed to the&nbsp;<code>bindPolyfill</code> method.</p>\n\n<p>Please solve it without the built-in&nbsp;<code>Function.bind</code> method.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nfn = function f(multiplier) { \n&nbsp; return this.x * multiplier; \n}\nobj = {&quot;x&quot;: 10}\ninputs = [5]\n<strong>Output:</strong> 50\n<strong>Explanation:</strong>\nconst boundFunc = f.bindPolyfill({&quot;x&quot;: 10});\nboundFunc(5); // 50\nA multiplier of 5 is passed as a parameter.\nThe context is set to {&quot;x&quot;: 10}.\nMultiplying those two numbers yields 50.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nfn = function speak() { \n&nbsp; return &quot;My name is &quot; + this.name; \n}\nobj = {&quot;name&quot;: &quot;Kathy&quot;}\ninputs = []\n<strong>Output:</strong> &quot;My name is Kathy&quot;\n<strong>Explanation:</strong>\nconst boundFunc = f.bindPolyfill({&quot;name&quot;: &quot;Kathy&quot;});\nboundFunc(); // &quot;My name is Kathy&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>obj</code> is a non-null object</li>\n\t<li><code>0 &lt;= inputs.length &lt;= 100</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Can you solve it without using any built-in methods?</strong>",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {Object} obj\n * @return {Function}\n */\nFunction.prototype.bindPolyfill = function(obj) {\n    \n}"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "type Fn = (...args) => any\n\ninterface Function {\n    bindPolyfill(obj: Record<any, any>): Fn;\n}\n\nFunction.prototype.bindPolyfill = function(obj): Fn {\n    \n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1K\", \"totalSubmission\": \"1.2K\", \"totalAcceptedRaw\": 1048, \"totalSubmissionRaw\": 1203, \"acRate\": \"87.1%\"}",
+  "metaData": "{\n  \"name\": \"jsonParse\",\n  \"params\": [\n    {\n      \"name\": \"fn\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"obj\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"inputs\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"javascript\",\n    \"typescript\"\n  ],\n  \"manual\": true\n}",
+  "sampleTestCase": "function f(multiplier) { return this.x * multiplier; }\n{\"x\":10}\n[5]"
+}

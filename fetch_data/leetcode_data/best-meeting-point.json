@@ -1,0 +1,89 @@
+{
+  "questionId": "296",
+  "questionFrontendId": "296",
+  "title": "Best Meeting Point",
+  "titleSlug": "best-meeting-point",
+  "content": "<p>Given an <code>m x n</code> binary grid <code>grid</code> where each <code>1</code> marks the home of one friend, return <em>the minimal <strong>total travel distance</strong></em>.</p>\n\n<p>The <strong>total travel distance</strong> is the sum of the distances between the houses of the friends and the meeting point.</p>\n\n<p>The distance is calculated using <a href=\"http://en.wikipedia.org/wiki/Taxicab_geometry\" target=\"_blank\">Manhattan Distance</a>, where <code>distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/meetingpoint-grid.jpg\" style=\"width: 413px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Given three friends living at (0,0), (0,4), and (2,2).\nThe point (0,2) is an ideal meeting point, as the total travel distance of 2 + 2 + 2 = 6 is minimal.\nSo return 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,1]]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 200</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n\t<li>There will be <strong>at least two</strong> friends in the <code>grid</code>.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minTotalDistance(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minTotalDistance(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minTotalDistance(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minTotalDistance(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minTotalDistance = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minTotalDistance(grid: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinTotalDistance(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minTotalDistance(int** grid, int gridSize, int* gridColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minTotalDistance(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minTotalDistance(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minTotalDistance(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_total_distance(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef min_total_distance(grid)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function minTotalDistance($grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minTotalDistance(List<List<int>> grid) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minTotalDistance(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_total_distance(grid :: [[integer]]) :: integer\n  def min_total_distance(grid) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_total_distance(Grid :: [[integer()]]) -> integer().\nmin_total_distance(Grid) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-total-distance grid)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"96.5K\", \"totalSubmission\": \"157.3K\", \"totalAcceptedRaw\": 96537, \"totalSubmissionRaw\": 157282, \"acRate\": \"61.4%\"}",
+  "metaData": "{\r\n  \"name\": \"minTotalDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "[[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]"
+}

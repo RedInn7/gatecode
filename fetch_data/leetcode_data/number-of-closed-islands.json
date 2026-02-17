@@ -1,0 +1,89 @@
+{
+  "questionId": "1380",
+  "questionFrontendId": "1254",
+  "title": "Number of Closed Islands",
+  "titleSlug": "number-of-closed-islands",
+  "content": "<p>Given a 2D&nbsp;<code>grid</code> consists of <code>0s</code> (land)&nbsp;and <code>1s</code> (water).&nbsp; An <em>island</em> is a maximal 4-directionally connected group of <code><font face=\"monospace\">0</font>s</code> and a <em>closed island</em>&nbsp;is an island <strong>totally</strong>&nbsp;(all left, top, right, bottom) surrounded by <code>1s.</code></p>\n\n<p>Return the number of <em>closed islands</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/31/sample_3_1610.png\" style=\"width: 240px; height: 120px;\" /></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> \nIslands in gray are closed because they are completely surrounded by water (group of 1s).</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/31/sample_4_1610.png\" style=\"width: 160px; height: 80px;\" /></p>\n\n<pre>\n<strong>Input:</strong> grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,1,1,1,1,1,1],\n&nbsp;              [1,0,0,0,0,0,1],\n&nbsp;              [1,0,1,1,1,0,1],\n&nbsp;              [1,0,1,0,1,0,1],\n&nbsp;              [1,0,1,1,1,0,1],\n&nbsp;              [1,0,0,0,0,0,1],\n               [1,1,1,1,1,1,1]]\n<strong>Output:</strong> 2\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= grid.length, grid[0].length &lt;= 100</code></li>\n\t<li><code>0 &lt;= grid[i][j] &lt;=1</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int closedIsland(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int closedIsland(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def closedIsland(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def closedIsland(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar closedIsland = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function closedIsland(grid: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ClosedIsland(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int closedIsland(int** grid, int gridSize, int* gridColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func closedIsland(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun closedIsland(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func closedIsland(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn closed_island(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef closed_island(grid)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function closedIsland($grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int closedIsland(List<List<int>> grid) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def closedIsland(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec closed_island(grid :: [[integer]]) :: integer\n  def closed_island(grid) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec closed_island(Grid :: [[integer()]]) -> integer().\nclosed_island(Grid) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (closed-island grid)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"275.4K\", \"totalSubmission\": \"411K\", \"totalAcceptedRaw\": 275350, \"totalSubmissionRaw\": 410981, \"acRate\": \"67.0%\"}",
+  "metaData": "{\n  \"name\": \"closedIsland\",\n  \"params\": [\n    {\n      \"name\": \"grid\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]"
+}

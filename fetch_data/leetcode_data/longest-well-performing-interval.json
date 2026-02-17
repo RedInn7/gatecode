@@ -1,0 +1,89 @@
+{
+  "questionId": "1219",
+  "questionFrontendId": "1124",
+  "title": "Longest Well-Performing Interval",
+  "titleSlug": "longest-well-performing-interval",
+  "content": "<p>We are given <code>hours</code>, a list of the number of hours worked per day for a given employee.</p>\n\n<p>A day is considered to be a <em>tiring day</em> if and only if the number of hours worked is (strictly) greater than <code>8</code>.</p>\n\n<p>A <em>well-performing interval</em> is an interval of days for which the number of tiring days is strictly larger than the number of non-tiring days.</p>\n\n<p>Return the length of the longest well-performing interval.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> hours = [9,9,6,0,6,6,9]\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>The longest well-performing interval is [9,9,6].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> hours = [6,6,6]\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= hours.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= hours[i] &lt;= 16</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestWPI(vector<int>& hours) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestWPI(int[] hours) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestWPI(self, hours: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestWPI(self, hours):\n        \"\"\"\n        :type hours: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} hours\n * @return {number}\n */\nvar longestWPI = function(hours) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function longestWPI(hours: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestWPI(int[] hours) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int longestWPI(int* hours, int hoursSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestWPI(hours []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestWPI(hours: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestWPI(_ hours: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_wpi(hours: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} hours\n# @return {Integer}\ndef longest_wpi(hours)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $hours\n     * @return Integer\n     */\n    function longestWPI($hours) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int longestWPI(List<int> hours) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestWPI(hours: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec longest_wpi(hours :: [integer]) :: integer\n  def longest_wpi(hours) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec longest_wpi(Hours :: [integer()]) -> integer().\nlongest_wpi(Hours) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (longest-wpi hours)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"44.7K\", \"totalSubmission\": \"121K\", \"totalAcceptedRaw\": 44731, \"totalSubmissionRaw\": 121002, \"acRate\": \"37.0%\"}",
+  "metaData": "{\n  \"name\": \"longestWPI\",\n  \"params\": [\n    {\n      \"name\": \"hours\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[9,9,6,0,6,6,9]"
+}

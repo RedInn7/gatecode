@@ -1,0 +1,89 @@
+{
+  "questionId": "2520",
+  "questionFrontendId": "2434",
+  "title": "Using a Robot to Print the Lexicographically Smallest String",
+  "titleSlug": "using-a-robot-to-print-the-lexicographically-smallest-string",
+  "content": "<p>You are given a string <code>s</code> and a robot that currently holds an empty string <code>t</code>. Apply one of the following operations until <code>s</code> and <code>t</code> <strong>are both empty</strong>:</p>\n\n<ul>\n\t<li>Remove the <strong>first</strong> character of a string <code>s</code> and give it to the robot. The robot will append this character to the string <code>t</code>.</li>\n\t<li>Remove the <strong>last</strong> character of a string <code>t</code> and give it to the robot. The robot will write this character on paper.</li>\n</ul>\n\n<p>Return <em>the lexicographically smallest string that can be written on the paper.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;zza&quot;\n<strong>Output:</strong> &quot;azz&quot;\n<strong>Explanation:</strong> Let p denote the written string.\nInitially p=&quot;&quot;, s=&quot;zza&quot;, t=&quot;&quot;.\nPerform first operation three times p=&quot;&quot;, s=&quot;&quot;, t=&quot;zza&quot;.\nPerform second operation three times p=&quot;azz&quot;, s=&quot;&quot;, t=&quot;&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;bac&quot;\n<strong>Output:</strong> &quot;abc&quot;\n<strong>Explanation:</strong> Let p denote the written string.\nPerform first operation twice p=&quot;&quot;, s=&quot;c&quot;, t=&quot;ba&quot;. \nPerform second operation twice p=&quot;ab&quot;, s=&quot;c&quot;, t=&quot;&quot;. \nPerform first operation p=&quot;ab&quot;, s=&quot;&quot;, t=&quot;c&quot;. \nPerform second operation p=&quot;abc&quot;, s=&quot;&quot;, t=&quot;&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;bdda&quot;\n<strong>Output:</strong> &quot;addb&quot;\n<strong>Explanation:</strong> Let p denote the written string.\nInitially p=&quot;&quot;, s=&quot;bdda&quot;, t=&quot;&quot;.\nPerform first operation four times p=&quot;&quot;, s=&quot;&quot;, t=&quot;bdda&quot;.\nPerform second operation four times p=&quot;addb&quot;, s=&quot;&quot;, t=&quot;&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of only English lowercase letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string robotWithString(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String robotWithString(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def robotWithString(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def robotWithString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar robotWithString = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function robotWithString(s: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string RobotWithString(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* robotWithString(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func robotWithString(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun robotWithString(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func robotWithString(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn robot_with_string(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef robot_with_string(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function robotWithString($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String robotWithString(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def robotWithString(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec robot_with_string(s :: String.t) :: String.t\n  def robot_with_string(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec robot_with_string(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nrobot_with_string(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (robot-with-string s)\n  (-> string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"107.4K\", \"totalSubmission\": \"171.8K\", \"totalAcceptedRaw\": 107352, \"totalSubmissionRaw\": 171785, \"acRate\": \"62.5%\"}",
+  "metaData": "{\n  \"name\": \"robotWithString\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"zza\""
+}

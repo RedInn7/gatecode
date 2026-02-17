@@ -1,0 +1,89 @@
+{
+  "questionId": "3182",
+  "questionFrontendId": "2898",
+  "title": "Maximum Linear Stock Score",
+  "titleSlug": "maximum-linear-stock-score",
+  "content": "<p>Given a <strong>1-indexed</strong> integer array <code>prices</code>, where <code>prices[i]</code> is the price of a particular stock on the <code>i<sup>th</sup></code> day, your task is to select some of the elements of <code>prices</code> such that your selection is <strong>linear</strong>.</p>\n\n<p>A selection <code>indexes</code>, where <code>indexes</code> is a <strong>1-indexed</strong> integer array of length <code>k</code> which is a subsequence of the array <code>[1, 2, ..., n]</code>, is <strong>linear</strong> if:</p>\n\n<ul>\n\t<li>For every <code>1 &lt; j &lt;= k</code>, <code>prices[indexes[j]] - prices[indexes[j - 1]] == indexes[j] - indexes[j - 1]</code>.</li>\n</ul>\n\n<p>A <b>subsequence</b> is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.</p>\n\n<p>The <strong>score</strong> of a selection <code>indexes</code>, is equal to the sum of the following array: <code>[prices[indexes[1]], prices[indexes[2]], ..., prices[indexes[k]]</code>.</p>\n\n<p>Return <em>the <strong>maximum</strong> <strong>score</strong> that a linear selection can have</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [1,5,3,7,8]\n<strong>Output:</strong> 20\n<strong>Explanation:</strong> We can select the indexes [2,4,5]. We show that our selection is linear:\nFor j = 2, we have:\nindexes[2] - indexes[1] = 4 - 2 = 2.\nprices[4] - prices[2] = 7 - 5 = 2.\nFor j = 3, we have:\nindexes[3] - indexes[2] = 5 - 4 = 1.\nprices[5] - prices[4] = 8 - 7 = 1.\nThe sum of the elements is: prices[2] + prices[4] + prices[5] = 20.\nIt can be shown that the maximum sum a linear selection can have is 20.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [5,6,7,8,9]\n<strong>Output:</strong> 35\n<strong>Explanation:</strong> We can select all of the indexes [1,2,3,4,5]. Since each element has a difference of exactly 1 from its previous element, our selection is linear.\nThe sum of all the elements is 35 which is the maximum possible some out of every selection.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= prices[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long maxScore(vector<int>& prices) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long maxScore(int[] prices) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxScore(self, prices: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxScore(self, prices):\n        \"\"\"\n        :type prices: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} prices\n * @return {number}\n */\nvar maxScore = function(prices) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxScore(prices: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MaxScore(int[] prices) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long maxScore(int* prices, int pricesSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxScore(prices []int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxScore(prices: IntArray): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxScore(_ prices: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_score(prices: Vec<i32>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} prices\n# @return {Integer}\ndef max_score(prices)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $prices\n     * @return Integer\n     */\n    function maxScore($prices) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxScore(List<int> prices) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxScore(prices: Array[Int]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_score(prices :: [integer]) :: integer\n  def max_score(prices) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_score(Prices :: [integer()]) -> integer().\nmax_score(Prices) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-score prices)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.3K\", \"totalSubmission\": \"2.1K\", \"totalAcceptedRaw\": 1309, \"totalSubmissionRaw\": 2140, \"acRate\": \"61.2%\"}",
+  "metaData": "{\n  \"name\": \"maxScore\",\n  \"params\": [\n    {\n      \"name\": \"prices\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[1,5,3,7,8]"
+}

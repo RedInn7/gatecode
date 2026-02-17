@@ -1,0 +1,89 @@
+{
+  "questionId": "1057",
+  "questionFrontendId": "1012",
+  "title": "Numbers With Repeated Digits",
+  "titleSlug": "numbers-with-repeated-digits",
+  "content": "<p>Given an integer <code>n</code>, return <em>the number of positive integers in the range </em><code>[1, n]</code><em> that have <strong>at least one</strong> repeated digit</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 20\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The only positive number (&lt;= 20) with at least 1 repeated digit is 11.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 100\n<strong>Output:</strong> 10\n<strong>Explanation:</strong> The positive numbers (&lt;= 100) with atleast 1 repeated digit are 11, 22, 33, 44, 55, 66, 77, 88, 99, and 100.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1000\n<strong>Output:</strong> 262\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numDupDigitsAtMostN(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numDupDigitsAtMostN(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numDupDigitsAtMostN(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numDupDigitsAtMostN(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar numDupDigitsAtMostN = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function numDupDigitsAtMostN(n: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumDupDigitsAtMostN(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int numDupDigitsAtMostN(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numDupDigitsAtMostN(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numDupDigitsAtMostN(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numDupDigitsAtMostN(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_dup_digits_at_most_n(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef num_dup_digits_at_most_n(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function numDupDigitsAtMostN($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int numDupDigitsAtMostN(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numDupDigitsAtMostN(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec num_dup_digits_at_most_n(n :: integer) :: integer\n  def num_dup_digits_at_most_n(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec num_dup_digits_at_most_n(N :: integer()) -> integer().\nnum_dup_digits_at_most_n(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (num-dup-digits-at-most-n n)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.1K\", \"totalSubmission\": \"52.7K\", \"totalAcceptedRaw\": 24110, \"totalSubmissionRaw\": 52746, \"acRate\": \"45.7%\"}",
+  "metaData": "{\n  \"name\": \"numDupDigitsAtMostN\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "20"
+}

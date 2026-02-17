@@ -1,0 +1,89 @@
+{
+  "questionId": "1881",
+  "questionFrontendId": "1755",
+  "title": "Closest Subsequence Sum",
+  "titleSlug": "closest-subsequence-sum",
+  "content": "<p>You are given an integer array <code>nums</code> and an integer <code>goal</code>.</p>\n\n<p>You want to choose a subsequence of <code>nums</code> such that the sum of its elements is the closest possible to <code>goal</code>. That is, if the sum of the subsequence&#39;s elements is <code>sum</code>, then you want to <strong>minimize the absolute difference</strong> <code>abs(sum - goal)</code>.</p>\n\n<p>Return <em>the <strong>minimum</strong> possible value of</em> <code>abs(sum - goal)</code>.</p>\n\n<p>Note that a subsequence of an array is an array formed by removing some elements <strong>(possibly all or none)</strong> of the original array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,-7,3,5], goal = 6\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Choose the whole array as a subsequence, with a sum of 6.\nThis is equal to the goal, so the absolute difference is 0.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [7,-9,15,-2], goal = -5\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> Choose the subsequence [7,-9,-2], with a sum of -4.\nThe absolute difference is abs(-4 - (-5)) = abs(1) = 1, which is the minimum.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3], goal = -7\n<strong>Output:</strong> 7\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 40</code></li>\n\t<li><code>-10<sup>7</sup> &lt;= nums[i] &lt;= 10<sup>7</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= goal &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minAbsDifference(vector<int>& nums, int goal) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minAbsDifference(int[] nums, int goal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minAbsDifference(self, nums: List[int], goal: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minAbsDifference(self, nums, goal):\n        \"\"\"\n        :type nums: List[int]\n        :type goal: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} goal\n * @return {number}\n */\nvar minAbsDifference = function(nums, goal) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minAbsDifference(nums: number[], goal: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinAbsDifference(int[] nums, int goal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minAbsDifference(int* nums, int numsSize, int goal) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minAbsDifference(nums []int, goal int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minAbsDifference(nums: IntArray, goal: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minAbsDifference(_ nums: [Int], _ goal: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_abs_difference(nums: Vec<i32>, goal: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} goal\n# @return {Integer}\ndef min_abs_difference(nums, goal)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $goal\n     * @return Integer\n     */\n    function minAbsDifference($nums, $goal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minAbsDifference(List<int> nums, int goal) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minAbsDifference(nums: Array[Int], goal: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_abs_difference(nums :: [integer], goal :: integer) :: integer\n  def min_abs_difference(nums, goal) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_abs_difference(Nums :: [integer()], Goal :: integer()) -> integer().\nmin_abs_difference(Nums, Goal) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-abs-difference nums goal)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"27.3K\", \"totalSubmission\": \"63.1K\", \"totalAcceptedRaw\": 27274, \"totalSubmissionRaw\": 63144, \"acRate\": \"43.2%\"}",
+  "metaData": "{\n  \"name\": \"minAbsDifference\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"goal\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[5,-7,3,5]\n6"
+}

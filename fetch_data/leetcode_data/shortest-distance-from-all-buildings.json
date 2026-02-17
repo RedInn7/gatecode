@@ -1,0 +1,89 @@
+{
+  "questionId": "317",
+  "questionFrontendId": "317",
+  "title": "Shortest Distance from All Buildings",
+  "titleSlug": "shortest-distance-from-all-buildings",
+  "content": "<p>You are given an <code>m x n</code> grid <code>grid</code> of values <code>0</code>, <code>1</code>, or <code>2</code>, where:</p>\n\n<ul>\n\t<li>each <code>0</code> marks <strong>an empty land</strong> that you can pass by freely,</li>\n\t<li>each <code>1</code> marks <strong>a building</strong> that you cannot pass through, and</li>\n\t<li>each <code>2</code> marks <strong>an obstacle</strong> that you cannot pass through.</li>\n</ul>\n\n<p>You want to build a house on an empty land that reaches all buildings in the <strong>shortest total travel</strong> distance. You can only move up, down, left, and right.</p>\n\n<p>Return <em>the <strong>shortest travel distance</strong> for such a house</em>. If it is not possible to build such a house according to the above rules, return <code>-1</code>.</p>\n\n<p>The <strong>total travel distance</strong> is the sum of the distances between the houses of the friends and the meeting point.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/buildings-grid.jpg\" style=\"width: 413px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> Given three buildings at (0,0), (0,4), (2,2), and an obstacle at (0,2).\nThe point (1,2) is an ideal empty land to build a house, as the total travel distance of 3+3+1=7 is minimal.\nSo return 7.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,0]]\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1]]\n<strong>Output:</strong> -1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code>, <code>1</code>, or <code>2</code>.</li>\n\t<li>There will be <strong>at least one</strong> building in the <code>grid</code>.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestDistance(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestDistance(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestDistance(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestDistance(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar shortestDistance = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function shortestDistance(grid: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestDistance(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int shortestDistance(int** grid, int gridSize, int* gridColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestDistance(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestDistance(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestDistance(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_distance(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef shortest_distance(grid)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function shortestDistance($grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int shortestDistance(List<List<int>> grid) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestDistance(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec shortest_distance(grid :: [[integer]]) :: integer\n  def shortest_distance(grid) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec shortest_distance(Grid :: [[integer()]]) -> integer().\nshortest_distance(Grid) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (shortest-distance grid)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"217.5K\", \"totalSubmission\": \"485.2K\", \"totalAcceptedRaw\": 217544, \"totalSubmissionRaw\": 485238, \"acRate\": \"44.8%\"}",
+  "metaData": "{\r\n  \"name\": \"shortestDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "[[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "1213",
+  "questionFrontendId": "1259",
+  "title": "Handshakes That Don't Cross",
+  "titleSlug": "handshakes-that-dont-cross",
+  "content": "<p>You are given an <strong>even</strong> number of people <code>numPeople</code> that stand around a circle and each person shakes hands with someone else so that there are <code>numPeople / 2</code> handshakes total.</p>\n\n<p>Return <em>the number of ways these handshakes could occur such that none of the handshakes cross</em>.</p>\n\n<p>Since the answer could be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/07/11/5125_example_2.png\" style=\"width: 450px; height: 215px;\" />\n<pre>\n<strong>Input:</strong> numPeople = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are two ways to do it, the first way is [(1,2),(3,4)] and the second one is [(2,3),(4,1)].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/07/11/5125_example_3.png\" style=\"width: 335px; height: 500px;\" />\n<pre>\n<strong>Input:</strong> numPeople = 6\n<strong>Output:</strong> 5\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= numPeople &lt;= 1000</code></li>\n\t<li><code>numPeople</code> is even.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numberOfWays(int numPeople) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numberOfWays(int numPeople) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numberOfWays(self, numPeople: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numberOfWays(self, numPeople):\n        \"\"\"\n        :type numPeople: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} numPeople\n * @return {number}\n */\nvar numberOfWays = function(numPeople) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function numberOfWays(numPeople: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumberOfWays(int numPeople) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int numberOfWays(int numPeople) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numberOfWays(numPeople int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numberOfWays(numPeople: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numberOfWays(_ numPeople: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn number_of_ways(num_people: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num_people\n# @return {Integer}\ndef number_of_ways(num_people)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $numPeople\n     * @return Integer\n     */\n    function numberOfWays($numPeople) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int numberOfWays(int numPeople) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numberOfWays(numPeople: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec number_of_ways(num_people :: integer) :: integer\n  def number_of_ways(num_people) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec number_of_ways(NumPeople :: integer()) -> integer().\nnumber_of_ways(NumPeople) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (number-of-ways numPeople)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.7K\", \"totalSubmission\": \"22.9K\", \"totalAcceptedRaw\": 13713, \"totalSubmissionRaw\": 22895, \"acRate\": \"59.9%\"}",
+  "metaData": "{\n  \"name\": \"numberOfWays\",\n  \"params\": [\n    {\n      \"name\": \"numPeople\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "4"
+}

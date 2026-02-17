@@ -1,0 +1,33 @@
+{
+  "questionId": "613",
+  "questionFrontendId": "613",
+  "title": "Shortest Distance in a Line",
+  "titleSlug": "shortest-distance-in-a-line",
+  "content": "<p>Table: <code>Point</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| x           | int  |\n+-------------+------+\nIn SQL, x is the primary key column for this table.\nEach row of this table indicates the position of a point on the X-axis.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Find the shortest distance between any two points from the <code>Point</code> table.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nPoint table:\n+----+\n| x  |\n+----+\n| -1 |\n| 0  |\n| 2  |\n+----+\n<strong>Output:</strong> \n+----------+\n| shortest |\n+----------+\n| 1        |\n+----------+\n<strong>Explanation:</strong> The shortest distance is between points -1 and 0 which is |(-1) - 0| = 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> How could you optimize your solution if the <code>Point</code> table is ordered <strong>in ascending order</strong>?</p>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef shortest_distance(point: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"84.4K\", \"totalSubmission\": \"105.8K\", \"totalAcceptedRaw\": 84351, \"totalSubmissionRaw\": 105806, \"acRate\": \"79.7%\"}",
+  "metaData": "{\"mysql\": [\"Create Table If Not Exists Point (x int not null)\"], \"mssql\": [\"Create Table Point (x int not null)\"], \"oraclesql\": [\"Create Table Point (x int not null)\"], \"database\": true, \"name\": \"shortest_distance\", \"pythondata\": [\"Point = pd.DataFrame([], columns=['x']).astype({'x':'Int64'})\"], \"postgresql\": [\"Create Table If Not Exists Point (x int not null)\"], \"database_schema\": {\"Point\": {\"x\": \"INT\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Point\":[\"x\"]},\"rows\":{\"Point\":[[-1],[0],[2]]}}"
+}

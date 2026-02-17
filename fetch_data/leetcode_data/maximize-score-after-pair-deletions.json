@@ -1,0 +1,89 @@
+{
+  "questionId": "3839",
+  "questionFrontendId": "3496",
+  "title": "Maximize Score After Pair Deletions",
+  "titleSlug": "maximize-score-after-pair-deletions",
+  "content": "<p>You are given an array of integers <code>nums</code>. You <strong>must</strong> repeatedly perform one of the following operations while the array has more than two elements:</p>\n\n<ul>\n\t<li>Remove the first two elements.</li>\n\t<li>Remove the last two elements.</li>\n\t<li>Remove the first and last element.</li>\n</ul>\n\n<p>For each operation, add the sum of the removed elements to your total score.</p>\n\n<p>Return the <strong>maximum</strong> possible score you can achieve.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,4,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The possible operations are:</p>\n\n<ul>\n\t<li>Remove the first two elements <code>(2 + 4) = 6</code>. The remaining array is <code>[1]</code>.</li>\n\t<li>Remove the last two elements <code>(4 + 1) = 5</code>. The remaining array is <code>[2]</code>.</li>\n\t<li>Remove the first and last elements <code>(2 + 1) = 3</code>. The remaining array is <code>[4]</code>.</li>\n</ul>\n\n<p>The maximum score is obtained by removing the first two elements, resulting in a final score of 6.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,-1,4,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The possible operations are:</p>\n\n<ul>\n\t<li>Remove the first and last elements <code>(5 + 2) = 7</code>. The remaining array is <code>[-1, 4]</code>.</li>\n\t<li>Remove the first two elements <code>(5 + -1) = 4</code>. The remaining array is <code>[4, 2]</code>.</li>\n\t<li>Remove the last two elements <code>(4 + 2) = 6</code>. The remaining array is <code>[5, -1]</code>.</li>\n</ul>\n\n<p>The maximum score is obtained by removing the first and last elements, resulting in a total score of 7.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxScore(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxScore(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxScore(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxScore(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxScore = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxScore(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxScore(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxScore(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxScore(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxScore(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxScore(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_score(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_score(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxScore($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxScore(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxScore(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_score(nums :: [integer]) :: integer\n  def max_score(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_score(Nums :: [integer()]) -> integer().\nmax_score(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-score nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.1K\", \"totalSubmission\": \"2K\", \"totalAcceptedRaw\": 1078, \"totalSubmissionRaw\": 2026, \"acRate\": \"53.2%\"}",
+  "metaData": "{\n  \"name\": \"maxScore\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[2,4,1]"
+}

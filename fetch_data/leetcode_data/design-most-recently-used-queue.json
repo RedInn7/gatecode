@@ -1,0 +1,89 @@
+{
+  "questionId": "1903",
+  "questionFrontendId": "1756",
+  "title": "Design Most Recently Used Queue",
+  "titleSlug": "design-most-recently-used-queue",
+  "content": "<p>Design a queue-like data structure that moves the most recently used element to the end of the queue.</p>\n\n<p>Implement the <code>MRUQueue</code> class:</p>\n\n<ul>\n\t<li><code>MRUQueue(int n)</code> constructs the <code>MRUQueue</code> with <code>n</code> elements: <code>[1,2,3,...,n]</code>.</li>\n\t<li><code>int fetch(int k)</code> moves the <code>k<sup>th</sup></code> element <strong>(1-indexed)</strong> to the end of the queue and returns it.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong>\n[&quot;MRUQueue&quot;, &quot;fetch&quot;, &quot;fetch&quot;, &quot;fetch&quot;, &quot;fetch&quot;]\n[[8], [3], [5], [2], [8]]\n<strong>Output:</strong>\n[null, 3, 6, 2, 2]\n\n<strong>Explanation:</strong>\nMRUQueue mRUQueue = new MRUQueue(8); // Initializes the queue to [1,2,3,4,5,6,7,8].\nmRUQueue.fetch(3); // Moves the 3<sup>rd</sup> element (3) to the end of the queue to become [1,2,4,5,6,7,8,3] and returns it.\nmRUQueue.fetch(5); // Moves the 5<sup>th</sup> element (6) to the end of the queue to become [1,2,4,5,7,8,3,6] and returns it.\nmRUQueue.fetch(2); // Moves the 2<sup>nd</sup> element (2) to the end of the queue to become [1,4,5,7,8,3,6,2] and returns it.\nmRUQueue.fetch(8); // The 8<sup>th</sup> element (2) is already at the end of the queue so just return it.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 2000</code></li>\n\t<li><code>1 &lt;= k &lt;= n</code></li>\n\t<li>At most <code>2000</code> calls will be made to <code>fetch</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Finding an <code>O(n)</code> algorithm per <code>fetch</code> is a bit easy. Can you find an algorithm with a better complexity for each <code>fetch</code> call?",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MRUQueue {\npublic:\n    MRUQueue(int n) {\n        \n    }\n    \n    int fetch(int k) {\n        \n    }\n};\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * MRUQueue* obj = new MRUQueue(n);\n * int param_1 = obj->fetch(k);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MRUQueue {\n\n    public MRUQueue(int n) {\n        \n    }\n    \n    public int fetch(int k) {\n        \n    }\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * MRUQueue obj = new MRUQueue(n);\n * int param_1 = obj.fetch(k);\n */"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MRUQueue:\n\n    def __init__(self, n: int):\n        \n\n    def fetch(self, k: int) -> int:\n        \n\n\n# Your MRUQueue object will be instantiated and called as such:\n# obj = MRUQueue(n)\n# param_1 = obj.fetch(k)"
+    },
+    {
+      "lang": "Python",
+      "code": "class MRUQueue(object):\n\n    def __init__(self, n):\n        \"\"\"\n        :type n: int\n        \"\"\"\n        \n\n    def fetch(self, k):\n        \"\"\"\n        :type k: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your MRUQueue object will be instantiated and called as such:\n# obj = MRUQueue(n)\n# param_1 = obj.fetch(k)"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n */\nvar MRUQueue = function(n) {\n    \n};\n\n/** \n * @param {number} k\n * @return {number}\n */\nMRUQueue.prototype.fetch = function(k) {\n    \n};\n\n/** \n * Your MRUQueue object will be instantiated and called as such:\n * var obj = new MRUQueue(n)\n * var param_1 = obj.fetch(k)\n */"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "class MRUQueue {\n    constructor(n: number) {\n        \n    }\n\n    fetch(k: number): number {\n        \n    }\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * var obj = new MRUQueue(n)\n * var param_1 = obj.fetch(k)\n */"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MRUQueue {\n\n    public MRUQueue(int n) {\n        \n    }\n    \n    public int Fetch(int k) {\n        \n    }\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * MRUQueue obj = new MRUQueue(n);\n * int param_1 = obj.Fetch(k);\n */"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MRUQueue;\n\n\nMRUQueue* mRUQueueCreate(int n) {\n    \n}\n\nint mRUQueueFetch(MRUQueue* obj, int k) {\n    \n}\n\nvoid mRUQueueFree(MRUQueue* obj) {\n    \n}\n\n/**\n * Your MRUQueue struct will be instantiated and called as such:\n * MRUQueue* obj = mRUQueueCreate(n);\n * int param_1 = mRUQueueFetch(obj, k);\n \n * mRUQueueFree(obj);\n*/"
+    },
+    {
+      "lang": "Go",
+      "code": "type MRUQueue struct {\n    \n}\n\n\nfunc Constructor(n int) MRUQueue {\n    \n}\n\n\nfunc (this *MRUQueue) Fetch(k int) int {\n    \n}\n\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * obj := Constructor(n);\n * param_1 := obj.Fetch(k);\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MRUQueue(n: Int) {\n\n    fun fetch(k: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * var obj = MRUQueue(n)\n * var param_1 = obj.fetch(k)\n */"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass MRUQueue {\n\n    init(_ n: Int) {\n        \n    }\n    \n    func fetch(_ k: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * let obj = MRUQueue(n)\n * let ret_1: Int = obj.fetch(k)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MRUQueue {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MRUQueue {\n\n    fn new(n: i32) -> Self {\n        \n    }\n    \n    fn fetch(&self, k: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * let obj = MRUQueue::new(n);\n * let ret_1: i32 = obj.fetch(k);\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MRUQueue\n\n=begin\n    :type n: Integer\n=end\n    def initialize(n)\n        \n    end\n\n\n=begin\n    :type k: Integer\n    :rtype: Integer\n=end\n    def fetch(k)\n        \n    end\n\n\nend\n\n# Your MRUQueue object will be instantiated and called as such:\n# obj = MRUQueue.new(n)\n# param_1 = obj.fetch(k)"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MRUQueue {\n    /**\n     * @param Integer $n\n     */\n    function __construct($n) {\n        \n    }\n  \n    /**\n     * @param Integer $k\n     * @return Integer\n     */\n    function fetch($k) {\n        \n    }\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * $obj = MRUQueue($n);\n * $ret_1 = $obj->fetch($k);\n */"
+    },
+    {
+      "lang": "Dart",
+      "code": "class MRUQueue {\n\n  MRUQueue(int n) {\n    \n  }\n  \n  int fetch(int k) {\n    \n  }\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * MRUQueue obj = MRUQueue(n);\n * int param1 = obj.fetch(k);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MRUQueue(_n: Int) {\n\n    def fetch(k: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your MRUQueue object will be instantiated and called as such:\n * val obj = new MRUQueue(n)\n * val param_1 = obj.fetch(k)\n */"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule MRUQueue do\n  @spec init_(n :: integer) :: any\n  def init_(n) do\n    \n  end\n\n  @spec fetch(k :: integer) :: integer\n  def fetch(k) do\n    \n  end\nend\n\n# Your functions will be called as such:\n# MRUQueue.init_(n)\n# param_1 = MRUQueue.fetch(k)\n\n# MRUQueue.init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec mru_queue_init_(N :: integer()) -> any().\nmru_queue_init_(N) ->\n  .\n\n-spec mru_queue_fetch(K :: integer()) -> integer().\nmru_queue_fetch(K) ->\n  .\n\n\n%% Your functions will be called as such:\n%% mru_queue_init_(N),\n%% Param_1 = mru_queue_fetch(K),\n\n%% mru_queue_init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define mru-queue%\n  (class object%\n    (super-new)\n    \n    ; n : exact-integer?\n    (init-field\n      n)\n    \n    ; fetch : exact-integer? -> exact-integer?\n    (define/public (fetch k)\n      )))\n\n;; Your mru-queue% object will be instantiated and called as such:\n;; (define obj (new mru-queue% [n n]))\n;; (define param_1 (send obj fetch k))"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"25.3K\", \"totalSubmission\": \"32.6K\", \"totalAcceptedRaw\": 25320, \"totalSubmissionRaw\": 32579, \"acRate\": \"77.7%\"}",
+  "metaData": "{\n  \"classname\": \"MRUQueue\",\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"integer\",\n        \"name\": \"n\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"k\"\n        }\n      ],\n      \"name\": \"fetch\",\n      \"return\": {\n        \"type\": \"integer\"\n      }\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"systemdesign\": true\n}",
+  "sampleTestCase": "[\"MRUQueue\",\"fetch\",\"fetch\",\"fetch\",\"fetch\"]\n[[8],[3],[5],[2],[8]]"
+}

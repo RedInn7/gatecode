@@ -1,0 +1,89 @@
+{
+  "questionId": "616",
+  "questionFrontendId": "616",
+  "title": "Add Bold Tag in String",
+  "titleSlug": "add-bold-tag-in-string",
+  "content": "<p>You are given a string <code>s</code> and an array of strings <code>words</code>.</p>\n\n<p>You should add a closed pair of bold tag <code>&lt;b&gt;</code> and <code>&lt;/b&gt;</code> to wrap the substrings in <code>s</code> that exist in <code>words</code>.</p>\n\n<ul>\n\t<li>If two such substrings overlap, you should wrap them together with only one pair of closed bold-tag.</li>\n\t<li>If two substrings wrapped by bold tags are consecutive, you should combine them.</li>\n</ul>\n\n<p>Return <code>s</code> <em>after adding the bold tags</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcxyz123&quot;, words = [&quot;abc&quot;,&quot;123&quot;]\n<strong>Output:</strong> &quot;&lt;b&gt;abc&lt;/b&gt;xyz&lt;b&gt;123&lt;/b&gt;&quot;\n<strong>Explanation:</strong> The two strings of words are substrings of s as following: &quot;<u>abc</u>xyz<u>123</u>&quot;.\nWe add &lt;b&gt; before each substring and &lt;/b&gt; after each substring.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaabbb&quot;, words = [&quot;aa&quot;,&quot;b&quot;]\n<strong>Output:</strong> &quot;&lt;b&gt;aaabbb&lt;/b&gt;&quot;\n<strong>Explanation:</strong> \n&quot;aa&quot; appears as a substring two times: &quot;<u>aa</u>abbb&quot; and &quot;a<u>aa</u>bbb&quot;.\n&quot;b&quot; appears as a substring three times: &quot;aaa<u>b</u>bb&quot;, &quot;aaab<u>b</u>b&quot;, and &quot;aaabb<u>b</u>&quot;.\nWe add &lt;b&gt; before each substring and &lt;/b&gt; after each substring: &quot;&lt;b&gt;a&lt;b&gt;a&lt;/b&gt;a&lt;/b&gt;&lt;b&gt;b&lt;/b&gt;&lt;b&gt;b&lt;/b&gt;&lt;b&gt;b&lt;/b&gt;&quot;.\nSince the first two &lt;b&gt;&#39;s overlap, we merge them: &quot;&lt;b&gt;aaa&lt;/b&gt;&lt;b&gt;b&lt;/b&gt;&lt;b&gt;b&lt;/b&gt;&lt;b&gt;b&lt;/b&gt;&quot;.\nSince now the four &lt;b&gt;&#39;s are consecutive, we merge them: &quot;&lt;b&gt;aaabbb&lt;/b&gt;&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>0 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 1000</code></li>\n\t<li><code>s</code> and <code>words[i]</code> consist of English letters and digits.</li>\n\t<li>All the values of <code>words</code> are <strong>unique</strong>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Note:</strong> This question is the same as <a href=\"https://leetcode.com/problems/bold-words-in-string/description/\" target=\"_blank\">758. Bold Words in String</a>.</p>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string addBoldTag(string s, vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String addBoldTag(String s, String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def addBoldTag(self, s: str, words: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def addBoldTag(self, s, words):\n        \"\"\"\n        :type s: str\n        :type words: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string[]} words\n * @return {string}\n */\nvar addBoldTag = function(s, words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function addBoldTag(s: string, words: string[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string AddBoldTag(string s, string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* addBoldTag(char* s, char** words, int wordsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func addBoldTag(s string, words []string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun addBoldTag(s: String, words: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func addBoldTag(_ s: String, _ words: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn add_bold_tag(s: String, words: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String[]} words\n# @return {String}\ndef add_bold_tag(s, words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String[] $words\n     * @return String\n     */\n    function addBoldTag($s, $words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String addBoldTag(String s, List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def addBoldTag(s: String, words: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec add_bold_tag(s :: String.t, words :: [String.t]) :: String.t\n  def add_bold_tag(s, words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec add_bold_tag(S :: unicode:unicode_binary(), Words :: [unicode:unicode_binary()]) -> unicode:unicode_binary().\nadd_bold_tag(S, Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (add-bold-tag s words)\n  (-> string? (listof string?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"104.5K\", \"totalSubmission\": \"203.5K\", \"totalAcceptedRaw\": 104519, \"totalSubmissionRaw\": 203510, \"acRate\": \"51.4%\"}",
+  "metaData": "{\n  \"name\": \"addBoldTag\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"abcxyz123\"\n[\"abc\",\"123\"]"
+}

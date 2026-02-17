@@ -1,0 +1,89 @@
+{
+  "questionId": "3521",
+  "questionFrontendId": "3215",
+  "title": "Count Triplets with Even XOR Set Bits II",
+  "titleSlug": "count-triplets-with-even-xor-set-bits-ii",
+  "content": "Given three integer arrays <code>a</code>, <code>b</code>, and <code>c</code>, return the number of triplets <code>(a[i], b[j], c[k])</code>, such that the bitwise <code>XOR</code> between the elements of each triplet has an <strong>even</strong> number of <span data-keyword=\"set-bit\">set bits</span>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">a = [1], b = [2], c = [3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The only triplet is <code>(a[0], b[0], c[0])</code> and their <code>XOR</code> is: <code>1 XOR 2 XOR 3 = 00<sub>2</sub></code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">a = [1,1], b = [2,3], c = [1,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Consider these four triplets:</p>\n\n<ul>\n\t<li><code>(a[0], b[1], c[0])</code>: <code>1 XOR 3 XOR 1 = 011<sub>2</sub></code></li>\n\t<li><code>(a[1], b[1], c[0])</code>: <code>1 XOR 3 XOR 1 = 011<sub>2</sub></code></li>\n\t<li><code>(a[0], b[0], c[1])</code>: <code>1 XOR 2 XOR 5 = 110<sub>2</sub></code></li>\n\t<li><code>(a[1], b[0], c[1])</code>: <code>1 XOR 2 XOR 5 = 110<sub>2</sub></code></li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= a.length, b.length, c.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= a[i], b[i], c[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long tripletCount(vector<int>& a, vector<int>& b, vector<int>& c) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long tripletCount(int[] a, int[] b, int[] c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def tripletCount(self, a: List[int], b: List[int], c: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def tripletCount(self, a, b, c):\n        \"\"\"\n        :type a: List[int]\n        :type b: List[int]\n        :type c: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} a\n * @param {number[]} b\n * @param {number[]} c\n * @return {number}\n */\nvar tripletCount = function(a, b, c) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function tripletCount(a: number[], b: number[], c: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long TripletCount(int[] a, int[] b, int[] c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long tripletCount(int* a, int aSize, int* b, int bSize, int* c, int cSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func tripletCount(a []int, b []int, c []int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun tripletCount(a: IntArray, b: IntArray, c: IntArray): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func tripletCount(_ a: [Int], _ b: [Int], _ c: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn triplet_count(a: Vec<i32>, b: Vec<i32>, c: Vec<i32>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer[]} b\n# @param {Integer[]} c\n# @return {Integer}\ndef triplet_count(a, b, c)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $a\n     * @param Integer[] $b\n     * @param Integer[] $c\n     * @return Integer\n     */\n    function tripletCount($a, $b, $c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int tripletCount(List<int> a, List<int> b, List<int> c) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def tripletCount(a: Array[Int], b: Array[Int], c: Array[Int]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec triplet_count(a :: [integer], b :: [integer], c :: [integer]) :: integer\n  def triplet_count(a, b, c) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec triplet_count(A :: [integer()], B :: [integer()], C :: [integer()]) -> integer().\ntriplet_count(A, B, C) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (triplet-count a b c)\n  (-> (listof exact-integer?) (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"784\", \"totalSubmission\": \"1.3K\", \"totalAcceptedRaw\": 784, \"totalSubmissionRaw\": 1284, \"acRate\": \"61.1%\"}",
+  "metaData": "{\n  \"name\": \"tripletCount\",\n  \"params\": [\n    {\n      \"name\": \"a\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"b\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"c\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[1]\n[2]\n[3]"
+}

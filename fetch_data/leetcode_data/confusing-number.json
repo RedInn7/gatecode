@@ -1,0 +1,89 @@
+{
+  "questionId": "1069",
+  "questionFrontendId": "1056",
+  "title": "Confusing Number",
+  "titleSlug": "confusing-number",
+  "content": "<p>A <strong>confusing number</strong> is a number that when rotated <code>180</code> degrees becomes a different number with <strong>each digit valid</strong>.</p>\n\n<p>We can rotate digits of a number by <code>180</code> degrees to form new digits.</p>\n\n<ul>\n\t<li>When <code>0</code>, <code>1</code>, <code>6</code>, <code>8</code>, and <code>9</code> are rotated <code>180</code> degrees, they become <code>0</code>, <code>1</code>, <code>9</code>, <code>8</code>, and <code>6</code> respectively.</li>\n\t<li>When <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, and <code>7</code> are rotated <code>180</code> degrees, they become <strong>invalid</strong>.</li>\n</ul>\n\n<p>Note that after rotating a number, we can ignore leading zeros.</p>\n\n<ul>\n\t<li>For example, after rotating <code>8000</code>, we have <code>0008</code> which is considered as just <code>8</code>.</li>\n</ul>\n\n<p>Given an integer <code>n</code>, return <code>true</code><em> if it is a <strong>confusing number</strong>, or </em><code>false</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/23/1268_1.png\" style=\"width: 281px; height: 121px;\" />\n<pre>\n<strong>Input:</strong> n = 6\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We get 9 after rotating 6, 9 is a valid number, and 9 != 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/23/1268_2.png\" style=\"width: 312px; height: 121px;\" />\n<pre>\n<strong>Input:</strong> n = 89\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We get 68 after rotating 89, 68 is a valid number and 68 != 89.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/26/1268_3.png\" style=\"width: 301px; height: 121px;\" />\n<pre>\n<strong>Input:</strong> n = 11\n<strong>Output:</strong> false\n<strong>Explanation:</strong> We get 11 after rotating 11, 11 is a valid number but the value remains the same, thus 11 is not a confusing number\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool confusingNumber(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean confusingNumber(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def confusingNumber(self, n: int) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def confusingNumber(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar confusingNumber = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function confusingNumber(n: number): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ConfusingNumber(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool confusingNumber(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func confusingNumber(n int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun confusingNumber(n: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func confusingNumber(_ n: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn confusing_number(n: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Boolean}\ndef confusing_number(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Boolean\n     */\n    function confusingNumber($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool confusingNumber(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def confusingNumber(n: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec confusing_number(n :: integer) :: boolean\n  def confusing_number(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec confusing_number(N :: integer()) -> boolean().\nconfusing_number(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (confusing-number n)\n  (-> exact-integer? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"55K\", \"totalSubmission\": \"111.5K\", \"totalAcceptedRaw\": 54956, \"totalSubmissionRaw\": 111456, \"acRate\": \"49.3%\"}",
+  "metaData": "{\n  \"name\": \"confusingNumber\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "6"
+}

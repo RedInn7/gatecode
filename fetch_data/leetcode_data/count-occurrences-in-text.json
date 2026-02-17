@@ -1,0 +1,33 @@
+{
+  "questionId": "2885",
+  "questionFrontendId": "2738",
+  "title": "Count Occurrences in Text",
+  "titleSlug": "count-occurrences-in-text",
+  "content": "<p>Table:<font face=\"monospace\"> <code>Files</code></font></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-- ----------+---------+\n| file_name   | varchar |\n| content     | text    |\n+-------------+---------+\nfile_name is the column with unique values of this table. \nEach row contains file_name and the content of that file.\n</pre>\n\n<p>Write a solution to find&nbsp;the number of files that have at least one occurrence of the words&nbsp;<strong>&#39;bull&#39;</strong> and <strong>&#39;bear&#39;</strong> as a <strong>standalone word</strong>, respectively, disregarding any instances where it appears without space on either side (e.g. &#39;bullet&#39;,&nbsp;&#39;bears&#39;, &#39;bull.&#39;,&nbsp;or &#39;bear&#39;&nbsp;at the beginning or end of a sentence will <strong>not</strong> be considered)&nbsp;</p>\n\n<p>Return <em>the word &#39;bull&#39; and &#39;bear&#39; along with the corresponding number of occurrences in <strong>any order.</strong></em></p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong>&nbsp;\nFiles table:\n+------------+----------------------------------------------------------------------------------+\n| file_name  | content                                                                         | \n+------------+----------------------------------------------------------------------------------+\n| draft1.txt | The stock exchange predicts a bull market which would make many investors happy. | \n| draft2.txt | The stock exchange predicts a bull market which would make many investors happy, |\n|&nbsp;           | but analysts warn of possibility of too much optimism and that in fact we are    |\n|&nbsp;           | awaiting a bear market.                                                          | \n| draft3.txt | The stock exchange predicts a bull market which would make many investors happy, |\n|&nbsp;           | but analysts warn of possibility of too much optimism and that in fact we are    |\n|&nbsp;           | awaiting a bear market. As always predicting the future market is an uncertain   |\n|            | game and all investors should follow their instincts and best practices.         | \n+------------+----------------------------------------------------------------------------------+\n<strong>Output:</strong>&nbsp;\n+------+-------+\n| word | count | &nbsp;\n+------+-------+\n| bull |&nbsp;3     |&nbsp;\n| bear |&nbsp;2     | \n+------+-------+\n<strong>Explanation:</strong>&nbsp;\n- The word &quot;bull&quot; appears 1 time in &quot;draft1.txt&quot;, 1 time in &quot;draft2.txt&quot;, and 1 time in &quot;draft3.txt&quot;. Therefore, the total number of occurrences for the word &quot;bull&quot; is 3.\n- The word &quot;bear&quot; appears 1 time in &quot;draft2.txt&quot;, and 1 time in &quot;draft3.txt&quot;. Therefore, the total number of occurrences for the word &quot;bear&quot; is 2.\n\n</pre>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef count_occurrences(files: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.3K\", \"totalSubmission\": \"20.7K\", \"totalAcceptedRaw\": 11316, \"totalSubmissionRaw\": 20665, \"acRate\": \"54.8%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Files (file_name varchar(100), content text )\"], \"mssql\": [\"Create table Files (file_name varchar(100), content text )\"], \"oraclesql\": [\"Create table Files (file_name varchar(100), content clob )\"], \"database\": true, \"name\": \"count_occurrences\", \"pythondata\": [\"Files = pd.DataFrame([], columns=['file_name', 'content']).astype({'file_name':'object', 'content':'object'})\"], \"postgresql\": [\"Create table If Not Exists Files (file_name varchar(100), content text )\"], \"database_schema\": {\"Files\": {\"file_name\": \"VARCHAR(100)\", \"content\": \"TEXT\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Files\":[\"file_name\",\"content\"]},\"rows\":{\"Files\":[[\"draft1.txt\",\"The stock exchange predicts a bull market which would make many investors happy.\"],[\"draft2.txt\",\"The stock exchange predicts a bull market which would make many investors happy, but analysts warn of possibility of too much optimism and that in fact we are awaiting a bear market.\"],[\"final.txt\",\"The stock exchange predicts a bull market which would make many investors happy, but analysts warn of possibility of too much optimism and that in fact we are awaiting a bear market. As always predicting the future market is an uncertain game and all investors should follow their instincts and best practices.\"]]}}"
+}

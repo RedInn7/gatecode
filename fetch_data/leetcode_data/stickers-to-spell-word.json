@@ -1,0 +1,89 @@
+{
+  "questionId": "691",
+  "questionFrontendId": "691",
+  "title": "Stickers to Spell Word",
+  "titleSlug": "stickers-to-spell-word",
+  "content": "<p>We are given <code>n</code> different types of <code>stickers</code>. Each sticker has a lowercase English word on it.</p>\n\n<p>You would like to spell out the given string <code>target</code> by cutting individual letters from your collection of stickers and rearranging them. You can use each sticker more than once if you want, and you have infinite quantities of each sticker.</p>\n\n<p>Return <em>the minimum number of stickers that you need to spell out </em><code>target</code>. If the task is impossible, return <code>-1</code>.</p>\n\n<p><strong>Note:</strong> In all test cases, all words were chosen randomly from the <code>1000</code> most common US English words, and <code>target</code> was chosen as a concatenation of two random words.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> stickers = [&quot;with&quot;,&quot;example&quot;,&quot;science&quot;], target = &quot;thehat&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong>\nWe can use 2 &quot;with&quot; stickers, and 1 &quot;example&quot; sticker.\nAfter cutting and rearrange the letters of those stickers, we can form the target &quot;thehat&quot;.\nAlso, this is the minimum number of stickers necessary to form the target string.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> stickers = [&quot;notice&quot;,&quot;possible&quot;], target = &quot;basicbasic&quot;\n<strong>Output:</strong> -1\nExplanation:\nWe cannot form the target &quot;basicbasic&quot; from cutting letters from the given stickers.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == stickers.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 50</code></li>\n\t<li><code>1 &lt;= stickers[i].length &lt;= 10</code></li>\n\t<li><code>1 &lt;= target.length &lt;= 15</code></li>\n\t<li><code>stickers[i]</code> and <code>target</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minStickers(vector<string>& stickers, string target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minStickers(String[] stickers, String target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minStickers(self, stickers: List[str], target: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minStickers(self, stickers, target):\n        \"\"\"\n        :type stickers: List[str]\n        :type target: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} stickers\n * @param {string} target\n * @return {number}\n */\nvar minStickers = function(stickers, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minStickers(stickers: string[], target: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinStickers(string[] stickers, string target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minStickers(char** stickers, int stickersSize, char* target) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minStickers(stickers []string, target string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minStickers(stickers: Array<String>, target: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minStickers(_ stickers: [String], _ target: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} stickers\n# @param {String} target\n# @return {Integer}\ndef min_stickers(stickers, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $stickers\n     * @param String $target\n     * @return Integer\n     */\n    function minStickers($stickers, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minStickers(List<String> stickers, String target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minStickers(stickers: Array[String], target: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_stickers(stickers :: [String.t], target :: String.t) :: integer\n  def min_stickers(stickers, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_stickers(Stickers :: [unicode:unicode_binary()], Target :: unicode:unicode_binary()) -> integer().\nmin_stickers(Stickers, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-stickers stickers target)\n  (-> (listof string?) string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"94.9K\", \"totalSubmission\": \"187.5K\", \"totalAcceptedRaw\": 94922, \"totalSubmissionRaw\": 187516, \"acRate\": \"50.6%\"}",
+  "metaData": "{\r\n  \"name\": \"minStickers\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stickers\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "[\"with\",\"example\",\"science\"]\n\"thehat\""
+}

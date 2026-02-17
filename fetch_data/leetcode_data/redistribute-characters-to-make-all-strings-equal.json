@@ -1,0 +1,89 @@
+{
+  "questionId": "2025",
+  "questionFrontendId": "1897",
+  "title": "Redistribute Characters to Make All Strings Equal",
+  "titleSlug": "redistribute-characters-to-make-all-strings-equal",
+  "content": "<p>You are given an array of strings <code>words</code> (<strong>0-indexed</strong>).</p>\n\n<p>In one operation, pick two <strong>distinct</strong> indices <code>i</code> and <code>j</code>, where <code>words[i]</code> is a non-empty string, and move <strong>any</strong> character from <code>words[i]</code> to <strong>any</strong> position in <code>words[j]</code>.</p>\n\n<p>Return <code>true</code> <em>if you can make<strong> every</strong> string in </em><code>words</code><em> <strong>equal </strong>using <strong>any</strong> number of operations</em>,<em> and </em><code>false</code> <em>otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;abc&quot;,&quot;aabc&quot;,&quot;bc&quot;]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Move the first &#39;a&#39; in <code>words[1] to the front of words[2],\nto make </code><code>words[1]</code> = &quot;abc&quot; and words[2] = &quot;abc&quot;.\nAll the strings are now equal to &quot;abc&quot;, so return <code>true</code>.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;ab&quot;,&quot;a&quot;]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> It is impossible to make all the strings equal using the operation.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 100</code></li>\n\t<li><code>words[i]</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool makeEqual(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean makeEqual(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def makeEqual(self, words: List[str]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def makeEqual(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {boolean}\n */\nvar makeEqual = function(words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function makeEqual(words: string[]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool MakeEqual(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool makeEqual(char** words, int wordsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func makeEqual(words []string) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun makeEqual(words: Array<String>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func makeEqual(_ words: [String]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn make_equal(words: Vec<String>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {Boolean}\ndef make_equal(words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Boolean\n     */\n    function makeEqual($words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool makeEqual(List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def makeEqual(words: Array[String]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec make_equal(words :: [String.t]) :: boolean\n  def make_equal(words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec make_equal(Words :: [unicode:unicode_binary()]) -> boolean().\nmake_equal(Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (make-equal words)\n  (-> (listof string?) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"157.5K\", \"totalSubmission\": \"235.8K\", \"totalAcceptedRaw\": 157511, \"totalSubmissionRaw\": 235785, \"acRate\": \"66.8%\"}",
+  "metaData": "{\n  \"name\": \"makeEqual\",\n  \"params\": [\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"manual\": false\n}",
+  "sampleTestCase": "[\"abc\",\"aabc\",\"bc\"]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "3410",
+  "questionFrontendId": "3104",
+  "title": "Find Longest Self-Contained Substring",
+  "titleSlug": "find-longest-self-contained-substring",
+  "content": "<p>Given a string <code>s</code>, your task is to find the length of the <strong>longest self-contained</strong> <span data-keyword=\"substring-nonempty\">substring</span> of <code>s</code>.</p>\n\n<p>A substring <code>t</code> of a string <code>s</code> is called <strong>self-contained </strong>if <code>t != s</code> and for every character in <code>t</code>, it doesn&#39;t exist in the <em>rest</em> of <code>s</code>.</p>\n\n<p>Return the length of the <em>longest<strong> </strong>self-contained </em>substring of <code>s</code> if it exists, otherwise, return -1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abba&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong><br />\nLet&#39;s check the substring <code>&quot;bb&quot;</code>. You can see that no other <code>&quot;b&quot;</code> is outside of this substring. Hence the answer is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abab&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong><br />\nEvery substring we choose does not satisfy the described property (there is some character which is inside and outside of that substring). So the answer would be -1.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abacd&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong><br />\nLet&#39;s check the substring <code>&quot;<span class=\"example-io\">abac</span>&quot;</code>. There is only one character outside of this substring and that is <code>&quot;d&quot;</code>. There is no <code>&quot;d&quot;</code> inside the chosen substring, so it satisfies the condition and the answer is 4.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists only of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSubstringLength(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSubstringLength(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSubstringLength(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSubstringLength(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxSubstringLength = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxSubstringLength(s: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSubstringLength(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxSubstringLength(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSubstringLength(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSubstringLength(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSubstringLength(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_substring_length(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef max_substring_length(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function maxSubstringLength($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxSubstringLength(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSubstringLength(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_substring_length(s :: String.t) :: integer\n  def max_substring_length(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_substring_length(S :: unicode:unicode_binary()) -> integer().\nmax_substring_length(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-substring-length s)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.9K\", \"totalSubmission\": \"5K\", \"totalAcceptedRaw\": 2943, \"totalSubmissionRaw\": 5005, \"acRate\": \"58.8%\"}",
+  "metaData": "{\n  \"name\": \"maxSubstringLength\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"abba\""
+}

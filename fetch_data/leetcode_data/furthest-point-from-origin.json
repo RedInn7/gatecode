@@ -1,0 +1,89 @@
+{
+  "questionId": "3019",
+  "questionFrontendId": "2833",
+  "title": "Furthest Point From Origin",
+  "titleSlug": "furthest-point-from-origin",
+  "content": "<p>You are given a string <code>moves</code> of length <code>n</code> consisting only of characters <code>&#39;L&#39;</code>, <code>&#39;R&#39;</code>, and <code>&#39;_&#39;</code>. The string represents your movement on a number line starting from the origin <code>0</code>.</p>\n\n<p>In the <code>i<sup>th</sup></code> move, you can choose one of the following directions:</p>\n\n<ul>\n\t<li>move to the left if <code>moves[i] = &#39;L&#39;</code> or <code>moves[i] = &#39;_&#39;</code></li>\n\t<li>move to the right if <code>moves[i] = &#39;R&#39;</code> or <code>moves[i] = &#39;_&#39;</code></li>\n</ul>\n\n<p>Return <em>the <strong>distance from the origin</strong> of the <strong>furthest</strong> point you can get to after </em><code>n</code><em> moves</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> moves = &quot;L_RL__R&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The furthest point we can reach from the origin 0 is point -3 through the following sequence of moves &quot;LLRLLLR&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> moves = &quot;_R__LL_&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> The furthest point we can reach from the origin 0 is point -5 through the following sequence of moves &quot;LRLLLLL&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> moves = &quot;_______&quot;\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> The furthest point we can reach from the origin 0 is point 7 through the following sequence of moves &quot;RRRRRRR&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= moves.length == n &lt;= 50</code></li>\n\t<li><code>moves</code> consists only of characters <code>&#39;L&#39;</code>, <code>&#39;R&#39;</code> and <code>&#39;_&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int furthestDistanceFromOrigin(string moves) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int furthestDistanceFromOrigin(String moves) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def furthestDistanceFromOrigin(self, moves: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def furthestDistanceFromOrigin(self, moves):\n        \"\"\"\n        :type moves: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} moves\n * @return {number}\n */\nvar furthestDistanceFromOrigin = function(moves) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function furthestDistanceFromOrigin(moves: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FurthestDistanceFromOrigin(string moves) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int furthestDistanceFromOrigin(char* moves) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func furthestDistanceFromOrigin(moves string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun furthestDistanceFromOrigin(moves: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func furthestDistanceFromOrigin(_ moves: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn furthest_distance_from_origin(moves: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} moves\n# @return {Integer}\ndef furthest_distance_from_origin(moves)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $moves\n     * @return Integer\n     */\n    function furthestDistanceFromOrigin($moves) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int furthestDistanceFromOrigin(String moves) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def furthestDistanceFromOrigin(moves: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec furthest_distance_from_origin(moves :: String.t) :: integer\n  def furthest_distance_from_origin(moves) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec furthest_distance_from_origin(Moves :: unicode:unicode_binary()) -> integer().\nfurthest_distance_from_origin(Moves) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (furthest-distance-from-origin moves)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"60.2K\", \"totalSubmission\": \"92.3K\", \"totalAcceptedRaw\": 60244, \"totalSubmissionRaw\": 92329, \"acRate\": \"65.2%\"}",
+  "metaData": "{\n  \"name\": \"furthestDistanceFromOrigin\",\n  \"params\": [\n    {\n      \"name\": \"moves\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"L_RL__R\""
+}

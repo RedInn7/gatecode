@@ -1,0 +1,73 @@
+{
+  "questionId": "1233",
+  "questionFrontendId": "1274",
+  "title": "Number of Ships in a Rectangle",
+  "titleSlug": "number-of-ships-in-a-rectangle",
+  "content": "<p><em>(This problem is an <strong>interactive problem</strong>.)</em></p>\n\n<p>Each ship is located at an integer point on the sea represented by a cartesian plane, and each integer point may contain at most 1 ship.</p>\n\n<p>You have a function <code>Sea.hasShips(topRight, bottomLeft)</code> which takes two points as arguments and returns <code>true</code> If there is at least one ship in the rectangle represented by the two points, including on the boundary.</p>\n\n<p>Given two points: the top right and bottom left corners of a rectangle, return the number of ships present in that rectangle. It is guaranteed that there are <strong>at most 10 ships</strong> in that rectangle.</p>\n\n<p>Submissions making <strong>more than 400 calls</strong> to <code>hasShips</code> will be judged <em>Wrong Answer</em>. Also, any solutions that attempt to circumvent the judge will result in disqualification.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example :</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/07/26/1445_example_1.PNG\" style=\"width: 496px; height: 500px;\" />\n<pre>\n<strong>Input:</strong> \nships = [[1,1],[2,2],[3,3],[5,5]], topRight = [4,4], bottomLeft = [0,0]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> From [0,0] to [4,4] we can count 3 ships within the range.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> ans = [[1,1],[2,2],[3,3]], topRight = [1000,1000], bottomLeft = [0,0]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>On the input <code>ships</code> is only given to initialize the map internally. You must solve this problem &quot;blindfolded&quot;. In other words, you must find the answer using the given <code>hasShips</code> API, without knowing the <code>ships</code> position.</li>\n\t<li><code>0 &lt;= bottomLeft[0] &lt;= topRight[0] &lt;= 1000</code></li>\n\t<li><code>0 &lt;= bottomLeft[1] &lt;= topRight[1] &lt;= 1000</code></li>\n\t<li><code>topRight != bottomLeft</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *   public:\n *     bool hasShips(vector<int> topRight, vector<int> bottomLeft);\n * };\n */\n\nclass Solution {\npublic:\n    int countShips(Sea sea, vector<int> topRight, vector<int> bottomLeft) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     public boolean hasShips(int[] topRight, int[] bottomLeft);\n * }\n */\n\nclass Solution {\n    public int countShips(Sea sea, int[] topRight, int[] bottomLeft) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "# \"\"\"\n# This is Sea's API interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class Sea:\n#    def hasShips(self, topRight: 'Point', bottomLeft: 'Point') -> bool:\n#\n#class Point:\n#\tdef __init__(self, x: int, y: int):\n#\t\tself.x = x\n#\t\tself.y = y\n\nclass Solution:\n    def countShips(self, sea: 'Sea', topRight: 'Point', bottomLeft: 'Point') -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "# \"\"\"\n# This is Sea's API interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class Sea(object):\n#    def hasShips(self, topRight, bottomLeft):\n#        \"\"\"\n#        :type topRight: Point\n#\t\t :type bottomLeft: Point\n#        :rtype bool\n#        \"\"\"\n#\n#class Point(object):\n#\tdef __init__(self, x, y):\n#\t\tself.x = x\n#\t\tself.y = y\n\nclass Solution(object):\n    def countShips(self, sea, topRight, bottomLeft):\n        \"\"\"\n        :type sea: Sea\n        :type topRight: Point\n        :type bottomLeft: Point\n        :rtype: integer\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * function Sea() {\n *     @param {integer[]} topRight\n *     @param {integer[]} bottomLeft\n *     @return {boolean}\n *     this.hasShips = function(topRight, bottomLeft) {\n *         ...\n *     };\n * };\n */\n\n/**\n * @param {Sea} sea\n * @param {integer[]} topRight\n * @param {integer[]} bottomLeft\n * @return {integer}\n */\nvar countShips = function(sea, topRight, bottomLeft) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "/**\n * // This is the Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *      hasShips(topRight: number[], bottomLeft: number[]): boolean {}\n * }\n */\n\nfunction countShips(sea: Sea, topRight: number[], bottomLeft: number[]): number {\n\t\n};"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     public bool HasShips(int[] topRight, int[] bottomLeft);\n * }\n */\n\nclass Solution {\n    public int CountShips(Sea sea, int[] topRight, int[] bottomLeft) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * // The hasShips API is already defined for you.\n * // You should not implement it, or speculate about its implementation\n *     bool hasShips(int topRightX, int topRightY, int bottomLeftX, int bottomLeftY);\n */\n\nint countShips(int topRightX, int topRightY, int bottomLeftX, int bottomLeftY) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * type Sea struct {\n *     func hasShips(topRight, bottomLeft []int) bool {}\n * }\n */\n\nfunc countShips(sea Sea, topRight, bottomLeft []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     fun hasShips(topRight: IntArray, bottomLeft: IntArray): Boolean{}\n * }\n */\n\nclass Solution {\n    fun countShips(sea: Sea, topRight: IntArray, bottomLeft: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     public func hasShips(_ topRight: [Int], _ bottomLeft: [Int]) -> Bool {}\n * }\n */\n\nclass Solution {\n    func countShips(_ sea: Sea, _ topRight: [Int], _ bottomLeft: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * struct Sea;\n * impl Sea {\n *    pub fn hasShips(topRight: Vec<i32>,bottomLeft: Vec<i32>)->bool{}\n * }\n */\n\nimpl Solution {\n    pub fn count_ships(sea: &Sea, topRight: Vec<i32>, bottomLeft: Vec<i32>) -> i32 {\n\n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# This is Sea's API interface.\n# You should not implement it, or speculate about its implementation\n# class Sea\n#     def hasShips(topRight, bottomLeft)\n#\t\t\n#     end\n# end\n\n# @param {Sea} sea\n# @param {List[int]} topRight\n# @param {List[int]} bottomLeft\n# @return {int}\ndef countShips(sea, topRight, bottomLeft)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     function hasShips ($topRight, $bottomLeft) {}\n * }\n */\n\nclass Solution {\n    /**\n     * @param Sea $sea\n     * @param Integer[] $topRight\n     * @param Integer[] $bottomLeft\n     * @return Integer[]\n     */\n    function countShips ($sea, $topRight, $bottomLeft) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     def hasShips(topRight: Array[Int], bottomLeft: Array[Int]): Boolean = {}\n * }\n */\n\nobject Solution {\n    def countShips(sea: Sea, topRight: Array[Int], bottomLeft: Array[Int]): Int = {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"34.1K\", \"totalSubmission\": \"49.5K\", \"totalAcceptedRaw\": 34113, \"totalSubmissionRaw\": 49511, \"acRate\": \"68.9%\"}",
+  "metaData": "{\n  \"name\": \"countShips\",\n  \"params\": [\n    {\n      \"name\": \"ans\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"name\": \"topRight\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"bottomLeft\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"manual\": true,\n  \"typescriptCustomType\" : \"class Sea {\\n    __ans: number[][];\\n    __guesses: number;\\n    constructor(ans: number[][]) {\\n        this.__ans = ans;\\n        this.__guesses = 400;\\n    }\\n\\n    hasShips(topRight: number[], bottomLeft: number[]): boolean {\\n        this.__guesses -= 1;\\n        var ret = false;\\n        for (let a of this.__ans) {\\n            var cur = a[0] >= bottomLeft[0] && a[0] <= topRight[0] && a[1] >= bottomLeft[1] && a[1] <= topRight[1];\\n            ret = ret || cur;\\n        }\\n        return ret;\\n    }\\n\\n    getGuesses(): number {\\n        return this.__guesses;\\n    }\\n};\\n\"\n}",
+  "sampleTestCase": "[[1,1],[2,2],[3,3],[5,5]]\n[4,4]\n[0,0]"
+}

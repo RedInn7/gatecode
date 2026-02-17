@@ -1,0 +1,89 @@
+{
+  "questionId": "1256",
+  "questionFrontendId": "1331",
+  "title": "Rank Transform of an Array",
+  "titleSlug": "rank-transform-of-an-array",
+  "content": "<p>Given an array of integers&nbsp;<code>arr</code>, replace each element with its rank.</p>\n\n<p>The rank represents how large the element is. The rank has the following rules:</p>\n\n<ul>\n\t<li>Rank is an integer starting from 1.</li>\n\t<li>The larger the element, the larger the rank. If two elements are equal, their rank must be the same.</li>\n\t<li>Rank should be as small as possible.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [40,10,20,30]\n<strong>Output:</strong> [4,1,2,3]\n<strong>Explanation</strong>: 40 is the largest element. 10 is the smallest. 20 is the second smallest. 30 is the third smallest.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [100,100,100]\n<strong>Output:</strong> [1,1,1]\n<strong>Explanation</strong>: Same elements share the same rank.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [37,12,28,9,100,56,80,5,12]\n<strong>Output:</strong> [5,3,4,2,8,6,7,1,3]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup>&nbsp;&lt;= arr[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> arrayRankTransform(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] arrayRankTransform(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def arrayRankTransform(self, arr: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def arrayRankTransform(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number[]}\n */\nvar arrayRankTransform = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function arrayRankTransform(arr: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] ArrayRankTransform(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* arrayRankTransform(int* arr, int arrSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func arrayRankTransform(arr []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun arrayRankTransform(arr: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func arrayRankTransform(_ arr: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn array_rank_transform(arr: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer[]}\ndef array_rank_transform(arr)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer[]\n     */\n    function arrayRankTransform($arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> arrayRankTransform(List<int> arr) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def arrayRankTransform(arr: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec array_rank_transform(arr :: [integer]) :: [integer]\n  def array_rank_transform(arr) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec array_rank_transform(Arr :: [integer()]) -> [integer()].\narray_rank_transform(Arr) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (array-rank-transform arr)\n  (-> (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"316.5K\", \"totalSubmission\": \"447.1K\", \"totalAcceptedRaw\": 316544, \"totalSubmissionRaw\": 447080, \"acRate\": \"70.8%\"}",
+  "metaData": "{\n  \"name\": \"arrayRankTransform\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[40,10,20,30]"
+}

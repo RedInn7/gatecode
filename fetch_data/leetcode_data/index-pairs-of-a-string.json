@@ -1,0 +1,89 @@
+{
+  "questionId": "1075",
+  "questionFrontendId": "1065",
+  "title": "Index Pairs of a String",
+  "titleSlug": "index-pairs-of-a-string",
+  "content": "<p>Given a string <code>text</code> and an array of strings <code>words</code>, return <em>an array of all index pairs </em><code>[i, j]</code><em> so that the substring </em><code>text[i...j]</code><em> is in <code>words</code></em>.</p>\n\n<p>Return the pairs <code>[i, j]</code> in sorted order (i.e., sort them by their first coordinate, and in case of ties sort them by their second coordinate).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> text = &quot;thestoryofleetcodeandme&quot;, words = [&quot;story&quot;,&quot;fleet&quot;,&quot;leetcode&quot;]\n<strong>Output:</strong> [[3,7],[9,13],[10,17]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> text = &quot;ababa&quot;, words = [&quot;aba&quot;,&quot;ab&quot;]\n<strong>Output:</strong> [[0,1],[0,2],[2,3],[2,4]]\n<strong>Explanation:</strong> Notice that matches can overlap, see &quot;aba&quot; is found in [0,2] and [2,4].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= text.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words.length &lt;= 20</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 50</code></li>\n\t<li><code>text</code> and <code>words[i]</code> consist of lowercase English letters.</li>\n\t<li>All the strings of <code>words</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> indexPairs(string text, vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] indexPairs(String text, String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def indexPairs(self, text: str, words: List[str]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def indexPairs(self, text, words):\n        \"\"\"\n        :type text: str\n        :type words: List[str]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} text\n * @param {string[]} words\n * @return {number[][]}\n */\nvar indexPairs = function(text, words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function indexPairs(text: string, words: string[]): number[][] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[][] IndexPairs(string text, string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** indexPairs(char* text, char** words, int wordsSize, int* returnSize, int** returnColumnSizes) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func indexPairs(text string, words []string) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun indexPairs(text: String, words: Array<String>): Array<IntArray> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func indexPairs(_ text: String, _ words: [String]) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn index_pairs(text: String, words: Vec<String>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} text\n# @param {String[]} words\n# @return {Integer[][]}\ndef index_pairs(text, words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @param String[] $words\n     * @return Integer[][]\n     */\n    function indexPairs($text, $words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<List<int>> indexPairs(String text, List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def indexPairs(text: String, words: Array[String]): Array[Array[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec index_pairs(text :: String.t, words :: [String.t]) :: [[integer]]\n  def index_pairs(text, words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec index_pairs(Text :: unicode:unicode_binary(), Words :: [unicode:unicode_binary()]) -> [[integer()]].\nindex_pairs(Text, Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (index-pairs text words)\n  (-> string? (listof string?) (listof (listof exact-integer?)))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.2K\", \"totalSubmission\": \"45.4K\", \"totalAcceptedRaw\": 31155, \"totalSubmissionRaw\": 45381, \"acRate\": \"68.7%\"}",
+  "metaData": "{\r\n  \"name\": \"indexPairs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"text\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "\"thestoryofleetcodeandme\"\n[\"story\",\"fleet\",\"leetcode\"]"
+}

@@ -1,0 +1,21 @@
+{
+  "questionId": "2772",
+  "questionFrontendId": "2690",
+  "title": "Infinite Method Object",
+  "titleSlug": "infinite-method-object",
+  "content": "<p>Write a function that&nbsp;returns an&nbsp;<strong>infinite-method</strong><strong>&nbsp;object</strong>.</p>\n\n<p>An&nbsp;<strong>infinite-method</strong><strong>&nbsp;object</strong>&nbsp;is defined as an object that allows you to call any method and it will always return the name of the method.</p>\n\n<p>For example, if you execute&nbsp;<code>obj.abc123()</code>, it will return&nbsp;<code>&quot;abc123&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> method = &quot;abc123&quot;\n<strong>Output:</strong> &quot;abc123&quot;\n<strong>Explanation:</strong>\nconst obj = createInfiniteObject();\nobj[&#39;abc123&#39;](); // &quot;abc123&quot;\nThe returned string should always match the method name.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> method = &quot;.-qw73n|^2It&quot;\n<strong>Output:</strong> &quot;.-qw73n|^2It&quot;\n<strong>Explanation:</strong> The returned string should always match the method name.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= method.length &lt;= 1000</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @return {Object}\n */\nvar createInfiniteObject = function() {\n    \n};\n\n/**\n * const obj = createInfiniteObject();\n * obj['abc123'](); // \"abc123\"\n */"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function createInfiniteObject(): Record<string, () => string> {\n    \n};\n\n/**\n * const obj = createInfiniteObject();\n * obj['abc123'](); // \"abc123\"\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.1K\", \"totalSubmission\": \"2.2K\", \"totalAcceptedRaw\": 2058, \"totalSubmissionRaw\": 2206, \"acRate\": \"93.3%\"}",
+  "metaData": "{\n  \"name\": \"createInfiniteObject\",\n  \"params\": [\n    {\n      \"type\": \"string\",\n      \"name\": \"method\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  },\n  \"manual\": true,\n  \"languages\": [\n    \"javascript\",\n    \"typescript\"\n  ]\n}",
+  "sampleTestCase": "\"abc123\""
+}

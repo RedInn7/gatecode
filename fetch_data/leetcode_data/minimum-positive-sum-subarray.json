@@ -1,0 +1,89 @@
+{
+  "questionId": "3644",
+  "questionFrontendId": "3364",
+  "title": "Minimum Positive Sum Subarray ",
+  "titleSlug": "minimum-positive-sum-subarray",
+  "content": "<p>You are given an integer array <code>nums</code> and <strong>two</strong> integers <code>l</code> and <code>r</code>. Your task is to find the <strong>minimum</strong> sum of a <strong>subarray</strong> whose size is between <code>l</code> and <code>r</code> (inclusive) and whose sum is greater than 0.</p>\n\n<p>Return the <strong>minimum</strong> sum of such a subarray. If no such subarray exists, return -1.</p>\n\n<p>A <strong>subarray</strong> is a contiguous <b>non-empty</b> sequence of elements within an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3, -2, 1, 4], l = 2, r = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The subarrays of length between <code>l = 2</code> and <code>r = 3</code> where the sum is greater than 0 are:</p>\n\n<ul>\n\t<li><code>[3, -2]</code> with a sum of 1</li>\n\t<li><code>[1, 4]</code> with a sum of 5</li>\n\t<li><code>[3, -2, 1]</code> with a sum of 2</li>\n\t<li><code>[-2, 1, 4]</code> with a sum of 3</li>\n</ul>\n\n<p>Out of these, the subarray <code>[3, -2]</code> has a sum of 1, which is the smallest positive sum. Hence, the answer is 1.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [-2, 2, -3, 1], l = 2, r = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There is no subarray of length between <code>l</code> and <code>r</code> that has a sum greater than 0. So, the answer is -1.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1, 2, 3, 4], l = 2, r = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The subarray <code>[1, 2]</code> has a length of 2 and the minimum sum greater than 0. So, the answer is 3.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= l &lt;= r &lt;= nums.length</code></li>\n\t<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minimumSumSubarray(vector<int>& nums, int l, int r) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minimumSumSubarray(List<Integer> nums, int l, int r) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimumSumSubarray(self, nums: List[int], l: int, r: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimumSumSubarray(self, nums, l, r):\n        \"\"\"\n        :type nums: List[int]\n        :type l: int\n        :type r: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} l\n * @param {number} r\n * @return {number}\n */\nvar minimumSumSubarray = function(nums, l, r) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minimumSumSubarray(nums: number[], l: number, r: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinimumSumSubarray(IList<int> nums, int l, int r) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minimumSumSubarray(int* nums, int numsSize, int l, int r) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimumSumSubarray(nums []int, l int, r int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minimumSumSubarray(nums: List<Int>, l: Int, r: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minimumSumSubarray(_ nums: [Int], _ l: Int, _ r: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimum_sum_subarray(nums: Vec<i32>, l: i32, r: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} l\n# @param {Integer} r\n# @return {Integer}\ndef minimum_sum_subarray(nums, l, r)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $l\n     * @param Integer $r\n     * @return Integer\n     */\n    function minimumSumSubarray($nums, $l, $r) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minimumSumSubarray(List<int> nums, int l, int r) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minimumSumSubarray(nums: List[Int], l: Int, r: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec minimum_sum_subarray(nums :: [integer], l :: integer, r :: integer) :: integer\n  def minimum_sum_subarray(nums, l, r) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec minimum_sum_subarray(Nums :: [integer()], L :: integer(), R :: integer()) -> integer().\nminimum_sum_subarray(Nums, L, R) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (minimum-sum-subarray nums l r)\n  (-> (listof exact-integer?) exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43.8K\", \"totalSubmission\": \"97.9K\", \"totalAcceptedRaw\": 43832, \"totalSubmissionRaw\": 97943, \"acRate\": \"44.8%\"}",
+  "metaData": "{\n  \"name\": \"minimumSumSubarray\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"list<integer>\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"l\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"r\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[3,-2,1,4]\n2\n3"
+}

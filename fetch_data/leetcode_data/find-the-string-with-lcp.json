@@ -1,0 +1,89 @@
+{
+  "questionId": "2708",
+  "questionFrontendId": "2573",
+  "title": "Find the String with LCP",
+  "titleSlug": "find-the-string-with-lcp",
+  "content": "<p>We define the <code>lcp</code> matrix of any <strong>0-indexed</strong> string <code>word</code> of <code>n</code> lowercase English letters as an <code>n x n</code> grid such that:</p>\n\n<ul>\n\t<li><code>lcp[i][j]</code> is equal to the length of the <strong>longest common prefix</strong> between the substrings <code>word[i,n-1]</code> and <code>word[j,n-1]</code>.</li>\n</ul>\n\n<p>Given an&nbsp;<code>n x n</code> matrix <code>lcp</code>, return the alphabetically smallest string <code>word</code> that corresponds to <code>lcp</code>. If there is no such string, return an empty string.</p>\n\n<p>A string <code>a</code> is lexicographically smaller than a string <code>b</code> (of the same length) if in the first position where <code>a</code> and <code>b</code> differ, string <code>a</code> has a letter that appears earlier in the alphabet than the corresponding letter in <code>b</code>. For example, <code>&quot;aabd&quot;</code> is lexicographically smaller than <code>&quot;aaca&quot;</code> because the first position they differ is at the third letter, and <code>&#39;b&#39;</code> comes before <code>&#39;c&#39;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> lcp = [[4,0,2,0],[0,3,0,1],[2,0,2,0],[0,1,0,1]]\n<strong>Output:</strong> &quot;abab&quot;\n<strong>Explanation:</strong> lcp corresponds to any 4 letter string with two alternating letters. The lexicographically smallest of them is &quot;abab&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> lcp = [[4,3,2,1],[3,3,2,1],[2,2,2,1],[1,1,1,1]]\n<strong>Output:</strong> &quot;aaaa&quot;\n<strong>Explanation:</strong> lcp corresponds to any 4 letter string with a single distinct letter. The lexicographically smallest of them is &quot;aaaa&quot;. \n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> lcp = [[4,3,2,1],[3,3,2,1],[2,2,2,1],[1,1,1,3]]\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> lcp[3][3] cannot be equal to 3 since word[3,...,3] consists of only a single letter; Thus, no answer exists.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n ==&nbsp;</code><code>lcp.length == </code><code>lcp[i].length</code>&nbsp;<code>&lt;= 1000</code></li>\n\t<li><code><font face=\"monospace\">0 &lt;= lcp[i][j] &lt;= n</font></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string findTheString(vector<vector<int>>& lcp) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String findTheString(int[][] lcp) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findTheString(self, lcp: List[List[int]]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findTheString(self, lcp):\n        \"\"\"\n        :type lcp: List[List[int]]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} lcp\n * @return {string}\n */\nvar findTheString = function(lcp) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findTheString(lcp: number[][]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FindTheString(int[][] lcp) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* findTheString(int** lcp, int lcpSize, int* lcpColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findTheString(lcp [][]int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findTheString(lcp: Array<IntArray>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findTheString(_ lcp: [[Int]]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_the_string(lcp: Vec<Vec<i32>>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} lcp\n# @return {String}\ndef find_the_string(lcp)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $lcp\n     * @return String\n     */\n    function findTheString($lcp) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String findTheString(List<List<int>> lcp) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findTheString(lcp: Array[Array[Int]]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_the_string(lcp :: [[integer]]) :: String.t\n  def find_the_string(lcp) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_the_string(Lcp :: [[integer()]]) -> unicode:unicode_binary().\nfind_the_string(Lcp) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-the-string lcp)\n  (-> (listof (listof exact-integer?)) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7K\", \"totalSubmission\": \"21.7K\", \"totalAcceptedRaw\": 7049, \"totalSubmissionRaw\": 21721, \"acRate\": \"32.5%\"}",
+  "metaData": "{\n  \"name\": \"findTheString\",\n  \"params\": [\n    {\n      \"name\": \"lcp\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "[[4,0,2,0],[0,3,0,1],[2,0,2,0],[0,1,0,1]]"
+}

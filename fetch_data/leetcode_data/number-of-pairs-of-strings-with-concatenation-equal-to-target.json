@@ -1,0 +1,89 @@
+{
+  "questionId": "2133",
+  "questionFrontendId": "2023",
+  "title": "Number of Pairs of Strings With Concatenation Equal to Target",
+  "titleSlug": "number-of-pairs-of-strings-with-concatenation-equal-to-target",
+  "content": "<p>Given an array of <strong>digit</strong> strings <code>nums</code> and a <strong>digit</strong> string <code>target</code>, return <em>the number of pairs of indices </em><code>(i, j)</code><em> (where </em><code>i != j</code><em>) such that the <strong>concatenation</strong> of </em><code>nums[i] + nums[j]</code><em> equals </em><code>target</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [&quot;777&quot;,&quot;7&quot;,&quot;77&quot;,&quot;77&quot;], target = &quot;7777&quot;\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Valid pairs are:\n- (0, 1): &quot;777&quot; + &quot;7&quot;\n- (1, 0): &quot;7&quot; + &quot;777&quot;\n- (2, 3): &quot;77&quot; + &quot;77&quot;\n- (3, 2): &quot;77&quot; + &quot;77&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [&quot;123&quot;,&quot;4&quot;,&quot;12&quot;,&quot;34&quot;], target = &quot;1234&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Valid pairs are:\n- (0, 1): &quot;123&quot; + &quot;4&quot;\n- (2, 3): &quot;12&quot; + &quot;34&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [&quot;1&quot;,&quot;1&quot;,&quot;1&quot;], target = &quot;11&quot;\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Valid pairs are:\n- (0, 1): &quot;1&quot; + &quot;1&quot;\n- (1, 0): &quot;1&quot; + &quot;1&quot;\n- (0, 2): &quot;1&quot; + &quot;1&quot;\n- (2, 0): &quot;1&quot; + &quot;1&quot;\n- (1, 2): &quot;1&quot; + &quot;1&quot;\n- (2, 1): &quot;1&quot; + &quot;1&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i].length &lt;= 100</code></li>\n\t<li><code>2 &lt;= target.length &lt;= 100</code></li>\n\t<li><code>nums[i]</code> and <code>target</code> consist of digits.</li>\n\t<li><code>nums[i]</code> and <code>target</code> do not have leading zeros.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numOfPairs(vector<string>& nums, string target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numOfPairs(String[] nums, String target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numOfPairs(self, nums: List[str], target: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numOfPairs(self, nums, target):\n        \"\"\"\n        :type nums: List[str]\n        :type target: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} nums\n * @param {string} target\n * @return {number}\n */\nvar numOfPairs = function(nums, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function numOfPairs(nums: string[], target: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumOfPairs(string[] nums, string target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int numOfPairs(char** nums, int numsSize, char* target) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numOfPairs(nums []string, target string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numOfPairs(nums: Array<String>, target: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numOfPairs(_ nums: [String], _ target: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_of_pairs(nums: Vec<String>, target: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} nums\n# @param {String} target\n# @return {Integer}\ndef num_of_pairs(nums, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $nums\n     * @param String $target\n     * @return Integer\n     */\n    function numOfPairs($nums, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int numOfPairs(List<String> nums, String target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numOfPairs(nums: Array[String], target: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec num_of_pairs(nums :: [String.t], target :: String.t) :: integer\n  def num_of_pairs(nums, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec num_of_pairs(Nums :: [unicode:unicode_binary()], Target :: unicode:unicode_binary()) -> integer().\nnum_of_pairs(Nums, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (num-of-pairs nums target)\n  (-> (listof string?) string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"61.5K\", \"totalSubmission\": \"81.6K\", \"totalAcceptedRaw\": 61490, \"totalSubmissionRaw\": 81589, \"acRate\": \"75.4%\"}",
+  "metaData": "{\n  \"name\": \"numOfPairs\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"target\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[\"777\",\"7\",\"77\",\"77\"]\n\"7777\""
+}

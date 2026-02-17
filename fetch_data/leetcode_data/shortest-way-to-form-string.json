@@ -1,0 +1,89 @@
+{
+  "questionId": "1051",
+  "questionFrontendId": "1055",
+  "title": "Shortest Way to Form String",
+  "titleSlug": "shortest-way-to-form-string",
+  "content": "<p>A <strong>subsequence</strong> of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., <code>&quot;ace&quot;</code> is a subsequence of <code>&quot;<u>a</u>b<u>c</u>d<u>e</u>&quot;</code> while <code>&quot;aec&quot;</code> is not).</p>\n\n<p>Given two strings <code>source</code> and <code>target</code>, return <em>the minimum number of <strong>subsequences</strong> of </em><code>source</code><em> such that their concatenation equals </em><code>target</code>. If the task is impossible, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> source = &quot;abc&quot;, target = &quot;abcbc&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The target &quot;abcbc&quot; can be formed by &quot;abc&quot; and &quot;bc&quot;, which are subsequences of source &quot;abc&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> source = &quot;abc&quot;, target = &quot;acdbc&quot;\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> The target string cannot be constructed from the subsequences of source string due to the character &quot;d&quot; in target string.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> source = &quot;xyz&quot;, target = &quot;xzyxz&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The target string can be constructed as follows &quot;xz&quot; + &quot;y&quot; + &quot;xz&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= source.length, target.length &lt;= 1000</code></li>\n\t<li><code>source</code> and <code>target</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestWay(string source, string target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestWay(String source, String target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestWay(self, source: str, target: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestWay(self, source, target):\n        \"\"\"\n        :type source: str\n        :type target: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} source\n * @param {string} target\n * @return {number}\n */\nvar shortestWay = function(source, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function shortestWay(source: string, target: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestWay(string source, string target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int shortestWay(char* source, char* target) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestWay(source string, target string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestWay(source: String, target: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestWay(_ source: String, _ target: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_way(source: String, target: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} source\n# @param {String} target\n# @return {Integer}\ndef shortest_way(source, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $source\n     * @param String $target\n     * @return Integer\n     */\n    function shortestWay($source, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int shortestWay(String source, String target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestWay(source: String, target: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec shortest_way(source :: String.t, target :: String.t) :: integer\n  def shortest_way(source, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec shortest_way(Source :: unicode:unicode_binary(), Target :: unicode:unicode_binary()) -> integer().\nshortest_way(Source, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (shortest-way source target)\n  (-> string? string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"109.6K\", \"totalSubmission\": \"178.1K\", \"totalAcceptedRaw\": 109623, \"totalSubmissionRaw\": 178143, \"acRate\": \"61.5%\"}",
+  "metaData": "{\r\n  \"name\": \"shortestWay\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"source\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "\"abc\"\n\"abcbc\""
+}

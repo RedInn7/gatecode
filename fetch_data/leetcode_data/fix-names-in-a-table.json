@@ -1,0 +1,33 @@
+{
+  "questionId": "1811",
+  "questionFrontendId": "1667",
+  "title": "Fix Names in a Table",
+  "titleSlug": "fix-names-in-a-table",
+  "content": "<p>Table: <code>Users</code></p>\n\n<pre>\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| user_id        | int     |\n| name           | varchar |\n+----------------+---------+\nuser_id is the primary key (column with unique values) for this table.\nThis table contains the ID and the name of the user. The name consists of only lowercase and uppercase characters.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to fix the names so that only the first character is uppercase and the rest are lowercase.</p>\n\n<p>Return the result table ordered by <code>user_id</code>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nUsers table:\n+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | aLice |\n| 2       | bOB   |\n+---------+-------+\n<strong>Output:</strong> \n+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | Alice |\n| 2       | Bob   |\n+---------+-------+\n</pre>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef fix_names(users: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"437.8K\", \"totalSubmission\": \"722.6K\", \"totalAcceptedRaw\": 437843, \"totalSubmissionRaw\": 722576, \"acRate\": \"60.6%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Users (user_id int, name varchar(40))\"], \"mssql\": [\"Create table Users (user_id int, name varchar(40))\"], \"oraclesql\": [\"Create table Users  (user_id int, name varchar(40))\"], \"database\": true, \"name\": \"fix_names\", \"pythondata\": [\"Users = pd.DataFrame([], columns=['user_id', 'name']).astype({'user_id':'Int64', 'name':'object'})\"], \"postgresql\": [\"\\nCreate table If Not Exists Users (user_id int, name varchar(40))\"], \"database_schema\": {\"Users\": {\"user_id\": \"INT\", \"name\": \"VARCHAR(40)\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Users\":[\"user_id\",\"name\"]},\"rows\":{\"Users\":[[1,\"aLice\"],[2,\"bOB\"]]}}"
+}

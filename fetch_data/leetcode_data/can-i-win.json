@@ -1,0 +1,89 @@
+{
+  "questionId": "464",
+  "questionFrontendId": "464",
+  "title": "Can I Win",
+  "titleSlug": "can-i-win",
+  "content": "<p>In the &quot;100 game&quot; two players take turns adding, to a running total, any integer from <code>1</code> to <code>10</code>. The player who first causes the running total to <strong>reach or exceed</strong> 100 wins.</p>\n\n<p>What if we change the game so that players <strong>cannot</strong> re-use integers?</p>\n\n<p>For example, two players might take turns drawing from a common pool of numbers from 1 to 15 without replacement until they reach a total &gt;= 100.</p>\n\n<p>Given two integers <code>maxChoosableInteger</code> and <code>desiredTotal</code>, return <code>true</code> if the first player to move can force a win, otherwise, return <code>false</code>. Assume both players play <strong>optimally</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> maxChoosableInteger = 10, desiredTotal = 11\n<strong>Output:</strong> false\n<strong>Explanation:</strong>\nNo matter which integer the first player choose, the first player will lose.\nThe first player can choose an integer from 1 up to 10.\nIf the first player choose 1, the second player can only choose integers from 2 up to 10.\nThe second player will win by choosing 10 and get a total = 11, which is &gt;= desiredTotal.\nSame with other integers chosen by the first player, the second player will always win.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> maxChoosableInteger = 10, desiredTotal = 0\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> maxChoosableInteger = 10, desiredTotal = 1\n<strong>Output:</strong> true\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= maxChoosableInteger &lt;= 20</code></li>\n\t<li><code>0 &lt;= desiredTotal &lt;= 300</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canIWin(self, maxChoosableInteger: int, desiredTotal: int) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canIWin(self, maxChoosableInteger, desiredTotal):\n        \"\"\"\n        :type maxChoosableInteger: int\n        :type desiredTotal: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} maxChoosableInteger\n * @param {number} desiredTotal\n * @return {boolean}\n */\nvar canIWin = function(maxChoosableInteger, desiredTotal) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function canIWin(maxChoosableInteger: number, desiredTotal: number): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool canIWin(int maxChoosableInteger, int desiredTotal) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canIWin(maxChoosableInteger int, desiredTotal int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canIWin(maxChoosableInteger: Int, desiredTotal: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canIWin(_ maxChoosableInteger: Int, _ desiredTotal: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_i_win(max_choosable_integer: i32, desired_total: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} max_choosable_integer\n# @param {Integer} desired_total\n# @return {Boolean}\ndef can_i_win(max_choosable_integer, desired_total)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $maxChoosableInteger\n     * @param Integer $desiredTotal\n     * @return Boolean\n     */\n    function canIWin($maxChoosableInteger, $desiredTotal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool canIWin(int maxChoosableInteger, int desiredTotal) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canIWin(maxChoosableInteger: Int, desiredTotal: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec can_i_win(max_choosable_integer :: integer, desired_total :: integer) :: boolean\n  def can_i_win(max_choosable_integer, desired_total) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec can_i_win(MaxChoosableInteger :: integer(), DesiredTotal :: integer()) -> boolean().\ncan_i_win(MaxChoosableInteger, DesiredTotal) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (can-i-win maxChoosableInteger desiredTotal)\n  (-> exact-integer? exact-integer? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"120K\", \"totalSubmission\": \"386.8K\", \"totalAcceptedRaw\": 119950, \"totalSubmissionRaw\": 386757, \"acRate\": \"31.0%\"}",
+  "metaData": "{\r\n  \"name\": \"canIWin\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"maxChoosableInteger\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"desiredTotal\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "10\n11"
+}

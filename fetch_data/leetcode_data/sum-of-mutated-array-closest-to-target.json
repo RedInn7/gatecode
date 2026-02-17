@@ -1,0 +1,89 @@
+{
+  "questionId": "1232",
+  "questionFrontendId": "1300",
+  "title": "Sum of Mutated Array Closest to Target",
+  "titleSlug": "sum-of-mutated-array-closest-to-target",
+  "content": "<p>Given an integer array <code>arr</code> and a target value <code>target</code>, return the integer <code>value</code> such that when we change all the integers larger than <code>value</code> in the given array to be equal to <code>value</code>, the sum of the array gets as close as possible (in absolute difference) to <code>target</code>.</p>\n\n<p>In case of a tie, return the minimum such integer.</p>\n\n<p>Notice that the answer is not neccesarilly a number from <code>arr</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [4,9,3], target = 10\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> When using 3 arr converts to [3, 3, 3] which sums 9 and that&#39;s the optimal answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [2,3,5], target = 10\n<strong>Output:</strong> 5\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [60864,25176,27249,21296,20204], target = 56803\n<strong>Output:</strong> 11361\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= arr[i], target &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findBestValue(vector<int>& arr, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findBestValue(int[] arr, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findBestValue(self, arr: List[int], target: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findBestValue(self, arr, target):\n        \"\"\"\n        :type arr: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @param {number} target\n * @return {number}\n */\nvar findBestValue = function(arr, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findBestValue(arr: number[], target: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindBestValue(int[] arr, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int findBestValue(int* arr, int arrSize, int target) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findBestValue(arr []int, target int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findBestValue(arr: IntArray, target: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findBestValue(_ arr: [Int], _ target: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_best_value(arr: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @param {Integer} target\n# @return {Integer}\ndef find_best_value(arr, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @param Integer $target\n     * @return Integer\n     */\n    function findBestValue($arr, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int findBestValue(List<int> arr, int target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findBestValue(arr: Array[Int], target: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_best_value(arr :: [integer], target :: integer) :: integer\n  def find_best_value(arr, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_best_value(Arr :: [integer()], Target :: integer()) -> integer().\nfind_best_value(Arr, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-best-value arr target)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"48.5K\", \"totalSubmission\": \"105.2K\", \"totalAcceptedRaw\": 48528, \"totalSubmissionRaw\": 105223, \"acRate\": \"46.1%\"}",
+  "metaData": "{\n  \"name\": \"findBestValue\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"target\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[4,9,3]\n10"
+}

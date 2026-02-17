@@ -1,0 +1,89 @@
+{
+  "questionId": "1277",
+  "questionFrontendId": "1363",
+  "title": "Largest Multiple of Three",
+  "titleSlug": "largest-multiple-of-three",
+  "content": "<p>Given an array of digits <code>digits</code>, return <em>the largest multiple of <strong>three</strong> that can be formed by concatenating some of the given digits in <strong>any order</strong></em>. If there is no answer return an empty string.</p>\n\n<p>Since the answer may not fit in an integer data type, return the answer as a string. Note that the returning answer must not contain unnecessary leading zeros.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> digits = [8,1,9]\n<strong>Output:</strong> &quot;981&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> digits = [8,6,7,1,0]\n<strong>Output:</strong> &quot;8760&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> digits = [1]\n<strong>Output:</strong> &quot;&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= digits.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= digits[i] &lt;= 9</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string largestMultipleOfThree(vector<int>& digits) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String largestMultipleOfThree(int[] digits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestMultipleOfThree(self, digits: List[int]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestMultipleOfThree(self, digits):\n        \"\"\"\n        :type digits: List[int]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} digits\n * @return {string}\n */\nvar largestMultipleOfThree = function(digits) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function largestMultipleOfThree(digits: number[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string LargestMultipleOfThree(int[] digits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* largestMultipleOfThree(int* digits, int digitsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestMultipleOfThree(digits []int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestMultipleOfThree(digits: IntArray): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestMultipleOfThree(_ digits: [Int]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_multiple_of_three(digits: Vec<i32>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} digits\n# @return {String}\ndef largest_multiple_of_three(digits)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $digits\n     * @return String\n     */\n    function largestMultipleOfThree($digits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String largestMultipleOfThree(List<int> digits) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestMultipleOfThree(digits: Array[Int]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec largest_multiple_of_three(digits :: [integer]) :: String.t\n  def largest_multiple_of_three(digits) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec largest_multiple_of_three(Digits :: [integer()]) -> unicode:unicode_binary().\nlargest_multiple_of_three(Digits) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (largest-multiple-of-three digits)\n  (-> (listof exact-integer?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"25.8K\", \"totalSubmission\": \"78K\", \"totalAcceptedRaw\": 25833, \"totalSubmissionRaw\": 77995, \"acRate\": \"33.1%\"}",
+  "metaData": "{\n  \"name\": \"largestMultipleOfThree\",\n  \"params\": [\n    {\n      \"name\": \"digits\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "[8,1,9]"
+}

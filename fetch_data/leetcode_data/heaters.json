@@ -1,0 +1,89 @@
+{
+  "questionId": "475",
+  "questionFrontendId": "475",
+  "title": "Heaters",
+  "titleSlug": "heaters",
+  "content": "<p>Winter is coming! During the contest, your first job is to design a standard heater with a fixed warm radius to warm all the houses.</p>\n\n<p>Every house can be warmed, as long as the house is within the heater&#39;s warm radius range.&nbsp;</p>\n\n<p>Given the positions of <code>houses</code> and <code>heaters</code> on a horizontal line, return <em>the minimum radius standard of heaters&nbsp;so that those heaters could cover all houses.</em></p>\n\n<p><strong>Notice</strong> that&nbsp;all the <code>heaters</code> follow your radius standard, and the warm radius will be the same.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> houses = [1,2,3], heaters = [2]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The only heater was placed in the position 2, and if we use the radius 1 standard, then all the houses can be warmed.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> houses = [1,2,3,4], heaters = [1,4]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The two heaters were placed at positions 1 and 4. We need to use a radius 1 standard, then all the houses can be warmed.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> houses = [1,5], heaters = [2]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= houses.length, heaters.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= houses[i], heaters[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findRadius(vector<int>& houses, vector<int>& heaters) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findRadius(int[] houses, int[] heaters) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findRadius(self, houses: List[int], heaters: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findRadius(self, houses, heaters):\n        \"\"\"\n        :type houses: List[int]\n        :type heaters: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} houses\n * @param {number[]} heaters\n * @return {number}\n */\nvar findRadius = function(houses, heaters) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findRadius(houses: number[], heaters: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindRadius(int[] houses, int[] heaters) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int findRadius(int* houses, int housesSize, int* heaters, int heatersSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findRadius(houses []int, heaters []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findRadius(houses: IntArray, heaters: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findRadius(_ houses: [Int], _ heaters: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_radius(houses: Vec<i32>, heaters: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} houses\n# @param {Integer[]} heaters\n# @return {Integer}\ndef find_radius(houses, heaters)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $houses\n     * @param Integer[] $heaters\n     * @return Integer\n     */\n    function findRadius($houses, $heaters) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int findRadius(List<int> houses, List<int> heaters) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findRadius(houses: Array[Int], heaters: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_radius(houses :: [integer], heaters :: [integer]) :: integer\n  def find_radius(houses, heaters) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_radius(Houses :: [integer()], Heaters :: [integer()]) -> integer().\nfind_radius(Houses, Heaters) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-radius houses heaters)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"164K\", \"totalSubmission\": \"396.4K\", \"totalAcceptedRaw\": 163966, \"totalSubmissionRaw\": 396402, \"acRate\": \"41.4%\"}",
+  "metaData": "{\r\n  \"name\": \"findRadius\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"houses\",\r\n      \"type\": \"integer[]\"\r\n  \r\n    }, \r\n    {\r\n            \"name\": \"heaters\",\r\n            \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "[1,2,3]\n[2]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "3199",
+  "questionFrontendId": "2928",
+  "title": "Distribute Candies Among Children I",
+  "titleSlug": "distribute-candies-among-children-i",
+  "content": "<p>You are given two positive integers <code>n</code> and <code>limit</code>.</p>\n\n<p>Return <em>the <strong>total number</strong> of ways to distribute </em><code>n</code> <em>candies among </em><code>3</code><em> children such that no child gets more than </em><code>limit</code><em> candies.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5, limit = 2\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> There are 3 ways to distribute 5 candies such that no child gets more than 2 candies: (1, 2, 2), (2, 1, 2) and (2, 2, 1).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, limit = 3\n<strong>Output:</strong> 10\n<strong>Explanation:</strong> There are 10 ways to distribute 3 candies such that no child gets more than 3 candies: (0, 0, 3), (0, 1, 2), (0, 2, 1), (0, 3, 0), (1, 0, 2), (1, 1, 1), (1, 2, 0), (2, 0, 1), (2, 1, 0) and (3, 0, 0).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 50</code></li>\n\t<li><code>1 &lt;= limit &lt;= 50</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int distributeCandies(int n, int limit) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int distributeCandies(int n, int limit) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def distributeCandies(self, n: int, limit: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def distributeCandies(self, n, limit):\n        \"\"\"\n        :type n: int\n        :type limit: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} limit\n * @return {number}\n */\nvar distributeCandies = function(n, limit) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function distributeCandies(n: number, limit: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int DistributeCandies(int n, int limit) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int distributeCandies(int n, int limit) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func distributeCandies(n int, limit int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun distributeCandies(n: Int, limit: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func distributeCandies(_ n: Int, _ limit: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn distribute_candies(n: i32, limit: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} limit\n# @return {Integer}\ndef distribute_candies(n, limit)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $limit\n     * @return Integer\n     */\n    function distributeCandies($n, $limit) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int distributeCandies(int n, int limit) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def distributeCandies(n: Int, limit: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec distribute_candies(n :: integer, limit :: integer) :: integer\n  def distribute_candies(n, limit) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec distribute_candies(N :: integer(), Limit :: integer()) -> integer().\ndistribute_candies(N, Limit) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (distribute-candies n limit)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"41.3K\", \"totalSubmission\": \"54.3K\", \"totalAcceptedRaw\": 41330, \"totalSubmissionRaw\": 54308, \"acRate\": \"76.1%\"}",
+  "metaData": "{\n  \"name\": \"distributeCandies\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"limit\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "5\n2"
+}

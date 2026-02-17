@@ -1,0 +1,89 @@
+{
+  "questionId": "2141",
+  "questionFrontendId": "1999",
+  "title": "Smallest Greater Multiple Made of Two Digits",
+  "titleSlug": "smallest-greater-multiple-made-of-two-digits",
+  "content": "<p>Given three integers, <code>k</code>, <code>digit1</code>, and <code>digit2</code>, you want to find the <strong>smallest</strong> integer that is:</p>\n\n<ul>\n\t<li><strong>Larger</strong> than <code>k</code>,</li>\n\t<li>A <strong>multiple</strong> of <code>k</code>, and</li>\n\t<li>Comprised of <strong>only</strong> the digits <code>digit1</code> and/or <code>digit2</code>.</li>\n</ul>\n\n<p>Return <em>the <strong>smallest</strong> such integer. If no such integer exists or the integer exceeds the limit of a signed 32-bit integer (</em><code>2<sup>31</sup> - 1</code><em>), return </em><code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 2, digit1 = 0, digit2 = 2\n<strong>Output:</strong> 20\n<strong>Explanation:</strong>\n20 is the first integer larger than 2, a multiple of 2, and comprised of only the digits 0 and/or 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 3, digit1 = 4, digit2 = 2\n<strong>Output:</strong> 24\n<strong>Explanation:</strong>\n24 is the first integer larger than 3, a multiple of 3, and comprised of only the digits 4 and/or 2.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 2, digit1 = 0, digit2 = 0\n<strong>Output:</strong> -1\n<strong>Explanation:\n</strong>No integer meets the requirements so return -1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= 1000</code></li>\n\t<li><code>0 &lt;= digit1 &lt;= 9</code></li>\n\t<li><code>0 &lt;= digit2 &lt;= 9</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findInteger(int k, int digit1, int digit2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findInteger(int k, int digit1, int digit2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findInteger(self, k: int, digit1: int, digit2: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findInteger(self, k, digit1, digit2):\n        \"\"\"\n        :type k: int\n        :type digit1: int\n        :type digit2: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} k\n * @param {number} digit1\n * @param {number} digit2\n * @return {number}\n */\nvar findInteger = function(k, digit1, digit2) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findInteger(k: number, digit1: number, digit2: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindInteger(int k, int digit1, int digit2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int findInteger(int k, int digit1, int digit2) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findInteger(k int, digit1 int, digit2 int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findInteger(k: Int, digit1: Int, digit2: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findInteger(_ k: Int, _ digit1: Int, _ digit2: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_integer(k: i32, digit1: i32, digit2: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} k\n# @param {Integer} digit1\n# @param {Integer} digit2\n# @return {Integer}\ndef find_integer(k, digit1, digit2)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $k\n     * @param Integer $digit1\n     * @param Integer $digit2\n     * @return Integer\n     */\n    function findInteger($k, $digit1, $digit2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int findInteger(int k, int digit1, int digit2) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findInteger(k: Int, digit1: Int, digit2: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_integer(k :: integer, digit1 :: integer, digit2 :: integer) :: integer\n  def find_integer(k, digit1, digit2) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_integer(K :: integer(), Digit1 :: integer(), Digit2 :: integer()) -> integer().\nfind_integer(K, Digit1, Digit2) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-integer k digit1 digit2)\n  (-> exact-integer? exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.6K\", \"totalSubmission\": \"5.4K\", \"totalAcceptedRaw\": 2605, \"totalSubmissionRaw\": 5398, \"acRate\": \"48.3%\"}",
+  "metaData": "{\n  \"name\": \"findInteger\",\n  \"params\": [\n    {\n      \"name\": \"k\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"digit1\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"digit2\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "2\n0\n2"
+}

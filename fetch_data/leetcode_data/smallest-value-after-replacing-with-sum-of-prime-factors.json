@@ -1,0 +1,89 @@
+{
+  "questionId": "2595",
+  "questionFrontendId": "2507",
+  "title": "Smallest Value After Replacing With Sum of Prime Factors",
+  "titleSlug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+  "content": "<p>You are given a positive integer <code>n</code>.</p>\n\n<p>Continuously replace <code>n</code> with the sum of its <strong>prime factors</strong>.</p>\n\n<ul>\n\t<li>Note that if a prime factor divides <code>n</code> multiple times, it should be included in the sum as many times as it divides <code>n</code>.</li>\n</ul>\n\n<p>Return <em>the smallest value </em><code>n</code><em> will take on.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 15\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> Initially, n = 15.\n15 = 3 * 5, so replace n with 3 + 5 = 8.\n8 = 2 * 2 * 2, so replace n with 2 + 2 + 2 = 6.\n6 = 2 * 3, so replace n with 2 + 3 = 5.\n5 is the smallest value n will take on.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Initially, n = 3.\n3 is the smallest value n will take on.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int smallestValue(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int smallestValue(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestValue(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestValue(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar smallestValue = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function smallestValue(n: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SmallestValue(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int smallestValue(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestValue(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestValue(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestValue(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_value(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef smallest_value(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function smallestValue($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int smallestValue(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestValue(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec smallest_value(n :: integer) :: integer\n  def smallest_value(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec smallest_value(N :: integer()) -> integer().\nsmallest_value(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (smallest-value n)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.7K\", \"totalSubmission\": \"63.8K\", \"totalAcceptedRaw\": 31747, \"totalSubmissionRaw\": 63765, \"acRate\": \"49.8%\"}",
+  "metaData": "{\n  \"name\": \"smallestValue\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "15"
+}

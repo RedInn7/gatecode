@@ -1,0 +1,89 @@
+{
+  "questionId": "1616",
+  "questionFrontendId": "1509",
+  "title": "Minimum Difference Between Largest and Smallest Value in Three Moves",
+  "titleSlug": "minimum-difference-between-largest-and-smallest-value-in-three-moves",
+  "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>In one move, you can choose one element of <code>nums</code> and change it to <strong>any value</strong>.</p>\n\n<p>Return <em>the minimum difference between the largest and smallest value of <code>nums</code> <strong>after performing at most three moves</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,3,2,4]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> We can make at most 3 moves.\nIn the first move, change 2 to 3. nums becomes [5,3,3,4].\nIn the second move, change 4 to 3. nums becomes [5,3,3,3].\nIn the third move, change 5 to 3. nums becomes [3,3,3,3].\nAfter performing 3 moves, the difference between the minimum and maximum is 3 - 3 = 0.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,5,0,10,14]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> We can make at most 3 moves.\nIn the first move, change 5 to 0. nums becomes [1,0,0,10,14].\nIn the second move, change 10 to 0. nums becomes [1,0,0,0,14].\nIn the third move, change 14 to 1. nums becomes [1,0,0,0,1].\nAfter performing 3 moves, the difference between the minimum and maximum is 1 - 0 = 1.\nIt can be shown that there is no way to make the difference 0 in 3 moves.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,100,20]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> We can make at most 3 moves.\nIn the first move, change 100 to 7. nums becomes [3,7,20].\nIn the second move, change 20 to 7. nums becomes [3,7,7].\nIn the third move, change 3 to 7. nums becomes [7,7,7].\nAfter performing 3 moves, the difference between the minimum and maximum is 7 - 7 = 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minDifference(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minDifference(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minDifference(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minDifference(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minDifference = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minDifference(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinDifference(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minDifference(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minDifference(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minDifference(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minDifference(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_difference(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef min_difference(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function minDifference($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minDifference(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minDifference(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_difference(nums :: [integer]) :: integer\n  def min_difference(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_difference(Nums :: [integer()]) -> integer().\nmin_difference(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-difference nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"250.2K\", \"totalSubmission\": \"422.5K\", \"totalAcceptedRaw\": 250162, \"totalSubmissionRaw\": 422480, \"acRate\": \"59.2%\"}",
+  "metaData": "{\n  \"name\": \"minDifference\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[5,3,2,4]"
+}

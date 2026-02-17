@@ -1,0 +1,89 @@
+{
+  "questionId": "656",
+  "questionFrontendId": "656",
+  "title": "Coin Path",
+  "titleSlug": "coin-path",
+  "content": "<p>You are given an integer array <code>coins</code> (<strong>1-indexed</strong>) of length <code>n</code> and an integer <code>maxJump</code>. You can jump to any index <code>i</code> of the array <code>coins</code> if <code>coins[i] != -1</code> and you have to pay <code>coins[i]</code> when you visit index <code>i</code>. In addition to that, if you are currently at index <code>i</code>, you can only jump to any index <code>i + k</code> where <code>i + k &lt;= n</code> and <code>k</code> is a value in the range <code>[1, maxJump]</code>.</p>\n\n<p>You are initially positioned at index <code>1</code> (<code>coins[1]</code> is not <code>-1</code>). You want to find the path that reaches index n with the minimum cost.</p>\n\n<p>Return an integer array of the indices that you will visit in order so that you can reach index n with the minimum cost. If there are multiple paths with the same cost, return the <strong>lexicographically smallest</strong> such path. If it is not possible to reach index n, return an empty array.</p>\n\n<p>A path <code>p1 = [Pa<sub>1</sub>, Pa<sub>2</sub>, ..., Pa<sub>x</sub>]</code> of length <code>x</code> is <strong>lexicographically smaller</strong> than <code>p2 = [Pb<sub>1</sub>, Pb<sub>2</sub>, ..., Pb<sub>x</sub>]</code> of length <code>y</code>, if and only if at the first <code>j</code> where <code>Pa<sub>j</sub></code> and <code>Pb<sub>j</sub></code> differ, <code>Pa<sub>j</sub> &lt; Pb<sub>j</sub></code>; when no such <code>j</code> exists, then <code>x &lt; y</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> coins = [1,2,4,-1,2], maxJump = 2\n<strong>Output:</strong> [1,3,5]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> coins = [1,2,4,-1,2], maxJump = 1\n<strong>Output:</strong> []\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= coins.length &lt;= 1000</code></li>\n\t<li><code>-1 &lt;= coins[i] &lt;= 100</code></li>\n\t<li><code>coins[1] != -1</code></li>\n\t<li><code>1 &lt;= maxJump &lt;= 100</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> cheapestJump(vector<int>& coins, int maxJump) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> cheapestJump(int[] coins, int maxJump) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def cheapestJump(self, coins: List[int], maxJump: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def cheapestJump(self, coins, maxJump):\n        \"\"\"\n        :type coins: List[int]\n        :type maxJump: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} coins\n * @param {number} maxJump\n * @return {number[]}\n */\nvar cheapestJump = function(coins, maxJump) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function cheapestJump(coins: number[], maxJump: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> CheapestJump(int[] coins, int maxJump) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* cheapestJump(int* coins, int coinsSize, int maxJump, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func cheapestJump(coins []int, maxJump int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun cheapestJump(coins: IntArray, maxJump: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func cheapestJump(_ coins: [Int], _ maxJump: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn cheapest_jump(coins: Vec<i32>, max_jump: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} coins\n# @param {Integer} max_jump\n# @return {Integer[]}\ndef cheapest_jump(coins, max_jump)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $coins\n     * @param Integer $maxJump\n     * @return Integer[]\n     */\n    function cheapestJump($coins, $maxJump) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> cheapestJump(List<int> coins, int maxJump) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def cheapestJump(coins: Array[Int], maxJump: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec cheapest_jump(coins :: [integer], max_jump :: integer) :: [integer]\n  def cheapest_jump(coins, max_jump) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec cheapest_jump(Coins :: [integer()], MaxJump :: integer()) -> [integer()].\ncheapest_jump(Coins, MaxJump) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (cheapest-jump coins maxJump)\n  (-> (listof exact-integer?) exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.2K\", \"totalSubmission\": \"50.2K\", \"totalAcceptedRaw\": 17193, \"totalSubmissionRaw\": 50247, \"acRate\": \"34.2%\"}",
+  "metaData": "{\n  \"name\": \"cheapestJump\",\n  \"params\": [\n    {\n      \"name\": \"coins\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"maxJump\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "sampleTestCase": "[1,2,4,-1,2]\n2"
+}

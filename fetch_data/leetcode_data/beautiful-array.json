@@ -1,0 +1,89 @@
+{
+  "questionId": "968",
+  "questionFrontendId": "932",
+  "title": "Beautiful Array",
+  "titleSlug": "beautiful-array",
+  "content": "<p>An array <code>nums</code> of length <code>n</code> is <strong>beautiful</strong> if:</p>\n\n<ul>\n\t<li><code>nums</code> is a permutation of the integers in the range <code>[1, n]</code>.</li>\n\t<li>For every <code>0 &lt;= i &lt; j &lt; n</code>, there is no index <code>k</code> with <code>i &lt; k &lt; j</code> where <code>2 * nums[k] == nums[i] + nums[j]</code>.</li>\n</ul>\n\n<p>Given the integer <code>n</code>, return <em>any <strong>beautiful</strong> array </em><code>nums</code><em> of length </em><code>n</code>. There will be at least one valid answer for the given <code>n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> n = 4\n<strong>Output:</strong> [2,1,4,3]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> n = 5\n<strong>Output:</strong> [3,1,2,5,4]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 1000</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> beautifulArray(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] beautifulArray(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def beautifulArray(self, n: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def beautifulArray(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number[]}\n */\nvar beautifulArray = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function beautifulArray(n: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] BeautifulArray(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* beautifulArray(int n, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func beautifulArray(n int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun beautifulArray(n: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func beautifulArray(_ n: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn beautiful_array(n: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer[]}\ndef beautiful_array(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer[]\n     */\n    function beautifulArray($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> beautifulArray(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def beautifulArray(n: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec beautiful_array(n :: integer) :: [integer]\n  def beautiful_array(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec beautiful_array(N :: integer()) -> [integer()].\nbeautiful_array(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (beautiful-array n)\n  (-> exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"57.9K\", \"totalSubmission\": \"84.5K\", \"totalAcceptedRaw\": 57936, \"totalSubmissionRaw\": 84539, \"acRate\": \"68.5%\"}",
+  "metaData": "{\n  \"name\": \"beautifulArray\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "4"
+}

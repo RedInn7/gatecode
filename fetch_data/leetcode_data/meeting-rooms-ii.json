@@ -1,0 +1,89 @@
+{
+  "questionId": "253",
+  "questionFrontendId": "253",
+  "title": "Meeting Rooms II",
+  "titleSlug": "meeting-rooms-ii",
+  "content": "<p>Given an array of meeting time intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, return <em>the minimum number of conference rooms required</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> intervals = [[0,30],[5,10],[15,20]]\n<strong>Output:</strong> 2\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> intervals = [[7,10],[2,4]]\n<strong>Output:</strong> 1\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;=&nbsp;intervals.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt; end<sub>i</sub> &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minMeetingRooms(vector<vector<int>>& intervals) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minMeetingRooms(int[][] intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minMeetingRooms(self, intervals: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minMeetingRooms(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} intervals\n * @return {number}\n */\nvar minMeetingRooms = function(intervals) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minMeetingRooms(intervals: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinMeetingRooms(int[][] intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minMeetingRooms(int** intervals, int intervalsSize, int* intervalsColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minMeetingRooms(intervals [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minMeetingRooms(intervals: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minMeetingRooms(_ intervals: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_meeting_rooms(intervals: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} intervals\n# @return {Integer}\ndef min_meeting_rooms(intervals)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @return Integer\n     */\n    function minMeetingRooms($intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minMeetingRooms(List<List<int>> intervals) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minMeetingRooms(intervals: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_meeting_rooms(intervals :: [[integer]]) :: integer\n  def min_meeting_rooms(intervals) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_meeting_rooms(Intervals :: [[integer()]]) -> integer().\nmin_meeting_rooms(Intervals) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-meeting-rooms intervals)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.1M\", \"totalSubmission\": \"2.2M\", \"totalAcceptedRaw\": 1145385, \"totalSubmissionRaw\": 2180616, \"acRate\": \"52.5%\"}",
+  "metaData": "{\r\n  \"name\": \"minMeetingRooms\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"intervals\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "[[0,30],[5,10],[15,20]]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "1458",
+  "questionFrontendId": "1356",
+  "title": "Sort Integers by The Number of 1 Bits",
+  "titleSlug": "sort-integers-by-the-number-of-1-bits",
+  "content": "<p>You are given an integer array <code>arr</code>. Sort the integers in the array&nbsp;in ascending order by the number of <code>1</code>&#39;s&nbsp;in their binary representation and in case of two or more integers have the same number of <code>1</code>&#39;s you have to sort them in ascending order.</p>\n\n<p>Return <em>the array after sorting it</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [0,1,2,3,4,5,6,7,8]\n<strong>Output:</strong> [0,1,2,4,8,3,5,6,7]\n<strong>Explantion:</strong> [0] is the only integer with 0 bits.\n[1,2,4,8] all have 1 bit.\n[3,5,6] have 2 bits.\n[7] has 3 bits.\nThe sorted array by bits is [0,1,2,4,8,3,5,6,7]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1024,512,256,128,64,32,16,8,4,2,1]\n<strong>Output:</strong> [1,2,4,8,16,32,64,128,256,512,1024]\n<strong>Explantion:</strong> All integers have 1 bit in the binary representation, you should just sort them in ascending order.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 500</code></li>\n\t<li><code>0 &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sortByBits(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] sortByBits(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sortByBits(self, arr: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sortByBits(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number[]}\n */\nvar sortByBits = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function sortByBits(arr: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SortByBits(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sortByBits(int* arr, int arrSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sortByBits(arr []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sortByBits(arr: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sortByBits(_ arr: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sort_by_bits(arr: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer[]}\ndef sort_by_bits(arr)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer[]\n     */\n    function sortByBits($arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> sortByBits(List<int> arr) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sortByBits(arr: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec sort_by_bits(arr :: [integer]) :: [integer]\n  def sort_by_bits(arr) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec sort_by_bits(Arr :: [integer()]) -> [integer()].\nsort_by_bits(Arr) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (sort-by-bits arr)\n  (-> (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"267K\", \"totalSubmission\": \"338K\", \"totalAcceptedRaw\": 266960, \"totalSubmissionRaw\": 338029, \"acRate\": \"79.0%\"}",
+  "metaData": "{\n  \"name\": \"sortByBits\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[0,1,2,3,4,5,6,7,8]"
+}

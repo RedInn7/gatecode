@@ -1,0 +1,89 @@
+{
+  "questionId": "1139",
+  "questionFrontendId": "1053",
+  "title": "Previous Permutation With One Swap",
+  "titleSlug": "previous-permutation-with-one-swap",
+  "content": "<p>Given an array of positive integers <code>arr</code> (not necessarily distinct), return <em>the </em><span data-keyword=\"lexicographically-smaller-array\"><em>lexicographically</em></span><em> largest permutation that is smaller than</em> <code>arr</code>, that can be <strong>made with exactly one swap</strong>. If it cannot be done, then return the same array.</p>\n\n<p><strong>Note</strong> that a <em>swap</em> exchanges the positions of two numbers <code>arr[i]</code> and <code>arr[j]</code></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [3,2,1]\n<strong>Output:</strong> [3,1,2]\n<strong>Explanation:</strong> Swapping 2 and 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,1,5]\n<strong>Output:</strong> [1,1,5]\n<strong>Explanation:</strong> This is already the smallest permutation.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,9,4,6,7]\n<strong>Output:</strong> [1,7,4,6,9]\n<strong>Explanation:</strong> Swapping 9 and 7.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> prevPermOpt1(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] prevPermOpt1(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def prevPermOpt1(self, arr: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def prevPermOpt1(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number[]}\n */\nvar prevPermOpt1 = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function prevPermOpt1(arr: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] PrevPermOpt1(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* prevPermOpt1(int* arr, int arrSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func prevPermOpt1(arr []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun prevPermOpt1(arr: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func prevPermOpt1(_ arr: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn prev_perm_opt1(arr: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer[]}\ndef prev_perm_opt1(arr)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer[]\n     */\n    function prevPermOpt1($arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> prevPermOpt1(List<int> arr) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def prevPermOpt1(arr: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec prev_perm_opt1(arr :: [integer]) :: [integer]\n  def prev_perm_opt1(arr) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec prev_perm_opt1(Arr :: [integer()]) -> [integer()].\nprev_perm_opt1(Arr) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (prev-perm-opt1 arr)\n  (-> (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"47.9K\", \"totalSubmission\": \"97.1K\", \"totalAcceptedRaw\": 47856, \"totalSubmissionRaw\": 97083, \"acRate\": \"49.3%\"}",
+  "metaData": "{\n  \"name\": \"prevPermOpt1\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[3,2,1]"
+}

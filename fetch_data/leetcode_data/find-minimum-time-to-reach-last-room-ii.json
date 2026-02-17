@@ -1,0 +1,89 @@
+{
+  "questionId": "3628",
+  "questionFrontendId": "3342",
+  "title": "Find Minimum Time to Reach Last Room II",
+  "titleSlug": "find-minimum-time-to-reach-last-room-ii",
+  "content": "<p>There is a dungeon with <code>n x m</code> rooms arranged as a grid.</p>\n\n<p>You are given a 2D array <code>moveTime</code> of size <code>n x m</code>, where <code>moveTime[i][j]</code> represents the <strong>minimum</strong> time in seconds when you can <strong>start moving</strong> to that room. You start from the room <code>(0, 0)</code> at time <code>t = 0</code> and can move to an <strong>adjacent</strong> room. Moving between <strong>adjacent</strong> rooms takes one second for one move and two seconds for the next, <strong>alternating</strong> between the two.</p>\n\n<p>Return the <strong>minimum</strong> time to reach the room <code>(n - 1, m - 1)</code>.</p>\n\n<p>Two rooms are <strong>adjacent</strong> if they share a common wall, either <em>horizontally</em> or <em>vertically</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moveTime = [[0,4],[4,4]]</span></p>\n\n<p><strong>Output:</strong> 7</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum time required is 7 seconds.</p>\n\n<ul>\n\t<li>At time <code>t == 4</code>, move from room <code>(0, 0)</code> to room <code>(1, 0)</code> in one second.</li>\n\t<li>At time <code>t == 5</code>, move from room <code>(1, 0)</code> to room <code>(1, 1)</code> in two seconds.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moveTime = [[0,0,0,0],[0,0,0,0]]</span></p>\n\n<p><strong>Output:</strong> 6</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum time required is 6 seconds.</p>\n\n<ul>\n\t<li>At time <code>t == 0</code>, move from room <code>(0, 0)</code> to room <code>(1, 0)</code> in one second.</li>\n\t<li>At time <code>t == 1</code>, move from room <code>(1, 0)</code> to room <code>(1, 1)</code> in two seconds.</li>\n\t<li>At time <code>t == 3</code>, move from room <code>(1, 1)</code> to room <code>(1, 2)</code> in one second.</li>\n\t<li>At time <code>t == 4</code>, move from room <code>(1, 2)</code> to room <code>(1, 3)</code> in two seconds.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moveTime = [[0,1],[1,2]]</span></p>\n\n<p><strong>Output:</strong> 4</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n == moveTime.length &lt;= 750</code></li>\n\t<li><code>2 &lt;= m == moveTime[i].length &lt;= 750</code></li>\n\t<li><code>0 &lt;= moveTime[i][j] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minTimeToReach(vector<vector<int>>& moveTime) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minTimeToReach(int[][] moveTime) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minTimeToReach(self, moveTime: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minTimeToReach(self, moveTime):\n        \"\"\"\n        :type moveTime: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} moveTime\n * @return {number}\n */\nvar minTimeToReach = function(moveTime) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minTimeToReach(moveTime: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinTimeToReach(int[][] moveTime) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minTimeToReach(int** moveTime, int moveTimeSize, int* moveTimeColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minTimeToReach(moveTime [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minTimeToReach(moveTime: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minTimeToReach(_ moveTime: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_time_to_reach(move_time: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} move_time\n# @return {Integer}\ndef min_time_to_reach(move_time)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $moveTime\n     * @return Integer\n     */\n    function minTimeToReach($moveTime) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minTimeToReach(List<List<int>> moveTime) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minTimeToReach(moveTime: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_time_to_reach(move_time :: [[integer]]) :: integer\n  def min_time_to_reach(move_time) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_time_to_reach(MoveTime :: [[integer()]]) -> integer().\nmin_time_to_reach(MoveTime) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-time-to-reach moveTime)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"95.3K\", \"totalSubmission\": \"140.3K\", \"totalAcceptedRaw\": 95275, \"totalSubmissionRaw\": 140321, \"acRate\": \"67.9%\"}",
+  "metaData": "{\n  \"name\": \"minTimeToReach\",\n  \"params\": [\n    {\n      \"name\": \"moveTime\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[0,4],[4,4]]"
+}

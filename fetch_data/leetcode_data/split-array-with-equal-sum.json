@@ -1,0 +1,89 @@
+{
+  "questionId": "548",
+  "questionFrontendId": "548",
+  "title": "Split Array with Equal Sum",
+  "titleSlug": "split-array-with-equal-sum",
+  "content": "<p>Given an integer array <code>nums</code> of length <code>n</code>, return <code>true</code> if there is a triplet <code>(i, j, k)</code> which satisfies the following conditions:</p>\n\n<ul>\n\t<li><code>0 &lt; i, i + 1 &lt; j, j + 1 &lt; k &lt; n - 1</code></li>\n\t<li>The sum of subarrays <code>(0, i - 1)</code>, <code>(i + 1, j - 1)</code>, <code>(j + 1, k - 1)</code> and <code>(k + 1, n - 1)</code> is equal.</li>\n</ul>\nA subarray <code>(l, r)</code> represents a slice of the original array starting from the element indexed <code>l</code> to the element indexed <code>r</code>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,1,2,1,2,1]\n<strong>Output:</strong> true\n<strong>Explanation:</strong>\ni = 1, j = 3, k = 5. \nsum(0, i - 1) = sum(0, 0) = 1\nsum(i + 1, j - 1) = sum(2, 2) = 1\nsum(j + 1, k - 1) = sum(4, 4) = 1\nsum(k + 1, n - 1) = sum(6, 6) = 1\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,1,2,1,2,1,2]\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n ==&nbsp;nums.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 2000</code></li>\n\t<li><code>-10<sup>6</sup> &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool splitArray(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean splitArray(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def splitArray(self, nums: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def splitArray(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar splitArray = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function splitArray(nums: number[]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool SplitArray(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool splitArray(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func splitArray(nums []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun splitArray(nums: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func splitArray(_ nums: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn split_array(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Boolean}\ndef split_array(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Boolean\n     */\n    function splitArray($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool splitArray(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def splitArray(nums: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec split_array(nums :: [integer]) :: boolean\n  def split_array(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec split_array(Nums :: [integer()]) -> boolean().\nsplit_array(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (split-array nums)\n  (-> (listof exact-integer?) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.9K\", \"totalSubmission\": \"49.8K\", \"totalAcceptedRaw\": 24928, \"totalSubmissionRaw\": 49773, \"acRate\": \"50.1%\"}",
+  "metaData": "{\r\n  \"name\": \"splitArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "[1,2,1,2,1,2,1]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "2209",
+  "questionFrontendId": "2067",
+  "title": "Number of Equal Count Substrings",
+  "titleSlug": "number-of-equal-count-substrings",
+  "content": "<p>You are given a <strong>0-indexed</strong> string <code>s</code> consisting of only lowercase English letters, and an integer <code>count</code>. A <strong>substring</strong> of <code>s</code> is said to be an <strong>equal count substring</strong> if, for each <strong>unique</strong> letter in the substring, it appears exactly <code>count</code> times in the substring.</p>\n\n<p>Return <em>the number of <strong>equal count substrings</strong> in </em><code>s</code>.</p>\n\n<p>A <strong>substring</strong> is a contiguous non-empty sequence of characters within a string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaabcbbcc&quot;, count = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong>\nThe substring that starts at index 0 and ends at index 2 is &quot;aaa&quot;.\nThe letter &#39;a&#39; in the substring appears exactly 3 times.\nThe substring that starts at index 3 and ends at index 8 is &quot;bcbbcc&quot;.\nThe letters &#39;b&#39; and &#39;c&#39; in the substring appear exactly 3 times.\nThe substring that starts at index 0 and ends at index 8 is &quot;aaabcbbcc&quot;.\nThe letters &#39;a&#39;, &#39;b&#39;, and &#39;c&#39; in the substring appear exactly 3 times.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcd&quot;, count = 2\n<strong>Output:</strong> 0\n<strong>Explanation:</strong>\nThe number of times each letter appears in s is less than count.\nTherefore, no substrings in s are equal count substrings, so return 0.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;a&quot;, count = 5\n<strong>Output:</strong> 0\n<strong>Explanation:</strong>\nThe number of times each letter appears in s is less than count.\nTherefore, no substrings in s are equal count substrings, so return 0</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= count &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists only of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int equalCountSubstrings(string s, int count) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int equalCountSubstrings(String s, int count) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def equalCountSubstrings(self, s: str, count: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def equalCountSubstrings(self, s, count):\n        \"\"\"\n        :type s: str\n        :type count: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} count\n * @return {number}\n */\nvar equalCountSubstrings = function(s, count) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function equalCountSubstrings(s: string, count: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int EqualCountSubstrings(string s, int count) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int equalCountSubstrings(char* s, int count) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func equalCountSubstrings(s string, count int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun equalCountSubstrings(s: String, count: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func equalCountSubstrings(_ s: String, _ count: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn equal_count_substrings(s: String, count: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} count\n# @return {Integer}\ndef equal_count_substrings(s, count)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $count\n     * @return Integer\n     */\n    function equalCountSubstrings($s, $count) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int equalCountSubstrings(String s, int count) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def equalCountSubstrings(s: String, count: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec equal_count_substrings(s :: String.t, count :: integer) :: integer\n  def equal_count_substrings(s, count) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec equal_count_substrings(S :: unicode:unicode_binary(), Count :: integer()) -> integer().\nequal_count_substrings(S, Count) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (equal-count-substrings s count)\n  (-> string? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.9K\", \"totalSubmission\": \"8.7K\", \"totalAcceptedRaw\": 3946, \"totalSubmissionRaw\": 8734, \"acRate\": \"45.2%\"}",
+  "metaData": "{\n  \"name\": \"equalCountSubstrings\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"count\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"aaabcbbcc\"\n3"
+}

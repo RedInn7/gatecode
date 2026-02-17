@@ -1,0 +1,89 @@
+{
+  "questionId": "1076",
+  "questionFrontendId": "1087",
+  "title": "Brace Expansion",
+  "titleSlug": "brace-expansion",
+  "content": "<p>You are given a string <code>s</code> representing a list of words. Each letter in the word has one or more options.</p>\n\n<ul>\n\t<li>If there is one option, the letter is represented as is.</li>\n\t<li>If there is more than one option, then curly braces delimit the options. For example, <code>&quot;{a,b,c}&quot;</code> represents options <code>[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</code>.</li>\n</ul>\n\n<p>For example, if <code>s = &quot;a{b,c}&quot;</code>, the first character is always <code>&#39;a&#39;</code>, but the second character can be <code>&#39;b&#39;</code> or <code>&#39;c&#39;</code>. The original list is <code>[&quot;ab&quot;, &quot;ac&quot;]</code>.</p>\n\n<p>Return all words that can be formed in this manner, <strong>sorted</strong> in lexicographical order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"{a,b}c{d,e}f\"\n<strong>Output:</strong> [\"acdf\",\"acef\",\"bcdf\",\"bcef\"]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abcd\"\n<strong>Output:</strong> [\"abcd\"]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 50</code></li>\n\t<li><code>s</code> consists of curly brackets <code>&#39;{}&#39;</code>, commas&nbsp;<code>&#39;,&#39;</code>, and lowercase English letters.</li>\n\t<li><code>s</code> is guaranteed to be a valid input.</li>\n\t<li>There are no nested curly brackets.</li>\n\t<li>All characters inside a pair of consecutive opening and ending curly brackets are different.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> expand(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String[] expand(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def expand(self, s: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def expand(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar expand = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function expand(s: string): string[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string[] Expand(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** expand(char* s, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func expand(s string) []string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun expand(s: String): Array<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func expand(_ s: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn expand(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String[]}\ndef expand(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function expand($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<String> expand(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def expand(s: String): Array[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec expand(s :: String.t) :: [String.t]\n  def expand(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec expand(S :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\nexpand(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (expand s)\n  (-> string? (listof string?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"64.4K\", \"totalSubmission\": \"96.5K\", \"totalAcceptedRaw\": 64441, \"totalSubmissionRaw\": 96531, \"acRate\": \"66.8%\"}",
+  "metaData": "{\n  \"name\": \"expand\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string[]\"\n  }\n}",
+  "sampleTestCase": "\"{a,b}c{d,e}f\""
+}

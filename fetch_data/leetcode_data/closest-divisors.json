@@ -1,0 +1,89 @@
+{
+  "questionId": "1276",
+  "questionFrontendId": "1362",
+  "title": "Closest Divisors",
+  "titleSlug": "closest-divisors",
+  "content": "<p>Given an integer <code>num</code>, find the closest two integers in absolute difference whose product equals&nbsp;<code>num + 1</code>&nbsp;or <code>num + 2</code>.</p>\n\n<p>Return the two integers in any order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 8\n<strong>Output:</strong> [3,3]\n<strong>Explanation:</strong> For num + 1 = 9, the closest divisors are 3 &amp; 3, for num + 2 = 10, the closest divisors are 2 &amp; 5, hence 3 &amp; 3 is chosen.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 123\n<strong>Output:</strong> [5,25]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 999\n<strong>Output:</strong> [40,25]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num &lt;= 10^9</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> closestDivisors(int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] closestDivisors(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def closestDivisors(self, num: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def closestDivisors(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {number[]}\n */\nvar closestDivisors = function(num) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function closestDivisors(num: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] ClosestDivisors(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* closestDivisors(int num, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func closestDivisors(num int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun closestDivisors(num: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func closestDivisors(_ num: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn closest_divisors(num: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {Integer[]}\ndef closest_divisors(num)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Integer[]\n     */\n    function closestDivisors($num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> closestDivisors(int num) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def closestDivisors(num: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec closest_divisors(num :: integer) :: [integer]\n  def closest_divisors(num) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec closest_divisors(Num :: integer()) -> [integer()].\nclosest_divisors(Num) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (closest-divisors num)\n  (-> exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"28.4K\", \"totalSubmission\": \"45.8K\", \"totalAcceptedRaw\": 28396, \"totalSubmissionRaw\": 45796, \"acRate\": \"62.0%\"}",
+  "metaData": "{\n  \"name\": \"closestDivisors\",\n  \"params\": [\n    {\n      \"name\": \"num\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  },\n  \"manual\": false\n}",
+  "sampleTestCase": "8"
+}

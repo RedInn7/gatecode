@@ -1,0 +1,89 @@
+{
+  "questionId": "28",
+  "questionFrontendId": "28",
+  "title": "Find the Index of the First Occurrence in a String",
+  "titleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
+  "content": "<p>Given two strings <code>needle</code> and <code>haystack</code>, return the index of the first occurrence of <code>needle</code> in <code>haystack</code>, or <code>-1</code> if <code>needle</code> is not part of <code>haystack</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> haystack = &quot;sadbutsad&quot;, needle = &quot;sad&quot;\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> &quot;sad&quot; occurs at index 0 and 6.\nThe first occurrence is at index 0, so we return 0.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> haystack = &quot;leetcode&quot;, needle = &quot;leeto&quot;\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> &quot;leeto&quot; did not occur in &quot;leetcode&quot;, so we return -1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= haystack.length, needle.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>haystack</code> and <code>needle</code> consist of only lowercase English characters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int strStr(string haystack, string needle) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int strStr(String haystack, String needle) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def strStr(self, haystack: str, needle: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def strStr(self, haystack, needle):\n        \"\"\"\n        :type haystack: str\n        :type needle: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} haystack\n * @param {string} needle\n * @return {number}\n */\nvar strStr = function(haystack, needle) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function strStr(haystack: string, needle: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int StrStr(string haystack, string needle) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int strStr(char* haystack, char* needle) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func strStr(haystack string, needle string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun strStr(haystack: String, needle: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func strStr(_ haystack: String, _ needle: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn str_str(haystack: String, needle: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} haystack\n# @param {String} needle\n# @return {Integer}\ndef str_str(haystack, needle)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $haystack\n     * @param String $needle\n     * @return Integer\n     */\n    function strStr($haystack, $needle) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int strStr(String haystack, String needle) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def strStr(haystack: String, needle: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec str_str(haystack :: String.t, needle :: String.t) :: integer\n  def str_str(haystack, needle) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec str_str(Haystack :: unicode:unicode_binary(), Needle :: unicode:unicode_binary()) -> integer().\nstr_str(Haystack, Needle) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (str-str haystack needle)\n  (-> string? string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.9M\", \"totalSubmission\": \"8.4M\", \"totalAcceptedRaw\": 3894801, \"totalSubmissionRaw\": 8429818, \"acRate\": \"46.2%\"}",
+  "metaData": "{ \r\n  \"name\": \"strStr\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"haystack\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"needle\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "\"sadbutsad\"\n\"sad\""
+}

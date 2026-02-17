@@ -1,0 +1,89 @@
+{
+  "questionId": "499",
+  "questionFrontendId": "499",
+  "title": "The Maze III",
+  "titleSlug": "the-maze-iii",
+  "content": "<p>There is a ball in a <code>maze</code> with empty spaces (represented as <code>0</code>) and walls (represented as <code>1</code>). The ball can go through the empty spaces by rolling <strong>up, down, left or right</strong>, but it won&#39;t stop rolling until hitting a wall. When the ball stops, it could choose the next direction (must be different from last chosen direction). There is also a hole in this maze. The ball will drop into the hole if it rolls onto the hole.</p>\n\n<p>Given the <code>m x n</code> <code>maze</code>, the ball&#39;s position <code>ball</code> and the hole&#39;s position <code>hole</code>, where <code>ball = [ball<sub>row</sub>, ball<sub>col</sub>]</code> and <code>hole = [hole<sub>row</sub>, hole<sub>col</sub>]</code>, return <em>a string </em><code>instructions</code><em> of all the instructions that the ball should follow to drop in the hole with the <strong>shortest distance</strong> possible</em>. If there are multiple valid instructions, return the <strong>lexicographically minimum</strong> one. If the ball can&#39;t drop in the hole, return <code>&quot;impossible&quot;</code>.</p>\n\n<p>If there is a way for the ball to drop in the hole, the answer <code>instructions</code> should contain the characters <code>&#39;u&#39;</code> (i.e., up), <code>&#39;d&#39;</code> (i.e., down), <code>&#39;l&#39;</code> (i.e., left), and <code>&#39;r&#39;</code> (i.e., right).</p>\n\n<p>The <strong>distance</strong> is the number of <strong>empty spaces</strong> traveled by the ball from the start position (excluded) to the destination (included).</p>\n\n<p>You may assume that <strong>the borders of the maze are all walls</strong> (see examples).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze3-1-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [0,1]\n<strong>Output:</strong> &quot;lul&quot;\n<strong>Explanation:</strong> There are two shortest ways for the ball to drop into the hole.\nThe first way is left -&gt; up -&gt; left, represented by &quot;lul&quot;.\nThe second way is up -&gt; left, represented by &#39;ul&#39;.\nBoth ways have shortest distance 6, but the first way is lexicographically smaller because &#39;l&#39; &lt; &#39;u&#39;. So the output is &quot;lul&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze3-2-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [3,0]\n<strong>Output:</strong> &quot;impossible&quot;\n<strong>Explanation:</strong> The ball cannot reach the hole.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0,0,0],[0,0,1,0,0,1,0],[0,0,0,0,1,0,0],[0,0,0,0,0,0,1]], ball = [0,4], hole = [3,5]\n<strong>Output:</strong> &quot;dldr&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == maze.length</code></li>\n\t<li><code>n == maze[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>maze[i][j]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li><code>ball.length == 2</code></li>\n\t<li><code>hole.length == 2</code></li>\n\t<li><code>0 &lt;= ball<sub>row</sub>, hole<sub>row</sub> &lt;= m</code></li>\n\t<li><code>0 &lt;= ball<sub>col</sub>, hole<sub>col</sub> &lt;= n</code></li>\n\t<li>Both the ball and the hole exist in an empty space, and they will not be in the same position initially.</li>\n\t<li>The maze contains <strong>at least 2 empty spaces</strong>.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string findShortestWay(vector<vector<int>>& maze, vector<int>& ball, vector<int>& hole) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String findShortestWay(int[][] maze, int[] ball, int[] hole) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findShortestWay(self, maze: List[List[int]], ball: List[int], hole: List[int]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findShortestWay(self, maze, ball, hole):\n        \"\"\"\n        :type maze: List[List[int]]\n        :type ball: List[int]\n        :type hole: List[int]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} maze\n * @param {number[]} ball\n * @param {number[]} hole\n * @return {string}\n */\nvar findShortestWay = function(maze, ball, hole) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findShortestWay(maze: number[][], ball: number[], hole: number[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FindShortestWay(int[][] maze, int[] ball, int[] hole) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* findShortestWay(int** maze, int mazeSize, int* mazeColSize, int* ball, int ballSize, int* hole, int holeSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findShortestWay(maze [][]int, ball []int, hole []int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findShortestWay(maze: Array<IntArray>, ball: IntArray, hole: IntArray): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findShortestWay(_ maze: [[Int]], _ ball: [Int], _ hole: [Int]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_shortest_way(maze: Vec<Vec<i32>>, ball: Vec<i32>, hole: Vec<i32>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} maze\n# @param {Integer[]} ball\n# @param {Integer[]} hole\n# @return {String}\ndef find_shortest_way(maze, ball, hole)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $maze\n     * @param Integer[] $ball\n     * @param Integer[] $hole\n     * @return String\n     */\n    function findShortestWay($maze, $ball, $hole) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String findShortestWay(List<List<int>> maze, List<int> ball, List<int> hole) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findShortestWay(maze: Array[Array[Int]], ball: Array[Int], hole: Array[Int]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_shortest_way(maze :: [[integer]], ball :: [integer], hole :: [integer]) :: String.t\n  def find_shortest_way(maze, ball, hole) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_shortest_way(Maze :: [[integer()]], Ball :: [integer()], Hole :: [integer()]) -> unicode:unicode_binary().\nfind_shortest_way(Maze, Ball, Hole) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-shortest-way maze ball hole)\n  (-> (listof (listof exact-integer?)) (listof exact-integer?) (listof exact-integer?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"40K\", \"totalSubmission\": \"76.5K\", \"totalAcceptedRaw\": 39965, \"totalSubmissionRaw\": 76540, \"acRate\": \"52.2%\"}",
+  "metaData": "{\r\n  \"name\": \"findShortestWay\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"maze\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"ball\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"hole\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "[[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]]\n[4,3]\n[0,1]"
+}

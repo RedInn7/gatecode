@@ -1,0 +1,89 @@
+{
+  "questionId": "1090",
+  "questionFrontendId": "1134",
+  "title": "Armstrong Number",
+  "titleSlug": "armstrong-number",
+  "content": "<p>Given an integer <code>n</code>, return <code>true</code> <em>if and only if it is an <strong>Armstrong number</strong></em>.</p>\n\n<p>The <code>k</code>-digit number <code>n</code> is an Armstrong number if and only if the <code>k<sup>th</sup></code> power of each digit sums to <code>n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 153\n<strong>Output:</strong> true\n<strong>Explanation:</strong> 153 is a 3-digit number, and 153 = 1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup>.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 123\n<strong>Output:</strong> false\n<strong>Explanation:</strong> 123 is a 3-digit number, and 123 != 1<sup>3</sup> + 2<sup>3</sup> + 3<sup>3</sup> = 36.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isArmstrong(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isArmstrong(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isArmstrong(self, n: int) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isArmstrong(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar isArmstrong = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function isArmstrong(n: number): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsArmstrong(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool isArmstrong(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isArmstrong(n int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isArmstrong(n: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isArmstrong(_ n: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_armstrong(n: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Boolean}\ndef is_armstrong(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Boolean\n     */\n    function isArmstrong($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool isArmstrong(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isArmstrong(n: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec is_armstrong(n :: integer) :: boolean\n  def is_armstrong(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec is_armstrong(N :: integer()) -> boolean().\nis_armstrong(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (is-armstrong n)\n  (-> exact-integer? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"42.4K\", \"totalSubmission\": \"54.5K\", \"totalAcceptedRaw\": 42425, \"totalSubmissionRaw\": 54508, \"acRate\": \"77.8%\"}",
+  "metaData": "{\n  \"name\": \"isArmstrong\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "153"
+}

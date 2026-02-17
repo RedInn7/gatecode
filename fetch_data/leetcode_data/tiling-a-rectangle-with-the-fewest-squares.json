@@ -1,0 +1,89 @@
+{
+  "questionId": "1361",
+  "questionFrontendId": "1240",
+  "title": "Tiling a Rectangle with the Fewest Squares",
+  "titleSlug": "tiling-a-rectangle-with-the-fewest-squares",
+  "content": "<p>Given a rectangle of size <code>n</code> x <code>m</code>, return <em>the minimum number of integer-sided squares that tile the rectangle</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/17/sample_11_1592.png\" style=\"width: 154px; height: 106px;\" /></p>\n\n<pre>\n<strong>Input:</strong> n = 2, m = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> <code>3</code> squares are necessary to cover the rectangle.\n<code>2</code> (squares of <code>1x1</code>)\n<code>1</code> (square of <code>2x2</code>)</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/17/sample_22_1592.png\" style=\"width: 224px; height: 126px;\" /></p>\n\n<pre>\n<strong>Input:</strong> n = 5, m = 8\n<strong>Output:</strong> 5\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/17/sample_33_1592.png\" style=\"width: 224px; height: 189px;\" /></p>\n\n<pre>\n<strong>Input:</strong> n = 11, m = 13\n<strong>Output:</strong> 6\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n, m &lt;= 13</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int tilingRectangle(int n, int m) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int tilingRectangle(int n, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def tilingRectangle(self, n: int, m: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def tilingRectangle(self, n, m):\n        \"\"\"\n        :type n: int\n        :type m: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} m\n * @return {number}\n */\nvar tilingRectangle = function(n, m) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function tilingRectangle(n: number, m: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int TilingRectangle(int n, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int tilingRectangle(int n, int m) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func tilingRectangle(n int, m int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun tilingRectangle(n: Int, m: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func tilingRectangle(_ n: Int, _ m: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn tiling_rectangle(n: i32, m: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} m\n# @return {Integer}\ndef tiling_rectangle(n, m)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $m\n     * @return Integer\n     */\n    function tilingRectangle($n, $m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int tilingRectangle(int n, int m) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def tilingRectangle(n: Int, m: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec tiling_rectangle(n :: integer, m :: integer) :: integer\n  def tiling_rectangle(n, m) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec tiling_rectangle(N :: integer(), M :: integer()) -> integer().\ntiling_rectangle(N, M) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (tiling-rectangle n m)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"27.2K\", \"totalSubmission\": \"49.6K\", \"totalAcceptedRaw\": 27200, \"totalSubmissionRaw\": 49625, \"acRate\": \"54.8%\"}",
+  "metaData": "{\n  \"name\": \"tilingRectangle\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"m\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "2\n3"
+}

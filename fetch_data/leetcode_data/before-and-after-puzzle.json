@@ -1,0 +1,89 @@
+{
+  "questionId": "1132",
+  "questionFrontendId": "1181",
+  "title": "Before and After Puzzle",
+  "titleSlug": "before-and-after-puzzle",
+  "content": "<p>Given a list of <code>phrases</code>, generate a list of&nbsp;Before and After puzzles.</p>\n\n<p>A <em>phrase</em> is a string that consists of lowercase English letters and spaces only. No space appears in the start or the end of a phrase. There are&nbsp;no consecutive spaces&nbsp;in a phrase.</p>\n\n<p><em>Before and After&nbsp;puzzles</em> are phrases that are formed by merging&nbsp;two phrases where the <strong>last&nbsp;word of the first&nbsp;phrase</strong> is the same as the <strong>first word of the second phrase</strong>. Note that only the <em>last word of the first phrase</em> and the <em>first word of the second phrase</em> are merged in this process.</p>\n\n<p>Return the&nbsp;Before and After&nbsp;puzzles that can be formed by every two phrases&nbsp;<code>phrases[i]</code>&nbsp;and&nbsp;<code>phrases[j]</code>&nbsp;where&nbsp;<code>i != j</code>. Note that the order of matching two phrases matters, we want to consider both orders.</p>\n\n<p>You should return a list of&nbsp;<strong>distinct</strong>&nbsp;strings <strong>sorted&nbsp;lexicographically</strong>, after removing all <em>duplicate</em> phrases in the generated Before and After puzzles.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">phrases = [&quot;writing code&quot;,&quot;code rocks&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;writing code rocks&quot;]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">phrases = [&quot;mission statement&quot;,&quot;a quick bite to eat&quot;,&quot;a chip off the old block&quot;,&quot;chocolate bar&quot;,&quot;mission impossible&quot;,&quot;a man on a mission&quot;,&quot;block party&quot;,&quot;eat my words&quot;,&quot;bar of soap&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;a chip off the old block party&quot;,&quot;a man on a mission impossible&quot;,&quot;a man on a mission statement&quot;,&quot;a quick bite to eat my words&quot;,&quot;chocolate bar of soap&quot;]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">phrases = [&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;a&quot;]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">phrases = [&quot;ab ba&quot;,&quot;ba ab&quot;,&quot;ab ba&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;ab ba ab&quot;,&quot;ba ab ba&quot;]</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= phrases.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= phrases[i].length &lt;= 100</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> beforeAndAfterPuzzles(vector<string>& phrases) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> beforeAndAfterPuzzles(String[] phrases) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def beforeAndAfterPuzzles(self, phrases: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def beforeAndAfterPuzzles(self, phrases):\n        \"\"\"\n        :type phrases: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} phrases\n * @return {string[]}\n */\nvar beforeAndAfterPuzzles = function(phrases) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function beforeAndAfterPuzzles(phrases: string[]): string[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> BeforeAndAfterPuzzles(string[] phrases) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** beforeAndAfterPuzzles(char** phrases, int phrasesSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func beforeAndAfterPuzzles(phrases []string) []string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun beforeAndAfterPuzzles(phrases: Array<String>): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func beforeAndAfterPuzzles(_ phrases: [String]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn before_and_after_puzzles(phrases: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} phrases\n# @return {String[]}\ndef before_and_after_puzzles(phrases)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $phrases\n     * @return String[]\n     */\n    function beforeAndAfterPuzzles($phrases) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<String> beforeAndAfterPuzzles(List<String> phrases) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def beforeAndAfterPuzzles(phrases: Array[String]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec before_and_after_puzzles(phrases :: [String.t]) :: [String.t]\n  def before_and_after_puzzles(phrases) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec before_and_after_puzzles(Phrases :: [unicode:unicode_binary()]) -> [unicode:unicode_binary()].\nbefore_and_after_puzzles(Phrases) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (before-and-after-puzzles phrases)\n  (-> (listof string?) (listof string?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.1K\", \"totalSubmission\": \"25.2K\", \"totalAcceptedRaw\": 13055, \"totalSubmissionRaw\": 25197, \"acRate\": \"51.8%\"}",
+  "metaData": "{\n  \"name\": \"beforeAndAfterPuzzles\",\n  \"params\": [\n    {\n      \"name\": \"phrases\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\"\n  }\n}",
+  "sampleTestCase": "[\"writing code\",\"code rocks\"]"
+}

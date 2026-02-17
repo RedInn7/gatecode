@@ -1,0 +1,33 @@
+{
+  "questionId": "615",
+  "questionFrontendId": "615",
+  "title": "Average Salary: Departments VS Company",
+  "titleSlug": "average-salary-departments-vs-company",
+  "content": "<p>Table: <code>Salary</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| id          | int  |\n| employee_id | int  |\n| amount      | int  |\n| pay_date    | date |\n+-------------+------+\nIn SQL, id is the primary key column for this table.\nEach row of this table indicates the salary of an employee in one month.\nemployee_id is a foreign key (reference column) from the Employee table.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Employee</code></p>\n\n<pre>\n+---------------+------+\n| Column Name   | Type |\n+---------------+------+\n| employee_id   | int  |\n| department_id | int  |\n+---------------+------+\nIn SQL, employee_id is the primary key column for this table.\nEach row of this table indicates the department of an employee.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Find the comparison result <strong>(higher/lower/same)</strong> of the average salary of employees in a department to the company&#39;s average salary.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The&nbsp;result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nSalary table:\n+----+-------------+--------+------------+\n| id | employee_id | amount | pay_date   |\n+----+-------------+--------+------------+\n| 1  | 1           | 9000   | 2017/03/31 |\n| 2  | 2           | 6000   | 2017/03/31 |\n| 3  | 3           | 10000  | 2017/03/31 |\n| 4  | 1           | 7000   | 2017/02/28 |\n| 5  | 2           | 6000   | 2017/02/28 |\n| 6  | 3           | 8000   | 2017/02/28 |\n+----+-------------+--------+------------+\nEmployee table:\n+-------------+---------------+\n| employee_id | department_id |\n+-------------+---------------+\n| 1           | 1             |\n| 2           | 2             |\n| 3           | 2             |\n+-------------+---------------+\n<strong>Output:</strong> \n+-----------+---------------+------------+\n| pay_month | department_id | comparison |\n+-----------+---------------+------------+\n| 2017-02   | 1             | same       |\n| 2017-03   | 1             | higher     |\n| 2017-02   | 2             | same       |\n| 2017-03   | 2             | lower      |\n+-----------+---------------+------------+\n<strong>Explanation:</strong> \nIn March, the company&#39;s average salary is (9000+6000+10000)/3 = 8333.33...\nThe average salary for department &#39;1&#39; is 9000, which is the salary of employee_id &#39;1&#39; since there is only one employee in this department. So the comparison result is &#39;higher&#39; since 9000 &gt; 8333.33 obviously.\nThe average salary of department &#39;2&#39; is (6000 + 10000)/2 = 8000, which is the average of employee_id &#39;2&#39; and &#39;3&#39;. So the comparison result is &#39;lower&#39; since 8000 &lt; 8333.33.\n\nWith he same formula for the average salary comparison in February, the result is &#39;same&#39; since both the department &#39;1&#39; and &#39;2&#39; have the same average salary with the company, which is 7000.\n</pre>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef average_salary(salary: pd.DataFrame, employee: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43.3K\", \"totalSubmission\": \"76.3K\", \"totalAcceptedRaw\": 43295, \"totalSubmissionRaw\": 76315, \"acRate\": \"56.7%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Salary (id int, employee_id int, amount int, pay_date date)\", \"Create table If Not Exists Employee (employee_id int, department_id int)\"], \"mssql\": [\"Create table Salary (id int, employee_id int, amount int, pay_date date)\", \"Create table Employee (employee_id int, department_id int)\"], \"oraclesql\": [\"Create table Salary (id int, employee_id int, amount int, pay_date date)\", \"Create table Employee (employee_id int, department_id int)\", \"alter SESSION set NLS_DATE_FORMAT = 'YYYY/MM/DD'\"], \"database\": true, \"name\": \"average_salary\", \"pythondata\": [\"Salary = pd.DataFrame([], columns=['id', 'employee_id', 'amount', 'pay_date']).astype({'id':'Int64', 'employee_id':'Int64', 'amount':'Int64', 'pay_date':'datetime64[ns]'})\", \"Employee = pd.DataFrame([], columns=['employee_id', 'department_id']).astype({'employee_id':'Int64', 'department_id':'Int64'})\"], \"postgresql\": [\"\\nCreate table If Not Exists Salary (id int, employee_id int, amount int, pay_date date)\\n\", \"Create table If Not Exists Employee (employee_id int, department_id int)\"], \"database_schema\": {\"Salary\": {\"id\": \"INT\", \"employee_id\": \"INT\", \"amount\": \"INT\", \"pay_date\": \"DATE\"}, \"Employee\": {\"employee_id\": \"INT\", \"department_id\": \"INT\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Salary\":[\"id\",\"employee_id\",\"amount\",\"pay_date\"],\"Employee\":[\"employee_id\",\"department_id\"]},\"rows\":{\"Salary\":[[1,1,9000,\"2017/03/31\"],[2,2,6000,\"2017/03/31\"],[3,3,10000,\"2017/03/31\"],[4,1,7000,\"2017/02/28\"],[5,2,6000,\"2017/02/28\"],[6,3,8000,\"2017/02/28\"]],\"Employee\":[[1,1],[2,2],[3,2]]}}"
+}

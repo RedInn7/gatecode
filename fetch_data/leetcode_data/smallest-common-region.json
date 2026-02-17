@@ -1,0 +1,89 @@
+{
+  "questionId": "1190",
+  "questionFrontendId": "1257",
+  "title": "Smallest Common Region",
+  "titleSlug": "smallest-common-region",
+  "content": "<p>You are given some lists of <code>regions</code> where the first region of each list <strong>directly</strong> contains all other regions in that list.</p>\n\n<p>If a region <code>x</code> contains a region <code>y</code> <em>directly</em>, and region <code>y</code> contains region <code>z</code> <em>directly</em>, then region <code>x</code> is said to contain region <code>z</code> <strong>indirectly</strong>. Note that region <code>x</code> also <strong>indirectly</strong> contains all regions <strong>indirectly</strong> containd in <code>y</code>.</p>\n\n<p>Naturally, if a region <code>x</code> contains (either <em>directly</em> or <em>indirectly</em>) another region <code>y</code>, then <code>x</code> is bigger than or equal to <code>y</code> in size. Also, by definition, a region <code>x</code> contains itself.</p>\n\n<p>Given two regions: <code>region1</code> and <code>region2</code>, return <em>the smallest region that contains both of them</em>.</p>\n\n<p>It is guaranteed the smallest region exists.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:\n</strong>regions = [[&quot;Earth&quot;,&quot;North America&quot;,&quot;South America&quot;],\n[&quot;North America&quot;,&quot;United States&quot;,&quot;Canada&quot;],\n[&quot;United States&quot;,&quot;New York&quot;,&quot;Boston&quot;],\n[&quot;Canada&quot;,&quot;Ontario&quot;,&quot;Quebec&quot;],\n[&quot;South America&quot;,&quot;Brazil&quot;]],\nregion1 = &quot;Quebec&quot;,\nregion2 = &quot;New York&quot;\n<strong>Output:</strong> &quot;North America&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> regions = [[&quot;Earth&quot;, &quot;North America&quot;, &quot;South America&quot;],[&quot;North America&quot;, &quot;United States&quot;, &quot;Canada&quot;],[&quot;United States&quot;, &quot;New York&quot;, &quot;Boston&quot;],[&quot;Canada&quot;, &quot;Ontario&quot;, &quot;Quebec&quot;],[&quot;South America&quot;, &quot;Brazil&quot;]], region1 = &quot;Canada&quot;, region2 = &quot;South America&quot;\n<strong>Output:</strong> &quot;Earth&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= regions.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>2 &lt;= regions[i].length &lt;= 20</code></li>\n\t<li><code>1 &lt;= regions[i][j].length, region1.length, region2.length &lt;= 20</code></li>\n\t<li><code>region1 != region2</code></li>\n\t<li><code>regions[i][j]</code>, <code>region1</code>, and <code>region2</code> consist of English letters.</li>\n\t<li>The input is generated such that there exists a region which contains all the other regions, either directly or indirectly.</li>\n\t<li>A region cannot be directly contained in more than one region.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string findSmallestRegion(vector<vector<string>>& regions, string region1, string region2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String findSmallestRegion(List<List<String>> regions, String region1, String region2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findSmallestRegion(self, regions: List[List[str]], region1: str, region2: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findSmallestRegion(self, regions, region1, region2):\n        \"\"\"\n        :type regions: List[List[str]]\n        :type region1: str\n        :type region2: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[][]} regions\n * @param {string} region1\n * @param {string} region2\n * @return {string}\n */\nvar findSmallestRegion = function(regions, region1, region2) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findSmallestRegion(regions: string[][], region1: string, region2: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FindSmallestRegion(IList<IList<string>> regions, string region1, string region2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* findSmallestRegion(char*** regions, int regionsSize, int* regionsColSize, char* region1, char* region2) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findSmallestRegion(regions [][]string, region1 string, region2 string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findSmallestRegion(regions: List<List<String>>, region1: String, region2: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findSmallestRegion(_ regions: [[String]], _ region1: String, _ region2: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_smallest_region(regions: Vec<Vec<String>>, region1: String, region2: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[][]} regions\n# @param {String} region1\n# @param {String} region2\n# @return {String}\ndef find_smallest_region(regions, region1, region2)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $regions\n     * @param String $region1\n     * @param String $region2\n     * @return String\n     */\n    function findSmallestRegion($regions, $region1, $region2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String findSmallestRegion(List<List<String>> regions, String region1, String region2) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findSmallestRegion(regions: List[List[String]], region1: String, region2: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_smallest_region(regions :: [[String.t]], region1 :: String.t, region2 :: String.t) :: String.t\n  def find_smallest_region(regions, region1, region2) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_smallest_region(Regions :: [[unicode:unicode_binary()]], Region1 :: unicode:unicode_binary(), Region2 :: unicode:unicode_binary()) -> unicode:unicode_binary().\nfind_smallest_region(Regions, Region1, Region2) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-smallest-region regions region1 region2)\n  (-> (listof (listof string?)) string? string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"37.2K\", \"totalSubmission\": \"54.5K\", \"totalAcceptedRaw\": 37205, \"totalSubmissionRaw\": 54509, \"acRate\": \"68.3%\"}",
+  "metaData": "{\n  \"name\": \"findSmallestRegion\",\n  \"params\": [\n    {\n      \"name\": \"regions\",\n      \"type\": \"list<list<string>>\"\n    },\n    {\n      \"name\": \"region1\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"region2\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "[[\"Earth\",\"North America\",\"South America\"],[\"North America\",\"United States\",\"Canada\"],[\"United States\",\"New York\",\"Boston\"],[\"Canada\",\"Ontario\",\"Quebec\"],[\"South America\",\"Brazil\"]]\n\"Quebec\"\n\"New York\""
+}

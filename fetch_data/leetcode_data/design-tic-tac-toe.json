@@ -1,0 +1,85 @@
+{
+  "questionId": "348",
+  "questionFrontendId": "348",
+  "title": "Design Tic-Tac-Toe",
+  "titleSlug": "design-tic-tac-toe",
+  "content": "<p>Assume the following rules are for the tic-tac-toe game on an <code>n x n</code> board between two players:</p>\n\n<ol>\n\t<li>A move is guaranteed to be valid and is placed on an empty block.</li>\n\t<li>Once a winning condition is reached, no more moves are allowed.</li>\n\t<li>A player who succeeds in placing <code>n</code> of their marks in a horizontal, vertical, or diagonal row wins the game.</li>\n</ol>\n\n<p>Implement the <code>TicTacToe</code> class:</p>\n\n<ul>\n\t<li><code>TicTacToe(int n)</code> Initializes the object the size of the board <code>n</code>.</li>\n\t<li><code>int move(int row, int col, int player)</code> Indicates that the player with id <code>player</code> plays at the cell <code>(row, col)</code> of the board. The move is guaranteed to be a valid move, and the two players alternate in making moves. Return\n\t<ul>\n\t\t<li><code>0</code> if there is <strong>no winner</strong> after the move,</li>\n\t\t<li><code>1</code> if <strong>player 1</strong> is the winner after the move, or</li>\n\t\t<li><code>2</code> if <strong>player 2</strong> is the winner after the move.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;TicTacToe&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;]\n[[3], [0, 0, 1], [0, 2, 2], [2, 2, 1], [1, 1, 2], [2, 0, 1], [1, 0, 2], [2, 1, 1]]\n<strong>Output</strong>\n[null, 0, 0, 0, 0, 0, 0, 1]\n\n<strong>Explanation</strong>\nTicTacToe ticTacToe = new TicTacToe(3);\nAssume that player 1 is &quot;X&quot; and player 2 is &quot;O&quot; in the board.\nticTacToe.move(0, 0, 1); // return 0 (no one wins)\n|X| | |\n| | | |    // Player 1 makes a move at (0, 0).\n| | | |\n\nticTacToe.move(0, 2, 2); // return 0 (no one wins)\n|X| |O|\n| | | |    // Player 2 makes a move at (0, 2).\n| | | |\n\nticTacToe.move(2, 2, 1); // return 0 (no one wins)\n|X| |O|\n| | | |    // Player 1 makes a move at (2, 2).\n| | |X|\n\nticTacToe.move(1, 1, 2); // return 0 (no one wins)\n|X| |O|\n| |O| |    // Player 2 makes a move at (1, 1).\n| | |X|\n\nticTacToe.move(2, 0, 1); // return 0 (no one wins)\n|X| |O|\n| |O| |    // Player 1 makes a move at (2, 0).\n|X| |X|\n\nticTacToe.move(1, 0, 2); // return 0 (no one wins)\n|X| |O|\n|O|O| |    // Player 2 makes a move at (1, 0).\n|X| |X|\n\nticTacToe.move(2, 1, 1); // return 1&nbsp;(player 1 wins)\n|X| |O|\n|O|O| |    // Player 1 makes a move at (2, 1).\n|X|X|X|\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 100</code></li>\n\t<li>player is <code>1</code> or <code>2</code>.</li>\n\t<li><code>0 &lt;= row, col &lt; n</code></li>\n\t<li><code>(row, col)</code> are <strong>unique</strong> for each different call to <code>move</code>.</li>\n\t<li>At most <code>n<sup>2</sup></code> calls will be made to <code>move</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow-up:</strong> Could you do better than <code>O(n<sup>2</sup>)</code> per <code>move()</code> operation?</p>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class TicTacToe {\npublic:\n    TicTacToe(int n) {\n        \n    }\n    \n    int move(int row, int col, int player) {\n        \n    }\n};\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe* obj = new TicTacToe(n);\n * int param_1 = obj->move(row,col,player);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class TicTacToe {\n\n    public TicTacToe(int n) {\n        \n    }\n    \n    public int move(int row, int col, int player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe obj = new TicTacToe(n);\n * int param_1 = obj.move(row,col,player);\n */"
+    },
+    {
+      "lang": "Python3",
+      "code": "class TicTacToe:\n\n    def __init__(self, n: int):\n        \n\n    def move(self, row: int, col: int, player: int) -> int:\n        \n\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe(n)\n# param_1 = obj.move(row,col,player)"
+    },
+    {
+      "lang": "Python",
+      "code": "class TicTacToe(object):\n\n    def __init__(self, n):\n        \"\"\"\n        :type n: int\n        \"\"\"\n        \n\n    def move(self, row, col, player):\n        \"\"\"\n        :type row: int\n        :type col: int\n        :type player: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe(n)\n# param_1 = obj.move(row,col,player)"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n */\nvar TicTacToe = function(n) {\n    \n};\n\n/** \n * @param {number} row \n * @param {number} col \n * @param {number} player\n * @return {number}\n */\nTicTacToe.prototype.move = function(row, col, player) {\n    \n};\n\n/** \n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "class TicTacToe {\n    constructor(n: number) {\n\n    }\n\n    move(row: number, col: number, player: number): number {\n\n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */"
+    },
+    {
+      "lang": "C#",
+      "code": "public class TicTacToe {\n\n    public TicTacToe(int n) {\n        \n    }\n    \n    public int Move(int row, int col, int player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe obj = new TicTacToe(n);\n * int param_1 = obj.Move(row,col,player);\n */"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} TicTacToe;\n\n\nTicTacToe* ticTacToeCreate(int n) {\n    \n}\n\nint ticTacToeMove(TicTacToe* obj, int row, int col, int player) {\n  \n}\n\nvoid ticTacToeFree(TicTacToe* obj) {\n    \n}\n\n/**\n * Your TicTacToe struct will be instantiated and called as such:\n * TicTacToe* obj = ticTacToeCreate(n);\n * int param_1 = ticTacToeMove(obj, row, col, player);\n \n * ticTacToeFree(obj);\n*/"
+    },
+    {
+      "lang": "Go",
+      "code": "type TicTacToe struct {\n    \n}\n\n\nfunc Constructor(n int) TicTacToe {\n    \n}\n\n\nfunc (this *TicTacToe) Move(row int, col int, player int) int {\n    \n}\n\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * obj := Constructor(n);\n * param_1 := obj.Move(row,col,player);\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class TicTacToe(n: Int) {\n\n    fun move(row: Int, col: Int, player: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass TicTacToe {\n\n    init(_ n: Int) {\n        \n    }\n    \n    func move(_ row: Int, _ col: Int, _ player: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * let obj = TicTacToe(n)\n * let ret_1: Int = obj.move(row, col, player)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct TicTacToe {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl TicTacToe {\n\n    fn new(n: i32) -> Self {\n        \n    }\n    \n    fn make_a_move(&self, row: i32, col: i32, player: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * let obj = TicTacToe::new(n);\n * let ret_1: i32 = obj.move(row, col, player);\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class TicTacToe\n\n=begin\n    :type n: Integer\n=end\n    def initialize(n)\n        \n    end\n\n\n=begin\n    :type row: Integer\n    :type col: Integer\n    :type player: Integer\n    :rtype: Integer\n=end\n    def move(row, col, player)\n        \n    end\n\n\nend\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe.new(n)\n# param_1 = obj.move(row, col, player)"
+    },
+    {
+      "lang": "PHP",
+      "code": "class TicTacToe {\n    /**\n     * @param Integer $n\n     */\n    function __construct($n) {\n        \n    }\n  \n    /**\n     * @param Integer $row\n     * @param Integer $col\n     * @param Integer $player\n     * @return Integer\n     */\n    function move($row, $col, $player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * $obj = TicTacToe($n);\n * $ret_1 = $obj->move($row, $col, $player);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class TicTacToe(_n: Int) {\n\n    def move(row: Int, col: Int, player: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule TicTacToe do\n  @spec init_(n :: integer) :: any\n  def init_(n) do\n\n  end\n\n  @spec move(row :: integer, col :: integer, player :: integer) :: integer\n  def move(row, col, player) do\n\n  end\nend\n\n# Your functions will be called as such:\n# TicTacToe.init_(n)\n# param_1 = TicTacToe.move(row, col, player)\n\n# TicTacToe.init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec tic_tac_toe_init_(N :: integer()) -> any().\ntic_tac_toe_init_(N) ->\n  .\n\n-spec tic_tac_toe_move(Row :: integer(), Col :: integer(), Player :: integer()) -> integer().\ntic_tac_toe_move(Row, Col, Player) ->\n  .\n\n\n%% Your functions will be called as such:\n%% tic_tac_toe_init_(N),\n%% Param_1 = tic_tac_toe_move(Row, Col, Player),\n\n%% tic_tac_toe_init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define tic-tac-toe%\n  (class object%\n    (super-new)\n\n    ; n : exact-integer?\n    (init-field\n      n)\n    \n    ; move : exact-integer? exact-integer? exact-integer? -> exact-integer?\n    (define/public (move row col player)\n\n      )))\n\n;; Your tic-tac-toe% object will be instantiated and called as such:\n;; (define obj (new tic-tac-toe% [n n]))\n;; (define param_1 (send obj move row col player))"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"311.4K\", \"totalSubmission\": \"530.2K\", \"totalAcceptedRaw\": 311425, \"totalSubmissionRaw\": 530179, \"acRate\": \"58.7%\"}",
+  "metaData": "{\n  \"classname\": \"TicTacToe\",\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"integer\",\n        \"name\": \"n\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"row\"\n        },\n        {\n          \"type\": \"integer\",\n          \"name\": \"col\"\n        },\n        {\n          \"type\": \"integer\",\n          \"name\": \"player\"\n        }\n      ],\n      \"name\": \"move\",\n      \"return\": {\n        \"type\": \"integer\"\n      }\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"systemdesign\": true,\n  \"manual\": true\n}",
+  "sampleTestCase": "[\"TicTacToe\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\"]\n[[3],[0,0,1],[0,2,2],[2,2,1],[1,1,2],[2,0,1],[1,0,2],[2,1,1]]"
+}

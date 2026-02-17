@@ -1,0 +1,89 @@
+{
+  "questionId": "4109",
+  "questionFrontendId": "3730",
+  "title": "Maximum Calories Burnt from Jumps",
+  "titleSlug": "maximum-calories-burnt-from-jumps",
+  "content": "<p>You are given an integer array <code>heights</code> of size <code>n</code>, where <code>heights[i]</code> represents the height of the <code>i<sup>th</sup></code> block in an exercise routine.</p>\n\n<p>You start on the ground (height 0) and <strong>must</strong> jump onto each block <strong>exactly once</strong> in any order.</p>\n\n<ul>\n\t<li>The <strong>calories burned</strong> for a jump from a block of height <code>a</code> to a block of height <code>b</code> is <code>(a - b)<sup>2</sup></code>.</li>\n\t<li>The <strong>calories burned</strong> for the first jump from the ground to the chosen first block <code>heights[i]</code> is <code>(0 - heights[i])<sup>2</sup></code>.</li>\n</ul>\n\n<p>Return the <strong>maximum</strong> total calories you can burn by selecting an optimal jumping sequence.</p>\n\n<p><strong>Note:</strong> Once you jump onto the first block, you cannot return to the ground.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">heights = [1,7,9]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">181</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<p>The optimal sequence is <code>[9, 1, 7]</code>.</p>\n\n<ul>\n\t<li>Initial jump from the ground to <code>heights[2] = 9</code>: <code>(0 - 9)<sup>2</sup> = 81</code>.</li>\n\t<li>Next jump to <code>heights[0] = 1</code>: <code>(9 - 1)<sup>2</sup> = 64</code>.</li>\n\t<li>Final jump to <code>heights[1] = 7</code>: <code>(1 - 7)<sup>2</sup> = 36</code>.</li>\n</ul>\n\n<p>Total calories burned = <code>81 + 64 + 36 = 181</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">heights = [5,2,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">38</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The optimal sequence is <code>[5, 2, 4]</code>.</p>\n\n<ul>\n\t<li>Initial jump from the ground to <code>heights[0] = 5</code>: <code>(0 - 5)<sup>2</sup> = 25</code>.</li>\n\t<li>Next jump to <code>heights[1] = 2</code>: <code>(5 - 2)<sup>2</sup> = 9</code>.</li>\n\t<li>Final jump to <code>heights[2] = 4</code>: <code>(2 - 4)<sup>2</sup> = 4</code>.</li>\n</ul>\n\n<p>Total calories burned = <code>25 + 9 + 4 = 38</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">heights = [3,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">9</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The optimal sequence is <code>[3, 3]</code>.</p>\n\n<ul>\n\t<li>Initial jump from the ground to <code>heights[0] = 3</code>: <code>(0 - 3)<sup>2</sup> = 9</code>.</li>\n\t<li>Next jump to <code>heights[1] = 3</code>: <code>(3 - 3)<sup>2</sup> = 0</code>.</li>\n</ul>\n\n<p>Total calories burned = <code>9 + 0 = 9</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == heights.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= heights[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long maxCaloriesBurnt(vector<int>& heights) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long maxCaloriesBurnt(int[] heights) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxCaloriesBurnt(self, heights: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxCaloriesBurnt(self, heights):\n        \"\"\"\n        :type heights: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} heights\n * @return {number}\n */\nvar maxCaloriesBurnt = function(heights) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxCaloriesBurnt(heights: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MaxCaloriesBurnt(int[] heights) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long maxCaloriesBurnt(int* heights, int heightsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxCaloriesBurnt(heights []int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxCaloriesBurnt(heights: IntArray): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxCaloriesBurnt(_ heights: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_calories_burnt(heights: Vec<i32>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} heights\n# @return {Integer}\ndef max_calories_burnt(heights)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $heights\n     * @return Integer\n     */\n    function maxCaloriesBurnt($heights) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxCaloriesBurnt(List<int> heights) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxCaloriesBurnt(heights: Array[Int]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_calories_burnt(heights :: [integer]) :: integer\n  def max_calories_burnt(heights) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_calories_burnt(Heights :: [integer()]) -> integer().\nmax_calories_burnt(Heights) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-calories-burnt heights)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"641\", \"totalSubmission\": \"868\", \"totalAcceptedRaw\": 641, \"totalSubmissionRaw\": 868, \"acRate\": \"73.8%\"}",
+  "metaData": "{\n  \"name\": \"maxCaloriesBurnt\",\n  \"params\": [\n    {\n      \"name\": \"heights\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[1,7,9]"
+}

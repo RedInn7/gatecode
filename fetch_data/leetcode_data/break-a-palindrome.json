@@ -1,0 +1,89 @@
+{
+  "questionId": "1252",
+  "questionFrontendId": "1328",
+  "title": "Break a Palindrome",
+  "titleSlug": "break-a-palindrome",
+  "content": "<p>Given a palindromic string of lowercase English letters <code>palindrome</code>, replace <strong>exactly one</strong> character with any lowercase English letter so that the resulting string is <strong>not</strong> a palindrome and that it is the <strong>lexicographically smallest</strong> one possible.</p>\n\n<p>Return <em>the resulting string. If there is no way to replace a character to make it not a palindrome, return an <strong>empty string</strong>.</em></p>\n\n<p>A string <code>a</code> is lexicographically smaller than a string <code>b</code> (of the same length) if in the first position where <code>a</code> and <code>b</code> differ, <code>a</code> has a character strictly smaller than the corresponding character in <code>b</code>. For example, <code>&quot;abcc&quot;</code> is lexicographically smaller than <code>&quot;abcd&quot;</code> because the first position they differ is at the fourth character, and <code>&#39;c&#39;</code> is smaller than <code>&#39;d&#39;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> palindrome = &quot;abccba&quot;\n<strong>Output:</strong> &quot;aaccba&quot;\n<strong>Explanation:</strong> There are many ways to make &quot;abccba&quot; not a palindrome, such as &quot;<u>z</u>bccba&quot;, &quot;a<u>a</u>ccba&quot;, and &quot;ab<u>a</u>cba&quot;.\nOf all the ways, &quot;aaccba&quot; is the lexicographically smallest.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> palindrome = &quot;a&quot;\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> There is no way to replace a single character to make &quot;a&quot; not a palindrome, so return an empty string.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= palindrome.length &lt;= 1000</code></li>\n\t<li><code>palindrome</code> consists of only lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string breakPalindrome(string palindrome) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String breakPalindrome(String palindrome) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def breakPalindrome(self, palindrome: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def breakPalindrome(self, palindrome):\n        \"\"\"\n        :type palindrome: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} palindrome\n * @return {string}\n */\nvar breakPalindrome = function(palindrome) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function breakPalindrome(palindrome: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string BreakPalindrome(string palindrome) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* breakPalindrome(char* palindrome) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func breakPalindrome(palindrome string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun breakPalindrome(palindrome: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func breakPalindrome(_ palindrome: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn break_palindrome(palindrome: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} palindrome\n# @return {String}\ndef break_palindrome(palindrome)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $palindrome\n     * @return String\n     */\n    function breakPalindrome($palindrome) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String breakPalindrome(String palindrome) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def breakPalindrome(palindrome: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec break_palindrome(palindrome :: String.t) :: String.t\n  def break_palindrome(palindrome) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec break_palindrome(Palindrome :: unicode:unicode_binary()) -> unicode:unicode_binary().\nbreak_palindrome(Palindrome) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (break-palindrome palindrome)\n  (-> string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"194.4K\", \"totalSubmission\": \"376.9K\", \"totalAcceptedRaw\": 194405, \"totalSubmissionRaw\": 376858, \"acRate\": \"51.6%\"}",
+  "metaData": "{\n  \"name\": \"breakPalindrome\",\n  \"params\": [\n    {\n      \"name\": \"palindrome\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"abccba\""
+}

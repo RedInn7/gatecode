@@ -1,0 +1,89 @@
+{
+  "questionId": "2572",
+  "questionFrontendId": "2486",
+  "title": "Append Characters to String to Make Subsequence",
+  "titleSlug": "append-characters-to-string-to-make-subsequence",
+  "content": "<p>You are given two strings <code>s</code> and <code>t</code> consisting of only lowercase English letters.</p>\n\n<p>Return <em>the minimum number of characters that need to be appended to the end of </em><code>s</code><em> so that </em><code>t</code><em> becomes a <strong>subsequence</strong> of </em><code>s</code>.</p>\n\n<p>A <strong>subsequence</strong> is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;coaching&quot;, t = &quot;coding&quot;\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Append the characters &quot;ding&quot; to the end of s so that s = &quot;coachingding&quot;.\nNow, t is a subsequence of s (&quot;<u><strong>co</strong></u>aching<u><strong>ding</strong></u>&quot;).\nIt can be shown that appending any 3 characters to the end of s will never make t a subsequence.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcde&quot;, t = &quot;a&quot;\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> t is already a subsequence of s (&quot;<u><strong>a</strong></u>bcde&quot;).\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;z&quot;, t = &quot;abcde&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> Append the characters &quot;abcde&quot; to the end of s so that s = &quot;zabcde&quot;.\nNow, t is a subsequence of s (&quot;z<u><strong>abcde</strong></u>&quot;).\nIt can be shown that appending any 4 characters to the end of s will never make t a subsequence.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length, t.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> and <code>t</code> consist only of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int appendCharacters(string s, string t) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int appendCharacters(String s, String t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def appendCharacters(self, s: str, t: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def appendCharacters(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {number}\n */\nvar appendCharacters = function(s, t) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function appendCharacters(s: string, t: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int AppendCharacters(string s, string t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int appendCharacters(char* s, char* t) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func appendCharacters(s string, t string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun appendCharacters(s: String, t: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func appendCharacters(_ s: String, _ t: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn append_characters(s: String, t: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} t\n# @return {Integer}\ndef append_characters(s, t)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return Integer\n     */\n    function appendCharacters($s, $t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int appendCharacters(String s, String t) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def appendCharacters(s: String, t: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec append_characters(s :: String.t, t :: String.t) :: integer\n  def append_characters(s, t) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec append_characters(S :: unicode:unicode_binary(), T :: unicode:unicode_binary()) -> integer().\nappend_characters(S, T) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (append-characters s t)\n  (-> string? string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"219.8K\", \"totalSubmission\": \"301.2K\", \"totalAcceptedRaw\": 219771, \"totalSubmissionRaw\": 301163, \"acRate\": \"73.0%\"}",
+  "metaData": "{\n  \"name\": \"appendCharacters\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"t\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"coaching\"\n\"coding\""
+}

@@ -1,0 +1,77 @@
+{
+  "questionId": "1893",
+  "questionFrontendId": "1746",
+  "title": "Maximum Subarray Sum After One Operation",
+  "titleSlug": "maximum-subarray-sum-after-one-operation",
+  "content": "<p>You are given an integer array <code>nums</code>. You must perform <strong>exactly one</strong> operation&nbsp;where you can <strong>replace</strong> one&nbsp;element <code>nums[i]</code> with <code>nums[i] * nums[i]</code>.&nbsp;</p>\r\n\r\n<p>Return <em>the <strong>maximum</strong> possible subarray sum after <strong>exactly&nbsp;one</strong> operation</em>. The subarray must be non-empty.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [2,-1,-4,-3]\r\n<strong>Output:</strong> 17\r\n<strong>Explanation:</strong> You can perform the operation on index 2 (0-indexed) to make nums = [2,-1,<strong>16</strong>,-3]. Now, the maximum subarray sum is 2 + -1 + 16 = 17.</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,-1,1,1,-1,-1,1]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> You can perform the operation on index 1 (0-indexed) to make nums = [1,<strong>1</strong>,1,1,-1,-1,1]. Now, the maximum subarray sum is 1 + 1 + 1 + 1 = 4.</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>-10<sup>4</sup>&nbsp;&lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\r\n</ul>",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSumAfterOperation(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSumAfterOperation(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSumAfterOperation(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSumAfterOperation(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxSumAfterOperation = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxSumAfterOperation(nums: number[]): number {\n\n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSumAfterOperation(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxSumAfterOperation(int* nums, int numsSize){\n\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSumAfterOperation(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSumAfterOperation(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSumAfterOperation(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_sum_after_operation(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_sum_after_operation(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxSumAfterOperation($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSumAfterOperation(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-sum-after-operation nums)\n  (-> (listof exact-integer?) exact-integer?)\n\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.8K\", \"totalSubmission\": \"21.2K\", \"totalAcceptedRaw\": 13841, \"totalSubmissionRaw\": 21217, \"acRate\": \"65.2%\"}",
+  "metaData": "{\n  \"name\": \"maxSumAfterOperation\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[2,-1,-4,-3]"
+}

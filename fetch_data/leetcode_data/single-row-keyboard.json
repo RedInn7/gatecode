@@ -1,0 +1,89 @@
+{
+  "questionId": "1123",
+  "questionFrontendId": "1165",
+  "title": "Single-Row Keyboard",
+  "titleSlug": "single-row-keyboard",
+  "content": "<p>There is a special keyboard with <strong>all keys in a single row</strong>.</p>\n\n<p>Given a string <code>keyboard</code> of length <code>26</code> indicating the layout of the keyboard (indexed from <code>0</code> to <code>25</code>). Initially, your finger is at index <code>0</code>. To type a character, you have to move your finger to the index of the desired character. The time taken to move your finger from index <code>i</code> to index <code>j</code> is <code>|i - j|</code>.</p>\n\n<p>You want to type a string <code>word</code>. Write a function to calculate how much time it takes to type it with one finger.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> keyboard = &quot;abcdefghijklmnopqrstuvwxyz&quot;, word = &quot;cba&quot;\n<strong>Output:</strong> 4\n<strong>Explanation: </strong>The index moves from 0 to 2 to write &#39;c&#39; then to 1 to write &#39;b&#39; then to 0 again to write &#39;a&#39;.\nTotal time = 2 + 1 + 1 = 4. \n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> keyboard = &quot;pqrstuvwxyzabcdefghijklmno&quot;, word = &quot;leetcode&quot;\n<strong>Output:</strong> 73\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>keyboard.length == 26</code></li>\n\t<li><code>keyboard</code> contains each English lowercase letter exactly once in some order.</li>\n\t<li><code>1 &lt;= word.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>word[i]</code> is an English lowercase letter.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int calculateTime(string keyboard, string word) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int calculateTime(String keyboard, String word) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def calculateTime(self, keyboard: str, word: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def calculateTime(self, keyboard, word):\n        \"\"\"\n        :type keyboard: str\n        :type word: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} keyboard\n * @param {string} word\n * @return {number}\n */\nvar calculateTime = function(keyboard, word) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function calculateTime(keyboard: string, word: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CalculateTime(string keyboard, string word) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int calculateTime(char* keyboard, char* word) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func calculateTime(keyboard string, word string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun calculateTime(keyboard: String, word: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func calculateTime(_ keyboard: String, _ word: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn calculate_time(keyboard: String, word: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} keyboard\n# @param {String} word\n# @return {Integer}\ndef calculate_time(keyboard, word)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $keyboard\n     * @param String $word\n     * @return Integer\n     */\n    function calculateTime($keyboard, $word) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int calculateTime(String keyboard, String word) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def calculateTime(keyboard: String, word: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec calculate_time(keyboard :: String.t, word :: String.t) :: integer\n  def calculate_time(keyboard, word) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec calculate_time(Keyboard :: unicode:unicode_binary(), Word :: unicode:unicode_binary()) -> integer().\ncalculate_time(Keyboard, Word) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (calculate-time keyboard word)\n  (-> string? string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"93.5K\", \"totalSubmission\": \"106.5K\", \"totalAcceptedRaw\": 93485, \"totalSubmissionRaw\": 106479, \"acRate\": \"87.8%\"}",
+  "metaData": "{\n  \"name\": \"calculateTime\",\n  \"params\": [\n    {\n      \"name\": \"keyboard\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"word\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"abcdefghijklmnopqrstuvwxyz\"\n\"cba\""
+}

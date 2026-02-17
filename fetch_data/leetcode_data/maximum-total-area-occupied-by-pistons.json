@@ -1,0 +1,89 @@
+{
+  "questionId": "3590",
+  "questionFrontendId": "3279",
+  "title": "Maximum Total Area Occupied by Pistons",
+  "titleSlug": "maximum-total-area-occupied-by-pistons",
+  "content": "<p>There are several pistons in an old car engine, and we want to calculate the <strong>maximum</strong> possible area <strong>under</strong> the pistons.</p>\n\n<p>You are given:</p>\n\n<ul>\n\t<li>An integer <code>height</code>, representing the <strong>maximum</strong> height a piston can reach.</li>\n\t<li>An integer array <code>positions</code>, where <code>positions[i]</code> is the current position of piston <code>i</code>, which is equal to the current area <strong>under</strong> it.</li>\n\t<li>A string <code>directions</code>, where <code>directions[i]</code> is the current moving direction of piston <code>i</code>, <code>&#39;U&#39;</code> for up, and <code>&#39;D&#39;</code> for down.</li>\n</ul>\n\n<p>Each second:</p>\n\n<ul>\n\t<li>Every piston moves in its current direction 1 unit. e.g., if the direction is up, <code>positions[i]</code> is incremented by 1.</li>\n\t<li>If a piston has reached one of the ends, i.e., <code>positions[i] == 0</code> or <code>positions[i] == height</code>, its direction will change.</li>\n</ul>\n\n<p>Return the <em>maximum possible area</em> under all the pistons.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">height = 5, positions = [2,5], directions = &quot;UD&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The current position of the pistons has the maximum possible area under it.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">height = 6, positions = [0,0,6,3], directions = &quot;UUDU&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">15</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>After 3 seconds, the pistons will be in positions <code>[3, 3, 3, 6]</code>, which has the maximum possible area under it.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= height &lt;= 10<sup>6</sup></code></li>\n\t<li><code>1 &lt;= positions.length == directions.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= positions[i] &lt;= height</code></li>\n\t<li><code>directions[i]</code> is either <code>&#39;U&#39;</code> or <code>&#39;D&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long maxArea(int height, vector<int>& positions, string directions) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long maxArea(int height, int[] positions, String directions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxArea(self, height: int, positions: List[int], directions: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxArea(self, height, positions, directions):\n        \"\"\"\n        :type height: int\n        :type positions: List[int]\n        :type directions: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} height\n * @param {number[]} positions\n * @param {string} directions\n * @return {number}\n */\nvar maxArea = function(height, positions, directions) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxArea(height: number, positions: number[], directions: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MaxArea(int height, int[] positions, string directions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long maxArea(int height, int* positions, int positionsSize, char* directions) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxArea(height int, positions []int, directions string) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxArea(height: Int, positions: IntArray, directions: String): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxArea(_ height: Int, _ positions: [Int], _ directions: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_area(height: i32, positions: Vec<i32>, directions: String) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} height\n# @param {Integer[]} positions\n# @param {String} directions\n# @return {Integer}\ndef max_area(height, positions, directions)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $height\n     * @param Integer[] $positions\n     * @param String $directions\n     * @return Integer\n     */\n    function maxArea($height, $positions, $directions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxArea(int height, List<int> positions, String directions) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxArea(height: Int, positions: Array[Int], directions: String): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_area(height :: integer, positions :: [integer], directions :: String.t) :: integer\n  def max_area(height, positions, directions) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_area(Height :: integer(), Positions :: [integer()], Directions :: unicode:unicode_binary()) -> integer().\nmax_area(Height, Positions, Directions) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-area height positions directions)\n  (-> exact-integer? (listof exact-integer?) string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"483\", \"totalSubmission\": \"1.2K\", \"totalAcceptedRaw\": 483, \"totalSubmissionRaw\": 1210, \"acRate\": \"39.9%\"}",
+  "metaData": "{\n  \"name\": \"maxArea\",\n  \"params\": [\n    {\n      \"name\": \"height\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"positions\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"directions\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "5\n[2,5]\n\"UD\""
+}

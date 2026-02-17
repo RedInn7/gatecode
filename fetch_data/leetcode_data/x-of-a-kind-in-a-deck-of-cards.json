@@ -1,0 +1,89 @@
+{
+  "questionId": "950",
+  "questionFrontendId": "914",
+  "title": "X of a Kind in a Deck of Cards",
+  "titleSlug": "x-of-a-kind-in-a-deck-of-cards",
+  "content": "<p>You are given an integer array <code>deck</code> where <code>deck[i]</code> represents the number written on the <code>i<sup>th</sup></code> card.</p>\n\n<p>Partition the cards into <strong>one or more groups</strong> such that:</p>\n\n<ul>\n\t<li>Each group has <strong>exactly</strong> <code>x</code> cards where <code>x &gt; 1</code>, and</li>\n\t<li>All the cards in one group have the same integer written on them.</li>\n</ul>\n\n<p>Return <code>true</code><em> if such partition is possible, or </em><code>false</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> deck = [1,2,3,4,4,3,2,1]\n<strong>Output:</strong> true\n<strong>Explanation</strong>: Possible partition [1,1],[2,2],[3,3],[4,4].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> deck = [1,1,1,2,2,2,3,3]\n<strong>Output:</strong> false\n<strong>Explanation</strong>: No possible partition.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= deck.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= deck[i] &lt; 10<sup>4</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool hasGroupsSizeX(vector<int>& deck) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean hasGroupsSizeX(int[] deck) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def hasGroupsSizeX(self, deck: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def hasGroupsSizeX(self, deck):\n        \"\"\"\n        :type deck: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} deck\n * @return {boolean}\n */\nvar hasGroupsSizeX = function(deck) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function hasGroupsSizeX(deck: number[]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool HasGroupsSizeX(int[] deck) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool hasGroupsSizeX(int* deck, int deckSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func hasGroupsSizeX(deck []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun hasGroupsSizeX(deck: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func hasGroupsSizeX(_ deck: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn has_groups_size_x(deck: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} deck\n# @return {Boolean}\ndef has_groups_size_x(deck)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $deck\n     * @return Boolean\n     */\n    function hasGroupsSizeX($deck) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool hasGroupsSizeX(List<int> deck) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def hasGroupsSizeX(deck: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec has_groups_size_x(deck :: [integer]) :: boolean\n  def has_groups_size_x(deck) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec has_groups_size_x(Deck :: [integer()]) -> boolean().\nhas_groups_size_x(Deck) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (has-groups-size-x deck)\n  (-> (listof exact-integer?) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"154.5K\", \"totalSubmission\": \"512.8K\", \"totalAcceptedRaw\": 154473, \"totalSubmissionRaw\": 512765, \"acRate\": \"30.1%\"}",
+  "metaData": "{\n  \"name\": \"hasGroupsSizeX\",\n  \"params\": [\n    {\n      \"name\": \"deck\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}\n",
+  "sampleTestCase": "[1,2,3,4,4,3,2,1]"
+}

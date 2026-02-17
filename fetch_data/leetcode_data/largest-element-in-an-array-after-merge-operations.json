@@ -1,0 +1,89 @@
+{
+  "questionId": "2872",
+  "questionFrontendId": "2789",
+  "title": "Largest Element in an Array after Merge Operations",
+  "titleSlug": "largest-element-in-an-array-after-merge-operations",
+  "content": "<p>You are given a <strong>0-indexed</strong> array <code>nums</code> consisting of positive integers.</p>\n\n<p>You can do the following operation on the array <strong>any</strong> number of times:</p>\n\n<ul>\n\t<li>Choose an index&nbsp;<code>i</code> such that <code>0 &lt;= i &lt; nums.length - 1</code> and <code>nums[i] &lt;= nums[i + 1]</code>. Replace the element <code>nums[i + 1]</code> with <code>nums[i] + nums[i + 1]</code> and delete the element <code>nums[i]</code> from the array.</li>\n</ul>\n\n<p>Return <em>the value of the <b>largest</b> element that you can possibly obtain in the final array.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,7,9,3]\n<strong>Output:</strong> 21\n<strong>Explanation:</strong> We can apply the following operations on the array:\n- Choose i = 0. The resulting array will be nums = [<u>5</u>,7,9,3].\n- Choose i = 1. The resulting array will be nums = [5,<u>16</u>,3].\n- Choose i = 0. The resulting array will be nums = [<u>21</u>,3].\nThe largest element in the final array is 21. It can be shown that we cannot obtain a larger element.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,3,3]\n<strong>Output:</strong> 11\n<strong>Explanation:</strong> We can do the following operations on the array:\n- Choose i = 1. The resulting array will be nums = [5,<u>6</u>].\n- Choose i = 0. The resulting array will be nums = [<u>11</u>].\nThere is only one element in the final array, which is 11.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long maxArrayValue(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long maxArrayValue(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxArrayValue(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxArrayValue(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxArrayValue = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxArrayValue(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MaxArrayValue(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long maxArrayValue(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxArrayValue(nums []int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxArrayValue(nums: IntArray): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxArrayValue(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_array_value(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_array_value(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxArrayValue($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxArrayValue(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxArrayValue(nums: Array[Int]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_array_value(nums :: [integer]) :: integer\n  def max_array_value(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_array_value(Nums :: [integer()]) -> integer().\nmax_array_value(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-array-value nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"36.9K\", \"totalSubmission\": \"77.4K\", \"totalAcceptedRaw\": 36858, \"totalSubmissionRaw\": 77436, \"acRate\": \"47.6%\"}",
+  "metaData": "{\n  \"name\": \"maxArrayValue\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[2,3,7,9,3]"
+}

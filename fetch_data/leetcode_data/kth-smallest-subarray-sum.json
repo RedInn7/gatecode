@@ -1,0 +1,89 @@
+{
+  "questionId": "2069",
+  "questionFrontendId": "1918",
+  "title": "Kth Smallest Subarray Sum",
+  "titleSlug": "kth-smallest-subarray-sum",
+  "content": "<p>Given an integer array <code>nums</code> of length <code>n</code> and an integer <code>k</code>, return <em>the </em><code>k<sup>th</sup></code> <em><strong>smallest subarray sum</strong>.</em></p>\n\n<p>A <strong>subarray</strong> is defined as a <strong>non-empty</strong> contiguous sequence of elements in an array. A <strong>subarray sum</strong> is the sum of all elements in the subarray.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,1,3], k = 4\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>The subarrays of [2,1,3] are:\n- [2] with sum 2\n- [1] with sum 1\n- [3] with sum 3\n- [2,1] with sum 3\n- [1,3] with sum 4\n- [2,1,3] with sum 6 \nOrdering the sums from smallest to largest gives 1, 2, 3, <u>3</u>, 4, 6. The 4th smallest is 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,3,5,5], k = 7\n<strong>Output:</strong> 10\n<strong>Explanation: </strong>The subarrays of [3,3,5,5] are:\n- [3] with sum 3\n- [3] with sum 3\n- [5] with sum 5\n- [5] with sum 5\n- [3,3] with sum 6\n- [3,5] with sum 8\n- [5,5] with sum 10\n- [3,3,5], with sum 11\n- [3,5,5] with sum 13\n- [3,3,5,5] with sum 16\nOrdering the sums from smallest to largest gives 3, 3, 5, 5, 6, 8, <u>10</u>, 11, 13, 16. The 7th smallest is 10.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>1 &lt;= n&nbsp;&lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= n * (n + 1) / 2</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int kthSmallestSubarraySum(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int kthSmallestSubarraySum(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def kthSmallestSubarraySum(self, nums: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def kthSmallestSubarraySum(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar kthSmallestSubarraySum = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function kthSmallestSubarraySum(nums: number[], k: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int KthSmallestSubarraySum(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int kthSmallestSubarraySum(int* nums, int numsSize, int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func kthSmallestSubarraySum(nums []int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun kthSmallestSubarraySum(nums: IntArray, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func kthSmallestSubarraySum(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn kth_smallest_subarray_sum(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef kth_smallest_subarray_sum(nums, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function kthSmallestSubarraySum($nums, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int kthSmallestSubarraySum(List<int> nums, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def kthSmallestSubarraySum(nums: Array[Int], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec kth_smallest_subarray_sum(nums :: [integer], k :: integer) :: integer\n  def kth_smallest_subarray_sum(nums, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec kth_smallest_subarray_sum(Nums :: [integer()], K :: integer()) -> integer().\nkth_smallest_subarray_sum(Nums, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (kth-smallest-subarray-sum nums k)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.8K\", \"totalSubmission\": \"10.9K\", \"totalAcceptedRaw\": 5798, \"totalSubmissionRaw\": 10870, \"acRate\": \"53.3%\"}",
+  "metaData": "{\n  \"name\": \"kthSmallestSubarraySum\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[2,1,3]\n4"
+}

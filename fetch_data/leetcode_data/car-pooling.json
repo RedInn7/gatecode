@@ -1,0 +1,89 @@
+{
+  "questionId": "1184",
+  "questionFrontendId": "1094",
+  "title": "Car Pooling",
+  "titleSlug": "car-pooling",
+  "content": "<p>There is a car with <code>capacity</code> empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west).</p>\n\n<p>You are given the integer <code>capacity</code> and an array <code>trips</code> where <code>trips[i] = [numPassengers<sub>i</sub>, from<sub>i</sub>, to<sub>i</sub>]</code> indicates that the <code>i<sup>th</sup></code> trip has <code>numPassengers<sub>i</sub></code> passengers and the locations to pick them up and drop them off are <code>from<sub>i</sub></code> and <code>to<sub>i</sub></code> respectively. The locations are given as the number of kilometers due east from the car&#39;s initial location.</p>\n\n<p>Return <code>true</code><em> if it is possible to pick up and drop off all passengers for all the given trips, or </em><code>false</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> trips = [[2,1,5],[3,3,7]], capacity = 4\n<strong>Output:</strong> false\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> trips = [[2,1,5],[3,3,7]], capacity = 5\n<strong>Output:</strong> true\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= trips.length &lt;= 1000</code></li>\n\t<li><code>trips[i].length == 3</code></li>\n\t<li><code>1 &lt;= numPassengers<sub>i</sub> &lt;= 100</code></li>\n\t<li><code>0 &lt;= from<sub>i</sub> &lt; to<sub>i</sub> &lt;= 1000</code></li>\n\t<li><code>1 &lt;= capacity &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool carPooling(vector<vector<int>>& trips, int capacity) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean carPooling(int[][] trips, int capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def carPooling(self, trips: List[List[int]], capacity: int) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def carPooling(self, trips, capacity):\n        \"\"\"\n        :type trips: List[List[int]]\n        :type capacity: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} trips\n * @param {number} capacity\n * @return {boolean}\n */\nvar carPooling = function(trips, capacity) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function carPooling(trips: number[][], capacity: number): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CarPooling(int[][] trips, int capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool carPooling(int** trips, int tripsSize, int* tripsColSize, int capacity) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func carPooling(trips [][]int, capacity int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun carPooling(trips: Array<IntArray>, capacity: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func carPooling(_ trips: [[Int]], _ capacity: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn car_pooling(trips: Vec<Vec<i32>>, capacity: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} trips\n# @param {Integer} capacity\n# @return {Boolean}\ndef car_pooling(trips, capacity)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $trips\n     * @param Integer $capacity\n     * @return Boolean\n     */\n    function carPooling($trips, $capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool carPooling(List<List<int>> trips, int capacity) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def carPooling(trips: Array[Array[Int]], capacity: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec car_pooling(trips :: [[integer]], capacity :: integer) :: boolean\n  def car_pooling(trips, capacity) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec car_pooling(Trips :: [[integer()]], Capacity :: integer()) -> boolean().\ncar_pooling(Trips, Capacity) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (car-pooling trips capacity)\n  (-> (listof (listof exact-integer?)) exact-integer? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"312.3K\", \"totalSubmission\": \"555.9K\", \"totalAcceptedRaw\": 312259, \"totalSubmissionRaw\": 555854, \"acRate\": \"56.2%\"}",
+  "metaData": "{\r\n  \"name\": \"carPooling\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"trips\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"capacity\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "[[2,1,5],[3,3,7]]\n4"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "566",
+  "questionFrontendId": "566",
+  "title": "Reshape the Matrix",
+  "titleSlug": "reshape-the-matrix",
+  "content": "<p>In MATLAB, there is a handy function called <code>reshape</code> which can reshape an <code>m x n</code> matrix into a new one with a different size <code>r x c</code> keeping its original data.</p>\n\n<p>You are given an <code>m x n</code> matrix <code>mat</code> and two integers <code>r</code> and <code>c</code> representing the number of rows and the number of columns of the wanted reshaped matrix.</p>\n\n<p>The reshaped matrix should be filled with all the elements of the original matrix in the same row-traversing order as they were.</p>\n\n<p>If the <code>reshape</code> operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/24/reshape1-grid.jpg\" style=\"width: 613px; height: 173px;\" />\n<pre>\n<strong>Input:</strong> mat = [[1,2],[3,4]], r = 1, c = 4\n<strong>Output:</strong> [[1,2,3,4]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/24/reshape2-grid.jpg\" style=\"width: 453px; height: 173px;\" />\n<pre>\n<strong>Input:</strong> mat = [[1,2],[3,4]], r = 2, c = 4\n<strong>Output:</strong> [[1,2],[3,4]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == mat.length</code></li>\n\t<li><code>n == mat[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>-1000 &lt;= mat[i][j] &lt;= 1000</code></li>\n\t<li><code>1 &lt;= r, c &lt;= 300</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> matrixReshape(vector<vector<int>>& mat, int r, int c) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] matrixReshape(int[][] mat, int r, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def matrixReshape(self, mat, r, c):\n        \"\"\"\n        :type mat: List[List[int]]\n        :type r: int\n        :type c: int\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} mat\n * @param {number} r\n * @param {number} c\n * @return {number[][]}\n */\nvar matrixReshape = function(mat, r, c) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function matrixReshape(mat: number[][], r: number, c: number): number[][] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[][] MatrixReshape(int[][] mat, int r, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** matrixReshape(int** mat, int matSize, int* matColSize, int r, int c, int* returnSize, int** returnColumnSizes) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func matrixReshape(mat [][]int, r int, c int) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun matrixReshape(mat: Array<IntArray>, r: Int, c: Int): Array<IntArray> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func matrixReshape(_ mat: [[Int]], _ r: Int, _ c: Int) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn matrix_reshape(mat: Vec<Vec<i32>>, r: i32, c: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} mat\n# @param {Integer} r\n# @param {Integer} c\n# @return {Integer[][]}\ndef matrix_reshape(mat, r, c)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $mat\n     * @param Integer $r\n     * @param Integer $c\n     * @return Integer[][]\n     */\n    function matrixReshape($mat, $r, $c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<List<int>> matrixReshape(List<List<int>> mat, int r, int c) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def matrixReshape(mat: Array[Array[Int]], r: Int, c: Int): Array[Array[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec matrix_reshape(mat :: [[integer]], r :: integer, c :: integer) :: [[integer]]\n  def matrix_reshape(mat, r, c) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec matrix_reshape(Mat :: [[integer()]], R :: integer(), C :: integer()) -> [[integer()]].\nmatrix_reshape(Mat, R, C) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (matrix-reshape mat r c)\n  (-> (listof (listof exact-integer?)) exact-integer? exact-integer? (listof (listof exact-integer?)))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"460.6K\", \"totalSubmission\": \"712.3K\", \"totalAcceptedRaw\": 460619, \"totalSubmissionRaw\": 712300, \"acRate\": \"64.7%\"}",
+  "metaData": "{\n  \"name\": \"matrixReshape\",\n  \"params\": [\n    {\n      \"name\": \"mat\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"name\": \"r\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"c\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[][]\"\n  }\n}",
+  "sampleTestCase": "[[1,2],[3,4]]\n1\n4"
+}

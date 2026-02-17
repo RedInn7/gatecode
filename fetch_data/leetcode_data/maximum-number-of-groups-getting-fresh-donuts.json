@@ -1,0 +1,89 @@
+{
+  "questionId": "1924",
+  "questionFrontendId": "1815",
+  "title": "Maximum Number of Groups Getting Fresh Donuts",
+  "titleSlug": "maximum-number-of-groups-getting-fresh-donuts",
+  "content": "<p>There is a donuts shop that bakes donuts in batches of <code>batchSize</code>. They have a rule where they must serve <strong>all</strong> of the donuts of a batch before serving any donuts of the next batch. You are given an integer <code>batchSize</code> and an integer array <code>groups</code>, where <code>groups[i]</code> denotes that there is a group of <code>groups[i]</code> customers that will visit the shop. Each customer will get exactly one donut.</p>\n\n<p>When a group visits the shop, all customers of the group must be served before serving any of the following groups. A group will be happy if they all get fresh donuts. That is, the first customer of the group does not receive a donut that was left over from the previous group.</p>\n\n<p>You can freely rearrange the ordering of the groups. Return <em>the <strong>maximum</strong> possible number of happy groups after rearranging the groups.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> batchSize = 3, groups = [1,2,3,4,5,6]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> You can arrange the groups as [6,2,4,5,1,3]. Then the 1<sup>st</sup>, 2<sup>nd</sup>, 4<sup>th</sup>, and 6<sup>th</sup> groups will be happy.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> batchSize = 4, groups = [1,3,2,5,2,2,1,6]\n<strong>Output:</strong> 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= batchSize &lt;= 9</code></li>\n\t<li><code>1 &lt;= groups.length &lt;= 30</code></li>\n\t<li><code>1 &lt;= groups[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxHappyGroups(int batchSize, vector<int>& groups) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxHappyGroups(int batchSize, int[] groups) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxHappyGroups(self, batchSize: int, groups: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxHappyGroups(self, batchSize, groups):\n        \"\"\"\n        :type batchSize: int\n        :type groups: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} batchSize\n * @param {number[]} groups\n * @return {number}\n */\nvar maxHappyGroups = function(batchSize, groups) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxHappyGroups(batchSize: number, groups: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxHappyGroups(int batchSize, int[] groups) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maxHappyGroups(int batchSize, int* groups, int groupsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxHappyGroups(batchSize int, groups []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxHappyGroups(batchSize: Int, groups: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxHappyGroups(_ batchSize: Int, _ groups: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_happy_groups(batch_size: i32, groups: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} batch_size\n# @param {Integer[]} groups\n# @return {Integer}\ndef max_happy_groups(batch_size, groups)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $batchSize\n     * @param Integer[] $groups\n     * @return Integer\n     */\n    function maxHappyGroups($batchSize, $groups) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxHappyGroups(int batchSize, List<int> groups) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxHappyGroups(batchSize: Int, groups: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_happy_groups(batch_size :: integer, groups :: [integer]) :: integer\n  def max_happy_groups(batch_size, groups) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_happy_groups(BatchSize :: integer(), Groups :: [integer()]) -> integer().\nmax_happy_groups(BatchSize, Groups) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-happy-groups batchSize groups)\n  (-> exact-integer? (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.3K\", \"totalSubmission\": \"20K\", \"totalAcceptedRaw\": 8289, \"totalSubmissionRaw\": 20005, \"acRate\": \"41.4%\"}",
+  "metaData": "{\n  \"name\": \"maxHappyGroups\",\n  \"params\": [\n    {\n      \"name\": \"batchSize\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"groups\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "3\n[1,2,3,4,5,6]"
+}

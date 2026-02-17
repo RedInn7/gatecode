@@ -1,0 +1,89 @@
+{
+  "questionId": "2257",
+  "questionFrontendId": "2136",
+  "title": "Earliest Possible Day of Full Bloom",
+  "titleSlug": "earliest-possible-day-of-full-bloom",
+  "content": "<p>You have <code>n</code> flower seeds. Every seed must be planted first before it can begin to grow, then bloom. Planting a seed takes time and so does the growth of a seed. You are given two <strong>0-indexed</strong> integer arrays <code>plantTime</code> and <code>growTime</code>, of length <code>n</code> each:</p>\n\n<ul>\n\t<li><code>plantTime[i]</code> is the number of <strong>full days</strong> it takes you to <strong>plant</strong> the <code>i<sup>th</sup></code> seed. Every day, you can work on planting exactly one seed. You <strong>do not</strong> have to work on planting the same seed on consecutive days, but the planting of a seed is not complete <strong>until</strong> you have worked <code>plantTime[i]</code> days on planting it in total.</li>\n\t<li><code>growTime[i]</code> is the number of <strong>full days</strong> it takes the <code>i<sup>th</sup></code> seed to grow after being completely planted. <strong>After</strong> the last day of its growth, the flower <strong>blooms</strong> and stays bloomed forever.</li>\n</ul>\n\n<p>From the beginning of day <code>0</code>, you can plant the seeds in <strong>any</strong> order.</p>\n\n<p>Return <em>the <strong>earliest</strong> possible day where <strong>all</strong> seeds are blooming</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/12/21/1.png\" style=\"width: 453px; height: 149px;\" />\n<pre>\n<strong>Input:</strong> plantTime = [1,4,3], growTime = [2,3,1]\n<strong>Output:</strong> 9\n<strong>Explanation:</strong> The grayed out pots represent planting days, colored pots represent growing days, and the flower represents the day it blooms.\nOne optimal way is:\nOn day 0, plant the 0<sup>th</sup> seed. The seed grows for 2 full days and blooms on day 3.\nOn days 1, 2, 3, and 4, plant the 1<sup>st</sup> seed. The seed grows for 3 full days and blooms on day 8.\nOn days 5, 6, and 7, plant the 2<sup>nd</sup> seed. The seed grows for 1 full day and blooms on day 9.\nThus, on day 9, all the seeds are blooming.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/12/21/2.png\" style=\"width: 454px; height: 184px;\" />\n<pre>\n<strong>Input:</strong> plantTime = [1,2,3,2], growTime = [2,1,2,1]\n<strong>Output:</strong> 9\n<strong>Explanation:</strong> The grayed out pots represent planting days, colored pots represent growing days, and the flower represents the day it blooms.\nOne optimal way is:\nOn day 1, plant the 0<sup>th</sup> seed. The seed grows for 2 full days and blooms on day 4.\nOn days 0 and 3, plant the 1<sup>st</sup> seed. The seed grows for 1 full day and blooms on day 5.\nOn days 2, 4, and 5, plant the 2<sup>nd</sup> seed. The seed grows for 2 full days and blooms on day 8.\nOn days 6 and 7, plant the 3<sup>rd</sup> seed. The seed grows for 1 full day and blooms on day 9.\nThus, on day 9, all the seeds are blooming.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> plantTime = [1], growTime = [1]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> On day 0, plant the 0<sup>th</sup> seed. The seed grows for 1 full day and blooms on day 2.\nThus, on day 2, all the seeds are blooming.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == plantTime.length == growTime.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= plantTime[i], growTime[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int earliestFullBloom(vector<int>& plantTime, vector<int>& growTime) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int earliestFullBloom(int[] plantTime, int[] growTime) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def earliestFullBloom(self, plantTime: List[int], growTime: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def earliestFullBloom(self, plantTime, growTime):\n        \"\"\"\n        :type plantTime: List[int]\n        :type growTime: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} plantTime\n * @param {number[]} growTime\n * @return {number}\n */\nvar earliestFullBloom = function(plantTime, growTime) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function earliestFullBloom(plantTime: number[], growTime: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int EarliestFullBloom(int[] plantTime, int[] growTime) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int earliestFullBloom(int* plantTime, int plantTimeSize, int* growTime, int growTimeSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func earliestFullBloom(plantTime []int, growTime []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun earliestFullBloom(plantTime: IntArray, growTime: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func earliestFullBloom(_ plantTime: [Int], _ growTime: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn earliest_full_bloom(plant_time: Vec<i32>, grow_time: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} plant_time\n# @param {Integer[]} grow_time\n# @return {Integer}\ndef earliest_full_bloom(plant_time, grow_time)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $plantTime\n     * @param Integer[] $growTime\n     * @return Integer\n     */\n    function earliestFullBloom($plantTime, $growTime) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int earliestFullBloom(List<int> plantTime, List<int> growTime) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def earliestFullBloom(plantTime: Array[Int], growTime: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec earliest_full_bloom(plant_time :: [integer], grow_time :: [integer]) :: integer\n  def earliest_full_bloom(plant_time, grow_time) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec earliest_full_bloom(PlantTime :: [integer()], GrowTime :: [integer()]) -> integer().\nearliest_full_bloom(PlantTime, GrowTime) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (earliest-full-bloom plantTime growTime)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"63.4K\", \"totalSubmission\": \"89.1K\", \"totalAcceptedRaw\": 63412, \"totalSubmissionRaw\": 89052, \"acRate\": \"71.2%\"}",
+  "metaData": "{\n  \"name\": \"earliestFullBloom\",\n  \"params\": [\n    {\n      \"name\": \"plantTime\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"growTime\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,4,3]\n[2,3,1]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "3758",
+  "questionFrontendId": "3431",
+  "title": "Minimum Unlocked Indices to Sort Nums",
+  "titleSlug": "minimum-unlocked-indices-to-sort-nums",
+  "content": "<p>You are given an array <code>nums</code> consisting of integers between 1 and 3, and a <strong>binary</strong> array <code>locked</code> of the same size.</p>\n\n<p>We consider <code>nums</code> <strong>sortable</strong> if it can be sorted using adjacent swaps, where a swap between two indices <code>i</code> and <code>i + 1</code> is allowed if <code>nums[i] - nums[i + 1] == 1</code> and <code>locked[i] == 0</code>.</p>\n\n<p>In one operation, you can unlock any index <code>i</code> by setting <code>locked[i]</code> to 0.</p>\n\n<p>Return the <strong>minimum</strong> number of operations needed to make <code>nums</code> <strong>sortable</strong>. If it is not possible to make <code>nums</code> sortable, return -1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,2,3,2], locked = [1,0,1,1,0,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We can sort <code>nums</code> using the following swaps:</p>\n\n<ul>\n\t<li>swap indices 1 with 2</li>\n\t<li>swap indices 4 with 5</li>\n</ul>\n\n<p>So, there is no need to unlock any index.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,1,3,2,2], locked = [1,0,1,1,0,1,0]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>If we unlock indices 2 and 5, we can sort <code>nums</code> using the following swaps:</p>\n\n<ul>\n\t<li>swap indices 1 with 2</li>\n\t<li>swap indices 2 with 3</li>\n\t<li>swap indices 4 with 5</li>\n\t<li>swap indices 5 with 6</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,2,3,2,1], locked = [0,0,0,0,0,0,0]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Even if all indices are unlocked, it can be shown that <code>nums</code> is not sortable.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 3</code></li>\n\t<li><code>locked.length == nums.length</code></li>\n\t<li><code>0 &lt;= locked[i] &lt;= 1</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minUnlockedIndices(vector<int>& nums, vector<int>& locked) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minUnlockedIndices(int[] nums, int[] locked) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minUnlockedIndices(self, nums: List[int], locked: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minUnlockedIndices(self, nums, locked):\n        \"\"\"\n        :type nums: List[int]\n        :type locked: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number[]} locked\n * @return {number}\n */\nvar minUnlockedIndices = function(nums, locked) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minUnlockedIndices(nums: number[], locked: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinUnlockedIndices(int[] nums, int[] locked) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minUnlockedIndices(int* nums, int numsSize, int* locked, int lockedSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minUnlockedIndices(nums []int, locked []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minUnlockedIndices(nums: IntArray, locked: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minUnlockedIndices(_ nums: [Int], _ locked: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_unlocked_indices(nums: Vec<i32>, locked: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer[]} locked\n# @return {Integer}\ndef min_unlocked_indices(nums, locked)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer[] $locked\n     * @return Integer\n     */\n    function minUnlockedIndices($nums, $locked) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minUnlockedIndices(List<int> nums, List<int> locked) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minUnlockedIndices(nums: Array[Int], locked: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_unlocked_indices(nums :: [integer], locked :: [integer]) :: integer\n  def min_unlocked_indices(nums, locked) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_unlocked_indices(Nums :: [integer()], Locked :: [integer()]) -> integer().\nmin_unlocked_indices(Nums, Locked) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-unlocked-indices nums locked)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"525\", \"totalSubmission\": \"896\", \"totalAcceptedRaw\": 525, \"totalSubmissionRaw\": 896, \"acRate\": \"58.6%\"}",
+  "metaData": "{\n  \"name\": \"minUnlockedIndices\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"locked\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[1,2,1,2,3,2]\n[1,0,1,1,0,1]"
+}

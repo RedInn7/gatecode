@@ -1,0 +1,89 @@
+{
+  "questionId": "4039",
+  "questionFrontendId": "3697",
+  "title": "Compute Decimal Representation",
+  "titleSlug": "compute-decimal-representation",
+  "content": "<p>You are given a <strong>positive</strong> integer <code>n</code>.</p>\n\n<p>A positive integer is a <strong>base-10 component</strong> if it is the product of a single digit from 1 to 9 and a non-negative power of 10. For example, 500, 30, and 7 are <strong>base-10 components</strong>, while 537, 102, and 11 are not.</p>\n\n<p>Express <code>n</code> as a sum of <strong>only</strong> base-10 components, using the <strong>fewest</strong> base-10 components possible.</p>\n\n<p>Return an array containing these <strong>base-10 components</strong> in <strong>descending</strong> order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 537</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[500,30,7]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We can express 537 as <code>500 + 30 + 7</code>. It is impossible to express 537 as a sum using fewer than 3 base-10 components.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 102</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[100,2]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We can express 102 as <code>100 + 2</code>. 102 is not a base-10 component, which means 2 base-10 components are needed.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 6</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[6]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>6 is a base-10 component.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> decimalRepresentation(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] decimalRepresentation(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def decimalRepresentation(self, n: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def decimalRepresentation(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number[]}\n */\nvar decimalRepresentation = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function decimalRepresentation(n: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] DecimalRepresentation(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* decimalRepresentation(int n, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func decimalRepresentation(n int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun decimalRepresentation(n: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func decimalRepresentation(_ n: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn decimal_representation(n: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer[]}\ndef decimal_representation(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer[]\n     */\n    function decimalRepresentation($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> decimalRepresentation(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def decimalRepresentation(n: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec decimal_representation(n :: integer) :: [integer]\n  def decimal_representation(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec decimal_representation(N :: integer()) -> [integer()].\ndecimal_representation(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (decimal-representation n)\n  (-> exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"59.8K\", \"totalSubmission\": \"92.6K\", \"totalAcceptedRaw\": 59759, \"totalSubmissionRaw\": 92594, \"acRate\": \"64.5%\"}",
+  "metaData": "{\n  \"name\": \"decimalRepresentation\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "537"
+}

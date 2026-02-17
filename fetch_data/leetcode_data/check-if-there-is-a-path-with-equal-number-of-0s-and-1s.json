@@ -1,0 +1,89 @@
+{
+  "questionId": "2653",
+  "questionFrontendId": "2510",
+  "title": "Check if There is a Path With Equal Number of 0's And 1's",
+  "titleSlug": "check-if-there-is-a-path-with-equal-number-of-0s-and-1s",
+  "content": "<p>You are given a <strong>0-indexed</strong> <code>m x n</code> <strong>binary</strong> matrix <code>grid</code>. You can move from a cell <code>(row, col)</code> to any of the cells <code>(row + 1, col)</code> or <code>(row, col + 1)</code>.</p>\n\n<p>Return <code>true</code><em> if there is a path from </em><code>(0, 0)</code><em> to </em><code>(m - 1, n - 1)</code><em> that visits an <strong>equal</strong> number of </em><code>0</code><em>&#39;s and </em><code>1</code><em>&#39;s</em>. Otherwise return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/12/20/yetgriddrawio-4.png\" />\n<pre>\n<strong>Input:</strong> grid = [[0,1,0,0],[0,1,0,0],[1,0,1,0]]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> The path colored in blue in the above diagram is a valid path because we have 3 cells with a value of 1 and 3 with a value of 0. Since there is a valid path, we return true.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/12/20/yetgrid2drawio-1.png\" style=\"width: 151px; height: 151px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,1,0],[0,0,1],[1,0,0]]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> There is no path in this grid with an equal number of 0&#39;s and 1&#39;s.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>2 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isThereAPath(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isThereAPath(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isThereAPath(self, grid: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isThereAPath(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {boolean}\n */\nvar isThereAPath = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function isThereAPath(grid: number[][]): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsThereAPath(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool isThereAPath(int** grid, int gridSize, int* gridColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isThereAPath(grid [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isThereAPath(grid: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isThereAPath(_ grid: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_there_a_path(grid: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Boolean}\ndef is_there_a_path(grid)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Boolean\n     */\n    function isThereAPath($grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool isThereAPath(List<List<int>> grid) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isThereAPath(grid: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec is_there_a_path(grid :: [[integer]]) :: boolean\n  def is_there_a_path(grid) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec is_there_a_path(Grid :: [[integer()]]) -> boolean().\nis_there_a_path(Grid) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (is-there-a-path grid)\n  (-> (listof (listof exact-integer?)) boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.7K\", \"totalSubmission\": \"14.9K\", \"totalAcceptedRaw\": 7703, \"totalSubmissionRaw\": 14871, \"acRate\": \"51.8%\"}",
+  "metaData": "{\n  \"name\": \"isThereAPath\",\n  \"params\": [\n    {\n      \"name\": \"grid\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "[[0,1,0,0],[0,1,0,0],[1,0,1,0]]"
+}

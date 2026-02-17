@@ -1,0 +1,89 @@
+{
+  "questionId": "2231",
+  "questionFrontendId": "2108",
+  "title": "Find First Palindromic String in the Array",
+  "titleSlug": "find-first-palindromic-string-in-the-array",
+  "content": "<p>Given an array of strings <code>words</code>, return <em>the first <strong>palindromic</strong> string in the array</em>. If there is no such string, return <em>an <strong>empty string</strong> </em><code>&quot;&quot;</code>.</p>\n\n<p>A string is <strong>palindromic</strong> if it reads the same forward and backward.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;abc&quot;,&quot;car&quot;,&quot;ada&quot;,&quot;racecar&quot;,&quot;cool&quot;]\n<strong>Output:</strong> &quot;ada&quot;\n<strong>Explanation:</strong> The first string that is palindromic is &quot;ada&quot;.\nNote that &quot;racecar&quot; is also palindromic, but it is not the first.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;notapalindrome&quot;,&quot;racecar&quot;]\n<strong>Output:</strong> &quot;racecar&quot;\n<strong>Explanation:</strong> The first and only string that is palindromic is &quot;racecar&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;def&quot;,&quot;ghi&quot;]\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> There are no palindromic strings, so the empty string is returned.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 100</code></li>\n\t<li><code>words[i]</code> consists only of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string firstPalindrome(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String firstPalindrome(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def firstPalindrome(self, words: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def firstPalindrome(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {string}\n */\nvar firstPalindrome = function(words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function firstPalindrome(words: string[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FirstPalindrome(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* firstPalindrome(char** words, int wordsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func firstPalindrome(words []string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun firstPalindrome(words: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func firstPalindrome(_ words: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn first_palindrome(words: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {String}\ndef first_palindrome(words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return String\n     */\n    function firstPalindrome($words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String firstPalindrome(List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def firstPalindrome(words: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec first_palindrome(words :: [String.t]) :: String.t\n  def first_palindrome(words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec first_palindrome(Words :: [unicode:unicode_binary()]) -> unicode:unicode_binary().\nfirst_palindrome(Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (first-palindrome words)\n  (-> (listof string?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"375.1K\", \"totalSubmission\": \"446.7K\", \"totalAcceptedRaw\": 375057, \"totalSubmissionRaw\": 446659, \"acRate\": \"84.0%\"}",
+  "metaData": "{\n  \"name\": \"firstPalindrome\",\n  \"params\": [\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]"
+}

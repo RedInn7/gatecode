@@ -1,0 +1,89 @@
+{
+  "questionId": "749",
+  "questionFrontendId": "748",
+  "title": "Shortest Completing Word",
+  "titleSlug": "shortest-completing-word",
+  "content": "<p>Given a string <code>licensePlate</code> and an array of strings <code>words</code>, find the <strong>shortest completing</strong> word in <code>words</code>.</p>\n\n<p>A <strong>completing</strong> word is a word that <strong>contains all the letters</strong> in <code>licensePlate</code>. <strong>Ignore numbers and spaces</strong> in <code>licensePlate</code>, and treat letters as <strong>case insensitive</strong>. If a letter appears more than once in <code>licensePlate</code>, then it must appear in the word the same number of times or more.</p>\n\n<p>For example, if <code>licensePlate</code><code> = &quot;aBc 12c&quot;</code>, then it contains letters <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code> (ignoring case), and <code>&#39;c&#39;</code> twice. Possible <strong>completing</strong> words are <code>&quot;abccdef&quot;</code>, <code>&quot;caaacab&quot;</code>, and <code>&quot;cbca&quot;</code>.</p>\n\n<p>Return <em>the shortest <strong>completing</strong> word in </em><code>words</code><em>.</em> It is guaranteed an answer exists. If there are multiple shortest <strong>completing</strong> words, return the <strong>first</strong> one that occurs in <code>words</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> licensePlate = &quot;1s3 PSt&quot;, words = [&quot;step&quot;,&quot;steps&quot;,&quot;stripe&quot;,&quot;stepple&quot;]\n<strong>Output:</strong> &quot;steps&quot;\n<strong>Explanation:</strong> licensePlate contains letters &#39;s&#39;, &#39;p&#39;, &#39;s&#39; (ignoring case), and &#39;t&#39;.\n&quot;step&quot; contains &#39;t&#39; and &#39;p&#39;, but only contains 1 &#39;s&#39;.\n&quot;steps&quot; contains &#39;t&#39;, &#39;p&#39;, and both &#39;s&#39; characters.\n&quot;stripe&quot; is missing an &#39;s&#39;.\n&quot;stepple&quot; is missing an &#39;s&#39;.\nSince &quot;steps&quot; is the only word containing all the letters, that is the answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> licensePlate = &quot;1s3 456&quot;, words = [&quot;looks&quot;,&quot;pest&quot;,&quot;stew&quot;,&quot;show&quot;]\n<strong>Output:</strong> &quot;pest&quot;\n<strong>Explanation:</strong> licensePlate only contains the letter &#39;s&#39;. All the words contain &#39;s&#39;, but among these &quot;pest&quot;, &quot;stew&quot;, and &quot;show&quot; are shortest. The answer is &quot;pest&quot; because it is the word that appears earliest of the 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= licensePlate.length &lt;= 7</code></li>\n\t<li><code>licensePlate</code> contains digits, letters (uppercase or lowercase), or space <code>&#39; &#39;</code>.</li>\n\t<li><code>1 &lt;= words.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 15</code></li>\n\t<li><code>words[i]</code> consists of lower case English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string shortestCompletingWord(string licensePlate, vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String shortestCompletingWord(String licensePlate, String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestCompletingWord(self, licensePlate: str, words: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestCompletingWord(self, licensePlate, words):\n        \"\"\"\n        :type licensePlate: str\n        :type words: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} licensePlate\n * @param {string[]} words\n * @return {string}\n */\nvar shortestCompletingWord = function(licensePlate, words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function shortestCompletingWord(licensePlate: string, words: string[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ShortestCompletingWord(string licensePlate, string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* shortestCompletingWord(char* licensePlate, char** words, int wordsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestCompletingWord(licensePlate string, words []string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestCompletingWord(licensePlate: String, words: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestCompletingWord(_ licensePlate: String, _ words: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_completing_word(license_plate: String, words: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} license_plate\n# @param {String[]} words\n# @return {String}\ndef shortest_completing_word(license_plate, words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $licensePlate\n     * @param String[] $words\n     * @return String\n     */\n    function shortestCompletingWord($licensePlate, $words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String shortestCompletingWord(String licensePlate, List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestCompletingWord(licensePlate: String, words: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec shortest_completing_word(license_plate :: String.t, words :: [String.t]) :: String.t\n  def shortest_completing_word(license_plate, words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec shortest_completing_word(LicensePlate :: unicode:unicode_binary(), Words :: [unicode:unicode_binary()]) -> unicode:unicode_binary().\nshortest_completing_word(LicensePlate, Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (shortest-completing-word licensePlate words)\n  (-> string? (listof string?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"106.5K\", \"totalSubmission\": \"169.9K\", \"totalAcceptedRaw\": 106531, \"totalSubmissionRaw\": 169891, \"acRate\": \"62.7%\"}",
+  "metaData": "{\r\n  \"name\": \"shortestCompletingWord\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"licensePlate\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "\"1s3 PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]"
+}

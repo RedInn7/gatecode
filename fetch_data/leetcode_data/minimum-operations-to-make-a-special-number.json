@@ -1,0 +1,89 @@
+{
+  "questionId": "3046",
+  "questionFrontendId": "2844",
+  "title": "Minimum Operations to Make a Special Number",
+  "titleSlug": "minimum-operations-to-make-a-special-number",
+  "content": "<p>You are given a <strong>0-indexed</strong> string <code>num</code> representing a non-negative integer.</p>\n\n<p>In one operation, you can pick any digit of <code>num</code> and delete it. Note that if you delete all the digits of <code>num</code>, <code>num</code> becomes <code>0</code>.</p>\n\n<p>Return <em>the <strong>minimum number of operations</strong> required to make</em> <code>num</code> <i>special</i>.</p>\n\n<p>An integer <code>x</code> is considered <strong>special</strong> if it is divisible by <code>25</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;2245047&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Delete digits num[5] and num[6]. The resulting number is &quot;22450&quot; which is special since it is divisible by 25.\nIt can be shown that 2 is the minimum number of operations required to get a special number.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;2908305&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Delete digits num[3], num[4], and num[6]. The resulting number is &quot;2900&quot; which is special since it is divisible by 25.\nIt can be shown that 3 is the minimum number of operations required to get a special number.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;10&quot;\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> Delete digit num[0]. The resulting number is &quot;0&quot; which is special since it is divisible by 25.\nIt can be shown that 1 is the minimum number of operations required to get a special number.\n\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num.length &lt;= 100</code></li>\n\t<li><code>num</code> only consists of digits <code>&#39;0&#39;</code> through <code>&#39;9&#39;</code>.</li>\n\t<li><code>num</code> does not contain any leading zeros.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minimumOperations(string num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minimumOperations(String num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimumOperations(self, num: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimumOperations(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} num\n * @return {number}\n */\nvar minimumOperations = function(num) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minimumOperations(num: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinimumOperations(string num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minimumOperations(char* num) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimumOperations(num string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minimumOperations(num: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minimumOperations(_ num: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimum_operations(num: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} num\n# @return {Integer}\ndef minimum_operations(num)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $num\n     * @return Integer\n     */\n    function minimumOperations($num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minimumOperations(String num) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minimumOperations(num: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec minimum_operations(num :: String.t) :: integer\n  def minimum_operations(num) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec minimum_operations(Num :: unicode:unicode_binary()) -> integer().\nminimum_operations(Num) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (minimum-operations num)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"29.4K\", \"totalSubmission\": \"76.3K\", \"totalAcceptedRaw\": 29378, \"totalSubmissionRaw\": 76328, \"acRate\": \"38.5%\"}",
+  "metaData": "{\n  \"name\": \"minimumOperations\",\n  \"params\": [\n    {\n      \"name\": \"num\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"2245047\""
+}

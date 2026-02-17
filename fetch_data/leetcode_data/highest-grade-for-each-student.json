@@ -1,0 +1,33 @@
+{
+  "questionId": "1214",
+  "questionFrontendId": "1112",
+  "title": "Highest Grade For Each Student",
+  "titleSlug": "highest-grade-for-each-student",
+  "content": "<p>Table: <code>Enrollments</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| student_id    | int     |\n| course_id     | int     |\n| grade         | int     |\n+---------------+---------+\n(student_id, course_id) is the primary key (combination of columns with unique values) of this table.\ngrade is never NULL.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to find the highest grade with its corresponding course for each student. In case of a tie, you should find the course with the smallest <code>course_id</code>.</p>\n\n<p>Return the result table ordered by <code>student_id</code> in <strong>ascending order</strong>.</p>\n\n<p>The&nbsp;result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nEnrollments table:\n+------------+-------------------+\n| student_id | course_id | grade |\n+------------+-----------+-------+\n| 2          | 2         | 95    |\n| 2          | 3         | 95    |\n| 1          | 1         | 90    |\n| 1          | 2         | 99    |\n| 3          | 1         | 80    |\n| 3          | 2         | 75    |\n| 3          | 3         | 82    |\n+------------+-----------+-------+\n<strong>Output:</strong> \n+------------+-------------------+\n| student_id | course_id | grade |\n+------------+-----------+-------+\n| 1          | 2         | 99    |\n| 2          | 2         | 95    |\n| 3          | 3         | 82    |\n+------------+-----------+-------+\n</pre>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef highest_grade(enrollments: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"77.4K\", \"totalSubmission\": \"108.9K\", \"totalAcceptedRaw\": 77449, \"totalSubmissionRaw\": 108896, \"acRate\": \"71.1%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Enrollments (student_id int, course_id int, grade int)\"], \"mssql\": [\"Create table Enrollments (student_id int, course_id int, grade int)\"], \"oraclesql\": [\"Create table Enrollments (student_id int, course_id int, grade int)\"], \"database\": true, \"name\": \"highest_grade\", \"pythondata\": [\"Enrollments = pd.DataFrame([], columns=['student_id', 'course_id', 'grade']).astype({'student_id':'Int64', 'course_id':'Int64', 'grade':'Int64'})\"], \"postgresql\": [\"\\nCreate table If Not Exists Enrollments (student_id int, course_id int, grade int)\"], \"database_schema\": {\"Enrollments\": {\"student_id\": \"INT\", \"course_id\": \"INT\", \"grade\": \"INT\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Enrollments\":[\"student_id\",\"course_id\",\"grade\"]},\"rows\":{\"Enrollments\":[[2,2,95],[2,3,95],[1,1,90],[1,2,99],[3,1,80],[3,2,75],[3,3,82]]}}"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "3184",
+  "questionFrontendId": "2926",
+  "title": "Maximum Balanced Subsequence Sum",
+  "titleSlug": "maximum-balanced-subsequence-sum",
+  "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>.</p>\n\n<p>A <strong>subsequence</strong> of <code>nums</code> having length <code>k</code> and consisting of <strong>indices</strong> <code>i<sub>0</sub>&nbsp;&lt;&nbsp;i<sub>1</sub> &lt;&nbsp;... &lt; i<sub>k-1</sub></code> is <strong>balanced</strong> if the following holds:</p>\n\n<ul>\n\t<li><code>nums[i<sub>j</sub>] - nums[i<sub>j-1</sub>] &gt;= i<sub>j</sub> - i<sub>j-1</sub></code>, for every <code>j</code> in the range <code>[1, k - 1]</code>.</li>\n</ul>\n\n<p>A <strong>subsequence</strong> of <code>nums</code> having length <code>1</code> is considered balanced.</p>\n\n<p>Return <em>an integer denoting the <strong>maximum</strong> possible <strong>sum of elements</strong> in a <strong>balanced</strong> subsequence of </em><code>nums</code>.</p>\n\n<p>A <strong>subsequence</strong> of an array is a new <strong>non-empty</strong> array that is formed from the original array by deleting some (<strong>possibly none</strong>) of the elements without disturbing the relative positions of the remaining elements.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,3,5,6]\n<strong>Output:</strong> 14\n<strong>Explanation:</strong> In this example, the subsequence [3,5,6] consisting of indices 0, 2, and 3 can be selected.\nnums[2] - nums[0] &gt;= 2 - 0.\nnums[3] - nums[2] &gt;= 3 - 2.\nHence, it is a balanced subsequence, and its sum is the maximum among the balanced subsequences of nums.\nThe subsequence consisting of indices 1, 2, and 3 is also valid.\nIt can be shown that it is not possible to get a balanced subsequence with a sum greater than 14.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,-1,-3,8]\n<strong>Output:</strong> 13\n<strong>Explanation:</strong> In this example, the subsequence [5,8] consisting of indices 0 and 3 can be selected.\nnums[3] - nums[0] &gt;= 3 - 0.\nHence, it is a balanced subsequence, and its sum is the maximum among the balanced subsequences of nums.\nIt can be shown that it is not possible to get a balanced subsequence with a sum greater than 13.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-2,-1]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> In this example, the subsequence [-1] can be selected.\nIt is a balanced subsequence, and its sum is the maximum among the balanced subsequences of nums.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long maxBalancedSubsequenceSum(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long maxBalancedSubsequenceSum(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxBalancedSubsequenceSum(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxBalancedSubsequenceSum(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxBalancedSubsequenceSum = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxBalancedSubsequenceSum(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MaxBalancedSubsequenceSum(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long maxBalancedSubsequenceSum(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxBalancedSubsequenceSum(nums []int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxBalancedSubsequenceSum(nums: IntArray): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxBalancedSubsequenceSum(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_balanced_subsequence_sum(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_balanced_subsequence_sum(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxBalancedSubsequenceSum($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maxBalancedSubsequenceSum(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxBalancedSubsequenceSum(nums: Array[Int]): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_balanced_subsequence_sum(nums :: [integer]) :: integer\n  def max_balanced_subsequence_sum(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_balanced_subsequence_sum(Nums :: [integer()]) -> integer().\nmax_balanced_subsequence_sum(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-balanced-subsequence-sum nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.6K\", \"totalSubmission\": \"37.5K\", \"totalAcceptedRaw\": 9633, \"totalSubmissionRaw\": 37477, \"acRate\": \"25.7%\"}",
+  "metaData": "{\n  \"name\": \"maxBalancedSubsequenceSum\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "[3,3,5,6]"
+}

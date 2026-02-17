@@ -1,0 +1,89 @@
+{
+  "questionId": "1024",
+  "questionFrontendId": "982",
+  "title": "Triples with Bitwise AND Equal To Zero",
+  "titleSlug": "triples-with-bitwise-and-equal-to-zero",
+  "content": "<p>Given an integer array nums, return <em>the number of <strong>AND triples</strong></em>.</p>\n\n<p>An <strong>AND triple</strong> is a triple of indices <code>(i, j, k)</code> such that:</p>\n\n<ul>\n\t<li><code>0 &lt;= i &lt; nums.length</code></li>\n\t<li><code>0 &lt;= j &lt; nums.length</code></li>\n\t<li><code>0 &lt;= k &lt; nums.length</code></li>\n\t<li><code>nums[i] &amp; nums[j] &amp; nums[k] == 0</code>, where <code>&amp;</code> represents the bitwise-AND operator.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,1,3]\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> We could choose the following i, j, k triples:\n(i=0, j=0, k=1) : 2 &amp; 2 &amp; 1\n(i=0, j=1, k=0) : 2 &amp; 1 &amp; 2\n(i=0, j=1, k=1) : 2 &amp; 1 &amp; 1\n(i=0, j=1, k=2) : 2 &amp; 1 &amp; 3\n(i=0, j=2, k=1) : 2 &amp; 3 &amp; 1\n(i=1, j=0, k=0) : 1 &amp; 2 &amp; 2\n(i=1, j=0, k=1) : 1 &amp; 2 &amp; 1\n(i=1, j=0, k=2) : 1 &amp; 2 &amp; 3\n(i=1, j=1, k=0) : 1 &amp; 1 &amp; 2\n(i=1, j=2, k=0) : 1 &amp; 3 &amp; 2\n(i=2, j=0, k=1) : 3 &amp; 2 &amp; 1\n(i=2, j=1, k=0) : 3 &amp; 1 &amp; 2\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,0,0]\n<strong>Output:</strong> 27\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>0 &lt;= nums[i] &lt; 2<sup>16</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countTriplets(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countTriplets(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countTriplets(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countTriplets(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countTriplets = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function countTriplets(nums: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountTriplets(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int countTriplets(int* nums, int numsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countTriplets(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countTriplets(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countTriplets(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_triplets(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef count_triplets(nums)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function countTriplets($nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int countTriplets(List<int> nums) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countTriplets(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec count_triplets(nums :: [integer]) :: integer\n  def count_triplets(nums) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec count_triplets(Nums :: [integer()]) -> integer().\ncount_triplets(Nums) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (count-triplets nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.2K\", \"totalSubmission\": \"40.3K\", \"totalAcceptedRaw\": 24161, \"totalSubmissionRaw\": 40288, \"acRate\": \"60.0%\"}",
+  "metaData": "{\n  \"name\": \"countTriplets\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[2,1,3]"
+}

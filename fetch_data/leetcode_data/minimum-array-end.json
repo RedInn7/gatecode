@@ -1,0 +1,89 @@
+{
+  "questionId": "3394",
+  "questionFrontendId": "3133",
+  "title": "Minimum Array End",
+  "titleSlug": "minimum-array-end",
+  "content": "<p>You are given two integers <code>n</code> and <code>x</code>. You have to construct an array of <strong>positive</strong> integers <code>nums</code> of size <code>n</code> where for every <code>0 &lt;= i &lt; n - 1</code>, <code>nums[i + 1]</code> is <strong>greater than</strong> <code>nums[i]</code>, and the result of the bitwise <code>AND</code> operation between all elements of <code>nums</code> is <code>x</code>.</p>\n\n<p>Return the <strong>minimum</strong> possible value of <code>nums[n - 1]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 3, x = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> can be <code>[4,5,6]</code> and its last element is 6.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2, x = 7</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">15</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> can be <code>[7,15]</code> and its last element is 15.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n, x &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    long long minEnd(int n, int x) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public long minEnd(int n, int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minEnd(self, n: int, x: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minEnd(self, n, x):\n        \"\"\"\n        :type n: int\n        :type x: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} x\n * @return {number}\n */\nvar minEnd = function(n, x) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minEnd(n: number, x: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public long MinEnd(int n, int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "long long minEnd(int n, int x) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minEnd(n int, x int) int64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minEnd(n: Int, x: Int): Long {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minEnd(_ n: Int, _ x: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_end(n: i32, x: i32) -> i64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} x\n# @return {Integer}\ndef min_end(n, x)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $x\n     * @return Integer\n     */\n    function minEnd($n, $x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minEnd(int n, int x) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minEnd(n: Int, x: Int): Long = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_end(n :: integer, x :: integer) :: integer\n  def min_end(n, x) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_end(N :: integer(), X :: integer()) -> integer().\nmin_end(N, X) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-end n x)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"109.5K\", \"totalSubmission\": \"197.5K\", \"totalAcceptedRaw\": 109484, \"totalSubmissionRaw\": 197480, \"acRate\": \"55.4%\"}",
+  "metaData": "{\n  \"name\": \"minEnd\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"x\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"long\"\n  }\n}",
+  "sampleTestCase": "3\n4"
+}

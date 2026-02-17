@@ -1,0 +1,89 @@
+{
+  "questionId": "2021",
+  "questionFrontendId": "1910",
+  "title": "Remove All Occurrences of a Substring",
+  "titleSlug": "remove-all-occurrences-of-a-substring",
+  "content": "<p>Given two strings <code>s</code> and <code>part</code>, perform the following operation on <code>s</code> until <strong>all</strong> occurrences of the substring <code>part</code> are removed:</p>\n\n<ul>\n\t<li>Find the <strong>leftmost</strong> occurrence of the substring <code>part</code> and <strong>remove</strong> it from <code>s</code>.</li>\n</ul>\n\n<p>Return <code>s</code><em> after removing all occurrences of </em><code>part</code>.</p>\n\n<p>A <strong>substring</strong> is a contiguous sequence of characters in a string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;daabcbaabcbc&quot;, part = &quot;abc&quot;\n<strong>Output:</strong> &quot;dab&quot;\n<strong>Explanation</strong>: The following operations are done:\n- s = &quot;da<strong><u>abc</u></strong>baabcbc&quot;, remove &quot;abc&quot; starting at index 2, so s = &quot;dabaabcbc&quot;.\n- s = &quot;daba<strong><u>abc</u></strong>bc&quot;, remove &quot;abc&quot; starting at index 4, so s = &quot;dababc&quot;.\n- s = &quot;dab<strong><u>abc</u></strong>&quot;, remove &quot;abc&quot; starting at index 3, so s = &quot;dab&quot;.\nNow s has no occurrences of &quot;abc&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;axxxxyyyyb&quot;, part = &quot;xy&quot;\n<strong>Output:</strong> &quot;ab&quot;\n<strong>Explanation</strong>: The following operations are done:\n- s = &quot;axxx<strong><u>xy</u></strong>yyyb&quot;, remove &quot;xy&quot; starting at index 4 so s = &quot;axxxyyyb&quot;.\n- s = &quot;axx<strong><u>xy</u></strong>yyb&quot;, remove &quot;xy&quot; starting at index 3 so s = &quot;axxyyb&quot;.\n- s = &quot;ax<strong><u>xy</u></strong>yb&quot;, remove &quot;xy&quot; starting at index 2 so s = &quot;axyb&quot;.\n- s = &quot;a<strong><u>xy</u></strong>b&quot;, remove &quot;xy&quot; starting at index 1 so s = &quot;ab&quot;.\nNow s has no occurrences of &quot;xy&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= part.length &lt;= 1000</code></li>\n\t<li><code>s</code>​​​​​​ and <code>part</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string removeOccurrences(string s, string part) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String removeOccurrences(String s, String part) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeOccurrences(self, s: str, part: str) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeOccurrences(self, s, part):\n        \"\"\"\n        :type s: str\n        :type part: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} part\n * @return {string}\n */\nvar removeOccurrences = function(s, part) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function removeOccurrences(s: string, part: string): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string RemoveOccurrences(string s, string part) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* removeOccurrences(char* s, char* part) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeOccurrences(s string, part string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeOccurrences(s: String, part: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeOccurrences(_ s: String, _ part: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_occurrences(s: String, part: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} part\n# @return {String}\ndef remove_occurrences(s, part)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $part\n     * @return String\n     */\n    function removeOccurrences($s, $part) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String removeOccurrences(String s, String part) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeOccurrences(s: String, part: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec remove_occurrences(s :: String.t, part :: String.t) :: String.t\n  def remove_occurrences(s, part) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec remove_occurrences(S :: unicode:unicode_binary(), Part :: unicode:unicode_binary()) -> unicode:unicode_binary().\nremove_occurrences(S, Part) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (remove-occurrences s part)\n  (-> string? string? string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"389.8K\", \"totalSubmission\": \"497.2K\", \"totalAcceptedRaw\": 389845, \"totalSubmissionRaw\": 497185, \"acRate\": \"78.4%\"}",
+  "metaData": "{\n  \"name\": \"removeOccurrences\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"part\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"daabcbaabcbc\"\n\"abc\""
+}

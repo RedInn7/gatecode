@@ -1,0 +1,73 @@
+{
+  "questionId": "978",
+  "questionFrontendId": "941",
+  "title": "Valid Mountain Array",
+  "titleSlug": "valid-mountain-array",
+  "content": "<p>Given an array of integers <code>arr</code>, return <em><code>true</code> if and only if it is a valid mountain array</em>.</p>\n\n<p>Recall that arr is a mountain array if and only if:</p>\n\n<ul>\n\t<li><code>arr.length &gt;= 3</code></li>\n\t<li>There exists some <code>i</code> with <code>0 &lt; i &lt; arr.length - 1</code> such that:\n\t<ul>\n\t\t<li><code>arr[0] &lt; arr[1] &lt; ... &lt; arr[i - 1] &lt; arr[i] </code></li>\n\t\t<li><code>arr[i] &gt; arr[i + 1] &gt; ... &gt; arr[arr.length - 1]</code></li>\n\t</ul>\n\t</li>\n</ul>\n<img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_valid_mountain_array.png\" width=\"500\" />\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> arr = [2,1]\n<strong>Output:</strong> false\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> arr = [3,5,5]\n<strong>Output:</strong> false\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> arr = [0,3,2,1]\n<strong>Output:</strong> true\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool validMountainArray(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean validMountainArray(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validMountainArray(self, arr: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validMountainArray(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {boolean}\n */\nvar validMountainArray = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function validMountainArray(arr: number[]): boolean {\n\n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ValidMountainArray(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool validMountainArray(int* arr, int arrSize){\n\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validMountainArray(arr []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun validMountainArray(arr: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func validMountainArray(_ arr: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_mountain_array(arr: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Boolean}\ndef valid_mountain_array(arr)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Boolean\n     */\n    function validMountainArray($arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def validMountainArray(arr: Array[Int]): Boolean = {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"547.6K\", \"totalSubmission\": \"1.6M\", \"totalAcceptedRaw\": 547609, \"totalSubmissionRaw\": 1567419, \"acRate\": \"34.9%\"}",
+  "metaData": "{\n  \"name\": \"validMountainArray\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "[2,1]"
+}

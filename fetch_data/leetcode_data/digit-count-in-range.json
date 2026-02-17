@@ -1,0 +1,89 @@
+{
+  "questionId": "1068",
+  "questionFrontendId": "1067",
+  "title": "Digit Count in Range",
+  "titleSlug": "digit-count-in-range",
+  "content": "<p>Given a single-digit integer <code>d</code> and two integers <code>low</code> and <code>high</code>, return <em>the number of times that </em><code>d</code><em> occurs as a digit in all integers in the inclusive range </em><code>[low, high]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> d = 1, low = 1, high = 13\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The digit d = 1 occurs 6 times in 1, 10, 11, 12, 13.\nNote that the digit d = 1 occurs twice in the number 11.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> d = 3, low = 100, high = 250\n<strong>Output:</strong> 35\n<strong>Explanation:</strong> The digit d = 3 occurs 35 times in 103,113,123,130,131,...,238,239,243.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= d &lt;= 9</code></li>\n\t<li><code>1 &lt;= low &lt;= high &lt;= 2 * 10<sup>8</sup></code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int digitsCount(int d, int low, int high) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int digitsCount(int d, int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def digitsCount(self, d: int, low: int, high: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def digitsCount(self, d, low, high):\n        \"\"\"\n        :type d: int\n        :type low: int\n        :type high: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} d\n * @param {number} low\n * @param {number} high\n * @return {number}\n */\nvar digitsCount = function(d, low, high) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function digitsCount(d: number, low: number, high: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int DigitsCount(int d, int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int digitsCount(int d, int low, int high) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func digitsCount(d int, low int, high int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun digitsCount(d: Int, low: Int, high: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func digitsCount(_ d: Int, _ low: Int, _ high: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn digits_count(d: i32, low: i32, high: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} d\n# @param {Integer} low\n# @param {Integer} high\n# @return {Integer}\ndef digits_count(d, low, high)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $d\n     * @param Integer $low\n     * @param Integer $high\n     * @return Integer\n     */\n    function digitsCount($d, $low, $high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int digitsCount(int d, int low, int high) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def digitsCount(d: Int, low: Int, high: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec digits_count(d :: integer, low :: integer, high :: integer) :: integer\n  def digits_count(d, low, high) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec digits_count(D :: integer(), Low :: integer(), High :: integer()) -> integer().\ndigits_count(D, Low, High) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (digits-count d low high)\n  (-> exact-integer? exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.7K\", \"totalSubmission\": \"10K\", \"totalAcceptedRaw\": 4656, \"totalSubmissionRaw\": 10045, \"acRate\": \"46.4%\"}",
+  "metaData": "{\r\n  \"name\": \"digitsCount\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"d\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"low\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"high\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "1\n1\n13"
+}

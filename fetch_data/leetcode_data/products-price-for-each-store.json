@@ -1,0 +1,33 @@
+{
+  "questionId": "1926",
+  "questionFrontendId": "1777",
+  "title": "Product's Price for Each Store",
+  "titleSlug": "products-price-for-each-store",
+  "content": "<p>Table: <code>Products</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| product_id  | int     |\n| store       | enum    |\n| price       | int     |\n+-------------+---------+\nIn SQL, (product_id, store) is the primary key for this table.\nstore is a category of type (&#39;store1&#39;, &#39;store2&#39;, &#39;store3&#39;) where each represents the store this product is available at.\nprice is the price of the product at this store.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Find the price of each product in each store.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nProducts table:\n+-------------+--------+-------+\n| product_id  | store  | price |\n+-------------+--------+-------+\n| 0           | store1 | 95    |\n| 0           | store3 | 105   |\n| 0           | store2 | 100   |\n| 1           | store1 | 70    |\n| 1           | store3 | 80    |\n+-------------+--------+-------+\n<strong>Output:</strong> \n+-------------+--------+--------+--------+\n| product_id  | store1 | store2 | store3 |\n+-------------+--------+--------+--------+\n| 0           | 95     | 100    | 105    |\n| 1           | 70     | null   | 80     |\n+-------------+--------+--------+--------+\n<strong>Explanation:</strong> \nProduct 0 price&#39;s are 95 for store1, 100 for store2 and, 105 for store3.\nProduct 1 price&#39;s are 70 for store1, 80 for store3 and, it&#39;s not sold in store2.\n</pre>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef products_price(products: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.6K\", \"totalSubmission\": \"30K\", \"totalAcceptedRaw\": 24614, \"totalSubmissionRaw\": 29979, \"acRate\": \"82.1%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Products (product_id int, store ENUM('store1', 'store2', 'store3'), price int)\"], \"mssql\": [\"Create table Products (product_id int, store varchar(6) not null check(store in ('store1', 'store2', 'store3')), price int)\"], \"oraclesql\": [\"Create table Products (product_id int, store varchar(6) not null check(store in ('store1', 'store2', 'store3')), price int)\"], \"database\": true, \"name\": \"products_price\", \"pythondata\": [\"Products = pd.DataFrame([], columns=['product_id', 'store', 'price']).astype({'product_id':'Int64', 'store':'category', 'price':'Int64'})\"], \"postgresql\": [\"Create table If Not Exists Products (product_id int, store VARCHAR(30) CHECK (store IN ('store1', 'store2', 'store3')), price int)\\n\"], \"manual\": false, \"database_schema\": {\"Products\": {\"product_id\": \"INT\", \"store\": \"ENUM('store1', 'store2', 'store3')\", \"price\": \"INT\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Products\":[\"product_id\",\"store\",\"price\"]},\"rows\":{\"Products\":[[\"0\",\"store1\",\"95\"],[\"0\",\"store3\",\"105\"],[\"0\",\"store2\",\"100\"],[\"1\",\"store1\",\"70\"],[\"1\",\"store3\",\"80\"]]}}"
+}

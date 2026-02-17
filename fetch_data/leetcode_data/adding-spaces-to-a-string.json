@@ -1,0 +1,89 @@
+{
+  "questionId": "2232",
+  "questionFrontendId": "2109",
+  "title": "Adding Spaces to a String",
+  "titleSlug": "adding-spaces-to-a-string",
+  "content": "<p>You are given a <strong>0-indexed</strong> string <code>s</code> and a <strong>0-indexed</strong> integer array <code>spaces</code> that describes the indices in the original string where spaces will be added. Each space should be inserted <strong>before</strong> the character at the given index.</p>\n\n<ul>\n\t<li>For example, given <code>s = &quot;EnjoyYourCoffee&quot;</code> and <code>spaces = [5, 9]</code>, we place spaces before <code>&#39;Y&#39;</code> and <code>&#39;C&#39;</code>, which are at indices <code>5</code> and <code>9</code> respectively. Thus, we obtain <code>&quot;Enjoy <strong><u>Y</u></strong>our <u><strong>C</strong></u>offee&quot;</code>.</li>\n</ul>\n\n<p>Return<strong> </strong><em>the modified string <strong>after</strong> the spaces have been added.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;LeetcodeHelpsMeLearn&quot;, spaces = [8,13,15]\n<strong>Output:</strong> &quot;Leetcode Helps Me Learn&quot;\n<strong>Explanation:</strong> \nThe indices 8, 13, and 15 correspond to the underlined characters in &quot;Leetcode<u><strong>H</strong></u>elps<u><strong>M</strong></u>e<u><strong>L</strong></u>earn&quot;.\nWe then place spaces before those characters.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;icodeinpython&quot;, spaces = [1,5,7,9]\n<strong>Output:</strong> &quot;i code in py thon&quot;\n<strong>Explanation:</strong>\nThe indices 1, 5, 7, and 9 correspond to the underlined characters in &quot;i<u><strong>c</strong></u>ode<u><strong>i</strong></u>n<u><strong>p</strong></u>y<u><strong>t</strong></u>hon&quot;.\nWe then place spaces before those characters.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;spacing&quot;, spaces = [0,1,2,3,4,5,6]\n<strong>Output:</strong> &quot; s p a c i n g&quot;\n<strong>Explanation:</strong>\nWe are also able to place spaces before the first character of the string.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 3 * 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists only of lowercase and uppercase English letters.</li>\n\t<li><code>1 &lt;= spaces.length &lt;= 3 * 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= spaces[i] &lt;= s.length - 1</code></li>\n\t<li>All the values of <code>spaces</code> are <strong>strictly increasing</strong>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string addSpaces(string s, vector<int>& spaces) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String addSpaces(String s, int[] spaces) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def addSpaces(self, s: str, spaces: List[int]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def addSpaces(self, s, spaces):\n        \"\"\"\n        :type s: str\n        :type spaces: List[int]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number[]} spaces\n * @return {string}\n */\nvar addSpaces = function(s, spaces) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function addSpaces(s: string, spaces: number[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string AddSpaces(string s, int[] spaces) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* addSpaces(char* s, int* spaces, int spacesSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func addSpaces(s string, spaces []int) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun addSpaces(s: String, spaces: IntArray): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func addSpaces(_ s: String, _ spaces: [Int]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn add_spaces(s: String, spaces: Vec<i32>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer[]} spaces\n# @return {String}\ndef add_spaces(s, spaces)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer[] $spaces\n     * @return String\n     */\n    function addSpaces($s, $spaces) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String addSpaces(String s, List<int> spaces) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def addSpaces(s: String, spaces: Array[Int]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec add_spaces(s :: String.t, spaces :: [integer]) :: String.t\n  def add_spaces(s, spaces) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec add_spaces(S :: unicode:unicode_binary(), Spaces :: [integer()]) -> unicode:unicode_binary().\nadd_spaces(S, Spaces) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (add-spaces s spaces)\n  (-> string? (listof exact-integer?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"221.2K\", \"totalSubmission\": \"308.2K\", \"totalAcceptedRaw\": 221158, \"totalSubmissionRaw\": 308198, \"acRate\": \"71.8%\"}",
+  "metaData": "{\n  \"name\": \"addSpaces\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"spaces\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "sampleTestCase": "\"LeetcodeHelpsMeLearn\"\n[8,13,15]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "1910",
+  "questionFrontendId": "1784",
+  "title": "Check if Binary String Has at Most One Segment of Ones",
+  "titleSlug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+  "content": "<p>Given a binary string <code>s</code> <strong>​​​​​without leading zeros</strong>, return <code>true</code>​​​ <em>if </em><code>s</code><em> contains <strong>at most one contiguous segment of ones</strong></em>. Otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;1001&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>The ones do not form a contiguous segment.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;110&quot;\n<strong>Output:</strong> true</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s[i]</code>​​​​ is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>\n\t<li><code>s[0]</code> is&nbsp;<code>&#39;1&#39;</code>.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool checkOnesSegment(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkOnesSegment(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkOnesSegment(self, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkOnesSegment(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkOnesSegment = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function checkOnesSegment(s: string): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CheckOnesSegment(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool checkOnesSegment(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkOnesSegment(s string) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun checkOnesSegment(s: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func checkOnesSegment(_ s: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_ones_segment(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Boolean}\ndef check_ones_segment(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function checkOnesSegment($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool checkOnesSegment(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def checkOnesSegment(s: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec check_ones_segment(s :: String.t) :: boolean\n  def check_ones_segment(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec check_ones_segment(S :: unicode:unicode_binary()) -> boolean().\ncheck_ones_segment(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (check-ones-segment s)\n  (-> string? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"58.4K\", \"totalSubmission\": \"148.3K\", \"totalAcceptedRaw\": 58370, \"totalSubmissionRaw\": 148337, \"acRate\": \"39.3%\"}",
+  "metaData": "{\n  \"name\": \"checkOnesSegment\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "\"1001\""
+}

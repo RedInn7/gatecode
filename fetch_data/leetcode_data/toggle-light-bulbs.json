@@ -1,0 +1,89 @@
+{
+  "questionId": "4212",
+  "questionFrontendId": "3842",
+  "title": "Toggle Light Bulbs",
+  "titleSlug": "toggle-light-bulbs",
+  "content": "<p>You are given an array <code>bulbs</code> of integers between 1 and 100.</p>\n\n<p>There are 100 light bulbs numbered from 1 to 100. All of them are switched off initially.</p>\n\n<p>For each element <code>bulbs[i]</code> in the array <code>bulbs</code>:</p>\n\n<ul>\n\t<li>If the <code>bulbs[i]<sup>th</sup></code> light bulb is currently off, switch it on.</li>\n\t<li>Otherwise, switch it off.</li>\n</ul>\n\n<p>Return the list of integers denoting the light bulbs that are on in the end, <strong>sorted</strong> in <strong>ascending</strong> order. If no bulb is on, return an empty list.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> bulbs<span class=\"example-io\"> = [10,30,20,10]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[20,30]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The <code>bulbs[0] = 10<sup>th</sup></code> light bulb is currently off. We switch it on.</li>\n\t<li>The <code>bulbs[1] = 30<sup>th</sup></code> light bulb is currently off. We switch it on.</li>\n\t<li>The <code>bulbs[2] = 20<sup>th</sup></code> light bulb is currently off. We switch it on.</li>\n\t<li>The <code>bulbs[3] = 10<sup>th</sup></code> light bulb is currently on. We switch it off.</li>\n\t<li>In the end, the 20<sup>th</sup> and the 30<sup>th</sup> light bulbs are on.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> bulbs<span class=\"example-io\"> = [100,100]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The <code>bulbs[0] = 100<sup>th</sup></code> light bulb is currently off. We switch it on.</li>\n\t<li>The <code>bulbs[1] = 100<sup>th</sup></code> light bulb is currently on. We switch it off.</li>\n\t<li>In the end, no light bulb is on.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= bulbs.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= bulbs[i] &lt;= 100</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> toggleLightBulbs(vector<int>& bulbs) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> toggleLightBulbs(List<Integer> bulbs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def toggleLightBulbs(self, bulbs: list[int]) -> list[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def toggleLightBulbs(self, bulbs):\n        \"\"\"\n        :type bulbs: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} bulbs\n * @return {number[]}\n */\nvar toggleLightBulbs = function(bulbs) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function toggleLightBulbs(bulbs: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> ToggleLightBulbs(IList<int> bulbs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* toggleLightBulbs(int* bulbs, int bulbsSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func toggleLightBulbs(bulbs []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun toggleLightBulbs(bulbs: List<Int>): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func toggleLightBulbs(_ bulbs: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn toggle_light_bulbs(bulbs: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} bulbs\n# @return {Integer[]}\ndef toggle_light_bulbs(bulbs)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $bulbs\n     * @return Integer[]\n     */\n    function toggleLightBulbs($bulbs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> toggleLightBulbs(List<int> bulbs) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def toggleLightBulbs(bulbs: List[Int]): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec toggle_light_bulbs(bulbs :: [integer]) :: [integer]\n  def toggle_light_bulbs(bulbs) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec toggle_light_bulbs(Bulbs :: [integer()]) -> [integer()].\ntoggle_light_bulbs(Bulbs) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (toggle-light-bulbs bulbs)\n  (-> (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43.4K\", \"totalSubmission\": \"60.4K\", \"totalAcceptedRaw\": 43403, \"totalSubmissionRaw\": 60382, \"acRate\": \"71.9%\"}",
+  "metaData": "{\n  \"name\": \"toggleLightBulbs\",\n  \"params\": [\n    {\n      \"name\": \"bulbs\",\n      \"type\": \"list<integer>\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "sampleTestCase": "[10,30,20,10]"
+}

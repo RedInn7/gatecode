@@ -1,0 +1,89 @@
+{
+  "questionId": "3903",
+  "questionFrontendId": "3592",
+  "title": "Inverse Coin Change",
+  "titleSlug": "inverse-coin-change",
+  "content": "<p>You are given a <strong>1-indexed</strong> integer array <code>numWays</code>, where <code>numWays[i]</code> represents the number of ways to select a total amount <code>i</code> using an <strong>infinite</strong> supply of some <em>fixed</em> coin denominations. Each denomination is a <strong>positive</strong> integer with value <strong>at most</strong> <code>numWays.length</code>.</p>\n\n<p>However, the exact coin denominations have been <em>lost</em>. Your task is to recover the set of denominations that could have resulted in the given <code>numWays</code> array.</p>\n\n<p>Return a <strong>sorted</strong> array containing <strong>unique</strong> integers which represents this set of denominations.</p>\n\n<p>If no such set exists, return an <strong>empty</strong> array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">numWays = [0,1,0,2,0,3,0,4,0,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[2,4,6]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\">Amount</th>\n\t\t\t<th style=\"border: 1px solid black;\">Number of ways</th>\n\t\t\t<th style=\"border: 1px solid black;\">Explanation</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">There is no way to select coins with total value 1.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">The only way is <code>[2]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">There is no way to select coins with total value 3.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[2, 2]</code> and <code>[4]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">5</td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">There is no way to select coins with total value 5.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">6</td>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[2, 2, 2]</code>, <code>[2, 4]</code>, and <code>[6]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">7</td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">There is no way to select coins with total value 7.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">8</td>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[2, 2, 2, 2]</code>, <code>[2, 2, 4]</code>, <code>[2, 6]</code>, and <code>[4, 4]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">9</td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">There is no way to select coins with total value 9.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">10</td>\n\t\t\t<td style=\"border: 1px solid black;\">5</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[2, 2, 2, 2, 2]</code>, <code>[2, 2, 2, 4]</code>, <code>[2, 4, 4]</code>, <code>[2, 2, 6]</code>, and <code>[4, 6]</code>.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<strong class=\"example\">Example 2:</strong>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">numWays = [1,2,2,3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,2,5]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\">Amount</th>\n\t\t\t<th style=\"border: 1px solid black;\">Number of ways</th>\n\t\t\t<th style=\"border: 1px solid black;\">Explanation</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">The only way is <code>[1]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[1, 1]</code> and <code>[2]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[1, 1, 1]</code> and <code>[1, 2]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[1, 1, 1, 1]</code>, <code>[1, 1, 2]</code>, and <code>[2, 2]</code>.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">5</td>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\">The ways are <code>[1, 1, 1, 1, 1]</code>, <code>[1, 1, 1, 2]</code>, <code>[1, 2, 2]</code>, and <code>[5]</code>.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">numWays = [1,2,3,4,15]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>No set of denomination satisfies this array.</p>\n</div>\n\n<table style=\"border: 1px solid black;\">\n</table>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= numWays.length &lt;= 100</code></li>\n\t<li><code>0 &lt;= numWays[i] &lt;= 2 * 10<sup>8</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> findCoins(vector<int>& numWays) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> findCoins(int[] numWays) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findCoins(self, numWays: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findCoins(self, numWays):\n        \"\"\"\n        :type numWays: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} numWays\n * @return {number[]}\n */\nvar findCoins = function(numWays) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findCoins(numWays: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> FindCoins(int[] numWays) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findCoins(int* numWays, int numWaysSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findCoins(numWays []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findCoins(numWays: IntArray): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findCoins(_ numWays: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_coins(num_ways: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} num_ways\n# @return {Integer[]}\ndef find_coins(num_ways)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $numWays\n     * @return Integer[]\n     */\n    function findCoins($numWays) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> findCoins(List<int> numWays) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findCoins(numWays: Array[Int]): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_coins(num_ways :: [integer]) :: [integer]\n  def find_coins(num_ways) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_coins(NumWays :: [integer()]) -> [integer()].\nfind_coins(NumWays) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-coins numWays)\n  (-> (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.1K\", \"totalSubmission\": \"41K\", \"totalAcceptedRaw\": 21127, \"totalSubmissionRaw\": 41046, \"acRate\": \"51.5%\"}",
+  "metaData": "{\n  \"name\": \"findCoins\",\n  \"params\": [\n    {\n      \"name\": \"numWays\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "sampleTestCase": "[0,1,0,2,0,3,0,4,0,5]"
+}

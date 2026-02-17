@@ -1,0 +1,89 @@
+{
+  "questionId": "371",
+  "questionFrontendId": "371",
+  "title": "Sum of Two Integers",
+  "titleSlug": "sum-of-two-integers",
+  "content": "<p>Given two integers <code>a</code> and <code>b</code>, return <em>the sum of the two integers without using the operators</em> <code>+</code> <em>and</em> <code>-</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> a = 1, b = 2\n<strong>Output:</strong> 3\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> a = 2, b = 3\n<strong>Output:</strong> 5\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-1000 &lt;= a, b &lt;= 1000</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int getSum(int a, int b) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int getSum(int a, int b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def getSum(self, a: int, b: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def getSum(self, a, b):\n        \"\"\"\n        :type a: int\n        :type b: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} a\n * @param {number} b\n * @return {number}\n */\nvar getSum = function(a, b) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function getSum(a: number, b: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int GetSum(int a, int b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int getSum(int a, int b) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func getSum(a int, b int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun getSum(a: Int, b: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func getSum(_ a: Int, _ b: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn get_sum(a: i32, b: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} a\n# @param {Integer} b\n# @return {Integer}\ndef get_sum(a, b)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $a\n     * @param Integer $b\n     * @return Integer\n     */\n    function getSum($a, $b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int getSum(int a, int b) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def getSum(a: Int, b: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec get_sum(a :: integer, b :: integer) :: integer\n  def get_sum(a, b) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec get_sum(A :: integer(), B :: integer()) -> integer().\nget_sum(A, B) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (get-sum a b)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"675.7K\", \"totalSubmission\": \"1.2M\", \"totalAcceptedRaw\": 675655, \"totalSubmissionRaw\": 1228365, \"acRate\": \"55.0%\"}",
+  "metaData": "{\r\n  \"name\": \"getSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"a\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"b\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "sampleTestCase": "1\n2"
+}

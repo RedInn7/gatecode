@@ -1,0 +1,89 @@
+{
+  "questionId": "1909",
+  "questionFrontendId": "1762",
+  "title": "Buildings With an Ocean View",
+  "titleSlug": "buildings-with-an-ocean-view",
+  "content": "<p>There are <code>n</code> buildings in a line. You are given an integer array <code>heights</code> of size <code>n</code> that represents the heights of the buildings in the line.</p>\n\n<p>The ocean is to the right of the buildings. A building has an ocean view if the building can see the ocean without obstructions. Formally, a building has an ocean view if all the buildings to its right have a <strong>smaller</strong> height.</p>\n\n<p>Return a list of indices <strong>(0-indexed)</strong> of buildings that have an ocean view, sorted in increasing order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> heights = [4,2,3,1]\n<strong>Output:</strong> [0,2,3]\n<strong>Explanation:</strong> Building 1 (0-indexed) does not have an ocean view because building 2 is taller.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> heights = [4,3,2,1]\n<strong>Output:</strong> [0,1,2,3]\n<strong>Explanation:</strong> All the buildings have an ocean view.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> heights = [1,3,2,4]\n<strong>Output:</strong> [3]\n<strong>Explanation:</strong> Only building 3 has an ocean view.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= heights.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= heights[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> findBuildings(vector<int>& heights) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] findBuildings(int[] heights) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findBuildings(self, heights: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findBuildings(self, heights):\n        \"\"\"\n        :type heights: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} heights\n * @return {number[]}\n */\nvar findBuildings = function(heights) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findBuildings(heights: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] FindBuildings(int[] heights) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findBuildings(int* heights, int heightsSize, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findBuildings(heights []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findBuildings(heights: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findBuildings(_ heights: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_buildings(heights: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} heights\n# @return {Integer[]}\ndef find_buildings(heights)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $heights\n     * @return Integer[]\n     */\n    function findBuildings($heights) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> findBuildings(List<int> heights) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findBuildings(heights: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_buildings(heights :: [integer]) :: [integer]\n  def find_buildings(heights) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_buildings(Heights :: [integer()]) -> [integer()].\nfind_buildings(Heights) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-buildings heights)\n  (-> (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"339.1K\", \"totalSubmission\": \"419.3K\", \"totalAcceptedRaw\": 339115, \"totalSubmissionRaw\": 419256, \"acRate\": \"80.9%\"}",
+  "metaData": "{\n  \"name\": \"findBuildings\",\n  \"params\": [\n    {\n      \"name\": \"heights\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "sampleTestCase": "[4,2,3,1]"
+}

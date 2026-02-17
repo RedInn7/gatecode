@@ -1,0 +1,89 @@
+{
+  "questionId": "1151",
+  "questionFrontendId": "1215",
+  "title": "Stepping Numbers",
+  "titleSlug": "stepping-numbers",
+  "content": "<p>A <strong>stepping number</strong> is an integer such that all of its adjacent digits have an absolute difference of exactly <code>1</code>.</p>\n\n<ul>\n\t<li>For example, <code>321</code> is a <strong>stepping number</strong> while <code>421</code> is not.</li>\n</ul>\n\n<p>Given two integers <code>low</code> and <code>high</code>, return <em>a sorted list of all the <strong>stepping numbers</strong> in the inclusive range</em> <code>[low, high]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> low = 0, high = 21\n<strong>Output:</strong> [0,1,2,3,4,5,6,7,8,9,10,12,21]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> low = 10, high = 15\n<strong>Output:</strong> [10,12]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= low &lt;= high &lt;= 2 * 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> countSteppingNumbers(int low, int high) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> countSteppingNumbers(int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countSteppingNumbers(self, low: int, high: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countSteppingNumbers(self, low, high):\n        \"\"\"\n        :type low: int\n        :type high: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} low\n * @param {number} high\n * @return {number[]}\n */\nvar countSteppingNumbers = function(low, high) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function countSteppingNumbers(low: number, high: number): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> CountSteppingNumbers(int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* countSteppingNumbers(int low, int high, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countSteppingNumbers(low int, high int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countSteppingNumbers(low: Int, high: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countSteppingNumbers(_ low: Int, _ high: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_stepping_numbers(low: i32, high: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} low\n# @param {Integer} high\n# @return {Integer[]}\ndef count_stepping_numbers(low, high)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $low\n     * @param Integer $high\n     * @return Integer[]\n     */\n    function countSteppingNumbers($low, $high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> countSteppingNumbers(int low, int high) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countSteppingNumbers(low: Int, high: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec count_stepping_numbers(low :: integer, high :: integer) :: [integer]\n  def count_stepping_numbers(low, high) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec count_stepping_numbers(Low :: integer(), High :: integer()) -> [integer()].\ncount_stepping_numbers(Low, High) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (count-stepping-numbers low high)\n  (-> exact-integer? exact-integer? (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.1K\", \"totalSubmission\": \"23K\", \"totalAcceptedRaw\": 11068, \"totalSubmissionRaw\": 22984, \"acRate\": \"48.2%\"}",
+  "metaData": "{\n  \"name\": \"countSteppingNumbers\",\n  \"params\": [\n    {\n      \"name\": \"low\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"high\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "sampleTestCase": "0\n21"
+}

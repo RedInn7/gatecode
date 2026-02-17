@@ -1,0 +1,89 @@
+{
+  "questionId": "1549",
+  "questionFrontendId": "1438",
+  "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+  "titleSlug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+  "content": "<p>Given an array of integers <code>nums</code> and an integer <code>limit</code>, return the size of the longest <strong>non-empty</strong> subarray such that the absolute difference between any two elements of this subarray is less than or equal to <code>limit</code><em>.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [8,2,4,7], limit = 4\n<strong>Output:</strong> 2 \n<strong>Explanation:</strong> All subarrays are: \n[8] with maximum absolute diff |8-8| = 0 &lt;= 4.\n[8,2] with maximum absolute diff |8-2| = 6 &gt; 4. \n[8,2,4] with maximum absolute diff |8-2| = 6 &gt; 4.\n[8,2,4,7] with maximum absolute diff |8-2| = 6 &gt; 4.\n[2] with maximum absolute diff |2-2| = 0 &lt;= 4.\n[2,4] with maximum absolute diff |2-4| = 2 &lt;= 4.\n[2,4,7] with maximum absolute diff |2-7| = 5 &gt; 4.\n[4] with maximum absolute diff |4-4| = 0 &lt;= 4.\n[4,7] with maximum absolute diff |4-7| = 3 &lt;= 4.\n[7] with maximum absolute diff |7-7| = 0 &lt;= 4. \nTherefore, the size of the longest subarray is 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [10,1,2,4,7,2], limit = 5\n<strong>Output:</strong> 4 \n<strong>Explanation:</strong> The subarray [2,4,7,2] is the longest since the maximum absolute diff is |2-7| = 5 &lt;= 5.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [4,2,2,2,4,4,2,2], limit = 0\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= limit &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums, int limit) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestSubarray(int[] nums, int limit) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestSubarray(self, nums: List[int], limit: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestSubarray(self, nums, limit):\n        \"\"\"\n        :type nums: List[int]\n        :type limit: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} limit\n * @return {number}\n */\nvar longestSubarray = function(nums, limit) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function longestSubarray(nums: number[], limit: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestSubarray(int[] nums, int limit) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int longestSubarray(int* nums, int numsSize, int limit) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestSubarray(nums []int, limit int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestSubarray(nums: IntArray, limit: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestSubarray(_ nums: [Int], _ limit: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>, limit: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} limit\n# @return {Integer}\ndef longest_subarray(nums, limit)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $limit\n     * @return Integer\n     */\n    function longestSubarray($nums, $limit) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int longestSubarray(List<int> nums, int limit) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestSubarray(nums: Array[Int], limit: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec longest_subarray(nums :: [integer], limit :: integer) :: integer\n  def longest_subarray(nums, limit) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec longest_subarray(Nums :: [integer()], Limit :: integer()) -> integer().\nlongest_subarray(Nums, Limit) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (longest-subarray nums limit)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"303.5K\", \"totalSubmission\": \"529.4K\", \"totalAcceptedRaw\": 303468, \"totalSubmissionRaw\": 529439, \"acRate\": \"57.3%\"}",
+  "metaData": "{\n  \"name\": \"longestSubarray\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"limit\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[8,2,4,7]\n4"
+}

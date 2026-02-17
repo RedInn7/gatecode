@@ -1,0 +1,89 @@
+{
+  "questionId": "3580",
+  "questionFrontendId": "3303",
+  "title": "Find the Occurrence of First Almost Equal Substring",
+  "titleSlug": "find-the-occurrence-of-first-almost-equal-substring",
+  "content": "<p>You are given two strings <code>s</code> and <code>pattern</code>.</p>\n\n<p>A string <code>x</code> is called <strong>almost equal</strong> to <code>y</code> if you can change <strong>at most</strong> one character in <code>x</code> to make it <em>identical</em> to <code>y</code>.</p>\n\n<p>Return the <strong>smallest</strong> <em>starting index</em> of a <span data-keyword=\"substring-nonempty\">substring</span> in <code>s</code> that is <strong>almost equal</strong> to <code>pattern</code>. If no such index exists, return <code>-1</code>.</p>\nA <strong>substring</strong> is a contiguous <b>non-empty</b> sequence of characters within a string.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abcdefg&quot;, pattern = &quot;bcdffg&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The substring <code>s[1..6] == &quot;bcdefg&quot;</code> can be converted to <code>&quot;bcdffg&quot;</code> by changing <code>s[4]</code> to <code>&quot;f&quot;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;ababbababa&quot;, pattern = &quot;bacaba&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The substring <code>s[4..9] == &quot;bababa&quot;</code> can be converted to <code>&quot;bacaba&quot;</code> by changing <code>s[6]</code> to <code>&quot;c&quot;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abcd&quot;, pattern = &quot;dba&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;dde&quot;, pattern = &quot;d&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= pattern.length &lt; s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> and <code>pattern</code> consist only of lowercase English letters.</li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow-up:</strong> Could you solve the problem if <strong>at most</strong> <code>k</code> <strong>consecutive</strong> characters can be changed?",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minStartingIndex(string s, string pattern) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minStartingIndex(String s, String pattern) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minStartingIndex(self, s: str, pattern: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minStartingIndex(self, s, pattern):\n        \"\"\"\n        :type s: str\n        :type pattern: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} pattern\n * @return {number}\n */\nvar minStartingIndex = function(s, pattern) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minStartingIndex(s: string, pattern: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinStartingIndex(string s, string pattern) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minStartingIndex(char* s, char* pattern) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minStartingIndex(s string, pattern string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minStartingIndex(s: String, pattern: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minStartingIndex(_ s: String, _ pattern: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_starting_index(s: String, pattern: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} pattern\n# @return {Integer}\ndef min_starting_index(s, pattern)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $pattern\n     * @return Integer\n     */\n    function minStartingIndex($s, $pattern) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minStartingIndex(String s, String pattern) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minStartingIndex(s: String, pattern: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec min_starting_index(s :: String.t, pattern :: String.t) :: integer\n  def min_starting_index(s, pattern) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec min_starting_index(S :: unicode:unicode_binary(), Pattern :: unicode:unicode_binary()) -> integer().\nmin_starting_index(S, Pattern) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (min-starting-index s pattern)\n  (-> string? string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.4K\", \"totalSubmission\": \"35.1K\", \"totalAcceptedRaw\": 5354, \"totalSubmissionRaw\": 35055, \"acRate\": \"15.3%\"}",
+  "metaData": "{\n  \"name\": \"minStartingIndex\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"pattern\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "\"abcdefg\"\n\"bcdffg\""
+}

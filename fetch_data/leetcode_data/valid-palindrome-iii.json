@@ -1,0 +1,89 @@
+{
+  "questionId": "1178",
+  "questionFrontendId": "1216",
+  "title": "Valid Palindrome III",
+  "titleSlug": "valid-palindrome-iii",
+  "content": "<p>Given a string <code>s</code> and an integer <code>k</code>, return <code>true</code> if <code>s</code> is a <code>k</code><strong>-palindrome</strong>.</p>\n\n<p>A string is <code>k</code><strong>-palindrome</strong> if it can be transformed into a palindrome by removing at most <code>k</code> characters from it.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcdeca&quot;, k = 2\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Remove &#39;b&#39; and &#39;e&#39; characters.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abbababa&quot;, k = 1\n<strong>Output:</strong> true\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s</code> consists of only lowercase English letters.</li>\n\t<li><code>1 &lt;= k &lt;= s.length</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isValidPalindrome(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isValidPalindrome(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isValidPalindrome(self, s: str, k: int) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isValidPalindrome(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {boolean}\n */\nvar isValidPalindrome = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function isValidPalindrome(s: string, k: number): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsValidPalindrome(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool isValidPalindrome(char* s, int k) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isValidPalindrome(s string, k int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isValidPalindrome(s: String, k: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isValidPalindrome(_ s: String, _ k: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_valid_palindrome(s: String, k: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {Boolean}\ndef is_valid_palindrome(s, k)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return Boolean\n     */\n    function isValidPalindrome($s, $k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool isValidPalindrome(String s, int k) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isValidPalindrome(s: String, k: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec is_valid_palindrome(s :: String.t, k :: integer) :: boolean\n  def is_valid_palindrome(s, k) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec is_valid_palindrome(S :: unicode:unicode_binary(), K :: integer()) -> boolean().\nis_valid_palindrome(S, K) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (is-valid-palindrome s k)\n  (-> string? exact-integer? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"108.2K\", \"totalSubmission\": \"220.2K\", \"totalAcceptedRaw\": 108174, \"totalSubmissionRaw\": 220186, \"acRate\": \"49.1%\"}",
+  "metaData": "{\r\n  \"name\": \"isValidPalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "sampleTestCase": "\"abcdeca\"\n2"
+}

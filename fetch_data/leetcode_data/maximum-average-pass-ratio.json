@@ -1,0 +1,89 @@
+{
+  "questionId": "1917",
+  "questionFrontendId": "1792",
+  "title": "Maximum Average Pass Ratio",
+  "titleSlug": "maximum-average-pass-ratio",
+  "content": "<p>There is a school that has classes of students and each class will be having a final exam. You are given a 2D integer array <code>classes</code>, where <code>classes[i] = [pass<sub>i</sub>, total<sub>i</sub>]</code>. You know beforehand that in the <code>i<sup>th</sup></code> class, there are <code>total<sub>i</sub></code> total students, but only <code>pass<sub>i</sub></code> number of students will pass the exam.</p>\n\n<p>You are also given an integer <code>extraStudents</code>. There are another <code>extraStudents</code> brilliant students that are <strong>guaranteed</strong> to pass the exam of any class they are assigned to. You want to assign each of the <code>extraStudents</code> students to a class in a way that <strong>maximizes</strong> the <strong>average</strong> pass ratio across <strong>all</strong> the classes.</p>\n\n<p>The <strong>pass ratio</strong> of a class is equal to the number of students of the class that will pass the exam divided by the total number of students of the class. The <strong>average pass ratio</strong> is the sum of pass ratios of all the classes divided by the number of the classes.</p>\n\n<p>Return <em>the <strong>maximum</strong> possible average pass ratio after assigning the </em><code>extraStudents</code><em> students. </em>Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> classes = [[1,2],[3,5],[2,2]], <code>extraStudents</code> = 2\n<strong>Output:</strong> 0.78333\n<strong>Explanation:</strong> You can assign the two extra students to the first class. The average pass ratio will be equal to (3/4 + 3/5 + 2/2) / 3 = 0.78333.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> classes = [[2,4],[3,9],[4,5],[2,10]], <code>extraStudents</code> = 4\n<strong>Output:</strong> 0.53485\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= classes.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>classes[i].length == 2</code></li>\n\t<li><code>1 &lt;= pass<sub>i</sub> &lt;= total<sub>i</sub> &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= extraStudents &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double maxAverageRatio(int[][] classes, int extraStudents) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxAverageRatio(self, classes: List[List[int]], extraStudents: int) -> float:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxAverageRatio(self, classes, extraStudents):\n        \"\"\"\n        :type classes: List[List[int]]\n        :type extraStudents: int\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} classes\n * @param {number} extraStudents\n * @return {number}\n */\nvar maxAverageRatio = function(classes, extraStudents) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maxAverageRatio(classes: number[][], extraStudents: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double MaxAverageRatio(int[][] classes, int extraStudents) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "double maxAverageRatio(int** classes, int classesSize, int* classesColSize, int extraStudents) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxAverageRatio(classes [][]int, extraStudents int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxAverageRatio(classes: Array<IntArray>, extraStudents: Int): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxAverageRatio(_ classes: [[Int]], _ extraStudents: Int) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_average_ratio(classes: Vec<Vec<i32>>, extra_students: i32) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} classes\n# @param {Integer} extra_students\n# @return {Float}\ndef max_average_ratio(classes, extra_students)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $classes\n     * @param Integer $extraStudents\n     * @return Float\n     */\n    function maxAverageRatio($classes, $extraStudents) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  double maxAverageRatio(List<List<int>> classes, int extraStudents) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxAverageRatio(classes: Array[Array[Int]], extraStudents: Int): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec max_average_ratio(classes :: [[integer]], extra_students :: integer) :: float\n  def max_average_ratio(classes, extra_students) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec max_average_ratio(Classes :: [[integer()]], ExtraStudents :: integer()) -> float().\nmax_average_ratio(Classes, ExtraStudents) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (max-average-ratio classes extraStudents)\n  (-> (listof (listof exact-integer?)) exact-integer? flonum?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"208.5K\", \"totalSubmission\": \"281.3K\", \"totalAcceptedRaw\": 208493, \"totalSubmissionRaw\": 281328, \"acRate\": \"74.1%\"}",
+  "metaData": "{\n  \"name\": \"maxAverageRatio\",\n  \"params\": [\n    {\n      \"name\": \"classes\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"extraStudents\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"double\"\n  }\n}",
+  "sampleTestCase": "[[1,2],[3,5],[2,2]]\n2"
+}

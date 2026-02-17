@@ -1,0 +1,89 @@
+{
+  "questionId": "576",
+  "questionFrontendId": "576",
+  "title": "Out of Boundary Paths",
+  "titleSlug": "out-of-boundary-paths",
+  "content": "<p>There is an <code>m x n</code> grid with a ball. The ball is initially at the position <code>[startRow, startColumn]</code>. You are allowed to move the ball to one of the four adjacent cells in the grid (possibly out of the grid crossing the grid boundary). You can apply <strong>at most</strong> <code>maxMove</code> moves to the ball.</p>\n\n<p>Given the five integers <code>m</code>, <code>n</code>, <code>maxMove</code>, <code>startRow</code>, <code>startColumn</code>, return the number of paths to move the ball out of the grid boundary. Since the answer can be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/28/out_of_boundary_paths_1.png\" style=\"width: 500px; height: 296px;\" />\n<pre>\n<strong>Input:</strong> m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0\n<strong>Output:</strong> 6\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/28/out_of_boundary_paths_2.png\" style=\"width: 500px; height: 293px;\" />\n<pre>\n<strong>Input:</strong> m = 1, n = 3, maxMove = 3, startRow = 0, startColumn = 1\n<strong>Output:</strong> 12\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>0 &lt;= maxMove &lt;= 50</code></li>\n\t<li><code>0 &lt;= startRow &lt; m</code></li>\n\t<li><code>0 &lt;= startColumn &lt; n</code></li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findPaths(self, m: int, n: int, maxMove: int, startRow: int, startColumn: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findPaths(self, m, n, maxMove, startRow, startColumn):\n        \"\"\"\n        :type m: int\n        :type n: int\n        :type maxMove: int\n        :type startRow: int\n        :type startColumn: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number} maxMove\n * @param {number} startRow\n * @param {number} startColumn\n * @return {number}\n */\nvar findPaths = function(m, n, maxMove, startRow, startColumn) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function findPaths(m: number, n: number, maxMove: number, startRow: number, startColumn: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindPaths(int m, int n, int maxMove, int startRow, int startColumn) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findPaths(m int, n int, maxMove int, startRow int, startColumn int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findPaths(m: Int, n: Int, maxMove: Int, startRow: Int, startColumn: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findPaths(_ m: Int, _ n: Int, _ maxMove: Int, _ startRow: Int, _ startColumn: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_paths(m: i32, n: i32, max_move: i32, start_row: i32, start_column: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} m\n# @param {Integer} n\n# @param {Integer} max_move\n# @param {Integer} start_row\n# @param {Integer} start_column\n# @return {Integer}\ndef find_paths(m, n, max_move, start_row, start_column)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $m\n     * @param Integer $n\n     * @param Integer $maxMove\n     * @param Integer $startRow\n     * @param Integer $startColumn\n     * @return Integer\n     */\n    function findPaths($m, $n, $maxMove, $startRow, $startColumn) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findPaths(m: Int, n: Int, maxMove: Int, startRow: Int, startColumn: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec find_paths(m :: integer, n :: integer, max_move :: integer, start_row :: integer, start_column :: integer) :: integer\n  def find_paths(m, n, max_move, start_row, start_column) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec find_paths(M :: integer(), N :: integer(), MaxMove :: integer(), StartRow :: integer(), StartColumn :: integer()) -> integer().\nfind_paths(M, N, MaxMove, StartRow, StartColumn) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (find-paths m n maxMove startRow startColumn)\n  (-> exact-integer? exact-integer? exact-integer? exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"227.9K\", \"totalSubmission\": \"471.1K\", \"totalAcceptedRaw\": 227856, \"totalSubmissionRaw\": 471061, \"acRate\": \"48.4%\"}",
+  "metaData": "{\n  \"name\": \"findPaths\",\n  \"params\": [\n    {\n      \"name\": \"m\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"maxMove\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"startRow\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"startColumn\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "2\n2\n2\n0\n0"
+}

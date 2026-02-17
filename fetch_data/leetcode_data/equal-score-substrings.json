@@ -1,0 +1,89 @@
+{
+  "questionId": "4052",
+  "questionFrontendId": "3707",
+  "title": "Equal Score Substrings",
+  "titleSlug": "equal-score-substrings",
+  "content": "<p>You are given a string <code>s</code> consisting of lowercase English letters.</p>\n\n<p>The <strong>score</strong> of a string is the sum of the positions of its characters in the alphabet, where <code>&#39;a&#39; = 1</code>, <code>&#39;b&#39; = 2</code>, ..., <code>&#39;z&#39; = 26</code>.</p>\n\n<p>Determine whether there exists an index <code>i</code> such that the string can be split into two <strong>non-empty</strong> <strong><strong><span data-keyword=\"substring-nonempty\">substrings</span></strong></strong> <code>s[0..i]</code> and <code>s[(i + 1)..(n - 1)]</code> that have <strong>equal</strong> scores.</p>\n\n<p>Return <code>true</code> if such a split exists, otherwise return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;adcb&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Split at index <code>i = 1</code>:</p>\n\n<ul>\n\t<li>Left substring = <code>s[0..1] = &quot;ad&quot;</code> with <code>score = 1 + 4 = 5</code></li>\n\t<li>Right substring = <code>s[2..3] = &quot;cb&quot;</code> with <code>score = 3 + 2 = 5</code></li>\n</ul>\n\n<p>Both substrings have equal scores, so the output is <code>true</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;bace&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:​​​​​​</strong></p>\n\n<p><strong>​​​​​​​</strong>No split produces equal scores, so the output is <code>false</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool scoreBalance(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean scoreBalance(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def scoreBalance(self, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def scoreBalance(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar scoreBalance = function(s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function scoreBalance(s: string): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ScoreBalance(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool scoreBalance(char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func scoreBalance(s string) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun scoreBalance(s: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func scoreBalance(_ s: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn score_balance(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Boolean}\ndef score_balance(s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function scoreBalance($s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool scoreBalance(String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def scoreBalance(s: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec score_balance(s :: String.t) :: boolean\n  def score_balance(s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec score_balance(S :: unicode:unicode_binary()) -> boolean().\nscore_balance(S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (score-balance s)\n  (-> string? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"35.7K\", \"totalSubmission\": \"63K\", \"totalAcceptedRaw\": 35671, \"totalSubmissionRaw\": 62950, \"acRate\": \"56.7%\"}",
+  "metaData": "{\n  \"name\": \"scoreBalance\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "\"adcb\""
+}

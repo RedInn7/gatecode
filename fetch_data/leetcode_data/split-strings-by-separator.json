@@ -1,0 +1,89 @@
+{
+  "questionId": "2881",
+  "questionFrontendId": "2788",
+  "title": "Split Strings by Separator",
+  "titleSlug": "split-strings-by-separator",
+  "content": "<p>Given an array of strings <code>words</code> and a character <code>separator</code>, <strong>split</strong> each string in <code>words</code> by <code>separator</code>.</p>\n\n<p>Return <em>an array of strings containing the new strings formed after the splits, <strong>excluding empty strings</strong>.</em></p>\n\n<p><strong>Notes</strong></p>\n\n<ul>\n\t<li><code>separator</code> is used to determine where the split should occur, but it is not included as part of the resulting strings.</li>\n\t<li>A split may result in more than two strings.</li>\n\t<li>The resulting strings must maintain the same order as they were initially given.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;one.two.three&quot;,&quot;four.five&quot;,&quot;six&quot;], separator = &quot;.&quot;\n<strong>Output:</strong> [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;]\n<strong>Explanation: </strong>In this example we split as follows:\n\n&quot;one.two.three&quot; splits into &quot;one&quot;, &quot;two&quot;, &quot;three&quot;\n&quot;four.five&quot; splits into &quot;four&quot;, &quot;five&quot;\n&quot;six&quot; splits into &quot;six&quot; \n\nHence, the resulting array is [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;].</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;$easy$&quot;,&quot;$problem$&quot;], separator = &quot;$&quot;\n<strong>Output:</strong> [&quot;easy&quot;,&quot;problem&quot;]\n<strong>Explanation:</strong> In this example we split as follows: \n\n&quot;$easy$&quot; splits into &quot;easy&quot; (excluding empty strings)\n&quot;$problem$&quot; splits into &quot;problem&quot; (excluding empty strings)\n\nHence, the resulting array is [&quot;easy&quot;,&quot;problem&quot;].\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;|||&quot;], separator = &quot;|&quot;\n<strong>Output:</strong> []\n<strong>Explanation:</strong> In this example the resulting split of &quot;|||&quot; will contain only empty strings, so we return an empty array []. </pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 20</code></li>\n\t<li>characters in <code>words[i]</code> are either lowercase English letters or characters from the string <code>&quot;.,|$#@&quot;</code> (excluding the quotes)</li>\n\t<li><code>separator</code> is a character from the string <code>&quot;.,|$#@&quot;</code> (excluding the quotes)</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> splitWordsBySeparator(vector<string>& words, char separator) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> splitWordsBySeparator(List<String> words, char separator) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def splitWordsBySeparator(self, words: List[str], separator: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def splitWordsBySeparator(self, words, separator):\n        \"\"\"\n        :type words: List[str]\n        :type separator: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @param {character} separator\n * @return {string[]}\n */\nvar splitWordsBySeparator = function(words, separator) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function splitWordsBySeparator(words: string[], separator: string): string[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> SplitWordsBySeparator(IList<string> words, char separator) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** splitWordsBySeparator(char** words, int wordsSize, char separator, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func splitWordsBySeparator(words []string, separator byte) []string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun splitWordsBySeparator(words: List<String>, separator: Char): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func splitWordsBySeparator(_ words: [String], _ separator: Character) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn split_words_by_separator(words: Vec<String>, separator: char) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @param {Character} separator\n# @return {String[]}\ndef split_words_by_separator(words, separator)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $separator\n     * @return String[]\n     */\n    function splitWordsBySeparator($words, $separator) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<String> splitWordsBySeparator(List<String> words, String separator) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def splitWordsBySeparator(words: List[String], separator: Char): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec split_words_by_separator(words :: [String.t], separator :: char) :: [String.t]\n  def split_words_by_separator(words, separator) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec split_words_by_separator(Words :: [unicode:unicode_binary()], Separator :: char()) -> [unicode:unicode_binary()].\nsplit_words_by_separator(Words, Separator) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (split-words-by-separator words separator)\n  (-> (listof string?) char? (listof string?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"77.5K\", \"totalSubmission\": \"102K\", \"totalAcceptedRaw\": 77466, \"totalSubmissionRaw\": 102012, \"acRate\": \"75.9%\"}",
+  "metaData": "{\n  \"name\": \"splitWordsBySeparator\",\n  \"params\": [\n    {\n      \"name\": \"words\",\n      \"type\": \"list<string>\"\n    },\n    {\n      \"type\": \"character\",\n      \"name\": \"separator\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\"\n  }\n}",
+  "sampleTestCase": "[\"one.two.three\",\"four.five\",\"six\"]\n\".\""
+}

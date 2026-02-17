@@ -1,0 +1,89 @@
+{
+  "questionId": "1160",
+  "questionFrontendId": "1079",
+  "title": "Letter Tile Possibilities",
+  "titleSlug": "letter-tile-possibilities",
+  "content": "<p>You have <code>n</code>&nbsp;&nbsp;<code>tiles</code>, where each tile has one letter <code>tiles[i]</code> printed on it.</p>\n\n<p>Return <em>the number of possible non-empty sequences of letters</em> you can make using the letters printed on those <code>tiles</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> tiles = &quot;AAB&quot;\n<strong>Output:</strong> 8\n<strong>Explanation: </strong>The possible sequences are &quot;A&quot;, &quot;B&quot;, &quot;AA&quot;, &quot;AB&quot;, &quot;BA&quot;, &quot;AAB&quot;, &quot;ABA&quot;, &quot;BAA&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> tiles = &quot;AAABBC&quot;\n<strong>Output:</strong> 188\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> tiles = &quot;V&quot;\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= tiles.length &lt;= 7</code></li>\n\t<li><code>tiles</code> consists of uppercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numTilePossibilities(string tiles) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numTilePossibilities(String tiles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numTilePossibilities(self, tiles: str) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numTilePossibilities(self, tiles):\n        \"\"\"\n        :type tiles: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} tiles\n * @return {number}\n */\nvar numTilePossibilities = function(tiles) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function numTilePossibilities(tiles: string): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumTilePossibilities(string tiles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int numTilePossibilities(char* tiles) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numTilePossibilities(tiles string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numTilePossibilities(tiles: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numTilePossibilities(_ tiles: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_tile_possibilities(tiles: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} tiles\n# @return {Integer}\ndef num_tile_possibilities(tiles)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $tiles\n     * @return Integer\n     */\n    function numTilePossibilities($tiles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int numTilePossibilities(String tiles) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numTilePossibilities(tiles: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec num_tile_possibilities(tiles :: String.t) :: integer\n  def num_tile_possibilities(tiles) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec num_tile_possibilities(Tiles :: unicode:unicode_binary()) -> integer().\nnum_tile_possibilities(Tiles) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (num-tile-possibilities tiles)\n  (-> string? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"253.3K\", \"totalSubmission\": \"303.2K\", \"totalAcceptedRaw\": 253280, \"totalSubmissionRaw\": 303214, \"acRate\": \"83.5%\"}",
+  "metaData": "{\r\n  \"name\": \"numTilePossibilities\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"tiles\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "sampleTestCase": "\"AAB\""
+}

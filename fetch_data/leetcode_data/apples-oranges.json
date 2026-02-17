@@ -1,0 +1,33 @@
+{
+  "questionId": "1578",
+  "questionFrontendId": "1445",
+  "title": "Apples & Oranges",
+  "titleSlug": "apples-oranges",
+  "content": "<p>Table: <code>Sales</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| sale_date     | date    |\n| fruit         | enum    | \n| sold_num      | int     | \n+---------------+---------+\n(sale_date, fruit) is the primary key (combination of columns with unique values) of this table.\nThis table contains the sales of &quot;apples&quot; and &quot;oranges&quot; sold each day.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to report the difference between the number of <strong>apples</strong> and <strong>oranges</strong> sold each day.</p>\n\n<p>Return the result table <strong>ordered</strong> by <code>sale_date</code>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nSales table:\n+------------+------------+-------------+\n| sale_date  | fruit      | sold_num    |\n+------------+------------+-------------+\n| 2020-05-01 | apples     | 10          |\n| 2020-05-01 | oranges    | 8           |\n| 2020-05-02 | apples     | 15          |\n| 2020-05-02 | oranges    | 15          |\n| 2020-05-03 | apples     | 20          |\n| 2020-05-03 | oranges    | 0           |\n| 2020-05-04 | apples     | 15          |\n| 2020-05-04 | oranges    | 16          |\n+------------+------------+-------------+\n<strong>Output:</strong> \n+------------+--------------+\n| sale_date  | diff         |\n+------------+--------------+\n| 2020-05-01 | 2            |\n| 2020-05-02 | 0            |\n| 2020-05-03 | 20           |\n| 2020-05-04 | -1           |\n+------------+--------------+\n<strong>Explanation:</strong> \nDay 2020-05-01, 10 apples and 8 oranges were sold (Difference  10 - 8 = 2).\nDay 2020-05-02, 15 apples and 15 oranges were sold (Difference 15 - 15 = 0).\nDay 2020-05-03, 20 apples and 0 oranges were sold (Difference 20 - 0 = 20).\nDay 2020-05-04, 15 apples and 16 oranges were sold (Difference 15 - 16 = -1).\n</pre>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "code": "import pandas as pd\n\ndef apples_oranges(sales: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"65.4K\", \"totalSubmission\": \"76K\", \"totalAcceptedRaw\": 65371, \"totalSubmissionRaw\": 75986, \"acRate\": \"86.0%\"}",
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Sales (sale_date date, fruit ENUM('apples', 'oranges'), sold_num int)\"], \"mssql\": [\"Create Table Sales (sale_date date, fruit varchar(10) NOT NULL CHECK (fruit IN ('apples', 'oranges')), sold_num int)\"], \"oraclesql\": [\"Create Table Sales (sale_date date, fruit varchar(10) NOT NULL CHECK (fruit IN ('apples', 'oranges')), sold_num int)\", \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"], \"database\": true, \"name\": \"apples_oranges\", \"pythondata\": [\"Sales = pd.DataFrame([], columns=['sale_date', 'fruit', 'sold_num']).astype({'sale_date':'datetime64[ns]', 'fruit':'object', 'sold_num':'Int64'})\"], \"postgresql\": [\"Create table If Not Exists Sales (sale_date date, fruit VARCHAR(30) CHECK (fruit IN ('apples', 'oranges')), sold_num int)\\n\"], \"database_schema\": {\"Sales\": {\"sale_date\": \"DATE\", \"fruit\": \"ENUM('apples', 'oranges')\", \"sold_num\": \"INT\"}}}",
+  "sampleTestCase": "{\"headers\":{\"Sales\":[\"sale_date\",\"fruit\",\"sold_num\"]},\"rows\":{\"Sales\":[[\"2020-05-01\",\"apples\",10],[\"2020-05-01\",\"oranges\",8],[\"2020-05-02\",\"apples\",15],[\"2020-05-02\",\"oranges\",15],[\"2020-05-03\",\"apples\",20],[\"2020-05-03\",\"oranges\",0],[\"2020-05-04\",\"apples\",15],[\"2020-05-04\",\"oranges\",16]]}}"
+}

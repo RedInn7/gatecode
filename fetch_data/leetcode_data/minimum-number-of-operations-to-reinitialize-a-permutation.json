@@ -1,0 +1,89 @@
+{
+  "questionId": "1935",
+  "questionFrontendId": "1806",
+  "title": "Minimum Number of Operations to Reinitialize a Permutation",
+  "titleSlug": "minimum-number-of-operations-to-reinitialize-a-permutation",
+  "content": "<p>You are given an <strong>even</strong> integer <code>n</code>​​​​​​. You initially have a permutation <code>perm</code> of size <code>n</code>​​ where <code>perm[i] == i</code>​ <strong>(0-indexed)</strong>​​​​.</p>\n\n<p>In one operation, you will create a new array <code>arr</code>, and for each <code>i</code>:</p>\n\n<ul>\n\t<li>If <code>i % 2 == 0</code>, then <code>arr[i] = perm[i / 2]</code>.</li>\n\t<li>If <code>i % 2 == 1</code>, then <code>arr[i] = perm[n / 2 + (i - 1) / 2]</code>.</li>\n</ul>\n\n<p>You will then assign <code>arr</code>​​​​ to <code>perm</code>.</p>\n\n<p>Return <em>the minimum <strong>non-zero</strong> number of operations you need to perform on </em><code>perm</code><em> to return the permutation to its initial value.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> perm = [0,1] initially.\nAfter the 1<sup>st</sup> operation, perm = [0,1]\nSo it takes only 1 operation.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> perm = [0,1,2,3] initially.\nAfter the 1<sup>st</sup> operation, perm = [0,2,1,3]\nAfter the 2<sup>nd</sup> operation, perm = [0,1,2,3]\nSo it takes only 2 operations.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 6\n<strong>Output:</strong> 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 1000</code></li>\n\t<li><code>n</code>​​​​​​ is even.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int reinitializePermutation(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int reinitializePermutation(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reinitializePermutation(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reinitializePermutation(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar reinitializePermutation = function(n) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function reinitializePermutation(n: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ReinitializePermutation(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int reinitializePermutation(int n) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reinitializePermutation(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun reinitializePermutation(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func reinitializePermutation(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reinitialize_permutation(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef reinitialize_permutation(n)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function reinitializePermutation($n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int reinitializePermutation(int n) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def reinitializePermutation(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec reinitialize_permutation(n :: integer) :: integer\n  def reinitialize_permutation(n) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec reinitialize_permutation(N :: integer()) -> integer().\nreinitialize_permutation(N) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (reinitialize-permutation n)\n  (-> exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"22.8K\", \"totalSubmission\": \"31.4K\", \"totalAcceptedRaw\": 22825, \"totalSubmissionRaw\": 31401, \"acRate\": \"72.7%\"}",
+  "metaData": "{\n  \"name\": \"reinitializePermutation\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "2"
+}

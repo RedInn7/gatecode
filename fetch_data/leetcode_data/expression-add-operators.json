@@ -1,0 +1,89 @@
+{
+  "questionId": "282",
+  "questionFrontendId": "282",
+  "title": "Expression Add Operators",
+  "titleSlug": "expression-add-operators",
+  "content": "<p>Given a string <code>num</code> that contains only digits and an integer <code>target</code>, return <em><strong>all possibilities</strong> to insert the binary operators </em><code>&#39;+&#39;</code><em>, </em><code>&#39;-&#39;</code><em>, and/or </em><code>&#39;*&#39;</code><em> between the digits of </em><code>num</code><em> so that the resultant expression evaluates to the </em><code>target</code><em> value</em>.</p>\n\n<p>Note that operands in the returned expressions <strong>should not</strong> contain leading zeros.</p>\n\n<p><strong>Note</strong> that a number can contain multiple digits.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;123&quot;, target = 6\n<strong>Output:</strong> [&quot;1*2*3&quot;,&quot;1+2+3&quot;]\n<strong>Explanation:</strong> Both &quot;1*2*3&quot; and &quot;1+2+3&quot; evaluate to 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;232&quot;, target = 8\n<strong>Output:</strong> [&quot;2*3+2&quot;,&quot;2+3*2&quot;]\n<strong>Explanation:</strong> Both &quot;2*3+2&quot; and &quot;2+3*2&quot; evaluate to 8.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;3456237490&quot;, target = 9191\n<strong>Output:</strong> []\n<strong>Explanation:</strong> There are no expressions that can be created from &quot;3456237490&quot; to evaluate to 9191.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num.length &lt;= 10</code></li>\n\t<li><code>num</code> consists of only digits.</li>\n\t<li><code>-2<sup>31</sup> &lt;= target &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> addOperators(string num, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> addOperators(String num, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def addOperators(self, num: str, target: int) -> List[str]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def addOperators(self, num, target):\n        \"\"\"\n        :type num: str\n        :type target: int\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} num\n * @param {number} target\n * @return {string[]}\n */\nvar addOperators = function(num, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function addOperators(num: string, target: number): string[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> AddOperators(string num, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** addOperators(char* num, int target, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func addOperators(num string, target int) []string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun addOperators(num: String, target: Int): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func addOperators(_ num: String, _ target: Int) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn add_operators(num: String, target: i32) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} num\n# @param {Integer} target\n# @return {String[]}\ndef add_operators(num, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $num\n     * @param Integer $target\n     * @return String[]\n     */\n    function addOperators($num, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<String> addOperators(String num, int target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def addOperators(num: String, target: Int): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec add_operators(num :: String.t, target :: integer) :: [String.t]\n  def add_operators(num, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec add_operators(Num :: unicode:unicode_binary(), Target :: integer()) -> [unicode:unicode_binary()].\nadd_operators(Num, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (add-operators num target)\n  (-> string? exact-integer? (listof string?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"308.2K\", \"totalSubmission\": \"721.1K\", \"totalAcceptedRaw\": 308201, \"totalSubmissionRaw\": 721056, \"acRate\": \"42.7%\"}",
+  "metaData": "{\r\n    \"name\":\"addOperators\",\r\n    \"params\":[\r\n        {\r\n            \"name\":\"num\",\r\n            \"type\":\"string\"\r\n        },\r\n        {\r\n            \"name\":\"target\",\r\n            \"type\":\"integer\"\r\n        }\r\n    ],\r\n    \"return\":{\r\n        \"type\":\"list<string>\"\r\n    }\r\n}",
+  "sampleTestCase": "\"123\"\n6"
+}

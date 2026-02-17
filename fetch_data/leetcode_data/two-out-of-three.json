@@ -1,0 +1,89 @@
+{
+  "questionId": "2159",
+  "questionFrontendId": "2032",
+  "title": "Two Out of Three",
+  "titleSlug": "two-out-of-three",
+  "content": "Given three integer arrays <code>nums1</code>, <code>nums2</code>, and <code>nums3</code>, return <em>a <strong>distinct</strong> array containing all the values that are present in <strong>at least two</strong> out of the three arrays. You may return the values in <strong>any</strong> order</em>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums1 = [1,1,3,2], nums2 = [2,3], nums3 = [3]\n<strong>Output:</strong> [3,2]\n<strong>Explanation:</strong> The values that are present in at least two arrays are:\n- 3, in all three arrays.\n- 2, in nums1 and nums2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums1 = [3,1], nums2 = [2,3], nums3 = [1,2]\n<strong>Output:</strong> [2,3,1]\n<strong>Explanation:</strong> The values that are present in at least two arrays are:\n- 2, in nums2 and nums3.\n- 3, in nums1 and nums2.\n- 1, in nums1 and nums3.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums1 = [1,2,2], nums2 = [4,3,3], nums3 = [5]\n<strong>Output:</strong> []\n<strong>Explanation:</strong> No value is present in at least two arrays.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums1.length, nums2.length, nums3.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums1[i], nums2[j], nums3[k] &lt;= 100</code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def twoOutOfThree(self, nums1: List[int], nums2: List[int], nums3: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def twoOutOfThree(self, nums1, nums2, nums3):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :type nums3: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number[]} nums3\n * @return {number[]}\n */\nvar twoOutOfThree = function(nums1, nums2, nums3) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function twoOutOfThree(nums1: number[], nums2: number[], nums3: number[]): number[] {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> TwoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* twoOutOfThree(int* nums1, int nums1Size, int* nums2, int nums2Size, int* nums3, int nums3Size, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func twoOutOfThree(nums1 []int, nums2 []int, nums3 []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun twoOutOfThree(nums1: IntArray, nums2: IntArray, nums3: IntArray): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func twoOutOfThree(_ nums1: [Int], _ nums2: [Int], _ nums3: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn two_out_of_three(nums1: Vec<i32>, nums2: Vec<i32>, nums3: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums1\n# @param {Integer[]} nums2\n# @param {Integer[]} nums3\n# @return {Integer[]}\ndef two_out_of_three(nums1, nums2, nums3)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums1\n     * @param Integer[] $nums2\n     * @param Integer[] $nums3\n     * @return Integer[]\n     */\n    function twoOutOfThree($nums1, $nums2, $nums3) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  List<int> twoOutOfThree(List<int> nums1, List<int> nums2, List<int> nums3) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def twoOutOfThree(nums1: Array[Int], nums2: Array[Int], nums3: Array[Int]): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec two_out_of_three(nums1 :: [integer], nums2 :: [integer], nums3 :: [integer]) :: [integer]\n  def two_out_of_three(nums1, nums2, nums3) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec two_out_of_three(Nums1 :: [integer()], Nums2 :: [integer()], Nums3 :: [integer()]) -> [integer()].\ntwo_out_of_three(Nums1, Nums2, Nums3) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (two-out-of-three nums1 nums2 nums3)\n  (-> (listof exact-integer?) (listof exact-integer?) (listof exact-integer?) (listof exact-integer?))\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"100.5K\", \"totalSubmission\": \"129.9K\", \"totalAcceptedRaw\": 100541, \"totalSubmissionRaw\": 129919, \"acRate\": \"77.4%\"}",
+  "metaData": "{\n  \"name\": \"twoOutOfThree\",\n  \"params\": [\n    {\n      \"name\": \"nums1\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"nums2\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"nums3\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "sampleTestCase": "[1,1,3,2]\n[2,3]\n[3]"
+}

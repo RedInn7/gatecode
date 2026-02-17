@@ -1,0 +1,89 @@
+{
+  "questionId": "2594",
+  "questionFrontendId": "2506",
+  "title": "Count Pairs Of Similar Strings",
+  "titleSlug": "count-pairs-of-similar-strings",
+  "content": "<p>You are given a <strong>0-indexed</strong> string array <code>words</code>.</p>\n\n<p>Two strings are <strong>similar</strong> if they consist of the same characters.</p>\n\n<ul>\n\t<li>For example, <code>&quot;abca&quot;</code> and <code>&quot;cba&quot;</code> are similar since both consist of characters <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</li>\n\t<li>However, <code>&quot;abacba&quot;</code> and <code>&quot;bcfd&quot;</code> are not similar since they do not consist of the same characters.</li>\n</ul>\n\n<p>Return <em>the number of pairs </em><code>(i, j)</code><em> such that </em><code>0 &lt;= i &lt; j &lt;= word.length - 1</code><em> and the two strings </em><code>words[i]</code><em> and </em><code>words[j]</code><em> are similar</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;aba&quot;,&quot;aabb&quot;,&quot;abcd&quot;,&quot;bac&quot;,&quot;aabc&quot;]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are 2 pairs that satisfy the conditions:\n- i = 0 and j = 1 : both words[0] and words[1] only consist of characters &#39;a&#39; and &#39;b&#39;. \n- i = 3 and j = 4 : both words[3] and words[4] only consist of characters &#39;a&#39;, &#39;b&#39;, and &#39;c&#39;. \n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;aabb&quot;,&quot;ab&quot;,&quot;ba&quot;]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> There are 3 pairs that satisfy the conditions:\n- i = 0 and j = 1 : both words[0] and words[1] only consist of characters &#39;a&#39; and &#39;b&#39;. \n- i = 0 and j = 2 : both words[0] and words[2] only consist of characters &#39;a&#39; and &#39;b&#39;.\n- i = 1 and j = 2 : both words[1] and words[2] only consist of characters &#39;a&#39; and &#39;b&#39;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;nba&quot;,&quot;cba&quot;,&quot;dba&quot;]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Since there does not exist any pair that satisfies the conditions, we return 0.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 100</code></li>\n\t<li><code>words[i]</code> consist of only lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int similarPairs(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int similarPairs(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def similarPairs(self, words: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def similarPairs(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar similarPairs = function(words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function similarPairs(words: string[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SimilarPairs(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int similarPairs(char** words, int wordsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func similarPairs(words []string) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun similarPairs(words: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func similarPairs(_ words: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn similar_pairs(words: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {Integer}\ndef similar_pairs(words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Integer\n     */\n    function similarPairs($words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int similarPairs(List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def similarPairs(words: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec similar_pairs(words :: [String.t]) :: integer\n  def similar_pairs(words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec similar_pairs(Words :: [unicode:unicode_binary()]) -> integer().\nsimilar_pairs(Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (similar-pairs words)\n  (-> (listof string?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"70.2K\", \"totalSubmission\": \"95.5K\", \"totalAcceptedRaw\": 70150, \"totalSubmissionRaw\": 95461, \"acRate\": \"73.5%\"}",
+  "metaData": "{\n  \"name\": \"similarPairs\",\n  \"params\": [\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[\"aba\",\"aabb\",\"abcd\",\"bac\",\"aabc\"]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "2287",
+  "questionFrontendId": "2152",
+  "title": "Minimum Number of Lines to Cover Points",
+  "titleSlug": "minimum-number-of-lines-to-cover-points",
+  "content": "<p>You are given an array <code>points</code> where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents a point on an <strong>X-Y </strong>plane.</p>\n\n<p><strong>Straight lines</strong> are going to be added to the <strong>X-Y</strong> plane, such that every point is covered by at <strong>least </strong>one line.</p>\n\n<p>Return <em>the <strong>minimum </strong>number of <strong>straight lines</strong> needed to cover all the points</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2022/01/23/image-20220123200023-1.png\" style=\"width: 350px; height: 402px;\" />\n<pre>\n<strong>Input:</strong> points = [[0,1],[2,3],[4,5],[4,3]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The minimum number of straight lines needed is two. One possible solution is to add:\n- One line connecting the point at (0, 1) to the point at (4, 5).\n- Another line connecting the point at (2, 3) to the point at (4, 3).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2022/01/23/image-20220123200057-3.png\" style=\"width: 350px; height: 480px;\" />\n<pre>\n<strong>Input:</strong> points = [[0,2],[-2,-2],[1,4]]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The minimum number of straight lines needed is one. The only solution is to add:\n- One line connecting the point at (-2, -2) to the point at (1, 4).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= points.length &lt;= 10</code></li>\n\t<li><code>points[i].length == 2</code></li>\n\t<li><code>-100 &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= 100</code></li>\n\t<li>All the <code>points</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minimumLines(vector<vector<int>>& points) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minimumLines(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimumLines(self, points: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimumLines(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar minimumLines = function(points) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function minimumLines(points: number[][]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinimumLines(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int minimumLines(int** points, int pointsSize, int* pointsColSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimumLines(points [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minimumLines(points: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minimumLines(_ points: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimum_lines(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} points\n# @return {Integer}\ndef minimum_lines(points)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $points\n     * @return Integer\n     */\n    function minimumLines($points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int minimumLines(List<List<int>> points) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minimumLines(points: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec minimum_lines(points :: [[integer]]) :: integer\n  def minimum_lines(points) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec minimum_lines(Points :: [[integer()]]) -> integer().\nminimum_lines(Points) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (minimum-lines points)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"6.3K\", \"totalAcceptedRaw\": 2780, \"totalSubmissionRaw\": 6349, \"acRate\": \"43.8%\"}",
+  "metaData": "{\n  \"name\": \"minimumLines\",\n  \"params\": [\n    {\n      \"name\": \"points\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[0,1],[2,3],[4,5],[4,3]]"
+}

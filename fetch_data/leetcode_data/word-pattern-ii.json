@@ -1,0 +1,89 @@
+{
+  "questionId": "291",
+  "questionFrontendId": "291",
+  "title": "Word Pattern II",
+  "titleSlug": "word-pattern-ii",
+  "content": "<p>Given a <code>pattern</code> and a string <code>s</code>, return <code>true</code><em> if </em><code>s</code><em> <strong>matches</strong> the </em><code>pattern</code><em>.</em></p>\n\n<p>A string <code>s</code> <b>matches</b> a <code>pattern</code> if there is some <strong>bijective mapping</strong> of single characters to <strong>non-empty</strong> strings such that if each character in <code>pattern</code> is replaced by the string it maps to, then the resulting string is <code>s</code>. A <strong>bijective mapping</strong> means that no two characters map to the same string, and no character maps to two different strings.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> pattern = &quot;abab&quot;, s = &quot;redblueredblue&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> One possible mapping is as follows:\n&#39;a&#39; -&gt; &quot;red&quot;\n&#39;b&#39; -&gt; &quot;blue&quot;</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> pattern = &quot;aaaa&quot;, s = &quot;asdasdasdasd&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> One possible mapping is as follows:\n&#39;a&#39; -&gt; &quot;asd&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> pattern = &quot;aabb&quot;, s = &quot;xyzabcxzyabc&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= pattern.length, s.length &lt;= 20</code></li>\n\t<li><code>pattern</code> and <code>s</code> consist of only lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool wordPatternMatch(string pattern, string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean wordPatternMatch(String pattern, String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wordPatternMatch(self, pattern: str, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wordPatternMatch(self, pattern, s):\n        \"\"\"\n        :type pattern: str\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} pattern\n * @param {string} s\n * @return {boolean}\n */\nvar wordPatternMatch = function(pattern, s) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function wordPatternMatch(pattern: string, s: string): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool WordPatternMatch(string pattern, string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool wordPatternMatch(char* pattern, char* s) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wordPatternMatch(pattern string, s string) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wordPatternMatch(pattern: String, s: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wordPatternMatch(_ pattern: String, _ s: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn word_pattern_match(pattern: String, s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} pattern\n# @param {String} s\n# @return {Boolean}\ndef word_pattern_match(pattern, s)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $pattern\n     * @param String $s\n     * @return Boolean\n     */\n    function wordPatternMatch($pattern, $s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool wordPatternMatch(String pattern, String s) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wordPatternMatch(pattern: String, s: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec word_pattern_match(pattern :: String.t, s :: String.t) :: boolean\n  def word_pattern_match(pattern, s) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec word_pattern_match(Pattern :: unicode:unicode_binary(), S :: unicode:unicode_binary()) -> boolean().\nword_pattern_match(Pattern, S) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (word-pattern-match pattern s)\n  (-> string? string? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"83.3K\", \"totalSubmission\": \"170.7K\", \"totalAcceptedRaw\": 83255, \"totalSubmissionRaw\": 170677, \"acRate\": \"48.8%\"}",
+  "metaData": "{\n  \"name\": \"wordPatternMatch\",\n  \"params\": [\n    {\n      \"name\": \"pattern\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "sampleTestCase": "\"abab\"\n\"redblueredblue\""
+}

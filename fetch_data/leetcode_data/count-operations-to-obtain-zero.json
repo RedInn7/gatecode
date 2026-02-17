@@ -1,0 +1,89 @@
+{
+  "questionId": "2288",
+  "questionFrontendId": "2169",
+  "title": "Count Operations to Obtain Zero",
+  "titleSlug": "count-operations-to-obtain-zero",
+  "content": "<p>You are given two <strong>non-negative</strong> integers <code>num1</code> and <code>num2</code>.</p>\n\n<p>In one <strong>operation</strong>, if <code>num1 &gt;= num2</code>, you must subtract <code>num2</code> from <code>num1</code>, otherwise subtract <code>num1</code> from <code>num2</code>.</p>\n\n<ul>\n\t<li>For example, if <code>num1 = 5</code> and <code>num2 = 4</code>, subtract <code>num2</code> from <code>num1</code>, thus obtaining <code>num1 = 1</code> and <code>num2 = 4</code>. However, if <code>num1 = 4</code> and <code>num2 = 5</code>, after one operation, <code>num1 = 4</code> and <code>num2 = 1</code>.</li>\n</ul>\n\n<p>Return <em>the <strong>number of operations</strong> required to make either</em> <code>num1 = 0</code> <em>or</em> <code>num2 = 0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num1 = 2, num2 = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> \n- Operation 1: num1 = 2, num2 = 3. Since num1 &lt; num2, we subtract num1 from num2 and get num1 = 2, num2 = 3 - 2 = 1.\n- Operation 2: num1 = 2, num2 = 1. Since num1 &gt; num2, we subtract num2 from num1.\n- Operation 3: num1 = 1, num2 = 1. Since num1 == num2, we subtract num2 from num1.\nNow num1 = 0 and num2 = 1. Since num1 == 0, we do not need to perform any further operations.\nSo the total number of operations required is 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num1 = 10, num2 = 10\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> \n- Operation 1: num1 = 10, num2 = 10. Since num1 == num2, we subtract num2 from num1 and get num1 = 10 - 10 = 0.\nNow num1 = 0 and num2 = 10. Since num1 == 0, we are done.\nSo the total number of operations required is 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= num1, num2 &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "difficulty": "Easy",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countOperations(int num1, int num2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countOperations(int num1, int num2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countOperations(self, num1: int, num2: int) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countOperations(self, num1, num2):\n        \"\"\"\n        :type num1: int\n        :type num2: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num1\n * @param {number} num2\n * @return {number}\n */\nvar countOperations = function(num1, num2) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function countOperations(num1: number, num2: number): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountOperations(int num1, int num2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int countOperations(int num1, int num2) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countOperations(num1 int, num2 int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countOperations(num1: Int, num2: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countOperations(_ num1: Int, _ num2: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_operations(num1: i32, num2: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num1\n# @param {Integer} num2\n# @return {Integer}\ndef count_operations(num1, num2)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num1\n     * @param Integer $num2\n     * @return Integer\n     */\n    function countOperations($num1, $num2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int countOperations(int num1, int num2) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countOperations(num1: Int, num2: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec count_operations(num1 :: integer, num2 :: integer) :: integer\n  def count_operations(num1, num2) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec count_operations(Num1 :: integer(), Num2 :: integer()) -> integer().\ncount_operations(Num1, Num2) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (count-operations num1 num2)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"221.9K\", \"totalSubmission\": \"278K\", \"totalAcceptedRaw\": 221875, \"totalSubmissionRaw\": 277994, \"acRate\": \"79.8%\"}",
+  "metaData": "{\n  \"name\": \"countOperations\",\n  \"params\": [\n    {\n      \"name\": \"num1\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"num2\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "2\n3"
+}

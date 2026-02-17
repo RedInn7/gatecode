@@ -1,0 +1,89 @@
+{
+  "questionId": "244",
+  "questionFrontendId": "244",
+  "title": "Shortest Word Distance II",
+  "titleSlug": "shortest-word-distance-ii",
+  "content": "<p>Design a data structure that will be initialized with a string array, and then it should answer queries of the shortest distance between two different strings from the array.</p>\n\n<p>Implement the <code>WordDistance</code> class:</p>\n\n<ul>\n\t<li><code>WordDistance(String[] wordsDict)</code> initializes the object with the strings array <code>wordsDict</code>.</li>\n\t<li><code>int shortest(String word1, String word2)</code> returns the shortest distance between <code>word1</code> and <code>word2</code> in the array <code>wordsDict</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;WordDistance&quot;, &quot;shortest&quot;, &quot;shortest&quot;]\n[[[&quot;practice&quot;, &quot;makes&quot;, &quot;perfect&quot;, &quot;coding&quot;, &quot;makes&quot;]], [&quot;coding&quot;, &quot;practice&quot;], [&quot;makes&quot;, &quot;coding&quot;]]\n<strong>Output</strong>\n[null, 3, 1]\n\n<strong>Explanation</strong>\nWordDistance wordDistance = new WordDistance([&quot;practice&quot;, &quot;makes&quot;, &quot;perfect&quot;, &quot;coding&quot;, &quot;makes&quot;]);\nwordDistance.shortest(&quot;coding&quot;, &quot;practice&quot;); // return 3\nwordDistance.shortest(&quot;makes&quot;, &quot;coding&quot;);    // return 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= wordsDict.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= wordsDict[i].length &lt;= 10</code></li>\n\t<li><code>wordsDict[i]</code> consists of lowercase English letters.</li>\n\t<li><code>word1</code> and <code>word2</code> are in <code>wordsDict</code>.</li>\n\t<li><code>word1 != word2</code></li>\n\t<li>At most <code>5000</code> calls will be made to <code>shortest</code>.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class WordDistance {\npublic:\n    WordDistance(vector<string>& wordsDict) {\n        \n    }\n    \n    int shortest(string word1, string word2) {\n        \n    }\n};\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance* obj = new WordDistance(wordsDict);\n * int param_1 = obj->shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class WordDistance {\n\n    public WordDistance(String[] wordsDict) {\n        \n    }\n    \n    public int shortest(String word1, String word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance obj = new WordDistance(wordsDict);\n * int param_1 = obj.shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "Python3",
+      "code": "class WordDistance:\n\n    def __init__(self, wordsDict: List[str]):\n        \n\n    def shortest(self, word1: str, word2: str) -> int:\n        \n\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance(wordsDict)\n# param_1 = obj.shortest(word1,word2)"
+    },
+    {
+      "lang": "Python",
+      "code": "class WordDistance(object):\n\n    def __init__(self, wordsDict):\n        \"\"\"\n        :type wordsDict: List[str]\n        \"\"\"\n        \n\n    def shortest(self, word1, word2):\n        \"\"\"\n        :type word1: str\n        :type word2: str\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance(wordsDict)\n# param_1 = obj.shortest(word1,word2)"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} wordsDict\n */\nvar WordDistance = function(wordsDict) {\n    \n};\n\n/** \n * @param {string} word1 \n * @param {string} word2\n * @return {number}\n */\nWordDistance.prototype.shortest = function(word1, word2) {\n    \n};\n\n/** \n * Your WordDistance object will be instantiated and called as such:\n * var obj = new WordDistance(wordsDict)\n * var param_1 = obj.shortest(word1,word2)\n */"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "class WordDistance {\n    constructor(wordsDict: string[]) {\n        \n    }\n\n    shortest(word1: string, word2: string): number {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * var obj = new WordDistance(wordsDict)\n * var param_1 = obj.shortest(word1,word2)\n */"
+    },
+    {
+      "lang": "C#",
+      "code": "public class WordDistance {\n\n    public WordDistance(string[] wordsDict) {\n        \n    }\n    \n    public int Shortest(string word1, string word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance obj = new WordDistance(wordsDict);\n * int param_1 = obj.Shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} WordDistance;\n\n\nWordDistance* wordDistanceCreate(char** wordsDict, int wordsDictSize) {\n    \n}\n\nint wordDistanceShortest(WordDistance* obj, char* word1, char* word2) {\n    \n}\n\nvoid wordDistanceFree(WordDistance* obj) {\n    \n}\n\n/**\n * Your WordDistance struct will be instantiated and called as such:\n * WordDistance* obj = wordDistanceCreate(wordsDict, wordsDictSize);\n * int param_1 = wordDistanceShortest(obj, word1, word2);\n \n * wordDistanceFree(obj);\n*/"
+    },
+    {
+      "lang": "Go",
+      "code": "type WordDistance struct {\n    \n}\n\n\nfunc Constructor(wordsDict []string) WordDistance {\n    \n}\n\n\nfunc (this *WordDistance) Shortest(word1 string, word2 string) int {\n    \n}\n\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * obj := Constructor(wordsDict);\n * param_1 := obj.Shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class WordDistance(wordsDict: Array<String>) {\n\n    fun shortest(word1: String, word2: String): Int {\n        \n    }\n\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * var obj = WordDistance(wordsDict)\n * var param_1 = obj.shortest(word1,word2)\n */"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass WordDistance {\n\n    init(_ wordsDict: [String]) {\n        \n    }\n    \n    func shortest(_ word1: String, _ word2: String) -> Int {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * let obj = WordDistance(wordsDict)\n * let ret_1: Int = obj.shortest(word1, word2)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct WordDistance {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl WordDistance {\n\n    fn new(wordsDict: Vec<String>) -> Self {\n        \n    }\n    \n    fn shortest(&self, word1: String, word2: String) -> i32 {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * let obj = WordDistance::new(wordsDict);\n * let ret_1: i32 = obj.shortest(word1, word2);\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class WordDistance\n\n=begin\n    :type words_dict: String[]\n=end\n    def initialize(words_dict)\n        \n    end\n\n\n=begin\n    :type word1: String\n    :type word2: String\n    :rtype: Integer\n=end\n    def shortest(word1, word2)\n        \n    end\n\n\nend\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance.new(words_dict)\n# param_1 = obj.shortest(word1, word2)"
+    },
+    {
+      "lang": "PHP",
+      "code": "class WordDistance {\n    /**\n     * @param String[] $wordsDict\n     */\n    function __construct($wordsDict) {\n        \n    }\n  \n    /**\n     * @param String $word1\n     * @param String $word2\n     * @return Integer\n     */\n    function shortest($word1, $word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * $obj = WordDistance($wordsDict);\n * $ret_1 = $obj->shortest($word1, $word2);\n */"
+    },
+    {
+      "lang": "Dart",
+      "code": "class WordDistance {\n\n  WordDistance(List<String> wordsDict) {\n    \n  }\n  \n  int shortest(String word1, String word2) {\n    \n  }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance obj = WordDistance(wordsDict);\n * int param1 = obj.shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class WordDistance(_wordsDict: Array[String]) {\n\n    def shortest(word1: String, word2: String): Int = {\n        \n    }\n\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * val obj = new WordDistance(wordsDict)\n * val param_1 = obj.shortest(word1,word2)\n */"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule WordDistance do\n  @spec init_(words_dict :: [String.t]) :: any\n  def init_(words_dict) do\n    \n  end\n\n  @spec shortest(word1 :: String.t, word2 :: String.t) :: integer\n  def shortest(word1, word2) do\n    \n  end\nend\n\n# Your functions will be called as such:\n# WordDistance.init_(words_dict)\n# param_1 = WordDistance.shortest(word1, word2)\n\n# WordDistance.init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec word_distance_init_(WordsDict :: [unicode:unicode_binary()]) -> any().\nword_distance_init_(WordsDict) ->\n  .\n\n-spec word_distance_shortest(Word1 :: unicode:unicode_binary(), Word2 :: unicode:unicode_binary()) -> integer().\nword_distance_shortest(Word1, Word2) ->\n  .\n\n\n%% Your functions will be called as such:\n%% word_distance_init_(WordsDict),\n%% Param_1 = word_distance_shortest(Word1, Word2),\n\n%% word_distance_init_ will be called before every test case, in which you can do some necessary initializations."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define word-distance%\n  (class object%\n    (super-new)\n    \n    ; words-dict : (listof string?)\n    (init-field\n      words-dict)\n    \n    ; shortest : string? string? -> exact-integer?\n    (define/public (shortest word1 word2)\n      )))\n\n;; Your word-distance% object will be instantiated and called as such:\n;; (define obj (new word-distance% [words-dict words-dict]))\n;; (define param_1 (send obj shortest word1 word2))"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"177.6K\", \"totalSubmission\": \"283.2K\", \"totalAcceptedRaw\": 177592, \"totalSubmissionRaw\": 283229, \"acRate\": \"62.7%\"}",
+  "metaData": "{\n  \"classname\": \"WordDistance\",\n  \"maxbytesperline\": 300000,\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"string[]\",\n        \"name\": \"wordsDict\"\n      },\n      {\n        \"type\": \"integer\",\n        \"name\": \"wordsSize\",\n        \"lang\": \"c\",\n        \"value\": \"size_1\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"name\": \"shortest\",\n      \"params\": [\n        {\n          \"type\": \"string\",\n          \"name\": \"word1\"\n        },\n        {\n          \"type\": \"string\",\n          \"name\": \"word2\"\n        }\n      ],\n      \"return\": {\n        \"type\": \"integer\"\n      }\n    }\n  ],\n  \"systemdesign\": true,\n  \"params\": [\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<String>\",\n    \"dealloc\": true\n  }\n}",
+  "sampleTestCase": "[\"WordDistance\",\"shortest\",\"shortest\"]\n[[[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]],[\"coding\",\"practice\"],[\"makes\",\"coding\"]]"
+}

@@ -1,0 +1,89 @@
+{
+  "questionId": "161",
+  "questionFrontendId": "161",
+  "title": "One Edit Distance",
+  "titleSlug": "one-edit-distance",
+  "content": "<p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> if they are both one edit distance apart, otherwise return <code>false</code>.</p>\n\n<p>A string <code>s</code> is said to be one distance apart from a string <code>t</code> if you can:</p>\n\n<ul>\n\t<li>Insert <strong>exactly one</strong> character into <code>s</code> to get <code>t</code>.</li>\n\t<li>Delete <strong>exactly one</strong> character from <code>s</code> to get <code>t</code>.</li>\n\t<li>Replace <strong>exactly one</strong> character of <code>s</code> with <strong>a different character</strong> to get <code>t</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab&quot;, t = &quot;acb&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We can insert &#39;c&#39; into s&nbsp;to get&nbsp;t.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;&quot;, t = &quot;&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> We cannot get t from s by only one step.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length, t.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>s</code> and <code>t</code> consist of lowercase letters, uppercase letters, and digits.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isOneEditDistance(string s, string t) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isOneEditDistance(String s, String t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isOneEditDistance(self, s: str, t: str) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isOneEditDistance(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\nvar isOneEditDistance = function(s, t) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function isOneEditDistance(s: string, t: string): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsOneEditDistance(string s, string t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "bool isOneEditDistance(char* s, char* t) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isOneEditDistance(s string, t string) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isOneEditDistance(s: String, t: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isOneEditDistance(_ s: String, _ t: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_one_edit_distance(s: String, t: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} t\n# @return {Boolean}\ndef is_one_edit_distance(s, t)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return Boolean\n     */\n    function isOneEditDistance($s, $t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  bool isOneEditDistance(String s, String t) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isOneEditDistance(s: String, t: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec is_one_edit_distance(s :: String.t, t :: String.t) :: boolean\n  def is_one_edit_distance(s, t) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec is_one_edit_distance(S :: unicode:unicode_binary(), T :: unicode:unicode_binary()) -> boolean().\nis_one_edit_distance(S, T) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (is-one-edit-distance s t)\n  (-> string? string? boolean?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"235K\", \"totalSubmission\": \"680.3K\", \"totalAcceptedRaw\": 235000, \"totalSubmissionRaw\": 680335, \"acRate\": \"34.5%\"}",
+  "metaData": "{\r\n  \"name\": \"isOneEditDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"t\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "sampleTestCase": "\"ab\"\n\"acb\""
+}

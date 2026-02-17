@@ -1,0 +1,89 @@
+{
+  "questionId": "269",
+  "questionFrontendId": "269",
+  "title": "Alien Dictionary",
+  "titleSlug": "alien-dictionary",
+  "content": "<p>There is a new alien language that uses the English alphabet. However, the order of the letters is unknown to you.</p>\n\n<p>You are given a list of strings <code>words</code> from the alien language&#39;s dictionary. Now it is claimed that the strings in <code>words</code> are <span data-keyword=\"lexicographically-smaller-string-alien\"><strong>sorted lexicographically</strong></span> by the rules of this new language.</p>\n\n<p>If this claim is incorrect, and the given arrangement of string in&nbsp;<code>words</code>&nbsp;cannot correspond to any order of letters,&nbsp;return&nbsp;<code>&quot;&quot;.</code></p>\n\n<p>Otherwise, return <em>a string of the unique letters in the new alien language sorted in <strong>lexicographically increasing order</strong> by the new language&#39;s rules</em><em>. </em>If there are multiple solutions, return<em> <strong>any of them</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;wrt&quot;,&quot;wrf&quot;,&quot;er&quot;,&quot;ett&quot;,&quot;rftt&quot;]\n<strong>Output:</strong> &quot;wertf&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;z&quot;,&quot;x&quot;]\n<strong>Output:</strong> &quot;zx&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;z&quot;,&quot;x&quot;,&quot;z&quot;]\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> The order is invalid, so return <code>&quot;&quot;</code>.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 100</code></li>\n\t<li><code>words[i]</code> consists of only lowercase English letters.</li>\n</ul>\n",
+  "difficulty": "Hard",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string alienOrder(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String alienOrder(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def alienOrder(self, words: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def alienOrder(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {string}\n */\nvar alienOrder = function(words) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function alienOrder(words: string[]): string {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string AlienOrder(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "char* alienOrder(char** words, int wordsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func alienOrder(words []string) string {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun alienOrder(words: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func alienOrder(_ words: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn alien_order(words: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {String}\ndef alien_order(words)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return String\n     */\n    function alienOrder($words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  String alienOrder(List<String> words) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def alienOrder(words: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec alien_order(words :: [String.t]) :: String.t\n  def alien_order(words) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec alien_order(Words :: [unicode:unicode_binary()]) -> unicode:unicode_binary().\nalien_order(Words) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (alien-order words)\n  (-> (listof string?) string?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"478K\", \"totalSubmission\": \"1.3M\", \"totalAcceptedRaw\": 478014, \"totalSubmissionRaw\": 1289908, \"acRate\": \"37.1%\"}",
+  "metaData": "{\r\n  \"name\": \"alienOrder\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "sampleTestCase": "[\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]"
+}

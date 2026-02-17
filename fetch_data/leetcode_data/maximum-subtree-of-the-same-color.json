@@ -1,0 +1,89 @@
+{
+  "questionId": "3304",
+  "questionFrontendId": "3004",
+  "title": "Maximum Subtree of the Same Color",
+  "titleSlug": "maximum-subtree-of-the-same-color",
+  "content": "<p>You are given a 2D integer array <code>edges</code> representing a tree with <code>n</code> nodes, numbered from <code>0</code> to <code>n - 1</code>, rooted at node <code>0</code>, where <code>edges[i] = [u<sub>i</sub>, v<sub>i</sub>]</code> means there is an edge between the nodes <code>v<sub>i</sub></code> and <code>u<sub>i</sub></code>.</p>\n\n<p>You are also given a <strong>0-indexed</strong> integer array <code>colors</code> of size <code>n</code>, where <code>colors[i]</code> is the color assigned to node <code>i</code>.</p>\n\n<p>We want to find a node <code>v</code> such that every node in the <span data-keyword=\"subtree-of-node\">subtree</span> of <code>v</code> has the <strong>same</strong> color.</p>\n\n<p>Return <em>the size of such subtree with the <strong>maximum</strong> number of nodes possible.</em></p>\n\n<p>&nbsp;</p>\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/static_assets/others/20231216-134026.png\" style=\"padding: 10px; background: rgb(255, 255, 255); border-radius: 0.5rem; width: 221px; height: 132px;\" /></strong></p>\n\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> edges = [[0,1],[0,2],[0,3]], colors = [1,1,2,3]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> Each color is represented as: 1 -&gt; Red, 2 -&gt; Green, 3 -&gt; Blue. We can see that the subtree rooted at node 0 has children with different colors. Any other subtree is of the same color and has a size of 1. Hence, we return 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> edges = [[0,1],[0,2],[0,3]], colors = [1,1,1,1]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The whole tree has the same color, and the subtree rooted at node 0 has the most number of nodes which is 4. Hence, we return 4.\n</pre>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/static_assets/others/20231216-134017.png\" style=\"padding: 10px; background: rgb(255, 255, 255); border-radius: 0.5rem; width: 221px; height: 221px;\" /></strong></p>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> edges = [[0,1],[0,2],[2,3],[2,4]], colors = [1,2,3,3,3]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Each color is represented as: 1 -&gt; Red, 2 -&gt; Green, 3 -&gt; Blue. We can see that the subtree rooted at node 0 has children with different colors. Any other subtree is of the same color, but the subtree rooted at node 2 has a size of 3 which is the maximum. Hence, we return 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == edges.length + 1</code></li>\n\t<li><code>1 &lt;= n &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>edges[i] == [u<sub>i</sub>, v<sub>i</sub>]</code></li>\n\t<li><code>0 &lt;= u<sub>i</sub>, v<sub>i</sub> &lt; n</code></li>\n\t<li><code>colors.length == n</code></li>\n\t<li><code>1 &lt;= colors[i] &lt;= 10<sup>5</sup></code></li>\n\t<li>The input is generated such that the graph represented by <code>edges</code> is a tree.</li>\n</ul>\n",
+  "difficulty": "Medium",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maximumSubtreeSize(vector<vector<int>>& edges, vector<int>& colors) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maximumSubtreeSize(int[][] edges, int[] colors) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximumSubtreeSize(self, edges: List[List[int]], colors: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximumSubtreeSize(self, edges, colors):\n        \"\"\"\n        :type edges: List[List[int]]\n        :type colors: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} edges\n * @param {number[]} colors\n * @return {number}\n */\nvar maximumSubtreeSize = function(edges, colors) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "code": "function maximumSubtreeSize(edges: number[][], colors: number[]): number {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaximumSubtreeSize(int[][] edges, int[] colors) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "code": "int maximumSubtreeSize(int** edges, int edgesSize, int* edgesColSize, int* colors, int colorsSize) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximumSubtreeSize(edges [][]int, colors []int) int {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximumSubtreeSize(edges: Array<IntArray>, colors: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximumSubtreeSize(_ edges: [[Int]], _ colors: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximum_subtree_size(edges: Vec<Vec<i32>>, colors: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} edges\n# @param {Integer[]} colors\n# @return {Integer}\ndef maximum_subtree_size(edges, colors)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $edges\n     * @param Integer[] $colors\n     * @return Integer\n     */\n    function maximumSubtreeSize($edges, $colors) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "code": "class Solution {\n  int maximumSubtreeSize(List<List<int>> edges, List<int> colors) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximumSubtreeSize(edges: Array[Array[Int]], colors: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "code": "defmodule Solution do\n  @spec maximum_subtree_size(edges :: [[integer]], colors :: [integer]) :: integer\n  def maximum_subtree_size(edges, colors) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "code": "-spec maximum_subtree_size(Edges :: [[integer()]], Colors :: [integer()]) -> integer().\nmaximum_subtree_size(Edges, Colors) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "code": "(define/contract (maximum-subtree-size edges colors)\n  (-> (listof (listof exact-integer?)) (listof exact-integer?) exact-integer?)\n  )"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.4K\", \"totalSubmission\": \"4K\", \"totalAcceptedRaw\": 2360, \"totalSubmissionRaw\": 4047, \"acRate\": \"58.3%\"}",
+  "metaData": "{\n  \"name\": \"maximumSubtreeSize\",\n  \"params\": [\n    {\n      \"name\": \"edges\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"colors\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "sampleTestCase": "[[0,1],[0,2],[0,3]]\n[1,1,2,3]"
+}
