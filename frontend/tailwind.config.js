@@ -4,23 +4,21 @@ module.exports = {
 		"./app/**/*.{js,ts,jsx,tsx}",
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
-
-		// Or if using `src` directory:
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
 		extend: {
 			colors: {
-				"dark-layer-1": "rgb(40,40,40)",
-				"dark-layer-2": "rgb(26,26,26)",
-				"dark-label-2": "rgba(239, 241, 246, 0.75)",
-				"dark-divider-border-2": "rgb(61, 61, 61)",
-				"dark-fill-2": "hsla(0,0%,100%,.14)",
-				"dark-fill-3": "hsla(0,0%,100%,.1)",
-				"dark-gray-6": "rgb(138, 138, 138)",
-				"dark-gray-7": "rgb(179, 179, 179)",
+				"dark-layer-1": "rgb(255, 255, 255)",           // 主面板背景 → 白色
+				"dark-layer-2": "rgb(247, 248, 250)",           // 页面背景 → 浅灰
+				"dark-label-2": "rgba(38, 38, 38, 0.85)",       // 标签文字 → 深色
+				"dark-divider-border-2": "rgb(229, 231, 235)",  // 分隔线 → 浅灰
+				"dark-fill-2": "rgba(0, 0, 0, 0.08)",           // hover 背景
+				"dark-fill-3": "rgba(0, 0, 0, 0.05)",           // 次级背景
+				"dark-gray-6": "rgb(107, 114, 128)",            // 图标灰
+				"dark-gray-7": "rgb(55, 65, 81)",               // 次级文字
 				"gray-8": "rgb(38, 38, 38)",
-				"dark-gray-8": "rgb(219, 219, 219)",
+				"dark-gray-8": "rgb(17, 24, 39)",               // 主文字 → 近黑
 				"brand-orange": "rgb(255 161 22)",
 				"brand-orange-s": "rgb(193, 122, 15)",
 				"dark-yellow": "rgb(255 192 30)",
