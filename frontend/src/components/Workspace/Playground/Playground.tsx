@@ -52,10 +52,22 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 			});
 			return;
 		}
+
+		// 后端题目暂不支持本地测试
+		const localProblem = problems[pid as string];
+		if (!localProblem || typeof localProblem.handlerFunction !== "function") {
+			toast.info("在线判题功能即将上线，敬请期待！", {
+				position: "top-center",
+				autoClose: 3000,
+				theme: "dark",
+			});
+			return;
+		}
+
 		try {
 			userCode = userCode.slice(userCode.indexOf(problem.starterFunctionName));
 			const cb = new Function(`return ${userCode}`)();
-			const handler = problems[pid as string].handlerFunction;
+			const handler = localProblem.handlerFunction;
 
 			if (typeof handler === "function") {
 				const success = handler(cb);
@@ -155,14 +167,20 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 					</div>
 
 					<div className='font-semibold my-4'>
-						<p className='text-sm font-medium mt-4 text-white'>Input:</p>
-						<div className='w-full cursor-text rounded-lg border px-3 py-[10px] bg-dark-fill-3 border-transparent text-white mt-2'>
-							{problem.examples[activeTestCaseId].inputText}
-						</div>
-						<p className='text-sm font-medium mt-4 text-white'>Output:</p>
-						<div className='w-full cursor-text rounded-lg border px-3 py-[10px] bg-dark-fill-3 border-transparent text-white mt-2'>
-							{problem.examples[activeTestCaseId].outputText}
-						</div>
+						{problem.examples.length > 0 ? (
+							<>
+								<p className='text-sm font-medium mt-4 text-white'>Input:</p>
+								<div className='w-full cursor-text rounded-lg border px-3 py-[10px] bg-dark-fill-3 border-transparent text-white mt-2'>
+									{problem.examples[activeTestCaseId]?.inputText}
+								</div>
+								<p className='text-sm font-medium mt-4 text-white'>Output:</p>
+								<div className='w-full cursor-text rounded-lg border px-3 py-[10px] bg-dark-fill-3 border-transparent text-white mt-2'>
+									{problem.examples[activeTestCaseId]?.outputText}
+								</div>
+							</>
+						) : (
+							<p className='text-sm text-gray-400 mt-4'>在线判题功能即将上线，本地测试暂不支持此题目。</p>
+						)}
 					</div>
 				</div>
 			</Split>

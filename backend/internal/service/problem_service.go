@@ -7,6 +7,7 @@ import (
 
 type ProblemService interface {
 	GetProblemList() ([]model.ProblemListItem, error)
+	GetProblemBySlug(slug string) (*model.Problem, error)
 }
 
 type problemService struct {
@@ -19,4 +20,8 @@ func NewProblemService(repo repository.ProblemRepository) ProblemService {
 
 func (s *problemService) GetProblemList() ([]model.ProblemListItem, error) {
 	return s.repo.GetAllForList()
+}
+
+func (s *problemService) GetProblemBySlug(slug string) (*model.Problem, error) {
+	return s.repo.GetBySlug(slug)
 }

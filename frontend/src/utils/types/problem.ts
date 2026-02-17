@@ -30,3 +30,24 @@ export type DBProblem = {
 	videoId?: string;
 	link?: string;
 };
+
+export type BackendProblemListItem = {
+	id: number;
+	frontend_question_id: number;
+	title: string;
+	slug: string;
+	difficulty: string;
+	is_vip_only: boolean;
+};
+
+export type BackendProblemDetail = {
+	id: number;
+	frontend_question_id: number;
+	title: string;
+	slug: string;
+	difficulty: string;
+	content: string;
+	template_code: Record<string, string> | null;
+	is_vip_only: boolean;
+	is_acm_mode: boolean;
+};

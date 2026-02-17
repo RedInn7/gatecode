@@ -42,6 +42,7 @@ func main() {
 	v1 := r.Group("/api/v1")
 	{
 		v1.GET("/problems", problemHandler.GetProblems)
+		v1.GET("/problems/:slug", problemHandler.GetProblemBySlug)
 	}
 
 	r.Run(":8081")
