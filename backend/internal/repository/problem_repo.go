@@ -10,6 +10,7 @@ type ProblemRepository interface {
 	Create(problem *model.Problem) error
 	GetAll() ([]model.Problem, error)
 	GetAllForList() ([]model.ProblemListItem, error)
+	GetPageForList(offset, limit int) ([]model.ProblemListItem, int64, error)
 	GetBySlug(slug string) (*model.Problem, error)
 }
 
@@ -35,6 +36,28 @@ func (r *problemRepository) GetAllForList() ([]model.ProblemListItem, error) {
 		return nil, err
 	}
 	return items, nil
+}
+
+// GetPageForList 分页查询列表，按 frontend_question_id 升序，同时返回总数
+func (r *problemRepository) GetPageForList(offset, limit int) ([]model.ProblemListItem, int64, error) {
+	items := make([]model.ProblemListItem, 0)
+	var total int64
+
+	base := r.db.Model(&model.Problem{})
+	if err := base.Count(&total).Error; err != nil {
+		return nil, 0, err
+	}
+
+	err := base.
+		Select("id", "frontend_question_id", "title", "slug", "difficulty", "is_vip_only").
+		Order("frontend_question_id ASC").
+		Offset(offset).
+		Limit(limit).
+		Find(&items).Error
+	if err != nil {
+		return nil, 0, err
+	}
+	return items, total, nil
 }
 
 // GetAll 实现接口方法：获取所有题目（含全部字段）
