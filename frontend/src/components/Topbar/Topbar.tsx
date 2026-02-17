@@ -1,6 +1,6 @@
 import { auth } from "@/firebase/firebase";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Logout from "../Buttons/Logout";
 import { useSetRecoilState } from "recoil";
@@ -10,34 +10,37 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { BsList } from "react-icons/bs";
 import Timer from "../Timer/Timer";
 import { useRouter } from "next/router";
-import { problems } from "@/utils/problems";
-import { Problem } from "@/utils/types/problem";
+import { BackendProblemListItem, Problem } from "@/utils/types/problem";
 
 type TopbarProps = {
 	problemPage?: boolean;
+	problem?: Problem;
 };
 
-const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
+const Topbar: React.FC<TopbarProps> = ({ problemPage, problem }) => {
 	const [user] = useAuthState(auth);
 	const setAuthModalState = useSetRecoilState(authModalState);
 	const router = useRouter();
 
-	const handleProblemChange = (isForward: boolean) => {
-		const { order } = problems[router.query.pid as string] as Problem;
-		const direction = isForward ? 1 : -1;
-		const nextProblemOrder = order + direction;
-		const nextProblemKey = Object.keys(problems).find((key) => problems[key].order === nextProblemOrder);
+	// 从后端拉取完整题目列表，用于左右导航
+	const [allProblems, setAllProblems] = useState<BackendProblemListItem[]>([]);
+	useEffect(() => {
+		if (!problemPage) return;
+		const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8081";
+		fetch(`${backendUrl}/api/v1/problems?page=1&limit=5000`)
+			.then((r) => r.json())
+			.then((data) => setAllProblems(data.problems || []))
+			.catch(() => {});
+	}, [problemPage]);
 
-		if (isForward && !nextProblemKey) {
-			const firstProblemKey = Object.keys(problems).find((key) => problems[key].order === 1);
-			router.push(`/problems/${firstProblemKey}`);
-		} else if (!isForward && !nextProblemKey) {
-			const lastProblemKey = Object.keys(problems).find(
-				(key) => problems[key].order === Object.keys(problems).length
-			);
-			router.push(`/problems/${lastProblemKey}`);
-		} else {
-			router.push(`/problems/${nextProblemKey}`);
+	const handleProblemChange = (isForward: boolean) => {
+		const currentOrder = problem?.order;
+		if (currentOrder === undefined) return;
+
+		const nextOrder = currentOrder + (isForward ? 1 : -1);
+		const next = allProblems.find((p) => p.frontend_question_id === nextOrder);
+		if (next) {
+			router.push(`/problems/${next.slug}`);
 		}
 	};
 
@@ -98,8 +101,8 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 						<div className='cursor-pointer group relative'>
 							<Image src='/avatar.png' alt='Avatar' width={30} height={30} className='rounded-full' />
 							<div
-								className='absolute top-10 left-2/4 -translate-x-2/4  mx-auto bg-dark-layer-1 text-brand-orange p-2 rounded shadow-lg 
-								z-40 group-hover:scale-100 scale-0 
+								className='absolute top-10 left-2/4 -translate-x-2/4  mx-auto bg-dark-layer-1 text-brand-orange p-2 rounded shadow-lg
+								z-40 group-hover:scale-100 scale-0
 								transition-all duration-300 ease-in-out'
 							>
 								<p className='text-sm'>{user.email}</p>

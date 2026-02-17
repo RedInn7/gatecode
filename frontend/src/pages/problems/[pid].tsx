@@ -16,7 +16,7 @@ const ProblemPage: React.FC<ProblemPageProps> = ({ problem }) => {
 
 	return (
 		<div>
-			<Topbar problemPage />
+			<Topbar problemPage problem={problem} />
 			<Workspace problem={problem} />
 		</div>
 	);
@@ -67,11 +67,12 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
 
 	const problem: Problem = {
 		id: backendProblem.slug,
-		title: backendProblem.title,
+		title: `${backendProblem.frontend_question_id}. ${backendProblem.title}`,
 		problemStatement: backendProblem.content,
 		examples: [],
 		constraints: "",
 		order: backendProblem.frontend_question_id,
+		difficulty: backendProblem.difficulty,
 		starterCode,
 		handlerFunction: "",
 		starterFunctionName: "",

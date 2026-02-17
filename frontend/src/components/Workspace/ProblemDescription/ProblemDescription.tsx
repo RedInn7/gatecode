@@ -169,6 +169,8 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 						<div className='flex space-x-4'>
 							<div className='flex-1 mr-2 text-lg text-gray-900 font-medium'>{problem?.title}</div>
 						</div>
+
+						{/* 优先用 Firestore 数据；Firestore 没有时用后端 difficulty */}
 						{!loading && currentProblem && (
 							<div className='flex items-center mt-3'>
 								<div
@@ -208,6 +210,17 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 									{starred && !updating && <AiFillStar className='text-dark-yellow' />}
 									{!starred && !updating && <TiStarOutline />}
 									{updating && <AiOutlineLoading3Quarters className='animate-spin' />}
+								</div>
+							</div>
+						)}
+
+						{/* 后端题目：Firestore 无数据时直接用 problem.difficulty */}
+						{!loading && !currentProblem && problem.difficulty && (
+							<div className='flex items-center mt-3'>
+								<div
+									className={`${getDifficultyClass(problem.difficulty)} inline-block rounded-[21px] bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize`}
+								>
+									{problem.difficulty}
 								</div>
 							</div>
 						)}
@@ -264,6 +277,12 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 	);
 };
 export default ProblemDescription;
+
+function getDifficultyClass(difficulty: string): string {
+	if (difficulty === "Easy") return "bg-olive text-olive";
+	if (difficulty === "Medium") return "bg-dark-yellow text-dark-yellow";
+	return "bg-dark-pink text-dark-pink";
+}
 
 function useGetCurrentProblem(problemId: string) {
 	const [currentProblem, setCurrentProblem] = useState<DBProblem | null>(null);
