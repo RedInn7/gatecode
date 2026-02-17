@@ -17,6 +17,7 @@ export type Problem = {
 	starterCode: string;
 	handlerFunction: ((fn: any) => boolean) | string;
 	starterFunctionName: string;
+	templateCodeMap?: Record<string, string>;
 };
 
 export type DBProblem = {

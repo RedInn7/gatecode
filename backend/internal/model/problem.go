@@ -12,6 +12,7 @@ type Problem struct {
 	TemplateCode       json.RawMessage `gorm:"column:template_code;type:json" json:"template_code"`
 	IsVipOnly          bool            `gorm:"column:is_vip_only" json:"is_vip_only"`
 	IsACMMode          bool            `gorm:"column:is_acm_mode" json:"is_acm_mode"`
+	TestCases          json.RawMessage `gorm:"column:test_cases;type:json" json:"test_cases"`
 }
 
 // ProblemListItem 是列表接口的轻量响应 DTO，不含大字段 content 和 template_code

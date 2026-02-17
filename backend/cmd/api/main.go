@@ -35,6 +35,9 @@ func main() {
 	problemSvc := service.NewProblemService(problemRepo)
 	problemHandler := api.NewProblemHandler(problemSvc)
 
+	judgeSvc := service.NewJudgeService(problemRepo)
+	submissionHandler := api.NewSubmissionHandler(judgeSvc)
+
 	// 4. 路由设置
 	r := gin.Default()
 	r.Use(corsMiddleware())
@@ -43,6 +46,7 @@ func main() {
 	{
 		v1.GET("/problems", problemHandler.GetProblems)
 		v1.GET("/problems/:slug", problemHandler.GetProblemBySlug)
+		v1.POST("/problems/:slug/run", submissionHandler.RunCode)
 	}
 
 	r.Run(":8081")
