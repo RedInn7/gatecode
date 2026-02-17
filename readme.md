@@ -106,3 +106,6 @@
   - LeetCode 是核心代码模式，但国内机试和部分美国公司（如 Palantir, OA 平台 HackerRank）需要处理 STDIN/STDOUT。你需要一个模块专门训练这种 I/O 处理。
 
 ### 爬1p3a和xhs上的面经
+
+### 架构
+![](asset/imgs/架构.png)
