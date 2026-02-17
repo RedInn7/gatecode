@@ -43,15 +43,15 @@ var LangConfigs = map[string]LangConfig{
 	"C++": {
 		Image:      "gcc:13",
 		FileName:   "solution.cpp",
-		CompileCmd: "g++ -O2 -o /w/sol /w/solution.cpp",
-		RunCmd:     "/w/sol",
+		CompileCmd: "g++ -O2 -o /w/prog /w/solution.cpp",
+		RunCmd:     "/w/prog",
 		IsAutoWrap: false,
 	},
 	"C": {
 		Image:      "gcc:13",
 		FileName:   "solution.c",
-		CompileCmd: "gcc -O2 -o /w/sol /w/solution.c",
-		RunCmd:     "/w/sol",
+		CompileCmd: "gcc -O2 -o /w/prog /w/solution.c",
+		RunCmd:     "/w/prog",
 		IsAutoWrap: false,
 	},
 	"Java": {
@@ -76,8 +76,8 @@ var LangConfigs = map[string]LangConfig{
 	"Kotlin": {
 		Image:      "eclipse-temurin:21-jdk-alpine",
 		FileName:   "solution.kt",
-		CompileCmd: "kotlinc /w/solution.kt -include-runtime -d /w/sol.jar",
-		RunCmd:     "java -jar /w/sol.jar",
+		CompileCmd: "kotlinc /w/solution.kt -include-runtime -d /w/prog.jar",
+		RunCmd:     "java -jar /w/prog.jar",
 		IsAutoWrap: false,
 	},
 	"Swift": {
@@ -89,8 +89,8 @@ var LangConfigs = map[string]LangConfig{
 	"Rust": {
 		Image:      "rust:1.74-alpine",
 		FileName:   "solution.rs",
-		CompileCmd: "rustc -o /w/sol /w/solution.rs",
-		RunCmd:     "/w/sol",
+		CompileCmd: "rustc -o /w/prog /w/solution.rs",
+		RunCmd:     "/w/prog",
 		IsAutoWrap: false,
 	},
 	"Ruby": {
