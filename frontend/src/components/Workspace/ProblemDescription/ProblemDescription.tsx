@@ -154,10 +154,10 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 	};
 
 	return (
-		<div className='bg-dark-layer-1'>
+		<div className='bg-dark-layer-1 border-r border-dark-divider-border-2'>
 			{/* TAB */}
-			<div className='flex h-11 w-full items-center pt-2 bg-dark-layer-2 text-white overflow-x-hidden'>
-				<div className={"bg-dark-layer-1 rounded-t-[5px] px-5 py-[10px] text-xs cursor-pointer"}>
+			<div className='flex h-11 w-full items-center pt-2 bg-dark-layer-2 text-gray-700 overflow-x-hidden border-b border-dark-divider-border-2'>
+				<div className={"bg-dark-layer-1 rounded-t-[5px] px-5 py-[10px] text-xs cursor-pointer font-medium text-gray-800"}>
 					Description
 				</div>
 			</div>
@@ -167,7 +167,7 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 					{/* Problem heading */}
 					<div className='w-full'>
 						<div className='flex space-x-4'>
-							<div className='flex-1 mr-2 text-lg text-white font-medium'>{problem?.title}</div>
+							<div className='flex-1 mr-2 text-lg text-gray-900 font-medium'>{problem?.title}</div>
 						</div>
 						{!loading && currentProblem && (
 							<div className='flex items-center mt-3'>
@@ -223,7 +223,7 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 						)}
 
 						{/* Problem Statement(paragraphs) */}
-						<div className='text-white text-sm'>
+						<div className='text-gray-800 text-sm mt-4'>
 							<div dangerouslySetInnerHTML={{ __html: problem.problemStatement }} />
 						</div>
 
@@ -231,11 +231,11 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 						<div className='mt-4'>
 							{problem.examples.map((example, index) => (
 								<div key={example.id}>
-									<p className='font-medium text-white '>Example {index + 1}: </p>
+									<p className='font-medium text-gray-800'>Example {index + 1}: </p>
 									{example.img && <img src={example.img} alt='' className='mt-3' />}
 									<div className='example-card'>
 										<pre>
-											<strong className='text-white'>Input: </strong> {example.inputText}
+											<strong>Input: </strong> {example.inputText}
 											<br />
 											<strong>Output:</strong>
 											{example.outputText} <br />
@@ -252,8 +252,8 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 
 						{/* Constraints */}
 						<div className='my-8 pb-4'>
-							<div className='text-white text-sm font-medium'>Constraints:</div>
-							<ul className='text-white ml-5 list-disc '>
+							<div className='text-gray-800 text-sm font-medium'>Constraints:</div>
+							<ul className='text-gray-700 ml-5 list-disc '>
 								<div dangerouslySetInnerHTML={{ __html: problem.constraints }} />
 							</ul>
 						</div>
