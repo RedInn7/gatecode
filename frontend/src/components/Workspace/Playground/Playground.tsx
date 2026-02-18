@@ -87,161 +87,353 @@ const LANG_TO_KEY: Record<string, string> = Object.fromEntries(
 	Object.entries(LANG_DISPLAY).map(([k, v]) => [v, k])
 );
 
-// ── Completion sources ────────────────────────────────────────────────────────
+// ── Static completion tables ──────────────────────────────────────────────────
+// Kept as module-level constants so they are allocated once, not per keystroke.
+
+// C++ — methods shown after `.` or `->`
+const CPP_MEMBER_OPTIONS = [
+	// Universal container methods
+	snippetCompletion("size()", { label: "size", type: "method", info: "→ size_t", detail: "element count" }),
+	snippetCompletion("empty()", { label: "empty", type: "method", info: "→ bool", detail: "true if no elements" }),
+	snippetCompletion("clear()", { label: "clear", type: "method", detail: "remove all elements" }),
+	snippetCompletion("begin()", { label: "begin", type: "method", info: "→ iterator" }),
+	snippetCompletion("end()", { label: "end", type: "method", info: "→ iterator" }),
+	snippetCompletion("rbegin()", { label: "rbegin", type: "method", info: "→ reverse_iterator" }),
+	snippetCompletion("rend()", { label: "rend", type: "method", info: "→ reverse_iterator" }),
+	// Sequence containers (vector / deque / list)
+	snippetCompletion("push_back(${value})", { label: "push_back", type: "method", detail: "append element to end" }),
+	snippetCompletion("pop_back()", { label: "pop_back", type: "method", detail: "remove last element" }),
+	snippetCompletion("push_front(${value})", { label: "push_front", type: "method", detail: "prepend element (deque/list)" }),
+	snippetCompletion("pop_front()", { label: "pop_front", type: "method", detail: "remove first element (deque/list)" }),
+	snippetCompletion("front()", { label: "front", type: "method", info: "→ reference", detail: "first element" }),
+	snippetCompletion("back()", { label: "back", type: "method", info: "→ reference", detail: "last element" }),
+	snippetCompletion("at(${i})", { label: "at", type: "method", info: "→ reference", detail: "element with bounds check" }),
+	snippetCompletion("resize(${n})", { label: "resize", type: "method", detail: "resize container" }),
+	snippetCompletion("reserve(${n})", { label: "reserve", type: "method", detail: "preallocate capacity (vector)" }),
+	snippetCompletion("insert(${pos}, ${value})", { label: "insert", type: "method", detail: "insert element(s)" }),
+	snippetCompletion("erase(${pos})", { label: "erase", type: "method", detail: "erase element(s)" }),
+	snippetCompletion("emplace_back(${args})", { label: "emplace_back", type: "method", detail: "construct & append in-place" }),
+	snippetCompletion("assign(${n}, ${value})", { label: "assign", type: "method", detail: "replace contents" }),
+	// Associative containers (map / unordered_map / set / unordered_set)
+	snippetCompletion("find(${key})", { label: "find", type: "method", info: "→ iterator", detail: "find by key; end() if absent" }),
+	snippetCompletion("count(${key})", { label: "count", type: "method", info: "→ size_t", detail: "number of matching keys" }),
+	snippetCompletion("contains(${key})", { label: "contains", type: "method", info: "→ bool (C++20)", detail: "check if key exists" }),
+	snippetCompletion("emplace(${args})", { label: "emplace", type: "method", detail: "construct & insert in-place" }),
+	snippetCompletion("lower_bound(${key})", { label: "lower_bound", type: "method", info: "→ iterator", detail: "first >= key (ordered containers)" }),
+	snippetCompletion("upper_bound(${key})", { label: "upper_bound", type: "method", info: "→ iterator", detail: "first > key (ordered containers)" }),
+	// Stack / queue / priority_queue
+	snippetCompletion("push(${value})", { label: "push", type: "method", detail: "add element" }),
+	snippetCompletion("pop()", { label: "pop", type: "method", detail: "remove top/front element" }),
+	snippetCompletion("top()", { label: "top", type: "method", info: "→ reference", detail: "top element (stack)" }),
+	// String-specific
+	snippetCompletion("length()", { label: "length", type: "method", info: "→ size_t", detail: "same as size()" }),
+	snippetCompletion("substr(${pos}, ${len})", { label: "substr", type: "method", info: "→ string", detail: "extract substring" }),
+	snippetCompletion("replace(${pos}, ${len}, ${str})", { label: "replace", type: "method", detail: "replace portion of string" }),
+	snippetCompletion("c_str()", { label: "c_str", type: "method", info: "→ const char*" }),
+	snippetCompletion("append(${str})", { label: "append", type: "method" }),
+	snippetCompletion("rfind(${str})", { label: "rfind", type: "method", info: "→ size_t", detail: "reverse find" }),
+	snippetCompletion("compare(${str})", { label: "compare", type: "method", info: "→ int" }),
+	// pair members
+	{ label: "first",  type: "property", detail: "first element of pair" },
+	{ label: "second", type: "property", detail: "second element of pair" },
+];
+
+// C++ — types / algorithms / utilities shown on normal word completion
+const CPP_GENERAL_OPTIONS = [
+	// Container types
+	{ label: "vector",         type: "class", info: "std::vector<T>" },
+	{ label: "unordered_map",  type: "class", info: "std::unordered_map<K,V> O(1) avg" },
+	{ label: "unordered_set",  type: "class", info: "std::unordered_set<T> O(1) avg" },
+	{ label: "map",            type: "class", info: "std::map<K,V> ordered, O(log n)" },
+	{ label: "set",            type: "class", info: "std::set<T> ordered, O(log n)" },
+	{ label: "multimap",       type: "class" },
+	{ label: "multiset",       type: "class" },
+	{ label: "stack",          type: "class", info: "LIFO adapter" },
+	{ label: "queue",          type: "class", info: "FIFO adapter" },
+	{ label: "priority_queue", type: "class", info: "max-heap by default" },
+	{ label: "deque",          type: "class", info: "double-ended queue" },
+	{ label: "list",           type: "class", info: "doubly-linked list" },
+	{ label: "string",         type: "class" },
+	{ label: "pair",           type: "class", info: "std::pair<F,S>" },
+	{ label: "tuple",          type: "class", info: "std::tuple<Ts…>" },
+	{ label: "optional",       type: "class", info: "std::optional<T> (C++17)" },
+	// Algorithms
+	{ label: "sort",             type: "function", info: "sort(first, last [, comp])" },
+	{ label: "stable_sort",      type: "function" },
+	{ label: "binary_search",    type: "function", info: "→ bool" },
+	{ label: "lower_bound",      type: "function", info: "first ≥ value → iterator" },
+	{ label: "upper_bound",      type: "function", info: "first > value → iterator" },
+	{ label: "max_element",      type: "function" },
+	{ label: "min_element",      type: "function" },
+	{ label: "reverse",          type: "function" },
+	{ label: "accumulate",       type: "function", info: "accumulate(first, last, init)" },
+	{ label: "find",             type: "function" },
+	{ label: "find_if",          type: "function" },
+	{ label: "count",            type: "function" },
+	{ label: "count_if",         type: "function" },
+	{ label: "unique",           type: "function", info: "remove consecutive duplicates" },
+	{ label: "fill",             type: "function" },
+	{ label: "fill_n",           type: "function" },
+	{ label: "next_permutation", type: "function" },
+	{ label: "nth_element",      type: "function" },
+	{ label: "partial_sort",     type: "function" },
+	{ label: "iota",             type: "function", info: "fill with incrementing values" },
+	{ label: "transform",        type: "function" },
+	{ label: "remove_if",        type: "function" },
+	{ label: "all_of",           type: "function" },
+	{ label: "any_of",           type: "function" },
+	{ label: "none_of",          type: "function" },
+	{ label: "merge",            type: "function" },
+	{ label: "rotate",           type: "function" },
+	{ label: "copy",             type: "function" },
+	// Utilities
+	{ label: "make_pair",   type: "function" },
+	{ label: "make_tuple",  type: "function" },
+	{ label: "get",         type: "function", info: "get<I>(tuple)" },
+	{ label: "swap",        type: "function" },
+	{ label: "move",        type: "function" },
+	{ label: "abs",         type: "function" },
+	{ label: "max",         type: "function" },
+	{ label: "min",         type: "function" },
+	{ label: "pow",         type: "function" },
+	{ label: "sqrt",        type: "function" },
+	{ label: "log",         type: "function" },
+	{ label: "log2",        type: "function" },
+	{ label: "ceil",        type: "function" },
+	{ label: "floor",       type: "function" },
+	{ label: "gcd",         type: "function", info: "std::gcd (C++17)" },
+	{ label: "lcm",         type: "function", info: "std::lcm (C++17)" },
+	{ label: "to_string",   type: "function", info: "→ std::string" },
+	{ label: "stoi",        type: "function", info: "string → int" },
+	{ label: "stoll",       type: "function", info: "string → long long" },
+	{ label: "stod",        type: "function", info: "string → double" },
+	// Constants
+	{ label: "INT_MAX",      type: "constant", info: "2 147 483 647" },
+	{ label: "INT_MIN",      type: "constant", info: "-2 147 483 648" },
+	{ label: "LLONG_MAX",    type: "constant" },
+	{ label: "LLONG_MIN",    type: "constant" },
+	{ label: "LONG_MAX",     type: "constant" },
+	{ label: "DBL_MAX",      type: "constant" },
+	{ label: "string::npos", type: "constant", info: "= SIZE_MAX — 'not found' sentinel" },
+	// Keywords / types
+	{ label: "auto",    type: "keyword" },
+	{ label: "nullptr", type: "keyword" },
+	{ label: "true",    type: "keyword" },
+	{ label: "false",   type: "keyword" },
+	{ label: "size_t",  type: "type" },
+	// Snippets — boost: 2 floats them to the top
+	snippetCompletion("for (int ${i} = 0; ${i} < ${n}; ${i}++) {\n\t${}\n}", {
+		label: "for-i", type: "keyword", detail: "index for loop", boost: 2,
+	}),
+	snippetCompletion("for (auto& ${x} : ${container}) {\n\t${}\n}", {
+		label: "for-range", type: "keyword", detail: "range-based for", boost: 2,
+	}),
+	snippetCompletion("if (${condition}) {\n\t${}\n}", {
+		label: "if", type: "keyword", detail: "if statement", boost: 2,
+	}),
+	snippetCompletion("while (${condition}) {\n\t${}\n}", {
+		label: "while", type: "keyword", detail: "while loop", boost: 2,
+	}),
+	snippetCompletion("sort(${v}.begin(), ${v}.end());", {
+		label: "sort-vec", type: "function", detail: "sort a vector", boost: 1,
+	}),
+	snippetCompletion("sort(${v}.begin(), ${v}.end(), [](const auto& a, const auto& b){\n\treturn ${a < b};\n});", {
+		label: "sort-custom", type: "function", detail: "sort with custom comparator", boost: 1,
+	}),
+	snippetCompletion("vector<${int}> ${name}(${n}, ${0});", {
+		label: "vector-init", type: "class", detail: "vector pre-filled with value", boost: 1,
+	}),
+	snippetCompletion("vector<vector<${int}>> ${dp}(${m} + 1, vector<${int}>(${n} + 1, ${0}));", {
+		label: "dp-2d", type: "class", detail: "2-D DP table", boost: 1,
+	}),
+	snippetCompletion("unordered_map<${string}, ${int}> ${mp};", {
+		label: "umap", type: "class", detail: "unordered_map", boost: 1,
+	}),
+	snippetCompletion("auto it = ${mp}.find(${key});\nif (it != ${mp}.end()) {\n\t${it->second}\n}", {
+		label: "map-find", type: "function", detail: "safe map lookup", boost: 1,
+	}),
+	snippetCompletion("priority_queue<${int}, vector<${int}>, greater<${int}>> ${pq};", {
+		label: "min-heap", type: "class", detail: "min-heap priority queue", boost: 1,
+	}),
+	snippetCompletion("int ${l} = 0, ${r} = ${n} - 1;\nwhile (${l} <= ${r}) {\n\tint ${mid} = ${l} + (${r} - ${l}) / 2;\n\tif (${nums}[${mid}] == ${target}) return ${mid};\n\telse if (${nums}[${mid}] < ${target}) ${l} = ${mid} + 1;\n\telse ${r} = ${mid} - 1;\n}\nreturn -1;", {
+		label: "binary-search", type: "keyword", detail: "binary search template", boost: 1,
+	}),
+];
+
+// Java — methods shown after `.`
+const JAVA_MEMBER_OPTIONS = [
+	// Collection methods
+	snippetCompletion("size()", { label: "size", type: "method", info: "→ int" }),
+	snippetCompletion("isEmpty()", { label: "isEmpty", type: "method", info: "→ boolean" }),
+	snippetCompletion("add(${element})", { label: "add", type: "method", detail: "add element" }),
+	snippetCompletion("get(${index})", { label: "get", type: "method", info: "→ E" }),
+	snippetCompletion("set(${index}, ${element})", { label: "set", type: "method" }),
+	snippetCompletion("remove(${index})", { label: "remove", type: "method" }),
+	snippetCompletion("contains(${element})", { label: "contains", type: "method", info: "→ boolean" }),
+	snippetCompletion("indexOf(${element})", { label: "indexOf", type: "method", info: "→ int" }),
+	snippetCompletion("clear()", { label: "clear", type: "method" }),
+	snippetCompletion("addAll(${collection})", { label: "addAll", type: "method" }),
+	snippetCompletion("subList(${from}, ${to})", { label: "subList", type: "method", info: "→ List<E>" }),
+	snippetCompletion("iterator()", { label: "iterator", type: "method", info: "→ Iterator<E>" }),
+	snippetCompletion("toArray()", { label: "toArray", type: "method", info: "→ Object[]" }),
+	// Map-specific
+	snippetCompletion("put(${key}, ${value})", { label: "put", type: "method" }),
+	snippetCompletion("getOrDefault(${key}, ${defaultValue})", { label: "getOrDefault", type: "method" }),
+	snippetCompletion("containsKey(${key})", { label: "containsKey", type: "method", info: "→ boolean" }),
+	snippetCompletion("containsValue(${value})", { label: "containsValue", type: "method", info: "→ boolean" }),
+	snippetCompletion("keySet()", { label: "keySet", type: "method", info: "→ Set<K>" }),
+	snippetCompletion("values()", { label: "values", type: "method", info: "→ Collection<V>" }),
+	snippetCompletion("entrySet()", { label: "entrySet", type: "method", info: "→ Set<Map.Entry<K,V>>" }),
+	snippetCompletion("merge(${key}, ${value}, ${remappingFn})", { label: "merge", type: "method" }),
+	snippetCompletion("computeIfAbsent(${key}, ${mappingFn})", { label: "computeIfAbsent", type: "method" }),
+	snippetCompletion("putIfAbsent(${key}, ${value})", { label: "putIfAbsent", type: "method" }),
+	// Stack / Deque / Queue
+	snippetCompletion("push(${element})", { label: "push", type: "method" }),
+	snippetCompletion("pop()", { label: "pop", type: "method" }),
+	snippetCompletion("peek()", { label: "peek", type: "method", detail: "top without removing" }),
+	snippetCompletion("poll()", { label: "poll", type: "method", detail: "retrieve and remove head" }),
+	snippetCompletion("offer(${element})", { label: "offer", type: "method", detail: "add element (queue)" }),
+	// String-specific
+	snippetCompletion("length()", { label: "length", type: "method", info: "→ int" }),
+	snippetCompletion("charAt(${index})", { label: "charAt", type: "method", info: "→ char" }),
+	snippetCompletion("substring(${start}, ${end})", { label: "substring", type: "method", info: "→ String" }),
+	snippetCompletion("indexOf(${str})", { label: "indexOf", type: "method", info: "→ int" }),
+	snippetCompletion("equals(${other})", { label: "equals", type: "method", info: "→ boolean" }),
+	snippetCompletion("equalsIgnoreCase(${other})", { label: "equalsIgnoreCase", type: "method" }),
+	snippetCompletion("toCharArray()", { label: "toCharArray", type: "method", info: "→ char[]" }),
+	snippetCompletion("split(${regex})", { label: "split", type: "method", info: "→ String[]" }),
+	snippetCompletion("trim()", { label: "trim", type: "method", info: "→ String" }),
+	snippetCompletion("toLowerCase()", { label: "toLowerCase", type: "method" }),
+	snippetCompletion("toUpperCase()", { label: "toUpperCase", type: "method" }),
+	snippetCompletion("replace(${old}, ${new})", { label: "replace", type: "method" }),
+	snippetCompletion("startsWith(${prefix})", { label: "startsWith", type: "method", info: "→ boolean" }),
+	snippetCompletion("endsWith(${suffix})", { label: "endsWith", type: "method", info: "→ boolean" }),
+	snippetCompletion("contains(${seq})", { label: "contains", type: "method", info: "→ boolean" }),
+	snippetCompletion("toString()", { label: "toString", type: "method", info: "→ String" }),
+	// Array field
+	{ label: "length", type: "property", detail: "array length (field, not method)" },
+];
+
+// Java — types / static methods / snippets shown on normal word completion
+const JAVA_GENERAL_OPTIONS = [
+	// Collection types
+	{ label: "ArrayList",    type: "class", info: "java.util.ArrayList<E>" },
+	{ label: "HashMap",      type: "class", info: "java.util.HashMap<K,V>" },
+	{ label: "HashSet",      type: "class", info: "java.util.HashSet<E>" },
+	{ label: "LinkedList",   type: "class", info: "java.util.LinkedList<E>" },
+	{ label: "TreeMap",      type: "class", info: "java.util.TreeMap<K,V> sorted" },
+	{ label: "TreeSet",      type: "class", info: "java.util.TreeSet<E> sorted" },
+	{ label: "PriorityQueue",type: "class", info: "min-heap by default" },
+	{ label: "ArrayDeque",   type: "class" },
+	{ label: "LinkedHashMap",type: "class", info: "insertion-ordered map" },
+	{ label: "Deque",        type: "class" },
+	// Static utilities
+	{ label: "Arrays.sort",          type: "function" },
+	{ label: "Arrays.fill",          type: "function" },
+	{ label: "Arrays.copyOf",        type: "function" },
+	{ label: "Arrays.copyOfRange",   type: "function" },
+	{ label: "Arrays.stream",        type: "function" },
+	{ label: "Collections.sort",     type: "function" },
+	{ label: "Collections.reverse",  type: "function" },
+	{ label: "Collections.max",      type: "function" },
+	{ label: "Collections.min",      type: "function" },
+	{ label: "Collections.frequency",type: "function" },
+	{ label: "Math.max",   type: "function" },
+	{ label: "Math.min",   type: "function" },
+	{ label: "Math.abs",   type: "function" },
+	{ label: "Math.pow",   type: "function" },
+	{ label: "Math.sqrt",  type: "function" },
+	{ label: "Math.log",   type: "function" },
+	{ label: "Math.ceil",  type: "function" },
+	{ label: "Math.floor", type: "function" },
+	// Constants
+	{ label: "Integer.MAX_VALUE", type: "constant", info: "2 147 483 647" },
+	{ label: "Integer.MIN_VALUE", type: "constant", info: "-2 147 483 648" },
+	{ label: "Long.MAX_VALUE",    type: "constant" },
+	{ label: "Long.MIN_VALUE",    type: "constant" },
+	// Type conversions
+	{ label: "Integer.parseInt",       type: "function" },
+	{ label: "Integer.toString",       type: "function" },
+	{ label: "Integer.toBinaryString", type: "function" },
+	{ label: "Integer.bitCount",       type: "function", info: "count set bits" },
+	{ label: "String.valueOf",         type: "function" },
+	{ label: "Character.isDigit",      type: "function" },
+	{ label: "Character.isLetter",     type: "function" },
+	{ label: "Character.isLetterOrDigit", type: "function" },
+	{ label: "Character.toLowerCase",  type: "function" },
+	{ label: "Character.toUpperCase",  type: "function" },
+	// Snippets — boost: 2 floats them to the top
+	snippetCompletion("for (int ${i} = 0; ${i} < ${n}; ${i}++) {\n\t${}\n}", {
+		label: "for-i", type: "keyword", detail: "index for loop", boost: 2,
+	}),
+	snippetCompletion("for (${Object} ${item} : ${collection}) {\n\t${}\n}", {
+		label: "for-each", type: "keyword", detail: "enhanced for loop", boost: 2,
+	}),
+	snippetCompletion("if (${condition}) {\n\t${}\n}", {
+		label: "if", type: "keyword", detail: "if statement", boost: 2,
+	}),
+	snippetCompletion("while (${condition}) {\n\t${}\n}", {
+		label: "while", type: "keyword", detail: "while loop", boost: 2,
+	}),
+	snippetCompletion("new HashMap<>();", { label: "new-hashmap", type: "class", boost: 1 }),
+	snippetCompletion("new ArrayList<>();", { label: "new-arraylist", type: "class", boost: 1 }),
+	snippetCompletion("new PriorityQueue<>((a, b) -> ${a} - ${b});", {
+		label: "new-pq-lambda", type: "class", detail: "PriorityQueue with comparator", boost: 1,
+	}),
+	snippetCompletion("new int[${n}]", { label: "new-int-array", type: "class", detail: "int array", boost: 1 }),
+	snippetCompletion("new int[${m}][${n}]", { label: "new-2d-array", type: "class", detail: "2-D int array", boost: 1 }),
+	snippetCompletion("map.getOrDefault(${key}, ${0}) + ${1}", {
+		label: "map-count", type: "function", detail: "increment map counter", boost: 1,
+	}),
+	snippetCompletion("StringBuilder ${sb} = new StringBuilder();\n${sb}.append(${str});\n${sb}.toString();", {
+		label: "stringbuilder", type: "class", detail: "StringBuilder pattern", boost: 1,
+	}),
+	snippetCompletion("int ${l} = 0, ${r} = ${n} - 1;\nwhile (${l} <= ${r}) {\n\tint ${mid} = ${l} + (${r} - ${l}) / 2;\n\t${}\n}", {
+		label: "binary-search", type: "keyword", detail: "binary search template", boost: 1,
+	}),
+];
+
+// ── Completion source functions ───────────────────────────────────────────────
 
 function cppCompletionSource(context: CompletionContext): CompletionResult | null {
 	// Suppress inside comments and string literals
-	const nodeName = syntaxTree(context.state).resolveInner(context.pos, -1).name;
-	if (/Comment|String/.test(nodeName)) return null;
+	if (/Comment|String/.test(syntaxTree(context.state).resolveInner(context.pos, -1).name)) return null;
 
-	// Trigger on regular word OR right after `.` / `->`
 	const word = context.matchBefore(/\w*/);
-	const prevChar = context.state.sliceDoc(Math.max(0, context.pos - 1), context.pos);
-	const isMemberTrigger = prevChar === "." || prevChar === ">";
-	if (!word || (word.from === word.to && !context.explicit && !isMemberTrigger)) return null;
+	const from = word?.from ?? context.pos;
 
-	return {
-		from: word.from,
-		options: [
-			// Containers
-			{ label: "vector", type: "class", info: "std::vector<T>" },
-			{ label: "unordered_map", type: "class", info: "std::unordered_map<K,V> — O(1) hash map" },
-			{ label: "unordered_set", type: "class", info: "std::unordered_set<T> — O(1) hash set" },
-			{ label: "map", type: "class", info: "std::map<K,V> — ordered map O(log n)" },
-			{ label: "set", type: "class", info: "std::set<T> — ordered set O(log n)" },
-			{ label: "multimap", type: "class" },
-			{ label: "multiset", type: "class" },
-			{ label: "stack", type: "class", info: "LIFO" },
-			{ label: "queue", type: "class", info: "FIFO" },
-			{ label: "priority_queue", type: "class", info: "max-heap by default" },
-			{ label: "deque", type: "class", info: "double-ended queue" },
-			{ label: "list", type: "class", info: "doubly linked list" },
-			{ label: "string", type: "class" },
-			{ label: "pair", type: "class", info: "std::pair<F,S>" },
-			// Algorithms
-			{ label: "sort", type: "function", info: "sort(first, last [, comp])" },
-			{ label: "stable_sort", type: "function" },
-			{ label: "binary_search", type: "function", info: "→ bool" },
-			{ label: "lower_bound", type: "function", info: "first element ≥ value" },
-			{ label: "upper_bound", type: "function", info: "first element > value" },
-			{ label: "max_element", type: "function" },
-			{ label: "min_element", type: "function" },
-			{ label: "reverse", type: "function" },
-			{ label: "accumulate", type: "function", info: "accumulate(first, last, init)" },
-			{ label: "find", type: "function" },
-			{ label: "count", type: "function" },
-			{ label: "unique", type: "function", info: "remove consecutive duplicates" },
-			{ label: "fill", type: "function" },
-			{ label: "next_permutation", type: "function" },
-			{ label: "nth_element", type: "function" },
-			// Utilities
-			{ label: "make_pair", type: "function" },
-			{ label: "swap", type: "function" },
-			{ label: "abs", type: "function" },
-			{ label: "max", type: "function" },
-			{ label: "min", type: "function" },
-			{ label: "pow", type: "function" },
-			{ label: "sqrt", type: "function" },
-			{ label: "to_string", type: "function", info: "→ std::string" },
-			{ label: "stoi", type: "function", info: "string → int" },
-			{ label: "stoll", type: "function", info: "string → long long" },
-			{ label: "stod", type: "function", info: "string → double" },
-			// Constants
-			{ label: "INT_MAX", type: "constant", info: "2 147 483 647" },
-			{ label: "INT_MIN", type: "constant", info: "-2 147 483 648" },
-			{ label: "LLONG_MAX", type: "constant" },
-			{ label: "LLONG_MIN", type: "constant" },
-			// Snippets — boost > 0 so they sort to the top of the list
-			snippetCompletion("for (int ${i} = 0; ${i} < ${n}; ${i}++) {\n\t${}\n}", {
-				label: "for-i", type: "keyword", detail: "index for loop", boost: 2,
-			}),
-			snippetCompletion("for (auto& ${x} : ${container}) {\n\t${}\n}", {
-				label: "for-range", type: "keyword", detail: "range-based for", boost: 2,
-			}),
-			snippetCompletion("if (${condition}) {\n\t${}\n}", {
-				label: "if", type: "keyword", detail: "if statement", boost: 2,
-			}),
-			snippetCompletion("while (${condition}) {\n\t${}\n}", {
-				label: "while", type: "keyword", detail: "while loop", boost: 2,
-			}),
-			snippetCompletion("vector<${int}> ${name}(${n}, ${0});", {
-				label: "vector-init", type: "class", detail: "vector with default value", boost: 1,
-			}),
-			snippetCompletion("unordered_map<${int}, ${int}> ${mp};", {
-				label: "umap", type: "class", detail: "unordered_map", boost: 1,
-			}),
-		],
-	};
+	// Detect member access: chars immediately before current word are `.` or `->`
+	const before2 = context.state.sliceDoc(Math.max(0, from - 2), from);
+	const prevChar = context.state.sliceDoc(Math.max(0, context.pos - 1), context.pos);
+	const isMember = before2.endsWith(".") || before2.endsWith("->") || prevChar === "." || prevChar === ">";
+
+	if (isMember) {
+		// Member access: show methods; validFor keeps dropdown open while typing the method name
+		return { from, options: CPP_MEMBER_OPTIONS, validFor: /^\w*$/ };
+	}
+
+	if (!word || (word.from === word.to && !context.explicit)) return null;
+	return { from: word.from, options: CPP_GENERAL_OPTIONS };
 }
 
 function javaCompletionSource(context: CompletionContext): CompletionResult | null {
 	// Suppress inside comments and string literals
-	const nodeName = syntaxTree(context.state).resolveInner(context.pos, -1).name;
-	if (/Comment|String/.test(nodeName)) return null;
+	if (/Comment|String/.test(syntaxTree(context.state).resolveInner(context.pos, -1).name)) return null;
 
-	// Trigger on regular word OR right after `.`
 	const word = context.matchBefore(/\w*/);
-	const prevChar = context.state.sliceDoc(Math.max(0, context.pos - 1), context.pos);
-	if (!word || (word.from === word.to && !context.explicit && prevChar !== ".")) return null;
+	const from = word?.from ?? context.pos;
 
-	return {
-		from: word.from,
-		options: [
-			// Collections
-			{ label: "ArrayList", type: "class", info: "java.util.ArrayList<E>" },
-			{ label: "HashMap", type: "class", info: "java.util.HashMap<K,V>" },
-			{ label: "HashSet", type: "class", info: "java.util.HashSet<E>" },
-			{ label: "LinkedList", type: "class", info: "java.util.LinkedList<E>" },
-			{ label: "TreeMap", type: "class", info: "java.util.TreeMap<K,V> sorted" },
-			{ label: "TreeSet", type: "class", info: "java.util.TreeSet<E> sorted" },
-			{ label: "PriorityQueue", type: "class", info: "min-heap by default" },
-			{ label: "ArrayDeque", type: "class" },
-			{ label: "Deque", type: "class" },
-			// Static methods
-			{ label: "Arrays.sort", type: "function" },
-			{ label: "Arrays.fill", type: "function" },
-			{ label: "Arrays.copyOf", type: "function" },
-			{ label: "Arrays.copyOfRange", type: "function" },
-			{ label: "Collections.sort", type: "function" },
-			{ label: "Collections.reverse", type: "function" },
-			{ label: "Collections.frequency", type: "function" },
-			{ label: "Math.max", type: "function" },
-			{ label: "Math.min", type: "function" },
-			{ label: "Math.abs", type: "function" },
-			{ label: "Math.pow", type: "function" },
-			{ label: "Math.sqrt", type: "function" },
-			// Constants
-			{ label: "Integer.MAX_VALUE", type: "constant", info: "2 147 483 647" },
-			{ label: "Integer.MIN_VALUE", type: "constant", info: "-2 147 483 648" },
-			{ label: "Long.MAX_VALUE", type: "constant" },
-			// Conversions
-			{ label: "Integer.parseInt", type: "function" },
-			{ label: "Integer.toString", type: "function" },
-			{ label: "String.valueOf", type: "function" },
-			{ label: "Character.isDigit", type: "function" },
-			{ label: "Character.isLetter", type: "function" },
-			{ label: "Character.toLowerCase", type: "function" },
-			{ label: "Character.toUpperCase", type: "function" },
-			// Snippets — boosted to sort first
-			snippetCompletion("for (int ${i} = 0; ${i} < ${n}; ${i}++) {\n\t${}\n}", {
-				label: "for-i", type: "keyword", detail: "index for loop", boost: 2,
-			}),
-			snippetCompletion("for (${Object} ${item} : ${collection}) {\n\t${}\n}", {
-				label: "for-each", type: "keyword", detail: "enhanced for loop", boost: 2,
-			}),
-			snippetCompletion("if (${condition}) {\n\t${}\n}", {
-				label: "if", type: "keyword", detail: "if statement", boost: 2,
-			}),
-			snippetCompletion("while (${condition}) {\n\t${}\n}", {
-				label: "while", type: "keyword", detail: "while loop", boost: 2,
-			}),
-			snippetCompletion("new HashMap<>();", { label: "new-hashmap", type: "class", boost: 1 }),
-			snippetCompletion("new ArrayList<>();", { label: "new-arraylist", type: "class", boost: 1 }),
-			snippetCompletion("new PriorityQueue<>((a, b) -> ${a} - ${b});", {
-				label: "new-pq-lambda", type: "class", detail: "PriorityQueue with comparator", boost: 1,
-			}),
-		],
-	};
+	// Detect member access: char immediately before current word is `.`
+	const beforeWord = context.state.sliceDoc(Math.max(0, from - 1), from);
+	const prevChar  = context.state.sliceDoc(Math.max(0, context.pos - 1), context.pos);
+	const isMember  = beforeWord === "." || prevChar === ".";
+
+	if (isMember) {
+		return { from, options: JAVA_MEMBER_OPTIONS, validFor: /^\w*$/ };
+	}
+
+	if (!word || (word.from === word.to && !context.explicit)) return null;
+	return { from: word.from, options: JAVA_GENERAL_OPTIONS };
 }
 
 // ── C++ indentation fix ───────────────────────────────────────────────────────
