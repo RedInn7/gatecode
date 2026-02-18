@@ -27,9 +27,10 @@ body {
 	}
 }
 
-/* light scrollbar */
+/* light scrollbar — 8 px wide to match editor scroll UX */
 ::-webkit-scrollbar {
-	width: 0.4rem;
+	width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -45,11 +46,6 @@ body {
 	background: #a0a0a0;
 }
 
-/* CODE EDITOR — 保持深色编辑器 */
-.cm-scroller,
-.cm-gutters {
-	background-color: #1e1e1e !important;
-}
 .cm-focused {
 	outline: none !important;
 }

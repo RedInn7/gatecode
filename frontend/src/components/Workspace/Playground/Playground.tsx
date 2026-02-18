@@ -1,15 +1,22 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import PreferenceNav from "./PreferenceNav/PreferenceNav";
 import Split from "react-split";
 import CodeMirror from "@uiw/react-codemirror";
-import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 import { javascript } from "@codemirror/lang-javascript";
-import { python } from "@codemirror/lang-python";
-import { cpp } from "@codemirror/lang-cpp";
-import { java } from "@codemirror/lang-java";
+import { python, pythonLanguage, globalCompletion, localCompletionSource } from "@codemirror/lang-python";
+import { cpp, cppLanguage } from "@codemirror/lang-cpp";
+import { indentService, indentUnit, syntaxTree } from "@codemirror/language";
+import { keymap, EditorView } from "@codemirror/view";
+import { java, javaLanguage } from "@codemirror/lang-java";
 import { rust } from "@codemirror/lang-rust";
 import { go } from "@codemirror/lang-go";
 import { Extension } from "@codemirror/state";
+import {
+	autocompletion,
+	CompletionContext,
+	CompletionResult,
+	snippetCompletion,
+} from "@codemirror/autocomplete";
 import EditorFooter from "./EditorFooter";
 import { Problem } from "@/utils/types/problem";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -80,26 +87,248 @@ const LANG_TO_KEY: Record<string, string> = Object.fromEntries(
 	Object.entries(LANG_DISPLAY).map(([k, v]) => [v, k])
 );
 
+// ── Completion sources ────────────────────────────────────────────────────────
+
+function cppCompletionSource(context: CompletionContext): CompletionResult | null {
+	// Suppress inside comments and string literals
+	const nodeName = syntaxTree(context.state).resolveInner(context.pos, -1).name;
+	if (/Comment|String/.test(nodeName)) return null;
+
+	// Trigger on regular word OR right after `.` / `->`
+	const word = context.matchBefore(/\w*/);
+	const prevChar = context.state.sliceDoc(Math.max(0, context.pos - 1), context.pos);
+	const isMemberTrigger = prevChar === "." || prevChar === ">";
+	if (!word || (word.from === word.to && !context.explicit && !isMemberTrigger)) return null;
+
+	return {
+		from: word.from,
+		options: [
+			// Containers
+			{ label: "vector", type: "class", info: "std::vector<T>" },
+			{ label: "unordered_map", type: "class", info: "std::unordered_map<K,V> — O(1) hash map" },
+			{ label: "unordered_set", type: "class", info: "std::unordered_set<T> — O(1) hash set" },
+			{ label: "map", type: "class", info: "std::map<K,V> — ordered map O(log n)" },
+			{ label: "set", type: "class", info: "std::set<T> — ordered set O(log n)" },
+			{ label: "multimap", type: "class" },
+			{ label: "multiset", type: "class" },
+			{ label: "stack", type: "class", info: "LIFO" },
+			{ label: "queue", type: "class", info: "FIFO" },
+			{ label: "priority_queue", type: "class", info: "max-heap by default" },
+			{ label: "deque", type: "class", info: "double-ended queue" },
+			{ label: "list", type: "class", info: "doubly linked list" },
+			{ label: "string", type: "class" },
+			{ label: "pair", type: "class", info: "std::pair<F,S>" },
+			// Algorithms
+			{ label: "sort", type: "function", info: "sort(first, last [, comp])" },
+			{ label: "stable_sort", type: "function" },
+			{ label: "binary_search", type: "function", info: "→ bool" },
+			{ label: "lower_bound", type: "function", info: "first element ≥ value" },
+			{ label: "upper_bound", type: "function", info: "first element > value" },
+			{ label: "max_element", type: "function" },
+			{ label: "min_element", type: "function" },
+			{ label: "reverse", type: "function" },
+			{ label: "accumulate", type: "function", info: "accumulate(first, last, init)" },
+			{ label: "find", type: "function" },
+			{ label: "count", type: "function" },
+			{ label: "unique", type: "function", info: "remove consecutive duplicates" },
+			{ label: "fill", type: "function" },
+			{ label: "next_permutation", type: "function" },
+			{ label: "nth_element", type: "function" },
+			// Utilities
+			{ label: "make_pair", type: "function" },
+			{ label: "swap", type: "function" },
+			{ label: "abs", type: "function" },
+			{ label: "max", type: "function" },
+			{ label: "min", type: "function" },
+			{ label: "pow", type: "function" },
+			{ label: "sqrt", type: "function" },
+			{ label: "to_string", type: "function", info: "→ std::string" },
+			{ label: "stoi", type: "function", info: "string → int" },
+			{ label: "stoll", type: "function", info: "string → long long" },
+			{ label: "stod", type: "function", info: "string → double" },
+			// Constants
+			{ label: "INT_MAX", type: "constant", info: "2 147 483 647" },
+			{ label: "INT_MIN", type: "constant", info: "-2 147 483 648" },
+			{ label: "LLONG_MAX", type: "constant" },
+			{ label: "LLONG_MIN", type: "constant" },
+			// Snippets — boost > 0 so they sort to the top of the list
+			snippetCompletion("for (int ${i} = 0; ${i} < ${n}; ${i}++) {\n\t${}\n}", {
+				label: "for-i", type: "keyword", detail: "index for loop", boost: 2,
+			}),
+			snippetCompletion("for (auto& ${x} : ${container}) {\n\t${}\n}", {
+				label: "for-range", type: "keyword", detail: "range-based for", boost: 2,
+			}),
+			snippetCompletion("if (${condition}) {\n\t${}\n}", {
+				label: "if", type: "keyword", detail: "if statement", boost: 2,
+			}),
+			snippetCompletion("while (${condition}) {\n\t${}\n}", {
+				label: "while", type: "keyword", detail: "while loop", boost: 2,
+			}),
+			snippetCompletion("vector<${int}> ${name}(${n}, ${0});", {
+				label: "vector-init", type: "class", detail: "vector with default value", boost: 1,
+			}),
+			snippetCompletion("unordered_map<${int}, ${int}> ${mp};", {
+				label: "umap", type: "class", detail: "unordered_map", boost: 1,
+			}),
+		],
+	};
+}
+
+function javaCompletionSource(context: CompletionContext): CompletionResult | null {
+	// Suppress inside comments and string literals
+	const nodeName = syntaxTree(context.state).resolveInner(context.pos, -1).name;
+	if (/Comment|String/.test(nodeName)) return null;
+
+	// Trigger on regular word OR right after `.`
+	const word = context.matchBefore(/\w*/);
+	const prevChar = context.state.sliceDoc(Math.max(0, context.pos - 1), context.pos);
+	if (!word || (word.from === word.to && !context.explicit && prevChar !== ".")) return null;
+
+	return {
+		from: word.from,
+		options: [
+			// Collections
+			{ label: "ArrayList", type: "class", info: "java.util.ArrayList<E>" },
+			{ label: "HashMap", type: "class", info: "java.util.HashMap<K,V>" },
+			{ label: "HashSet", type: "class", info: "java.util.HashSet<E>" },
+			{ label: "LinkedList", type: "class", info: "java.util.LinkedList<E>" },
+			{ label: "TreeMap", type: "class", info: "java.util.TreeMap<K,V> sorted" },
+			{ label: "TreeSet", type: "class", info: "java.util.TreeSet<E> sorted" },
+			{ label: "PriorityQueue", type: "class", info: "min-heap by default" },
+			{ label: "ArrayDeque", type: "class" },
+			{ label: "Deque", type: "class" },
+			// Static methods
+			{ label: "Arrays.sort", type: "function" },
+			{ label: "Arrays.fill", type: "function" },
+			{ label: "Arrays.copyOf", type: "function" },
+			{ label: "Arrays.copyOfRange", type: "function" },
+			{ label: "Collections.sort", type: "function" },
+			{ label: "Collections.reverse", type: "function" },
+			{ label: "Collections.frequency", type: "function" },
+			{ label: "Math.max", type: "function" },
+			{ label: "Math.min", type: "function" },
+			{ label: "Math.abs", type: "function" },
+			{ label: "Math.pow", type: "function" },
+			{ label: "Math.sqrt", type: "function" },
+			// Constants
+			{ label: "Integer.MAX_VALUE", type: "constant", info: "2 147 483 647" },
+			{ label: "Integer.MIN_VALUE", type: "constant", info: "-2 147 483 648" },
+			{ label: "Long.MAX_VALUE", type: "constant" },
+			// Conversions
+			{ label: "Integer.parseInt", type: "function" },
+			{ label: "Integer.toString", type: "function" },
+			{ label: "String.valueOf", type: "function" },
+			{ label: "Character.isDigit", type: "function" },
+			{ label: "Character.isLetter", type: "function" },
+			{ label: "Character.toLowerCase", type: "function" },
+			{ label: "Character.toUpperCase", type: "function" },
+			// Snippets — boosted to sort first
+			snippetCompletion("for (int ${i} = 0; ${i} < ${n}; ${i}++) {\n\t${}\n}", {
+				label: "for-i", type: "keyword", detail: "index for loop", boost: 2,
+			}),
+			snippetCompletion("for (${Object} ${item} : ${collection}) {\n\t${}\n}", {
+				label: "for-each", type: "keyword", detail: "enhanced for loop", boost: 2,
+			}),
+			snippetCompletion("if (${condition}) {\n\t${}\n}", {
+				label: "if", type: "keyword", detail: "if statement", boost: 2,
+			}),
+			snippetCompletion("while (${condition}) {\n\t${}\n}", {
+				label: "while", type: "keyword", detail: "while loop", boost: 2,
+			}),
+			snippetCompletion("new HashMap<>();", { label: "new-hashmap", type: "class", boost: 1 }),
+			snippetCompletion("new ArrayList<>();", { label: "new-arraylist", type: "class", boost: 1 }),
+			snippetCompletion("new PriorityQueue<>((a, b) -> ${a} - ${b});", {
+				label: "new-pq-lambda", type: "class", detail: "PriorityQueue with comparator", boost: 1,
+			}),
+		],
+	};
+}
+
+// ── C++ indentation fix ───────────────────────────────────────────────────────
+// @lezer/cpp's built-in indent service does not reliably handle all cases:
+//   • `public:` / `private:` / `protected:` are treated as C-style labels → indent 0
+//   • Block opener `{` at end of line sometimes yields 0 instead of indent+4
+// This service runs with higher priority (registered after the language ext)
+// and overrides both cases with a straightforward regex approach.
+const cppIndentFix = indentService.of((context, pos) => {
+	if (pos === 0) return null;
+	const prevText = context.lineAt(pos - 1).text;
+
+	// Access specifiers: indent 4 past the specifier column
+	const accessM = prevText.match(/^(\s*)(public|private|protected)\s*:\s*$/);
+	if (accessM) return accessM[1].length + 4;
+
+	// Block opener — line whose last non-whitespace char is `{`
+	const braceM = prevText.match(/^(\s*).*\{\s*$/);
+	if (braceM) return braceM[1].length + 4;
+
+	return null; // let the language extension handle everything else
+});
+
+// ── Visual theme (cursor animation + smooth scroll) ──────────────────────────
+const editorVisualTheme = EditorView.theme({
+	// "expand" cursor: subtle height-pulse instead of opacity blink
+	".cm-cursor": {
+		borderLeftWidth: "2px",
+		animation: "cm-cursor-breathe 1.2s ease-in-out infinite",
+	},
+	"@keyframes cm-cursor-breathe": {
+		"0%, 100%": { transform: "scaleY(1)", opacity: "1" },
+		"50%": { transform: "scaleY(0.85)", opacity: "0.85" },
+	},
+	// Smooth editor scroll
+	".cm-scroller": { scrollBehavior: "smooth" },
+	// Active-line highlight covers both gutter and content (renderLineHighlight:'all')
+	".cm-activeLine": { backgroundColor: "rgba(0,0,0,0.04)" },
+	".cm-activeLineGutter": { backgroundColor: "rgba(0,0,0,0.04)" },
+});
+
+// ── Base extensions (applied to every language) ───────────────────────────────
+// Note: closeBrackets(), closeBracketsKeymap, completionKeymap are already
+// provided by @uiw/react-codemirror basicSetup — do NOT add them again or
+// the Enter key handler fires twice and the cursor jumps to wrong positions.
+const baseExtensions: Extension[] = [
+	autocompletion({ activateOnTyping: true }),
+	editorVisualTheme,
+];
+
 function getEditorExtensions(lang: string): Extension[] {
 	switch (lang) {
 		case "JavaScript":
-			return [javascript()];
+			return [...baseExtensions, javascript()];
 		case "TypeScript":
-			return [javascript({ typescript: true })];
+			return [...baseExtensions, javascript({ typescript: true })];
 		case "Python3":
 		case "Python":
-			return [python()];
+			return [
+				...baseExtensions,
+				python(),
+				// globalCompletion: Python builtins (len, range, print, …)
+				// localCompletionSource: identifiers already in the file
+				pythonLanguage.data.of({ autocomplete: globalCompletion }),
+				pythonLanguage.data.of({ autocomplete: localCompletionSource }),
+			];
 		case "C++":
 		case "C":
-			return [cpp()];
+			return [
+				...baseExtensions,
+				cpp(),
+				indentUnit.of("    "), // 4-space indent to match C++ convention
+				cppLanguage.data.of({ autocomplete: cppCompletionSource }),
+				cppIndentFix,
+			];
 		case "Java":
-			return [java()];
+			return [
+				...baseExtensions,
+				java(),
+				javaLanguage.data.of({ autocomplete: javaCompletionSource }),
+			];
 		case "Rust":
-			return [rust()];
+			return [...baseExtensions, rust()];
 		case "Go":
-			return [go()];
+			return [...baseExtensions, go()];
 		default:
-			return [];
+			return [...baseExtensions];
 	}
 }
 
@@ -144,6 +373,19 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 		return `// ${lang} — no template available for this problem\n`;
 	};
 
+	// Returns true if `code` is a stale fallback placeholder (not real user code)
+	const isFallbackCode = (code: string, lang: string): boolean =>
+		code.trim() === `// ${lang} — no template available for this problem`.trim();
+
+	const loadCodeForLang = (lang: string): string => {
+		const saved = localStorage.getItem(`code-${pid}-${lang}`);
+		if (saved) {
+			const parsed = JSON.parse(saved);
+			if (!isFallbackCode(parsed, lang)) return parsed;
+		}
+		return getCodeForLang(lang);
+	};
+
 	const [userCode, setUserCode] = useState<string>(getCodeForLang(defaultLang));
 
 	const [fontSize, setFontSize] = useLocalStorage("lcc-fontSize", "16px");
@@ -158,13 +400,33 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 		query: { pid },
 	} = useRouter();
 
-	const extensions = useMemo(() => getEditorExtensions(selectedLang), [selectedLang]);
+	// EditorView ref — used to call requestMeasure() on Split drag (automaticLayout)
+	const editorViewRef = useRef<EditorView | null>(null);
+
+	// Stable refs to the latest run/submit handlers so the keymap closure never goes stale
+	const handleRunRef = useRef<() => void>(() => {});
+	const handleSubmitRef = useRef<() => void>(() => {});
+
+	// Keybindings: Mod-Enter → Run,  Mod-' → Submit
+	// Created once; inner refs always point to the current handler version.
+	const editorKeybindings = useMemo(
+		() =>
+			keymap.of([
+				{ key: "Mod-Enter", run: () => { handleRunRef.current(); return true; } },
+				{ key: "Mod-'",     run: () => { handleSubmitRef.current(); return true; } },
+			]),
+		[]
+	);
+
+	const extensions = useMemo(
+		() => [...getEditorExtensions(selectedLang), editorKeybindings],
+		[selectedLang, editorKeybindings]
+	);
 
 	// Load saved or template code on mount / when pid or user changes
 	useEffect(() => {
-		const saved = localStorage.getItem(`code-${pid}-${selectedLang}`);
-		if (user && saved) {
-			setUserCode(JSON.parse(saved));
+		if (user) {
+			setUserCode(loadCodeForLang(selectedLang));
 		} else {
 			setUserCode(getCodeForLang(selectedLang));
 		}
@@ -174,10 +436,8 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 	const handleLanguageChange = (lang: string) => {
 		// Persist current code for the old language
 		localStorage.setItem(`code-${pid}-${selectedLang}`, JSON.stringify(userCode));
-		// Load saved or template for new language
-		const saved = localStorage.getItem(`code-${pid}-${lang}`);
 		setSelectedLang(lang);
-		setUserCode(saved ? JSON.parse(saved) : getCodeForLang(lang));
+		setUserCode(loadCodeForLang(lang));
 	};
 
 	const onChange = (value: string) => {
@@ -269,6 +529,10 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 		}
 	};
 
+	// Keep refs in sync with latest handlers every render (no stale-closure issue)
+	handleRunRef.current = handleRun;
+	handleSubmitRef.current = handleSubmit;
+
 	const statusColor = (status: string) => {
 		if (status === "Accepted") return "bg-green-600 text-white";
 		if (status === "WrongAnswer") return "bg-red-500 text-white";
@@ -289,15 +553,22 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 				onLanguageChange={handleLanguageChange}
 			/>
 
-			<Split className='h-[calc(100vh-94px)]' direction='vertical' sizes={[60, 40]} minSize={60}>
+			<Split
+				className='h-[calc(100vh-94px)]'
+				direction='vertical'
+				sizes={[60, 40]}
+				minSize={60}
+				onDrag={() => editorViewRef.current?.requestMeasure()}
+			>
 				<div className='w-full overflow-auto'>
 					<CodeMirror
 						key={selectedLang}
 						value={userCode}
-						theme={vscodeDark}
+						theme="light"
 						onChange={onChange}
 						extensions={extensions}
 						style={{ fontSize: settings.fontSize }}
+						onCreateEditor={(view) => { editorViewRef.current = view; }}
 					/>
 				</div>
 
