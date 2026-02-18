@@ -14,7 +14,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         g++ \
         openjdk-17-jdk-headless \
         python3 \
+        wget \
     && rm -rf /var/lib/apt/lists/*
+
+# nlohmann/json — single-header C++ JSON library for the C++ auto-wrap runner
+RUN mkdir -p /usr/local/include/nlohmann \
+    && wget -q -O /usr/local/include/nlohmann/json.hpp \
+       https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp
+
+# Gson — JSON library for the Java auto-wrap runner
+RUN wget -q -O /usr/local/lib/gson.jar \
+    https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
 
 # 创建非 root 用户 judge，防止容器逃逸
 RUN useradd -m -u 1000 -s /bin/sh judge

@@ -39,6 +39,19 @@ type RunResultState = {
 	runtime_ms: number;
 } | null;
 
+type JudgeResultState = {
+	status: string;
+	passed: number;
+	total: number;
+	runtime_ms: number;
+	failed_case?: {
+		index: number;
+		input?: string;
+		expected?: string;
+		actual?: string;
+	};
+} | null;
+
 // Maps lowercase DB keys to display names
 const LANG_DISPLAY: Record<string, string> = {
 	javascript: "JavaScript",
@@ -95,6 +108,8 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 	const [activePanel, setActivePanel] = useState<"testcases" | "result">("testcases");
 	const [runResult, setRunResult] = useState<RunResultState>(null);
 	const [isRunning, setIsRunning] = useState(false);
+	const [judgeResult, setJudgeResult] = useState<JudgeResultState>(null);
+	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	// Derive available languages from templateCodeMap or fall back to JS-only for local problems
 	const availableLanguages = useMemo(() => {
@@ -170,7 +185,7 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 		localStorage.setItem(`code-${pid}-${selectedLang}`, JSON.stringify(value));
 	};
 
-	// Run via sandbox API
+	// Run via sandbox API (first test case only, quick debug)
 	const handleRun = async () => {
 		const slug = pid as string;
 		const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8081";
@@ -178,6 +193,7 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 		setActivePanel("result");
 		setIsRunning(true);
 		setRunResult(null);
+		setJudgeResult(null);
 
 		try {
 			const res = await fetch(`${backendUrl}/api/v1/problems/${slug}/run`, {
@@ -190,8 +206,7 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 				const err = await res.json();
 				setRunResult({ status: "Error", stdout: "", stderr: err.error || "Unknown error", runtime_ms: 0 });
 			} else {
-				const result = await res.json();
-				setRunResult(result);
+				setRunResult(await res.json());
 			}
 		} catch (error: any) {
 			setRunResult({ status: "Error", stdout: "", stderr: error.message, runtime_ms: 0 });
@@ -200,6 +215,7 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 		}
 	};
 
+	// Submit via judge API (all test cases, output comparison)
 	const handleSubmit = async () => {
 		if (!user) {
 			toast.error("Please login to submit your code", {
@@ -210,55 +226,53 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 			return;
 		}
 
-		// Local problems: use bundled handler
-		const localProblem = problems[pid as string];
-		if (!localProblem || typeof localProblem.handlerFunction !== "function") {
-			toast.info("在线判题功能即将上线，敬请期待！", {
-				position: "top-center",
-				autoClose: 3000,
-				theme: "dark",
-			});
-			return;
-		}
+		const slug = pid as string;
+		const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8081";
+
+		setActivePanel("result");
+		setIsSubmitting(true);
+		setRunResult(null);
+		setJudgeResult(null);
 
 		try {
-			const code = userCode.slice(userCode.indexOf(problem.starterFunctionName));
-			const cb = new Function(`return ${code}`)();
-			const handler = localProblem.handlerFunction;
+			const res = await fetch(`${backendUrl}/api/v1/problems/${slug}/judge`, {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ language: selectedLang, code: userCode }),
+			});
 
-			if (typeof handler === "function") {
-				const success = handler(cb);
-				if (success) {
-					toast.success("Congrats! All tests passed!", {
-						position: "top-center",
-						autoClose: 3000,
-						theme: "dark",
-					});
-					setSuccess(true);
-					setTimeout(() => setSuccess(false), 4000);
-
-					const userRef = doc(firestore, "users", user.uid);
-					await updateDoc(userRef, { solvedProblems: arrayUnion(pid) });
-					setSolved(true);
-				}
+			if (!res.ok) {
+				const err = await res.json();
+				toast.error(err.error || "Judge failed", { position: "top-center", autoClose: 3000, theme: "dark" });
+				return;
 			}
-		} catch (error: any) {
-			if (
-				error.message.startsWith("AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:")
-			) {
-				toast.error("Oops! One or more test cases failed", {
+
+			const jr: JudgeResultState = await res.json();
+			setJudgeResult(jr);
+
+			if (jr?.status === "Accepted") {
+				toast.success("Accepted! All test cases passed 🎉", {
 					position: "top-center",
 					autoClose: 3000,
 					theme: "dark",
 				});
-			} else {
-				toast.error(error.message, { position: "top-center", autoClose: 3000, theme: "dark" });
+				setSuccess(true);
+				setTimeout(() => setSuccess(false), 4000);
+				const userRef = doc(firestore, "users", user.uid);
+				await updateDoc(userRef, { solvedProblems: arrayUnion(pid) });
+				setSolved(true);
 			}
+		} catch (error: any) {
+			toast.error(error.message, { position: "top-center", autoClose: 3000, theme: "dark" });
+		} finally {
+			setIsSubmitting(false);
 		}
 	};
 
 	const statusColor = (status: string) => {
 		if (status === "Accepted") return "bg-green-600 text-white";
+		if (status === "WrongAnswer") return "bg-red-500 text-white";
+		if (status === "TimeLimitExceeded") return "bg-yellow-500 text-white";
 		if (status === "TLE") return "bg-yellow-500 text-white";
 		if (status === "Error" || status === "RuntimeError" || status === "CompileError")
 			return "bg-red-600 text-white";
@@ -369,23 +383,25 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 
 					{/* Result tab */}
 					{activePanel === "result" && (
-						<div className='my-4'>
-							{isRunning && (
-								<p className='text-sm text-gray-400'>Running...</p>
+						<div className='my-4 px-1'>
+							{/* Loading states */}
+							{(isRunning || isSubmitting) && (
+								<p className='text-sm text-gray-400'>
+									{isSubmitting ? "Judging against all test cases..." : "Running..."}
+								</p>
 							)}
-							{!isRunning && runResult && (
+
+							{/* /run result */}
+							{!isRunning && !isSubmitting && runResult && (
 								<>
 									<div className='flex items-center gap-3 mb-3'>
-										<span
-											className={`px-2 py-0.5 rounded text-xs font-semibold ${statusColor(
-												runResult.status
-											)}`}
-										>
+										<span className={`px-2 py-0.5 rounded text-xs font-semibold ${statusColor(runResult.status)}`}>
 											{runResult.status}
 										</span>
 										{runResult.runtime_ms > 0 && (
 											<span className='text-xs text-gray-400'>{runResult.runtime_ms} ms</span>
 										)}
+										<span className='text-xs text-gray-500'>Test case 1</span>
 									</div>
 									{runResult.stdout && (
 										<div className='mb-2'>
@@ -405,8 +421,73 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 									)}
 								</>
 							)}
-							{!isRunning && !runResult && (
-								<p className='text-sm text-gray-400'>Click Run to execute your code.</p>
+
+							{/* /judge result */}
+							{!isRunning && !isSubmitting && judgeResult && (
+								<>
+									<div className='flex items-center gap-3 mb-3'>
+										<span className={`px-2 py-0.5 rounded text-xs font-semibold ${statusColor(judgeResult.status)}`}>
+											{judgeResult.status}
+										</span>
+										<span className='text-xs text-gray-400'>
+											{judgeResult.passed} / {judgeResult.total} cases passed
+										</span>
+										{judgeResult.runtime_ms > 0 && (
+											<span className='text-xs text-gray-400'>{judgeResult.runtime_ms} ms</span>
+										)}
+									</div>
+
+									{/* Wrong Answer / Runtime Error: show failed case */}
+									{judgeResult.failed_case && judgeResult.failed_case.index >= 0 && (
+										<div className='space-y-2 text-sm'>
+											<p className='text-xs text-gray-500'>
+												Failed on test case {judgeResult.failed_case.index + 1}
+											</p>
+											{judgeResult.failed_case.input && (
+												<div>
+													<p className='text-xs text-gray-500 mb-1'>Input:</p>
+													<pre className='w-full rounded-lg border px-3 py-2 bg-dark-fill-3 border-dark-divider-border-2 text-xs text-gray-300 whitespace-pre-wrap overflow-auto'>
+														{judgeResult.failed_case.input}
+													</pre>
+												</div>
+											)}
+											{judgeResult.failed_case.expected && (
+												<div>
+													<p className='text-xs text-gray-500 mb-1'>Expected:</p>
+													<pre className='w-full rounded-lg border px-3 py-2 bg-dark-fill-3 border-dark-divider-border-2 text-xs text-green-300 whitespace-pre-wrap overflow-auto'>
+														{judgeResult.failed_case.expected}
+													</pre>
+												</div>
+											)}
+											{judgeResult.failed_case.actual && (
+												<div>
+													<p className='text-xs text-gray-500 mb-1'>
+														{judgeResult.status === "RuntimeError" || judgeResult.status === "CompileError"
+															? "Error:"
+															: "Your output:"}
+													</p>
+													<pre className='w-full rounded-lg border px-3 py-2 bg-dark-fill-3 border-dark-divider-border-2 text-xs text-red-300 whitespace-pre-wrap overflow-auto'>
+														{judgeResult.failed_case.actual}
+													</pre>
+												</div>
+											)}
+										</div>
+									)}
+
+									{/* Compile Error */}
+									{judgeResult.failed_case && judgeResult.failed_case.index === -1 && (
+										<div>
+											<p className='text-xs text-gray-500 mb-1'>Compile Error:</p>
+											<pre className='w-full rounded-lg border px-3 py-2 bg-dark-fill-3 border-dark-divider-border-2 text-xs text-red-300 whitespace-pre-wrap overflow-auto'>
+												{judgeResult.failed_case.actual}
+											</pre>
+										</div>
+									)}
+								</>
+							)}
+
+							{!isRunning && !isSubmitting && !runResult && !judgeResult && (
+								<p className='text-sm text-gray-400'>Click Run or Submit to execute your code.</p>
 							)}
 						</div>
 					)}
