@@ -7,11 +7,12 @@ import (
 
 // LangConfig holds all metadata needed to compile and run a solution in a given language.
 type LangConfig struct {
-	Image      string // Docker image
-	FileName   string // file to write inside /w
-	CompileCmd string // empty = no compile step
-	RunCmd     string // command to execute the solution
-	IsAutoWrap bool   // true = A group: append stdin→func→JSON runner
+	Image        string // Docker image
+	FileName     string // file to write inside /w
+	CompileCmd   string // empty = no compile step
+	RunCmd       string // command to execute the solution
+	IsAutoWrap   bool   // true = A group: append stdin→func→JSON runner
+	CompileMemMB int    // override memory limit for compile phase (0 = use default)
 }
 
 // LangConfigs covers all 19 LeetCode languages.
@@ -41,11 +42,12 @@ var LangConfigs = map[string]LangConfig{
 		IsAutoWrap: true,
 	},
 	"C++": {
-		Image:      "gcc:13",
-		FileName:   "solution.cpp",
-		CompileCmd: "g++ -O2 -o /w/prog /w/solution.cpp",
-		RunCmd:     "/w/prog",
-		IsAutoWrap: false,
+		Image:        JudgeImage,
+		FileName:     "solution.cpp",
+		CompileCmd:   "g++ -O2 -std=c++17 -o /w/prog /w/solution.cpp",
+		RunCmd:       "/w/prog",
+		IsAutoWrap:   true,
+		CompileMemMB: 768, // bits/stdc++.h requires significant compile-time RAM
 	},
 	"C": {
 		Image:      "gcc:13",
@@ -55,11 +57,11 @@ var LangConfigs = map[string]LangConfig{
 		IsAutoWrap: false,
 	},
 	"Java": {
-		Image:      "eclipse-temurin:21-jdk-alpine",
+		Image:      JudgeImage,
 		FileName:   "Solution.java",
-		CompileCmd: "javac /w/Solution.java",
-		RunCmd:     "java -cp /w Solution",
-		IsAutoWrap: false,
+		CompileCmd: "javac -cp /usr/local/lib/gson.jar -d /w /w/Solution.java",
+		RunCmd:     "java -cp /usr/local/lib/gson.jar:/w Solution",
+		IsAutoWrap: true,
 	},
 	"C#": {
 		Image:      "mcr.microsoft.com/dotnet/sdk:8.0",
@@ -255,6 +257,14 @@ func WrapCode(lang, code string) string {
 	funcName := ExtractFuncName(lang, code)
 	if funcName == "" {
 		funcName = "solution"
+	}
+
+	// Compiled languages with auto-wrap handled by wrap_compiled.go
+	switch lang {
+	case "C++":
+		return wrapCpp(code)
+	case "Java":
+		return wrapJava(code)
 	}
 
 	var tpl string

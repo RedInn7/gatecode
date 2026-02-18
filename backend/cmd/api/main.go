@@ -47,6 +47,7 @@ func main() {
 		v1.GET("/problems", problemHandler.GetProblems)
 		v1.GET("/problems/:slug", problemHandler.GetProblemBySlug)
 		v1.POST("/problems/:slug/run", submissionHandler.RunCode)
+		v1.POST("/problems/:slug/judge", submissionHandler.JudgeCode)
 	}
 
 	r.Run(":8081")
