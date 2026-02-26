@@ -13,6 +13,12 @@ type Problem struct {
 	IsVipOnly          bool            `gorm:"column:is_vip_only" json:"is_vip_only"`
 	IsACMMode          bool            `gorm:"column:is_acm_mode" json:"is_acm_mode"`
 	TestCases          json.RawMessage `gorm:"column:test_cases;type:json" json:"test_cases"`
+	TimeLimitMs        int             `gorm:"column:time_limit_ms;default:0" json:"time_limit_ms"`
+	MemoryLimitMB      int             `gorm:"column:memory_limit_mb;default:0" json:"memory_limit_mb"`
+	IsSpj              bool            `gorm:"column:is_spj;default:false" json:"is_spj"`
+	JudgeEnabled       bool            `gorm:"column:judge_enabled;default:true" json:"judge_enabled"`
+	Solutions          json.RawMessage `gorm:"column:solutions;type:json" json:"solutions"`
+	Editorial          *string         `gorm:"column:editorial;type:mediumtext" json:"editorial"`
 }
 
 // ProblemListItem 是列表接口的轻量响应 DTO，不含大字段 content 和 template_code

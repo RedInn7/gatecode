@@ -19,6 +19,8 @@ export type Problem = {
 	handlerFunction: ((fn: any) => boolean) | string;
 	starterFunctionName: string;
 	templateCodeMap?: Record<string, string>;
+	solutions?: SolutionEntry[];
+	editorial?: string;
 };
 
 export type DBProblem = {
@@ -52,4 +54,63 @@ export type BackendProblemDetail = {
 	template_code: Record<string, string> | null;
 	is_vip_only: boolean;
 	is_acm_mode: boolean;
+	solutions: SolutionEntry[] | null;
+	editorial: string | null;
+};
+
+export type Tag = {
+	id: string;
+	name: string;
+	type: "topic" | "company" | "position";
+	is_vip_only: boolean;
+};
+
+export type CurriculumProblem = {
+	id: number;
+	title: string;
+	slug: string;
+	difficulty: "Easy" | "Medium" | "Hard";
+	is_vip_only: boolean;
+};
+
+export type SubModule = {
+	id: string;
+	title: string;
+	problems: CurriculumProblem[];
+	is_vip_only: boolean;
+};
+
+export type Module = {
+	id: string;
+	title: string;
+	description: string;
+	subModules: SubModule[];
+	is_vip_only: boolean;
+};
+
+export type Collection = {
+	id: string;
+	title: string;
+	description: string;
+	cover_image: string;
+	difficulty_level: "Beginner" | "Intermediate" | "Advanced";
+	problems: CurriculumProblem[];
+	is_vip_only: boolean;
+};
+
+export type SolutionEntry = {
+	language: string;
+	langKey: string;
+	code: string;
+	timeComplexity?: string;
+	spaceComplexity?: string;
+};
+
+export type TopicAbility = {
+	topic: string;
+	shortLabel: string;
+	score: number;
+	totalProblems: number;
+	solvedProblems: number;
+	passRate: number;
 };
