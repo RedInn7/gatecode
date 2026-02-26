@@ -1,5 +1,8 @@
 import CircleSkeleton from "@/components/Skeletons/CircleSkeleton";
 import RectangleSkeleton from "@/components/Skeletons/RectangleSkeleton";
+import MathRenderer from "@/components/MathRenderer/MathRenderer";
+import MultiLangSolution from "@/components/MultiLangSolution/MultiLangSolution";
+import PremiumBlurOverlay from "@/components/PremiumBlurOverlay/PremiumBlurOverlay";
 import { auth, firestore } from "@/firebase/firebase";
 import { DBProblem, Problem } from "@/utils/types/problem";
 import { arrayRemove, arrayUnion, doc, getDoc, runTransaction, updateDoc } from "firebase/firestore";
@@ -20,6 +23,7 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 	const { currentProblem, loading, problemDifficultyClass, setCurrentProblem } = useGetCurrentProblem(problem.id);
 	const { liked, disliked, solved, setData, starred } = useGetUsersDataOnProblem(problem.id);
 	const [updating, setUpdating] = useState(false);
+	const [activeTab, setActiveTab] = useState<"description" | "solution">("description");
 
 	const returnUserDataAndProblemData = async (transaction: any) => {
 		const userRef = doc(firestore, "users", user!.uid);
@@ -157,120 +161,153 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 		<div className='bg-dark-layer-1 border-r border-dark-divider-border-2'>
 			{/* TAB */}
 			<div className='flex h-11 w-full items-center pt-2 bg-dark-layer-2 text-gray-700 overflow-x-hidden border-b border-dark-divider-border-2'>
-				<div className={"bg-dark-layer-1 rounded-t-[5px] px-5 py-[10px] text-xs cursor-pointer font-medium text-gray-800"}>
+				<button
+					onClick={() => setActiveTab("description")}
+					className={`rounded-t-[5px] px-5 py-[10px] text-xs cursor-pointer font-medium ${
+						activeTab === "description" ? "bg-dark-layer-1 text-gray-800" : "text-gray-500 hover:text-gray-700"
+					}`}
+				>
 					Description
-				</div>
+				</button>
+				<button
+					onClick={() => setActiveTab("solution")}
+					className={`rounded-t-[5px] px-5 py-[10px] text-xs cursor-pointer font-medium ${
+						activeTab === "solution" ? "bg-dark-layer-1 text-gray-800" : "text-gray-500 hover:text-gray-700"
+					}`}
+				>
+					Solution
+				</button>
 			</div>
 
 			<div className='flex px-0 py-4 h-[calc(100vh-94px)] overflow-y-auto'>
-				<div className='px-5'>
-					{/* Problem heading */}
-					<div className='w-full'>
-						<div className='flex space-x-4'>
-							<div className='flex-1 mr-2 text-lg text-gray-900 font-medium'>{problem?.title}</div>
-						</div>
-
-						{/* 优先用 Firestore 数据；Firestore 没有时用后端 difficulty */}
-						{!loading && currentProblem && (
-							<div className='flex items-center mt-3'>
-								<div
-									className={`${problemDifficultyClass} inline-block rounded-[21px] bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize `}
-								>
-									{currentProblem.difficulty}
+				<div className='px-5 w-full'>
+					{activeTab === "description" && (
+						<>
+							{/* Problem heading */}
+							<div className='w-full'>
+								<div className='flex space-x-4'>
+									<div className='flex-1 mr-2 text-lg text-gray-900 font-medium'>{problem?.title}</div>
 								</div>
-								{(solved || _solved) && (
-									<div className='rounded p-[3px] ml-4 text-lg transition-colors duration-200 text-green-s text-dark-green-s'>
-										<BsCheck2Circle />
+
+								{/* 优先用 Firestore 数据；Firestore 没有时用后端 difficulty */}
+								{!loading && currentProblem && (
+									<div className='flex items-center mt-3'>
+										<div
+											className={`${problemDifficultyClass} inline-block rounded-[21px] bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize `}
+										>
+											{currentProblem.difficulty}
+										</div>
+										{(solved || _solved) && (
+											<div className='rounded p-[3px] ml-4 text-lg transition-colors duration-200 text-green-s text-dark-green-s'>
+												<BsCheck2Circle />
+											</div>
+										)}
+										<div
+											className='flex items-center cursor-pointer hover:bg-dark-fill-3 space-x-1 rounded p-[3px]  ml-4 text-lg transition-colors duration-200 text-dark-gray-6'
+											onClick={handleLike}
+										>
+											{liked && !updating && <AiFillLike className='text-dark-blue-s' />}
+											{!liked && !updating && <AiFillLike />}
+											{updating && <AiOutlineLoading3Quarters className='animate-spin' />}
+
+											<span className='text-xs'>{currentProblem.likes}</span>
+										</div>
+										<div
+											className='flex items-center cursor-pointer hover:bg-dark-fill-3 space-x-1 rounded p-[3px]  ml-4 text-lg transition-colors duration-200 text-green-s text-dark-gray-6'
+											onClick={handleDislike}
+										>
+											{disliked && !updating && <AiFillDislike className='text-dark-blue-s' />}
+											{!disliked && !updating && <AiFillDislike />}
+											{updating && <AiOutlineLoading3Quarters className='animate-spin' />}
+
+											<span className='text-xs'>{currentProblem.dislikes}</span>
+										</div>
+										<div
+											className='cursor-pointer hover:bg-dark-fill-3  rounded p-[3px]  ml-4 text-xl transition-colors duration-200 text-green-s text-dark-gray-6 '
+											onClick={handleStar}
+										>
+											{starred && !updating && <AiFillStar className='text-dark-yellow' />}
+											{!starred && !updating && <TiStarOutline />}
+											{updating && <AiOutlineLoading3Quarters className='animate-spin' />}
+										</div>
 									</div>
 								)}
-								<div
-									className='flex items-center cursor-pointer hover:bg-dark-fill-3 space-x-1 rounded p-[3px]  ml-4 text-lg transition-colors duration-200 text-dark-gray-6'
-									onClick={handleLike}
-								>
-									{liked && !updating && <AiFillLike className='text-dark-blue-s' />}
-									{!liked && !updating && <AiFillLike />}
-									{updating && <AiOutlineLoading3Quarters className='animate-spin' />}
 
-									<span className='text-xs'>{currentProblem.likes}</span>
-								</div>
-								<div
-									className='flex items-center cursor-pointer hover:bg-dark-fill-3 space-x-1 rounded p-[3px]  ml-4 text-lg transition-colors duration-200 text-green-s text-dark-gray-6'
-									onClick={handleDislike}
-								>
-									{disliked && !updating && <AiFillDislike className='text-dark-blue-s' />}
-									{!disliked && !updating && <AiFillDislike />}
-									{updating && <AiOutlineLoading3Quarters className='animate-spin' />}
-
-									<span className='text-xs'>{currentProblem.dislikes}</span>
-								</div>
-								<div
-									className='cursor-pointer hover:bg-dark-fill-3  rounded p-[3px]  ml-4 text-xl transition-colors duration-200 text-green-s text-dark-gray-6 '
-									onClick={handleStar}
-								>
-									{starred && !updating && <AiFillStar className='text-dark-yellow' />}
-									{!starred && !updating && <TiStarOutline />}
-									{updating && <AiOutlineLoading3Quarters className='animate-spin' />}
-								</div>
-							</div>
-						)}
-
-						{/* 后端题目：Firestore 无数据时直接用 problem.difficulty */}
-						{!loading && !currentProblem && problem.difficulty && (
-							<div className='flex items-center mt-3'>
-								<div
-									className={`${getDifficultyClass(problem.difficulty)} inline-block rounded-[21px] bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize`}
-								>
-									{problem.difficulty}
-								</div>
-							</div>
-						)}
-
-						{loading && (
-							<div className='mt-3 flex space-x-2'>
-								<RectangleSkeleton />
-								<CircleSkeleton />
-								<RectangleSkeleton />
-								<RectangleSkeleton />
-								<CircleSkeleton />
-							</div>
-						)}
-
-						{/* Problem Statement(paragraphs) */}
-						<div className='text-gray-800 text-sm mt-4'>
-							<div dangerouslySetInnerHTML={{ __html: problem.problemStatement }} />
-						</div>
-
-						{/* Examples */}
-						<div className='mt-4'>
-							{problem.examples.map((example, index) => (
-								<div key={example.id}>
-									<p className='font-medium text-gray-800'>Example {index + 1}: </p>
-									{example.img && <img src={example.img} alt='' className='mt-3' />}
-									<div className='example-card'>
-										<pre>
-											<strong>Input: </strong> {example.inputText}
-											<br />
-											<strong>Output:</strong>
-											{example.outputText} <br />
-											{example.explanation && (
-												<>
-													<strong>Explanation:</strong> {example.explanation}
-												</>
-											)}
-										</pre>
+								{/* 后端题目：Firestore 无数据时直接用 problem.difficulty */}
+								{!loading && !currentProblem && problem.difficulty && (
+									<div className='flex items-center mt-3'>
+										<div
+											className={`${getDifficultyClass(problem.difficulty)} inline-block rounded-[21px] bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize`}
+										>
+											{problem.difficulty}
+										</div>
 									</div>
-								</div>
-							))}
-						</div>
+								)}
 
-						{/* Constraints */}
-						<div className='my-8 pb-4'>
-							<div className='text-gray-800 text-sm font-medium'>Constraints:</div>
-							<ul className='text-gray-700 ml-5 list-disc '>
-								<div dangerouslySetInnerHTML={{ __html: problem.constraints }} />
-							</ul>
+								{loading && (
+									<div className='mt-3 flex space-x-2'>
+										<RectangleSkeleton />
+										<CircleSkeleton />
+										<RectangleSkeleton />
+										<RectangleSkeleton />
+										<CircleSkeleton />
+									</div>
+								)}
+
+								{/* Problem Statement(paragraphs) */}
+								<div className='text-gray-800 text-sm mt-4'>
+									<MathRenderer content={problem.problemStatement} />
+								</div>
+
+								{/* Examples */}
+								<div className='mt-4'>
+									{problem.examples.map((example, index) => (
+										<div key={example.id}>
+											<p className='font-medium text-gray-800'>Example {index + 1}: </p>
+											{example.img && <img src={example.img} alt='' className='mt-3' />}
+											<div className='example-card'>
+												<pre>
+													<strong>Input: </strong> {example.inputText}
+													<br />
+													<strong>Output:</strong>
+													{example.outputText} <br />
+													{example.explanation && (
+														<>
+															<strong>Explanation:</strong> {example.explanation}
+														</>
+													)}
+												</pre>
+											</div>
+										</div>
+									))}
+								</div>
+
+								{/* Constraints */}
+								<div className='my-8 pb-4'>
+									<div className='text-gray-800 text-sm font-medium'>Constraints:</div>
+									<ul className='text-gray-700 ml-5 list-disc '>
+										<MathRenderer content={problem.constraints} />
+									</ul>
+								</div>
+							</div>
+						</>
+					)}
+
+					{activeTab === "solution" && (
+						<div className='mt-2'>
+							<PremiumBlurOverlay
+								isLocked={false}
+								visibleLines={8}
+							>
+								{problem.editorial && (
+									<div className='mb-6 text-sm text-gray-800'>
+										<MathRenderer content={problem.editorial} />
+									</div>
+								)}
+								<MultiLangSolution problemSlug={problem.id} solutions={problem.solutions} />
+							</PremiumBlurOverlay>
 						</div>
-					</div>
+					)}
 				</div>
 			</div>
 		</div>

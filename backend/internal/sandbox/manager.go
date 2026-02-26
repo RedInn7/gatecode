@@ -1,14 +1,10 @@
 package sandbox
 
 import (
-	"bytes"
-	"context"
 	"fmt"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"strings"
-	"time"
 )
 
 // ---------------------------------------------------------------------------
@@ -36,6 +32,7 @@ type ExecuteResult struct {
 	Stderr    string
 	ExitCode  int
 	TimedOut  bool
+	OOMKilled bool // true when the container was killed due to memory limit
 	RuntimeMs int64
 }
 
@@ -48,69 +45,14 @@ const (
 )
 
 // ---------------------------------------------------------------------------
-// dockerRun — shared low-level Docker runner used by Execute and Judge
+// dockerRun — shared low-level Docker runner
 // ---------------------------------------------------------------------------
+// Delegates to the persistent container pool (ExecInPool) which uses
+// `docker exec` on pre-started containers instead of `docker run --rm`.
+// This eliminates ~1-2s container startup overhead per execution.
 
-// dockerRun starts a container, runs shellCmd inside it, and waits for completion.
-// tmpDir is bind-mounted at /w; writable=true allows compile output to be written back
-// to the host (ro for test-case runs, rw for compile-only phase).
 func dockerRun(image, shellCmd, tmpDir string, writable bool, timeoutMs, memMB int) (*ExecuteResult, error) {
-	deadline := time.Duration(timeoutMs)*time.Millisecond + 5*time.Second
-
-	mount := fmt.Sprintf("%s:/w:ro", tmpDir)
-	if writable {
-		mount = fmt.Sprintf("%s:/w:rw", tmpDir)
-	}
-
-	args := []string{
-		"run", "--rm",
-		"--network", "none",
-		fmt.Sprintf("--memory=%dm", memMB),
-		fmt.Sprintf("--memory-swap=%dm", memMB),
-		"--cpus=0.5",
-		"--pids-limit=50",
-		"--ulimit", "nofile=64:64",
-		"--ulimit", fmt.Sprintf("fsize=%d:%d", 64<<20, 64<<20),
-		"--tmpfs", "/tmp:rw,exec,nodev,nosuid,size=64m",
-		"-v", mount,
-		image,
-		"sh", "-c", shellCmd,
-	}
-
-	ctx, cancel := context.WithTimeout(context.Background(), deadline)
-	defer cancel()
-
-	cmd := exec.CommandContext(ctx, "docker", args...)
-	var stdoutBuf, stderrBuf bytes.Buffer
-	cmd.Stdout = &stdoutBuf
-	cmd.Stderr = &stderrBuf
-
-	start := time.Now()
-	runErr := cmd.Run()
-	elapsed := time.Since(start).Milliseconds()
-
-	stdout := strings.TrimRight(stdoutBuf.String(), "\n")
-	stderr := stderrBuf.String()
-
-	if ctx.Err() == context.DeadlineExceeded {
-		return &ExecuteResult{
-			Stdout: stdout, Stderr: "Time limit exceeded",
-			ExitCode: 124, TimedOut: true, RuntimeMs: elapsed,
-		}, nil
-	}
-
-	exitCode := 0
-	if runErr != nil {
-		if exitErr, ok := runErr.(*exec.ExitError); ok {
-			exitCode = exitErr.ExitCode()
-		} else {
-			return nil, fmt.Errorf("docker exec: %w", runErr)
-		}
-	}
-	return &ExecuteResult{
-		Stdout: stdout, Stderr: stderr,
-		ExitCode: exitCode, TimedOut: false, RuntimeMs: elapsed,
-	}, nil
+	return ExecInPool(image, shellCmd, tmpDir, writable, timeoutMs, memMB)
 }
 
 // ---------------------------------------------------------------------------
@@ -122,13 +64,12 @@ func dockerRun(image, shellCmd, tmpDir string, writable bool, timeoutMs, memMB i
 // Security layers applied to every container:
 //   - --network none          : zero network access
 //   - --memory / --memory-swap: hard memory cap, swap disabled
-//   - --cpus                  : CPU quota (0.5 core)
+//   - --cpus                  : CPU quota
 //   - --pids-limit            : prevents fork-bomb
 //   - --ulimit nofile          : restricts open file descriptors
 //   - --ulimit fsize           : restricts output file size (64 MB)
-//   - --tmpfs /tmp            : writable in-memory FS for compiled artefacts
-//   - -v …:/w:ro              : source + input mounted read-only
-//   - USER judge (uid 1000)   : non-root user defined in docker/Dockerfile
+//   - --tmpfs /w               : writable in-memory FS for code + execution
+//   - --tmpfs /tmp             : writable in-memory FS for compiled artefacts
 type DockerSandbox struct{}
 
 // NewDockerSandbox returns a Sandbox backed by Docker.
@@ -178,8 +119,6 @@ func (s *DockerSandbox) Execute(req ExecuteRequest) (*ExecuteResult, error) {
 	}
 
 	// ── 3. Build shell command (compile+run in one container via sandboxPaths) ──
-	// sandboxPaths rewrites /w/prog → /tmp/prog so compiled artefacts go to
-	// the container's tmpfs (not the host volume), keeping /w strictly read-only.
 	compileCmd, runCmd := sandboxPaths(cfg)
 	var shellCmd string
 	if compileCmd == "" {
@@ -198,7 +137,7 @@ func (s *DockerSandbox) Execute(req ExecuteRequest) (*ExecuteResult, error) {
 }
 
 // sandboxPaths rewrites LangConfig commands so that:
-//   - source files are read from /w/          (read-only bind mount)
+//   - source files are read from /w/          (in-memory tmpfs)
 //   - compiled artefacts are written to /tmp/ (writable tmpfs inside container)
 func sandboxPaths(cfg LangConfig) (compile, run string) {
 	r := strings.NewReplacer(

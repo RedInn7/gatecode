@@ -79,3 +79,67 @@ CREATE TABLE IF NOT EXISTS `orders` (
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT `fk_order_user` FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB;
+
+-- 7. 标签表
+CREATE TABLE IF NOT EXISTS `tags` (
+    `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(50) NOT NULL UNIQUE,
+    `type` ENUM('topic', 'company', 'position') NOT NULL,
+    `is_vip_only` BOOLEAN DEFAULT FALSE,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+-- 8. 题目-标签关联表
+CREATE TABLE IF NOT EXISTS `problem_tags` (
+    `problem_id` BIGINT UNSIGNED NOT NULL,
+    `tag_id` BIGINT UNSIGNED NOT NULL,
+    PRIMARY KEY (`problem_id`, `tag_id`),
+    CONSTRAINT `fk_pt_problem` FOREIGN KEY (`problem_id`) REFERENCES `problems`(`id`) ON DELETE CASCADE,
+    CONSTRAINT `fk_pt_tag` FOREIGN KEY (`tag_id`) REFERENCES `tags`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+-- 9. 用户收藏夹
+CREATE TABLE IF NOT EXISTS `user_favorites` (
+    `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    `user_id` BIGINT UNSIGNED NOT NULL,
+    `name` VARCHAR(100) NOT NULL DEFAULT '默认收藏夹',
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT `fk_fav_user` FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+-- 10. 收藏夹-题目关联表
+CREATE TABLE IF NOT EXISTS `user_favorite_problems` (
+    `favorite_id` BIGINT UNSIGNED NOT NULL,
+    `problem_id` BIGINT UNSIGNED NOT NULL,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`favorite_id`, `problem_id`),
+    CONSTRAINT `fk_ufp_fav` FOREIGN KEY (`favorite_id`) REFERENCES `user_favorites`(`id`) ON DELETE CASCADE,
+    CONSTRAINT `fk_ufp_problem` FOREIGN KEY (`problem_id`) REFERENCES `problems`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+-- 11. 扩展 users 表：保研/校招信息
+ALTER TABLE `users`
+    ADD COLUMN IF NOT EXISTS `target_school` VARCHAR(100) AFTER `avatar_url`,
+    ADD COLUMN IF NOT EXISTS `current_school` VARCHAR(100) AFTER `target_school`,
+    ADD COLUMN IF NOT EXISTS `apply_year` SMALLINT AFTER `current_school`;
+
+-- 12. 扩展 curriculums 表：难度级别
+ALTER TABLE `curriculums`
+    ADD COLUMN IF NOT EXISTS `difficulty_level` ENUM('Beginner', 'Intermediate', 'Advanced') DEFAULT 'Intermediate' AFTER `cover_image`;
+
+-- 13. 扩展 problems 表：per-problem resource limits & judge toggle
+ALTER TABLE `problems`
+    ADD COLUMN IF NOT EXISTS `time_limit_ms` INT NOT NULL DEFAULT 0 AFTER `is_acm_mode`,
+    ADD COLUMN IF NOT EXISTS `memory_limit_mb` INT NOT NULL DEFAULT 0 AFTER `time_limit_ms`;
+
+ALTER TABLE `problems`
+    ADD COLUMN IF NOT EXISTS `judge_enabled` BOOLEAN DEFAULT TRUE AFTER `is_spj`;
+
+-- 14. 扩展 problems 表：solutions & editorial
+ALTER TABLE `problems`
+    ADD COLUMN IF NOT EXISTS `solutions` JSON AFTER `judge_enabled`,
+    ADD COLUMN IF NOT EXISTS `editorial` MEDIUMTEXT AFTER `solutions`;
+
+-- 15. 扩展 submissions 状态：add MLE and SE
+ALTER TABLE `submissions`
+    MODIFY COLUMN `status` ENUM('Pending', 'Running', 'Accepted', 'Wrong Answer', 'Time Limit Exceeded', 'Memory Limit Exceeded', 'Compile Error', 'Runtime Error', 'System Error') DEFAULT 'Pending';
