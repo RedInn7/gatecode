@@ -2,6 +2,7 @@ package api
 
 import (
 	"net/http"
+	"strings"
 
 	"github.com/RedInn7/gatecode/backend/internal/service"
 	"github.com/gin-gonic/gin"
@@ -36,11 +37,22 @@ func (h *SubmissionHandler) RunCode(c *gin.Context) {
 
 	result, err := h.judgeSvc.RunCode(slug, req.Language, req.Code)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		status := http.StatusInternalServerError
+		if strings.Contains(err.Error(), "currently unavailable") {
+			status = http.StatusForbidden
+		}
+		c.JSON(status, gin.H{"error": err.Error()})
 		return
 	}
 
 	c.JSON(http.StatusOK, result)
+}
+
+// JudgeRequest extends RunCodeRequest with optional run_all flag.
+type JudgeRequest struct {
+	Language string `json:"language" binding:"required"`
+	Code     string `json:"code" binding:"required"`
+	RunAll   bool   `json:"run_all,omitempty"` // when true, runs ALL test cases without short-circuit
 }
 
 // JudgeCode handles POST /api/v1/problems/:slug/judge.
@@ -48,15 +60,19 @@ func (h *SubmissionHandler) RunCode(c *gin.Context) {
 func (h *SubmissionHandler) JudgeCode(c *gin.Context) {
 	slug := c.Param("slug")
 
-	var req RunCodeRequest
+	var req JudgeRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 
-	result, err := h.judgeSvc.JudgeCode(slug, req.Language, req.Code)
+	result, err := h.judgeSvc.JudgeCode(slug, req.Language, req.Code, req.RunAll)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		status := http.StatusInternalServerError
+		if strings.Contains(err.Error(), "currently unavailable") {
+			status = http.StatusForbidden
+		}
+		c.JSON(status, gin.H{"error": err.Error()})
 		return
 	}
 
