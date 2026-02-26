@@ -19,7 +19,8 @@ type JudgeService interface {
 	// RunCode runs code against the first test case only (quick debug mode).
 	RunCode(slug, lang, code string) (*sandbox.RunResult, error)
 	// JudgeCode evaluates code against all test cases and returns a verdict.
-	JudgeCode(slug, lang, code string) (*sandbox.JudgeResult, error)
+	// When runAll is true, runs ALL test cases without short-circuiting.
+	JudgeCode(slug, lang, code string, runAll ...bool) (*sandbox.JudgeResult, error)
 }
 
 type judgeService struct {
@@ -35,6 +36,10 @@ func (s *judgeService) RunCode(slug, lang, code string) (*sandbox.RunResult, err
 	problem, err := s.problemRepo.GetBySlug(slug)
 	if err != nil {
 		return nil, fmt.Errorf("problem not found: %w", err)
+	}
+
+	if !problem.JudgeEnabled {
+		return nil, fmt.Errorf("judging is currently unavailable for this problem")
 	}
 
 	if len(problem.TestCases) == 0 {
@@ -58,10 +63,14 @@ func (s *judgeService) RunCode(slug, lang, code string) (*sandbox.RunResult, err
 	return sandbox.Run(lang, code, testCases[0].Input)
 }
 
-func (s *judgeService) JudgeCode(slug, lang, code string) (*sandbox.JudgeResult, error) {
+func (s *judgeService) JudgeCode(slug, lang, code string, runAll ...bool) (*sandbox.JudgeResult, error) {
 	problem, err := s.problemRepo.GetBySlug(slug)
 	if err != nil {
 		return nil, fmt.Errorf("problem not found: %w", err)
+	}
+
+	if !problem.JudgeEnabled {
+		return nil, fmt.Errorf("judging is currently unavailable for this problem")
 	}
 
 	if len(problem.TestCases) == 0 {
@@ -81,5 +90,34 @@ func (s *judgeService) JudgeCode(slug, lang, code string) (*sandbox.JudgeResult,
 		jCases[i] = sandbox.JudgeTestCase{Input: tc.Input, Expected: tc.Output}
 	}
 
-	return sandbox.Judge(lang, code, jCases, 0, 0)
+	// Per-problem resource limits (0 → sandbox defaults)
+	timeLimit := problem.TimeLimitMs
+	memMB := problem.MemoryLimitMB
+
+	// Apply language time multiplier
+	if timeLimit > 0 {
+		timeLimit *= langTimeMultiplier(lang)
+	}
+
+	if len(runAll) > 0 && runAll[0] {
+		return sandbox.JudgeAll(lang, code, jCases, timeLimit, memMB)
+	}
+	return sandbox.Judge(lang, code, jCases, timeLimit, memMB)
+}
+
+// langTimeMultiplier returns a time multiplier for the given language.
+// Compiled languages get 1x, JVM/GC languages 2x, interpreted 3x.
+func langTimeMultiplier(lang string) int {
+	// Normalize to display name first
+	if display, ok := sandbox.LangKeyToDisplay[lang]; ok {
+		lang = display
+	}
+	switch lang {
+	case "C++", "C", "Rust":
+		return 1
+	case "Java", "Go", "Kotlin", "Scala":
+		return 2
+	default: // Python3, Python, JavaScript, TypeScript, Ruby, PHP, etc.
+		return 3
+	}
 }

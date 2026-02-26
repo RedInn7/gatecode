@@ -36,16 +36,19 @@ func Run(lang, code, stdinData string) (*RunResult, error) {
 
 func classifyStatus(lang string, res *ExecuteResult) string {
 	if res.TimedOut {
-		return "TLE"
+		return StatusTLE
+	}
+	if res.OOMKilled {
+		return StatusMLE
 	}
 	if res.ExitCode != 0 {
 		cfg, ok := LangConfigs[lang]
 		if ok && cfg.CompileCmd != "" && looksLikeCompileError(res.Stderr) {
-			return "CompileError"
+			return StatusCompileError
 		}
-		return "RuntimeError"
+		return StatusRuntimeError
 	}
-	return "Accepted"
+	return StatusAccepted
 }
 
 func looksLikeCompileError(stderr string) bool {

@@ -27,9 +27,11 @@ func NewProblemRepository(db *gorm.DB) ProblemRepository {
 }
 
 // GetAllForList 只查询列表页需要的字段，避免拉取 content / template_code 大字段
+// 仅返回 judge_enabled = true 的题目
 func (r *problemRepository) GetAllForList() ([]model.ProblemListItem, error) {
 	var items []model.ProblemListItem
 	err := r.db.Model(&model.Problem{}).
+		Where("judge_enabled = ?", true).
 		Select("id", "frontend_question_id", "title", "slug", "difficulty", "is_vip_only").
 		Find(&items).Error
 	if err != nil {
@@ -39,11 +41,12 @@ func (r *problemRepository) GetAllForList() ([]model.ProblemListItem, error) {
 }
 
 // GetPageForList 分页查询列表，按 frontend_question_id 升序，同时返回总数
+// 仅返回 judge_enabled = true 的题目
 func (r *problemRepository) GetPageForList(offset, limit int) ([]model.ProblemListItem, int64, error) {
 	items := make([]model.ProblemListItem, 0)
 	var total int64
 
-	base := r.db.Model(&model.Problem{})
+	base := r.db.Model(&model.Problem{}).Where("judge_enabled = ?", true)
 	if err := base.Count(&total).Error; err != nil {
 		return nil, 0, err
 	}

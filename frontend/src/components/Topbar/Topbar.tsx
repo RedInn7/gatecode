@@ -22,15 +22,17 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage, problem }) => {
 	const setAuthModalState = useSetRecoilState(authModalState);
 	const router = useRouter();
 
-	// 从后端拉取完整题目列表，用于左右导航
+	// 拉取当前题目周围的题目列表，用于左右导航（限制数量，避免阻塞）
 	const [allProblems, setAllProblems] = useState<BackendProblemListItem[]>([]);
 	useEffect(() => {
 		if (!problemPage) return;
 		const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8081";
-		fetch(`${backendUrl}/api/v1/problems?page=1&limit=5000`)
+		const controller = new AbortController();
+		fetch(`${backendUrl}/api/v1/problems?page=1&limit=5000`, { signal: controller.signal })
 			.then((r) => r.json())
 			.then((data) => setAllProblems(data.problems || []))
 			.catch(() => {});
+		return () => controller.abort();
 	}, [problemPage]);
 
 	const handleProblemChange = (isForward: boolean) => {
@@ -46,10 +48,36 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage, problem }) => {
 
 	return (
 		<nav className='relative flex h-[50px] w-full shrink-0 items-center px-5 bg-dark-layer-1 text-dark-gray-7 border-b border-dark-divider-border-2'>
-			<div className={`flex w-full items-center justify-between ${!problemPage ? "max-w-[1200px] mx-auto" : ""}`}>
-				<Link href='/' className='h-[22px] flex-1'>
+			<div className={`flex w-full items-center justify-between ${!problemPage ? "max-w-[1400px] mx-auto" : ""}`}>
+				<Link href='/' className='h-[22px] flex-shrink-0'>
 					<Image src='/logo-full.png' alt='Logo' height={100} width={100} />
 				</Link>
+
+				{/* Nav tabs (homepage only) */}
+				{!problemPage && (
+					<div className='hidden sm:flex items-center gap-1 ml-6'>
+						{[
+							{ label: "Problems", href: "/", active: true },
+							{ label: "Contest", href: "#", active: false },
+							{ label: "Discuss", href: "#", active: false },
+						].map((tab) => (
+							<Link
+								key={tab.label}
+								href={tab.href}
+								className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
+									tab.active
+										? "text-brand-orange"
+										: "text-gray-500 hover:text-gray-700 hover:bg-dark-fill-3"
+								}`}
+							>
+								{tab.label}
+								{tab.active && (
+									<div className='h-0.5 bg-brand-orange rounded-full mt-0.5' />
+								)}
+							</Link>
+						))}
+					</div>
+				)}
 
 				{problemPage && (
 					<div className='flex items-center gap-4 flex-1 justify-center'>
