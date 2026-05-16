@@ -1,0 +1,76 @@
+{
+  "pid": 3139,
+  "slug": "shortest-common-supersequence",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"\n\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"x\"\n\"m\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"bf\"\n\"fh\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"\n\"b\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"abdcb\"\n\"adbb\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"cnharcebnehlfinkglnefhkkfpohowzyjtvcjznzvlrcrwymx\"\n\"hkcphreugaojqkytvaskdxtn\"",
+      "desc": "Standard: len=49"
+    },
+    {
+      "input": "\"obziupkrfkgnqpw\"\n\"yhuowht\"",
+      "desc": "Standard: len=15"
+    },
+    {
+      "input": "\"xsunzxcjvuhhunqurnmnkoej\"\n\"laueo\"",
+      "desc": "Standard: len=24"
+    },
+    {
+      "input": "\"hmtnrhfopbqyqmvscjglttezldvcnjngbb\"\n\"kvas\"",
+      "desc": "Standard: len=34"
+    },
+    {
+      "input": "\"iykgaajtxnrdxojsivtezjezaoemnndzuueggjkoji\"\n\"ysxdhxbkyxkcayauduuiergwkyzvqngyq\"",
+      "desc": "Standard: len=42"
+    },
+    {
+      "input": "\"aplattzebjuoiiwvlyiqxlwpoztwnymtnlzghbirrwljerqc\"\n\"oahhlpnbat\"",
+      "desc": "Standard: len=48"
+    },
+    {
+      "input": "\"igbjnupqwzmngbxflcrzdukzuuuatyoqcmhfnpkwg\"\n\"tttauhxwyobymcl\"",
+      "desc": "Standard: len=41"
+    },
+    {
+      "input": "\"zpzcessypxyzwd\"\n\"ox\"",
+      "desc": "Standard: len=14"
+    },
+    {
+      "input": "\"oixtnhxpznhhakxaewkgpsmzpzqozfqedpmdzfkjoqovrswdqnaqufbgxndrrkyvkrzfxsjpytkamjwmsxprjleruxqisvxrxmlfwspgzquglcjfnobkmumcxtzvikkfginzmwlbxibznolqzuaxylubvnzbhxxqjbbebwtsbccmunrxxtctpvjuywwfpoabrxzuiijgocrnoipfhsrjujlrapvitflcuvvrsgfjvtoexttvdrsclrvhsbmemyqnwvopnfzwgvrmgyseduresusjgwwwnoderzuvjukopljqnklfmurwvynrhylkdzkofgkbnwmlzowksgomvbltmhjzqahqyrzenerfpcaxrjqpqhxhlwwmmxbrqqnpqjmbhfliucmnpxouhpohkjitcqusqvqgorqhsflxqqozuxrvzlfivwtnhzjyxxfdoqvprhbestlkqafadmrkunhddorjsrutiawopenotvjylkghlsbzjptm\"\n\"eyyungrwqmuiheuceiereyyjshuxmmwpeekabyaaezviazcledjvexkmecgkphojeqcfmxonztvapqehjritqlzsolhwmrzrpzbbdnvucxqdwopnlihhysfxcixexzhpuqdfoqelbjdtytzlfurvqudrrqhvcherydabohtcwqlungprnmtlqpwecrcmeircjbfgxafqcqsoudndjkwwuwovnxhsxvocvvqvvetswkscgfskxvhxokllnwpxfkyejfbxiillindufelsdgtqqaaodkyujtiiczvczrkcda\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"hdxtckklfnxopkaflfsionkwauxprxzznbmjbyjnogvrvdhtreviflllvaxgfjunxxoprhkjzxaaxymugkgfnudumwtbdxbfkzrredrdbpcwvbblfsleaeyrdasxpctqfxhrgdekzgqpitnnqydgnrimfyefgpouoopgnapkjtpgzopzgjgoqlkiegmxdkfqymsllsjapbamhlttfpgqhacrfluwnbkzvdadlryqqarjnbtivlvlfcqlltwihwwlxfoiklziwmnsbppqglchovsbycpykhgeojngumvxxxjfsunlblwryxgpzhljgtmuxegifmufyaurcqotfuvwtrmsgxgqdmhmtzmvfrsuvnmqjtkjknhqtmwguzobeckralwgdgylbmfderdwmlsdkqmffofqderhuptzeydcuaenwfuuqbfpfyktvjwvchkkmihfkkgrffxobvkhofodxgktidwnlxduhsjciolttsrbmwladvpylfvvtdavfyfgvmxgjdbklukgbqnvtwcqofrnxtyiuiwycukxayvkhxwdfrcetamxpxavtymkftklfnjgctgjmspupxrlkruclozytqykjsuewtlsakllesmxhjekhsasalwoiajbvqxfhebocralxnbkekvoqzjcrqrhroaockmdteqdritfbcwewfexnytypgctmmtvespzsyybanxkisxozdtcoqzqvcoakheiidlpjqysemdwurzcmewireygepbheyxdwxitxhugfepycfnyehohakoyjfpaprpmipeoukcwvncbczplnxnmzrfurdtptrpdlwlgusqpljxpmdmwwodosazkdlffubcmaojbdzspbihtzpespnidbkmnqxkhdosvnxlcvpqebnosbngibnmhcjwcmtddjpqpaqpcnjudmfgfmhgktzwzaxwcrsdfxtqxgiojmudnnxnuhfikysxhgjiegkkpxfmyjvfajsfodeqn\"\n\"qssupolemytwvwmxhvwlttmhbcevnqlgt\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"\n\"abcde\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

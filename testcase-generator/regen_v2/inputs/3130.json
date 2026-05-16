@@ -1,0 +1,76 @@
+{
+  "pid": 3130,
+  "slug": "sort-characters-by-frequency",
+  "inferred_constraints": "0 <= s.length <= 5",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"2\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"y6\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"eeaaa\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"diDRz\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"1yOPQ\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"Ov6gA\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"jv6s6\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"wk2Nk\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"4ECLA\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"aWU8r\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"TVeSX\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"QMPzy\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"NoMTw\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

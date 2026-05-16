@@ -1,0 +1,76 @@
+{
+  "pid": 3136,
+  "slug": "group-sold-products-by-the-date",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "339545",
+      "desc": "Standard: n=339545"
+    },
+    {
+      "input": "830660",
+      "desc": "Standard: n=830660"
+    },
+    {
+      "input": "320029",
+      "desc": "Standard: n=320029"
+    },
+    {
+      "input": "892636",
+      "desc": "Standard: n=892636"
+    },
+    {
+      "input": "142015",
+      "desc": "Standard: n=142015"
+    },
+    {
+      "input": "60158",
+      "desc": "Standard: n=60158"
+    },
+    {
+      "input": "281824",
+      "desc": "Standard: n=281824"
+    },
+    {
+      "input": "658622",
+      "desc": "Standard: n=658622"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

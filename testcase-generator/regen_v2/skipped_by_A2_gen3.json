@@ -149,6 +149,16 @@
       "pid": 3188,
       "slug": "linked-list-cycle-ii",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3140,
+      "slug": "checking-existence-of-edge-length-limited-paths-ii",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3129,
+      "slug": "remove-nodes-from-linked-list",
+      "reason": "ACM mode problem"
     }
   ]
 }
