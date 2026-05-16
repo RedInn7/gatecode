@@ -1,0 +1,27 @@
+{
+  "pid": 96, "slug": "count-words-obtained-after-adding-a-letter",
+  "inferred_constraints": "1 <= startWords.length, targetWords.length <= 5e4, 1 <= word.length <= 26, no duplicates within word",
+  "input_format": "line1: startWords (JSON array); line2: targetWords (JSON array)",
+  "testcases": [
+    {"input": "[\"ant\",\"act\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]", "desc": "Edge: example1"},
+    {"input": "[\"ab\",\"a\"]\n[\"abc\",\"abcd\"]", "desc": "Edge: example2"},
+    {"input": "[\"a\"]\n[\"ab\"]", "desc": "Edge: minimum match"},
+    {"input": "[\"a\"]\n[\"b\"]", "desc": "Edge: no match (b not have a)"},
+    {"input": "[\"ab\"]\n[\"ba\"]", "desc": "Edge: same letters, must add 1"},
+    {"input": "[\"abc\"]\n[\"abcd\"]", "desc": "Edge: simple append"},
+    {"input": "[\"abc\"]\n[\"cba\"]", "desc": "Edge: same letters"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"ab\",\"bc\",\"ca\"]", "desc": "Standard: all match"},
+    {"input": "[\"abc\",\"def\"]\n[\"abcd\",\"defg\"]", "desc": "Standard: 2 each match"},
+    {"input": "[\"x\"]\n[\"xy\",\"xz\",\"xa\",\"xb\",\"xc\"]", "desc": "Standard: 1 start, 5 targets"},
+    {"input": "[\"ab\",\"cd\",\"ef\",\"gh\"]\n[\"abc\",\"cde\",\"efg\",\"ghi\"]", "desc": "Standard: 4 each match"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\"]\n[\"abcdefghijklmnopqrstuvwxyz\"]", "desc": "Edge: full alpha source = target (need 1 more letter but none avail)"},
+    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: same word — must add letter, so no match"},
+    {"input": "[\"abc\",\"abcd\",\"abcde\"]\n[\"abcd\",\"abcde\",\"abcdef\"]", "desc": "Standard: graduated"},
+    {"input": "[\"abc\"]\n[\"def\",\"ghi\",\"abcd\",\"abce\",\"abcz\"]", "desc": "Standard: multi targets"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"abcde\"]", "desc": "Standard: target needs all + 1"},
+    {"input": "[\"abcdef\"]\n[\"abcdefg\",\"abcdefh\",\"abcdefi\"]", "desc": "Standard: 1 start 3 targets"},
+    {"input": "[\"ab\",\"cd\"]\n[\"ab\",\"cd\"]", "desc": "Edge: no addition possible"},
+    {"input": "[\"abcdefghijk\"]\n[\"abcdefghijkl\",\"abcdefghijkm\"]", "desc": "Standard: long match"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\"]\n[\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\",\"abcdefghijk\"]", "desc": "Stress: graduated"}
+  ]
+}

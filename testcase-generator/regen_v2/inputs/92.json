@@ -1,0 +1,27 @@
+{
+  "pid": 92, "slug": "minimum-number-of-operations-to-make-all-array-elements-equal-to-1",
+  "inferred_constraints": "2 <= nums.length <= 50, 1 <= nums[i] <= 1e6",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,6,3,4]", "desc": "Edge: example1"},
+    {"input": "[2,10,6,14]", "desc": "Edge: example2 impossible (gcd=2)"},
+    {"input": "[1,1]", "desc": "Edge: minimum already all 1"},
+    {"input": "[1,2]", "desc": "Edge: one is 1"},
+    {"input": "[2,3]", "desc": "Edge: coprime n=2"},
+    {"input": "[6,9]", "desc": "Edge: gcd=3 impossible"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all 1s already"},
+    {"input": "[2,2,2,2,2]", "desc": "Edge: all 2s impossible"},
+    {"input": "[1000000,1000000]", "desc": "Edge: max same impossible"},
+    {"input": "[1000000,999999]", "desc": "Edge: max coprime"},
+    {"input": "[2,3,4,5,6,7,8,9,10]", "desc": "Standard: 2-10"},
+    {"input": "[6,10,15]", "desc": "Standard: pairwise gcd >1 but combined gcd=1"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: has 1"},
+    {"input": "[4,6,8,9]", "desc": "Standard: gcd=1 via 8,9"},
+    {"input": "[7,11,13,17]", "desc": "Standard: primes"},
+    {"input": "[2,4,8,16,32]", "desc": "Edge: powers of 2 impossible"},
+    {"input": "[3,9,27,81]", "desc": "Edge: powers of 3 impossible"},
+    {"input": "[5,7,11,13,17,19,23]", "desc": "Standard: primes"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29]", "desc": "Standard: 10 primes"},
+    {"input": "[1000000,999999,999998,999997,999996,999995,999994,999993,999992,999991]", "desc": "Stress: 10 near-max"}
+  ]
+}

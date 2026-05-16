@@ -1,0 +1,27 @@
+{
+  "pid": 88, "slug": "construct-string-with-minimum-cost",
+  "inferred_constraints": "1 <= target.length <= 5e4, 1 <= words.length <= 5e4, 1 <= costs[i] <= 1e4",
+  "input_format": "line1: target (raw string); line2: words (JSON array); line3: costs (JSON array)",
+  "testcases": [
+    {"input": "abcdef\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]", "desc": "Edge: example1"},
+    {"input": "aaaa\n[\"z\",\"zz\",\"zzz\"]\n[1,10,100]", "desc": "Edge: example2 impossible"},
+    {"input": "a\n[\"a\"]\n[5]", "desc": "Edge: simplest match"},
+    {"input": "a\n[\"b\"]\n[1]", "desc": "Edge: no match"},
+    {"input": "ab\n[\"a\",\"b\"]\n[1,1]", "desc": "Edge: two single chars"},
+    {"input": "abc\n[\"abc\"]\n[10]", "desc": "Edge: exact word"},
+    {"input": "abc\n[\"a\",\"b\",\"c\"]\n[1,1,1]", "desc": "Edge: chars only"},
+    {"input": "abc\n[\"ab\",\"bc\",\"c\"]\n[5,5,1]", "desc": "Standard: 2 paths"},
+    {"input": "aaaa\n[\"a\",\"aa\",\"aaa\"]\n[1,1,1]", "desc": "Standard: minimal cost combos"},
+    {"input": "abcd\n[\"a\",\"ab\",\"abc\",\"abcd\"]\n[1,2,3,5]", "desc": "Standard: nested"},
+    {"input": "hello\n[\"h\",\"he\",\"hel\",\"hell\",\"hello\"]\n[1,1,1,1,1]", "desc": "Standard: word with parts"},
+    {"input": "abcabc\n[\"abc\",\"a\",\"bc\"]\n[3,2,5]", "desc": "Standard: repeating pattern"},
+    {"input": "z\n[\"z\"]\n[10000]", "desc": "Edge: max cost single"},
+    {"input": "aaaaaaaaaa\n[\"a\"]\n[1]", "desc": "Standard: 10 a's"},
+    {"input": "leetcode\n[\"leet\",\"code\",\"leetcode\"]\n[5,5,12]", "desc": "Standard: 2 ways"},
+    {"input": "abcde\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"abc\",\"de\",\"ab\",\"cde\"]\n[1,1,1,1,1,2,2,1,2]", "desc": "Standard: many options"},
+    {"input": "xyz\n[\"abc\"]\n[1]", "desc": "Edge: completely impossible"},
+    {"input": "abcabc\n[\"abca\",\"bcabc\",\"abcabc\"]\n[5,5,15]", "desc": "Standard: overlapping"},
+    {"input": "aaaaa\n[\"aa\"]\n[1]", "desc": "Edge: odd length impossible with even-length word"},
+    {"input": "abcdef\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"ab\",\"cd\",\"ef\",\"abcdef\"]\n[1,1,1,1,1,1,1,1,1,5]", "desc": "Stress: many options"}
+  ]
+}

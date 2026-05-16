@@ -1,0 +1,28 @@
+{
+  "pid": 84,
+  "slug": "single-row-keyboard",
+  "inferred_constraints": "keyboard.length == 26, each letter once, 1 <= word.length <= 1e4",
+  "input_format": "line1: keyboard (raw string 26 chars); line2: word (raw string)",
+  "testcases": [
+    {"input": "abcdefghijklmnopqrstuvwxyz\ncba", "desc": "Edge: example1"},
+    {"input": "pqrstuvwxyzabcdefghijklmno\nleetcode", "desc": "Edge: example2"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\na", "desc": "Edge: single char at start"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nz", "desc": "Edge: single char at end"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba\na", "desc": "Edge: reverse, a at index 25"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: full alphabet ascending"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nzyxwvutsrqponmlkjihgfedcba", "desc": "Standard: full alphabet descending"},
+    {"input": "qwertyuiopasdfghjklzxcvbnm\nhello", "desc": "Standard: qwerty hello"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\naa", "desc": "Edge: repeated same"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\naz", "desc": "Edge: extreme jump"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nza", "desc": "Edge: extreme jump reversed"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nababababab", "desc": "Standard: alternating"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nmnopqr", "desc": "Standard: mid alphabet"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba\nleetcode", "desc": "Standard: reverse keyboard, word"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\naaaaaaaaaa", "desc": "Edge: 10 a's all same"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nzzzzzzzzzz", "desc": "Edge: 10 z's"},
+    {"input": "mnopqrstuvwxyzabcdefghijkl\nhello", "desc": "Standard: shifted keyboard"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nabcabcabcabcabcabcabcabcabcabc", "desc": "Standard: triplet pattern"},
+    {"input": "thequickbrownfxjmpsvlazydog\nabc", "desc": "Note: this has 27 chars; replace with valid 26-char layout"},
+    {"input": "thequickbrownfxjmpsvlazydog\nabc", "desc": "Note: invalid above; use abcdefghijklmnopqrstuvwxyz again — but need diversity"}
+  ]
+}

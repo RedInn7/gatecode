@@ -1,0 +1,27 @@
+{
+  "pid": 93, "slug": "split-array-into-consecutive-subsequences",
+  "inferred_constraints": "1 <= nums.length <= 1e4, -1000 <= nums[i] <= 1000, sorted non-decreasing",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,3,4,5]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,3,4,4,5,5]", "desc": "Edge: example2"},
+    {"input": "[1,2,3,4,4,5]", "desc": "Edge: example3 false"},
+    {"input": "[1]", "desc": "Edge: n=1 not 3"},
+    {"input": "[1,2,3]", "desc": "Edge: exactly 3 ascending"},
+    {"input": "[1,1]", "desc": "Edge: n=2 not enough"},
+    {"input": "[1,2]", "desc": "Edge: n=2 not enough"},
+    {"input": "[1,1,1]", "desc": "Edge: all same impossible"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: full ascending"},
+    {"input": "[1,1,1,2,2,2,3,3,3]", "desc": "Standard: 3 triplets"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: 2 triplets"},
+    {"input": "[1,2,3,3,4,5,5,6,7]", "desc": "Standard: mixed"},
+    {"input": "[-1000,-999,-998]", "desc": "Edge: min values"},
+    {"input": "[1000,1000,1000]", "desc": "Edge: max same"},
+    {"input": "[-1,0,1,2,3]", "desc": "Standard: span zero"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: split into 1,2,3 + 4,5,6,7"},
+    {"input": "[1,2,3,4]", "desc": "Standard: 4 ascending"},
+    {"input": "[1,2,3,4,5,5,6,7]", "desc": "Standard: 8 elements"},
+    {"input": "[1,2,3,3,4,5,7,8,9]", "desc": "Standard: with gap"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: long ascending"}
+  ]
+}

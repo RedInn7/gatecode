@@ -1,0 +1,27 @@
+{
+  "pid": 95, "slug": "plus-one-linked-list",
+  "inferred_constraints": "1 <= nodes <= 100, 0 <= val <= 9, no leading zeros except 0",
+  "input_format": "single line: head (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3]", "desc": "Edge: example1"},
+    {"input": "[0]", "desc": "Edge: example2 zero"},
+    {"input": "[9]", "desc": "Edge: single 9 -> 10"},
+    {"input": "[1]", "desc": "Edge: single 1 -> 2"},
+    {"input": "[9,9]", "desc": "Edge: 99 -> 100"},
+    {"input": "[9,9,9]", "desc": "Edge: 999 -> 1000"},
+    {"input": "[9,9,9,9,9,9,9,9,9,9]", "desc": "Edge: 10 nines"},
+    {"input": "[1,9]", "desc": "Edge: 19 -> 20"},
+    {"input": "[1,9,9]", "desc": "Edge: 199 -> 200"},
+    {"input": "[1,0,0]", "desc": "Standard: 100 -> 101"},
+    {"input": "[5,6,7,8,9]", "desc": "Standard: 56789 -> 56790"},
+    {"input": "[5,9,9,9,9]", "desc": "Standard: 59999 -> 60000"},
+    {"input": "[1,2,3,4,5,6,7,8,9,0]", "desc": "Standard: ending 0"},
+    {"input": "[1,0,0,0,0,0,0,0,0,0]", "desc": "Standard: 10^9"},
+    {"input": "[9,8,7,6,5,4,3,2,1,0]", "desc": "Standard: descending"},
+    {"input": "[1,2,3,4,5,6,7,8,9]", "desc": "Standard: 123456789"},
+    {"input": "[2,4,6,8,0,2,4,6,8,0]", "desc": "Standard: pattern"},
+    {"input": "[9,0,0,0,0,0,0,0,0,9]", "desc": "Standard: 9000000009"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all 1s"},
+    {"input": "[9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]", "desc": "Stress: 100 nines"}
+  ]
+}

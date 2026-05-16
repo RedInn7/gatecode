@@ -1,0 +1,28 @@
+{
+  "pid": 81,
+  "slug": "best-time-to-buy-and-sell-stock",
+  "inferred_constraints": "1 <= prices.length <= 1e5, 0 <= prices[i] <= 1e4",
+  "input_format": "single line: prices (JSON array)",
+  "testcases": [
+    {"input": "[7,1,5,3,6,4]", "desc": "Edge: example1"},
+    {"input": "[7,6,4,3,1]", "desc": "Edge: example2 monotonic decline"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[0]", "desc": "Edge: n=1 zero"},
+    {"input": "[10000]", "desc": "Edge: n=1 max"},
+    {"input": "[1,2]", "desc": "Edge: n=2 ascending"},
+    {"input": "[2,1]", "desc": "Edge: n=2 descending"},
+    {"input": "[0,10000]", "desc": "Edge: extreme jump"},
+    {"input": "[10000,0]", "desc": "Edge: max to min"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[3,2,6,5,0,3]", "desc": "Standard: oscillation"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]", "desc": "Standard: alternating"},
+    {"input": "[100,90,80,70,60,50,40,30,20,10]", "desc": "Standard: descending steps"},
+    {"input": "[1,100,1,100,1,100]", "desc": "Standard: alternating extreme"},
+    {"input": "[10,11,12,11,10,9,10,11,12,13]", "desc": "Standard: V then climb"},
+    {"input": "[5,4,3,2,1,2,3,4,5,6]", "desc": "Standard: dip then climb"},
+    {"input": "[0,0,0,0,10000]", "desc": "Standard: zeros then max"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]", "desc": "Stress: all max same"}
+  ]
+}

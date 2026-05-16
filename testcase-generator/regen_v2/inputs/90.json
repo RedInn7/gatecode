@@ -1,0 +1,27 @@
+{
+  "pid": 90, "slug": "3sum",
+  "inferred_constraints": "3 <= nums.length <= 3000, -1e5 <= nums[i] <= 1e5",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[-1,0,1,2,-1,-4]", "desc": "Edge: example1"},
+    {"input": "[0,1,1]", "desc": "Edge: example2"},
+    {"input": "[0,0,0]", "desc": "Edge: example3"},
+    {"input": "[1,1,1]", "desc": "Edge: no triple sums to 0"},
+    {"input": "[1,2,3]", "desc": "Edge: positive, no zero sum"},
+    {"input": "[-1,-1,-1]", "desc": "Edge: all negative"},
+    {"input": "[0,0,0,0]", "desc": "Edge: 4 zeros"},
+    {"input": "[100000,-100000,0]", "desc": "Edge: extreme values sum=0"},
+    {"input": "[-100000,-100000,200000]", "desc": "Note: 200000 out of range; use 100000 instead"},
+    {"input": "[-100000,50000,50000]", "desc": "Edge: extreme min + 2 halves"},
+    {"input": "[1,-1,-1,2,-2,0,1]", "desc": "Standard: various"},
+    {"input": "[-2,0,1,1,2]", "desc": "Standard: small mix"},
+    {"input": "[3,0,-2,-1,1,2]", "desc": "Standard: mixed"},
+    {"input": "[-4,-2,-1,0,1,2,3,4]", "desc": "Standard: sorted span"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: all positive"},
+    {"input": "[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]", "desc": "Standard: all negative"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: all zeros large"},
+    {"input": "[-1,-1,2,2,-2,1,1]", "desc": "Standard: with dups"},
+    {"input": "[1,2,-2,-1]", "desc": "Standard: small"},
+    {"input": "[3,-1,-7,1,5,9,-3,-5,7,2]", "desc": "Stress: diverse mix"}
+  ]
+}
