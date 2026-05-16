@@ -648,3 +648,16 @@ Audited at: 2026-05-16T15:37:09.436815
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:37:09.462395
+
+## PID 266 (maximum-white-tiles-covered-by-a-carpet)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=50000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:11.845648
+
+## PID 267 (number-of-distinct-roll-sequences)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=10000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:11.862479
