@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 3e5, printable ASCII",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "IceCreAm", "desc": "Edge: example1"},
-    {"input": "leetcode", "desc": "Edge: example2"},
-    {"input": "a", "desc": "Edge: single vowel"},
-    {"input": "b", "desc": "Edge: single consonant"},
-    {"input": "ae", "desc": "Edge: 2 vowels"},
-    {"input": "bc", "desc": "Edge: no vowels"},
-    {"input": "abc", "desc": "Edge: 1 vowel mix"},
-    {"input": "aeiou", "desc": "Edge: only vowels"},
-    {"input": "AEIOU", "desc": "Edge: uppercase vowels"},
-    {"input": "Hello", "desc": "Standard: mixed case"},
-    {"input": "Programming", "desc": "Standard: typical"},
-    {"input": "AaEeIiOoUu", "desc": "Edge: alternating case"},
-    {"input": "race car", "desc": "Standard: with space"},
-    {"input": "HELLO WORLD", "desc": "Standard: uppercase"},
-    {"input": "12345", "desc": "Edge: no letters"},
-    {"input": "AeIoU", "desc": "Edge: mixed case vowels"},
-    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Edge: full alphabet"},
-    {"input": "vowel reversal", "desc": "Standard: phrase"},
-    {"input": "AbCdEfGhIjKlMnOpQrStUvWxYz", "desc": "Edge: alt case alphabet"},
-    {"input": "the quick brown fox", "desc": "Standard: phrase"}
+    {
+      "input": "IceCreAm",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "leetcode",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"hcdvjzkj\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"ywxbopf\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"tdme\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "bc",
+      "desc": "Edge: no vowels"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: 1 vowel mix"
+    },
+    {
+      "input": "aeiou",
+      "desc": "Edge: only vowels"
+    },
+    {
+      "input": "AEIOU",
+      "desc": "Edge: uppercase vowels"
+    },
+    {
+      "input": "Hello",
+      "desc": "Standard: mixed case"
+    },
+    {
+      "input": "Programming",
+      "desc": "Standard: typical"
+    },
+    {
+      "input": "AaEeIiOoUu",
+      "desc": "Edge: alternating case"
+    },
+    {
+      "input": "race car",
+      "desc": "Standard: with space"
+    },
+    {
+      "input": "HELLO WORLD",
+      "desc": "Standard: uppercase"
+    },
+    {
+      "input": "12345",
+      "desc": "Edge: no letters"
+    },
+    {
+      "input": "AeIoU",
+      "desc": "Edge: mixed case vowels"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "desc": "Edge: full alphabet"
+    },
+    {
+      "input": "vowel reversal",
+      "desc": "Standard: phrase"
+    },
+    {
+      "input": "AbCdEfGhIjKlMnOpQrStUvWxYz",
+      "desc": "Edge: alt case alphabet"
+    },
+    {
+      "input": "\"juhsclclzcbzioru\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
