@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 100, lowercase + digits, shift(s[i-1], s[i]) <= 'z' for odd i",
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
-    {"input": "\"a1c1e1\"", "desc": "Edge: example1"},
-    {"input": "\"a1b2c3d4e\"", "desc": "Edge: example2"},
-    {"input": "\"a\"", "desc": "Edge: n=1 single letter"},
-    {"input": "\"a1\"", "desc": "Edge: minimal letter+digit"},
-    {"input": "\"a0\"", "desc": "Edge: shift by 0"},
-    {"input": "\"a9\"", "desc": "Edge: shift by 9"},
-    {"input": "\"q9\"", "desc": "Edge: q+9=z border"},
-    {"input": "\"b1d1f1\"", "desc": "Standard: multiple letters"},
-    {"input": "\"z\"", "desc": "Edge: just z"},
-    {"input": "\"a0a0a0\"", "desc": "Standard: zero shifts"},
-    {"input": "\"a1b1c1d1e1f1g1h1\"", "desc": "Standard: alternating"},
-    {"input": "\"q1q1q1q1\"", "desc": "Standard: same letter q+1=r"},
-    {"input": "\"y1y1y1\"", "desc": "Standard: y+1=z"},
-    {"input": "\"a5b5c5d5\"", "desc": "Standard: shift 5"},
-    {"input": "\"a9b9\"", "desc": "Standard: max shift"},
-    {"input": "\"a1a2a3a4a5a6a7a8a9a0\"", "desc": "Standard: varied shifts on a"},
-    {"input": "\"b0c0d0e0f0g0h0i0j0k0\"", "desc": "Standard: zero shifts variety"},
-    {"input": "\"a1b1c1d1e1f1g1h1i1j1k1l1m1\"", "desc": "Stress: long alternating"},
-    {"input": "\"a0b0c0d0e0f0g0h0i0j0k0l0m0n0o0p0q0r0s0t0u0v0w0x0y0z0\"", "desc": "Stress: all 26 letters zero shift"},
-    {"input": "\"a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7h8i9\"", "desc": "Stress: 50+ chars varied"}
+    {
+      "input": "\"a1c1e1\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"a1b2c3d4e\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"wwpuemp\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"ipazcf\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"v\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"a9\"",
+      "desc": "Edge: shift by 9"
+    },
+    {
+      "input": "\"q9\"",
+      "desc": "Edge: q+9=z border"
+    },
+    {
+      "input": "\"b1d1f1\"",
+      "desc": "Standard: multiple letters"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: just z"
+    },
+    {
+      "input": "\"a0a0a0\"",
+      "desc": "Standard: zero shifts"
+    },
+    {
+      "input": "\"a1b1c1d1e1f1g1h1\"",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "\"q1q1q1q1\"",
+      "desc": "Standard: same letter q+1=r"
+    },
+    {
+      "input": "\"y1y1y1\"",
+      "desc": "Standard: y+1=z"
+    },
+    {
+      "input": "\"a5b5c5d5\"",
+      "desc": "Standard: shift 5"
+    },
+    {
+      "input": "\"a9b9\"",
+      "desc": "Standard: max shift"
+    },
+    {
+      "input": "\"a1a2a3a4a5a6a7a8a9a0\"",
+      "desc": "Standard: varied shifts on a"
+    },
+    {
+      "input": "\"b0c0d0e0f0g0h0i0j0k0\"",
+      "desc": "Standard: zero shifts variety"
+    },
+    {
+      "input": "\"a1b1c1d1e1f1g1h1i1j1k1l1m1\"",
+      "desc": "Stress: long alternating"
+    },
+    {
+      "input": "\"a0b0c0d0e0f0g0h0i0j0k0l0m0n0o0p0q0r0s0t0u0v0w0x0y0z0\"",
+      "desc": "Stress: all 26 letters zero shift"
+    },
+    {
+      "input": "\"lvyvpjmgpfqomjdwej\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
