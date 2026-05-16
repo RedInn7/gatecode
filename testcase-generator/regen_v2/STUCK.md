@@ -930,3 +930,8 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:38:09.645251
+
+## PID 355 (maximum-beauty-of-an-array-after-applying-operation)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:38:11.794536
