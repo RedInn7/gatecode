@@ -1,0 +1,28 @@
+{
+  "pid": 2050,
+  "slug": "number-of-distinct-islands",
+  "inferred_constraints": "1 <= m, n <= 50, grid[i][j] in {0,1}",
+  "input_format": "single line: grid (JSON 2D)",
+  "testcases": [
+    {"input": "[[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]", "desc": "Standard: example 1 (same shape)"},
+    {"input": "[[1,1,0,1,1],[1,0,0,0,0],[0,0,0,0,1],[1,1,0,1,1]]", "desc": "Standard: example 2 (3 distinct)"},
+    {"input": "[[1]]", "desc": "Edge: 1x1 single island"},
+    {"input": "[[0]]", "desc": "Edge: 1x1 no island"},
+    {"input": "[[1,0],[0,1]]", "desc": "Edge: 2 same single cell islands"},
+    {"input": "[[1,1],[1,1]]", "desc": "Edge: single 2x2"},
+    {"input": "[[0,0,0],[0,0,0],[0,0,0]]", "desc": "Edge: no islands"},
+    {"input": "[[1,1,1],[1,1,1],[1,1,1]]", "desc": "Edge: 3x3 one island"},
+    {"input": "[[1,0,1,0,1]]", "desc": "Edge: 1 row 3 single islands"},
+    {"input": "[[1],[0],[1],[0],[1]]", "desc": "Edge: 1 col 3 singles"},
+    {"input": "[[1,1,0,1,1],[0,0,0,0,0],[1,1,0,1,1]]", "desc": "Standard: 4 same shape"},
+    {"input": "[[1,1],[1,0]]", "desc": "Edge: L-shape"},
+    {"input": "[[1,0],[1,1]]", "desc": "Edge: L-shape rotated"},
+    {"input": "[[1,1,1],[1,0,0],[1,0,0]]", "desc": "Standard: L shape large"},
+    {"input": "[[1,1,0,0],[0,1,1,0],[0,0,1,1],[0,0,0,1]]", "desc": "Standard: diagonal stairs"},
+    {"input": "[[1,0,1,0,1,0,1,0,1,0]]", "desc": "Standard: 5 singles in row"},
+    {"input": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]", "desc": "Standard: ring + center"},
+    {"input": "[[1,1,1,0,0,0,1,1,1],[1,1,1,0,0,0,1,1,1],[0,0,0,0,0,0,0,0,0]]", "desc": "Standard: 2 identical rect"},
+    {"input": "[[1,1,0,0,1,1,0,0,1,1],[1,1,0,0,1,1,0,0,1,1]]", "desc": "Standard: 5 identical"},
+    {"input": "[[1,0,0,1],[0,0,0,0],[1,0,0,1]]", "desc": "Standard: 4 corner singles"}
+  ]
+}

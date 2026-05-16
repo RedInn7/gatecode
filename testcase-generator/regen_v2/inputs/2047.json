@@ -1,0 +1,28 @@
+{
+  "pid": 2047,
+  "slug": "add-two-numbers",
+  "inferred_constraints": "1 <= len(l1), len(l2) <= 100, 0 <= node.val <= 9, no leading zeros",
+  "input_format": "line1: l1 (JSON array digits reversed); line2: l2 (JSON array)",
+  "testcases": [
+    {"input": "[2,4,3]\n[5,6,4]", "desc": "Standard: example 1 (342+465=807)"},
+    {"input": "[0]\n[0]", "desc": "Edge: both zero"},
+    {"input": "[9,9,9,9,9,9,9]\n[9,9,9,9]", "desc": "Standard: example 3"},
+    {"input": "[1]\n[1]", "desc": "Edge: 1+1"},
+    {"input": "[9]\n[1]", "desc": "Edge: 9+1=10"},
+    {"input": "[5]\n[5]", "desc": "Edge: 5+5=10"},
+    {"input": "[9,9,9]\n[1]", "desc": "Standard: 999+1=1000"},
+    {"input": "[1,0,0]\n[9,9,9]", "desc": "Standard"},
+    {"input": "[1]\n[9,9,9,9,9,9,9,9,9,9]", "desc": "Standard: small + huge"},
+    {"input": "[9,9,9,9,9,9,9,9,9,9]\n[1]", "desc": "Standard: huge + small"},
+    {"input": "[0]\n[1]", "desc": "Edge: 0+1"},
+    {"input": "[1,2,3]\n[4,5,6]", "desc": "Standard: 321+654=975"},
+    {"input": "[5,5,5]\n[5,5,5]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9]\n[9,8,7,6,5,4,3,2,1]", "desc": "Standard: long"},
+    {"input": "[0,0,0,0,1]\n[0,0,0,0,1]", "desc": "Standard: trailing zeros"},
+    {"input": "[9,9,9,9,9]\n[9,9,9,9,9]", "desc": "Standard: 99999+99999"},
+    {"input": "[2]\n[8]", "desc": "Edge: 2+8=10"},
+    {"input": "[1,8]\n[0]", "desc": "Standard: 81+0=81"},
+    {"input": "[9,1,6]\n[0,8,4]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2]\n[9,8,7,6,5,4,3,2,1,9,8,7,6,5,4,3,2,1,9,8]", "desc": "Stress: 20 digits each"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2065,
+  "slug": "the-most-similar-path-in-a-graph",
+  "inferred_constraints": "2 <= n <= 100, names[i].length == 3 uppercase, 1 <= roads.length, targetPath.length <= 100",
+  "input_format": "line1: n (int); line2: roads (JSON 2D); line3: names (JSON); line4: targetPath (JSON)",
+  "testcases": [
+    {"input": "5\n[[0,2],[0,3],[1,2],[1,3],[1,4],[2,4]]\n[\"ATL\",\"PEK\",\"LAX\",\"DXB\",\"HND\"]\n[\"ATL\",\"DXB\",\"HND\",\"LAX\"]", "desc": "Standard: example 1"},
+    {"input": "4\n[[1,0],[2,0],[3,0],[2,1],[3,1],[3,2]]\n[\"ATL\",\"PEK\",\"LAX\",\"DXB\"]\n[\"ABC\",\"DEF\",\"GHI\",\"JKL\",\"MNO\",\"PQR\",\"STU\",\"VWX\"]", "desc": "Standard: example 2"},
+    {"input": "2\n[[0,1]]\n[\"AAA\",\"BBB\"]\n[\"AAA\",\"BBB\"]", "desc": "Edge: 2 nodes match"},
+    {"input": "2\n[[0,1]]\n[\"AAA\",\"BBB\"]\n[\"CCC\",\"DDD\"]", "desc": "Edge: 2 nodes no match"},
+    {"input": "3\n[[0,1],[1,2],[0,2]]\n[\"AAA\",\"BBB\",\"CCC\"]\n[\"AAA\",\"BBB\",\"CCC\"]", "desc": "Standard"},
+    {"input": "3\n[[0,1],[1,2],[0,2]]\n[\"AAA\",\"BBB\",\"CCC\"]\n[\"AAA\",\"CCC\",\"BBB\"]", "desc": "Standard: different order"},
+    {"input": "4\n[[0,1],[1,2],[2,3],[3,0]]\n[\"ABC\",\"DEF\",\"GHI\",\"JKL\"]\n[\"ABC\",\"DEF\",\"GHI\",\"JKL\"]", "desc": "Standard: cycle"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\"]\n[\"AAA\",\"BBB\",\"CCC\"]", "desc": "Standard"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\"]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\"]", "desc": "Standard: full match"},
+    {"input": "6\n[[0,1],[0,2],[1,3],[2,3],[3,4],[3,5]]\n[\"PEK\",\"LAX\",\"DXB\",\"HND\",\"SFO\",\"JFK\"]\n[\"PEK\",\"HND\",\"SFO\"]", "desc": "Standard"},
+    {"input": "4\n[[0,1],[1,2],[2,3]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\"]\n[\"AAA\",\"BBB\"]", "desc": "Edge: shortest target"},
+    {"input": "4\n[[0,1],[1,2],[2,3]]\n[\"XXX\",\"YYY\",\"ZZZ\",\"WWW\"]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\"]", "desc": "Edge: nothing matches"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4],[0,4]]\n[\"ATL\",\"PEK\",\"LAX\",\"DXB\",\"HND\"]\n[\"ATL\",\"DXB\"]", "desc": "Standard"},
+    {"input": "3\n[[0,1],[1,2]]\n[\"AAA\",\"AAA\",\"AAA\"]\n[\"AAA\",\"AAA\",\"AAA\"]", "desc": "Edge: all same name"},
+    {"input": "4\n[[0,1],[1,2],[2,3],[3,0]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\"]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"AAA\"]", "desc": "Standard"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\"]\n[\"EEE\",\"DDD\",\"CCC\",\"BBB\",\"AAA\"]", "desc": "Standard: reverse"},
+    {"input": "6\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\",\"FFF\"]\n[\"AAA\",\"DDD\",\"AAA\"]", "desc": "Standard"},
+    {"input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\",\"FFF\",\"GGG\",\"HHH\",\"III\",\"JJJ\"]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\"]", "desc": "Standard"},
+    {"input": "4\n[[0,1],[1,2],[2,3],[0,3]]\n[\"AAA\",\"BBB\",\"AAA\",\"BBB\"]\n[\"AAA\",\"BBB\",\"AAA\",\"BBB\"]", "desc": "Standard: duplicates"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4],[0,2],[2,4]]\n[\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\"]\n[\"AAA\",\"CCC\",\"EEE\"]", "desc": "Standard"}
+  ]
+}

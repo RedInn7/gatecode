@@ -1,0 +1,28 @@
+{
+  "pid": 2036,
+  "slug": "valid-palindrome-iii",
+  "inferred_constraints": "1 <= s.length <= 1000, 1 <= k <= s.length, lowercase English",
+  "input_format": "line1: s (JSON string); line2: k (int)",
+  "testcases": [
+    {"input": "\"abcdeca\"\n2", "desc": "Standard: example 1"},
+    {"input": "\"abbababa\"\n1", "desc": "Standard: example 2"},
+    {"input": "\"a\"\n1", "desc": "Edge: n=1"},
+    {"input": "\"ab\"\n1", "desc": "Edge: n=2 k=1"},
+    {"input": "\"ab\"\n2", "desc": "Edge: k=n"},
+    {"input": "\"aa\"\n1", "desc": "Edge: palindrome k=1"},
+    {"input": "\"aba\"\n1", "desc": "Edge: palindrome small"},
+    {"input": "\"abcba\"\n1", "desc": "Standard: palindrome already"},
+    {"input": "\"abcdef\"\n3", "desc": "Standard: not palindrome k=3"},
+    {"input": "\"abcdcba\"\n0", "desc": "Edge: palindrome k=0 (but k>=1)"},
+    {"input": "\"abcdef\"\n5", "desc": "Standard: k=n-1 always true"},
+    {"input": "\"aaaa\"\n1", "desc": "Edge: all same"},
+    {"input": "\"abcabc\"\n2", "desc": "Standard"},
+    {"input": "\"abcdba\"\n1", "desc": "Standard: 1 mismatch"},
+    {"input": "\"abcdba\"\n2", "desc": "Standard: k=2 same"},
+    {"input": "\"racecar\"\n1", "desc": "Standard: palindrome"},
+    {"input": "\"abcabcabc\"\n3", "desc": "Standard"},
+    {"input": "\"abacaba\"\n0", "desc": "Edge: palindrome"},
+    {"input": "\"aaaaaa\"\n2", "desc": "Edge: trivial palindrome"},
+    {"input": "\"zzazzazzazz\"\n3", "desc": "Standard"}
+  ]
+}

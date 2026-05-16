@@ -1,0 +1,28 @@
+{
+  "pid": 2063,
+  "slug": "find-kth-bit-in-nth-binary-string",
+  "inferred_constraints": "1 <= n <= 20, 1 <= k <= 2^n - 1",
+  "input_format": "line1: n (int); line2: k (int)",
+  "testcases": [
+    {"input": "3\n1", "desc": "Standard: example 1"},
+    {"input": "4\n11", "desc": "Standard: example 2"},
+    {"input": "1\n1", "desc": "Edge: n=1 k=1"},
+    {"input": "2\n1", "desc": "Edge: n=2 k=1"},
+    {"input": "2\n2", "desc": "Edge: n=2 k=2"},
+    {"input": "2\n3", "desc": "Edge: n=2 k=3"},
+    {"input": "3\n7", "desc": "Edge: n=3 k=2^3-1"},
+    {"input": "3\n4", "desc": "Edge: n=3 middle"},
+    {"input": "4\n15", "desc": "Edge: n=4 max"},
+    {"input": "20\n1", "desc": "Edge: n=20 k=1"},
+    {"input": "20\n1048575", "desc": "Edge: n=20 k=2^20-1"},
+    {"input": "10\n512", "desc": "Standard: middle"},
+    {"input": "5\n31", "desc": "Standard: n=5 max"},
+    {"input": "5\n16", "desc": "Standard: middle"},
+    {"input": "8\n128", "desc": "Standard"},
+    {"input": "12\n2048", "desc": "Standard: middle"},
+    {"input": "15\n1", "desc": "Standard"},
+    {"input": "15\n32767", "desc": "Standard: max"},
+    {"input": "19\n524287", "desc": "Standard: n=19 max"},
+    {"input": "6\n32", "desc": "Standard"}
+  ]
+}

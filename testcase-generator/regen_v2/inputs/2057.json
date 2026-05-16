@@ -1,0 +1,28 @@
+{
+  "pid": 2057,
+  "slug": "design-a-text-editor",
+  "inferred_constraints": "1 <= text.length, k <= 40, at most 2*10^4 calls total",
+  "input_format": "line1: operations (JSON); line2: arguments (JSON)",
+  "testcases": [
+    {"input": "[\"TextEditor\",\"addText\",\"deleteText\",\"addText\",\"cursorRight\",\"cursorLeft\",\"deleteText\",\"cursorLeft\",\"cursorRight\"]\n[[],[\"leetcode\"],[4],[\"practice\"],[3],[8],[10],[2],[6]]", "desc": "Standard: example 1"},
+    {"input": "[\"TextEditor\"]\n[[]]", "desc": "Edge: just init"},
+    {"input": "[\"TextEditor\",\"addText\"]\n[[],[\"hello\"]]", "desc": "Edge: add only"},
+    {"input": "[\"TextEditor\",\"deleteText\"]\n[[],[5]]", "desc": "Edge: delete on empty"},
+    {"input": "[\"TextEditor\",\"cursorLeft\"]\n[[],[5]]", "desc": "Edge: cursor left empty"},
+    {"input": "[\"TextEditor\",\"cursorRight\"]\n[[],[5]]", "desc": "Edge: cursor right empty"},
+    {"input": "[\"TextEditor\",\"addText\",\"cursorLeft\",\"addText\"]\n[[],[\"hello\"],[5],[\"x\"]]", "desc": "Standard: insert in middle"},
+    {"input": "[\"TextEditor\",\"addText\",\"deleteText\"]\n[[],[\"abc\"],[1]]", "desc": "Standard: delete 1"},
+    {"input": "[\"TextEditor\",\"addText\",\"deleteText\"]\n[[],[\"abc\"],[100]]", "desc": "Standard: delete all"},
+    {"input": "[\"TextEditor\",\"addText\",\"addText\",\"addText\"]\n[[],[\"hello\"],[\"world\"],[\"!\"]]", "desc": "Standard: 3 adds"},
+    {"input": "[\"TextEditor\",\"addText\",\"cursorLeft\",\"cursorLeft\",\"cursorRight\"]\n[[],[\"abcdef\"],[3],[1],[2]]", "desc": "Standard: move cursor"},
+    {"input": "[\"TextEditor\",\"addText\",\"deleteText\",\"deleteText\",\"addText\"]\n[[],[\"hello\"],[2],[2],[\"abc\"]]", "desc": "Standard: multi delete"},
+    {"input": "[\"TextEditor\",\"addText\",\"cursorLeft\",\"deleteText\"]\n[[],[\"hello\"],[3],[2]]", "desc": "Standard: delete after move left"},
+    {"input": "[\"TextEditor\",\"addText\",\"cursorLeft\",\"addText\",\"cursorRight\"]\n[[],[\"hello\"],[5],[\"X\"],[3]]", "desc": "Standard"},
+    {"input": "[\"TextEditor\",\"addText\",\"deleteText\",\"cursorLeft\",\"cursorRight\"]\n[[],[\"abcdefghij\"],[5],[3],[10]]", "desc": "Standard"},
+    {"input": "[\"TextEditor\",\"addText\",\"addText\",\"deleteText\",\"cursorLeft\"]\n[[],[\"first\"],[\"second\"],[3],[5]]", "desc": "Standard"},
+    {"input": "[\"TextEditor\",\"addText\",\"cursorLeft\",\"cursorRight\",\"deleteText\"]\n[[],[\"text\"],[2],[1],[2]]", "desc": "Standard"},
+    {"input": "[\"TextEditor\",\"addText\",\"cursorLeft\",\"addText\",\"deleteText\"]\n[[],[\"hello\"],[5],[\"start\"],[3]]", "desc": "Standard"},
+    {"input": "[\"TextEditor\",\"addText\",\"deleteText\",\"addText\",\"cursorLeft\",\"cursorRight\"]\n[[],[\"longstring\"],[5],[\"new\"],[4],[2]]", "desc": "Standard"},
+    {"input": "[\"TextEditor\",\"addText\",\"addText\",\"addText\",\"cursorLeft\",\"deleteText\",\"cursorRight\",\"addText\"]\n[[],[\"a\"],[\"b\"],[\"c\"],[2],[1],[1],[\"d\"]]", "desc": "Standard: complex"}
+  ]
+}

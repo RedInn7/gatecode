@@ -1,0 +1,28 @@
+{
+  "pid": 2066,
+  "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+  "inferred_constraints": "1 <= n <= 10^5, -10^18 <= target <= 10^18",
+  "input_format": "line1: n (int); line2: target (int)",
+  "testcases": [
+    {"input": "3\n0", "desc": "Standard: example 1"},
+    {"input": "1\n10000000000", "desc": "Standard: example 2 impossible"},
+    {"input": "1\n1", "desc": "Edge: n=1 trivial"},
+    {"input": "1\n-1", "desc": "Edge: n=1 negate"},
+    {"input": "1\n0", "desc": "Edge: n=1 impossible"},
+    {"input": "2\n3", "desc": "Edge: n=2 sum max"},
+    {"input": "2\n-3", "desc": "Edge: n=2 negative max"},
+    {"input": "2\n1", "desc": "Edge: n=2 target 1"},
+    {"input": "2\n-1", "desc": "Edge: n=2 target -1"},
+    {"input": "3\n6", "desc": "Standard: n=3 sum all positive"},
+    {"input": "3\n-6", "desc": "Standard: n=3 all negative"},
+    {"input": "4\n0", "desc": "Standard: n=4 zero"},
+    {"input": "5\n5", "desc": "Standard"},
+    {"input": "5\n15", "desc": "Standard: max sum"},
+    {"input": "5\n-15", "desc": "Standard: all neg"},
+    {"input": "10\n55", "desc": "Standard: n=10 sum 1..10"},
+    {"input": "10\n-55", "desc": "Standard"},
+    {"input": "10\n0", "desc": "Standard: zero balanced"},
+    {"input": "100\n0", "desc": "Standard: large balanced"},
+    {"input": "10\n100", "desc": "Edge: target > max sum impossible"}
+  ]
+}

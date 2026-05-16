@@ -1,0 +1,28 @@
+{
+  "pid": 2059,
+  "slug": "count-and-say",
+  "inferred_constraints": "1 <= n <= 30",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "1", "desc": "Standard: n=1"},
+    {"input": "2", "desc": "Standard: n=2"},
+    {"input": "3", "desc": "Standard: n=3"},
+    {"input": "4", "desc": "Standard: n=4"},
+    {"input": "5", "desc": "Standard: n=5"},
+    {"input": "6", "desc": "Standard"},
+    {"input": "7", "desc": "Standard"},
+    {"input": "8", "desc": "Standard"},
+    {"input": "9", "desc": "Standard"},
+    {"input": "10", "desc": "Standard"},
+    {"input": "15", "desc": "Standard"},
+    {"input": "20", "desc": "Standard"},
+    {"input": "25", "desc": "Standard"},
+    {"input": "30", "desc": "Edge: max"},
+    {"input": "29", "desc": "Edge: max-1"},
+    {"input": "12", "desc": "Standard"},
+    {"input": "17", "desc": "Standard"},
+    {"input": "22", "desc": "Standard"},
+    {"input": "27", "desc": "Standard"},
+    {"input": "11", "desc": "Standard"}
+  ]
+}
