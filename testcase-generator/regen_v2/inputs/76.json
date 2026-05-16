@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"pj\"\n15",
+      "input": "\"gb\"\n14",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: alternating ab"
     },
     {
-      "input": "\"btxqvqgadd\"\n17",
+      "input": "\"qrfzqhupis\"\n17",
       "desc": "Stress: large n near max boundary"
     }
   ]
