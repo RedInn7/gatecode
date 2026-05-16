@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums.length <= 50, 1 <= nums[i] <= 100",
   "input_format": "line1: nums (JSON int array)",
   "testcases": [
-    {"input": "[1,2,3,4,5]", "desc": "Edge: example1 -> 7"},
-    {"input": "[10,100]", "desc": "Edge: example2 -> 0 (no strong pair)"},
-    {"input": "[5,6,25,30]", "desc": "Edge: example3"},
-    {"input": "[1]", "desc": "Edge: n=1 single (pair with itself)"},
-    {"input": "[100]", "desc": "Edge: max single"},
-    {"input": "[1,1]", "desc": "Edge: 2 ones"},
-    {"input": "[1,2]", "desc": "Edge: 2 distinct small"},
-    {"input": "[100,100]", "desc": "Edge: 2 max same"},
-    {"input": "[1,100]", "desc": "Edge: extremes no strong pair"},
-    {"input": "[50,50,50,50]", "desc": "Edge: all same"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1..10"},
-    {"input": "[10,20,30,40,50]", "desc": "Standard: multiples of 10"},
-    {"input": "[1,2,4,8,16,32,64]", "desc": "Standard: powers of 2"},
-    {"input": "[99,98,97,96,95]", "desc": "Standard: high values close"},
-    {"input": "[1,2,3,5,8,13,21,34,55,89]", "desc": "Standard: fibonacci"},
-    {"input": "[50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]", "desc": "Stress: 50 close values"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 ones"},
-    {"input": "[100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100]", "desc": "Stress: 50 max"},
-    {"input": "[2,4,8,16,32,64]", "desc": "Special: each is double prev"},
-    {"input": "[3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]", "desc": "Special: primes"}
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Edge: example1 -> 7"
+    },
+    {
+      "input": "[10,100]",
+      "desc": "Edge: example2 -> 0 (no strong pair)"
+    },
+    {
+      "input": "[5,6,25,30]",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1 single (pair with itself)"
+    },
+    {
+      "input": "[100]",
+      "desc": "Edge: max single"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: 2 ones"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: 2 distinct small"
+    },
+    {
+      "input": "[100,100]",
+      "desc": "Edge: 2 max same"
+    },
+    {
+      "input": "[1,100]",
+      "desc": "Edge: extremes no strong pair"
+    },
+    {
+      "input": "[50,50,50,50]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: 1..10"
+    },
+    {
+      "input": "[10,20,30,40,50]",
+      "desc": "Standard: multiples of 10"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64]",
+      "desc": "Standard: powers of 2"
+    },
+    {
+      "input": "[99,98,97,96,95]",
+      "desc": "Standard: high values close"
+    },
+    {
+      "input": "[1,2,3,5,8,13,21,34,55,89]",
+      "desc": "Standard: fibonacci"
+    },
+    {
+      "input": "[50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]",
+      "desc": "Stress: 50 close values"
+    },
+    {
+      "input": "[26,39,87,5,59,75,63,41,14,91,94,20,18,18,26,40,30,47,59,38,90,74]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[73,85,76,47,54,72,40,65,94,57,13,30,17,40,26,74,92,17,46,29,94,43,28,40,15,57,3,24,6,43,50,32,77,38,95,66,41,43,96,70,46,51,16,39,42,41,84,21,64,83]",
+      "desc": "Regenerated: stress at position 17"
+    },
+    {
+      "input": "[2,4,8,16,32,64]",
+      "desc": "Special: each is double prev"
+    },
+    {
+      "input": "[3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]",
+      "desc": "Special: primes"
+    }
   ]
 }
