@@ -1,0 +1,88 @@
+{
+  "pid": 1210,
+  "slug": "masking-personal-information",
+  "inferred_constraints": "0 <= s.length <= 20",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"9\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"9Z\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"ebecb\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"67SS76\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"XmW9bjY8\"",
+      "desc": "Standard: len=8"
+    },
+    {
+      "input": "\"1tg89CliBq\"",
+      "desc": "Standard: len=10"
+    },
+    {
+      "input": "\"bFF6eefmVgcac\"",
+      "desc": "Standard: len=13"
+    },
+    {
+      "input": "\"JOF7hYADXCIZlVou\"",
+      "desc": "Standard: len=16"
+    },
+    {
+      "input": "\"KT8Www\"",
+      "desc": "Standard: len=6"
+    },
+    {
+      "input": "\"zwdlqr1YU7O\"",
+      "desc": "Standard: len=11"
+    },
+    {
+      "input": "\"2jAhFOksGzspb93Wjkq\"",
+      "desc": "Standard: len=19"
+    },
+    {
+      "input": "\"rM5X9Alg1U\"",
+      "desc": "Standard: len=10"
+    },
+    {
+      "input": "\"Js1nliQAqyOIbZWzG3wP\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"NSdzyxiY5Tz2CZ77DFUP\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"IxFyrdSAdOtSnAl0q4ry\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"ngqOKn7Eh634VaH5eS2D\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}

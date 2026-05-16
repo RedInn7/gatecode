@@ -54,6 +54,11 @@
       "pid": 1223,
       "slug": "count-substrings-with-k-frequency-characters-i",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1215,
+      "slug": "check-if-there-is-a-valid-partition-for-the-array",
+      "reason": "ACM mode problem"
     }
   ]
 }

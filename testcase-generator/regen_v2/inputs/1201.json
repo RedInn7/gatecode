@@ -1,0 +1,88 @@
+{
+  "pid": 1201,
+  "slug": "palindrome-partitioning",
+  "inferred_constraints": "0 <= s.length <= 16",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"g\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"xq\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"dcdbd\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"fhffhf\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"hbvnvcjz\"",
+      "desc": "Standard: len=8"
+    },
+    {
+      "input": "\"wdfxhqrlqjwdp\"",
+      "desc": "Standard: len=13"
+    },
+    {
+      "input": "\"twsxcmvnnckgtgj\"",
+      "desc": "Standard: len=15"
+    },
+    {
+      "input": "\"lqgykxnwpgjs\"",
+      "desc": "Standard: len=12"
+    },
+    {
+      "input": "\"wbpdjmrvf\"",
+      "desc": "Standard: len=9"
+    },
+    {
+      "input": "\"tutqxpuuefz\"",
+      "desc": "Standard: len=11"
+    },
+    {
+      "input": "\"ecrcepvxdoex\"",
+      "desc": "Standard: len=12"
+    },
+    {
+      "input": "\"ofggcbknhqlyn\"",
+      "desc": "Standard: len=13"
+    },
+    {
+      "input": "\"tcdqjhirwqmgcwqk\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"anoghusjnfqfkeut\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"pllvczxgkimkmsuu\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"zraaqaazrygvmbsm\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}
