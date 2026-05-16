@@ -81,7 +81,7 @@
       "desc": "Special: all triples"
     },
     {
-      "input": "[4029,3990,6313]",
+      "input": "[-7317,-9214,-5441]",
       "desc": "Stress: large n near max boundary"
     }
   ]
