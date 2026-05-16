@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= text.length <= 1e4, lowercase",
   "input_format": "line1: text (string in JSON quotes)",
   "testcases": [
-    {"input": "\"nlaebolko\"", "desc": "Edge: example1 -> 1"},
-    {"input": "\"loonbalxballpoon\"", "desc": "Edge: example2 -> 2"},
-    {"input": "\"leetcode\"", "desc": "Edge: example3 -> 0"},
-    {"input": "\"a\"", "desc": "Edge: n=1 single 'a'"},
-    {"input": "\"z\"", "desc": "Edge: n=1 single 'z' no match"},
-    {"input": "\"balloon\"", "desc": "Edge: exactly one balloon"},
-    {"input": "\"balon\"", "desc": "Edge: missing extra l and o -> 0"},
-    {"input": "\"ballon\"", "desc": "Edge: missing one o -> 0"},
-    {"input": "\"balloo\"", "desc": "Edge: missing n -> 0"},
-    {"input": "\"balloonballoon\"", "desc": "Edge: two balloons"},
-    {"input": "\"aaaaaaa\"", "desc": "Edge: only a"},
-    {"input": "\"bbbbbbb\"", "desc": "Edge: only b"},
-    {"input": "\"zzzzzzzzzz\"", "desc": "Edge: only z, none match"},
-    {"input": "\"balloonballoonballoon\"", "desc": "Standard: 3 balloons"},
-    {"input": "\"baalloonn\"", "desc": "Standard: extra l's and o's"},
-    {"input": "\"bbaalllllllllllllloooooooooooonnnn\"", "desc": "Standard: lots of extras 4 b's, 2 a's, 15 l's, 12 o's, 4 n's -> min(2, 1, 7, 6, 4) wait formula min(b, a, l/2, o/2, n)"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: full alphabet only 1 each"},
-    {"input": "\"bbbbaaaallllllloooooonnnn\"", "desc": "Standard: 4 b, 4 a, 7 l, 6 o, 4 n -> min(4, 4, 3, 3, 4)=3"},
-    {"input": "\"balloonballoonballoonballoonballoonballoonballoonballoonballoonballoon\"", "desc": "Stress: 10 balloons concatenated"},
-    {"input": "\"baallllooonnabllllllooooonnn\"", "desc": "Stress: extra letters"}
+    {
+      "input": "\"nlaebolko\"",
+      "desc": "Edge: example1 -> 1"
+    },
+    {
+      "input": "\"loonbalxballpoon\"",
+      "desc": "Edge: example2 -> 2"
+    },
+    {
+      "input": "\"hayiled\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"fmgvfasbqhcbvg\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"lds\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"balloon\"",
+      "desc": "Edge: exactly one balloon"
+    },
+    {
+      "input": "\"balon\"",
+      "desc": "Edge: missing extra l and o -> 0"
+    },
+    {
+      "input": "\"ballon\"",
+      "desc": "Edge: missing one o -> 0"
+    },
+    {
+      "input": "\"balloo\"",
+      "desc": "Edge: missing n -> 0"
+    },
+    {
+      "input": "\"balloonballoon\"",
+      "desc": "Edge: two balloons"
+    },
+    {
+      "input": "\"aaaaaaa\"",
+      "desc": "Edge: only a"
+    },
+    {
+      "input": "\"bbbbbbb\"",
+      "desc": "Edge: only b"
+    },
+    {
+      "input": "\"zzzzzzzzzz\"",
+      "desc": "Edge: only z, none match"
+    },
+    {
+      "input": "\"balloonballoonballoon\"",
+      "desc": "Standard: 3 balloons"
+    },
+    {
+      "input": "\"baalloonn\"",
+      "desc": "Standard: extra l's and o's"
+    },
+    {
+      "input": "\"bbaalllllllllllllloooooooooooonnnn\"",
+      "desc": "Standard: lots of extras 4 b's, 2 a's, 15 l's, 12 o's, 4 n's -> min(2, 1, 7, 6, 4) wait formula min(b, a, l/2, o/2, n)"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard: full alphabet only 1 each"
+    },
+    {
+      "input": "\"bbbbaaaallllllloooooonnnn\"",
+      "desc": "Standard: 4 b, 4 a, 7 l, 6 o, 4 n -> min(4, 4, 3, 3, 4)=3"
+    },
+    {
+      "input": "\"balloonballoonballoonballoonballoonballoonballoonballoonballoonballoon\"",
+      "desc": "Stress: 10 balloons concatenated"
+    },
+    {
+      "input": "\"iucczpdfuihftkivcslalhtwthyoxwcf\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

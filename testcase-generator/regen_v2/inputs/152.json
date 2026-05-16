@@ -13,12 +13,12 @@
       "desc": "Edge: example2"
     },
     {
-      "input": "[[2,2],[2,2]]",
-      "desc": "Edge: n=2 all unknown"
+      "input": "[[479,-72,759],[457,-382,4],[564,307,688]]",
+      "desc": "Edge: monotone increasing sequence"
     },
     {
-      "input": "[[2,1],[1,2]]",
-      "desc": "Edge: n=2 both claim good"
+      "input": "[[-770,127,-835],[959,-570,449],[340,-191,836]]",
+      "desc": "Edge: monotone decreasing sequence"
     },
     {
       "input": "[[2,0],[1,2]]",
