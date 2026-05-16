@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 10^5, 1 <= m <= 10^5, sum(paths[i].length) <= 10^5, 0 <= paths[i][j] < n",
   "input_format": "line1: n (int); line2: paths (JSON 2D)",
   "testcases": [
-    {"input": "5\n[[0,1,2,3,4],[2,3,4],[4,0,1,2,3]]", "desc": "Standard: example 1"},
-    {"input": "3\n[[0],[1],[2]]", "desc": "Standard: example 2 distinct"},
-    {"input": "5\n[[0,1,2,3,4],[4,3,2,1,0]]", "desc": "Standard: example 3"},
-    {"input": "2\n[[0,1]]", "desc": "Edge: single path"},
-    {"input": "2\n[[0],[0]]", "desc": "Edge: same single city"},
-    {"input": "3\n[[0,1,2],[0,1,2]]", "desc": "Edge: identical paths"},
-    {"input": "3\n[[0,1,2],[1,2,0]]", "desc": "Standard: rotation"},
-    {"input": "5\n[[0,1,2,3,4],[1,2,3],[2,3]]", "desc": "Standard: nested"},
-    {"input": "10\n[[0,1,2,3,4,5,6,7,8,9],[5,6,7,8,9,0,1,2,3,4],[1,2,3,4,5,6,7,8,9,0]]", "desc": "Standard: rotations"},
-    {"input": "4\n[[0,1,2,3],[0,1,2,3],[0,1,2,3]]", "desc": "Standard: all same"},
-    {"input": "5\n[[0,1,2,1,3],[1,2,1,4],[2,1]]", "desc": "Standard: shared pattern"},
-    {"input": "6\n[[0,1,2,3,4,5],[5,4,3,2,1,0]]", "desc": "Standard: reverse"},
-    {"input": "3\n[[0,1,2,0,1,2,0,1,2],[1,2,0,1,2,0,1,2,0]]", "desc": "Standard: shifted same"},
-    {"input": "4\n[[0,1,0,1],[1,0,1,0]]", "desc": "Standard: alternating"},
-    {"input": "5\n[[0,1,2],[2,1,0],[1,2]]", "desc": "Standard: partial overlap"},
-    {"input": "7\n[[0,1,2,3,4,5,6],[6,5,4,3,2,1,0]]", "desc": "Standard: reverse n=7"},
-    {"input": "8\n[[0,1,2,3,4,5,6,7],[2,3,4,5,6,7,0,1],[4,5,6,7,0,1,2,3]]", "desc": "Standard: rotations"},
-    {"input": "5\n[[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4]]", "desc": "Standard: 5 identical"},
-    {"input": "10\n[[1,2,3,4,5],[6,7,8,9,0]]", "desc": "Standard: distinct paths"},
-    {"input": "5\n[[0,1,2,3,4,0,1,2,3,4]]", "desc": "Edge: single path with repeats"}
+    {
+      "input": "5\n[[0,1,2,3,4],[2,3,4],[4,0,1,2,3]]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "3\n[[0],[1],[2]]",
+      "desc": "Standard: example 2 distinct"
+    },
+    {
+      "input": "5\n[[0,1,2,3,4],[4,3,2,1,0]]",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "2\n[[0,1]]",
+      "desc": "Edge: single path"
+    },
+    {
+      "input": "2\n[[0],[0]]",
+      "desc": "Edge: same single city"
+    },
+    {
+      "input": "3\n[[0,1,2],[0,1,2]]",
+      "desc": "Edge: identical paths"
+    },
+    {
+      "input": "3\n[[0,1,2],[1,2,0]]",
+      "desc": "Standard: rotation"
+    },
+    {
+      "input": "5\n[[0,1,2,3,4],[1,2,3],[2,3]]",
+      "desc": "Standard: nested"
+    },
+    {
+      "input": "10\n[[0,1,2,3,4,5,6,7,8,9],[5,6,7,8,9,0,1,2,3,4],[1,2,3,4,5,6,7,8,9,0]]",
+      "desc": "Standard: rotations"
+    },
+    {
+      "input": "4\n[[0,1,2,3],[0,1,2,3],[0,1,2,3]]",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "5\n[[0,1,2,1,3],[1,2,1,4],[2,1]]",
+      "desc": "Standard: shared pattern"
+    },
+    {
+      "input": "6\n[[0,1,2,3,4,5],[5,4,3,2,1,0]]",
+      "desc": "Standard: reverse"
+    },
+    {
+      "input": "3\n[[0,1,2,0,1,2,0,1,2],[1,2,0,1,2,0,1,2,0]]",
+      "desc": "Standard: shifted same"
+    },
+    {
+      "input": "4\n[[0,1,0,1],[1,0,1,0]]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "5\n[[0,1,2],[2,1,0],[1,2]]",
+      "desc": "Standard: partial overlap"
+    },
+    {
+      "input": "7\n[[0,1,2,3,4,5,6],[6,5,4,3,2,1,0]]",
+      "desc": "Standard: reverse n=7"
+    },
+    {
+      "input": "8\n[[0,1,2,3,4,5,6,7],[2,3,4,5,6,7,0,1],[4,5,6,7,0,1,2,3]]",
+      "desc": "Standard: rotations"
+    },
+    {
+      "input": "5\n[[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4]]",
+      "desc": "Standard: 5 identical"
+    },
+    {
+      "input": "10\n[[1,2,3,4,5],[6,7,8,9,0]]",
+      "desc": "Standard: distinct paths"
+    },
+    {
+      "input": "5\n[[-202,407,-294,54,997,-233,-466,-236,239,395],[-4,151,720,-735,-233,606,95,483,708,-603],[-513,26,-42,423,-870,-330,98,-936,-115,361],[-596,972,-327,-704,-40,110,711,-130,-768,23],[-358,418,280,-372,905,235,751,643,-436,362],[760,-714,982,561,681,-555,228,-76,283,794]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

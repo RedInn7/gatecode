@@ -4,25 +4,85 @@
   "inferred_constraints": "3 <= s.length <= 2000, lowercase English",
   "input_format": "single line: s (JSON string)",
   "testcases": [
-    {"input": "\"abcbdd\"", "desc": "Standard: example 1 true"},
-    {"input": "\"bcbddxy\"", "desc": "Standard: example 2 false"},
-    {"input": "\"aaa\"", "desc": "Edge: minimum n=3"},
-    {"input": "\"abc\"", "desc": "Edge: 3 distinct, true (each char)"},
-    {"input": "\"aab\"", "desc": "Edge: a,a,b"},
-    {"input": "\"abb\"", "desc": "Edge: a,b,b"},
-    {"input": "\"aba\"", "desc": "Edge: a,b,a (each palindrome)"},
-    {"input": "\"aaaa\"", "desc": "Edge: 4 a's"},
-    {"input": "\"aaaaa\"", "desc": "Edge: 5 a's"},
-    {"input": "\"abcde\"", "desc": "Standard: all distinct n=5"},
-    {"input": "\"racecar\"", "desc": "Standard: palindrome"},
-    {"input": "\"aabaa\"", "desc": "Standard: palindrome n=5"},
-    {"input": "\"abcba\"", "desc": "Standard"},
-    {"input": "\"aabbccdd\"", "desc": "Standard"},
-    {"input": "\"aaabbbccc\"", "desc": "Standard"},
-    {"input": "\"abcdefghi\"", "desc": "Standard: 9 distinct"},
-    {"input": "\"zzzzzzzzzzz\"", "desc": "Edge: all same long"},
-    {"input": "\"abcbabcba\"", "desc": "Standard: complex"},
-    {"input": "\"abacabadaba\"", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: all distinct alphabet"}
+    {
+      "input": "\"abcbdd\"",
+      "desc": "Standard: example 1 true"
+    },
+    {
+      "input": "\"bcbddxy\"",
+      "desc": "Standard: example 2 false"
+    },
+    {
+      "input": "\"aaa\"",
+      "desc": "Edge: minimum n=3"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: 3 distinct, true (each char)"
+    },
+    {
+      "input": "\"aab\"",
+      "desc": "Edge: a,a,b"
+    },
+    {
+      "input": "\"abb\"",
+      "desc": "Edge: a,b,b"
+    },
+    {
+      "input": "\"aba\"",
+      "desc": "Edge: a,b,a (each palindrome)"
+    },
+    {
+      "input": "\"aaaa\"",
+      "desc": "Edge: 4 a's"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: 5 a's"
+    },
+    {
+      "input": "\"abcde\"",
+      "desc": "Standard: all distinct n=5"
+    },
+    {
+      "input": "\"racecar\"",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "\"aabaa\"",
+      "desc": "Standard: palindrome n=5"
+    },
+    {
+      "input": "\"abcba\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aabbccdd\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aaabbbccc\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdefghi\"",
+      "desc": "Standard: 9 distinct"
+    },
+    {
+      "input": "\"zzzzzzzzzzz\"",
+      "desc": "Edge: all same long"
+    },
+    {
+      "input": "\"abcbabcba\"",
+      "desc": "Standard: complex"
+    },
+    {
+      "input": "\"abacabadaba\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"oaymonsorgljau\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

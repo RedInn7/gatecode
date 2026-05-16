@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= phrases.length <= 100, 1 <= phrases[i].length <= 100",
   "input_format": "single line: phrases (JSON array)",
   "testcases": [
-    {"input": "[\"writing code\",\"code rocks\"]", "desc": "Standard: example 1"},
-    {"input": "[\"mission statement\",\"a quick bite to eat\",\"a chip off the old block\",\"chocolate bar\",\"mission impossible\",\"a man on a mission\",\"block party\",\"eat my words\",\"bar of soap\"]", "desc": "Standard: example 2"},
-    {"input": "[\"a\",\"b\",\"a\"]", "desc": "Standard: example 3 dups"},
-    {"input": "[\"a\"]", "desc": "Edge: single phrase no puzzle"},
-    {"input": "[\"hello\",\"world\"]", "desc": "Edge: no overlap"},
-    {"input": "[\"hello world\",\"world peace\"]", "desc": "Standard: simple match"},
-    {"input": "[\"a b\",\"b c\"]", "desc": "Edge: simple"},
-    {"input": "[\"a b\",\"b a\"]", "desc": "Standard: bidirectional"},
-    {"input": "[\"x\",\"y\",\"z\"]", "desc": "Edge: 3 singles no overlap"},
-    {"input": "[\"x\",\"x\"]", "desc": "Edge: same word"},
-    {"input": "[\"a b c\",\"c d e\",\"e f g\"]", "desc": "Standard: chain"},
-    {"input": "[\"red car\",\"car wash\",\"wash machine\"]", "desc": "Standard"},
-    {"input": "[\"the quick fox\",\"fox jumps\",\"jumps over\"]", "desc": "Standard"},
-    {"input": "[\"sun shines\",\"shines bright\",\"bright stars\"]", "desc": "Standard"},
-    {"input": "[\"a b\",\"c d\",\"e f\"]", "desc": "Edge: no overlaps"},
-    {"input": "[\"a b\",\"b a\",\"a b\"]", "desc": "Standard: duplicates"},
-    {"input": "[\"happy days\",\"days off\",\"off the grid\"]", "desc": "Standard"},
-    {"input": "[\"good night\",\"night sky\",\"sky high\"]", "desc": "Standard"},
-    {"input": "[\"one\",\"two\",\"three\",\"four\",\"five\"]", "desc": "Edge: all single-word no overlap"},
-    {"input": "[\"a b c d\",\"d c b a\"]", "desc": "Standard"}
+    {
+      "input": "[\"writing code\",\"code rocks\"]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[\"mission statement\",\"a quick bite to eat\",\"a chip off the old block\",\"chocolate bar\",\"mission impossible\",\"a man on a mission\",\"block party\",\"eat my words\",\"bar of soap\"]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[\"a\",\"b\",\"a\"]",
+      "desc": "Standard: example 3 dups"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: single phrase no puzzle"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "desc": "Edge: no overlap"
+    },
+    {
+      "input": "[\"hello world\",\"world peace\"]",
+      "desc": "Standard: simple match"
+    },
+    {
+      "input": "[\"a b\",\"b c\"]",
+      "desc": "Edge: simple"
+    },
+    {
+      "input": "[\"a b\",\"b a\"]",
+      "desc": "Standard: bidirectional"
+    },
+    {
+      "input": "[\"x\",\"y\",\"z\"]",
+      "desc": "Edge: 3 singles no overlap"
+    },
+    {
+      "input": "[\"x\",\"x\"]",
+      "desc": "Edge: same word"
+    },
+    {
+      "input": "[\"a b c\",\"c d e\",\"e f g\"]",
+      "desc": "Standard: chain"
+    },
+    {
+      "input": "[\"red car\",\"car wash\",\"wash machine\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"the quick fox\",\"fox jumps\",\"jumps over\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"sun shines\",\"shines bright\",\"bright stars\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"a b\",\"c d\",\"e f\"]",
+      "desc": "Edge: no overlaps"
+    },
+    {
+      "input": "[\"a b\",\"b a\",\"a b\"]",
+      "desc": "Standard: duplicates"
+    },
+    {
+      "input": "[\"happy days\",\"days off\",\"off the grid\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"good night\",\"night sky\",\"sky high\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\",\"four\",\"five\"]",
+      "desc": "Edge: all single-word no overlap"
+    },
+    {
+      "input": "[170,-192,621,-912,-999,815,144,-59,-527,74,-376,936,149,-747,-993,-589,562,-63,-98,491,-185,-478,-61,148,557,-528,538,606,471,25,-991,-279,836,-718,-165,879,-899,-143,13,201,230,-331,-166,-963,-416,-75,-195,21,886,-386,-849,175,379,-257,-118,862,234,-905,-380,91,-713,439,-203,382,778,-253,-454,-928,-877,866,201,-941,-575,-671,426,400,-645,945,235,737,517,-685,739,771,821,-829,795,-477,847,374,-431,51,136,178,-344,-96,-665,-538,-912,134]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 20, 1 <= m*n <= 20, exactly one 1, one 2",
   "input_format": "single line: grid (JSON 2D)",
   "testcases": [
-    {"input": "[[1,0,0,0],[0,0,0,0],[0,0,2,-1]]", "desc": "Standard: example 1"},
-    {"input": "[[1,0,0,0],[0,0,0,0],[0,0,0,2]]", "desc": "Standard: example 2"},
-    {"input": "[[0,1],[2,0]]", "desc": "Standard: example 3"},
-    {"input": "[[1,2]]", "desc": "Edge: 1x2 adjacent"},
-    {"input": "[[1],[2]]", "desc": "Edge: 2x1 adjacent"},
-    {"input": "[[1,0,2]]", "desc": "Edge: 1x3"},
-    {"input": "[[2,0,1]]", "desc": "Edge: 1x3 reversed"},
-    {"input": "[[1,2,0]]", "desc": "Edge: must visit 0 - impossible"},
-    {"input": "[[1,-1,2]]", "desc": "Edge: blocked"},
-    {"input": "[[1,0,0],[0,0,0],[0,0,2]]", "desc": "Standard: 3x3 open"},
-    {"input": "[[1,0,0,0],[0,-1,-1,0],[0,0,0,2]]", "desc": "Standard: obstacles"},
-    {"input": "[[1,0],[0,2]]", "desc": "Edge: 2x2"},
-    {"input": "[[1,0,0,0,0,2]]", "desc": "Edge: 1x6 straight"},
-    {"input": "[[1,0],[0,0],[0,0],[0,2]]", "desc": "Standard: 4x2"},
-    {"input": "[[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,2]]", "desc": "Standard: 4x4"},
-    {"input": "[[1,-1,0],[0,0,0],[-1,0,2]]", "desc": "Standard: obstacle pattern"},
-    {"input": "[[1,0,0],[-1,-1,0],[0,0,2]]", "desc": "Standard"},
-    {"input": "[[1,0,0,0,0],[-1,-1,-1,-1,0],[0,0,0,0,0],[0,-1,-1,-1,-1],[0,0,0,0,2]]", "desc": "Standard: zigzag"},
-    {"input": "[[1,0,0,0],[0,-1,0,0],[0,0,2,0]]", "desc": "Standard"},
-    {"input": "[[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2]]", "desc": "Edge: 1x20 long"}
+    {
+      "input": "[[1,0,0,0],[0,0,0,0],[0,0,2,-1]]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[[1,0,0,0],[0,0,0,0],[0,0,0,2]]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[[0,1],[2,0]]",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "[[1,2]]",
+      "desc": "Edge: 1x2 adjacent"
+    },
+    {
+      "input": "[[1],[2]]",
+      "desc": "Edge: 2x1 adjacent"
+    },
+    {
+      "input": "[[1,0,2]]",
+      "desc": "Edge: 1x3"
+    },
+    {
+      "input": "[[2,0,1]]",
+      "desc": "Edge: 1x3 reversed"
+    },
+    {
+      "input": "[[1,2,0]]",
+      "desc": "Edge: must visit 0 - impossible"
+    },
+    {
+      "input": "[[1,-1,2]]",
+      "desc": "Edge: blocked"
+    },
+    {
+      "input": "[[1,0,0],[0,0,0],[0,0,2]]",
+      "desc": "Standard: 3x3 open"
+    },
+    {
+      "input": "[[1,0,0,0],[0,-1,-1,0],[0,0,0,2]]",
+      "desc": "Standard: obstacles"
+    },
+    {
+      "input": "[[1,0],[0,2]]",
+      "desc": "Edge: 2x2"
+    },
+    {
+      "input": "[[1,0,0,0,0,2]]",
+      "desc": "Edge: 1x6 straight"
+    },
+    {
+      "input": "[[1,0],[0,0],[0,0],[0,2]]",
+      "desc": "Standard: 4x2"
+    },
+    {
+      "input": "[[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,2]]",
+      "desc": "Standard: 4x4"
+    },
+    {
+      "input": "[[1,-1,0],[0,0,0],[-1,0,2]]",
+      "desc": "Standard: obstacle pattern"
+    },
+    {
+      "input": "[[1,0,0],[-1,-1,0],[0,0,2]]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[[1,0,0,0,0],[-1,-1,-1,-1,0],[0,0,0,0,0],[0,-1,-1,-1,-1],[0,0,0,0,2]]",
+      "desc": "Standard: zigzag"
+    },
+    {
+      "input": "[[1,0,0,0],[0,-1,0,0],[0,0,2,0]]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[[216,-844,540,551,-766,979,170,288],[-644,195,-428,-202,234,273,-478,802],[-211,-352,126,-137,701,-558,741,45],[-708,-964,119,-500,353,196,-102,-639],[835,-496,-161,858,-209,979,-930,739],[-383,128,476,-812,-700,237,459,-543]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

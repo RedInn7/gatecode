@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= s.length <= 1000, lowercase English",
   "input_format": "single line: s (JSON string)",
   "testcases": [
-    {"input": "\"abca\"", "desc": "Standard: example 1"},
-    {"input": "\"abba\"", "desc": "Standard: example 2"},
-    {"input": "\"zzabba\"", "desc": "Standard: example 3"},
-    {"input": "\"ab\"", "desc": "Edge: n=2"},
-    {"input": "\"aa\"", "desc": "Edge: n=2 same (still almost-palindrome)"},
-    {"input": "\"abc\"", "desc": "Edge: n=3"},
-    {"input": "\"abcd\"", "desc": "Standard: 4 distinct"},
-    {"input": "\"aaaa\"", "desc": "Edge: all same"},
-    {"input": "\"racecar\"", "desc": "Standard: full palindrome"},
-    {"input": "\"abacaba\"", "desc": "Standard: palindrome"},
-    {"input": "\"abcdefg\"", "desc": "Standard: no almost-palindrome longer than 2"},
-    {"input": "\"abcabc\"", "desc": "Standard"},
-    {"input": "\"abccba\"", "desc": "Standard: palindrome"},
-    {"input": "\"abcdcba\"", "desc": "Standard: palindrome odd"},
-    {"input": "\"hello\"", "desc": "Standard"},
-    {"input": "\"world\"", "desc": "Standard"},
-    {"input": "\"abcdedcba\"", "desc": "Standard: long palindrome"},
-    {"input": "\"banana\"", "desc": "Standard"},
-    {"input": "\"ababababab\"", "desc": "Standard: alternating"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: 26 distinct"}
+    {
+      "input": "\"o\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "\"abba\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"zzabba\"",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: n=2 same (still almost-palindrome)"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: n=3"
+    },
+    {
+      "input": "\"abcd\"",
+      "desc": "Standard: 4 distinct"
+    },
+    {
+      "input": "\"aaaa\"",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "\"racecar\"",
+      "desc": "Standard: full palindrome"
+    },
+    {
+      "input": "\"abacaba\"",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "\"abcdefg\"",
+      "desc": "Standard: no almost-palindrome longer than 2"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abccba\"",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "\"abcdcba\"",
+      "desc": "Standard: palindrome odd"
+    },
+    {
+      "input": "\"hello\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"world\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdedcba\"",
+      "desc": "Standard: long palindrome"
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"ababababab\"",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "\"xcsnqnzsrfkg\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
