@@ -3,162 +3,246 @@
     "pid": 1033,
     "slug": "spiral-matrix-iii",
     "fqid": 885,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp4x5c82xl.py\", line 290, in <module>\n    _result = Solution().spiralMatrixIII(*_args)\n              ^^^^^^"
-  },
-  {
-    "pid": 1028,
-    "slug": "minimum-cost-to-make-arrays-identical",
-    "fqid": 3424,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpfncxw0s2.py\", line 279, in <module>\n    _result = Solution().minCost(*_args)\n              ^^^^^^^^^^^^^^"
-  },
-  {
-    "pid": 1035,
-    "slug": "compare-version-numbers",
-    "fqid": 165,
-    "error": "Testcase 1 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpcr51m7ti.py\", line 288, in <module>\n    _result = Solution().compareVersion(*_args)\n              ^^^^^^^"
-  },
-  {
-    "pid": 1044,
-    "slug": "sequential-digits",
-    "fqid": 1291,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpw1birydb.py\", line 282, in <module>\n    _result = Solution().sequentialDigits(*_args)\n              ^^^^^"
-  },
-  {
-    "pid": 1056,
-    "slug": "freedom-trail",
-    "fqid": 514,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp5ioo88y2.py\", line 288, in <module>\n    _result = Solution().findRotateSteps(*_args)\n              ^^^^^^"
-  },
-  {
-    "pid": 1052,
-    "slug": "crawler-log-folder",
-    "fqid": 1598,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpcp_bkq2y.py\", line 281, in <module>\n    _result = Solution().minOperations(*_args)\n              ^^^^^^^^"
-  },
-  {
-    "pid": 1064,
-    "slug": "count-elements-with-strictly-smaller-and-greater-elements",
-    "fqid": 2148,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmppyt6ng84.py\", line 276, in <module>\n    _result = Solution().countElements(*_args)\n              ^^^^^^^^"
-  },
-  {
-    "pid": 1054,
-    "slug": "filling-bookcase-shelves",
-    "fqid": 1105,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpljey33t7.py\", line 285, in <module>\n    _result = Solution().minHeightShelves(*_args)\n              ^^^^^"
-  },
-  {
-    "pid": 1055,
-    "slug": "find-the-closest-palindrome",
-    "fqid": 564,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpjit8a2dk.py\", line 295, in <module>\n    _result = Solution().nearestPalindromic(*_args)\n              ^^^"
-  },
-  {
-    "pid": 1072,
-    "slug": "semi-ordered-permutation",
-    "fqid": 2717,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpw6me3ij6.py\", line 279, in <module>\n    _result = Solution().semiOrderedPermutation(*_args)\n             "
-  },
-  {
-    "pid": 1085,
-    "slug": "longest-subarray-of-1s-after-deleting-one-element",
-    "fqid": 1493,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpnfmkz4ze.py\", line 284, in <module>\n    _result = Solution().longestSubarray(*_args)\n              ^^^^^^"
-  },
-  {
-    "pid": 1070,
-    "slug": "categorize-box-according-to-criteria",
-    "fqid": 2525,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp0i6ayugh.py\", line 280, in <module>\n    _result = Solution().categorizeBox(*_args)\n              ^^^^^^^^"
-  },
-  {
-    "pid": 1083,
-    "slug": "maximum-value-of-a-string-in-an-array",
-    "fqid": 2496,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpu2cguwsq.py\", line 278, in <module>\n    _result = Solution().maximumValue(*_args)\n              ^^^^^^^^^"
-  },
-  {
-    "pid": 1082,
-    "slug": "minimum-genetic-mutation",
-    "fqid": 433,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp7d2jrd9e.py\", line 286, in <module>\n    _result = Solution().minMutation(*_args)\n              ^^^^^^^^^^"
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpjbk3legg.py\", line 290, in <module>\n    _result = Solution().spiralMatrixIII(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.spiralMatrixIII() missing 3 required positional arguments: 'cols', 'rStart', and 'cStart'\n"
   },
   {
     "pid": 1065,
     "slug": "divide-a-string-into-groups-of-size-k",
     "fqid": 2138,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpfnn7e10k.py\", line 275, in <module>\n    _result = Solution().divideString(*_args)\n              ^^^^^^^^^"
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp6cuapmtm.py\", line 275, in <module>\n    _result = Solution().divideString(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.divideString() missing 2 required positional arguments: 'k' and 'fill'\n"
   },
   {
-    "pid": 1067,
-    "slug": "strings-differ-by-one-character",
-    "fqid": 1554,
-    "error": "Testcase 1 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpf99z_2u4.py\", line 282, in <module>\n    _result = Solution().differByOne(*_args)\n              ^^^^^^^^^^"
+    "pid": 1044,
+    "slug": "sequential-digits",
+    "fqid": 1291,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpj9vvysd1.py\", line 282, in <module>\n    _result = Solution().sequentialDigits(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.sequentialDigits() missing 1 required positional argument: 'high'\n"
   },
   {
-    "pid": 1088,
-    "slug": "first-bad-version",
-    "fqid": 278,
-    "error": "Testcase 2 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpgfdibnmo.py\", line 286, in <module>\n    _result = Solution().firstBadVersion(*_args)\n              ^^^^^^"
+    "pid": 1054,
+    "slug": "filling-bookcase-shelves",
+    "fqid": 1105,
+    "error": "Testcase 0 failed: RE (exit 1): ne 285, in <module>\n    _result = Solution().minHeightShelves(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpd_0xcadx.py\", line 144, in minHeightShelves\n    for i, (w, h) in enumerate(books, 1):\n           ^^^^^^\nValueError: not enough values to unpack (expected 2, got 0)\n"
   },
   {
-    "pid": 1062,
-    "slug": "check-if-it-is-possible-to-split-array",
-    "fqid": 2811,
-    "error": "Testcase 17 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp59g6j439.py\", line 149, in dfs\n    if a and b and dfs(i, k) and dfs(k + 1, j):\n                          "
+    "pid": 1064,
+    "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+    "fqid": 2148,
+    "error": "Testcase 0 failed: RE (exit 1): e \"/tmp/tmpcy_yp0wa.py\", line 276, in <module>\n    _result = Solution().countElements(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpcy_yp0wa.py\", line 142, in countElements\n    mi, mx = min(nums), max(nums)\n             ^^^^^^^^^\nValueError: min() iterable argument is empty\n"
   },
   {
-    "pid": 1098,
-    "slug": "complex-number-multiplication",
-    "fqid": 537,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpapsgnmot.py\", line 277, in <module>\n    _result = Solution().complexNumberMultiply(*_args)\n              "
+    "pid": 1035,
+    "slug": "compare-version-numbers",
+    "fqid": 165,
+    "error": "Testcase 1 failed: RE (exit 1): line 288, in <module>\n    _result = Solution().compareVersion(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp0xa15n3e.py\", line 147, in compareVersion\n    a = a * 10 + int(version1[i])\n                 ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'g'\n"
   },
   {
-    "pid": 1096,
-    "slug": "maximum-students-on-a-single-bench",
-    "fqid": 3450,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp2w_cdsi0.py\", line 280, in <module>\n    _result = Solution().maxStudentsOnBench(*_args)\n              ^^^"
+    "pid": 1028,
+    "slug": "minimum-cost-to-make-arrays-identical",
+    "fqid": 3424,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmptbtz7zid.py\", line 279, in <module>\n    _result = Solution().minCost(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.minCost() missing 1 required positional argument: 'k'\n"
+  },
+  {
+    "pid": 1056,
+    "slug": "freedom-trail",
+    "fqid": 514,
+    "error": "Testcase 0 failed: RE (exit 1): ):\n  File \"/tmp/tmpuzwgjqtu.py\", line 288, in <module>\n    _result = Solution().findRotateSteps(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpuzwgjqtu.py\", line 147, in findRotateSteps\n    for j in pos[key[0]]:\n                 ~~~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1052,
+    "slug": "crawler-log-folder",
+    "fqid": 1598,
+    "error": "Testcase 0 failed: RE (exit 1): (most recent call last):\n  File \"/tmp/tmpl9dqxkzf.py\", line 281, in <module>\n    _result = Solution().minOperations(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpl9dqxkzf.py\", line 146, in minOperations\n    elif v[0] != \".\":\n         ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1055,
+    "slug": "find-the-closest-palindrome",
+    "fqid": 564,
+    "error": "Testcase 0 failed: RE (exit 1): ile \"/tmp/tmpnc26ye7v.py\", line 295, in <module>\n    _result = Solution().nearestPalindromic(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpnc26ye7v.py\", line 142, in nearestPalindromic\n    x = int(n)\n        ^^^^^^\nValueError: invalid literal for int() with base 10: ''\n"
+  },
+  {
+    "pid": 1083,
+    "slug": "maximum-value-of-a-string-in-an-array",
+    "fqid": 2496,
+    "error": "Testcase 0 failed: RE (exit 1): py\", line 145, in <genexpr>\n    return max(f(s) for s in strs)\n               ^^^^\n  File \"/tmp/tmp5c3np7c4.py\", line 143, in f\n    return int(s) if all(c.isdigit() for c in s) else len(s)\n           ^^^^^^\nTypeError: int() argument must be a string, a bytes-like object or a real number, not 'list'\n"
+  },
+  {
+    "pid": 1070,
+    "slug": "categorize-box-according-to-criteria",
+    "fqid": 2525,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpbj8tmf12.py\", line 280, in <module>\n    _result = Solution().categorizeBox(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.categorizeBox() missing 3 required positional arguments: 'width', 'height', and 'mass'\n"
   },
   {
     "pid": 1093,
     "slug": "fixed-point",
     "fqid": 1064,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpjx5ohszk.py\", line 282, in <module>\n    _result = Solution().fixedPoint(*_args)\n              ^^^^^^^^^^^"
+    "error": "Testcase 0 failed: RE (exit 1): le \"/tmp/tmpj1f338hu.py\", line 282, in <module>\n    _result = Solution().fixedPoint(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpj1f338hu.py\", line 149, in fixedPoint\n    return left if arr[left] == left else -1\n                   ~~~^^^^^^\nIndexError: list index out of range\n"
   },
   {
-    "pid": 1099,
-    "slug": "strange-printer",
-    "fqid": 664,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpsm308czg.py\", line 285, in <module>\n    _result = Solution().strangePrinter(*_args)\n              ^^^^^^^"
+    "pid": 1082,
+    "slug": "minimum-genetic-mutation",
+    "fqid": 433,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpp1uydsgl.py\", line 286, in <module>\n    _result = Solution().minMutation(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.minMutation() missing 1 required positional argument: 'bank'\n"
+  },
+  {
+    "pid": 1096,
+    "slug": "maximum-students-on-a-single-bench",
+    "fqid": 3450,
+    "error": "Testcase 0 failed: RE (exit 1): e>\n    _result = Solution().maxStudentsOnBench(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpihpml8ew.py\", line 145, in maxStudentsOnBench\n    for student_id, bench_id in students:\n        ^^^^^^^^^^^^^^^^^^^^\nValueError: not enough values to unpack (expected 2, got 0)\n"
+  },
+  {
+    "pid": 1072,
+    "slug": "semi-ordered-permutation",
+    "fqid": 2717,
+    "error": "Testcase 0 failed: RE (exit 1): ile \"/tmp/tmp1343rcfh.py\", line 279, in <module>\n    _result = Solution().semiOrderedPermutation(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp1343rcfh.py\", line 143, in semiOrderedPermutation\n    i = nums.index(1)\n        ^^^^^^^^^^^^^\nValueError: 1 is not in list\n"
+  },
+  {
+    "pid": 1085,
+    "slug": "longest-subarray-of-1s-after-deleting-one-element",
+    "fqid": 1493,
+    "error": "Testcase 0 failed: RE (exit 1): lution().longestSubarray(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpshu2cvtx.py\", line 151, in longestSubarray\n    return max(left[i] + right[i + 1] for i in range(n))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: max() iterable argument is empty\n"
+  },
+  {
+    "pid": 1067,
+    "slug": "strings-differ-by-one-character",
+    "fqid": 1554,
+    "error": "Testcase 1 failed: RE (exit 1): 841ceer6.py\", line 282, in <module>\n    _result = Solution().differByOne(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp841ceer6.py\", line 145, in differByOne\n    t = word[:i] + \"*\" + word[i + 1 :]\n        ~~~~~~~~~^~~~~\nTypeError: can only concatenate list (not \"str\") to list\n"
   },
   {
     "pid": 1097,
     "slug": "maximum-frequency-stack",
     "fqid": 895,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp_1xzsb40.py\", line 168, in <module>\n    _vals = _json.loads(_lines[1])\n                        ~~~~~~^^^\n"
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp9draiwv6.py\", line 168, in <module>\n    _vals = _json.loads(_lines[1])\n                        ~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1088,
+    "slug": "first-bad-version",
+    "fqid": 278,
+    "error": "Testcase 2 failed: RE (exit 1): adVersion' is not defined\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/tmp/tmpuf2a12a9.py\", line 288, in <module>\n    _result = firstBadVersion(*_args)\n              ^^^^^^^^^^^^^^^\nNameError: name 'firstBadVersion' is not defined\n"
+  },
+  {
+    "pid": 1062,
+    "slug": "check-if-it-is-possible-to-split-array",
+    "fqid": 2811,
+    "error": "Testcase 17 failed: RE (exit 1):                        ^^^^^^^^^^^^^\n  File \"/tmp/tmpwfmkulgt.py\", line 149, in dfs\n    if a and b and dfs(i, k) and dfs(k + 1, j):\n                                 ^^^^^^^^^^^^^\n  [Previous line repeated 997 more times]\nRecursionError: maximum recursion depth exceeded while calling a Python object\n"
   },
   {
     "pid": 1102,
     "slug": "minimum-difference-in-sums-after-removal-of-elements",
     "fqid": 2163,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp0omgu7kq.py\", line 299, in <module>\n    _result = Solution().minimumDifference(*_args)\n              ^^^^"
+    "error": "Testcase 0 failed: RE (exit 1): i] - suf[i + 1] for i in range(n, n * 2 + 1))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpyid_4bop.py\", line 166, in <genexpr>\n    return min(pre[i] - suf[i + 1] for i in range(n, n * 2 + 1))\n                        ~~~^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1166,
+    "slug": "depth-of-bst-given-insertion-order",
+    "fqid": 1902,
+    "error": "Testcase 0 failed: RE (exit 1): y\", line 283, in <module>\n    _result = Solution().maxDepthBST(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmplpt66kvs.py\", line 142, in maxDepthBST\n    sd = SortedDict({0: 0, inf: 0, order[0]: 1})\n                                   ~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1099,
+    "slug": "strange-printer",
+    "fqid": 664,
+    "error": "Testcase 0 failed: RE (exit 1): st recent call last):\n  File \"/tmp/tmppq9621tp.py\", line 285, in <module>\n    _result = Solution().strangePrinter(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmppq9621tp.py\", line 152, in strangePrinter\n    return f[0][-1]\n           ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1098,
+    "slug": "complex-number-multiplication",
+    "fqid": 537,
+    "error": "Testcase 0 failed: RE (exit 1): 7, in <module>\n    _result = Solution().complexNumberMultiply(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpd_xa36he.py\", line 142, in complexNumberMultiply\n    a1, b1 = map(int, num1[:-1].split(\"+\"))\n    ^^^^^^\nValueError: invalid literal for int() with base 10: ''\n"
+  },
+  {
+    "pid": 1141,
+    "slug": "find-minimum-time-to-reach-last-room-ii",
+    "fqid": 3342,
+    "error": "Testcase 0 failed: RE (exit 1):  call last):\n  File \"/tmp/tmpw3avlyi4.py\", line 292, in <module>\n    _result = Solution().minTimeToReach(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpw3avlyi4.py\", line 144, in minTimeToReach\n    dist[0][0] = 0\n    ~~~~~~~^^^\nIndexError: list assignment index out of range\n"
+  },
+  {
+    "pid": 1174,
+    "slug": "frog-jump-ii",
+    "fqid": 2498,
+    "error": "Testcase 0 failed: RE (exit 1): k (most recent call last):\n  File \"/tmp/tmp1ues3h6m.py\", line 278, in <module>\n    _result = Solution().maxJump(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp1ues3h6m.py\", line 142, in maxJump\n    ans = stones[1] - stones[0]\n          ~~~~~~^^^\nIndexError: list index out of range\n"
   },
   {
     "pid": 1111,
     "slug": "final-value-of-variable-after-performing-operations",
     "fqid": 2011,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpvn8ubgpa.py\", line 275, in <module>\n    _result = Solution().finalValueAfterOperations(*_args)\n          "
-  },
-  {
-    "pid": 1108,
-    "slug": "guess-number-higher-or-lower-ii",
-    "fqid": 375,
-    "error": "Testcase 1 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpqnzqf8v_.py\", line 281, in <module>\n    _result = Solution().getMoneyAmount(*_args)\n              ^^^^^^^"
+    "error": "Testcase 0 failed: RE (exit 1): ns\n    return sum(1 if s[1] == '+' else -1 for s in operations)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3trq2_ub.py\", line 142, in <genexpr>\n    return sum(1 if s[1] == '+' else -1 for s in operations)\n                    ~^^^\nIndexError: list index out of range\n"
   },
   {
     "pid": 1120,
     "slug": "can-make-palindrome-from-substring",
     "fqid": 1177,
-    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmphfbtojtc.py\", line 284, in <module>\n    _result = Solution().canMakePaliQueries(*_args)\n              ^^^"
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp8udwdt8d.py\", line 284, in <module>\n    _result = Solution().canMakePaliQueries(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.canMakePaliQueries() missing 1 required positional argument: 'queries'\n"
+  },
+  {
+    "pid": 1175,
+    "slug": "find-the-k-th-lucky-number",
+    "fqid": 2802,
+    "error": "Testcase 0 failed: RE (exit 1): pm2qvqt9j.py\", line 287, in <module>\n    _result = Solution().kthLuckyNumber(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpm2qvqt9j.py\", line 143, in kthLuckyNumber\n    while k > 1 << n:\n          ^^^^^^^^^^\nTypeError: '>' not supported between instances of 'str' and 'int'\n"
+  },
+  {
+    "pid": 1154,
+    "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+    "fqid": 1984,
+    "error": "Testcase 0 failed: RE (exit 1):      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpb73_v0pv.py\", line 143, in minimumDifference\n    return min(nums[i + k - 1] - nums[i] for i in range(len(nums) - k + 1))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: min() iterable argument is empty\n"
+  },
+  {
+    "pid": 1160,
+    "slug": "design-underground-system",
+    "fqid": 1396,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp5a7itzkj.py\", line 202, in <module>\n    _cls_name = _ops[0]\n                ~~~~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1177,
+    "slug": "find-the-key-of-the-numbers",
+    "fqid": 3270,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmprzam4xh7.py\", line 280, in <module>\n    _result = Solution().generateKey(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.generateKey() missing 2 required positional arguments: 'num2' and 'num3'\n"
+  },
+  {
+    "pid": 1108,
+    "slug": "guess-number-higher-or-lower-ii",
+    "fqid": 375,
+    "error": "Testcase 1 failed: RE (exit 1): ost recent call last):\n  File \"/tmp/tmpqdrbkq3o.py\", line 281, in <module>\n    _result = Solution().getMoneyAmount(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpqdrbkq3o.py\", line 148, in getMoneyAmount\n    return f[1][n]\n           ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1210,
+    "slug": "masking-personal-information",
+    "fqid": 831,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpxcqq1c49.py\", line 281, in <module>\n    _result = Solution().maskPII(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpxcqq1c49.py\", line 142, in maskPII\n    if s[0].isalpha():\n       ~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1200,
+    "slug": "cat-and-mouse",
+    "fqid": 913,
+    "error": "Testcase 0 failed: RE (exit 1): pwzfz058e.py\", line 328, in <module>\n    _result = Solution().catMouseGame(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpwzfz058e.py\", line 195, in catMouseGame\n    return ans[MOUSE_START][CAT_START][MOUSE_TURN]\n           ~~~^^^^^^^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1185,
+    "slug": "split-array-largest-sum",
+    "fqid": 410,
+    "error": "Testcase 0 failed: RE (exit 1):  \"/tmp/tmpqp8vu5se.py\", line 285, in <module>\n    _result = Solution().splitArray(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpqp8vu5se.py\", line 151, in splitArray\n    left, right = max(nums), sum(nums)\n                  ^^^^^^^^^\nValueError: max() iterable argument is empty\n"
+  },
+  {
+    "pid": 1203,
+    "slug": "parsing-a-boolean-expression",
+    "fqid": 1106,
+    "error": "Testcase 0 failed: RE (exit 1): ecent call last):\n  File \"/tmp/tmps3_xiraf.py\", line 293, in <module>\n    _result = Solution().parseBoolExpr(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmps3_xiraf.py\", line 160, in parseBoolExpr\n    return stk[0] == 't'\n           ~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1189,
+    "slug": "alien-dictionary",
+    "fqid": 269,
+    "error": "Testcase 1 failed: RE (exit 1): st):\n  File \"/tmp/tmp_6yctwbo.py\", line 325, in <module>\n    _result = Solution().alienOrder(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_6yctwbo.py\", line 169, in alienOrder\n    o = ord(c) - ord('a')\n        ^^^^^^\nTypeError: ord() expected string of length 1, but int found\n"
+  },
+  {
+    "pid": 1162,
+    "slug": "minimum-number-of-coins-to-be-added",
+    "fqid": 2952,
+    "error": "Testcase 2 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1199,
+    "slug": "burst-balloons",
+    "fqid": 312,
+    "error": "Testcase 15 failed: TLE (>15s)"
   }
 ]

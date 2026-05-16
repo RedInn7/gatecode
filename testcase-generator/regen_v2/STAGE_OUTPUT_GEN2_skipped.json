@@ -1,135 +1,165 @@
 [
   {
     "pid": 1819,
+    "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
     "reason": "ACM mode"
   },
   {
     "pid": 1820,
+    "slug": "find-minimum-diameter-after-merging-two-trees",
     "reason": "ACM mode"
   },
   {
     "pid": 1858,
+    "slug": "merge-nodes-in-between-zeros",
     "reason": "ACM mode"
   },
   {
     "pid": 1859,
+    "slug": "find-if-path-exists-in-graph",
     "reason": "ACM mode"
   },
   {
     "pid": 1896,
+    "slug": "the-number-of-ways-to-make-the-sum",
     "reason": "ACM mode"
   },
   {
     "pid": 1988,
+    "slug": "minimum-operations-to-reduce-an-integer-to-0",
     "reason": "ACM mode"
   },
   {
     "pid": 1989,
+    "slug": "count-number-of-balanced-permutations",
     "reason": "ACM mode"
   },
   {
     "pid": 2030,
+    "slug": "inorder-successor-in-bst",
     "reason": "ACM mode"
   },
   {
     "pid": 2037,
+    "slug": "construct-2d-grid-matching-graph-layout",
     "reason": "ACM mode"
   },
   {
     "pid": 2046,
+    "slug": "unique-substrings-with-equal-digit-frequency",
     "reason": "ACM mode"
   },
   {
     "pid": 2076,
+    "slug": "find-the-largest-area-of-square-inside-two-rectangles",
     "reason": "ACM mode"
   },
   {
     "pid": 2094,
+    "slug": "find-beautiful-indices-in-the-given-array-i",
     "reason": "ACM mode"
   },
   {
     "pid": 2159,
+    "slug": "convert-doubly-linked-list-to-array-i",
     "reason": "ACM mode"
   },
   {
     "pid": 2160,
+    "slug": "range-product-queries-of-powers",
     "reason": "ACM mode"
   },
   {
     "pid": 2169,
+    "slug": "implement-trie-ii-prefix-tree",
     "reason": "ACM mode"
   },
   {
     "pid": 2174,
+    "slug": "convert-doubly-linked-list-to-array-ii",
     "reason": "ACM mode"
   },
   {
     "pid": 2176,
+    "slug": "total-distance-traveled",
     "reason": "ACM mode"
   },
   {
     "pid": 2188,
+    "slug": "minimum-amount-of-time-to-fill-cups",
     "reason": "ACM mode"
   },
   {
     "pid": 2219,
+    "slug": "the-k-weakest-rows-in-a-matrix",
     "reason": "ACM mode"
   },
   {
     "pid": 2220,
+    "slug": "find-the-k-beauty-of-a-number",
     "reason": "ACM mode"
   },
   {
     "pid": 2254,
+    "slug": "maximum-and-sum-of-array",
     "reason": "ACM mode"
   },
   {
     "pid": 2274,
+    "slug": "movement-of-robots",
     "reason": "ACM mode"
   },
   {
     "pid": 2291,
+    "slug": "maximum-product-after-k-increments",
     "reason": "ACM mode"
   },
   {
     "pid": 2305,
+    "slug": "number-of-senior-citizens",
     "reason": "ACM mode"
   },
   {
     "pid": 2374,
+    "slug": "delete-node-in-a-linked-list",
     "reason": "ACM mode"
   },
   {
     "pid": 2378,
+    "slug": "cells-in-a-range-on-an-excel-sheet",
     "reason": "ACM mode"
   },
   {
     "pid": 2397,
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
     "reason": "ACM mode"
   },
   {
     "pid": 2414,
+    "slug": "find-a-safe-walk-through-a-grid",
     "reason": "ACM mode"
   },
   {
     "pid": 2445,
+    "slug": "longest-semi-repeating-subarray",
     "reason": "ACM mode"
   },
   {
     "pid": 2452,
+    "slug": "add-minimum-number-of-rungs",
     "reason": "ACM mode"
-  },
-  {
-    "pid": 1036,
-    "slug": "restore-the-array",
-    "fqid": 1416,
-    "reason": "No Python3 solution found for fqid=1416"
   },
   {
     "pid": 1047,
     "slug": "minimum-stability-factor-of-array",
     "fqid": 3605,
     "reason": "No Python3 solution found for fqid=3605"
+  },
+  {
+    "pid": 1036,
+    "slug": "restore-the-array",
+    "fqid": 1416,
+    "reason": "No Python3 solution found for fqid=1416"
   },
   {
     "pid": 1066,
@@ -142,6 +172,12 @@
     "slug": "maximum-and-minimum-sums-of-at-most-size-k-subarrays",
     "fqid": 3430,
     "reason": "No Python3 solution found for fqid=3430"
+  },
+  {
+    "pid": 1147,
+    "slug": "maximum-total-subarray-value-ii",
+    "fqid": 3691,
+    "reason": "No Python3 solution found for fqid=3691"
   },
   {
     "pid": 1116,
