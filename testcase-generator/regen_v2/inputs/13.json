@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"dwikxdvm\"",
+      "input": "\"q\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: 7 letters freq=3 odd, h=1 odd — invalid; replaced"
     },
     {
-      "input": "\"iaqvcghaqmxmzgyo\"",
+      "input": "\"sjojhydtfaxloiru\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
