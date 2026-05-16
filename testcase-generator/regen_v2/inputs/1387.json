@@ -1,0 +1,88 @@
+{
+  "pid": 1387,
+  "slug": "lemonade-change",
+  "inferred_constraints": "1<=bills.length<=10^5; bills[i] in {5,10,20}",
+  "input_format": "line 1: bills (JSON array)",
+  "testcases": [
+    {
+      "input": "[5,5,5,10,20]",
+      "desc": "Edge: example1 -> true"
+    },
+    {
+      "input": "[5,5,10,10,20]",
+      "desc": "Edge: example2 -> false"
+    },
+    {
+      "input": "[5]",
+      "desc": "Edge: single 5 -> true"
+    },
+    {
+      "input": "[10]",
+      "desc": "Edge: single 10 -> false (no change)"
+    },
+    {
+      "input": "[20]",
+      "desc": "Edge: single 20 -> false"
+    },
+    {
+      "input": "[5,5,5,5,5]",
+      "desc": "Standard: all 5s -> true"
+    },
+    {
+      "input": "[5,10]",
+      "desc": "Standard: 5 then 10 -> true"
+    },
+    {
+      "input": "[5,5,10,20]",
+      "desc": "Standard: enough change"
+    },
+    {
+      "input": "[10,5]",
+      "desc": "Killer: 10 first -> false"
+    },
+    {
+      "input": "[5,5,5,5,10,10,20,20]",
+      "desc": "Standard: progression"
+    },
+    {
+      "input": "[5,5,5,5,5,5,10,10,10,20]",
+      "desc": "Stress: many 5s then mixed"
+    },
+    {
+      "input": "[5,10,5,20]",
+      "desc": "Killer: 20 needs 5+10 or 3x5"
+    },
+    {
+      "input": "[5,5,20]",
+      "desc": "Killer: 20 needs 3x5 but only have 2 -> false"
+    },
+    {
+      "input": "[5,5,5,20]",
+      "desc": "Standard: 20 needs 15 -> 5+10 not available but 3x5 ok -> true"
+    },
+    {
+      "input": "[5,10,5,10,5,20]",
+      "desc": "Stress: 20 has 10+5 available -> true"
+    },
+    {
+      "input": "[5,5,5,10,5,20,10,5]",
+      "desc": "Killer: complex sequence"
+    },
+    {
+      "input": "[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]",
+      "desc": "Stress: many customers"
+    },
+    {
+      "input": "[5,20]",
+      "desc": "Killer: 20 no sufficient change -> false"
+    },
+    {
+      "input": "[5,5,10,10,5,5,20,20]",
+      "desc": "Standard: mixed sequence"
+    },
+    {
+      "input": "[5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20]",
+      "desc": "Stress: repeating pattern"
+    }
+  ]
+}

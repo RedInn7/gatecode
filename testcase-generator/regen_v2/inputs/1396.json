@@ -1,0 +1,88 @@
+{
+  "pid": 1396,
+  "slug": "sentence-similarity-iii",
+  "inferred_constraints": "1<=sentence1,sentence2 length<=100; words separated by single space",
+  "input_format": "line 1: sentence1; line 2: sentence2",
+  "testcases": [
+    {
+      "input": "My name is Haley\nMy Haley",
+      "desc": "Edge: example1 -> true"
+    },
+    {
+      "input": "of\na good and of",
+      "desc": "Edge: example2 -> false"
+    },
+    {
+      "input": "Eating right now\nEating",
+      "desc": "Edge: example3 -> true"
+    },
+    {
+      "input": "a\na",
+      "desc": "Edge: identical single word"
+    },
+    {
+      "input": "a\nb",
+      "desc": "Edge: single different words -> false"
+    },
+    {
+      "input": "hello world\nhello world",
+      "desc": "Standard: identical -> true"
+    },
+    {
+      "input": "I am a good student\nI student",
+      "desc": "Standard: insert in middle"
+    },
+    {
+      "input": "The cat sat on the mat\nThe mat",
+      "desc": "Killer: remove large middle"
+    },
+    {
+      "input": "A B C D E\nA E",
+      "desc": "Standard: keep ends"
+    },
+    {
+      "input": "A B C\nB C",
+      "desc": "Standard: remove prefix"
+    },
+    {
+      "input": "A B C\nA B",
+      "desc": "Standard: remove suffix"
+    },
+    {
+      "input": "A B C\nA B C D",
+      "desc": "Standard: s2 is extension -> false"
+    },
+    {
+      "input": "A\nA B",
+      "desc": "Edge: one word vs two"
+    },
+    {
+      "input": "hello\nhello world",
+      "desc": "Edge: prefix only"
+    },
+    {
+      "input": "world hello\nhello",
+      "desc": "Standard: suffix only"
+    },
+    {
+      "input": "a b c d e f\na f",
+      "desc": "Stress: remove 4 middle"
+    },
+    {
+      "input": "x y z\ny z",
+      "desc": "Standard: remove first word"
+    },
+    {
+      "input": "x y z\nx y",
+      "desc": "Standard: remove last word"
+    },
+    {
+      "input": "one two three four\none four",
+      "desc": "Killer: remove two middle"
+    },
+    {
+      "input": "long sentence with many words here\nlong here",
+      "desc": "Stress: long remove"
+    }
+  ]
+}

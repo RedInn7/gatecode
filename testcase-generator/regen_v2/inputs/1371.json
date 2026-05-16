@@ -1,0 +1,88 @@
+{
+  "pid": 1371,
+  "slug": "minimum-remove-to-make-valid-parentheses",
+  "inferred_constraints": "1<=s.length<=10^5; s consists of lowercase letters, (, )",
+  "input_format": "line 1: s (string)",
+  "testcases": [
+    {
+      "input": "lee(t(c)o)de)",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "a)b(c)d",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "a",
+      "desc": "Edge: no parens"
+    },
+    {
+      "input": "(",
+      "desc": "Edge: single open"
+    },
+    {
+      "input": ")",
+      "desc": "Edge: single close"
+    },
+    {
+      "input": "()",
+      "desc": "Standard: valid pair"
+    },
+    {
+      "input": "(a)",
+      "desc": "Standard: simple valid"
+    },
+    {
+      "input": "((a))",
+      "desc": "Standard: nested valid"
+    },
+    {
+      "input": "(a)(b)(c)",
+      "desc": "Standard: multiple pairs"
+    },
+    {
+      "input": "(a)(b))",
+      "desc": "Killer: one extra close"
+    },
+    {
+      "input": "((((a))))",
+      "desc": "Standard: deeply nested"
+    },
+    {
+      "input": ")a(b)c(",
+      "desc": "Killer: extra on both ends"
+    },
+    {
+      "input": "a(b(c(d)e)f)g",
+      "desc": "Standard: nested valid complex"
+    },
+    {
+      "input": "((()))",
+      "desc": "Standard: all parens valid"
+    },
+    {
+      "input": "a)b)c)d(e(f(g",
+      "desc": "Killer: alternating invalid"
+    },
+    {
+      "input": "(ab(cd)ef(gh)ij)",
+      "desc": "Standard: valid complex"
+    },
+    {
+      "input": "(())(())(()",
+      "desc": "Killer: one extra open at end"
+    },
+    {
+      "input": "abc(def(ghi)jkl)mno",
+      "desc": "Standard: letters and valid parens"
+    },
+    {
+      "input": "(((a(b(c)d)e)f)g)",
+      "desc": "Stress: deep nesting"
+    },
+    {
+      "input": "))))))aaa((((((",
+      "desc": "Stress: all invalid parens both sides"
+    }
+  ]
+}

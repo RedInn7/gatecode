@@ -1,0 +1,88 @@
+{
+  "pid": 1392,
+  "slug": "super-egg-drop",
+  "inferred_constraints": "1<=k<=100; 1<=n<=10^4",
+  "input_format": "line 1: k; line 2: n",
+  "testcases": [
+    {
+      "input": "1\n1",
+      "desc": "Edge: 1 egg 1 floor -> 1"
+    },
+    {
+      "input": "1\n2",
+      "desc": "Edge: 1 egg 2 floors -> 2"
+    },
+    {
+      "input": "2\n6",
+      "desc": "Edge: example1 -> 3"
+    },
+    {
+      "input": "3\n14",
+      "desc": "Edge: example2 -> 4"
+    },
+    {
+      "input": "1\n10000",
+      "desc": "Killer: 1 egg max floors -> 10000"
+    },
+    {
+      "input": "100\n1",
+      "desc": "Edge: many eggs 1 floor -> 1"
+    },
+    {
+      "input": "2\n1",
+      "desc": "Edge: 2 eggs 1 floor -> 1"
+    },
+    {
+      "input": "2\n100",
+      "desc": "Standard: 2 eggs 100 floors"
+    },
+    {
+      "input": "3\n100",
+      "desc": "Standard: 3 eggs 100 floors"
+    },
+    {
+      "input": "5\n1000",
+      "desc": "Stress: 5 eggs 1000 floors"
+    },
+    {
+      "input": "10\n10000",
+      "desc": "Stress: 10 eggs 10000 floors"
+    },
+    {
+      "input": "100\n10000",
+      "desc": "Stress: many eggs many floors -> log2(10000)"
+    },
+    {
+      "input": "2\n10000",
+      "desc": "Killer: 2 eggs 10000 floors"
+    },
+    {
+      "input": "4\n500",
+      "desc": "Standard: 4 eggs 500 floors"
+    },
+    {
+      "input": "2\n3",
+      "desc": "Standard: 2 eggs 3 floors -> 2"
+    },
+    {
+      "input": "3\n25",
+      "desc": "Standard: 3 eggs 25 floors"
+    },
+    {
+      "input": "7\n2048",
+      "desc": "Stress: 7 eggs 2048 floors"
+    },
+    {
+      "input": "50\n5000",
+      "desc": "Stress: 50 eggs 5000 floors"
+    },
+    {
+      "input": "3\n1",
+      "desc": "Edge: many eggs 1 floor -> 1"
+    },
+    {
+      "input": "2\n2",
+      "desc": "Edge: 2 eggs 2 floors -> 2"
+    }
+  ]
+}

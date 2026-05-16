@@ -1,0 +1,88 @@
+{
+  "pid": 1397,
+  "slug": "find-resultant-array-after-removing-anagrams",
+  "inferred_constraints": "1<=words.length<=100; 1<=words[i].length<=10; words[i] are lowercase",
+  "input_format": "line 1: words (JSON array of strings)",
+  "testcases": [
+    {
+      "input": "[\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]",
+      "desc": "Edge: all distinct -> no removal"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: single word"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "desc": "Edge: two anagrams -> [\"ab\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\",\"xyz\",\"zxy\"]",
+      "desc": "Standard: two groups of anagrams"
+    },
+    {
+      "input": "[\"listen\",\"silent\",\"enlist\",\"hello\",\"world\"]",
+      "desc": "Standard: 3 anagrams then 2 distinct"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "desc": "Stress: all same -> [\"a\"]"
+    },
+    {
+      "input": "[\"abc\",\"def\",\"ghi\",\"jkl\"]",
+      "desc": "Standard: no anagrams"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "desc": "Killer: classic anagram groups"
+    },
+    {
+      "input": "[\"ab\",\"cd\",\"ba\",\"dc\",\"ef\"]",
+      "desc": "Standard: alternating anagram pairs"
+    },
+    {
+      "input": "[\"z\",\"z\",\"z\"]",
+      "desc": "Standard: triple same z"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\",\"bac\",\"acb\",\"cba\"]",
+      "desc": "Stress: 6-way anagram chain"
+    },
+    {
+      "input": "[\"aa\",\"aa\"]",
+      "desc": "Edge: double same"
+    },
+    {
+      "input": "[\"ab\",\"ab\",\"ab\"]",
+      "desc": "Standard: triple same"
+    },
+    {
+      "input": "[\"xyz\",\"zyx\",\"abc\",\"cba\",\"mn\",\"nm\"]",
+      "desc": "Standard: 3 pairs"
+    },
+    {
+      "input": "[\"hello\",\"world\",\"dlrow\",\"olleh\"]",
+      "desc": "Killer: two cross-anagram pairs"
+    },
+    {
+      "input": "[\"a\",\"b\",\"a\",\"b\",\"a\"]",
+      "desc": "Standard: alternating with same"
+    },
+    {
+      "input": "[\"abcde\",\"edcba\",\"fghij\",\"jihgf\"]",
+      "desc": "Stress: 5-char anagram pairs"
+    },
+    {
+      "input": "[\"aab\",\"baa\",\"aba\",\"xyz\"]",
+      "desc": "Standard: 3-way anagram + distinct"
+    },
+    {
+      "input": "[\"mn\",\"nm\",\"op\",\"po\",\"qr\",\"rq\"]",
+      "desc": "Stress: 3 consecutive anagram pairs"
+    }
+  ]
+}

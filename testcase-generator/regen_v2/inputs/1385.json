@@ -1,0 +1,88 @@
+{
+  "pid": 1385,
+  "slug": "maximum-distance-in-arrays",
+  "inferred_constraints": "2<=arrays.length<=10^5; 1<=arrays[i].length<=500; arrays[i] is sorted ascending",
+  "input_format": "line 1: arrays (JSON 2D array)",
+  "testcases": [
+    {
+      "input": "[[1,2,3],[4,5],[1,2,3]]",
+      "desc": "Edge: example1 -> 4"
+    },
+    {
+      "input": "[[1],[1]]",
+      "desc": "Edge: two single element arrays"
+    },
+    {
+      "input": "[[1,4],[0,5]]",
+      "desc": "Edge: example2 -> 4"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6]]",
+      "desc": "Standard: ascending sets"
+    },
+    {
+      "input": "[[-1,1],[0,2]]",
+      "desc": "Standard: negative values"
+    },
+    {
+      "input": "[[-10,-5],[0,5],[6,10]]",
+      "desc": "Stress: negative to positive"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1]]",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "[[0,100],[10,50],[20,80]]",
+      "desc": "Standard: overlapping"
+    },
+    {
+      "input": "[[-1000,1000],[-999,999]]",
+      "desc": "Killer: extremes"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[5]]",
+      "desc": "Standard: 5 singleton arrays"
+    },
+    {
+      "input": "[[1,5],[3,7],[2,8],[4,9]]",
+      "desc": "Stress: overlapping ranges"
+    },
+    {
+      "input": "[[-10000],[10000]]",
+      "desc": "Killer: max distance"
+    },
+    {
+      "input": "[[1,3],[2,4],[1,5],[3,6]]",
+      "desc": "Standard: multiple overlaps"
+    },
+    {
+      "input": "[[5,10,15],[1,2,3],[20,30,40]]",
+      "desc": "Stress: separated ranges"
+    },
+    {
+      "input": "[[-5,-1],[0,4],[3,7]]",
+      "desc": "Standard: consecutive ranges"
+    },
+    {
+      "input": "[[1,100],[50,200],[150,300]]",
+      "desc": "Stress: chained ranges"
+    },
+    {
+      "input": "[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]",
+      "desc": "Stress: stepped blocks"
+    },
+    {
+      "input": "[[0,0],[0,0],[0,0]]",
+      "desc": "Killer: all zeros -> 0"
+    },
+    {
+      "input": "[[1,1000000],[2,999999],[3,999998]]",
+      "desc": "Killer: near max range"
+    },
+    {
+      "input": "[[-1000,-500,-100,-10,-1],[1,10,100,500,1000]]",
+      "desc": "Stress: neg vs pos full range"
+    }
+  ]
+}

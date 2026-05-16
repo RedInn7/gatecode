@@ -1,0 +1,88 @@
+{
+  "pid": 1394,
+  "slug": "maximum-subarray-xor-with-bounded-range",
+  "inferred_constraints": "1<=nums.length<=2000; -10^9<=nums[i]<=10^9; 0<=k<=nums.length",
+  "input_format": "line 1: nums (JSON); line 2: k",
+  "testcases": [
+    {
+      "input": "[1,2,3]\n2",
+      "desc": "Edge: example"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[0]\n0",
+      "desc": "Edge: empty subarray k=0"
+    },
+    {
+      "input": "[1,2,4,8]\n3",
+      "desc": "Standard: powers of 2"
+    },
+    {
+      "input": "[7,5,3,1]\n4",
+      "desc": "Killer: full array"
+    },
+    {
+      "input": "[-1,-2,-3,-4]\n2",
+      "desc": "Standard: all negative"
+    },
+    {
+      "input": "[0,0,0,0]\n2",
+      "desc": "Standard: all zero"
+    },
+    {
+      "input": "[1000000000,-1000000000,1,2]\n3",
+      "desc": "Stress: extremes"
+    },
+    {
+      "input": "[1,1,1,1,1]\n3",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "[5,3,7,2,8,1]\n4",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "[255,128,64,32,16,8,4,2,1]\n5",
+      "desc": "Stress: bit patterns"
+    },
+    {
+      "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n5",
+      "desc": "Standard: 1-10"
+    },
+    {
+      "input": "[-5,3,-2,7,-1,4]\n3",
+      "desc": "Killer: neg and pos mixed"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7]\n8",
+      "desc": "Stress: full range"
+    },
+    {
+      "input": "[999999999,1,-999999999]\n2",
+      "desc": "Stress: near overflow"
+    },
+    {
+      "input": "[10,20,30,40,50]\n3",
+      "desc": "Standard: multiples of 10"
+    },
+    {
+      "input": "[1,3,5,7,9,11]\n4",
+      "desc": "Standard: odd numbers"
+    },
+    {
+      "input": "[2,4,6,8,10]\n5",
+      "desc": "Standard: even numbers"
+    },
+    {
+      "input": "[1000000000,1000000000,1000000000]\n2",
+      "desc": "Stress: repeated max"
+    },
+    {
+      "input": "[-1000000000,-1000000000,-1000000000]\n2",
+      "desc": "Killer: repeated min"
+    }
+  ]
+}

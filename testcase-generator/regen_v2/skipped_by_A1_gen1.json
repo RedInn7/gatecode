@@ -1,0 +1,15 @@
+{
+  "agent": "G1",
+  "skipped": [
+    {
+      "pid": 1398,
+      "slug": "lru-cache",
+      "reason": "Design class (LRUCache) with stateful operations"
+    },
+    {
+      "pid": 1388,
+      "slug": "cracking-the-safe",
+      "reason": "Non-unique output — requires SPJ judge"
+    }
+  ]
+}

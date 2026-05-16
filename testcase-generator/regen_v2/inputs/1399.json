@@ -1,0 +1,88 @@
+{
+  "pid": 1399,
+  "slug": "length-of-the-longest-alphabetical-continuous-substring",
+  "inferred_constraints": "1<=s.length<=10^5; s consists of lowercase letters",
+  "input_format": "line 1: s (string)",
+  "testcases": [
+    {
+      "input": "abacaba",
+      "desc": "Edge: example1 -> 2"
+    },
+    {
+      "input": "abcde",
+      "desc": "Edge: example2 -> 5"
+    },
+    {
+      "input": "a",
+      "desc": "Edge: single char -> 1"
+    },
+    {
+      "input": "z",
+      "desc": "Edge: single z -> 1"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "desc": "Edge: full alphabet -> 26"
+    },
+    {
+      "input": "zyxwvutsrqponmlkjihgfedcba",
+      "desc": "Killer: reverse alphabet -> 1"
+    },
+    {
+      "input": "aabbccdd",
+      "desc": "Standard: pairs no continuity -> 2 (ab)"
+    },
+    {
+      "input": "xyzabc",
+      "desc": "Standard: wraps z->a no continuity -> 3"
+    },
+    {
+      "input": "mnopqrst",
+      "desc": "Standard: long mid-alpha run -> 8"
+    },
+    {
+      "input": "abcdzyxw",
+      "desc": "Standard: forward then reverse"
+    },
+    {
+      "input": "aaaaaaaaaa",
+      "desc": "Standard: all same -> 1"
+    },
+    {
+      "input": "abababababab",
+      "desc": "Standard: alternating -> 2"
+    },
+    {
+      "input": "bcdefghijklmnopqrstuvwxyza",
+      "desc": "Stress: full cycle shifted"
+    },
+    {
+      "input": "azbycxdwev",
+      "desc": "Standard: interleaved"
+    },
+    {
+      "input": "lmnopqrstuvwxyz",
+      "desc": "Stress: 15-char run -> 15"
+    },
+    {
+      "input": "abcdeabcde",
+      "desc": "Standard: repeated block"
+    },
+    {
+      "input": "nopqrstuv",
+      "desc": "Standard: 9-char mid run -> 9"
+    },
+    {
+      "input": "qrstuvwxyzabcd",
+      "desc": "Killer: long run then reset"
+    },
+    {
+      "input": "aaabbbccc",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "hijklmnopqrstuvwxyzab",
+      "desc": "Stress: 18-char run from h"
+    }
+  ]
+}

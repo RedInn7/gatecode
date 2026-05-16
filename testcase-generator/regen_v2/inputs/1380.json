@@ -1,0 +1,88 @@
+{
+  "pid": 1380,
+  "slug": "graph-connectivity-with-threshold",
+  "inferred_constraints": "2<=n<=10^4; 0<=queries.length<=10^5; 0<=threshold<n; 1<=queries[i][0],queries[i][1]<=n",
+  "input_format": "line 1: n; line 2: threshold; line 3: queries (JSON 2D array)",
+  "testcases": [
+    {
+      "input": "6\n2\n[[1,4],[2,5],[3,6]]",
+      "desc": "Edge: example1 -> [false,false,true]"
+    },
+    {
+      "input": "6\n0\n[[4,5],[3,4],[3,2],[2,6],[1,3]]",
+      "desc": "Edge: example2 -> [true,true,true,true,true]"
+    },
+    {
+      "input": "5\n1\n[[4,5]]",
+      "desc": "Edge: example3 -> [false]"
+    },
+    {
+      "input": "2\n1\n[[1,2]]",
+      "desc": "Edge: n=2 threshold=1 -> [false]"
+    },
+    {
+      "input": "10\n0\n[[1,10],[3,7],[5,9]]",
+      "desc": "Standard: threshold=0 -> all true"
+    },
+    {
+      "input": "12\n3\n[[4,8],[6,9],[2,10],[5,7]]",
+      "desc": "Standard: threshold=3"
+    },
+    {
+      "input": "100\n10\n[[20,40],[30,60],[50,100],[11,99]]",
+      "desc": "Stress: threshold=10"
+    },
+    {
+      "input": "6\n5\n[[1,2],[3,4],[5,6]]",
+      "desc": "Killer: threshold=5 only 6 connects"
+    },
+    {
+      "input": "20\n4\n[[4,8],[8,12],[4,12],[6,18],[2,14]]",
+      "desc": "Standard: various queries"
+    },
+    {
+      "input": "30\n5\n[[5,10],[10,20],[5,20],[15,25],[3,27]]",
+      "desc": "Stress: threshold=5"
+    },
+    {
+      "input": "1000\n100\n[[200,400],[300,900],[100,500]]",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "4\n2\n[[1,3],[2,4],[1,4]]",
+      "desc": "Standard: small n=4"
+    },
+    {
+      "input": "8\n2\n[[2,4],[2,6],[4,8],[1,8]]",
+      "desc": "Standard: threshold=2"
+    },
+    {
+      "input": "10\n3\n[[3,6],[3,9],[6,9],[4,8],[5,10]]",
+      "desc": "Standard: multiple common divisors"
+    },
+    {
+      "input": "15\n4\n[[4,8],[4,12],[8,12],[5,10],[6,12]]",
+      "desc": "Stress: grid queries"
+    },
+    {
+      "input": "50\n7\n[[7,14],[14,21],[21,35],[7,49],[7,42]]",
+      "desc": "Stress: factor 7"
+    },
+    {
+      "input": "20\n1\n[[2,4],[3,9],[5,15],[7,14]]",
+      "desc": "Standard: threshold=1"
+    },
+    {
+      "input": "6\n3\n[[1,2],[2,3],[4,5],[5,6],[1,6]]",
+      "desc": "Killer: divisors > 3"
+    },
+    {
+      "input": "100\n50\n[[51,99],[52,98],[53,97]]",
+      "desc": "Killer: high threshold"
+    },
+    {
+      "input": "10000\n1\n[[2,4],[5,10],[3,9],[7,14]]",
+      "desc": "Stress: max n threshold=1"
+    }
+  ]
+}
