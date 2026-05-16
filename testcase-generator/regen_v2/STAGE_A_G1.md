@@ -144,3 +144,34 @@ ls testcase-generator/regen_v2/inputs/*.json | xargs -n1 basename | sed 's/.json
 mysql -uroot gatecode -e "SELECT id FROM problems WHERE judge_enabled=1 AND id BETWEEN 549 AND 1791 ORDER BY id;" -BN > /tmp/all.txt
 # Filter out done and skipped from /tmp/all.txt
 ```
+
+## A1-r6 (接力第 6 轮 — 2026-05-15/16)
+
+Focused on remaining gaps in [549, 1791]. Picked up from another agent's parallel work
+(671-692 untracked from another session before my pull) and continued forward.
+
+### Final counts after this session
+- Done in [549, 1791]: 296 / 1102 (27%)
+- Skipped in [549, 1791]: 55
+- Remaining in middle range: 751
+
+### PIDs generated this round (~181 new files)
+Range: 695-929 with gaps for skips. Specifically:
+- 695-708, 712-740, 742-748, 750-757, 759-761, 763, 765-768, 770-772, 774-778,
+  779-782, 784-787, 789-794, 795-797, 799-800, 802-804, 806, 808-815,
+  816, 818-823, 825-827, 828, 830-832, 834-837, 839-842, 845-850, 852-854,
+  856, 859, 861-862, 865-870, 871-875, 877-878, 880-881, 883-887, 888-895,
+  899-900, 902-904, 906-909, 911, 915, 917-920, 926-929
+
+### New skips added this round (~12)
+- 638, 643, 654, 698, 703, 735, 737, 749, 762, 783, 798, 801, 805, 829, 833,
+  851, 882, 910, 921, 924
+
+### Commits pushed this round (15 batches)
+- Batches commited every ~10-15 PIDs to main
+- All pushed directly to origin/main with no merge conflicts
+- Total ~181 new input JSON files
+
+### Halt reason
+Context budget reached limit after ~181 new problems in single session.
+Next agent should resume from PID 930+ (skip already-done and skipped PIDs).
