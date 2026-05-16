@@ -71,6 +71,18 @@
     {
       "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
       "desc": "Killer: all same char max"
+    },
+    {
+      "input": "\"mhxqepuwvt\"\n\"xb\"",
+      "desc": "Generated: stress at position 17"
+    },
+    {
+      "input": "\"aaoekxeyyr\"\n\"or\"",
+      "desc": "Generated: stress at position 18"
+    },
+    {
+      "input": "\"cehbndqpza\"\n\"dl\"",
+      "desc": "Generated: stress at position 19"
     }
   ]
 }
