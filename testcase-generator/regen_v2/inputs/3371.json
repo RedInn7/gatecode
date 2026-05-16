@@ -45,12 +45,12 @@
       "desc": "Standard: n=1"
     },
     {
-      "input": "1",
-      "desc": "Standard: n=1"
-    },
-    {
       "input": "2",
       "desc": "Standard: n=2"
+    },
+    {
+      "input": "1",
+      "desc": "Standard: n=1"
     },
     {
       "input": "1",
