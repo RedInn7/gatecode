@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"a\"",
+      "input": "\"i\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: a at end invalid"
     },
     {
-      "input": "\"xyloealcpegt\"",
+      "input": "\"wmfmtnwz\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
