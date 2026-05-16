@@ -106,5 +106,59 @@
     "slug": "check-if-it-is-possible-to-split-array",
     "fqid": 2811,
     "error": "Testcase 17 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp59g6j439.py\", line 149, in dfs\n    if a and b and dfs(i, k) and dfs(k + 1, j):\n                          "
+  },
+  {
+    "pid": 1098,
+    "slug": "complex-number-multiplication",
+    "fqid": 537,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpapsgnmot.py\", line 277, in <module>\n    _result = Solution().complexNumberMultiply(*_args)\n              "
+  },
+  {
+    "pid": 1096,
+    "slug": "maximum-students-on-a-single-bench",
+    "fqid": 3450,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp2w_cdsi0.py\", line 280, in <module>\n    _result = Solution().maxStudentsOnBench(*_args)\n              ^^^"
+  },
+  {
+    "pid": 1093,
+    "slug": "fixed-point",
+    "fqid": 1064,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpjx5ohszk.py\", line 282, in <module>\n    _result = Solution().fixedPoint(*_args)\n              ^^^^^^^^^^^"
+  },
+  {
+    "pid": 1099,
+    "slug": "strange-printer",
+    "fqid": 664,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpsm308czg.py\", line 285, in <module>\n    _result = Solution().strangePrinter(*_args)\n              ^^^^^^^"
+  },
+  {
+    "pid": 1097,
+    "slug": "maximum-frequency-stack",
+    "fqid": 895,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp_1xzsb40.py\", line 168, in <module>\n    _vals = _json.loads(_lines[1])\n                        ~~~~~~^^^\n"
+  },
+  {
+    "pid": 1102,
+    "slug": "minimum-difference-in-sums-after-removal-of-elements",
+    "fqid": 2163,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp0omgu7kq.py\", line 299, in <module>\n    _result = Solution().minimumDifference(*_args)\n              ^^^^"
+  },
+  {
+    "pid": 1111,
+    "slug": "final-value-of-variable-after-performing-operations",
+    "fqid": 2011,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpvn8ubgpa.py\", line 275, in <module>\n    _result = Solution().finalValueAfterOperations(*_args)\n          "
+  },
+  {
+    "pid": 1108,
+    "slug": "guess-number-higher-or-lower-ii",
+    "fqid": 375,
+    "error": "Testcase 1 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpqnzqf8v_.py\", line 281, in <module>\n    _result = Solution().getMoneyAmount(*_args)\n              ^^^^^^^"
+  },
+  {
+    "pid": 1120,
+    "slug": "can-make-palindrome-from-substring",
+    "fqid": 1177,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmphfbtojtc.py\", line 284, in <module>\n    _result = Solution().canMakePaliQueries(*_args)\n              ^^^"
   }
 ]

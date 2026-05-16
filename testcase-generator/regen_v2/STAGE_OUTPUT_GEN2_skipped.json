@@ -142,5 +142,11 @@
     "slug": "maximum-and-minimum-sums-of-at-most-size-k-subarrays",
     "fqid": 3430,
     "reason": "No Python3 solution found for fqid=3430"
+  },
+  {
+    "pid": 1116,
+    "slug": "find-sorted-submatrices-with-maximum-element-at-most-k",
+    "fqid": 3359,
+    "reason": "No Python3 solution found for fqid=3359"
   }
 ]
