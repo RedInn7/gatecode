@@ -1,27 +1,88 @@
 {
-  "pid": 98, "slug": "smallest-value-of-the-rearranged-number",
+  "pid": 98,
+  "slug": "smallest-value-of-the-rearranged-number",
   "inferred_constraints": "-1e15 <= num <= 1e15",
   "input_format": "single line: num (int)",
   "testcases": [
-    {"input": "310", "desc": "Edge: example1"},
-    {"input": "-7605", "desc": "Edge: example2 negative"},
-    {"input": "0", "desc": "Edge: zero"},
-    {"input": "1", "desc": "Edge: single positive digit"},
-    {"input": "-1", "desc": "Edge: single negative digit"},
-    {"input": "9", "desc": "Edge: single 9"},
-    {"input": "1000000000000000", "desc": "Edge: max positive"},
-    {"input": "-1000000000000000", "desc": "Edge: max negative"},
-    {"input": "100", "desc": "Edge: leading zeros after rearrange"},
-    {"input": "1000", "desc": "Edge: many zeros"},
-    {"input": "1000000", "desc": "Edge: more zeros"},
-    {"input": "9999999999999", "desc": "Standard: 13 nines"},
-    {"input": "-9999999999999", "desc": "Standard: negative 13 nines"},
-    {"input": "123456789", "desc": "Standard: ascending"},
-    {"input": "987654321", "desc": "Standard: descending"},
-    {"input": "-123456789", "desc": "Standard: negative ascending"},
-    {"input": "111000111", "desc": "Standard: pattern"},
-    {"input": "543210", "desc": "Standard: with zero"},
-    {"input": "10203040", "desc": "Standard: zeros scattered"},
-    {"input": "1234567890", "desc": "Standard: 10 digits"}
+    {
+      "input": "310",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "-7605",
+      "desc": "Edge: example2 negative"
+    },
+    {
+      "input": "-4401",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "-1513",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "-962",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: single 9"
+    },
+    {
+      "input": "1000000000000000",
+      "desc": "Edge: max positive"
+    },
+    {
+      "input": "-1000000000000000",
+      "desc": "Edge: max negative"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: leading zeros after rearrange"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: many zeros"
+    },
+    {
+      "input": "1000000",
+      "desc": "Edge: more zeros"
+    },
+    {
+      "input": "9999999999999",
+      "desc": "Standard: 13 nines"
+    },
+    {
+      "input": "-9999999999999",
+      "desc": "Standard: negative 13 nines"
+    },
+    {
+      "input": "123456789",
+      "desc": "Standard: ascending"
+    },
+    {
+      "input": "987654321",
+      "desc": "Standard: descending"
+    },
+    {
+      "input": "-123456789",
+      "desc": "Standard: negative ascending"
+    },
+    {
+      "input": "111000111",
+      "desc": "Standard: pattern"
+    },
+    {
+      "input": "543210",
+      "desc": "Standard: with zero"
+    },
+    {
+      "input": "10203040",
+      "desc": "Standard: zeros scattered"
+    },
+    {
+      "input": "1234567890",
+      "desc": "Standard: 10 digits"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1e6, 1 <= limit <= 1e6",
   "input_format": "line1: n (int); line2: limit (int)",
   "testcases": [
-    {"input": "5\n2", "desc": "Edge: example1 -> 3"},
-    {"input": "3\n3", "desc": "Edge: example2 -> 10"},
-    {"input": "1\n1", "desc": "Edge: minimal"},
-    {"input": "1\n1000000", "desc": "Edge: n=1 huge limit"},
-    {"input": "1000000\n1", "desc": "Edge: max n limit 1 -> 0"},
-    {"input": "3\n1", "desc": "Edge: n=3 limit=1 -> 1 (1,1,1)"},
-    {"input": "6\n2", "desc": "Edge: n=6 limit=2 -> 1 (2,2,2)"},
-    {"input": "0\n1", "desc": "Edge: n=0 -> 1"},
-    {"input": "10\n5", "desc": "Standard: n=10 limit=5"},
-    {"input": "100\n50", "desc": "Standard: n=100 limit=50"},
-    {"input": "100\n100", "desc": "Standard: n=100 limit=100"},
-    {"input": "1000\n500", "desc": "Standard: n=1000 limit=500"},
-    {"input": "10000\n5000", "desc": "Standard: n=1e4"},
-    {"input": "100000\n50000", "desc": "Standard: n=1e5"},
-    {"input": "1000000\n1000000", "desc": "Stress: max both"},
-    {"input": "1000000\n500000", "desc": "Stress: max n half limit"},
-    {"input": "999999\n333333", "desc": "Stress: near-max n"},
-    {"input": "100\n10", "desc": "Standard: too tight"},
-    {"input": "30\n10", "desc": "Standard: exact (10,10,10)"},
-    {"input": "3000000\n1000000", "desc": "Killer: n>3*limit but n=3e6 over -> 1 only (1M,1M,1M)"}
+    {
+      "input": "5\n2",
+      "desc": "Edge: example1 -> 3"
+    },
+    {
+      "input": "3\n3",
+      "desc": "Edge: example2 -> 10"
+    },
+    {
+      "input": "485720\n237293",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "502707\n507113",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "221014\n44811",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "3\n1",
+      "desc": "Edge: n=3 limit=1 -> 1 (1,1,1)"
+    },
+    {
+      "input": "6\n2",
+      "desc": "Edge: n=6 limit=2 -> 1 (2,2,2)"
+    },
+    {
+      "input": "0\n1",
+      "desc": "Edge: n=0 -> 1"
+    },
+    {
+      "input": "10\n5",
+      "desc": "Standard: n=10 limit=5"
+    },
+    {
+      "input": "100\n50",
+      "desc": "Standard: n=100 limit=50"
+    },
+    {
+      "input": "100\n100",
+      "desc": "Standard: n=100 limit=100"
+    },
+    {
+      "input": "1000\n500",
+      "desc": "Standard: n=1000 limit=500"
+    },
+    {
+      "input": "10000\n5000",
+      "desc": "Standard: n=1e4"
+    },
+    {
+      "input": "100000\n50000",
+      "desc": "Standard: n=1e5"
+    },
+    {
+      "input": "1000000\n1000000",
+      "desc": "Stress: max both"
+    },
+    {
+      "input": "1000000\n500000",
+      "desc": "Stress: max n half limit"
+    },
+    {
+      "input": "999999\n333333",
+      "desc": "Stress: near-max n"
+    },
+    {
+      "input": "100\n10",
+      "desc": "Standard: too tight"
+    },
+    {
+      "input": "30\n10",
+      "desc": "Standard: exact (10,10,10)"
+    },
+    {
+      "input": "1000000\n1000000",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
