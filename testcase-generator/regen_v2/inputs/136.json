@@ -1,0 +1,28 @@
+{
+  "pid": 136,
+  "slug": "sort-colors",
+  "inferred_constraints": "n == nums.length, 1 <= n <= 300, nums[i] in {0,1,2}",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[2,0,2,1,1,0]", "desc": "Edge: example1"},
+    {"input": "[2,0,1]", "desc": "Edge: example2"},
+    {"input": "[0]", "desc": "Edge: n=1 single 0"},
+    {"input": "[1]", "desc": "Edge: n=1 single 1"},
+    {"input": "[2]", "desc": "Edge: n=1 single 2"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all ones"},
+    {"input": "[2,2,2,2,2]", "desc": "Edge: all twos"},
+    {"input": "[0,1,2]", "desc": "Edge: already sorted minimal"},
+    {"input": "[2,1,0]", "desc": "Edge: reversed minimal"},
+    {"input": "[0,2]", "desc": "Edge: missing 1s"},
+    {"input": "[1,2]", "desc": "Edge: missing 0s"},
+    {"input": "[0,1]", "desc": "Edge: missing 2s"},
+    {"input": "[2,0,2,0,2,0,2,0]", "desc": "Standard: only 0 and 2 alternating"},
+    {"input": "[0,1,0,1,0,1,0,1]", "desc": "Standard: only 0 and 1 alternating"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard: only 1 and 2 alternating"},
+    {"input": "[1,0,2,2,1,0,1,0,2,1]", "desc": "Standard: random mix"},
+    {"input": "[0,0,1,1,2,2,0,1,2,0,1,2,2,1,0]", "desc": "Standard: messy"},
+    {"input": "[2,2,2,1,1,1,0,0,0,2,2,1,1,0,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0]", "desc": "Stress: 30 elements complex"},
+    {"input": "[2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2]", "desc": "Stress: 100 elements full reverse pattern"}
+  ]
+}

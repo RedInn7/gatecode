@@ -1,0 +1,28 @@
+{
+  "pid": 135,
+  "slug": "generate-tag-for-video-caption",
+  "inferred_constraints": "1 <= caption.length <= 150, English letters and spaces only",
+  "input_format": "line1: caption (string with JSON quotes)",
+  "testcases": [
+    {"input": "\"Leetcode daily streak achieved\"", "desc": "Edge: example1"},
+    {"input": "\"can I Go There\"", "desc": "Edge: example2"},
+    {"input": "\"   nasa\"", "desc": "Edge: example3 leading spaces"},
+    {"input": "\"a\"", "desc": "Edge: minimum length 1"},
+    {"input": "\"A\"", "desc": "Edge: single uppercase"},
+    {"input": "\" \"", "desc": "Edge: only single space"},
+    {"input": "\"   \"", "desc": "Edge: only spaces"},
+    {"input": "\"hello\"", "desc": "Edge: single word lowercase"},
+    {"input": "\"HELLO\"", "desc": "Edge: single word uppercase"},
+    {"input": "\"hello world\"", "desc": "Standard: two words"},
+    {"input": "\"Hello World\"", "desc": "Standard: capitalized words"},
+    {"input": "\"hello   world\"", "desc": "Standard: multiple spaces between"},
+    {"input": "\"  leading and trailing  \"", "desc": "Standard: leading and trailing spaces"},
+    {"input": "\"one two three four five\"", "desc": "Standard: multiple words"},
+    {"input": "\"PYTHON IS GREAT\"", "desc": "Standard: all caps multi-word"},
+    {"input": "\"mIxEd CaSe WoRdS hErE\"", "desc": "Standard: mixed case"},
+    {"input": "\"Programming Languages Are Fun To Learn\"", "desc": "Standard: longer caption"},
+    {"input": "\"the quick brown fox jumps over the lazy dog and runs away from the fence into the meadow with grass\"", "desc": "Stress: 100+ chars, many words"},
+    {"input": "\"aBcDeFgHiJkLmNoPqRsTuVwXyZaBcDeFgHiJkLmNoPqRsTuVwXyZaBcDeFgHiJkLmNoPqRsTuVwXyZaBcDeFgHiJkLmNoPqRsTuVwXyZ\"", "desc": "Stress: single long alternating-case word"},
+    {"input": "\"x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x\"", "desc": "Stress: many tiny words at length 150 boundary"}
+  ]
+}

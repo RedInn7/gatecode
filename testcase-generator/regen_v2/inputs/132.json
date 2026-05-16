@@ -1,0 +1,28 @@
+{
+  "pid": 132,
+  "slug": "number-of-connected-components-in-an-undirected-graph",
+  "inferred_constraints": "1 <= n <= 2000, 1 <= edges.length <= 5000, edges[i]=[a,b] 0 <= a < b < n, no duplicate edges",
+  "input_format": "line1: n (int); line2: edges (JSON 2D int)",
+  "testcases": [
+    {"input": "5\n[[0,1],[1,2],[3,4]]", "desc": "Edge: example1, 2 components"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]", "desc": "Edge: example2, 1 component"},
+    {"input": "1\n[]", "desc": "Edge: n=1 minimum, no edges"},
+    {"input": "2\n[]", "desc": "Edge: n=2 no edges, 2 components"},
+    {"input": "2\n[[0,1]]", "desc": "Edge: n=2 with single edge"},
+    {"input": "10\n[]", "desc": "Edge: 10 isolated nodes"},
+    {"input": "4\n[[0,1],[2,3]]", "desc": "Edge: 2 distinct components"},
+    {"input": "6\n[[0,1],[1,2],[2,0],[3,4],[4,5],[5,3]]", "desc": "Standard: 2 triangles"},
+    {"input": "7\n[[0,1],[2,3],[4,5]]", "desc": "Standard: 3 pairs + 1 isolated = 4 components"},
+    {"input": "5\n[[0,1],[0,2],[0,3],[0,4]]", "desc": "Standard: star, 1 component"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4],[4,0]]", "desc": "Standard: pentagon cycle"},
+    {"input": "8\n[[0,1],[1,2],[2,3],[4,5],[5,6],[6,7]]", "desc": "Standard: 2 paths"},
+    {"input": "10\n[[0,1],[2,3],[4,5],[6,7],[8,9]]", "desc": "Standard: 5 pairs"},
+    {"input": "10\n[[0,1],[1,2],[3,4],[4,5],[5,6],[7,8],[8,9]]", "desc": "Standard: mixed cluster sizes"},
+    {"input": "6\n[[0,1],[1,2],[2,0],[2,3],[3,4],[4,5]]", "desc": "Standard: triangle attached to chain"},
+    {"input": "9\n[[0,1],[0,2],[0,3],[1,4],[1,5],[2,6],[2,7],[3,8]]", "desc": "Standard: tree"},
+    {"input": "2000\n[]", "desc": "Stress: all isolated max"},
+    {"input": "10\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9]]", "desc": "Stress: hub star n=10"},
+    {"input": "12\n[[0,1],[2,3],[4,5],[6,7],[8,9],[10,11]]", "desc": "Stress: 6 disjoint pairs"},
+    {"input": "20\n[[0,1],[1,2],[2,3],[3,4],[5,6],[6,7],[8,9],[10,11],[12,13],[14,15],[16,17],[18,19]]", "desc": "Stress: 1 chain + many pairs"}
+  ]
+}

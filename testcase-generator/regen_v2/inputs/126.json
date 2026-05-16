@@ -1,0 +1,28 @@
+{
+  "pid": 126,
+  "slug": "single-number",
+  "inferred_constraints": "1 <= nums.length <= 3e4, -3e4 <= nums[i] <= 3e4, every element appears twice except one",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[2,2,1]", "desc": "Edge: example1"},
+    {"input": "[4,1,2,1,2]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: n=1 single only"},
+    {"input": "[0,0,1]", "desc": "Edge: zero twice plus single"},
+    {"input": "[-1,-1,2]", "desc": "Edge: negative pair plus single"},
+    {"input": "[30000,30000,-30000]", "desc": "Edge: extremes, single negative"},
+    {"input": "[-30000,-30000,30000]", "desc": "Edge: extremes, single positive"},
+    {"input": "[0,0,-30000]", "desc": "Edge: single MIN"},
+    {"input": "[0,0,30000]", "desc": "Edge: single MAX"},
+    {"input": "[1,2,3,4,5,1,2,3,4]", "desc": "Standard: 5 unique at end"},
+    {"input": "[5,4,3,2,1,2,3,4,5]", "desc": "Standard: 1 unique in middle"},
+    {"input": "[100,200,100,200,300]", "desc": "Standard: 300 unique"},
+    {"input": "[-1,-2,-1,-2,-3]", "desc": "Standard: negatives, -3 unique"},
+    {"input": "[7,3,5,4,5,3,4,8,9,7,9]", "desc": "Standard: 8 unique"},
+    {"input": "[1000,2000,3000,1000,3000,2000,5000]", "desc": "Standard: medium values"},
+    {"input": "[-1,1,-1,1,2,-2,2,-2,42]", "desc": "Standard: mixed signs, 42 unique"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11]", "desc": "Standard: 11 unique"},
+    {"input": "[30000,29999,30000,29999,-30000]", "desc": "Edge: extreme negative unique"},
+    {"input": "[12345,67890,12345,67890,11111,22222,11111,22222,99999]", "desc": "Stress: 99999 unique medium values"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,11,12,13,14,15,16]", "desc": "Stress: 31 elements, 16 unique"}
+  ]
+}

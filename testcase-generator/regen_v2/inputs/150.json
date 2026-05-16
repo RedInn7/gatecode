@@ -1,0 +1,28 @@
+{
+  "pid": 150,
+  "slug": "check-distances-between-same-letters",
+  "inferred_constraints": "2 <= s.length <= 52, lowercase, each letter appears exactly twice, distance.length == 26, 0 <= distance[i] <= 50",
+  "input_format": "line1: s (string in JSON quotes); line2: distance (JSON int array of length 26)",
+  "testcases": [
+    {"input": "\"abaccb\"\n[1,3,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: example1 true"},
+    {"input": "\"aa\"\n[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: example2 false expected 1 actual 0"},
+    {"input": "\"aa\"\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: aa distance=0 valid"},
+    {"input": "\"abba\"\n[2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: abba a-distance=2 b-distance=0"},
+    {"input": "\"abab\"\n[1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: abab both 1"},
+    {"input": "\"zz\"\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: zz at index 25 dist 0"},
+    {"input": "\"aazz\"\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: two letters both distance 0"},
+    {"input": "\"azza\"\n[2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]", "desc": "Edge: a far apart distance 2 z distance 0 but specified 1 -> false"},
+    {"input": "\"aazz\"\n[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: false a-distance specified 1 but actual 0"},
+    {"input": "\"abba\"\n[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: false a-distance actual 2 specified 1"},
+    {"input": "\"aabbcc\"\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: 3 pairs adjacent"},
+    {"input": "\"abcabc\"\n[2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: 3 pairs equal distance"},
+    {"input": "\"abccba\"\n[4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: palindrome a-dist=4 b-dist=2 c-dist=0"},
+    {"input": "\"aaccbb\"\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: all adjacent pairs"},
+    {"input": "\"abccba\"\n[3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: abccba but distances wrong (a actual 4 b actual 2)"},
+    {"input": "\"abcddcba\"\n[6,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: palindrome 4 letters a=6 b=4 c=2 d=0"},
+    {"input": "\"abcddcba\"\n[5,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: false, a-distance wrong"},
+    {"input": "\"aabb\"\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: aabb both distance 0"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"\n[25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25]", "desc": "Stress: all 26 letters twice each at distance 25"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba\"\n[50,48,46,44,42,40,38,36,34,32,30,28,26,24,22,20,18,16,14,12,10,8,6,4,2,0]", "desc": "Stress: 26 letters palindrome shape"}
+  ]
+}

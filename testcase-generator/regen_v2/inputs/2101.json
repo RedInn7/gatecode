@@ -1,0 +1,28 @@
+{
+  "pid": 2101,
+  "slug": "count-substrings-with-only-one-distinct-letter",
+  "inferred_constraints": "1 <= s.length <= 1000, lowercase letters",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"aaaba\"", "desc": "Standard: example 1"},
+    {"input": "\"aaaaaaaaaa\"", "desc": "Standard: example 2"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"ab\"", "desc": "Edge: 2 diff"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"abc\"", "desc": "Edge: 3 diff"},
+    {"input": "\"abcdefghij\"", "desc": "Edge: 10 distinct"},
+    {"input": "\"aaabbbccc\"", "desc": "Standard groups"},
+    {"input": "\"aabbaabb\"", "desc": "Standard alternating pairs"},
+    {"input": "\"abababab\"", "desc": "Edge: alternating singles"},
+    {"input": "\"aaaaaaaab\"", "desc": "Standard"},
+    {"input": "\"baaaaaaaa\"", "desc": "Standard"},
+    {"input": "\"zzzzzzzzzz\"", "desc": "Standard all z"},
+    {"input": "\"mississippi\"", "desc": "Standard"},
+    {"input": "\"abcabcabc\"", "desc": "Standard rotating"},
+    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Standard pangram"},
+    {"input": "\"aaaaabbbbbccccc\"", "desc": "Standard 3 groups"},
+    {"input": "\"aabbccddeeff\"", "desc": "Standard 6 pairs"},
+    {"input": "\"qqqqwwwweeeerrrrtttt\"", "desc": "Standard quartets"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress 100 a's"}
+  ]
+}

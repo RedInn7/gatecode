@@ -1,0 +1,28 @@
+{
+  "pid": 2075,
+  "slug": "minimize-rounding-error-to-meet-target",
+  "inferred_constraints": "1 <= prices.length <= 500, prices[i] in [0.0,1000.0] with 3 decimals, 0 <= target <= 10^6",
+  "input_format": "line1: prices (JSON array of strings); line2: target (int)",
+  "testcases": [
+    {"input": "[\"0.700\",\"2.800\",\"4.900\"]\n8", "desc": "Standard: example 1"},
+    {"input": "[\"1.500\",\"2.500\",\"3.500\"]\n10", "desc": "Standard: example 2 impossible"},
+    {"input": "[\"1.500\",\"2.500\",\"3.500\"]\n9", "desc": "Standard: example 3"},
+    {"input": "[\"0.000\"]\n0", "desc": "Edge: single zero target 0"},
+    {"input": "[\"0.000\"]\n1", "desc": "Edge: single zero target 1 impossible"},
+    {"input": "[\"1.000\"]\n1", "desc": "Edge: single integer"},
+    {"input": "[\"1000.000\"]\n1000", "desc": "Edge: max value"},
+    {"input": "[\"0.500\"]\n0", "desc": "Edge: floor"},
+    {"input": "[\"0.500\"]\n1", "desc": "Edge: ceil"},
+    {"input": "[\"0.001\",\"0.001\",\"0.001\"]\n0", "desc": "Edge: tiny all floor"},
+    {"input": "[\"0.999\",\"0.999\",\"0.999\"]\n3", "desc": "Edge: tiny all ceil"},
+    {"input": "[\"1.250\",\"2.750\",\"3.500\"]\n8", "desc": "Standard"},
+    {"input": "[\"100.500\",\"200.500\",\"300.500\"]\n602", "desc": "Standard medium"},
+    {"input": "[\"999.999\",\"0.001\"]\n1001", "desc": "Edge: ceil extreme"},
+    {"input": "[\"500.000\",\"500.000\"]\n1000", "desc": "Edge: integers sum"},
+    {"input": "[\"0.500\",\"0.500\",\"0.500\",\"0.500\"]\n2", "desc": "Standard: 4 halves"},
+    {"input": "[\"123.456\",\"789.012\",\"345.678\"]\n1258", "desc": "Standard"},
+    {"input": "[\"0.100\",\"0.200\",\"0.300\",\"0.400\",\"0.500\"]\n2", "desc": "Standard small"},
+    {"input": "[\"50.000\",\"50.000\",\"50.000\",\"50.000\",\"50.000\",\"50.000\",\"50.000\",\"50.000\",\"50.000\",\"50.000\"]\n500", "desc": "Standard"},
+    {"input": "[\"333.333\",\"333.333\",\"333.334\"]\n1000", "desc": "Standard"}
+  ]
+}

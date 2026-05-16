@@ -1,0 +1,28 @@
+{
+  "pid": 2121,
+  "slug": "maximum-number-of-potholes-that-can-be-fixed",
+  "inferred_constraints": "1 <= road.length <= 10^5, 1 <= budget <= 10^5+1, road in {.,x}",
+  "input_format": "line1: road (quoted); line2: budget (int)",
+  "testcases": [
+    {"input": "\"..\"\n5", "desc": "Standard: example 1"},
+    {"input": "\"..xxxxx\"\n4", "desc": "Standard: example 2"},
+    {"input": "\"x.x.xxx...x\"\n14", "desc": "Standard: example 3"},
+    {"input": "\".\"\n1", "desc": "Edge: no potholes"},
+    {"input": "\"x\"\n2", "desc": "Edge: 1 pothole enough budget"},
+    {"input": "\"x\"\n1", "desc": "Edge: 1 pothole not enough"},
+    {"input": "\"xxxxx\"\n10", "desc": "Edge: all potholes"},
+    {"input": "\".....\"\n10", "desc": "Edge: all smooth"},
+    {"input": "\"xxxxx\"\n1", "desc": "Edge: very low budget"},
+    {"input": "\"xxxxx\"\n0", "desc": "Edge: zero budget? -> 0"},
+    {"input": "\"x.x.x.x.x\"\n10", "desc": "Standard alternating"},
+    {"input": "\"xx.xx.xx.xx\"\n10", "desc": "Standard pairs"},
+    {"input": "\"xxxxxxxxxx\"\n11", "desc": "Edge: exact budget"},
+    {"input": "\"xxxxxxxxxx.xxxxxxxxxx\"\n100", "desc": "Standard 2 blocks"},
+    {"input": "\".x.x.x.x.x.x.x.x.x.x\"\n5", "desc": "Standard low budget alternating"},
+    {"input": "\"xxxxx.xxxx.xxx.xx.x\"\n20", "desc": "Standard varied"},
+    {"input": "\"......xxxxx......\"\n100", "desc": "Standard block in middle"},
+    {"input": "\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\n101", "desc": "Stress 100 x exact"},
+    {"input": "\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\n50", "desc": "Stress 100 x partial"},
+    {"input": "\"x..x..x..x..x..x..x..x..x..x\"\n20", "desc": "Standard spaced"}
+  ]
+}

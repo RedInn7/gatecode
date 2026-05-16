@@ -1,0 +1,28 @@
+{
+  "pid": 2084,
+  "slug": "slowest-key",
+  "inferred_constraints": "releaseTimes.length == n, 1 <= n <= 1000, 1 <= releaseTimes[i] <= 10^9 strictly increasing, keysPressed.length == n, lowercase",
+  "input_format": "line1: releaseTimes (JSON array); line2: keysPressed (string in quotes)",
+  "testcases": [
+    {"input": "[9,29,49,50]\n\"cbcd\"", "desc": "Standard: example 1"},
+    {"input": "[12,23,36,46,62]\n\"spuda\"", "desc": "Standard: example 2"},
+    {"input": "[1]\n\"a\"", "desc": "Edge: n=1"},
+    {"input": "[1000000000]\n\"z\"", "desc": "Edge: n=1 max time"},
+    {"input": "[1,2]\n\"ab\"", "desc": "Edge: n=2"},
+    {"input": "[10,20]\n\"ab\"", "desc": "Edge: equal durations choose larger key"},
+    {"input": "[10,20]\n\"ba\"", "desc": "Edge: equal durations choose larger key 2"},
+    {"input": "[1,3,6,10,15]\n\"abcde\"", "desc": "Standard: incremental"},
+    {"input": "[100,200,300]\n\"aaa\"", "desc": "Standard: same key"},
+    {"input": "[5,10,15,20,25]\n\"zzzzz\"", "desc": "Edge: all same"},
+    {"input": "[1,1000000000]\n\"ab\"", "desc": "Edge: huge second"},
+    {"input": "[999999998,1000000000]\n\"ab\"", "desc": "Edge: near max"},
+    {"input": "[10,11,12,13,14,15,16,17,18,19,20]\n\"zyxwvutsrqp\"", "desc": "Standard: 11 keys"},
+    {"input": "[100,200,250,350,400]\n\"abcde\"", "desc": "Standard: mixed durations"},
+    {"input": "[50,51,52]\n\"abc\"", "desc": "Standard"},
+    {"input": "[1,3,6,7,11,15,20,30]\n\"abcdefgh\"", "desc": "Standard 8"},
+    {"input": "[100,150,210,280,300,400,520,650,800,1000]\n\"abcdefghij\"", "desc": "Standard 10"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512,1024]\n\"abcdefghijk\"", "desc": "Standard powers of 2"},
+    {"input": "[5,10,15,16,25,30,40,45]\n\"abacabac\"", "desc": "Standard repeated keys"},
+    {"input": "[3,5,9,15,23,33,45,59,75,93,113]\n\"zazazazazaz\"", "desc": "Standard alternating"}
+  ]
+}

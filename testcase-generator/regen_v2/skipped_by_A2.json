@@ -3,6 +3,9 @@
     {"pid": 1952, "slug": "fizz-buzz-multithreaded", "reason": "multithreaded design problem - not amenable to standard input/output testing"},
     {"pid": 1997, "slug": "number-of-unique-categories", "reason": "interactive class problem with CategoryHandler - not amenable to LeetCode-style I/O testing"},
     {"pid": 2040, "slug": "number-of-ships-in-a-rectangle", "reason": "interactive problem with Sea API - cannot test via standard I/O"},
-    {"pid": 2048, "slug": "call-function-with-custom-context", "reason": "JavaScript-only problem - no C++/Python signatures"}
+    {"pid": 2048, "slug": "call-function-with-custom-context", "reason": "JavaScript-only problem - no C++/Python signatures"},
+    {"pid": 2082, "slug": "sort-by", "reason": "JavaScript-only problem - takes function arg, no C++/Python signatures"},
+    {"pid": 2088, "slug": "countries-you-can-safely-invest-in", "reason": "SQL problem with table schemas"},
+    {"pid": 2109, "slug": "group-by", "reason": "JavaScript-only problem - prototype enhancement"}
   ]
 }

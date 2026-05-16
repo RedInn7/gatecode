@@ -1,0 +1,28 @@
+{
+  "pid": 2119,
+  "slug": "number-of-sub-arrays-with-odd-sum",
+  "inferred_constraints": "1 <= arr.length <= 10^5, 1 <= arr[i] <= 100",
+  "input_format": "single line: arr (JSON array)",
+  "testcases": [
+    {"input": "[1,3,5]", "desc": "Standard: example 1"},
+    {"input": "[2,4,6]", "desc": "Standard: example 2 all even"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: example 3"},
+    {"input": "[1]", "desc": "Edge: n=1 odd"},
+    {"input": "[2]", "desc": "Edge: n=1 even"},
+    {"input": "[1,1]", "desc": "Edge: 2 odd"},
+    {"input": "[2,2]", "desc": "Edge: 2 even"},
+    {"input": "[1,2]", "desc": "Edge: mixed"},
+    {"input": "[100,100,100,100,100]", "desc": "Edge: all max"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: 10 odd"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2]", "desc": "Edge: 10 even"},
+    {"input": "[99,99,99,99,99]", "desc": "Standard all 99"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]", "desc": "Standard"},
+    {"input": "[51,52,53,54,55,56,57,58,59,60]", "desc": "Standard"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4,4,4]", "desc": "Standard groups"},
+    {"input": "[7,11,13,17,19,23,29,31,37,41]", "desc": "Standard odd primes"},
+    {"input": "[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29]", "desc": "Standard all odd"},
+    {"input": "[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30]", "desc": "Standard all even"},
+    {"input": "[50,30,70,20,80,40,60,10,90,5,95,15,85,25,75]", "desc": "Standard mixed parities"}
+  ]
+}

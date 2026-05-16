@@ -1,0 +1,28 @@
+{
+  "pid": 137,
+  "slug": "find-indices-with-index-and-value-difference-ii",
+  "inferred_constraints": "1 <= n <= 1e5, 0 <= nums[i] <= 1e9, 0 <= indexDifference <= 1e5, 0 <= valueDifference <= 1e9",
+  "input_format": "line1: nums (JSON int array); line2: indexDifference (int); line3: valueDifference (int)",
+  "testcases": [
+    {"input": "[5,1,4,1]\n2\n4", "desc": "Edge: example1"},
+    {"input": "[2,1]\n0\n0", "desc": "Edge: example2 indexDiff=0"},
+    {"input": "[1,2,3]\n2\n4", "desc": "Edge: example3 no pair"},
+    {"input": "[0]\n0\n0", "desc": "Edge: n=1 trivial self-pair"},
+    {"input": "[1000000000]\n0\n0", "desc": "Edge: n=1 max value"},
+    {"input": "[1,1]\n0\n0", "desc": "Edge: same values, indexDiff=0"},
+    {"input": "[1,1]\n1\n0", "desc": "Edge: same values, indexDiff=1"},
+    {"input": "[0,1000000000]\n1\n1000000000", "desc": "Edge: extreme value diff exact match"},
+    {"input": "[1000000000,0]\n1\n1000000000", "desc": "Edge: reversed extremes"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]\n1\n0", "desc": "Edge: all same value valid pair"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5\n5", "desc": "Standard: ascending exact diff"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n5\n5", "desc": "Standard: descending"},
+    {"input": "[1,10,2,9,3,8,4,7,5,6]\n3\n5", "desc": "Standard: zigzag"},
+    {"input": "[0,0,0,0,1000000000]\n2\n1000000000", "desc": "Standard: spike at end"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n9\n900", "desc": "Standard: span max indexDiff"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n10\n900", "desc": "Standard: indexDiff just out of range"},
+    {"input": "[7,7,7,7,7,7,7]\n3\n1", "desc": "Edge: no pairs with positive value diff"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10\n10", "desc": "Stress: 20 elements"},
+    {"input": "[999999999,888888888,777777777,666666666,555555555,444444444,333333333,222222222,111111111,0]\n5\n500000000", "desc": "Stress: large values descending"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000000000]\n10\n999999999", "desc": "Stress: spike at end large indexDiff"}
+  ]
+}

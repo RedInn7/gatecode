@@ -1,0 +1,28 @@
+{
+  "pid": 2096,
+  "slug": "implement-queue-using-stacks",
+  "inferred_constraints": "1 <= x <= 9, at most 100 calls",
+  "input_format": "line1: operations (JSON array of strings); line2: args (JSON 2D array)",
+  "testcases": [
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"peek\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]", "desc": "Standard: example 1"},
+    {"input": "[\"MyQueue\",\"empty\"]\n[[],[]]", "desc": "Edge: empty new"},
+    {"input": "[\"MyQueue\",\"push\",\"empty\"]\n[[],[5],[]]", "desc": "Edge: single push"},
+    {"input": "[\"MyQueue\",\"push\",\"pop\",\"empty\"]\n[[],[1],[],[]]", "desc": "Edge: push pop"},
+    {"input": "[\"MyQueue\",\"push\",\"peek\",\"empty\"]\n[[],[3],[],[]]", "desc": "Edge: push peek"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"empty\"]\n[[],[1],[2],[3],[],[],[],[]]", "desc": "Standard 3 push 3 pop"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"peek\",\"push\",\"peek\"]\n[[],[1],[2],[],[3],[]]", "desc": "Standard interleaved"},
+    {"input": "[\"MyQueue\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"pop\"]\n[[],[1],[],[2],[],[3],[]]", "desc": "Standard alternating"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"push\",\"push\",\"peek\",\"pop\",\"peek\"]\n[[],[1],[2],[3],[4],[5],[],[],[]]", "desc": "Standard fill drain"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\"]\n[[],[1],[2],[3],[4],[5],[6],[7],[8],[9],[1]]", "desc": "Standard fill 10"},
+    {"input": "[\"MyQueue\",\"push\",\"peek\",\"pop\",\"empty\",\"push\",\"push\",\"peek\",\"pop\",\"pop\",\"empty\"]\n[[],[9],[],[],[],[1],[2],[],[],[],[]]", "desc": "Standard mix"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"push\",\"pop\",\"pop\",\"empty\"]\n[[],[1],[2],[],[3],[],[4],[5],[],[],[]]", "desc": "Standard complex"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"empty\"]\n[[],[7],[7],[7],[7],[7],[7],[],[],[],[],[],[],[]]", "desc": "Standard same values"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"peek\",\"pop\",\"peek\"]\n[[],[1],[2],[3],[],[],[]]", "desc": "Standard verify FIFO"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"peek\",\"pop\",\"empty\",\"pop\",\"empty\"]\n[[],[1],[2],[3],[4],[],[],[],[],[],[],[]]", "desc": "Standard drain to empty"},
+    {"input": "[\"MyQueue\",\"empty\",\"push\",\"empty\",\"pop\",\"empty\"]\n[[],[],[5],[],[],[]]", "desc": "Standard empty checks"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"push\",\"push\",\"pop\",\"peek\"]\n[[],[1],[2],[3],[4],[5],[],[6],[7],[],[]]", "desc": "Standard"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"peek\",\"pop\",\"push\",\"push\",\"peek\",\"pop\",\"push\",\"peek\"]\n[[],[8],[9],[],[],[1],[2],[],[],[3],[]]", "desc": "Standard FIFO check"},
+    {"input": "[\"MyQueue\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[],[1],[2],[3],[4],[5],[6],[7],[8],[9],[1],[],[],[],[],[],[],[],[],[],[]]", "desc": "Stress fill and drain"},
+    {"input": "[\"MyQueue\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"pop\",\"empty\"]\n[[],[1],[],[2],[],[3],[],[4],[],[5],[],[6],[],[]]", "desc": "Stress alternating"}
+  ]
+}

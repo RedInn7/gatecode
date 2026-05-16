@@ -1,0 +1,28 @@
+{
+  "pid": 124,
+  "slug": "shortest-completing-word",
+  "inferred_constraints": "1 <= licensePlate.length <= 7, licensePlate has digits/letters/spaces, 1 <= words.length <= 1000, 1 <= words[i].length <= 15, words[i] lowercase",
+  "input_format": "line1: licensePlate (string in JSON-style quotes); line2: words (JSON string array)",
+  "testcases": [
+    {"input": "\"1s3 PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]", "desc": "Edge: example1"},
+    {"input": "\"1s3 456\"\n[\"looks\",\"pest\",\"stew\",\"show\"]", "desc": "Edge: example2"},
+    {"input": "\"a\"\n[\"a\"]", "desc": "Edge: minimal single letter"},
+    {"input": "\"a\"\n[\"b\",\"aa\",\"abc\"]", "desc": "Edge: pick shortest that has 'a'"},
+    {"input": "\"1234567\"\n[\"a\",\"b\",\"c\"]", "desc": "Edge: license has no letters, any word completes"},
+    {"input": "\"AAAAaaa\"\n[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\",\"aaaaaa\",\"aaaaaaa\"]", "desc": "Edge: need 7 a's"},
+    {"input": "\"PP\"\n[\"pop\",\"pup\",\"app\",\"pep\"]", "desc": "Edge: need two p's, tied length, return first"},
+    {"input": "\"ABC\"\n[\"abc\",\"bca\",\"cab\",\"abcd\"]", "desc": "Edge: multiple completers of equal length"},
+    {"input": "\"ZZZ\"\n[\"zzz\",\"zzzz\",\"zzzzz\"]", "desc": "Standard: minimal needed"},
+    {"input": "\"1 2 3\"\n[\"hi\"]", "desc": "Edge: no letters in license, single word"},
+    {"input": "\"GrC8950\"\n[\"measure\",\"other\",\"every\",\"base\",\"according\",\"level\",\"meeting\",\"none\",\"marriage\",\"rest\"]", "desc": "Standard: longer real words"},
+    {"input": "\"Pp\"\n[\"pop\",\"pp\",\"ppp\",\"pp\"]", "desc": "Standard: shortest two-p word"},
+    {"input": "\"abc\"\n[\"cab\",\"abc\",\"bca\"]", "desc": "Standard: ties, return first index"},
+    {"input": "\"xY\"\n[\"yyx\",\"xy\",\"xyy\"]", "desc": "Standard: shortest with x,y"},
+    {"input": "\"   \"\n[\"a\",\"b\",\"c\"]", "desc": "Edge: only spaces in license"},
+    {"input": "\"AbCdEfG\"\n[\"abcdefg\",\"abcdefgh\",\"gfedcba\"]", "desc": "Standard: pick shortest containing all 7"},
+    {"input": "\"1 P\"\n[\"po\",\"poo\",\"p\",\"pp\",\"ppo\"]", "desc": "Standard: shortest needing single p"},
+    {"input": "\"OneTwoFour\"\n[\"hello\",\"world\",\"programming\",\"computer\",\"science\",\"data\",\"structures\",\"algorithms\",\"complexity\",\"runtime\"]", "desc": "Stress: longer words, need specific letters"},
+    {"input": "\"AbCd\"\n[\"abcdefghijklmno\",\"bcdaefghijklmno\",\"abdcefghijklmno\",\"dcbaefghijklmno\"]", "desc": "Stress: ties at length 15"},
+    {"input": "\"7 q P r\"\n[\"prq\",\"pqr\",\"qpr\",\"rpq\"]", "desc": "Stress: tied length, return first"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 130,
+  "slug": "bitwise-ors-of-subarrays",
+  "inferred_constraints": "1 <= arr.length <= 5e4, 0 <= arr[i] <= 1e9",
+  "input_format": "line1: arr (JSON int array)",
+  "testcases": [
+    {"input": "[0]", "desc": "Edge: example1 single zero"},
+    {"input": "[1,1,2]", "desc": "Edge: example2"},
+    {"input": "[1,2,4]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: n=1 single one"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros distinct result is just {0}"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all ones, distinct ORs"},
+    {"input": "[1000000000]", "desc": "Edge: single max"},
+    {"input": "[0,1000000000]", "desc": "Edge: zero and max"},
+    {"input": "[1,2,3,4,5,6,7,8]", "desc": "Standard: ascending small"},
+    {"input": "[8,4,2,1]", "desc": "Standard: powers of 2 descending"},
+    {"input": "[1,3,7,15,31,63,127,255]", "desc": "Standard: nested bit-pattern"},
+    {"input": "[1024,2048,4096,8192]", "desc": "Standard: distinct powers"},
+    {"input": "[42,42,42,42,42]", "desc": "Standard: all same nonzero"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Standard: 10 powers of 2"},
+    {"input": "[1000000000,500000000,250000000,125000000]", "desc": "Standard: large halving"},
+    {"input": "[3,5,7,9,11,13,15,17,19,21,23,25,27,29,31]", "desc": "Standard: odd numbers"},
+    {"input": "[1,1,1,2,2,2,4,4,4,8,8,8,16,16,16]", "desc": "Standard: repeated pattern"},
+    {"input": "[0,1,0,2,0,4,0,8,0,16]", "desc": "Standard: zero interleaved"},
+    {"input": "[999999999,888888888,777777777,666666666,555555555,444444444,333333333,222222222,111111111]", "desc": "Stress: 9 large numbers"},
+    {"input": "[1073741823,1073741822,1073741821,1073741820,1073741819,1073741818,1073741817,1073741816]", "desc": "Stress: near 2^30-1, very close values"}
+  ]
+}

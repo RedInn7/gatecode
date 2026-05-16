@@ -1,0 +1,28 @@
+{
+  "pid": 153,
+  "slug": "binary-prefix-divisible-by-5",
+  "inferred_constraints": "1 <= nums.length <= 1e5, nums[i] in {0,1}",
+  "input_format": "line1: nums (JSON int array of 0/1)",
+  "testcases": [
+    {"input": "[0,1,1]", "desc": "Edge: example1"},
+    {"input": "[1,1,1]", "desc": "Edge: example2"},
+    {"input": "[0]", "desc": "Edge: n=1 single zero"},
+    {"input": "[1]", "desc": "Edge: n=1 single one"},
+    {"input": "[0,0]", "desc": "Edge: two zeros"},
+    {"input": "[1,0]", "desc": "Edge: 2 (false)"},
+    {"input": "[1,0,1,0,1]", "desc": "Standard: 1, 2, 5, 10, 21"},
+    {"input": "[1,1,0,1,1,1]", "desc": "Standard: 1,3,6,13,27,55"},
+    {"input": "[0,1,0,1,0]", "desc": "Standard: 0,1,2,5,10"},
+    {"input": "[1,0,1,0,0]", "desc": "Standard: 1,2,5,10,20"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: all zeros all div 5"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all ones"},
+    {"input": "[1,0,1,0,1,0,1,0]", "desc": "Standard: 10101010 pattern"},
+    {"input": "[0,1,0,1,0,1,0,1]", "desc": "Standard: 01010101"},
+    {"input": "[1,1,0,0,1,0,1]", "desc": "Standard: random"},
+    {"input": "[1,0,1,0,1,1,1,0,1,0]", "desc": "Standard: 10 bits"},
+    {"input": "[0,1,0,1,1,0,1,0,1,1,1,0,1,0,1]", "desc": "Standard: 15 bits"},
+    {"input": "[1,0,1,0,0,1,0,1,1,0,1,1,1,0,0,1,0,1,0,1]", "desc": "Standard: 20 bits"},
+    {"input": "[1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0]", "desc": "Stress: 30 bits with period"},
+    {"input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]", "desc": "Stress: 50 bits 10..."}
+  ]
+}

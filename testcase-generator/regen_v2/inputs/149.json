@@ -1,0 +1,28 @@
+{
+  "pid": 149,
+  "slug": "find-and-replace-pattern",
+  "inferred_constraints": "1 <= pattern.length <= 20, 1 <= words.length <= 50, words[i].length == pattern.length, lowercase",
+  "input_format": "line1: words (JSON string array); line2: pattern (string in JSON quotes)",
+  "testcases": [
+    {"input": "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]\n\"abb\"", "desc": "Edge: example1"},
+    {"input": "[\"a\",\"b\",\"c\"]\n\"a\"", "desc": "Edge: example2 single char"},
+    {"input": "[\"a\"]\n\"a\"", "desc": "Edge: single word single char"},
+    {"input": "[\"z\"]\n\"a\"", "desc": "Edge: bijection of single chars"},
+    {"input": "[\"ab\",\"ba\",\"aa\"]\n\"xy\"", "desc": "Edge: 2-char distinct pattern"},
+    {"input": "[\"ab\",\"ba\",\"aa\"]\n\"xx\"", "desc": "Edge: 2-char identical pattern"},
+    {"input": "[\"abc\",\"xyz\",\"aaa\",\"bbb\"]\n\"abc\"", "desc": "Standard: distinct pattern of 3"},
+    {"input": "[\"aaa\",\"bbb\",\"ccc\"]\n\"xxx\"", "desc": "Standard: all-same pattern"},
+    {"input": "[\"abab\",\"baba\",\"abba\",\"aabb\"]\n\"abab\"", "desc": "Standard: alternating pattern"},
+    {"input": "[\"abc\",\"bca\",\"cab\",\"abz\"]\n\"xyz\"", "desc": "Standard: bijection 3 distinct"},
+    {"input": "[\"hello\",\"world\",\"abcde\",\"aabcd\"]\n\"ahellp\"", "desc": "Standard: wait must match length 5"},
+    {"input": "[\"abcde\",\"fghij\",\"klmno\",\"pqrst\"]\n\"abcde\"", "desc": "Standard: distinct length 5"},
+    {"input": "[\"aabbcc\",\"xxyyzz\",\"qqrrss\"]\n\"aabbcc\"", "desc": "Standard: double-letter pattern"},
+    {"input": "[\"abcabc\",\"xyzxyz\",\"aaaaaa\",\"abccba\"]\n\"abcabc\"", "desc": "Standard: repeating pattern"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n\"z\"", "desc": "Standard: many single chars"},
+    {"input": "[\"abcdefghijklmnopqrst\",\"qwertyuiopasdfghjklz\",\"aaaaaaaaaaaaaaaaaaaa\"]\n\"abcdefghijklmnopqrst\"", "desc": "Standard: max pattern length 20 all distinct"},
+    {"input": "[\"abab\",\"cdcd\",\"efef\",\"ghgh\",\"abcd\",\"abba\"]\n\"abab\"", "desc": "Standard: 2-letter alt"},
+    {"input": "[\"aaaa\",\"bbbb\",\"cccc\",\"abab\",\"abcd\",\"aabb\",\"abba\"]\n\"xxxx\"", "desc": "Stress: 7 words mixed"},
+    {"input": "[\"abcdefg\",\"gfedcba\",\"aabbccd\",\"qwertyu\",\"hjklmno\",\"poiuytr\",\"asdfghj\",\"klzxcvb\",\"nmlkjih\",\"gfedcba\"]\n\"abcdefg\"", "desc": "Stress: 10 words distinct pattern length 7"},
+    {"input": "[\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\",\"abc\",\"xyz\",\"foo\",\"bar\",\"baz\"]\n\"abb\"", "desc": "Stress: pattern abb 10 words"}
+  ]
+}

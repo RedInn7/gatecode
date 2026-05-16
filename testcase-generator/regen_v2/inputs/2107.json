@@ -1,0 +1,28 @@
+{
+  "pid": 2107,
+  "slug": "count-pairs-of-equal-substrings-with-minimum-difference",
+  "inferred_constraints": "1 <= firstString.length, secondString.length <= 2*10^5, lowercase letters",
+  "input_format": "line1: firstString (quoted); line2: secondString (quoted)",
+  "testcases": [
+    {"input": "\"abcd\"\n\"bccda\"", "desc": "Standard: example 1"},
+    {"input": "\"ab\"\n\"cd\"", "desc": "Standard: example 2 zero"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: single same"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: single different"},
+    {"input": "\"abc\"\n\"abc\"", "desc": "Edge: identical"},
+    {"input": "\"abc\"\n\"cba\"", "desc": "Edge: reversed"},
+    {"input": "\"aaaa\"\n\"aaaa\"", "desc": "Edge: all same"},
+    {"input": "\"xyz\"\n\"xyz\"", "desc": "Standard"},
+    {"input": "\"hello\"\n\"world\"", "desc": "Standard"},
+    {"input": "\"abcdef\"\n\"fedcba\"", "desc": "Standard reverse"},
+    {"input": "\"banana\"\n\"banana\"", "desc": "Standard repeating"},
+    {"input": "\"mississippi\"\n\"missing\"", "desc": "Standard"},
+    {"input": "\"thequickbrown\"\n\"foxjumpsover\"", "desc": "Standard"},
+    {"input": "\"aabbcc\"\n\"ccbbaa\"", "desc": "Standard"},
+    {"input": "\"a\"\n\"aaaaaaaaaa\"", "desc": "Edge: 1 vs many"},
+    {"input": "\"aaaaaaaaaa\"\n\"a\"", "desc": "Edge: many vs 1"},
+    {"input": "\"abcdefghij\"\n\"jihgfedcba\"", "desc": "Standard reversed"},
+    {"input": "\"abc\"\n\"abcabcabc\"", "desc": "Standard subseq"},
+    {"input": "\"zyx\"\n\"abc\"", "desc": "Standard no overlap"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard full alphabet"}
+  ]
+}

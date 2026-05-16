@@ -1,0 +1,28 @@
+{
+  "pid": 2090,
+  "slug": "similar-string-groups",
+  "inferred_constraints": "1 <= strs.length <= 300, 1 <= strs[i].length <= 300, lowercase, all anagrams",
+  "input_format": "single line: strs (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"tars\",\"rats\",\"arts\",\"star\"]", "desc": "Standard: example 1"},
+    {"input": "[\"omv\",\"ovm\"]", "desc": "Standard: example 2"},
+    {"input": "[\"abc\"]", "desc": "Edge: n=1"},
+    {"input": "[\"a\"]", "desc": "Edge: n=1 single char"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: simple swap"},
+    {"input": "[\"aa\",\"aa\"]", "desc": "Edge: identical duplicates"},
+    {"input": "[\"abc\",\"bca\",\"cab\"]", "desc": "Standard: rotations"},
+    {"input": "[\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]", "desc": "Standard: all perms"},
+    {"input": "[\"abcd\",\"abdc\",\"acbd\",\"acdb\",\"adbc\",\"adcb\"]", "desc": "Standard: all perms of 4"},
+    {"input": "[\"abcdef\",\"badcfe\"]", "desc": "Standard pair length 6"},
+    {"input": "[\"aaaa\",\"aaaa\",\"aaaa\",\"aaaa\"]", "desc": "Edge: all identical"},
+    {"input": "[\"aabb\",\"abab\",\"abba\",\"baab\",\"baba\",\"bbaa\"]", "desc": "Standard: 2-letter anagrams"},
+    {"input": "[\"abcdefgh\",\"abcdefgh\"]", "desc": "Edge: 2 same"},
+    {"input": "[\"abcdefghij\",\"bacdefghij\",\"abdcefghij\",\"abcdfeghij\"]", "desc": "Standard length 10 swaps"},
+    {"input": "[\"xyz\",\"xzy\",\"yxz\",\"yzx\",\"zxy\",\"zyx\"]", "desc": "Standard length 3 all"},
+    {"input": "[\"abab\",\"baba\"]", "desc": "Edge palindrome swaps"},
+    {"input": "[\"aabbcc\",\"bbaacc\",\"ccaabb\",\"aabbcc\"]", "desc": "Standard"},
+    {"input": "[\"aaaabbbb\",\"bbbbaaaa\",\"aabbaabb\",\"bbaabbaa\"]", "desc": "Standard"},
+    {"input": "[\"abcdefghijklmnop\",\"bacdefghijklmnop\"]", "desc": "Standard length 16"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\",\"bacdefghijklmnopqrstuvwxyz\",\"abdcefghijklmnopqrstuvwxyz\",\"abcedfghijklmnopqrstuvwxyz\"]", "desc": "Standard length 26 swap chain"}
+  ]
+}

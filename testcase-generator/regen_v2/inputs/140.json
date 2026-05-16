@@ -1,0 +1,28 @@
+{
+  "pid": 140,
+  "slug": "count-the-number-of-substrings-with-dominant-ones",
+  "inferred_constraints": "1 <= s.length <= 4e4, s consists of '0' and '1'",
+  "input_format": "line1: s (binary string in JSON quotes)",
+  "testcases": [
+    {"input": "\"00011\"", "desc": "Edge: example1"},
+    {"input": "\"101101\"", "desc": "Edge: example2"},
+    {"input": "\"0\"", "desc": "Edge: single zero (no dominant)"},
+    {"input": "\"1\"", "desc": "Edge: single one"},
+    {"input": "\"00\"", "desc": "Edge: two zeros"},
+    {"input": "\"11\"", "desc": "Edge: two ones"},
+    {"input": "\"01\"", "desc": "Edge: 01 single ones>=zeros^2"},
+    {"input": "\"10\"", "desc": "Edge: 10"},
+    {"input": "\"00000\"", "desc": "Edge: all zeros, no dominant"},
+    {"input": "\"11111\"", "desc": "Edge: all ones"},
+    {"input": "\"01010101\"", "desc": "Standard: alternating"},
+    {"input": "\"10101010\"", "desc": "Standard: alternating reverse"},
+    {"input": "\"000111\"", "desc": "Standard: separated"},
+    {"input": "\"111000\"", "desc": "Standard: ones first"},
+    {"input": "\"110110110\"", "desc": "Standard: pattern repeat"},
+    {"input": "\"00000000001111111111\"", "desc": "Standard: 10 zeros then 10 ones"},
+    {"input": "\"01001000100001000001\"", "desc": "Standard: sparse ones"},
+    {"input": "\"11111111111111111111111111111111111111111111111111\"", "desc": "Stress: 50 ones"},
+    {"input": "\"00000000000000000000000000000000000000000000000000\"", "desc": "Stress: 50 zeros (no count)"},
+    {"input": "\"1010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010\"", "desc": "Stress: 100 alternating"}
+  ]
+}

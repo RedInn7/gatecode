@@ -1,0 +1,28 @@
+{
+  "pid": 134,
+  "slug": "minimum-subsequence-in-non-increasing-order",
+  "inferred_constraints": "1 <= nums.length <= 500, 1 <= nums[i] <= 100",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[4,3,10,9,8]", "desc": "Edge: example1"},
+    {"input": "[4,4,7,6,7]", "desc": "Edge: example2 ties"},
+    {"input": "[6]", "desc": "Edge: n=1 single element"},
+    {"input": "[1,1]", "desc": "Edge: n=2 identical"},
+    {"input": "[100]", "desc": "Edge: single max value"},
+    {"input": "[1]", "desc": "Edge: single min value"},
+    {"input": "[100,100,100,100,100]", "desc": "Edge: all max"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all min"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[50,50,50,50,50,50]", "desc": "Standard: even count same"},
+    {"input": "[1,100]", "desc": "Edge: large gap"},
+    {"input": "[100,1,1,1,1]", "desc": "Standard: one dominates"},
+    {"input": "[5,5,5,4,4,4,3,3,3,2,2,2,1,1,1]", "desc": "Standard: groups"},
+    {"input": "[50,40,30,20,10,5,3,1]", "desc": "Standard: strictly descending uneven"},
+    {"input": "[7,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: dominant + many tiny"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20-element asc"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70]", "desc": "Stress: descending 31"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,100]", "desc": "Stress: many small one huge"},
+    {"input": "[60,60,60,60,60,60,60,60,40,40,40,40,40,40,40,40,40,40,40,40]", "desc": "Stress: bimodal split"}
+  ]
+}

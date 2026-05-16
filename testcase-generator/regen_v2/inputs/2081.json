@@ -1,0 +1,28 @@
+{
+  "pid": 2081,
+  "slug": "longest-repeating-substring",
+  "inferred_constraints": "1 <= s.length <= 2000, lowercase letters",
+  "input_format": "single line: s (string in quotes)",
+  "testcases": [
+    {"input": "\"abcd\"", "desc": "Edge: no repeat"},
+    {"input": "\"abbaba\"", "desc": "Standard: example 2"},
+    {"input": "\"aabcaabdaab\"", "desc": "Standard: example 3"},
+    {"input": "\"a\"", "desc": "Edge: single char"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"ab\"", "desc": "Edge: 2 diff"},
+    {"input": "\"aaa\"", "desc": "Edge: 3 same"},
+    {"input": "\"aaaaaaa\"", "desc": "Edge: all same length 7"},
+    {"input": "\"abcabc\"", "desc": "Standard: half repeat"},
+    {"input": "\"abcdefghij\"", "desc": "Edge: all distinct"},
+    {"input": "\"banana\"", "desc": "Standard: classic"},
+    {"input": "\"mississippi\"", "desc": "Standard: many repeats"},
+    {"input": "\"abracadabra\"", "desc": "Standard"},
+    {"input": "\"abababab\"", "desc": "Standard: alternating"},
+    {"input": "\"aaaaaaaaaa\"", "desc": "Standard: 10 a's"},
+    {"input": "\"abcdefghijabcdefghij\"", "desc": "Standard: doubled prefix"},
+    {"input": "\"zyxwvutsrq\"", "desc": "Standard: reverse alphabet"},
+    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Standard pangram"},
+    {"input": "\"aabbccddaabbccdd\"", "desc": "Standard: paired doubled"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 100 a's"}
+  ]
+}

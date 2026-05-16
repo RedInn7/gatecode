@@ -1,0 +1,28 @@
+{
+  "pid": 2116,
+  "slug": "find-indices-of-stable-mountains",
+  "inferred_constraints": "2 <= n <= 100, 1 <= height[i] <= 100, 1 <= threshold <= 100",
+  "input_format": "line1: height (JSON array); line2: threshold (int)",
+  "testcases": [
+    {"input": "[1,2,3,4,5]\n2", "desc": "Standard: example 1"},
+    {"input": "[10,1,10,1,10]\n3", "desc": "Standard: example 2"},
+    {"input": "[10,1,10,1,10]\n10", "desc": "Standard: example 3 none"},
+    {"input": "[1,1]\n1", "desc": "Edge: min n threshold equals"},
+    {"input": "[100,100]\n50", "desc": "Edge: above threshold"},
+    {"input": "[1,100]\n50", "desc": "Edge: prev too small"},
+    {"input": "[100,1]\n50", "desc": "Edge: prev above"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard increasing"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n5", "desc": "Standard decreasing"},
+    {"input": "[50,50,50,50,50]\n49", "desc": "Standard all above threshold"},
+    {"input": "[50,50,50,50,50]\n50", "desc": "Standard all equal threshold"},
+    {"input": "[100,100,100,100,100]\n1", "desc": "Standard all max"},
+    {"input": "[1,1,1,1,1]\n100", "desc": "Standard all below"},
+    {"input": "[5,10,5,10,5,10,5,10]\n7", "desc": "Standard alternating"},
+    {"input": "[1,100,1,100,1,100]\n50", "desc": "Standard"},
+    {"input": "[50,51,52,53,54,55,56,57,58,59]\n55", "desc": "Standard around threshold"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]\n95", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10", "desc": "Standard 20"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100]\n55", "desc": "Standard cross threshold"},
+    {"input": "[100,1,1,1,1,1,1,1,1,1]\n50", "desc": "Standard single high"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 151,
+  "slug": "distance-to-a-cycle-in-undirected-graph",
+  "inferred_constraints": "3 <= n <= 1e5, edges.length == n, edges[i]=[u,v], connected, exactly one cycle, no parallel edges",
+  "input_format": "line1: n (int); line2: edges (JSON 2D int array)",
+  "testcases": [
+    {"input": "7\n[[1,2],[2,4],[4,3],[3,1],[0,1],[5,2],[6,5]]", "desc": "Edge: example1"},
+    {"input": "9\n[[0,1],[1,2],[0,2],[2,6],[6,7],[6,8],[0,3],[3,4],[3,5]]", "desc": "Edge: example2"},
+    {"input": "3\n[[0,1],[1,2],[2,0]]", "desc": "Edge: n=3 minimum cycle"},
+    {"input": "4\n[[0,1],[1,2],[2,0],[0,3]]", "desc": "Edge: triangle + 1 tail"},
+    {"input": "4\n[[0,1],[1,2],[2,3],[3,0]]", "desc": "Edge: 4-cycle"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4],[4,0]]", "desc": "Edge: 5-cycle"},
+    {"input": "5\n[[0,1],[1,2],[2,0],[0,3],[0,4]]", "desc": "Edge: triangle with 2 tails"},
+    {"input": "6\n[[0,1],[1,2],[2,3],[3,0],[0,4],[1,5]]", "desc": "Standard: 4-cycle with 2 tails on adjacent vertices"},
+    {"input": "6\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0]]", "desc": "Standard: 6-cycle"},
+    {"input": "8\n[[0,1],[1,2],[2,3],[3,0],[0,4],[4,5],[1,6],[6,7]]", "desc": "Standard: 4-cycle with branched tails"},
+    {"input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,0],[0,5],[5,6],[6,7],[2,8],[8,9]]", "desc": "Standard: 5-cycle with two paths"},
+    {"input": "10\n[[0,1],[1,2],[2,0],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]", "desc": "Standard: triangle with long tail"},
+    {"input": "6\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,1]]", "desc": "Standard: cycle at end with tail at start"},
+    {"input": "7\n[[0,1],[0,2],[0,3],[1,2],[3,4],[4,5],[5,6]]", "desc": "Standard: triangle 0-1-2 with chain from 3"},
+    {"input": "8\n[[0,1],[1,2],[2,3],[3,4],[4,1],[0,5],[5,6],[6,7]]", "desc": "Standard: 4-cycle 1-2-3-4 + chain"},
+    {"input": "12\n[[0,1],[1,2],[2,3],[3,0],[0,4],[1,5],[2,6],[3,7],[4,8],[5,9],[6,10],[7,11]]", "desc": "Standard: 4-cycle with 4 paired tails"},
+    {"input": "15\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[0,6],[6,7],[7,8],[1,9],[9,10],[10,11],[2,12],[12,13],[13,14]]", "desc": "Stress: 6-cycle with 3 long tails"},
+    {"input": "20\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,0],[0,8],[8,9],[9,10],[1,11],[11,12],[12,13],[2,14],[14,15],[15,16],[3,17],[17,18],[18,19]]", "desc": "Stress: 8-cycle 4 tails"},
+    {"input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,0]]", "desc": "Stress: all on cycle, distances all 0"},
+    {"input": "10\n[[0,1],[1,2],[2,0],[0,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]", "desc": "Stress: triangle with long chain"}
+  ]
+}

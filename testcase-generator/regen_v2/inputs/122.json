@@ -1,0 +1,28 @@
+{
+  "pid": 122,
+  "slug": "lonely-pixel-ii",
+  "inferred_constraints": "m == picture.length, n == picture[i].length, 1 <= m, n <= 200, picture[i][j] is 'W' or 'B', 1 <= target <= min(m,n)",
+  "input_format": "line1: picture (JSON 2D array of chars as strings); line2: target (int)",
+  "testcases": [
+    {"input": "[[\"W\",\"B\",\"W\",\"B\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"B\",\"W\"],[\"W\",\"W\",\"B\",\"W\",\"B\",\"W\"]]\n3", "desc": "Edge: example1"},
+    {"input": "[[\"W\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"W\"]]\n1", "desc": "Edge: example2 diagonal"},
+    {"input": "[[\"W\"]]\n1", "desc": "Edge: 1x1 white"},
+    {"input": "[[\"B\"]]\n1", "desc": "Edge: 1x1 black with target=1"},
+    {"input": "[[\"W\",\"W\"],[\"W\",\"W\"]]\n1", "desc": "Edge: all white"},
+    {"input": "[[\"B\",\"B\"],[\"B\",\"B\"]]\n2", "desc": "Edge: all black target=2"},
+    {"input": "[[\"B\",\"W\"],[\"W\",\"B\"]]\n1", "desc": "Edge: diagonal Bs"},
+    {"input": "[[\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\"]]\n3", "desc": "Standard: column of Bs target=3"},
+    {"input": "[[\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\"]]\n1", "desc": "Standard: same column target=1 no match"},
+    {"input": "[[\"B\",\"B\",\"B\"],[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"]]\n3", "desc": "Standard: row of Bs target=3"},
+    {"input": "[[\"B\",\"W\",\"W\",\"W\"],[\"W\",\"B\",\"W\",\"W\"],[\"W\",\"W\",\"B\",\"W\"],[\"W\",\"W\",\"W\",\"B\"]]\n1", "desc": "Standard: diagonal 4x4 Bs"},
+    {"input": "[[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"]]\n1", "desc": "Standard: no black pixels"},
+    {"input": "[[\"B\",\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\",\"B\"]]\n4", "desc": "Standard: full block target=4"},
+    {"input": "[[\"B\",\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\"],[\"B\",\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\"]]\n2", "desc": "Standard: checkerboard"},
+    {"input": "[[\"B\"],[\"W\"],[\"B\"],[\"W\"],[\"B\"]]\n3", "desc": "Standard: tall column with 3 Bs"},
+    {"input": "[[\"B\",\"W\",\"W\",\"W\",\"W\",\"W\"],[\"W\",\"B\",\"W\",\"W\",\"W\",\"W\"],[\"W\",\"W\",\"B\",\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\",\"B\",\"W\",\"W\"],[\"W\",\"W\",\"W\",\"W\",\"B\",\"W\"],[\"W\",\"W\",\"W\",\"W\",\"W\",\"B\"]]\n1", "desc": "Standard: 6x6 diagonal Bs"},
+    {"input": "[[\"B\",\"B\"],[\"B\",\"B\"]]\n1", "desc": "Edge: 2x2 all B target=1"},
+    {"input": "[[\"W\",\"B\",\"W\",\"B\",\"W\",\"B\",\"W\",\"B\"],[\"B\",\"W\",\"B\",\"W\",\"B\",\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"W\",\"B\",\"W\",\"B\"],[\"B\",\"W\",\"B\",\"W\",\"B\",\"W\",\"B\",\"W\"]]\n2", "desc": "Stress: 4x8 checkerboard target=2"},
+    {"input": "[[\"B\",\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\",\"B\"]]\n4", "desc": "Stress: 4x4 all B target=4"},
+    {"input": "[[\"W\",\"B\",\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"W\"]]\n5", "desc": "Stress: 5x5 two B columns target=5"}
+  ]
+}

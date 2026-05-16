@@ -1,0 +1,28 @@
+{
+  "pid": 127,
+  "slug": "minimum-number-of-flips-to-reverse-binary-string",
+  "inferred_constraints": "1 <= n <= 1e9",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "1", "desc": "Edge: n=1 minimum"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "3", "desc": "Edge: n=3"},
+    {"input": "4", "desc": "Edge: small"},
+    {"input": "5", "desc": "Edge: odd small"},
+    {"input": "10", "desc": "Edge: small even"},
+    {"input": "100", "desc": "Standard: hundred"},
+    {"input": "1000", "desc": "Standard: thousand"},
+    {"input": "12345", "desc": "Standard: random medium"},
+    {"input": "99999", "desc": "Standard: 5-digit"},
+    {"input": "1000000", "desc": "Standard: million"},
+    {"input": "1234567", "desc": "Standard: 7-digit"},
+    {"input": "10000000", "desc": "Standard: 10M"},
+    {"input": "123456789", "desc": "Standard: 9-digit"},
+    {"input": "500000000", "desc": "Standard: half-billion"},
+    {"input": "999999999", "desc": "Edge: just below 1e9"},
+    {"input": "1000000000", "desc": "Edge: exactly 1e9 max"},
+    {"input": "536870912", "desc": "Stress: 2^29 power-of-two"},
+    {"input": "999999998", "desc": "Stress: near max"},
+    {"input": "987654321", "desc": "Stress: near max with mixed digits"}
+  ]
+}
