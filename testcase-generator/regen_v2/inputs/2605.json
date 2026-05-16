@@ -1,0 +1,28 @@
+{
+  "pid": 2605,
+  "slug": "single-number-ii",
+  "inferred_constraints": "1 <= nums.length <= 3*10^4, -2^31 <= nums[i] <= 2^31-1, each element appears 3 times except for one which appears once",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,2,3,2]", "desc": "Edge: example1"},
+    {"input": "[0,1,0,1,0,1,99]", "desc": "Edge: example2"},
+    {"input": "[7]", "desc": "Edge: single element"},
+    {"input": "[0]", "desc": "Edge: zero"},
+    {"input": "[-1]", "desc": "Edge: negative single"},
+    {"input": "[1,1,1,2]", "desc": "Edge: small example"},
+    {"input": "[5,5,5,-7]", "desc": "Edge: negative answer"},
+    {"input": "[-2,-2,-2,1]", "desc": "Edge: negative trip"},
+    {"input": "[2147483647]", "desc": "Edge: MAX_INT alone"},
+    {"input": "[-2147483648]", "desc": "Edge: MIN_INT alone"},
+    {"input": "[2147483647,2147483647,2147483647,0]", "desc": "Standard: MAX_INT triples"},
+    {"input": "[-2147483648,-2147483648,-2147483648,1]", "desc": "Standard: MIN_INT triples"},
+    {"input": "[1,1,1,2,2,2,3,3,3,5]", "desc": "Standard: multiple triples"},
+    {"input": "[0,0,0,-1,-1,-1,-2,-2,-2,42]", "desc": "Standard: mixed"},
+    {"input": "[100,100,200,200,300,300,400,400,100,200,300,400,99]", "desc": "Standard: 4 triples"},
+    {"input": "[7,7,7,8,8,8,9,9,9,10,10,10,11]", "desc": "Standard: consecutive"},
+    {"input": "[-3,-3,-3,-2,-2,-2,-1,-1,-1,0,0,0,-100]", "desc": "Standard: all neg + answer"},
+    {"input": "[1000000,1000000,1000000,999999,999999,999999,-1000000]", "desc": "Standard: large values"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7,8,8,8,9,9,9,10,10,10,11,11,11,12,12,12,13,13,13,42]", "desc": "Stress: 13 triples + 1"},
+    {"input": "[2147483647,2147483647,2147483647,-2147483648]", "desc": "Killer: extreme bounds"}
+  ]
+}

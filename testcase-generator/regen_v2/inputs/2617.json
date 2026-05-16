@@ -1,0 +1,28 @@
+{
+  "pid": 2617,
+  "slug": "grid-illumination",
+  "inferred_constraints": "1 <= n <= 10^9, 0 <= lamps.length <= 2*10^4, 1 <= queries.length <= 2*10^4, 0 <= row, col < n",
+  "input_format": "line1: n (int); line2: lamps (JSON 2D array); line3: queries (JSON 2D array)",
+  "testcases": [
+    {"input": "5\n[[0,0],[4,4]]\n[[1,1],[1,0]]", "desc": "Edge: example1"},
+    {"input": "5\n[[0,0],[4,4]]\n[[1,1],[1,1]]", "desc": "Edge: example2"},
+    {"input": "5\n[[0,0],[0,4]]\n[[0,4],[0,1],[1,4]]", "desc": "Edge: example3"},
+    {"input": "1\n[[0,0]]\n[[0,0]]", "desc": "Edge: n=1 lamp on"},
+    {"input": "1\n[]\n[[0,0]]", "desc": "Edge: no lamps"},
+    {"input": "3\n[]\n[[1,1]]", "desc": "Edge: 3x3 no lamps"},
+    {"input": "3\n[[1,1]]\n[[1,1]]", "desc": "Edge: center lamp"},
+    {"input": "3\n[[0,0],[0,0]]\n[[0,0]]", "desc": "Edge: dup lamp"},
+    {"input": "5\n[[2,2]]\n[[0,0],[2,2],[4,4]]", "desc": "Standard: center diag"},
+    {"input": "10\n[[0,0],[1,1],[2,2],[3,3],[4,4]]\n[[5,5],[6,6],[7,7]]", "desc": "Standard: 5 lamps on diag"},
+    {"input": "5\n[[0,0],[0,1],[0,2],[0,3],[0,4]]\n[[1,0],[2,0],[3,0]]", "desc": "Standard: row of lamps"},
+    {"input": "5\n[[0,0],[4,0],[0,4],[4,4]]\n[[2,2],[0,2],[2,0]]", "desc": "Standard: 4 corners"},
+    {"input": "10\n[[5,5]]\n[[0,0],[5,5],[5,0],[0,5],[9,9]]", "desc": "Standard: single lamp many queries"},
+    {"input": "8\n[[0,7],[1,6],[2,5],[3,4]]\n[[0,0],[7,7],[3,4],[4,3]]", "desc": "Standard: anti-diag"},
+    {"input": "100\n[[50,50],[25,25],[75,75]]\n[[10,10],[50,50],[90,90]]", "desc": "Standard: bigger"},
+    {"input": "100\n[[0,0]]\n[[0,0],[0,1],[1,0],[1,1],[99,99]]", "desc": "Standard: many queries"},
+    {"input": "1000\n[[500,500],[100,200],[300,400]]\n[[500,500],[500,100],[100,500],[700,700],[999,999]]", "desc": "Standard: large n"},
+    {"input": "5\n[[0,0],[0,4],[4,0],[4,4],[2,2]]\n[[0,2],[2,0],[2,4],[4,2],[2,2]]", "desc": "Standard: cross"},
+    {"input": "100\n[[0,0],[10,10],[20,20],[30,30],[40,40],[50,50],[60,60],[70,70],[80,80],[90,90]]\n[[5,5],[15,15],[25,25],[35,35],[45,45],[55,55],[65,65],[75,75],[85,85],[95,95]]", "desc": "Stress: many lamps"},
+    {"input": "1000000000\n[[0,0],[999999999,999999999]]\n[[500000000,500000000]]", "desc": "Killer: max n diagonal"}
+  ]
+}

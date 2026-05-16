@@ -249,6 +249,21 @@
       "pid": 2542,
       "slug": "design-twitter",
       "reason": "design class Twitter with stateful postTweet/follow/unfollow/getNewsFeed"
+    },
+    {
+      "pid": 2581,
+      "slug": "subrectangle-queries",
+      "reason": "design class SubrectangleQueries with stateful updateSubrectangle/getValue methods"
+    },
+    {
+      "pid": 2608,
+      "slug": "product-sales-analysis-iii",
+      "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2611,
+      "slug": "design-hashmap",
+      "reason": "design class MyHashMap stateful put/get/remove"
     }
   ]
 }

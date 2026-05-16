@@ -1,0 +1,28 @@
+{
+  "pid": 2613,
+  "slug": "jump-game-iv",
+  "inferred_constraints": "1 <= arr.length <= 5*10^4, -10^8 <= arr[i] <= 10^8",
+  "input_format": "single line: arr (JSON array)",
+  "testcases": [
+    {"input": "[100,-23,-23,404,100,23,23,23,3,404]", "desc": "Edge: example1"},
+    {"input": "[7]", "desc": "Edge: example2 single"},
+    {"input": "[7,6,9,6,9,6,9,7]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,2]", "desc": "Edge: n=2"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same"},
+    {"input": "[1,2,3]", "desc": "Edge: distinct 3"},
+    {"input": "[1,1,1]", "desc": "Edge: 3 same"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: distinct asc"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: distinct desc"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard: alternating"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4]", "desc": "Standard: groups"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,99]", "desc": "Standard: 19 fives + 99"},
+    {"input": "[1,2,3,4,5,6,7,1,2,3,4,5,6,7]", "desc": "Standard: repeated"},
+    {"input": "[1,5,3,7,4,6,9,2,8,5,3,7]", "desc": "Standard: random"},
+    {"input": "[100000000,-100000000,100000000,-100000000,100000000]", "desc": "Standard: extreme"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1]", "desc": "Standard: wrap value"},
+    {"input": "[7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]", "desc": "Stress: 100 sevens"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Killer: 50 alternating"}
+  ]
+}

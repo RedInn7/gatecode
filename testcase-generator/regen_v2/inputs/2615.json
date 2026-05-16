@@ -1,0 +1,28 @@
+{
+  "pid": 2615,
+  "slug": "rings-and-rods",
+  "inferred_constraints": "rings.length == 2n, 1 <= n <= 100, rings[i] is uppercase letter R/G/B if i even else digit 0-9",
+  "input_format": "single line: rings",
+  "testcases": [
+    {"input": "B0B6G0R6R0R6G9", "desc": "Edge: example1"},
+    {"input": "B0R0G0R9R0B0G0", "desc": "Edge: example2"},
+    {"input": "G4", "desc": "Edge: example3 single"},
+    {"input": "R0", "desc": "Edge: single R"},
+    {"input": "B0", "desc": "Edge: single B"},
+    {"input": "R0G0B0", "desc": "Edge: all 3 colors rod 0"},
+    {"input": "R0B0G0", "desc": "Edge: scrambled order all 3"},
+    {"input": "R0R0R0", "desc": "Edge: 3 same color"},
+    {"input": "R0G1B2", "desc": "Edge: 3 colors diff rods"},
+    {"input": "R0G0B0R1G1B1", "desc": "Standard: 2 rods full"},
+    {"input": "R0G0B0R1G1B1R2G2B2", "desc": "Standard: 3 rods full"},
+    {"input": "R0G0B0R1G1B1R2G2B2R3G3B3R4G4B4R5G5B5R6G6B6R7G7B7R8G8B8R9G9B9", "desc": "Standard: all 10 rods full"},
+    {"input": "R5G5B5", "desc": "Standard: rod 5 only"},
+    {"input": "R0R1R2R3R4R5R6R7R8R9", "desc": "Standard: all R"},
+    {"input": "G0G1G2G3G4G5G6G7G8G9", "desc": "Standard: all G"},
+    {"input": "B0B1B2B3B4B5B6B7B8B9", "desc": "Standard: all B"},
+    {"input": "R0G0B0R0G0B0R0G0B0", "desc": "Standard: triplicates rod 0"},
+    {"input": "R3G3B3R7G7B7", "desc": "Standard: 2 complete"},
+    {"input": "R0G0B0R1G1B1R2G2B2R3G3B3R4G4B4R5G5B5R6G6B6R7G7B7R8G8B8R9G9B9R0G0B0R1G1B1R2G2B2R3G3B3R4G4B4R5G5B5R6G6B6R7G7B7R8G8B8R9G9B9", "desc": "Stress: double all"},
+    {"input": "R9G9B9R8G8B8R7G7B7R6G6B6R5G5B5R4G4B4R3G3B3R2G2B2R1G1B1R0G0B0", "desc": "Killer: reverse all"}
+  ]
+}

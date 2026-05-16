@@ -1,0 +1,28 @@
+{
+  "pid": 2606,
+  "slug": "number-of-equal-count-substrings",
+  "inferred_constraints": "1 <= s.length <= 3*10^4, lowercase English letters, 1 <= count <= s.length",
+  "input_format": "line1: s; line2: count (int)",
+  "testcases": [
+    {"input": "aaabcbbcc\n3", "desc": "Edge: example1"},
+    {"input": "abcd\n2", "desc": "Edge: example2"},
+    {"input": "a\n5", "desc": "Edge: example3"},
+    {"input": "a\n1", "desc": "Edge: single char count=1"},
+    {"input": "aa\n1", "desc": "Edge: 2 chars same count=1"},
+    {"input": "ab\n1", "desc": "Edge: 2 chars diff"},
+    {"input": "abc\n1", "desc": "Edge: 3 distinct"},
+    {"input": "aaa\n1", "desc": "Edge: 3 same count=1"},
+    {"input": "aabb\n2", "desc": "Edge: 2 pairs"},
+    {"input": "abcabc\n2", "desc": "Standard: distinct 2 each"},
+    {"input": "aabbccaabbcc\n2", "desc": "Standard: balanced"},
+    {"input": "aaabbbccc\n3", "desc": "Standard: 3 each"},
+    {"input": "abcdefg\n1", "desc": "Standard: all distinct"},
+    {"input": "aaaaaaaaaa\n2", "desc": "Standard: 10 a's count=2"},
+    {"input": "aaaaaaaaaa\n5", "desc": "Standard: 10 a's count=5"},
+    {"input": "abcabcabcabc\n4", "desc": "Standard: 3 chars each 4"},
+    {"input": "aabbccddeeff\n2", "desc": "Standard: 6 pairs"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n1", "desc": "Standard: full alpha"},
+    {"input": "aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjj\n5", "desc": "Stress: 10 groups of 5"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n4", "desc": "Killer: 4 alphas"}
+  ]
+}

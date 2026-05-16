@@ -1,0 +1,28 @@
+{
+  "pid": 2622,
+  "slug": "evaluate-the-bracket-pairs-of-a-string",
+  "inferred_constraints": "1 <= s.length <= 10^5, 0 <= knowledge.length <= 10^5, knowledge[i].length == 2, 1 <= key, value length <= 10, key/value lowercase letters",
+  "input_format": "line1: s; line2: knowledge (JSON 2D string array)",
+  "testcases": [
+    {"input": "(name)is(age)yearsold\n[[\"name\",\"bob\"],[\"age\",\"two\"]]", "desc": "Edge: example1"},
+    {"input": "hi(name)\n[[\"a\",\"b\"]]", "desc": "Edge: example2 unknown"},
+    {"input": "(a)(a)(a)aaa\n[[\"a\",\"yes\"]]", "desc": "Edge: example3 repeated"},
+    {"input": "abc\n[]", "desc": "Edge: no brackets"},
+    {"input": "(x)\n[[\"x\",\"y\"]]", "desc": "Edge: single key"},
+    {"input": "(x)\n[]", "desc": "Edge: unknown single key"},
+    {"input": "abc(z)def\n[]", "desc": "Edge: single bracket unknown empty knowledge"},
+    {"input": "a\n[]", "desc": "Edge: single char"},
+    {"input": "(name)(age)\n[[\"name\",\"alice\"],[\"age\",\"30\"]]", "desc": "Edge: 2 consecutive"},
+    {"input": "hello(world)\n[[\"world\",\"earth\"]]", "desc": "Standard: word with bracket"},
+    {"input": "(a)(b)(c)\n[[\"a\",\"1\"],[\"b\",\"2\"],[\"c\",\"3\"]]", "desc": "Standard: 3 keys all known"},
+    {"input": "(a)(b)(c)\n[[\"a\",\"1\"]]", "desc": "Standard: only first known"},
+    {"input": "prefix(key1)middle(key2)suffix\n[[\"key1\",\"v1\"],[\"key2\",\"v2\"]]", "desc": "Standard: separated"},
+    {"input": "(key)(key)(key)\n[[\"key\",\"value\"]]", "desc": "Standard: same key 3 times"},
+    {"input": "(a)(b)(c)(d)(e)(f)(g)(h)(i)(j)\n[[\"a\",\"1\"],[\"b\",\"2\"],[\"c\",\"3\"],[\"d\",\"4\"],[\"e\",\"5\"],[\"f\",\"6\"],[\"g\",\"7\"],[\"h\",\"8\"],[\"i\",\"9\"],[\"j\",\"10\"]]", "desc": "Standard: 10 keys"},
+    {"input": "noBrackets\n[[\"x\",\"y\"]]", "desc": "Standard: no brackets but knowledge"},
+    {"input": "(longkey)\n[[\"longkey\",\"longvalue\"]]", "desc": "Standard: long key"},
+    {"input": "(key1)(key2)(key3)\n[[\"key2\",\"v2\"]]", "desc": "Standard: middle known"},
+    {"input": "abc(x)def(y)ghi(z)jkl(w)mno(p)pqr(q)stu(r)vwx(s)yza(t)bcd(u)efg(v)hij\n[[\"x\",\"X\"],[\"y\",\"Y\"],[\"z\",\"Z\"],[\"w\",\"W\"],[\"p\",\"P\"],[\"q\",\"Q\"],[\"r\",\"R\"],[\"s\",\"S\"],[\"t\",\"T\"],[\"u\",\"U\"],[\"v\",\"V\"]]", "desc": "Stress: many keys"},
+    {"input": "(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)(a)\n[[\"a\",\"value\"]]", "desc": "Killer: same key 20 times"}
+  ]
+}
