@@ -1,0 +1,28 @@
+{
+  "pid": 247,
+  "slug": "smallest-subsequence-of-distinct-characters",
+  "inferred_constraints": "1 <= s.length <= 1000, lowercase",
+  "input_format": "line1: s (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"bcabc\"", "desc": "Edge: example1"},
+    {"input": "\"cbacdcbc\"", "desc": "Edge: example2"},
+    {"input": "\"a\"", "desc": "Edge: n=1 single"},
+    {"input": "\"z\"", "desc": "Edge: n=1 z"},
+    {"input": "\"aa\"", "desc": "Edge: same letters"},
+    {"input": "\"ab\"", "desc": "Edge: 2 distinct"},
+    {"input": "\"ba\"", "desc": "Edge: 2 reverse"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: full alphabet"},
+    {"input": "\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Edge: reverse alphabet"},
+    {"input": "\"aaaaa\"", "desc": "Edge: all same"},
+    {"input": "\"abcabcabc\"", "desc": "Standard: repeating"},
+    {"input": "\"cba\"", "desc": "Standard: 3 distinct reverse"},
+    {"input": "\"abacb\"", "desc": "Standard: with repeats"},
+    {"input": "\"bbcaac\"", "desc": "Standard: more b's then c's"},
+    {"input": "\"leetcode\"", "desc": "Standard: word"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard: pangram start"},
+    {"input": "\"aabbccddeeffgghhii\"", "desc": "Standard: paired"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: 3 alphabets"},
+    {"input": "\"zyxwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: reverse then forward"},
+    {"input": "\"aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeeeffffffffffgggggggggghhhhhhhhhhiiiiiiiiiijjjjjjjjjj\"", "desc": "Stress: 10 of each j-letter"}
+  ]
+}

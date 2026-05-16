@@ -1,0 +1,28 @@
+{
+  "pid": 1861,
+  "slug": "reverse-letters-then-special-characters-in-a-string",
+  "inferred_constraints": "1 <= s.length <= 100, s contains lowercase letters and special chars from \"!@#$%^&*()\"",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "abc!def", "desc": "Edge: simple split"},
+    {"input": "a", "desc": "Edge: single letter"},
+    {"input": "!", "desc": "Edge: single special"},
+    {"input": "ab", "desc": "Edge: 2 letters"},
+    {"input": "!@", "desc": "Edge: 2 specials"},
+    {"input": "a!", "desc": "Edge: letter then special"},
+    {"input": "!a", "desc": "Edge: special then letter"},
+    {"input": "abcde", "desc": "Edge: all letters"},
+    {"input": "!@#$%", "desc": "Edge: all specials"},
+    {"input": "!a!b!c!d!", "desc": "Standard: alternating"},
+    {"input": "abc!@#def", "desc": "Standard: letters specials letters"},
+    {"input": "!@#abc$%^", "desc": "Standard: specials letters specials"},
+    {"input": "hello!@#world", "desc": "Standard: 5 letters specials 5 letters"},
+    {"input": "a!b@c#d$e%f", "desc": "Standard: scatter"},
+    {"input": "leetcode!@#$", "desc": "Standard: word then specials"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmn", "desc": "Stress: 90 letters"},
+    {"input": "!@#$%^&*()!@#$%^&*()!@#$%^&*()!@#$%^&*()!@#$%^&*()", "desc": "Stress: 50 specials"},
+    {"input": "a!a@a#a$a%a^a&a*a(a)a!a@a#a$a%a^a&a*a(a)a!a@a#a$a%a^a&a*a(a)a!a@a#a$a%a^a&a*a(a)a!a@a#a$a%a^a&a*a", "desc": "Stress: 100 alternating"},
+    {"input": "a!@#b$%^c&*(d)e", "desc": "Special: blocks of specials"},
+    {"input": "()()()abcdef", "desc": "Special: many parens then letters"}
+  ]
+}

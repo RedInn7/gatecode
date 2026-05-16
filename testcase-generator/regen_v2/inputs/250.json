@@ -1,0 +1,28 @@
+{
+  "pid": 250,
+  "slug": "lexicographically-smallest-string-after-adjacent-removals",
+  "inferred_constraints": "1 <= s.length <= 250, lowercase",
+  "input_format": "line1: s (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"abc\"", "desc": "Edge: example1 a only"},
+    {"input": "\"bcda\"", "desc": "Edge: example2 empty"},
+    {"input": "\"zdce\"", "desc": "Edge: example3 zce"},
+    {"input": "\"a\"", "desc": "Edge: n=1 single"},
+    {"input": "\"ab\"", "desc": "Edge: adjacent removable"},
+    {"input": "\"ba\"", "desc": "Edge: adjacent (a-b wraps?)"},
+    {"input": "\"az\"", "desc": "Edge: a-z wraparound"},
+    {"input": "\"za\"", "desc": "Edge: z-a wraparound"},
+    {"input": "\"zz\"", "desc": "Edge: same letter no remove"},
+    {"input": "\"aaaa\"", "desc": "Edge: all same"},
+    {"input": "\"abcabc\"", "desc": "Standard: repeats"},
+    {"input": "\"abcdefg\"", "desc": "Standard: consecutive"},
+    {"input": "\"gfedcba\"", "desc": "Standard: descending"},
+    {"input": "\"abab\"", "desc": "Standard: alternating"},
+    {"input": "\"hello\"", "desc": "Standard: word"},
+    {"input": "\"world\"", "desc": "Standard: word2"},
+    {"input": "\"zzzaaazzz\"", "desc": "Standard: zaza chain"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 50 a's"},
+    {"input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"", "desc": "Stress: 50 z's"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: 4 alphabets"}
+  ]
+}

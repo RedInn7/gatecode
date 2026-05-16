@@ -1,0 +1,28 @@
+{
+  "pid": 251,
+  "slug": "ipo",
+  "inferred_constraints": "1 <= k <= 1e5, 0 <= w <= 1e9, 1 <= n <= 1e5, 0 <= profits[i] <= 1e4, 0 <= capital[i] <= 1e9",
+  "input_format": "line1: k (int); line2: w (int); line3: profits (JSON int array); line4: capital (JSON int array)",
+  "testcases": [
+    {"input": "2\n0\n[1,2,3]\n[0,1,1]", "desc": "Edge: example1"},
+    {"input": "3\n0\n[1,2,3]\n[0,1,2]", "desc": "Edge: example2"},
+    {"input": "1\n0\n[1]\n[0]", "desc": "Edge: minimum"},
+    {"input": "1\n0\n[1]\n[1]", "desc": "Edge: can't afford"},
+    {"input": "1\n1\n[1]\n[1]", "desc": "Edge: barely afford"},
+    {"input": "1\n1000000000\n[10000]\n[0]", "desc": "Edge: max w"},
+    {"input": "100000\n0\n[1]\n[0]", "desc": "Edge: k huge n=1"},
+    {"input": "1\n0\n[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Edge: only smallest capital"},
+    {"input": "5\n0\n[1,2,3,4,5]\n[0,0,0,0,0]", "desc": "Edge: all free"},
+    {"input": "3\n0\n[5,5,5,5,5]\n[0,0,0,0,0]", "desc": "Standard: all same free"},
+    {"input": "3\n5\n[10,20,30,40,50]\n[1,2,3,4,5]", "desc": "Standard: greedy choose top 3"},
+    {"input": "10\n100\n[10,20,30,40,50,60,70,80,90,100]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: pick all"},
+    {"input": "5\n5\n[1,2,3,4,5,6,7,8,9,10]\n[5,5,5,5,5,5,5,5,5,5]", "desc": "Standard: equal capital"},
+    {"input": "3\n0\n[100,1,100,1,100]\n[0,1,2,3,4]", "desc": "Standard: alternating profits"},
+    {"input": "5\n10\n[10000,10000,10000,10000,10000]\n[100,200,300,400,500]", "desc": "Standard: tight capital"},
+    {"input": "100\n0\n[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n[0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: all free max profit"},
+    {"input": "5\n0\n[1,2,3,4,5,6,7,8,9,10]\n[0,1,2,3,4,5,6,7,8,9]", "desc": "Standard: sequential capital"},
+    {"input": "20\n1000000000\n[10000,9999,9998,9997,9996,9995,9994,9993,9992,9991,9990,9989,9988,9987,9986,9985,9984,9983,9982,9981]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 max-w"},
+    {"input": "10\n0\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 20 projects half-free"},
+    {"input": "50\n0\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Stress: 30 ones all free"}
+  ]
+}
