@@ -1,0 +1,28 @@
+{
+  "pid": 2922,
+  "slug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
+  "inferred_constraints": "1 <= nums.length <= 50; 1 <= nums[i] <= 50",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,4]", "desc": "Edge: example1"},
+    {"input": "[3,6,9]", "desc": "Edge: example2 all multiples"},
+    {"input": "[1]", "desc": "Edge: single 1"},
+    {"input": "[3]", "desc": "Edge: single 3"},
+    {"input": "[50]", "desc": "Edge: max 50 (50%3=2, op=1)"},
+    {"input": "[1,2]", "desc": "Edge: 2 small"},
+    {"input": "[1,1,1]", "desc": "Edge: all 1s"},
+    {"input": "[2,2,2]", "desc": "Edge: all 2s"},
+    {"input": "[3,3,3,3,3]", "desc": "Standard: all 3s"},
+    {"input": "[1,2,4,5,7,8]", "desc": "Standard: all non-div"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: mixed 10"},
+    {"input": "[6,12,18,24,30,36,42,48]", "desc": "Standard: all multiples of 6"},
+    {"input": "[1,4,7,10,13,16,19,22,25]", "desc": "Standard: all ≡1 mod 3"},
+    {"input": "[2,5,8,11,14,17,20,23,26]", "desc": "Standard: all ≡2 mod 3"},
+    {"input": "[3,1,3,2,3,1,3,2]", "desc": "Standard: alternating"},
+    {"input": "[49,50,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30]", "desc": "Standard: 21 large"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 ones"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Stress: 50 twos"},
+    {"input": "[50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50]", "desc": "Stress: 50x50"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Killer: alternating 1,2 = 30 ops"}
+  ]
+}

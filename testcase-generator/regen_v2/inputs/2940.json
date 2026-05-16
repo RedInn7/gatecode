@@ -1,0 +1,28 @@
+{
+  "pid": 2940,
+  "slug": "permutation-sequence",
+  "inferred_constraints": "1 <= n <= 9; 1 <= k <= n!",
+  "input_format": "line1: n; line2: k",
+  "testcases": [
+    {"input": "3\n3", "desc": "Edge: example1"},
+    {"input": "4\n9", "desc": "Edge: example2"},
+    {"input": "3\n1", "desc": "Edge: example3 first"},
+    {"input": "1\n1", "desc": "Edge: minimal"},
+    {"input": "2\n1", "desc": "Edge: 12"},
+    {"input": "2\n2", "desc": "Edge: 21"},
+    {"input": "3\n6", "desc": "Edge: 3! last"},
+    {"input": "4\n1", "desc": "Edge: 4! first"},
+    {"input": "4\n24", "desc": "Edge: 4! last"},
+    {"input": "5\n1", "desc": "Standard: 5! first"},
+    {"input": "5\n60", "desc": "Standard: 5! mid"},
+    {"input": "5\n120", "desc": "Standard: 5! last"},
+    {"input": "6\n360", "desc": "Standard: 6! half"},
+    {"input": "6\n720", "desc": "Standard: 6! last"},
+    {"input": "7\n5040", "desc": "Standard: 7! last"},
+    {"input": "8\n40320", "desc": "Standard: 8! last"},
+    {"input": "9\n1", "desc": "Stress: 9! first"},
+    {"input": "9\n181440", "desc": "Stress: 9! half"},
+    {"input": "9\n362880", "desc": "Stress: 9! last"},
+    {"input": "9\n100000", "desc": "Killer: 9! mid"}
+  ]
+}

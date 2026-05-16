@@ -1,0 +1,28 @@
+{
+  "pid": 2934,
+  "slug": "final-array-state-after-k-multiplication-operations-ii",
+  "inferred_constraints": "1 <= nums.length <= 10^4; 1 <= nums[i] <= 10^9; 1 <= k <= 10^9; 1 <= multiplier <= 10^6",
+  "input_format": "line1: nums (JSON array); line2: k; line3: multiplier",
+  "testcases": [
+    {"input": "[2,1,3,5,6]\n5\n2", "desc": "Edge: example1"},
+    {"input": "[100000,2000]\n2\n1000000", "desc": "Edge: example2 mod"},
+    {"input": "[1]\n1\n1", "desc": "Edge: minimal"},
+    {"input": "[1]\n1\n2", "desc": "Edge: 1 num k=1"},
+    {"input": "[5]\n1000000000\n1", "desc": "Edge: huge k mul=1"},
+    {"input": "[1,1]\n10\n2", "desc": "Edge: 2 equal"},
+    {"input": "[5,5,5]\n3\n2", "desc": "Edge: 3 equal"},
+    {"input": "[1,2,3,4,5]\n1\n2", "desc": "Standard: small"},
+    {"input": "[10,1,5,3,8]\n5\n3", "desc": "Standard: mixed"},
+    {"input": "[1,1,1,1,1]\n5\n10", "desc": "Standard: all 1s"},
+    {"input": "[100,200,300]\n10\n2", "desc": "Standard: 100s"},
+    {"input": "[1000000000,1,1]\n10\n2", "desc": "Standard: extreme values"},
+    {"input": "[1,1000000000]\n100\n5", "desc": "Standard: min and max"},
+    {"input": "[5,10,15,20,25]\n10\n3", "desc": "Standard: ascending"},
+    {"input": "[2,3,5,7,11,13,17]\n20\n2", "desc": "Standard: primes"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n50\n2", "desc": "Standard: descending"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1000000000\n2", "desc": "Stress: many ones huge k"},
+    {"input": "[1000000000,1000000000,1000000000]\n1\n1000000", "desc": "Stress: extreme everything"},
+    {"input": "[1,2]\n1000000000\n2", "desc": "Stress: 2 nums huge k"},
+    {"input": "[5]\n1\n1", "desc": "Killer: nothing changes"}
+  ]
+}

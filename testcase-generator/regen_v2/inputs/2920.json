@@ -1,0 +1,28 @@
+{
+  "pid": 2920,
+  "slug": "day-of-the-week",
+  "inferred_constraints": "valid date between Jan 1 1971 and Dec 31 2100",
+  "input_format": "line1: day; line2: month; line3: year",
+  "testcases": [
+    {"input": "31\n8\n2019", "desc": "Edge: example1 Saturday"},
+    {"input": "18\n7\n1999", "desc": "Edge: example2 Sunday"},
+    {"input": "15\n8\n1993", "desc": "Edge: example3 Sunday"},
+    {"input": "1\n1\n1971", "desc": "Edge: epoch Friday"},
+    {"input": "31\n12\n2100", "desc": "Edge: max date"},
+    {"input": "29\n2\n2000", "desc": "Edge: leap year div400"},
+    {"input": "28\n2\n2100", "desc": "Edge: non-leap div100"},
+    {"input": "29\n2\n2024", "desc": "Edge: leap day"},
+    {"input": "1\n3\n1971", "desc": "Standard: just past Feb"},
+    {"input": "31\n1\n1971", "desc": "Standard: end of Jan"},
+    {"input": "15\n6\n1985", "desc": "Standard: mid 80s"},
+    {"input": "4\n7\n1976", "desc": "Standard: bicentennial"},
+    {"input": "25\n12\n2000", "desc": "Standard: Y2K Christmas"},
+    {"input": "1\n1\n2000", "desc": "Standard: Y2K Saturday"},
+    {"input": "11\n9\n2001", "desc": "Standard: 9/11"},
+    {"input": "20\n7\n1971", "desc": "Standard: 1971 within range"},
+    {"input": "29\n2\n2096", "desc": "Stress: late leap year"},
+    {"input": "31\n10\n2050", "desc": "Stress: mid future"},
+    {"input": "15\n3\n2087", "desc": "Stress: future date"},
+    {"input": "1\n1\n2100", "desc": "Killer: max year start"}
+  ]
+}

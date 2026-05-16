@@ -1,0 +1,28 @@
+{
+  "pid": 2926,
+  "slug": "minimum-cost-to-divide-array-into-subarrays",
+  "inferred_constraints": "1 <= nums.length <= 1000; cost.length == nums.length; 1 <= nums[i], cost[i] <= 1000; 1 <= k <= 1000",
+  "input_format": "line1: nums (JSON array); line2: cost (JSON array); line3: k",
+  "testcases": [
+    {"input": "[3,1,4]\n[4,6,6]\n1", "desc": "Edge: example1"},
+    {"input": "[4,8,5,1,14,2,2,12,1]\n[7,2,8,4,2,2,1,1,2]\n7", "desc": "Edge: example2"},
+    {"input": "[1]\n[1]\n1", "desc": "Edge: minimal"},
+    {"input": "[5]\n[3]\n10", "desc": "Edge: single k=10"},
+    {"input": "[1,2]\n[1,1]\n1", "desc": "Edge: 2 elements"},
+    {"input": "[1,1]\n[1,1]\n0", "desc": "Edge: 2 elements"},
+    {"input": "[1,1,1]\n[1,1,1]\n1", "desc": "Standard: 3 equal"},
+    {"input": "[1,2,3,4,5]\n[1,1,1,1,1]\n1", "desc": "Standard: ascending"},
+    {"input": "[5,4,3,2,1]\n[1,2,3,4,5]\n2", "desc": "Standard: reverse"},
+    {"input": "[10,20,30,40]\n[1,1,1,1]\n5", "desc": "Standard: large nums"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1]\n10", "desc": "Standard: all 1s"},
+    {"input": "[3,1,4,1,5,9,2,6]\n[1,2,3,4,5,6,7,8]\n3", "desc": "Standard: pi digits"},
+    {"input": "[100,200,300]\n[300,200,100]\n50", "desc": "Standard: large k"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]\n5", "desc": "Standard: 10 mixed"},
+    {"input": "[50,50,50,50,50]\n[50,50,50,50,50]\n50", "desc": "Standard: all same large"},
+    {"input": "[1000,1000,1000]\n[1000,1000,1000]\n1000", "desc": "Standard: max values"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n10", "desc": "Stress: 20 ascending"},
+    {"input": "[1000,1,1000,1,1000,1,1000,1,1000,1]\n[1,1000,1,1000,1,1000,1,1000,1,1000]\n100", "desc": "Stress: alternating extreme"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1", "desc": "Stress: 30 all 1s"},
+    {"input": "[1000,1000,1000,1000,1000,1000,1000,1000,1000,1000]\n[1,1,1,1,1,1,1,1,1,1]\n1", "desc": "Killer: large nums small cost"}
+  ]
+}

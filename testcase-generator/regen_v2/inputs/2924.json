@@ -1,0 +1,28 @@
+{
+  "pid": 2924,
+  "slug": "minimized-maximum-of-products-distributed-to-any-store",
+  "inferred_constraints": "m == quantities.length; 1 <= m <= n <= 10^5; 1 <= quantities[i] <= 10^5",
+  "input_format": "line1: n; line2: quantities (JSON array)",
+  "testcases": [
+    {"input": "6\n[11,6]", "desc": "Edge: example1 (3)"},
+    {"input": "7\n[15,10,10]", "desc": "Edge: example2 (5)"},
+    {"input": "1\n[1]", "desc": "Edge: minimal"},
+    {"input": "1\n[100000]", "desc": "Edge: 1 store all max"},
+    {"input": "100000\n[1]", "desc": "Edge: many stores 1 product"},
+    {"input": "2\n[1,1]", "desc": "Edge: 2x1"},
+    {"input": "2\n[1]", "desc": "Edge: 1 type 2 stores"},
+    {"input": "3\n[100]", "desc": "Edge: 1 type 3 stores"},
+    {"input": "5\n[5,5,5,5,5]", "desc": "Standard: equal split"},
+    {"input": "10\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
+    {"input": "100\n[50,50]", "desc": "Standard: even split"},
+    {"input": "100\n[100,200,300,400]", "desc": "Standard: 4 types"},
+    {"input": "5\n[100,1,1,1,1]", "desc": "Standard: 1 dominant"},
+    {"input": "10\n[20,30,40,50]", "desc": "Standard: 4 types"},
+    {"input": "20\n[100,100,100,100,100]", "desc": "Standard: 5 equal types"},
+    {"input": "50\n[10,20,30,40,50,60,70,80,90,100]", "desc": "Standard: 10 ascending"},
+    {"input": "100000\n[100000,100000,100000]", "desc": "Stress: max range"},
+    {"input": "100\n[10000,10000,10000,10000,10000]", "desc": "Stress: 5 large types"},
+    {"input": "1\n[100000]", "desc": "Stress: 1 store huge qty"},
+    {"input": "10\n[100000]", "desc": "Killer: 1 type 10 stores"}
+  ]
+}

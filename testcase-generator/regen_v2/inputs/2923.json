@@ -1,0 +1,28 @@
+{
+  "pid": 2923,
+  "slug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+  "inferred_constraints": "1 <= n <= 10^5; 1 <= nums[i] <= 10^6",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,4,6]", "desc": "Edge: example1"},
+    {"input": "[1]", "desc": "Edge: single element"},
+    {"input": "[1,1]", "desc": "Edge: 2 nodes"},
+    {"input": "[2,4]", "desc": "Edge: prime to multiple"},
+    {"input": "[1,2]", "desc": "Edge: adjacent step"},
+    {"input": "[2,3,5,7]", "desc": "Edge: all primes"},
+    {"input": "[1,4,9,16]", "desc": "Edge: composites no teleport"},
+    {"input": "[2,2,2,2]", "desc": "Edge: same prime - teleport all"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: small mixed"},
+    {"input": "[1,3,9,27,81]", "desc": "Standard: powers of 3"},
+    {"input": "[5,10,15,20,25]", "desc": "Standard: multiples of 5"},
+    {"input": "[1,2,4,8,16,32]", "desc": "Standard: powers of 2"},
+    {"input": "[7,14,21,28,35,42]", "desc": "Standard: multiples of 7"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all 1s"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard: alternating"},
+    {"input": "[3,5,7,11,13,17,19,23,29,31]", "desc": "Standard: 10 distinct primes"},
+    {"input": "[2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3]", "desc": "Stress: alternating 2,3 (20)"},
+    {"input": "[1000000,2,500000,3,333333,5,200000,7,142857,11]", "desc": "Stress: prime+multiples"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 30 ones"},
+    {"input": "[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30]", "desc": "Killer: 2 prime, all even"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2931,
+  "slug": "minimum-number-of-operations-to-make-array-continuous",
+  "inferred_constraints": "1 <= nums.length <= 10^5; 1 <= nums[i] <= 10^9",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[4,2,5,3]", "desc": "Edge: example1 already continuous"},
+    {"input": "[1,2,3,5,6]", "desc": "Edge: example2"},
+    {"input": "[1,10,100,1000]", "desc": "Edge: example3 (3 ops)"},
+    {"input": "[1]", "desc": "Edge: single element"},
+    {"input": "[5]", "desc": "Edge: single non-1"},
+    {"input": "[1,1]", "desc": "Edge: duplicates (1 op needed)"},
+    {"input": "[1,2]", "desc": "Edge: 2 consecutive"},
+    {"input": "[2,1]", "desc": "Edge: 2 reversed"},
+    {"input": "[5,5,5,5]", "desc": "Standard: all same"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: continuous"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: reverse continuous"},
+    {"input": "[1,3,5,7,9]", "desc": "Standard: odd gaps"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: with dups"},
+    {"input": "[10,20,30,40,50]", "desc": "Standard: wide gaps"},
+    {"input": "[1,2,4,5,6]", "desc": "Standard: small gap"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]", "desc": "Standard: 10 wide gaps"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 continuous"},
+    {"input": "[1000000000,1,500000000,2,1000000]", "desc": "Stress: extreme spread"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 10 ones"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,10,10,10,10,10]", "desc": "Killer: 5 dups"}
+  ]
+}

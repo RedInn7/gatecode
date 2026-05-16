@@ -1,0 +1,28 @@
+{
+  "pid": 2938,
+  "slug": "kth-smallest-element-in-a-bst",
+  "inferred_constraints": "1 <= k <= n <= 10^4; 0 <= Node.val <= 10^4",
+  "input_format": "line1: root (JSON array LeetCode tree); line2: k",
+  "testcases": [
+    {"input": "[3,1,4,null,2]\n1", "desc": "Edge: example1"},
+    {"input": "[5,3,6,2,4,null,null,1]\n3", "desc": "Edge: example2"},
+    {"input": "[1]\n1", "desc": "Edge: single node"},
+    {"input": "[2,1]\n1", "desc": "Edge: 2 nodes k=1"},
+    {"input": "[2,1]\n2", "desc": "Edge: 2 nodes k=2"},
+    {"input": "[5,3,7]\n2", "desc": "Edge: 3 nodes mid"},
+    {"input": "[5,3,7]\n1", "desc": "Edge: 3 nodes smallest"},
+    {"input": "[5,3,7]\n3", "desc": "Edge: 3 nodes largest"},
+    {"input": "[10,5,15,3,7,12,18]\n4", "desc": "Standard: 7-node 4th"},
+    {"input": "[10,5,15,3,7,12,18]\n1", "desc": "Standard: 7-node smallest"},
+    {"input": "[10,5,15,3,7,12,18]\n7", "desc": "Standard: 7-node largest"},
+    {"input": "[50,30,70,20,40,60,80]\n5", "desc": "Standard: 7-node 5th"},
+    {"input": "[1,null,2,null,3,null,4,null,5]\n3", "desc": "Standard: right skew"},
+    {"input": "[5,4,null,3,null,2,null,1]\n3", "desc": "Standard: left skew"},
+    {"input": "[100,50,150,25,75,125,175,10,40,60,80,110,140,160,180]\n8", "desc": "Standard: 15-node mid"},
+    {"input": "[1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9,null,10]\n10", "desc": "Standard: 10 right skew last"},
+    {"input": "[5000,2500,7500,1000,3500,6000,9000]\n7", "desc": "Stress: large values"},
+    {"input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n10", "desc": "Stress: 15 balanced"},
+    {"input": "[10000,5000,null,2500]\n3", "desc": "Stress: extreme values"},
+    {"input": "[10,5,15,3,7,12,18,1,4,6,8,11,13,17,20,0]\n1", "desc": "Killer: 16 nodes k=1"}
+  ]
+}

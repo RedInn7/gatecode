@@ -1,0 +1,28 @@
+{
+  "pid": 2929,
+  "slug": "minimum-distance-between-bst-nodes",
+  "inferred_constraints": "2 <= n <= 100; 0 <= Node.val <= 10^5",
+  "input_format": "single line: root (JSON array, LeetCode tree)",
+  "testcases": [
+    {"input": "[4,2,6,1,3]", "desc": "Edge: example1"},
+    {"input": "[1,0,48,null,null,12,49]", "desc": "Edge: example2"},
+    {"input": "[1,0]", "desc": "Edge: 2-node"},
+    {"input": "[5,4]", "desc": "Edge: 2-node distance 1"},
+    {"input": "[10,5]", "desc": "Edge: distance 5"},
+    {"input": "[1,null,2]", "desc": "Edge: right child"},
+    {"input": "[100000,0]", "desc": "Edge: extreme distance"},
+    {"input": "[5,3,7,2,4,6,8]", "desc": "Standard: 7-node BST"},
+    {"input": "[50,30,70,20,40,60,80]", "desc": "Standard: balanced BST"},
+    {"input": "[100,50,150,25,75,125,175]", "desc": "Standard: 7-node spread"},
+    {"input": "[2,1,3]", "desc": "Standard: 3-node"},
+    {"input": "[10,5,15,3,7,12,18,1,4,6,8,11,13,17,20]", "desc": "Standard: 15-node BST"},
+    {"input": "[5,1,8,null,3,7,9]", "desc": "Standard: partial"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right skew"},
+    {"input": "[5,4,null,3,null,2,null,1]", "desc": "Standard: left skew"},
+    {"input": "[20,10,30,5,15,25,35,2,8,12,17,22,27,32,40]", "desc": "Standard: 15 spread"},
+    {"input": "[100,99,101]", "desc": "Stress: close values"},
+    {"input": "[50,25,75,12,37,62,87,6,18,30,43,56,68,81,93]", "desc": "Stress: balanced 15"},
+    {"input": "[100000,99999]", "desc": "Stress: large vals"},
+    {"input": "[1,0,2,null,null,null,3]", "desc": "Killer: tight diffs"}
+  ]
+}

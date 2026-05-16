@@ -1,0 +1,28 @@
+{
+  "pid": 2927,
+  "slug": "find-sum-of-array-product-of-magical-sequences",
+  "inferred_constraints": "1 <= k <= m <= 30; 1 <= nums.length <= 50; 1 <= nums[i] <= 10^8",
+  "input_format": "line1: m; line2: k; line3: nums (JSON array)",
+  "testcases": [
+    {"input": "5\n5\n[1,10,100,10000,1000000]", "desc": "Edge: small m=k=5"},
+    {"input": "2\n2\n[5,4,3,2,1]", "desc": "Edge: simple"},
+    {"input": "1\n1\n[1]", "desc": "Edge: minimal"},
+    {"input": "1\n1\n[7]", "desc": "Edge: single num"},
+    {"input": "2\n1\n[1,2]", "desc": "Edge: small"},
+    {"input": "2\n2\n[1,1]", "desc": "Edge: 2x2"},
+    {"input": "3\n1\n[2,3,5]", "desc": "Edge: 3 nums"},
+    {"input": "3\n3\n[1,2,3]", "desc": "Standard: 3x3"},
+    {"input": "4\n2\n[1,2,3,4]", "desc": "Standard: 4 nums k=2"},
+    {"input": "5\n3\n[2,3,5,7,11]", "desc": "Standard: primes"},
+    {"input": "10\n5\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 10x10 k=5"},
+    {"input": "5\n2\n[10,20,30,40,50]", "desc": "Standard: tens"},
+    {"input": "6\n4\n[1,1,1,1,1,1]", "desc": "Standard: all 1s"},
+    {"input": "5\n5\n[2,2,2,2,2]", "desc": "Standard: all 2s"},
+    {"input": "10\n3\n[100,200,300,400,500,600,700,800,900,1000]", "desc": "Standard: big nums"},
+    {"input": "8\n4\n[1,2,4,8,16,32,64,128]", "desc": "Standard: powers of 2"},
+    {"input": "15\n10\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 15x10 ones"},
+    {"input": "20\n10\n[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]", "desc": "Stress: 20"},
+    {"input": "30\n15\n[100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000]", "desc": "Stress: max value"},
+    {"input": "5\n5\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Killer: m=k=5 many ones"}
+  ]
+}

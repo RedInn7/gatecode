@@ -366,6 +366,16 @@
       "reason": "Circular linked list split - non-trivial serialization"
     },
     {
+      "pid": 2917,
+      "slug": "similar-rgb-color",
+      "reason": "Multiple valid colors with same similarity - SPJ required"
+    },
+    {
+      "pid": 2925,
+      "slug": "read-n-characters-given-read4-ii-call-multiple-times",
+      "reason": "read4 API interactive - cannot test via standard I/O"
+    },
+    {
       "pid": 2942,
       "slug": "deep-merge-of-two-objects",
       "reason": "JavaScript-only problem - operates on JS objects"

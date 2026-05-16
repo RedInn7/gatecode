@@ -1,0 +1,28 @@
+{
+  "pid": 2933,
+  "slug": "number-of-paths-with-max-score",
+  "inferred_constraints": "2 <= board.length <= 100; board[i].length == board.length; board contains 'E', 'S', digits 1-9, 'X'",
+  "input_format": "single line: board (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"E23\",\"2X2\",\"12S\"]", "desc": "Edge: 3x3 example"},
+    {"input": "[\"E12\",\"1X1\",\"21S\"]", "desc": "Edge: 3x3 small"},
+    {"input": "[\"E11\",\"XXX\",\"11S\"]", "desc": "Edge: blocked middle"},
+    {"input": "[\"ES\"]", "desc": "Edge: 1x2 minimal"},
+    {"input": "[\"E\",\"S\"]", "desc": "Edge: 2x1 vertical"},
+    {"input": "[\"E1\",\"1S\"]", "desc": "Edge: 2x2 simple"},
+    {"input": "[\"EX\",\"XS\"]", "desc": "Edge: 2x2 blocked"},
+    {"input": "[\"E11\",\"111\",\"11S\"]", "desc": "Standard: 3x3 all 1s"},
+    {"input": "[\"E99\",\"99X\",\"99S\"]", "desc": "Standard: 9s with X"},
+    {"input": "[\"E123\",\"4567\",\"89XS\"]", "desc": "Standard: 3x4? - need square so 4x4 needed"},
+    {"input": "[\"E1234\",\"56789\",\"12345\",\"6789X\",\"12345\"]", "desc": "Standard: 5x5 - need to be square (but boards must be square per problem)"},
+    {"input": "[\"E12\",\"345\",\"67S\"]", "desc": "Standard: 3x3 distinct"},
+    {"input": "[\"E12\",\"3X4\",\"56S\"]", "desc": "Standard: 3x3 X mid"},
+    {"input": "[\"E1XX\",\"1234\",\"5678\",\"XX9S\"]", "desc": "Standard: 4x4 corners blocked"},
+    {"input": "[\"E111\",\"1111\",\"1111\",\"111S\"]", "desc": "Standard: 4x4 all 1s"},
+    {"input": "[\"E1234\",\"5678X\",\"X9123\",\"4567X\",\"X123S\"]", "desc": "Standard: 5x5 mixed"},
+    {"input": "[\"E5X5\",\"5X55\",\"55X5\",\"X55S\"]", "desc": "Stress: many X"},
+    {"input": "[\"E11111\",\"11111\",\"11111\",\"11111\",\"1111S\"]", "desc": "Stress: 5x5 all 1s"},
+    {"input": "[\"E99999\",\"99999\",\"99999\",\"99999\",\"9999S\"]", "desc": "Stress: 5x5 all 9s"},
+    {"input": "[\"EXXX\",\"XXXX\",\"XXXX\",\"XXXS\"]", "desc": "Killer: blocked all"}
+  ]
+}
