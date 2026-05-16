@@ -76,7 +76,31 @@ tables reflect that contention, **not** the judge's solo-load behaviour.
 * **Verification:** with the image absent at server boot, pulling the image
   afterward and re-issuing the judge call now succeeds.
 
-### Bug 3: `tokenEqual` / `OutputEqual` coverage gaps
+### Bug 3: PHP runner only invoked top-level functions
+
+* **Affected file:** `backend/internal/sandbox/languages.go` (`phpRunnerTpl` + `WrapCode`)
+* **Symptom:** Every SOL1 PHP solution failed with WA — the function name was
+  detected correctly but invoking `twoSum(...)` at the top level produced `null`
+  because LeetCode's template wraps everything in `class Solution { ... }`.
+* **Root cause:** The runner ignored class methods entirely.
+* **Fix:** Runner now tries `Solution::twoSum` first, then the global
+  `twoSum`, with a `ReflectionClass` fallback for user-named classes.
+* **Verification:** PHP 100-sample rose from `0 / 46 AC (uniform WA)` to
+  `34 / 46 AC (73.9 %)`. Remaining 12 failures are LinkedList / TreeNode
+  problems that need the same node-helper preamble that exists in JS/Python
+  — filed under Section 4 as a follow-up.
+
+### Bug 4: PHP files without `<?php` printed source code instead of executing
+
+* **Affected file:** `backend/internal/sandbox/languages.go` (`WrapCode`)
+* **Symptom:** After bug #3 was fixed the judge returned the *entire wrapped
+  source* in `Actual:`, byte-for-byte. PHP defaults to "output as literal
+  HTML" unless the file begins with `<?php`, and LeetCode's PHP template
+  never includes the open tag.
+* **Fix:** `WrapCode` now prepends `<?php\n` when the user code does not
+  already start with the open tag.
+
+### Bug 5: `tokenEqual` / `OutputEqual` coverage gaps
 
 * **Affected file:** `backend/internal/sandbox/compare_test.go`
 * **Action:** added 4 new regression-tests groups covering:
@@ -171,6 +195,21 @@ judge API. See `testcase-generator/non_wrap_smoke.py` for the suite.
    expects them to parse stdin themselves. For UX parity with the wrapped
    languages, each of these needs a `wrap*` helper analogous to the existing
    `wrapCpp` / `wrapJava` (see `wrap_compiled.go`).
+4. **Ruby and PHP runners lack node helpers.** Both runners successfully
+   handle plain functions and (after Bug #3) class-based methods, but
+   neither has `ListNode` / `TreeNode` / `Node` definitions or
+   build/serialise helpers. Every linked-list and binary-tree problem
+   (PIDs 2, 19, 21, 25, 100 in the PHP sample; the same set in Ruby) fails
+   with `Error: Class "ListNode" not found` or returns an empty array.
+   Recommend porting the JS `jsNodePreamble` /  Python `pyPreamble` to
+   both runners — the data shape is identical (arrays of ints with `null`
+   markers for tree gaps).
+5. **JavaScript runner has no design-class path.** Problems like LRU Cache
+   (PID 146), MinStack (155), BSTIterator (173), Trie (208) send a two-line
+   operations-and-args payload, not the simple JSON-per-line that the JS
+   runner assumes. Python solves this via `pyDesignRunnerTpl`; JS/TS need
+   the same. ~5 / 200 sample WAs in the JavaScript reverify trace back to
+   this.
 
 ### Medium
 

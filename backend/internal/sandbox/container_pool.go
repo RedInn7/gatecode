@@ -84,7 +84,6 @@ func (p *imagePool) ensureStarted() {
 		entry := &poolEntry{name: name}
 		if err := startContainer(name, p.image, p.memMB); err != nil {
 			log.Printf("[pool] WARNING: failed to start container %s: %v", name, err)
-			entry.alive = false
 		} else {
 			entry.alive = true
 		}
