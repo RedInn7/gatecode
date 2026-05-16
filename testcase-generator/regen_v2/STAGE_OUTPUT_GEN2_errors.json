@@ -472,5 +472,89 @@
     "slug": "ambiguous-coordinates",
     "fqid": 816,
     "error": "Testcase 15 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1351,
+    "slug": "count-odd-numbers-in-an-interval-range",
+    "fqid": 1523,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmphse6om6k.py\", line 275, in <module>\n    _result = Solution().countOdds(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.countOdds() missing 1 required positional argument: 'high'\n"
+  },
+  {
+    "pid": 1339,
+    "slug": "number-of-good-binary-strings",
+    "fqid": 2533,
+    "error": "Testcase 0 failed: RE (exit 1): most recent call last):\n  File \"/tmp/tmpbs3mzs3q.py\", line 285, in <module>\n    _result = Solution().goodBinaryStrings(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.goodBinaryStrings() missing 3 required positional arguments: 'maxLength', 'oneGroup', and 'zeroGroup'\n"
+  },
+  {
+    "pid": 1334,
+    "slug": "symmetric-tree",
+    "fqid": 101,
+    "error": "Testcase 0 failed: RE (exit 1): bcl6p0.py\", line 288, in <module>\n    _result = Solution().isSymmetric(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpkgbcl6p0.py\", line 155, in isSymmetric\n    return dfs(root.left, root.right)\n               ^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'left'\n"
+  },
+  {
+    "pid": 1332,
+    "slug": "total-waviness-of-numbers-in-range-i",
+    "fqid": 3751,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpl1evbmyz.py\", line 291, in <module>\n    _result = Solution().totalWaviness(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.totalWaviness() missing 1 required positional argument: 'num2'\n"
+  },
+  {
+    "pid": 1330,
+    "slug": "minimum-moves-to-equal-array-elements-iii",
+    "fqid": 3736,
+    "error": "Testcase 0 failed: RE (exit 1): ack (most recent call last):\n  File \"/tmp/tmp9phz_lk1.py\", line 278, in <module>\n    _result = Solution().minMoves(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp9phz_lk1.py\", line 143, in minMoves\n    mx = max(nums)\n         ^^^^^^^^^\nValueError: max() iterable argument is empty\n"
+  },
+  {
+    "pid": 1336,
+    "slug": "maximum-number-of-visible-points",
+    "fqid": 1610,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp94j628ga.py\", line 290, in <module>\n    _result = Solution().visiblePoints(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.visiblePoints() missing 1 required positional argument: 'location'\n"
+  },
+  {
+    "pid": 1344,
+    "slug": "valid-square",
+    "fqid": 593,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpo7xsrnlf.py\", line 295, in <module>\n    _result = Solution().validSquare(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.validSquare() missing 2 required positional arguments: 'p3' and 'p4'\n"
+  },
+  {
+    "pid": 1354,
+    "slug": "minimum-index-of-a-valid-split",
+    "fqid": 2780,
+    "error": "Testcase 0 failed: RE (exit 1): y\", line 282, in <module>\n    _result = Solution().minimumIndex(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpfmmukrn_.py\", line 142, in minimumIndex\n    x, cnt = Counter(nums).most_common(1)[0]\n             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1359,
+    "slug": "neither-minimum-nor-maximum",
+    "fqid": 2733,
+    "error": "Testcase 0 failed: RE (exit 1): p/tmp3gozqone.py\", line 276, in <module>\n    _result = Solution().findNonMinOrMax(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3gozqone.py\", line 142, in findNonMinOrMax\n    mi, mx = min(nums), max(nums)\n             ^^^^^^^^^\nValueError: min() iterable argument is empty\n"
+  },
+  {
+    "pid": 1364,
+    "slug": "maximum-number-of-events-that-can-be-attended",
+    "fqid": 1353,
+    "error": "Testcase 0 failed: RE (exit 1): call last):\n  File \"/tmp/tmp3b1943sc.py\", line 291, in <module>\n    _result = Solution().maxEvents(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3b1943sc.py\", line 144, in maxEvents\n    for s, e in events:\n        ^^^^\nValueError: not enough values to unpack (expected 2, got 0)\n"
+  },
+  {
+    "pid": 1366,
+    "slug": "paint-house-ii",
+    "fqid": 265,
+    "error": "Testcase 0 failed: RE (exit 1): ck (most recent call last):\n  File \"/tmp/tmp78nd53eh.py\", line 283, in <module>\n    _result = Solution().minCostII(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp78nd53eh.py\", line 150, in minCostII\n    return min(f)\n           ^^^^^^\nValueError: min() iterable argument is empty\n"
+  },
+  {
+    "pid": 1361,
+    "slug": "minimum-moves-to-equal-array-elements",
+    "fqid": 453,
+    "error": "Testcase 0 failed: RE (exit 1): p/tmp5xm5l4fp.py\", line 275, in <module>\n    _result = Solution().minMoves(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp5xm5l4fp.py\", line 142, in minMoves\n    return sum(nums) - min(nums) * len(nums)\n                       ^^^^^^^^^\nValueError: min() iterable argument is empty\n"
+  },
+  {
+    "pid": 1335,
+    "slug": "harshad-number",
+    "fqid": 3099,
+    "error": "Testcase 1 failed: RE (exit 1): >\n    _result = Solution().sumOfTheDigitsOfHarshadNumber(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_a2co2y9.py\", line 146, in sumOfTheDigitsOfHarshadNumber\n    return s if x % s == 0 else -1\n                ~~^~~\nZeroDivisionError: integer modulo by zero\n"
+  },
+  {
+    "pid": 1368,
+    "slug": "find-the-maximum-sequence-value-of-array",
+    "fqid": 3287,
+    "error": "Testcase 6 failed: RE (exit 1): le \"/tmp/tmpsa55bktr.py\", line 300, in <module>\n    _result = Solution().maxValue(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpsa55bktr.py\", line 150, in maxValue\n    f[i + 1][j + 1][x | nums[i]] |= f[i][j][x]\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: list index out of range\n"
   }
 ]

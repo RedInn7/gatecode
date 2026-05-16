@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"\"",
-      "desc": "Edge: empty string"
+      "desc": "Edge: empty string",
+      "output": "0"
     },
     {
       "input": "\"h\"",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "1"
     },
     {
       "input": "\"lf\"",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "2"
     },
     {
       "input": "\"aaaaa\"",
-      "desc": "Edge: all same chars"
+      "desc": "Edge: all same chars",
+      "output": "2"
     },
     {
       "input": "\"daacd\"",
-      "desc": "Edge: short mixed"
+      "desc": "Edge: short mixed",
+      "output": "4"
     },
     {
       "input": "\"zannaz\"",
-      "desc": "Edge: palindrome string"
+      "desc": "Edge: palindrome string",
+      "output": "4"
     },
     {
       "input": "\"qdoralycgdif\"",
-      "desc": "Standard: len=12"
+      "desc": "Standard: len=12",
+      "output": "11"
     },
     {
       "input": "\"onuqhdn\"",
-      "desc": "Standard: len=7"
+      "desc": "Standard: len=7",
+      "output": "6"
     },
     {
       "input": "\"rxiatbzweva\"",
-      "desc": "Standard: len=11"
+      "desc": "Standard: len=11",
+      "output": "10"
     },
     {
       "input": "\"lczwzydpqnkwo\"",
-      "desc": "Standard: len=13"
+      "desc": "Standard: len=13",
+      "output": "12"
     },
     {
       "input": "\"yfdea\"",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "5"
     },
     {
       "input": "\"hgvqfwxjquvcjnk\"",
-      "desc": "Standard: len=15"
+      "desc": "Standard: len=15",
+      "output": "13"
     },
     {
       "input": "\"oizkhr\"",
-      "desc": "Standard: len=6"
+      "desc": "Standard: len=6",
+      "output": "6"
     },
     {
       "input": "\"vgxprrzhtqm\"",
-      "desc": "Standard: len=11"
+      "desc": "Standard: len=11",
+      "output": "10"
     },
     {
       "input": "\"dblmtudaibuegseh\"",
-      "desc": "Stress: medium length"
+      "desc": "Stress: medium length",
+      "output": "14"
     },
     {
       "input": "\"sqsmkkcbpavrxxpr\"",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "12"
     },
     {
       "input": "\"oxwiddubwesgtsnv\"",
-      "desc": "Stress: max length"
+      "desc": "Stress: max length",
+      "output": "13"
     },
     {
       "input": "\"zzzzzzzzzzzzzzzz\"",
-      "desc": "Killer: all same char repeated"
+      "desc": "Killer: all same char repeated",
+      "output": "5"
     },
     {
       "input": "\"mkqayrpgbbgwyqlx\"",
-      "desc": "Killer: near-max size"
+      "desc": "Killer: near-max size",
+      "output": "14"
     },
     {
       "input": "\"\"",
-      "desc": "Edge: empty string"
+      "desc": "Edge: empty string",
+      "output": "0"
     }
   ]
 }

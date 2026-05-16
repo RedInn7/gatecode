@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"\"\n\"\"",
-      "desc": "Edge: both empty strings"
+      "desc": "Edge: both empty strings",
+      "output": "true"
     },
     {
       "input": "\"z\"\n\"l\"",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "true"
     },
     {
       "input": "\"cx\"\n\"n\"",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "true"
     },
     {
       "input": "\"aaaaa\"\n\"b\"",
-      "desc": "Edge: all same chars"
+      "desc": "Edge: all same chars",
+      "output": "false"
     },
     {
       "input": "\"aeabb\"\n\"bcb\"",
-      "desc": "Edge: short mixed"
+      "desc": "Edge: short mixed",
+      "output": "true"
     },
     {
       "input": "\"xgiigx\"\n\"xgi\"",
-      "desc": "Edge: palindrome string"
+      "desc": "Edge: palindrome string",
+      "output": "true"
     },
     {
       "input": "\"nsfucrncdjjlagch\"\n\"uowiagxse\"",
-      "desc": "Standard: len=16"
+      "desc": "Standard: len=16",
+      "output": "true"
     },
     {
       "input": "\"xrmucarf\"\n\"ts\"",
-      "desc": "Standard: len=8"
+      "desc": "Standard: len=8",
+      "output": "true"
     },
     {
       "input": "\"jmivttdpbdhwialbuiituprkocbqs\"\n\"kunagwqixcvmojwscuinv\"",
-      "desc": "Standard: len=29"
+      "desc": "Standard: len=29",
+      "output": "true"
     },
     {
       "input": "\"kfmmxgqabmxunmaqjca\"\n\"vbgklybcfarvmvzijtb\"",
-      "desc": "Standard: len=19"
+      "desc": "Standard: len=19",
+      "output": "true"
     },
     {
       "input": "\"impwmnauee\"\n\"yhwgpndfit\"",
-      "desc": "Standard: len=10"
+      "desc": "Standard: len=10",
+      "output": "true"
     },
     {
       "input": "\"cgqxkezxjauuu\"\n\"wafo\"",
-      "desc": "Standard: len=13"
+      "desc": "Standard: len=13",
+      "output": "true"
     },
     {
       "input": "\"vzwspalhxrswikpxchfxswcuiesodmdmaykhu\"\n\"zhgmfvchiedkc\"",
-      "desc": "Standard: len=37"
+      "desc": "Standard: len=37",
+      "output": "false"
     },
     {
       "input": "\"bwooviqlfahbzqpvqiwqbuejojb\"\n\"gooxlcabcnhpfspuilqrzjc\"",
-      "desc": "Standard: len=27"
+      "desc": "Standard: len=27",
+      "output": "true"
     },
     {
       "input": "\"jzwwuhunxdrumjmbsxunpimiwbgdtayohuchqdfkqexvuolnfywkbsrblgoxvhvgslpmxtgjgsreoaixjhjoxwwoqxuvgrwttdpqezvjjwfsasruuhpttmolnmmdwfgwmxntwizkwcqvvfzyupxeylqiwlieilpvxfpfzpdeuwsprpfrrbbvphozlpnbosdaeklbwgzd\"\n\"bfzicnfppyanhnfjksvqfyhljbybaqelhxuypxvizfibqrzflwtgcwyqzgxkqbxkgbtdvttkruecapvyrhwrkfvjnrtigtsbufqsizrlkshewgilrwmcgfisyafoiorvnssamaiwqzltwkzzqvmcfellxfhhtyj\"",
-      "desc": "Stress: medium length"
+      "desc": "Stress: medium length",
+      "output": "false"
     },
     {
       "input": "\"zgivnmtbiqmcrvzgvbomoabaofwjlskbiouqjpdipkmefjuttszerxgzdmhqyusbawffcdkzhdfddfcopsmixolvywneaulbqeclagcsbwthstaucgwcrxeuxkrptijayzdkztiyoojhvqkujopowevzgjdgnzlqyycsuxmsaypnqvaszoyaenmaylildkjrzhneoaqncaovvqzypevdlmvyzyvbqropncpccdyecqimlmlhhtpfezwstzwthdueemdskgwwcovapwmjrkiqmhqxhbfuccfmgvgvcvkfemqjyqxskdgerxnascsiejopbcclfmpottuivvrtjfluwfrfdfmdscplufxwdbfkkhzchpadyxwajzndvlacbxntnydvyqhoofmpjuoheuayrkhgpvrpcbwwmzggtbdlrzaawnvlothtvlnegvulrxzfpeitschvwxxpvlnwpwcucihqeeryuttfgbsdwhoufwfxtihppyeq\"\n\"lizphpfczuzhpgzueglcnampdtrdcxddbfioylvsgzaenkjuocdjgawvtwzwokdeqvmebqxlgozgoabjeadivhrvrlqzrxymnklmoiocrtmukrcqfwysukeetbvgxhicbtaaluoklxgppbasvywbwpphpdcwocwvnrnnsepkttioawtrcuxwrfpnesuvghezsbuzeixnrwmnyadwusouyzdkhuhocbitgizicaqfbhslohqihuoqcnunbngsipbqfaucbojaxghjguyguhrifncomjxqjmoqzjwuhfmyoxjaeowt\"",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "false"
     },
     {
       "input": "\"kptfozyqnsewgzxkzwlnyyoddwjaaobymnjjhuchegtmsnmzocdjlkcqodxqnduprcrmlqvuricdklgpewjkjtzpfnsjmutterfkteqfpfqxtmizhmownkdgdtjqrylbpdqlwcuewflqxawaxfjtipnpyadurujidqmbsbhvgdlhnylypurenszmfrkgpcknyqozxbqcdqmghhwjwgbcwnqrsdlfvnbmvoadowtpxuxspnesdsegzshnwbwkkhkscdmmxcfdepxvvxnzleehffainjsakayriuuugtdqerzkqvbvnwgmmeftrlgpqucwmeowcsdrcbtyzyuboniddgczeiaphpnrwfsnrfbkfugoieyfukedfuqpsqsfflomepewcssimneynktuyvtxudbevsowgcqbfgdqjrfjlafrhoufdqbrqmlhgdzxbjzznxworfczgaqccijpdxodoinlitzoirbjvrjqyfetaghdxjoitshvuomvhyfdhlevbmrctgplkcoygsegtwrthhqfzfljitukkhrjxqyjdikezfgwmypibysbmxyrbkucnyvsvrwwsfhewqolaxzgudhqlvinigwwruoijcrjhzoguakhacbeksuhvclgcguwqrmmjxhrfxmnevnpejqugyylqfbtwurhpxfclveszzxfavbruwukvtryifnhovvturjvjhsuaoigohschdjptybzdlsygnghqywuklxibpnsqasjjtxrgnwaerczerlzokwnkjlaibbpqfderlnyguqybtwreqozbtmdsoskivnwtlgclcchtukkyisuveyrrmpfnudbebkdmcwsdqaadravllvfxnghcydwmodkrfgcidmlvqohaeikjnntoknmiodnjvkccnwfqbxaokzffvdtwdtmqcpmioscwatpvxwawdeaeocqgkexynuovgwwnipomhytiwgisxriaarcwnpwairrnsxdwxwcnpgl\"\n\"drargysawtkcbglxksqcozqcfeidajyavdqkiirhqmopgpjpfxzzoroffliwdpykzsvhqtqvehusuzxlkagmvbiaowbneegsotngvinkgcjfoloyjhadgfkwfuywvleonlloevtfsypfvwhvvhmobsgqavblatgclyupoaunfpdcgyzlqjbngryslemumofxebouzxdgiasomjseomdebuxkvcjkwhdalitnaedqfukcdakjariujbgqjgnnvrljfctcmrxaoaeeegnimxnlmzytoehsscxavakzxpujmlidxermxwqmvaoeyttucpdk\"",
-      "desc": "Stress: max length"
+      "desc": "Stress: max length",
+      "output": "false"
     },
     {
       "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
-      "desc": "Killer: all same char repeated"
+      "desc": "Killer: all same char repeated",
+      "output": "false"
     },
     {
       "input": "\"tmagwlajbgouaywgnfgbfoshhdiitinbkxnmrvtsrefqugjqakekxuqevyzesvfakyxtawwaffdjmvtqykkehgxqwtwjwmxeustxzlzsabfhazphmwiaeovhushwpijriwyyowbrwppwcfhqbayupqomwadfsvntwoixsdpwhlfnlgwfyktqolhyhqvwxtmaqkxjzsdajbkqfxdonpangxguuufosycqrbkvfcdlsczcpxnxbkskkzfigdipuqtkcstesvsmhbfsfyjpdyszbrjmwkegpxhhxkhhltkdevcjlitzpbjobcihrhaeexviipqtjvrucmooagmynyuvtlqigdojbazanhizyuvwlyeqgwcyktipfpzymntaflsykvlllqvqcayrunve\"\n\"hvvwxopbaodyapvgbsyqxgvexpiktvozmhnlnjqlggonuyqawvsswhqgyyiodtouptefhhoevbanmkpinrpqqlelrhlfrogwbmgw\"",
-      "desc": "Killer: very unequal lengths"
+      "desc": "Killer: very unequal lengths",
+      "output": "false"
     },
     {
       "input": "\"\"\n\"\"",
-      "desc": "Edge: both empty strings"
+      "desc": "Edge: both empty strings",
+      "output": "true"
     }
   ]
 }
