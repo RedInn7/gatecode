@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= ranks.length <= 10^5; 1 <= ranks[i] <= 100; 1 <= cars <= 10^6",
   "input_format": "line1: ranks (JSON array); line2: cars",
   "testcases": [
-    {"input": "[4,2,3,1]\n10", "desc": "Edge: example1"},
-    {"input": "[5,1,8]\n6", "desc": "Edge: example2"},
-    {"input": "[1]\n1", "desc": "Edge: minimal"},
-    {"input": "[100]\n1", "desc": "Edge: rank 100 1 car"},
-    {"input": "[1]\n1000000", "desc": "Edge: 1 worker max cars"},
-    {"input": "[1,1,1,1]\n4", "desc": "Edge: 4 rank-1 workers 4 cars"},
-    {"input": "[5,5,5]\n10", "desc": "Edge: 3 same workers"},
-    {"input": "[2,3]\n5", "desc": "Standard: 2 workers"},
-    {"input": "[1,2,3,4,5]\n15", "desc": "Standard: 5 workers"},
-    {"input": "[10,20,30,40,50]\n100", "desc": "Standard: high ranks"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n100", "desc": "Standard: 10 rank-1, 100 cars"},
-    {"input": "[100,100,100,100,100]\n1", "desc": "Standard: 1 car, many slow"},
-    {"input": "[5,5,5,5,5,5,5,5,5,5]\n50", "desc": "Standard: 10 same ranks"},
-    {"input": "[1,2,4,8,16,32,64]\n50", "desc": "Standard: doubling ranks"},
-    {"input": "[3,3,3]\n9", "desc": "Standard: equal 3 cars each"},
-    {"input": "[1,100]\n10", "desc": "Standard: extreme rank diff"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1000000", "desc": "Stress: 20 fast workers max cars"},
-    {"input": "[100,100,100,100,100,100,100,100,100,100]\n1000000", "desc": "Stress: slow workers max cars"},
-    {"input": "[1]\n1000000", "desc": "Stress: 1 worker max"},
-    {"input": "[50,50,50,50,50]\n1", "desc": "Killer: 5 workers 1 car"}
+    {
+      "input": "[4,2,3,1]\n10",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[5,1,8]\n6",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge: minimal"
+    },
+    {
+      "input": "[100]\n1",
+      "desc": "Edge: rank 100 1 car"
+    },
+    {
+      "input": "[1]\n1000000",
+      "desc": "Edge: 1 worker max cars"
+    },
+    {
+      "input": "[1,1,1,1]\n4",
+      "desc": "Edge: 4 rank-1 workers 4 cars"
+    },
+    {
+      "input": "[5,5,5]\n10",
+      "desc": "Edge: 3 same workers"
+    },
+    {
+      "input": "[2,3]\n5",
+      "desc": "Standard: 2 workers"
+    },
+    {
+      "input": "[1,2,3,4,5]\n15",
+      "desc": "Standard: 5 workers"
+    },
+    {
+      "input": "[10,20,30,40,50]\n100",
+      "desc": "Standard: high ranks"
+    },
+    {
+      "input": "[27,53,75,12,74,47,36,79,94,66,22,20,20,6,34,46,86,44,17,86,96,6,65,52,7,86,77,30,54,80,51]\n502410",
+      "desc": "Regenerated: standard at position 10"
+    },
+    {
+      "input": "[100,100,100,100,100]\n1",
+      "desc": "Standard: 1 car, many slow"
+    },
+    {
+      "input": "[5,5,5,5,5,5,5,5,5,5]\n50",
+      "desc": "Standard: 10 same ranks"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64]\n50",
+      "desc": "Standard: doubling ranks"
+    },
+    {
+      "input": "[3,3,3]\n9",
+      "desc": "Standard: equal 3 cars each"
+    },
+    {
+      "input": "[1,100]\n10",
+      "desc": "Standard: extreme rank diff"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1000000",
+      "desc": "Stress: 20 fast workers max cars"
+    },
+    {
+      "input": "[100,100,100,100,100,100,100,100,100,100]\n1000000",
+      "desc": "Stress: slow workers max cars"
+    },
+    {
+      "input": "[1]\n1000000",
+      "desc": "Stress: 1 worker max"
+    },
+    {
+      "input": "[50,50,50,50,50]\n1",
+      "desc": "Killer: 5 workers 1 car"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "n == skill.length; m == mana.length; 1 <= n,m <= 5000; 1 <= skill[i], mana[j] <= 5000",
   "input_format": "line1: skill (JSON array); line2: mana (JSON array)",
   "testcases": [
-    {"input": "[1,5,2,4]\n[5,1,4,2]", "desc": "Edge: example1"},
-    {"input": "[1,1,1]\n[1,1,1]", "desc": "Edge: all 1s"},
-    {"input": "[1,2,3,4]\n[1,2]", "desc": "Edge: example2"},
-    {"input": "[1]\n[1]", "desc": "Edge: 1 wizard 1 potion"},
-    {"input": "[5]\n[3]", "desc": "Edge: 1 wizard 1 potion non-1"},
-    {"input": "[1,2]\n[1]", "desc": "Edge: 2 wizards 1 potion"},
-    {"input": "[1]\n[1,2,3]", "desc": "Edge: 1 wizard 3 potions"},
-    {"input": "[1,1,1,1]\n[1,2,3,4]", "desc": "Standard: equal skill ascending mana"},
-    {"input": "[5,4,3,2,1]\n[1,2,3,4,5]", "desc": "Standard: opposite trends"},
-    {"input": "[2,3,1,4,2]\n[3,1,4,2]", "desc": "Standard: 5 wizards 4 potions"},
-    {"input": "[10,20,30]\n[1,2,3,4,5]", "desc": "Standard: 3 wizards"},
-    {"input": "[1,1,1,1,1]\n[5,4,3,2,1]", "desc": "Standard: same skill desc mana"},
-    {"input": "[3,3,3,3]\n[3,3,3,3]", "desc": "Standard: all equal"},
-    {"input": "[5000,1,5000,1]\n[1,5000,1,5000]", "desc": "Standard: extreme alt"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3,4,5]", "desc": "Standard: 10 wizards 5 potions"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 10 ones each"},
-    {"input": "[5000]\n[5000]", "desc": "Stress: max single"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[5000,4000,3000,2000,1000]", "desc": "Stress: 20 wizards desc mana"},
-    {"input": "[5000,5000,5000,5000,5000]\n[5000,5000,5000,5000,5000]", "desc": "Stress: all max"},
-    {"input": "[1,5000,1,5000,1]\n[5000,1,5000,1,5000]", "desc": "Killer: bouncing extremes"}
+    {
+      "input": "[1,5,2,4]\n[5,1,4,2]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[1,1,1]\n[1,1,1]",
+      "desc": "Edge: all 1s"
+    },
+    {
+      "input": "[1,2,3,4]\n[1,2]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: 1 wizard 1 potion"
+    },
+    {
+      "input": "[5]\n[3]",
+      "desc": "Edge: 1 wizard 1 potion non-1"
+    },
+    {
+      "input": "[1,2]\n[1]",
+      "desc": "Edge: 2 wizards 1 potion"
+    },
+    {
+      "input": "[1]\n[1,2,3]",
+      "desc": "Edge: 1 wizard 3 potions"
+    },
+    {
+      "input": "[1,1,1,1]\n[1,2,3,4]",
+      "desc": "Standard: equal skill ascending mana"
+    },
+    {
+      "input": "[5,4,3,2,1]\n[1,2,3,4,5]",
+      "desc": "Standard: opposite trends"
+    },
+    {
+      "input": "[2,3,1,4,2]\n[3,1,4,2]",
+      "desc": "Standard: 5 wizards 4 potions"
+    },
+    {
+      "input": "[10,20,30]\n[1,2,3,4,5]",
+      "desc": "Standard: 3 wizards"
+    },
+    {
+      "input": "[1,1,1,1,1]\n[5,4,3,2,1]",
+      "desc": "Standard: same skill desc mana"
+    },
+    {
+      "input": "[3,3,3,3]\n[3,3,3,3]",
+      "desc": "Standard: all equal"
+    },
+    {
+      "input": "[5000,1,5000,1]\n[1,5000,1,5000]",
+      "desc": "Standard: extreme alt"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3,4,5]",
+      "desc": "Standard: 10 wizards 5 potions"
+    },
+    {
+      "input": "[580,-855,422,-549,-182,532,-676,-604,-914,743,-81,974,-286,609,6,-29,920,-56,565,718,-693,-882,-951,408,955,521,280,176,877,-481,516,430,-472,166,602,-143,476,90,125,361,-798,-336,-18,259,-308,-502,767,895,375,-240,-479,520,617,-573,-869,-177,-261,57,-225,-422,-192,29,-957,-974,-273]\n[-543,819,854,947,-284,732,252,-367,-379,-859,243,772,997,-782,790,-263,-699,356,-87,-883,-232,974,-398,1000,736,499,873,618,-20,945,-565,952,-938,582,-449,497,515,574,-738,-705,-756,414,-462,-875,571,196,207,935,198,-868,710,-610,335,408,57,991,-917,-872,-978,-659,-388,31,-592,656,-172]",
+      "desc": "Regenerated: standard at position 15"
+    },
+    {
+      "input": "[5000]\n[5000]",
+      "desc": "Stress: max single"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[5000,4000,3000,2000,1000]",
+      "desc": "Stress: 20 wizards desc mana"
+    },
+    {
+      "input": "[5000,5000,5000,5000,5000]\n[5000,5000,5000,5000,5000]",
+      "desc": "Stress: all max"
+    },
+    {
+      "input": "[1,5000,1,5000,1]\n[5000,1,5000,1,5000]",
+      "desc": "Killer: bouncing extremes"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= n <= 10^9; 0 <= restrictions.length <= 10^5; 2 <= restrictions[i][0] <= n; 0 <= restrictions[i][1] <= 10^9",
   "input_format": "line1: n; line2: restrictions (JSON 2D)",
   "testcases": [
-    {"input": "5\n[[2,1],[4,1]]", "desc": "Edge: example1"},
-    {"input": "6\n[]", "desc": "Edge: example2 no restrictions"},
-    {"input": "10\n[[5,3],[2,5],[7,4],[10,3]]", "desc": "Edge: example3"},
-    {"input": "2\n[]", "desc": "Edge: minimal n=2"},
-    {"input": "2\n[[2,0]]", "desc": "Edge: n=2 zero height"},
-    {"input": "1000000000\n[]", "desc": "Edge: max n no restrictions"},
-    {"input": "3\n[[2,0]]", "desc": "Edge: tight restriction"},
-    {"input": "5\n[[3,0]]", "desc": "Standard: middle constraint"},
-    {"input": "10\n[[5,5]]", "desc": "Standard: peak in middle"},
-    {"input": "10\n[[2,1],[3,1],[4,1],[5,1]]", "desc": "Standard: chain of 1s"},
-    {"input": "100\n[[50,10],[60,10],[70,10]]", "desc": "Standard: 3 tight"},
-    {"input": "20\n[[5,3],[10,5],[15,3]]", "desc": "Standard: peaks then drop"},
-    {"input": "100\n[[2,0],[100,0]]", "desc": "Standard: zero at both ends"},
-    {"input": "1000\n[[500,100]]", "desc": "Standard: peak mid"},
-    {"input": "1000\n[[100,5],[200,5],[300,5],[400,5],[500,5]]", "desc": "Standard: multiple 5s"},
-    {"input": "100\n[[10,50],[20,50],[30,50],[40,50],[50,50],[60,50],[70,50],[80,50],[90,50]]", "desc": "Standard: many high constraints"},
-    {"input": "1000000000\n[[500000000,1000000000]]", "desc": "Stress: huge n and h"},
-    {"input": "1000000000\n[[2,0],[1000000000,0]]", "desc": "Stress: zeros at ends"},
-    {"input": "1000000000\n[[2,0],[500000000,500000000],[1000000000,0]]", "desc": "Stress: triangle"},
-    {"input": "100\n[[50,0]]", "desc": "Killer: zero in middle"}
+    {
+      "input": "5\n[[2,1],[4,1]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "6\n[]",
+      "desc": "Edge: example2 no restrictions"
+    },
+    {
+      "input": "10\n[[5,3],[2,5],[7,4],[10,3]]",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "2\n[]",
+      "desc": "Edge: minimal n=2"
+    },
+    {
+      "input": "2\n[[2,0]]",
+      "desc": "Edge: n=2 zero height"
+    },
+    {
+      "input": "1000000000\n[]",
+      "desc": "Edge: max n no restrictions"
+    },
+    {
+      "input": "3\n[[2,0]]",
+      "desc": "Edge: tight restriction"
+    },
+    {
+      "input": "5\n[[3,0]]",
+      "desc": "Standard: middle constraint"
+    },
+    {
+      "input": "10\n[[5,5]]",
+      "desc": "Standard: peak in middle"
+    },
+    {
+      "input": "10\n[[2,1],[3,1],[4,1],[5,1]]",
+      "desc": "Standard: chain of 1s"
+    },
+    {
+      "input": "100\n[[50,10],[60,10],[70,10]]",
+      "desc": "Standard: 3 tight"
+    },
+    {
+      "input": "20\n[[5,3],[10,5],[15,3]]",
+      "desc": "Standard: peaks then drop"
+    },
+    {
+      "input": "100\n[[2,0],[100,0]]",
+      "desc": "Standard: zero at both ends"
+    },
+    {
+      "input": "1000\n[[500,100]]",
+      "desc": "Standard: peak mid"
+    },
+    {
+      "input": "1000\n[[100,5],[200,5],[300,5],[400,5],[500,5]]",
+      "desc": "Standard: multiple 5s"
+    },
+    {
+      "input": "100\n[[10,50],[20,50],[30,50],[40,50],[50,50],[60,50],[70,50],[80,50],[90,50]]",
+      "desc": "Standard: many high constraints"
+    },
+    {
+      "input": "1000000000\n[[500000000,1000000000]]",
+      "desc": "Stress: huge n and h"
+    },
+    {
+      "input": "1000000000\n[[2,0],[1000000000,0]]",
+      "desc": "Stress: zeros at ends"
+    },
+    {
+      "input": "1000000000\n[[2,0],[500000000,500000000],[1000000000,0]]",
+      "desc": "Stress: triangle"
+    },
+    {
+      "input": "100\n[[50,0]]",
+      "desc": "Killer: zero in middle"
+    }
   ]
 }
