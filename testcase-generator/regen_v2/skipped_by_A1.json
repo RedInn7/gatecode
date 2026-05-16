@@ -310,6 +310,21 @@
       "pid": 397,
       "slug": "read-n-characters-given-read4",
       "reason": "Interactive API problem (read4)"
+    },
+    {
+      "pid": 455,
+      "slug": "delete-node-in-a-bst",
+      "reason": "Returns BST root - multiple valid answers when deleting node with 2 children"
+    },
+    {
+      "pid": 408,
+      "slug": "balanced-k-factor-decomposition",
+      "reason": "Returns any optimal split — non-unique"
+    },
+    {
+      "pid": 439,
+      "slug": "find-the-shortest-superstring-ii",
+      "reason": "Returns any shortest superstring — non-unique"
     }
   ]
 }

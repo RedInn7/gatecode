@@ -1,0 +1,28 @@
+{
+  "pid": 450,
+  "slug": "find-the-minimum-possible-sum-of-a-beautiful-array",
+  "inferred_constraints": "1 <= n <= 1e9, 1 <= target <= 1e9",
+  "input_format": "line1: n (int); line2: target (int)",
+  "testcases": [
+    {"input": "2\n3", "desc": "Edge: example1"},
+    {"input": "3\n3", "desc": "Edge: example2"},
+    {"input": "1\n1", "desc": "Edge: minimum n"},
+    {"input": "1\n1000000000", "desc": "Edge: n=1 max target"},
+    {"input": "1000000000\n1", "desc": "Edge: max n target=1"},
+    {"input": "1000000000\n1000000000", "desc": "Edge: max both"},
+    {"input": "2\n4", "desc": "Edge: target=4, can't have 1+3"},
+    {"input": "3\n4", "desc": "Edge: n=3 target=4"},
+    {"input": "10\n10", "desc": "Standard: medium"},
+    {"input": "5\n5", "desc": "Standard: small"},
+    {"input": "100\n50", "desc": "Standard: more n than half target"},
+    {"input": "100\n200", "desc": "Standard: target much larger"},
+    {"input": "1000\n1", "desc": "Edge: target=1 (no constraint)"},
+    {"input": "1000000\n2", "desc": "Edge: target=2"},
+    {"input": "500000\n1000", "desc": "Standard: medium"},
+    {"input": "1000000000\n999999999", "desc": "Stress: near max"},
+    {"input": "5\n100", "desc": "Edge: tiny n large target"},
+    {"input": "100\n3", "desc": "Edge: small target"},
+    {"input": "50\n100", "desc": "Standard"},
+    {"input": "999999999\n999999998", "desc": "Stress: near max diff"}
+  ]
+}

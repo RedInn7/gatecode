@@ -1,0 +1,28 @@
+{
+  "pid": 449,
+  "slug": "length-of-longest-fibonacci-subsequence",
+  "inferred_constraints": "3 <= arr.length <= 1000, 1 <= arr[i] < arr[i+1] <= 1e9 (strictly increasing)",
+  "input_format": "line1: arr (JSON int array, strictly increasing)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,6,7,8]", "desc": "Edge: example1 length 5"},
+    {"input": "[1,3,7,11,12,14,18]", "desc": "Edge: example2 length 3"},
+    {"input": "[1,2,3]", "desc": "Edge: n=3 fibonacci"},
+    {"input": "[1,2,4]", "desc": "Edge: n=3 not fib"},
+    {"input": "[1,2,3,5,8,13,21,34]", "desc": "Edge: pure fibonacci"},
+    {"input": "[2,4,7,11,18,29,47,76]", "desc": "Edge: fibonacci-like starting 2,4"},
+    {"input": "[1,3,4,7,11,18,29]", "desc": "Edge: starts 1,3"},
+    {"input": "[1,2,3,5,8,13,21,34,55,89]", "desc": "Standard: 10 fib"},
+    {"input": "[1,3,7,11,12,14,18,19,23,27,31]", "desc": "Standard: mixed"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Standard: powers of 2 (no fib)"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29]", "desc": "Standard: primes"},
+    {"input": "[5,10,15,20,25,30,35,40,45,50]", "desc": "Standard: APtilemma"},
+    {"input": "[1,4,5,9,14,23,37,60,97]", "desc": "Edge: lucas-like seq"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: 1..20"},
+    {"input": "[1,10,100,1000,10000]", "desc": "Edge: too spread"},
+    {"input": "[1,2,3,5,7,8,11,13,21]", "desc": "Standard: mix with fib"},
+    {"input": "[1,100,101,201,302,503,805]", "desc": "Standard: fib starting 100"},
+    {"input": "[3,5,8,13,21,34,55,89,144]", "desc": "Edge: fibonacci from 3,5"},
+    {"input": "[1,2,3,4,5,8,11,13,16,21]", "desc": "Standard: multi fib subsequences"},
+    {"input": "[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29]", "desc": "Standard: odds"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 448,
+  "slug": "maximum-value-of-an-ordered-triplet-i",
+  "inferred_constraints": "3 <= nums.length <= 100, 1 <= nums[i] <= 1e6",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[12,6,1,2,7]", "desc": "Edge: example1"},
+    {"input": "[1,10,3,4,19]", "desc": "Edge: example2"},
+    {"input": "[1,2,3]", "desc": "Edge: example3 negative result, return 0"},
+    {"input": "[1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1000000,1000000,1000000]", "desc": "Edge: max all same"},
+    {"input": "[1000000,1,1000000]", "desc": "Edge: middle small"},
+    {"input": "[1,1000000,1]", "desc": "Edge: middle big"},
+    {"input": "[3,2,1]", "desc": "Edge: descending"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: long descending"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: long ascending"},
+    {"input": "[100,1,2,3,100]", "desc": "Standard: peaks at ends"},
+    {"input": "[1,100,2,100,3]", "desc": "Standard: alternating"},
+    {"input": "[1000000,500000,750000,250000,1000000]", "desc": "Standard: large values"},
+    {"input": "[1,2,3,1,2,3]", "desc": "Standard: pattern"},
+    {"input": "[100,99,98,1]", "desc": "Standard: 3 high 1 low"},
+    {"input": "[50,1,50,1,50]", "desc": "Standard: alternating"},
+    {"input": "[999999,1,999999,1,999999,1]", "desc": "Standard: alternating extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 1..20"}
+  ]
+}

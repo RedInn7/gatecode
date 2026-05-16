@@ -1,0 +1,28 @@
+{
+  "pid": 446,
+  "slug": "minimum-number-of-operations-to-make-array-empty",
+  "inferred_constraints": "2 <= nums.length <= 1e5, 1 <= nums[i] <= 1e6",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[2,3,3,2,2,4,2,3,4]", "desc": "Edge: example1"},
+    {"input": "[2,1,2,2,3,3]", "desc": "Edge: example2 impossible"},
+    {"input": "[1,1]", "desc": "Edge: n=2 minimum"},
+    {"input": "[1,1,1]", "desc": "Edge: triple"},
+    {"input": "[2,2]", "desc": "Edge: n=2 simple pair"},
+    {"input": "[1,1,1,1]", "desc": "Edge: 4 ones (2 pairs)"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: 5 ones (1 triple + 1 pair)"},
+    {"input": "[1,1,1,1,1,1]", "desc": "Edge: 6 ones (2 triples)"},
+    {"input": "[1,1,1,1,1,1,1]", "desc": "Edge: 7 ones (2 triples + 1 pair? no, impossible)"},
+    {"input": "[1000000,1000000,1000000]", "desc": "Edge: max values triple"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: all distinct impossible"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "Edge: 10 same"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: 5 pairs"},
+    {"input": "[1,1,1,2,2,2,3,3,3]", "desc": "Standard: 3 triples"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: 3 pairs"},
+    {"input": "[1,1,1,1,2,2,2,2,3,3,3,3]", "desc": "Standard: 3 groups of 4"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]", "desc": "Stress: 2 groups of 10"},
+    {"input": "[100,200,300,100,200,300,100,200,300]", "desc": "Standard: 3 triples"},
+    {"input": "[7,7,7,7,7,7,7,7]", "desc": "Standard: 8 same"},
+    {"input": "[1,1,1,1,1,1,1]", "desc": "Edge: 7 ones (impossible)"}
+  ]
+}
