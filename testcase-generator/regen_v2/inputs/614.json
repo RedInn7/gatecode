@@ -4,25 +4,85 @@
   "inferred_constraints": "n == s.length; 1 <= n <= 200; s[i] is 'I' or 'D'",
   "input_format": "line1: s (string)",
   "testcases": [
-    {"input": "DID", "desc": "Edge: example1"},
-    {"input": "D", "desc": "Edge: example2 minimum D"},
-    {"input": "I", "desc": "Edge: minimum I"},
-    {"input": "II", "desc": "Edge: two I"},
-    {"input": "DD", "desc": "Edge: two D"},
-    {"input": "ID", "desc": "Edge: ID"},
-    {"input": "DI", "desc": "Edge: DI"},
-    {"input": "III", "desc": "Standard: 3 I"},
-    {"input": "DDD", "desc": "Standard: 3 D"},
-    {"input": "IDID", "desc": "Standard: alternating 4"},
-    {"input": "DIDI", "desc": "Standard: alternating 4 starts D"},
-    {"input": "IIIII", "desc": "Standard: all I"},
-    {"input": "DDDDD", "desc": "Standard: all D"},
-    {"input": "IIDID", "desc": "Standard: mixed"},
-    {"input": "DIIID", "desc": "Standard: D bookends"},
-    {"input": "IDIDIDIDID", "desc": "Standard: 10 alternating"},
-    {"input": "IIIIIIIIIIIIIIIIIIII", "desc": "Stress: 20 I"},
-    {"input": "DDDDDDDDDDDDDDDDDDDD", "desc": "Stress: 20 D"},
-    {"input": "IDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDID", "desc": "Stress: 50 alternating"},
-    {"input": "DDDDIIIIDDDDIIIIDDDD", "desc": "Special: blocks killer"}
+    {
+      "input": "DID",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "D",
+      "desc": "Edge: example2 minimum D"
+    },
+    {
+      "input": "\"fs\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"muw\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "ID",
+      "desc": "Edge: ID"
+    },
+    {
+      "input": "DI",
+      "desc": "Edge: DI"
+    },
+    {
+      "input": "III",
+      "desc": "Standard: 3 I"
+    },
+    {
+      "input": "DDD",
+      "desc": "Standard: 3 D"
+    },
+    {
+      "input": "IDID",
+      "desc": "Standard: alternating 4"
+    },
+    {
+      "input": "DIDI",
+      "desc": "Standard: alternating 4 starts D"
+    },
+    {
+      "input": "IIIII",
+      "desc": "Standard: all I"
+    },
+    {
+      "input": "DDDDD",
+      "desc": "Standard: all D"
+    },
+    {
+      "input": "IIDID",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "DIIID",
+      "desc": "Standard: D bookends"
+    },
+    {
+      "input": "IDIDIDIDID",
+      "desc": "Standard: 10 alternating"
+    },
+    {
+      "input": "IIIIIIIIIIIIIIIIIIII",
+      "desc": "Stress: 20 I"
+    },
+    {
+      "input": "DDDDDDDDDDDDDDDDDDDD",
+      "desc": "Stress: 20 D"
+    },
+    {
+      "input": "IDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDID",
+      "desc": "Stress: 50 alternating"
+    },
+    {
+      "input": "\"eufjdp\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
