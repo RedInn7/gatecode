@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"orm\"",
+      "input": "\"q\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 a"
     },
     {
-      "input": "\"dkmcguat\"",
+      "input": "\"ixhujays\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
