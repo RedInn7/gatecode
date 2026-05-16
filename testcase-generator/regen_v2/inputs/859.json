@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"nrrxd\"",
+      "input": "\"jc\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: digits"
     },
     {
-      "input": "\"yvbtapeiib\"",
+      "input": "\"jhoblzbznx\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
