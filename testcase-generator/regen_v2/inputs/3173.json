@@ -1,0 +1,76 @@
+{
+  "pid": 3173,
+  "slug": "shortest-word-distance",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"\n\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"j\"\n\"o\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"kv\"\n\"vg\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"\n\"b\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"eddda\"\n\"ee\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"zdrzk\"\n\"kw\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"yyvrwyauuchjwueawyferyvusdpjoikiqjhpjsfopxknnulgnu\"\n\"yeqxfynpijtjxxtiomkdmxtoekufagbbtb\"",
+      "desc": "Standard: len=50"
+    },
+    {
+      "input": "\"wmkijyqlyrflrdidkq\"\n\"nchivucwwho\"",
+      "desc": "Standard: len=18"
+    },
+    {
+      "input": "\"vajelxjvf\"\n\"anwncb\"",
+      "desc": "Standard: len=9"
+    },
+    {
+      "input": "\"rrbkli\"\n\"xocl\"",
+      "desc": "Standard: len=6"
+    },
+    {
+      "input": "\"awsyailwggytmqeuporwhsfq\"\n\"yfntliayehvduljbrhpzw\"",
+      "desc": "Standard: len=24"
+    },
+    {
+      "input": "\"wrkvlklwz\"\n\"mxpfmxxdp\"",
+      "desc": "Standard: len=9"
+    },
+    {
+      "input": "\"gxcaiveudbnojfemrkbpodkir\"\n\"joqlqwvrpqimkgtq\"",
+      "desc": "Standard: len=25"
+    },
+    {
+      "input": "\"kyslxugbxwughmghsviwcujzabjeeuajixtxiaoaffqpwdjnjifadqorbluwtrqwpqvbrdisjsvbwoykhidwiivccskxiwijvjkmnlocquyilyfibukzjljalbbzbzmealtlcwudgpqcyftcpycmnfyyhrcskxkeiymtprgekhapbnlbqtxunrpjekasrpvvydcxiprvzivdzjhuohxobhfagyrhodiizpkgrswnmdwtsmmdexexzhotevbjfigzgwtouuwasixgodfnyxtbxgdsvrgmkmafkfufgqdxsgkqkjazemdazlvfpifecghilzvhgxpjfjtvgwtwajfpiutxyhbeaihsvgvtwxljqjrfdheycguwerhezixoqhkmdrzactgqsaminxhhuxzfvwixvdtshpkytyjuutwuydzhoccuamtxjiaflpayvsruqdcwdlcyjtmwtnxhaklooiplpphixofaowmhfhpziuniiubhposb\"\n\"kjymzftstfxbqlyoigqmwhaxbtiduozeiaexsgakkqgnqporjyaicflwtdxhiqazxisiiuxarahjicqcjmvgibykdpymzlflkhynawkwdnbziainepaahvtybqipyfezjcoyayavnznzhnvebdfszskvdyyjhyidyuoatlpioblyywzgjrpowjddcowrrywapxyewsjnayxjaesmfhyfyzhyqpqylobdikhvtghafnzmratkribqbmayauldxjdezegtssmqnforrawlkfmeadgunqlhmnaotbrppkewntqvbsssxjwhezwjaslycvxjtxnjqasscisxvuvhdvxwptljzwapdzuxtkmpgedeoatdssnlkldqcu\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"usylshumgiigjfepotmhnagqzgjgfkxmttasaremateazgxxbwkbjmujkwilznfhjauznsoninmtkbjginsuuxsfnjwawbntavhxljnwoowsaftjjraljtadsvnxzawdsjjfjypioeojgntpxoqaonxetbrvjtzzeppojbnixqfwibbybuxrjmydnaibsxxxjjqtmzyhaefrxbokgpvhelqhbcxjijqflotblcgcyruxmgrabggijqrcbkuagjbehbvvnohtafqhvvozszvkyezctvmbmxtyootcfggtfadxmxzmtnbgtdghclxsnibshzowyqxgpxijgnnvifzrsigxrrcujrkbautgvdmjotduykwafndssabzwqexzczijhxidtiqnkhztqcbkouaerotcvahitwnfhmbmyobhbhicxpxegybvkdgadaqhtbaquyajpidxfikbadgzrrhtfyyarwvmgefnkvsoyjinqxudrzqjpekxawctcrkcseoszztkkktcmqaidqsflzfkufrbvokhchhjxhwnbyxpncxuzqnhadqoaxdoaxnncxokprvjmaotclyterkqrgbetytmdxjcszsicpbjvjwrejxkbgwxkpwcmivjeyavocoudgmeyxezkzakzyrzesuwjuvtrwcsiedokxgaommpygqagpupaiidhtuyfnasozeqdblhcrsdgxxkzqfcoshygibawcvjiazbzjzyaxfsshydxkgqjvuvfeugmdkproyqokokyhfbrmhpnxlhhjwwndxmzbimzvzofhlstytkabrvjvplldaszaozfmixpbpjibicxjbnkzzbyeymvtflmgxsukgzlopflajnvshduxxqunwxgwuilpapqrfykflgmqfywiemjgbzrzeultmvadqonhasigabdlksduobrdfzswabykohbswxryrwlrsqzjaezclgspwleohiasrvrqygfcnhyyefdbtbyhc\"\n\"xcvvqumbectvqqmdluheyvsnarqkobangbkqksqyorscqezvtcddiroefdeqbuqdzlojyeysoykdwwkdkjohnxjabutplerzjhhvtinqsiuxxnbytklmeoqudglzhqftjukmcqmikxzxmsfujbchtywlylszlksygkchfvcadqoppwtdcubdutrlgjlpewnfwzvkpgalcmqaofcbbhoscrdrkgxqhlsineebbzlpwncidulqejrgdyyvyrxjjlqzddxyqsrzrcogruhncdugmpgxazmyvsecapkdbalxc\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"\n\"abcde\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

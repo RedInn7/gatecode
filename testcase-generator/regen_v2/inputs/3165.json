@@ -1,0 +1,76 @@
+{
+  "pid": 3165,
+  "slug": "lexicographically-smallest-string-after-operations-with-constraint",
+  "inferred_constraints": "0 <= s.length <= 100",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"p\"\n1",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"vc\"\n1",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"ccabc\"\n5",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"vudpkuqyllhkmjtpnthhwkryoslilttnwttjtftsnx\"\n22",
+      "desc": "Standard: len=42"
+    },
+    {
+      "input": "\"xhlmenppfqhyvcqtxphqavxewmrtdaqdqxeq\"\n14",
+      "desc": "Standard: len=36"
+    },
+    {
+      "input": "\"ukzsfplrumnzwnffndhrqwyiwvdigeinqrljzq\"\n10",
+      "desc": "Standard: len=38"
+    },
+    {
+      "input": "\"sjwfbiwgkqab\"\n6",
+      "desc": "Standard: len=12"
+    },
+    {
+      "input": "\"ekyyxnmlxfmjwikxsvxgklcpih\"\n2",
+      "desc": "Standard: len=26"
+    },
+    {
+      "input": "\"dtqqoxhddximmsddvydyhmjkrfmp\"\n20",
+      "desc": "Standard: len=28"
+    },
+    {
+      "input": "\"znmbtputgcflbwaiqfcsmwnvrmctrfccx\"\n29",
+      "desc": "Standard: len=33"
+    },
+    {
+      "input": "\"sckpnvbhsqlucyjudsuazfsasorsggfsgkqaq\"\n17",
+      "desc": "Standard: len=37"
+    },
+    {
+      "input": "\"abbhuqjbzxhszvveregpcevviekgdceocgpikfosjvjxbffzhnyweqqlambillwqrmhabtktrmpxeikynzzydidanksymcoyjrzv\"\n75",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"abdqbqsgzxnewpnfnsnyuzrnsujeznfvxjogjfodhjregmtnycjjrxbfkzvjpncqzuzybhpmunassfxhuvaurgikhcbsjqbbupyz\"\n65",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}
