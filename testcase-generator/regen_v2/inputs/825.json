@@ -1,0 +1,27 @@
+{
+  "pid": 825, "slug": "equal-score-substrings",
+  "inferred_constraints": "2 <= s.length <= 100, lowercase",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "adcb", "desc": "Edge: example1 true"},
+    {"input": "bace", "desc": "Edge: example2 false"},
+    {"input": "ab", "desc": "Edge: min len same scores"},
+    {"input": "aa", "desc": "Edge: aa same"},
+    {"input": "ba", "desc": "Edge: ba unequal"},
+    {"input": "az", "desc": "Edge: a+z"},
+    {"input": "aabb", "desc": "Edge: aabb"},
+    {"input": "abba", "desc": "Standard: palindrome"},
+    {"input": "abc", "desc": "Edge: 3 char"},
+    {"input": "aabbcc", "desc": "Standard: 6 char"},
+    {"input": "abcabc", "desc": "Standard: repeated"},
+    {"input": "zzzzz", "desc": "Edge: all z odd"},
+    {"input": "zzzz", "desc": "Edge: all z even"},
+    {"input": "aaaa", "desc": "Edge: all a"},
+    {"input": "abcdef", "desc": "Standard: ascending"},
+    {"input": "fedcba", "desc": "Standard: descending"},
+    {"input": "leetcode", "desc": "Standard: real word"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: full alphabet"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a"},
+    {"input": "abacaba", "desc": "Special: 7-palindrome"}
+  ]
+}
