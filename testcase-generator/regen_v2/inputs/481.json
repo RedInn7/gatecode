@@ -4,25 +4,85 @@
   "inferred_constraints": "-2^31 <= n <= 2^31 - 1",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "27", "desc": "Edge: example1 3^3"},
-    {"input": "0", "desc": "Edge: example2"},
-    {"input": "-1", "desc": "Edge: example3 negative"},
-    {"input": "1", "desc": "Edge: 3^0=1"},
-    {"input": "3", "desc": "Edge: 3^1"},
-    {"input": "9", "desc": "Edge: 3^2"},
-    {"input": "81", "desc": "Edge: 3^4"},
-    {"input": "243", "desc": "Edge: 3^5"},
-    {"input": "1162261467", "desc": "Edge: 3^19 max within int32"},
-    {"input": "2147483647", "desc": "Edge: INT_MAX not pow3"},
-    {"input": "-2147483648", "desc": "Edge: INT_MIN negative"},
-    {"input": "2", "desc": "Edge: not pow3"},
-    {"input": "4", "desc": "Edge: pow of 2 not 3"},
-    {"input": "45", "desc": "Edge: not pow3"},
-    {"input": "100", "desc": "Edge: not pow3"},
-    {"input": "729", "desc": "Edge: 3^6"},
-    {"input": "2187", "desc": "Edge: 3^7"},
-    {"input": "6561", "desc": "Edge: 3^8"},
-    {"input": "19683", "desc": "Edge: 3^9"},
-    {"input": "-3", "desc": "Edge: negative not pow3"}
+    {
+      "input": "-1",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "22",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: 3^2"
+    },
+    {
+      "input": "81",
+      "desc": "Edge: 3^4"
+    },
+    {
+      "input": "243",
+      "desc": "Edge: 3^5"
+    },
+    {
+      "input": "1162261467",
+      "desc": "Edge: 3^19 max within int32"
+    },
+    {
+      "input": "2147483647",
+      "desc": "Edge: INT_MAX not pow3"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Edge: INT_MIN negative"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: not pow3"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: pow of 2 not 3"
+    },
+    {
+      "input": "45",
+      "desc": "Edge: not pow3"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: not pow3"
+    },
+    {
+      "input": "729",
+      "desc": "Edge: 3^6"
+    },
+    {
+      "input": "2187",
+      "desc": "Edge: 3^7"
+    },
+    {
+      "input": "6561",
+      "desc": "Edge: 3^8"
+    },
+    {
+      "input": "19683",
+      "desc": "Edge: 3^9"
+    },
+    {
+      "input": "27",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

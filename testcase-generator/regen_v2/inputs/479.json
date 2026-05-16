@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1000",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "10", "desc": "Edge: example1"},
-    {"input": "37", "desc": "Edge: example2"},
-    {"input": "1", "desc": "Edge: n=1 (1 only)"},
-    {"input": "2", "desc": "Edge: n=2"},
-    {"input": "9", "desc": "Edge: includes 9"},
-    {"input": "10", "desc": "Edge: includes 10"},
-    {"input": "36", "desc": "Edge: just before 37 boundary"},
-    {"input": "100", "desc": "Standard: n=100"},
-    {"input": "200", "desc": "Standard: n=200"},
-    {"input": "500", "desc": "Standard: n=500"},
-    {"input": "1000", "desc": "Edge: max n"},
-    {"input": "999", "desc": "Edge: near max"},
-    {"input": "45", "desc": "Standard: 45*45=2025"},
-    {"input": "55", "desc": "Standard: 55*55=3025"},
-    {"input": "99", "desc": "Standard: 99*99=9801"},
-    {"input": "300", "desc": "Standard: n=300"},
-    {"input": "700", "desc": "Standard: n=700"},
-    {"input": "150", "desc": "Standard: n=150"},
-    {"input": "250", "desc": "Standard: n=250"},
-    {"input": "888", "desc": "Standard: n=888"}
+    {
+      "input": "10",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "37",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "24",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "25",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "25",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: includes 10"
+    },
+    {
+      "input": "36",
+      "desc": "Edge: just before 37 boundary"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: n=100"
+    },
+    {
+      "input": "200",
+      "desc": "Standard: n=200"
+    },
+    {
+      "input": "500",
+      "desc": "Standard: n=500"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: max n"
+    },
+    {
+      "input": "999",
+      "desc": "Edge: near max"
+    },
+    {
+      "input": "45",
+      "desc": "Standard: 45*45=2025"
+    },
+    {
+      "input": "55",
+      "desc": "Standard: 55*55=3025"
+    },
+    {
+      "input": "99",
+      "desc": "Standard: 99*99=9801"
+    },
+    {
+      "input": "300",
+      "desc": "Standard: n=300"
+    },
+    {
+      "input": "700",
+      "desc": "Standard: n=700"
+    },
+    {
+      "input": "150",
+      "desc": "Standard: n=150"
+    },
+    {
+      "input": "250",
+      "desc": "Standard: n=250"
+    },
+    {
+      "input": "37",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

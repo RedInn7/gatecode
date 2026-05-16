@@ -4,25 +4,85 @@
   "inferred_constraints": "3 <= nums.length <= 50, 1 <= nums[i] <= 50",
   "input_format": "line1: nums (JSON int array)",
   "testcases": [
-    {"input": "[1,2,3,12]", "desc": "Edge: example1"},
-    {"input": "[5,4,3]", "desc": "Edge: example2 minimum n"},
-    {"input": "[10,3,1,1]", "desc": "Edge: example3"},
-    {"input": "[1,1,1]", "desc": "Edge: all 1s n=3"},
-    {"input": "[50,50,50]", "desc": "Edge: all max"},
-    {"input": "[1,2,3]", "desc": "Edge: ascending n=3"},
-    {"input": "[3,2,1]", "desc": "Edge: descending n=3"},
-    {"input": "[5,1,2,3,4,5]", "desc": "Standard: n=6"},
-    {"input": "[10,1,1,1,1,1]", "desc": "Edge: max at start"},
-    {"input": "[1,10,1,10,1,10]", "desc": "Standard: alternating"},
-    {"input": "[50,1,50,1,50]", "desc": "Standard: max alternating"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1..10"},
-    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending 10"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: 10 ones"},
-    {"input": "[50,50,50,50,50,50,50,50,50,50]", "desc": "Edge: 10 max"},
-    {"input": "[1,50,50,50,50]", "desc": "Standard: 1 then maxes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 20 mix"},
-    {"input": "[5,4,3,2,1,10,20,30,40,50]", "desc": "Standard: descending then ascending"},
-    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Stress: 20 alternating"},
-    {"input": "[50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31]", "desc": "Stress: 20 descending"}
+    {
+      "input": "[1,2,3,12]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[5,4,3]",
+      "desc": "Edge: example2 minimum n"
+    },
+    {
+      "input": "[10,3,1,1]",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "[1,1,1]",
+      "desc": "Edge: all 1s n=3"
+    },
+    {
+      "input": "[50,50,50]",
+      "desc": "Edge: all max"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Edge: ascending n=3"
+    },
+    {
+      "input": "[3,2,1]",
+      "desc": "Edge: descending n=3"
+    },
+    {
+      "input": "[5,1,2,3,4,5]",
+      "desc": "Standard: n=6"
+    },
+    {
+      "input": "[13,21,22,28,21,41,22,49,18,1,8,49,36,20,19,45,32,20,14,7,34,17,48,35,45,7,42,46,47,20,20,45,5,18,20,31,39]",
+      "desc": "Regenerated: standard at position 8"
+    },
+    {
+      "input": "[1,10,1,10,1,10]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[50,1,50,1,50]",
+      "desc": "Standard: max alternating"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: 1..10"
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]",
+      "desc": "Standard: descending 10"
+    },
+    {
+      "input": "[22,48,43,8,10,46,9]",
+      "desc": "Regenerated: diverse at position 13"
+    },
+    {
+      "input": "[15,31,33,33,26,39,8,6,49,31]",
+      "desc": "Regenerated: standard at position 14"
+    },
+    {
+      "input": "[1,50,50,50,50]",
+      "desc": "Standard: 1 then maxes"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1,1]",
+      "desc": "Standard: 20 mix"
+    },
+    {
+      "input": "[5,4,3,2,1,10,20,30,40,50]",
+      "desc": "Standard: descending then ascending"
+    },
+    {
+      "input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]",
+      "desc": "Stress: 20 alternating"
+    },
+    {
+      "input": "[50,10,21,15,33,33,27,42,21,9,44,11,26,23,49,9,32,41,29,25,49,43,22,31,10,22,1,41,41,41,18,23,30,34,47,30,29,6,26,44,36,45,21,24,36,24,45,1,37,17]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
