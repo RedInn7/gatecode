@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= words1.length, words2.length <= 1000, 1 <= words[i].length <= 30, lowercase",
   "input_format": "line1: words1 (JSON string array); line2: words2 (JSON string array)",
   "testcases": [
-    {"input": "[\"leetcode\",\"is\",\"amazing\",\"as\",\"is\"]\n[\"amazing\",\"leetcode\",\"is\"]", "desc": "Edge: example1"},
-    {"input": "[\"b\",\"bb\",\"bbb\"]\n[\"a\",\"aa\",\"aaa\"]", "desc": "Edge: example2 no overlap"},
-    {"input": "[\"a\",\"ab\"]\n[\"a\",\"a\",\"a\",\"ab\"]", "desc": "Edge: example3"},
-    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: single match"},
-    {"input": "[\"a\"]\n[\"b\"]", "desc": "Edge: single no match"},
-    {"input": "[\"a\",\"a\"]\n[\"a\"]", "desc": "Edge: a appears twice in words1"},
-    {"input": "[\"a\"]\n[\"a\",\"a\"]", "desc": "Edge: a appears twice in words2"},
-    {"input": "[\"a\",\"b\",\"c\"]\n[\"a\",\"b\",\"c\"]", "desc": "Edge: all match each once"},
-    {"input": "[\"a\",\"b\",\"a\"]\n[\"a\",\"b\"]", "desc": "Edge: a appears 2 in words1"},
-    {"input": "[\"hello\"]\n[\"hello\"]", "desc": "Edge: longer word match"},
-    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: 5 each once"},
-    {"input": "[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\"]\n[\"a\",\"b\",\"c\"]", "desc": "Standard: all twice in words1"},
-    {"input": "[\"a\",\"b\",\"c\"]\n[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\"]", "desc": "Standard: all twice in words2"},
-    {"input": "[\"apple\",\"banana\",\"cherry\",\"date\"]\n[\"apple\",\"banana\",\"elderberry\",\"fig\"]", "desc": "Standard: 2 common"},
-    {"input": "[\"foo\",\"bar\",\"baz\",\"foo\"]\n[\"foo\",\"bar\",\"baz\"]", "desc": "Standard: foo twice"},
-    {"input": "[\"x\",\"y\",\"z\"]\n[\"a\",\"b\",\"c\"]", "desc": "Standard: no overlap"},
-    {"input": "[\"hello\",\"world\",\"foo\",\"bar\"]\n[\"hello\",\"world\",\"baz\",\"qux\"]", "desc": "Standard: 2 common"},
-    {"input": "[\"abcdefghijklmnop\",\"qrstuvwxyzabcdef\",\"ghijklmnopqrstuv\"]\n[\"abcdefghijklmnop\",\"qrstuvwxyzabcdef\",\"ghijklmnopqrstuv\"]", "desc": "Stress: 3 long words match once"},
-    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\"]", "desc": "Stress: 20 match each once"},
-    {"input": "[\"a\",\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\"]\n[\"a\",\"b\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\"]", "desc": "Stress: a, b have dups"}
+    {
+      "input": "[\"leetcode\",\"is\",\"amazing\",\"as\",\"is\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[\"b\",\"bb\",\"bbb\"]\n[\"a\",\"aa\",\"aaa\"]",
+      "desc": "Edge: example2 no overlap"
+    },
+    {
+      "input": "[-972,-955,-888,-882,-826,-701,-601,-581,-549,-482,-443,-223,-160,18,64,70,89,113,215,225,226,297,347,416,448,464,480,541,643,848,937,980,983]\n[-976,-914,-899,-662,-435,-349,-341,-262,-218,-210,-50,-3,28,151,156,282,311,422,442,461,632,641,646,676,679,683,699,756,802,831,879,934,936]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[994,955,886,875,872,422,335,240,150,-352,-439,-806]\n[887,313,-61,-114,-311,-330,-452,-495,-610,-812,-845,-857]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[\"a\"]\n[\"b\"]",
+      "desc": "Edge: single no match"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"a\"]",
+      "desc": "Edge: a appears twice in words1"
+    },
+    {
+      "input": "[\"a\"]\n[\"a\",\"a\"]",
+      "desc": "Edge: a appears twice in words2"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\"]\n[\"a\",\"b\",\"c\"]",
+      "desc": "Edge: all match each once"
+    },
+    {
+      "input": "[\"a\",\"b\",\"a\"]\n[\"a\",\"b\"]",
+      "desc": "Edge: a appears 2 in words1"
+    },
+    {
+      "input": "[\"hello\"]\n[\"hello\"]",
+      "desc": "Edge: longer word match"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\"]",
+      "desc": "Standard: 5 each once"
+    },
+    {
+      "input": "[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\"]\n[\"a\",\"b\",\"c\"]",
+      "desc": "Standard: all twice in words1"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\"]\n[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\"]",
+      "desc": "Standard: all twice in words2"
+    },
+    {
+      "input": "[\"apple\",\"banana\",\"cherry\",\"date\"]\n[\"apple\",\"banana\",\"elderberry\",\"fig\"]",
+      "desc": "Standard: 2 common"
+    },
+    {
+      "input": "[\"foo\",\"bar\",\"baz\",\"foo\"]\n[\"foo\",\"bar\",\"baz\"]",
+      "desc": "Standard: foo twice"
+    },
+    {
+      "input": "[\"x\",\"y\",\"z\"]\n[\"a\",\"b\",\"c\"]",
+      "desc": "Standard: no overlap"
+    },
+    {
+      "input": "[\"hello\",\"world\",\"foo\",\"bar\"]\n[\"hello\",\"world\",\"baz\",\"qux\"]",
+      "desc": "Standard: 2 common"
+    },
+    {
+      "input": "[\"abcdefghijklmnop\",\"qrstuvwxyzabcdef\",\"ghijklmnopqrstuv\"]\n[\"abcdefghijklmnop\",\"qrstuvwxyzabcdef\",\"ghijklmnopqrstuv\"]",
+      "desc": "Stress: 3 long words match once"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\"]",
+      "desc": "Stress: 20 match each once"
+    },
+    {
+      "input": "[\"a\",\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\"]\n[\"a\",\"b\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\"]",
+      "desc": "Stress: a, b have dups"
+    }
   ]
 }
