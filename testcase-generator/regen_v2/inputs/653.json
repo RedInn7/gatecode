@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 1000; 1 <= grid[i][j] <= 1000",
   "input_format": "line1: grid (JSON 2D array)",
   "testcases": [
-    {"input": "[[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]", "desc": "Edge: example1"},
-    {"input": "[[4,3,2],[7,6,1],[8,8,8]]", "desc": "Edge: example2"},
-    {"input": "[[1]]", "desc": "Edge: 1x1 cell"},
-    {"input": "[[10]]", "desc": "Edge: 1x1 with zeros"},
-    {"input": "[[100]]", "desc": "Edge: 1x1 100"},
-    {"input": "[[1000]]", "desc": "Edge: max value"},
-    {"input": "[[1,1,1,1]]", "desc": "Edge: 1xN no zeros"},
-    {"input": "[[10,10,10]]", "desc": "Edge: 1xN tens"},
-    {"input": "[[2,5,2,5],[5,2,5,2]]", "desc": "Standard: 2x4 product source"},
-    {"input": "[[100,100],[100,100]]", "desc": "Standard: all 100"},
-    {"input": "[[10,1,1],[1,10,1],[1,1,10]]", "desc": "Standard: diagonal tens"},
-    {"input": "[[25,2,25],[2,25,2],[25,2,25]]", "desc": "Standard: 25 and 2 mix"},
-    {"input": "[[125,8,125],[8,125,8],[125,8,125]]", "desc": "Standard: cubes"},
-    {"input": "[[1,2,3,4,5],[5,4,3,2,1],[1,2,3,4,5]]", "desc": "Standard: pattern"},
-    {"input": "[[10,20,30,40,50]]", "desc": "Standard: row"},
-    {"input": "[[10],[20],[30],[40],[50]]", "desc": "Standard: column"},
-    {"input": "[[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5]]", "desc": "Stress: 5x5 all 5"},
-    {"input": "[[2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2]]", "desc": "Stress: 3x10 all 2"},
-    {"input": "[[1000,1000,1000],[1000,1000,1000],[1000,1000,1000]]", "desc": "Stress: 3x3 max"},
-    {"input": "[[50,2,50,2],[2,50,2,50],[50,2,50,2]]", "desc": "Special: factor mix killer"}
+    {
+      "input": "[[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[4,3,2],[7,6,1],[8,8,8]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[-313,792,879,168,-736],[855,-664,-236,876,227],[-844,850,269,548,394],[881,35,-569,-40,575],[-326,-349,270,-871,47]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[667,299,430,-277,-977],[509,-40,940,-948,653],[111,-774,-56,720,910],[749,-72,716,771,-21],[260,-356,-994,-519,-613]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[100]]",
+      "desc": "Edge: 1x1 100"
+    },
+    {
+      "input": "[[1000]]",
+      "desc": "Edge: max value"
+    },
+    {
+      "input": "[[1,1,1,1]]",
+      "desc": "Edge: 1xN no zeros"
+    },
+    {
+      "input": "[[10,10,10]]",
+      "desc": "Edge: 1xN tens"
+    },
+    {
+      "input": "[[2,5,2,5],[5,2,5,2]]",
+      "desc": "Standard: 2x4 product source"
+    },
+    {
+      "input": "[[100,100],[100,100]]",
+      "desc": "Standard: all 100"
+    },
+    {
+      "input": "[[10,1,1],[1,10,1],[1,1,10]]",
+      "desc": "Standard: diagonal tens"
+    },
+    {
+      "input": "[[25,2,25],[2,25,2],[25,2,25]]",
+      "desc": "Standard: 25 and 2 mix"
+    },
+    {
+      "input": "[[125,8,125],[8,125,8],[125,8,125]]",
+      "desc": "Standard: cubes"
+    },
+    {
+      "input": "[[1,2,3,4,5],[5,4,3,2,1],[1,2,3,4,5]]",
+      "desc": "Standard: pattern"
+    },
+    {
+      "input": "[[10,20,30,40,50]]",
+      "desc": "Standard: row"
+    },
+    {
+      "input": "[[10],[20],[30],[40],[50]]",
+      "desc": "Standard: column"
+    },
+    {
+      "input": "[[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5]]",
+      "desc": "Stress: 5x5 all 5"
+    },
+    {
+      "input": "[[2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,2,2]]",
+      "desc": "Stress: 3x10 all 2"
+    },
+    {
+      "input": "[[1000,1000,1000],[1000,1000,1000],[1000,1000,1000]]",
+      "desc": "Stress: 3x3 max"
+    },
+    {
+      "input": "[[50,2,50,2],[2,50,2,50],[50,2,50,2]]",
+      "desc": "Special: factor mix killer"
+    }
   ]
 }

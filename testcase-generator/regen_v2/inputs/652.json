@@ -4,25 +4,85 @@
   "inferred_constraints": "3 <= n <= 1e5; 2 <= edges.length <= 1e5; edges[i].length == 2; 1 <= a_i, b_i <= n",
   "input_format": "line1: n (int); line2: edges (JSON 2D)",
   "testcases": [
-    {"input": "5\n[[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]", "desc": "Edge: example1"},
-    {"input": "4\n[[1,2],[3,4]]", "desc": "Edge: example2 4 odd-degree need fix"},
-    {"input": "4\n[[1,2],[1,3],[1,4]]", "desc": "Edge: example3 star"},
-    {"input": "3\n[[1,2],[2,3]]", "desc": "Edge: minimum 3-chain (1 and 3 are odd)"},
-    {"input": "3\n[[1,2],[2,3],[1,3]]", "desc": "Edge: triangle all even (2 each)"},
-    {"input": "4\n[[1,2],[2,3],[3,4],[4,1]]", "desc": "Edge: 4-cycle even"},
-    {"input": "4\n[[1,2],[2,3],[3,4]]", "desc": "Edge: 4-chain (1,4 odd)"},
-    {"input": "5\n[[1,2],[2,3],[3,4],[4,5]]", "desc": "Standard: 5-chain (1,5 odd)"},
-    {"input": "6\n[[1,2],[2,3],[3,4],[4,5],[5,6]]", "desc": "Standard: 6-chain"},
-    {"input": "5\n[[1,2],[1,3],[1,4],[1,5]]", "desc": "Standard: star n=5"},
-    {"input": "6\n[[1,2],[3,4],[5,6]]", "desc": "Standard: 6 odd-deg nodes (need 3 edges? cannot)"},
-    {"input": "5\n[[1,2],[2,3],[3,1]]", "desc": "Standard: triangle + 2 isolated"},
-    {"input": "4\n[[1,2],[2,3]]", "desc": "Standard: 1 and 3 odd, 2 even"},
-    {"input": "5\n[[1,2],[2,3],[3,4]]", "desc": "Standard: 1,4 odd; 2,3 even"},
-    {"input": "8\n[[1,2],[3,4],[5,6],[7,8]]", "desc": "Standard: 8 odd-deg"},
-    {"input": "6\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,1]]", "desc": "Standard: 6-cycle even"},
-    {"input": "10\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]", "desc": "Stress: 10-chain"},
-    {"input": "10\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,1]]", "desc": "Stress: 10-cycle"},
-    {"input": "10\n[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10]]", "desc": "Stress: star n=10"},
-    {"input": "6\n[[1,2],[1,3],[2,3],[4,5]]", "desc": "Special: mixed killer"}
+    {
+      "input": "5\n[[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "4\n[[1,2],[3,4]]",
+      "desc": "Edge: example2 4 odd-degree need fix"
+    },
+    {
+      "input": "4\n[[502,-889],[879,-482],[275,72],[777,647],[-408,445],[-116,349]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "5\n[[826,-374],[-186,-443],[-285,-494],[-488,-529],[-177,353],[677,-594]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "3\n[[698,756],[152,353],[-994,-858],[-765,663],[427,-455],[769,-235]]",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "4\n[[1,2],[2,3],[3,4],[4,1]]",
+      "desc": "Edge: 4-cycle even"
+    },
+    {
+      "input": "4\n[[1,2],[2,3],[3,4]]",
+      "desc": "Edge: 4-chain (1,4 odd)"
+    },
+    {
+      "input": "5\n[[1,2],[2,3],[3,4],[4,5]]",
+      "desc": "Standard: 5-chain (1,5 odd)"
+    },
+    {
+      "input": "6\n[[1,2],[2,3],[3,4],[4,5],[5,6]]",
+      "desc": "Standard: 6-chain"
+    },
+    {
+      "input": "5\n[[1,2],[1,3],[1,4],[1,5]]",
+      "desc": "Standard: star n=5"
+    },
+    {
+      "input": "6\n[[1,2],[3,4],[5,6]]",
+      "desc": "Standard: 6 odd-deg nodes (need 3 edges? cannot)"
+    },
+    {
+      "input": "5\n[[1,2],[2,3],[3,1]]",
+      "desc": "Standard: triangle + 2 isolated"
+    },
+    {
+      "input": "4\n[[1,2],[2,3]]",
+      "desc": "Standard: 1 and 3 odd, 2 even"
+    },
+    {
+      "input": "5\n[[1,2],[2,3],[3,4]]",
+      "desc": "Standard: 1,4 odd; 2,3 even"
+    },
+    {
+      "input": "8\n[[1,2],[3,4],[5,6],[7,8]]",
+      "desc": "Standard: 8 odd-deg"
+    },
+    {
+      "input": "6\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,1]]",
+      "desc": "Standard: 6-cycle even"
+    },
+    {
+      "input": "10\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]",
+      "desc": "Stress: 10-chain"
+    },
+    {
+      "input": "10\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,1]]",
+      "desc": "Stress: 10-cycle"
+    },
+    {
+      "input": "10\n[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10]]",
+      "desc": "Stress: star n=10"
+    },
+    {
+      "input": "5\n[[980,334,-624,-809],[-760,707,819,-141],[645,525,866,-83],[970,-391,-354,594],[605,-189,506,737],[115,-503,924,851],[-918,-397,-970,36],[287,487,292,-622],[538,180,620,109],[-155,354,-714,-60],[-812,-132,-563,-602],[682,-315,-597,-784]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

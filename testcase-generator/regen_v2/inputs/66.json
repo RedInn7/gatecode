@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 100, uppercase only",
   "input_format": "single line: s (raw string)",
   "testcases": [
-    {"input": "ABFCACDB", "desc": "Edge: example1 chain removal"},
-    {"input": "ACBBD", "desc": "Edge: example2 no removable"},
-    {"input": "A", "desc": "Edge: n=1"},
-    {"input": "AB", "desc": "Edge: single AB"},
-    {"input": "CD", "desc": "Edge: single CD"},
-    {"input": "BA", "desc": "Edge: reverse, no removal"},
-    {"input": "DC", "desc": "Edge: reverse"},
-    {"input": "ABAB", "desc": "Standard: 2 ABs"},
-    {"input": "CDCD", "desc": "Standard: 2 CDs"},
-    {"input": "ABCD", "desc": "Edge: AB then CD"},
-    {"input": "ABABABABABABABABABABABABABABABABABABABABABABABABAB", "desc": "Edge: 25 ABs all removable"},
-    {"input": "AABBCCDD", "desc": "Standard: blocks"},
-    {"input": "AABCBD", "desc": "Standard: AB inside"},
-    {"input": "CACDBB", "desc": "Standard: CD with B"},
-    {"input": "AAABBBCCCDDD", "desc": "Standard: triple blocks"},
-    {"input": "ZZZZZZ", "desc": "Edge: no AB or CD"},
-    {"input": "AABBAABB", "desc": "Standard: chain ABs"},
-    {"input": "ACBDABCD", "desc": "Standard: mixed pattern"},
-    {"input": "ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDAB", "desc": "Stress: long pattern"},
-    {"input": "DDDDCCCCBBBBAAAA", "desc": "Edge: reverse blocks"}
+    {
+      "input": "ABFCACDB",
+      "desc": "Edge: example1 chain removal"
+    },
+    {
+      "input": "ACBBD",
+      "desc": "Edge: example2 no removable"
+    },
+    {
+      "input": "\"qrlktsm\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"ih\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"tavhpvkj\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "BA",
+      "desc": "Edge: reverse, no removal"
+    },
+    {
+      "input": "DC",
+      "desc": "Edge: reverse"
+    },
+    {
+      "input": "ABAB",
+      "desc": "Standard: 2 ABs"
+    },
+    {
+      "input": "CDCD",
+      "desc": "Standard: 2 CDs"
+    },
+    {
+      "input": "ABCD",
+      "desc": "Edge: AB then CD"
+    },
+    {
+      "input": "ABABABABABABABABABABABABABABABABABABABABABABABABAB",
+      "desc": "Edge: 25 ABs all removable"
+    },
+    {
+      "input": "AABBCCDD",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "AABCBD",
+      "desc": "Standard: AB inside"
+    },
+    {
+      "input": "CACDBB",
+      "desc": "Standard: CD with B"
+    },
+    {
+      "input": "AAABBBCCCDDD",
+      "desc": "Standard: triple blocks"
+    },
+    {
+      "input": "ZZZZZZ",
+      "desc": "Edge: no AB or CD"
+    },
+    {
+      "input": "AABBAABB",
+      "desc": "Standard: chain ABs"
+    },
+    {
+      "input": "ACBDABCD",
+      "desc": "Standard: mixed pattern"
+    },
+    {
+      "input": "ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDAB",
+      "desc": "Stress: long pattern"
+    },
+    {
+      "input": "\"wzuxmfxugbhacxfn\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

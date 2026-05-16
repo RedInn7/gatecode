@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= left <= right <= 1e6",
   "input_format": "line1: left (int); line2: right (int)",
   "testcases": [
-    {"input": "6\n10", "desc": "Edge: example1"},
-    {"input": "10\n15", "desc": "Edge: example2"},
-    {"input": "1\n1", "desc": "Edge: single 1 bit"},
-    {"input": "1\n2", "desc": "Edge: 1 bit each"},
-    {"input": "1\n1000000", "desc": "Edge: full range"},
-    {"input": "100\n100", "desc": "Edge: single value"},
-    {"input": "1\n10", "desc": "Standard: small range"},
-    {"input": "20\n30", "desc": "Standard: mid range"},
-    {"input": "1\n100", "desc": "Standard: 1-100"},
-    {"input": "1\n1000", "desc": "Standard: 1-1000"},
-    {"input": "500\n1000", "desc": "Standard: 500-1000"},
-    {"input": "1000\n10000", "desc": "Standard: 1k-10k"},
-    {"input": "10000\n100000", "desc": "Standard: 10k-100k"},
-    {"input": "999999\n1000000", "desc": "Standard: just below max"},
-    {"input": "65535\n131071", "desc": "Standard: power of 2 boundaries"},
-    {"input": "16\n32", "desc": "Standard: simple"},
-    {"input": "1\n1000000", "desc": "Stress: max range"},
-    {"input": "500000\n1000000", "desc": "Stress: large half"},
-    {"input": "100000\n200000", "desc": "Stress: 100k range"},
-    {"input": "999000\n1000000", "desc": "Special: end of range killer"}
+    {
+      "input": "6\n10",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "10\n15",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "2\n354619",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "9\n430367",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "4\n224733",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "100\n100",
+      "desc": "Edge: single value"
+    },
+    {
+      "input": "1\n10",
+      "desc": "Standard: small range"
+    },
+    {
+      "input": "20\n30",
+      "desc": "Standard: mid range"
+    },
+    {
+      "input": "1\n100",
+      "desc": "Standard: 1-100"
+    },
+    {
+      "input": "1\n1000",
+      "desc": "Standard: 1-1000"
+    },
+    {
+      "input": "500\n1000",
+      "desc": "Standard: 500-1000"
+    },
+    {
+      "input": "1000\n10000",
+      "desc": "Standard: 1k-10k"
+    },
+    {
+      "input": "10000\n100000",
+      "desc": "Standard: 10k-100k"
+    },
+    {
+      "input": "999999\n1000000",
+      "desc": "Standard: just below max"
+    },
+    {
+      "input": "65535\n131071",
+      "desc": "Standard: power of 2 boundaries"
+    },
+    {
+      "input": "16\n32",
+      "desc": "Standard: simple"
+    },
+    {
+      "input": "1\n1000000",
+      "desc": "Stress: max range"
+    },
+    {
+      "input": "500000\n1000000",
+      "desc": "Stress: large half"
+    },
+    {
+      "input": "100000\n200000",
+      "desc": "Stress: 100k range"
+    },
+    {
+      "input": "999000\n1000000",
+      "desc": "Special: end of range killer"
+    }
   ]
 }

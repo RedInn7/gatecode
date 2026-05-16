@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1000",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "8", "desc": "Edge: example1"},
-    {"input": "1", "desc": "Edge: example2 trivial"},
-    {"input": "4", "desc": "Edge: example3 no pivot"},
-    {"input": "2", "desc": "Edge: no pivot"},
-    {"input": "3", "desc": "Edge: no pivot"},
-    {"input": "5", "desc": "Edge: no pivot"},
-    {"input": "1000", "desc": "Edge: max"},
-    {"input": "49", "desc": "Standard: pivot 35 -> sum 1-35=630, 35-49=595 no"},
-    {"input": "6", "desc": "Standard: no pivot"},
-    {"input": "7", "desc": "Standard: no pivot"},
-    {"input": "9", "desc": "Standard: no pivot"},
-    {"input": "10", "desc": "Standard: no pivot"},
-    {"input": "100", "desc": "Standard: no pivot"},
-    {"input": "200", "desc": "Standard: no pivot"},
-    {"input": "288", "desc": "Standard: pivot 204"},
-    {"input": "287", "desc": "Standard: nearby no pivot"},
-    {"input": "999", "desc": "Stress: large"},
-    {"input": "500", "desc": "Stress: medium"},
-    {"input": "289", "desc": "Stress: nearby no pivot"},
-    {"input": "1000", "desc": "Special: max killer"}
+    {
+      "input": "1",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: example2 trivial"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: no pivot"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: max"
+    },
+    {
+      "input": "49",
+      "desc": "Standard: pivot 35 -> sum 1-35=630, 35-49=595 no"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: no pivot"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: no pivot"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: no pivot"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: no pivot"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: no pivot"
+    },
+    {
+      "input": "200",
+      "desc": "Standard: no pivot"
+    },
+    {
+      "input": "288",
+      "desc": "Standard: pivot 204"
+    },
+    {
+      "input": "287",
+      "desc": "Standard: nearby no pivot"
+    },
+    {
+      "input": "999",
+      "desc": "Stress: large"
+    },
+    {
+      "input": "500",
+      "desc": "Stress: medium"
+    },
+    {
+      "input": "289",
+      "desc": "Stress: nearby no pivot"
+    },
+    {
+      "input": "8",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
