@@ -1013,3 +1013,19 @@ Audited at: 2026-05-16T15:38:20.695328
 Stuck after 3 regeneration attempts. Final issues:
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:38:20.707140
+
+## PID 37 (sum-of-increasing-product-blocks)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=1000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:22.963660
+
+## PID 372 (digit-operations-to-make-two-integers-equal)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:22.982483
+
+## PID 373 (string-transformation)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=500000.0)
+Audited at: 2026-05-16T15:38:22.988313
