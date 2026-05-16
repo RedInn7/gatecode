@@ -901,3 +901,8 @@ Audited at: 2026-05-16T15:38:05.054448
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=30000.0)
 Audited at: 2026-05-16T15:38:05.057329
+
+## PID 347 (rearrange-array-elements-by-sign)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=200000.0)
+Audited at: 2026-05-16T15:38:07.185748
