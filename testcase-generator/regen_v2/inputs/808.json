@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"vwhosqhqhhdlnyvfm\"",
+      "input": "\"rwioxgqfkbj\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Edge: 20 z"
     },
     {
-      "input": "\"oervzdutybexqmitjlhsxhrkzkmwbbmjlpdh\"",
+      "input": "\"itljcdcrlffoqabdrknowxwaboyfguthnkbp\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

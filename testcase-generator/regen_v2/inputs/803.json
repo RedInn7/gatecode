@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"ywh\"",
+      "input": "\"bf\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: 26 keyboard"
     },
     {
-      "input": "\"eivcosvswd\"",
+      "input": "\"vlrlnaxqok\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

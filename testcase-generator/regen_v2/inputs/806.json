@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"s\"",
+      "input": "\"xls\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: double alphabet"
     },
     {
-      "input": "\"igwbiy\"",
+      "input": "\"kporof\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
