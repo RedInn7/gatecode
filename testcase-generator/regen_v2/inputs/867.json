@@ -1,27 +1,88 @@
 {
-  "pid": 867, "slug": "jump-game-vii",
+  "pid": 867,
+  "slug": "jump-game-vii",
   "inferred_constraints": "2 <= s.length <= 1e5, binary, s[0]='0', 1 <= minJump <= maxJump < s.length",
   "input_format": "line1: s (raw); line2: minJump (int); line3: maxJump (int)",
   "testcases": [
-    {"input": "011010\n2\n3", "desc": "Edge: example1"},
-    {"input": "01101110\n2\n3", "desc": "Edge: example2 false"},
-    {"input": "00\n1\n1", "desc": "Edge: min length"},
-    {"input": "01\n1\n1", "desc": "Edge: end is 1 false"},
-    {"input": "000\n1\n1", "desc": "Edge: all 0 step 1"},
-    {"input": "0000000000\n1\n9", "desc": "Edge: all 0 wide jump"},
-    {"input": "0111111111\n1\n9", "desc": "Edge: all 1 except start"},
-    {"input": "0000000000\n5\n5", "desc": "Edge: fixed jump"},
-    {"input": "00100\n2\n3", "desc": "Standard: 1 in middle"},
-    {"input": "010101010\n2\n2", "desc": "Standard: alternating"},
-    {"input": "01010101010101010101\n2\n2", "desc": "Standard: long alt"},
-    {"input": "00000000000000000000\n3\n5", "desc": "Standard: all 0 medium jump"},
-    {"input": "011001100110\n2\n3", "desc": "Standard: repeated pattern"},
-    {"input": "00001000010000100000\n3\n5", "desc": "Standard: with 1s blocking"},
-    {"input": "01000000000000000000\n2\n3", "desc": "Standard: 1 near start"},
-    {"input": "00000000000000000001\n2\n3", "desc": "Standard: 1 at end false"},
-    {"input": "00000000000000000000\n2\n3", "desc": "Standard: all 0 length 20"},
-    {"input": "010\n2\n2", "desc": "Edge: min length test"},
-    {"input": "0000\n2\n3", "desc": "Edge: 4 chars"},
-    {"input": "000010000\n2\n4", "desc": "Special: 1 in middle"}
+    {
+      "input": "0\n1\n1",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "01101110\n2\n3",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "230583\n2\n1",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "982471\n1\n2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "370353\n1\n1",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "0000000000\n1\n9",
+      "desc": "Edge: all 0 wide jump"
+    },
+    {
+      "input": "0111111111\n1\n9",
+      "desc": "Edge: all 1 except start"
+    },
+    {
+      "input": "0000000000\n5\n5",
+      "desc": "Edge: fixed jump"
+    },
+    {
+      "input": "00100\n2\n3",
+      "desc": "Standard: 1 in middle"
+    },
+    {
+      "input": "010101010\n2\n2",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "01010101010101010101\n2\n2",
+      "desc": "Standard: long alt"
+    },
+    {
+      "input": "00000000000000000000\n3\n5",
+      "desc": "Standard: all 0 medium jump"
+    },
+    {
+      "input": "011001100110\n2\n3",
+      "desc": "Standard: repeated pattern"
+    },
+    {
+      "input": "00001000010000100000\n3\n5",
+      "desc": "Standard: with 1s blocking"
+    },
+    {
+      "input": "01000000000000000000\n2\n3",
+      "desc": "Standard: 1 near start"
+    },
+    {
+      "input": "00000000000000000001\n2\n3",
+      "desc": "Standard: 1 at end false"
+    },
+    {
+      "input": "00000000000000000000\n2\n3",
+      "desc": "Standard: all 0 length 20"
+    },
+    {
+      "input": "010\n2\n2",
+      "desc": "Edge: min length test"
+    },
+    {
+      "input": "0000\n2\n3",
+      "desc": "Edge: 4 chars"
+    },
+    {
+      "input": "1101110\n2\n3",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
