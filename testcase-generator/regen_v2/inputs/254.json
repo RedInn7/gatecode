@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e4, digits, +, -, *, /, (, )",
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
-    {"input": "\"1+1\"", "desc": "Edge: example1"},
-    {"input": "\"6-4/2\"", "desc": "Edge: example2"},
-    {"input": "\"2*(5+5*2)/3+(6/2+8)\"", "desc": "Edge: example3"},
-    {"input": "\"1\"", "desc": "Edge: single digit"},
-    {"input": "\"99\"", "desc": "Edge: 2 digit"},
-    {"input": "\"1+2\"", "desc": "Edge: simple add"},
-    {"input": "\"10-5\"", "desc": "Edge: simple sub"},
-    {"input": "\"3*4\"", "desc": "Edge: simple mul"},
-    {"input": "\"10/3\"", "desc": "Edge: integer div"},
-    {"input": "\"0\"", "desc": "Edge: zero"},
-    {"input": "\"(1+2)\"", "desc": "Standard: paren single"},
-    {"input": "\"(1+2)*3\"", "desc": "Standard: paren left"},
-    {"input": "\"3*(1+2)\"", "desc": "Standard: paren right"},
-    {"input": "\"((1+2)*3)\"", "desc": "Standard: double paren"},
-    {"input": "\"1+2*3\"", "desc": "Standard: precedence"},
-    {"input": "\"1*2+3*4\"", "desc": "Standard: two muls"},
-    {"input": "\"10-2*3+5\"", "desc": "Standard: mixed"},
-    {"input": "\"1+2+3+4+5+6+7+8+9+10\"", "desc": "Standard: chain add"},
-    {"input": "\"1*2*3*4*5\"", "desc": "Standard: chain mul"},
-    {"input": "\"1+2*3-4/2+(5-6)*7+8\"", "desc": "Stress: complex"}
+    {
+      "input": "\"1+1\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"6-4/2\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"kmligsezkoyfgbls\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"umqolfirfwpjqmzbisr\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"khtxikcej\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"1+2\"",
+      "desc": "Edge: simple add"
+    },
+    {
+      "input": "\"10-5\"",
+      "desc": "Edge: simple sub"
+    },
+    {
+      "input": "\"3*4\"",
+      "desc": "Edge: simple mul"
+    },
+    {
+      "input": "\"10/3\"",
+      "desc": "Edge: integer div"
+    },
+    {
+      "input": "\"0\"",
+      "desc": "Edge: zero"
+    },
+    {
+      "input": "\"(1+2)\"",
+      "desc": "Standard: paren single"
+    },
+    {
+      "input": "\"(1+2)*3\"",
+      "desc": "Standard: paren left"
+    },
+    {
+      "input": "\"3*(1+2)\"",
+      "desc": "Standard: paren right"
+    },
+    {
+      "input": "\"((1+2)*3)\"",
+      "desc": "Standard: double paren"
+    },
+    {
+      "input": "\"1+2*3\"",
+      "desc": "Standard: precedence"
+    },
+    {
+      "input": "\"1*2+3*4\"",
+      "desc": "Standard: two muls"
+    },
+    {
+      "input": "\"10-2*3+5\"",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "\"1+2+3+4+5+6+7+8+9+10\"",
+      "desc": "Standard: chain add"
+    },
+    {
+      "input": "\"1*2*3*4*5\"",
+      "desc": "Standard: chain mul"
+    },
+    {
+      "input": "\"czlyvsvprlauhqfgoozrevgaxhabnjtoqufzuk\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
