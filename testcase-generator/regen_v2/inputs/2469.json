@@ -1,0 +1,28 @@
+{
+  "pid": 2469,
+  "slug": "reverse-prefix-of-word",
+  "inferred_constraints": "1 <= word.length <= 250, word lowercase letters, ch lowercase letter",
+  "input_format": "line1: word (JSON string); line2: ch (JSON string single char)",
+  "testcases": [
+    {"input": "\"abcdefd\"\n\"d\"", "desc": "Edge: example1"},
+    {"input": "\"xyxzxe\"\n\"z\"", "desc": "Edge: example2"},
+    {"input": "\"abcd\"\n\"z\"", "desc": "Edge: char not present"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 match"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: n=1 no match"},
+    {"input": "\"aaaaa\"\n\"a\"", "desc": "Edge: all same ch first"},
+    {"input": "\"zaaaa\"\n\"z\"", "desc": "Edge: ch at start"},
+    {"input": "\"aaaaz\"\n\"z\"", "desc": "Edge: ch at end"},
+    {"input": "\"abcdefghij\"\n\"j\"", "desc": "Standard: ch at last position"},
+    {"input": "\"abcdefghij\"\n\"a\"", "desc": "Standard: ch at first"},
+    {"input": "\"hello\"\n\"l\"", "desc": "Standard: l in middle"},
+    {"input": "\"programming\"\n\"m\"", "desc": "Standard: word with m"},
+    {"input": "\"abcabcabc\"\n\"c\"", "desc": "Standard: repeating"},
+    {"input": "\"qwertyuiop\"\n\"t\"", "desc": "Standard: keyboard string"},
+    {"input": "\"mississippi\"\n\"i\"", "desc": "Standard: repeated letters"},
+    {"input": "\"abracadabra\"\n\"r\"", "desc": "Standard: classic"},
+    {"input": "\"aaabbbccc\"\n\"c\"", "desc": "Standard: grouped letters"},
+    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"\n\"q\"", "desc": "Standard: pangram-ish"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"\n\"y\"", "desc": "Stress: max length 250 ch in middle"},
+    {"input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"", "desc": "Killer: all z length 250"}
+  ]
+}

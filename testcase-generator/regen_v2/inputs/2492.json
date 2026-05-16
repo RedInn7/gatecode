@@ -1,0 +1,28 @@
+{
+  "pid": 2492,
+  "slug": "minimum-steps-to-convert-string-with-operations",
+  "inferred_constraints": "word1.length == word2.length, 1 <= word1.length <= 10^5, lowercase letters",
+  "input_format": "line1: word1 (JSON string); line2: word2 (JSON string)",
+  "testcases": [
+    {"input": "\"abcdf\"\n\"dacbe\"", "desc": "Edge: example1"},
+    {"input": "\"abcdef\"\n\"fedcba\"", "desc": "Edge: example2-ish reverse"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 same"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: n=1 diff"},
+    {"input": "\"ab\"\n\"ab\"", "desc": "Edge: n=2 same"},
+    {"input": "\"ab\"\n\"ba\"", "desc": "Edge: n=2 swap"},
+    {"input": "\"ab\"\n\"cd\"", "desc": "Edge: n=2 all replace"},
+    {"input": "\"aaaa\"\n\"aaaa\"", "desc": "Edge: identical 4"},
+    {"input": "\"abcd\"\n\"dcba\"", "desc": "Standard: reverse 4"},
+    {"input": "\"hello\"\n\"world\"", "desc": "Standard: 5-char random"},
+    {"input": "\"abcde\"\n\"abcde\"", "desc": "Standard: identical 5"},
+    {"input": "\"abcde\"\n\"edcba\"", "desc": "Standard: 5-char reverse"},
+    {"input": "\"aabb\"\n\"bbaa\"", "desc": "Standard: swap groups"},
+    {"input": "\"abab\"\n\"baba\"", "desc": "Standard: alternating swap"},
+    {"input": "\"xyzwv\"\n\"vwzyx\"", "desc": "Standard: reverse 5 diff"},
+    {"input": "\"aaabbb\"\n\"bbbaaa\"", "desc": "Standard: blocks swapped"},
+    {"input": "\"abcdefgh\"\n\"hgfedcba\"", "desc": "Standard: reverse 8"},
+    {"input": "\"abacaba\"\n\"abacaba\"", "desc": "Standard: palindrome same"},
+    {"input": "\"zzzzzzzzzz\"\n\"aaaaaaaaaa\"", "desc": "Stress: all z to all a"},
+    {"input": "\"abcdefghij\"\n\"jihgfedcba\"", "desc": "Killer: reverse 10"}
+  ]
+}

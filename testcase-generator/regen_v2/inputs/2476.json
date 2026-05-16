@@ -1,0 +1,28 @@
+{
+  "pid": 2476,
+  "slug": "find-the-sequence-of-strings-appeared-on-the-screen",
+  "inferred_constraints": "1 <= target.length <= 400, target lowercase letters",
+  "input_format": "line1: target (JSON string)",
+  "testcases": [
+    {"input": "\"abc\"", "desc": "Edge: example1"},
+    {"input": "\"he\"", "desc": "Edge: example2"},
+    {"input": "\"a\"", "desc": "Edge: single char a"},
+    {"input": "\"z\"", "desc": "Edge: single char z"},
+    {"input": "\"aa\"", "desc": "Edge: two a's"},
+    {"input": "\"zz\"", "desc": "Edge: two z's"},
+    {"input": "\"ab\"", "desc": "Edge: two consecutive"},
+    {"input": "\"ba\"", "desc": "Edge: descend new char"},
+    {"input": "\"abcdef\"", "desc": "Standard: alphabet prefix"},
+    {"input": "\"hello\"", "desc": "Standard: hello"},
+    {"input": "\"world\"", "desc": "Standard: world"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: full alphabet"},
+    {"input": "\"aaaaa\"", "desc": "Standard: all a"},
+    {"input": "\"zzzzz\"", "desc": "Standard: all z"},
+    {"input": "\"mississippi\"", "desc": "Standard: with repeats"},
+    {"input": "\"programming\"", "desc": "Standard: word"},
+    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Standard: long string"},
+    {"input": "\"abcabcabcabc\"", "desc": "Stress: repeating cycle"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbccccccccccccccccccccddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeffffffffffffffffffffgggggggggggggggggggghhhhhhhhhhhhhhhhhhhh\"", "desc": "Stress: 160 chars groups"},
+    {"input": "\"zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"", "desc": "Killer: reverse alphabet repeated"}
+  ]
+}

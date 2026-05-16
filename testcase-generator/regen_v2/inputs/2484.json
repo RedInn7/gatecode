@@ -1,0 +1,28 @@
+{
+  "pid": 2484,
+  "slug": "check-if-a-string-can-break-another-string",
+  "inferred_constraints": "s1.length == s2.length == n, 1 <= n <= 10^5, lowercase letters",
+  "input_format": "line1: s1 (JSON string); line2: s2 (JSON string)",
+  "testcases": [
+    {"input": "\"abc\"\n\"xya\"", "desc": "Edge: example1 true"},
+    {"input": "\"abe\"\n\"acd\"", "desc": "Edge: example2 false"},
+    {"input": "\"leetcodee\"\n\"interview\"", "desc": "Edge: example3 true"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 same"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: n=1 diff"},
+    {"input": "\"z\"\n\"a\"", "desc": "Edge: extreme z vs a"},
+    {"input": "\"aaaa\"\n\"aaaa\"", "desc": "Edge: identical"},
+    {"input": "\"zzzz\"\n\"zzzz\"", "desc": "Edge: both max"},
+    {"input": "\"abcd\"\n\"dcba\"", "desc": "Standard: reversed"},
+    {"input": "\"hello\"\n\"world\"", "desc": "Standard: random words"},
+    {"input": "\"abcde\"\n\"edcba\"", "desc": "Standard: 5-char reversed"},
+    {"input": "\"aabb\"\n\"ccdd\"", "desc": "Standard: clear winner"},
+    {"input": "\"mnop\"\n\"abcd\"", "desc": "Standard: m..p beats a..d"},
+    {"input": "\"zzzaaa\"\n\"aaazzz\"", "desc": "Standard: mirror"},
+    {"input": "\"aezzz\"\n\"zzzab\"", "desc": "Standard: scattered"},
+    {"input": "\"qwertyuiop\"\n\"poiuytrewq\"", "desc": "Standard: keyboard reverse"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard: alphabet vs reverse"},
+    {"input": "\"abcdefghij\"\n\"abcdefghij\"", "desc": "Standard: equal long"},
+    {"input": "\"yyyyyyyyyy\"\n\"zzzzzzzzzz\"", "desc": "Stress: y vs z all max-1 vs max"},
+    {"input": "\"abababababababababab\"\n\"babababababababababa\"", "desc": "Killer: alternating swap"}
+  ]
+}

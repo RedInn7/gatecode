@@ -1,0 +1,28 @@
+{
+  "pid": 2508,
+  "slug": "remove-element",
+  "inferred_constraints": "0 <= nums.length <= 100, 0 <= nums[i] <= 50, 0 <= val <= 100",
+  "input_format": "line1: nums (JSON array); line2: val (int)",
+  "testcases": [
+    {"input": "[3,2,2,3]\n3", "desc": "Edge: example1"},
+    {"input": "[0,1,2,2,3,0,4,2]\n2", "desc": "Edge: example2"},
+    {"input": "[]\n0", "desc": "Edge: empty array"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 remove"},
+    {"input": "[1]\n2", "desc": "Edge: n=1 keep"},
+    {"input": "[1,1,1,1,1]\n1", "desc": "Edge: all match"},
+    {"input": "[1,1,1,1,1]\n2", "desc": "Edge: none match"},
+    {"input": "[0,0,0,0,0]\n0", "desc": "Edge: all zeros remove"},
+    {"input": "[50,50,50]\n50", "desc": "Edge: max value all"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Standard: middle"},
+    {"input": "[1,2,3,4,5]\n1", "desc": "Standard: first"},
+    {"input": "[1,2,3,4,5]\n5", "desc": "Standard: last"},
+    {"input": "[5,5,5,3,5,5,5]\n5", "desc": "Standard: surrounded"},
+    {"input": "[3,3,5,3,3,5,3,3]\n3", "desc": "Standard: alternating"},
+    {"input": "[10,20,30,40,50,40,30,20,10]\n30", "desc": "Standard: palindrome"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]\n100", "desc": "Standard: val out of range"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]\n2", "desc": "Standard: alternating pairs"},
+    {"input": "[5,4,3,2,1,0,1,2,3,4,5]\n0", "desc": "Standard: single occurrence"},
+    {"input": "[10,10,10,10,10,20,30,40,50,50]\n10", "desc": "Stress: many same"},
+    {"input": "[7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]\n7", "desc": "Killer: all same 40 elements"}
+  ]
+}

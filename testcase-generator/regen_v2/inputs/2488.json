@@ -1,0 +1,28 @@
+{
+  "pid": 2488,
+  "slug": "capitalize-the-title",
+  "inferred_constraints": "1 <= title.length <= 100, words single-space separated, English letters",
+  "input_format": "line1: title (JSON string)",
+  "testcases": [
+    {"input": "\"capiTalIze tHe titLe\"", "desc": "Edge: example1"},
+    {"input": "\"First leTTeR of EACH Word\"", "desc": "Edge: example2"},
+    {"input": "\"i lOve leetcode\"", "desc": "Edge: example3"},
+    {"input": "\"a\"", "desc": "Edge: single char"},
+    {"input": "\"AB\"", "desc": "Edge: 2-char uppercase"},
+    {"input": "\"abc\"", "desc": "Edge: 3-char lowercase"},
+    {"input": "\"ab cd\"", "desc": "Edge: two 2-char words"},
+    {"input": "\"the\"", "desc": "Edge: single 3-char word"},
+    {"input": "\"a b c\"", "desc": "Standard: all single chars"},
+    {"input": "\"hello world\"", "desc": "Standard: 2 5-char words"},
+    {"input": "\"PROGRAMMING IS FUN\"", "desc": "Standard: all caps"},
+    {"input": "\"programming is fun\"", "desc": "Standard: all lowercase"},
+    {"input": "\"To Be Or Not To Be\"", "desc": "Standard: many short words"},
+    {"input": "\"jack and jill went up the hill\"", "desc": "Standard: with 2-letter words"},
+    {"input": "\"a bb ccc dddd\"", "desc": "Standard: increasing lengths"},
+    {"input": "\"ABCD efgh IJKL\"", "desc": "Standard: mixed case"},
+    {"input": "\"of\"", "desc": "Edge: 2-char only"},
+    {"input": "\"HE LIKES IT\"", "desc": "Standard: titlecase short"},
+    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Stress: long single word"},
+    {"input": "\"aB Cd Ef gH iJ kL mN oP qR sT uV wX yZ aB Cd Ef gH iJ kL mN\"", "desc": "Killer: many 2-char words mixed"}
+  ]
+}

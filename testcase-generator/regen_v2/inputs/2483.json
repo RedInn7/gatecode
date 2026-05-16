@@ -1,0 +1,28 @@
+{
+  "pid": 2483,
+  "slug": "number-of-laser-beams-in-a-bank",
+  "inferred_constraints": "m == bank.length, n == bank[i].length, 1 <= m, n <= 500, bank[i][j] in '0','1'",
+  "input_format": "line1: bank (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"011001\",\"000000\",\"010100\",\"001000\"]", "desc": "Edge: example1"},
+    {"input": "[\"000\",\"111\",\"000\"]", "desc": "Edge: example2"},
+    {"input": "[\"0\"]", "desc": "Edge: 1x1 zero"},
+    {"input": "[\"1\"]", "desc": "Edge: 1x1 one"},
+    {"input": "[\"1\",\"1\"]", "desc": "Edge: 2x1 two ones"},
+    {"input": "[\"1\",\"0\",\"1\"]", "desc": "Edge: 3x1 with gap"},
+    {"input": "[\"10101\"]", "desc": "Edge: 1 row only"},
+    {"input": "[\"00000\",\"00000\",\"00000\"]", "desc": "Edge: all zeros"},
+    {"input": "[\"11111\",\"11111\",\"11111\"]", "desc": "Edge: all ones 5*5+5*5=50"},
+    {"input": "[\"1\",\"1\",\"1\",\"1\"]", "desc": "Edge: 4x1 all ones"},
+    {"input": "[\"10\",\"01\"]", "desc": "Standard: 2x2 diagonal"},
+    {"input": "[\"111\",\"000\",\"111\"]", "desc": "Standard: 9 beams"},
+    {"input": "[\"100\",\"000\",\"010\",\"000\",\"001\"]", "desc": "Standard: diagonal pattern"},
+    {"input": "[\"1010101010\",\"0000000000\",\"0101010101\"]", "desc": "Standard: 5*5=25"},
+    {"input": "[\"11100\",\"00000\",\"00111\"]", "desc": "Standard: 3*3=9"},
+    {"input": "[\"1111111111\",\"0000000000\",\"0000000000\",\"1111111111\"]", "desc": "Standard: 10*10=100"},
+    {"input": "[\"00000\",\"00100\",\"00000\",\"00010\",\"00000\"]", "desc": "Standard: 1*1+1*1=2"},
+    {"input": "[\"101010\",\"010101\",\"101010\",\"010101\"]", "desc": "Standard: adjacent rows"},
+    {"input": "[\"1000000000\",\"0000000000\",\"0000000001\",\"0000000000\",\"1111111111\"]", "desc": "Stress: 1*1+1*10=11"},
+    {"input": "[\"11111\",\"00000\",\"00000\",\"11111\",\"00000\",\"11111\"]", "desc": "Killer: zero gaps then ones"}
+  ]
+}

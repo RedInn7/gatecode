@@ -1,0 +1,28 @@
+{
+  "pid": 2509,
+  "slug": "minimum-swaps-to-make-strings-equal",
+  "inferred_constraints": "1 <= s1.length, s2.length <= 1000, s1.length == s2.length, only x or y",
+  "input_format": "line1: s1 (JSON string); line2: s2 (JSON string)",
+  "testcases": [
+    {"input": "\"xx\"\n\"yy\"", "desc": "Edge: example1"},
+    {"input": "\"xy\"\n\"yx\"", "desc": "Edge: example2"},
+    {"input": "\"xx\"\n\"xy\"", "desc": "Edge: example3 impossible"},
+    {"input": "\"x\"\n\"x\"", "desc": "Edge: n=1 equal"},
+    {"input": "\"x\"\n\"y\"", "desc": "Edge: n=1 impossible"},
+    {"input": "\"y\"\n\"y\"", "desc": "Edge: n=1 y equal"},
+    {"input": "\"xy\"\n\"xy\"", "desc": "Edge: already equal"},
+    {"input": "\"xxxx\"\n\"yyyy\"", "desc": "Edge: 4 vs 4 needs 2"},
+    {"input": "\"xxxx\"\n\"yyyx\"", "desc": "Edge: impossible odd diff"},
+    {"input": "\"xy\"\n\"yy\"", "desc": "Edge: impossible odd"},
+    {"input": "\"xxyy\"\n\"yyxx\"", "desc": "Standard: full swap"},
+    {"input": "\"xxxxyyyy\"\n\"yyyyxxxx\"", "desc": "Standard: bigger swap"},
+    {"input": "\"xyxy\"\n\"yxyx\"", "desc": "Standard: alternating"},
+    {"input": "\"xyxyxy\"\n\"yxyxyx\"", "desc": "Standard: longer alt"},
+    {"input": "\"xxxyyy\"\n\"yyyxxx\"", "desc": "Standard: blocks"},
+    {"input": "\"xxxxxxxxxx\"\n\"yyyyyyyyyy\"", "desc": "Standard: 10 vs 10"},
+    {"input": "\"xyyxyx\"\n\"yxxyxy\"", "desc": "Standard: random"},
+    {"input": "\"xxyyxxyy\"\n\"yyxxyyxx\"", "desc": "Standard: pattern"},
+    {"input": "\"xxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyy\"\n\"yyyyyyyyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxx\"", "desc": "Stress: 40 chars"},
+    {"input": "\"xyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxy\"\n\"yxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyx\"", "desc": "Killer: alternating 40"}
+  ]
+}

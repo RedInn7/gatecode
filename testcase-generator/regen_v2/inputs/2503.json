@@ -1,0 +1,28 @@
+{
+  "pid": 2503,
+  "slug": "ugly-number-iii",
+  "inferred_constraints": "1 <= n, a, b, c <= 10^9, 1 <= a*b*c <= 10^18, result in [1, 2*10^9]",
+  "input_format": "line1: n (int); line2: a (int); line3: b (int); line4: c (int)",
+  "testcases": [
+    {"input": "3\n2\n3\n5", "desc": "Edge: example1"},
+    {"input": "4\n2\n3\n4", "desc": "Edge: example2"},
+    {"input": "5\n2\n11\n13", "desc": "Edge: example3"},
+    {"input": "1\n1\n1\n1", "desc": "Edge: smallest possible"},
+    {"input": "1\n2\n3\n5", "desc": "Edge: n=1 first ugly"},
+    {"input": "1\n2\n2\n2", "desc": "Edge: all equal a=b=c"},
+    {"input": "10\n2\n3\n5", "desc": "Standard: small case"},
+    {"input": "100\n2\n3\n5", "desc": "Standard: n=100"},
+    {"input": "1000\n2\n3\n5", "desc": "Standard: n=1000"},
+    {"input": "1000000000\n2\n3\n5", "desc": "Stress: n=1e9"},
+    {"input": "5\n1\n2\n3", "desc": "Edge: a=1 every number ugly"},
+    {"input": "100\n7\n11\n13", "desc": "Standard: primes"},
+    {"input": "50\n4\n6\n10", "desc": "Standard: non-coprime"},
+    {"input": "10\n100\n200\n300", "desc": "Standard: large bases"},
+    {"input": "7\n2\n3\n7", "desc": "Standard: includes 7"},
+    {"input": "20\n3\n5\n7", "desc": "Standard: 3,5,7"},
+    {"input": "999999999\n2\n3\n5", "desc": "Stress: near n max"},
+    {"input": "500\n6\n10\n15", "desc": "Standard: composite"},
+    {"input": "1\n1000000000\n1000000000\n1000000000", "desc": "Edge: max a=b=c"},
+    {"input": "100000\n999999937\n999999937\n999999937", "desc": "Killer: large prime triple"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2502,
+  "slug": "maximum-69-number",
+  "inferred_constraints": "1 <= num <= 10^4, num consists only of 6 and 9 digits",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "9669", "desc": "Edge: example1"},
+    {"input": "9996", "desc": "Edge: example2"},
+    {"input": "9999", "desc": "Edge: example3 no change"},
+    {"input": "6", "desc": "Edge: n=1 digit 6"},
+    {"input": "9", "desc": "Edge: n=1 digit 9"},
+    {"input": "66", "desc": "Edge: 2 digits all 6"},
+    {"input": "99", "desc": "Edge: 2 digits all 9"},
+    {"input": "69", "desc": "Edge: 69 flip first"},
+    {"input": "96", "desc": "Edge: 96 flip last"},
+    {"input": "666", "desc": "Standard: 3 sixes"},
+    {"input": "999", "desc": "Standard: 3 nines"},
+    {"input": "6996", "desc": "Standard: alternating"},
+    {"input": "9669", "desc": "Standard: mirror"},
+    {"input": "6666", "desc": "Standard: 4 sixes"},
+    {"input": "6969", "desc": "Standard: alternating start 6"},
+    {"input": "9696", "desc": "Standard: alternating start 9"},
+    {"input": "6699", "desc": "Standard: 66 then 99"},
+    {"input": "9966", "desc": "Standard: 99 then 66"},
+    {"input": "6666", "desc": "Stress: 4 sixes upgrade leftmost"},
+    {"input": "9966", "desc": "Killer: leftmost six"}
+  ]
+}

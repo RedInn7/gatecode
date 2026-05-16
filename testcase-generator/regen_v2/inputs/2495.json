@@ -1,0 +1,28 @@
+{
+  "pid": 2495,
+  "slug": "number-of-rectangles-that-can-form-the-largest-square",
+  "inferred_constraints": "1 <= rectangles.length <= 1000, rectangles[i].length == 2, 1 <= l_i, w_i <= 10^9, l_i != w_i",
+  "input_format": "line1: rectangles (JSON 2D array)",
+  "testcases": [
+    {"input": "[[5,8],[3,9],[5,12],[16,5]]", "desc": "Edge: example1"},
+    {"input": "[[2,3],[3,7],[4,3],[3,7]]", "desc": "Edge: example2"},
+    {"input": "[[1,2]]", "desc": "Edge: single rect"},
+    {"input": "[[1000000000,999999999]]", "desc": "Edge: single max"},
+    {"input": "[[1,2],[3,4],[5,6]]", "desc": "Edge: distinct min sides"},
+    {"input": "[[5,10],[5,15],[5,20]]", "desc": "Standard: same minDim=5"},
+    {"input": "[[2,3],[3,4],[4,5],[5,6]]", "desc": "Standard: monotonic"},
+    {"input": "[[100,200],[50,75],[80,90],[120,150]]", "desc": "Standard: random sizes"},
+    {"input": "[[1,2],[2,1],[1,2],[2,1]]", "desc": "Standard: same min by mirror"},
+    {"input": "[[10,20],[20,10],[10,30],[30,10]]", "desc": "Standard: same min=10"},
+    {"input": "[[7,8],[7,9],[7,10],[7,11]]", "desc": "Standard: same width"},
+    {"input": "[[5,6],[8,9],[3,4]]", "desc": "Standard: 3 distinct mins"},
+    {"input": "[[15,16],[15,17],[15,18],[16,17],[16,18]]", "desc": "Standard: maxLen=15,16"},
+    {"input": "[[1000,1001],[1000,1002],[999,1000]]", "desc": "Standard: large close"},
+    {"input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]", "desc": "Standard: monotonic 9"},
+    {"input": "[[100,200],[200,100],[100,200],[200,100],[100,200]]", "desc": "Standard: all min=100"},
+    {"input": "[[1000000000,999999999],[999999999,1000000000],[1000000000,999999998]]", "desc": "Stress: near max"},
+    {"input": "[[1,1000000000],[2,999999999],[3,999999998]]", "desc": "Standard: scaled differences"},
+    {"input": "[[50,51],[50,52],[50,53],[49,50],[49,51],[49,52],[49,53]]", "desc": "Stress: clustered"},
+    {"input": "[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[2,3]]", "desc": "Killer: many min=1, one min=2"}
+  ]
+}

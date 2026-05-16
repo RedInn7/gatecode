@@ -1,0 +1,28 @@
+{
+  "pid": 2514,
+  "slug": "furthest-point-from-origin",
+  "inferred_constraints": "1 <= moves.length <= 50, only 'L', 'R', '_'",
+  "input_format": "line1: moves (JSON string)",
+  "testcases": [
+    {"input": "\"L_RL__R\"", "desc": "Edge: example1"},
+    {"input": "\"_R__LL_\"", "desc": "Edge: example2"},
+    {"input": "\"_______\"", "desc": "Edge: example3 all underscores"},
+    {"input": "\"L\"", "desc": "Edge: n=1 L"},
+    {"input": "\"R\"", "desc": "Edge: n=1 R"},
+    {"input": "\"_\"", "desc": "Edge: n=1 _"},
+    {"input": "\"LR\"", "desc": "Edge: cancel out"},
+    {"input": "\"LL\"", "desc": "Edge: both L"},
+    {"input": "\"RR\"", "desc": "Edge: both R"},
+    {"input": "\"LRLRLR\"", "desc": "Standard: alternating"},
+    {"input": "\"LLLRRRR\"", "desc": "Standard: 3L 4R"},
+    {"input": "\"RRRRLLLL\"", "desc": "Standard: balanced 4 each"},
+    {"input": "\"LLLLLLLLLL\"", "desc": "Standard: all L"},
+    {"input": "\"RRRRRRRRRR\"", "desc": "Standard: all R"},
+    {"input": "\"L_R_L_R\"", "desc": "Standard: alternating with _"},
+    {"input": "\"________________________________________\"", "desc": "Standard: 40 underscores"},
+    {"input": "\"LRLRLR__LRLR__LRLR\"", "desc": "Standard: mixed"},
+    {"input": "\"LLLLL_____RRRRR\"", "desc": "Standard: blocks"},
+    {"input": "\"__________________________________________________\"", "desc": "Stress: max 50 underscores"},
+    {"input": "\"LR_LR_LR_LR_LR_LR_LR_LR_LR_LR_LR_LR_LR_LR_LR_LR_LR\"", "desc": "Killer: pattern 50"}
+  ]
+}

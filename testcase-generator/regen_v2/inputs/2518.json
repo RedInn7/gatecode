@@ -1,0 +1,28 @@
+{
+  "pid": 2518,
+  "slug": "minimum-operations-to-exceed-threshold-value-i",
+  "inferred_constraints": "1 <= nums.length <= 50, 1 <= nums[i] <= 10^9, 1 <= k <= 10^9",
+  "input_format": "line1: nums (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[2,11,10,1,3]\n10", "desc": "Edge: example1"},
+    {"input": "[1,1,2,4,9]\n1", "desc": "Edge: example2 all >= k"},
+    {"input": "[1,1,2,4,9]\n9", "desc": "Edge: example3 most < k"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 equal"},
+    {"input": "[1]\n2", "desc": "Edge: n=1 below"},
+    {"input": "[1000000000]\n1", "desc": "Edge: n=1 max val"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Edge: remove 2"},
+    {"input": "[5,4,3,2,1]\n3", "desc": "Edge: remove 2 reversed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: remove 4"},
+    {"input": "[10,10,10,10,10]\n5", "desc": "Standard: all above"},
+    {"input": "[1,1,1,1,1]\n2", "desc": "Standard: remove all"},
+    {"input": "[5,5,5,5,5]\n5", "desc": "Standard: exactly equal"},
+    {"input": "[100,200,300,400,500]\n250", "desc": "Standard: 2 below"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10", "desc": "Standard: 9 below"},
+    {"input": "[999999999,1,2,3,4,5]\n999999999", "desc": "Standard: 5 below"},
+    {"input": "[1,1000000000,1,1000000000,1]\n1000000000", "desc": "Standard: 3 below"},
+    {"input": "[1,2,3]\n100", "desc": "Standard: all below remove all"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]\n95", "desc": "Standard: 4 below"},
+    {"input": "[1000000000,999999999,999999998,1,2,3,1000000000]\n500000000", "desc": "Stress: large values"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]\n6", "desc": "Killer: 50 elements all below by 1"}
+  ]
+}

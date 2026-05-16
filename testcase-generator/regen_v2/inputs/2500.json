@@ -1,0 +1,28 @@
+{
+  "pid": 2500,
+  "slug": "longest-palindromic-path-in-graph",
+  "inferred_constraints": "1 <= n <= 14, 0 <= edges.length <= n*(n-1)/2, label.length == n, lowercase letters",
+  "input_format": "line1: n (int); line2: edges (JSON 2D array); line3: label (JSON string)",
+  "testcases": [
+    {"input": "3\n[[0,1],[1,2]]\n\"aba\"", "desc": "Edge: example1"},
+    {"input": "3\n[[0,1],[0,2]]\n\"abc\"", "desc": "Edge: example2"},
+    {"input": "4\n[[0,2],[0,3],[3,1]]\n\"bbac\"", "desc": "Edge: example3"},
+    {"input": "1\n[]\n\"a\"", "desc": "Edge: n=1"},
+    {"input": "2\n[]\n\"ab\"", "desc": "Edge: n=2 no edges"},
+    {"input": "2\n[[0,1]]\n\"aa\"", "desc": "Edge: n=2 same letters"},
+    {"input": "2\n[[0,1]]\n\"ab\"", "desc": "Edge: n=2 diff"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n\"abcba\"", "desc": "Standard: path palindrome"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n\"abcde\"", "desc": "Standard: path no palindrome"},
+    {"input": "4\n[[0,1],[1,2],[2,3]]\n\"abba\"", "desc": "Standard: even palindrome"},
+    {"input": "6\n[[0,1],[1,2],[2,3],[3,4],[4,5]]\n\"aabbaa\"", "desc": "Standard: chain 6 nodes"},
+    {"input": "5\n[[0,1],[0,2],[0,3],[0,4]]\n\"aaaaa\"", "desc": "Standard: star all a"},
+    {"input": "5\n[[0,1],[0,2],[0,3],[0,4]]\n\"abcde\"", "desc": "Standard: star unique"},
+    {"input": "6\n[[0,1],[1,2],[2,0],[3,4],[4,5],[5,3]]\n\"abcabc\"", "desc": "Standard: 2 triangles"},
+    {"input": "4\n[[0,1],[1,2],[2,3],[3,0]]\n\"abba\"", "desc": "Standard: cycle palindrome"},
+    {"input": "7\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6]]\n\"abcdcba\"", "desc": "Standard: 7-path palindrome"},
+    {"input": "8\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]\n\"abcddcba\"", "desc": "Stress: 8-path even palindrome"},
+    {"input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]\n\"aabbccddee\"", "desc": "Stress: 10-path"},
+    {"input": "14\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13]]\n\"abcdefggfedcba\"", "desc": "Stress: max n=14"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4],[0,4]]\n\"abcba\"", "desc": "Killer: cycle 5"}
+  ]
+}

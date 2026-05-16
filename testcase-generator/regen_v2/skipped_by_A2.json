@@ -224,6 +224,21 @@
       "pid": 2446,
       "slug": "design-circular-queue",
       "reason": "design class MyCircularQueue with stateful enQueue/deQueue/Front/Rear method-call sequence"
+    },
+    {
+      "pid": 2489,
+      "slug": "range-frequency-queries",
+      "reason": "design class RangeFreqQuery with stateful query method calls"
+    },
+    {
+      "pid": 2491,
+      "slug": "construct-quad-tree",
+      "reason": "QuadTree node serialization not amenable to standard I/O"
+    },
+    {
+      "pid": 2516,
+      "slug": "design-video-sharing-platform",
+      "reason": "design class with stateful upload/remove/watch/like/dislike/getLikesAndDislikes/getViews methods"
     }
   ]
 }

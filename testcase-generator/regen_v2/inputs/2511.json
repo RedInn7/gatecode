@@ -1,0 +1,28 @@
+{
+  "pid": 2511,
+  "slug": "max-sum-of-a-pair-with-equal-sum-of-digits",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[18,43,36,13,7]", "desc": "Edge: example1"},
+    {"input": "[10,12,19,14]", "desc": "Edge: example2 no pair"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,2]", "desc": "Edge: n=2 distinct sums"},
+    {"input": "[1,10]", "desc": "Edge: n=2 same digsum"},
+    {"input": "[1000000000]", "desc": "Edge: max value n=1"},
+    {"input": "[999999999,999999999]", "desc": "Edge: max equal"},
+    {"input": "[5,5,5]", "desc": "Edge: triple same"},
+    {"input": "[10,100,1000]", "desc": "Edge: powers digsum 1"},
+    {"input": "[11,20,200,2000]", "desc": "Standard: digsum 2"},
+    {"input": "[18,27,36,45,54,63,72,81,90]", "desc": "Standard: digsum 9 chain"},
+    {"input": "[1,2,3,4,5,6,7,8,9]", "desc": "Standard: all distinct digsum"},
+    {"input": "[10,20,30,40,50,60,70,80,90]", "desc": "Standard: digsum 1..9"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: digsum 1..5"},
+    {"input": "[55,46,37,28,19]", "desc": "Standard: all digsum 10"},
+    {"input": "[123,321,213,132]", "desc": "Standard: permutations digsum 6"},
+    {"input": "[999,99,9,99999,999999999]", "desc": "Standard: increasing digsum 9"},
+    {"input": "[12,21,13,31,14,41,15,51]", "desc": "Standard: pairs digsum"},
+    {"input": "[111111111,222222222,333333333,444444444,555555555,666666666,777777777,888888888,999999999]", "desc": "Stress: 9-digit ones"},
+    {"input": "[1000000000,999999999,1000000000,999999999]", "desc": "Killer: alternate extremes"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2487,
+  "slug": "the-maze",
+  "inferred_constraints": "m == maze.length, n == maze[i].length, 1 <= m, n <= 100, maze[i][j] is 0 or 1, start.length == destination.length == 2",
+  "input_format": "line1: maze (JSON 2D int); line2: start (JSON int array); line3: destination (JSON int array)",
+  "testcases": [
+    {"input": "[[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]]\n[0,4]\n[4,4]", "desc": "Edge: example1 true"},
+    {"input": "[[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]]\n[0,4]\n[3,2]", "desc": "Edge: example2 false"},
+    {"input": "[[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]]\n[4,3]\n[0,1]", "desc": "Edge: example3"},
+    {"input": "[[0]]\n[0,0]\n[0,0]", "desc": "Edge: 1x1 same cell"},
+    {"input": "[[0,0]]\n[0,0]\n[0,1]", "desc": "Edge: 1x2 reach end"},
+    {"input": "[[0,0,0]]\n[0,0]\n[0,2]", "desc": "Edge: 1x3 reach end"},
+    {"input": "[[0],[0],[0]]\n[0,0]\n[2,0]", "desc": "Edge: 3x1 vertical"},
+    {"input": "[[0,0],[0,0]]\n[0,0]\n[1,1]", "desc": "Edge: 2x2 open"},
+    {"input": "[[0,1],[0,0]]\n[0,0]\n[1,1]", "desc": "Standard: 2x2 with wall"},
+    {"input": "[[0,0,0],[0,1,0],[0,0,0]]\n[0,0]\n[2,2]", "desc": "Standard: center wall"},
+    {"input": "[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]\n[0,0]\n[3,3]", "desc": "Standard: open 4x4"},
+    {"input": "[[0,0,1],[1,0,0],[0,1,0]]\n[0,0]\n[2,2]", "desc": "Standard: 3x3 maze"},
+    {"input": "[[0,0,0,0,0],[0,1,1,1,0],[0,1,0,1,0],[0,1,1,1,0],[0,0,0,0,0]]\n[0,0]\n[2,2]", "desc": "Standard: enclosed dest false"},
+    {"input": "[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]\n[2,2]\n[0,0]", "desc": "Standard: center start"},
+    {"input": "[[0,1,0],[0,1,0],[0,0,0]]\n[0,0]\n[0,2]", "desc": "Standard: U-turn required"},
+    {"input": "[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]\n[1,2]\n[2,0]", "desc": "Standard: open 3x5"},
+    {"input": "[[0,1,0,0,0],[0,0,0,1,0],[1,0,0,0,1],[0,0,1,0,0],[0,0,0,0,0]]\n[0,0]\n[4,4]", "desc": "Standard: complex 5x5"},
+    {"input": "[[0,0,1],[0,0,0],[1,0,0]]\n[0,0]\n[2,2]", "desc": "Standard: diagonal walls"},
+    {"input": "[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]\n[0,0]\n[9,9]", "desc": "Stress: open 10x10"},
+    {"input": "[[0,0,0,0,0],[1,1,1,1,0],[0,0,0,0,0],[0,1,1,1,1],[0,0,0,0,0]]\n[0,0]\n[4,4]", "desc": "Killer: snake pattern"}
+  ]
+}
