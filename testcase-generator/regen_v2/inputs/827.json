@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "4",
+      "input": "2",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Edge: double sign"
     },
     {
-      "input": "34",
+      "input": "5",
       "desc": "Stress: large n near max boundary"
     }
   ]

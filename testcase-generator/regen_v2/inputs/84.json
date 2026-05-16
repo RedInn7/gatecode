@@ -81,7 +81,7 @@
       "desc": "Note: this has 27 chars; replace with valid 26-char layout"
     },
     {
-      "input": "\"lsqkhxlylatdoxnidyagqdeafinfdylaoexbzougsvvzedczhwtr\"\n\"kjtdoovvbblbwpsg\"",
+      "input": "\"tvvtkqlygpirpkemvhjznicxctejssqpxsvahdwrwayjbijwlocj\"\n\"mxurkotvbvadkyeh\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

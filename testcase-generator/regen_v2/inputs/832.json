@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "3\n[[-309,-976],[405,815]]\n7604\n1244",
+      "input": "4\n[[650,-996],[406,383]]\n725\n9177",
       "desc": "Edge: all-equal elements"
     },
     {
