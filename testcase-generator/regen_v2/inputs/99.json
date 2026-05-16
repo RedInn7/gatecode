@@ -1,0 +1,27 @@
+{
+  "pid": 99, "slug": "gcd-sort-of-an-array",
+  "inferred_constraints": "1 <= nums.length <= 3e4, 2 <= nums[i] <= 1e5",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[7,21,3]", "desc": "Edge: example1"},
+    {"input": "[5,2,6,2]", "desc": "Edge: example2 false"},
+    {"input": "[10,5,9,3,15]", "desc": "Edge: example3"},
+    {"input": "[2]", "desc": "Edge: single value"},
+    {"input": "[2,4]", "desc": "Edge: already sorted"},
+    {"input": "[4,2]", "desc": "Edge: 2-element gcd=2"},
+    {"input": "[3,2]", "desc": "Edge: 2-element coprime"},
+    {"input": "[2,3,4,5,6,7]", "desc": "Standard: already sorted"},
+    {"input": "[7,6,5,4,3,2]", "desc": "Standard: reverse, has coprime issues"},
+    {"input": "[100000,2]", "desc": "Edge: max value with 2"},
+    {"input": "[2,2,2,2,2]", "desc": "Edge: all same"},
+    {"input": "[6,4,2,3,9,8]", "desc": "Standard: mixed"},
+    {"input": "[15,10,5,25,20]", "desc": "Standard: multiples of 5"},
+    {"input": "[7,11,13,17,19,23]", "desc": "Edge: all coprime primes"},
+    {"input": "[2,3,4,5,6,7,8,9,10,11,12]", "desc": "Standard: 2-12"},
+    {"input": "[4,6,8,10,12]", "desc": "Standard: all even"},
+    {"input": "[6,3,2,4,5,10]", "desc": "Standard: mixed gcd"},
+    {"input": "[8,4,2,16,32,64]", "desc": "Standard: powers of 2"},
+    {"input": "[6,10,15,21,35]", "desc": "Standard: connected via gcd graph"},
+    {"input": "[100000,50000,25000,12500,6250,3125]", "desc": "Stress: power-of-2 chain"}
+  ]
+}

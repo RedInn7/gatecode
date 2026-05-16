@@ -1,0 +1,27 @@
+{
+  "pid": 104, "slug": "clear-digits",
+  "inferred_constraints": "1 <= s.length <= 100, lowercase letters and digits",
+  "input_format": "single line: s (raw string)",
+  "testcases": [
+    {"input": "abc", "desc": "Edge: example1 no digits"},
+    {"input": "cb34", "desc": "Edge: example2"},
+    {"input": "a", "desc": "Edge: single letter"},
+    {"input": "a1", "desc": "Edge: letter then digit"},
+    {"input": "ab1", "desc": "Edge: 2 letters 1 digit"},
+    {"input": "ab12", "desc": "Edge: 2 letters 2 digits"},
+    {"input": "abcd1234", "desc": "Standard: 4+4"},
+    {"input": "xyz9", "desc": "Standard: small"},
+    {"input": "leetcode", "desc": "Standard: word no digits"},
+    {"input": "a1b1c1", "desc": "Standard: alternating"},
+    {"input": "abc123def456", "desc": "Standard: pattern"},
+    {"input": "aaaaaaaaa1", "desc": "Edge: many a's one digit"},
+    {"input": "a1a2a3a4a5", "desc": "Standard: each pair"},
+    {"input": "z9y8x7w6v5", "desc": "Standard: reverse pattern"},
+    {"input": "abcdefghij1234567890", "desc": "Edge: 10 letters 10 digits"},
+    {"input": "ab12cd34ef56gh78ij90", "desc": "Standard: blocks"},
+    {"input": "ab", "desc": "Edge: no digits 2 chars"},
+    {"input": "leetcode1", "desc": "Standard: word + digit"},
+    {"input": "a0", "desc": "Edge: letter zero"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1234567890123456789012345678901234567890123456789012", "desc": "Stress: 50 letters 50 digits"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 106, "slug": "divide-array-into-equal-pairs",
+  "inferred_constraints": "nums.length = 2*n, 1 <= n <= 500, 1 <= nums[i] <= 500",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[3,2,3,2,2,2]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4]", "desc": "Edge: example2 false"},
+    {"input": "[1,1]", "desc": "Edge: minimum n=1"},
+    {"input": "[1,2]", "desc": "Edge: n=1 different"},
+    {"input": "[1,1,1,1]", "desc": "Edge: 4 same"},
+    {"input": "[1,2,1,2]", "desc": "Edge: 2 pairs"},
+    {"input": "[1,1,1,2]", "desc": "Edge: 3+1 false"},
+    {"input": "[500,500]", "desc": "Edge: max values"},
+    {"input": "[500,499]", "desc": "Edge: max coprime"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: 5 pairs"},
+    {"input": "[1,2,1,2,3,4,3,4,5,6,5,6]", "desc": "Standard: 6 pairs"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Edge: all distinct false"},
+    {"input": "[1,1,1,1,1,1,1,1]", "desc": "Edge: 8 same"},
+    {"input": "[2,2,2,2,3,3,3,3]", "desc": "Standard: 2 groups of 4"},
+    {"input": "[1,2,3,4,1,2,3,5]", "desc": "Standard: false case"},
+    {"input": "[500,1,500,1,500,1,500,1]", "desc": "Edge: extreme alternating"},
+    {"input": "[100,200,100,200,300,300]", "desc": "Standard: 3 pairs"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: double set"},
+    {"input": "[250,250,250,250,250,250,250,250,250,250]", "desc": "Standard: 10 same"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20]", "desc": "Stress: 20 pairs"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 105, "slug": "k-concatenation-maximum-sum",
+  "inferred_constraints": "1 <= arr.length <= 1e5, 1 <= k <= 1e5, -1e4 <= arr[i] <= 1e4",
+  "input_format": "line1: arr (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[1,2]\n3", "desc": "Edge: example1"},
+    {"input": "[1,-2,1]\n5", "desc": "Edge: example2"},
+    {"input": "[-1,-2]\n7", "desc": "Edge: example3 all negative"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 k=1"},
+    {"input": "[-1]\n1", "desc": "Edge: single neg, max=0"},
+    {"input": "[0]\n100", "desc": "Edge: all zeros"},
+    {"input": "[10000]\n100000", "desc": "Edge: max"},
+    {"input": "[-10000]\n100000", "desc": "Edge: min, max=0"},
+    {"input": "[1,1,1,1,1]\n2", "desc": "Standard: all 1"},
+    {"input": "[-1,-1,-1,-1]\n2", "desc": "Edge: all -1"},
+    {"input": "[1,-1,1,-1]\n10", "desc": "Standard: alternating"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Standard: ascending"},
+    {"input": "[5,-4,3,-2,1]\n100", "desc": "Standard: oscillating"},
+    {"input": "[10000,-10000]\n5", "desc": "Edge: extreme pair"},
+    {"input": "[100,200,300,-1000,500]\n5", "desc": "Standard: mostly positive"},
+    {"input": "[-1,2,-3,4,-5]\n10", "desc": "Standard: alternating with neg"},
+    {"input": "[3,-1,-5,2,8,-3,4]\n5", "desc": "Standard: mixed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1", "desc": "Standard: k=1 simple"},
+    {"input": "[-5,-4,-3,-2,-1]\n100", "desc": "Standard: all negative"},
+    {"input": "[10000,10000,10000,10000,10000]\n100000", "desc": "Stress: max array, max k"}
+  ]
+}
