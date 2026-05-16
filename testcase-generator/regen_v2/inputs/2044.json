@@ -4,25 +4,85 @@
   "inferred_constraints": "5 <= word.length <= 250, lowercase English, 0 <= k <= word.length-5",
   "input_format": "line1: word (JSON); line2: k (int)",
   "testcases": [
-    {"input": "\"aeioqq\"\n1", "desc": "Standard: example 1"},
-    {"input": "\"aeiou\"\n0", "desc": "Standard: example 2"},
-    {"input": "\"ieaouqqieaouqq\"\n1", "desc": "Standard: example 3"},
-    {"input": "\"aeiou\"\n0", "desc": "Edge: exact vowels"},
-    {"input": "\"bcdfg\"\n5", "desc": "Edge: no vowels"},
-    {"input": "\"aeiouy\"\n0", "desc": "Edge: vowels + y"},
-    {"input": "\"baeiou\"\n1", "desc": "Standard: 1 consonant"},
-    {"input": "\"aeioub\"\n1", "desc": "Standard"},
-    {"input": "\"aeiouaeiou\"\n0", "desc": "Standard: double vowels"},
-    {"input": "\"abcdeiou\"\n3", "desc": "Standard: 3 consonants"},
-    {"input": "\"qqqqqaeiou\"\n5", "desc": "Standard"},
-    {"input": "\"aeioubcdfg\"\n5", "desc": "Standard"},
-    {"input": "\"aaeeiioouu\"\n0", "desc": "Standard: doubled vowels"},
-    {"input": "\"baeioucdf\"\n4", "desc": "Standard"},
-    {"input": "\"thisisastringwithallaeiou\"\n10", "desc": "Standard"},
-    {"input": "\"baeioubaeioubaeiou\"\n3", "desc": "Standard: repeated pattern"},
-    {"input": "\"aeiouaeiouaeiouaeiouaeiou\"\n0", "desc": "Standard: 5x vowels"},
-    {"input": "\"xyzaeiouwvut\"\n5", "desc": "Standard"},
-    {"input": "\"aabaaeeiioouuuu\"\n1", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxy\"\n10", "desc": "Standard"}
+    {
+      "input": "\"aeioqq\"\n1",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"aeiou\"\n0",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"ieaouqqieaouqq\"\n1",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "\"aeiou\"\n0",
+      "desc": "Edge: exact vowels"
+    },
+    {
+      "input": "\"bcdfg\"\n5",
+      "desc": "Edge: no vowels"
+    },
+    {
+      "input": "\"aeiouy\"\n0",
+      "desc": "Edge: vowels + y"
+    },
+    {
+      "input": "\"baeiou\"\n1",
+      "desc": "Standard: 1 consonant"
+    },
+    {
+      "input": "\"aeioub\"\n1",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aeiouaeiou\"\n0",
+      "desc": "Standard: double vowels"
+    },
+    {
+      "input": "\"abcdeiou\"\n3",
+      "desc": "Standard: 3 consonants"
+    },
+    {
+      "input": "\"qqqqqaeiou\"\n5",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aeioubcdfg\"\n5",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aaeeiioouu\"\n0",
+      "desc": "Standard: doubled vowels"
+    },
+    {
+      "input": "\"baeioucdf\"\n4",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"thisisastringwithallaeiou\"\n10",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"baeioubaeioubaeiou\"\n3",
+      "desc": "Standard: repeated pattern"
+    },
+    {
+      "input": "\"aeiouaeiouaeiouaeiouaeiou\"\n0",
+      "desc": "Standard: 5x vowels"
+    },
+    {
+      "input": "\"xyzaeiouwvut\"\n5",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aabaaeeiioouuuu\"\n1",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"vdntpzlhrgnfndzuimptruvggtzo\"\n5",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

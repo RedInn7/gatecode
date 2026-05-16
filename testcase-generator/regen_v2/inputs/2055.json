@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= s.length <= 100, digits 0-9",
   "input_format": "single line: s (JSON string)",
   "testcases": [
-    {"input": "\"2523533\"", "desc": "Standard: example 1"},
-    {"input": "\"221\"", "desc": "Standard: example 2"},
-    {"input": "\"22\"", "desc": "Standard: example 3 same digit"},
-    {"input": "\"11\"", "desc": "Edge: 1 appears 2 not 1 invalid"},
-    {"input": "\"00\"", "desc": "Edge: 0s but 0 means 0 count"},
-    {"input": "\"12\"", "desc": "Edge: 1+2 (need 1 '1' and 2 '2's)"},
-    {"input": "\"122\"", "desc": "Edge: 1=1 of 1, 2=2 of 2"},
-    {"input": "\"1\"", "desc": "Edge: n=1 (min is 2)"},
-    {"input": "\"21\"", "desc": "Edge: 2,1 pair where 2 counts 1, 1 counts 1, fails"},
-    {"input": "\"233\"", "desc": "Edge: 2 appears 1, 3 appears 2, fails"},
-    {"input": "\"3303\"", "desc": "Standard"},
-    {"input": "\"55555\"", "desc": "Edge: 5 fives - all same"},
-    {"input": "\"1112233\"", "desc": "Standard"},
-    {"input": "\"333333\"", "desc": "Edge: all 3s"},
-    {"input": "\"4444444\"", "desc": "Edge: 7 fours"},
-    {"input": "\"23\"", "desc": "Standard: 2 appears 1, fails"},
-    {"input": "\"99\"", "desc": "Edge: 9 appears 2, fails"},
-    {"input": "\"1234567890\"", "desc": "Standard: all distinct"},
-    {"input": "\"122333444455555\"", "desc": "Standard: pattern"},
-    {"input": "\"00100\"", "desc": "Standard"}
+    {
+      "input": "\"2523533\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"221\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"22\"",
+      "desc": "Standard: example 3 same digit"
+    },
+    {
+      "input": "\"11\"",
+      "desc": "Edge: 1 appears 2 not 1 invalid"
+    },
+    {
+      "input": "\"00\"",
+      "desc": "Edge: 0s but 0 means 0 count"
+    },
+    {
+      "input": "\"12\"",
+      "desc": "Edge: 1+2 (need 1 '1' and 2 '2's)"
+    },
+    {
+      "input": "\"122\"",
+      "desc": "Edge: 1=1 of 1, 2=2 of 2"
+    },
+    {
+      "input": "\"1\"",
+      "desc": "Edge: n=1 (min is 2)"
+    },
+    {
+      "input": "\"21\"",
+      "desc": "Edge: 2,1 pair where 2 counts 1, 1 counts 1, fails"
+    },
+    {
+      "input": "\"233\"",
+      "desc": "Edge: 2 appears 1, 3 appears 2, fails"
+    },
+    {
+      "input": "\"3303\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"55555\"",
+      "desc": "Edge: 5 fives - all same"
+    },
+    {
+      "input": "\"1112233\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"333333\"",
+      "desc": "Edge: all 3s"
+    },
+    {
+      "input": "\"4444444\"",
+      "desc": "Edge: 7 fours"
+    },
+    {
+      "input": "\"23\"",
+      "desc": "Standard: 2 appears 1, fails"
+    },
+    {
+      "input": "\"99\"",
+      "desc": "Edge: 9 appears 2, fails"
+    },
+    {
+      "input": "\"1234567890\"",
+      "desc": "Standard: all distinct"
+    },
+    {
+      "input": "\"122333444455555\"",
+      "desc": "Standard: pattern"
+    },
+    {
+      "input": "\"hmjxktcjgmeelt\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
