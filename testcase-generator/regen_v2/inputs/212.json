@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"zmk\"",
+      "input": "\"wwy\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 26 seats 24 plants alt"
     },
     {
-      "input": "\"digsrhbkdmiy\"",
+      "input": "\"tmtgphvzirjm\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
