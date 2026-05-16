@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 100, s[i] in {'a','b'}",
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
-    {"input": "\"aaabbb\"", "desc": "Edge: example1 true"},
-    {"input": "\"abab\"", "desc": "Edge: example2 false"},
-    {"input": "\"bbb\"", "desc": "Edge: example3 only b -> true"},
-    {"input": "\"a\"", "desc": "Edge: n=1 single a"},
-    {"input": "\"b\"", "desc": "Edge: n=1 single b"},
-    {"input": "\"aa\"", "desc": "Edge: all a"},
-    {"input": "\"bb\"", "desc": "Edge: all b"},
-    {"input": "\"ab\"", "desc": "Edge: simplest valid pair"},
-    {"input": "\"ba\"", "desc": "Edge: simplest invalid"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "Edge: all a 10"},
-    {"input": "\"bbbbbbbbbb\"", "desc": "Edge: all b 10"},
-    {"input": "\"aaaaabbbbb\"", "desc": "Standard: 5a then 5b valid"},
-    {"input": "\"bbbbbaaaaa\"", "desc": "Standard: 5b then 5a invalid"},
-    {"input": "\"aaababaaab\"", "desc": "Standard: a between bs invalid"},
-    {"input": "\"aabaab\"", "desc": "Standard: a after b invalid"},
-    {"input": "\"aaaaaaaaab\"", "desc": "Standard: 9a+b valid"},
-    {"input": "\"abbbbbbbbb\"", "desc": "Standard: a+9b valid"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\"", "desc": "Stress: 50a+50b valid"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbba\"", "desc": "Stress: a at end invalid"},
-    {"input": "\"ababababababababababababababababababababababababababababababababababababababababababababababababab\"", "desc": "Stress: 100 alternating"}
+    {
+      "input": "\"aaabbb\"",
+      "desc": "Edge: example1 true"
+    },
+    {
+      "input": "\"abab\"",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "\"rms\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"rmu\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: all a"
+    },
+    {
+      "input": "\"bb\"",
+      "desc": "Edge: all b"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: simplest valid pair"
+    },
+    {
+      "input": "\"ba\"",
+      "desc": "Edge: simplest invalid"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "Edge: all a 10"
+    },
+    {
+      "input": "\"bbbbbbbbbb\"",
+      "desc": "Edge: all b 10"
+    },
+    {
+      "input": "\"aaaaabbbbb\"",
+      "desc": "Standard: 5a then 5b valid"
+    },
+    {
+      "input": "\"bbbbbaaaaa\"",
+      "desc": "Standard: 5b then 5a invalid"
+    },
+    {
+      "input": "\"aaababaaab\"",
+      "desc": "Standard: a between bs invalid"
+    },
+    {
+      "input": "\"aabaab\"",
+      "desc": "Standard: a after b invalid"
+    },
+    {
+      "input": "\"aaaaaaaaab\"",
+      "desc": "Standard: 9a+b valid"
+    },
+    {
+      "input": "\"abbbbbbbbb\"",
+      "desc": "Standard: a+9b valid"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\"",
+      "desc": "Stress: 50a+50b valid"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbba\"",
+      "desc": "Stress: a at end invalid"
+    },
+    {
+      "input": "\"eesuqmpdevgc\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

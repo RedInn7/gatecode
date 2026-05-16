@@ -4,25 +4,85 @@
   "inferred_constraints": "3 <= equation.length <= 1000, exactly one '=', digits 0-100 no leading zeros, variable 'x'",
   "input_format": "line1: equation (string in JSON quotes)",
   "testcases": [
-    {"input": "\"x+5-3+x=6+x-2\"", "desc": "Edge: example1"},
-    {"input": "\"x=x\"", "desc": "Edge: example2 infinite"},
-    {"input": "\"2x=x\"", "desc": "Edge: example3 x=0"},
-    {"input": "\"x=0\"", "desc": "Edge: simple equation"},
-    {"input": "\"0=x\"", "desc": "Edge: reversed simple"},
-    {"input": "\"x+x+x+x+x=5\"", "desc": "Edge: many x's"},
-    {"input": "\"2x+3x=10\"", "desc": "Edge: x=2"},
-    {"input": "\"x+1=2\"", "desc": "Edge: simple x=1"},
-    {"input": "\"x-1=2\"", "desc": "Edge: simple x=3"},
-    {"input": "\"3x+4=10\"", "desc": "Standard: x=2"},
-    {"input": "\"-x=-1\"", "desc": "Standard: x=1"},
-    {"input": "\"-x+5=3-x\"", "desc": "Standard: 5 != 3 -> no solution"},
-    {"input": "\"2x+1=2x+1\"", "desc": "Standard: identity infinite"},
-    {"input": "\"100x=100\"", "desc": "Standard: x=1 large coef"},
-    {"input": "\"x+x+x+x+x+x+x+x+x+x=100\"", "desc": "Standard: x=10"},
-    {"input": "\"5x+10=20\"", "desc": "Standard: x=2"},
-    {"input": "\"-2x-3=-5\"", "desc": "Standard: x=1"},
-    {"input": "\"x+0=0\"", "desc": "Standard: trivial x=0"},
-    {"input": "\"100x+100x+100x+100x+100x+100x+100x+100x+100x+100x=1000\"", "desc": "Stress: 1000x=1000 x=1"},
-    {"input": "\"x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x=30\"", "desc": "Stress: 30 x's x=1"}
+    {
+      "input": "\"e\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "\"x=x\"",
+      "desc": "Edge: example2 infinite"
+    },
+    {
+      "input": "\"ejvplbozfgm\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"lmcpuuikwgwn\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"cxkibxvq\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"x+x+x+x+x=5\"",
+      "desc": "Edge: many x's"
+    },
+    {
+      "input": "\"2x+3x=10\"",
+      "desc": "Edge: x=2"
+    },
+    {
+      "input": "\"x+1=2\"",
+      "desc": "Edge: simple x=1"
+    },
+    {
+      "input": "\"x-1=2\"",
+      "desc": "Edge: simple x=3"
+    },
+    {
+      "input": "\"3x+4=10\"",
+      "desc": "Standard: x=2"
+    },
+    {
+      "input": "\"-x=-1\"",
+      "desc": "Standard: x=1"
+    },
+    {
+      "input": "\"-x+5=3-x\"",
+      "desc": "Standard: 5 != 3 -> no solution"
+    },
+    {
+      "input": "\"2x+1=2x+1\"",
+      "desc": "Standard: identity infinite"
+    },
+    {
+      "input": "\"100x=100\"",
+      "desc": "Standard: x=1 large coef"
+    },
+    {
+      "input": "\"x+x+x+x+x+x+x+x+x+x=100\"",
+      "desc": "Standard: x=10"
+    },
+    {
+      "input": "\"5x+10=20\"",
+      "desc": "Standard: x=2"
+    },
+    {
+      "input": "\"-2x-3=-5\"",
+      "desc": "Standard: x=1"
+    },
+    {
+      "input": "\"x+0=0\"",
+      "desc": "Standard: trivial x=0"
+    },
+    {
+      "input": "\"100x+100x+100x+100x+100x+100x+100x+100x+100x+100x=1000\"",
+      "desc": "Stress: 1000x=1000 x=1"
+    },
+    {
+      "input": "\"jzazwnurieimbglogfxrfbeqdw\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

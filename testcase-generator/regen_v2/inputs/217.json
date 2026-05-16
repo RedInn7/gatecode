@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1e5, 1 <= Node.val <= 1e6",
   "input_format": "line1: root (JSON tree array)",
   "testcases": [
-    {"input": "[1,10,4,3,null,7,9,12,8,6,null,null,2]", "desc": "Edge: example1"},
-    {"input": "[5,4,2,3,3,7]", "desc": "Edge: example2"},
-    {"input": "[5,9,1,3,5,7]", "desc": "Edge: example3 same value at level"},
-    {"input": "[1]", "desc": "Edge: single odd root"},
-    {"input": "[2]", "desc": "Edge: single even root at index 0 (level 0=even)"},
-    {"input": "[3]", "desc": "Edge: single odd"},
-    {"input": "[1,2,4]", "desc": "Edge: 3 nodes valid"},
-    {"input": "[1,4,2]", "desc": "Edge: 3 nodes invalid (level 1 should be strictly desc... actually inc desc?)"},
-    {"input": "[1,2,2]", "desc": "Edge: level 1 same value -> invalid"},
-    {"input": "[2,1,1]", "desc": "Edge: root even -> invalid"},
-    {"input": "[5,4,2,3,7,11,13]", "desc": "Standard: balanced 3 levels"},
-    {"input": "[3,2,4,1,5,3,7]", "desc": "Standard: level 2 odd inc"},
-    {"input": "[1,2,3,3,5,4,7]", "desc": "Standard: invalid level 1 not strictly desc"},
-    {"input": "[1,4,2,5,7,1,3]", "desc": "Standard: all proper"},
-    {"input": "[1,1000000,2,1,9,11,3]", "desc": "Standard: extreme values"},
-    {"input": "[3,8,6,1,7,5,9]", "desc": "Standard: valid"},
-    {"input": "[1,4,4,3,5,5,9]", "desc": "Standard: level 1 equal"},
-    {"input": "[1,8,2,3,5,1,3,4,12,6,10,2,12,2,4]", "desc": "Stress: full balanced 15"},
-    {"input": "[3,2,4,1,3,1,5,8,12,10,6,2,4,18,16]", "desc": "Stress: 15-node various"},
-    {"input": "[1,10,2,3,7,1,5,12,20,30,40,4,8,6,10,21,33,45,55,67]", "desc": "Stress: 20 nodes deeper tree"}
+    {
+      "input": "[1,10,4,3,null,7,9,12,8,6,null,null,2]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[5,4,2,3,3,7]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[5,9,1,3,5,7]",
+      "desc": "Edge: example3 same value at level"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single odd root"
+    },
+    {
+      "input": "[-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838,-838]",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "[3]",
+      "desc": "Edge: single odd"
+    },
+    {
+      "input": "[1,2,4]",
+      "desc": "Edge: 3 nodes valid"
+    },
+    {
+      "input": "[1,4,2]",
+      "desc": "Edge: 3 nodes invalid (level 1 should be strictly desc... actually inc desc?)"
+    },
+    {
+      "input": "[1,2,2]",
+      "desc": "Edge: level 1 same value -> invalid"
+    },
+    {
+      "input": "[2,1,1]",
+      "desc": "Edge: root even -> invalid"
+    },
+    {
+      "input": "[5,4,2,3,7,11,13]",
+      "desc": "Standard: balanced 3 levels"
+    },
+    {
+      "input": "[3,2,4,1,5,3,7]",
+      "desc": "Standard: level 2 odd inc"
+    },
+    {
+      "input": "[1,2,3,3,5,4,7]",
+      "desc": "Standard: invalid level 1 not strictly desc"
+    },
+    {
+      "input": "[1,4,2,5,7,1,3]",
+      "desc": "Standard: all proper"
+    },
+    {
+      "input": "[1,1000000,2,1,9,11,3]",
+      "desc": "Standard: extreme values"
+    },
+    {
+      "input": "[3,8,6,1,7,5,9]",
+      "desc": "Standard: valid"
+    },
+    {
+      "input": "[1,4,4,3,5,5,9]",
+      "desc": "Standard: level 1 equal"
+    },
+    {
+      "input": "[1,8,2,3,5,1,3,4,12,6,10,2,12,2,4]",
+      "desc": "Stress: full balanced 15"
+    },
+    {
+      "input": "[3,2,4,1,3,1,5,8,12,10,6,2,4,18,16]",
+      "desc": "Stress: 15-node various"
+    },
+    {
+      "input": "[1,10,2,3,7,1,5,12,20,30,40,4,8,6,10,21,33,45,55,67]",
+      "desc": "Stress: 20 nodes deeper tree"
+    }
   ]
 }

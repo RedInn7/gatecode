@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, lowercase, 1 <= k <= s.length",
   "input_format": "line1: s (string in JSON quotes); line2: k (int)",
   "testcases": [
-    {"input": "\"abciiidef\"\n3", "desc": "Edge: example1"},
-    {"input": "\"aeiou\"\n2", "desc": "Edge: example2 all vowels"},
-    {"input": "\"leetcode\"\n3", "desc": "Edge: example3"},
-    {"input": "\"a\"\n1", "desc": "Edge: n=1 single vowel"},
-    {"input": "\"b\"\n1", "desc": "Edge: n=1 single consonant"},
-    {"input": "\"aa\"\n2", "desc": "Edge: all vowels"},
-    {"input": "\"bb\"\n2", "desc": "Edge: all consonants"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n26", "desc": "Edge: whole alphabet whole window"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n5", "desc": "Edge: alphabet window 5"},
-    {"input": "\"aaaaa\"\n5", "desc": "Edge: 5 a's window 5"},
-    {"input": "\"aeiouaeiou\"\n5", "desc": "Standard: 5 vowel block"},
-    {"input": "\"bbbbbb\"\n3", "desc": "Standard: no vowels"},
-    {"input": "\"abababab\"\n3", "desc": "Standard: alternating window of 3 = 2 vowels"},
-    {"input": "\"hellohellohello\"\n5", "desc": "Standard: 'hello' has 2 vowels"},
-    {"input": "\"queueueueueueueueue\"\n4", "desc": "Standard: vowel cluster"},
-    {"input": "\"thequickbrownfoxjumps\"\n8", "desc": "Standard: pangram start"},
-    {"input": "\"banana\"\n3", "desc": "Standard: 'ana' has 2 vowels"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"\n26", "desc": "Stress: 3 alphabets window 26"},
-    {"input": "\"aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou\"\n10", "desc": "Stress: 100 vowels window 10"},
-    {"input": "\"bcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyz\"\n50", "desc": "Stress: 100+ consonants window 50"}
+    {
+      "input": "\"abciiidef\"\n3",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"aeiou\"\n2",
+      "desc": "Edge: example2 all vowels"
+    },
+    {
+      "input": "\"lyaekto\"\n1",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"fcgptm\"\n2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"bhpcb\"\n3",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"aa\"\n2",
+      "desc": "Edge: all vowels"
+    },
+    {
+      "input": "\"bb\"\n2",
+      "desc": "Edge: all consonants"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n26",
+      "desc": "Edge: whole alphabet whole window"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n5",
+      "desc": "Edge: alphabet window 5"
+    },
+    {
+      "input": "\"aaaaa\"\n5",
+      "desc": "Edge: 5 a's window 5"
+    },
+    {
+      "input": "\"aeiouaeiou\"\n5",
+      "desc": "Standard: 5 vowel block"
+    },
+    {
+      "input": "\"bbbbbb\"\n3",
+      "desc": "Standard: no vowels"
+    },
+    {
+      "input": "\"abababab\"\n3",
+      "desc": "Standard: alternating window of 3 = 2 vowels"
+    },
+    {
+      "input": "\"hellohellohello\"\n5",
+      "desc": "Standard: 'hello' has 2 vowels"
+    },
+    {
+      "input": "\"queueueueueueueueue\"\n4",
+      "desc": "Standard: vowel cluster"
+    },
+    {
+      "input": "\"thequickbrownfoxjumps\"\n8",
+      "desc": "Standard: pangram start"
+    },
+    {
+      "input": "\"banana\"\n3",
+      "desc": "Standard: 'ana' has 2 vowels"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"\n26",
+      "desc": "Stress: 3 alphabets window 26"
+    },
+    {
+      "input": "\"aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou\"\n10",
+      "desc": "Stress: 100 vowels window 10"
+    },
+    {
+      "input": "\"rbuthevecfldqkyecp\"\n3",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
