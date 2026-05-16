@@ -1,0 +1,28 @@
+{
+  "pid": 41,
+  "slug": "maximum-array-hopping-score-i",
+  "inferred_constraints": "2 <= nums.length <= 1000, 1 <= nums[i] <= 1e5",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,5,8]", "desc": "Edge: example1"},
+    {"input": "[4,5,2,8,9,1,3]", "desc": "Edge: example2"},
+    {"input": "[1,1]", "desc": "Edge: n=2 minimum"},
+    {"input": "[1,100000]", "desc": "Edge: n=2 max difference"},
+    {"input": "[100000,1]", "desc": "Edge: n=2 large to small"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[100000,100000,100000]", "desc": "Edge: all max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[5,1,2,3,4,5,6,7,8,100]", "desc": "Standard: big jump to last"},
+    {"input": "[1,100,1,100,1,100,1,100,1,100]", "desc": "Standard: alternating"},
+    {"input": "[100,1,100,1,100,1,100,1,100,1]", "desc": "Standard: alternating reverse"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Standard: powers of 2"},
+    {"input": "[1,1,1,1,1,1,1,1,1,100000]", "desc": "Standard: best to skip to end"},
+    {"input": "[100000,1,1,1,1,1,1,1,1,1]", "desc": "Standard: start large"},
+    {"input": "[50,50,50,50,50]", "desc": "Standard: all 50"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,1000]", "desc": "Standard: increasing then jump"},
+    {"input": "[10,5,15,3,20,2,25,1,30,7]", "desc": "Standard: oscillation"},
+    {"input": "[1,100000,1,1,1,1,1,1,1,1]", "desc": "Edge: big early, then must go to end"},
+    {"input": "[100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000]", "desc": "Stress: 20 max values"}
+  ]
+}

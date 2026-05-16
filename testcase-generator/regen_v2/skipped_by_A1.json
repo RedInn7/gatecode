@@ -1,0 +1,6 @@
+{
+  "agent": "A1",
+  "skipped": [
+    {"pid": 53, "slug": "differences-between-two-objects", "reason": "JavaScript/TypeScript only — no C++/Python templates, cannot run in cross-lang judge pipeline"}
+  ]
+}

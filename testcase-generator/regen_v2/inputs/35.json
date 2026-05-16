@@ -1,0 +1,28 @@
+{
+  "pid": 35,
+  "slug": "count-beautiful-substrings-i",
+  "inferred_constraints": "1 <= s.length <= 1000, 1 <= k <= 1000, lowercase",
+  "input_format": "line1: s (raw string); line2: k (int)",
+  "testcases": [
+    {"input": "baeyh\n2", "desc": "Edge: example1"},
+    {"input": "abba\n1", "desc": "Edge: example2"},
+    {"input": "bcdf\n1", "desc": "Edge: example3 zero"},
+    {"input": "a\n1", "desc": "Edge: n=1 single vowel"},
+    {"input": "b\n1", "desc": "Edge: n=1 single consonant"},
+    {"input": "ab\n1", "desc": "Edge: minimum beautiful"},
+    {"input": "aaaa\n1", "desc": "Edge: all vowels"},
+    {"input": "bbbb\n1", "desc": "Edge: all consonants"},
+    {"input": "aeiou\n1", "desc": "Edge: all vowels only"},
+    {"input": "bcdfgh\n1", "desc": "Edge: all consonants only"},
+    {"input": "abcdefghij\n1", "desc": "Standard: mix"},
+    {"input": "aeiouaeiou\n1", "desc": "Standard: vowel pattern"},
+    {"input": "aabbccddeeffgghhiijj\n2", "desc": "Standard: paired pattern"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n3", "desc": "Standard: alphabet"},
+    {"input": "azbycxdwevfugthsirjqkplomn\n5", "desc": "Standard: complex mix"},
+    {"input": "abababababababababab\n2", "desc": "Standard: alternating vowel-cons"},
+    {"input": "abababababababababababababababababababababababababababababababababababababababababababababababababab\n4", "desc": "Stress: n=100 alternating"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n3", "desc": "Edge: 100 a only"},
+    {"input": "bcdfghjklmnpqrstvwxyz\n7", "desc": "Edge: 21 consonants"},
+    {"input": "aaaeeeiiiooouuubbbcccdddfff\n6", "desc": "Stress: block pattern"}
+  ]
+}

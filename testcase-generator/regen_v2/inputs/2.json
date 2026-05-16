@@ -1,0 +1,28 @@
+{
+  "pid": 2,
+  "slug": "minimum-cost-to-change-the-final-value-of-expression",
+  "inferred_constraints": "1 <= expression.length <= 1e5, chars in {'0','1','&','|','(',')'}, valid expression, balanced parens",
+  "input_format": "single line: expression (raw string, no quotes)",
+  "testcases": [
+    {"input": "1", "desc": "Edge: shortest n=1, single '1'"},
+    {"input": "0", "desc": "Edge: shortest n=1, single '0'"},
+    {"input": "1&(0|1)", "desc": "Standard: example1"},
+    {"input": "(0&0)&(0&0&0)", "desc": "Standard: example2"},
+    {"input": "(0|(1|0&1))", "desc": "Standard: example3, nested"},
+    {"input": "1|0", "desc": "Edge: simple OR"},
+    {"input": "0&1", "desc": "Edge: simple AND"},
+    {"input": "((((((1))))))", "desc": "Edge: deeply nested single value"},
+    {"input": "1|1|1|1|1|1|1|1|1|1", "desc": "Edge: chain of ORs, all 1"},
+    {"input": "0&0&0&0&0&0&0&0&0&0", "desc": "Edge: chain of ANDs, all 0"},
+    {"input": "1&1&1&1&1&1&1&1&1&1", "desc": "Standard: chain of ANDs, all 1"},
+    {"input": "(1|0)&(0|1)&(1|0)", "desc": "Standard: triple AND of ORs"},
+    {"input": "((1&0)|(0&1))|((1&1)&(0&0))", "desc": "Standard: balanced complex tree"},
+    {"input": "0|1|0|1|0|1|0|1", "desc": "Standard: alternating chain"},
+    {"input": "1&0&1&0&1&0&1&0", "desc": "Standard: alternating AND chain"},
+    {"input": "(((1|0)&1)|((0&1)|0))&(1|(0&(1|0)))", "desc": "Standard: deep nested mix"},
+    {"input": "1&(1&(1&(1&(1&(1&(0))))))", "desc": "Standard: deeply right-skewed"},
+    {"input": "(((((0)|1)|1)|1)|1)", "desc": "Standard: deeply left-skewed"},
+    {"input": "((1&0)|((0&1)&(1|0)))|(((0|1)&(1&0))|(1&(0|1)))", "desc": "Stress: balanced binary tree"},
+    {"input": "(1&0)|(1&0)|(1&0)|(1&0)|(1&0)|(1&0)|(1&0)|(1&0)|(1&0)|(1&0)", "desc": "Stress: repeating sub-pattern"}
+  ]
+}

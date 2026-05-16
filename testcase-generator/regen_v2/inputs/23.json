@@ -1,0 +1,28 @@
+{
+  "pid": 23,
+  "slug": "stone-removal-game",
+  "inferred_constraints": "1 <= n <= 50",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "12", "desc": "Edge: example1 Alice wins"},
+    {"input": "1", "desc": "Edge: example2 minimum, Alice loses"},
+    {"input": "10", "desc": "Edge: exactly 10, Alice takes all, Bob can't"},
+    {"input": "9", "desc": "Edge: Alice can't take 10"},
+    {"input": "11", "desc": "Edge: Alice 10, Bob can't 9"},
+    {"input": "50", "desc": "Edge: max n=50"},
+    {"input": "49", "desc": "Edge: near max"},
+    {"input": "2", "desc": "Edge: small"},
+    {"input": "3", "desc": "Edge: small"},
+    {"input": "5", "desc": "Edge: small"},
+    {"input": "19", "desc": "Standard: Alice 10, Bob 9, 0 left, Alice can't 8 — Alice loses"},
+    {"input": "20", "desc": "Standard: 10+9=19 leaves 1, Alice can't 8"},
+    {"input": "27", "desc": "Standard: 10+9=19 leaves 8, Alice takes 8, Bob can't 7"},
+    {"input": "28", "desc": "Standard: 10+9+8=27 leaves 1, Bob can't"},
+    {"input": "33", "desc": "Standard: deeper"},
+    {"input": "34", "desc": "Standard: deeper"},
+    {"input": "40", "desc": "Standard: medium"},
+    {"input": "45", "desc": "Standard: near max"},
+    {"input": "30", "desc": "Standard: middle"},
+    {"input": "25", "desc": "Standard: middle"}
+  ]
+}

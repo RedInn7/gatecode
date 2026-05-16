@@ -1,0 +1,28 @@
+{
+  "pid": 40,
+  "slug": "maximum-employees-to-be-invited-to-a-meeting",
+  "inferred_constraints": "2 <= n <= 1e5, 0 <= favorite[i] <= n-1, favorite[i] != i",
+  "input_format": "single line: favorite (JSON array)",
+  "testcases": [
+    {"input": "[2,2,1,2]", "desc": "Edge: example1"},
+    {"input": "[1,2,0]", "desc": "Edge: example2 3-cycle"},
+    {"input": "[3,0,1,4,1]", "desc": "Edge: example3"},
+    {"input": "[1,0]", "desc": "Edge: n=2 2-cycle"},
+    {"input": "[1,2,3,4,5,6,7,8,9,0]", "desc": "Edge: single 10-cycle"},
+    {"input": "[1,0,1,0]", "desc": "Standard: 2-cycle with attached"},
+    {"input": "[1,0,3,2]", "desc": "Standard: 2 disjoint 2-cycles"},
+    {"input": "[1,2,0,4,5,3]", "desc": "Standard: 2 disjoint 3-cycles"},
+    {"input": "[1,0,1,2,3]", "desc": "Standard: chain into 2-cycle"},
+    {"input": "[1,2,3,4,5,6,7,8,9,5]", "desc": "Standard: long tail into mid"},
+    {"input": "[1,0,3,2,5,4,7,6,9,8]", "desc": "Standard: 5 disjoint 2-cycles"},
+    {"input": "[1,2,3,4,5,6,7,8,9,0,1,2,3]", "desc": "Standard: tail + cycle"},
+    {"input": "[2,0,1,0]", "desc": "Standard: 3-cycle with tail"},
+    {"input": "[1,2,0,1,2,0]", "desc": "Standard: 3-cycle with double tails"},
+    {"input": "[1,0,0,0,0,0,0,0,0,0]", "desc": "Standard: star into 2-cycle"},
+    {"input": "[3,3,3,4,5,3]", "desc": "Standard: many into 2-cycle"},
+    {"input": "[1,2,3,4,5,6,7,0]", "desc": "Standard: 8-cycle"},
+    {"input": "[5,0,4,5,1,2]", "desc": "Standard: complex"},
+    {"input": "[1,0,2,3,4,5,6,7,8,9]", "desc": "Note: constraint favorite[i]!=i, replaced with [1,0,1,2,3,4,5,6,7,8]"},
+    {"input": "[1,0,1,2,3,4,5,6,7,8]", "desc": "Stress: long chain to 2-cycle"}
+  ]
+}

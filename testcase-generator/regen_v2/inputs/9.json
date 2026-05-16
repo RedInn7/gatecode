@@ -1,0 +1,28 @@
+{
+  "pid": 9,
+  "slug": "remove-k-balanced-substrings",
+  "inferred_constraints": "2 <= s.length <= 1e5, s only '(' and ')', 1 <= k <= s.length/2",
+  "input_format": "line1: s (raw string); line2: k (int)",
+  "testcases": [
+    {"input": "(())\n1", "desc": "Edge: example1"},
+    {"input": "(()(\n1", "desc": "Edge: example2"},
+    {"input": "((()))()()()\n3", "desc": "Standard: example3"},
+    {"input": "()\n1", "desc": "Edge: minimum n=2"},
+    {"input": "((\n1", "desc": "Edge: no balanced, n=2"},
+    {"input": "))\n1", "desc": "Edge: closing only, n=2"},
+    {"input": "()()()()\n1", "desc": "Standard: all k=1 removable"},
+    {"input": "(((((((((())))))))))\n10", "desc": "Edge: k=10 nested"},
+    {"input": "(((((())))))\n1", "desc": "Standard: deep nested removable with k=1"},
+    {"input": "((()))((()))((()))\n3", "desc": "Standard: 3 separated k=3 groups"},
+    {"input": "(((((((((())))))))))\n5", "desc": "Standard: nested, k=5"},
+    {"input": "((((((((()))))))))(((())))\n4", "desc": "Standard: mix nested k=4"},
+    {"input": "()()()()()()()()()()()()()()()()()()()()\n1", "desc": "Standard: 40 small balanced"},
+    {"input": "((((((((((((((((((((\n2", "desc": "Edge: all opening, nothing removable"},
+    {"input": "))))))))))))))))))))\n2", "desc": "Edge: all closing"},
+    {"input": "(()(()))\n2", "desc": "Standard: 2-balance inside nested"},
+    {"input": "()()(())()(((())))()\n2", "desc": "Standard: mix of various depths"},
+    {"input": "(((((((()))))))))\n4", "desc": "Standard: extra trailing close"},
+    {"input": "((()))((()))((()))((()))((()))((()))((()))((()))((()))((()))\n3", "desc": "Stress: 10 groups of k=3"},
+    {"input": "((((((((((())))))))))\n5", "desc": "Stress: deeply nested, partial removable"}
+  ]
+}

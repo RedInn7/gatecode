@@ -1,0 +1,28 @@
+{
+  "pid": 14,
+  "slug": "continuous-subarray-sum",
+  "inferred_constraints": "1 <= nums.length <= 1e5, 0 <= nums[i] <= 1e9, sum(nums) <= 2^31-1, 1 <= k <= 2^31-1",
+  "input_format": "line1: nums (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[23,2,4,6,7]\n6", "desc": "Edge: example1"},
+    {"input": "[23,2,6,4,7]\n6", "desc": "Edge: example2 full array"},
+    {"input": "[23,2,6,4,7]\n13", "desc": "Edge: example3 false"},
+    {"input": "[1,1]\n2", "desc": "Edge: n=2 minimum"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 fails length>=2"},
+    {"input": "[0,0]\n1", "desc": "Edge: zeros, k=1, sum=0 multiple of 1"},
+    {"input": "[0,0,0,0,0]\n100", "desc": "Edge: all zeros, sum=0 multiple of any k"},
+    {"input": "[5,0,0,0]\n3", "desc": "Standard: zeros after non-zero, sum 0 multiple"},
+    {"input": "[1,2,3]\n6", "desc": "Standard: full sum"},
+    {"input": "[1,2,12]\n6", "desc": "Standard: last element multiple"},
+    {"input": "[1000000000,1000000000]\n1", "desc": "Edge: large values, k=1"},
+    {"input": "[1000000000,1000000000]\n2000000000", "desc": "Edge: exact sum match"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n11", "desc": "Standard: medium"},
+    {"input": "[6,12,18,24]\n6", "desc": "Standard: all multiples"},
+    {"input": "[7,11,13]\n6", "desc": "Standard: no subarray works"},
+    {"input": "[3,6,9,12,15,18,21,24,27,30]\n9", "desc": "Standard: arithmetic seq"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n5", "desc": "Standard: all ones, exact k length"},
+    {"input": "[2147483647,0]\n2147483647", "desc": "Edge: max int with zero"},
+    {"input": "[5,2,4]\n5", "desc": "Standard: small no work"},
+    {"input": "[2,4,3]\n6", "desc": "Standard: small no work"}
+  ]
+}

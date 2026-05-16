@@ -1,0 +1,28 @@
+{
+  "pid": 7,
+  "slug": "kth-distinct-string-in-an-array",
+  "inferred_constraints": "1 <= k <= arr.length <= 1000, 1 <= arr[i].length <= 5, lowercase letters",
+  "input_format": "line1: arr (JSON array of strings); line2: k (int)",
+  "testcases": [
+    {"input": "[\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"]\n2", "desc": "Edge: example1"},
+    {"input": "[\"aaa\",\"aa\",\"a\"]\n1", "desc": "Edge: example2 all distinct"},
+    {"input": "[\"a\",\"b\",\"a\"]\n3", "desc": "Edge: example3 fewer than k"},
+    {"input": "[\"a\"]\n1", "desc": "Edge: single element"},
+    {"input": "[\"a\",\"a\"]\n1", "desc": "Edge: two duplicates, k=1, no distinct"},
+    {"input": "[\"abcde\",\"fghij\",\"klmno\",\"pqrst\",\"uvwxy\"]\n3", "desc": "Standard: all distinct max-length"},
+    {"input": "[\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\"]\n1", "desc": "Edge: all duplicates"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n10", "desc": "Standard: all distinct, kth=last"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n1", "desc": "Standard: all distinct, k=1"},
+    {"input": "[\"ab\",\"cd\",\"ef\",\"ab\",\"cd\",\"ef\",\"gh\"]\n1", "desc": "Standard: only one distinct"},
+    {"input": "[\"x\",\"y\",\"z\",\"x\",\"y\",\"z\",\"x\",\"y\",\"z\"]\n1", "desc": "Edge: no distinct, repeating triple"},
+    {"input": "[\"hi\",\"bye\",\"hi\",\"bye\",\"foo\",\"bar\",\"baz\",\"foo\"]\n3", "desc": "Standard: mixed dup/distinct"},
+    {"input": "[\"abcde\"]\n1", "desc": "Edge: single 5-char string"},
+    {"input": "[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\",\"a\",\"aa\"]\n3", "desc": "Standard: graduated lengths with dups"},
+    {"input": "[\"z\",\"y\",\"x\",\"w\",\"v\",\"u\",\"t\",\"s\",\"r\",\"q\",\"p\",\"o\",\"n\",\"m\",\"l\",\"k\",\"j\",\"i\",\"h\",\"g\"]\n15", "desc": "Standard: reverse alphabet"},
+    {"input": "[\"qq\",\"qq\",\"qq\",\"qq\",\"qq\",\"qq\",\"qq\",\"qq\",\"qq\",\"unique\"]\n1", "desc": "Standard: one unique among duplicates"},
+    {"input": "[\"ab\",\"cd\",\"ef\",\"gh\",\"ij\",\"kl\",\"mn\",\"op\",\"qr\",\"st\",\"uv\",\"wx\",\"yz\",\"ab\",\"cd\",\"ef\",\"gh\",\"ij\",\"kl\",\"mn\"]\n5", "desc": "Standard: half-dup half-distinct"},
+    {"input": "[\"aaaaa\",\"bbbbb\",\"ccccc\",\"ddddd\",\"eeeee\",\"fffff\",\"ggggg\",\"hhhhh\",\"iiiii\",\"jjjjj\",\"kkkkk\",\"lllll\",\"mmmmm\",\"nnnnn\",\"ooooo\"]\n7", "desc": "Standard: all-distinct max length"},
+    {"input": "[\"a\",\"b\",\"c\",\"a\",\"b\",\"c\",\"a\",\"b\",\"c\",\"d\",\"e\",\"f\"]\n2", "desc": "Standard: first 9 all dup, last 3 distinct"},
+    {"input": "[\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"unique\",\"abcde\",\"abcde\"]\n1", "desc": "Stress: many dups, one distinct"}
+  ]
+}

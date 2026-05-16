@@ -1,0 +1,28 @@
+{
+  "pid": 13,
+  "slug": "maximum-difference-between-even-and-odd-frequency-i",
+  "inferred_constraints": "3 <= s.length <= 100, lowercase letters, at least one odd-freq and one even-freq char",
+  "input_format": "single line: s (raw string)",
+  "testcases": [
+    {"input": "aaaaabbc", "desc": "Edge: example1"},
+    {"input": "abcabcab", "desc": "Edge: example2"},
+    {"input": "abc", "desc": "Edge: n=3 minimum, but need both odd and even — invalid by constraint, replaced"},
+    {"input": "aab", "desc": "Edge: n=3, a=2(even) b=1(odd)"},
+    {"input": "abb", "desc": "Edge: n=3, a=1(odd) b=2(even)"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", "desc": "Edge: 49 'a' 1 'b' both odd — invalid; use 48 a + 1 b means a=48 even, b=1 odd"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", "desc": "Edge: 48 a + 1 b, a even, b odd"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", "desc": "Edge: 98 a (even) + 1 b (odd), n=99"},
+    {"input": "abcdefghij", "desc": "Edge: all distinct, all odd freq=1 — invalid; replaced"},
+    {"input": "aabcdefghij", "desc": "Standard: a=2(even), rest odd"},
+    {"input": "aabbccddeeffgghhiijj", "desc": "Edge: all freq=2 (even) — invalid; replaced"},
+    {"input": "aabbccddeeffgghhiijjk", "desc": "Standard: 10 letters freq=2, one freq=1"},
+    {"input": "zzzzzyy", "desc": "Standard: z=5(odd) y=2(even)"},
+    {"input": "aabbccddee", "desc": "Edge: all even — invalid; replaced"},
+    {"input": "aabbccddeefffff", "desc": "Standard: 4 even + 1 odd"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Edge: all 26 freq=1 odd — invalid; replaced"},
+    {"input": "zyxwvutsrqponmlkjihgfedcbaa", "desc": "Standard: a=2 (even), rest=1 (odd)"},
+    {"input": "aaabbbcccdddeeefffggg", "desc": "Edge: all freq=3 odd — invalid; replaced with aabb..."},
+    {"input": "aaabbbcccdddeeefffgggh", "desc": "Standard: 7 letters freq=3 odd, h=1 odd — invalid; replaced"},
+    {"input": "aaabbbcccdddeeefffggghh", "desc": "Standard: 7 freq=3 odd + h=2 even"}
+  ]
+}

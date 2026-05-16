@@ -1,0 +1,28 @@
+{
+  "pid": 49,
+  "slug": "root-equals-sum-of-children",
+  "inferred_constraints": "Tree has exactly 3 nodes (root, left, right), -100 <= val <= 100",
+  "input_format": "single line: root (JSON array, 3 elements)",
+  "testcases": [
+    {"input": "[10,4,6]", "desc": "Edge: example1 true"},
+    {"input": "[5,3,1]", "desc": "Edge: example2 false"},
+    {"input": "[0,0,0]", "desc": "Edge: all zeros, true"},
+    {"input": "[1,1,0]", "desc": "Edge: 1=1+0 true"},
+    {"input": "[1,0,1]", "desc": "Edge: 1=0+1 true"},
+    {"input": "[2,1,1]", "desc": "Edge: 2=1+1 true"},
+    {"input": "[200,100,100]", "desc": "Edge: max sum true"},
+    {"input": "[-200,-100,-100]", "desc": "Edge: min sum true"},
+    {"input": "[0,100,-100]", "desc": "Edge: pos+neg=0 true"},
+    {"input": "[0,-100,100]", "desc": "Edge: neg+pos=0 true"},
+    {"input": "[100,50,50]", "desc": "Standard: mid true"},
+    {"input": "[100,50,60]", "desc": "Standard: false"},
+    {"input": "[50,25,25]", "desc": "Standard: true"},
+    {"input": "[1,1,1]", "desc": "Edge: 1!=2 false"},
+    {"input": "[-50,-25,-25]", "desc": "Standard: negative true"},
+    {"input": "[100,99,1]", "desc": "Edge: 100=99+1 true"},
+    {"input": "[100,1,99]", "desc": "Edge: 100=1+99 true"},
+    {"input": "[99,100,-1]", "desc": "Edge: 99=100+(-1) true"},
+    {"input": "[100,100,0]", "desc": "Edge: 100=100+0 true"},
+    {"input": "[100,100,100]", "desc": "Edge: 100!=200 false"}
+  ]
+}

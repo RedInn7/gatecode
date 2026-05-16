@@ -1,0 +1,28 @@
+{
+  "pid": 20,
+  "slug": "longest-common-prefix-between-adjacent-strings-after-removals",
+  "inferred_constraints": "1 <= words.length <= 1e5, 1 <= words[i].length <= 1e4, sum of lengths <= 1e5, lowercase",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]", "desc": "Edge: example1"},
+    {"input": "[\"dog\",\"racer\",\"car\"]", "desc": "Edge: example2 no common"},
+    {"input": "[\"a\"]", "desc": "Edge: n=1, single element"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: n=2, different first letter"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: n=2, identical"},
+    {"input": "[\"abc\",\"abd\",\"abe\"]", "desc": "Standard: common prefix length 2"},
+    {"input": "[\"prefix\",\"prefix\",\"prefix\",\"prefix\",\"prefix\"]", "desc": "Edge: all identical"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Edge: n=3 identical"},
+    {"input": "[\"x\",\"y\",\"z\",\"x\",\"y\",\"z\"]", "desc": "Edge: no adjacent prefix"},
+    {"input": "[\"hello\",\"help\",\"helmet\",\"helping\",\"helper\"]", "desc": "Standard: all share 'hel' prefix"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard: each is prefix of next"},
+    {"input": "[\"abcdefghij\",\"abcdefghik\",\"abcdefghil\"]", "desc": "Standard: long common prefix 9"},
+    {"input": "[\"aaaaa\",\"aaaab\",\"aaabb\",\"aabbb\",\"abbbb\",\"bbbbb\"]", "desc": "Standard: graduated change"},
+    {"input": "[\"apple\",\"apply\",\"banana\",\"bandana\",\"cat\",\"car\"]", "desc": "Standard: clusters"},
+    {"input": "[\"zzz\",\"zzz\",\"zzz\",\"a\",\"a\",\"a\"]", "desc": "Standard: two halves"},
+    {"input": "[\"foo\",\"bar\",\"foo\",\"bar\",\"foo\"]", "desc": "Standard: alternating"},
+    {"input": "[\"x\"]", "desc": "Edge: single char single word"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\",\"abcdefghijklmnopqrstuvwxyz\",\"abcdefghijklmnopqrstuvwxya\"]", "desc": "Standard: long words, partial common"},
+    {"input": "[\"aa\",\"ab\",\"ba\",\"bb\",\"ca\",\"cb\",\"da\",\"db\"]", "desc": "Standard: pairs grouped"},
+    {"input": "[\"hello\",\"world\",\"hello\",\"world\",\"hello\",\"world\",\"hello\",\"world\",\"hello\",\"world\"]", "desc": "Stress: 10 alternating, no adjacent prefix"}
+  ]
+}

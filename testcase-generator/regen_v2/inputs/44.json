@@ -1,0 +1,28 @@
+{
+  "pid": 44,
+  "slug": "divide-players-into-teams-of-equal-skill",
+  "inferred_constraints": "2 <= skill.length <= 1e5 (even), 1 <= skill[i] <= 1000",
+  "input_format": "single line: skill (JSON array)",
+  "testcases": [
+    {"input": "[3,2,5,1,3,4]", "desc": "Edge: example1"},
+    {"input": "[3,4]", "desc": "Edge: example2 n=2"},
+    {"input": "[1,1,2,3]", "desc": "Edge: example3 impossible"},
+    {"input": "[1,1]", "desc": "Edge: n=2 equal"},
+    {"input": "[1,2]", "desc": "Edge: n=2 pair sum"},
+    {"input": "[1000,1000]", "desc": "Edge: n=2 max values"},
+    {"input": "[1,1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1000,1000,1000,1000]", "desc": "Edge: all max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending evenly partitionable"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: duplicates"},
+    {"input": "[1,1000,2,999,3,998,4,997,5,996]", "desc": "Standard: extreme pairs"},
+    {"input": "[5,5,5,5,5,5,5,6]", "desc": "Edge: one outlier impossible"},
+    {"input": "[1,3,5,7]", "desc": "Standard: odd skills"},
+    {"input": "[2,4,6,8]", "desc": "Standard: even skills"},
+    {"input": "[1,1,1,2,2,2]", "desc": "Edge: sum 9 odd-per-team impossible (need 9/3=3, ok 1+2=3)"},
+    {"input": "[1,500,500,1000]", "desc": "Standard: pair (1,1000) (500,500)"},
+    {"input": "[1,2,3,4]", "desc": "Standard: 1+4=2+3=5"},
+    {"input": "[1,2,3,4,5,6]", "desc": "Standard: 1+6=2+5=3+4=7"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100,10,20,30,40,50,60,70,80,90,100]", "desc": "Stress: n=20 paired"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 51,
+  "slug": "split-two-strings-to-make-palindrome",
+  "inferred_constraints": "1 <= a.length == b.length <= 1e5, lowercase",
+  "input_format": "line1: a (raw string); line2: b (raw string)",
+  "testcases": [
+    {"input": "x\ny", "desc": "Edge: example1 n=1"},
+    {"input": "xbdef\nxecab", "desc": "Edge: example2 false"},
+    {"input": "ulacfd\njizalu", "desc": "Edge: example3 true"},
+    {"input": "a\na", "desc": "Edge: identical single char"},
+    {"input": "ab\nba", "desc": "Edge: n=2 reversed"},
+    {"input": "ab\nab", "desc": "Edge: n=2 identical not palindrome"},
+    {"input": "aa\nbb", "desc": "Edge: n=2 both palindromes"},
+    {"input": "abc\ncba", "desc": "Standard: a + reverse(b)"},
+    {"input": "abcd\ndcba", "desc": "Standard: n=4 reversed"},
+    {"input": "aaaa\nbbbb", "desc": "Edge: both same letter palindromes"},
+    {"input": "abcba\nzyxyz", "desc": "Standard: both palindromes"},
+    {"input": "racecar\nlevelyy", "desc": "Standard: a palindrome"},
+    {"input": "abcde\nzyxwv", "desc": "Standard: no overlap"},
+    {"input": "leetcoderaceac\nleetcodertable", "desc": "Standard: long mix"},
+    {"input": "abcdefghij\njihgfedcba", "desc": "Standard: long reversed"},
+    {"input": "pvhmupgqeltozftlmfjjde\nyjgpzbezspnnpszebzmhvp", "desc": "Standard: random mix"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "desc": "Edge: 50 a's vs 50 b's"},
+    {"input": "abcabcabcabcabcabcabcabcabcabc\ncbacbacbacbacbacbacbacbacbacba", "desc": "Standard: long periodic"},
+    {"input": "xy\nyx", "desc": "Edge: n=2 swap"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "desc": "Stress: 100 each same letter, both palindromes true"}
+  ]
+}

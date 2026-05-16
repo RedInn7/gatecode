@@ -1,0 +1,28 @@
+{
+  "pid": 26,
+  "slug": "find-the-first-player-to-win-k-games-in-a-row",
+  "inferred_constraints": "2 <= n <= 1e5, 1 <= k <= 1e9, 1 <= skills[i] <= 1e6, skills are unique",
+  "input_format": "line1: skills (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[4,2,6,3,9]\n2", "desc": "Edge: example1"},
+    {"input": "[2,5,4]\n3", "desc": "Edge: example2 k>=n-1"},
+    {"input": "[1,2]\n1", "desc": "Edge: n=2 minimum"},
+    {"input": "[2,1]\n1", "desc": "Edge: n=2 first wins"},
+    {"input": "[1,2,3,4,5]\n1", "desc": "Edge: ascending, k=1 last one wins eventually but k=1 first match: 1v2 → 2 wins"},
+    {"input": "[5,4,3,2,1]\n1", "desc": "Edge: descending, index 0 always wins"},
+    {"input": "[5,4,3,2,1]\n4", "desc": "Edge: k=n-1, index 0 wins all"},
+    {"input": "[5,4,3,2,1]\n1000000000", "desc": "Edge: huge k, max-skill must win"},
+    {"input": "[1000000,1,2,3,4,5,6,7,8,9]\n5", "desc": "Edge: max value first, wins all"},
+    {"input": "[1,2,3,4,5,1000000]\n5", "desc": "Edge: max value last"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100]\n1", "desc": "Standard: ascending"},
+    {"input": "[100,90,80,70,60,50,40,30,20,10]\n1", "desc": "Standard: descending"},
+    {"input": "[50,10,20,30,40,60,5,15,25,35]\n3", "desc": "Standard: mixed"},
+    {"input": "[1,3,5,7,9,2,4,6,8,10]\n4", "desc": "Standard: interleaved"},
+    {"input": "[1000000,999999,999998,999997,999996]\n2", "desc": "Edge: near-max values"},
+    {"input": "[1,1000000]\n1", "desc": "Edge: small,big"},
+    {"input": "[1000000,1]\n1", "desc": "Edge: big,small"},
+    {"input": "[3,1,4,1,5,9,2,6,5,3]\n5", "desc": "Note: spec says unique, skip"},
+    {"input": "[7,2,5,9,4,1,8,3,6,10]\n9", "desc": "Standard: random k=9"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10", "desc": "Stress: n=20 ascending k=10"}
+  ]
+}

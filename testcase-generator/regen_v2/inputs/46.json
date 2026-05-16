@@ -1,0 +1,28 @@
+{
+  "pid": 46,
+  "slug": "sum-of-even-numbers-after-queries",
+  "inferred_constraints": "1 <= nums.length <= 1e4, -1e4 <= nums[i] <= 1e4, 1 <= queries.length <= 1e4",
+  "input_format": "line1: nums (JSON array); line2: queries (JSON 2D)",
+  "testcases": [
+    {"input": "[1,2,3,4]\n[[1,0],[-3,1],[-4,0],[2,3]]", "desc": "Edge: example1"},
+    {"input": "[1]\n[[4,0]]", "desc": "Edge: example2"},
+    {"input": "[0]\n[[1,0]]", "desc": "Edge: zero start"},
+    {"input": "[2]\n[[0,0]]", "desc": "Edge: even no change"},
+    {"input": "[2]\n[[1,0]]", "desc": "Edge: even to odd"},
+    {"input": "[1,1,1,1]\n[[1,0],[1,1],[1,2],[1,3]]", "desc": "Standard: all odd, increment to even"},
+    {"input": "[2,2,2,2]\n[[1,0],[1,1],[1,2],[1,3]]", "desc": "Standard: all even, increment to odd"},
+    {"input": "[10000,10000,10000,10000]\n[[10000,0],[-10000,1]]", "desc": "Edge: extremes"},
+    {"input": "[-10000,-10000,-10000,-10000]\n[[10000,0],[10000,1],[1,2]]", "desc": "Edge: negatives"},
+    {"input": "[0,0,0,0,0]\n[[1,0],[2,1],[3,2],[4,3],[5,4]]", "desc": "Standard: all zero accumulating"},
+    {"input": "[1,2,3,4,5]\n[[10,2],[-10,3],[5,0]]", "desc": "Standard: small"},
+    {"input": "[100,200,300,400,500]\n[[1,0],[-1,1],[2,2],[-2,3],[0,4]]", "desc": "Standard: mid values"},
+    {"input": "[2,4,6,8,10]\n[[1,0],[1,1],[1,2],[1,3],[1,4]]", "desc": "Standard: all even, flip all"},
+    {"input": "[1,3,5,7,9]\n[[1,0],[1,1],[1,2],[1,3],[1,4]]", "desc": "Standard: all odd, make even"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]\n[[5,0],[5,1],[5,2],[5,3],[5,4]]", "desc": "Standard: same odd, +odd=even"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9]]", "desc": "Edge: zero queries"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]\n[[1,5]]", "desc": "Edge: single non-zero query"},
+    {"input": "[10000]\n[[-20000,0]]", "desc": "Edge: flip extreme"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[1,9],[-2,8],[3,7],[-4,6]]", "desc": "Standard: alternating signs"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[[1,0],[2,1],[3,2],[4,3],[5,4],[6,5],[7,6],[8,7],[9,8],[10,9]]", "desc": "Stress: 10 queries"}
+  ]
+}
