@@ -1,0 +1,28 @@
+{
+  "pid": 3696,
+  "slug": "minimum-moves-to-capture-the-queen",
+  "inferred_constraints": "1 <= a,b,c,d,e,f <= 8, all positions distinct",
+  "input_format": "line1: a (int); line2: b (int); line3: c (int); line4: d (int); line5: e (int); line6: f (int)",
+  "testcases": [
+    {"input": "1\n1\n8\n8\n2\n3", "desc": "Example 1"},
+    {"input": "5\n3\n3\n4\n5\n2", "desc": "Example 2"},
+    {"input": "1\n1\n2\n2\n3\n3", "desc": "Edge: bishop on diagonal"},
+    {"input": "1\n1\n3\n3\n8\n8", "desc": "Standard bishop captures"},
+    {"input": "1\n1\n8\n8\n1\n8", "desc": "Standard rook same row"},
+    {"input": "4\n4\n5\n5\n4\n1", "desc": "Standard"},
+    {"input": "8\n8\n1\n1\n4\n4", "desc": "Standard"},
+    {"input": "1\n1\n8\n8\n4\n4", "desc": "Standard middle queen"},
+    {"input": "2\n3\n4\n5\n6\n7", "desc": "Standard"},
+    {"input": "1\n2\n3\n4\n5\n6", "desc": "Standard"},
+    {"input": "8\n1\n1\n8\n4\n4", "desc": "Standard corners"},
+    {"input": "1\n1\n1\n8\n8\n1", "desc": "Standard same row/col"},
+    {"input": "3\n3\n5\n5\n3\n5", "desc": "Standard"},
+    {"input": "4\n5\n6\n5\n3\n5", "desc": "Standard"},
+    {"input": "1\n3\n2\n2\n3\n3", "desc": "Standard"},
+    {"input": "5\n5\n7\n7\n3\n3", "desc": "Standard bishop blocked"},
+    {"input": "1\n1\n4\n4\n8\n8", "desc": "Standard"},
+    {"input": "2\n2\n5\n5\n2\n5", "desc": "Standard"},
+    {"input": "8\n8\n5\n5\n2\n2", "desc": "Standard"},
+    {"input": "1\n8\n8\n1\n4\n5", "desc": "Standard"}
+  ]
+}

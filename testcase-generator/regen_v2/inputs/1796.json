@@ -1,0 +1,28 @@
+{
+  "pid": 1796,
+  "slug": "valid-mountain-array",
+  "inferred_constraints": "1 <= arr.length <= 10^4, 0 <= arr[i] <= 10^4",
+  "input_format": "line1: arr (JSON int array)",
+  "testcases": [
+    {"input": "[2,1]", "desc": "Edge: example1 -> false (too small)"},
+    {"input": "[3,5,5]", "desc": "Edge: example2 -> false (no decrease)"},
+    {"input": "[0,3,2,1]", "desc": "Edge: example3 -> true"},
+    {"input": "[0]", "desc": "Edge: n=1 too small"},
+    {"input": "[0,1]", "desc": "Edge: n=2 too small"},
+    {"input": "[1,2,3]", "desc": "Edge: monotonic asc"},
+    {"input": "[3,2,1]", "desc": "Edge: monotonic desc"},
+    {"input": "[1,2,1]", "desc": "Edge: valid mountain n=3"},
+    {"input": "[1,1,1]", "desc": "Edge: all same"},
+    {"input": "[0,0,3,2,1]", "desc": "Edge: flat then mountain (false)"},
+    {"input": "[1,2,3,4,5,4,3,2,1]", "desc": "Standard: symmetric"},
+    {"input": "[1,2,3,3,2,1]", "desc": "Standard: plateau at peak"},
+    {"input": "[1,2,3,2,2,1]", "desc": "Standard: plateau on descent"},
+    {"input": "[10000,0]", "desc": "Standard: descending only"},
+    {"input": "[0,10000]", "desc": "Standard: ascending only"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10000,9,8,7,6,5,4,3,2,1]", "desc": "Standard: valid mountain large"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,9,8,7,6,5,4,3,2,1,0]", "desc": "Stress: 20-elem mountain"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]", "desc": "Stress: 59-elem mountain"},
+    {"input": "[0,2,3,4,5,2,1,0]", "desc": "Special: valid"},
+    {"input": "[0,1,2,3,4,5,4,3,2,1,2,3]", "desc": "Special: 2 peaks"}
+  ]
+}

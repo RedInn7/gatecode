@@ -1,0 +1,28 @@
+{
+  "pid": 1800,
+  "slug": "reverse-string-prefix",
+  "inferred_constraints": "1 <= s.length <= 100, lowercase English, 1 <= k <= s.length",
+  "input_format": "line1: s (raw string)\nline2: k (int)",
+  "testcases": [
+    {"input": "abcdefd\n4", "desc": "Edge: example1"},
+    {"input": "xyxzxe\n6", "desc": "Edge: example2 k=length"},
+    {"input": "abcd\n1", "desc": "Edge: k=1"},
+    {"input": "a\n1", "desc": "Edge: single char"},
+    {"input": "z\n1", "desc": "Edge: single z"},
+    {"input": "abcd\n4", "desc": "Edge: k=length"},
+    {"input": "abcd\n2", "desc": "Edge: k=2"},
+    {"input": "abcd\n3", "desc": "Edge: k=3"},
+    {"input": "ab\n1", "desc": "Edge: 2 chars k=1"},
+    {"input": "ab\n2", "desc": "Edge: 2 chars k=2"},
+    {"input": "hello\n3", "desc": "Standard: hello k=3 -> lehlo"},
+    {"input": "leetcode\n5", "desc": "Standard: leetcode k=5"},
+    {"input": "abcdefghij\n10", "desc": "Standard: 10 chars k=10"},
+    {"input": "abcdefghij\n1", "desc": "Standard: 10 chars k=1"},
+    {"input": "racecar\n7", "desc": "Standard: palindrome reverse full"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\n50", "desc": "Stress: 100 chars k=50"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\n100", "desc": "Stress: 100 chars k=100"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n25", "desc": "Stress: 50 a's k=25"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba\n26", "desc": "Special: rev alphabet k=26"},
+    {"input": "abcabcabcabc\n6", "desc": "Special: repeating k=6"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 3701,
+  "slug": "minimum-cost-path-with-edge-reversals",
+  "inferred_constraints": "2 <= n <= 5*10^4, 1 <= edges.length <= 10^5, 0 <= u,v < n, 1 <= w <= 10^4",
+  "input_format": "line1: n (int); line2: edges (JSON 2D)",
+  "testcases": [
+    {"input": "4\n[[0,1,5],[1,3,10],[2,1,3],[0,2,2]]", "desc": "Example 1"},
+    {"input": "2\n[[1,0,1]]", "desc": "Example 2"},
+    {"input": "2\n[[0,1,5]]", "desc": "Edge: direct"},
+    {"input": "3\n[[0,1,5],[1,2,3]]", "desc": "Edge: chain"},
+    {"input": "3\n[[2,1,5],[1,0,3]]", "desc": "Edge: all reverse"},
+    {"input": "4\n[[0,1,1],[1,2,1],[2,3,1]]", "desc": "Standard chain"},
+    {"input": "4\n[[3,2,1],[2,1,1],[1,0,1]]", "desc": "Standard reverse chain"},
+    {"input": "5\n[[0,1,2],[1,2,3],[2,3,4],[3,4,5]]", "desc": "Standard"},
+    {"input": "5\n[[0,1,10],[0,2,5],[2,1,1],[1,4,2],[2,3,3],[3,4,4]]", "desc": "Standard"},
+    {"input": "3\n[[0,1,100],[2,0,1],[1,2,1]]", "desc": "Standard reverse better"},
+    {"input": "4\n[[0,1,1],[0,2,2],[1,3,3],[2,3,4]]", "desc": "Standard parallel"},
+    {"input": "5\n[[0,1,5],[1,2,3],[2,3,2],[3,4,1]]", "desc": "Standard"},
+    {"input": "5\n[[0,4,10000]]", "desc": "Standard direct big"},
+    {"input": "5\n[[0,1,1],[1,2,1],[3,2,1],[3,4,1]]", "desc": "Standard mixed"},
+    {"input": "6\n[[0,1,1],[1,2,1],[2,3,1],[3,4,1],[4,5,1]]", "desc": "Standard chain 6"},
+    {"input": "6\n[[5,4,1],[4,3,1],[3,2,1],[2,1,1],[1,0,1]]", "desc": "Standard reverse 6"},
+    {"input": "5\n[[0,1,1],[1,0,100],[1,2,1],[2,3,1],[3,4,1]]", "desc": "Standard"},
+    {"input": "4\n[[0,1,5],[2,1,1],[1,3,10]]", "desc": "Standard"},
+    {"input": "5\n[[0,2,1],[2,4,1],[1,0,1],[3,1,1],[4,3,1]]", "desc": "Standard mixed dir"},
+    {"input": "10\n[[0,1,2],[1,2,3],[2,3,4],[3,4,5],[4,5,6],[5,6,7],[6,7,8],[7,8,9],[8,9,10]]", "desc": "Stress chain 10"}
+  ]
+}

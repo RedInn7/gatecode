@@ -20,6 +20,9 @@
     {"pid": 1856, "slug": "design-circular-deque", "reason": "Design class with stateful operations and method-call sequence"},
     {"pid": 1862, "slug": "my-calendar-ii", "reason": "Design class with stateful book/cancel operations"},
     {"pid": 1853, "slug": "insert-delete-getrandom-o1-duplicates-allowed", "reason": "Design class with randomized getRandom — non-deterministic output"},
-    {"pid": 1821, "slug": "find-duplicate-file-in-system", "reason": "Returns list of groups where group order and intra-group order are non-deterministic — needs sorted-set SPJ"}
+    {"pid": 1821, "slug": "find-duplicate-file-in-system", "reason": "Returns list of groups where group order and intra-group order are non-deterministic — needs sorted-set SPJ"},
+    {"pid": 1802, "slug": "array-prototype-last", "reason": "JavaScript only — Array.prototype extension"},
+    {"pid": 1810, "slug": "flower-planting-with-no-adjacent", "reason": "Multiple valid color assignments — output is non-unique"},
+    {"pid": 1801, "slug": "convert-object-to-json-string", "reason": "JavaScript only — JSON.stringify implementation"}
   ]
 }

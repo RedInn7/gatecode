@@ -1,0 +1,28 @@
+{
+  "pid": 1792,
+  "slug": "smallest-common-region",
+  "inferred_constraints": "2 <= regions.length <= 10^4, 2 <= regions[i].length <= 20, 1 <= name lengths <= 20, region1 != region2, valid hierarchy",
+  "input_format": "line1: regions (JSON 2D array of strings)\nline2: region1 (raw string)\nline3: region2 (raw string)",
+  "testcases": [
+    {"input": "[[\"Earth\",\"North America\",\"South America\"],[\"North America\",\"United States\",\"Canada\"],[\"United States\",\"New York\",\"Boston\"],[\"Canada\",\"Ontario\",\"Quebec\"],[\"South America\",\"Brazil\"]]\nQuebec\nNew York", "desc": "Edge: example1"},
+    {"input": "[[\"Earth\",\"NA\",\"SA\"],[\"NA\",\"US\",\"CA\"]]\nNA\nUS", "desc": "Edge: example2 NA is parent"},
+    {"input": "[[\"A\",\"B\"]]\nA\nB", "desc": "Edge: minimum 2-region direct parent-child"},
+    {"input": "[[\"R\",\"A\"],[\"R\",\"B\"]]\nA\nB", "desc": "Edge: siblings"},
+    {"input": "[[\"R\",\"A\",\"B\"]]\nA\nB", "desc": "Edge: 2 children single record"},
+    {"input": "[[\"R\",\"A\"],[\"A\",\"B\"],[\"B\",\"C\"]]\nR\nC", "desc": "Edge: deep chain"},
+    {"input": "[[\"R\",\"A\"],[\"A\",\"B\"]]\nR\nB", "desc": "Edge: ancestor-descendant"},
+    {"input": "[[\"World\",\"Asia\",\"Europe\"],[\"Asia\",\"China\",\"Japan\"],[\"Europe\",\"France\",\"Germany\"]]\nChina\nFrance", "desc": "Standard: cross continents"},
+    {"input": "[[\"World\",\"Asia\",\"Europe\"],[\"Asia\",\"China\",\"Japan\"]]\nChina\nJapan", "desc": "Standard: siblings deep"},
+    {"input": "[[\"Universe\",\"Galaxy\"],[\"Galaxy\",\"SolarSystem\"],[\"SolarSystem\",\"Earth\",\"Mars\"],[\"Earth\",\"Asia\",\"Europe\"],[\"Asia\",\"China\"],[\"Europe\",\"France\"]]\nChina\nMars", "desc": "Standard: deep hierarchy"},
+    {"input": "[[\"R\",\"A\",\"B\",\"C\"],[\"A\",\"D\",\"E\"],[\"B\",\"F\",\"G\"],[\"C\",\"H\",\"I\"]]\nD\nH", "desc": "Standard: tree of 9"},
+    {"input": "[[\"R\",\"A\",\"B\",\"C\"],[\"A\",\"D\",\"E\"],[\"B\",\"F\",\"G\"],[\"C\",\"H\",\"I\"]]\nD\nE", "desc": "Standard: siblings under A"},
+    {"input": "[[\"R\",\"A\"],[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"],[\"D\",\"E\"]]\nC\nE", "desc": "Standard: ancestor in chain"},
+    {"input": "[[\"R\",\"A\",\"B\"],[\"A\",\"AA\",\"AB\"],[\"B\",\"BA\",\"BB\"],[\"AA\",\"AAA\"],[\"BB\",\"BBB\"]]\nAAA\nBBB", "desc": "Standard: deep cross-tree"},
+    {"input": "[[\"R\",\"X\"],[\"X\",\"Y\"]]\nR\nY", "desc": "Standard: deep parent"},
+    {"input": "[[\"R\",\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\",\"I\",\"J\"]]\nA\nJ", "desc": "Stress: many siblings"},
+    {"input": "[[\"L0\",\"L1A\",\"L1B\"],[\"L1A\",\"L2A\",\"L2B\"],[\"L1B\",\"L2C\",\"L2D\"],[\"L2A\",\"L3A\",\"L3B\"],[\"L2B\",\"L3C\",\"L3D\"],[\"L2C\",\"L3E\",\"L3F\"],[\"L2D\",\"L3G\",\"L3H\"]]\nL3A\nL3H", "desc": "Stress: balanced 3-level binary"},
+    {"input": "[[\"R\",\"A\",\"B\"],[\"A\",\"C\",\"D\",\"E\"],[\"B\",\"F\",\"G\",\"H\"],[\"C\",\"I\",\"J\"],[\"D\",\"K\",\"L\"],[\"E\",\"M\",\"N\"],[\"F\",\"O\",\"P\"],[\"G\",\"Q\",\"R1\"],[\"H\",\"S\",\"T\"]]\nI\nT", "desc": "Stress: 3-ary tree"},
+    {"input": "[[\"Earth\",\"USA\",\"CN\"],[\"USA\",\"NY\",\"LA\"],[\"CN\",\"BJ\",\"SH\"]]\nNY\nLA", "desc": "Special: siblings"},
+    {"input": "[[\"Earth\",\"USA\",\"CN\"],[\"USA\",\"NY\",\"LA\"]]\nUSA\nNY", "desc": "Special: parent-child"}
+  ]
+}

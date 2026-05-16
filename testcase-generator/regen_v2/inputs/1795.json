@@ -1,0 +1,28 @@
+{
+  "pid": 1795,
+  "slug": "count-ways-to-distribute-candies",
+  "inferred_constraints": "1 <= k <= n <= 1000",
+  "input_format": "line1: n (int)\nline2: k (int)",
+  "testcases": [
+    {"input": "3\n2", "desc": "Edge: example1 -> 3"},
+    {"input": "4\n2", "desc": "Edge: example2 -> 7"},
+    {"input": "20\n5", "desc": "Edge: example3 -> 206085257"},
+    {"input": "1\n1", "desc": "Edge: minimum"},
+    {"input": "2\n1", "desc": "Edge: n=2 k=1"},
+    {"input": "2\n2", "desc": "Edge: n=k=2"},
+    {"input": "10\n1", "desc": "Edge: k=1"},
+    {"input": "10\n10", "desc": "Edge: n=k"},
+    {"input": "5\n3", "desc": "Standard: small"},
+    {"input": "7\n3", "desc": "Standard: small"},
+    {"input": "10\n5", "desc": "Standard: half"},
+    {"input": "20\n10", "desc": "Standard: 20/10"},
+    {"input": "50\n25", "desc": "Standard: 50/25"},
+    {"input": "100\n50", "desc": "Standard: 100/50"},
+    {"input": "500\n250", "desc": "Stress: 500/250"},
+    {"input": "1000\n500", "desc": "Stress: 1000/500"},
+    {"input": "1000\n1", "desc": "Stress: 1000 k=1"},
+    {"input": "1000\n1000", "desc": "Stress: 1000/1000"},
+    {"input": "100\n1", "desc": "Special: 100 k=1"},
+    {"input": "100\n100", "desc": "Special: 100/100"}
+  ]
+}

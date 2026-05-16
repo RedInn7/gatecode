@@ -1,0 +1,28 @@
+{
+  "pid": 1798,
+  "slug": "maximum-subarray-sum-with-length-divisible-by-k",
+  "inferred_constraints": "1 <= k <= nums.length <= 2*10^5, -10^9 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON int array)\nline2: k (int)",
+  "testcases": [
+    {"input": "[1,2]\n1", "desc": "Edge: smallest k=1"},
+    {"input": "[1,2]\n2", "desc": "Edge: k=n"},
+    {"input": "[5]\n1", "desc": "Edge: single elem k=1"},
+    {"input": "[-5]\n1", "desc": "Edge: negative single"},
+    {"input": "[0,0]\n1", "desc": "Edge: zeros"},
+    {"input": "[1000000000,1000000000]\n2", "desc": "Edge: max sums"},
+    {"input": "[-1000000000,-1000000000]\n2", "desc": "Edge: min sums"},
+    {"input": "[1,2,3]\n2", "desc": "Edge: 3 elem k=2"},
+    {"input": "[1,2,3]\n3", "desc": "Edge: 3 elem k=3"},
+    {"input": "[1,-1,1,-1,1,-1]\n2", "desc": "Standard: alt k=2"},
+    {"input": "[5,5,5,5,5]\n3", "desc": "Standard: all same k=3"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3", "desc": "Standard: asc k=3"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n3", "desc": "Standard: desc k=3"},
+    {"input": "[-1,-2,-3,-4,-5,1,2,3,4,5]\n5", "desc": "Standard: mix k=5"},
+    {"input": "[1000000000,-1000000000,1000000000,-1000000000]\n2", "desc": "Standard: alt extremes k=2"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n4", "desc": "Stress: 20 asc k=4"},
+    {"input": "[-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20]\n5", "desc": "Stress: 20 neg desc k=5"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000]\n5", "desc": "Stress: 10 max k=5"},
+    {"input": "[7,7,7,7,7,7]\n3", "desc": "Special: all 7 k=3"},
+    {"input": "[0,0,0,0,0,0]\n2", "desc": "Special: all zero"}
+  ]
+}

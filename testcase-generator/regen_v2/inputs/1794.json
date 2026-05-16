@@ -1,0 +1,28 @@
+{
+  "pid": 1794,
+  "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+  "inferred_constraints": "1 <= seq.length <= 10000, valid parentheses string",
+  "input_format": "line1: seq (raw string)",
+  "testcases": [
+    {"input": "(()())", "desc": "Edge: example1"},
+    {"input": "()(())()", "desc": "Edge: example2"},
+    {"input": "()", "desc": "Edge: minimum size"},
+    {"input": "(())", "desc": "Edge: depth 2"},
+    {"input": "((()))", "desc": "Edge: depth 3"},
+    {"input": "(((())))", "desc": "Edge: depth 4"},
+    {"input": "()()()", "desc": "Edge: 3 sequential pairs"},
+    {"input": "()()()()()()", "desc": "Edge: 6 sequential pairs"},
+    {"input": "((()))((()))", "desc": "Standard: 2 depth-3 groups"},
+    {"input": "(()(()))", "desc": "Standard: mixed depth"},
+    {"input": "(()()()(()()))", "desc": "Standard: complex"},
+    {"input": "(((((())))))", "desc": "Standard: deep nest"},
+    {"input": "()()()(((((())))))()()", "desc": "Standard: mix"},
+    {"input": "((((((((((()))))))))))", "desc": "Standard: 11 deep"},
+    {"input": "()()(())(())()()", "desc": "Standard: alternating depths"},
+    {"input": "(((((((((((((((((((())))))))))))))))))))", "desc": "Stress: 20 deep"},
+    {"input": "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()", "desc": "Stress: 50 pairs"},
+    {"input": "((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))", "desc": "Stress: 100 deep"},
+    {"input": "((()(()))(()))", "desc": "Special: complex 14"},
+    {"input": "(()((())()))", "desc": "Special: nested 12"}
+  ]
+}
