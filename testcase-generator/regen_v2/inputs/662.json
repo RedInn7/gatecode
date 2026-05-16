@@ -1,0 +1,28 @@
+{
+  "pid": 662,
+  "slug": "best-team-with-no-conflicts",
+  "inferred_constraints": "1 <= scores.length == ages.length <= 1000; 1 <= scores[i] <= 1e6; 1 <= ages[i] <= 1000",
+  "input_format": "line1: scores (JSON array); line2: ages (JSON array)",
+  "testcases": [
+    {"input": "[1,3,5,10,15]\n[1,2,3,4,5]", "desc": "Edge: example1 all valid"},
+    {"input": "[4,5,6,5]\n[2,1,2,1]", "desc": "Edge: example2"},
+    {"input": "[1,2,3,5]\n[8,9,10,1]", "desc": "Edge: example3"},
+    {"input": "[1]\n[1]", "desc": "Edge: single player"},
+    {"input": "[1000000]\n[1]", "desc": "Edge: max score"},
+    {"input": "[1]\n[1000]", "desc": "Edge: max age"},
+    {"input": "[5,5]\n[1,2]", "desc": "Edge: same score diff age"},
+    {"input": "[5,5]\n[1,1]", "desc": "Edge: same score same age"},
+    {"input": "[1,2,3]\n[3,2,1]", "desc": "Standard: descending ages"},
+    {"input": "[3,2,1]\n[1,2,3]", "desc": "Standard: scores match ages"},
+    {"input": "[10,20,30,40,50]\n[5,5,5,5,5]", "desc": "Standard: same age"},
+    {"input": "[10,10,10,10,10]\n[1,2,3,4,5]", "desc": "Standard: same score"},
+    {"input": "[100,50,80,90,60]\n[1,2,3,4,5]", "desc": "Standard: mixed"},
+    {"input": "[5,10,15,20,25]\n[10,10,10,10,10]", "desc": "Standard: ascending scores same age"},
+    {"input": "[20,1,30,2,40,3]\n[1,2,3,4,5,6]", "desc": "Standard: irregular"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: opposite"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 matching"},
+    {"input": "[1000000,500000,250000,125000,62500]\n[5,4,3,2,1]", "desc": "Stress: decreasing scores"},
+    {"input": "[100,100,100,100,100,100,100,100,100,100]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Stress: same score"},
+    {"input": "[5,3,7,6,4,2]\n[1,2,3,4,5,6]", "desc": "Special: conflict order killer"}
+  ]
+}

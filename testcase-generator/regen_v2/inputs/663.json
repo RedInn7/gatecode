@@ -1,0 +1,28 @@
+{
+  "pid": 663,
+  "slug": "minimum-time-to-type-word-using-special-typewriter",
+  "inferred_constraints": "1 <= word.length <= 100; word lowercase letters",
+  "input_format": "line1: word (string)",
+  "testcases": [
+    {"input": "abc", "desc": "Edge: example1"},
+    {"input": "bza", "desc": "Edge: example2"},
+    {"input": "zjpc", "desc": "Edge: example3"},
+    {"input": "a", "desc": "Edge: single a (already at a)"},
+    {"input": "z", "desc": "Edge: single z"},
+    {"input": "aa", "desc": "Edge: stay on a"},
+    {"input": "zz", "desc": "Edge: 2 z's"},
+    {"input": "az", "desc": "Edge: opposite ends, prefer counter"},
+    {"input": "abcdefghij", "desc": "Standard: alphabet start"},
+    {"input": "jihgfedcba", "desc": "Standard: reverse"},
+    {"input": "aaaaaaaa", "desc": "Standard: all a"},
+    {"input": "zzzzzzzz", "desc": "Standard: all z"},
+    {"input": "abz", "desc": "Standard: a to b to z"},
+    {"input": "zba", "desc": "Standard: z to b to a"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: full alphabet"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Standard: full reverse"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a's"},
+    {"input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", "desc": "Stress: 100 z's"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst", "desc": "Stress: 100 alphabet repeat"},
+    {"input": "anbxocdypezqfrgshtiukjvlwmnab", "desc": "Special: zigzag killer"}
+  ]
+}

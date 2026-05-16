@@ -1,0 +1,28 @@
+{
+  "pid": 624,
+  "slug": "remove-duplicates-from-an-unsorted-linked-list",
+  "inferred_constraints": "Number of nodes in [1, 1e5]; 1 <= Node.val <= 1e5",
+  "input_format": "line1: head (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,2]", "desc": "Edge: example1"},
+    {"input": "[2,1,1,2]", "desc": "Edge: example2 all dup"},
+    {"input": "[3,2,2,1,3,2,4]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: single node"},
+    {"input": "[100000]", "desc": "Edge: max single"},
+    {"input": "[1,1]", "desc": "Edge: pair dup"},
+    {"input": "[1,2]", "desc": "Edge: distinct pair"},
+    {"input": "[1,1,1]", "desc": "Edge: triple same"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: all unique"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: all pairs"},
+    {"input": "[5,4,3,2,1,5,4,3,2,1]", "desc": "Standard: full dup"},
+    {"input": "[1,2,3,4,5,1]", "desc": "Standard: first dup at end"},
+    {"input": "[1,2,3,4,5,5]", "desc": "Standard: last dup"},
+    {"input": "[1,2,1,3,1,4,1,5]", "desc": "Standard: many 1s"},
+    {"input": "[1,2,3,2,1,4,5,4]", "desc": "Standard: mixed dup"},
+    {"input": "[10,20,30,40,50]", "desc": "Standard: all distinct big"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]", "desc": "Stress: 20 all dup"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 20 same"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]", "desc": "Stress: 10 distinct"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1]", "desc": "Special: palindrome dup killer"}
+  ]
+}

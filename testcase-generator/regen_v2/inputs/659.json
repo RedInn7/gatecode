@@ -1,0 +1,28 @@
+{
+  "pid": 659,
+  "slug": "transform-array-by-parity",
+  "inferred_constraints": "1 <= nums.length <= 100; 0 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[4,3,2,1]", "desc": "Edge: example1"},
+    {"input": "[1,5,1,4,2]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single odd"},
+    {"input": "[2]", "desc": "Edge: single even"},
+    {"input": "[0]", "desc": "Edge: zero is even"},
+    {"input": "[0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,1]", "desc": "Edge: all odd"},
+    {"input": "[1000]", "desc": "Edge: max value"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: alternating"},
+    {"input": "[2,4,6,8,10]", "desc": "Standard: all even"},
+    {"input": "[1,3,5,7,9]", "desc": "Standard: all odd"},
+    {"input": "[1,2,1,2,1,2]", "desc": "Standard: alternating"},
+    {"input": "[1000,999,998,997]", "desc": "Standard: big values"},
+    {"input": "[0,1,2,3,4]", "desc": "Standard: 0-4"},
+    {"input": "[2,2,2,1,1,1]", "desc": "Standard: separated"},
+    {"input": "[1,1,1,2,2,2]", "desc": "Standard: odd then even"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 mixed"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 odd"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Stress: 50 even"},
+    {"input": "[1000,999,998,997,996,995,994,993,992,991]", "desc": "Special: descending mix killer"}
+  ]
+}

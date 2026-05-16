@@ -1,0 +1,28 @@
+{
+  "pid": 647,
+  "slug": "maximum-difference-between-increasing-elements",
+  "inferred_constraints": "n == nums.length; 2 <= n <= 1000; 1 <= nums[i] <= 1e9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[7,1,5,4]", "desc": "Edge: example1"},
+    {"input": "[9,4,3,2]", "desc": "Edge: example2 no increasing"},
+    {"input": "[1,5,2,10]", "desc": "Edge: example3"},
+    {"input": "[1,2]", "desc": "Edge: minimum size increasing"},
+    {"input": "[2,1]", "desc": "Edge: minimum decreasing"},
+    {"input": "[1,1]", "desc": "Edge: equal elements no increase"},
+    {"input": "[1000000000,1]", "desc": "Edge: max range no increase"},
+    {"input": "[1,1000000000]", "desc": "Edge: max range increasing"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: monotonic increasing"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: monotonic decreasing"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: all same"},
+    {"input": "[10,1,10,1,10]", "desc": "Standard: alternating"},
+    {"input": "[1,10,1,10,1]", "desc": "Standard: alternating reverse"},
+    {"input": "[5,8,3,9,2,7]", "desc": "Standard: mixed"},
+    {"input": "[100,90,80,70,60,150]", "desc": "Standard: dip then rise"},
+    {"input": "[3,1,4,1,5,9,2,6]", "desc": "Standard: random"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
+    {"input": "[20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]", "desc": "Stress: 20 descending"},
+    {"input": "[1000000000,999999999,1000000000,999999999,1000000000]", "desc": "Stress: max alternating"},
+    {"input": "[1,1000000000,1,1000000000,1,1000000000]", "desc": "Special: extreme alternating killer"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 642,
+  "slug": "maximum-size-subarray-sum-equals-k",
+  "inferred_constraints": "1 <= nums.length <= 2e5; -1e4 <= nums[i] <= 1e4; -1e9 <= k <= 1e9",
+  "input_format": "line1: nums (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[1,-1,5,-2,3]\n3", "desc": "Edge: example1"},
+    {"input": "[-2,-1,2,1]\n1", "desc": "Edge: example2"},
+    {"input": "[1]\n1", "desc": "Edge: single match"},
+    {"input": "[1]\n0", "desc": "Edge: single no match"},
+    {"input": "[0]\n0", "desc": "Edge: zero match"},
+    {"input": "[0,0,0,0]\n0", "desc": "Edge: all zeros"},
+    {"input": "[10000,-10000]\n0", "desc": "Edge: extreme cancel"},
+    {"input": "[1,2,3,4,5]\n15", "desc": "Standard: total sum"},
+    {"input": "[1,2,3,4,5]\n0", "desc": "Standard: no zero subarray"},
+    {"input": "[-1,1,-1,1,-1]\n0", "desc": "Standard: many cancels"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n5", "desc": "Standard: sum 5 in 5 ones"},
+    {"input": "[5,5,5,5,5]\n10", "desc": "Standard: pair sum"},
+    {"input": "[-1,-1,1,1,1,-1,-1,1,1]\n0", "desc": "Standard: mixed cancel"},
+    {"input": "[2,4,6,8,10]\n12", "desc": "Standard: 2+4+6"},
+    {"input": "[1,2,3,-3,-2,-1,4,5]\n9", "desc": "Standard: needs span"},
+    {"input": "[3,-1,-1,3]\n4", "desc": "Standard: ends match"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n100", "desc": "Stress: 20 sum=210, target 100"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n15", "desc": "Stress: 30 ones target 15"},
+    {"input": "[10000,-10000,10000,-10000,10000,-10000]\n0", "desc": "Stress: extreme alternation"},
+    {"input": "[1,2,3,4,5,-5,-4,-3,-2,-1]\n0", "desc": "Special: half-cancel killer"}
+  ]
+}

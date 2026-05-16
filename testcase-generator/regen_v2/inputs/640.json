@@ -1,0 +1,28 @@
+{
+  "pid": 640,
+  "slug": "majority-element-ii",
+  "inferred_constraints": "1 <= nums.length <= 5e4; -1e9 <= nums[i] <= 1e9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[3,2,3]", "desc": "Edge: example1"},
+    {"input": "[1]", "desc": "Edge: example2 single"},
+    {"input": "[1,2]", "desc": "Edge: example3 both > n/3"},
+    {"input": "[1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1000000000]", "desc": "Edge: max single"},
+    {"input": "[-1000000000]", "desc": "Edge: min single"},
+    {"input": "[1,2,3]", "desc": "Edge: no majority"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Edge: all tied at n/3"},
+    {"input": "[1,1,1,2,3]", "desc": "Standard: 1 only majority"},
+    {"input": "[1,1,2,2,3]", "desc": "Standard: 1 and 2 majority"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: no majority"},
+    {"input": "[1,1,1,1,2,3,4,5,6,7]", "desc": "Standard: 1 only"},
+    {"input": "[2,1,1,3,1,4,5,6]", "desc": "Standard: 1 just >n/3"},
+    {"input": "[1,1,2,2,2,3,3,3]", "desc": "Standard: 2 and 3 majority"},
+    {"input": "[-1,-1,-1,-2,-2,-2,-3]", "desc": "Standard: negatives"},
+    {"input": "[1000000000,1000000000,1000000000]", "desc": "Standard: max repeated"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 30 same"},
+    {"input": "[1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3]", "desc": "Stress: 30 triple pattern"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3]", "desc": "Stress: 3 groups of 10"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]", "desc": "Special: 1 and 2 alternating killer"}
+  ]
+}

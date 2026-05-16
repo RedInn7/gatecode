@@ -1,0 +1,28 @@
+{
+  "pid": 634,
+  "slug": "count-caesar-cipher-pairs",
+  "inferred_constraints": "1 <= words.length <= 1e5; 1 <= words[i].length <= 100; sum of words[i].length <= 1e5; lowercase letters",
+  "input_format": "line1: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"fusion\",\"layout\"]", "desc": "Edge: example1"},
+    {"input": "[\"front\",\"sweep\"]", "desc": "Edge: example2 same difference vector"},
+    {"input": "[\"a\"]", "desc": "Edge: single word"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: similar single letters"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: identical singles"},
+    {"input": "[\"z\",\"a\"]", "desc": "Edge: extreme similar (cyclic)"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: not similar (different diff)"},
+    {"input": "[\"ab\",\"bc\"]", "desc": "Edge: similar"},
+    {"input": "[\"abc\",\"bcd\",\"cde\"]", "desc": "Standard: triple chain"},
+    {"input": "[\"hello\",\"world\"]", "desc": "Standard: not similar"},
+    {"input": "[\"abc\",\"xyz\"]", "desc": "Standard: similar end to start"},
+    {"input": "[\"aa\",\"bb\",\"cc\",\"dd\"]", "desc": "Standard: all similar (same pattern)"},
+    {"input": "[\"ab\",\"bc\",\"cd\",\"de\",\"ef\"]", "desc": "Standard: 5 similar"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: all similar singles"},
+    {"input": "[\"abcde\",\"bcdef\",\"cdefg\"]", "desc": "Standard: 5-char chain"},
+    {"input": "[\"abc\",\"abd\"]", "desc": "Standard: similar? no last diff"},
+    {"input": "[\"aa\",\"aa\",\"aa\",\"aa\",\"aa\",\"aa\",\"aa\",\"aa\",\"aa\",\"aa\"]", "desc": "Stress: 10 identical"},
+    {"input": "[\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\",\"abcde\"]", "desc": "Stress: 10 identical longer"},
+    {"input": "[\"abc\",\"bcd\",\"cde\",\"def\",\"efg\",\"fgh\",\"ghi\",\"hij\",\"ijk\",\"jkl\",\"klm\",\"lmn\",\"mno\",\"nop\",\"opq\",\"pqr\",\"qrs\",\"rst\",\"stu\",\"tuv\"]", "desc": "Stress: 20 chain"},
+    {"input": "[\"abcd\",\"bcde\",\"cdef\",\"defg\",\"efgh\",\"fghi\",\"ghij\",\"hijk\",\"ijkl\",\"jklm\"]", "desc": "Special: 10 cyclic shifts killer"}
+  ]
+}

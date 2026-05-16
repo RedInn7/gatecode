@@ -1,0 +1,28 @@
+{
+  "pid": 667,
+  "slug": "reschedule-meetings-for-maximum-free-time-i",
+  "inferred_constraints": "1 <= eventTime <= 1e9; 1 <= k <= startTime.length; 1 <= startTime.length == endTime.length <= 1e5; 0 <= startTime[i] < endTime[i] <= eventTime; meetings non-overlapping",
+  "input_format": "line1: eventTime (int); line2: k (int); line3: startTime (JSON array); line4: endTime (JSON array)",
+  "testcases": [
+    {"input": "5\n1\n[1,3]\n[2,5]", "desc": "Edge: example1"},
+    {"input": "10\n1\n[0,2,9]\n[1,4,10]", "desc": "Edge: example2"},
+    {"input": "5\n2\n[0,1,2,3,4]\n[1,2,3,4,5]", "desc": "Edge: example3"},
+    {"input": "10\n1\n[1]\n[2]", "desc": "Edge: single meeting"},
+    {"input": "10\n1\n[0]\n[10]", "desc": "Edge: meeting fills event"},
+    {"input": "100\n1\n[10]\n[20]", "desc": "Edge: small meeting big event"},
+    {"input": "10\n2\n[1,3]\n[2,4]", "desc": "Edge: 2 meetings k=2"},
+    {"input": "20\n1\n[5]\n[15]", "desc": "Standard: middle meeting"},
+    {"input": "20\n2\n[1,5,10,15]\n[3,7,12,18]", "desc": "Standard: 4 meetings k=2"},
+    {"input": "20\n3\n[1,5,10,15]\n[3,7,12,18]", "desc": "Standard: 4 meetings k=3"},
+    {"input": "30\n1\n[1,10,20]\n[5,15,25]", "desc": "Standard: 3 meetings"},
+    {"input": "50\n2\n[5,15,25,35]\n[10,20,30,40]", "desc": "Standard: even spacing"},
+    {"input": "100\n2\n[10,30,50,70,90]\n[20,40,60,80,100]", "desc": "Standard: 5 meetings"},
+    {"input": "100\n5\n[10,20,30,40,50,60,70,80,90]\n[15,25,35,45,55,65,75,85,95]", "desc": "Standard: many small"},
+    {"input": "1000\n3\n[100,300,500]\n[200,400,600]", "desc": "Standard: spread"},
+    {"input": "10\n1\n[0,3,6]\n[2,5,8]", "desc": "Standard: gaps"},
+    {"input": "1000000000\n5\n[100000000,200000000,300000000]\n[150000000,250000000,350000000]", "desc": "Stress: max event time"},
+    {"input": "1000\n1\n[0,100,200,300,400,500,600,700,800,900]\n[50,150,250,350,450,550,650,750,850,950]", "desc": "Stress: 10 meetings"},
+    {"input": "100\n10\n[0,10,20,30,40,50,60,70,80,90]\n[5,15,25,35,45,55,65,75,85,95]", "desc": "Stress: k=10"},
+    {"input": "50\n2\n[10,20]\n[15,25]", "desc": "Special: simple killer"}
+  ]
+}

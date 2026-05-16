@@ -360,6 +360,11 @@
       "pid": 601,
       "slug": "shuffle-an-array",
       "reason": "Design class with randomized shuffle method \u2014 non-deterministic output"
+    },
+    {
+      "pid": 658,
+      "slug": "permutations-ii",
+      "reason": "Permutations list with any order \u2014 non-deterministic, may break sorted comparison on nested arrays"
     }
   ]
 }

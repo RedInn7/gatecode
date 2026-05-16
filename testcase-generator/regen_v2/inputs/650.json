@@ -1,0 +1,28 @@
+{
+  "pid": 650,
+  "slug": "find-subarrays-with-equal-sum",
+  "inferred_constraints": "2 <= nums.length <= 1000; -1e9 <= nums[i] <= 1e9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[4,2,4]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: example2 false"},
+    {"input": "[0,0,0]", "desc": "Edge: example3"},
+    {"input": "[1,2]", "desc": "Edge: minimum no pair"},
+    {"input": "[1,1]", "desc": "Edge: minimum"},
+    {"input": "[0,0]", "desc": "Edge: zero pair"},
+    {"input": "[1,2,1,2]", "desc": "Edge: repeating"},
+    {"input": "[5,5,5,5]", "desc": "Standard: all same"},
+    {"input": "[1,2,3,2,1]", "desc": "Standard: palindrome"},
+    {"input": "[1,2,3,4,5,6,5,4,3,2,1]", "desc": "Standard: long palindrome"},
+    {"input": "[10,20,30,40]", "desc": "Standard: distinct"},
+    {"input": "[1,2,3,4,1,2,3,4]", "desc": "Standard: repeating sequence"},
+    {"input": "[-1,1,-1,1]", "desc": "Standard: alternating"},
+    {"input": "[-1,1,2,-2]", "desc": "Standard: cancel pairs"},
+    {"input": "[1000000000,-1000000000,1000000000,-1000000000]", "desc": "Standard: extreme alternating"},
+    {"input": "[7,3,5,1,9]", "desc": "Standard: random"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Stress: 20 alternating"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 sequential"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000]", "desc": "Stress: max all same"},
+    {"input": "[1,2,3,4,5,1,2,3,4,5]", "desc": "Special: repeating block killer"}
+  ]
+}

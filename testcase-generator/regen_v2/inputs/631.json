@@ -1,0 +1,28 @@
+{
+  "pid": 631,
+  "slug": "minimum-number-game",
+  "inferred_constraints": "2 <= nums.length <= 100; nums.length is even; 1 <= nums[i] <= 100",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[5,4,2,3]", "desc": "Edge: example1"},
+    {"input": "[2,5]", "desc": "Edge: example2 minimum"},
+    {"input": "[1,1]", "desc": "Edge: pair same"},
+    {"input": "[1,2]", "desc": "Edge: ascending"},
+    {"input": "[2,1]", "desc": "Edge: descending"},
+    {"input": "[100,100]", "desc": "Edge: max same"},
+    {"input": "[1,100]", "desc": "Edge: extreme range"},
+    {"input": "[100,1]", "desc": "Edge: extreme reverse"},
+    {"input": "[1,2,3,4]", "desc": "Standard: ascending 4"},
+    {"input": "[4,3,2,1]", "desc": "Standard: descending 4"},
+    {"input": "[1,1,2,2]", "desc": "Standard: pairs"},
+    {"input": "[5,5,5,5,5,5]", "desc": "Standard: all same 6"},
+    {"input": "[3,1,4,1,5,9,2,6]", "desc": "Standard: random 8"},
+    {"input": "[1,2,3,4,5,6,7,8]", "desc": "Standard: 8 sequential"},
+    {"input": "[8,7,6,5,4,3,2,1]", "desc": "Standard: 8 descending"},
+    {"input": "[10,20,30,40,50,60,70,80]", "desc": "Standard: tens"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 sequential"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81]", "desc": "Stress: 20 descending big"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 20 same"},
+    {"input": "[50,50,50,50,50,50,50,50,50,50]", "desc": "Special: 10 same killer"}
+  ]
+}

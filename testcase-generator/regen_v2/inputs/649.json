@@ -1,0 +1,28 @@
+{
+  "pid": 649,
+  "slug": "maximum-value-of-an-ordered-triplet-ii",
+  "inferred_constraints": "3 <= nums.length <= 1e5; 1 <= nums[i] <= 1e6",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[12,6,1,2,7]", "desc": "Edge: example1"},
+    {"input": "[1,10,3,4,19]", "desc": "Edge: example2"},
+    {"input": "[1,2,3]", "desc": "Edge: minimum size"},
+    {"input": "[3,2,1]", "desc": "Edge: descending negative"},
+    {"input": "[1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1000000,1,1000000]", "desc": "Edge: max range"},
+    {"input": "[1000000,1000000,1000000]", "desc": "Edge: max all same"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same 5"},
+    {"input": "[10,5,15,20,25]", "desc": "Standard: middle dip"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[10,1,10,1,10]", "desc": "Standard: alternating"},
+    {"input": "[100,1,100,1,100]", "desc": "Standard: alternating big"},
+    {"input": "[5,10,1,15,2,20]", "desc": "Standard: peaks and valleys"},
+    {"input": "[1,1000000,1,1000000,1]", "desc": "Standard: extreme alternating"},
+    {"input": "[10,5,15,3,7,12,18]", "desc": "Standard: BST-like"},
+    {"input": "[1000000,1,1,1,1,1,1,1,1,1000000]", "desc": "Stress: max ends middle ones"},
+    {"input": "[1,1000000,2,999999,3,999998,4,999997,5,999996]", "desc": "Stress: alternating extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 sequential"},
+    {"input": "[100,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,99]", "desc": "Special: edges high middle low killer"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 635,
+  "slug": "bomb-enemy",
+  "inferred_constraints": "1 <= m,n <= 500; grid[i][j] is 'W', 'E', or '0'",
+  "input_format": "line1: grid (JSON 2D of strings)",
+  "testcases": [
+    {"input": "[[\"0\",\"E\",\"0\",\"0\"],[\"E\",\"0\",\"W\",\"E\"],[\"0\",\"E\",\"0\",\"0\"]]", "desc": "Edge: example1"},
+    {"input": "[[\"W\",\"W\",\"W\"],[\"0\",\"0\",\"0\"],[\"E\",\"E\",\"E\"]]", "desc": "Edge: example2"},
+    {"input": "[[\"0\"]]", "desc": "Edge: 1x1 empty"},
+    {"input": "[[\"E\"]]", "desc": "Edge: 1x1 enemy no place"},
+    {"input": "[[\"W\"]]", "desc": "Edge: 1x1 wall no place"},
+    {"input": "[[\"0\",\"E\"]]", "desc": "Edge: 1x2 empty+enemy"},
+    {"input": "[[\"0\",\"0\",\"0\"]]", "desc": "Edge: 1xN all empty"},
+    {"input": "[[\"E\",\"E\",\"E\"]]", "desc": "Edge: 1xN all enemy"},
+    {"input": "[[\"0\",\"E\",\"0\"],[\"E\",\"0\",\"E\"],[\"0\",\"E\",\"0\"]]", "desc": "Standard: cross enemies"},
+    {"input": "[[\"E\",\"E\",\"E\"],[\"E\",\"0\",\"E\"],[\"E\",\"E\",\"E\"]]", "desc": "Standard: center bomb"},
+    {"input": "[[\"0\",\"W\",\"0\"],[\"W\",\"0\",\"W\"],[\"0\",\"W\",\"0\"]]", "desc": "Standard: cross walls"},
+    {"input": "[[\"E\",\"0\",\"E\",\"0\",\"E\"]]", "desc": "Standard: alternating"},
+    {"input": "[[\"0\",\"0\",\"0\"],[\"0\",\"E\",\"0\"],[\"0\",\"0\",\"0\"]]", "desc": "Standard: single enemy center"},
+    {"input": "[[\"E\",\"0\",\"E\",\"0\",\"E\"],[\"0\",\"E\",\"0\",\"E\",\"0\"],[\"E\",\"0\",\"E\",\"0\",\"E\"]]", "desc": "Standard: pattern"},
+    {"input": "[[\"E\",\"W\",\"E\"],[\"W\",\"0\",\"W\"],[\"E\",\"W\",\"E\"]]", "desc": "Standard: bomb isolated"},
+    {"input": "[[\"E\",\"E\",\"E\",\"E\",\"E\",\"0\",\"E\",\"E\",\"E\",\"E\",\"E\"]]", "desc": "Standard: line with bomb spot"},
+    {"input": "[[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"0\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"]]", "desc": "Stress: 5x5 all E one 0"},
+    {"input": "[[\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\"],[\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\"],[\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\"],[\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\",\"0\",\"E\"]]", "desc": "Stress: 4x10 checker"},
+    {"input": "[[\"E\",\"W\",\"E\",\"W\",\"E\"],[\"W\",\"E\",\"W\",\"E\",\"W\"],[\"E\",\"W\",\"0\",\"W\",\"E\"],[\"W\",\"E\",\"W\",\"E\",\"W\"],[\"E\",\"W\",\"E\",\"W\",\"E\"]]", "desc": "Stress: walls limit center"},
+    {"input": "[[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"W\",\"W\",\"W\",\"E\"],[\"E\",\"W\",\"0\",\"W\",\"E\"],[\"E\",\"W\",\"W\",\"W\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"]]", "desc": "Special: bomb caged by walls killer"}
+  ]
+}

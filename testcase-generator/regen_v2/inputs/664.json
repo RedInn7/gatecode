@@ -1,0 +1,28 @@
+{
+  "pid": 664,
+  "slug": "excel-sheet-column-title",
+  "inferred_constraints": "1 <= columnNumber <= 2^31 - 1",
+  "input_format": "line1: columnNumber (int)",
+  "testcases": [
+    {"input": "1", "desc": "Edge: example1 A"},
+    {"input": "28", "desc": "Edge: example2 AB"},
+    {"input": "701", "desc": "Edge: example3 ZY"},
+    {"input": "26", "desc": "Edge: Z"},
+    {"input": "27", "desc": "Edge: AA"},
+    {"input": "52", "desc": "Edge: AZ"},
+    {"input": "53", "desc": "Edge: BA"},
+    {"input": "676", "desc": "Edge: YZ"},
+    {"input": "702", "desc": "Standard: ZZ"},
+    {"input": "703", "desc": "Standard: AAA"},
+    {"input": "1000", "desc": "Standard: ALL"},
+    {"input": "10000", "desc": "Standard: NTP"},
+    {"input": "100000", "desc": "Standard: 5 digit"},
+    {"input": "1000000", "desc": "Standard: 6 digit"},
+    {"input": "16384", "desc": "Standard: XFD (Excel max)"},
+    {"input": "16383", "desc": "Standard: XFC"},
+    {"input": "2147483647", "desc": "Stress: max int"},
+    {"input": "1000000000", "desc": "Stress: billion"},
+    {"input": "26000", "desc": "Stress: 26k"},
+    {"input": "52000", "desc": "Special: 52k killer"}
+  ]
+}

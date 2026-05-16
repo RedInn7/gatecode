@@ -1,0 +1,28 @@
+{
+  "pid": 633,
+  "slug": "sum-of-square-numbers",
+  "inferred_constraints": "0 <= c <= 2^31 - 1",
+  "input_format": "line1: c (int)",
+  "testcases": [
+    {"input": "5", "desc": "Edge: example1"},
+    {"input": "3", "desc": "Edge: example2"},
+    {"input": "0", "desc": "Edge: zero = 0^2 + 0^2"},
+    {"input": "1", "desc": "Edge: one = 1^2 + 0^2"},
+    {"input": "2", "desc": "Edge: two = 1^2 + 1^2"},
+    {"input": "4", "desc": "Edge: four = 2^2 + 0^2"},
+    {"input": "2147483647", "desc": "Edge: max int32"},
+    {"input": "2147483646", "desc": "Edge: max-1"},
+    {"input": "100", "desc": "Standard: 100 = 0+100 or 36+64"},
+    {"input": "13", "desc": "Standard: 4+9"},
+    {"input": "25", "desc": "Standard: 0+25 or 9+16"},
+    {"input": "7", "desc": "Standard: false"},
+    {"input": "11", "desc": "Standard: false"},
+    {"input": "50", "desc": "Standard: 1+49 or 25+25"},
+    {"input": "1000000", "desc": "Standard: 0+1000000 (1000^2)"},
+    {"input": "1000001", "desc": "Standard: 1+1000000"},
+    {"input": "2147395600", "desc": "Stress: 46340^2 0+x"},
+    {"input": "2000000000", "desc": "Stress: large possible"},
+    {"input": "1999999999", "desc": "Stress: large unknown"},
+    {"input": "999983", "desc": "Special: prime form killer"}
+  ]
+}

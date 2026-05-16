@@ -1,0 +1,28 @@
+{
+  "pid": 641,
+  "slug": "minimum-moves-to-reach-target-in-grid",
+  "inferred_constraints": "1 <= sx, sy, tx, ty <= 1e9",
+  "input_format": "line1: sx (int); line2: sy (int); line3: tx (int); line4: ty (int)",
+  "testcases": [
+    {"input": "1\n2\n5\n4", "desc": "Edge: example1"},
+    {"input": "1\n1\n2\n2", "desc": "Edge: example2 from origin diag"},
+    {"input": "1\n1\n1\n1", "desc": "Edge: already there"},
+    {"input": "1\n1\n2\n1", "desc": "Edge: single x move"},
+    {"input": "1\n1\n1\n2", "desc": "Edge: single y move"},
+    {"input": "1\n1\n1000000000\n1000000000", "desc": "Edge: max destination"},
+    {"input": "1\n1\n3\n4", "desc": "Edge: small target"},
+    {"input": "2\n2\n4\n6", "desc": "Edge: from 2,2"},
+    {"input": "1\n2\n10\n10", "desc": "Standard: 1,2 -> 10,10"},
+    {"input": "1\n1\n100\n200", "desc": "Standard: bigger"},
+    {"input": "5\n5\n10\n10", "desc": "Standard: starting at 5,5"},
+    {"input": "3\n5\n100\n80", "desc": "Standard: random"},
+    {"input": "1\n1\n7\n9", "desc": "Standard: small reach"},
+    {"input": "10\n20\n100\n200", "desc": "Standard: tens"},
+    {"input": "1\n1\n5\n3", "desc": "Standard: small x-dominant"},
+    {"input": "1\n1\n3\n5", "desc": "Standard: small y-dominant"},
+    {"input": "1\n1\n999999999\n999999999", "desc": "Stress: just below max"},
+    {"input": "1\n2\n5\n3", "desc": "Stress: impossible? from 1,2 max=2 -> (3,2) or (1,4); cannot reach 5,3"},
+    {"input": "2\n3\n6\n7", "desc": "Stress: random valid"},
+    {"input": "5\n2\n10\n10", "desc": "Special: from 5,2 -> 10,10 killer"}
+  ]
+}
