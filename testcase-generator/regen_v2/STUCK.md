@@ -841,3 +841,16 @@ Audited at: 2026-05-16T15:37:49.443185
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=50000.0)
 Audited at: 2026-05-16T15:37:54.002471
+
+## PID 33 (number-of-substrings-with-only-1s)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:56.164896
+
+## PID 330 (deepest-leaves-sum)
+Stuck after 3 regeneration attempts. Final issues:
+- arr[0]=-833 < value_min=1.0
+- arr[1]=-28 < value_min=1.0
+- arr[2]=-395 < value_min=1.0
+- ... and 948 more value violations in this array
+Audited at: 2026-05-16T15:37:56.165151
