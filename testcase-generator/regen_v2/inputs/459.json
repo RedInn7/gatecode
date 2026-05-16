@@ -1,0 +1,28 @@
+{
+  "pid": 459,
+  "slug": "maximum-alternating-subsequence-sum",
+  "inferred_constraints": "1 <= nums.length <= 1e5, 1 <= nums[i] <= 1e5",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[4,2,5,3]", "desc": "Edge: example1"},
+    {"input": "[5,6,7,8]", "desc": "Edge: example2"},
+    {"input": "[6,2,1,2,4,5]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[100000]", "desc": "Edge: n=1 max"},
+    {"input": "[1,2]", "desc": "Edge: n=2 ascending"},
+    {"input": "[2,1]", "desc": "Edge: n=2 descending"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[100000,1,100000,1]", "desc": "Edge: alternating extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[5,3,8,2,1,4,9,7,6,10]", "desc": "Standard: random"},
+    {"input": "[100,200,100,200,100,200]", "desc": "Standard: alternating"},
+    {"input": "[50,1,50,1,50,1,50,1,50,1]", "desc": "Standard: clear alternating"},
+    {"input": "[100000,99999,99998,99997,99996]", "desc": "Edge: near max descending"},
+    {"input": "[1,100000,2,99999,3,99998,4,99997]", "desc": "Standard: extreme mix"},
+    {"input": "[10,20,30,40,50,40,30,20,10]", "desc": "Standard: mountain"},
+    {"input": "[50,40,30,20,10,20,30,40,50]", "desc": "Standard: valley"},
+    {"input": "[1,2,3,1,2,3,1,2,3,1]", "desc": "Standard: 3-period"},
+    {"input": "[100,90,80,70,60,50,40,30,20,10,9,8,7,6,5,4,3,2,1]", "desc": "Stress: descending"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 460,
+  "slug": "asteroid-collision",
+  "inferred_constraints": "2 <= asteroids.length <= 1e4, -1000 <= asteroids[i] <= 1000, asteroids[i] != 0",
+  "input_format": "line1: asteroids (JSON int array)",
+  "testcases": [
+    {"input": "[5,10,-5]", "desc": "Edge: example1"},
+    {"input": "[8,-8]", "desc": "Edge: example2 both explode"},
+    {"input": "[10,2,-5]", "desc": "Edge: example3"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same direction"},
+    {"input": "[-1,-1]", "desc": "Edge: n=2 both left"},
+    {"input": "[1,-1]", "desc": "Edge: n=2 collide"},
+    {"input": "[-1,1]", "desc": "Edge: n=2 no collide (move apart)"},
+    {"input": "[1000,1000]", "desc": "Edge: max same direction"},
+    {"input": "[-1000,1000]", "desc": "Edge: move apart max"},
+    {"input": "[1000,-1000]", "desc": "Edge: collide max same size"},
+    {"input": "[5,5,5,-5]", "desc": "Standard: 3 right vs 1 left small"},
+    {"input": "[-5,5,5,5]", "desc": "Standard: 1 left already gone, rest right"},
+    {"input": "[10,-5,-10,5]", "desc": "Standard: mixed"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: all right, no collide"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Edge: all left, no collide"},
+    {"input": "[5,-1,-2,-3,-4]", "desc": "Standard: 5 right collides with each left"},
+    {"input": "[1,2,3,-1,-2,-3]", "desc": "Standard: cancel chain"},
+    {"input": "[10,10,10,-15]", "desc": "Standard: 3 vs 1 bigger left"},
+    {"input": "[5,-5,5,-5,5,-5]", "desc": "Standard: pairs cancel"},
+    {"input": "[100,200,300,-100,-200,-300]", "desc": "Standard: descending left vs ascending right"}
+  ]
+}

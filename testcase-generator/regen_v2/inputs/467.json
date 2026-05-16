@@ -1,0 +1,28 @@
+{
+  "pid": 467,
+  "slug": "backspace-string-compare",
+  "inferred_constraints": "1 <= s.length, t.length <= 200, lowercase letters and #",
+  "input_format": "line1: s (raw string); line2: t (raw string)",
+  "testcases": [
+    {"input": "ab#c\nad#c", "desc": "Edge: example1 true"},
+    {"input": "ab##\nc#d#", "desc": "Edge: example2 both empty"},
+    {"input": "a#c\nb", "desc": "Edge: example3 false"},
+    {"input": "a\na", "desc": "Edge: identical single"},
+    {"input": "#\n#", "desc": "Edge: just backspaces empty"},
+    {"input": "##\n##", "desc": "Edge: multi backspaces on empty"},
+    {"input": "a#\nb#", "desc": "Edge: both empty after backspace"},
+    {"input": "ab\nab", "desc": "Edge: identical no backspace"},
+    {"input": "abc\nabc", "desc": "Standard: equal"},
+    {"input": "abc#\nab", "desc": "Standard: trailing # match"},
+    {"input": "a##b\nb", "desc": "Standard: double backspace"},
+    {"input": "a##\n", "desc": "Edge: empty after"},
+    {"input": "y#fo##f\ny#f#o##f", "desc": "Standard: complex"},
+    {"input": "bxj##tw\nbxo#j##tw", "desc": "Standard: complex"},
+    {"input": "nzp#o#g\nb#nzp#o#g", "desc": "Standard: prefix backspaced"},
+    {"input": "######\n######", "desc": "Edge: many backspaces empty"},
+    {"input": "abcdef\nabcde", "desc": "Edge: simple unequal"},
+    {"input": "abc#def#ghi\nabdghi", "desc": "Edge: backspaces in middle"},
+    {"input": "a\nb", "desc": "Edge: different single"},
+    {"input": "aaaa####\nbbbb####", "desc": "Edge: complete backspace different"}
+  ]
+}

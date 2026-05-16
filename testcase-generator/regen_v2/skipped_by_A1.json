@@ -325,6 +325,11 @@
       "pid": 439,
       "slug": "find-the-shortest-superstring-ii",
       "reason": "Returns any shortest superstring — non-unique"
+    },
+    {
+      "pid": 466,
+      "slug": "design-task-manager",
+      "reason": "Design class with stateful add/edit/rmv/execTop operations"
     }
   ]
 }
