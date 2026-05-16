@@ -4,26 +4,85 @@
   "inferred_constraints": "1 <= k <= s.length <= 100, lowercase letters",
   "input_format": "line1: s (raw string); line2: k (int)",
   "testcases": [
-    {"input": "abc\n2", "desc": "Edge: example1"},
-    {"input": "aabbc\n3", "desc": "Edge: example2 already partitionable"},
-    {"input": "leetcode\n8", "desc": "Edge: example3 single chars"},
-    {"input": "a\n1", "desc": "Edge: n=1, k=1"},
-    {"input": "ab\n1", "desc": "Edge: 1 partition needs 1 change"},
-    {"input": "ab\n2", "desc": "Edge: 2 partitions, 0 changes"},
-    {"input": "aa\n1", "desc": "Edge: already palindrome"},
-    {"input": "aaaaaaaaaa\n5", "desc": "Edge: all same chars, k=5"},
-    {"input": "abcdefghij\n10", "desc": "Edge: distinct, k=length"},
-    {"input": "abcdefghij\n1", "desc": "Edge: distinct, k=1 (need to make palindrome)"},
-    {"input": "abcba\n1", "desc": "Edge: already palindrome n=5 k=1"},
-    {"input": "abcba\n2", "desc": "Standard: partition palindrome into 2"},
-    {"input": "racecar\n1", "desc": "Edge: 7-char palindrome k=1"},
-    {"input": "racecar\n3", "desc": "Standard: split palindrome k=3"},
-    {"input": "abacaba\n4", "desc": "Standard: 7-char k=4"},
-    {"input": "mississippi\n4", "desc": "Standard: typical word k=4"},
-    {"input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\n50", "desc": "Stress: n=100 all same k=50"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu\n10", "desc": "Stress: n=100 varied k=10"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu\n100", "desc": "Stress: n=100 k=length"},
-    {"input": "aaaaaaaaaabbbbbbbbbbcccccccccc\n3", "desc": "Standard: 3 blocks k=3 zero changes"},
-    {"input": "aaaaaaaaaabbbbbbbbbbcccccccccc\n6", "desc": "Standard: 3 blocks k=6"}
+    {
+      "input": "abc\n2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "aabbc\n3",
+      "desc": "Edge: example2 already partitionable"
+    },
+    {
+      "input": "\"ttqz\"\n6",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"rqkqqlu\"\n5",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "ab\n1",
+      "desc": "Edge: 1 partition needs 1 change"
+    },
+    {
+      "input": "ab\n2",
+      "desc": "Edge: 2 partitions, 0 changes"
+    },
+    {
+      "input": "aa\n1",
+      "desc": "Edge: already palindrome"
+    },
+    {
+      "input": "aaaaaaaaaa\n5",
+      "desc": "Edge: all same chars, k=5"
+    },
+    {
+      "input": "abcdefghij\n10",
+      "desc": "Edge: distinct, k=length"
+    },
+    {
+      "input": "abcdefghij\n1",
+      "desc": "Edge: distinct, k=1 (need to make palindrome)"
+    },
+    {
+      "input": "abcba\n1",
+      "desc": "Edge: already palindrome n=5 k=1"
+    },
+    {
+      "input": "abcba\n2",
+      "desc": "Standard: partition palindrome into 2"
+    },
+    {
+      "input": "racecar\n1",
+      "desc": "Edge: 7-char palindrome k=1"
+    },
+    {
+      "input": "racecar\n3",
+      "desc": "Standard: split palindrome k=3"
+    },
+    {
+      "input": "abacaba\n4",
+      "desc": "Standard: 7-char k=4"
+    },
+    {
+      "input": "mississippi\n4",
+      "desc": "Standard: typical word k=4"
+    },
+    {
+      "input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\n50",
+      "desc": "Stress: n=100 all same k=50"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu\n10",
+      "desc": "Stress: n=100 varied k=10"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu\n100",
+      "desc": "Stress: n=100 k=length"
+    },
+    {
+      "input": "aaaaaaaaaabbbbbbbbbbcccccccccc\n3",
+      "desc": "Standard: 3 blocks k=3 zero changes"
+    }
   ]
 }

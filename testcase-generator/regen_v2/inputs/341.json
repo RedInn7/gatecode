@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= s.length <= 200, s consists of English letters, digits, ' ', '+', '-', '.'",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "42", "desc": "Edge: example1 plain positive"},
-    {"input": " -042", "desc": "Edge: example2 leading space negative leading zeros"},
-    {"input": "1337c0d3", "desc": "Edge: example3 stop at non-digit"},
-    {"input": "", "desc": "Edge: empty string"},
-    {"input": " ", "desc": "Edge: only whitespace"},
-    {"input": "    ", "desc": "Edge: multiple spaces only"},
-    {"input": "0", "desc": "Edge: single zero"},
-    {"input": "+1", "desc": "Edge: positive sign"},
-    {"input": "-1", "desc": "Edge: negative sign"},
-    {"input": "2147483647", "desc": "Edge: INT_MAX boundary"},
-    {"input": "2147483648", "desc": "Edge: just over INT_MAX, clamp"},
-    {"input": "-2147483648", "desc": "Edge: INT_MIN boundary"},
-    {"input": "-2147483649", "desc": "Edge: just under INT_MIN, clamp"},
-    {"input": "99999999999999999999", "desc": "Edge: huge positive, clamp INT_MAX"},
-    {"input": "-99999999999999999999", "desc": "Edge: huge negative, clamp INT_MIN"},
-    {"input": "words and 987", "desc": "Edge: starts with letters, returns 0"},
-    {"input": "  -123abc456", "desc": "Standard: whitespace, negative, then letters"},
-    {"input": "+-12", "desc": "Edge: multiple signs, returns 0"},
-    {"input": "  +0 123", "desc": "Edge: leading + 0 then space"},
-    {"input": "0000000000012345678", "desc": "Edge: leading zeros"}
+    {
+      "input": "42",
+      "desc": "Edge: example1 plain positive"
+    },
+    {
+      "input": " -042",
+      "desc": "Edge: example2 leading space negative leading zeros"
+    },
+    {
+      "input": "34",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "32",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "34",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "32",
+      "desc": "Regenerated: negative at position 5"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: single zero"
+    },
+    {
+      "input": "+1",
+      "desc": "Edge: positive sign"
+    },
+    {
+      "input": "-1",
+      "desc": "Edge: negative sign"
+    },
+    {
+      "input": "2147483647",
+      "desc": "Edge: INT_MAX boundary"
+    },
+    {
+      "input": "2147483648",
+      "desc": "Edge: just over INT_MAX, clamp"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Edge: INT_MIN boundary"
+    },
+    {
+      "input": "-2147483649",
+      "desc": "Edge: just under INT_MIN, clamp"
+    },
+    {
+      "input": "99999999999999999999",
+      "desc": "Edge: huge positive, clamp INT_MAX"
+    },
+    {
+      "input": "-99999999999999999999",
+      "desc": "Edge: huge negative, clamp INT_MIN"
+    },
+    {
+      "input": "words and 987",
+      "desc": "Edge: starts with letters, returns 0"
+    },
+    {
+      "input": "  -123abc456",
+      "desc": "Standard: whitespace, negative, then letters"
+    },
+    {
+      "input": "+-12",
+      "desc": "Edge: multiple signs, returns 0"
+    },
+    {
+      "input": "  +0 123",
+      "desc": "Edge: leading + 0 then space"
+    },
+    {
+      "input": "42",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, s[i] in {'I','D'}",
   "input_format": "line1: s (raw string of I/D)",
   "testcases": [
-    {"input": "I", "desc": "Edge: example1 n=2"},
-    {"input": "DI", "desc": "Edge: example2 n=3"},
-    {"input": "D", "desc": "Edge: single D, n=2"},
-    {"input": "II", "desc": "Edge: 2 Is, increasing"},
-    {"input": "DD", "desc": "Edge: 2 Ds, decreasing"},
-    {"input": "IIIII", "desc": "Edge: all Is, strictly increasing"},
-    {"input": "DDDDD", "desc": "Edge: all Ds, strictly decreasing"},
-    {"input": "IDIDID", "desc": "Standard: alternating starting I"},
-    {"input": "DIDIDI", "desc": "Standard: alternating starting D"},
-    {"input": "DDDIII", "desc": "Standard: down then up"},
-    {"input": "IIIDDD", "desc": "Standard: up then down"},
-    {"input": "DIIIIID", "desc": "Standard: D bookending Is"},
-    {"input": "IDDDDDI", "desc": "Standard: I bookending Ds"},
-    {"input": "IIIIIIIIIIIIIIIIIIII", "desc": "Standard: 20 Is"},
-    {"input": "DDDDDDDDDDDDDDDDDDDD", "desc": "Standard: 20 Ds"},
-    {"input": "IDIDIDIDIDIDIDIDIDID", "desc": "Standard: 20 alternating"},
-    {"input": "IIIIIIIIIIDDDDDDDDDD", "desc": "Standard: 10 Is then 10 Ds"},
-    {"input": "DDDDDDDDDDIIIIIIIIII", "desc": "Standard: 10 Ds then 10 Is"},
-    {"input": "DIIIIIIIIIIIIIIIIIIII", "desc": "Stress: single D prefix"},
-    {"input": "IDDDDDDDDDDDDDDDDDDDD", "desc": "Stress: single I prefix"}
+    {
+      "input": "I",
+      "desc": "Edge: example1 n=2"
+    },
+    {
+      "input": "DI",
+      "desc": "Edge: example2 n=3"
+    },
+    {
+      "input": "D",
+      "desc": "Edge: single D, n=2"
+    },
+    {
+      "input": "II",
+      "desc": "Edge: 2 Is, increasing"
+    },
+    {
+      "input": "\"by\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "IIIII",
+      "desc": "Edge: all Is, strictly increasing"
+    },
+    {
+      "input": "DDDDD",
+      "desc": "Edge: all Ds, strictly decreasing"
+    },
+    {
+      "input": "IDIDID",
+      "desc": "Standard: alternating starting I"
+    },
+    {
+      "input": "DIDIDI",
+      "desc": "Standard: alternating starting D"
+    },
+    {
+      "input": "DDDIII",
+      "desc": "Standard: down then up"
+    },
+    {
+      "input": "IIIDDD",
+      "desc": "Standard: up then down"
+    },
+    {
+      "input": "DIIIIID",
+      "desc": "Standard: D bookending Is"
+    },
+    {
+      "input": "IDDDDDI",
+      "desc": "Standard: I bookending Ds"
+    },
+    {
+      "input": "IIIIIIIIIIIIIIIIIIII",
+      "desc": "Standard: 20 Is"
+    },
+    {
+      "input": "DDDDDDDDDDDDDDDDDDDD",
+      "desc": "Standard: 20 Ds"
+    },
+    {
+      "input": "IDIDIDIDIDIDIDIDIDID",
+      "desc": "Standard: 20 alternating"
+    },
+    {
+      "input": "IIIIIIIIIIDDDDDDDDDD",
+      "desc": "Standard: 10 Is then 10 Ds"
+    },
+    {
+      "input": "DDDDDDDDDDIIIIIIIIII",
+      "desc": "Standard: 10 Ds then 10 Is"
+    },
+    {
+      "input": "DIIIIIIIIIIIIIIIIIIII",
+      "desc": "Stress: single D prefix"
+    },
+    {
+      "input": "\"uvcq\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
