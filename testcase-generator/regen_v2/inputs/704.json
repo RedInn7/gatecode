@@ -1,27 +1,88 @@
 {
-  "pid": 704, "slug": "minimum-cost-walk-in-weighted-graph",
+  "pid": 704,
+  "slug": "minimum-cost-walk-in-weighted-graph",
   "inferred_constraints": "2 <= n <= 1e5, 0 <= edges.length <= 1e5, 0 <= weight <= 1e5, 1 <= query.length <= 1e5",
   "input_format": "line1: n; line2: edges (JSON 2D); line3: query (JSON 2D)",
   "testcases": [
-    {"input": "5\n[[0,1,7],[1,3,7],[1,2,1]]\n[[0,3],[3,4]]", "desc": "Edge: example1"},
-    {"input": "3\n[[0,2,7],[0,1,15],[1,2,6],[1,2,1]]\n[[1,2]]", "desc": "Edge: example2"},
-    {"input": "2\n[]\n[[0,1]]", "desc": "Edge: n=2 no edges"},
-    {"input": "2\n[[0,1,5]]\n[[0,1]]", "desc": "Edge: n=2 single edge"},
-    {"input": "2\n[[0,1,0]]\n[[0,1]]", "desc": "Edge: weight 0"},
-    {"input": "3\n[[0,1,15],[1,2,15]]\n[[0,2]]", "desc": "Edge: chain"},
-    {"input": "4\n[[0,1,3],[1,2,3],[2,3,3]]\n[[0,3],[0,1],[1,3]]", "desc": "Standard: chain queries"},
-    {"input": "5\n[[0,1,1],[2,3,2]]\n[[0,2],[1,3],[0,1]]", "desc": "Standard: disconnected"},
-    {"input": "4\n[[0,1,12],[1,2,10],[2,3,6]]\n[[0,3]]", "desc": "Standard: bitwise AND chain"},
-    {"input": "6\n[[0,1,7],[1,2,7],[2,3,7],[3,4,7],[4,5,7]]\n[[0,5],[1,4],[2,3]]", "desc": "Standard: all 7"},
-    {"input": "3\n[[0,1,100000],[1,2,100000]]\n[[0,2]]", "desc": "Edge: max weight"},
-    {"input": "3\n[[0,1,1],[1,2,2]]\n[[0,2]]", "desc": "Edge: AND becomes 0"},
-    {"input": "4\n[[0,1,15],[1,2,7],[2,3,3]]\n[[0,3]]", "desc": "Standard: powers AND"},
-    {"input": "5\n[[0,1,255],[1,2,127],[2,3,63],[3,4,31]]\n[[0,4]]", "desc": "Standard: bit reduction"},
-    {"input": "10\n[[0,1,5],[1,2,5],[2,3,5],[3,4,5],[4,5,5],[5,6,5],[6,7,5],[7,8,5],[8,9,5]]\n[[0,9],[3,7],[1,8]]", "desc": "Standard: chain n=10"},
-    {"input": "6\n[[0,1,6],[1,2,6],[3,4,5],[4,5,5]]\n[[0,2],[3,5],[0,3],[2,4]]", "desc": "Standard: 2 components"},
-    {"input": "5\n[[0,1,1],[0,2,2],[0,3,4],[0,4,8]]\n[[1,2],[1,3],[1,4],[2,3]]", "desc": "Standard: star different bits"},
-    {"input": "4\n[[0,1,1],[1,2,1],[2,3,1],[0,3,1]]\n[[0,2],[1,3]]", "desc": "Standard: cycle weight 1"},
-    {"input": "5\n[[0,1,99999],[1,2,99998],[2,3,99997],[3,4,99996]]\n[[0,4]]", "desc": "Stress: near max weights"},
-    {"input": "8\n[[0,1,12],[1,2,10],[2,3,6],[3,4,14],[4,5,15],[5,6,7],[6,7,3]]\n[[0,7],[3,5],[1,6]]", "desc": "Special: long chain mixed bits"}
+    {
+      "input": "5\n[[0,1,7],[1,3,7],[1,2,1]]\n[[0,3],[3,4]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "3\n[[0,2,7],[0,1,15],[1,2,6],[1,2,1]]\n[[1,2]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "5\n[[941,344,96],[-666,732,602],[-303,-352,192]]\n[[346,-95],[854,-312]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "4\n[[48,468,374],[473,99,-120],[725,-851,-106]]\n[[-954,-791],[-793,-646]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "4\n[[750,843,526],[649,-19,69],[-868,676,-568]]\n[[-822,-133],[362,598]]",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "3\n[[0,1,15],[1,2,15]]\n[[0,2]]",
+      "desc": "Edge: chain"
+    },
+    {
+      "input": "4\n[[0,1,3],[1,2,3],[2,3,3]]\n[[0,3],[0,1],[1,3]]",
+      "desc": "Standard: chain queries"
+    },
+    {
+      "input": "5\n[[0,1,1],[2,3,2]]\n[[0,2],[1,3],[0,1]]",
+      "desc": "Standard: disconnected"
+    },
+    {
+      "input": "4\n[[0,1,12],[1,2,10],[2,3,6]]\n[[0,3]]",
+      "desc": "Standard: bitwise AND chain"
+    },
+    {
+      "input": "6\n[[0,1,7],[1,2,7],[2,3,7],[3,4,7],[4,5,7]]\n[[0,5],[1,4],[2,3]]",
+      "desc": "Standard: all 7"
+    },
+    {
+      "input": "3\n[[0,1,100000],[1,2,100000]]\n[[0,2]]",
+      "desc": "Edge: max weight"
+    },
+    {
+      "input": "3\n[[0,1,1],[1,2,2]]\n[[0,2]]",
+      "desc": "Edge: AND becomes 0"
+    },
+    {
+      "input": "4\n[[0,1,15],[1,2,7],[2,3,3]]\n[[0,3]]",
+      "desc": "Standard: powers AND"
+    },
+    {
+      "input": "5\n[[0,1,255],[1,2,127],[2,3,63],[3,4,31]]\n[[0,4]]",
+      "desc": "Standard: bit reduction"
+    },
+    {
+      "input": "10\n[[0,1,5],[1,2,5],[2,3,5],[3,4,5],[4,5,5],[5,6,5],[6,7,5],[7,8,5],[8,9,5]]\n[[0,9],[3,7],[1,8]]",
+      "desc": "Standard: chain n=10"
+    },
+    {
+      "input": "6\n[[0,1,6],[1,2,6],[3,4,5],[4,5,5]]\n[[0,2],[3,5],[0,3],[2,4]]",
+      "desc": "Standard: 2 components"
+    },
+    {
+      "input": "5\n[[0,1,1],[0,2,2],[0,3,4],[0,4,8]]\n[[1,2],[1,3],[1,4],[2,3]]",
+      "desc": "Standard: star different bits"
+    },
+    {
+      "input": "4\n[[0,1,1],[1,2,1],[2,3,1],[0,3,1]]\n[[0,2],[1,3]]",
+      "desc": "Standard: cycle weight 1"
+    },
+    {
+      "input": "5\n[[0,1,99999],[1,2,99998],[2,3,99997],[3,4,99996]]\n[[0,4]]",
+      "desc": "Stress: near max weights"
+    },
+    {
+      "input": "5\n[[520,-692,-549,-94,-896,621],[921,386,-553,-981,641,977],[60,365,-173,605,87,-590],[-241,-944,136,-37,-914,251],[-599,-341,89,-707,287,-641],[-678,217,-715,182,572,-82]]\n[[253,652,-424,-193],[92,947,805,493],[613,-41,-756,290],[-125,573,932,-580]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
