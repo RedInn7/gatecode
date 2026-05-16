@@ -1,0 +1,27 @@
+{
+  "pid": 839, "slug": "number-of-dice-rolls-with-target-sum",
+  "inferred_constraints": "1 <= n, k <= 30, 1 <= target <= 1000",
+  "input_format": "line1: n (int); line2: k (int); line3: target (int)",
+  "testcases": [
+    {"input": "1\n6\n3", "desc": "Edge: example1"},
+    {"input": "2\n6\n7", "desc": "Edge: example2"},
+    {"input": "30\n30\n500", "desc": "Edge: example3 stress"},
+    {"input": "1\n1\n1", "desc": "Edge: min all"},
+    {"input": "1\n6\n6", "desc": "Edge: single max face"},
+    {"input": "1\n6\n7", "desc": "Edge: impossible single"},
+    {"input": "2\n6\n1", "desc": "Edge: impossible target<n"},
+    {"input": "2\n6\n12", "desc": "Edge: max for 2 dice"},
+    {"input": "3\n2\n3", "desc": "Standard: 3 coins"},
+    {"input": "5\n5\n15", "desc": "Standard: 5/5/15"},
+    {"input": "10\n6\n30", "desc": "Standard: 10/6/30"},
+    {"input": "30\n30\n30", "desc": "Edge: all 1s"},
+    {"input": "30\n30\n900", "desc": "Edge: all max"},
+    {"input": "30\n30\n1000", "desc": "Edge: impossible max"},
+    {"input": "20\n20\n200", "desc": "Standard: 20/20/200"},
+    {"input": "15\n15\n100", "desc": "Standard: 15/15/100"},
+    {"input": "30\n6\n100", "desc": "Standard: 30 dice 6 faces"},
+    {"input": "30\n1\n30", "desc": "Edge: 1-face dice all 1"},
+    {"input": "1\n30\n15", "desc": "Standard: single 30-face"},
+    {"input": "25\n10\n150", "desc": "Special: 25/10/150"}
+  ]
+}
