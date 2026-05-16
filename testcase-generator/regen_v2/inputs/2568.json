@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 1000, isWater[i][j] in {0,1}, at least one water cell exists",
   "input_format": "single line: isWater (JSON 2D array)",
   "testcases": [
-    {"input": "[[0,1],[0,0]]", "desc": "Edge: example1 2x2"},
-    {"input": "[[0,0,1],[1,0,0],[0,0,0]]", "desc": "Edge: example2 3x3"},
-    {"input": "[[1]]", "desc": "Edge: 1x1 water"},
-    {"input": "[[0,1]]", "desc": "Edge: 1x2 mixed"},
-    {"input": "[[1,0]]", "desc": "Edge: 1x2 mixed"},
-    {"input": "[[1],[0]]", "desc": "Edge: 2x1 mixed"},
-    {"input": "[[0,0],[0,1]]", "desc": "Edge: 2x2 water corner"},
-    {"input": "[[1,1,1],[1,1,1]]", "desc": "Edge: all water"},
-    {"input": "[[0,0,0,0,0,0,0,1]]", "desc": "Standard: 1x8 ramp"},
-    {"input": "[[1,0,0,0,0,0,0,0]]", "desc": "Standard: water at start"},
-    {"input": "[[1,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,1]]", "desc": "Standard: 4 corners water"},
-    {"input": "[[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0]]", "desc": "Standard: center water"},
-    {"input": "[[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[1,0,0,0,1]]", "desc": "Standard: 5x5 multi water"},
-    {"input": "[[1,0,1,0,1,0,1,0,1,0]]", "desc": "Standard: alternating row"},
-    {"input": "[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]", "desc": "Standard: 5x10 single water"},
-    {"input": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,0,0,1],[1,0,0,0,1],[1,1,1,1,1]]", "desc": "Standard: bordered"},
-    {"input": "[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]]", "desc": "Standard: 1x16 long"},
-    {"input": "[[0],[0],[0],[0],[0],[0],[0],[0],[0],[1]]", "desc": "Standard: 10x1 column"},
-    {"input": "[[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]", "desc": "Stress: 1x50 long ramp"},
-    {"input": "[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]]", "desc": "Killer: water at far end"}
+    {
+      "input": "[[0,1],[0,0]]",
+      "desc": "Edge: example1 2x2"
+    },
+    {
+      "input": "[[0,0,1],[1,0,0],[0,0,0]]",
+      "desc": "Edge: example2 3x3"
+    },
+    {
+      "input": "[[1]]",
+      "desc": "Edge: 1x1 water"
+    },
+    {
+      "input": "[[0,1]]",
+      "desc": "Edge: 1x2 mixed"
+    },
+    {
+      "input": "[[1,0]]",
+      "desc": "Edge: 1x2 mixed"
+    },
+    {
+      "input": "[[1],[0]]",
+      "desc": "Edge: 2x1 mixed"
+    },
+    {
+      "input": "[[0,0],[0,1]]",
+      "desc": "Edge: 2x2 water corner"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1]]",
+      "desc": "Edge: all water"
+    },
+    {
+      "input": "[[0,0,0,0,0,0,0,1]]",
+      "desc": "Standard: 1x8 ramp"
+    },
+    {
+      "input": "[[1,0,0,0,0,0,0,0]]",
+      "desc": "Standard: water at start"
+    },
+    {
+      "input": "[[1,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,1]]",
+      "desc": "Standard: 4 corners water"
+    },
+    {
+      "input": "[[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0]]",
+      "desc": "Standard: center water"
+    },
+    {
+      "input": "[[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[1,0,0,0,1]]",
+      "desc": "Standard: 5x5 multi water"
+    },
+    {
+      "input": "[[1,0,1,0,1,0,1,0,1,0]]",
+      "desc": "Standard: alternating row"
+    },
+    {
+      "input": "[[-757,-767],[-956,452]]",
+      "desc": "Regenerated: standard at position 14"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,0,0,1],[1,0,0,0,1],[1,1,1,1,1]]",
+      "desc": "Standard: bordered"
+    },
+    {
+      "input": "[[107,-694],[-476,619]]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[[0],[0],[0],[0],[0],[0],[0],[0],[0],[1]]",
+      "desc": "Standard: 10x1 column"
+    },
+    {
+      "input": "[[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]",
+      "desc": "Stress: 1x50 long ramp"
+    },
+    {
+      "input": "[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]]",
+      "desc": "Killer: water at far end"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums1.length == nums2.length <= 8, nums1 and nums2 are permutations of each other (or transformable)",
   "input_format": "line1: nums1 (JSON array); line2: nums2 (JSON array)",
   "testcases": [
-    {"input": "[3,1,2]\n[1,2,3]", "desc": "Edge: example1"},
-    {"input": "[1,1,2,2,3,3]\n[1,2,3,1,2,3]", "desc": "Edge: example2"},
-    {"input": "[1]\n[1]", "desc": "Edge: n=1 same"},
-    {"input": "[1,2]\n[1,2]", "desc": "Edge: n=2 same"},
-    {"input": "[1,2]\n[2,1]", "desc": "Edge: n=2 swap"},
-    {"input": "[1,2,3]\n[1,2,3]", "desc": "Edge: same arrays"},
-    {"input": "[1,2,3]\n[3,2,1]", "desc": "Edge: reverse n=3"},
-    {"input": "[1,2,3]\n[2,3,1]", "desc": "Edge: rotation"},
-    {"input": "[1,2,3]\n[3,1,2]", "desc": "Edge: another rotation"},
-    {"input": "[1,2,3,4]\n[4,3,2,1]", "desc": "Standard: full reverse n=4"},
-    {"input": "[1,2,3,4]\n[2,4,1,3]", "desc": "Standard: scramble"},
-    {"input": "[1,1,1,1]\n[1,1,1,1]", "desc": "Standard: all same"},
-    {"input": "[1,2,1,2]\n[2,1,2,1]", "desc": "Standard: alternating"},
-    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Standard: reverse n=5"},
-    {"input": "[1,2,3,4,5]\n[3,4,5,1,2]", "desc": "Standard: cyclic shift 2"},
-    {"input": "[1,2,3,4,5,6]\n[6,5,4,3,2,1]", "desc": "Standard: reverse n=6"},
-    {"input": "[1,2,3,4,5,6,7]\n[7,6,5,4,3,2,1]", "desc": "Standard: reverse n=7"},
-    {"input": "[1,2,3,4,5,6,7,8]\n[1,2,3,4,5,6,7,8]", "desc": "Standard: n=8 same"},
-    {"input": "[1,2,3,4,5,6,7,8]\n[8,7,6,5,4,3,2,1]", "desc": "Stress: max reverse"},
-    {"input": "[5,3,8,1,7,2,6,4]\n[4,6,2,7,1,8,3,5]", "desc": "Killer: scrambled n=8"}
+    {
+      "input": "[3,1,2]\n[1,2,3]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[1,1,2,2,3,3]\n[1,2,3,1,2,3]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: n=1 same"
+    },
+    {
+      "input": "[1,2]\n[1,2]",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "[1,2]\n[2,1]",
+      "desc": "Edge: n=2 swap"
+    },
+    {
+      "input": "[1,2,3]\n[1,2,3]",
+      "desc": "Edge: same arrays"
+    },
+    {
+      "input": "[1,2,3]\n[3,2,1]",
+      "desc": "Edge: reverse n=3"
+    },
+    {
+      "input": "[1,2,3]\n[2,3,1]",
+      "desc": "Edge: rotation"
+    },
+    {
+      "input": "[1,2,3]\n[3,1,2]",
+      "desc": "Edge: another rotation"
+    },
+    {
+      "input": "[1,2,3,4]\n[4,3,2,1]",
+      "desc": "Standard: full reverse n=4"
+    },
+    {
+      "input": "[1,2,3,4]\n[2,4,1,3]",
+      "desc": "Standard: scramble"
+    },
+    {
+      "input": "[1,1,1,1]\n[1,1,1,1]",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "[1,2,1,2]\n[2,1,2,1]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[5,4,3,2,1]",
+      "desc": "Standard: reverse n=5"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[3,4,5,1,2]",
+      "desc": "Standard: cyclic shift 2"
+    },
+    {
+      "input": "[1,2,3,4,5,6]\n[6,5,4,3,2,1]",
+      "desc": "Standard: reverse n=6"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n[7,6,5,4,3,2,1]",
+      "desc": "Standard: reverse n=7"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8]\n[1,2,3,4,5,6,7,8]",
+      "desc": "Standard: n=8 same"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8]\n[8,7,6,5,4,3,2,1]",
+      "desc": "Stress: max reverse"
+    },
+    {
+      "input": "[5,3,8,1,7,2,6,4]\n[4,6,2,7,1,8,3,5]",
+      "desc": "Killer: scrambled n=8"
+    }
   ]
 }

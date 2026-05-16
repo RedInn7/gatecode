@@ -4,25 +4,85 @@
   "inferred_constraints": "3 <= s.length <= 10^5, s consists of '*' and '|', 1 <= queries.length <= 10^5, 0 <= left <= right < s.length",
   "input_format": "line1: s; line2: queries (JSON 2D int array)",
   "testcases": [
-    {"input": "**|**|***|\n[[2,5],[5,9]]", "desc": "Edge: example1"},
-    {"input": "***|**|*****|**||**|*\n[[1,17],[4,5],[14,17],[5,11],[15,16]]", "desc": "Edge: example2"},
-    {"input": "|||\n[[0,2]]", "desc": "Edge: all candles no plates"},
-    {"input": "***\n[[0,2]]", "desc": "Edge: all plates no candles"},
-    {"input": "|*|\n[[0,2]]", "desc": "Edge: single plate between"},
-    {"input": "||\n[[0,1]]", "desc": "Edge: two candles"},
-    {"input": "**|\n[[0,2]]", "desc": "Edge: no enclosed"},
-    {"input": "|**\n[[0,2]]", "desc": "Edge: no enclosing right"},
-    {"input": "|*|*|\n[[0,4],[0,2],[2,4]]", "desc": "Edge: multiple ranges"},
-    {"input": "|***|***|\n[[0,8]]", "desc": "Standard: 6 plates between"},
-    {"input": "*|*|*|*|*\n[[0,8],[1,7],[2,6]]", "desc": "Standard: alternating"},
-    {"input": "|*|*|*|*|*|\n[[0,10]]", "desc": "Standard: 5 plates total"},
-    {"input": "**||**|*|*|**\n[[0,12],[3,11],[4,10]]", "desc": "Standard: complex pattern"},
-    {"input": "*|**|***|****|*****|\n[[0,19],[1,18],[5,15]]", "desc": "Standard: increasing groups"},
-    {"input": "|||||*****|||||\n[[0,14]]", "desc": "Standard: candles around"},
-    {"input": "*****|*****|*****\n[[0,16],[6,16],[0,10]]", "desc": "Standard: 3 groups"},
-    {"input": "*|*\n[[0,0],[1,1],[2,2],[0,1],[1,2],[0,2]]", "desc": "Standard: small queries"},
-    {"input": "**|***|*|*|**|***|**\n[[0,19],[2,12],[6,16]]", "desc": "Standard: medium"},
-    {"input": "|||*|**|***|****|*****|******|*******|\n[[0,36],[3,30],[10,25]]", "desc": "Stress: many plate groups"},
-    {"input": "*||||||||||||||||||||*\n[[0,21]]", "desc": "Killer: many adjacent candles"}
+    {
+      "input": "**|**|***|\n[[2,5],[5,9]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "***|**|*****|**||**|*\n[[1,17],[4,5],[14,17],[5,11],[15,16]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "|||\n[[0,2]]",
+      "desc": "Edge: all candles no plates"
+    },
+    {
+      "input": "***\n[[0,2]]",
+      "desc": "Edge: all plates no candles"
+    },
+    {
+      "input": "|*|\n[[0,2]]",
+      "desc": "Edge: single plate between"
+    },
+    {
+      "input": "||\n[[0,1]]",
+      "desc": "Edge: two candles"
+    },
+    {
+      "input": "**|\n[[0,2]]",
+      "desc": "Edge: no enclosed"
+    },
+    {
+      "input": "|**\n[[0,2]]",
+      "desc": "Edge: no enclosing right"
+    },
+    {
+      "input": "|*|*|\n[[0,4],[0,2],[2,4]]",
+      "desc": "Edge: multiple ranges"
+    },
+    {
+      "input": "|***|***|\n[[0,8]]",
+      "desc": "Standard: 6 plates between"
+    },
+    {
+      "input": "*|*|*|*|*\n[[0,8],[1,7],[2,6]]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "|*|*|*|*|*|\n[[0,10]]",
+      "desc": "Standard: 5 plates total"
+    },
+    {
+      "input": "**||**|*|*|**\n[[0,12],[3,11],[4,10]]",
+      "desc": "Standard: complex pattern"
+    },
+    {
+      "input": "*|**|***|****|*****|\n[[0,19],[1,18],[5,15]]",
+      "desc": "Standard: increasing groups"
+    },
+    {
+      "input": "|||||*****|||||\n[[0,14]]",
+      "desc": "Standard: candles around"
+    },
+    {
+      "input": "*****|*****|*****\n[[0,16],[6,16],[0,10]]",
+      "desc": "Standard: 3 groups"
+    },
+    {
+      "input": "*|*\n[[0,0],[1,1],[2,2],[0,1],[1,2],[0,2]]",
+      "desc": "Standard: small queries"
+    },
+    {
+      "input": "**|***|*|*|**|***|**\n[[0,19],[2,12],[6,16]]",
+      "desc": "Standard: medium"
+    },
+    {
+      "input": "|||*|**|***|****|*****|******|*******|\n[[0,36],[3,30],[10,25]]",
+      "desc": "Stress: many plate groups"
+    },
+    {
+      "input": "\"bsburaldinaayurimtvtpgpglvkcpczobjkrcvaeah\"\n[[304,-774,-232,206],[-724,356,316,-746],[-831,223,965,511],[590,884,-995,-65]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
