@@ -1,0 +1,28 @@
+{
+  "pid": 273,
+  "slug": "maximum-score-of-a-split",
+  "inferred_constraints": "2 <= nums.length <= 1e5, -1e9 <= nums[i] <= 1e9",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[10,-1,3,-4,-5]", "desc": "Edge: example1"},
+    {"input": "[-7,-5,3]", "desc": "Edge: example2"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same"},
+    {"input": "[1,-1]", "desc": "Edge: n=2 opposite"},
+    {"input": "[1000000000,-1000000000]", "desc": "Edge: extreme"},
+    {"input": "[-1000000000,1000000000]", "desc": "Edge: extreme reverse"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Edge: descending"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Edge: all negative"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all ones"},
+    {"input": "[10,-10,10,-10,10,-10]", "desc": "Standard: alternating extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 10 ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: 10 descending"},
+    {"input": "[100,-50,75,-25,50,-100]", "desc": "Standard: mixed"},
+    {"input": "[1000000000,-999999999,999999998,-999999997,999999996]", "desc": "Standard: near-max alt"},
+    {"input": "[1,-1,1,-1,1,-1,1,-1,1,-1]", "desc": "Standard: small alt"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
+    {"input": "[1000000000,-1000000000,1000000000,-1000000000,1000000000,-1000000000,1000000000,-1000000000,1000000000,-1000000000]", "desc": "Stress: extreme alt"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]", "desc": "Stress: 30 ascending"}
+  ]
+}
