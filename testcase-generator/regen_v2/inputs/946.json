@@ -5,8 +5,8 @@
   "input_format": "line1: str1 (raw); line2: str2 (raw)",
   "testcases": [
     {
-      "input": "abc\nad",
-      "desc": "Edge: example1 true"
+      "input": "\"j\"\n\"p\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "zc\nad",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"m\"\n\"mn\"",
+      "input": "\"fc\"\n\"a\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 20 z to 20 a true"
     },
     {
-      "input": "\"hmcwvw\"\n\"fefq\"",
+      "input": "\"xcsufy\"\n\"kxex\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
