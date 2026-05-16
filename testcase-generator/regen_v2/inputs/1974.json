@@ -1,0 +1,28 @@
+{
+  "pid": 1974,
+  "slug": "valid-tic-tac-toe-state",
+  "inferred_constraints": "board.length == 3, board[i].length == 3, characters ' ', 'X', 'O'",
+  "input_format": "single line: board (JSON array of 3 strings)",
+  "testcases": [
+    {"input": "[\"O  \",\"   \",\"   \"]", "desc": "Standard: example 1 invalid O first"},
+    {"input": "[\"XOX\",\" X \",\"   \"]", "desc": "Standard: example 2"},
+    {"input": "[\"XOX\",\"O O\",\"XOX\"]", "desc": "Standard: example 3 valid"},
+    {"input": "[\"   \",\"   \",\"   \"]", "desc": "Edge: empty board"},
+    {"input": "[\"X  \",\"   \",\"   \"]", "desc": "Edge: just one X"},
+    {"input": "[\"XX \",\"   \",\"   \"]", "desc": "Edge: two X invalid"},
+    {"input": "[\"XO \",\"   \",\"   \"]", "desc": "Edge: X then O"},
+    {"input": "[\"OO \",\"   \",\"   \"]", "desc": "Edge: two O"},
+    {"input": "[\"XOX\",\"XOX\",\"XOX\"]", "desc": "Standard: 5X 4O X wins by col"},
+    {"input": "[\"XXX\",\"OOO\",\"   \"]", "desc": "Edge: both win invalid"},
+    {"input": "[\"XXX\",\"   \",\"   \"]", "desc": "Standard: X wins legal"},
+    {"input": "[\"OOO\",\"XX \",\"   \"]", "desc": "Edge: O wins but extra X"},
+    {"input": "[\"XOX\",\"OXO\",\"XOX\"]", "desc": "Standard: 5X 4O X wins valid"},
+    {"input": "[\"XXX\",\"OOO\",\"XOX\"]", "desc": "Standard: both win invalid"},
+    {"input": "[\"XOX\",\"OOX\",\"X X\"]", "desc": "Standard: arbitrary"},
+    {"input": "[\"XXO\",\"XOX\",\"OXO\"]", "desc": "Standard: full board"},
+    {"input": "[\"XXO\",\"OO \",\"XXX\"]", "desc": "Standard: X wins bottom row valid"},
+    {"input": "[\"X  \",\"OX \",\"  O\"]", "desc": "Standard: diagonal start"},
+    {"input": "[\"OXX\",\"XOX\",\"OO \"]", "desc": "Standard: typical"},
+    {"input": "[\"   \",\" X \",\"   \"]", "desc": "Edge: only center X"}
+  ]
+}

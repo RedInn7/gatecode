@@ -1,0 +1,28 @@
+{
+  "pid": 1982,
+  "slug": "palindrome-pairs",
+  "inferred_constraints": "1 <= words.length <= 5000, 0 <= words[i].length <= 300, lowercase English, unique",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"abcd\",\"dcba\",\"lls\",\"s\",\"sssll\"]", "desc": "Standard: example 1"},
+    {"input": "[\"bat\",\"tab\",\"cat\"]", "desc": "Standard: example 2"},
+    {"input": "[\"a\",\"\"]", "desc": "Standard: example 3"},
+    {"input": "[\"a\"]", "desc": "Edge: n=1 no pair"},
+    {"input": "[\"\"]", "desc": "Edge: only empty string"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 distinct singles"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: would not be unique"},
+    {"input": "[\"abc\",\"cba\"]", "desc": "Standard: simple palindrome pair"},
+    {"input": "[\"\",\"a\",\"b\",\"c\"]", "desc": "Standard: empty + singles"},
+    {"input": "[\"abc\",\"\"]", "desc": "Standard: empty + non-palindrome word"},
+    {"input": "[\"aba\",\"\"]", "desc": "Standard: empty + palindrome word"},
+    {"input": "[\"aaa\",\"bbb\",\"ccc\",\"ddd\"]", "desc": "Edge: no pairs possible (no reverses)"},
+    {"input": "[\"abc\",\"cba\",\"def\",\"fed\"]", "desc": "Standard: 2 pairs"},
+    {"input": "[\"abcd\",\"dcba\",\"xyz\",\"zyx\",\"hello\",\"olleh\"]", "desc": "Standard: 3 reverse pairs"},
+    {"input": "[\"a\",\"abcba\",\"\"]", "desc": "Standard: empty + palindrome"},
+    {"input": "[\"race\",\"car\",\"racecar\"]", "desc": "Standard: composite palindrome"},
+    {"input": "[\"abc\",\"xcba\",\"def\",\"ghi\"]", "desc": "Standard: partial overlap"},
+    {"input": "[\"abcdef\",\"fedcba\"]", "desc": "Standard"},
+    {"input": "[\"aabb\",\"bbaa\",\"abab\",\"baba\",\"ab\",\"ba\"]", "desc": "Standard: many pairs"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\"]", "desc": "Standard: many singles all empty-string-like"}
+  ]
+}

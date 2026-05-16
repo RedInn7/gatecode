@@ -1,0 +1,28 @@
+{
+  "pid": 1984,
+  "slug": "find-maximum-number-of-string-pairs",
+  "inferred_constraints": "1 <= words.length <= 50, words[i].length == 2, lowercase English, distinct",
+  "input_format": "single line: words (JSON array)",
+  "testcases": [
+    {"input": "[\"cd\",\"ac\",\"dc\",\"ca\",\"zz\"]", "desc": "Standard: example 1"},
+    {"input": "[\"ab\",\"ba\",\"cc\"]", "desc": "Standard: example 2"},
+    {"input": "[\"aa\",\"ab\"]", "desc": "Standard: example 3 no pair"},
+    {"input": "[\"ab\"]", "desc": "Edge: n=1"},
+    {"input": "[\"aa\"]", "desc": "Edge: palindrome single"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: simple pair"},
+    {"input": "[\"ab\",\"cd\",\"ef\"]", "desc": "Edge: no pairs"},
+    {"input": "[\"ab\",\"ba\",\"cd\",\"dc\"]", "desc": "Standard: 2 pairs"},
+    {"input": "[\"ab\",\"ba\",\"cd\",\"dc\",\"ef\",\"fe\"]", "desc": "Standard: 3 pairs"},
+    {"input": "[\"aa\",\"bb\",\"cc\",\"dd\"]", "desc": "Edge: all palindromes no pairs"},
+    {"input": "[\"ab\",\"ba\",\"ab\"]", "desc": "Edge: duplicates not allowed (must be distinct)"},
+    {"input": "[\"hi\",\"ih\",\"hl\",\"lh\",\"hn\",\"nh\"]", "desc": "Standard: 3 h-pairs"},
+    {"input": "[\"xy\",\"yx\",\"xz\",\"zx\",\"yz\",\"zy\"]", "desc": "Standard: 3 pairs"},
+    {"input": "[\"ab\",\"cd\",\"ef\",\"gh\",\"ij\"]", "desc": "Standard: no pairs distinct"},
+    {"input": "[\"ab\",\"ba\",\"cd\",\"ef\",\"fe\"]", "desc": "Standard: 2 pairs + odd"},
+    {"input": "[\"ab\",\"ba\",\"cd\",\"dc\",\"ef\",\"fe\",\"gh\",\"hg\",\"ij\",\"ji\"]", "desc": "Standard: 5 pairs"},
+    {"input": "[\"za\",\"az\",\"yb\",\"by\",\"xc\",\"cx\",\"wd\",\"dw\",\"ve\",\"ev\"]", "desc": "Standard: 5 reverse pairs"},
+    {"input": "[\"aa\",\"bb\",\"cc\",\"dd\",\"ee\",\"ff\",\"gg\",\"hh\"]", "desc": "Edge: all palindromes no pairs"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: minimal pair"},
+    {"input": "[\"qw\",\"wq\",\"er\",\"re\",\"ty\",\"yt\",\"ui\",\"iu\",\"op\",\"po\"]", "desc": "Standard: 5 keyboard pairs"}
+  ]
+}

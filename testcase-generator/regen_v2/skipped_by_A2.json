@@ -1,5 +1,6 @@
 {
   "skipped": [
-    {"pid": 1952, "slug": "fizz-buzz-multithreaded", "reason": "multithreaded design problem - not amenable to standard input/output testing"}
+    {"pid": 1952, "slug": "fizz-buzz-multithreaded", "reason": "multithreaded design problem - not amenable to standard input/output testing"},
+    {"pid": 1997, "slug": "number-of-unique-categories", "reason": "interactive class problem with CategoryHandler - not amenable to LeetCode-style I/O testing"}
   ]
 }

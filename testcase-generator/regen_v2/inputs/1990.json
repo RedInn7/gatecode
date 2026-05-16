@@ -1,0 +1,28 @@
+{
+  "pid": 1990,
+  "slug": "check-if-numbers-are-ascending-in-a-sentence",
+  "inferred_constraints": "3 <= s.length <= 200, no leading zeros, tokens letters or pos nums",
+  "input_format": "single line: s (JSON string)",
+  "testcases": [
+    {"input": "\"1 box has 3 blue 4 red 6 green and 12 yellow marbles\"", "desc": "Standard: example 1"},
+    {"input": "\"hello world 5 x 5\"", "desc": "Standard: example 2 false"},
+    {"input": "\"sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s\"", "desc": "Standard: example 3"},
+    {"input": "\"1\"", "desc": "Edge: single number (no comparison)"},
+    {"input": "\"hello\"", "desc": "Edge: no numbers"},
+    {"input": "\"a 1 b 2 c 3 d\"", "desc": "Standard: simple ascending"},
+    {"input": "\"a 5 b 1 c\"", "desc": "Standard: descending fails"},
+    {"input": "\"hi 1 lo 1 mid\"", "desc": "Standard: equal fails"},
+    {"input": "\"a 1 b 10 c 100 d 1000\"", "desc": "Standard: powers of 10"},
+    {"input": "\"the 2nd time was 99\"", "desc": "Standard: words with digits not pure num"},
+    {"input": "\"a 1 b 2 c 3 d 4 e 5\"", "desc": "Standard: ascending 5"},
+    {"input": "\"text without numbers at all\"", "desc": "Edge: no numbers"},
+    {"input": "\"1 2 3 4 5 6 7 8 9 10\"", "desc": "Standard: all numbers ascending"},
+    {"input": "\"10 9 8 7 6 5\"", "desc": "Standard: all descending"},
+    {"input": "\"a 999 b\"", "desc": "Edge: single number"},
+    {"input": "\"1 a 2 a 3 a 4 a 5\"", "desc": "Standard: numbers with separator"},
+    {"input": "\"1 2 2 3\"", "desc": "Standard: equal pair fails"},
+    {"input": "\"a 100 b 200 c 300\"", "desc": "Standard: 3-digit ascending"},
+    {"input": "\"first 1 second 2 third 3 fourth 4\"", "desc": "Standard: with words"},
+    {"input": "\"a 1 b 2 c 3 d 4 e 5 f 6 g 7 h 8\"", "desc": "Standard: many"}
+  ]
+}

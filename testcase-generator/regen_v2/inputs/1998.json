@@ -1,0 +1,28 @@
+{
+  "pid": 1998,
+  "slug": "shortest-word-distance-iii",
+  "inferred_constraints": "1 <= wordsDict.length <= 10^5, 1 <= word.length <= 10, lowercase English",
+  "input_format": "line1: wordsDict (JSON array); line2: word1 (JSON string); line3: word2 (JSON string)",
+  "testcases": [
+    {"input": "[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]\n\"makes\"\n\"coding\"", "desc": "Standard: example 1"},
+    {"input": "[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]\n\"makes\"\n\"makes\"", "desc": "Standard: example 2 same word"},
+    {"input": "[\"a\"]\n\"a\"\n\"a\"", "desc": "Edge: must be >=2 occurrences if same word; skip if invalid"},
+    {"input": "[\"a\",\"b\"]\n\"a\"\n\"b\"", "desc": "Edge: minimal distinct"},
+    {"input": "[\"a\",\"a\"]\n\"a\"\n\"a\"", "desc": "Edge: same word twice"},
+    {"input": "[\"a\",\"b\",\"a\"]\n\"a\"\n\"a\"", "desc": "Edge: same word with gap"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n\"a\"\n\"e\"", "desc": "Standard: distance 4"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"a\"]\n\"a\"\n\"a\"", "desc": "Standard: same word at ends"},
+    {"input": "[\"hello\",\"world\",\"hello\",\"world\"]\n\"hello\"\n\"world\"", "desc": "Standard: alternating"},
+    {"input": "[\"foo\",\"bar\",\"baz\",\"foo\",\"bar\"]\n\"foo\"\n\"bar\"", "desc": "Standard: multi occurrences"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]\n\"a\"\n\"a\"", "desc": "Standard: all same word"},
+    {"input": "[\"x\",\"y\",\"x\",\"y\",\"x\"]\n\"x\"\n\"y\"", "desc": "Standard: dense interleave"},
+    {"input": "[\"x\",\"y\",\"z\",\"x\",\"y\",\"z\",\"x\",\"y\",\"z\"]\n\"x\"\n\"z\"", "desc": "Standard: triples"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"a\"]\n\"a\"\n\"a\"", "desc": "Standard: a at ends gap 5"},
+    {"input": "[\"a\",\"x\",\"y\",\"a\",\"x\",\"y\",\"a\"]\n\"a\"\n\"a\"", "desc": "Standard: same word distance 3"},
+    {"input": "[\"one\",\"two\",\"three\",\"four\",\"five\"]\n\"two\"\n\"four\"", "desc": "Standard"},
+    {"input": "[\"a\",\"b\",\"a\",\"b\",\"a\",\"b\",\"a\"]\n\"a\"\n\"b\"", "desc": "Standard: alternating"},
+    {"input": "[\"hello\",\"hello\",\"world\"]\n\"hello\"\n\"hello\"", "desc": "Edge: adjacent same"},
+    {"input": "[\"abc\",\"def\",\"abc\",\"ghi\",\"abc\"]\n\"abc\"\n\"abc\"", "desc": "Standard: same word 3 times"},
+    {"input": "[\"first\",\"second\",\"third\",\"fourth\",\"fifth\",\"sixth\",\"seventh\",\"first\",\"second\"]\n\"first\"\n\"second\"", "desc": "Standard"}
+  ]
+}
