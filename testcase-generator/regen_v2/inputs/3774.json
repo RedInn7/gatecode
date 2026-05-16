@@ -1,0 +1,28 @@
+{
+  "pid": 3774,
+  "slug": "maximum-size-of-a-set-after-removals",
+  "inferred_constraints": "n == nums1.length == nums2.length, 1 <= n <= 2*10^4, even, 1 <= nums[i] <= 10^9",
+  "input_format": "line1: nums1 (JSON); line2: nums2 (JSON)",
+  "testcases": [
+    {"input": "[1,2,1,2]\n[1,1,1,1]", "desc": "Example 1"},
+    {"input": "[1,2,3,4,5,6]\n[2,3,2,3,2,3]", "desc": "Example 2"},
+    {"input": "[1,1,2,2,3,3]\n[4,4,5,5,6,6]", "desc": "Example 3"},
+    {"input": "[1,2]\n[1,2]", "desc": "Edge: n=2 same"},
+    {"input": "[1,2]\n[3,4]", "desc": "Edge: n=2 disjoint"},
+    {"input": "[1,1]\n[1,1]", "desc": "Edge: all same"},
+    {"input": "[1,2,3,4]\n[5,6,7,8]", "desc": "Standard disjoint"},
+    {"input": "[1,1,1,1,2,2,2,2]\n[3,3,3,3,4,4,4,4]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard identical"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]\n[6,6,7,7,8,8,9,9,10,10]", "desc": "Standard"},
+    {"input": "[1000000000,1000000000]\n[1,1]", "desc": "Edge max value"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard all 1"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[5,6,7,8,9,10,11,12,13,14]", "desc": "Standard overlap"},
+    {"input": "[1,2]\n[2,1]", "desc": "Edge swap"},
+    {"input": "[1,1,2,2]\n[3,3,4,4]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8]\n[1,3,5,7,9,11,13,15]", "desc": "Standard partial overlap"},
+    {"input": "[1,1,1,1,2,2,2,2,3,3,3,3]\n[1,2,3,4,5,6,7,8,9,10,11,12]", "desc": "Standard"},
+    {"input": "[2,2,2,2,2,2]\n[3,3,3,3,3,3]", "desc": "Standard all same different"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]", "desc": "Stress 20 reverse"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]\n[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]", "desc": "Stress all same"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 1852,
+  "slug": "subtree-removal-game-with-fibonacci-tree",
+  "inferred_constraints": "1 <= n <= 100",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "1", "desc": "Edge: minimum n=1"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "3", "desc": "Edge: n=3"},
+    {"input": "4", "desc": "Edge: n=4"},
+    {"input": "5", "desc": "Edge: n=5"},
+    {"input": "6", "desc": "Standard: n=6"},
+    {"input": "7", "desc": "Standard: n=7"},
+    {"input": "8", "desc": "Standard: n=8"},
+    {"input": "10", "desc": "Standard: n=10"},
+    {"input": "15", "desc": "Standard: n=15"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "25", "desc": "Standard: n=25"},
+    {"input": "30", "desc": "Standard: n=30"},
+    {"input": "40", "desc": "Standard: n=40"},
+    {"input": "50", "desc": "Standard: n=50"},
+    {"input": "70", "desc": "Stress: n=70"},
+    {"input": "90", "desc": "Stress: n=90"},
+    {"input": "99", "desc": "Stress: near max"},
+    {"input": "100", "desc": "Stress: max"},
+    {"input": "11", "desc": "Special: n=11"}
+  ]
+}

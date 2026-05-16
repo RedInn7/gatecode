@@ -1,0 +1,28 @@
+{
+  "pid": 257,
+  "slug": "smallest-substring-with-identical-characters-ii",
+  "inferred_constraints": "1 <= n == s.length <= 1e5, s in '01', 0 <= numOps <= n",
+  "input_format": "line1: s (binary string in JSON quotes); line2: numOps (int)",
+  "testcases": [
+    {"input": "\"000001\"\n1", "desc": "Edge: example1"},
+    {"input": "\"0000\"\n2", "desc": "Edge: example2"},
+    {"input": "\"0101\"\n0", "desc": "Edge: example3 already alt"},
+    {"input": "\"0\"\n0", "desc": "Edge: n=1 single"},
+    {"input": "\"0\"\n1", "desc": "Edge: n=1 numOps=1"},
+    {"input": "\"01\"\n0", "desc": "Edge: already alt"},
+    {"input": "\"11\"\n0", "desc": "Edge: two ones no ops"},
+    {"input": "\"11\"\n1", "desc": "Edge: two ones flip 1"},
+    {"input": "\"00000\"\n0", "desc": "Edge: all zeros no ops"},
+    {"input": "\"00000\"\n5", "desc": "Edge: all zeros unlimited ops"},
+    {"input": "\"010101010101\"\n0", "desc": "Standard: alt 12"},
+    {"input": "\"111111111111\"\n6", "desc": "Standard: 12 ones flip 6"},
+    {"input": "\"000111000111\"\n4", "desc": "Standard: blocks"},
+    {"input": "\"001100110011\"\n2", "desc": "Standard: 4-block"},
+    {"input": "\"010010010010\"\n3", "desc": "Standard: period 3"},
+    {"input": "\"011011011011\"\n2", "desc": "Standard: 011 repeat"},
+    {"input": "\"100110011001\"\n0", "desc": "Standard: 12 chars 0 ops"},
+    {"input": "\"00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\"\n50", "desc": "Stress: 104 zeros 50 ops"},
+    {"input": "\"01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\"\n0", "desc": "Stress: 104 alt 0 ops"},
+    {"input": "\"11110000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000\"\n10", "desc": "Stress: 4-block repeating"}
+  ]
+}

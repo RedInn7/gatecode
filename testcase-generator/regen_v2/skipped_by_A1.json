@@ -15,6 +15,10 @@
     {"pid": 1881, "slug": "print-in-order", "reason": "Multi-threaded synchronization problem — not supported by standard judge"},
     {"pid": 230, "slug": "generate-schedule", "reason": "Multiple valid schedules — output is non-unique, needs SPJ"},
     {"pid": 232, "slug": "letter-case-permutation", "reason": "Output is permutation list — order may differ between languages, needs sorted comparison"},
-    {"pid": 239, "slug": "random-pick-index", "reason": "Randomized algorithm — output is non-deterministic, requires probabilistic SPJ"}
+    {"pid": 239, "slug": "random-pick-index", "reason": "Randomized algorithm — output is non-deterministic, requires probabilistic SPJ"},
+    {"pid": 1854, "slug": "the-knights-tour", "reason": "Non-unique output (multiple valid tour orderings); needs SPJ"},
+    {"pid": 1856, "slug": "design-circular-deque", "reason": "Design class with stateful operations and method-call sequence"},
+    {"pid": 1862, "slug": "my-calendar-ii", "reason": "Design class with stateful book/cancel operations"},
+    {"pid": 1853, "slug": "insert-delete-getrandom-o1-duplicates-allowed", "reason": "Design class with randomized getRandom — non-deterministic output"}
   ]
 }

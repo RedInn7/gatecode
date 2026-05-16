@@ -1,0 +1,28 @@
+{
+  "pid": 270,
+  "slug": "isomorphic-strings",
+  "inferred_constraints": "1 <= s.length <= 5e4, t.length == s.length, ASCII",
+  "input_format": "line1: s (string in JSON quotes); line2: t (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"egg\"\n\"add\"", "desc": "Edge: example1 true"},
+    {"input": "\"f11\"\n\"b23\"", "desc": "Edge: example2 false (1->2 and 1->3)"},
+    {"input": "\"foo\"\n\"bar\"", "desc": "Edge: example3 false (o->a, o->r)"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: n=1 single different chars"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 same"},
+    {"input": "\"ab\"\n\"aa\"", "desc": "Edge: different chars maps to same -> false"},
+    {"input": "\"aa\"\n\"ab\"", "desc": "Edge: same chars map to different -> false"},
+    {"input": "\"ab\"\n\"ba\"", "desc": "Edge: swap"},
+    {"input": "\"abc\"\n\"xyz\"", "desc": "Edge: 1-1 bijection"},
+    {"input": "\"abc\"\n\"abc\"", "desc": "Edge: identical"},
+    {"input": "\"paper\"\n\"title\"", "desc": "Standard: classic test"},
+    {"input": "\"abab\"\n\"baba\"", "desc": "Standard: alt mapping"},
+    {"input": "\"aabbcc\"\n\"xxyyzz\"", "desc": "Standard: paired"},
+    {"input": "\"abcabc\"\n\"xyzxyz\"", "desc": "Standard: repeating"},
+    {"input": "\"abcdefghij\"\n\"jihgfedcba\"", "desc": "Standard: reversed"},
+    {"input": "\"abcabc\"\n\"defdef\"", "desc": "Standard: 3-cycle"},
+    {"input": "\"abcde\"\n\"aaaaa\"", "desc": "Standard: all map to same"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Stress: 26 reverse perfect bijection"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: 52 chars false"},
+    {"input": "\"aaaaaaaaaabbbbbbbbbb\"\n\"bbbbbbbbbbaaaaaaaaaa\"", "desc": "Stress: swap blocks"}
+  ]
+}

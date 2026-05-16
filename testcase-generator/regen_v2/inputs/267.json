@@ -1,0 +1,28 @@
+{
+  "pid": 267,
+  "slug": "number-of-distinct-roll-sequences",
+  "inferred_constraints": "1 <= n <= 1e4",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "4", "desc": "Edge: example1"},
+    {"input": "2", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: n=1 minimum"},
+    {"input": "3", "desc": "Edge: small"},
+    {"input": "5", "desc": "Standard"},
+    {"input": "6", "desc": "Standard"},
+    {"input": "7", "desc": "Standard"},
+    {"input": "8", "desc": "Standard"},
+    {"input": "10", "desc": "Standard"},
+    {"input": "20", "desc": "Standard"},
+    {"input": "50", "desc": "Standard"},
+    {"input": "100", "desc": "Standard"},
+    {"input": "500", "desc": "Standard"},
+    {"input": "1000", "desc": "Standard"},
+    {"input": "2000", "desc": "Standard"},
+    {"input": "5000", "desc": "Standard"},
+    {"input": "9999", "desc": "Edge: near max"},
+    {"input": "10000", "desc": "Edge: max"},
+    {"input": "7777", "desc": "Stress: random"},
+    {"input": "8500", "desc": "Stress: large"}
+  ]
+}

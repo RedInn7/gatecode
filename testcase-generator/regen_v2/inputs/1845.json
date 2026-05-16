@@ -1,0 +1,28 @@
+{
+  "pid": 1845,
+  "slug": "minimize-maximum-of-array",
+  "inferred_constraints": "n == nums.length, 2 <= n <= 10^5, 0 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[3,7,1,6]", "desc": "Edge: example1 -> 5"},
+    {"input": "[10,1]", "desc": "Edge: example2 -> 10"},
+    {"input": "[0,0]", "desc": "Edge: all zeros"},
+    {"input": "[0,1000000000]", "desc": "Edge: extremes"},
+    {"input": "[1000000000,0]", "desc": "Edge: reversed extremes"},
+    {"input": "[1000000000,1000000000]", "desc": "Edge: 2 max"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[0,0,0,0,0,0,0,0,0,1000000000]", "desc": "Edge: zeros then max"},
+    {"input": "[1000000000,0,0,0,0,0,0,0,0,0]", "desc": "Edge: max then zeros"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: monotonic asc"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: monotonic desc"},
+    {"input": "[5,3,8,1,9,2,7,4,6,10]", "desc": "Standard: random"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]", "desc": "Standard: linear asc"},
+    {"input": "[1000,900,800,700,600,500,400,300,200,100]", "desc": "Standard: linear desc"},
+    {"input": "[1,1,1,1,1,1,1,1,1,100]", "desc": "Standard: one big at end"},
+    {"input": "[100,1,1,1,1,1,1,1,1,1]", "desc": "Standard: one big at start"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000]", "desc": "Stress: 20 max"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1000000000]", "desc": "Stress: 19 zeros + 1 max"},
+    {"input": "[3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4]", "desc": "Special: repeating pattern"},
+    {"input": "[1,1000000000,1,1000000000,1,1000000000,1,1000000000,1,1000000000]", "desc": "Special: alternating extremes"}
+  ]
+}

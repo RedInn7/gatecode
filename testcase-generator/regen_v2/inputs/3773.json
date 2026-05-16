@@ -1,0 +1,28 @@
+{
+  "pid": 3773,
+  "slug": "longest-balanced-subarray-ii",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 0 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON)",
+  "testcases": [
+    {"input": "[2,5,4,3]", "desc": "Example 1"},
+    {"input": "[3,2,2,5,4]", "desc": "Example 2"},
+    {"input": "[1,2,3,2]", "desc": "Example 3"},
+    {"input": "[1]", "desc": "Edge: single odd"},
+    {"input": "[2]", "desc": "Edge: single even"},
+    {"input": "[1,2]", "desc": "Edge: 1 odd 1 even"},
+    {"input": "[2,2]", "desc": "Edge: 2 same even"},
+    {"input": "[1,1]", "desc": "Edge: 2 same odd"},
+    {"input": "[1,3,5]", "desc": "Standard all odd"},
+    {"input": "[2,4,6]", "desc": "Standard all even"},
+    {"input": "[1,2,3,4,5,6]", "desc": "Standard mix"},
+    {"input": "[2,4,1,3,5,6]", "desc": "Standard"},
+    {"input": "[0,1,2,3,4,5]", "desc": "Standard"},
+    {"input": "[1,1,1,2,2,2]", "desc": "Standard same odd same even"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard alternating same"},
+    {"input": "[1,3,5,2,4,6,7,9,8]", "desc": "Standard"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress 20 mixed"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress all 1"},
+    {"input": "[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]", "desc": "Stress repeated"}
+  ]
+}

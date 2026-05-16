@@ -1,0 +1,28 @@
+{
+  "pid": 268,
+  "slug": "find-nth-smallest-integer-with-k-one-bits",
+  "inferred_constraints": "1 <= n <= 2^50, 1 <= k <= 50, answer strictly less than 2^50",
+  "input_format": "line1: n (int); line2: k (int)",
+  "testcases": [
+    {"input": "4\n2", "desc": "Edge: example1"},
+    {"input": "3\n1", "desc": "Edge: example2"},
+    {"input": "1\n1", "desc": "Edge: smallest 1 one-bit"},
+    {"input": "1\n2", "desc": "Edge: smallest 2 one-bits"},
+    {"input": "1\n50", "desc": "Edge: smallest 50 one-bits"},
+    {"input": "2\n1", "desc": "Edge: 2nd smallest 1-bit"},
+    {"input": "2\n2", "desc": "Edge: 2nd smallest 2-bit"},
+    {"input": "10\n1", "desc": "Standard: 10th 1-bit = 1024"},
+    {"input": "10\n2", "desc": "Standard: 10th 2-bit"},
+    {"input": "10\n3", "desc": "Standard: 10th 3-bit"},
+    {"input": "100\n5", "desc": "Standard: 100th 5-bit"},
+    {"input": "1000\n10", "desc": "Standard: 1000th 10-bit"},
+    {"input": "1\n10", "desc": "Edge: smallest 10-bit = 0x3FF"},
+    {"input": "10\n10", "desc": "Standard: 10th 10-bit"},
+    {"input": "1000000\n20", "desc": "Standard: large n medium k"},
+    {"input": "1000000000\n30", "desc": "Stress: very large"},
+    {"input": "100\n1", "desc": "Standard: 100th 1-bit = 2^99"},
+    {"input": "1\n25", "desc": "Standard: smallest 25-bit"},
+    {"input": "100\n25", "desc": "Stress: 100th 25-bit"},
+    {"input": "1000000000000000\n40", "desc": "Stress: max n max k"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 1850,
+  "slug": "maximum-palindromes-after-operations",
+  "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 100, lowercase letters",
+  "input_format": "line1: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"abbb\",\"ba\",\"aa\"]", "desc": "Edge: example1"},
+    {"input": "[\"abc\",\"ab\"]", "desc": "Edge: example2"},
+    {"input": "[\"cd\",\"ef\",\"a\"]", "desc": "Edge: example3"},
+    {"input": "[\"a\"]", "desc": "Edge: single char single word"},
+    {"input": "[\"aa\"]", "desc": "Edge: pair single word"},
+    {"input": "[\"abc\"]", "desc": "Edge: 3 distinct chars"},
+    {"input": "[\"a\",\"a\",\"a\"]", "desc": "Edge: 3 single-char words"},
+    {"input": "[\"ab\",\"cd\",\"ef\"]", "desc": "Edge: 3 distinct 2-char"},
+    {"input": "[\"aaaa\",\"bbbb\",\"cccc\"]", "desc": "Standard: 3 quad words"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]", "desc": "Standard: 3 3-char distinct"},
+    {"input": "[\"aabb\",\"ccdd\",\"eeff\"]", "desc": "Standard: pairs"},
+    {"input": "[\"abcabc\",\"defdef\",\"ghighi\"]", "desc": "Standard: pairs scattered"},
+    {"input": "[\"abcd\",\"efgh\",\"ijkl\",\"mnop\"]", "desc": "Standard: 4 distinct 4-char"},
+    {"input": "[\"aab\",\"bba\",\"ccd\",\"ddc\"]", "desc": "Standard: 4 3-char"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Stress: alphabet singles"},
+    {"input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\"]", "desc": "Stress: huge words"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\",\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\"]", "desc": "Stress: alphabet variations"},
+    {"input": "[\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\"]", "desc": "Stress: 10 ab's"},
+    {"input": "[\"abc\",\"bca\",\"cab\"]", "desc": "Special: anagrams"},
+    {"input": "[\"racecar\",\"level\",\"hello\"]", "desc": "Special: known palindromes + nonpalindrome"}
+  ]
+}

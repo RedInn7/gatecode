@@ -1,0 +1,28 @@
+{
+  "pid": 261,
+  "slug": "find-the-minimum-and-maximum-number-of-nodes-between-critical-points",
+  "inferred_constraints": "2 <= n <= 1e5, 1 <= Node.val <= 1e5",
+  "input_format": "line1: head (JSON int array representing linked list)",
+  "testcases": [
+    {"input": "[3,1]", "desc": "Edge: example1"},
+    {"input": "[5,3,1,2,5,1,2]", "desc": "Edge: example2"},
+    {"input": "[1,3,2,2,3,2,2,2,7]", "desc": "Edge: example3"},
+    {"input": "[1,2]", "desc": "Edge: n=2"},
+    {"input": "[2,1]", "desc": "Edge: n=2 reversed"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same"},
+    {"input": "[1,2,1]", "desc": "Edge: 1 max critical"},
+    {"input": "[2,1,2]", "desc": "Edge: 1 min critical"},
+    {"input": "[1,3,2,4,3]", "desc": "Edge: zigzag"},
+    {"input": "[100000,1,100000,1,100000]", "desc": "Edge: extreme oscillate"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: monotonic asc no critical"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: monotonic desc no critical"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: all same no critical"},
+    {"input": "[1,5,1,5,1,5,1,5,1,5]", "desc": "Standard: alternating"},
+    {"input": "[3,1,4,1,5,9,2,6,5,3]", "desc": "Standard: pi"},
+    {"input": "[1,2,1,3,1,4,1,5,1,6]", "desc": "Standard: many criticals"},
+    {"input": "[10,5,10,5,10,5,10,5,10,5,10]", "desc": "Standard: extended alt"},
+    {"input": "[1,2,3,2,1,2,3,2,1,2,3,2,1,2,3,2,1,2,3,2]", "desc": "Stress: zigzag 20"},
+    {"input": "[1,100000,1,100000,1,100000,1,100000,1,100000,1,100000,1,100000,1,100000,1,100000,1,100000]", "desc": "Stress: 20 extreme alt"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Stress: 30 simple alt"}
+  ]
+}

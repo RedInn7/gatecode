@@ -1,0 +1,28 @@
+{
+  "pid": 259,
+  "slug": "partition-string",
+  "inferred_constraints": "1 <= s.length <= 1e5, lowercase",
+  "input_format": "line1: s (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"abbccccd\"", "desc": "Edge: example1"},
+    {"input": "\"aaaa\"", "desc": "Edge: example2"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"z\"", "desc": "Edge: n=1 z"},
+    {"input": "\"ab\"", "desc": "Edge: 2 distinct"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"abc\"", "desc": "Edge: 3 distinct"},
+    {"input": "\"aaaa\"", "desc": "Edge: all same"},
+    {"input": "\"abcabcabc\"", "desc": "Standard: repeating"},
+    {"input": "\"aabbccdd\"", "desc": "Standard: pairs"},
+    {"input": "\"abcdefghij\"", "desc": "Standard: distinct 10"},
+    {"input": "\"jjiihhggffeeddccbbaa\"", "desc": "Standard: descending pairs"},
+    {"input": "\"abcdefghijabcdefghij\"", "desc": "Standard: 2 alphabets x"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard: pangram start"},
+    {"input": "\"banana\"", "desc": "Standard: classic"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: full alphabet"},
+    {"input": "\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard: reverse alphabet"},
+    {"input": "\"aaabbbcccdddeeefffggghhhiiijjjkkklllmmm\"", "desc": "Stress: triplets"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 50 a's"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: 4 alphabets"}
+  ]
+}

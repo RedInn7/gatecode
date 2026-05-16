@@ -1,0 +1,28 @@
+{
+  "pid": 269,
+  "slug": "maximum-good-subarray-sum",
+  "inferred_constraints": "2 <= nums.length <= 1e5, -1e9 <= nums[i] <= 1e9, 1 <= k <= 1e9",
+  "input_format": "line1: nums (JSON int array); line2: k (int)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,6]\n1", "desc": "Edge: example1"},
+    {"input": "[-1,3,2,4,5]\n3", "desc": "Edge: example2"},
+    {"input": "[-1,-2,-3,-4]\n2", "desc": "Edge: example3"},
+    {"input": "[1,2]\n1", "desc": "Edge: n=2 simplest"},
+    {"input": "[1,2]\n2", "desc": "Edge: n=2 k=2 not match"},
+    {"input": "[1,1]\n1", "desc": "Edge: n=2 same"},
+    {"input": "[1000000000,-1000000000]\n2000000000", "desc": "Edge: extreme spread"},
+    {"input": "[2,3,5,5,3,2]\n1", "desc": "Edge: pairs with |diff|=k"},
+    {"input": "[1,1,1,1,1]\n1", "desc": "Edge: same elements k=1 no pair"},
+    {"input": "[5,-5,5,-5,5,-5]\n10", "desc": "Standard: alternating extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n5", "desc": "Standard: descending"},
+    {"input": "[1,5,2,7,3,9,4,11]\n4", "desc": "Standard: alternating size"},
+    {"input": "[100,200,300,400,500]\n100", "desc": "Standard: ascending k=100"},
+    {"input": "[-5,-4,-3,-2,-1,1,2,3,4,5]\n1", "desc": "Standard: span zero k=1"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]\n1", "desc": "Standard: alternating k=1"},
+    {"input": "[1,-1,1,-1,1,-1,1,-1]\n2", "desc": "Standard: small alt k=2"},
+    {"input": "[1000000000,1,1000000000,1,1000000000,1,1000000000,1,1000000000,1]\n999999999", "desc": "Stress: huge spread"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Stress: 20 ascending repeating"},
+    {"input": "[5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]\n5", "desc": "Stress: 20 step 5"}
+  ]
+}

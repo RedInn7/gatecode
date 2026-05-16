@@ -1,0 +1,28 @@
+{
+  "pid": 3763,
+  "slug": "sentence-screen-fitting",
+  "inferred_constraints": "1 <= sentence.length <= 100, 1 <= sentence[i].length <= 10, 1 <= rows, cols <= 2*10^4",
+  "input_format": "line1: sentence (JSON array of strings); line2: rows (int); line3: cols (int)",
+  "testcases": [
+    {"input": "[\"hello\",\"world\"]\n2\n8", "desc": "Example 1"},
+    {"input": "[\"a\",\"bcd\",\"e\"]\n3\n6", "desc": "Example 2"},
+    {"input": "[\"i\",\"had\",\"apple\",\"pie\"]\n4\n5", "desc": "Example 3"},
+    {"input": "[\"a\"]\n1\n1", "desc": "Edge: single word fits"},
+    {"input": "[\"a\"]\n1\n10", "desc": "Edge: single word lots of space"},
+    {"input": "[\"abc\"]\n1\n2", "desc": "Edge: word too wide"},
+    {"input": "[\"a\",\"b\"]\n1\n3", "desc": "Edge: 2 words single row"},
+    {"input": "[\"hi\"]\n10\n5", "desc": "Standard"},
+    {"input": "[\"abc\",\"def\"]\n10\n10", "desc": "Standard"},
+    {"input": "[\"ab\",\"cd\",\"ef\"]\n5\n5", "desc": "Standard"},
+    {"input": "[\"x\"]\n10000\n10000", "desc": "Stress single char large grid"},
+    {"input": "[\"this\",\"is\",\"a\",\"test\"]\n10\n20", "desc": "Standard"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]\n5\n10", "desc": "Standard all a"},
+    {"input": "[\"hello\",\"world\",\"foo\",\"bar\"]\n7\n15", "desc": "Standard"},
+    {"input": "[\"abcdefghij\"]\n100\n10", "desc": "Standard exact fit"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n100\n100", "desc": "Stress"},
+    {"input": "[\"alphabet\",\"is\",\"awesome\"]\n50\n50", "desc": "Standard"},
+    {"input": "[\"ab\",\"cd\"]\n100\n100", "desc": "Stress"},
+    {"input": "[\"hi\",\"there\"]\n10000\n100", "desc": "Stress many rows"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]\n100\n100", "desc": "Stress 26 single chars"}
+  ]
+}

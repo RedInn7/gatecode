@@ -1,0 +1,28 @@
+{
+  "pid": 3770,
+  "slug": "maximum-subarray-with-equal-products",
+  "inferred_constraints": "1 <= nums.length <= 1000, 1 <= nums[i] <= 100",
+  "input_format": "line1: nums (JSON)",
+  "testcases": [
+    {"input": "[1,2,1,2,1,1,1]", "desc": "Example 1"},
+    {"input": "[2,3,4,5,6]", "desc": "Example 2"},
+    {"input": "[1,2,3,1,4,5,1]", "desc": "Example 3"},
+    {"input": "[1]", "desc": "Edge: single 1"},
+    {"input": "[5]", "desc": "Edge: single 5"},
+    {"input": "[1,1]", "desc": "Edge: 2 ones"},
+    {"input": "[2,2]", "desc": "Edge: 2 same"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all 1"},
+    {"input": "[2,3,4,5,6,7,8,9,10]", "desc": "Standard distinct"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard with 1"},
+    {"input": "[2,4,6,8]", "desc": "Standard multiples of 2"},
+    {"input": "[2,3,5,7,11,13]", "desc": "Standard primes"},
+    {"input": "[100,99,98,97,96]", "desc": "Standard large"},
+    {"input": "[1,1,1,2,1,1,1,3,1,1,1]", "desc": "Standard with primes"},
+    {"input": "[6,10,15]", "desc": "Standard pairwise coprime check"},
+    {"input": "[2,4,3,9,5,25]", "desc": "Standard"},
+    {"input": "[1,2,1,3,1,5,1,7,1,11]", "desc": "Standard"},
+    {"input": "[7,11,13,17,19,23,29,31,37,41,43,47]", "desc": "Standard primes"},
+    {"input": "[100,100,100,100,100,100,100,100,100,100]", "desc": "Stress same"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress 30 ones"}
+  ]
+}

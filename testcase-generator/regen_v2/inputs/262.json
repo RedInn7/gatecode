@@ -1,0 +1,28 @@
+{
+  "pid": 262,
+  "slug": "smallest-palindromic-rearrangement-ii",
+  "inferred_constraints": "1 <= s.length <= 1e4, lowercase, palindromic, 1 <= k <= 1e6",
+  "input_format": "line1: s (string in JSON quotes); line2: k (int)",
+  "testcases": [
+    {"input": "\"abba\"\n2", "desc": "Edge: example1"},
+    {"input": "\"aa\"\n2", "desc": "Edge: example2"},
+    {"input": "\"bacab\"\n1", "desc": "Edge: example3"},
+    {"input": "\"a\"\n1", "desc": "Edge: n=1"},
+    {"input": "\"a\"\n2", "desc": "Edge: n=1 k=2"},
+    {"input": "\"aa\"\n1", "desc": "Edge: n=2 k=1"},
+    {"input": "\"aba\"\n1", "desc": "Edge: n=3 k=1"},
+    {"input": "\"aba\"\n2", "desc": "Edge: only one perm"},
+    {"input": "\"zz\"\n1", "desc": "Edge: z's"},
+    {"input": "\"aaaa\"\n1", "desc": "Edge: all same"},
+    {"input": "\"abcba\"\n1", "desc": "Standard: 5 char pal"},
+    {"input": "\"abcba\"\n5", "desc": "Standard: k bigger"},
+    {"input": "\"abccba\"\n1", "desc": "Standard: 6 char"},
+    {"input": "\"abccba\"\n3", "desc": "Standard: k=3"},
+    {"input": "\"aabbaa\"\n4", "desc": "Standard: many letters"},
+    {"input": "\"aabbccbbaa\"\n5", "desc": "Standard: 10 char pal"},
+    {"input": "\"abcdefedcba\"\n1", "desc": "Standard: 11 chars"},
+    {"input": "\"aaaaabbbbbaaaaa\"\n10", "desc": "Stress: 15 chars"},
+    {"input": "\"abcdefghijihgfedcba\"\n5", "desc": "Stress: 19 chars"},
+    {"input": "\"abcdefghijklmlkjihgfedcba\"\n1", "desc": "Stress: 25 chars pal"}
+  ]
+}

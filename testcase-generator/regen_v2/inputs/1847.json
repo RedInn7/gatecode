@@ -1,0 +1,28 @@
+{
+  "pid": 1847,
+  "slug": "check-if-the-number-is-fascinating",
+  "inferred_constraints": "100 <= n <= 999",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "192", "desc": "Edge: example1 true (192,384,576)"},
+    {"input": "100", "desc": "Edge: example2 false (zeros)"},
+    {"input": "327", "desc": "Edge: true 327,654,981"},
+    {"input": "999", "desc": "Edge: max value"},
+    {"input": "123", "desc": "Standard: small fascinating"},
+    {"input": "111", "desc": "Standard: all same digits false"},
+    {"input": "201", "desc": "Standard: has zero false"},
+    {"input": "287", "desc": "Standard: random"},
+    {"input": "678", "desc": "Standard: large false"},
+    {"input": "321", "desc": "Standard: 321,642,963 -> false"},
+    {"input": "219", "desc": "Standard: 219,438,657"},
+    {"input": "385", "desc": "Standard: 385,770,1155 -> has 0"},
+    {"input": "493", "desc": "Standard: bigger"},
+    {"input": "147", "desc": "Standard: 147,294,441 -> dup 4"},
+    {"input": "294", "desc": "Standard: 294,588,882 -> dup"},
+    {"input": "153", "desc": "Standard: 153,306,459 -> has 0"},
+    {"input": "234", "desc": "Standard: small"},
+    {"input": "789", "desc": "Standard: large"},
+    {"input": "500", "desc": "Special: with zeros mid"},
+    {"input": "100", "desc": "Special: min"}
+  ]
+}

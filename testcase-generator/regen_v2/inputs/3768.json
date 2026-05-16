@@ -1,0 +1,28 @@
+{
+  "pid": 3768,
+  "slug": "check-balanced-string",
+  "inferred_constraints": "2 <= num.length <= 100, digits only",
+  "input_format": "line1: num (string, raw)",
+  "testcases": [
+    {"input": "1234", "desc": "Example 1: false"},
+    {"input": "24123", "desc": "Example 2: true"},
+    {"input": "12", "desc": "Edge: 2 digits unequal"},
+    {"input": "11", "desc": "Edge: 2 digits same"},
+    {"input": "00", "desc": "Edge: 00 zero"},
+    {"input": "13", "desc": "Edge"},
+    {"input": "120", "desc": "Edge 3 digits"},
+    {"input": "123", "desc": "Standard 3"},
+    {"input": "1221", "desc": "Standard palindrome-ish"},
+    {"input": "1234567890", "desc": "Standard 10 digits"},
+    {"input": "9999999999", "desc": "Standard all 9"},
+    {"input": "5555555555", "desc": "Standard all 5"},
+    {"input": "0102030405", "desc": "Standard"},
+    {"input": "1010101010", "desc": "Standard"},
+    {"input": "1212121212", "desc": "Standard alternating"},
+    {"input": "55", "desc": "Edge: 2 same"},
+    {"input": "10001", "desc": "Standard"},
+    {"input": "9999900000", "desc": "Standard"},
+    {"input": "12345678987654321", "desc": "Stress palindrome 17"},
+    {"input": "9876543210987654321098765432109876543210987654321098765432109876543210987654321098765432109876543210", "desc": "Stress 100 max"}
+  ]
+}

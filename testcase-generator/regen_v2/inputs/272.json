@@ -1,0 +1,28 @@
+{
+  "pid": 272,
+  "slug": "minimum-index-sum-of-two-lists",
+  "inferred_constraints": "1 <= list1.length, list2.length <= 1000, 1 <= list[i].length <= 30, lowercase + spaces, distinct, at least one common",
+  "input_format": "line1: list1 (JSON string array); line2: list2 (JSON string array)",
+  "testcases": [
+    {"input": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]", "desc": "Edge: example1"},
+    {"input": "[\"happy\",\"sad\",\"good\"]\n[\"sad\",\"happy\",\"good\"]", "desc": "Edge: example2 'sad' tied with 'happy'"},
+    {"input": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"KFC\",\"Shogun\",\"Burger King\"]", "desc": "Edge: example3"},
+    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: single common"},
+    {"input": "[\"a\",\"b\"]\n[\"a\",\"b\"]", "desc": "Edge: 2 common"},
+    {"input": "[\"a\",\"b\"]\n[\"b\",\"a\"]", "desc": "Edge: 2 common reversed"},
+    {"input": "[\"a\"]\n[\"a\",\"b\",\"c\"]", "desc": "Edge: 1 vs 3 common"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"c\"]", "desc": "Edge: 3 vs 1"},
+    {"input": "[\"first\",\"second\",\"third\"]\n[\"first\",\"second\",\"third\"]", "desc": "Edge: identical lists"},
+    {"input": "[\"x\",\"y\",\"common\",\"z\"]\n[\"a\",\"common\",\"b\"]", "desc": "Standard: common in middle"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"e\",\"d\",\"c\",\"b\",\"a\"]", "desc": "Standard: reversed"},
+    {"input": "[\"apple\",\"banana\",\"cherry\",\"date\",\"elderberry\"]\n[\"date\",\"banana\",\"cherry\",\"apple\",\"elderberry\"]", "desc": "Standard: mixed order"},
+    {"input": "[\"foo\",\"bar\",\"baz\",\"qux\"]\n[\"foo\",\"bar\",\"baz\",\"qux\"]", "desc": "Standard: identical 4"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\"]\n[\"d\"]", "desc": "Standard: only 'd' common"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n[\"j\",\"i\",\"h\",\"g\",\"f\",\"e\",\"d\",\"c\",\"b\",\"a\"]", "desc": "Standard: 10 reversed - sum=9"},
+    {"input": "[\"x\",\"y\",\"z\",\"a\"]\n[\"a\",\"x\",\"y\",\"z\"]", "desc": "Standard: rotated"},
+    {"input": "[\"hello world\",\"foo bar\",\"baz qux\"]\n[\"foo bar\",\"hello world\"]", "desc": "Standard: with spaces"},
+    {"input": "[\"abcdefghijklmnop\",\"common\",\"qrstuvwxyzabcdef\"]\n[\"qrstuvwxyzabcdef\",\"common\",\"abcdefghijklmnop\"]", "desc": "Stress: long words mixed"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\"]", "desc": "Stress: 20 identical - min idx=0"},
+    {"input": "[\"unique1\",\"unique2\",\"unique3\",\"common\"]\n[\"common\",\"other1\",\"other2\",\"other3\"]", "desc": "Stress: common at last in list1, first in list2 -> sum=3"}
+  ]
+}

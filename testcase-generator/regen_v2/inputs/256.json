@@ -1,0 +1,28 @@
+{
+  "pid": 256,
+  "slug": "largest-values-from-labels",
+  "inferred_constraints": "1 <= n <= 2e4, 0 <= values[i], labels[i] <= 2e4, 1 <= numWanted, useLimit <= n",
+  "input_format": "line1: values (JSON int array); line2: labels (JSON int array); line3: numWanted (int); line4: useLimit (int)",
+  "testcases": [
+    {"input": "[5,4,3,2,1]\n[1,1,2,2,3]\n3\n1", "desc": "Edge: example1"},
+    {"input": "[5,4,3,2,1]\n[1,3,3,3,2]\n3\n2", "desc": "Edge: example2"},
+    {"input": "[9,8,8,7,6]\n[0,0,0,1,1]\n3\n1", "desc": "Edge: example3"},
+    {"input": "[1]\n[1]\n1\n1", "desc": "Edge: n=1"},
+    {"input": "[5,5,5]\n[0,0,0]\n2\n2", "desc": "Edge: all same label and value"},
+    {"input": "[20000,20000,20000]\n[20000,20000,20000]\n3\n3", "desc": "Edge: max values and labels"},
+    {"input": "[0,0,0]\n[0,0,0]\n1\n1", "desc": "Edge: zeros"},
+    {"input": "[1,2,3]\n[1,2,3]\n3\n1", "desc": "Edge: all distinct labels"},
+    {"input": "[1,2,3]\n[0,0,0]\n3\n3", "desc": "Edge: same label useLimit=3"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n[0,1,2,3,4,5,6,7,8,9]\n5\n1", "desc": "Standard: 10 distinct labels"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n[0,0,0,0,0,1,1,1,1,1]\n5\n2", "desc": "Standard: 2 label groups"},
+    {"input": "[100,90,80,70,60,50,40,30,20,10]\n[1,2,3,4,5,1,2,3,4,5]\n5\n1", "desc": "Standard: cyclic"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1]\n5\n3", "desc": "Standard: all same"},
+    {"input": "[5,4,3,2,1,5,4,3,2,1]\n[1,1,1,1,1,2,2,2,2,2]\n4\n2", "desc": "Standard: 2 groups"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100]\n[0,0,0,0,0,1,1,1,1,1]\n6\n3", "desc": "Standard: take top 3 from each label"},
+    {"input": "[20000,15000,10000,5000,1000]\n[1,2,3,4,5]\n3\n1", "desc": "Standard: large distinct"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n[1,2,3,1,2,3,1,2,3,1,2,3,1,2,3]\n10\n3", "desc": "Standard: 3 labels each appearing 5"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81]\n[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]\n10\n2", "desc": "Stress: 20 items 5 labels"},
+    {"input": "[20000,19999,19998,19997,19996,19995,19994,19993,19992,19991,19990,19989,19988,19987,19986,19985,19984,19983,19982,19981]\n[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]\n15\n8", "desc": "Stress: max values 2 labels"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39]\n40\n40", "desc": "Stress: 40 same-value distinct labels"}
+  ]
+}

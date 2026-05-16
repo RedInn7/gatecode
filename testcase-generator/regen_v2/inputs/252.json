@@ -1,0 +1,28 @@
+{
+  "pid": 252,
+  "slug": "take-k-of-each-character-from-left-and-right",
+  "inferred_constraints": "1 <= s.length <= 1e5, s in 'abc', 0 <= k <= s.length",
+  "input_format": "line1: s (string in JSON quotes); line2: k (int)",
+  "testcases": [
+    {"input": "\"aabaaaacaabc\"\n2", "desc": "Edge: example1"},
+    {"input": "\"a\"\n1", "desc": "Edge: example2 -1"},
+    {"input": "\"a\"\n0", "desc": "Edge: k=0 no ops"},
+    {"input": "\"abc\"\n1", "desc": "Edge: one of each"},
+    {"input": "\"abc\"\n2", "desc": "Edge: can't get 2 of each"},
+    {"input": "\"aaa\"\n1", "desc": "Edge: no b/c -> -1"},
+    {"input": "\"bbb\"\n1", "desc": "Edge: no a/c -> -1"},
+    {"input": "\"ccc\"\n1", "desc": "Edge: no a/b -> -1"},
+    {"input": "\"abcabc\"\n2", "desc": "Edge: 2 of each"},
+    {"input": "\"aaaabbbbcccc\"\n4", "desc": "Edge: clusters"},
+    {"input": "\"abcabcabcabc\"\n4", "desc": "Standard: repeating cycles"},
+    {"input": "\"aaabbbccc\"\n3", "desc": "Standard: clean clusters"},
+    {"input": "\"cccbbbaaa\"\n3", "desc": "Standard: reverse clusters"},
+    {"input": "\"abccba\"\n2", "desc": "Standard: palindrome small"},
+    {"input": "\"cabacb\"\n2", "desc": "Standard: mixed"},
+    {"input": "\"aaaaaabbbbbbcccccc\"\n5", "desc": "Standard: 6 each"},
+    {"input": "\"abcabcabcabcabcabcabc\"\n7", "desc": "Standard: 7 cycles"},
+    {"input": "\"abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc\"\n30", "desc": "Stress: 33 cycles, k=30"},
+    {"input": "\"aaaaaaaaaabbbbbbbbbbcccccccccc\"\n10", "desc": "Stress: 10+10+10"},
+    {"input": "\"abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc\"\n34", "desc": "Stress: 102 chars, k=34 impossible"}
+  ]
+}
