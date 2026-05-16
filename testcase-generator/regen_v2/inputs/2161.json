@@ -1,0 +1,28 @@
+{
+  "pid": 2161,
+  "slug": "maximum-length-substring-with-two-occurrences",
+  "inferred_constraints": "2 <= s.length <= 100, lowercase",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"bcbbbcba\"", "desc": "Standard: example 1"},
+    {"input": "\"aaaa\"", "desc": "Standard: example 2"},
+    {"input": "\"ab\"", "desc": "Edge: 2 distinct"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"abc\"", "desc": "Edge: 3 distinct"},
+    {"input": "\"aabb\"", "desc": "Standard"},
+    {"input": "\"aabbcc\"", "desc": "Standard"},
+    {"input": "\"aaabbbccc\"", "desc": "Standard"},
+    {"input": "\"abcabc\"", "desc": "Standard"},
+    {"input": "\"abcabcabc\"", "desc": "Standard"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
+    {"input": "\"banana\"", "desc": "Standard"},
+    {"input": "\"mississippi\"", "desc": "Standard"},
+    {"input": "\"abababab\"", "desc": "Standard alternating"},
+    {"input": "\"aabbabba\"", "desc": "Standard"},
+    {"input": "\"aaaaaaaa\"", "desc": "Edge: all same"},
+    {"input": "\"abcdefghij\"", "desc": "Edge: all distinct"},
+    {"input": "\"aabbccddeeffgghhiijj\"", "desc": "Standard pairs"},
+    {"input": "\"abcabcabcabcabcabc\"", "desc": "Standard"},
+    {"input": "\"zzyyxxwwvvuuttssrrqqpponnmmllkkjjiihhggffeeddccbbaa\"", "desc": "Standard 51 paired"}
+  ]
+}

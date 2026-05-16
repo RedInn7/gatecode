@@ -1,0 +1,28 @@
+{
+  "pid": 2170,
+  "slug": "valid-parenthesis-string",
+  "inferred_constraints": "1 <= s.length <= 100, s in {(, ), *}",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"()\"", "desc": "Standard: example 1"},
+    {"input": "\"(*)\"", "desc": "Standard: example 2"},
+    {"input": "\"(*))\"", "desc": "Standard: example 3"},
+    {"input": "\"(\"", "desc": "Edge: single ("},
+    {"input": "\")\"", "desc": "Edge: single )"},
+    {"input": "\"*\"", "desc": "Edge: single *"},
+    {"input": "\"**\"", "desc": "Edge: 2 stars"},
+    {"input": "\"((\"", "desc": "Edge: 2 left"},
+    {"input": "\"))\"", "desc": "Edge: 2 right"},
+    {"input": "\"((((((((((((\"", "desc": "Edge: 12 left invalid"},
+    {"input": "\"************\"", "desc": "Edge: 12 stars"},
+    {"input": "\"()()()()\"", "desc": "Standard nested chain"},
+    {"input": "\"((()))\"", "desc": "Standard nested"},
+    {"input": "\"(()()(())\"", "desc": "Standard"},
+    {"input": "\"**()**\"", "desc": "Standard mixed"},
+    {"input": "\"((*)())\"", "desc": "Standard"},
+    {"input": "\"(((**))(*\"", "desc": "Standard"},
+    {"input": "\"(*)(*)(*)(*)\"", "desc": "Standard"},
+    {"input": "\"((((((((((**********))))))))))\"", "desc": "Standard 20"},
+    {"input": "\"))(((()()(()*)(())(*(()()((((()))))))\"", "desc": "Stress complex"}
+  ]
+}

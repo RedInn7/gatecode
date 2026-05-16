@@ -1,0 +1,28 @@
+{
+  "pid": 2140,
+  "slug": "greatest-common-divisor-traversal",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= nums[i] <= 10^5",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,3,6]", "desc": "Standard: example 1"},
+    {"input": "[3,9,5]", "desc": "Standard: example 2 false"},
+    {"input": "[4,3,12,8]", "desc": "Standard"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,1]", "desc": "Edge: 2 ones"},
+    {"input": "[2,2]", "desc": "Edge: 2 same"},
+    {"input": "[100000]", "desc": "Edge: max single"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: 1 disconnects"},
+    {"input": "[2,4,6,8,10]", "desc": "Edge: all evens"},
+    {"input": "[3,9,27,81]", "desc": "Edge: powers of 3"},
+    {"input": "[5,7,11,13,17]", "desc": "Edge: distinct primes"},
+    {"input": "[6,10,15]", "desc": "Standard: chain"},
+    {"input": "[2,3,5,7,11,13]", "desc": "Standard primes"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard"},
+    {"input": "[2,4,8,16,32,64]", "desc": "Standard powers 2"},
+    {"input": "[7,14,21,28,35]", "desc": "Standard"},
+    {"input": "[1,2]", "desc": "Edge: 1 isolated"},
+    {"input": "[12,15,20]", "desc": "Standard"},
+    {"input": "[6,12,18,24,30,36,42,48]", "desc": "Standard"},
+    {"input": "[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]", "desc": "Standard mixed"}
+  ]
+}

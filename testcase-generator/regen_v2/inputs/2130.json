@@ -1,0 +1,28 @@
+{
+  "pid": 2130,
+  "slug": "maximum-number-of-achievable-transfer-requests",
+  "inferred_constraints": "1 <= n <= 20, 1 <= requests.length <= 16",
+  "input_format": "line1: n (int); line2: requests (JSON 2D)",
+  "testcases": [
+    {"input": "5\n[[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]", "desc": "Standard: example 1"},
+    {"input": "3\n[[0,0],[1,2],[2,1]]", "desc": "Standard: example 2"},
+    {"input": "4\n[[0,3],[3,1],[1,2],[2,0]]", "desc": "Standard: example 3"},
+    {"input": "1\n[[0,0]]", "desc": "Edge: single self-loop"},
+    {"input": "2\n[[0,1]]", "desc": "Edge: 2 buildings 1 req cannot"},
+    {"input": "2\n[[0,1],[1,0]]", "desc": "Edge: 2 buildings paired"},
+    {"input": "3\n[[0,1]]", "desc": "Edge: single unmatched"},
+    {"input": "20\n[[0,1]]", "desc": "Edge: max n"},
+    {"input": "5\n[[0,0],[1,1],[2,2],[3,3],[4,4]]", "desc": "Edge: all self-loops"},
+    {"input": "4\n[[0,1],[1,0],[2,3],[3,2]]", "desc": "Edge: 2 pairs"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,4],[4,0]]", "desc": "Standard: cycle"},
+    {"input": "3\n[[0,1],[0,1],[1,0],[1,0]]", "desc": "Standard: multi edges"},
+    {"input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,0],[5,6],[6,7],[7,8],[8,9],[9,5]]", "desc": "Standard: 2 cycles"},
+    {"input": "5\n[[0,1],[1,2],[2,3],[3,0]]", "desc": "Standard: 4-cycle"},
+    {"input": "6\n[[0,1],[1,2],[2,0],[3,4],[4,5],[5,3]]", "desc": "Standard: 2 triangles"},
+    {"input": "5\n[[1,2],[2,3],[3,1],[0,4],[4,0]]", "desc": "Standard: triangle + pair"},
+    {"input": "8\n[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4]]", "desc": "Standard 2 4-cycles"},
+    {"input": "10\n[[0,1],[1,0],[2,3],[3,2],[4,5],[5,4],[6,7],[7,6],[8,9],[9,8]]", "desc": "Standard 5 pairs"},
+    {"input": "5\n[[0,1],[1,0],[0,2],[2,0],[0,3],[3,0],[0,4],[4,0]]", "desc": "Standard hub"},
+    {"input": "20\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,0]]", "desc": "Stress 16 cycle"}
+  ]
+}

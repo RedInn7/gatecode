@@ -6,6 +6,9 @@
     {"pid": 2048, "slug": "call-function-with-custom-context", "reason": "JavaScript-only problem - no C++/Python signatures"},
     {"pid": 2082, "slug": "sort-by", "reason": "JavaScript-only problem - takes function arg, no C++/Python signatures"},
     {"pid": 2088, "slug": "countries-you-can-safely-invest-in", "reason": "SQL problem with table schemas"},
-    {"pid": 2109, "slug": "group-by", "reason": "JavaScript-only problem - prototype enhancement"}
+    {"pid": 2109, "slug": "group-by", "reason": "JavaScript-only problem - prototype enhancement"},
+    {"pid": 2144, "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees", "reason": "QuadTree node input/output format not amenable to standard I/O testing"},
+    {"pid": 2146, "slug": "event-emitter", "reason": "JavaScript-only problem - takes callback functions"},
+    {"pid": 2180, "slug": "clone-binary-tree-with-random-pointer", "reason": "complex random pointer tree I/O format - non-trivial serialization"}
   ]
 }

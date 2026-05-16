@@ -1,0 +1,28 @@
+{
+  "pid": 163,
+  "slug": "count-almost-equal-pairs-ii",
+  "inferred_constraints": "2 <= nums.length <= 5000, 1 <= nums[i] < 1e7",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1023,2310,2130,213]", "desc": "Edge: example1"},
+    {"input": "[1,10,100]", "desc": "Edge: example2"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same"},
+    {"input": "[1,2]", "desc": "Edge: n=2 different no swap helps"},
+    {"input": "[12,21]", "desc": "Edge: n=2 one swap"},
+    {"input": "[123,132,213,231,312,321]", "desc": "Edge: all permutations of 123"},
+    {"input": "[1,10,100,1000,10000]", "desc": "Edge: powers of 10"},
+    {"input": "[9999999,9999998,9999997]", "desc": "Edge: extreme values"},
+    {"input": "[9999999,9999999]", "desc": "Edge: same max"},
+    {"input": "[1234,4321,2341,4132]", "desc": "Standard: digit permutations"},
+    {"input": "[111,222,333,444,555]", "desc": "Standard: 3-digit repdigits"},
+    {"input": "[12,21,13,31,23,32]", "desc": "Standard: 2-digit swaps"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: same-pattern hundreds"},
+    {"input": "[10,1,10,1,10]", "desc": "Standard: alternating tiny values"},
+    {"input": "[314159,141593,415931,151439,591314]", "desc": "Standard: pi-permutations"},
+    {"input": "[1234567,7654321,1357246,2468135]", "desc": "Standard: 7-digit numbers"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "Standard: 10 identical"},
+    {"input": "[100000,200000,300000,400000,500000,600000,700000,800000,900000,1000000]", "desc": "Stress: 10 distinct 6-digits"},
+    {"input": "[123,213,312,321,132,231,123,213,312,321,132,231,123,213,312,321,132,231,123,213]", "desc": "Stress: 20 permutations of 123 repeated"},
+    {"input": "[1,10,100,1000,10000,100000,1000000,9999999,9999998,9999997,9999996,9999995,9999994,9999993,9999992,9999991,9999990,9999989,9999988,9999987]", "desc": "Stress: extreme values mixed"}
+  ]
+}

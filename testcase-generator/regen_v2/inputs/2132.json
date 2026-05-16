@@ -1,0 +1,28 @@
+{
+  "pid": 2132,
+  "slug": "longest-substring-with-at-most-two-distinct-characters",
+  "inferred_constraints": "1 <= s.length <= 10^5, English letters",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"eceba\"", "desc": "Standard: example 1"},
+    {"input": "\"ccaabbb\"", "desc": "Standard: example 2"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"ab\"", "desc": "Edge: 2 chars"},
+    {"input": "\"abc\"", "desc": "Edge: 3 distinct"},
+    {"input": "\"aaaa\"", "desc": "Edge: all same"},
+    {"input": "\"abab\"", "desc": "Edge: 2 distinct alternating"},
+    {"input": "\"abcabc\"", "desc": "Standard"},
+    {"input": "\"abcdefghij\"", "desc": "Edge: 10 distinct"},
+    {"input": "\"aabbcc\"", "desc": "Standard"},
+    {"input": "\"aabbccdd\"", "desc": "Standard"},
+    {"input": "\"AAAABBBBCCCC\"", "desc": "Edge: uppercase"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
+    {"input": "\"banana\"", "desc": "Standard"},
+    {"input": "\"mississippi\"", "desc": "Standard"},
+    {"input": "\"aabbaabbaabb\"", "desc": "Standard"},
+    {"input": "\"abacabad\"", "desc": "Standard"},
+    {"input": "\"abcdcba\"", "desc": "Standard palindrome"},
+    {"input": "\"aaaabbbbccccdddd\"", "desc": "Standard groups"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress alphabet doubled"}
+  ]
+}

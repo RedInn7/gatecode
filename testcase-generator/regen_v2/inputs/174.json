@@ -1,0 +1,28 @@
+{
+  "pid": 174,
+  "slug": "maximum-distance-between-unequal-words-in-array-i",
+  "inferred_constraints": "1 <= words.length <= 100, 1 <= words[i].length <= 10, lowercase",
+  "input_format": "line1: words (JSON string array)",
+  "testcases": [
+    {"input": "[\"leetcode\",\"leetcode\",\"codeforces\"]", "desc": "Edge: example1"},
+    {"input": "[\"a\",\"b\",\"c\",\"a\",\"a\"]", "desc": "Edge: example2"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\"]", "desc": "Edge: example3 all same -> 0"},
+    {"input": "[\"a\"]", "desc": "Edge: n=1 single"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: n=2 different"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: n=2 same"},
+    {"input": "[\"abcdefghij\",\"abcdefghij\"]", "desc": "Edge: longer same"},
+    {"input": "[\"abcdefghij\",\"jihgfedcba\"]", "desc": "Edge: longer different"},
+    {"input": "[\"a\",\"b\",\"a\",\"b\",\"a\",\"b\"]", "desc": "Standard: alternating"},
+    {"input": "[\"hello\",\"world\",\"foo\",\"bar\",\"baz\"]", "desc": "Standard: all distinct"},
+    {"input": "[\"apple\",\"apple\",\"apple\",\"banana\"]", "desc": "Standard: 3 same then different"},
+    {"input": "[\"x\",\"x\",\"x\",\"x\",\"x\",\"y\",\"x\",\"x\",\"x\",\"x\"]", "desc": "Standard: single y in middle"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"b\"]", "desc": "Standard: last different"},
+    {"input": "[\"b\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\"]", "desc": "Standard: first different"},
+    {"input": "[\"the\",\"quick\",\"brown\",\"fox\",\"jumps\",\"over\",\"the\",\"lazy\",\"dog\"]", "desc": "Standard: pangram"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\",\"pqr\",\"stu\",\"vwx\",\"yza\"]", "desc": "Standard: all distinct"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\"]", "desc": "Standard: 20 distinct singles"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"b\"]", "desc": "Stress: 19 same + 1 different last"},
+    {"input": "[\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\",\"foo\",\"bar\"]", "desc": "Stress: alternating 20"},
+    {"input": "[\"aaaaaaaaaa\",\"bbbbbbbbbb\",\"cccccccccc\",\"dddddddddd\",\"eeeeeeeeee\",\"ffffffffff\",\"gggggggggg\",\"hhhhhhhhhh\",\"iiiiiiiiii\",\"jjjjjjjjjj\"]", "desc": "Stress: 10 distinct max-length words"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 162,
+  "slug": "count-the-number-of-special-characters-ii",
+  "inferred_constraints": "1 <= word.length <= 2e5, only English letters (mixed case)",
+  "input_format": "line1: word (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"aaAbcBC\"", "desc": "Edge: example1 -> 3"},
+    {"input": "\"abc\"", "desc": "Edge: example2 no special -> 0"},
+    {"input": "\"AbBCab\"", "desc": "Edge: example3"},
+    {"input": "\"a\"", "desc": "Edge: n=1 lowercase no pair"},
+    {"input": "\"A\"", "desc": "Edge: n=1 uppercase no pair"},
+    {"input": "\"aA\"", "desc": "Edge: lower before upper, valid"},
+    {"input": "\"Aa\"", "desc": "Edge: upper before lower, invalid"},
+    {"input": "\"aAa\"", "desc": "Edge: lower-upper-lower invalid (last a after A)"},
+    {"input": "\"Aaa\"", "desc": "Edge: upper then lower, fail"},
+    {"input": "\"aaA\"", "desc": "Edge: lowers then upper, valid"},
+    {"input": "\"abcABC\"", "desc": "Standard: all lower then all upper"},
+    {"input": "\"ABCabc\"", "desc": "Standard: all upper then all lower invalid"},
+    {"input": "\"aAbBcC\"", "desc": "Standard: alternating"},
+    {"input": "\"AbBaCc\"", "desc": "Standard: mixed orderings"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: all lower none qualify"},
+    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Standard: all upper none qualify"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Standard: full lower then full upper"},
+    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: full upper then lower (invalid for each)"},
+    {"input": "\"aAaAaAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ\"", "desc": "Stress: many alternations"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Stress: long lower then long upper all qualify"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2164,
+  "slug": "longest-substring-without-repeating-characters",
+  "inferred_constraints": "0 <= s.length <= 5*10^4, English letters/digits/symbols/spaces",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"abcabcbb\"", "desc": "Standard: example 1"},
+    {"input": "\"bbbbb\"", "desc": "Standard: example 2"},
+    {"input": "\"pwwkew\"", "desc": "Standard: example 3"},
+    {"input": "\"\"", "desc": "Edge: empty"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"ab\"", "desc": "Edge: 2 diff"},
+    {"input": "\"abcdefghij\"", "desc": "Edge: all distinct"},
+    {"input": "\"aaaaaaaaaa\"", "desc": "Edge: all same"},
+    {"input": "\"abcabcabc\"", "desc": "Standard"},
+    {"input": "\"dvdf\"", "desc": "Standard"},
+    {"input": "\"anviaj\"", "desc": "Standard"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
+    {"input": "\"banana\"", "desc": "Standard"},
+    {"input": "\"mississippi\"", "desc": "Standard"},
+    {"input": "\"!@#$%^&*()\"", "desc": "Edge: symbols"},
+    {"input": "\"abc123 def456\"", "desc": "Edge: with space and digits"},
+    {"input": "\"AaBbCcDdEeFfGg\"", "desc": "Edge: mixed case"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard alphabet"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\"", "desc": "Stress big distinct"}
+  ]
+}

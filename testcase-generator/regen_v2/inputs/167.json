@@ -1,0 +1,28 @@
+{
+  "pid": 167,
+  "slug": "seat-reservation-manager",
+  "inferred_constraints": "1 <= n <= 1e5, 1 <= seatNumber <= n, at most 1e5 calls",
+  "input_format": "Design class: line1: operations (JSON string array); line2: arguments (JSON 2D)",
+  "testcases": [
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\"]\n[[5],[],[],[2],[],[],[],[],[5]]", "desc": "Edge: example1"},
+    {"input": "[\"SeatManager\",\"reserve\"]\n[[1],[]]", "desc": "Edge: n=1 single reserve"},
+    {"input": "[\"SeatManager\",\"reserve\",\"unreserve\",\"reserve\"]\n[[1],[],[1],[]]", "desc": "Edge: n=1 unreserve-reserve cycle"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\"]\n[[5],[],[],[],[],[]]", "desc": "Edge: reserve all"},
+    {"input": "[\"SeatManager\",\"reserve\",\"unreserve\"]\n[[3],[],[1]]", "desc": "Edge: reserve then unreserve same seat"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\"]\n[[2],[],[],[2],[1]]", "desc": "Edge: unreserve in different order"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\",\"unreserve\"]\n[[3],[],[],[],[3],[2],[1]]", "desc": "Standard: reserve all then unreserve reverse"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\",\"unreserve\"]\n[[3],[],[],[],[1],[2],[3]]", "desc": "Standard: reserve all unreserve order"},
+    {"input": "[\"SeatManager\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\"]\n[[3],[],[1],[],[1],[]]", "desc": "Standard: alternating reserve/unreserve"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\",\"reserve\",\"reserve\"]\n[[5],[],[],[],[],[],[3],[1],[],[]]", "desc": "Standard: reserve 5, unreserve 2, re-reserve"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\"]\n[[10],[],[],[],[],[],[],[],[],[],[]]", "desc": "Standard: reserve all 10"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\"]\n[[5],[],[],[],[2],[],[1],[]]", "desc": "Standard: interleaved"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\",\"reserve\"]\n[[10],[],[],[2],[],[],[3],[1],[]]", "desc": "Standard: multiple unreserves"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\",\"unreserve\",\"unreserve\",\"unreserve\"]\n[[5],[],[],[],[],[],[1],[2],[3],[4],[5]]", "desc": "Standard: reserve 5 unreserve all"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\"]\n[[100],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]", "desc": "Standard: reserve 15 from pool of 100"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\",\"unreserve\",\"reserve\",\"reserve\",\"reserve\"]\n[[20],[],[],[],[1],[3],[2],[],[],[]]", "desc": "Standard: reuse with reordering"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\"]\n[[10],[],[],[],[],[],[],[],[],[],[]]", "desc": "Standard: reserve all 10 sequentially"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"unreserve\",\"unreserve\",\"unreserve\",\"unreserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\"]\n[[5],[],[],[],[],[],[5],[4],[3],[2],[1],[],[],[],[],[]]", "desc": "Standard: full cycle reverse unreserve"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\"]\n[[20],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]", "desc": "Stress: 20 reserves from pool 20"},
+    {"input": "[\"SeatManager\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\",\"unreserve\",\"reserve\"]\n[[10],[],[],[],[],[],[1],[],[3],[],[5],[],[2],[],[4],[],[1],[],[3],[],[5],[]]", "desc": "Stress: heavy alternation"}
+  ]
+}

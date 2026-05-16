@@ -1,0 +1,28 @@
+{
+  "pid": 2169,
+  "slug": "implement-trie-ii-prefix-tree",
+  "inferred_constraints": "1 <= word.length <= 2000, lowercase, at most 3*10^4 calls",
+  "input_format": "line1: ops (JSON array); line2: args (JSON 2D)",
+  "testcases": [
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"countWordsEqualTo\",\"countWordsStartingWith\",\"erase\",\"countWordsEqualTo\",\"countWordsStartingWith\",\"erase\",\"countWordsStartingWith\"]\n[[],[\"apple\"],[\"apple\"],[\"apple\"],[\"app\"],[\"apple\"],[\"apple\"],[\"app\"],[\"apple\"],[\"app\"]]", "desc": "Standard: example 1"},
+    {"input": "[\"Trie\"]\n[[]]", "desc": "Edge: just init"},
+    {"input": "[\"Trie\",\"insert\",\"countWordsEqualTo\"]\n[[],[\"a\"],[\"a\"]]", "desc": "Edge: 1 char"},
+    {"input": "[\"Trie\",\"insert\",\"countWordsStartingWith\"]\n[[],[\"abc\"],[\"a\"]]", "desc": "Edge: prefix count"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"countWordsEqualTo\",\"countWordsStartingWith\"]\n[[],[\"a\"],[\"a\"],[\"a\"],[\"a\"],[\"a\"]]", "desc": "Edge: 3 same insert"},
+    {"input": "[\"Trie\",\"insert\",\"erase\",\"countWordsEqualTo\"]\n[[],[\"hello\"],[\"hello\"],[\"hello\"]]", "desc": "Edge: insert erase check"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"erase\",\"countWordsEqualTo\"]\n[[],[\"hello\"],[\"hello\"],[\"hello\"],[\"hello\"]]", "desc": "Edge: erase decreases count"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"countWordsStartingWith\",\"erase\",\"countWordsStartingWith\"]\n[[],[\"apple\"],[\"app\"],[\"ape\"],[\"ap\"],[\"app\"],[\"ap\"]]", "desc": "Standard mixed"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"insert\",\"countWordsEqualTo\",\"countWordsStartingWith\"]\n[[],[\"cat\"],[\"car\"],[\"card\"],[\"cards\"],[\"car\"],[\"car\"]]", "desc": "Standard"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"countWordsEqualTo\",\"countWordsStartingWith\",\"countWordsStartingWith\"]\n[[],[\"hello\"],[\"world\"],[\"hello\"],[\"h\"],[\"w\"]]", "desc": "Standard"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"erase\",\"erase\",\"countWordsStartingWith\"]\n[[],[\"a\"],[\"a\"],[\"a\"],[\"a\"],[\"a\"],[\"a\"]]", "desc": "Standard erase multi"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"countWordsStartingWith\",\"countWordsStartingWith\",\"countWordsStartingWith\"]\n[[],[\"abc\"],[\"abd\"],[\"abe\"],[\"abf\"],[\"abg\"],[\"ab\"],[\"abc\"],[\"abe\"]]", "desc": "Standard"},
+    {"input": "[\"Trie\",\"insert\",\"countWordsEqualTo\",\"countWordsStartingWith\",\"erase\",\"countWordsEqualTo\"]\n[[],[\"x\"],[\"x\"],[\"x\"],[\"x\"],[\"x\"]]", "desc": "Standard"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"countWordsStartingWith\"]\n[[],[\"a\"],[\"ab\"],[\"abc\"],[\"abcd\"],[\"abcde\"],[\"abcdef\"],[\"abcdefg\"],[\"abcdefgh\"],[\"abcdefghi\"],[\"abcdefghij\"],[\"a\"]]", "desc": "Standard chain"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"countWordsStartingWith\",\"countWordsEqualTo\"]\n[[],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"]]", "desc": "Standard 5 same"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"erase\",\"erase\",\"erase\",\"countWordsEqualTo\"]\n[[],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"]]", "desc": "Standard erase multi to 2"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"countWordsStartingWith\",\"erase\",\"countWordsEqualTo\",\"countWordsStartingWith\"]\n[[],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]", "desc": "Standard"},
+    {"input": "[\"Trie\",\"insert\",\"countWordsStartingWith\",\"countWordsEqualTo\"]\n[[],[\"a\"],[\"a\"],[\"a\"]]", "desc": "Edge"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"countWordsStartingWith\",\"erase\",\"countWordsStartingWith\"]\n[[],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"],[\"abc\"]]", "desc": "Standard 6 insert 1 erase"},
+    {"input": "[\"Trie\",\"insert\",\"insert\",\"insert\",\"insert\",\"countWordsStartingWith\",\"countWordsStartingWith\",\"countWordsStartingWith\",\"countWordsStartingWith\"]\n[[],[\"a\"],[\"ab\"],[\"abc\"],[\"abcd\"],[\"a\"],[\"ab\"],[\"abc\"],[\"abcd\"]]", "desc": "Standard chain prefix queries"}
+  ]
+}

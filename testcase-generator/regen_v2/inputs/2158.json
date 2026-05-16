@@ -1,0 +1,28 @@
+{
+  "pid": 2158,
+  "slug": "resulting-string-after-adjacent-removals",
+  "inferred_constraints": "1 <= s.length <= 2*10^5, lowercase",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"abc\"", "desc": "Standard: example 1"},
+    {"input": "\"adcb\"", "desc": "Standard: example 2"},
+    {"input": "\"zadb\"", "desc": "Standard: with wrap"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"aa\"", "desc": "Edge: same"},
+    {"input": "\"ab\"", "desc": "Edge: consecutive"},
+    {"input": "\"az\"", "desc": "Edge: wrap consecutive"},
+    {"input": "\"ba\"", "desc": "Edge: reversed consec"},
+    {"input": "\"za\"", "desc": "Edge: wrap reverse"},
+    {"input": "\"abcd\"", "desc": "Standard"},
+    {"input": "\"abcdefghij\"", "desc": "Standard chain"},
+    {"input": "\"jihgfedcba\"", "desc": "Standard reverse chain"},
+    {"input": "\"acegikmoqsuwy\"", "desc": "Edge: no adjacencies"},
+    {"input": "\"abaababa\"", "desc": "Standard"},
+    {"input": "\"abcba\"", "desc": "Standard"},
+    {"input": "\"aabb\"", "desc": "Standard"},
+    {"input": "\"banana\"", "desc": "Standard"},
+    {"input": "\"mississippi\"", "desc": "Standard"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
+    {"input": "\"abababababababab\"", "desc": "Stress alternating ab"}
+  ]
+}

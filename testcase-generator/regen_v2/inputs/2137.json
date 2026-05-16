@@ -1,0 +1,28 @@
+{
+  "pid": 2137,
+  "slug": "sum-of-digits-of-string-after-convert",
+  "inferred_constraints": "1 <= s.length <= 100, 1 <= k <= 10, lowercase",
+  "input_format": "line1: s (quoted); line2: k (int)",
+  "testcases": [
+    {"input": "\"iiii\"\n1", "desc": "Standard: example 1"},
+    {"input": "\"leetcode\"\n2", "desc": "Standard"},
+    {"input": "\"zbax\"\n2", "desc": "Standard"},
+    {"input": "\"a\"\n1", "desc": "Edge: n=1 letter"},
+    {"input": "\"a\"\n10", "desc": "Edge: many iterations"},
+    {"input": "\"z\"\n1", "desc": "Edge: max letter"},
+    {"input": "\"z\"\n10", "desc": "Edge: max letter with k=10"},
+    {"input": "\"aaaa\"\n5", "desc": "Edge: all same"},
+    {"input": "\"zzzz\"\n5", "desc": "Edge: all max"},
+    {"input": "\"abcdef\"\n3", "desc": "Standard"},
+    {"input": "\"hello\"\n2", "desc": "Standard"},
+    {"input": "\"world\"\n3", "desc": "Standard"},
+    {"input": "\"thequickbrownfox\"\n5", "desc": "Standard"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n10", "desc": "Standard alphabet"},
+    {"input": "\"zzzzzzzzzz\"\n10", "desc": "Edge: 10 z's"},
+    {"input": "\"abcdefghij\"\n1", "desc": "Standard"},
+    {"input": "\"banana\"\n4", "desc": "Standard"},
+    {"input": "\"mississippi\"\n6", "desc": "Standard"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n10", "desc": "Stress 100 a's k=10"},
+    {"input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n10", "desc": "Stress 100 z's"}
+  ]
+}
