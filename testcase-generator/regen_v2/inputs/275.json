@@ -1,0 +1,28 @@
+{
+  "pid": 275,
+  "slug": "xor-operation-in-an-array",
+  "inferred_constraints": "1 <= n <= 1000, 0 <= start <= 1000",
+  "input_format": "line1: n (int); line2: start (int)",
+  "testcases": [
+    {"input": "5\n0", "desc": "Edge: example1"},
+    {"input": "4\n3", "desc": "Edge: example2"},
+    {"input": "1\n0", "desc": "Edge: n=1 start=0"},
+    {"input": "1\n1000", "desc": "Edge: n=1 max start"},
+    {"input": "2\n0", "desc": "Edge: n=2 start=0"},
+    {"input": "1000\n0", "desc": "Edge: max n start=0"},
+    {"input": "1000\n1000", "desc": "Edge: max both"},
+    {"input": "3\n5", "desc": "Standard"},
+    {"input": "10\n7", "desc": "Standard"},
+    {"input": "100\n50", "desc": "Standard"},
+    {"input": "500\n100", "desc": "Standard"},
+    {"input": "2\n5", "desc": "Standard"},
+    {"input": "7\n3", "desc": "Standard"},
+    {"input": "20\n10", "desc": "Standard"},
+    {"input": "50\n25", "desc": "Standard"},
+    {"input": "100\n1", "desc": "Standard"},
+    {"input": "999\n999", "desc": "Stress: near max"},
+    {"input": "1000\n500", "desc": "Stress: max n mid start"},
+    {"input": "500\n500", "desc": "Stress: mid both"},
+    {"input": "1\n500", "desc": "Stress: n=1 mid start"}
+  ]
+}

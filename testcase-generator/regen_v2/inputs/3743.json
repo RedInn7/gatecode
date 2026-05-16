@@ -1,0 +1,28 @@
+{
+  "pid": 3743,
+  "slug": "count-number-of-maximum-bitwise-or-subsets",
+  "inferred_constraints": "1 <= nums.length <= 16, 1 <= nums[i] <= 10^5",
+  "input_format": "line1: nums (JSON)",
+  "testcases": [
+    {"input": "[3,1]", "desc": "Example 1"},
+    {"input": "[2,2,2]", "desc": "Example 2"},
+    {"input": "[3,2,1,5]", "desc": "Example 3"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[0]", "desc": "Edge: just 0 (but constraint 1<=)"},
+    {"input": "[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]", "desc": "Edge: 2 distinct"},
+    {"input": "[2,1]", "desc": "Standard"},
+    {"input": "[3,3,3]", "desc": "Standard all same"},
+    {"input": "[1,2,4,8]", "desc": "Standard powers of 2"},
+    {"input": "[1,2,4,8,16]", "desc": "Standard 5 powers"},
+    {"input": "[7,7,7,7]", "desc": "Standard all 7"},
+    {"input": "[1,2,3,4,5,6,7,8]", "desc": "Standard 8 nums"},
+    {"input": "[100000,100000]", "desc": "Edge max val"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Standard 10 powers"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard 10 distinct"},
+    {"input": "[100000,99999,99998,99997,99996,99995,99994,99993]", "desc": "Standard large vals"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768]", "desc": "Stress 16 powers"},
+    {"input": "[100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000]", "desc": "Stress 16 max same"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress 16 ones"}
+  ]
+}

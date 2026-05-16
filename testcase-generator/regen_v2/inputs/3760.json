@@ -1,0 +1,28 @@
+{
+  "pid": 3760,
+  "slug": "minimum-operations-to-equalize-array",
+  "inferred_constraints": "1 <= n <= 10^5, 0 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON)",
+  "testcases": [
+    {"input": "[1,2]", "desc": "Example 1"},
+    {"input": "[5,5,5]", "desc": "Example 2"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]", "desc": "Edge: 2 diff"},
+    {"input": "[0,0,0]", "desc": "Edge: all zero"},
+    {"input": "[1000000000]", "desc": "Edge: single max"},
+    {"input": "[3,5,7,9]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard increasing"},
+    {"input": "[10,10,10,10,10]", "desc": "Standard all same"},
+    {"input": "[1,3,5,7,9,11]", "desc": "Standard odd"},
+    {"input": "[2,4,6,8,10]", "desc": "Standard even"},
+    {"input": "[15,15,7,15,15]", "desc": "Standard one different"},
+    {"input": "[1000000000,1000000000,1000000000]", "desc": "Standard all max"},
+    {"input": "[0,1,0,1,0,1]", "desc": "Standard alternating"},
+    {"input": "[7,7,7,7,8]", "desc": "Standard tail different"},
+    {"input": "[1,2,4,8,16,32,64,128]", "desc": "Standard powers"},
+    {"input": "[255,127,63,31,15,7,3,1]", "desc": "Standard descending bits"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress all 1"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress 20 increasing"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "pid": 1834,
+  "slug": "lexicographically-smallest-palindrome",
+  "inferred_constraints": "1 <= s.length <= 1000, lowercase English letters",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "egcfe", "desc": "Edge: example1 -> efcfe"},
+    {"input": "abcd", "desc": "Edge: example2 -> abba"},
+    {"input": "seven", "desc": "Edge: example3 -> neven"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "z", "desc": "Edge: single z"},
+    {"input": "ab", "desc": "Edge: 2 chars different"},
+    {"input": "aa", "desc": "Edge: already palindrome 2"},
+    {"input": "aba", "desc": "Edge: already palindrome 3"},
+    {"input": "abba", "desc": "Edge: already palindrome 4"},
+    {"input": "zzzz", "desc": "Edge: all z's"},
+    {"input": "abcba", "desc": "Standard: already palindrome 5"},
+    {"input": "hello", "desc": "Standard: random word"},
+    {"input": "racecar", "desc": "Standard: already palindrome 7"},
+    {"input": "leetcode", "desc": "Standard: 8 chars"},
+    {"input": "abcdefghij", "desc": "Standard: 10 sequential"},
+    {"input": "zzzzzzzzzz", "desc": "Standard: 10 z's"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a's"},
+    {"input": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba", "desc": "Stress: already palindrome alphabet"},
+    {"input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", "desc": "Stress: 1000 z's"},
+    {"input": "abacabadabacaba", "desc": "Special: recursive pattern"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Special: reversed alphabet"}
+  ]
+}

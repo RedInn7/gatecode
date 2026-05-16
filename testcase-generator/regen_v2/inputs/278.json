@@ -1,0 +1,28 @@
+{
+  "pid": 278,
+  "slug": "lexicographically-smallest-generated-string",
+  "inferred_constraints": "1 <= str1.length <= 1e4, 1 <= str2.length <= 500, str1 in T/F, str2 lowercase",
+  "input_format": "line1: str1 (T/F string in JSON quotes); line2: str2 (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"TFTF\"\n\"ab\"", "desc": "Edge: example1"},
+    {"input": "\"TFTF\"\n\"abc\"", "desc": "Edge: example2"},
+    {"input": "\"F\"\n\"d\"", "desc": "Edge: example3"},
+    {"input": "\"T\"\n\"a\"", "desc": "Edge: single T"},
+    {"input": "\"F\"\n\"a\"", "desc": "Edge: single F"},
+    {"input": "\"TT\"\n\"a\"", "desc": "Edge: 2 T short str2"},
+    {"input": "\"FF\"\n\"a\"", "desc": "Edge: 2 F"},
+    {"input": "\"TTTTT\"\n\"ab\"", "desc": "Edge: many T"},
+    {"input": "\"FFFFF\"\n\"ab\"", "desc": "Edge: many F"},
+    {"input": "\"TFTFTF\"\n\"ab\"", "desc": "Standard: alternating"},
+    {"input": "\"TFTFTFTFTF\"\n\"ab\"", "desc": "Standard: longer alt"},
+    {"input": "\"TFTFTFTFTF\"\n\"abc\"", "desc": "Standard: longer str2"},
+    {"input": "\"TTFFTTFF\"\n\"ab\"", "desc": "Standard: blocks"},
+    {"input": "\"FFTTFFTT\"\n\"ab\"", "desc": "Standard: reverse blocks"},
+    {"input": "\"TTTTFFFF\"\n\"ab\"", "desc": "Standard: T then F"},
+    {"input": "\"FFFFTTTT\"\n\"ab\"", "desc": "Standard: F then T"},
+    {"input": "\"TFFTFFTF\"\n\"abc\"", "desc": "Standard: more F"},
+    {"input": "\"TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF\"\n\"ab\"", "desc": "Stress: 52 alt"},
+    {"input": "\"TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF\"\n\"abcde\"", "desc": "Stress: 100 alt with 5-char str2"},
+    {"input": "\"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\"\n\"a\"", "desc": "Stress: 100 F simple str2"}
+  ]
+}

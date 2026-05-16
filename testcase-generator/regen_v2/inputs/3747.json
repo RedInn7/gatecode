@@ -1,0 +1,28 @@
+{
+  "pid": 3747,
+  "slug": "k-similar-strings",
+  "inferred_constraints": "1 <= s1.length <= 20, anagrams, lowercase a-f",
+  "input_format": "line1: s1 (string, raw); line2: s2 (string, raw)",
+  "testcases": [
+    {"input": "ab\nba", "desc": "Example 1"},
+    {"input": "abc\nbca", "desc": "Example 2"},
+    {"input": "a\na", "desc": "Edge: same single"},
+    {"input": "ab\nab", "desc": "Edge: same 2"},
+    {"input": "abc\nabc", "desc": "Edge: same 3"},
+    {"input": "abcd\nbacd", "desc": "Standard 1 swap"},
+    {"input": "abcd\ndcba", "desc": "Standard"},
+    {"input": "aabb\nbbaa", "desc": "Standard"},
+    {"input": "abcabc\nbcabca", "desc": "Standard"},
+    {"input": "aaaa\naaaa", "desc": "Edge all same"},
+    {"input": "abcdef\nfedcba", "desc": "Standard reversed"},
+    {"input": "abcabc\nabcabc", "desc": "Edge identical"},
+    {"input": "abc\nabc", "desc": "Edge already equal"},
+    {"input": "abcde\nedcba", "desc": "Standard"},
+    {"input": "aabbcc\nbbccaa", "desc": "Standard"},
+    {"input": "abacac\nacacba", "desc": "Standard"},
+    {"input": "abcdefabcdef\nfedcbafedcba", "desc": "Standard"},
+    {"input": "abcdefabcdef\nbcadefcadefb", "desc": "Standard 12 chars"},
+    {"input": "aaaabbbb\nbbbbaaaa", "desc": "Standard"},
+    {"input": "abcdefabcdefabcdef\nfedcbafedcbafedcba", "desc": "Stress 18 chars"}
+  ]
+}

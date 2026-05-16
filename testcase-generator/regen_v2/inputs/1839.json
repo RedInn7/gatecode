@@ -1,0 +1,28 @@
+{
+  "pid": 1839,
+  "slug": "circular-array-loop",
+  "inferred_constraints": "1 <= nums.length <= 5000, -1000 <= nums[i] <= 1000, nums[i] != 0",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[2,-1,1,2,2]", "desc": "Edge: example1 true"},
+    {"input": "[-1,2]", "desc": "Edge: example2 false"},
+    {"input": "[-2,1,-1,-2,-2]", "desc": "Edge: example3 false (mixed signs)"},
+    {"input": "[1]", "desc": "Edge: n=1 cycle of length 1 (forbidden)"},
+    {"input": "[-1]", "desc": "Edge: n=1 negative"},
+    {"input": "[2]", "desc": "Edge: n=1 stepping out (loops to self)"},
+    {"input": "[1,1]", "desc": "Edge: n=2 cycle"},
+    {"input": "[-1,-1]", "desc": "Edge: n=2 backward cycle"},
+    {"input": "[1,-1]", "desc": "Edge: n=2 mixed signs"},
+    {"input": "[1000,1000,1000]", "desc": "Edge: large positives"},
+    {"input": "[-1000,-1000,-1000]", "desc": "Edge: large negatives"},
+    {"input": "[2,1,1,1,1,1]", "desc": "Standard: forward cycle"},
+    {"input": "[3,1,2]", "desc": "Standard: 3-cycle"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: forward stepping"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: backward stepping"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all ones cycle"},
+    {"input": "[1,-1,1,-1,1,-1]", "desc": "Standard: alternating signs"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Stress: 20 twos"},
+    {"input": "[1000,500,-500,-500,500,1000,-1000,-1000,500,-1000]", "desc": "Special: complex"},
+    {"input": "[3,3,3]", "desc": "Special: 3-cycle every-3 jumps"}
+  ]
+}

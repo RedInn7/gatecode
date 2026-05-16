@@ -1,0 +1,28 @@
+{
+  "pid": 3753,
+  "slug": "minimum-operations-to-make-subarray-elements-equal",
+  "inferred_constraints": "1 <= k <= nums.length <= 10^5, -10^9 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON); line2: k (int)",
+  "testcases": [
+    {"input": "[4,-3,2,1,-4,6]\n3", "desc": "Example 1"},
+    {"input": "[-2,-2,3,1,4]\n2", "desc": "Example 2"},
+    {"input": "[1]\n1", "desc": "Edge: single k=1"},
+    {"input": "[1,2]\n1", "desc": "Edge: 2 elems k=1"},
+    {"input": "[1,2]\n2", "desc": "Edge: 2 elems k=2"},
+    {"input": "[5,5,5,5,5]\n3", "desc": "Edge: all same"},
+    {"input": "[1,2,3]\n3", "desc": "Standard"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Standard"},
+    {"input": "[5,4,3,2,1]\n3", "desc": "Standard descending"},
+    {"input": "[10,1,10,1,10,1]\n3", "desc": "Standard alternating"},
+    {"input": "[0,0,0,0,0]\n2", "desc": "Standard zeros"},
+    {"input": "[-1,1,-1,1,-1,1]\n3", "desc": "Standard"},
+    {"input": "[1000000000,-1000000000]\n2", "desc": "Edge: extreme"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n4", "desc": "Standard"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n5", "desc": "Standard all ones"},
+    {"input": "[1,3,5,7,9,11,13,15,17,19]\n3", "desc": "Standard odd seq"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10", "desc": "Stress 20"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000,1000000000]\n3", "desc": "Stress max same"},
+    {"input": "[1,-1,2,-2,3,-3,4,-4,5,-5,6,-6,7,-7,8,-8]\n4", "desc": "Stress alternating"}
+  ]
+}

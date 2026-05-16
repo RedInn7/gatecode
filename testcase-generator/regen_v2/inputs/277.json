@@ -1,0 +1,28 @@
+{
+  "pid": 277,
+  "slug": "minimum-number-of-keypresses",
+  "inferred_constraints": "1 <= s.length <= 1e5, lowercase",
+  "input_format": "line1: s (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"apple\"", "desc": "Edge: example1"},
+    {"input": "\"abcdefghijkl\"", "desc": "Edge: example2"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"ab\"", "desc": "Edge: 2 distinct"},
+    {"input": "\"abcdefghi\"", "desc": "Edge: 9 distinct"},
+    {"input": "\"abcdefghij\"", "desc": "Edge: 10 distinct"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: full alphabet"},
+    {"input": "\"aaa\"", "desc": "Edge: all same"},
+    {"input": "\"zzzzz\"", "desc": "Edge: all z"},
+    {"input": "\"hello\"", "desc": "Standard: word"},
+    {"input": "\"abracadabra\"", "desc": "Standard: repeating"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard: pangram start"},
+    {"input": "\"aaaabbbbccccdddd\"", "desc": "Standard: paired blocks"},
+    {"input": "\"abcabcabcabcabc\"", "desc": "Standard: 5 cycles"},
+    {"input": "\"zzzzzzaaa\"", "desc": "Standard: 2 distinct varied freq"},
+    {"input": "\"abcdefghijklmnop\"", "desc": "Standard: 16 distinct"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 50 a's"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: 2 alphabets"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: 4 alphabets"}
+  ]
+}

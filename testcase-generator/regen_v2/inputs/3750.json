@@ -1,0 +1,28 @@
+{
+  "pid": 3750,
+  "slug": "non-negative-integers-without-consecutive-ones",
+  "inferred_constraints": "1 <= n <= 10^9",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "5", "desc": "Example 1"},
+    {"input": "1", "desc": "Example 2"},
+    {"input": "2", "desc": "Example 3"},
+    {"input": "3", "desc": "Edge: only 3 has consec ones"},
+    {"input": "4", "desc": "Standard"},
+    {"input": "7", "desc": "Standard"},
+    {"input": "8", "desc": "Standard"},
+    {"input": "10", "desc": "Standard"},
+    {"input": "15", "desc": "Standard"},
+    {"input": "100", "desc": "Standard"},
+    {"input": "1000", "desc": "Standard"},
+    {"input": "10000", "desc": "Standard"},
+    {"input": "100000", "desc": "Standard"},
+    {"input": "1000000", "desc": "Standard"},
+    {"input": "100000000", "desc": "Standard"},
+    {"input": "1000000000", "desc": "Stress max"},
+    {"input": "536870911", "desc": "Standard 2^29-1"},
+    {"input": "536870912", "desc": "Standard 2^29"},
+    {"input": "999999999", "desc": "Stress near max"},
+    {"input": "858993459", "desc": "Stress 0x33333333"}
+  ]
+}

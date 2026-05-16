@@ -1,0 +1,28 @@
+{
+  "pid": 3755,
+  "slug": "lexicographically-smallest-string-after-applying-operations",
+  "inferred_constraints": "2 <= s.length <= 100, even, digits, 1 <= a,b <= 9",
+  "input_format": "line1: s (string, raw); line2: a (int); line3: b (int)",
+  "testcases": [
+    {"input": "5525\n9\n2", "desc": "Example 1"},
+    {"input": "74\n5\n1", "desc": "Example 2"},
+    {"input": "0011\n4\n2", "desc": "Example 3"},
+    {"input": "00\n1\n1", "desc": "Edge: 00"},
+    {"input": "00\n5\n1", "desc": "Edge: 00 with a=5"},
+    {"input": "10\n1\n1", "desc": "Edge: rotate"},
+    {"input": "99\n9\n1", "desc": "Edge: 99 max"},
+    {"input": "12\n3\n1", "desc": "Edge"},
+    {"input": "1234\n2\n1", "desc": "Standard"},
+    {"input": "9999\n1\n1", "desc": "Standard"},
+    {"input": "0000\n5\n1", "desc": "Standard zeros"},
+    {"input": "11\n2\n1", "desc": "Edge: 11 small a"},
+    {"input": "5555\n3\n2", "desc": "Standard"},
+    {"input": "123456\n3\n2", "desc": "Standard"},
+    {"input": "999999\n1\n3", "desc": "Standard"},
+    {"input": "20200201\n5\n2", "desc": "Standard"},
+    {"input": "12345678\n7\n4", "desc": "Standard"},
+    {"input": "55552525\n1\n1", "desc": "Standard"},
+    {"input": "11111111111111111111\n3\n5", "desc": "Standard 20 chars"},
+    {"input": "98765432109876543210\n4\n3", "desc": "Standard 20 chars"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 1838,
+  "slug": "2-keys-keyboard",
+  "inferred_constraints": "1 <= n <= 1000",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "1", "desc": "Edge: minimum n=1 -> 0"},
+    {"input": "2", "desc": "Edge: n=2 -> 2"},
+    {"input": "3", "desc": "Edge: n=3 -> 3"},
+    {"input": "4", "desc": "Edge: n=4 -> 4"},
+    {"input": "5", "desc": "Edge: prime n=5"},
+    {"input": "6", "desc": "Standard: n=6 -> 5"},
+    {"input": "7", "desc": "Standard: prime 7"},
+    {"input": "8", "desc": "Standard: power of 2"},
+    {"input": "9", "desc": "Standard: square"},
+    {"input": "16", "desc": "Standard: power of 2"},
+    {"input": "17", "desc": "Standard: prime"},
+    {"input": "24", "desc": "Standard: composite 24=2^3*3"},
+    {"input": "30", "desc": "Standard: 2*3*5"},
+    {"input": "100", "desc": "Standard: 100"},
+    {"input": "97", "desc": "Standard: prime 97"},
+    {"input": "500", "desc": "Stress: half max"},
+    {"input": "997", "desc": "Stress: prime near max"},
+    {"input": "999", "desc": "Stress: 999=3^3*37"},
+    {"input": "1000", "desc": "Stress: max"},
+    {"input": "64", "desc": "Special: 2^6"}
+  ]
+}
