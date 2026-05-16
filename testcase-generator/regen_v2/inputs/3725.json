@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= mass <= 10^5, 1 <= asteroids.length <= 10^5, 1 <= asteroids[i] <= 10^5",
   "input_format": "line1: mass (int); line2: asteroids (JSON)",
   "testcases": [
-    {"input": "10\n[3,9,19,5,21]", "desc": "Example 1"},
-    {"input": "5\n[4,9,23,4]", "desc": "Example 2"},
-    {"input": "1\n[1]", "desc": "Edge: min single"},
-    {"input": "1\n[100000]", "desc": "Edge: impossible"},
-    {"input": "100000\n[1]", "desc": "Edge: easy"},
-    {"input": "5\n[5]", "desc": "Edge: equal"},
-    {"input": "1\n[1,1,1,1,1]", "desc": "Standard"},
-    {"input": "2\n[1,2,4,8,16]", "desc": "Standard pow2 chain"},
-    {"input": "10\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard"},
-    {"input": "10\n[100,100,100]", "desc": "Edge: impossible huge"},
-    {"input": "5\n[10,1,1,1,1]", "desc": "Standard order matters"},
-    {"input": "1000\n[1000,2000,3000,4000,5000]", "desc": "Standard"},
-    {"input": "100000\n[100000,100000,100000]", "desc": "Edge: 1 max enough"},
-    {"input": "1\n[2,1]", "desc": "Edge: order"},
-    {"input": "1\n[1,2]", "desc": "Edge: can do"},
-    {"input": "100\n[50,150,250,350,450,550]", "desc": "Standard"},
-    {"input": "1\n[1,2,4,8,16,32,64,128,256,512,1024]", "desc": "Standard chain"},
-    {"input": "100000\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress 20 small"},
-    {"input": "1\n[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991]", "desc": "Stress impossible big"},
-    {"input": "50000\n[50000,50000,50000,50000,50000,50000,50000,50000,50000,50000]", "desc": "Stress all equal"}
+    {
+      "input": "10\n[3,9,19,5,21]",
+      "desc": "Example 1"
+    },
+    {
+      "input": "5\n[4,9,23,4]",
+      "desc": "Example 2"
+    },
+    {
+      "input": "1\n[1]",
+      "desc": "Edge: min single"
+    },
+    {
+      "input": "1\n[100000]",
+      "desc": "Edge: impossible"
+    },
+    {
+      "input": "100000\n[1]",
+      "desc": "Edge: easy"
+    },
+    {
+      "input": "5\n[5]",
+      "desc": "Edge: equal"
+    },
+    {
+      "input": "1\n[1,1,1,1,1]",
+      "desc": "Standard"
+    },
+    {
+      "input": "2\n[1,2,4,8,16]",
+      "desc": "Standard pow2 chain"
+    },
+    {
+      "input": "38538\n[87133,73528,60147]",
+      "desc": "Regenerated: standard at position 8"
+    },
+    {
+      "input": "10\n[100,100,100]",
+      "desc": "Edge: impossible huge"
+    },
+    {
+      "input": "5\n[10,1,1,1,1]",
+      "desc": "Standard order matters"
+    },
+    {
+      "input": "1000\n[1000,2000,3000,4000,5000]",
+      "desc": "Standard"
+    },
+    {
+      "input": "100000\n[100000,100000,100000]",
+      "desc": "Edge: 1 max enough"
+    },
+    {
+      "input": "1\n[2,1]",
+      "desc": "Edge: order"
+    },
+    {
+      "input": "1\n[1,2]",
+      "desc": "Edge: can do"
+    },
+    {
+      "input": "100\n[50,150,250,350,450,550]",
+      "desc": "Standard"
+    },
+    {
+      "input": "1\n[1,2,4,8,16,32,64,128,256,512,1024]",
+      "desc": "Standard chain"
+    },
+    {
+      "input": "100000\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
+      "desc": "Stress 20 small"
+    },
+    {
+      "input": "1\n[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991]",
+      "desc": "Stress impossible big"
+    },
+    {
+      "input": "50000\n[50000,50000,50000,50000,50000,50000,50000,50000,50000,50000]",
+      "desc": "Stress all equal"
+    }
   ]
 }

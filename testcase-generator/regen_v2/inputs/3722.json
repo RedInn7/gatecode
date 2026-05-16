@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums1.length, nums2.length <= 10^5, 0 <= nums1[i], nums2[i] <= 10^6",
   "input_format": "line1: nums1 (JSON); line2: nums2 (JSON)",
   "testcases": [
-    {"input": "[3,2,0,1,0]\n[6,5,0]", "desc": "Example 1"},
-    {"input": "[2,0,2,0]\n[1,4]", "desc": "Example 2"},
-    {"input": "[1]\n[1]", "desc": "Edge: 1 each same"},
-    {"input": "[1]\n[2]", "desc": "Edge: 1 each diff (no zeros)"},
-    {"input": "[0]\n[0]", "desc": "Edge: 0 each"},
-    {"input": "[0]\n[1]", "desc": "Edge: 0 vs 1"},
-    {"input": "[1,0]\n[2]", "desc": "Edge: zero can replace"},
-    {"input": "[1,1,1]\n[1,1,1]", "desc": "Standard equal sums"},
-    {"input": "[1,2,3]\n[6]", "desc": "Standard equal sums"},
-    {"input": "[1,2,3]\n[5]", "desc": "Standard unequal no zeros"},
-    {"input": "[0,0,0,0]\n[100]", "desc": "Standard many zeros"},
-    {"input": "[100]\n[0,0,0,0]", "desc": "Standard"},
-    {"input": "[1000000,0]\n[0,0,0,0,0]", "desc": "Standard"},
-    {"input": "[1,1,0,1,0]\n[2,0,4]", "desc": "Standard mixed"},
-    {"input": "[0,0]\n[0,0]", "desc": "Standard all zeros"},
-    {"input": "[1000000,1000000]\n[1,1,0]", "desc": "Standard"},
-    {"input": "[0,0,0,0,0,0,0,0,0,0]\n[1,2,3,4,5]", "desc": "Standard"},
-    {"input": "[5,5,5,5,5]\n[10,10,5]", "desc": "Standard equal sums no zeros"},
-    {"input": "[1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000]\n[1]", "desc": "Stress max nums1"},
-    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Stress all zeros"}
+    {
+      "input": "[3,2,0,1,0]\n[6,5,0]",
+      "desc": "Example 1"
+    },
+    {
+      "input": "[2,0,2,0]\n[1,4]",
+      "desc": "Example 2"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: 1 each same"
+    },
+    {
+      "input": "[1]\n[2]",
+      "desc": "Edge: 1 each diff (no zeros)"
+    },
+    {
+      "input": "[0]\n[0]",
+      "desc": "Edge: 0 each"
+    },
+    {
+      "input": "[0]\n[1]",
+      "desc": "Edge: 0 vs 1"
+    },
+    {
+      "input": "[1,0]\n[2]",
+      "desc": "Edge: zero can replace"
+    },
+    {
+      "input": "[1,1,1]\n[1,1,1]",
+      "desc": "Standard equal sums"
+    },
+    {
+      "input": "[1,2,3]\n[6]",
+      "desc": "Standard equal sums"
+    },
+    {
+      "input": "[1,2,3]\n[5]",
+      "desc": "Standard unequal no zeros"
+    },
+    {
+      "input": "[0,0,0,0]\n[100]",
+      "desc": "Standard many zeros"
+    },
+    {
+      "input": "[100]\n[0,0,0,0]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[1000000,0]\n[0,0,0,0,0]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[1,1,0,1,0]\n[2,0,4]",
+      "desc": "Standard mixed"
+    },
+    {
+      "input": "[0,0]\n[0,0]",
+      "desc": "Standard all zeros"
+    },
+    {
+      "input": "[1000000,1000000]\n[1,1,0]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[716,440,568,609,-658,-496,-182,312,477,191,-500,63,-778,518,-328,638,248,331,-738,-629,-303,-935,40,303,792,-915,299,680,214,-597,235,-106,-359,633,120,739,-270,-882,-913,351,-759,136,-662,47,-485,420,-864,-437,-13,-99,567,-876,285,131,-475,-960,-133,-164,-289,910,-878,110,289,-654,-797,-421,321,774,958,573,-467,717,574,343,-401,649,-490,-473,-582,-100,78]\n[-26,-185,424,-480,-103,215,-423,634,-118,598,202,-807,839,238,418,-245,-37,47,-924,-480,-60,-394,71,-625,406,273,-894,79,766,456,-89,-194,392,663,-424,474,-942,463,531,-721,-653,-969,-402,-642,-718,787,530,152,-447,303,555,154,-36,-150,-339,-147,403,145,-375,487,-851,-359,768,811,400,-950,-854,69,429,-837,168,-154,59,-310,-753,578,-619,953,503,766,-496]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[5,5,5,5,5]\n[10,10,5]",
+      "desc": "Standard equal sums no zeros"
+    },
+    {
+      "input": "[1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000]\n[1]",
+      "desc": "Stress max nums1"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]",
+      "desc": "Stress all zeros"
+    }
   ]
 }
