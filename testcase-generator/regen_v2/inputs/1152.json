@@ -1,0 +1,88 @@
+{
+  "pid": 1152,
+  "slug": "interval-list-intersections",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: n=10"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: n=100"
+    },
+    {
+      "input": "858461",
+      "desc": "Standard: n=858461"
+    },
+    {
+      "input": "69116",
+      "desc": "Standard: n=69116"
+    },
+    {
+      "input": "419443",
+      "desc": "Standard: n=419443"
+    },
+    {
+      "input": "537355",
+      "desc": "Standard: n=537355"
+    },
+    {
+      "input": "795546",
+      "desc": "Standard: n=795546"
+    },
+    {
+      "input": "766778",
+      "desc": "Standard: n=766778"
+    },
+    {
+      "input": "104289",
+      "desc": "Standard: n=104289"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: n=10^5"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: n=10^6"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    }
+  ]
+}
