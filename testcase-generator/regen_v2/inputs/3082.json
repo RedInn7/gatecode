@@ -71,6 +71,18 @@
     {
       "input": "50",
       "desc": "Killer: absolute max"
+    },
+    {
+      "input": "50",
+      "desc": "Generated: stress at position 17"
+    },
+    {
+      "input": "50",
+      "desc": "Generated: stress at position 18"
+    },
+    {
+      "input": "50",
+      "desc": "Generated: stress at position 19"
     }
   ]
 }
