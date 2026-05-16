@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= n <= 10^12",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "2", "desc": "Example 1"},
-    {"input": "3", "desc": "Example 2"},
-    {"input": "11", "desc": "Example 3"},
-    {"input": "10", "desc": "Edge: includes 10"},
-    {"input": "12", "desc": "Standard"},
-    {"input": "100", "desc": "Standard"},
-    {"input": "1000", "desc": "Standard"},
-    {"input": "20", "desc": "Standard"},
-    {"input": "21", "desc": "Standard"},
-    {"input": "9", "desc": "Edge: 9 max no-zero pair"},
-    {"input": "18", "desc": "Standard"},
-    {"input": "99", "desc": "Standard"},
-    {"input": "999", "desc": "Standard 3 digits all 9"},
-    {"input": "10000", "desc": "Standard"},
-    {"input": "100000", "desc": "Standard"},
-    {"input": "1000000", "desc": "Standard"},
-    {"input": "1000000000", "desc": "Standard 10^9"},
-    {"input": "100000000000", "desc": "Stress 10^11"},
-    {"input": "1000000000000", "desc": "Stress 10^12"},
-    {"input": "999999999999", "desc": "Stress all 9s"}
+    {
+      "input": "2",
+      "desc": "Example 1"
+    },
+    {
+      "input": "3",
+      "desc": "Example 2"
+    },
+    {
+      "input": "11",
+      "desc": "Example 3"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: includes 10"
+    },
+    {
+      "input": "12",
+      "desc": "Standard"
+    },
+    {
+      "input": "100",
+      "desc": "Standard"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard"
+    },
+    {
+      "input": "20",
+      "desc": "Standard"
+    },
+    {
+      "input": "21",
+      "desc": "Standard"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: 9 max no-zero pair"
+    },
+    {
+      "input": "18",
+      "desc": "Standard"
+    },
+    {
+      "input": "99",
+      "desc": "Standard"
+    },
+    {
+      "input": "999",
+      "desc": "Standard 3 digits all 9"
+    },
+    {
+      "input": "10000",
+      "desc": "Standard"
+    },
+    {
+      "input": "100000",
+      "desc": "Standard"
+    },
+    {
+      "input": "1000000",
+      "desc": "Standard"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Standard 10^9"
+    },
+    {
+      "input": "100000000000",
+      "desc": "Stress 10^11"
+    },
+    {
+      "input": "1000000000000",
+      "desc": "Stress 10^12"
+    },
+    {
+      "input": "12",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
