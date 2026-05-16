@@ -1,0 +1,28 @@
+{
+  "pid": 2787,
+  "slug": "move-pieces-to-obtain-a-string",
+  "inferred_constraints": "n == start.length == target.length, 1 <= n <= 10^5, characters in {'L','R','_'}",
+  "input_format": "line1: start (raw string); line2: target (raw string)",
+  "testcases": [
+    {"input": "_L__R__R_\nL______RR", "desc": "Edge: example1 true"},
+    {"input": "R_L_\n__LR", "desc": "Edge: example2 false"},
+    {"input": "_R\nR_", "desc": "Edge: example3 false R cant move left"},
+    {"input": "_\n_", "desc": "Edge: single blank"},
+    {"input": "L\nL", "desc": "Edge: single L"},
+    {"input": "R\nR", "desc": "Edge: single R"},
+    {"input": "_L\nL_", "desc": "Edge: simplest L move"},
+    {"input": "R_\n_R", "desc": "Edge: simplest R move"},
+    {"input": "LR\nLR", "desc": "Edge: no movement possible"},
+    {"input": "RL\nRL", "desc": "Standard: blocked pieces"},
+    {"input": "LRLR\nLRLR", "desc": "Standard: alternating same"},
+    {"input": "__LR__\n__LR__", "desc": "Standard: blocked LR"},
+    {"input": "LL__\nLL__", "desc": "Standard: 2 L's same"},
+    {"input": "__RR\n__RR", "desc": "Standard: 2 R's stuck"},
+    {"input": "L_R_L_R_\n_LR__LR_", "desc": "Standard: alternating mix"},
+    {"input": "_____LR_R_\nLR______R_", "desc": "Standard: long blanks"},
+    {"input": "L_L_L_L_\nLLLL____", "desc": "Standard: all L's to left"},
+    {"input": "_R_R_R_R\n____RRRR", "desc": "Standard: all R's to right"},
+    {"input": "L_R\nR_L", "desc": "Stress: impossible swap"},
+    {"input": "____________________________________________________L\nL____________________________________________________", "desc": "Killer: long L far move"}
+  ]
+}

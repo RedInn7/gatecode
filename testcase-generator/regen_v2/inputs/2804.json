@@ -1,0 +1,28 @@
+{
+  "pid": 2804,
+  "slug": "prime-palindrome",
+  "inferred_constraints": "1 <= n <= 10^8, answer in [2, 2*10^8]",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "6", "desc": "Edge: example1"},
+    {"input": "8", "desc": "Edge: example2"},
+    {"input": "13", "desc": "Edge: example3"},
+    {"input": "1", "desc": "Edge: min n returns 2"},
+    {"input": "2", "desc": "Edge: n=2 returns 2"},
+    {"input": "3", "desc": "Edge: n=3 returns 3"},
+    {"input": "11", "desc": "Edge: exact 11"},
+    {"input": "12", "desc": "Edge: between 11 and 101"},
+    {"input": "100", "desc": "Standard: near 101"},
+    {"input": "200", "desc": "Standard: returns 313"},
+    {"input": "500", "desc": "Standard: small"},
+    {"input": "1000", "desc": "Standard: near 1001"},
+    {"input": "10000", "desc": "Standard: 10001"},
+    {"input": "100000", "desc": "Standard: 100001"},
+    {"input": "1000000", "desc": "Standard: 1000001"},
+    {"input": "9989900", "desc": "Standard: medium"},
+    {"input": "10000000", "desc": "Standard: 10^7"},
+    {"input": "31425","desc": "Standard: random"},
+    {"input": "99999999", "desc": "Stress: 8 nines"},
+    {"input": "100000000", "desc": "Killer: max n=10^8"}
+  ]
+}

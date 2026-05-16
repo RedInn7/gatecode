@@ -389,6 +389,16 @@
       "pid": 2741,
       "slug": "kth-largest-element-in-a-stream",
       "reason": "design class KthLargest with stateful add"
+    },
+    {
+      "pid": 2793,
+      "slug": "lfu-cache",
+      "reason": "design class with stateful get/put method-call sequence"
+    },
+    {
+      "pid": 2800,
+      "slug": "find-median-from-data-stream",
+      "reason": "design class MedianFinder with stateful method calls"
     }
   ]
 }

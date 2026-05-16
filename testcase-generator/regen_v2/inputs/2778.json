@@ -1,0 +1,28 @@
+{
+  "pid": 2778,
+  "slug": "scramble-string",
+  "inferred_constraints": "1 <= s1.length == s2.length <= 30, lowercase English letters, s1 and s2 are anagrams",
+  "input_format": "line1: s1 (raw string); line2: s2 (raw string)",
+  "testcases": [
+    {"input": "great\nrgeat", "desc": "Edge: example1 true"},
+    {"input": "abcde\ncaebd", "desc": "Edge: example2 false"},
+    {"input": "a\na", "desc": "Edge: example3 single"},
+    {"input": "ab\nba", "desc": "Edge: 2 chars swap"},
+    {"input": "ab\nab", "desc": "Edge: 2 chars identical"},
+    {"input": "abc\nacb", "desc": "Edge: 3 chars valid"},
+    {"input": "abc\nbca", "desc": "Edge: 3 chars rotation"},
+    {"input": "abcd\nabdc", "desc": "Edge: 4 chars partial swap"},
+    {"input": "abcd\ndcba", "desc": "Standard: reverse 4"},
+    {"input": "abcdef\nfecabd", "desc": "Standard: false"},
+    {"input": "abcdef\nbcdaef", "desc": "Standard: rotation"},
+    {"input": "aabb\nabab", "desc": "Standard: dups false"},
+    {"input": "aabb\nbbaa", "desc": "Standard: dups true"},
+    {"input": "abcdefgh\ngfdcebah", "desc": "Standard: 8 chars false"},
+    {"input": "abcdefghij\njihgfedcba", "desc": "Standard: 10 reverse"},
+    {"input": "tqxpoegnf\ntqopxegnf", "desc": "Standard: 9 chars"},
+    {"input": "aaaa\naaaa", "desc": "Standard: all same"},
+    {"input": "abc\ncba", "desc": "Standard: reverse 3 false"},
+    {"input": "abcdefghijklmnopqrst\ntsrqponmlkjihgfedcba", "desc": "Stress: 20 reverse"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcd\ndcbazyxwvutsrqponmlkjihgfedcba", "desc": "Killer: max 30 chars"}
+  ]
+}

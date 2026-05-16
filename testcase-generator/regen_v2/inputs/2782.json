@@ -1,0 +1,28 @@
+{
+  "pid": 2782,
+  "slug": "split-with-minimum-sum",
+  "inferred_constraints": "10 <= num <= 10^9, no leading zeros",
+  "input_format": "single line: num (int)",
+  "testcases": [
+    {"input": "4325", "desc": "Edge: example1"},
+    {"input": "687", "desc": "Edge: example2"},
+    {"input": "10", "desc": "Edge: minimum"},
+    {"input": "11", "desc": "Edge: smallest 2 same digits"},
+    {"input": "99", "desc": "Edge: 2 nines"},
+    {"input": "100", "desc": "Edge: with zero"},
+    {"input": "999", "desc": "Edge: 3 same"},
+    {"input": "1000000000", "desc": "Edge: max 10^9"},
+    {"input": "9876543210", "desc": "Edge: descending 10 digits"},
+    {"input": "1234567890", "desc": "Standard: ascending"},
+    {"input": "98765", "desc": "Standard: descending 5"},
+    {"input": "12345", "desc": "Standard: ascending 5"},
+    {"input": "55555", "desc": "Standard: all 5"},
+    {"input": "10203", "desc": "Standard: with zeros"},
+    {"input": "777777", "desc": "Standard: 6 sevens"},
+    {"input": "100000", "desc": "Standard: power of 10"},
+    {"input": "987654321", "desc": "Standard: 9 descending"},
+    {"input": "123456789", "desc": "Standard: 9 ascending"},
+    {"input": "999999999", "desc": "Stress: max nines"},
+    {"input": "1010101010", "desc": "Killer: alternating 1,0"}
+  ]
+}

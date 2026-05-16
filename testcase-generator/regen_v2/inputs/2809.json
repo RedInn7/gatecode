@@ -1,0 +1,28 @@
+{
+  "pid": 2809,
+  "slug": "unique-number-of-occurrences",
+  "inferred_constraints": "1 <= arr.length <= 1000, -1000 <= arr[i] <= 1000",
+  "input_format": "single line: arr (JSON array)",
+  "testcases": [
+    {"input": "[1,2,2,1,1,3]", "desc": "Edge: example1"},
+    {"input": "[1,2]", "desc": "Edge: example2"},
+    {"input": "[-3,0,1,-3,1,1,1,-3,10,0]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: single element"},
+    {"input": "[1,1]", "desc": "Edge: same pair"},
+    {"input": "[1,2,3]", "desc": "Edge: all distinct (1,1,1 same count false)"},
+    {"input": "[0,0]", "desc": "Edge: zeros"},
+    {"input": "[-1000,1000]", "desc": "Edge: extremes"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: all 2 occurrences"},
+    {"input": "[1,1,1,2,2,3]", "desc": "Standard: 3-2-1"},
+    {"input": "[1,1,1,1,2,2,2,2]", "desc": "Standard: equal counts"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: all distinct same count"},
+    {"input": "[0,0,0,1,1,1,2,2,2]", "desc": "Standard: equal triples"},
+    {"input": "[5,5,5,5,5]", "desc": "Standard: all same"},
+    {"input": "[-1,-1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10]", "desc": "Standard: 10 pairs"},
+    {"input": "[1,1,2,2,2,3,3,3,3]", "desc": "Standard: 2-3-4"},
+    {"input": "[100,200,300,400,500,500]", "desc": "Standard: only 1 dup"},
+    {"input": "[1000,1000,-1000,-1000,500,500]", "desc": "Standard: ties"},
+    {"input": "[1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10]", "desc": "Stress: distinct counts 1-10 each"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3]", "desc": "Killer: 50 elements with ties 20-20-10"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2791,
+  "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-ii",
+  "inferred_constraints": "1 <= nums.length <= 10^5, nums[i] in {0,1}",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[0,1,1,0,1]", "desc": "Edge: example1"},
+    {"input": "[1,0,0,0]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single 1"},
+    {"input": "[0]", "desc": "Edge: single 0"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all 1s"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all 0s"},
+    {"input": "[1,0]", "desc": "Edge: 2 elements"},
+    {"input": "[0,1]", "desc": "Edge: 2 elements other"},
+    {"input": "[1,1,0]", "desc": "Standard: 3 elements"},
+    {"input": "[0,1,0,1,0,1]", "desc": "Standard: alternating start 0"},
+    {"input": "[1,0,1,0,1,0]", "desc": "Standard: alternating start 1"},
+    {"input": "[0,0,1,1,0,0,1,1]", "desc": "Standard: block pattern"},
+    {"input": "[1,1,1,1,0,0,0,0]", "desc": "Standard: half-half"},
+    {"input": "[0,0,0,1,1,1,0,0,0]", "desc": "Standard: middle 1s"},
+    {"input": "[1,0,0,0,0,0,0,0,0,1]", "desc": "Standard: ends 1"},
+    {"input": "[0,1,1,1,1,1,1,1,1,0]", "desc": "Standard: ends 0"},
+    {"input": "[1,1,0,1,1,0,1,1,0,1,1,0]", "desc": "Standard: triple pattern"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: 20 zeros"},
+    {"input": "[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]", "desc": "Stress: 50 alternating"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Killer: 100 zeros"}
+  ]
+}

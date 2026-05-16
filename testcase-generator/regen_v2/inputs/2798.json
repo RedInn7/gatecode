@@ -1,0 +1,28 @@
+{
+  "pid": 2798,
+  "slug": "number-of-subarrays-that-match-a-pattern-i",
+  "inferred_constraints": "2 <= n == nums.length <= 100, 1 <= nums[i] <= 10^9, 1 <= m == pattern.length < n, pattern[i] in {-1,0,1}",
+  "input_format": "line1: nums (JSON array); line2: pattern (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,6]\n[1,1]", "desc": "Edge: example1"},
+    {"input": "[1,4,4,1,3,5,5,3]\n[1,0,-1]", "desc": "Edge: example2"},
+    {"input": "[1,2]\n[1]", "desc": "Edge: minimum"},
+    {"input": "[2,1]\n[1]", "desc": "Edge: no match"},
+    {"input": "[1,1]\n[0]", "desc": "Edge: zero pattern"},
+    {"input": "[5,5,5,5]\n[0]", "desc": "Edge: all same 0 pattern"},
+    {"input": "[5,5,5,5]\n[0,0]", "desc": "Edge: all same double 0"},
+    {"input": "[1,2,3,4,5]\n[1,1,1,1]", "desc": "Edge: full ascending"},
+    {"input": "[5,4,3,2,1]\n[-1,-1,-1,-1]", "desc": "Standard: full descending"},
+    {"input": "[1,3,2,4,3,5,4,6]\n[1,-1]", "desc": "Standard: zigzag"},
+    {"input": "[10,20,10,20,10,20]\n[1,-1]", "desc": "Standard: alt up-down"},
+    {"input": "[100,100,100,100,100,100,100,100]\n[0,0,0]", "desc": "Standard: many 0s"},
+    {"input": "[1,2,3,2,1,2,3,2,1]\n[1,1,-1,-1]", "desc": "Standard: mountain pattern"},
+    {"input": "[1,2,3,4,5,4,3,2,1]\n[1,1,1,1,-1,-1,-1,-1]", "desc": "Standard: full mountain"},
+    {"input": "[7,6,5,4,3,2,1,2,3,4]\n[-1]", "desc": "Standard: long desc + asc"},
+    {"input": "[1,1,1,2,2,2,3,3,3]\n[0,1,0]", "desc": "Standard: blocks"},
+    {"input": "[1000000000,1,1000000000,1,1000000000]\n[-1,1,-1,1]", "desc": "Standard: extreme alternating"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[1,1,1,1,1]", "desc": "Standard: 20 asc"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: max 100 asc"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]\n[0,0,0,0,0,0,0,0,0,0]", "desc": "Killer: 100 same all 0"}
+  ]
+}

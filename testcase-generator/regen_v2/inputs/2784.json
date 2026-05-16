@@ -1,0 +1,28 @@
+{
+  "pid": 2784,
+  "slug": "largest-prime-from-consecutive-prime-sum",
+  "inferred_constraints": "1 <= n <= 5 * 10^5",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "20", "desc": "Edge: example1"},
+    {"input": "2", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: n=1 below first prime"},
+    {"input": "3", "desc": "Edge: n=3"},
+    {"input": "4", "desc": "Edge: n=4 between 2 and 5"},
+    {"input": "5", "desc": "Edge: n=5"},
+    {"input": "10", "desc": "Edge: n=10 sums 2,5,10"},
+    {"input": "17", "desc": "Edge: exact match for 2+3+5+7"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "200", "desc": "Standard: n=200"},
+    {"input": "500", "desc": "Standard: n=500"},
+    {"input": "1000", "desc": "Standard: n=1000"},
+    {"input": "5000", "desc": "Standard: n=5000"},
+    {"input": "10000", "desc": "Standard: n=10000"},
+    {"input": "50000", "desc": "Standard: n=50000"},
+    {"input": "100000", "desc": "Standard: n=100000"},
+    {"input": "200000", "desc": "Standard: n=200000"},
+    {"input": "300000", "desc": "Standard: n=300000"},
+    {"input": "400000", "desc": "Stress: n=4e5"},
+    {"input": "500000", "desc": "Killer: max n"}
+  ]
+}

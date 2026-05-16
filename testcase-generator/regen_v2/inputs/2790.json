@@ -1,0 +1,28 @@
+{
+  "pid": 2790,
+  "slug": "count-collisions-of-monkeys-on-a-polygon",
+  "inferred_constraints": "3 <= n <= 10^9, return mod 10^9+7",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "3", "desc": "Edge: example1 min"},
+    {"input": "4", "desc": "Edge: example2"},
+    {"input": "5", "desc": "Edge: n=5"},
+    {"input": "6", "desc": "Edge: n=6"},
+    {"input": "7", "desc": "Edge: n=7"},
+    {"input": "10", "desc": "Edge: n=10"},
+    {"input": "20", "desc": "Edge: n=20"},
+    {"input": "50", "desc": "Standard: n=50"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "1000", "desc": "Standard: n=1000"},
+    {"input": "10000", "desc": "Standard: n=10000"},
+    {"input": "100000", "desc": "Standard: n=10^5"},
+    {"input": "1000000", "desc": "Standard: n=10^6"},
+    {"input": "10000007", "desc": "Standard: just above 10^7"},
+    {"input": "12345678", "desc": "Standard: random large"},
+    {"input": "500000000", "desc": "Standard: n=5*10^8"},
+    {"input": "999999937", "desc": "Standard: prime near 10^9"},
+    {"input": "1000000000", "desc": "Standard: max n=10^9"},
+    {"input": "999999999", "desc": "Stress: large odd"},
+    {"input": "536870912", "desc": "Killer: 2^29"}
+  ]
+}

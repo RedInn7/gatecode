@@ -1,0 +1,28 @@
+{
+  "pid": 2801,
+  "slug": "count-odd-letters-from-number",
+  "inferred_constraints": "1 <= n <= 10^9",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "41", "desc": "Edge: example1"},
+    {"input": "20", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: minimum n=1"},
+    {"input": "0", "desc": "Edge: zero (zero -> zero)"},
+    {"input": "2", "desc": "Edge: two"},
+    {"input": "3", "desc": "Edge: three"},
+    {"input": "9", "desc": "Edge: nine"},
+    {"input": "10", "desc": "Edge: ten word"},
+    {"input": "100", "desc": "Standard: 3 digit"},
+    {"input": "123", "desc": "Standard: 3 distinct"},
+    {"input": "555", "desc": "Standard: all same"},
+    {"input": "234567890", "desc": "Standard: 9 distinct digits"},
+    {"input": "999999999", "desc": "Standard: 9 nines"},
+    {"input": "100000000", "desc": "Standard: 1 + 8 zeros"},
+    {"input": "987654321", "desc": "Standard: descending"},
+    {"input": "111222333", "desc": "Standard: blocks"},
+    {"input": "246810", "desc": "Standard: evens"},
+    {"input": "13579", "desc": "Standard: odds"},
+    {"input": "1000000000", "desc": "Stress: max"},
+    {"input": "888888888", "desc": "Killer: 9 eights"}
+  ]
+}

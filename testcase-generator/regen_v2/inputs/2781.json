@@ -1,0 +1,28 @@
+{
+  "pid": 2781,
+  "slug": "check-if-dfs-strings-are-palindromes",
+  "inferred_constraints": "n == parent.length == s.length, 1 <= n <= 10^5, parent[0] == -1, 0 <= parent[i] < i for i >= 1, s lowercase",
+  "input_format": "line1: parent (JSON array); line2: s (raw string)",
+  "testcases": [
+    {"input": "[-1]\na", "desc": "Edge: single node"},
+    {"input": "[-1,0]\nab", "desc": "Edge: 2 nodes diff"},
+    {"input": "[-1,0]\naa", "desc": "Edge: 2 nodes same"},
+    {"input": "[-1,0,0]\naba", "desc": "Edge: 3 nodes palin"},
+    {"input": "[-1,0,1]\nabc", "desc": "Edge: 3 chain"},
+    {"input": "[-1,0,0,1,1,2]\nabcdef", "desc": "Edge: small tree"},
+    {"input": "[-1,0,0,0,0]\nabcde", "desc": "Edge: star"},
+    {"input": "[-1,0,1,2,3]\naaaaa", "desc": "Edge: chain all same"},
+    {"input": "[-1,0,0,1,1,2,2]\nabacaba", "desc": "Standard: balanced palin"},
+    {"input": "[-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6]\naabaabaaaabaaba", "desc": "Standard: 15 mixed"},
+    {"input": "[-1,0,1,2,3,4,5,6,7]\nabcdefghi", "desc": "Standard: chain unique"},
+    {"input": "[-1,0,0,0,0,0,0,0,0,0]\nabacdefghi", "desc": "Standard: star different leaves"},
+    {"input": "[-1,0,0,1,1,2,2,3,3]\nababbaba", "desc": "Standard: mixed palin"},
+    {"input": "[-1,0,0,1,1,2,3]\naabaaba", "desc": "Standard: 7 nodes"},
+    {"input": "[-1,0,1,1,2,2,3,3,4]\nabcdefghi", "desc": "Standard: branching"},
+    {"input": "[-1,0,0,1,2,2,4,5]\naabbcdef", "desc": "Standard: irregular tree"},
+    {"input": "[-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]\naaaaaaaaaaaaaaaaaaa", "desc": "Standard: 19 all a"},
+    {"input": "[-1,0,1,0,3,4]\nababab", "desc": "Standard: 6 mixed"},
+    {"input": "[-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14]\nabcdefghijklmnopqrstuvwxyzabcde", "desc": "Stress: 31 deep tree"},
+    {"input": "[-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]\nabcdefghijklmnopqrstu", "desc": "Killer: chain 21"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2785,
+  "slug": "count-prefix-and-suffix-pairs-i",
+  "inferred_constraints": "1 <= words.length <= 50, 1 <= words[i].length <= 10, words[i] lowercase English",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"a\",\"aba\",\"ababa\",\"aa\"]", "desc": "Edge: example1"},
+    {"input": "[\"pa\",\"papa\",\"ma\",\"mama\"]", "desc": "Edge: example2"},
+    {"input": "[\"abab\",\"ab\"]", "desc": "Edge: example3 false"},
+    {"input": "[\"a\"]", "desc": "Edge: single word"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: 2 same"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 distinct unrelated"},
+    {"input": "[\"abc\",\"abcabc\"]", "desc": "Edge: prefix only not suffix"},
+    {"input": "[\"a\",\"aaaaa\"]", "desc": "Standard: single char pref suff"},
+    {"input": "[\"ab\",\"ab\",\"ab\"]", "desc": "Standard: 3 identical"},
+    {"input": "[\"abc\",\"abcdabc\",\"abcabc\"]", "desc": "Standard: chain"},
+    {"input": "[\"a\",\"ab\",\"aba\",\"abab\",\"ababa\"]", "desc": "Standard: growing"},
+    {"input": "[\"xyz\",\"xyzxyzxyz\",\"xy\",\"xyxy\"]", "desc": "Standard: mixed"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]", "desc": "Standard: all same single"},
+    {"input": "[\"hello\",\"olleh\",\"hellohello\",\"hellollohelhello\"]", "desc": "Standard: tricky"},
+    {"input": "[\"ab\",\"ba\",\"abba\",\"baab\"]", "desc": "Standard: reverse-like"},
+    {"input": "[\"abcdef\",\"abcabcdef\",\"defabcdef\"]", "desc": "Standard: long"},
+    {"input": "[\"aa\",\"aaaa\",\"aaaaaa\",\"aaaaaaaa\"]", "desc": "Standard: aa power chain"},
+    {"input": "[\"abab\",\"abababab\",\"ababababab\",\"ab\"]", "desc": "Standard: ab repeating"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\"]", "desc": "Stress: 50 a's all pairs match"},
+    {"input": "[\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\"]", "desc": "Killer: 10 long identical"}
+  ]
+}
