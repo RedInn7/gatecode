@@ -4,6 +4,11 @@
       "pid": 1355,
       "slug": "maximum-sum-with-at-most-k-elements",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1342,
+      "slug": "find-triangular-sum-of-an-array",
+      "reason": "ACM mode problem"
     }
   ]
 }
