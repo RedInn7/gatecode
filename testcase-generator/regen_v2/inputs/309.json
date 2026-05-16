@@ -1,0 +1,28 @@
+{
+  "pid": 309,
+  "slug": "maximum-subarray-sum-after-one-operation",
+  "inferred_constraints": "1 <= nums.length <= 1e5, -1e4 <= nums[i] <= 1e4",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[2,-1,-4,-3]", "desc": "Edge: example1"},
+    {"input": "[1,-1,1,1,-1,-1,1]", "desc": "Edge: example2"},
+    {"input": "[0]", "desc": "Edge: n=1 zero"},
+    {"input": "[5]", "desc": "Edge: n=1 pos"},
+    {"input": "[-5]", "desc": "Edge: n=1 neg"},
+    {"input": "[10000]", "desc": "Edge: n=1 max"},
+    {"input": "[-10000]", "desc": "Edge: n=1 min"},
+    {"input": "[1,2]", "desc": "Edge: n=2"},
+    {"input": "[-1,-2]", "desc": "Edge: 2 neg"},
+    {"input": "[10000,10000,10000]", "desc": "Edge: all max"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: asc"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: desc"},
+    {"input": "[-1,1,-1,1,-1,1]", "desc": "Standard: alt"},
+    {"input": "[10000,-10000,10000,-10000]", "desc": "Standard: extreme alt"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: all ones"},
+    {"input": "[100,-200,100,-200,100]", "desc": "Standard: alternating spikes"},
+    {"input": "[-5,-10,3,-3,5,-2]", "desc": "Standard: mixed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 asc"},
+    {"input": "[-10000,-9999,-9998,-9997,-9996,-9995,-9994,-9993,-9992,-9991]", "desc": "Stress: 10 most-neg"},
+    {"input": "[10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000]", "desc": "Stress: 20 extreme alt"}
+  ]
+}

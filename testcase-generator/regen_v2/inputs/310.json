@@ -1,0 +1,29 @@
+{
+  "pid": 310,
+  "slug": "stock-price-fluctuation",
+  "inferred_constraints": "1 <= timestamp, price <= 1e9, at most 1e5 calls, current/max/min only after update",
+  "input_format": "Design class: line1: operations (JSON string array); line2: arguments (JSON 2D)",
+  "testcases": [
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"current\",\"maximum\",\"update\",\"maximum\",\"update\",\"current\",\"minimum\"]\n[[],[1,10],[2,5],[],[],[1,3],[],[4,2],[],[]]", "desc": "Edge: example1"},
+    {"input": "[\"StockPrice\",\"update\",\"current\"]\n[[],[1,100],[]]", "desc": "Edge: single update"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"current\"]\n[[],[1,100],[1,200],[]]", "desc": "Edge: same timestamp update"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"maximum\"]\n[[],[1,100],[2,200],[]]", "desc": "Edge: simple max"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"minimum\"]\n[[],[1,100],[2,200],[]]", "desc": "Edge: simple min"},
+    {"input": "[\"StockPrice\",\"update\",\"current\",\"maximum\",\"minimum\"]\n[[],[1,1000000000],[],[],[]]", "desc": "Edge: max price"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"current\",\"maximum\",\"minimum\"]\n[[],[1,10],[2,20],[3,30],[4,40],[],[],[]]", "desc": "Standard: ascending"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"current\",\"maximum\",\"minimum\"]\n[[],[1,40],[2,30],[3,20],[4,10],[],[],[]]", "desc": "Standard: descending"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"current\",\"maximum\",\"minimum\"]\n[[],[5,100],[3,50],[7,200],[1,25],[9,150],[],[],[]]", "desc": "Standard: scattered timestamps"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"current\",\"maximum\",\"minimum\"]\n[[],[1,100],[1,200],[1,300],[1,400],[1,500],[1,600],[1,700],[1,800],[1,900],[],[],[]]", "desc": "Standard: same ts many updates"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"maximum\",\"minimum\",\"update\",\"maximum\",\"minimum\"]\n[[],[1,10],[2,20],[3,30],[2,15],[3,25],[],[],[3,5],[],[]]", "desc": "Standard: corrections"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"current\",\"update\",\"current\",\"update\",\"current\"]\n[[],[5,100],[10,200],[15,300],[],[3,50],[],[20,400],[]]", "desc": "Standard: current returns latest by timestamp"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"maximum\",\"minimum\",\"current\"]\n[[],[1,100],[2,200],[3,300],[4,400],[],[],[]]", "desc": "Standard: small sequence"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"maximum\",\"minimum\",\"current\"]\n[[],[1,100],[2,200],[3,150],[4,300],[5,250],[6,400],[7,350],[8,500],[9,450],[10,600],[],[],[]]", "desc": "Standard: 10 updates zigzag"},
+    {"input": "[\"StockPrice\",\"update\",\"current\",\"update\",\"current\",\"update\",\"current\"]\n[[],[1,10],[],[2,20],[],[3,30],[]]", "desc": "Standard: interleaved current"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"maximum\",\"update\",\"maximum\",\"update\",\"maximum\"]\n[[],[1,5],[2,10],[3,15],[2,20],[1,25],[],[3,30],[],[2,35],[]]", "desc": "Standard: updates affect max"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"minimum\",\"update\",\"minimum\",\"update\",\"minimum\"]\n[[],[1,100],[2,90],[3,80],[2,85],[1,95],[],[3,70],[],[2,60],[]]", "desc": "Standard: updates affect min"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"maximum\",\"minimum\",\"current\"]\n[[],[1,100],[2,200],[3,150],[4,300],[5,250],[6,400],[7,350],[8,500],[9,450],[10,600],[11,550],[12,700],[13,650],[14,800],[15,750],[],[],[]]", "desc": "Stress: 15 updates"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"maximum\",\"minimum\",\"current\"]\n[[],[5,100],[3,50],[10,200],[7,150],[1,25],[12,300],[9,180],[15,400],[11,250],[2,40],[20,500],[16,420],[4,80],[18,460],[14,380],[6,120],[19,470],[13,340],[17,440],[8,170],[],[],[]]", "desc": "Stress: 20 scattered updates"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"update\",\"maximum\",\"minimum\",\"current\",\"update\",\"update\",\"maximum\",\"minimum\",\"current\"]\n[[],[1,1000000000],[2,1],[3,500000000],[4,750000000],[5,250000000],[6,999999999],[7,1],[8,1000000000],[],[],[],[5,999999998],[7,2],[],[],[]]", "desc": "Stress: extreme prices"},
+    {"input": "[\"StockPrice\",\"update\",\"update\",\"update\",\"current\",\"maximum\",\"minimum\",\"update\",\"current\",\"maximum\",\"minimum\",\"update\",\"current\",\"maximum\",\"minimum\"]\n[[],[1,10],[1,20],[1,30],[],[],[],[1,15],[],[],[],[1,5],[],[],[]]", "desc": "Stress: same ts many corrections"}
+  ]
+}
