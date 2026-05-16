@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 50, 1 <= grid[i][j], color <= 1000",
   "input_format": "line1: grid (JSON 2D); line2: row (int); line3: col (int); line4: color (int)",
   "testcases": [
-    {"input": "[[1,1],[1,2]]\n0\n0\n3", "desc": "Standard example 1"},
-    {"input": "[[1,2,2],[2,3,2]]\n0\n1\n3", "desc": "Standard example 2"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1]]\n1\n1\n2", "desc": "Standard"},
-    {"input": "[[1]]\n0\n0\n2", "desc": "Edge 1x1"},
-    {"input": "[[1,1]]\n0\n0\n2", "desc": "Edge 1x2"},
-    {"input": "[[1],[1]]\n0\n0\n2", "desc": "Edge 2x1"},
-    {"input": "[[5,5,5],[5,5,5]]\n1\n1\n10", "desc": "Standard"},
-    {"input": "[[1,2,3],[4,5,6],[7,8,9]]\n1\n1\n100", "desc": "Standard all distinct"},
-    {"input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]\n2\n2\n5", "desc": "Standard 4x4"},
-    {"input": "[[1,1,1,1,1],[1,2,2,2,1],[1,2,3,2,1],[1,2,2,2,1],[1,1,1,1,1]]\n2\n2\n9", "desc": "Standard nested"},
-    {"input": "[[1,1,1],[1,2,1],[1,1,1]]\n0\n0\n5", "desc": "Standard"},
-    {"input": "[[3,3],[3,3]]\n0\n0\n7", "desc": "Edge"},
-    {"input": "[[1,1,1,1,1,1,1,1,1,1]]\n0\n5\n2", "desc": "Edge 1 row"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]]\n2\n1\n8", "desc": "Standard 5x3"},
-    {"input": "[[1,2,1,2,1],[2,1,2,1,2],[1,2,1,2,1]]\n1\n2\n9", "desc": "Standard alternating"},
-    {"input": "[[5,5,5,5],[5,1,1,5],[5,1,1,5],[5,5,5,5]]\n2\n2\n6", "desc": "Standard"},
-    {"input": "[[1,1,1,1,1,1],[1,2,2,2,2,1],[1,2,3,3,2,1],[1,2,3,3,2,1],[1,2,2,2,2,1],[1,1,1,1,1,1]]\n3\n3\n4", "desc": "Standard"},
-    {"input": "[[1,1],[1,1]]\n0\n0\n1", "desc": "Edge same color"},
-    {"input": "[[7,7,7,7,7],[7,7,7,7,7],[7,7,7,7,7]]\n1\n2\n3", "desc": "Standard 3x5"},
-    {"input": "[[1,2,1],[2,1,2],[1,2,1]]\n0\n0\n3", "desc": "Standard checker"}
+    {
+      "input": "[[1,1],[1,2]]\n0\n0\n3",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "[[1,2,2],[2,3,2]]\n0\n1\n3",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1]]\n1\n1\n2",
+      "desc": "Standard"
+    },
+    {
+      "input": "[[1]]\n0\n0\n2",
+      "desc": "Edge 1x1"
+    },
+    {
+      "input": "[[1,1]]\n0\n0\n2",
+      "desc": "Edge 1x2"
+    },
+    {
+      "input": "[[1],[1]]\n0\n0\n2",
+      "desc": "Edge 2x1"
+    },
+    {
+      "input": "[[5,5,5],[5,5,5]]\n1\n1\n10",
+      "desc": "Standard"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n1\n1\n100",
+      "desc": "Standard all distinct"
+    },
+    {
+      "input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]\n2\n2\n5",
+      "desc": "Standard 4x4"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,2,2,2,1],[1,2,3,2,1],[1,2,2,2,1],[1,1,1,1,1]]\n2\n2\n9",
+      "desc": "Standard nested"
+    },
+    {
+      "input": "[[1,1,1],[1,2,1],[1,1,1]]\n0\n0\n5",
+      "desc": "Standard"
+    },
+    {
+      "input": "[[3,3],[3,3]]\n0\n0\n7",
+      "desc": "Edge"
+    },
+    {
+      "input": "[[1,1,1,1,1,1,1,1,1,1]]\n0\n5\n2",
+      "desc": "Edge 1 row"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]]\n2\n1\n8",
+      "desc": "Standard 5x3"
+    },
+    {
+      "input": "[[1,2,1,2,1],[2,1,2,1,2],[1,2,1,2,1]]\n1\n2\n9",
+      "desc": "Standard alternating"
+    },
+    {
+      "input": "[[5,5,5,5],[5,1,1,5],[5,1,1,5],[5,5,5,5]]\n2\n2\n6",
+      "desc": "Standard"
+    },
+    {
+      "input": "[[1,1,1,1,1,1],[1,2,2,2,2,1],[1,2,3,3,2,1],[1,2,3,3,2,1],[1,2,2,2,2,1],[1,1,1,1,1,1]]\n3\n3\n4",
+      "desc": "Standard"
+    },
+    {
+      "input": "[[1,1],[1,1]]\n0\n0\n1",
+      "desc": "Edge same color"
+    },
+    {
+      "input": "[[7,7,7,7,7],[7,7,7,7,7],[7,7,7,7,7]]\n1\n2\n3",
+      "desc": "Standard 3x5"
+    },
+    {
+      "input": "[[317,220,-283,-157],[-642,829,-763,559],[630,-360,-654,-70],[422,-122,421,-306]]\n1\n1\n3",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
