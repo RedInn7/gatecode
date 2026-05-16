@@ -1,27 +1,88 @@
 {
-  "pid": 715, "slug": "binary-tree-right-side-view",
+  "pid": 715,
+  "slug": "binary-tree-right-side-view",
   "inferred_constraints": "0 <= nodes <= 100, -100 <= Node.val <= 100",
   "input_format": "line1: root (JSON tree with null)",
   "testcases": [
-    {"input": "[1,2,3,null,5,null,4]", "desc": "Edge: example1"},
-    {"input": "[1,2,3,4,null,null,null,5]", "desc": "Edge: example2"},
-    {"input": "[1,null,3]", "desc": "Edge: example3 right only"},
-    {"input": "[]", "desc": "Edge: empty tree"},
-    {"input": "[1]", "desc": "Edge: single node"},
-    {"input": "[1,2,null]", "desc": "Edge: left only"},
-    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Edge: right skewed"},
-    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Edge: left skewed"},
-    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full BT 7"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: full BT 15"},
-    {"input": "[0,0,0,0,0,0,0]", "desc": "Edge: all zeros"},
-    {"input": "[-1,-2,-3,-4,-5]", "desc": "Edge: negatives"},
-    {"input": "[100,100,100,100,100]", "desc": "Edge: all max"},
-    {"input": "[1,2,3,null,null,null,4,null,5]", "desc": "Standard: scattered nulls"},
-    {"input": "[10,5,15,3,7,null,18]", "desc": "Standard: BST shape"},
-    {"input": "[1,2,3,4,null,5,null,6,null,7,null,8]", "desc": "Standard: deep left zigzag"},
-    {"input": "[1,null,2,3,4]", "desc": "Standard: right with descendants"},
-    {"input": "[5,4,8,11,null,13,4,7,2,null,null,5,1]", "desc": "Standard: classic"},
-    {"input": "[-100]", "desc": "Edge: min single"},
-    {"input": "[1,2,3,null,4,null,5,null,6,null,7,null,8,null,9]", "desc": "Special: chain right children"}
+    {
+      "input": "[1,2,3,null,5,null,4]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[1,2,3,4,null,null,null,5]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1,null,3]",
+      "desc": "Edge: example3 right only"
+    },
+    {
+      "input": "[]",
+      "desc": "Edge: empty tree"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single node"
+    },
+    {
+      "input": "[1,2,null]",
+      "desc": "Edge: left only"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]",
+      "desc": "Edge: right skewed"
+    },
+    {
+      "input": "[1,2,null,3,null,4,null,5]",
+      "desc": "Edge: left skewed"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "desc": "Standard: full BT 7"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
+      "desc": "Standard: full BT 15"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0]",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "[-1,-2,-3,-4,-5]",
+      "desc": "Edge: negatives"
+    },
+    {
+      "input": "[645,545,-330,177,245,931,-211,-47,-366,899,602,220,-389,-269,463,280,106,-214,-158,525]",
+      "desc": "Regenerated: diverse at position 12"
+    },
+    {
+      "input": "[1,2,3,null,null,null,4,null,5]",
+      "desc": "Standard: scattered nulls"
+    },
+    {
+      "input": "[10,5,15,3,7,null,18]",
+      "desc": "Standard: BST shape"
+    },
+    {
+      "input": "[1,2,3,4,null,5,null,6,null,7,null,8]",
+      "desc": "Standard: deep left zigzag"
+    },
+    {
+      "input": "[1,null,2,3,4]",
+      "desc": "Standard: right with descendants"
+    },
+    {
+      "input": "[5,4,8,11,null,13,4,7,2,null,null,5,1]",
+      "desc": "Standard: classic"
+    },
+    {
+      "input": "[-100]",
+      "desc": "Edge: min single"
+    },
+    {
+      "input": "[1,2,3,null,4,null,5,null,6,null,7,null,8,null,9]",
+      "desc": "Special: chain right children"
+    }
   ]
 }

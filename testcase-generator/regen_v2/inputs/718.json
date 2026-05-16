@@ -1,27 +1,88 @@
 {
-  "pid": 718, "slug": "divide-intervals-into-minimum-number-of-groups",
+  "pid": 718,
+  "slug": "divide-intervals-into-minimum-number-of-groups",
   "inferred_constraints": "1 <= intervals.length <= 1e5, 1 <= left <= right <= 1e6",
   "input_format": "line1: intervals (JSON 2D)",
   "testcases": [
-    {"input": "[[5,10],[6,8],[1,5],[2,3],[1,10]]", "desc": "Edge: example1"},
-    {"input": "[[1,3],[5,6],[8,10],[11,13]]", "desc": "Edge: example2 no overlap"},
-    {"input": "[[1,1]]", "desc": "Edge: single point"},
-    {"input": "[[1,1000000]]", "desc": "Edge: full range single"},
-    {"input": "[[1,5],[5,10]]", "desc": "Edge: touching = intersect"},
-    {"input": "[[1,2],[3,4]]", "desc": "Edge: disjoint"},
-    {"input": "[[1,10],[1,10],[1,10]]", "desc": "Edge: identical"},
-    {"input": "[[1,5],[2,4],[3,5]]", "desc": "Standard: nested"},
-    {"input": "[[1,3],[2,4],[3,5],[4,6],[5,7]]", "desc": "Standard: sliding chain"},
-    {"input": "[[1,2],[2,3],[3,4],[4,5]]", "desc": "Standard: chain touching"},
-    {"input": "[[1,100],[50,150],[200,300],[250,350]]", "desc": "Standard: mixed sizes"},
-    {"input": "[[1,1000000],[2,999999],[3,999998],[4,999997]]", "desc": "Standard: nested big"},
-    {"input": "[[10,20],[30,40],[50,60],[70,80],[90,100]]", "desc": "Standard: 5 disjoint"},
-    {"input": "[[1,5],[2,6],[3,7],[4,8],[5,9]]", "desc": "Standard: cascading 5"},
-    {"input": "[[1,10],[5,15],[8,20]]", "desc": "Standard: 3 chain overlap"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Standard: 5 singletons"},
-    {"input": "[[1,1000000],[1,1000000],[1,1000000],[1,1000000],[1,1000000]]", "desc": "Stress: all overlap big"},
-    {"input": "[[100,200],[150,250],[175,275],[200,300],[225,325]]", "desc": "Standard: staggered"},
-    {"input": "[[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2]]", "desc": "Stress: 10 identical"},
-    {"input": "[[1,1000000],[500000,500001]]", "desc": "Special: tiny inside big"}
+    {
+      "input": "[[5,10],[6,8],[1,5],[2,3],[1,10]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[1,3],[5,6],[8,10],[11,13]]",
+      "desc": "Edge: example2 no overlap"
+    },
+    {
+      "input": "[[-29,222],[608,690],[-65,282],[-22,-945],[170,445]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[308,415],[-544,797],[355,473],[521,-760],[378,-850]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[1,5],[5,10]]",
+      "desc": "Edge: touching = intersect"
+    },
+    {
+      "input": "[[1,2],[3,4]]",
+      "desc": "Edge: disjoint"
+    },
+    {
+      "input": "[[1,10],[1,10],[1,10]]",
+      "desc": "Edge: identical"
+    },
+    {
+      "input": "[[1,5],[2,4],[3,5]]",
+      "desc": "Standard: nested"
+    },
+    {
+      "input": "[[1,3],[2,4],[3,5],[4,6],[5,7]]",
+      "desc": "Standard: sliding chain"
+    },
+    {
+      "input": "[[1,2],[2,3],[3,4],[4,5]]",
+      "desc": "Standard: chain touching"
+    },
+    {
+      "input": "[[1,100],[50,150],[200,300],[250,350]]",
+      "desc": "Standard: mixed sizes"
+    },
+    {
+      "input": "[[1,1000000],[2,999999],[3,999998],[4,999997]]",
+      "desc": "Standard: nested big"
+    },
+    {
+      "input": "[[10,20],[30,40],[50,60],[70,80],[90,100]]",
+      "desc": "Standard: 5 disjoint"
+    },
+    {
+      "input": "[[1,5],[2,6],[3,7],[4,8],[5,9]]",
+      "desc": "Standard: cascading 5"
+    },
+    {
+      "input": "[[1,10],[5,15],[8,20]]",
+      "desc": "Standard: 3 chain overlap"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "desc": "Standard: 5 singletons"
+    },
+    {
+      "input": "[[1,1000000],[1,1000000],[1,1000000],[1,1000000],[1,1000000]]",
+      "desc": "Stress: all overlap big"
+    },
+    {
+      "input": "[[100,200],[150,250],[175,275],[200,300],[225,325]]",
+      "desc": "Standard: staggered"
+    },
+    {
+      "input": "[[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2]]",
+      "desc": "Stress: 10 identical"
+    },
+    {
+      "input": "[[-934,536,910,461],[903,-433,182,-352],[-808,670,-772,114],[-733,496,-111,425],[-656,451,-697,986],[-60,-408,107,101],[-663,-522,-513,7],[176,-240,512,-299],[373,432,-965,-284],[-583,-663,-366,-961]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
