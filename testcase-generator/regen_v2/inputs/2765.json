@@ -1,0 +1,28 @@
+{
+  "pid": 2765,
+  "slug": "k-th-smallest-in-lexicographical-order",
+  "inferred_constraints": "1 <= k <= n <= 10^9",
+  "input_format": "line1: n (int); line2: k (int)",
+  "testcases": [
+    {"input": "13\n2", "desc": "Edge: example1"},
+    {"input": "1\n1", "desc": "Edge: example2"},
+    {"input": "1\n1", "desc": "Edge: dup minimum"},
+    {"input": "2\n2", "desc": "Edge: n=2 k=2"},
+    {"input": "10\n10", "desc": "Edge: n=10 k=10"},
+    {"input": "10\n1", "desc": "Edge: n=10 k=1"},
+    {"input": "20\n5", "desc": "Edge: n=20 k=5"},
+    {"input": "100\n50", "desc": "Edge: n=100 mid"},
+    {"input": "100\n100", "desc": "Edge: n=100 max"},
+    {"input": "1000\n500", "desc": "Standard: 1000 mid"},
+    {"input": "10000\n5000", "desc": "Standard: 10K"},
+    {"input": "100000\n50000", "desc": "Standard: 100K"},
+    {"input": "1000000\n500000", "desc": "Standard: 1M"},
+    {"input": "10000000\n5000000", "desc": "Standard: 10M"},
+    {"input": "100000000\n50000000", "desc": "Standard: 100M"},
+    {"input": "1000000000\n1", "desc": "Standard: max n k=1"},
+    {"input": "1000000000\n1000000000", "desc": "Standard: max n max k"},
+    {"input": "999999999\n500000000", "desc": "Standard: near max"},
+    {"input": "1000000000\n500000000", "desc": "Stress: max n mid k"},
+    {"input": "1000000000\n999999999", "desc": "Killer: max"}
+  ]
+}
