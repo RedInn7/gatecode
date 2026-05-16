@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= word.length <= 50, word consists of 'a','b','c'",
   "input_format": "single line: word (raw string)",
   "testcases": [
-    {"input": "b", "desc": "Edge: example1, n=1"},
-    {"input": "aaa", "desc": "Edge: example2"},
-    {"input": "abc", "desc": "Edge: example3, already valid"},
-    {"input": "a", "desc": "Edge: n=1 just 'a'"},
-    {"input": "c", "desc": "Edge: n=1 just 'c'"},
-    {"input": "ab", "desc": "Edge: missing c"},
-    {"input": "bc", "desc": "Edge: missing a"},
-    {"input": "ac", "desc": "Edge: missing b in middle"},
-    {"input": "abcabc", "desc": "Standard: already valid 2x"},
-    {"input": "aabbcc", "desc": "Standard: out of order"},
-    {"input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc", "desc": "Edge: 16 abcs, n=48 max"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Edge: 50 a's, max length"},
-    {"input": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "desc": "Edge: 50 b's"},
-    {"input": "cccccccccccccccccccccccccccccccccccccccccccccccccc", "desc": "Edge: 50 c's"},
-    {"input": "cba", "desc": "Standard: reversed"},
-    {"input": "abccba", "desc": "Standard: palindrome"},
-    {"input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcab", "desc": "Standard: 15 full + ab"},
-    {"input": "cccaaabbb", "desc": "Standard: blocks"},
-    {"input": "bca", "desc": "Standard: rotated"},
-    {"input": "abcaabbcc", "desc": "Standard: messy mix"}
+    {
+      "input": "b",
+      "desc": "Edge: example1, n=1"
+    },
+    {
+      "input": "aaa",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"oaf\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"cru\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: missing c"
+    },
+    {
+      "input": "bc",
+      "desc": "Edge: missing a"
+    },
+    {
+      "input": "ac",
+      "desc": "Edge: missing b in middle"
+    },
+    {
+      "input": "abcabc",
+      "desc": "Standard: already valid 2x"
+    },
+    {
+      "input": "aabbcc",
+      "desc": "Standard: out of order"
+    },
+    {
+      "input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+      "desc": "Edge: 16 abcs, n=48 max"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "desc": "Edge: 50 a's, max length"
+    },
+    {
+      "input": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "desc": "Edge: 50 b's"
+    },
+    {
+      "input": "cccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "desc": "Edge: 50 c's"
+    },
+    {
+      "input": "cba",
+      "desc": "Standard: reversed"
+    },
+    {
+      "input": "abccba",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcab",
+      "desc": "Standard: 15 full + ab"
+    },
+    {
+      "input": "cccaaabbb",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "bca",
+      "desc": "Standard: rotated"
+    },
+    {
+      "input": "\"vzyjjy\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
