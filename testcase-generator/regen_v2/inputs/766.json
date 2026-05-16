@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"dicx\"",
+      "input": "\"qwiomeye\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: upper pangram"
     },
     {
-      "input": "\"wkenjdypvtwaihpg\"",
+      "input": "\"zornsqsthwwreorr\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
