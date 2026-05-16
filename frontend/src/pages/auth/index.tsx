@@ -10,19 +10,16 @@ import Image from "next/image";
 type AuthPageProps = {};
 
 const AuthPage: React.FC<AuthPageProps> = () => {
-	// Split read/write hooks so the page mirrors the pattern used by every
-	// other consumer of authModalState (Navbar, Topbar, Login, Signup). Using
-	// `useRecoilState` here previously broke under HMR with
-	// "Invalid argument to useRecoilState: expected an atom or selector".
 	const authModal = useRecoilValue(authModalState);
 	const setAuthModal = useSetRecoilState(authModalState);
 	const [user, loading, error] = useAuthState(auth);
 	const [pageLoading, setPageLoading] = useState(true);
 	const router = useRouter();
 
-	// Seed the modal open on mount — a direct visit to /auth (Topbar link,
-	// bookmark, refresh) otherwise shows only the gradient background because
-	// authModalState defaults to isOpen=false.
+	// A direct visit to /auth (Topbar link, bookmark, refresh) lands here with
+	// authModalState.isOpen=false, which leaves the page as an empty gradient.
+	// Seed isOpen on mount, but return the same `prev` when it's already open
+	// so we don't notify subscribers on every remount.
 	useEffect(() => {
 		setAuthModal((prev) => (prev.isOpen ? prev : { ...prev, isOpen: true }));
 		// eslint-disable-next-line react-hooks/exhaustive-deps

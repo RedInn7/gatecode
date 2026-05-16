@@ -19,7 +19,7 @@ type Problem struct {
 	TimeLimitMs        int             `gorm:"column:time_limit_ms;type:int;not null;default:0" json:"time_limit_ms"`
 	MemoryLimitMB      int             `gorm:"column:memory_limit_mb;type:int;not null;default:0" json:"memory_limit_mb"`
 	IsSpj              bool            `gorm:"column:is_spj;type:tinyint(1);default:0" json:"is_spj"`
-	JudgeEnabled       bool            `gorm:"column:judge_enabled;type:tinyint(1);default:1" json:"judge_enabled"`
+	JudgeEnabled       bool            `gorm:"column:judge_enabled;type:tinyint(1);default:1;index:idx_problems_judge_enabled" json:"judge_enabled"`
 	Solutions          json.RawMessage `gorm:"column:solutions;type:json" json:"solutions"`
 	Editorial          *string         `gorm:"column:editorial;type:mediumtext" json:"editorial"`
 }

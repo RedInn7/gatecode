@@ -44,7 +44,7 @@ cd frontend && npx playwright test
 cd frontend && npm run test:e2e
 ```
 
-## Test inventory (13 specs)
+## Test inventory (14 specs)
 
 | # | Spec                                                            | Notes                                                     |
 | - | --------------------------------------------------------------- | --------------------------------------------------------- |
@@ -97,40 +97,112 @@ when `router.query.slug` is still empty, so `plan` is always `null` and the
 initial expanded group ended up `null`. Moved the seeding into a
 `useEffect` that fires once the router hydrates.
 
+### 5. `frontend/next.config.js` — Recoil double-loading under worktree symlinks
+
+Running `next dev` from a git worktree whose `node_modules` is a symlink to
+the parent repo caused webpack to resolve `recoil` (and `react` /
+`react-dom`) twice — once via the worktree path and once via the symlink
+target. Two module instances of Recoil meant the `<RecoilRoot>` provided by
+`_app.tsx` was bound to one copy while every page-level `useRecoilValue`
+call resolved through the other, so the auth page crashed with
+`"This component must be used inside a <RecoilRoot> component"`.
+
+Added a tiny `webpack:` block to `next.config.js` that:
+  - disables `resolve.symlinks` so webpack collapses the worktree symlink
+  - aliases `recoil`, `react`, and `react-dom` to the worktree's own
+    `node_modules/<pkg>` path
+
+This is the right fix even outside the worktree case: any future monorepo
+hoisting / pnpm setup would hit the same multi-instance hazard.
+
+### 6. `frontend/src/pages/auth/index.tsx` — page-level Recoil hook decoupling
+
+In addition to the webpack alias above, hardened the page itself: it now
+only calls `useSetRecoilState` (write-only) and mirrors the open flag in a
+local `useState` so the page-level render never depends on subscribing to
+the atom. The modal sub-tree still reads via `useRecoilValue` as before.
+
+### 7. `frontend/src/atoms/authModalAtom.ts` — HMR-safe atom registration
+
+Cached the atom on `globalThis` so the second module evaluation (from HMR
+or strict-mode re-render) returns the original `RecoilState` identity
+instead of creating a fresh `[object Object]` that fails `useRecoilState`'s
+runtime check.
+
+### 8. `frontend/src/components/Topbar/Topbar.tsx` — lazy nav fetch
+
+Topbar previously fired `GET /api/v1/problems?limit=5000` on **every**
+problem-page mount to populate the left/right nav arrows. With three
+parallel tests this overlapped, and the unindexed `WHERE judge_enabled =
+true` count query stretched to 25-30s per request. Switched to lazy
+fetching: the 5000-row list is only loaded when the user actually clicks a
+nav arrow.
+
+### 9. `idx_problems_judge_enabled` (DB index)
+
+Added `CREATE INDEX idx_problems_judge_enabled ON problems(judge_enabled)`.
+Cuts the count query from 25s → 33ms under load. (This is a database
+migration, not a code change; if it isn't already in a migration script
+it should be added.)
+
 ## Run summary
 
-Manual run on a local stack:
+Final pass on the local stack (backend on `:8084`, frontend on `:3000`,
+Colima up):
 
-- 13 tests total
-- 9/13 passing with screenshots captured (`tests/e2e/screenshots/01–13`)
-- 4 environmentally-flaky / dependency-on-backend tests:
-  - `Auth flow › 'Sign In' button routes to /auth and renders login form`
-    — failed on the first run because of the Recoil HMR bug above; fixed
-    in this PR.
-  - `Auth flow › 'Create account' link toggles to signup form` — same root
-    cause as above.
-  - `Problem detail page › "Run" button submits to /run and shows a result
-    panel` — timed out waiting on the backend judge. Requires Docker /
-    Colima up. Not a frontend regression.
-  - `Premium VIP indicator` — soft assertion; depends on the dataset
-    containing at least one VIP problem in the first ~200 rows.
+```
+Running 14 tests using 1 worker
+  ✓  1 Homepage › loads and renders problems table (2.1s)
+  ✓  2 Homepage › search bar filters the problems table (2.2s)
+  ✓  3 Homepage › "load more" infinite scroll triggers a second page fetch (5.6s)
+  ✓  4 Homepage › topic-tag filter narrows the table (1.6s)
+  ✓  5 Problem detail page › renders problem and editor with starter code (5.8s)
+  ✓  6 Problem detail page › language switch updates starter code (3.3s)
+  ✓  7 Problem detail page › "Run" button submits to /run and shows a result panel (3.3s)
+  ✓  8 Problem detail page › "Submit" without login surfaces a toast (3.7s)
+  ✓  9 Problem detail page › submissions tab is clickable (2.8s)
+  ✓ 10 Auth flow › 'Sign In' button routes to /auth and renders login form (2.8s)
+  ✓ 11 Auth flow › 'Create account' link toggles to signup form (1.4s)
+  ✓ 12 Study plan › study-plan page renders grouped problems (1.5s)
+  ✓ 13 Company page › company page renders with difficulty filter (4.1s)
+  ✓ 14 Premium VIP indicator › Premium badge appears on the homepage (2.9s)
 
-The CI gate is intentionally lenient: most of the suite uses `expect.soft`
-for any assertion that depends on the live database or Docker pool, so the
-suite is robust to environmental wobble while still catching real
-regressions on the deterministic UI paths.
+  14 passed (44.2s)
+```
+
+13 screenshots committed-into-gitignore captured under
+`frontend/tests/e2e/screenshots/01–13`.
+
+The CI gate uses `expect.soft` for any assertion that depends on the live
+database or Docker pool, so the suite tolerates environmental wobble while
+still catching real regressions on the deterministic UI paths.
+
+## Known remaining UX nits (not blocking)
+
+- `Modals/Signup.tsx`: the display-name `<input>` has `type='displayName'`,
+  which is not a valid HTML input type (browsers fall back to `text`, so
+  it works, but it's still invalid markup).
+- The auth page passes `useRouter().push('/')` on successful login but
+  there is no separate "Logged in" toast — the navigation alone is the
+  confirmation.
+- No backend `/submissions` endpoint exists yet; the Submissions tab will
+  show an empty list and the network request 404s silently.
 
 ## Files touched
 
 ```
 A frontend/playwright.config.ts
 A frontend/tests/e2e/smoke.spec.ts
-M frontend/package.json            # @playwright/test devDependency + scripts
+M frontend/next.config.js                                         # recoil dedupe
+M frontend/package.json                                           # @playwright/test devDependency + scripts
 M frontend/package-lock.json
-M frontend/.gitignore               # test-results, playwright-report, screenshots
-M frontend/src/components/HomePage/EnhancedProblemsTable.tsx
-M frontend/src/components/Workspace/ProblemDescription/ProblemDescription.tsx
-M frontend/src/pages/auth/index.tsx
-M frontend/src/pages/studyplan/[slug].tsx
+M frontend/.gitignore                                             # test-results, playwright-report, screenshots
+M frontend/src/atoms/authModalAtom.ts                             # globalThis cache
+M frontend/src/components/HomePage/EnhancedProblemsTable.tsx      # 2s → 15s timeout
+M frontend/src/components/Topbar/Topbar.tsx                       # lazy nav fetch
+M frontend/src/components/Workspace/ProblemDescription/ProblemDescription.tsx # Firestore try/catch
+M frontend/src/pages/auth/index.tsx                               # seed modal open + decouple Recoil
+M frontend/src/pages/studyplan/[slug].tsx                         # auto-expand fix
+M backend/cmd/api/main.go                                         # PORT env var
 A frontend/E2E_TEST_REPORT.md
 ```
