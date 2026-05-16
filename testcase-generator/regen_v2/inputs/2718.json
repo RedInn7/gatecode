@@ -1,0 +1,28 @@
+{
+  "pid": 2718,
+  "slug": "number-of-centered-subarrays",
+  "inferred_constraints": "1 <= nums.length <= 10^5, -10^9 <= nums[i] <= 10^9",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[-1,1,0]", "desc": "Edge: example1"},
+    {"input": "[1,2,3]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single nonzero"},
+    {"input": "[0]", "desc": "Edge: single zero"},
+    {"input": "[-5]", "desc": "Edge: single neg"},
+    {"input": "[0,0]", "desc": "Edge: 2 zeros"},
+    {"input": "[1,1]", "desc": "Edge: 2 ones"},
+    {"input": "[1,-1]", "desc": "Edge: cancel"},
+    {"input": "[1,2,-3]", "desc": "Edge: sum 0"},
+    {"input": "[5,5,5]", "desc": "Standard: 3 same"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: 1-5"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: all neg"},
+    {"input": "[0,0,0,0,0]", "desc": "Standard: all zeros"},
+    {"input": "[1,-1,1,-1,1,-1]", "desc": "Standard: alt"},
+    {"input": "[10,20,30,40,50]", "desc": "Standard: tens"},
+    {"input": "[1000000000,-1000000000]", "desc": "Standard: extreme"},
+    {"input": "[1,2,3,4,5,4,3,2,1]", "desc": "Standard: pyramid"},
+    {"input": "[-1,2,-1,2,-1,2]", "desc": "Standard: alt mixed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]", "desc": "Stress: 50 inc"},
+    {"input": "[1000000000,1000000000,1000000000,-1000000000,-1000000000,-1000000000]", "desc": "Killer: extreme alt"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2716,
+  "slug": "remove-linked-list-elements",
+  "inferred_constraints": "0 <= number of nodes <= 10^4, 1 <= Node.val <= 50, 0 <= val <= 50",
+  "input_format": "line1: head (JSON array); line2: val (int)",
+  "testcases": [
+    {"input": "[1,2,6,3,4,5,6]\n6", "desc": "Edge: example1"},
+    {"input": "[]\n1", "desc": "Edge: example2 empty"},
+    {"input": "[7,7,7,7]\n7", "desc": "Edge: example3 all removed"},
+    {"input": "[1]\n1", "desc": "Edge: single removed"},
+    {"input": "[1]\n2", "desc": "Edge: single kept"},
+    {"input": "[1,2]\n1", "desc": "Edge: head removed"},
+    {"input": "[1,2]\n2", "desc": "Edge: tail removed"},
+    {"input": "[1,1,1,1,1,2]\n1", "desc": "Edge: many head removed"},
+    {"input": "[2,1,1,1,1,1]\n1", "desc": "Edge: many tail removed"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Standard: middle removed"},
+    {"input": "[1,2,3,2,1]\n2", "desc": "Standard: 2 occurrences"},
+    {"input": "[1,1,2,2,3,3,4,4]\n2", "desc": "Standard: pair removed"},
+    {"input": "[5,5,5,5,5]\n5", "desc": "Standard: all removed"},
+    {"input": "[5,5,5,5,5]\n6", "desc": "Standard: none removed"},
+    {"input": "[1,2,3,4,5,1,2,3,4,5]\n3", "desc": "Standard: 2 in list"},
+    {"input": "[50,49,48,47,46,45]\n47", "desc": "Standard: max values"},
+    {"input": "[1,1,1,2,2,2,3,3,3]\n2", "desc": "Standard: group removed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: middle of 10"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Stress: 100 dups"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1", "desc": "Killer: 50 same all removed"}
+  ]
+}

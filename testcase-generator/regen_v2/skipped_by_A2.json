@@ -354,6 +354,11 @@
       "pid": 2710,
       "slug": "promise-pool",
       "reason": "JavaScript-only Promise pool implementation"
+    },
+    {
+      "pid": 2720,
+      "slug": "maximize-items",
+      "reason": "SQL/Pandas problem"
     }
   ]
 }
