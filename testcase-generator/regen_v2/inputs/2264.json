@@ -1,0 +1,28 @@
+{
+  "pid": 2264,
+  "slug": "maximum-length-of-semi-decreasing-subarrays",
+  "inferred_constraints": "1 <= nums.length <= 10^5, -10^9 <= nums[i] <= 10^9",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[7,6,5,4,3,2,1,6,10,11]", "desc": "Standard example"},
+    {"input": "[57,55,50,60,61,58,63,59,64,60,63]", "desc": "Standard"},
+    {"input": "[1,2,3,4]", "desc": "Standard increasing"},
+    {"input": "[1]", "desc": "Edge n=1"},
+    {"input": "[1,2]", "desc": "Edge 2 inc"},
+    {"input": "[2,1]", "desc": "Edge 2 dec"},
+    {"input": "[5,5]", "desc": "Edge same"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard dec"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard inc"},
+    {"input": "[1000000000,-1000000000]", "desc": "Edge extremes"},
+    {"input": "[10,5,15,2,20,1,25]", "desc": "Standard zigzag"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge same"},
+    {"input": "[1,2,3,4,5,4,3,2,1]", "desc": "Standard mountain"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard 10 dec"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard 10 inc"},
+    {"input": "[5,3,8,1,9,2,7,4,6,10]", "desc": "Standard random"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]", "desc": "Standard 10 dec"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard negs"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Edge same"},
+    {"input": "[10,5,8,3,6,1,4]", "desc": "Standard"}
+  ]
+}

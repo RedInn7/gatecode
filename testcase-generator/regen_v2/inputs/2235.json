@@ -1,0 +1,28 @@
+{
+  "pid": 2235,
+  "slug": "count-good-numbers",
+  "inferred_constraints": "1 <= n <= 10^15",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "1", "desc": "Standard"},
+    {"input": "4", "desc": "Standard"},
+    {"input": "50", "desc": "Standard"},
+    {"input": "2", "desc": "Edge: small"},
+    {"input": "3", "desc": "Edge: small"},
+    {"input": "5", "desc": "Edge"},
+    {"input": "10", "desc": "Standard"},
+    {"input": "100", "desc": "Standard"},
+    {"input": "1000", "desc": "Standard"},
+    {"input": "10000", "desc": "Standard"},
+    {"input": "100000", "desc": "Standard"},
+    {"input": "1000000", "desc": "Standard"},
+    {"input": "1000000000", "desc": "Standard"},
+    {"input": "1000000000000000", "desc": "Edge: max"},
+    {"input": "999999999999999", "desc": "Edge: near max"},
+    {"input": "123456789", "desc": "Standard"},
+    {"input": "987654321", "desc": "Standard"},
+    {"input": "500000000000000", "desc": "Standard"},
+    {"input": "777", "desc": "Standard"},
+    {"input": "11111", "desc": "Standard"}
+  ]
+}

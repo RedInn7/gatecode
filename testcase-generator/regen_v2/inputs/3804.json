@@ -1,0 +1,28 @@
+{
+  "pid": 3804,
+  "slug": "find-all-the-lonely-nodes",
+  "inferred_constraints": "tree size [1, 1000], -10^6 <= Node.val <= 10^6",
+  "input_format": "line1: root (JSON array, leetcode level-order with nulls)",
+  "testcases": [
+    {"input": "[1,2,3,null,4]", "desc": "Example 1"},
+    {"input": "[7,1,4,6,null,5,3,null,null,null,null,null,2]", "desc": "Example 2"},
+    {"input": "[11,99,88,77,null,null,66,55,null,null,44,33,null,null,22]", "desc": "Example 3"},
+    {"input": "[1]", "desc": "Edge: single node root"},
+    {"input": "[1,2]", "desc": "Edge: root + left child only"},
+    {"input": "[1,null,2]", "desc": "Edge: root + right child only"},
+    {"input": "[1,2,3]", "desc": "Edge: full root"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard complete 3-level"},
+    {"input": "[1,2,3,4,null,null,7]", "desc": "Standard sparse"},
+    {"input": "[1,2,3,null,4,5,null]", "desc": "Standard mixed"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard left-skewed"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard right-skewed"},
+    {"input": "[10,5,15,3,7,12,18]", "desc": "Standard BST-like"},
+    {"input": "[1,2,3,4,5,null,null,null,8,null,10]", "desc": "Standard complex"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]", "desc": "Standard complete 4-level"},
+    {"input": "[-100,1000000,-1000000]", "desc": "Edge: extreme values"},
+    {"input": "[1,2,null,3,4,5]", "desc": "Standard"},
+    {"input": "[1,2,3,null,null,4,5,6,7]", "desc": "Standard"},
+    {"input": "[5,4,8,11,null,13,4,7,2,null,null,null,1]", "desc": "Standard"},
+    {"input": "[1,2,2,3,3,3,3,4,4,4,4,4,4,4,4]", "desc": "Standard complete duplicates"}
+  ]
+}

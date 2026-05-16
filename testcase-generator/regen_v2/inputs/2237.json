@@ -1,0 +1,28 @@
+{
+  "pid": 2237,
+  "slug": "find-the-lexicographically-largest-string-from-the-box-i",
+  "inferred_constraints": "1 <= word.length <= 5*10^3, 1 <= numFriends <= word.length",
+  "input_format": "line1: word (quoted); line2: numFriends (int)",
+  "testcases": [
+    {"input": "\"dbca\"\n2", "desc": "Standard example"},
+    {"input": "\"gggg\"\n4", "desc": "Standard"},
+    {"input": "\"a\"\n1", "desc": "Edge"},
+    {"input": "\"ab\"\n1", "desc": "Edge"},
+    {"input": "\"ab\"\n2", "desc": "Edge"},
+    {"input": "\"zzzz\"\n4", "desc": "Edge all z"},
+    {"input": "\"abcde\"\n2", "desc": "Standard"},
+    {"input": "\"banana\"\n3", "desc": "Standard"},
+    {"input": "\"zabcde\"\n3", "desc": "Standard"},
+    {"input": "\"zzaaa\"\n2", "desc": "Standard"},
+    {"input": "\"aaazzz\"\n2", "desc": "Standard"},
+    {"input": "\"thequickbrown\"\n5", "desc": "Standard"},
+    {"input": "\"abcdefghij\"\n5", "desc": "Standard"},
+    {"input": "\"jihgfedcba\"\n5", "desc": "Standard"},
+    {"input": "\"mississippi\"\n4", "desc": "Standard"},
+    {"input": "\"zzz\"\n1", "desc": "Edge"},
+    {"input": "\"aaaaa\"\n5", "desc": "Edge"},
+    {"input": "\"aabbcc\"\n3", "desc": "Standard"},
+    {"input": "\"xyzabc\"\n2", "desc": "Standard"},
+    {"input": "\"a\"\n1", "desc": "Edge dup"}
+  ]
+}

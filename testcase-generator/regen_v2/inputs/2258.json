@@ -1,0 +1,28 @@
+{
+  "pid": 2258,
+  "slug": "number-of-valid-words-for-each-puzzle",
+  "inferred_constraints": "1 <= words.length <= 10^5, 4 <= words[i].length <= 50, 1 <= puzzles.length <= 10^4, puzzles[i].length == 7, distinct letters in each puzzle, lowercase",
+  "input_format": "line1: words (JSON array); line2: puzzles (JSON array)",
+  "testcases": [
+    {"input": "[\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]", "desc": "Standard example"},
+    {"input": "[\"apple\",\"pleas\",\"please\"]\n[\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]", "desc": "Standard"},
+    {"input": "[\"aaaa\"]\n[\"abcdefg\"]", "desc": "Edge minimal"},
+    {"input": "[\"abcd\"]\n[\"abcdefg\"]", "desc": "Edge"},
+    {"input": "[\"defgh\"]\n[\"abcdefg\"]", "desc": "Edge no first letter"},
+    {"input": "[\"abcd\",\"abce\"]\n[\"abcdefg\"]", "desc": "Standard pair"},
+    {"input": "[\"abcd\",\"efgh\"]\n[\"abcdefg\"]", "desc": "Standard"},
+    {"input": "[\"aaaaaaa\"]\n[\"abcdefg\"]", "desc": "Edge all a"},
+    {"input": "[\"abcdefg\",\"abcdefg\"]\n[\"abcdefg\"]", "desc": "Edge same word"},
+    {"input": "[\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\"]\n[\"abcdefg\"]", "desc": "Standard chain"},
+    {"input": "[\"abcd\",\"abcde\",\"abcdef\"]\n[\"abcdxyz\",\"abcdefg\"]", "desc": "Standard"},
+    {"input": "[\"aaaa\",\"bbbb\",\"cccc\"]\n[\"abcwxyz\",\"abcdefg\"]", "desc": "Standard"},
+    {"input": "[\"aabbcc\",\"abcabc\"]\n[\"abcdefg\"]", "desc": "Standard"},
+    {"input": "[\"appl\",\"apple\",\"pearapple\"]\n[\"aelpxyz\"]", "desc": "Standard"},
+    {"input": "[\"abcd\",\"abce\",\"abcf\",\"abcg\"]\n[\"abcdefg\"]", "desc": "Standard"},
+    {"input": "[\"abcd\"]\n[\"abcdefg\",\"bcdefga\",\"cdefgab\",\"defgabc\"]", "desc": "Standard multi puzzles"},
+    {"input": "[\"abcdabcd\"]\n[\"abcdefg\"]", "desc": "Standard repeating"},
+    {"input": "[\"thequickbrownfox\"]\n[\"abcdefg\",\"thequxy\",\"tquofxy\",\"oikrxyz\"]", "desc": "Standard"},
+    {"input": "[\"zzzzz\"]\n[\"abcdefg\",\"abcdfgz\"]", "desc": "Edge first letter mismatch"},
+    {"input": "[\"abacaba\"]\n[\"abcdefg\"]", "desc": "Standard"}
+  ]
+}

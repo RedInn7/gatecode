@@ -1,0 +1,28 @@
+{
+  "pid": 2266,
+  "slug": "longest-common-prefix",
+  "inferred_constraints": "1 <= strs.length <= 200, 0 <= strs[i].length <= 200, lowercase",
+  "input_format": "single line: strs (JSON array)",
+  "testcases": [
+    {"input": "[\"flower\",\"flow\",\"flight\"]", "desc": "Standard example 1"},
+    {"input": "[\"dog\",\"racecar\",\"car\"]", "desc": "Standard example 2"},
+    {"input": "[\"a\"]", "desc": "Edge n=1"},
+    {"input": "[\"\"]", "desc": "Edge empty"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Edge same"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge no common"},
+    {"input": "[\"\",\"abc\"]", "desc": "Edge one empty"},
+    {"input": "[\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard prefix chain"},
+    {"input": "[\"abcde\",\"abc\",\"abcdef\"]", "desc": "Standard"},
+    {"input": "[\"prefix\",\"prefixxx\",\"prefixx\"]", "desc": "Standard"},
+    {"input": "[\"hello\",\"helloworld\"]", "desc": "Standard"},
+    {"input": "[\"aaa\",\"aaa\",\"aaaa\"]", "desc": "Standard"},
+    {"input": "[\"a\",\"aa\",\"aaa\",\"aaaa\"]", "desc": "Standard chain"},
+    {"input": "[\"z\",\"y\",\"x\"]", "desc": "Edge distinct chars"},
+    {"input": "[\"thequickbrown\",\"thequickbrowner\",\"thequickbrownest\"]", "desc": "Standard"},
+    {"input": "[\"abcdefghij\",\"abcdefghijk\",\"abcdefghijkl\"]", "desc": "Standard long"},
+    {"input": "[\"banana\",\"banner\",\"bandit\"]", "desc": "Standard"},
+    {"input": "[\"prefix\",\"prefix\",\"prefix\",\"prefix\",\"prefix\"]", "desc": "Standard"},
+    {"input": "[\"a\",\"abc\",\"ab\",\"abcd\"]", "desc": "Standard"},
+    {"input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaa\",\"aaaaaaaaaa\"]", "desc": "Standard long a"}
+  ]
+}

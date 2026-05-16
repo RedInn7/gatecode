@@ -1,0 +1,28 @@
+{
+  "pid": 209,
+  "slug": "inverse-coin-change",
+  "inferred_constraints": "1 <= numWays.length <= 100, 0 <= numWays[i] <= 2e8",
+  "input_format": "line1: numWays (JSON int array)",
+  "testcases": [
+    {"input": "[0,1,0,2,0,3,0,4,0,5]", "desc": "Edge: example1"},
+    {"input": "[1,2,2,3,4]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: n=1 single coin"},
+    {"input": "[0]", "desc": "Edge: n=1 no ways"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: 1 way each amount means just coin 1"},
+    {"input": "[200000000]", "desc": "Edge: max value n=1"},
+    {"input": "[200000000,200000000]", "desc": "Edge: max repeating"},
+    {"input": "[0,200000000]", "desc": "Edge: skip first amount"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[1,1,2,3,5,8,13,21,34,55]", "desc": "Standard: fibonacci"},
+    {"input": "[1,2,4,7,12,20,33,54,88,143]", "desc": "Standard: nearly fibonacci"},
+    {"input": "[1,0,1,0,1,0,1,0,1,0]", "desc": "Standard: alternating"},
+    {"input": "[0,1,1,2,3,5,8,13,21,34]", "desc": "Standard: shifted fibonacci"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: stepped"},
+    {"input": "[1,2,2,3,3,4,4,5,5,6]", "desc": "Standard: variant"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
+    {"input": "[100000000,150000000,200000000,100000000,150000000,200000000,100000000,150000000,200000000,100000000]", "desc": "Stress: large value pattern"},
+    {"input": "[0,0,1,0,0,2,0,0,4,0,0,8,0,0,16,0,0,32,0,0,64,0,0,128,0,0,256,0,0,512,0,0,1024,0,0,2048,0,0,4096,0,0,8192,0,0,16384,0,0,32768,0,0,65536,0,0,131072,0,0,262144,0,0,524288,0,0,1048576,0,0,2097152,0,0,4194304,0,0,8388608,0,0,16777216,0,0,33554432,0,0,67108864,0,0,134217728,0,0]", "desc": "Stress: 100 sparse with powers of 2"}
+  ]
+}

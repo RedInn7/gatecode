@@ -1,0 +1,28 @@
+{
+  "pid": 3805,
+  "slug": "number-of-ways-to-stay-in-the-same-place-after-some-steps",
+  "inferred_constraints": "1 <= steps <= 500, 1 <= arrLen <= 10^6",
+  "input_format": "line1: steps (int); line2: arrLen (int)",
+  "testcases": [
+    {"input": "3\n2", "desc": "Example 1"},
+    {"input": "2\n4", "desc": "Example 2"},
+    {"input": "4\n2", "desc": "Example 3"},
+    {"input": "1\n1", "desc": "Edge: 1 step 1 cell"},
+    {"input": "1\n2", "desc": "Edge: 1 step 2 cells"},
+    {"input": "2\n1", "desc": "Edge: 2 steps 1 cell"},
+    {"input": "10\n1", "desc": "Edge: many steps 1 cell"},
+    {"input": "1\n1000000", "desc": "Edge: 1 step large arr"},
+    {"input": "2\n2", "desc": "Standard"},
+    {"input": "5\n3", "desc": "Standard"},
+    {"input": "10\n5", "desc": "Standard"},
+    {"input": "20\n10", "desc": "Standard"},
+    {"input": "30\n20", "desc": "Standard"},
+    {"input": "50\n100", "desc": "Standard"},
+    {"input": "100\n50", "desc": "Standard"},
+    {"input": "200\n100", "desc": "Standard"},
+    {"input": "300\n500", "desc": "Stress"},
+    {"input": "500\n500", "desc": "Stress steps=arr"},
+    {"input": "500\n1000000", "desc": "Stress max steps max arr"},
+    {"input": "500\n1", "desc": "Stress max steps 1 cell"}
+  ]
+}

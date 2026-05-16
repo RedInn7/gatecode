@@ -1,0 +1,28 @@
+{
+  "pid": 2252,
+  "slug": "n-queens",
+  "inferred_constraints": "1 <= n <= 9",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "4", "desc": "Standard example"},
+    {"input": "1", "desc": "Edge n=1"},
+    {"input": "2", "desc": "Edge n=2 no sol"},
+    {"input": "3", "desc": "Edge n=3 no sol"},
+    {"input": "5", "desc": "Standard"},
+    {"input": "6", "desc": "Standard"},
+    {"input": "7", "desc": "Standard"},
+    {"input": "8", "desc": "Standard"},
+    {"input": "9", "desc": "Edge max"},
+    {"input": "4", "desc": "Edge dup"},
+    {"input": "5", "desc": "Edge dup"},
+    {"input": "6", "desc": "Edge dup"},
+    {"input": "7", "desc": "Edge dup"},
+    {"input": "8", "desc": "Edge dup"},
+    {"input": "9", "desc": "Edge dup max"},
+    {"input": "1", "desc": "Edge dup"},
+    {"input": "2", "desc": "Edge dup"},
+    {"input": "3", "desc": "Edge dup"},
+    {"input": "8", "desc": "Edge dup classic"},
+    {"input": "9", "desc": "Edge dup max v2"}
+  ]
+}

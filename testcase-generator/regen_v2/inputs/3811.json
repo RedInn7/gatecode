@@ -1,0 +1,28 @@
+{
+  "pid": 3811,
+  "slug": "splitting-a-string-into-descending-consecutive-values",
+  "inferred_constraints": "1 <= s.length <= 20, digits only",
+  "input_format": "line1: s (string, raw)",
+  "testcases": [
+    {"input": "1234", "desc": "Example 1: false"},
+    {"input": "050043", "desc": "Example 2: true"},
+    {"input": "9080701", "desc": "Example 3: false"},
+    {"input": "10009998", "desc": "Standard 100,099,98"},
+    {"input": "1", "desc": "Edge: single digit"},
+    {"input": "10", "desc": "Edge: 1,0 valid"},
+    {"input": "00", "desc": "Edge: 0,0 invalid (no diff 1)"},
+    {"input": "11", "desc": "Edge: 1,1 invalid"},
+    {"input": "21", "desc": "Edge: 2,1 valid"},
+    {"input": "99", "desc": "Edge: 9,9 invalid"},
+    {"input": "98", "desc": "Standard 9,8"},
+    {"input": "543210", "desc": "Standard chain 5,4,3,2,1,0"},
+    {"input": "10090807", "desc": "Standard 100,09,08,07 (=9,8,7)?"},
+    {"input": "100099098", "desc": "Standard"},
+    {"input": "00100009", "desc": "Standard"},
+    {"input": "1119", "desc": "Standard"},
+    {"input": "111", "desc": "Standard"},
+    {"input": "987654321", "desc": "Standard 9 down to 1"},
+    {"input": "98765432109876543210", "desc": "Stress 20 chars"},
+    {"input": "99999999999999999999", "desc": "Stress all 9 invalid"}
+  ]
+}

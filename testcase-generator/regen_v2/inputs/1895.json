@@ -1,0 +1,28 @@
+{
+  "pid": 1895,
+  "slug": "non-decreasing-subsequences",
+  "inferred_constraints": "1 <= nums.length <= 15, -100 <= nums[i] <= 100",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[4,6,7,7]", "desc": "Edge: example1"},
+    {"input": "[4,4,3,2,1]", "desc": "Edge: example2 decreasing"},
+    {"input": "[1]", "desc": "Edge: n=1 single"},
+    {"input": "[100]", "desc": "Edge: n=1 max"},
+    {"input": "[-100]", "desc": "Edge: n=1 min"},
+    {"input": "[1,2]", "desc": "Edge: n=2 increasing"},
+    {"input": "[2,1]", "desc": "Edge: n=2 decreasing"},
+    {"input": "[1,1]", "desc": "Edge: n=2 equal"},
+    {"input": "[100,-100]", "desc": "Edge: extremes decreasing"},
+    {"input": "[-100,100]", "desc": "Edge: extremes increasing"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: strictly increasing"},
+    {"input": "[5,5,5,5,5]", "desc": "Standard: all equal"},
+    {"input": "[1,2,1,2,1,2]", "desc": "Standard: oscillating"},
+    {"input": "[3,1,4,1,5,9,2,6]", "desc": "Standard: random mix"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: strictly decreasing"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 15 ones"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Stress: 15 strictly increasing"},
+    {"input": "[15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]", "desc": "Stress: 15 strictly decreasing"},
+    {"input": "[5,1,8,2,9,3,7,4,6,0,2,8,5,1,9]", "desc": "Stress: 15 random"},
+    {"input": "[-50,-25,0,25,50,-50,-25,0,25,50,-50,-25,0,25,50]", "desc": "Special: repeating pattern with negatives"}
+  ]
+}

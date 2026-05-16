@@ -1,0 +1,28 @@
+{
+  "pid": 3792,
+  "slug": "dungeon-game",
+  "inferred_constraints": "m == dungeon.length, n == dungeon[i].length, 1 <= m,n <= 200, -1000 <= dungeon[i][j] <= 1000",
+  "input_format": "line1: dungeon (JSON 2D int)",
+  "testcases": [
+    {"input": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]", "desc": "Example 1"},
+    {"input": "[[0]]", "desc": "Example 2: single zero"},
+    {"input": "[[100]]", "desc": "Edge: single positive"},
+    {"input": "[[-1]]", "desc": "Edge: single negative"},
+    {"input": "[[1000]]", "desc": "Edge: max single"},
+    {"input": "[[-1000]]", "desc": "Edge: min single"},
+    {"input": "[[1,2],[3,4]]", "desc": "Standard all positive"},
+    {"input": "[[-1,-1],[-1,-1]]", "desc": "Standard all negative"},
+    {"input": "[[0,0],[0,0]]", "desc": "Standard all zero"},
+    {"input": "[[1,-2,3],[-4,5,-6],[7,-8,9]]", "desc": "Standard mixed"},
+    {"input": "[[-100,100],[100,-100]]", "desc": "Standard"},
+    {"input": "[[1,2,3,4,5]]", "desc": "Standard single row positive"},
+    {"input": "[[-1,-2,-3,-4,-5]]", "desc": "Standard single row negative"},
+    {"input": "[[1],[2],[3],[4],[5]]", "desc": "Standard single column"},
+    {"input": "[[-1000,-1000,-1000],[-1000,-1000,-1000],[-1000,-1000,-1000]]", "desc": "Stress all min"},
+    {"input": "[[1000,1000,1000],[1000,1000,1000],[1000,1000,1000]]", "desc": "Stress all max"},
+    {"input": "[[1,-2,3,-4,5],[-6,7,-8,9,-10],[11,-12,13,-14,15],[-16,17,-18,19,-20]]", "desc": "Standard 4x5 alternating"},
+    {"input": "[[0,-3,2,-1,5],[5,-2,1,-4,2],[-3,5,-1,2,-2],[4,-6,3,-2,1]]", "desc": "Standard 4x5"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10],[-1,-2,-3,-4,-5,-6,-7,-8,-9,-10],[1,2,3,4,5,6,7,8,9,10],[-1,-2,-3,-4,-5,-6,-7,-8,-9,-10],[1,2,3,4,5,6,7,8,9,10]]", "desc": "Stress 5x10 alternating rows"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]]", "desc": "Stress 10x10 all 1s"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 215,
+  "slug": "word-break",
+  "inferred_constraints": "1 <= s.length <= 300, 1 <= wordDict.length <= 1000, 1 <= wordDict[i].length <= 20, lowercase, distinct words",
+  "input_format": "line1: s (string in JSON quotes); line2: wordDict (JSON string array)",
+  "testcases": [
+    {"input": "\"leetcode\"\n[\"leet\",\"code\"]", "desc": "Edge: example1"},
+    {"input": "\"applepenapple\"\n[\"apple\",\"pen\"]", "desc": "Edge: example2"},
+    {"input": "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]", "desc": "Edge: example3 cannot"},
+    {"input": "\"a\"\n[\"a\"]", "desc": "Edge: min single char match"},
+    {"input": "\"a\"\n[\"b\"]", "desc": "Edge: min no match"},
+    {"input": "\"abc\"\n[\"abc\"]", "desc": "Edge: full word"},
+    {"input": "\"abc\"\n[\"a\",\"b\",\"c\"]", "desc": "Edge: split fully"},
+    {"input": "\"aaaaa\"\n[\"a\",\"aa\",\"aaa\"]", "desc": "Edge: multiple breakups"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\"\n[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\",\"aaaaaa\",\"aaaaaaa\",\"aaaaaaaa\",\"aaaaaaaaa\",\"aaaaaaaaaa\"]", "desc": "Edge: TLE-prone worst case"},
+    {"input": "\"abcd\"\n[\"a\",\"abc\",\"b\",\"cd\"]", "desc": "Standard: multiple options"},
+    {"input": "\"goalspecial\"\n[\"go\",\"goal\",\"goals\",\"special\"]", "desc": "Standard: 'goals'+'pecial' fails, 'goal'+'special' works"},
+    {"input": "\"abcdef\"\n[\"abc\",\"def\"]", "desc": "Standard: clean split"},
+    {"input": "\"helloworld\"\n[\"hello\",\"world\"]", "desc": "Standard: 2 words"},
+    {"input": "\"abab\"\n[\"a\",\"b\",\"ab\"]", "desc": "Standard: ambiguous splits"},
+    {"input": "\"cars\"\n[\"car\",\"ca\",\"rs\"]", "desc": "Standard: car+s won't work, ca+rs works"},
+    {"input": "\"leetcodeleetcode\"\n[\"leet\",\"code\"]", "desc": "Standard: repeating"},
+    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"\n[\"the\",\"quick\",\"brown\",\"fox\",\"jumps\",\"over\",\"lazy\",\"dog\"]", "desc": "Standard: pangram"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\"\n[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\",\"aaaaaa\",\"aaaaaaa\",\"aaaaaaaa\",\"aaaaaaaaa\",\"aaaaaaaaaa\"]", "desc": "Stress: 160 a's plus impossible 'b' suffix"},
+    {"input": "\"computersciencerocks\"\n[\"computer\",\"science\",\"rocks\",\"co\",\"mp\",\"ute\",\"rs\",\"cie\",\"nce\",\"ro\",\"cks\"]", "desc": "Stress: multiple valid breakups"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Stress: full alphabet single chars"}
+  ]
+}

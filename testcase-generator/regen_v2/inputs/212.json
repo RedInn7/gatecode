@@ -1,0 +1,28 @@
+{
+  "pid": 212,
+  "slug": "number-of-ways-to-divide-a-long-corridor",
+  "inferred_constraints": "1 <= n <= 1e5, corridor[i] in {'S','P'}",
+  "input_format": "line1: corridor (string in JSON quotes)",
+  "testcases": [
+    {"input": "\"SSPPSPS\"", "desc": "Edge: example1"},
+    {"input": "\"PPSPSP\"", "desc": "Edge: example2"},
+    {"input": "\"S\"", "desc": "Edge: n=1 single seat"},
+    {"input": "\"P\"", "desc": "Edge: n=1 single plant"},
+    {"input": "\"SS\"", "desc": "Edge: 2 seats one division"},
+    {"input": "\"PP\"", "desc": "Edge: no seats, 0 ways"},
+    {"input": "\"SP\"", "desc": "Edge: 1 seat 0 ways"},
+    {"input": "\"PS\"", "desc": "Edge: 1 seat 0 ways"},
+    {"input": "\"SSSS\"", "desc": "Edge: 4 seats no plants in between -> 1 way (no split possible)"},
+    {"input": "\"SSSSSS\"", "desc": "Standard: 6 seats no plants"},
+    {"input": "\"SSPSS\"", "desc": "Standard: 4 seats 1 plant 2 ways for splits"},
+    {"input": "\"SSPPSS\"", "desc": "Standard: 4 seats 2 plants"},
+    {"input": "\"PPSSPPSS\"", "desc": "Standard: bracketed structure"},
+    {"input": "\"SSPPSSPPSS\"", "desc": "Standard: 6 seats 4 plants"},
+    {"input": "\"SPSPSPSPSP\"", "desc": "Standard: only 5 seats, can't pair"},
+    {"input": "\"SPSPSP\"", "desc": "Standard: 3 seats, no division"},
+    {"input": "\"PPPSSPPPSSPPPSSPPP\"", "desc": "Standard: 6 seats with surrounding plants"},
+    {"input": "\"SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS\"", "desc": "Stress: 50 seats no plants"},
+    {"input": "\"SSPPSSPPSSPPSSPPSSPPSSPPSSPPSSPPSSPPSSPPSSPPSSPPSS\"", "desc": "Stress: 26 seats 24 plants alt"},
+    {"input": "\"SPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSPSP\"", "desc": "Stress: 25 seats can't divide"}
+  ]
+}

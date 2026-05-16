@@ -1,0 +1,28 @@
+{
+  "pid": 2238,
+  "slug": "minimum-window-substring",
+  "inferred_constraints": "m == s.length, n == t.length, 1 <= m, n <= 10^5",
+  "input_format": "line1: s (quoted); line2: t (quoted)",
+  "testcases": [
+    {"input": "\"ADOBECODEBANC\"\n\"ABC\"", "desc": "Standard"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge same"},
+    {"input": "\"a\"\n\"aa\"", "desc": "Edge impossible"},
+    {"input": "\"ab\"\n\"b\"", "desc": "Edge"},
+    {"input": "\"aa\"\n\"aa\"", "desc": "Edge"},
+    {"input": "\"abc\"\n\"abc\"", "desc": "Standard"},
+    {"input": "\"abcdef\"\n\"f\"", "desc": "Edge end"},
+    {"input": "\"abcdef\"\n\"a\"", "desc": "Edge start"},
+    {"input": "\"abcdef\"\n\"xyz\"", "desc": "Edge none"},
+    {"input": "\"abcdef\"\n\"af\"", "desc": "Standard"},
+    {"input": "\"thequickbrownfox\"\n\"qbf\"", "desc": "Standard"},
+    {"input": "\"mississippi\"\n\"ipss\"", "desc": "Standard"},
+    {"input": "\"banana\"\n\"ban\"", "desc": "Standard"},
+    {"input": "\"aaaa\"\n\"a\"", "desc": "Standard"},
+    {"input": "\"AB\"\n\"BA\"", "desc": "Standard"},
+    {"input": "\"hello\"\n\"olleh\"", "desc": "Standard"},
+    {"input": "\"zzzzzz\"\n\"z\"", "desc": "Edge"},
+    {"input": "\"abcabcabc\"\n\"abc\"", "desc": "Standard"},
+    {"input": "\"abcd\"\n\"dcba\"", "desc": "Standard"},
+    {"input": "\"aaabbbccc\"\n\"abc\"", "desc": "Standard"}
+  ]
+}

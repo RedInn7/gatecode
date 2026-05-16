@@ -5,6 +5,13 @@
     {"pid": 71, "slug": "customer-purchasing-behavior-analysis", "reason": "SQL only — Python3 template is NULL, not a code judge problem"},
     {"pid": 74, "slug": "serialize-and-deserialize-n-ary-tree", "reason": "Codec design class for N-ary tree — output identity makes verification ambiguous (multiple valid serializations); not suitable for standard judge"},
     {"pid": 111, "slug": "find-the-index-of-the-large-integer", "reason": "Interactive API problem (ArrayReader) — not suitable for stdin/stdout judging"},
-    {"pid": 113, "slug": "diameter-of-n-ary-tree", "reason": "N-ary Tree Node class with custom serialization; complex"}
+    {"pid": 113, "slug": "diameter-of-n-ary-tree", "reason": "N-ary Tree Node class with custom serialization; complex"},
+    {"pid": 148, "slug": "query-batching", "reason": "JavaScript async/Promise problem — not amenable to C++/Python judge"},
+    {"pid": 172, "slug": "encode-n-ary-tree-to-binary-tree", "reason": "Codec for N-ary tree — output identity ambiguous, requires custom round-trip judge"},
+    {"pid": 178, "slug": "array-of-objects-to-matrix", "reason": "JavaScript/TypeScript only — no C++/Python templates"},
+    {"pid": 190, "slug": "maximum-depth-of-n-ary-tree", "reason": "N-ary Node class — non-standard tree serialization, complex parsing"},
+    {"pid": 198, "slug": "array-upper-bound", "reason": "JavaScript/TypeScript only — Array prototype extension"},
+    {"pid": 185, "slug": "word-squares-ii", "reason": "Returns list of word-squares with non-deterministic ordering — needs SPJ for set equality"},
+    {"pid": 1881, "slug": "print-in-order", "reason": "Multi-threaded synchronization problem — not supported by standard judge"}
   ]
 }

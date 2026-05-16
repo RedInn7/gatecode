@@ -1,0 +1,28 @@
+{
+  "pid": 1874,
+  "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+  "inferred_constraints": "1 <= n.length <= 10^5, only digits, no leading zeros",
+  "input_format": "line1: n (string of digits)",
+  "testcases": [
+    {"input": "32", "desc": "Edge: example1"},
+    {"input": "82734", "desc": "Edge: example2 -> 8"},
+    {"input": "27346209830709182346", "desc": "Edge: example3 -> 9"},
+    {"input": "1", "desc": "Edge: minimum length=1 -> 1"},
+    {"input": "9", "desc": "Edge: max single digit -> 9"},
+    {"input": "10", "desc": "Edge: 10 -> 1"},
+    {"input": "99", "desc": "Edge: all max digits -> 9"},
+    {"input": "11111111", "desc": "Edge: all ones -> 1"},
+    {"input": "12345", "desc": "Standard: ascending"},
+    {"input": "54321", "desc": "Standard: descending -> 5"},
+    {"input": "9876543210", "desc": "Standard: all digits desc"},
+    {"input": "1234567890", "desc": "Standard: all digits asc"},
+    {"input": "555555", "desc": "Standard: all 5"},
+    {"input": "1010101010", "desc": "Standard: alternating 1,0"},
+    {"input": "999999999999999999", "desc": "Standard: 18 nines"},
+    {"input": "100000000000000000", "desc": "Stress: large with leading 1"},
+    {"input": "987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321", "desc": "Stress: 100-char repeating max patterns"},
+    {"input": "55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555", "desc": "Stress: 200 fives"},
+    {"input": "9", "desc": "Special: single max"},
+    {"input": "1010", "desc": "Special: pattern alternating"}
+  ]
+}

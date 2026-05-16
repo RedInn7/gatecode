@@ -1,0 +1,28 @@
+{
+  "pid": 219,
+  "slug": "4-keys-keyboard",
+  "inferred_constraints": "1 <= n <= 50",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "3", "desc": "Edge: example1"},
+    {"input": "7", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: n=1 minimum"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "4", "desc": "Edge: n=4"},
+    {"input": "5", "desc": "Edge: n=5"},
+    {"input": "6", "desc": "Edge: n=6"},
+    {"input": "8", "desc": "Standard: n=8"},
+    {"input": "9", "desc": "Standard: n=9"},
+    {"input": "10", "desc": "Standard: n=10"},
+    {"input": "15", "desc": "Standard: n=15"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "25", "desc": "Standard: n=25"},
+    {"input": "30", "desc": "Standard: n=30"},
+    {"input": "35", "desc": "Standard: n=35"},
+    {"input": "40", "desc": "Standard: n=40"},
+    {"input": "45", "desc": "Standard: n=45"},
+    {"input": "48", "desc": "Stress: near max"},
+    {"input": "49", "desc": "Stress: near max"},
+    {"input": "50", "desc": "Stress: max n"}
+  ]
+}

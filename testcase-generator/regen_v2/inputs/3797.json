@@ -1,0 +1,28 @@
+{
+  "pid": 3797,
+  "slug": "shortest-palindrome",
+  "inferred_constraints": "0 <= s.length <= 5*10^4, lowercase letters",
+  "input_format": "line1: s (string, raw, possibly empty)",
+  "testcases": [
+    {"input": "aacecaaa", "desc": "Example 1"},
+    {"input": "abcd", "desc": "Example 2"},
+    {"input": "", "desc": "Edge: empty"},
+    {"input": "a", "desc": "Edge: single"},
+    {"input": "aa", "desc": "Edge: aa palindrome"},
+    {"input": "ab", "desc": "Edge: 2 distinct"},
+    {"input": "aba", "desc": "Edge: 3 palindrome"},
+    {"input": "abc", "desc": "Standard"},
+    {"input": "abab", "desc": "Standard"},
+    {"input": "abcba", "desc": "Standard palindrome"},
+    {"input": "abcab", "desc": "Standard"},
+    {"input": "aabb", "desc": "Standard"},
+    {"input": "racecar", "desc": "Standard palindrome"},
+    {"input": "aaaa", "desc": "Standard all a"},
+    {"input": "abcdefg", "desc": "Standard 7 distinct"},
+    {"input": "abacabad", "desc": "Standard"},
+    {"input": "abcdefgh", "desc": "Standard 8 distinct"},
+    {"input": "aabaaa", "desc": "Standard"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress 48 a"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Stress all distinct"}
+  ]
+}
