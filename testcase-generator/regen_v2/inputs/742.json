@@ -1,27 +1,88 @@
 {
-  "pid": 742, "slug": "find-the-minimum-cost-array-permutation",
+  "pid": 742,
+  "slug": "find-the-minimum-cost-array-permutation",
   "inferred_constraints": "2 <= n <= 14, permutation of [0,...,n-1]",
   "input_format": "line1: nums (JSON array)",
   "testcases": [
-    {"input": "[1,0,2]", "desc": "Edge: example1"},
-    {"input": "[0,2,1]", "desc": "Edge: example2"},
-    {"input": "[0,1]", "desc": "Edge: n=2 sorted"},
-    {"input": "[1,0]", "desc": "Edge: n=2 reverse"},
-    {"input": "[0,1,2]", "desc": "Edge: n=3 sorted"},
-    {"input": "[2,1,0]", "desc": "Edge: n=3 reverse"},
-    {"input": "[0,1,2,3]", "desc": "Edge: n=4 sorted"},
-    {"input": "[3,2,1,0]", "desc": "Edge: n=4 reverse"},
-    {"input": "[1,2,0,3]", "desc": "Standard: n=4 cycle"},
-    {"input": "[0,1,2,3,4]", "desc": "Standard: n=5 sorted"},
-    {"input": "[4,3,2,1,0]", "desc": "Standard: n=5 reverse"},
-    {"input": "[3,1,4,0,2]", "desc": "Standard: n=5 random"},
-    {"input": "[0,1,2,3,4,5,6,7]", "desc": "Standard: n=8 sorted"},
-    {"input": "[7,6,5,4,3,2,1,0]", "desc": "Standard: n=8 reverse"},
-    {"input": "[0,1,2,3,4,5,6,7,8,9]", "desc": "Standard: n=10 sorted"},
-    {"input": "[9,8,7,6,5,4,3,2,1,0]", "desc": "Standard: n=10 reverse"},
-    {"input": "[5,3,1,7,9,0,2,4,6,8]", "desc": "Standard: n=10 mixed"},
-    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13]", "desc": "Stress: n=14 sorted"},
-    {"input": "[13,12,11,10,9,8,7,6,5,4,3,2,1,0]", "desc": "Stress: n=14 reverse"},
-    {"input": "[7,2,9,5,11,1,13,4,0,8,12,3,6,10]", "desc": "Stress: n=14 scrambled"}
+    {
+      "input": "[1,0,2]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[0,2,1]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[0,1]",
+      "desc": "Edge: n=2 sorted"
+    },
+    {
+      "input": "[1,0]",
+      "desc": "Edge: n=2 reverse"
+    },
+    {
+      "input": "[-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946,-946]",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "[2,1,0]",
+      "desc": "Edge: n=3 reverse"
+    },
+    {
+      "input": "[0,1,2,3]",
+      "desc": "Edge: n=4 sorted"
+    },
+    {
+      "input": "[3,2,1,0]",
+      "desc": "Edge: n=4 reverse"
+    },
+    {
+      "input": "[1,2,0,3]",
+      "desc": "Standard: n=4 cycle"
+    },
+    {
+      "input": "[0,1,2,3,4]",
+      "desc": "Standard: n=5 sorted"
+    },
+    {
+      "input": "[4,3,2,1,0]",
+      "desc": "Standard: n=5 reverse"
+    },
+    {
+      "input": "[3,1,4,0,2]",
+      "desc": "Standard: n=5 random"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7]",
+      "desc": "Standard: n=8 sorted"
+    },
+    {
+      "input": "[7,6,5,4,3,2,1,0]",
+      "desc": "Standard: n=8 reverse"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9]",
+      "desc": "Standard: n=10 sorted"
+    },
+    {
+      "input": "[9,8,7,6,5,4,3,2,1,0]",
+      "desc": "Standard: n=10 reverse"
+    },
+    {
+      "input": "[5,3,1,7,9,0,2,4,6,8]",
+      "desc": "Standard: n=10 mixed"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13]",
+      "desc": "Stress: n=14 sorted"
+    },
+    {
+      "input": "[13,12,11,10,9,8,7,6,5,4,3,2,1,0]",
+      "desc": "Stress: n=14 reverse"
+    },
+    {
+      "input": "[7,2,9,5,11,1,13,4,0,8,12,3,6,10]",
+      "desc": "Stress: n=14 scrambled"
+    }
   ]
 }

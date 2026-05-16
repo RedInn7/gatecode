@@ -1,27 +1,88 @@
 {
-  "pid": 740, "slug": "minimum-number-of-chairs-in-a-waiting-room",
+  "pid": 740,
+  "slug": "minimum-number-of-chairs-in-a-waiting-room",
   "inferred_constraints": "1 <= s.length <= 50, s in {E,L}",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "EEEEEEE", "desc": "Edge: example1 all enter 7"},
-    {"input": "ELELEEL", "desc": "Edge: example2"},
-    {"input": "ELEELEELLL", "desc": "Edge: example3"},
-    {"input": "E", "desc": "Edge: single E"},
-    {"input": "EL", "desc": "Edge: EL pair"},
-    {"input": "EELL", "desc": "Edge: 2 enter 2 leave"},
-    {"input": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE", "desc": "Stress: 50 E"},
-    {"input": "ELELELELELELELELELELELELELELELELELELELELELELELELEL", "desc": "Stress: 50 alternating"},
-    {"input": "EELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEE", "desc": "Stress: 50 mixed"},
-    {"input": "EEELLLEEELLLEEELLLEEELLLEEELLLEEELLLEEELLLEEELLLEE", "desc": "Stress: 3-3 pattern"},
-    {"input": "EEEEELLLLLLLLLLEEEEELLLLLLLLLLEEEEELLLLLLLLLLEEEEE", "desc": "Stress: bursts"},
-    {"input": "EL", "desc": "Standard: short EL"},
-    {"input": "EELLEE", "desc": "Standard: bursty pattern"},
-    {"input": "EELELLEELEL", "desc": "Standard: mixed"},
-    {"input": "EELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEE", "desc": "Standard: 50 EEL pattern"},
-    {"input": "EEEEEEEEEEEEEEEEEEEEEEEEELLLLLLLLLLLLLLLLLLLLLLLLL", "desc": "Edge: 25E then 25L"},
-    {"input": "EEELLLEELLLEEE", "desc": "Standard: mixed pattern"},
-    {"input": "ELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLE", "desc": "Edge: only 2 Es spread"},
-    {"input": "ELEELEELLLEELE", "desc": "Standard: mixed"},
-    {"input": "EEEELLLLEEEELLLLEEEEEELLLLLLEEEEEELLLLLLLLLLLLLL", "desc": "Special: peaked"}
+    {
+      "input": "EEEEEEE",
+      "desc": "Edge: example1 all enter 7"
+    },
+    {
+      "input": "ELELEEL",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"do\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"nuujuturg\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"ajsgjfgmsy\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "EELL",
+      "desc": "Edge: 2 enter 2 leave"
+    },
+    {
+      "input": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+      "desc": "Stress: 50 E"
+    },
+    {
+      "input": "ELELELELELELELELELELELELELELELELELELELELELELELELEL",
+      "desc": "Stress: 50 alternating"
+    },
+    {
+      "input": "EELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEE",
+      "desc": "Stress: 50 mixed"
+    },
+    {
+      "input": "EEELLLEEELLLEEELLLEEELLLEEELLLEEELLLEEELLLEEELLLEE",
+      "desc": "Stress: 3-3 pattern"
+    },
+    {
+      "input": "EEEEELLLLLLLLLLEEEEELLLLLLLLLLEEEEELLLLLLLLLLEEEEE",
+      "desc": "Stress: bursts"
+    },
+    {
+      "input": "EL",
+      "desc": "Standard: short EL"
+    },
+    {
+      "input": "EELLEE",
+      "desc": "Standard: bursty pattern"
+    },
+    {
+      "input": "EELELLEELEL",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "EELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEELEE",
+      "desc": "Standard: 50 EEL pattern"
+    },
+    {
+      "input": "EEEEEEEEEEEEEEEEEEEEEEEEELLLLLLLLLLLLLLLLLLLLLLLLL",
+      "desc": "Edge: 25E then 25L"
+    },
+    {
+      "input": "EEELLLEELLLEEE",
+      "desc": "Standard: mixed pattern"
+    },
+    {
+      "input": "ELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLE",
+      "desc": "Edge: only 2 Es spread"
+    },
+    {
+      "input": "ELEELEELLLEELE",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "\"egpcuqugtuzdqktyydgm\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
