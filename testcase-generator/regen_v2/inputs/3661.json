@@ -1,0 +1,28 @@
+{
+  "pid": 3661,
+  "slug": "remove-vowels-from-a-string",
+  "inferred_constraints": "1 <= s.length <= 1000, lowercase letters",
+  "input_format": "line1: s (string, raw)",
+  "testcases": [
+    {"input": "leetcodeisacommunityforcoders", "desc": "Example 1"},
+    {"input": "aeiou", "desc": "Example 2"},
+    {"input": "a", "desc": "Edge: single vowel"},
+    {"input": "b", "desc": "Edge: single consonant"},
+    {"input": "ab", "desc": "Edge"},
+    {"input": "ba", "desc": "Edge"},
+    {"input": "aaaa", "desc": "Edge: all vowels"},
+    {"input": "bbbb", "desc": "Edge: all consonants"},
+    {"input": "abcdefghij", "desc": "Standard"},
+    {"input": "hello", "desc": "Standard"},
+    {"input": "world", "desc": "Standard"},
+    {"input": "programming", "desc": "Standard"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard alphabet"},
+    {"input": "qwertyuiop", "desc": "Standard"},
+    {"input": "zxcvbnm", "desc": "Standard no vowels"},
+    {"input": "aeiouaeiouaeiou", "desc": "Standard all vowels"},
+    {"input": "thisisatest", "desc": "Standard"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress 100 a"},
+    {"input": "bcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyzbcdfghjklmnpqrst", "desc": "Stress 100 consonants"},
+    {"input": "thequickbrownfoxjumpsoverthelazydogthequickbrownfoxjumpsoverthelazydog", "desc": "Stress 70"}
+  ]
+}

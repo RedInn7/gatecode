@@ -1,0 +1,28 @@
+{
+  "pid": 3653,
+  "slug": "largest-even-number",
+  "inferred_constraints": "1 <= s.length <= 100, s consists of '1' and '2'",
+  "input_format": "line1: s (string, raw)",
+  "testcases": [
+    {"input": "1112", "desc": "Example 1"},
+    {"input": "221", "desc": "Example 2"},
+    {"input": "1", "desc": "Edge: single '1' impossible"},
+    {"input": "2", "desc": "Edge: single '2'"},
+    {"input": "12", "desc": "Edge"},
+    {"input": "21", "desc": "Edge"},
+    {"input": "11", "desc": "Edge: all 1s impossible"},
+    {"input": "22", "desc": "Edge: all 2s"},
+    {"input": "111", "desc": "Edge: all 1 impossible"},
+    {"input": "222", "desc": "Edge: all 2"},
+    {"input": "121", "desc": "Standard"},
+    {"input": "212", "desc": "Standard"},
+    {"input": "1212", "desc": "Standard"},
+    {"input": "2121", "desc": "Standard"},
+    {"input": "111122", "desc": "Standard"},
+    {"input": "221111", "desc": "Standard"},
+    {"input": "11111", "desc": "Edge: all 1s impossible"},
+    {"input": "22222", "desc": "Edge: all 2s"},
+    {"input": "12121212121212121212", "desc": "Standard 20 chars"},
+    {"input": "21212121212121212121", "desc": "Standard"}
+  ]
+}

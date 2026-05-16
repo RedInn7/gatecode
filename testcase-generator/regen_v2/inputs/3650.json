@@ -1,0 +1,28 @@
+{
+  "pid": 3650,
+  "slug": "count-prefixes-of-a-given-string",
+  "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length, s.length <= 10, lowercase",
+  "input_format": "line1: words (JSON array of strings); line2: s (string, raw)",
+  "testcases": [
+    {"input": "[\"a\",\"b\",\"c\",\"ab\",\"bc\",\"abc\"]\nabc", "desc": "Example 1"},
+    {"input": "[\"a\",\"a\"]\naa", "desc": "Example 2"},
+    {"input": "[\"a\"]\na", "desc": "Edge: single match"},
+    {"input": "[\"b\"]\na", "desc": "Edge: single no match"},
+    {"input": "[\"a\",\"b\"]\nab", "desc": "Edge"},
+    {"input": "[\"ab\",\"abc\"]\nabcde", "desc": "Standard"},
+    {"input": "[\"abc\",\"abcd\",\"abcde\"]\nabcde", "desc": "Standard nested"},
+    {"input": "[\"x\",\"y\",\"z\"]\nabcdef", "desc": "Standard no match"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]\nabcde", "desc": "Standard duplicates"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]\nabcde", "desc": "Standard all match"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]\nfghij", "desc": "Standard none"},
+    {"input": "[\"hello\",\"help\",\"world\"]\nhelpme", "desc": "Standard"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]\na", "desc": "Standard 5 same"},
+    {"input": "[\"ab\",\"ba\",\"cd\",\"dc\"]\nabcd", "desc": "Standard"},
+    {"input": "[\"abc\",\"abd\",\"abe\",\"abf\"]\nabcde", "desc": "Standard"},
+    {"input": "[\"a\"]\naaaaaaaaaa", "desc": "Standard"},
+    {"input": "[\"abc\",\"abc\"]\nabcabcabc", "desc": "Standard"},
+    {"input": "[\"abcdefghij\",\"a\",\"b\",\"c\"]\nabcdefghij", "desc": "Standard max length"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\"]\nabcde", "desc": "Stress 10 same"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\"]\nabcdefghij", "desc": "Stress 10 nested"}
+  ]
+}

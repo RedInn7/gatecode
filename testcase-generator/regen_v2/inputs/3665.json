@@ -1,0 +1,28 @@
+{
+  "pid": 3665,
+  "slug": "count-subtrees-with-max-distance-between-cities",
+  "inferred_constraints": "2 <= n <= 15, edges form tree",
+  "input_format": "line1: n (int); line2: edges (JSON 2D)",
+  "testcases": [
+    {"input": "4\n[[1,2],[2,3],[2,4]]", "desc": "Example 1"},
+    {"input": "2\n[[1,2]]", "desc": "Example 2"},
+    {"input": "3\n[[1,2],[2,3]]", "desc": "Edge: small chain"},
+    {"input": "3\n[[1,2],[1,3]]", "desc": "Edge: small star"},
+    {"input": "4\n[[1,2],[1,3],[1,4]]", "desc": "Standard star"},
+    {"input": "4\n[[1,2],[2,3],[3,4]]", "desc": "Standard chain"},
+    {"input": "5\n[[1,2],[2,3],[3,4],[4,5]]", "desc": "Standard chain 5"},
+    {"input": "5\n[[1,2],[1,3],[1,4],[1,5]]", "desc": "Standard star 5"},
+    {"input": "6\n[[1,2],[2,3],[3,4],[4,5],[5,6]]", "desc": "Standard chain 6"},
+    {"input": "6\n[[1,2],[1,3],[2,4],[2,5],[3,6]]", "desc": "Standard binary"},
+    {"input": "7\n[[1,2],[1,3],[2,4],[2,5],[3,6],[3,7]]", "desc": "Standard binary 7"},
+    {"input": "8\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]]", "desc": "Standard chain 8"},
+    {"input": "8\n[[1,2],[1,3],[1,4],[2,5],[3,6],[4,7],[7,8]]", "desc": "Standard"},
+    {"input": "10\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]", "desc": "Standard chain 10"},
+    {"input": "10\n[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10]]", "desc": "Standard star 10"},
+    {"input": "10\n[[1,2],[1,3],[2,4],[2,5],[3,6],[3,7],[4,8],[5,9],[6,10]]", "desc": "Standard binary"},
+    {"input": "12\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12]]", "desc": "Standard chain 12"},
+    {"input": "15\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15]]", "desc": "Stress max chain"},
+    {"input": "15\n[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11],[1,12],[1,13],[1,14],[1,15]]", "desc": "Stress max star"},
+    {"input": "15\n[[1,2],[1,3],[2,4],[2,5],[3,6],[3,7],[4,8],[4,9],[5,10],[5,11],[6,12],[6,13],[7,14],[7,15]]", "desc": "Stress balanced binary"}
+  ]
+}

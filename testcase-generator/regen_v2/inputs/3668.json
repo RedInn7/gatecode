@@ -1,0 +1,28 @@
+{
+  "pid": 3668,
+  "slug": "find-the-power-of-k-size-subarrays-ii",
+  "inferred_constraints": "1 <= n <= 10^5, 1 <= nums[i] <= 10^6, 1 <= k <= n",
+  "input_format": "line1: nums (JSON); line2: k (int)",
+  "testcases": [
+    {"input": "[1,2,3,4,3,2,5]\n3", "desc": "Example 1"},
+    {"input": "[2,2,2,2,2]\n4", "desc": "Example 2"},
+    {"input": "[3,2,3,2,3,2]\n2", "desc": "Example 3"},
+    {"input": "[1]\n1", "desc": "Edge: single"},
+    {"input": "[1,2]\n1", "desc": "Edge: k=1"},
+    {"input": "[1,2]\n2", "desc": "Edge"},
+    {"input": "[1,1,1,1,1]\n3", "desc": "Edge: all same"},
+    {"input": "[1,2,3,4,5]\n5", "desc": "Standard k=n"},
+    {"input": "[5,4,3,2,1]\n3", "desc": "Standard descending"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n5", "desc": "Standard descending"},
+    {"input": "[1,2,4,5,7,8,10,11]\n3", "desc": "Standard non-cons"},
+    {"input": "[1,2,3,1,2,3,1,2,3]\n3", "desc": "Standard repeating"},
+    {"input": "[5,6,7,8,9,10,11,12,13,14]\n5", "desc": "Standard"},
+    {"input": "[1,3,2,4,3,5,4]\n3", "desc": "Standard"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n3", "desc": "Standard all 1"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10", "desc": "Stress 20"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n5", "desc": "Stress 20 same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n5", "desc": "Stress 20 k=5"}
+  ]
+}

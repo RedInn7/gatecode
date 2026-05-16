@@ -1,0 +1,28 @@
+{
+  "pid": 3663,
+  "slug": "earliest-possible-day-of-full-bloom",
+  "inferred_constraints": "1 <= n <= 10^5, 1 <= plantTime[i], growTime[i] <= 10^4",
+  "input_format": "line1: plantTime (JSON); line2: growTime (JSON)",
+  "testcases": [
+    {"input": "[1,4,3]\n[2,3,1]", "desc": "Example 1"},
+    {"input": "[1,2,3,2]\n[2,1,2,1]", "desc": "Example 2"},
+    {"input": "[1]\n[1]", "desc": "Edge: single"},
+    {"input": "[5]\n[3]", "desc": "Edge: single"},
+    {"input": "[1,1]\n[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]\n[2,1]", "desc": "Edge: 2 diff"},
+    {"input": "[10000]\n[10000]", "desc": "Edge: max single"},
+    {"input": "[5,5,5,5]\n[5,5,5,5]", "desc": "Standard all same"},
+    {"input": "[1,1,1,1,1]\n[5,4,3,2,1]", "desc": "Standard"},
+    {"input": "[5,4,3,2,1]\n[1,1,1,1,1]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2]\n[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard 10"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard all 1"},
+    {"input": "[10,1,10,1,10,1,10,1,10,1]\n[1,10,1,10,1,10,1,10,1,10]", "desc": "Standard alternating"},
+    {"input": "[10000,1,1,1,1,1]\n[1,1,1,1,1,1]", "desc": "Standard one big plant"},
+    {"input": "[1,1,1,1,1,1]\n[10000,1,1,1,1,1]", "desc": "Standard one big grow"},
+    {"input": "[100,200,300,400,500]\n[1,1,1,1,1]", "desc": "Standard"},
+    {"input": "[1,1,1,1,1]\n[100,200,300,400,500]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress 20"},
+    {"input": "[10000,10000,10000,10000,10000]\n[10000,10000,10000,10000,10000]", "desc": "Stress max all"}
+  ]
+}

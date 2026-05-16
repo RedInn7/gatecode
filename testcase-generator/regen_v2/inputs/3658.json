@@ -1,0 +1,28 @@
+{
+  "pid": 3658,
+  "slug": "a-number-after-a-double-reversal",
+  "inferred_constraints": "0 <= num <= 10^6",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "526", "desc": "Example 1: true"},
+    {"input": "1800", "desc": "Example 2: false"},
+    {"input": "0", "desc": "Example 3: true zero"},
+    {"input": "1", "desc": "Edge: single digit"},
+    {"input": "9", "desc": "Edge"},
+    {"input": "10", "desc": "Edge: trailing zero"},
+    {"input": "100", "desc": "Edge: trailing zeros"},
+    {"input": "1000", "desc": "Edge: 1000"},
+    {"input": "11", "desc": "Standard"},
+    {"input": "12", "desc": "Standard"},
+    {"input": "123", "desc": "Standard"},
+    {"input": "120", "desc": "Standard"},
+    {"input": "1000000", "desc": "Standard max trailing"},
+    {"input": "999999", "desc": "Standard all 9"},
+    {"input": "12345", "desc": "Standard"},
+    {"input": "98765", "desc": "Standard"},
+    {"input": "1234567", "desc": "Standard 7 digits"},
+    {"input": "1010101", "desc": "Standard"},
+    {"input": "100000", "desc": "Standard"},
+    {"input": "999990", "desc": "Standard trailing zero"}
+  ]
+}

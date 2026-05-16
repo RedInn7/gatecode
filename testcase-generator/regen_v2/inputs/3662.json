@@ -1,0 +1,28 @@
+{
+  "pid": 3662,
+  "slug": "find-minimum-time-to-finish-all-jobs",
+  "inferred_constraints": "1 <= k <= jobs.length <= 12, 1 <= jobs[i] <= 10^7",
+  "input_format": "line1: jobs (JSON); line2: k (int)",
+  "testcases": [
+    {"input": "[3,2,3]\n3", "desc": "Example 1"},
+    {"input": "[1,2,4,7,8]\n2", "desc": "Example 2"},
+    {"input": "[1]\n1", "desc": "Edge: single"},
+    {"input": "[5,5]\n1", "desc": "Edge: 1 worker"},
+    {"input": "[5,5]\n2", "desc": "Edge: 2 workers same"},
+    {"input": "[1,2,3]\n1", "desc": "Standard 1 worker"},
+    {"input": "[1,2,3]\n3", "desc": "Standard 3 workers"},
+    {"input": "[1,1,1,1]\n4", "desc": "Standard equal"},
+    {"input": "[10,10,10,10]\n2", "desc": "Standard pairs"},
+    {"input": "[1,2,3,4,5,6]\n3", "desc": "Standard"},
+    {"input": "[100,100,100,100]\n4", "desc": "Standard"},
+    {"input": "[10000000,1,1,1]\n2", "desc": "Edge: one big"},
+    {"input": "[5,4,3,2,1]\n2", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n4", "desc": "Standard 10"},
+    {"input": "[1000,2000,3000,4000,5000,6000]\n3", "desc": "Standard"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1]\n4", "desc": "Standard 12 ones"},
+    {"input": "[10000000]\n1", "desc": "Edge max"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1]\n12", "desc": "Standard 12 jobs 12 workers"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12]\n3", "desc": "Stress 12 jobs"},
+    {"input": "[10000000,10000000,10000000,10000000,10000000,10000000,10000000,10000000,10000000,10000000,10000000,10000000]\n4", "desc": "Stress max"}
+  ]
+}

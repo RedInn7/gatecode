@@ -25,6 +25,12 @@
     {"pid": 3691, "slug": "insufficient-nodes-in-root-to-leaf-paths", "reason": "returns modified tree root; serialization complex with internal nulls"},
     {"pid": 3687, "slug": "implement-rand10-using-rand7", "reason": "randomized output; needs statistical SPJ"},
     {"pid": 3681, "slug": "calculator-with-method-chaining", "reason": "JavaScript-only method-chaining design; no C++/Python signatures"},
-    {"pid": 3678, "slug": "leftmost-column-with-at-least-a-one", "reason": "interactive BinaryMatrix.get API; cannot test via standard I/O"}
+    {"pid": 3678, "slug": "leftmost-column-with-at-least-a-one", "reason": "interactive BinaryMatrix.get API; cannot test via standard I/O"},
+    {"pid": 3673, "slug": "group-shifted-strings", "reason": "returns list of groups with non-deterministic ordering both outer and inner"},
+    {"pid": 3670, "slug": "n-ary-tree-preorder-traversal", "reason": "n-ary tree with custom level-order-null serialization not standard"},
+    {"pid": 3669, "slug": "find-in-mountain-array", "reason": "interactive MountainArray.get with call-count constraint"},
+    {"pid": 3667, "slug": "encode-string-with-shortest-length", "reason": "multiple valid encodings of same length acceptable"},
+    {"pid": 3655, "slug": "flatten-a-multilevel-doubly-linked-list", "reason": "multilevel doubly linked list with custom Node; complex serialization"},
+    {"pid": 3648, "slug": "rearrange-string-k-distance-apart", "reason": "multiple valid rearrangements possible; needs SPJ"}
   ]
 }
