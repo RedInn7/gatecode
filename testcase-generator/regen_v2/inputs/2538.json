@@ -4,25 +4,85 @@
   "inferred_constraints": "m == grid.length, n == grid[i].length, 1 <= m <= 10^4, 1 <= n <= 5, grid[i][j] in {0, 1}",
   "input_format": "line1: grid (JSON 2D array)",
   "testcases": [
-    {"input": "[[0,1,1,0],[0,0,0,1],[1,1,1,1]]", "desc": "Edge: example1"},
-    {"input": "[[0]]", "desc": "Edge: single 0"},
-    {"input": "[[1]]", "desc": "Edge: single 1"},
-    {"input": "[[0,0,0,0,0]]", "desc": "Edge: all zeros 1 row"},
-    {"input": "[[1,1,1,1,1]]", "desc": "Edge: all ones 1 row"},
-    {"input": "[[0,0,0,0,0],[0,0,0,0,0]]", "desc": "Edge: 2 zero rows"},
-    {"input": "[[1,1,1,1,1],[1,1,1,1,1]]", "desc": "Edge: all ones 2 rows"},
-    {"input": "[[0,0,0,0,0],[1,1,1,1,1]]", "desc": "Standard: mixed 2 rows"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1]]", "desc": "Standard: 3x3 ones"},
-    {"input": "[[0,1],[1,0]]", "desc": "Standard: complement pair"},
-    {"input": "[[1,0,0],[0,1,0],[0,0,1]]", "desc": "Standard: identity"},
-    {"input": "[[1,1],[1,0],[0,1],[0,0]]", "desc": "Standard: all 2-bit patterns"},
-    {"input": "[[0,0,0,0,0],[0,0,0,0,1]]", "desc": "Standard: minimal diff"},
-    {"input": "[[1,1,1,1,1],[0,0,0,0,0],[0,0,0,0,0]]", "desc": "Standard: 1 one + 2 zero"},
-    {"input": "[[1,0,1,0,1],[0,1,0,1,0]]", "desc": "Standard: alternating"},
-    {"input": "[[1,1,0],[0,0,1],[1,0,1]]", "desc": "Standard: 3x3 mixed"},
-    {"input": "[[0,1,1,1,0],[1,0,0,0,1],[1,1,1,1,1]]", "desc": "Standard: 3-row mix"},
-    {"input": "[[0,0,0],[0,0,1],[0,1,0],[0,1,1],[1,0,0],[1,0,1],[1,1,0],[1,1,1]]", "desc": "Stress: all 3-bit patterns"},
-    {"input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]", "desc": "Stress: 5 all-one rows"},
-    {"input": "[[1,1,1,1,1],[0,1,1,1,1],[1,0,1,1,1],[1,1,0,1,1],[1,1,1,0,1],[1,1,1,1,0]]", "desc": "Killer: near-full ones"}
+    {
+      "input": "[[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[0]]",
+      "desc": "Edge: single 0"
+    },
+    {
+      "input": "[[1]]",
+      "desc": "Edge: single 1"
+    },
+    {
+      "input": "[[0,0,0,0,0]]",
+      "desc": "Edge: all zeros 1 row"
+    },
+    {
+      "input": "[[1,1,1,1,1]]",
+      "desc": "Edge: all ones 1 row"
+    },
+    {
+      "input": "[[0,0,0,0,0],[0,0,0,0,0]]",
+      "desc": "Edge: 2 zero rows"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,1,1,1,1]]",
+      "desc": "Edge: all ones 2 rows"
+    },
+    {
+      "input": "[[0,0,0,0,0],[1,1,1,1,1]]",
+      "desc": "Standard: mixed 2 rows"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1]]",
+      "desc": "Standard: 3x3 ones"
+    },
+    {
+      "input": "[[0,1],[1,0]]",
+      "desc": "Standard: complement pair"
+    },
+    {
+      "input": "[[1,0,0],[0,1,0],[0,0,1]]",
+      "desc": "Standard: identity"
+    },
+    {
+      "input": "[[1,1],[1,0],[0,1],[0,0]]",
+      "desc": "Standard: all 2-bit patterns"
+    },
+    {
+      "input": "[[0,0,0,0,0],[0,0,0,0,1]]",
+      "desc": "Standard: minimal diff"
+    },
+    {
+      "input": "[[1,1,1,1,1],[0,0,0,0,0],[0,0,0,0,0]]",
+      "desc": "Standard: 1 one + 2 zero"
+    },
+    {
+      "input": "[[1,0,1,0,1],[0,1,0,1,0]]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[[1,1,0],[0,0,1],[1,0,1]]",
+      "desc": "Standard: 3x3 mixed"
+    },
+    {
+      "input": "[[0,1,1,1,0],[1,0,0,0,1],[1,1,1,1,1]]",
+      "desc": "Standard: 3-row mix"
+    },
+    {
+      "input": "[[0,0,0],[0,0,1],[0,1,0],[0,1,1],[1,0,0],[1,0,1],[1,1,0],[1,1,1]]",
+      "desc": "Stress: all 3-bit patterns"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
+      "desc": "Stress: 5 all-one rows"
+    },
+    {
+      "input": "[[-425,751,-953,598,-280,-424,40,-206],[-236,-544,-761,803,830,-954,174,723],[-68,-824,-841,-768,411,79,534,-381],[-260,-793,508,816,-910,-134,-60,792],[-99,-647,-10,-135,-351,879,-297,605],[-425,-563,-761,912,-471,55,-514,-640]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

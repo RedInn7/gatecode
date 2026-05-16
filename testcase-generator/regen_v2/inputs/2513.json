@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1000, s consists of lowercase letters",
   "input_format": "line1: s (JSON string)",
   "testcases": [
-    {"input": "\"abc\"", "desc": "Edge: example1"},
-    {"input": "\"aaa\"", "desc": "Edge: example2"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"aa\"", "desc": "Edge: n=2 same"},
-    {"input": "\"ab\"", "desc": "Edge: n=2 diff"},
-    {"input": "\"aba\"", "desc": "Edge: odd palindrome"},
-    {"input": "\"abba\"", "desc": "Edge: even palindrome"},
-    {"input": "\"abcde\"", "desc": "Standard: no extra palindromes"},
-    {"input": "\"aaaa\"", "desc": "Standard: 4 same"},
-    {"input": "\"abcba\"", "desc": "Standard: classic palindrome"},
-    {"input": "\"racecar\"", "desc": "Standard: famous palindrome"},
-    {"input": "\"abacabad\"", "desc": "Standard: with extra char"},
-    {"input": "\"abcdcba\"", "desc": "Standard: 7-char palindrome"},
-    {"input": "\"abcabcabc\"", "desc": "Standard: repeating cycle"},
-    {"input": "\"banana\"", "desc": "Standard: with anan"},
-    {"input": "\"abcdefghij\"", "desc": "Standard: all distinct"},
-    {"input": "\"aabaa\"", "desc": "Standard: nested palindrome"},
-    {"input": "\"abccba\"", "desc": "Standard: even reverse"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 100 same"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Killer: 104 distinct letters"}
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"aaa\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: n=2 diff"
+    },
+    {
+      "input": "\"aba\"",
+      "desc": "Edge: odd palindrome"
+    },
+    {
+      "input": "\"abba\"",
+      "desc": "Edge: even palindrome"
+    },
+    {
+      "input": "\"abcde\"",
+      "desc": "Standard: no extra palindromes"
+    },
+    {
+      "input": "\"aaaa\"",
+      "desc": "Standard: 4 same"
+    },
+    {
+      "input": "\"abcba\"",
+      "desc": "Standard: classic palindrome"
+    },
+    {
+      "input": "\"racecar\"",
+      "desc": "Standard: famous palindrome"
+    },
+    {
+      "input": "\"abacabad\"",
+      "desc": "Standard: with extra char"
+    },
+    {
+      "input": "\"abcdcba\"",
+      "desc": "Standard: 7-char palindrome"
+    },
+    {
+      "input": "\"abcabcabc\"",
+      "desc": "Standard: repeating cycle"
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard: with anan"
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Standard: all distinct"
+    },
+    {
+      "input": "\"aabaa\"",
+      "desc": "Standard: nested palindrome"
+    },
+    {
+      "input": "\"abccba\"",
+      "desc": "Standard: even reverse"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "Stress: 100 same"
+    },
+    {
+      "input": "\"snwczk\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
