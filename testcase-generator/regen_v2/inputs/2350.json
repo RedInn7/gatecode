@@ -1,0 +1,28 @@
+{
+  "pid": 2350,
+  "slug": "check-if-matrix-is-x-matrix",
+  "inferred_constraints": "3 <= n <= 100; 0 <= grid[i][j] <= 10^5; n x n grid",
+  "input_format": "single line: grid (JSON 2D array)",
+  "testcases": [
+    {"input": "[[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]", "desc": "Standard example 1 (true but row1 col2 is 1 - wait this is example output true)"},
+    {"input": "[[5,7,0],[0,3,1],[0,5,0]]", "desc": "Standard example 2 false"},
+    {"input": "[[1,0,2],[0,3,0],[4,0,5]]", "desc": "Edge: 3x3 valid X"},
+    {"input": "[[1,0,1],[0,1,0],[1,0,1]]", "desc": "Edge: 3x3 all diagonals 1"},
+    {"input": "[[0,0,1],[0,1,0],[1,0,0]]", "desc": "Edge: 3x3 zero on diagonal -> false"},
+    {"input": "[[1,1,1],[0,1,0],[1,0,1]]", "desc": "Non-diagonal nonzero -> false"},
+    {"input": "[[1,0,0,0,1],[0,2,0,3,0],[0,0,5,0,0],[0,4,0,6,0],[7,0,0,0,8]]", "desc": "5x5 valid"},
+    {"input": "[[100000,0,0],[0,100000,0],[0,0,100000]]", "desc": "Max values valid"},
+    {"input": "[[1,2,3],[4,5,6],[7,8,9]]", "desc": "Dense matrix -> false"},
+    {"input": "[[0,0,0],[0,0,0],[0,0,0]]", "desc": "All zeros -> false (diagonal zero)"},
+    {"input": "[[1,0,0,2],[0,3,4,0],[0,5,6,0],[7,0,0,8]]", "desc": "Inner X corruption -> false"},
+    {"input": "[[1,0,0,0],[0,2,3,0],[0,4,5,0],[0,0,0,6]]", "desc": "4x4 with inner anti-diag wrong -> false"},
+    {"input": "[[1,0,0,0,0,2],[0,3,0,0,4,0],[0,0,5,6,0,0],[0,0,7,8,0,0],[0,9,0,0,10,0],[11,0,0,0,0,12]]", "desc": "6x6 valid"},
+    {"input": "[[5]]", "desc": "1x1 (note constraint says n>=3 but edge)"},
+    {"input": "[[1,0,1],[0,2,0],[1,0,1]]", "desc": "3x3 valid all diag 1, off 0"},
+    {"input": "[[1,0,1],[1,1,1],[1,0,1]]", "desc": "Row middle has 1s in non-diag -> false"},
+    {"input": "[[100,0,0,0,99],[0,1,0,2,0],[0,0,3,0,0],[0,4,0,5,0],[88,0,0,0,77]]", "desc": "5x5 valid varied"},
+    {"input": "[[1,2,0,3],[0,4,5,0],[0,6,7,0],[8,0,0,9]]", "desc": "Off-diag non-zero -> false"},
+    {"input": "[[1,0,0,1],[0,1,1,0],[0,1,1,0],[1,0,0,1]]", "desc": "4x4 valid"},
+    {"input": "[[1,0,0,0,0,0,0,0,1],[0,1,0,0,0,0,0,1,0],[0,0,1,0,0,0,1,0,0],[0,0,0,1,0,1,0,0,0],[0,0,0,0,1,0,0,0,0],[0,0,0,1,0,1,0,0,0],[0,0,1,0,0,0,1,0,0],[0,1,0,0,0,0,0,1,0],[1,0,0,0,0,0,0,0,1]]", "desc": "9x9 perfect X"}
+  ]
+}

@@ -169,6 +169,16 @@
       "pid": 2335,
       "slug": "convert-callback-based-function-to-promise-based-function",
       "reason": "JavaScript-only promise-based function problem"
+    },
+    {
+      "pid": 2355,
+      "slug": "filter-elements-from-array",
+      "reason": "JavaScript-only filter takes a function argument; no C++/Python signatures"
+    },
+    {
+      "pid": 2360,
+      "slug": "number-of-equal-numbers-blocks",
+      "reason": "interactive BigArray API (at, size) - cannot test via standard I/O"
     }
   ]
 }

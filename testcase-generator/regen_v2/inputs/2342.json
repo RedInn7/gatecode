@@ -1,0 +1,28 @@
+{
+  "pid": 2342,
+  "slug": "sum-of-beauty-of-all-substrings",
+  "inferred_constraints": "1 <= s.length <= 500; lowercase English letters",
+  "input_format": "single line: s (quoted string)",
+  "testcases": [
+    {"input": "\"aabcb\"", "desc": "Standard example 1"},
+    {"input": "\"aabcbaa\"", "desc": "Standard example 2"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"ab\"", "desc": "Edge: n=2"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"abc\"", "desc": "3 distinct"},
+    {"input": "\"aaa\"", "desc": "All same"},
+    {"input": "\"abcabc\"", "desc": "Repeat"},
+    {"input": "\"aabb\"", "desc": "Pairs"},
+    {"input": "\"abab\"", "desc": "Alternating"},
+    {"input": "\"abcdef\"", "desc": "Distinct"},
+    {"input": "\"aaaaaaaaaa\"", "desc": "10 same"},
+    {"input": "\"abababababab\"", "desc": "Long alternating"},
+    {"input": "\"helloworld\"", "desc": "Mixed letters"},
+    {"input": "\"programming\"", "desc": "Word"},
+    {"input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"", "desc": "30 same"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Alphabet"},
+    {"input": "\"aabbccddeeffgg\"", "desc": "Pairs sequence"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Double alphabet"},
+    {"input": "\"aabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabb\"", "desc": "Stress 500 chars"}
+  ]
+}

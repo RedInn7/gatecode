@@ -1,0 +1,28 @@
+{
+  "pid": 2340,
+  "slug": "minimum-pair-removal-to-sort-array-ii",
+  "inferred_constraints": "1 <= nums.length <= 10^5; -10^9 <= nums[i] <= 10^9",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[5,2,3,1]", "desc": "Standard example 1"},
+    {"input": "[1,2,2]", "desc": "Standard example 2 already sorted"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,2]", "desc": "Edge: n=2 sorted"},
+    {"input": "[2,1]", "desc": "Edge: n=2 unsorted"},
+    {"input": "[1,1,1,1,1]", "desc": "All same"},
+    {"input": "[1,2,3,4,5]", "desc": "Already sorted asc"},
+    {"input": "[5,4,3,2,1]", "desc": "Reverse sorted"},
+    {"input": "[-1000000000,1000000000]", "desc": "Edge extremes sorted"},
+    {"input": "[1000000000,-1000000000]", "desc": "Edge extremes unsorted"},
+    {"input": "[-1,-1,-1]", "desc": "All negative same"},
+    {"input": "[-3,-2,-1]", "desc": "Sorted negative"},
+    {"input": "[3,2,1,2,3]", "desc": "Symmetric"},
+    {"input": "[1,3,2,4,5]", "desc": "Single swap"},
+    {"input": "[10,5,8,3,7,2]", "desc": "Random small"},
+    {"input": "[0,0,0,0,0]", "desc": "All zeros"},
+    {"input": "[-5,5,-5,5,-5,5,-5,5]", "desc": "Alternating signs"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "10 asc sorted"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "10 desc"},
+    {"input": "[7,3,9,1,8,2,6,5,4,10,11,15,13,12,14,20,18,17,19,16]", "desc": "20 mixed"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2359,
+  "slug": "reorder-data-in-log-files",
+  "inferred_constraints": "1 <= logs.length <= 100; 3 <= logs[i].length <= 100; tokens space-separated; first token is identifier",
+  "input_format": "single line: logs (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"dig1 8 1 5 1\",\"let1 art can\",\"dig2 3 6\",\"let2 own kit dig\",\"let3 art zero\"]", "desc": "Standard example 1"},
+    {"input": "[\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]", "desc": "Standard example 2"},
+    {"input": "[\"a1 a\"]", "desc": "Edge: single letter log"},
+    {"input": "[\"d1 1\"]", "desc": "Edge: single digit log"},
+    {"input": "[\"a1 abc\",\"a2 abc\"]", "desc": "Same content sort by id"},
+    {"input": "[\"d1 1\",\"d2 2\",\"d3 3\"]", "desc": "All digit logs"},
+    {"input": "[\"a1 abc\",\"a2 def\",\"a3 ghi\"]", "desc": "All letter logs distinct"},
+    {"input": "[\"a1 z\",\"a2 y\",\"a3 x\"]", "desc": "Reverse alphabetical"},
+    {"input": "[\"d1 5 6\",\"l1 apple\",\"d2 1 2\",\"l2 banana\",\"d3 3 4\"]", "desc": "Mixed"},
+    {"input": "[\"a x y\",\"b x y\",\"c x y\"]", "desc": "All same content"},
+    {"input": "[\"a1 b a\",\"a2 a a\",\"a3 a b\"]", "desc": "Sort by content order"},
+    {"input": "[\"l1 alpha beta gamma\",\"l2 alpha beta gamma\",\"l3 alpha beta gamma\"]", "desc": "Long same content"},
+    {"input": "[\"d1 9\",\"l1 a\",\"d2 8\",\"l2 b\",\"d3 7\"]", "desc": "Alternating"},
+    {"input": "[\"x1 aa\",\"x2 bb\",\"x3 cc\",\"x4 dd\",\"x5 ee\"]", "desc": "5 letter logs"},
+    {"input": "[\"a1 z\",\"a2 y\",\"a3 x\",\"a4 w\",\"a5 v\",\"a6 u\",\"a7 t\",\"a8 s\",\"a9 r\",\"a10 q\"]", "desc": "10 reverse"},
+    {"input": "[\"j1 1 2 3 4 5\",\"j2 6 7 8 9 0\"]", "desc": "All digit"},
+    {"input": "[\"id1 word\",\"id2 word\",\"id3 word\",\"id4 word\"]", "desc": "Same content multi"},
+    {"input": "[\"z1 hello world\",\"a1 hello world\",\"m1 hello world\"]", "desc": "Same content multi"},
+    {"input": "[\"abc a a a\",\"abd a a a\",\"abe a a a\",\"abf a a a\"]", "desc": "Same content varied id"},
+    {"input": "[\"a 1 1 1\",\"b 2 2 2\",\"c hello\",\"d hi\",\"e 3 3\",\"f abc\",\"g 4 5\",\"h xyz def\"]", "desc": "8 mixed"}
+  ]
+}

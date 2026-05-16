@@ -1,0 +1,28 @@
+{
+  "pid": 2352,
+  "slug": "smallest-all-ones-multiple",
+  "inferred_constraints": "2 <= k <= 10^5",
+  "input_format": "single line: k",
+  "testcases": [
+    {"input": "3", "desc": "Standard example 1"},
+    {"input": "7", "desc": "Standard example 2"},
+    {"input": "2", "desc": "Standard example 3 (impossible)"},
+    {"input": "5", "desc": "Edge: multiple of 5 impossible"},
+    {"input": "10", "desc": "Edge: multiple of 10 impossible"},
+    {"input": "11", "desc": "n=11 has 2 ones (11)"},
+    {"input": "13", "desc": "13 divides 111111 (6 ones)"},
+    {"input": "17", "desc": "17 divides longer ones"},
+    {"input": "19", "desc": "19 divides"},
+    {"input": "23", "desc": "23"},
+    {"input": "37", "desc": "37 divides 111 (3 ones)"},
+    {"input": "41", "desc": "41 divides 11111 (5)"},
+    {"input": "73", "desc": "73 divides"},
+    {"input": "100", "desc": "Has factors 2,5 -> -1"},
+    {"input": "1000", "desc": "Has factors -> -1"},
+    {"input": "99999", "desc": "Near max"},
+    {"input": "100000", "desc": "Edge: max (has 2,5)"},
+    {"input": "12345", "desc": "Has factor 5 -> -1"},
+    {"input": "9999", "desc": "9999 has factor 3"},
+    {"input": "27", "desc": "Multiple of 3 cubed"}
+  ]
+}

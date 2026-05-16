@@ -1,0 +1,28 @@
+{
+  "pid": 2365,
+  "slug": "partition-labels",
+  "inferred_constraints": "1 <= s.length <= 500; lowercase English letters",
+  "input_format": "single line: s (quoted string)",
+  "testcases": [
+    {"input": "\"ababcbacadefegdehijhklij\"", "desc": "Standard example 1"},
+    {"input": "\"eccbbbbdec\"", "desc": "Standard example 2"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"ab\"", "desc": "Edge: 2 distinct"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"abc\"", "desc": "3 distinct"},
+    {"input": "\"aaa\"", "desc": "All same 3"},
+    {"input": "\"abab\"", "desc": "Alternating"},
+    {"input": "\"aabb\"", "desc": "Two blocks"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Alphabet all distinct"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Double alphabet"},
+    {"input": "\"zzzaaa\"", "desc": "Blocks"},
+    {"input": "\"abcabcabc\"", "desc": "Repeating 3"},
+    {"input": "\"qwerty\"", "desc": "6 distinct"},
+    {"input": "\"aabbccddeeffgghhiijj\"", "desc": "10 pairs"},
+    {"input": "\"abacadaeaf\"", "desc": "All meet 'a'"},
+    {"input": "\"qwertyuiopasdfghjklzxcvbnm\"", "desc": "Random alphabet"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Many a's"},
+    {"input": "\"abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc\"", "desc": "500 chars abc repeating"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba\"", "desc": "Palindrome alphabet"}
+  ]
+}

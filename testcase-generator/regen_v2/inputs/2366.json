@@ -1,0 +1,28 @@
+{
+  "pid": 2366,
+  "slug": "find-longest-special-substring-that-occurs-thrice-ii",
+  "inferred_constraints": "3 <= s.length <= 5*10^5; lowercase English letters",
+  "input_format": "single line: s (quoted string)",
+  "testcases": [
+    {"input": "\"aaaa\"", "desc": "Standard example 1"},
+    {"input": "\"abcdef\"", "desc": "Standard example 2 no triple"},
+    {"input": "\"abcaba\"", "desc": "Standard example 3"},
+    {"input": "\"aaa\"", "desc": "Edge: min len thrice 'a'"},
+    {"input": "\"abc\"", "desc": "Edge: min len no special triple"},
+    {"input": "\"aab\"", "desc": "Edge: only 2 a's"},
+    {"input": "\"aaab\"", "desc": "3 a's"},
+    {"input": "\"aaaaa\"", "desc": "5 a's"},
+    {"input": "\"aaaaaa\"", "desc": "6 a's (thrice 'aaa')"},
+    {"input": "\"aaaaaaa\"", "desc": "7 a's"},
+    {"input": "\"aabbcc\"", "desc": "Pairs no triple"},
+    {"input": "\"aabbaabb\"", "desc": "Pairs alt"},
+    {"input": "\"abcabcabc\"", "desc": "Single chars thrice"},
+    {"input": "\"aaabbbccc\"", "desc": "Triples each"},
+    {"input": "\"aabbbcccc\"", "desc": "Varied lengths"},
+    {"input": "\"zzzaaa\"", "desc": "Two triples"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "48 a's"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Alphabet"},
+    {"input": "\"aaaaaaaaaabbbbbbbbbbcccccccccc\"", "desc": "Big blocks"},
+    {"input": "\"ababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"", "desc": "Long alternating"}
+  ]
+}
