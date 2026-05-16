@@ -5,8 +5,8 @@
   "input_format": "line1: root (BFS array)",
   "testcases": [
     {
-      "input": "[5,10,10,null,null,2,3]",
-      "desc": "Standard: example true"
+      "input": "[-1000]",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "[1,2,10,null,null,2,20]",
