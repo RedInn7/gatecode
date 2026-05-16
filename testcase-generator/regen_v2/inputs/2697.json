@@ -1,0 +1,28 @@
+{
+  "pid": 2697,
+  "slug": "building-boxes",
+  "inferred_constraints": "1 <= n <= 10^9",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "3", "desc": "Edge: example1"},
+    {"input": "4", "desc": "Edge: example2"},
+    {"input": "10", "desc": "Edge: example3"},
+    {"input": "1", "desc": "Edge: n=1"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "5", "desc": "Edge: n=5"},
+    {"input": "6", "desc": "Edge: n=6"},
+    {"input": "7", "desc": "Edge: n=7"},
+    {"input": "20", "desc": "Edge: n=20"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "500", "desc": "Standard: n=500"},
+    {"input": "1000", "desc": "Standard: n=1000"},
+    {"input": "10000", "desc": "Standard: n=10K"},
+    {"input": "100000", "desc": "Standard: n=100K"},
+    {"input": "1000000", "desc": "Standard: n=1M"},
+    {"input": "10000000", "desc": "Standard: n=10M"},
+    {"input": "100000000", "desc": "Standard: n=100M"},
+    {"input": "500000000", "desc": "Standard: 500M"},
+    {"input": "999999999", "desc": "Stress: near max"},
+    {"input": "1000000000", "desc": "Killer: max"}
+  ]
+}

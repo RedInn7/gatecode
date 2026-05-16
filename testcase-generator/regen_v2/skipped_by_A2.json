@@ -324,6 +324,16 @@
       "pid": 2693,
       "slug": "array-wrapper",
       "reason": "JavaScript-only class with operator overloading"
+    },
+    {
+      "pid": 2698,
+      "slug": "team-dominance-by-pass-success",
+      "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2701,
+      "slug": "find-top-scoring-students-ii",
+      "reason": "SQL/Pandas problem"
     }
   ]
 }

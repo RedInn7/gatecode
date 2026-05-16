@@ -1,0 +1,28 @@
+{
+  "pid": 2696,
+  "slug": "decremental-string-concatenation",
+  "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 50, lowercase letters",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"aa\",\"ab\",\"bc\"]", "desc": "Edge: example1"},
+    {"input": "[\"ab\",\"b\"]", "desc": "Edge: example2"},
+    {"input": "[\"aaa\",\"c\",\"aba\"]", "desc": "Edge: example3"},
+    {"input": "[\"a\"]", "desc": "Edge: single char"},
+    {"input": "[\"abc\"]", "desc": "Edge: single word"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: same single char"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: reverse"},
+    {"input": "[\"ab\",\"cd\"]", "desc": "Edge: distinct"},
+    {"input": "[\"abc\",\"cba\"]", "desc": "Edge: matching ends"},
+    {"input": "[\"hello\",\"world\"]", "desc": "Standard: o w"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: 5 single chars"},
+    {"input": "[\"aa\",\"bb\",\"cc\",\"dd\"]", "desc": "Standard: 4 same-char pairs"},
+    {"input": "[\"ab\",\"ba\",\"ab\",\"ba\"]", "desc": "Standard: 4 swap"},
+    {"input": "[\"xy\",\"yx\",\"zx\",\"xz\"]", "desc": "Standard: 4 mixed"},
+    {"input": "[\"abcd\",\"dcba\"]", "desc": "Standard: 2 long"},
+    {"input": "[\"aaa\",\"bbb\",\"ccc\",\"ddd\",\"eee\"]", "desc": "Standard: 5 distinct triples"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\",\"pqr\",\"stu\",\"vwx\"]", "desc": "Standard: 8 trips"},
+    {"input": "[\"aa\",\"ab\",\"ba\",\"bb\",\"cb\",\"bc\"]", "desc": "Standard: many overlaps"},
+    {"input": "[\"abcdefghij\",\"jihgfedcba\",\"abcdefghij\",\"jihgfedcba\",\"abcdefghij\",\"jihgfedcba\",\"abcdefghij\",\"jihgfedcba\",\"abcdefghij\",\"jihgfedcba\"]", "desc": "Stress: 10 long"},
+    {"input": "[\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaaaaaaa\"]", "desc": "Killer: 10 same words"}
+  ]
+}

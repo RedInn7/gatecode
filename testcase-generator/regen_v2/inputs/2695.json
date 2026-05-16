@@ -1,0 +1,28 @@
+{
+  "pid": 2695,
+  "slug": "minimum-deletions-for-at-most-k-distinct-characters",
+  "inferred_constraints": "1 <= s.length <= 10^5, 0 <= k <= 26, lowercase letters",
+  "input_format": "line1: s; line2: k (int)",
+  "testcases": [
+    {"input": "abc\n2", "desc": "Edge: example1"},
+    {"input": "aabb\n2", "desc": "Edge: example2"},
+    {"input": "yyyzz\n1", "desc": "Edge: example3"},
+    {"input": "a\n0", "desc": "Edge: k=0 single"},
+    {"input": "a\n1", "desc": "Edge: k=1 single"},
+    {"input": "a\n26", "desc": "Edge: k=26 single"},
+    {"input": "abcde\n0", "desc": "Edge: delete all"},
+    {"input": "abcde\n5", "desc": "Edge: keep all"},
+    {"input": "aaaaa\n1", "desc": "Edge: all same"},
+    {"input": "aabbccdd\n2", "desc": "Standard: 4 distinct k=2"},
+    {"input": "aabbccdd\n3", "desc": "Standard: 4 distinct k=3"},
+    {"input": "abcdef\n3", "desc": "Standard: 6 distinct k=3"},
+    {"input": "abcabcabc\n2", "desc": "Standard: 3 pattern k=2"},
+    {"input": "zzzzzzzzzz\n1", "desc": "Standard: 10 z k=1"},
+    {"input": "abcdefghij\n5", "desc": "Standard: 10 distinct k=5"},
+    {"input": "aaabbbcccddd\n2", "desc": "Standard: 4 groups k=2"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n13", "desc": "Standard: full alpha k=13"},
+    {"input": "aaaaaaaaaabbbbbbbbbbccccccccccdddddddddd\n3", "desc": "Standard: groups"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n1", "desc": "Stress: 50/50 keep 1"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n10", "desc": "Killer: 4 alphas k=10"}
+  ]
+}
