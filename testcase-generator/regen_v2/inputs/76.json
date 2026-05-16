@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"or\"\n4",
+      "input": "\"ls\"\n2",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: alternating ab"
     },
     {
-      "input": "\"tcgrutjset\"\n26",
+      "input": "\"bxjynsbkmm\"\n17",
       "desc": "Stress: large n near max boundary"
     }
   ]
