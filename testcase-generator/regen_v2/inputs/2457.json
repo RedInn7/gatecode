@@ -4,25 +4,85 @@
   "inferred_constraints": "dates in YYYY-MM-DD format; between 1971-01-01 and 2100-12-31",
   "input_format": "line1: date1 (quoted string); line2: date2 (quoted string)",
   "testcases": [
-    {"input": "\"2019-06-29\"\n\"2019-06-30\"", "desc": "Standard example 1"},
-    {"input": "\"2020-01-15\"\n\"2019-12-31\"", "desc": "Standard example 2"},
-    {"input": "\"1971-01-01\"\n\"1971-01-01\"", "desc": "Edge: same min date"},
-    {"input": "\"2100-12-31\"\n\"2100-12-31\"", "desc": "Edge: same max date"},
-    {"input": "\"1971-01-01\"\n\"2100-12-31\"", "desc": "Edge: full range"},
-    {"input": "\"2020-02-28\"\n\"2020-03-01\"", "desc": "Leap year Feb 29"},
-    {"input": "\"2020-02-29\"\n\"2020-03-01\"", "desc": "Leap day"},
-    {"input": "\"2019-02-28\"\n\"2019-03-01\"", "desc": "Non-leap year"},
-    {"input": "\"2000-02-28\"\n\"2000-03-01\"", "desc": "Year 2000 leap"},
-    {"input": "\"1971-12-31\"\n\"1972-01-01\"", "desc": "New year boundary"},
-    {"input": "\"2099-12-31\"\n\"2100-01-01\"", "desc": "Year boundary"},
-    {"input": "\"1985-04-12\"\n\"1975-11-05\"", "desc": "Older to newer (within range)"},
-    {"input": "\"1985-04-12\"\n\"1972-11-05\"", "desc": "Older to newer"},
-    {"input": "\"2000-01-01\"\n\"2000-12-31\"", "desc": "Full year"},
-    {"input": "\"2020-07-15\"\n\"2020-08-15\"", "desc": "Month apart"},
-    {"input": "\"2019-01-01\"\n\"2020-01-01\"", "desc": "Year apart"},
-    {"input": "\"2050-06-15\"\n\"2050-06-15\"", "desc": "Same future date"},
-    {"input": "\"1980-05-20\"\n\"2020-05-20\"", "desc": "40 years"},
-    {"input": "\"1971-02-28\"\n\"1971-03-01\"", "desc": "1971 Feb boundary"},
-    {"input": "\"2004-02-29\"\n\"2005-02-28\"", "desc": "Year after leap"}
+    {
+      "input": "\"l\"\n\"d\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "\"2020-01-15\"\n\"2019-12-31\"",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "\"1971-01-01\"\n\"1971-01-01\"",
+      "desc": "Edge: same min date"
+    },
+    {
+      "input": "\"2100-12-31\"\n\"2100-12-31\"",
+      "desc": "Edge: same max date"
+    },
+    {
+      "input": "\"1971-01-01\"\n\"2100-12-31\"",
+      "desc": "Edge: full range"
+    },
+    {
+      "input": "\"2020-02-28\"\n\"2020-03-01\"",
+      "desc": "Leap year Feb 29"
+    },
+    {
+      "input": "\"2020-02-29\"\n\"2020-03-01\"",
+      "desc": "Leap day"
+    },
+    {
+      "input": "\"2019-02-28\"\n\"2019-03-01\"",
+      "desc": "Non-leap year"
+    },
+    {
+      "input": "\"2000-02-28\"\n\"2000-03-01\"",
+      "desc": "Year 2000 leap"
+    },
+    {
+      "input": "\"1971-12-31\"\n\"1972-01-01\"",
+      "desc": "New year boundary"
+    },
+    {
+      "input": "\"2099-12-31\"\n\"2100-01-01\"",
+      "desc": "Year boundary"
+    },
+    {
+      "input": "\"1985-04-12\"\n\"1975-11-05\"",
+      "desc": "Older to newer (within range)"
+    },
+    {
+      "input": "\"1985-04-12\"\n\"1972-11-05\"",
+      "desc": "Older to newer"
+    },
+    {
+      "input": "\"2000-01-01\"\n\"2000-12-31\"",
+      "desc": "Full year"
+    },
+    {
+      "input": "\"2020-07-15\"\n\"2020-08-15\"",
+      "desc": "Month apart"
+    },
+    {
+      "input": "\"2019-01-01\"\n\"2020-01-01\"",
+      "desc": "Year apart"
+    },
+    {
+      "input": "\"2050-06-15\"\n\"2050-06-15\"",
+      "desc": "Same future date"
+    },
+    {
+      "input": "\"1980-05-20\"\n\"2020-05-20\"",
+      "desc": "40 years"
+    },
+    {
+      "input": "\"1971-02-28\"\n\"1971-03-01\"",
+      "desc": "1971 Feb boundary"
+    },
+    {
+      "input": "\"2004-02-29\"\n\"2005-02-28\"",
+      "desc": "Year after leap"
+    }
   ]
 }
