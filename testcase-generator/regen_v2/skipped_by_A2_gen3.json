@@ -139,6 +139,11 @@
       "pid": 3225,
       "slug": "toggle-light-bulbs",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3199,
+      "slug": "find-positive-integer-solution-for-a-given-equation",
+      "reason": "ACM mode problem"
     }
   ]
 }

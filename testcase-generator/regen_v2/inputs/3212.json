@@ -1,0 +1,76 @@
+{
+  "pid": 3212,
+  "slug": "remove-9",
+  "inferred_constraints": "0 <= n <= 8",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "7",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "1",
+      "desc": "Standard: n=1"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6"
+    },
+    {
+      "input": "3",
+      "desc": "Standard: n=3"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "8",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "8",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "8",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "8",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

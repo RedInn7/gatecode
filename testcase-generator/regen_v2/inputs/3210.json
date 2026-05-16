@@ -1,0 +1,76 @@
+{
+  "pid": 3210,
+  "slug": "find-longest-special-substring-that-occurs-thrice-i",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"u\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"of\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"acdba\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"lesvoszlncsapdlglppjqaugzozm\"",
+      "desc": "Standard: len=28"
+    },
+    {
+      "input": "\"imdatwkzkyaltbdybxpwglkvehchvapy\"",
+      "desc": "Standard: len=32"
+    },
+    {
+      "input": "\"ajcnxfpvzdrywkjmgrnxtpbcpzfjsdssgradncqqdhxvgl\"",
+      "desc": "Standard: len=46"
+    },
+    {
+      "input": "\"djodmmzlmkrsqtxrez\"",
+      "desc": "Standard: len=18"
+    },
+    {
+      "input": "\"nwrwxidpaxrhumqorgkzwfjsphrouy\"",
+      "desc": "Standard: len=30"
+    },
+    {
+      "input": "\"cjmohcpbextmwii\"",
+      "desc": "Standard: len=15"
+    },
+    {
+      "input": "\"bkkasgbjazjlzamojukupemnmrj\"",
+      "desc": "Standard: len=27"
+    },
+    {
+      "input": "\"yofmlyzloynzijkincannmbga\"",
+      "desc": "Standard: len=25"
+    },
+    {
+      "input": "\"cedhqjcdvoarwmjsxfbchnlnvqhuuuxczhiwzpfnsghooigpccqxhlzhpobzqkravceoyfuqgkfpddpviepiknrybjagzcahofpodqmarmgcswmekonbqbsfzeqjipesiejvlstfqbphfaqeghmktgiqmrcaikopcsccfesndhrpwbrvwujvpciqisgbgwyoivpmnyavmcnvycidrkksqtyovouzbzdimzgyaobshvgkxdumbgbvzdpkwiwqnkhqlqrrfjasdittobikxyeylmueglnfxxkjipbljaofxksvdbsvzhmtkytomwtjlsgcfemmfpyqqewtglxzujskyfnerbugpxyvqiesedqriujgfalfpfajutsnlslactpyshopvqitzatgaippzpobwejqxrpilqmjfsszkaijtwwhledqejcrksctcxmnnnlkwezyomloezbubyksqpqufkqdlymyhipakucbphxjpuhffnbegbwk\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"fytloghprtqhnmuzhwilppinoxljnpsifmgfsivpqtqgmregztnblgjthgskweireubgifklaluhmrxottjjdtqgyqmurddvtkvkramzrxzhryhurjvsrdokoteadvgkrxcbvhmwffjllnrdcfjjzcavxfmpoiwxtyucnrvlexewvfixwllhclpbifhkhxtjnoecozhmvdbgdwhmdrmawxnbugtsbgovjcbsczkuawpxhlvxjrxhllsvkijtvjhlrlxvatuhrpiefijvyzyxvkbjotozmiwieepaabrsigtvewpxthqpzriyfhzkjuajdvlsjcgfgljmjpziagyquwxhauhhaisqejzlcrfkaqkztwhlbqmhdypldjizezqssfdlrxskqhbwwxoyimqwojyzjtxwzjsizhweekfurvrnchinzrnfoiuraoqgfiwamrxjwilponkwkfjszrfrpsrnqdfwhbsludhturiczbtnwllhsjdwyzevdvymympxyulgulqxlyypveokdcijfnfiuqvrurqpxossgmbgviidhucogpzxvnfgttqwaslttsvmxpflmwssusaplznhtrltfbyylrymwwdwqsdtbvpuzynqsltyusvhktpmhjepdjieindjoqghaouxtyqeeorirkhbajrftslyajpzhsdqzivsyqxdyxmfajbgtfsijptbdqpwixzkjosyzdewgkdgrfxhlmjzjpufuwfhombwwlwlvtlvpxwvkndevwitcfhnuvkeldvtiphccujwcwhvqlxdrbmbrduivcqvlzyrmluxkfotaristvmlqhzjkivcehytfbkevzuupfeokagrhqsockfihpitgftodwedfltixwglkzmevtkjoiwivjwdhcprqfkyrmnfgkibnptblsxyixasqjfnmpufmsauktmhqahepwtyduhbiratjtvsnurhhsgzrizatwbuyvalaacdwahducnizglf\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

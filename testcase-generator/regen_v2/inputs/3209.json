@@ -1,0 +1,80 @@
+{
+  "pid": 3209,
+  "slug": "target-sum",
+  "inferred_constraints": "1 <= n <= 20, 0 <= nums[i] <= 1000",
+  "input_format": "line1: nums array (space-separated or JSON); line2: k",
+  "testcases": [
+    {
+      "input": "[]\n1",
+      "desc": "Edge: empty array"
+    },
+    {
+      "input": "[74]\n1",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[979,935]\n1",
+      "desc": "Edge: two elements"
+    },
+    {
+      "input": "[500,500,500,500,500]\n5",
+      "desc": "Edge: all same elements"
+    },
+    {
+      "input": "[190,391,472,587,670,684,702,851]\n6",
+      "desc": "Edge: sorted ascending"
+    },
+    {
+      "input": "[876,815,550,503,488,282,261,82]\n5",
+      "desc": "Edge: sorted descending"
+    },
+    {
+      "input": "[763,192,670,235,641,311,539,450,533,476,870,819,739,777,240,602,616,815,573,896]\n17",
+      "desc": "Standard: random n=20"
+    },
+    {
+      "input": "[340,296,874,361,893,8,193,844,365,128,211]\n9",
+      "desc": "Standard: random n=11"
+    },
+    {
+      "input": "[75,765,923,177,690,753,783,461,223,932,0]\n11",
+      "desc": "Standard: random n=11"
+    },
+    {
+      "input": "[461,701,981,695,373,793,603,726,576,356,836,194,499,146,467,691,484,833,639]\n19",
+      "desc": "Standard: random n=19"
+    },
+    {
+      "input": "[524,416,936,134,760,701,343,822,231,175,881,330,623,336,398,445,670,238,805,983]\n9",
+      "desc": "Standard: random n=20"
+    },
+    {
+      "input": "[45,279,949,20,25,329,531,131,551]\n2",
+      "desc": "Standard: random n=9"
+    },
+    {
+      "input": "[294,159,264,24,646,804,368]\n1",
+      "desc": "Standard: random n=7"
+    },
+    {
+      "input": "[374,367,914,532,785,65,502,79,141,455,851,355,373,975,56,677,609,853,470,306]\n16",
+      "desc": "Stress: n=20"
+    },
+    {
+      "input": "[631,526,474,329,499,295,752,972,603,716,423,815,765,666,43,54,846,608,499,815]\n2",
+      "desc": "Stress: large random"
+    },
+    {
+      "input": "[11,928,501,651,72,437,234,560,763,495,448,197,447,609,451,582,348,928,679,606]\n19",
+      "desc": "Stress: max size"
+    },
+    {
+      "input": "[0,1000,0,1000,0]\n2",
+      "desc": "Killer: boundary values min/max"
+    },
+    {
+      "input": "[434,320,192,774,525,801,237,169,803,771,717,728,254,528,172,805,230,771,416,932]\n16",
+      "desc": "Killer: near-max stress"
+    }
+  ]
+}
