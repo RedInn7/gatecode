@@ -4,25 +4,85 @@
   "inferred_constraints": "-1e4 <= ax1<=ax2 <= 1e4, similarly for y/b coords",
   "input_format": "line1: ax1 (int); line2: ay1; line3: ax2; line4: ay2; line5: bx1; line6: by1; line7: bx2; line8: by2",
   "testcases": [
-    {"input": "-3\n0\n3\n4\n0\n-1\n9\n2", "desc": "Edge: example1 -> 45"},
-    {"input": "-2\n-2\n2\n2\n-2\n-2\n2\n2", "desc": "Edge: example2 -> 16 identical"},
-    {"input": "0\n0\n0\n0\n0\n0\n0\n0", "desc": "Edge: both zero-area"},
-    {"input": "0\n0\n1\n1\n2\n2\n3\n3", "desc": "Edge: disjoint"},
-    {"input": "0\n0\n10\n10\n5\n5\n15\n15", "desc": "Edge: partial overlap"},
-    {"input": "-10000\n-10000\n10000\n10000\n-10000\n-10000\n10000\n10000", "desc": "Edge: max area identical"},
-    {"input": "-10000\n-10000\n0\n0\n0\n0\n10000\n10000", "desc": "Edge: touching corners"},
-    {"input": "0\n0\n5\n5\n0\n0\n5\n5", "desc": "Standard: equal small"},
-    {"input": "0\n0\n10\n10\n0\n0\n5\n5", "desc": "Standard: one inside other"},
-    {"input": "1\n1\n3\n3\n2\n2\n4\n4", "desc": "Standard: corner overlap"},
-    {"input": "-5\n-5\n5\n5\n-3\n-3\n3\n3", "desc": "Standard: B inside A"},
-    {"input": "-100\n-50\n100\n50\n-50\n-100\n50\n100", "desc": "Standard: cross-shape overlap"},
-    {"input": "0\n0\n100\n100\n50\n0\n150\n50", "desc": "Standard: half overlap"},
-    {"input": "0\n0\n100\n100\n100\n0\n200\n100", "desc": "Standard: touching edge"},
-    {"input": "-10000\n0\n0\n10000\n0\n-10000\n10000\n0", "desc": "Standard: touching at corner ext"},
-    {"input": "5\n5\n5\n10\n0\n0\n10\n10", "desc": "Edge: A zero-width inside B"},
-    {"input": "0\n0\n10\n10\n5\n5\n5\n10", "desc": "Edge: B zero-width inside A"},
-    {"input": "0\n0\n10000\n10000\n-10000\n-10000\n0\n0", "desc": "Standard: max sized touching"},
-    {"input": "-1\n-1\n1\n1\n-2\n-2\n0\n0", "desc": "Standard: half overlap small"},
-    {"input": "-10000\n-10000\n10000\n10000\n-9999\n-9999\n9999\n9999", "desc": "Killer: near max nested"}
+    {
+      "input": "-3\n-2\n0\n0\n-2\n-2\n0\n0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "-2\n-2\n2\n2\n-2\n-2\n2\n2",
+      "desc": "Edge: example2 -> 16 identical"
+    },
+    {
+      "input": "0\n-2\n5\n7\n-2\n2\n1\n3",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "-1\n-1\n3\n4\n-2\n5\n7\n3",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "0\n0\n10\n10\n5\n5\n15\n15",
+      "desc": "Edge: partial overlap"
+    },
+    {
+      "input": "-10000\n-10000\n10000\n10000\n-10000\n-10000\n10000\n10000",
+      "desc": "Edge: max area identical"
+    },
+    {
+      "input": "-10000\n-10000\n0\n0\n0\n0\n10000\n10000",
+      "desc": "Edge: touching corners"
+    },
+    {
+      "input": "0\n0\n5\n5\n0\n0\n5\n5",
+      "desc": "Standard: equal small"
+    },
+    {
+      "input": "0\n0\n10\n10\n0\n0\n5\n5",
+      "desc": "Standard: one inside other"
+    },
+    {
+      "input": "1\n1\n3\n3\n2\n2\n4\n4",
+      "desc": "Standard: corner overlap"
+    },
+    {
+      "input": "-5\n-5\n5\n5\n-3\n-3\n3\n3",
+      "desc": "Standard: B inside A"
+    },
+    {
+      "input": "-100\n-50\n100\n50\n-50\n-100\n50\n100",
+      "desc": "Standard: cross-shape overlap"
+    },
+    {
+      "input": "0\n0\n100\n100\n50\n0\n150\n50",
+      "desc": "Standard: half overlap"
+    },
+    {
+      "input": "0\n0\n100\n100\n100\n0\n200\n100",
+      "desc": "Standard: touching edge"
+    },
+    {
+      "input": "-10000\n0\n0\n10000\n0\n-10000\n10000\n0",
+      "desc": "Standard: touching at corner ext"
+    },
+    {
+      "input": "5\n5\n5\n10\n0\n0\n10\n10",
+      "desc": "Edge: A zero-width inside B"
+    },
+    {
+      "input": "0\n0\n10\n10\n5\n5\n5\n10",
+      "desc": "Edge: B zero-width inside A"
+    },
+    {
+      "input": "0\n0\n10000\n10000\n-10000\n-10000\n0\n0",
+      "desc": "Standard: max sized touching"
+    },
+    {
+      "input": "-1\n-1\n1\n1\n-2\n-2\n0\n0",
+      "desc": "Standard: half overlap small"
+    },
+    {
+      "input": "-10000\n-10000\n10000\n10000\n-9999\n-9999\n9999\n9999",
+      "desc": "Killer: near max nested"
+    }
   ]
 }

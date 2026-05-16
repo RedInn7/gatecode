@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, s[i] in {A,C,G,T}",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT", "desc": "Edge: example1"},
-    {"input": "AAAAAAAAAAAAA", "desc": "Edge: example2 13 A's"},
-    {"input": "A", "desc": "Edge: too short"},
-    {"input": "AAAAAAAAA", "desc": "Edge: length 9 too short"},
-    {"input": "AAAAAAAAAA", "desc": "Edge: length 10 exactly one window"},
-    {"input": "AAAAAAAAAAA", "desc": "Edge: length 11 one repeat"},
-    {"input": "ACGTACGTACGTACGTACGT", "desc": "Standard: ACGT repeating"},
-    {"input": "AAAACCCCGGGGTTTTAAAA", "desc": "Standard: blocks"},
-    {"input": "AGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTC", "desc": "Standard: 9-cycle of length 4"},
-    {"input": "GGGGGGGGGGCCCCCCCCCCAAAAAAAAAATTTTTTTTTT", "desc": "Standard: four 10-blocks"},
-    {"input": "AGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCT", "desc": "Standard: 8 repeats of AGCT"},
-    {"input": "CCCCCCCCCC", "desc": "Edge: all C exact 10"},
-    {"input": "ACGTGCATGCAGTCAGTCAGTCAG", "desc": "Standard: mixed no repeat"},
-    {"input": "AAAAACCCCCAAAAACCCCCAAAAACCCCC", "desc": "Standard: triple repeat"},
-    {"input": "TTTTGGGGCCCCAAAATTTTGGGGCCCCAAAA", "desc": "Standard: shift-by-16 repeats"},
-    {"input": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "desc": "Standard: 52 A's"},
-    {"input": "ACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACAC", "desc": "Stress: long alternating"},
-    {"input": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT", "desc": "Stress: long 4-cycle"},
-    {"input": "GCAGTAGCATGCATCGATCGATGCATCGATGCATCGATCAGCTAGCTAGCTAGCATGCATCGATGCAGCAGTCAGTCAGTCAGTCAGTCAGTCAGT", "desc": "Stress: mixed long"},
-    {"input": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "desc": "Killer: 200 A's all same"}
+    {
+      "input": "\"p\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "AAAAAAAAAAAAA",
+      "desc": "Edge: example2 13 A's"
+    },
+    {
+      "input": "\"hhxihodbspytr\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"dgydenxfz\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "AAAAAAAAAA",
+      "desc": "Edge: length 10 exactly one window"
+    },
+    {
+      "input": "AAAAAAAAAAA",
+      "desc": "Edge: length 11 one repeat"
+    },
+    {
+      "input": "ACGTACGTACGTACGTACGT",
+      "desc": "Standard: ACGT repeating"
+    },
+    {
+      "input": "AAAACCCCGGGGTTTTAAAA",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "AGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTC",
+      "desc": "Standard: 9-cycle of length 4"
+    },
+    {
+      "input": "GGGGGGGGGGCCCCCCCCCCAAAAAAAAAATTTTTTTTTT",
+      "desc": "Standard: four 10-blocks"
+    },
+    {
+      "input": "AGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCT",
+      "desc": "Standard: 8 repeats of AGCT"
+    },
+    {
+      "input": "CCCCCCCCCC",
+      "desc": "Edge: all C exact 10"
+    },
+    {
+      "input": "ACGTGCATGCAGTCAGTCAGTCAG",
+      "desc": "Standard: mixed no repeat"
+    },
+    {
+      "input": "AAAAACCCCCAAAAACCCCCAAAAACCCCC",
+      "desc": "Standard: triple repeat"
+    },
+    {
+      "input": "TTTTGGGGCCCCAAAATTTTGGGGCCCCAAAA",
+      "desc": "Standard: shift-by-16 repeats"
+    },
+    {
+      "input": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "desc": "Standard: 52 A's"
+    },
+    {
+      "input": "ACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACAC",
+      "desc": "Stress: long alternating"
+    },
+    {
+      "input": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT",
+      "desc": "Stress: long 4-cycle"
+    },
+    {
+      "input": "GCAGTAGCATGCATCGATCGATGCATCGATGCATCGATCAGCTAGCTAGCTAGCATGCATCGATGCAGCAGTCAGTCAGTCAGTCAGTCAGTCAGT",
+      "desc": "Stress: mixed long"
+    },
+    {
+      "input": "\"gcyxsntutseaajyaokwyimcidxutzuzgwhbbywnbrwlnpvpqatkgdqqpclinwenx\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
