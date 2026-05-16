@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= tickets.length <= 300, tickets[i].length == 2, uppercase letters length 3, all tickets form at least one valid itinerary, departure must start with JFK",
   "input_format": "single line: tickets (JSON 2D array)",
   "testcases": [
-    {"input": "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]", "desc": "Edge: example1"},
-    {"input": "[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]", "desc": "Edge: example2"},
-    {"input": "[[\"JFK\",\"AAA\"]]", "desc": "Edge: single"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"JFK\"]]", "desc": "Edge: cycle"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"AAA\",\"JFK\"]]", "desc": "Edge: choose AAA first"},
-    {"input": "[[\"JFK\",\"ABC\"],[\"ABC\",\"DEF\"]]", "desc": "Edge: 3 stops"},
-    {"input": "[[\"JFK\",\"BBB\"],[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"]]", "desc": "Edge: lex order matters"},
-    {"input": "[[\"JFK\",\"ATL\"],[\"ATL\",\"JFK\"]]", "desc": "Edge: 2 cities cycle"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"CCC\"]]", "desc": "Edge: linear"},
-    {"input": "[[\"JFK\",\"KUL\"],[\"JFK\",\"NRT\"],[\"NRT\",\"JFK\"]]", "desc": "Standard: branch"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"AAA\"],[\"AAA\",\"CCC\"]]", "desc": "Standard: cycle back"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"AAA\",\"JFK\"],[\"BBB\",\"JFK\"]]", "desc": "Standard: 2 cycles"},
-    {"input": "[[\"JFK\",\"ABC\"],[\"ABC\",\"DEF\"],[\"DEF\",\"GHI\"],[\"GHI\",\"JKL\"]]", "desc": "Standard: 5 stops"},
-    {"input": "[[\"JFK\",\"NYC\"],[\"NYC\",\"LAX\"],[\"LAX\",\"NYC\"],[\"NYC\",\"BOS\"]]", "desc": "Standard: back to NYC"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"JFK\",\"CCC\"],[\"AAA\",\"JFK\"],[\"BBB\",\"JFK\"],[\"CCC\",\"JFK\"]]", "desc": "Standard: triangle"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"AAA\"],[\"AAA\",\"JFK\"]]", "desc": "Standard: nested"},
-    {"input": "[[\"JFK\",\"LGA\"],[\"LGA\",\"JFK\"],[\"JFK\",\"BOS\"]]", "desc": "Standard: 2-way then 1-way"},
-    {"input": "[[\"JFK\",\"A\"],[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"],[\"D\",\"E\"]]", "desc": "Standard: chain"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"CCC\"],[\"CCC\",\"DDD\"],[\"DDD\",\"EEE\"],[\"EEE\",\"FFF\"],[\"FFF\",\"GGG\"],[\"GGG\",\"HHH\"],[\"HHH\",\"III\"],[\"III\",\"JJJ\"]]", "desc": "Stress: 10 stops"},
-    {"input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"JFK\",\"CCC\"],[\"JFK\",\"DDD\"],[\"AAA\",\"JFK\"],[\"BBB\",\"JFK\"],[\"CCC\",\"JFK\"],[\"DDD\",\"JFK\"]]", "desc": "Killer: 4 cycles"}
+    {
+      "input": "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"]]",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"JFK\"]]",
+      "desc": "Edge: cycle"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"AAA\",\"JFK\"]]",
+      "desc": "Edge: choose AAA first"
+    },
+    {
+      "input": "[[\"JFK\",\"ABC\"],[\"ABC\",\"DEF\"]]",
+      "desc": "Edge: 3 stops"
+    },
+    {
+      "input": "[[\"JFK\",\"BBB\"],[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"]]",
+      "desc": "Edge: lex order matters"
+    },
+    {
+      "input": "[[\"JFK\",\"ATL\"],[\"ATL\",\"JFK\"]]",
+      "desc": "Edge: 2 cities cycle"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"CCC\"]]",
+      "desc": "Edge: linear"
+    },
+    {
+      "input": "[[\"JFK\",\"KUL\"],[\"JFK\",\"NRT\"],[\"NRT\",\"JFK\"]]",
+      "desc": "Standard: branch"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"AAA\"],[\"AAA\",\"CCC\"]]",
+      "desc": "Standard: cycle back"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"AAA\",\"JFK\"],[\"BBB\",\"JFK\"]]",
+      "desc": "Standard: 2 cycles"
+    },
+    {
+      "input": "[[\"JFK\",\"ABC\"],[\"ABC\",\"DEF\"],[\"DEF\",\"GHI\"],[\"GHI\",\"JKL\"]]",
+      "desc": "Standard: 5 stops"
+    },
+    {
+      "input": "[[\"JFK\",\"NYC\"],[\"NYC\",\"LAX\"],[\"LAX\",\"NYC\"],[\"NYC\",\"BOS\"]]",
+      "desc": "Standard: back to NYC"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"JFK\",\"CCC\"],[\"AAA\",\"JFK\"],[\"BBB\",\"JFK\"],[\"CCC\",\"JFK\"]]",
+      "desc": "Standard: triangle"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"AAA\"],[\"AAA\",\"JFK\"]]",
+      "desc": "Standard: nested"
+    },
+    {
+      "input": "[[\"JFK\",\"LGA\"],[\"LGA\",\"JFK\"],[\"JFK\",\"BOS\"]]",
+      "desc": "Standard: 2-way then 1-way"
+    },
+    {
+      "input": "[[\"JFK\",\"A\"],[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"],[\"D\",\"E\"]]",
+      "desc": "Standard: chain"
+    },
+    {
+      "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"CCC\"],[\"CCC\",\"DDD\"],[\"DDD\",\"EEE\"],[\"EEE\",\"FFF\"],[\"FFF\",\"GGG\"],[\"GGG\",\"HHH\"],[\"HHH\",\"III\"],[\"III\",\"JJJ\"]]",
+      "desc": "Stress: 10 stops"
+    },
+    {
+      "input": "[[-127,-443,99,-759],[-160,-830,-459,475],[-239,-871,-441,-686],[-458,488,113,-268],[-252,-959,21,-779],[-285,61,-209,-242],[195,-661,-58,104],[348,-131,-701,-581]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
