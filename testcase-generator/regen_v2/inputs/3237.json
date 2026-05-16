@@ -1,0 +1,76 @@
+{
+  "pid": 3237,
+  "slug": "delete-duplicate-folders-in-system",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "295525",
+      "desc": "Standard: n=295525"
+    },
+    {
+      "input": "934814",
+      "desc": "Standard: n=934814"
+    },
+    {
+      "input": "482841",
+      "desc": "Standard: n=482841"
+    },
+    {
+      "input": "887848",
+      "desc": "Standard: n=887848"
+    },
+    {
+      "input": "767170",
+      "desc": "Standard: n=767170"
+    },
+    {
+      "input": "450360",
+      "desc": "Standard: n=450360"
+    },
+    {
+      "input": "489608",
+      "desc": "Standard: n=489608"
+    },
+    {
+      "input": "286948",
+      "desc": "Standard: n=286948"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

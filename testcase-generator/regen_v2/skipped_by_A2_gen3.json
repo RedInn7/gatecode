@@ -129,6 +129,11 @@
       "pid": 3259,
       "slug": "all-oone-data-structure",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3236,
+      "slug": "online-majority-element-in-subarray",
+      "reason": "Interactive problem - cannot test via standard I/O"
     }
   ]
 }

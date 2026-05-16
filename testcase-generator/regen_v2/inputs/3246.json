@@ -1,0 +1,76 @@
+{
+  "pid": 3246,
+  "slug": "check-if-word-can-be-placed-in-crossword",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"\n\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"n\"\n\"q\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"es\"\n\"x\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"\n\"b\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"aacee\"\n\"cccb\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"tqlxzypztzhhyougsvti\"\n\"kwbtelnymzzt\"",
+      "desc": "Standard: len=20"
+    },
+    {
+      "input": "\"hgnbjuochzfcwwwvbqyewkvmxmknjkyic\"\n\"hheggmrdpfjnvmaggbjiemxqaitshyavo\"",
+      "desc": "Standard: len=33"
+    },
+    {
+      "input": "\"egpnwyjpjhcpayezjqiqkxeqnyqkstgdnbcwrqgjuofersqxr\"\n\"zcbskbzegddtwdftacwnkbdfgsmrgvkrcarrzgofsdm\"",
+      "desc": "Standard: len=49"
+    },
+    {
+      "input": "\"ebuhfspmpnqlnjfokadjgmpdpug\"\n\"owobqdrdgnvelkqjcnnveki\"",
+      "desc": "Standard: len=27"
+    },
+    {
+      "input": "\"lwssrysquibfvvwmndmwgnqrj\"\n\"gatkrudflhchlcfinh\"",
+      "desc": "Standard: len=25"
+    },
+    {
+      "input": "\"xgrztmqoingutcp\"\n\"snkjfxaweev\"",
+      "desc": "Standard: len=15"
+    },
+    {
+      "input": "\"tdqhnutoochnpifjcaocmqakgsfwmoagqbqwstshbt\"\n\"xibwvupowyyegg\"",
+      "desc": "Standard: len=42"
+    },
+    {
+      "input": "\"zbspgdqnrhcovztmgmabgwjkiilhragkvyigvlqcorkamrsf\"\n\"epqsziobkxarowhglfzgoywexrujazoswxpl\"",
+      "desc": "Standard: len=48"
+    },
+    {
+      "input": "\"mrdapzythjauwviupfmnovfauizedjetbtezflilrmnviyyuzevmdcsfittcegunmrwqmkzlvsnnbjjehofnsedqrdjoqrziiucyzclqkxdxntkjwwdhanpjmwxhirnfuslqttvtytwderybzqkbzgiataifmyrnscpxnwwjygatujphibtesqaxakuzwxztrswziwfoefurfapciclmldrfdlminncsxjsbbshrnqrhoswhuvfdzmeegibnynxdyfuyggycgocnmzgdotywqasqtnnjgieiooujgepbnwdqkpigcuiaahbojnolipysgymkkrfxlyfbpbpkqtwcvvuyqseaozcwcrolxkhnwqrojcmlmbspxddfbnshrciylzannbylixajgbvydzelzhikpwrhehyjwwfmqdbcmlbzuzpmupqtkbfjvheqijzosicbosdsmldtqxkduxtvbvosgleottbmdppoqsmwbqgmtvuozomx\"\n\"jopmwrgkusndimseyhlworgqocylhkvdgwgzozzvghrsulsqfgtoxosoeppgncjyulxgngjlkkpguawqrebdncaupxlchnwbzuibvdnjrpdxarhatlmbkdrgdefxflzingxdaiyfifzpxgrxgrarhktblaio\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"odnqhymyhpyvknxgcyqlyfuatwfotmgunypenizoarmghmvevujyggdvqmupdrjudqwiedlfaqfnfbthjjrelwofspckyytycxarsdyobhtunuuouqwmrsphtvhakaiksxfhkyvkbijgkhdqkxfhufxfxdkwleglhxunilladrigzzevworjfbdiynfhffrrzdiwmapbvxyisztexkzrkyxbjneupzlkgpyrvxoeuwxjmfvrdqicxljahgwhqvpqdrrptnbpdtbiyiyqtldwxlnxgdzrwbejnpwdohakouarsjyzwotyhxwjffyrrewamcwxwiaoqvemnoegujykenouldgtgwijsrhedkpiafrrdqaogblraecqalukfhpthblibidtueklvjnyxfsxdhganofsjinwxoidsueuukeiafyotrkogdexgckgqnaeucdtiuzfjxcawxwzcrmpdffqkwbnvqqfkbjcmurhyyuvsudlbihhwlcogefvhoqalnmnatbizllgveytxybpvixhtsadbyxyvgujfxvkiwrowjunqsyvucvnzhomgjixlgrsrjfxigzfisarqogvxsjxevtpuehypdnecbatxevvfjmzixjohlkxrrqjwfydyntasncfhdphiqsnxtiqeeqvywkycfslnwyhzhfnhfkifdfawrwwowgqqcgpbmqnxntkysfnxcskfhwyqhtkgmnvxciapssjydkubyywsdjmqnmshxkbinzaseaqbngbmuzqfdmprzswisgigpbxnmboasxoqnsnkvlcnvhdfxbfiqhhgvbeypmvjosyvrmediwqhkksvoqgxrbxjwdrmkhmrbpyfsfmixcbxgeajszcvqcttcnlrkpluknzdnepuxdfddemizctofywucsonflgknhrlxtyfgwgryjlowlblgsbmolvviownhbvzhyrjtjwkorkexlstagillfjdfexunjrbsemwbrrxziu\"\n\"ufqankbzwtcuhlsckehxezcskcmqwmppphiihihiilgmbdsucoqrtntlfopmqfvmshjkqjirqyvvntfezddzmkdcrgfzmhyoppbxdnicwrtsvlgmwwnwwqriyylawqwjaahvfpzkhpuzpfzrtjenmwtaxlmpyikendyjfbqfaymbhicbkisslsleghxfkvmglsovprgqfzxtzypkotcjqjvpijgmlkgvxzfcxffbmduidvfwfdydfdomrlwrfbeuxwguhwllnsuikropkzamtygoiavfkacgvrfgcyubzuctteutvmwafhbggofmuhazxmdsyeoterazdikiruvxfjhblzefsmkashccgshtaskqmigdxancoqslciwsbzixvsmmzlbkrqknucyywacpqadfuqswsoeqthsxrutbytxlertlqoxpkyuubwsduclhqytiaewifqtlojxwilsixchbgelhoszlcpewrxltjrlubxdexheeofbfrszkvdtysorntybwdgfcfliwnnogozwfhssmnhvgckiekhqvhwtvnzfvwicqjjqfdthudmjmbnnpytkmvfoqezlxbpqnvndycuuunzjlkixijfvdtbzsctjoaimrkepmgsixzeougxvqouorqvxgmftdkjvpujlnhlmspzpacdvqcmygqddtnhcvaszjixbomgbgzdmdudpktpgmbrvuntugupquswpkcaildsxzmtdduhieznakjdbmnrydvjvmzsbzdhhxdshtwvftxddlnanahsg\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"\n\"abcde\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}
