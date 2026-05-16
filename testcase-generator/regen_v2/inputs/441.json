@@ -1,0 +1,28 @@
+{
+  "pid": 441,
+  "slug": "maximize-expression-of-three-elements",
+  "inferred_constraints": "3 <= nums.length <= 100, -100 <= nums[i] <= 100",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1,4,2,5]", "desc": "Edge: example1"},
+    {"input": "[-2,0,5,-2,4]", "desc": "Edge: example2"},
+    {"input": "[1,2,3]", "desc": "Edge: n=3 minimum"},
+    {"input": "[-100,-100,-100]", "desc": "Edge: all min"},
+    {"input": "[100,100,100]", "desc": "Edge: all max"},
+    {"input": "[100,-100,0]", "desc": "Edge: extremes"},
+    {"input": "[100,100,-100]", "desc": "Standard: 2 max 1 min"},
+    {"input": "[-100,-100,100]", "desc": "Standard: 2 min 1 max"},
+    {"input": "[0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[100,99,98,-99,-100]", "desc": "Standard: peaks and trough"},
+    {"input": "[50,-50,50,-50,50,-50]", "desc": "Standard: alternating"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: all negative"},
+    {"input": "[1,2,3,4,5,-100]", "desc": "Standard: low outlier"},
+    {"input": "[100,1,2,3,4,5]", "desc": "Standard: high outlier"},
+    {"input": "[100,100,99,99,98,98]", "desc": "Standard: high values"},
+    {"input": "[-100,-100,-99,-99,-98,-98]", "desc": "Standard: low values"},
+    {"input": "[100,-100,99,-99,98,-98,97,-97,96,-96]", "desc": "Standard: alternating extremes"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 444,
+  "slug": "happy-number",
+  "inferred_constraints": "1 <= n <= 2^31 - 1",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "19", "desc": "Edge: example1 happy"},
+    {"input": "2", "desc": "Edge: example2 not happy"},
+    {"input": "1", "desc": "Edge: n=1 happy"},
+    {"input": "7", "desc": "Edge: 7 -> 49 -> 97 -> 130 -> 10 -> 1 happy"},
+    {"input": "4", "desc": "Edge: 4 -> 16 -> 37 -> 58 -> 89 -> 145 -> 42 -> 20 -> 4 cycle (not happy)"},
+    {"input": "10", "desc": "Edge: 10 -> 1 happy"},
+    {"input": "100", "desc": "Edge: 100 -> 1 happy"},
+    {"input": "1000000000", "desc": "Edge: big happy 1B -> 1"},
+    {"input": "2147483647", "desc": "Edge: INT_MAX"},
+    {"input": "999999999", "desc": "Edge: 9 nines"},
+    {"input": "11", "desc": "Standard: 11->2 not happy"},
+    {"input": "13", "desc": "Standard: 13->10->1 happy"},
+    {"input": "23", "desc": "Standard: 23->13->10->1 happy"},
+    {"input": "100000000", "desc": "Edge: 10^8 happy"},
+    {"input": "111111111", "desc": "Standard: nine 1s"},
+    {"input": "987654321", "desc": "Standard: distinct digits"},
+    {"input": "8888888", "desc": "Standard: seven 8s"},
+    {"input": "5", "desc": "Standard: 5"},
+    {"input": "20", "desc": "Standard: 20"},
+    {"input": "97", "desc": "Standard: 97"}
+  ]
+}

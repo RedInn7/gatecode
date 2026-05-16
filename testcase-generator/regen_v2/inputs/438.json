@@ -1,0 +1,28 @@
+{
+  "pid": 438,
+  "slug": "minimum-number-of-coins-for-fruits-ii",
+  "inferred_constraints": "1 <= prices.length <= 1e5, 1 <= prices[i] <= 1e5",
+  "input_format": "line1: prices (JSON int array)",
+  "testcases": [
+    {"input": "[3,1,2]", "desc": "Edge: example1"},
+    {"input": "[1,10,1,1]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[100000]", "desc": "Edge: n=1 max"},
+    {"input": "[1,1]", "desc": "Edge: n=2 small"},
+    {"input": "[10,1]", "desc": "Edge: n=2 buy first only"},
+    {"input": "[1,10]", "desc": "Edge: n=2 buy first save second"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: 10 ones"},
+    {"input": "[100000,1,100000,1,100000]", "desc": "Standard: alternating"},
+    {"input": "[1,100000,1,100000,1]", "desc": "Standard: cheap then expensive"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]", "desc": "Standard: descending"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 20 ones"},
+    {"input": "[3,1,4,1,5,9,2,6]", "desc": "Standard: pi digits"},
+    {"input": "[100000,100000,100000,100000,100000]", "desc": "Edge: all max"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]", "desc": "Standard: alternating 1,2"},
+    {"input": "[10,1,10,1,10,1,10,1,10,1]", "desc": "Standard: alternating 10,1"},
+    {"input": "[50,40,30,20,10,5,4,3,2,1]", "desc": "Standard: gradient down"}
+  ]
+}
