@@ -4,25 +4,85 @@
   "inferred_constraints": "Tree has exactly 3 nodes (root, left, right), -100 <= val <= 100",
   "input_format": "single line: root (JSON array, 3 elements)",
   "testcases": [
-    {"input": "[10,4,6]", "desc": "Edge: example1 true"},
-    {"input": "[5,3,1]", "desc": "Edge: example2 false"},
-    {"input": "[0,0,0]", "desc": "Edge: all zeros, true"},
-    {"input": "[1,1,0]", "desc": "Edge: 1=1+0 true"},
-    {"input": "[1,0,1]", "desc": "Edge: 1=0+1 true"},
-    {"input": "[2,1,1]", "desc": "Edge: 2=1+1 true"},
-    {"input": "[200,100,100]", "desc": "Edge: max sum true"},
-    {"input": "[-200,-100,-100]", "desc": "Edge: min sum true"},
-    {"input": "[0,100,-100]", "desc": "Edge: pos+neg=0 true"},
-    {"input": "[0,-100,100]", "desc": "Edge: neg+pos=0 true"},
-    {"input": "[100,50,50]", "desc": "Standard: mid true"},
-    {"input": "[100,50,60]", "desc": "Standard: false"},
-    {"input": "[50,25,25]", "desc": "Standard: true"},
-    {"input": "[1,1,1]", "desc": "Edge: 1!=2 false"},
-    {"input": "[-50,-25,-25]", "desc": "Standard: negative true"},
-    {"input": "[100,99,1]", "desc": "Edge: 100=99+1 true"},
-    {"input": "[100,1,99]", "desc": "Edge: 100=1+99 true"},
-    {"input": "[99,100,-1]", "desc": "Edge: 99=100+(-1) true"},
-    {"input": "[100,100,0]", "desc": "Edge: 100=100+0 true"},
-    {"input": "[100,100,100]", "desc": "Edge: 100!=200 false"}
+    {
+      "input": "[-1000]",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "[5,3,1]",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "[0,0,0]",
+      "desc": "Edge: all zeros, true"
+    },
+    {
+      "input": "[1,1,0]",
+      "desc": "Edge: 1=1+0 true"
+    },
+    {
+      "input": "[1,0,1]",
+      "desc": "Edge: 1=0+1 true"
+    },
+    {
+      "input": "[2,1,1]",
+      "desc": "Edge: 2=1+1 true"
+    },
+    {
+      "input": "[-836,-415,-711,152,-34,805,-431,-724,-945,-851,-917,370,983,-375,-95,312,-451,626,317,-663,-266,-867,-927,769,-224,-370,-150,591,769,183,554,604,606,220,419,656,886,-7,950,783,169,-459,220,892,-190,63,-240,814,-699,96,-492,-508,-161,821,-428,414,639,491,-900,718,563,-870,-856,945,-370,628,782,-991,639,639,-730,763,-129,-453,-67]",
+      "desc": "Regenerated: diverse at position 6"
+    },
+    {
+      "input": "[26,-361,640,-418,-556,990,347,664,279,-409,-623,-588,-679,454,275,608,540,-196,-440,-17,691,-368,-468,27,424,-520,893,859,-493,354,216,697,-296,46]",
+      "desc": "Regenerated: diverse at position 7"
+    },
+    {
+      "input": "[0,100,-100]",
+      "desc": "Edge: pos+neg=0 true"
+    },
+    {
+      "input": "[0,-100,100]",
+      "desc": "Edge: neg+pos=0 true"
+    },
+    {
+      "input": "[100,50,50]",
+      "desc": "Standard: mid true"
+    },
+    {
+      "input": "[100,50,60]",
+      "desc": "Standard: false"
+    },
+    {
+      "input": "[50,25,25]",
+      "desc": "Standard: true"
+    },
+    {
+      "input": "[1,1,1]",
+      "desc": "Edge: 1!=2 false"
+    },
+    {
+      "input": "[-50,-25,-25]",
+      "desc": "Standard: negative true"
+    },
+    {
+      "input": "[100,99,1]",
+      "desc": "Edge: 100=99+1 true"
+    },
+    {
+      "input": "[100,1,99]",
+      "desc": "Edge: 100=1+99 true"
+    },
+    {
+      "input": "[99,100,-1]",
+      "desc": "Edge: 99=100+(-1) true"
+    },
+    {
+      "input": "[100,100,0]",
+      "desc": "Edge: 100=100+0 true"
+    },
+    {
+      "input": "[100,100,100]",
+      "desc": "Edge: 100!=200 false"
+    }
   ]
 }

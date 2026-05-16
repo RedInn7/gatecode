@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= s.length <= 100, lowercase letters, at least one repeat",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "abccbaacz", "desc": "Edge: example1"},
-    {"input": "abcdd", "desc": "Edge: example2"},
-    {"input": "aa", "desc": "Edge: minimum"},
-    {"input": "zz", "desc": "Edge: minimum max letter"},
-    {"input": "aba", "desc": "Edge: 3 chars"},
-    {"input": "abab", "desc": "Edge: 4 chars"},
-    {"input": "abcabc", "desc": "Edge: 6 chars a first"},
-    {"input": "abcdabcd", "desc": "Standard: 8 chars"},
-    {"input": "aabbccdd", "desc": "Standard: paired sequence"},
-    {"input": "abcdefghijklmnopqrstuvwxyzaa", "desc": "Standard: full alphabet + aa"},
-    {"input": "zyxwvutsrqponmlkjihgfedcbazz", "desc": "Standard: reverse + zz"},
-    {"input": "aabbccddee", "desc": "Edge: pairs ascending"},
-    {"input": "zabcdefgz", "desc": "Standard: z bookends"},
-    {"input": "abcdefghijklmnopqrstuvwxyzz", "desc": "Edge: alphabet + z"},
-    {"input": "qwertyqwerty", "desc": "Standard: keyboard row twice"},
-    {"input": "mississippi", "desc": "Standard: classic word"},
-    {"input": "programming", "desc": "Standard: typical word"},
-    {"input": "aaaaaaaaaa", "desc": "Edge: all same"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Edge: alphabet twice"},
-    {"input": "xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzx", "desc": "Standard: pattern"}
+    {
+      "input": "abccbaacz",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "abcdd",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"hcdbbg\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"dp\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "aba",
+      "desc": "Edge: 3 chars"
+    },
+    {
+      "input": "abab",
+      "desc": "Edge: 4 chars"
+    },
+    {
+      "input": "abcabc",
+      "desc": "Edge: 6 chars a first"
+    },
+    {
+      "input": "abcdabcd",
+      "desc": "Standard: 8 chars"
+    },
+    {
+      "input": "aabbccdd",
+      "desc": "Standard: paired sequence"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzaa",
+      "desc": "Standard: full alphabet + aa"
+    },
+    {
+      "input": "zyxwvutsrqponmlkjihgfedcbazz",
+      "desc": "Standard: reverse + zz"
+    },
+    {
+      "input": "aabbccddee",
+      "desc": "Edge: pairs ascending"
+    },
+    {
+      "input": "zabcdefgz",
+      "desc": "Standard: z bookends"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzz",
+      "desc": "Edge: alphabet + z"
+    },
+    {
+      "input": "qwertyqwerty",
+      "desc": "Standard: keyboard row twice"
+    },
+    {
+      "input": "mississippi",
+      "desc": "Standard: classic word"
+    },
+    {
+      "input": "programming",
+      "desc": "Standard: typical word"
+    },
+    {
+      "input": "aaaaaaaaaa",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+      "desc": "Edge: alphabet twice"
+    },
+    {
+      "input": "\"nqhlwzedqnhyiowkon\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

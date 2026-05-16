@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1e9",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "2", "desc": "Edge: example1"},
-    {"input": "403", "desc": "Edge: example2"},
-    {"input": "1", "desc": "Edge: n=1 smallest"},
-    {"input": "10", "desc": "Edge: already fair"},
-    {"input": "11", "desc": "Edge: 11 odd"},
-    {"input": "12", "desc": "Edge: already fair"},
-    {"input": "100", "desc": "Edge: 3 digits"},
-    {"input": "999", "desc": "Edge: 3 digit all odd"},
-    {"input": "1000", "desc": "Edge: power of 10"},
-    {"input": "1010", "desc": "Edge: already fair 4 digit"},
-    {"input": "10000", "desc": "Edge: 5 digits"},
-    {"input": "100000", "desc": "Edge: 6 digit power of 10"},
-    {"input": "999999999", "desc": "Edge: all 9s"},
-    {"input": "1000000000", "desc": "Edge: max n=1B"},
-    {"input": "9999", "desc": "Edge: all 9s small"},
-    {"input": "1234", "desc": "Standard: 2 odd 2 even fair"},
-    {"input": "5678", "desc": "Standard: 5,7 odd; 6,8 even fair"},
-    {"input": "111111", "desc": "Standard: all odd"},
-    {"input": "222222", "desc": "Standard: all even"},
-    {"input": "987654321", "desc": "Standard: descending"}
+    {
+      "input": "2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "403",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "246",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "255",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "351",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "12",
+      "desc": "Edge: already fair"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: 3 digits"
+    },
+    {
+      "input": "999",
+      "desc": "Edge: 3 digit all odd"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: power of 10"
+    },
+    {
+      "input": "1010",
+      "desc": "Edge: already fair 4 digit"
+    },
+    {
+      "input": "10000",
+      "desc": "Edge: 5 digits"
+    },
+    {
+      "input": "100000",
+      "desc": "Edge: 6 digit power of 10"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: all 9s"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: max n=1B"
+    },
+    {
+      "input": "9999",
+      "desc": "Edge: all 9s small"
+    },
+    {
+      "input": "1234",
+      "desc": "Standard: 2 odd 2 even fair"
+    },
+    {
+      "input": "5678",
+      "desc": "Standard: 5,7 odd; 6,8 even fair"
+    },
+    {
+      "input": "111111",
+      "desc": "Standard: all odd"
+    },
+    {
+      "input": "222222",
+      "desc": "Standard: all even"
+    },
+    {
+      "input": "403",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
