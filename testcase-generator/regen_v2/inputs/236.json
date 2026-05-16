@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= board.length <= 16, 1 <= hand.length <= 5, chars in RYBGW, no 3-consecutive same on board initially",
   "input_format": "line1: board (string in JSON quotes); line2: hand (string in JSON quotes)",
   "testcases": [
-    {"input": "\"WRRBBW\"\n\"RB\"", "desc": "Edge: example1 -1"},
-    {"input": "\"WWRRBBWW\"\n\"WRBRW\"", "desc": "Edge: example2"},
-    {"input": "\"G\"\n\"GGGGG\"", "desc": "Edge: example3"},
-    {"input": "\"R\"\n\"R\"", "desc": "Edge: simplest single - can't make 3"},
-    {"input": "\"RR\"\n\"R\"", "desc": "Edge: 2 same + 1 = 3 -> 1 move clears"},
-    {"input": "\"RR\"\n\"B\"", "desc": "Edge: 2R + 1B can't help -> -1"},
-    {"input": "\"RRR\"\n\"R\"", "desc": "Edge: invalid - per constraint board has no 3-same"},
-    {"input": "\"RWRWRWRWRWRWRWRW\"\n\"WWWWW\"", "desc": "Edge: max board with alternating"},
-    {"input": "\"RBYGW\"\n\"RBYGW\"", "desc": "Edge: 5 distinct colors"},
-    {"input": "\"WRRBBWW\"\n\"BWR\"", "desc": "Standard: 3 hand moves"},
-    {"input": "\"RYBGW\"\n\"RYBGW\"", "desc": "Standard: 5 distinct + 5 hand"},
-    {"input": "\"RRWWRR\"\n\"WB\"", "desc": "Standard: tricky chain"},
-    {"input": "\"BWWWB\"\n\"BBW\"", "desc": "Standard: B in middle"},
-    {"input": "\"WWBBRR\"\n\"BRW\"", "desc": "Standard: ordered groups"},
-    {"input": "\"GGRRR\"\n\"R\"", "desc": "Standard: invalid - no 3-same"},
-    {"input": "\"RBYGW\"\n\"R\"", "desc": "Standard: only 1 hand can't help"},
-    {"input": "\"WW\"\n\"W\"", "desc": "Standard: 2 + 1 = clears"},
-    {"input": "\"RRWBBYG\"\n\"RBYWG\"", "desc": "Standard: 7-char board mixed hand"},
-    {"input": "\"RRBBYYGGWWRRBBYY\"\n\"RBYGW\"", "desc": "Stress: 16 max + 5 hand pairs"},
-    {"input": "\"WWRRBBWWRRBBWWBB\"\n\"BWRBR\"", "desc": "Stress: 16-char repeated pairs"}
+    {
+      "input": "\"WRRBBW\"\n\"RB\"",
+      "desc": "Edge: example1 -1"
+    },
+    {
+      "input": "\"WWRRBBWW\"\n\"WRBRW\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"nxnqhby\"\n\"y\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"bfkqocxr\"\n\"briqe\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"xssi\"\n\"mtky\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"RR\"\n\"B\"",
+      "desc": "Edge: 2R + 1B can't help -> -1"
+    },
+    {
+      "input": "\"RRR\"\n\"R\"",
+      "desc": "Edge: invalid - per constraint board has no 3-same"
+    },
+    {
+      "input": "\"RWRWRWRWRWRWRWRW\"\n\"WWWWW\"",
+      "desc": "Edge: max board with alternating"
+    },
+    {
+      "input": "\"RBYGW\"\n\"RBYGW\"",
+      "desc": "Edge: 5 distinct colors"
+    },
+    {
+      "input": "\"WRRBBWW\"\n\"BWR\"",
+      "desc": "Standard: 3 hand moves"
+    },
+    {
+      "input": "\"RYBGW\"\n\"RYBGW\"",
+      "desc": "Standard: 5 distinct + 5 hand"
+    },
+    {
+      "input": "\"RRWWRR\"\n\"WB\"",
+      "desc": "Standard: tricky chain"
+    },
+    {
+      "input": "\"BWWWB\"\n\"BBW\"",
+      "desc": "Standard: B in middle"
+    },
+    {
+      "input": "\"WWBBRR\"\n\"BRW\"",
+      "desc": "Standard: ordered groups"
+    },
+    {
+      "input": "\"GGRRR\"\n\"R\"",
+      "desc": "Standard: invalid - no 3-same"
+    },
+    {
+      "input": "\"RBYGW\"\n\"R\"",
+      "desc": "Standard: only 1 hand can't help"
+    },
+    {
+      "input": "\"WW\"\n\"W\"",
+      "desc": "Standard: 2 + 1 = clears"
+    },
+    {
+      "input": "\"RRWBBYG\"\n\"RBYWG\"",
+      "desc": "Standard: 7-char board mixed hand"
+    },
+    {
+      "input": "\"RRBBYYGGWWRRBBYY\"\n\"RBYGW\"",
+      "desc": "Stress: 16 max + 5 hand pairs"
+    },
+    {
+      "input": "\"btvtohtuujmzzjyj\"\n\"hqvughhbua\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

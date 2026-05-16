@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= word1.length, word2.length <= 100, lowercase",
   "input_format": "line1: word1 (string in JSON quotes); line2: word2 (string in JSON quotes)",
   "testcases": [
-    {"input": "\"abc\"\n\"pqr\"", "desc": "Edge: example1 same length"},
-    {"input": "\"ab\"\n\"pqrs\"", "desc": "Edge: example2 word2 longer"},
-    {"input": "\"abcd\"\n\"pq\"", "desc": "Edge: example3 word1 longer"},
-    {"input": "\"a\"\n\"b\"", "desc": "Edge: minimum both length 1"},
-    {"input": "\"a\"\n\"bcdef\"", "desc": "Edge: word1=1, word2=5"},
-    {"input": "\"abcdef\"\n\"x\"", "desc": "Edge: word2=1"},
-    {"input": "\"aa\"\n\"bb\"", "desc": "Edge: same length 2"},
-    {"input": "\"abc\"\n\"abc\"", "desc": "Edge: identical"},
-    {"input": "\"hello\"\n\"world\"", "desc": "Standard: equal length 5"},
-    {"input": "\"foo\"\n\"barbaz\"", "desc": "Standard: word2 double"},
-    {"input": "\"abcdef\"\n\"ghi\"", "desc": "Standard: word1 double"},
-    {"input": "\"abcdefghij\"\n\"klmnopqrst\"", "desc": "Standard: length 10 each"},
-    {"input": "\"a\"\n\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: word1=1, word2=26"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"z\"", "desc": "Standard: word1=26, word2=1"},
-    {"input": "\"aaaaa\"\n\"bbbbb\"", "desc": "Standard: same letters"},
-    {"input": "\"zzz\"\n\"aaa\"", "desc": "Standard: reverse alpha"},
-    {"input": "\"abcdefghij\"\n\"abcdefghij\"", "desc": "Standard: identical 10"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"a\"", "desc": "Stress: max length word1"},
-    {"input": "\"x\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"", "desc": "Stress: max length word2"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"", "desc": "Stress: both max equal length"}
+    {
+      "input": "\"abc\"\n\"pqr\"",
+      "desc": "Edge: example1 same length"
+    },
+    {
+      "input": "\"ab\"\n\"pqrs\"",
+      "desc": "Edge: example2 word2 longer"
+    },
+    {
+      "input": "\"dqm\"\n\"kgjij\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"f\"\n\"jjmne\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"a\"\n\"bcdef\"",
+      "desc": "Edge: word1=1, word2=5"
+    },
+    {
+      "input": "\"abcdef\"\n\"x\"",
+      "desc": "Edge: word2=1"
+    },
+    {
+      "input": "\"aa\"\n\"bb\"",
+      "desc": "Edge: same length 2"
+    },
+    {
+      "input": "\"abc\"\n\"abc\"",
+      "desc": "Edge: identical"
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "desc": "Standard: equal length 5"
+    },
+    {
+      "input": "\"foo\"\n\"barbaz\"",
+      "desc": "Standard: word2 double"
+    },
+    {
+      "input": "\"abcdef\"\n\"ghi\"",
+      "desc": "Standard: word1 double"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"klmnopqrst\"",
+      "desc": "Standard: length 10 each"
+    },
+    {
+      "input": "\"a\"\n\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard: word1=1, word2=26"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"z\"",
+      "desc": "Standard: word1=26, word2=1"
+    },
+    {
+      "input": "\"aaaaa\"\n\"bbbbb\"",
+      "desc": "Standard: same letters"
+    },
+    {
+      "input": "\"zzz\"\n\"aaa\"",
+      "desc": "Standard: reverse alpha"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"abcdefghij\"",
+      "desc": "Standard: identical 10"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"a\"",
+      "desc": "Stress: max length word1"
+    },
+    {
+      "input": "\"x\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"",
+      "desc": "Stress: max length word2"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"",
+      "desc": "Stress: both max equal length"
+    }
   ]
 }
