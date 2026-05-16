@@ -774,3 +774,8 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:31.799533
+
+## PID 302 (minimum-rounds-to-complete-all-tasks)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:34.026573
