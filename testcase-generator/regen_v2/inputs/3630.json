@@ -71,6 +71,18 @@
     {
       "input": "3",
       "desc": "Killer: absolute max"
+    },
+    {
+      "input": "3",
+      "desc": "Generated: stress at position 17"
+    },
+    {
+      "input": "3",
+      "desc": "Generated: stress at position 18"
+    },
+    {
+      "input": "3",
+      "desc": "Stress: large n near max boundary"
     }
   ]
 }
