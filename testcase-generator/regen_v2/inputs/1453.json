@@ -1,0 +1,88 @@
+{
+  "pid": 1453,
+  "slug": "super-palindromes",
+  "inferred_constraints": "Parsed from signature: superpalindromesInRange",
+  "input_format": "line1: left (string); line2: right (string)",
+  "testcases": [
+    {
+      "input": "\"j\"\n\"n\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"y\"\n\"p\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"g\"\n\"l\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"b\"\n\"k\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"j\"\n\"b\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"eks\"\n\"eivamyvpwnevbo\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"aczonds\"\n\"shqjlceyju\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"ttlw\"\n\"mrwkoqjhekc\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"xzsiyyghvtphd\"\n\"bszkgn\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"jjhymftfydn\"\n\"fbcwkeonxh\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"zxwahfg\"\n\"jltltzzuraupohn\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"ufzdnh\"\n\"sjlvnfrkdl\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"jybuxbomkkxjf\"\n\"suiycgmkdbzk\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"as\"\n\"updeaxso\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"ciswnbghkhanw\"\n\"dlyqadqchbx\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"dyoctyrkarx\"\n\"pd\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"ole\"\n\"tjbn\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"msfpkj\"\n\"yf\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"ziml\"\n\"yiwsvzoy\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"vdrh\"\n\"glabqhx\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}
