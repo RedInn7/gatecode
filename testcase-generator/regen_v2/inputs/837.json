@@ -1,27 +1,88 @@
 {
-  "pid": 837, "slug": "divide-two-integers",
+  "pid": 837,
+  "slug": "divide-two-integers",
   "inferred_constraints": "-2^31 <= dividend, divisor <= 2^31-1, divisor != 0",
   "input_format": "line1: dividend (int); line2: divisor (int)",
   "testcases": [
-    {"input": "10\n3", "desc": "Edge: example1"},
-    {"input": "7\n-3", "desc": "Edge: example2"},
-    {"input": "0\n1", "desc": "Edge: zero dividend"},
-    {"input": "0\n-1", "desc": "Edge: zero divisor neg"},
-    {"input": "1\n1", "desc": "Edge: both 1"},
-    {"input": "-1\n1", "desc": "Edge: -1 / 1"},
-    {"input": "1\n-1", "desc": "Edge: 1 / -1"},
-    {"input": "-1\n-1", "desc": "Edge: -1 / -1"},
-    {"input": "2147483647\n1", "desc": "Edge: INT_MAX"},
-    {"input": "-2147483648\n1", "desc": "Edge: INT_MIN"},
-    {"input": "-2147483648\n-1", "desc": "Edge: overflow case"},
-    {"input": "2147483647\n2147483647", "desc": "Edge: max/max"},
-    {"input": "100\n10", "desc": "Standard: 100/10"},
-    {"input": "100\n-10", "desc": "Standard: 100/-10"},
-    {"input": "-100\n10", "desc": "Standard: -100/10"},
-    {"input": "-100\n-10", "desc": "Standard: -100/-10"},
-    {"input": "1024\n2", "desc": "Standard: 1024/2"},
-    {"input": "1000000000\n3", "desc": "Standard: 1e9/3"},
-    {"input": "-2147483648\n2", "desc": "Edge: INT_MIN/2"},
-    {"input": "7\n2", "desc": "Special: 7/2"}
+    {
+      "input": "0\n-3",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "7\n-3",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "3\n0",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "6\n1",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "9\n-2",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "-1\n1",
+      "desc": "Edge: -1 / 1"
+    },
+    {
+      "input": "1\n-1",
+      "desc": "Edge: 1 / -1"
+    },
+    {
+      "input": "-1\n-1",
+      "desc": "Edge: -1 / -1"
+    },
+    {
+      "input": "2147483647\n1",
+      "desc": "Edge: INT_MAX"
+    },
+    {
+      "input": "-2147483648\n1",
+      "desc": "Edge: INT_MIN"
+    },
+    {
+      "input": "-2147483648\n-1",
+      "desc": "Edge: overflow case"
+    },
+    {
+      "input": "2147483647\n2147483647",
+      "desc": "Edge: max/max"
+    },
+    {
+      "input": "100\n10",
+      "desc": "Standard: 100/10"
+    },
+    {
+      "input": "100\n-10",
+      "desc": "Standard: 100/-10"
+    },
+    {
+      "input": "-100\n10",
+      "desc": "Standard: -100/10"
+    },
+    {
+      "input": "-100\n-10",
+      "desc": "Standard: -100/-10"
+    },
+    {
+      "input": "1024\n2",
+      "desc": "Standard: 1024/2"
+    },
+    {
+      "input": "1000000000\n3",
+      "desc": "Standard: 1e9/3"
+    },
+    {
+      "input": "-2147483648\n2",
+      "desc": "Edge: INT_MIN/2"
+    },
+    {
+      "input": "7\n2",
+      "desc": "Special: 7/2"
+    }
   ]
 }

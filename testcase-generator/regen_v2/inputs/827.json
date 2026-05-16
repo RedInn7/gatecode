@@ -1,27 +1,88 @@
 {
-  "pid": 827, "slug": "valid-number",
+  "pid": 827,
+  "slug": "valid-number",
   "inferred_constraints": "1 <= s.length <= 20, chars in letters/digits/+/-/.",
   "input_format": "line1: s (raw)",
   "testcases": [
-    {"input": "0", "desc": "Edge: example1 true"},
-    {"input": "e", "desc": "Edge: example2 false"},
-    {"input": ".", "desc": "Edge: example3 dot only"},
-    {"input": "2", "desc": "Edge: single digit"},
-    {"input": "0089", "desc": "Edge: leading zeros valid"},
-    {"input": "-0.1", "desc": "Edge: negative decimal"},
-    {"input": "+3.14", "desc": "Edge: positive decimal"},
-    {"input": "4.", "desc": "Edge: trailing dot"},
-    {"input": "-.9", "desc": "Edge: negative .9"},
-    {"input": "2e10", "desc": "Edge: exponent"},
-    {"input": "-90E3", "desc": "Edge: E uppercase"},
-    {"input": "3e+7", "desc": "Edge: + exponent"},
-    {"input": "53.5e93", "desc": "Edge: decimal exponent"},
-    {"input": "abc", "desc": "Edge: invalid letters"},
-    {"input": "1a", "desc": "Edge: invalid mixed"},
-    {"input": "1e", "desc": "Edge: trailing e"},
-    {"input": "e3", "desc": "Edge: starts with e"},
-    {"input": "99e2.5", "desc": "Edge: decimal in exponent"},
-    {"input": "--6", "desc": "Edge: double sign"},
-    {"input": "-+3", "desc": "Edge: mixed sign"}
+    {
+      "input": "0",
+      "desc": "Edge: example1 true"
+    },
+    {
+      "input": "e",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "44",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "-0.1",
+      "desc": "Edge: negative decimal"
+    },
+    {
+      "input": "+3.14",
+      "desc": "Edge: positive decimal"
+    },
+    {
+      "input": "4.",
+      "desc": "Edge: trailing dot"
+    },
+    {
+      "input": "-.9",
+      "desc": "Edge: negative .9"
+    },
+    {
+      "input": "2e10",
+      "desc": "Edge: exponent"
+    },
+    {
+      "input": "-90E3",
+      "desc": "Edge: E uppercase"
+    },
+    {
+      "input": "3e+7",
+      "desc": "Edge: + exponent"
+    },
+    {
+      "input": "53.5e93",
+      "desc": "Edge: decimal exponent"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: invalid letters"
+    },
+    {
+      "input": "1a",
+      "desc": "Edge: invalid mixed"
+    },
+    {
+      "input": "1e",
+      "desc": "Edge: trailing e"
+    },
+    {
+      "input": "e3",
+      "desc": "Edge: starts with e"
+    },
+    {
+      "input": "99e2.5",
+      "desc": "Edge: decimal in exponent"
+    },
+    {
+      "input": "--6",
+      "desc": "Edge: double sign"
+    },
+    {
+      "input": "89",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

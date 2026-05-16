@@ -1,27 +1,88 @@
 {
-  "pid": 836, "slug": "score-of-parentheses",
+  "pid": 836,
+  "slug": "score-of-parentheses",
   "inferred_constraints": "2 <= s.length <= 50, balanced parens",
   "input_format": "line1: s (raw)",
   "testcases": [
-    {"input": "()", "desc": "Edge: example1"},
-    {"input": "(())", "desc": "Edge: example2"},
-    {"input": "()()", "desc": "Edge: example3"},
-    {"input": "(()(()))", "desc": "Standard: complex"},
-    {"input": "((((()))))", "desc": "Edge: deeply nested"},
-    {"input": "()()()()()", "desc": "Edge: 5 adjacent"},
-    {"input": "(()(()()))", "desc": "Standard: mixed"},
-    {"input": "(()())", "desc": "Standard: split inner"},
-    {"input": "()(())", "desc": "Standard: chain + nest"},
-    {"input": "(())(())", "desc": "Standard: 2 nests"},
-    {"input": "((()))(()())", "desc": "Standard: deep + split"},
-    {"input": "(((((())))))", "desc": "Standard: 6 deep"},
-    {"input": "()()()()()()()()()()()()()()()()()()()()()()()()()", "desc": "Stress: 25 adjacent"},
-    {"input": "(((((((((((((((((((((((())))))))))))))))))))))))))", "desc": "Stress: 25 deep"},
-    {"input": "(())(())(())(())(())", "desc": "Standard: 5 nests"},
-    {"input": "((()()))", "desc": "Standard: 8 chars"},
-    {"input": "(()((())))", "desc": "Standard: complex 10"},
-    {"input": "(()()()(()()))", "desc": "Standard: mixed 14"},
-    {"input": "(((())(())))", "desc": "Standard: deep alt"},
-    {"input": "((()(()(()))))", "desc": "Special: complex deep"}
+    {
+      "input": "\"e\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "(())",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"graucuv\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"jponenfpzf\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"igvlvh\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "()()()()()",
+      "desc": "Edge: 5 adjacent"
+    },
+    {
+      "input": "(()(()()))",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "(()())",
+      "desc": "Standard: split inner"
+    },
+    {
+      "input": "()(())",
+      "desc": "Standard: chain + nest"
+    },
+    {
+      "input": "(())(())",
+      "desc": "Standard: 2 nests"
+    },
+    {
+      "input": "((()))(()())",
+      "desc": "Standard: deep + split"
+    },
+    {
+      "input": "(((((())))))",
+      "desc": "Standard: 6 deep"
+    },
+    {
+      "input": "()()()()()()()()()()()()()()()()()()()()()()()()()",
+      "desc": "Stress: 25 adjacent"
+    },
+    {
+      "input": "(((((((((((((((((((((((())))))))))))))))))))))))))",
+      "desc": "Stress: 25 deep"
+    },
+    {
+      "input": "(())(())(())(())(())",
+      "desc": "Standard: 5 nests"
+    },
+    {
+      "input": "((()()))",
+      "desc": "Standard: 8 chars"
+    },
+    {
+      "input": "(()((())))",
+      "desc": "Standard: complex 10"
+    },
+    {
+      "input": "(()()()(()()))",
+      "desc": "Standard: mixed 14"
+    },
+    {
+      "input": "(((())(())))",
+      "desc": "Standard: deep alt"
+    },
+    {
+      "input": "\"drfwjnbsccgxprtvpzur\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
