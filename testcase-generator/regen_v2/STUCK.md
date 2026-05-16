@@ -790,3 +790,23 @@ Audited at: 2026-05-16T15:37:36.496437
 Stuck after 3 regeneration attempts. Final issues:
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:38.733730
+
+## PID 309 (maximum-subarray-sum-after-one-operation)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000)
+Audited at: 2026-05-16T15:37:40.773219
+
+## PID 31 (minimize-or-of-remaining-elements-using-operations)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:40.787732
+
+## PID 311 (minimum-removals-to-balance-array)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:40.789198
+
+## PID 312 (count-the-number-of-good-subarrays)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:40.794648
