@@ -134,6 +134,11 @@
       "pid": 3236,
       "slug": "online-majority-element-in-subarray",
       "reason": "Interactive problem - cannot test via standard I/O"
+    },
+    {
+      "pid": 3225,
+      "slug": "toggle-light-bulbs",
+      "reason": "ACM mode problem"
     }
   ]
 }
