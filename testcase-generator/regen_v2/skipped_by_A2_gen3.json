@@ -89,6 +89,21 @@
       "pid": 3396,
       "slug": "maximum-strong-pair-xor-ii",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3363,
+      "slug": "latest-time-you-can-obtain-after-replacing-characters",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3358,
+      "slug": "numbers-at-most-n-given-digit-set",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3350,
+      "slug": "populating-next-right-pointers-in-each-node-ii",
+      "reason": "ACM mode problem"
     }
   ]
 }

@@ -1,0 +1,76 @@
+{
+  "pid": 3362,
+  "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "573251",
+      "desc": "Standard: n=573251"
+    },
+    {
+      "input": "695694",
+      "desc": "Standard: n=695694"
+    },
+    {
+      "input": "195212",
+      "desc": "Standard: n=195212"
+    },
+    {
+      "input": "942415",
+      "desc": "Standard: n=942415"
+    },
+    {
+      "input": "150384",
+      "desc": "Standard: n=150384"
+    },
+    {
+      "input": "280820",
+      "desc": "Standard: n=280820"
+    },
+    {
+      "input": "506405",
+      "desc": "Standard: n=506405"
+    },
+    {
+      "input": "627436",
+      "desc": "Standard: n=627436"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
