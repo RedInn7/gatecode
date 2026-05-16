@@ -1,0 +1,28 @@
+{
+  "pid": 238,
+  "slug": "remove-duplicates-from-sorted-array",
+  "inferred_constraints": "1 <= nums.length <= 3e4, -100 <= nums[i] <= 100, sorted non-decreasing",
+  "input_format": "line1: nums (JSON int array sorted)",
+  "testcases": [
+    {"input": "[1,1,2]", "desc": "Edge: example1"},
+    {"input": "[0,0,1,1,1,2,2,3,3,4]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: n=1 single"},
+    {"input": "[1,1]", "desc": "Edge: n=2 duplicate"},
+    {"input": "[1,2]", "desc": "Edge: n=2 distinct"},
+    {"input": "[-100,-100,-100]", "desc": "Edge: min value 3x"},
+    {"input": "[100,100,100]", "desc": "Edge: max value 3x"},
+    {"input": "[-100,100]", "desc": "Edge: extreme spread"},
+    {"input": "[-100,-100,100,100]", "desc": "Edge: pairs at extremes"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: all distinct"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: paired duplicates"},
+    {"input": "[1,1,1,1,1,2,3,4,5,6]", "desc": "Standard: many at front"},
+    {"input": "[1,2,3,4,5,6,6,6,6,6]", "desc": "Standard: many at end"},
+    {"input": "[-50,-49,-48,-47,-46,46,47,48,49,50]", "desc": "Standard: span 0"},
+    {"input": "[-100,-50,-25,0,25,50,75,100]", "desc": "Standard: 8 distinct values"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4,4,4]", "desc": "Standard: triples"},
+    {"input": "[-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100]", "desc": "Stress: 20 min"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5]", "desc": "Stress: 50 elements 5 distinct"},
+    {"input": "[-100,-99,-98,-97,-96,-95,-94,-93,-92,-91,-90,-89,-88,-87,-86,-85,-84,-83,-82,-81,-80,-79,-78,-77,-76,-75,-74,-73,-72,-71,-70,-69,-68,-67,-66,-65,-64,-63,-62,-61,-60,-59,-58,-57,-56,-55,-54,-53,-52,-51]", "desc": "Stress: 50 distinct desc"}
+  ]
+}

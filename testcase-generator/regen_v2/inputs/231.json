@@ -1,0 +1,28 @@
+{
+  "pid": 231,
+  "slug": "minimum-cost-to-move-chips-to-the-same-position",
+  "inferred_constraints": "1 <= position.length <= 100, 1 <= position[i] <= 1e9",
+  "input_format": "line1: position (JSON int array)",
+  "testcases": [
+    {"input": "[1,2,3]", "desc": "Edge: example1"},
+    {"input": "[2,2,2,3,3]", "desc": "Edge: example2"},
+    {"input": "[1,1000000000]", "desc": "Edge: example3 extreme"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[5,5]", "desc": "Edge: same position"},
+    {"input": "[1,2]", "desc": "Edge: adjacent"},
+    {"input": "[1000000000]", "desc": "Edge: single max"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1,3,5,7,9]", "desc": "Edge: all odd"},
+    {"input": "[2,4,6,8,10]", "desc": "Edge: all even"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10 mixed"},
+    {"input": "[1,3,5,7,9,2,4,6,8,10]", "desc": "Standard: 5 odd 5 even"},
+    {"input": "[1,1,1,2,2,2,3,3,3]", "desc": "Standard: groups"},
+    {"input": "[1,3,5,2,4,6,7,9,11,8]", "desc": "Standard: 7 odd 3 even"},
+    {"input": "[1000000000,999999999,999999998,999999997,999999996]", "desc": "Standard: near max"},
+    {"input": "[1,1,1,1,1,2,2,2,2,2]", "desc": "Standard: 5+5 different parity"},
+    {"input": "[3,3,3,3,3,3,3,3,3,3]", "desc": "Standard: all 3s"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
+    {"input": "[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99]", "desc": "Stress: 50 odd"},
+    {"input": "[1000000000,999999998,999999996,999999994,1,3,5,7,1000000000,999999999,999999997,999999995,2,4,6,8]", "desc": "Stress: extreme mixed parity"}
+  ]
+}

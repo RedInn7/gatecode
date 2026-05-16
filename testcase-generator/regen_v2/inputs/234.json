@@ -1,0 +1,28 @@
+{
+  "pid": 234,
+  "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
+  "inferred_constraints": "1000 <= num <= 9999",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "2932", "desc": "Edge: example1"},
+    {"input": "4009", "desc": "Edge: example2 with zero"},
+    {"input": "1000", "desc": "Edge: min num"},
+    {"input": "9999", "desc": "Edge: max all same"},
+    {"input": "1111", "desc": "Edge: all 1s"},
+    {"input": "5555", "desc": "Edge: all 5s"},
+    {"input": "1234", "desc": "Edge: ascending digits"},
+    {"input": "9876", "desc": "Edge: descending digits"},
+    {"input": "1010", "desc": "Edge: zeros mixed"},
+    {"input": "9090", "desc": "Edge: zeros and nines"},
+    {"input": "5005", "desc": "Standard: zeros middle"},
+    {"input": "1357", "desc": "Standard: all odd"},
+    {"input": "2468", "desc": "Standard: all even"},
+    {"input": "1122", "desc": "Standard: paired digits"},
+    {"input": "3333", "desc": "Standard: all 3s"},
+    {"input": "6789", "desc": "Standard: high consecutive"},
+    {"input": "1456", "desc": "Standard: random"},
+    {"input": "7000", "desc": "Standard: max-1 with zeros"},
+    {"input": "2222", "desc": "Stress: all 2s"},
+    {"input": "8765", "desc": "Stress: high desc"}
+  ]
+}

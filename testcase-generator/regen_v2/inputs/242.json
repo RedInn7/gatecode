@@ -1,0 +1,28 @@
+{
+  "pid": 242,
+  "slug": "poor-pigs",
+  "inferred_constraints": "1 <= buckets <= 1000, 1 <= minutesToDie <= minutesToTest <= 100",
+  "input_format": "line1: buckets (int); line2: minutesToDie (int); line3: minutesToTest (int)",
+  "testcases": [
+    {"input": "4\n15\n15", "desc": "Edge: example1"},
+    {"input": "4\n15\n30", "desc": "Edge: example2"},
+    {"input": "1\n1\n1", "desc": "Edge: 1 bucket no pig needed"},
+    {"input": "1\n1\n100", "desc": "Edge: 1 bucket max time"},
+    {"input": "2\n1\n1", "desc": "Edge: 2 buckets 1 round"},
+    {"input": "2\n1\n2", "desc": "Edge: 2 buckets 2 rounds"},
+    {"input": "1000\n1\n1", "desc": "Edge: max buckets 1 round"},
+    {"input": "1000\n100\n100", "desc": "Edge: max time 1 round"},
+    {"input": "1000\n1\n100", "desc": "Edge: max rounds"},
+    {"input": "1000\n50\n100", "desc": "Edge: 2 rounds"},
+    {"input": "5\n1\n1", "desc": "Standard: 5 buckets 1 round"},
+    {"input": "10\n1\n1", "desc": "Standard: 10 buckets 1 round"},
+    {"input": "100\n1\n1", "desc": "Standard: 100 buckets 1 round"},
+    {"input": "10\n1\n10", "desc": "Standard: 10 buckets 10 rounds"},
+    {"input": "100\n10\n100", "desc": "Standard: 10 rounds"},
+    {"input": "500\n10\n100", "desc": "Standard: 500 buckets 10 rounds"},
+    {"input": "27\n1\n3", "desc": "Standard: 3 rounds 27=3^3"},
+    {"input": "64\n10\n50", "desc": "Standard: 64 buckets 5 rounds"},
+    {"input": "729\n1\n6", "desc": "Stress: 729=3^6 -> 6 pigs?"},
+    {"input": "999\n1\n100", "desc": "Stress: 999 buckets 100 rounds"}
+  ]
+}

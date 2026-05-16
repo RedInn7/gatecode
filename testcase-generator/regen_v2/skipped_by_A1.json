@@ -12,6 +12,9 @@
     {"pid": 190, "slug": "maximum-depth-of-n-ary-tree", "reason": "N-ary Node class — non-standard tree serialization, complex parsing"},
     {"pid": 198, "slug": "array-upper-bound", "reason": "JavaScript/TypeScript only — Array prototype extension"},
     {"pid": 185, "slug": "word-squares-ii", "reason": "Returns list of word-squares with non-deterministic ordering — needs SPJ for set equality"},
-    {"pid": 1881, "slug": "print-in-order", "reason": "Multi-threaded synchronization problem — not supported by standard judge"}
+    {"pid": 1881, "slug": "print-in-order", "reason": "Multi-threaded synchronization problem — not supported by standard judge"},
+    {"pid": 230, "slug": "generate-schedule", "reason": "Multiple valid schedules — output is non-unique, needs SPJ"},
+    {"pid": 232, "slug": "letter-case-permutation", "reason": "Output is permutation list — order may differ between languages, needs sorted comparison"},
+    {"pid": 239, "slug": "random-pick-index", "reason": "Randomized algorithm — output is non-deterministic, requires probabilistic SPJ"}
   ]
 }
