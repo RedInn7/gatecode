@@ -1,0 +1,88 @@
+{
+  "pid": 1077,
+  "slug": "longest-palindrome",
+  "inferred_constraints": "0 <= s.length <= 2000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"g\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"Nq\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"decbc\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"TWTTWT\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"gAXLqEbRLEwluBHtgFgpXCAeEl\"",
+      "desc": "Standard: len=26"
+    },
+    {
+      "input": "\"tBXGsjloNQLFybBEhcRfO\"",
+      "desc": "Standard: len=21"
+    },
+    {
+      "input": "\"AVwMavPgfDCzLWyATdOaQHnrEIxpqBLOn\"",
+      "desc": "Standard: len=33"
+    },
+    {
+      "input": "\"UNkjUtuhAJfcPqmkIWeUDHzVLiXPlTKyikBIkbFgdTBEUJ\"",
+      "desc": "Standard: len=46"
+    },
+    {
+      "input": "\"tpTcbYajlbsXwYpbcquGQFVhgJyt\"",
+      "desc": "Standard: len=28"
+    },
+    {
+      "input": "\"dzkqVBRMKfOmFfLYRfCcErOpioukXSDCQHYJO\"",
+      "desc": "Standard: len=37"
+    },
+    {
+      "input": "\"WPrTRhBJAgoOIiNuxdcGRiXXsgNnMk\"",
+      "desc": "Standard: len=30"
+    },
+    {
+      "input": "\"GZPHBGmoRrsmkMlqhrcVUfRFIz\"",
+      "desc": "Standard: len=26"
+    },
+    {
+      "input": "\"WyHcgjRnjAMdAFyvIyRvzvmBmXbEQFBjPmYpsxwSUOnjYyYgnBqMSlFaDekClaDMjOSylKhpmMLXRngKhTGlNQMpzsdVqrmlrlfJRuWoyJBzkgbyCdjcWODcnUmAipMfxGTPkpiMviwLvVagqWJpflBmGDAMmgbdzioicFKFETtEXvfTqgLVTksYqzyZQCsdmzSCZErS\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"zGKZeQyYhMfgNjLoZgGzhZuVFBusMHBbwkquaksDMiSegYvdEYMPVWPIqEuQQGqCYeYCBAiFejtOPtipMOouhDFGZtCWXUTNOTjEUYOTYSmYfbGeQiNfBlijGFQKENrGbTeSLtFtbeIIlzhjEumuQXrgEbYZCvhXvKIgKnrelyFFBNQTvwDDjeXbWXfJMUVTqFDbXskNLFbDOmPKYRRoniPIPIlFQAIcERiQHYGTdRmlSHFFOPqgUAbmhBFBpvhiGgAluvxkqZcALiUxNapVGRwwafIFaoWTVOqZiehcUBKHfrkldhCQZYmZLGoDSLvxYXbkMcEKNIGiQwkxhwwhgPRcbQCSxPhtSaytlKMWVStGjDVCPYaLswHWudEMONbraYHOLJBDwdmLrzwLedAUrleGEloYpEdpRVqpaYBRTlRrCBlkOWfDOMdGRUWwyLewZpEvCilrXbJllEDKIoZFBWvxRdGilrHPkXjWgDerRitOFQuBgBpH\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"eLMTCAJsxaXWQhSWyXGVicmDxytSTyeDpvUKWZPUgoVTPAaNKfwnEfhIvjpyHtoQMSaRklowGQgFQKSKjqFRpOXDQaGAmegVQsHHYrZOzmDVEoqhSVwZylLIGYNdXcAOFTVNkMddQLbCMRNIHSKFRydHSQZLsIhGcWVSZUsSikWLNRdeSBRtianYEkHqgCgEdPNugjMFwnioWoSJqrRgXrrMYAjqTKAijrUSLGWcaHgEMNUGBEeJuhreNmGNJmXsoOyBeELorZyziVkBtNPeETttZxpwfsKTEZbfljmajWuAPDjMaaMHaedZJlfcORzWHWqLVbUAQoJYbBRWlAyJNnJSEdYnAgSfMtMVLccGSbwYoWqvTGURMGLjjmQctVVuDMfafXEWWDtefnpblZASjzhBEwcPJvooQgAmuysYIhwTkpDTUeyNlXnyMRGCOfISailpcUXbUbGkckXwjpHAnZzjKGRhYoFHSfNlFlglsHpIEkRfcDenPpQYdYdmmegQXnCsMmsCcLCrIXgPOvTZlgRGRSraejcdyeuxKyNvDXrPPnuVQuUsMIfFZzZMfyaXBqerspUWVWvJzYMeuygiSJdTTqWqYMFrQLOXjJBTWyEdUxtkrXMYgLLRgigjRLRAExWKCOJTFrcQGnvRlmLUcOnKOBADDwoLWebNrGoFRzqBiYqXHtZiWqfOWXhEDgHyZzHQPsyOvdrhPnZXEjbYulLWuqdHVrvFmUbvuDySvMwCSGtgrYtVlGFURkqVBKnjZaRJoJzDHMlCapqrWUeJIRShyBXURZoCVaNLXHyuepkcGxOSUmpooobjxHFgnIBbIXiMstrmsJcqjaJDNPwAhQUWuilNPiJNrgIZUjHjgWncbqrRNfCHFTjzBbSUmcXtMJtsyHJmXORuDNZzFPHGnLWjFxwtWflXGWlsETmWwxSgZaNcZpQIgiqSPsrszTWKUPBzZvlqdYVlCxskzDOHRBVPxixeaTFuYfgHSyOIDYmHkYymxPHxbHwqldQmCxjsEQTYeQnbnhrJGOkEPLDTfjYdkVTRQkqfsWBUmsZtVeLBMdXNnhDZqPpeWjjwrxTVZyyqiVkngavFcaFnfJSszcELxsbihHGzfoACcJYTlKecSszIPniKvfqEFntuaHcKiwUUYHFFFHGUzflgONsPBHXhqFPJcdxmgNFjSEQsXOEXoAgbdXrmmdwNYRkaralsLeyEScUQUcZXTlUYFxIZVACjUosPETZwsHLIkgCmdDVjTmycVEyubykbDbwOPEZQuEgRVWiyteulbZXJSBOzIBGjdNqDQMnhqWxejUlxOPBmskgjrxzcxGFdCbTvXgOSklJbfpKzRSYbIYllDGOQxrxrmkIcyqmErcWIxgLYkvbuQUUAQCGMivPzPuxfPFuHpwRMvlMYiTlcrKOezbBwVXVxYhTHlAgcSubmHeGzBEwMDDokhNNcQliiBmZHgATnKtoRxmGGwkkMSMlPLARdpsIFRDFeEzSmBtsFJbDmwdLiGocRouXZRANVgDhQAkwHgFRJMSvJvSScMKKSaxBJOuTZfLJirHReZzUUAwgVynEqabZppACYcSjzaoastZsULxWKGxyUnqcHjZHjXAtBFmLHGaTeNflCItDTlZQCUsUMAzejKaLhEYGFLYpzJiecRJKkUyFOUyZcpNRhIKvebyatycwTlHGGFlpjmeQXGtLVmjWQmDPSqIqfxJwPBSUXABTClbrpTeyInsdDUDfZDXDGCVVfmPLEvLAGlmmVITbJccUuhYQEYlTpbuVdvaCWqKNZDkgOIxgAdNLPjIldgIVWtaZpcffDmVqyQdXlGLwrohiZaTYUkTBUGjvTGbmNDAMLEYbDInefDbIYVQuWxtvrhAKdbgXmbGbptNTFNlYcNNOFESNzxeBUKIlNUOgNHhzSkecvuoVbtOhSRjKSHNPTjkUXqeEAJOWrvUHihBDUYLCHtKhRCPcwGoUlKiyVUHTQfLEWpjISmHOw\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"yvlOsasiDFYWYtgACFgrvdxXvjivuRbzHnFwJlFFjrdrXzcFjgcvArTlGLqdtSpEhZTDLWReVxLAhvAmqVAMKSaPcgrTDEDlmQsUUcOudaSlOFXjVGajAEwYzdwVIxwVMSloEQjfvrTsaxyCWZfhHGXdHxvPJsKXrQyaixbiblhDaJpAqFeDNoJPIEzOJdDZmfGMkqygMtjPuqvNlzDWjncdrHNhgtICKIOMNlTiARiGbqtSYtCaALpUHYtVXXtjizqrpozptNRqKKbIYlXDofLZReQLzgpbzATVikKWmYbUyMsXEdtKduePPmljFCCeLFMennCxbLXFHdzVdVJIwSMDQvevWPKoJlpWmceAKPQaCjWWLPWXwdvSRJADoXqoNzqnENdayAOyTNPjodtmMqwDgchyqnofEytOyIEdiDxtGCNUXzsqXjfwUapkNxuruuCmluwsdSJLLXabXcTFAbgrmmwkzZWRAhsZmMKmXSbovyhtAsKwOCMFNQkxnCvtxLoKbpBKExIXqeUAhQAYMSzwHXxZIEpFJaRAJrHymeGCHnfSNGVCgKvhPwuAXOUJaobkqhIMjeFrVcgurpAoWWGjiNqwcDWqocLSyawVskYYZzxXEsgGCUmkBdEPxGlcUoxYzWmDQTtqrDHVFZkGLyYScRKNiRYCViMDveLkjnVBHiRQymzHGdskTquVQEVEpxYYwENNOnHwCrxEYHkCBkToSuOtkdmGwtxNXEqTMqqdnTsoPBOAnVGDIcjdSnqvvAuerikbpGiPCLalMtMvfmDgVtZGMxqxYuGYZbDsROXBcTJJqxnzvbNCgRghKGEFlUMrkfJhZbNWvJpzRZxaCwcHyJRokUqeQvHXpBiHhlRVOqyXQMTnOionRjnhEHdOWNfIHxDDZqOloHANLjdnFkvPzpsdBcedwzZoAzrMGeczkAQoHPBSYavEMzrjkKeWKwnkKFKiIrGMFMyEWFTiYGVKcpBvCTjWttxqvaFSkVkVXhrarTsxWDIaJxnEAJNReifHfRIwuQPgFyRdRHSdXTfwjyVriEHvEiCaqtomWNikWFsocAIDQxAvnrtCsRWqQhOhZcdFanHbxocQgEwatyFnvDxOsjwTInrXEAvTjQyDyaqAhHdQDqbxHRzNHVIGJvtMxRHPqOzUlJriFqkoBHqeUDCuscsesTivuegltozWynRdyWqPeANELOwTtsCvilkcBWifHbVuZmGLGucqrHzhadVPJRrTdlHBDTqgzbqEahxzhWlqYAcPkrOcSiKCpJZpvEqwgnKYRJgxMClVSuzndBdrfNwfsMzBrmiAgVVjpyYVRsBHiPXqVUVwhuVebjXLepQwMZgCpcNyoDIJOMNBbJnLJxbbYQYgQTnpIVrVOmbMgifKixUkLDuEvYMqCVtdSaiVHEkQZqFwOtynHfplQHUIoCIsMMaDknwNPfEAPFVldwWIXcyLuSUEcddYxBmdAfuncwKupyHGUEijxVIgtzaRRlqflezLAVhFahWjnwxNhmfVaHcPbLPYQuefmQpFlVvfEWHHiLrWrLbmHTToByqmBpwdMNBANVlWQBffzkbWioOKbInCyHHfsMSpiOySHJUvScEvSHPTwDSZOTlLEUxJjZhzuDqEtcLqIqnNuiWptOptXkAWCQzAAhxSCMzYEdtjuSVXRFhtEfiSiWnFTaHTsQNWhaRBcfPHyAfivCEdgSeMCLwoAjIHwNqGaggEKmbVchxlRjczheHDlHrpDPwwFtjoLOUPwIfBsbueyMQMNDowYjtMfTjeEbqSveQkoZYJcNiejMlvhFgoQOZSkbUdwoppuDEostoLfAFulnIojgSOrvEZxHVbFKTmEQYPekoPEzfzNBzGeWkqaUoxBZlteLXVaomXNkcysKyVvTVlPwBMuFjxKkswoxQxnJighjXZoGJolMdizUjVdJJUoJfEDScvQZtOKgjPHpaBAQvnlBkrwdFioNExGewHIOHrELeFHuOaObmF\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}

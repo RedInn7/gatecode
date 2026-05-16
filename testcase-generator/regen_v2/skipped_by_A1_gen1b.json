@@ -94,6 +94,21 @@
       "pid": 1100,
       "slug": "design-front-middle-back-queue",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1086,
+      "slug": "longest-unequal-adjacent-groups-subsequence-ii",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1079,
+      "slug": "maximum-compatibility-score-sum",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1078,
+      "slug": "synonymous-sentences",
+      "reason": "ACM mode problem"
     }
   ]
 }
