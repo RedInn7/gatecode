@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"fyhgywbzvoznfkca\"",
+      "input": "\"durnwwahbol\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 10 balloons concatenated"
     },
     {
-      "input": "\"darcmlxcytvtkemhxvkmzqweqtiofhnh\"",
+      "input": "\"uaardsewpforpstgyzjrgzugvszltydc\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

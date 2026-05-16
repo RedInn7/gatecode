@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"josmudc\"",
+      "input": "\"emg\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: many alternations"
     },
     {
-      "input": "\"lcrgnqdhgawznk\"",
+      "input": "\"mgnowgmlbabhmr\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
