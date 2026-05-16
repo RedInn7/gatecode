@@ -947,3 +947,54 @@ Stuck after 3 regeneration attempts. Final issues:
 - Array length=85 > max=30.0
 - Array length=40 > max=30.0
 Audited at: 2026-05-16T15:38:16.148696
+
+## PID 363 (closest-equal-element-queries)
+Stuck after 3 regeneration attempts. Final issues:
+- Array length=1 > max=0.0
+- Array length=1 > max=0.0
+- Array length=1 > max=0.0
+- Array length=1 > max=0.0
+- Array length=33 > max=0.0
+- Array length=33 > max=0.0
+- Array length=80 > max=0.0
+- Array length=80 > max=0.0
+- Array length=36 > max=0.0
+- Array has 100% uniform values (946839), >80% threshold
+- Array length=36 > max=0.0
+- Array has 100% uniform values (277974), >80% threshold
+- Array length=38 > max=0.0
+- Array length=38 > max=0.0
+- Array length=26 > max=0.0
+- Array length=26 > max=0.0
+- Array length=25 > max=0.0
+- Array length=25 > max=0.0
+- Array length=14 > max=0.0
+- Array length=14 > max=0.0
+- Array length=93 > max=0.0
+- Array length=93 > max=0.0
+- Array length=62 > max=0.0
+- Array length=62 > max=0.0
+- Array length=90 > max=0.0
+- Array length=90 > max=0.0
+- Array length=52 > max=0.0
+- Array length=52 > max=0.0
+- Array length=6 > max=0.0
+- Array length=6 > max=0.0
+- Array length=90 > max=0.0
+- Array length=90 > max=0.0
+- Array length=41 > max=0.0
+- Array length=41 > max=0.0
+- Array length=46 > max=0.0
+- Array length=46 > max=0.0
+- Array length=1000 > max=0.0
+- Array length=1000 > max=0.0
+- Array length=1000 > max=0.0
+- Array length=1000 > max=0.0
+- Array length=1000 > max=0.0
+- Array length=1000 > max=0.0
+Audited at: 2026-05-16T15:38:18.396705
+
+## PID 364 (complement-of-base-10-integer)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:18.405395
