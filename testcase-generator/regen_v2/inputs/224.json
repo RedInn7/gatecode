@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= n <= 1e5, -1e4 <= stones[i] <= 1e4",
   "input_format": "line1: stones (JSON int array)",
   "testcases": [
-    {"input": "[-1,2,-3,4,-5]", "desc": "Edge: example1"},
-    {"input": "[7,-6,5,10,5,-2,-6]", "desc": "Edge: example2"},
-    {"input": "[-10,-12]", "desc": "Edge: example3 negative"},
-    {"input": "[1,1]", "desc": "Edge: n=2 same"},
-    {"input": "[-1,1]", "desc": "Edge: n=2 negative zero sum"},
-    {"input": "[10000,10000]", "desc": "Edge: n=2 max"},
-    {"input": "[-10000,-10000]", "desc": "Edge: n=2 min"},
-    {"input": "[10000,-10000]", "desc": "Edge: n=2 extreme spread"},
-    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
-    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending"},
-    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
-    {"input": "[1,-1,2,-2,3,-3,4,-4,5,-5]", "desc": "Standard: alternating"},
-    {"input": "[10000,-10000,10000,-10000,10000]", "desc": "Standard: extreme alt"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all ones"},
-    {"input": "[-5,5,-5,5,-5,5,-5,5,-5,5]", "desc": "Standard: oscillate"},
-    {"input": "[100,200,300,400,500]", "desc": "Standard: ascending positives"},
-    {"input": "[-100,-200,-300,-400,-500]", "desc": "Standard: descending negatives"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
-    {"input": "[10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000]", "desc": "Stress: 20 extreme alt"},
-    {"input": "[3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7]", "desc": "Stress: 40 pi-like"}
+    {
+      "input": "[-10000]",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "[7,-6,5,10,5,-2,-6]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[-10,-12]",
+      "desc": "Edge: example3 negative"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "[-1,1]",
+      "desc": "Edge: n=2 negative zero sum"
+    },
+    {
+      "input": "[10000,10000]",
+      "desc": "Edge: n=2 max"
+    },
+    {
+      "input": "[-10000,-10000]",
+      "desc": "Edge: n=2 min"
+    },
+    {
+      "input": "[10000,-10000]",
+      "desc": "Edge: n=2 extreme spread"
+    },
+    {
+      "input": "[0,0,0,0,0]",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Standard: ascending"
+    },
+    {
+      "input": "[5,4,3,2,1]",
+      "desc": "Standard: descending"
+    },
+    {
+      "input": "[1,-1,2,-2,3,-3,4,-4,5,-5]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[10000,-10000,10000,-10000,10000]",
+      "desc": "Standard: extreme alt"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1]",
+      "desc": "Standard: all ones"
+    },
+    {
+      "input": "[-5,5,-5,5,-5,5,-5,5,-5,5]",
+      "desc": "Standard: oscillate"
+    },
+    {
+      "input": "[100,200,300,400,500]",
+      "desc": "Standard: ascending positives"
+    },
+    {
+      "input": "[-100,-200,-300,-400,-500]",
+      "desc": "Standard: descending negatives"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
+      "desc": "Stress: 20 ascending"
+    },
+    {
+      "input": "[10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000]",
+      "desc": "Stress: 20 extreme alt"
+    },
+    {
+      "input": "[3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7]",
+      "desc": "Stress: 40 pi-like"
+    }
   ]
 }

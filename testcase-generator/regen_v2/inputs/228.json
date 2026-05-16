@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= word.length <= 300, uppercase letters",
   "input_format": "line1: word (string in JSON quotes)",
   "testcases": [
-    {"input": "\"CAKE\"", "desc": "Edge: example1"},
-    {"input": "\"HAPPY\"", "desc": "Edge: example2"},
-    {"input": "\"AB\"", "desc": "Edge: n=2 minimum"},
-    {"input": "\"AA\"", "desc": "Edge: n=2 same letter"},
-    {"input": "\"AZ\"", "desc": "Edge: n=2 extreme spread"},
-    {"input": "\"ZZ\"", "desc": "Edge: n=2 both Z"},
-    {"input": "\"ABC\"", "desc": "Edge: 3 consecutive"},
-    {"input": "\"XYZ\"", "desc": "Edge: end of alphabet"},
-    {"input": "\"AAA\"", "desc": "Edge: all same"},
-    {"input": "\"ZZZ\"", "desc": "Edge: all Z"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Standard: full alphabet"},
-    {"input": "\"ZYXWVUTSRQPONMLKJIHGFEDCBA\"", "desc": "Standard: reverse alphabet"},
-    {"input": "\"HELLO\"", "desc": "Standard: common word"},
-    {"input": "\"PROGRAMMING\"", "desc": "Standard: longer word"},
-    {"input": "\"ABCABCABC\"", "desc": "Standard: repeating"},
-    {"input": "\"AABBCC\"", "desc": "Standard: pairs"},
-    {"input": "\"AZAZAZ\"", "desc": "Standard: alternating extremes"},
-    {"input": "\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"", "desc": "Stress: 50 same letter"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Stress: 3 alphabets"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZZYXWVUTSRQPONMLKJIHGFEDCBAABCDEFGHIJKLMNOPQRSTUVWXYZZYXWVUTSRQPONMLKJIHGFEDCBA\"", "desc": "Stress: 100+ chars zigzag"}
+    {
+      "input": "\"CAKE\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"HAPPY\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"iouy\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"o\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"AZ\"",
+      "desc": "Edge: n=2 extreme spread"
+    },
+    {
+      "input": "\"ZZ\"",
+      "desc": "Edge: n=2 both Z"
+    },
+    {
+      "input": "\"ABC\"",
+      "desc": "Edge: 3 consecutive"
+    },
+    {
+      "input": "\"XYZ\"",
+      "desc": "Edge: end of alphabet"
+    },
+    {
+      "input": "\"AAA\"",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "\"ZZZ\"",
+      "desc": "Edge: all Z"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
+      "desc": "Standard: full alphabet"
+    },
+    {
+      "input": "\"ZYXWVUTSRQPONMLKJIHGFEDCBA\"",
+      "desc": "Standard: reverse alphabet"
+    },
+    {
+      "input": "\"HELLO\"",
+      "desc": "Standard: common word"
+    },
+    {
+      "input": "\"PROGRAMMING\"",
+      "desc": "Standard: longer word"
+    },
+    {
+      "input": "\"ABCABCABC\"",
+      "desc": "Standard: repeating"
+    },
+    {
+      "input": "\"AABBCC\"",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "\"AZAZAZ\"",
+      "desc": "Standard: alternating extremes"
+    },
+    {
+      "input": "\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"",
+      "desc": "Stress: 50 same letter"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
+      "desc": "Stress: 3 alphabets"
+    },
+    {
+      "input": "\"bfgdcvpnnz\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

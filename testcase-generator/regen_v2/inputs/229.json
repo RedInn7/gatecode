@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 100, lowercase",
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
-    {"input": "\"leetcode\"", "desc": "Edge: 'ee' is palindrome, in both"},
-    {"input": "\"abcba\"", "desc": "Edge: palindromic substring"},
-    {"input": "\"abcd\"", "desc": "Edge: no palindromic 2-substring"},
-    {"input": "\"a\"", "desc": "Edge: n=1 single - no 2-length substring -> false"},
-    {"input": "\"aa\"", "desc": "Edge: 'aa' in both"},
-    {"input": "\"ab\"", "desc": "Edge: 'ab' reversed 'ba', not match"},
-    {"input": "\"ba\"", "desc": "Edge: 'ba' rev 'ab', not in original"},
-    {"input": "\"zz\"", "desc": "Edge: simplest match"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: alphabet no match"},
-    {"input": "\"aabbccdd\"", "desc": "Edge: 'aa' etc. matches"},
-    {"input": "\"hello\"", "desc": "Standard: 'll' palindrome"},
-    {"input": "\"world\"", "desc": "Standard: no match"},
-    {"input": "\"abccba\"", "desc": "Standard: palindromic"},
-    {"input": "\"abcdcba\"", "desc": "Standard: palindromic 'cdc'"},
-    {"input": "\"xyyz\"", "desc": "Standard: 'yy' palindrome"},
-    {"input": "\"abab\"", "desc": "Standard: 'ab' and 'ba' both present"},
-    {"input": "\"baba\"", "desc": "Standard: 'ba' and 'ab' both present"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba\"", "desc": "Stress: full mirror"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 100 a's"},
-    {"input": "\"abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij\"", "desc": "Stress: repeated pattern no palindrome"}
+    {
+      "input": "\"leetcode\"",
+      "desc": "Edge: 'ee' is palindrome, in both"
+    },
+    {
+      "input": "\"abcba\"",
+      "desc": "Edge: palindromic substring"
+    },
+    {
+      "input": "\"gbtffssi\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"jc\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 'ab' reversed 'ba', not match"
+    },
+    {
+      "input": "\"ba\"",
+      "desc": "Edge: 'ba' rev 'ab', not in original"
+    },
+    {
+      "input": "\"zz\"",
+      "desc": "Edge: simplest match"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Edge: alphabet no match"
+    },
+    {
+      "input": "\"aabbccdd\"",
+      "desc": "Edge: 'aa' etc. matches"
+    },
+    {
+      "input": "\"hello\"",
+      "desc": "Standard: 'll' palindrome"
+    },
+    {
+      "input": "\"world\"",
+      "desc": "Standard: no match"
+    },
+    {
+      "input": "\"abccba\"",
+      "desc": "Standard: palindromic"
+    },
+    {
+      "input": "\"abcdcba\"",
+      "desc": "Standard: palindromic 'cdc'"
+    },
+    {
+      "input": "\"xyyz\"",
+      "desc": "Standard: 'yy' palindrome"
+    },
+    {
+      "input": "\"abab\"",
+      "desc": "Standard: 'ab' and 'ba' both present"
+    },
+    {
+      "input": "\"baba\"",
+      "desc": "Standard: 'ba' and 'ab' both present"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Stress: full mirror"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "Stress: 100 a's"
+    },
+    {
+      "input": "\"vezvzfutukdsuhho\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
