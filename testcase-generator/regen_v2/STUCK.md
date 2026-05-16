@@ -1029,3 +1029,15 @@ Audited at: 2026-05-16T15:38:22.982483
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=500000.0)
 Audited at: 2026-05-16T15:38:22.988313
+
+## PID 375 (find-the-k-th-character-in-string-game-i)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:25.308932
+
+## PID 376 (fruits-into-baskets-ii)
+Stuck after 3 regeneration attempts. Final issues:
+- Array length=1000 > max=100.0
+- Array length=1000 > max=100.0
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:25.316771
