@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= num.length <= 35, digits only",
   "input_format": "line1: num (raw string of digits)",
   "testcases": [
-    {"input": "112358", "desc": "Edge: example1 fibonacci"},
-    {"input": "199100199", "desc": "Edge: example2"},
-    {"input": "0", "desc": "Edge: single 0 (need at least 3 numbers, false)"},
-    {"input": "1", "desc": "Edge: single 1 false"},
-    {"input": "12", "desc": "Edge: 2 digits, can't have 3 numbers"},
-    {"input": "123", "desc": "Edge: 1+2=3 true"},
-    {"input": "1023", "desc": "Edge: leading zero invalid (0+0=? or 1+02 leading 0)"},
-    {"input": "000", "desc": "Edge: 0+0=0 valid? Leading zero rule: each number can't have leading zero unless it's just 0. So 0,0,0 OK"},
-    {"input": "0235813", "desc": "Edge: 0+2=2,2+3=5,3+5=8,5+8=13 - first num has leading zero, invalid"},
-    {"input": "11235813", "desc": "Edge: fibonacci 1,1,2,3,5,8,13"},
-    {"input": "1234", "desc": "Edge: 1+2=3,2+3=5!=4 false"},
-    {"input": "999", "desc": "Edge: 9+9=18 false"},
-    {"input": "99", "desc": "Edge: too short false"},
-    {"input": "1010", "desc": "Edge: 1+0=1,0+1=1,1+1=2!=0 false; or different split?"},
-    {"input": "1203", "desc": "Edge: 1+2=3 wait need consecutive nums; 12+0=12; 1+20=21; depends"},
-    {"input": "112358132134", "desc": "Standard: full fibonacci 1,1,2,3,5,8,13,21,34"},
-    {"input": "11", "desc": "Edge: only 2 digits"},
-    {"input": "10110", "desc": "Edge: 1,01,10 invalid leading zero"},
-    {"input": "199100199", "desc": "Edge: 1,99,100,199 valid"},
-    {"input": "12122436", "desc": "Standard: 12,12,24,36 valid"}
+    {
+      "input": "112358",
+      "desc": "Edge: example1 fibonacci"
+    },
+    {
+      "input": "199100199",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "165451016",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "43939336",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "174780241",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "123",
+      "desc": "Edge: 1+2=3 true"
+    },
+    {
+      "input": "1023",
+      "desc": "Edge: leading zero invalid (0+0=? or 1+02 leading 0)"
+    },
+    {
+      "input": "000",
+      "desc": "Edge: 0+0=0 valid? Leading zero rule: each number can't have leading zero unless it's just 0. So 0,0,0 OK"
+    },
+    {
+      "input": "0235813",
+      "desc": "Edge: 0+2=2,2+3=5,3+5=8,5+8=13 - first num has leading zero, invalid"
+    },
+    {
+      "input": "11235813",
+      "desc": "Edge: fibonacci 1,1,2,3,5,8,13"
+    },
+    {
+      "input": "1234",
+      "desc": "Edge: 1+2=3,2+3=5!=4 false"
+    },
+    {
+      "input": "999",
+      "desc": "Edge: 9+9=18 false"
+    },
+    {
+      "input": "99",
+      "desc": "Edge: too short false"
+    },
+    {
+      "input": "1010",
+      "desc": "Edge: 1+0=1,0+1=1,1+1=2!=0 false; or different split?"
+    },
+    {
+      "input": "1203",
+      "desc": "Edge: 1+2=3 wait need consecutive nums; 12+0=12; 1+20=21; depends"
+    },
+    {
+      "input": "112358132134",
+      "desc": "Standard: full fibonacci 1,1,2,3,5,8,13,21,34"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: only 2 digits"
+    },
+    {
+      "input": "10110",
+      "desc": "Edge: 1,01,10 invalid leading zero"
+    },
+    {
+      "input": "199100199",
+      "desc": "Edge: 1,99,100,199 valid"
+    },
+    {
+      "input": "199100199",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= k <= 1e9",
   "input_format": "line1: k (int)",
   "testcases": [
-    {"input": "0", "desc": "Edge: example1 k=0"},
-    {"input": "5", "desc": "Edge: example2 k=5"},
-    {"input": "3", "desc": "Edge: example3 k=3"},
-    {"input": "1", "desc": "Edge: k=1"},
-    {"input": "2", "desc": "Edge: k=2"},
-    {"input": "4", "desc": "Edge: k=4"},
-    {"input": "10", "desc": "Edge: k=10"},
-    {"input": "11", "desc": "Edge: k=11 (impossible)"},
-    {"input": "1000", "desc": "Standard: k=1000"},
-    {"input": "10000", "desc": "Standard: k=10000"},
-    {"input": "100000", "desc": "Standard: k=100000"},
-    {"input": "1000000", "desc": "Standard: k=1M"},
-    {"input": "999999", "desc": "Standard: k=999999"},
-    {"input": "1000000000", "desc": "Edge: max k=1B"},
-    {"input": "999999999", "desc": "Edge: near max"},
-    {"input": "500000000", "desc": "Standard: half max"},
-    {"input": "31", "desc": "Edge: another impossible candidate"},
-    {"input": "30", "desc": "Edge: another count"},
-    {"input": "100", "desc": "Standard: small mid"},
-    {"input": "123456789", "desc": "Standard: arbitrary"}
+    {
+      "input": "0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: example2 k=5"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: k=4"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: k=10"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: k=11 (impossible)"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard: k=1000"
+    },
+    {
+      "input": "10000",
+      "desc": "Standard: k=10000"
+    },
+    {
+      "input": "100000",
+      "desc": "Standard: k=100000"
+    },
+    {
+      "input": "1000000",
+      "desc": "Standard: k=1M"
+    },
+    {
+      "input": "999999",
+      "desc": "Standard: k=999999"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: max k=1B"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: near max"
+    },
+    {
+      "input": "500000000",
+      "desc": "Standard: half max"
+    },
+    {
+      "input": "31",
+      "desc": "Edge: another impossible candidate"
+    },
+    {
+      "input": "30",
+      "desc": "Edge: another count"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: small mid"
+    },
+    {
+      "input": "123456789",
+      "desc": "Standard: arbitrary"
+    }
   ]
 }
