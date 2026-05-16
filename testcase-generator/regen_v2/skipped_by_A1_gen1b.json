@@ -9,6 +9,11 @@
       "pid": 1342,
       "slug": "find-triangular-sum-of-an-array",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1309,
+      "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "reason": "ACM mode problem"
     }
   ]
 }
