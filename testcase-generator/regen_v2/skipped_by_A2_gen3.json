@@ -219,6 +219,26 @@
       "pid": 3035,
       "slug": "count-the-number-of-k-big-indices",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3022,
+      "slug": "implement-router",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3020,
+      "slug": "second-minimum-time-to-reach-destination",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3012,
+      "slug": "maximize-sum-of-squares-of-digits",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3008,
+      "slug": "minimum-lines-to-represent-a-line-chart",
+      "reason": "ACM mode problem"
     }
   ]
 }
