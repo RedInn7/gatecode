@@ -1,0 +1,76 @@
+{
+  "pid": 3372,
+  "slug": "maximum-performance-of-a-team",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "350283",
+      "desc": "Standard: n=350283"
+    },
+    {
+      "input": "840322",
+      "desc": "Standard: n=840322"
+    },
+    {
+      "input": "823600",
+      "desc": "Standard: n=823600"
+    },
+    {
+      "input": "447779",
+      "desc": "Standard: n=447779"
+    },
+    {
+      "input": "520067",
+      "desc": "Standard: n=520067"
+    },
+    {
+      "input": "138638",
+      "desc": "Standard: n=138638"
+    },
+    {
+      "input": "715977",
+      "desc": "Standard: n=715977"
+    },
+    {
+      "input": "148571",
+      "desc": "Standard: n=148571"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
