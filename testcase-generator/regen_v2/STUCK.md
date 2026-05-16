@@ -854,3 +854,18 @@ Stuck after 3 regeneration attempts. Final issues:
 - arr[2]=-395 < value_min=1.0
 - ... and 948 more value violations in this array
 Audited at: 2026-05-16T15:37:56.165151
+
+## PID 333 (account-balance-after-rounded-purchase)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:58.591427
+
+## PID 334 (finding-the-users-active-minutes)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=10000.0)
+Audited at: 2026-05-16T15:37:58.596647
+
+## PID 336 (matrix-similarity-after-cyclic-shifts)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=25.0)
+Audited at: 2026-05-16T15:37:58.612436
