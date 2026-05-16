@@ -1,0 +1,28 @@
+{
+  "pid": 2276,
+  "slug": "minimum-incompatibility",
+  "inferred_constraints": "1 <= k <= nums.length <= 16, nums.length divisible by k, 1 <= nums[i] <= nums.length",
+  "input_format": "line1: nums (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[1,2,1,4]\n2", "desc": "Standard example 1"},
+    {"input": "[6,3,8,1,3,1,2,2]\n4", "desc": "Standard example 2"},
+    {"input": "[5,3,3,6,3,3]\n3", "desc": "Standard example 3"},
+    {"input": "[1]\n1", "desc": "Edge min"},
+    {"input": "[1,1]\n2", "desc": "Edge each subset"},
+    {"input": "[1,1,1,1]\n2", "desc": "Edge impossible (dup in same subset)"},
+    {"input": "[1,2]\n1", "desc": "Edge k=1"},
+    {"input": "[1,2,3,4]\n2", "desc": "Standard"},
+    {"input": "[1,2,3,4]\n4", "desc": "Standard k=n"},
+    {"input": "[1,2,3,4]\n1", "desc": "Standard k=1"},
+    {"input": "[1,2,3,4,5,6,7,8]\n4", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8]\n2", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\n8", "desc": "Stress max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\n4", "desc": "Stress"},
+    {"input": "[1,1,2,2,3,3,4,4]\n4", "desc": "Standard pairs"},
+    {"input": "[1,1,1,2,2,2,3,3,3]\n3", "desc": "Standard groups"},
+    {"input": "[2,4,1,3]\n2", "desc": "Standard"},
+    {"input": "[5,5,5,5,5,5]\n3", "desc": "Edge dups impossible"},
+    {"input": "[1,2,3,4,5,6]\n3", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12]\n4", "desc": "Standard"}
+  ]
+}

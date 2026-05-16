@@ -1,0 +1,28 @@
+{
+  "pid": 2294,
+  "slug": "number-of-steps-to-reduce-a-number-to-zero",
+  "inferred_constraints": "0 <= num <= 10^6",
+  "input_format": "single line: num (int)",
+  "testcases": [
+    {"input": "14", "desc": "Standard example 1"},
+    {"input": "8", "desc": "Standard example 2"},
+    {"input": "123", "desc": "Standard example 3"},
+    {"input": "0", "desc": "Edge zero"},
+    {"input": "1", "desc": "Edge"},
+    {"input": "2", "desc": "Edge"},
+    {"input": "3", "desc": "Edge"},
+    {"input": "16", "desc": "Edge pow2"},
+    {"input": "1024", "desc": "Edge pow2"},
+    {"input": "100", "desc": "Standard"},
+    {"input": "1000", "desc": "Standard"},
+    {"input": "10000", "desc": "Standard"},
+    {"input": "100000", "desc": "Standard"},
+    {"input": "1000000", "desc": "Edge max"},
+    {"input": "999999", "desc": "Edge near max"},
+    {"input": "65535", "desc": "Standard pow2-1"},
+    {"input": "65536", "desc": "Standard pow2"},
+    {"input": "12345", "desc": "Standard"},
+    {"input": "54321", "desc": "Standard"},
+    {"input": "987654", "desc": "Standard"}
+  ]
+}

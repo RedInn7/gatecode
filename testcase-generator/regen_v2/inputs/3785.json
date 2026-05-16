@@ -1,0 +1,28 @@
+{
+  "pid": 3785,
+  "slug": "check-if-number-has-equal-digit-count-and-digit-value",
+  "inferred_constraints": "n == num.length, 1 <= n <= 10, num consists of digits",
+  "input_format": "line1: num (string, raw)",
+  "testcases": [
+    {"input": "1210", "desc": "Example 1: true"},
+    {"input": "030", "desc": "Example 2: false"},
+    {"input": "0", "desc": "Edge: single 0, true"},
+    {"input": "1", "desc": "Edge: single 1 false"},
+    {"input": "9", "desc": "Edge: single 9 false"},
+    {"input": "00", "desc": "Edge: '00' true"},
+    {"input": "11", "desc": "Edge: '11' false"},
+    {"input": "10", "desc": "Edge: 1 zero count 1 ones count 0 false"},
+    {"input": "21200", "desc": "Standard"},
+    {"input": "1300", "desc": "Standard"},
+    {"input": "100", "desc": "Standard"},
+    {"input": "2020", "desc": "Standard"},
+    {"input": "1101", "desc": "Standard"},
+    {"input": "0001", "desc": "Standard"},
+    {"input": "0000000000", "desc": "Edge: 10 zeros"},
+    {"input": "1111111111", "desc": "Edge: 10 ones false"},
+    {"input": "9876543210", "desc": "Standard descending"},
+    {"input": "5555555555", "desc": "Standard all 5"},
+    {"input": "2100000000", "desc": "Standard valid 10"},
+    {"input": "6210001000", "desc": "Standard valid 10"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 1884,
+  "slug": "missing-number-in-arithmetic-progression",
+  "inferred_constraints": "3 <= arr.length <= 1000, 0 <= arr[i] <= 10^5",
+  "input_format": "line1: arr (JSON int array)",
+  "testcases": [
+    {"input": "[5,7,11,13]", "desc": "Edge: example1 missing=9"},
+    {"input": "[15,13,12]", "desc": "Edge: example2 missing=14"},
+    {"input": "[0,1,2]", "desc": "Edge: smallest values"},
+    {"input": "[100000,99999,99998]", "desc": "Edge: max values desc"},
+    {"input": "[0,0,0]", "desc": "Edge: zero diff missing=0"},
+    {"input": "[5,5,5]", "desc": "Edge: zero diff missing=5"},
+    {"input": "[1,3,5,7,11]", "desc": "Edge: missing at end-1 (=9)"},
+    {"input": "[1,5,7,9]", "desc": "Edge: missing at index 1 (=3)"},
+    {"input": "[0,10,20,30,40,60]", "desc": "Standard: missing 50"},
+    {"input": "[10,8,6,2]", "desc": "Standard: desc missing 4"},
+    {"input": "[100,50,0]", "desc": "Standard: desc large diff missing 25 wait. arr was AP=[100,75,50,25,0], missing=75"},
+    {"input": "[100,75,50,0]", "desc": "Standard: AP 100..0 step -25, missing 25"},
+    {"input": "[0,3,6,12]", "desc": "Standard: AP step 3, missing 9"},
+    {"input": "[1,2,4,5,6]", "desc": "Standard: AP step 1, missing 3"},
+    {"input": "[99,98,97,96,95,93]", "desc": "Standard: desc missing 94"},
+    {"input": "[0,1000,2000,3000,4000,5000,6000,7000,9000,10000]", "desc": "Stress: AP step 1000 missing 8000"},
+    {"input": "[100000,99000,98000,97000,96000,95000,94000,93000,91000,90000]", "desc": "Stress: desc step -1000 missing 92000"},
+    {"input": "[0,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 elements AP step 1 missing 9"},
+    {"input": "[7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]", "desc": "Special: all 7 zero step, missing 7"},
+    {"input": "[3,8,18,23]", "desc": "Special: AP step 5, missing 13"}
+  ]
+}

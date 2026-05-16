@@ -1,0 +1,28 @@
+{
+  "pid": 1885,
+  "slug": "three-consecutive-odds",
+  "inferred_constraints": "1 <= arr.length <= 1000, 1 <= arr[i] <= 1000",
+  "input_format": "line1: arr (JSON int array)",
+  "testcases": [
+    {"input": "[2,6,4,1]", "desc": "Edge: example1 false"},
+    {"input": "[1,2,34,3,4,5,7,23,12]", "desc": "Edge: example2 true (5,7,23)"},
+    {"input": "[1]", "desc": "Edge: single odd"},
+    {"input": "[2]", "desc": "Edge: single even"},
+    {"input": "[1,3,5]", "desc": "Edge: exactly 3 odd"},
+    {"input": "[1,3]", "desc": "Edge: 2 odds only"},
+    {"input": "[2,2,2,2,2]", "desc": "Edge: all even"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all odd"},
+    {"input": "[1000,999,997,995]", "desc": "Edge: 3 odds at end"},
+    {"input": "[999,997,995,1000]", "desc": "Edge: 3 odds at start"},
+    {"input": "[1,3,2,5,7,9,4]", "desc": "Standard: three odds middle"},
+    {"input": "[2,4,6,8,10,12,14,1,3,5]", "desc": "Standard: three odds at end"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard: alternating no 3 consec"},
+    {"input": "[5,7,2,9,11,13]", "desc": "Standard: 3 odds at end"},
+    {"input": "[1,3,5,7,9,2,4,1,3,5]", "desc": "Standard: 5 odds then evens then 3 odds"},
+    {"input": "[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]", "desc": "Stress: 50 evens"},
+    {"input": "[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99]", "desc": "Stress: 50 odds"},
+    {"input": "[2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8,2,4]", "desc": "Stress: alternating even mid pattern"},
+    {"input": "[2,1,2,3,2,5,2,7,2,9]", "desc": "Special: odds separated"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Special: 100 ones"}
+  ]
+}

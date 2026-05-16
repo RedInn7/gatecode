@@ -1,0 +1,28 @@
+{
+  "pid": 3783,
+  "slug": "count-routes-to-climb-a-rectangular-grid",
+  "inferred_constraints": "1 <= n, m <= 1000, grid[i][j] in {'.','#'}, 1 <= d",
+  "input_format": "line1: grid (JSON array of strings); line2: d (int)",
+  "testcases": [
+    {"input": "[\"....\",\".#..\",\"....\"]\n2", "desc": "Example 1 conceptual"},
+    {"input": "[\".\"]\n1", "desc": "Edge: single cell"},
+    {"input": "[\"#\"]\n1", "desc": "Edge: blocked single"},
+    {"input": "[\"..\"]\n1", "desc": "Edge: 1x2"},
+    {"input": "[\".\",\".\"]\n1", "desc": "Edge: 2x1"},
+    {"input": "[\".\",\".\"]\n2", "desc": "Edge: 2x1 d=2"},
+    {"input": "[\"..\",\"..\"]\n1", "desc": "Standard 2x2 all available"},
+    {"input": "[\"..\",\"..\"]\n2", "desc": "Standard 2x2 d=2"},
+    {"input": "[\"...\",\"...\",\"...\"]\n2", "desc": "Standard 3x3 all available"},
+    {"input": "[\"#.\",\".#\"]\n1", "desc": "Standard checkerboard blocked"},
+    {"input": "[\".#.\",\"...\",\".#.\"]\n2", "desc": "Standard"},
+    {"input": "[\".....\",\".....\",\".....\",\".....\",\".....\"]\n3", "desc": "Standard 5x5"},
+    {"input": "[\"...\",\".#.\",\"...\"]\n1", "desc": "Standard center block"},
+    {"input": "[\"#####\",\".....\",\"#####\"]\n1", "desc": "Standard blocked rows"},
+    {"input": "[\"....\",\"####\",\"....\"]\n3", "desc": "Standard with longer jump"},
+    {"input": "[\"......\",\"......\",\"......\",\"......\"]\n4", "desc": "Standard 4x6"},
+    {"input": "[\"##..##\",\"......\",\"##..##\"]\n2", "desc": "Standard"},
+    {"input": "[\"..........\",\"..........\",\"..........\",\"..........\",\"..........\"]\n3", "desc": "Stress 5x10"},
+    {"input": "[\".#.#.#.#.#\",\"#.#.#.#.#.\",\".#.#.#.#.#\",\"#.#.#.#.#.\",\".#.#.#.#.#\"]\n2", "desc": "Stress checkerboard"},
+    {"input": "[\"..........\",\"..........\",\"..........\",\"..........\",\"..........\",\"..........\",\"..........\",\"..........\",\"..........\",\"..........\"]\n5", "desc": "Stress 10x10"}
+  ]
+}

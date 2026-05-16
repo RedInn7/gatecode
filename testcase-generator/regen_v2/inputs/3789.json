@@ -1,0 +1,28 @@
+{
+  "pid": 3789,
+  "slug": "minimum-elements-to-add-to-form-a-given-sum",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= limit <= 10^6, -limit <= nums[i] <= limit, -10^9 <= goal <= 10^9",
+  "input_format": "line1: nums (JSON); line2: limit (int); line3: goal (int)",
+  "testcases": [
+    {"input": "[1,-1,1]\n3\n-4", "desc": "Example 1"},
+    {"input": "[1,-10,9,1]\n100\n0", "desc": "Example 2"},
+    {"input": "[1]\n1\n1", "desc": "Edge: already goal"},
+    {"input": "[1]\n1\n0", "desc": "Edge: diff=1"},
+    {"input": "[1]\n1\n100", "desc": "Edge: diff=99 limit=1"},
+    {"input": "[0]\n1\n0", "desc": "Edge: sum=goal=0"},
+    {"input": "[5]\n10\n5", "desc": "Edge: equal"},
+    {"input": "[1,2,3,4,5]\n5\n15", "desc": "Edge: already"},
+    {"input": "[1,2,3,4,5]\n5\n100", "desc": "Standard need 17"},
+    {"input": "[-1,-2,-3,-4,-5]\n5\n-100", "desc": "Standard need 17 negative"},
+    {"input": "[10,-10,10,-10]\n10\n0", "desc": "Standard"},
+    {"input": "[1000000]\n1000000\n1000000000", "desc": "Stress max"},
+    {"input": "[1000000]\n1000000\n-1000000000", "desc": "Stress max negative goal"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n1\n100", "desc": "Standard"},
+    {"input": "[100,-50,30,-20,10]\n100\n200", "desc": "Standard"},
+    {"input": "[1000,1000,1000,1000,1000]\n1000\n0", "desc": "Standard need negatives"},
+    {"input": "[-1000,-1000,-1000,-1000,-1000]\n1000\n0", "desc": "Standard need positives"},
+    {"input": "[1]\n1000000\n1000000000", "desc": "Stress big goal big limit"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n2\n50", "desc": "Standard"},
+    {"input": "[1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000]\n1000000\n0", "desc": "Stress all max"}
+  ]
+}

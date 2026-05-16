@@ -1,0 +1,28 @@
+{
+  "pid": 1865,
+  "slug": "smallest-number-with-all-set-bits",
+  "inferred_constraints": "1 <= n <= 1000",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "1", "desc": "Edge: minimum n=1"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "3", "desc": "Edge: n=3 (already 11)"},
+    {"input": "4", "desc": "Edge: n=4 -> 7"},
+    {"input": "5", "desc": "Edge: n=5 -> 7"},
+    {"input": "7", "desc": "Edge: already 111"},
+    {"input": "8", "desc": "Edge: n=8 -> 15"},
+    {"input": "15", "desc": "Edge: n=15 already 1111"},
+    {"input": "16", "desc": "Edge: -> 31"},
+    {"input": "31", "desc": "Standard: already 11111"},
+    {"input": "32", "desc": "Standard: -> 63"},
+    {"input": "63", "desc": "Standard: already 6 bits"},
+    {"input": "64", "desc": "Standard: -> 127"},
+    {"input": "127", "desc": "Standard: already 7 bits"},
+    {"input": "100", "desc": "Standard: arbitrary"},
+    {"input": "256", "desc": "Standard: power of 2"},
+    {"input": "500", "desc": "Standard: middle"},
+    {"input": "999", "desc": "Stress: near max"},
+    {"input": "1000", "desc": "Stress: max"},
+    {"input": "511", "desc": "Special: 9 bits all set"}
+  ]
+}

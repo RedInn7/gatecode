@@ -1,0 +1,28 @@
+{
+  "pid": 3791,
+  "slug": "best-time-to-buy-and-sell-stock-v",
+  "inferred_constraints": "1 <= prices.length <= 5000, 1 <= prices[i] <= 10^9, 1 <= k <= prices.length",
+  "input_format": "line1: prices (JSON); line2: k (int)",
+  "testcases": [
+    {"input": "[1,7,9,8,2]\n2", "desc": "Example 1"},
+    {"input": "[12,16,19,19,8,1,19,13,9]\n3", "desc": "Example 2"},
+    {"input": "[1]\n1", "desc": "Edge: single"},
+    {"input": "[1,2]\n1", "desc": "Edge: 2 prices"},
+    {"input": "[1,2]\n2", "desc": "Edge: 2 prices k=2"},
+    {"input": "[2,1]\n1", "desc": "Edge: decreasing"},
+    {"input": "[5,5,5,5,5]\n2", "desc": "Standard all same"},
+    {"input": "[1,2,3,4,5]\n2", "desc": "Standard ascending"},
+    {"input": "[5,4,3,2,1]\n2", "desc": "Standard descending"},
+    {"input": "[1,2,3,4,5,4,3,2,1]\n3", "desc": "Standard mountain"},
+    {"input": "[10,1,10,1,10,1,10]\n3", "desc": "Standard alternating"},
+    {"input": "[1,5,2,8,3,9,4,10]\n4", "desc": "Standard"},
+    {"input": "[100,90,80,70,60,50,40,30,20,10]\n5", "desc": "Standard descending 10"},
+    {"input": "[1,10,5,15,3,20,8,25,2,30]\n5", "desc": "Standard zigzag"},
+    {"input": "[1000000000,1,1000000000,1,1000000000]\n3", "desc": "Stress extreme alternating"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n5", "desc": "Standard all same 10"},
+    {"input": "[100,200,150,250,300,200,350,400,300,500]\n5", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10", "desc": "Stress ascending 20"},
+    {"input": "[20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]\n10", "desc": "Stress descending 20"},
+    {"input": "[5,3,8,2,9,1,7,4,6,10,3,8,2,9,1,7,4,6,5,3]\n8", "desc": "Stress zigzag 20"}
+  ]
+}

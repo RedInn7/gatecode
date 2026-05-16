@@ -1,0 +1,28 @@
+{
+  "pid": 1886,
+  "slug": "zigzag-conversion",
+  "inferred_constraints": "1 <= s.length <= 1000, English letters + ',' + '.', 1 <= numRows <= 1000",
+  "input_format": "line1: s (raw string)\nline2: numRows (int)",
+  "testcases": [
+    {"input": "PAYPALISHIRING\n3", "desc": "Edge: example1"},
+    {"input": "PAYPALISHIRING\n4", "desc": "Edge: example2"},
+    {"input": "A\n1", "desc": "Edge: example3 single"},
+    {"input": "A\n2", "desc": "Edge: single char numRows=2"},
+    {"input": "AB\n1", "desc": "Edge: 2 chars 1 row"},
+    {"input": "AB\n2", "desc": "Edge: 2 chars 2 rows"},
+    {"input": "ABC\n2", "desc": "Edge: 3 chars 2 rows"},
+    {"input": "ABCD\n2", "desc": "Edge: 4 chars 2 rows"},
+    {"input": "ABCDEF\n3", "desc": "Edge: 6 chars 3 rows"},
+    {"input": "Hello, World.\n3", "desc": "Standard: with punctuation"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n5", "desc": "Standard: alphabet 5 rows"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n7", "desc": "Standard: alphabet 7 rows"},
+    {"input": "abcdefghij\n10", "desc": "Standard: numRows == len"},
+    {"input": "abcdefghij\n11", "desc": "Standard: numRows > len"},
+    {"input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n13", "desc": "Standard: half alphabet rows"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n4", "desc": "Stress: 4x alphabet rows=4"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n50", "desc": "Stress: 100 a's 50 rows"},
+    {"input": "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz,,..\n6", "desc": "Stress: mixed cases with punctuation"},
+    {"input": "abcdefghij\n1", "desc": "Special: 1 row"},
+    {"input": ".,abcde,fghij.\n4", "desc": "Special: punctuation mix"}
+  ]
+}

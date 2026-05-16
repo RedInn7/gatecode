@@ -1,0 +1,28 @@
+{
+  "pid": 1883,
+  "slug": "find-all-anagrams-in-a-string",
+  "inferred_constraints": "1 <= s.length, p.length <= 3*10^4, lowercase letters",
+  "input_format": "line1: s (raw string)\nline2: p (raw string)",
+  "testcases": [
+    {"input": "cbaebabacd\nabc", "desc": "Edge: example1 [0,6]"},
+    {"input": "abab\nab", "desc": "Edge: example2 [0,1,2]"},
+    {"input": "a\na", "desc": "Edge: single chars match"},
+    {"input": "a\nb", "desc": "Edge: single char no match"},
+    {"input": "ab\nba", "desc": "Edge: 2 chars perfect anagram"},
+    {"input": "ab\nab", "desc": "Edge: 2 chars identical"},
+    {"input": "abc\nabcd", "desc": "Edge: p longer than s (no anagrams)"},
+    {"input": "aaaa\naa", "desc": "Edge: all same chars overlapping"},
+    {"input": "abcabc\nabc", "desc": "Edge: 4 anagram windows"},
+    {"input": "xyz\nabc", "desc": "Edge: no common chars"},
+    {"input": "abcdefghij\nabc", "desc": "Standard: only at start"},
+    {"input": "hijklabc\nabc", "desc": "Standard: only at end"},
+    {"input": "aabbccddeeff\nabc", "desc": "Standard: no anagrams (no consecutive abc)"},
+    {"input": "abcbacacb\nabc", "desc": "Standard: many anagrams"},
+    {"input": "thisisatestoftheabcabcalgoabc\nabc", "desc": "Standard: scattered"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naa", "desc": "Stress: 100 a's pattern aa"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\nabc", "desc": "Stress: alphabet repeated"},
+    {"input": "ababababababababababababababababababababababababababababababababababababababababababababababababababab\nab", "desc": "Stress: ab repeated 50x"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz", "desc": "Special: same alphabet whole match"},
+    {"input": "abacabadabacabaeabacabadabacaba\nabcd", "desc": "Special: rich pattern"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2282,
+  "slug": "palindrome-permutation",
+  "inferred_constraints": "1 <= s.length <= 5000, ASCII",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"code\"", "desc": "Standard false"},
+    {"input": "\"aab\"", "desc": "Standard true"},
+    {"input": "\"carerac\"", "desc": "Standard true"},
+    {"input": "\"a\"", "desc": "Edge"},
+    {"input": "\"aa\"", "desc": "Edge"},
+    {"input": "\"ab\"", "desc": "Edge false"},
+    {"input": "\"aba\"", "desc": "Edge"},
+    {"input": "\"abc\"", "desc": "Edge false"},
+    {"input": "\"aaaa\"", "desc": "Edge all same"},
+    {"input": "\"abab\"", "desc": "Standard true"},
+    {"input": "\"abcd\"", "desc": "Standard false"},
+    {"input": "\"abcba\"", "desc": "Standard true"},
+    {"input": "\"abccba\"", "desc": "Standard true"},
+    {"input": "\"banana\"", "desc": "Standard"},
+    {"input": "\"mississippi\"", "desc": "Standard false"},
+    {"input": "\"aabbccdd\"", "desc": "Standard true"},
+    {"input": "\"aabbccdde\"", "desc": "Standard true odd"},
+    {"input": "\"AaBbCc\"", "desc": "Standard case sensitive"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
+    {"input": "\"aabbccddeeffggh\"", "desc": "Standard true"}
+  ]
+}
