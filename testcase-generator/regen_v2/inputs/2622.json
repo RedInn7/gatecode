@@ -81,7 +81,7 @@
       "desc": "Stress: many keys"
     },
     {
-      "input": "\"gaotoybvqnjrusaboxiuvhljdoxayzbnswytlacdai\"\n[[273,373,582,-928],[475,-925,-202,686],[-178,482,351,749],[-87,740,422,515]]",
+      "input": "\"vrtrohuwmlhhgghczxrpoqjnnkmrwmseeoiqmenerb\"\n[[265,-10,355,-500],[-344,873,508,614],[-651,-51,-934,-607],[126,-717,838,334]]",
       "desc": "Stress: large n near max boundary"
     }
   ]

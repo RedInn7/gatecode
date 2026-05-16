@@ -81,7 +81,7 @@
       "desc": "Stress: 50 pairs"
     },
     {
-      "input": "[-607589368,-348064771]",
+      "input": "[317468336,841422457]",
       "desc": "Stress: large n near max boundary"
     }
   ]
