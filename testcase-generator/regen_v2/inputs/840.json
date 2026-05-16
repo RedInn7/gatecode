@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw)",
   "testcases": [
     {
-      "input": "the sky is blue",
-      "desc": "Edge: example1"
+      "input": "\"j\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "  hello world  ",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"sjgudewbldms\"",
+      "input": "\"frca\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: pangram"
     },
     {
-      "input": "\"twbxipfiruhmiitulazwdoqklicnrdbn\"",
+      "input": "\"rivehklocvnwawytydxhxwufiximqu\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw); line2: k (int)",
   "testcases": [
     {
-      "input": "annabelle\n2",
-      "desc": "Edge: example1 true"
+      "input": "\"t\"\n1",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "leetcode\n3",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"rwax\"\n4",
+      "input": "\"tmyvorhg\"\n3",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: 8 pairs to 4"
     },
     {
-      "input": "\"ztlsoctrrddazarfzx\"\n4",
+      "input": "\"xvlyywbzamxqcgmoge\"\n4",
       "desc": "Stress: large n near max boundary"
     }
   ]

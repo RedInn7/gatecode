@@ -5,8 +5,8 @@
   "input_format": "line1: keyboard (raw string 26 chars); line2: word (raw string)",
   "testcases": [
     {
-      "input": "abcdefghijklmnopqrstuvwxyz\ncba",
-      "desc": "Edge: example1"
+      "input": "\"k\"\n\"x\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "pqrstuvwxyzabcdefghijklmno\nleetcode",
@@ -81,7 +81,7 @@
       "desc": "Note: this has 27 chars; replace with valid 26-char layout"
     },
     {
-      "input": "\"vzbxawczqsasvvlhembeqxbmnnzeyhzrjgcdttvynrxdiuvbhvln\"\n\"wzgyhjathqnjehsd\"",
+      "input": "\"dvrbatfezxodtpwghzomizymiboibradxctoaknwqrevpkwzfdls\"\n\"vwruoxpojjarirkj\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
