@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= path.length <= 3000; path consists of letters, digits, '.', '/', and '_'; path starts with '/'",
   "input_format": "line1: path (string)",
   "testcases": [
-    {"input": "/home/", "desc": "Edge: example1 trailing slash"},
-    {"input": "/home//foo/", "desc": "Edge: example2 double slash"},
-    {"input": "/", "desc": "Edge: root only"},
-    {"input": "/..", "desc": "Edge: dotdot at root stays root"},
-    {"input": "/...", "desc": "Edge: 3 dots is valid name"},
-    {"input": "/....", "desc": "Edge: 4 dots valid name"},
-    {"input": "/a", "desc": "Edge: single segment"},
-    {"input": "/a/", "desc": "Edge: segment with trailing slash"},
-    {"input": "/a/./b", "desc": "Standard: dot middle"},
-    {"input": "/a/../b", "desc": "Standard: dotdot middle"},
-    {"input": "/a/b/../c", "desc": "Standard: pop one"},
-    {"input": "/a/b/c/../../d", "desc": "Standard: pop two"},
-    {"input": "/a//b///c////d", "desc": "Standard: many consecutive slashes"},
-    {"input": "/../../..", "desc": "Standard: many dotdots at root"},
-    {"input": "/home/user/../user/./docs", "desc": "Standard: mixed"},
-    {"input": "/.../...../...../..", "desc": "Standard: many dots variations"},
-    {"input": "/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z", "desc": "Stress: 26 nested dirs"},
-    {"input": "/a/b/c/d/e/f/g/h/i/j/../../../../../../../../..", "desc": "Stress: pop all 10 segments"},
-    {"input": "////////////////////////////////////////////////", "desc": "Stress: many slashes only"},
-    {"input": "/home/.../user/...../..../..", "desc": "Special: dot variants killer"}
+    {
+      "input": "/home/",
+      "desc": "Edge: example1 trailing slash"
+    },
+    {
+      "input": "/home//foo/",
+      "desc": "Edge: example2 double slash"
+    },
+    {
+      "input": "\"d\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"hxmbqbev\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"y\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "/....",
+      "desc": "Edge: 4 dots valid name"
+    },
+    {
+      "input": "/a",
+      "desc": "Edge: single segment"
+    },
+    {
+      "input": "/a/",
+      "desc": "Edge: segment with trailing slash"
+    },
+    {
+      "input": "/a/./b",
+      "desc": "Standard: dot middle"
+    },
+    {
+      "input": "/a/../b",
+      "desc": "Standard: dotdot middle"
+    },
+    {
+      "input": "/a/b/../c",
+      "desc": "Standard: pop one"
+    },
+    {
+      "input": "/a/b/c/../../d",
+      "desc": "Standard: pop two"
+    },
+    {
+      "input": "/a//b///c////d",
+      "desc": "Standard: many consecutive slashes"
+    },
+    {
+      "input": "/../../..",
+      "desc": "Standard: many dotdots at root"
+    },
+    {
+      "input": "/home/user/../user/./docs",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "/.../...../...../..",
+      "desc": "Standard: many dots variations"
+    },
+    {
+      "input": "/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z",
+      "desc": "Stress: 26 nested dirs"
+    },
+    {
+      "input": "/a/b/c/d/e/f/g/h/i/j/../../../../../../../../..",
+      "desc": "Stress: pop all 10 segments"
+    },
+    {
+      "input": "////////////////////////////////////////////////",
+      "desc": "Stress: many slashes only"
+    },
+    {
+      "input": "\"mnsbcjveskvvtjanwrftnx\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
