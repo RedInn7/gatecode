@@ -810,3 +810,14 @@ Audited at: 2026-05-16T15:37:40.789198
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:37:40.794648
+
+## PID 315 (reconstruct-original-digits-from-english)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:45.037333
+
+## PID 316 (two-furthest-houses-with-different-colors)
+Stuck after 3 regeneration attempts. Final issues:
+- Array length=1 < min=2 (constraint: 2 <= len <= 100.0)
+Audited at: 2026-05-16T15:37:45.041771
