@@ -798,5 +798,12 @@ func WrapCode(lang, code string) string {
 	if lang == "JavaScript" || lang == "TypeScript" {
 		marker = "\n// --- user code ---\n"
 	}
+	if lang == "PHP" {
+		// LeetCode's PHP template never includes "<?php"; without it PHP
+		// treats the whole file as literal HTML and emits the source.
+		if !strings.Contains(code, "<?php") {
+			preamble = "<?php\n"
+		}
+	}
 	return preamble + marker + code + runner
 }

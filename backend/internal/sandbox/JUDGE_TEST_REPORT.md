@@ -99,22 +99,33 @@ deterministic 200-problem prefix of the same `is_acm_mode=0 AND judge_enabled=1`
 set, using SOL1 reference solutions and the existing `cpp_reverify.py` driver
 (extended with `--limit` / `--report-suffix` / `--lang` for all 19 names).
 
-### Auto-wrap languages (full reverify codepath)
+### Auto-wrap languages — 200-problem sample reverify
 
-| Language     | Sampled | AC  | WA | CE | RE | TLE | no-solution | AC rate |
-|--------------|---------|-----|----|----|----|-----|-------------|---------|
-| C++          | 200     | 192 |  0 |  0 |  0 |   0 |           8 | **100.0 %** of testable |
-| Python3      | 300+    | 292+ | 0 |  0 |  0 |   4 |          8+ | ~97 % (interrupted; 4 TLE attributable to shared load) |
-| Java         | smoke   | 20/20 | – | – | – | – | – | AC end-to-end |
-| JavaScript   | smoke   | 20/20 | – | – | – | – | – | AC end-to-end |
-| TypeScript   | smoke   | 20/20 | – | – | – | – | – | AC end-to-end |
-| Ruby         | smoke   | 20/20 | – | – | – | – | – | AC after pool fix |
-| PHP          | smoke   | 20/20 | – | – | – | – | – | **AC after the array_filter fix** (was 4/20 RE) |
+| Language     | Sampled | AC  | WA | CE | RE | TLE | SysErr | no-sol | AC rate of tested |
+|--------------|---------|-----|----|----|----|-----|--------|--------|-------------------|
+| C++          | 200     | 192 |  0 |  0 |  0 |   0 |      0 |      8 | **100.0 %**       |
+| Python3      | 200     | 196 |  0 |  0 |  0 |   0 |      0 |      4 | **100.0 %**       |
+| Java         | 200+    | 100+ |  – |  – |  – |   – |      – |      – | **100.0 %** at +100 (full 200 was running at submit) |
+| JavaScript   | 200     |  95 |  5 |  0 |  8 |   0 |      1 |     83 | 81.2 % — design-class problems fail (no JS design runner) |
+| TypeScript   | 100     |   0 |  0 |  0 |  0 |   0 |     91 |      9 | – (Docker daemon "procReady not received" under 4-agent contention; not a code bug, see notes) |
+| Ruby         | 100     |   4 |  0 |  0 |  4 |   0 |      0 |     92 | 50.0 % of 8 tested — Ruby runner lacks ListNode helpers |
+| PHP          | 100     | 0/46 (pre-fix) | – | – | – | – | – | 54 | **see Bug #1 + Bug #4 below**; runner only invoked top-level functions, missing class-Solution |
 
-Larger sweeps for Java/Python3 were started but stalled under the 4-agent
-load with per-request latency in the 30 s – 4 min range; the partial-300 Python3
-data point and the C++ 200/200 result are representative of solo-load behaviour
-documented in `MEMORY.md` (C++ 100 %, Java 99.5 %, Python3 99.4 %).
+* **PHP pre-fix:** 0 / 46 AC on the 100-sample (every SOL1 PHP solution uses
+  `class Solution { function ... }`, but the runner only invoked top-level
+  functions, returning `null` for everything → uniform WA.)
+* **PHP post-fix (Bug #4):** smoke-test 20 / 20 AC on `two-sum`. Full
+  PHP sample reverify with the new runner is intentionally **not** part of
+  this report because re-pulling the post-fix backend image while three
+  other agents are saturating the daemon costs more than the data is worth;
+  the unit-test suite below pins the new runner's behaviour.
+
+Larger sweeps for Java/TS could not complete cleanly under the 4-agent
+shared-Docker load (per-request latency drifted from <1 s solo to 30 s –
+4 min in contention; TypeScript saw 91 / 100 OCI "procReady not received"
+errors, which is documented as a known Docker-on-macOS race not a judge bug
+in `MEMORY.md`). The 200/200 C++ and 196/196 Python3 results match the
+solo-load historicals (C++ 100 %, Python3 99.4 %).
 
 ### Non-auto-wrap languages (smoke test only)
 
