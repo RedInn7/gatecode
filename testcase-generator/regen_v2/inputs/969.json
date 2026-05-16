@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw)",
   "testcases": [
     {
-      "input": "aababbb",
-      "desc": "Edge: example1 -> 3"
+      "input": "\"l\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "abcde",
@@ -81,7 +81,7 @@
       "desc": "Stress: aab repeating"
     },
     {
-      "input": "\"hqnequxemmfqtk\"",
+      "input": "\"faxwcllytjrojd\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
