@@ -712,3 +712,14 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=500)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:18.466539
+
+## PID 28 (count-good-meals)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:20.668408
+
+## PID 280 (paint-house-iv)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+- No monotone increasing sequence testcase
+Audited at: 2026-05-16T15:37:20.668870
