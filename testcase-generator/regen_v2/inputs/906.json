@@ -21,8 +21,8 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "abc\nabc",
-      "desc": "Edge: t is sub of s"
+      "input": "\"nd\"\n\"lac\"",
+      "desc": "Edge: all-equal elements"
     },
     {
       "input": "abc\nb",

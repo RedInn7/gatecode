@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw string); line2: k (int)",
   "testcases": [
     {
-      "input": "(())\n1",
-      "desc": "Edge: example1"
+      "input": "\"v\"\n1",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "(()(\n1",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"jcqeggthr\"\n1",
+      "input": "\"zvvlzazcz\"\n3",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 10 groups of k=3"
     },
     {
-      "input": "\"ddnuiwkhymrjibqqfuoobxsw\"\n3",
+      "input": "\"ffswwqebsgadzuyxix\"\n3",
       "desc": "Stress: large n near max boundary"
     }
   ]
