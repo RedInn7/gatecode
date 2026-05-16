@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= tomatoSlices, cheeseSlices <= 1e7",
   "input_format": "line1: tomatoSlices (int); line2: cheeseSlices (int)",
   "testcases": [
-    {"input": "16\n7", "desc": "Edge: example1"},
-    {"input": "17\n4", "desc": "Edge: example2 odd tomato, impossible"},
-    {"input": "4\n17", "desc": "Edge: example3 too much cheese"},
-    {"input": "0\n0", "desc": "Edge: zero of both, valid [0,0]"},
-    {"input": "2\n1", "desc": "Edge: exactly 1 small"},
-    {"input": "4\n1", "desc": "Edge: exactly 1 jumbo"},
-    {"input": "0\n1", "desc": "Edge: zero tomato, cheese leftover"},
-    {"input": "1\n0", "desc": "Edge: odd, impossible"},
-    {"input": "10000000\n2500000", "desc": "Edge: max values, all jumbo"},
-    {"input": "10000000\n5000000", "desc": "Edge: max values, all small"},
-    {"input": "10000000\n3000000", "desc": "Standard: mix of both"},
-    {"input": "100\n50", "desc": "Standard: medium all small"},
-    {"input": "100\n25", "desc": "Standard: medium all jumbo"},
-    {"input": "100\n40", "desc": "Standard: medium mix"},
-    {"input": "9999998\n2499999", "desc": "Standard: near max all jumbo +1 tomato"},
-    {"input": "5\n3", "desc": "Edge: 5 odd, impossible"},
-    {"input": "3\n1", "desc": "Edge: 3 odd, impossible"},
-    {"input": "8\n3", "desc": "Standard: 1 jumbo + 2 small = 8 tomato, 3 cheese"},
-    {"input": "1000000\n300000", "desc": "Standard: big mix"},
-    {"input": "10000000\n10000000", "desc": "Edge: max cheese > max small"}
+    {
+      "input": "0\n0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "17\n4",
+      "desc": "Edge: example2 odd tomato, impossible"
+    },
+    {
+      "input": "16\n15",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "17\n13",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "10\n5",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "4\n1",
+      "desc": "Edge: exactly 1 jumbo"
+    },
+    {
+      "input": "0\n1",
+      "desc": "Edge: zero tomato, cheese leftover"
+    },
+    {
+      "input": "1\n0",
+      "desc": "Edge: odd, impossible"
+    },
+    {
+      "input": "10000000\n2500000",
+      "desc": "Edge: max values, all jumbo"
+    },
+    {
+      "input": "10000000\n5000000",
+      "desc": "Edge: max values, all small"
+    },
+    {
+      "input": "10000000\n3000000",
+      "desc": "Standard: mix of both"
+    },
+    {
+      "input": "100\n50",
+      "desc": "Standard: medium all small"
+    },
+    {
+      "input": "100\n25",
+      "desc": "Standard: medium all jumbo"
+    },
+    {
+      "input": "100\n40",
+      "desc": "Standard: medium mix"
+    },
+    {
+      "input": "9999998\n2499999",
+      "desc": "Standard: near max all jumbo +1 tomato"
+    },
+    {
+      "input": "5\n3",
+      "desc": "Edge: 5 odd, impossible"
+    },
+    {
+      "input": "3\n1",
+      "desc": "Edge: 3 odd, impossible"
+    },
+    {
+      "input": "8\n3",
+      "desc": "Standard: 1 jumbo + 2 small = 8 tomato, 3 cheese"
+    },
+    {
+      "input": "1000000\n300000",
+      "desc": "Standard: big mix"
+    },
+    {
+      "input": "10000000\n10000000",
+      "desc": "Edge: max cheese > max small"
+    }
   ]
 }

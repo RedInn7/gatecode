@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums.length <= 10, 2 <= nums[i] <= 1000, exactly one optimal expression",
   "input_format": "line1: nums (JSON int array)",
   "testcases": [
-    {"input": "[1000,100,10,2]", "desc": "Edge: example1"},
-    {"input": "[2,3,4]", "desc": "Edge: example2 n=3"},
-    {"input": "[2]", "desc": "Edge: n=1 single number"},
-    {"input": "[100]", "desc": "Edge: n=1 mid value"},
-    {"input": "[1000]", "desc": "Edge: n=1 max value"},
-    {"input": "[2,2]", "desc": "Edge: n=2 same value"},
-    {"input": "[1000,2]", "desc": "Edge: n=2 max/min"},
-    {"input": "[2,1000]", "desc": "Edge: n=2 min/max"},
-    {"input": "[5,4,3,2]", "desc": "Standard: n=4 decreasing"},
-    {"input": "[2,3,4,5,6]", "desc": "Standard: n=5 increasing"},
-    {"input": "[1000,1000,1000,1000]", "desc": "Standard: n=4 all max same"},
-    {"input": "[2,3,4,5,6,7,8,9,10,11]", "desc": "Edge: n=10 max length"},
-    {"input": "[1000,999,998,997,996,995,994,993,992,991]", "desc": "Stress: n=10 near-max values"},
-    {"input": "[2,2,2,2,2,2,2,2,2,2]", "desc": "Stress: n=10 all min"},
-    {"input": "[10,5,2]", "desc": "Standard: small n=3"},
-    {"input": "[100,50,25,5,2]", "desc": "Standard: n=5 decreasing"},
-    {"input": "[7,3,5]", "desc": "Standard: small mix"},
-    {"input": "[2,1000,2]", "desc": "Standard: spike middle"},
-    {"input": "[1000,2,1000]", "desc": "Standard: dip middle"},
-    {"input": "[3,4,5,6,7,8,9,10]", "desc": "Standard: n=8 sequential"}
+    {
+      "input": "[1000,100,10,2]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[2,3,4]",
+      "desc": "Edge: example2 n=3"
+    },
+    {
+      "input": "[2]",
+      "desc": "Edge: n=1 single number"
+    },
+    {
+      "input": "[100]",
+      "desc": "Edge: n=1 mid value"
+    },
+    {
+      "input": "[1000]",
+      "desc": "Edge: n=1 max value"
+    },
+    {
+      "input": "[2,2]",
+      "desc": "Edge: n=2 same value"
+    },
+    {
+      "input": "[1000,2]",
+      "desc": "Edge: n=2 max/min"
+    },
+    {
+      "input": "[2,1000]",
+      "desc": "Edge: n=2 min/max"
+    },
+    {
+      "input": "[5,4,3,2]",
+      "desc": "Standard: n=4 decreasing"
+    },
+    {
+      "input": "[2,3,4,5,6]",
+      "desc": "Standard: n=5 increasing"
+    },
+    {
+      "input": "[1000,1000,1000,1000]",
+      "desc": "Standard: n=4 all max same"
+    },
+    {
+      "input": "[2,3,4,5,6,7,8,9,10,11]",
+      "desc": "Edge: n=10 max length"
+    },
+    {
+      "input": "[1000,999,998,997,996,995,994,993,992,991]",
+      "desc": "Stress: n=10 near-max values"
+    },
+    {
+      "input": "[389,807,699,375,554,856,412,616,158]",
+      "desc": "Regenerated: diverse at position 13"
+    },
+    {
+      "input": "[10,5,2]",
+      "desc": "Standard: small n=3"
+    },
+    {
+      "input": "[100,50,25,5,2]",
+      "desc": "Standard: n=5 decreasing"
+    },
+    {
+      "input": "[7,3,5]",
+      "desc": "Standard: small mix"
+    },
+    {
+      "input": "[2,1000,2]",
+      "desc": "Standard: spike middle"
+    },
+    {
+      "input": "[1000,2,1000]",
+      "desc": "Standard: dip middle"
+    },
+    {
+      "input": "[3,4,5,6,7,8,9,10]",
+      "desc": "Standard: n=8 sequential"
+    }
   ]
 }

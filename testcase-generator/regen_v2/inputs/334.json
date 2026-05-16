@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= logs.length <= 1e4, 0 <= ID <= 1e9, 1 <= time <= 1e5, k >= max UAM",
   "input_format": "line1: logs (JSON 2D int array); line2: k (int)",
   "testcases": [
-    {"input": "[[0,5],[1,2],[0,2],[0,5],[1,3]]\n5", "desc": "Edge: example1"},
-    {"input": "[[1,1],[2,2],[2,3]]\n4", "desc": "Edge: example2"},
-    {"input": "[[1,1]]\n1", "desc": "Edge: single log, k=1"},
-    {"input": "[[1,1],[1,1],[1,1]]\n1", "desc": "Edge: same user same minute duplicates"},
-    {"input": "[[1,1],[2,1],[3,1],[4,1],[5,1]]\n1", "desc": "Edge: 5 distinct users same minute, all UAM=1"},
-    {"input": "[[1,1],[1,2],[1,3],[1,4],[1,5]]\n5", "desc": "Edge: one user 5 distinct minutes"},
-    {"input": "[[1000000000,100000]]\n1", "desc": "Edge: max id and time"},
-    {"input": "[[0,1],[0,2],[1,1],[1,2],[2,1],[2,2]]\n2", "desc": "Standard: 3 users each UAM=2"},
-    {"input": "[[1,1],[1,2],[2,1],[2,2],[2,3],[3,1],[3,2],[3,3],[3,4]]\n4", "desc": "Standard: 1 user each UAM 2,3,4"},
-    {"input": "[[5,5],[5,5],[5,5],[5,5],[5,5]]\n1", "desc": "Edge: all duplicate same user+time"},
-    {"input": "[[1,1],[1,2],[1,3],[2,1],[2,2],[3,1]]\n3", "desc": "Standard: descending UAMs"},
-    {"input": "[[100,100],[100,100],[101,100],[102,100],[103,100],[104,100]]\n1", "desc": "Standard: many users one minute"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]\n1", "desc": "Standard: 10 distinct users each UAM 1"},
-    {"input": "[[1,1],[1,1],[1,2],[1,2],[1,3],[1,3],[1,4],[1,4]]\n4", "desc": "Edge: dup minutes one user UAM=4"},
-    {"input": "[[7,1],[7,2],[7,3],[7,4],[7,5],[7,6],[7,7],[7,8],[7,9],[7,10]]\n10", "desc": "Standard: one user UAM=10"},
-    {"input": "[[1,1],[2,2]]\n100000", "desc": "Edge: large k"},
-    {"input": "[[1,1],[1,2],[2,1],[2,3],[3,2],[3,3]]\n2", "desc": "Standard: all UAM=2"},
-    {"input": "[[1,1],[1,2],[1,3],[1,4],[1,5],[2,1],[2,2],[2,3],[2,4],[3,1],[3,2],[3,3],[4,1],[4,2],[5,1]]\n5", "desc": "Standard: 1 each UAM 1..5"},
-    {"input": "[[999999999,99999],[999999999,99998],[999999998,99999]]\n2", "desc": "Edge: near-max id"},
-    {"input": "[[1,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11],[1,12],[1,13],[1,14],[1,15],[1,16],[1,17],[1,18],[1,19],[1,20]]\n20", "desc": "Stress: single user UAM=20"}
+    {
+      "input": "[[0,5],[1,2],[0,2],[0,5],[1,3]]\n5",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[1,1],[2,2],[2,3]]\n4",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[-422,756],[-524,1000],[-629,311],[-961,-50],[810,-367]]\n3",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[453,-452],[509,716],[-274,-834],[-479,694],[-587,46]]\n2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[1,1],[2,1],[3,1],[4,1],[5,1]]\n1",
+      "desc": "Edge: 5 distinct users same minute, all UAM=1"
+    },
+    {
+      "input": "[[1,1],[1,2],[1,3],[1,4],[1,5]]\n5",
+      "desc": "Edge: one user 5 distinct minutes"
+    },
+    {
+      "input": "[[1000000000,100000]]\n1",
+      "desc": "Edge: max id and time"
+    },
+    {
+      "input": "[[0,1],[0,2],[1,1],[1,2],[2,1],[2,2]]\n2",
+      "desc": "Standard: 3 users each UAM=2"
+    },
+    {
+      "input": "[[1,1],[1,2],[2,1],[2,2],[2,3],[3,1],[3,2],[3,3],[3,4]]\n4",
+      "desc": "Standard: 1 user each UAM 2,3,4"
+    },
+    {
+      "input": "[[5,5],[5,5],[5,5],[5,5],[5,5]]\n1",
+      "desc": "Edge: all duplicate same user+time"
+    },
+    {
+      "input": "[[1,1],[1,2],[1,3],[2,1],[2,2],[3,1]]\n3",
+      "desc": "Standard: descending UAMs"
+    },
+    {
+      "input": "[[100,100],[100,100],[101,100],[102,100],[103,100],[104,100]]\n1",
+      "desc": "Standard: many users one minute"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]\n1",
+      "desc": "Standard: 10 distinct users each UAM 1"
+    },
+    {
+      "input": "[[1,1],[1,1],[1,2],[1,2],[1,3],[1,3],[1,4],[1,4]]\n4",
+      "desc": "Edge: dup minutes one user UAM=4"
+    },
+    {
+      "input": "[[7,1],[7,2],[7,3],[7,4],[7,5],[7,6],[7,7],[7,8],[7,9],[7,10]]\n10",
+      "desc": "Standard: one user UAM=10"
+    },
+    {
+      "input": "[[1,1],[2,2]]\n100000",
+      "desc": "Edge: large k"
+    },
+    {
+      "input": "[[1,1],[1,2],[2,1],[2,3],[3,2],[3,3]]\n2",
+      "desc": "Standard: all UAM=2"
+    },
+    {
+      "input": "[[1,1],[1,2],[1,3],[1,4],[1,5],[2,1],[2,2],[2,3],[2,4],[3,1],[3,2],[3,3],[4,1],[4,2],[5,1]]\n5",
+      "desc": "Standard: 1 each UAM 1..5"
+    },
+    {
+      "input": "[[999999999,99999],[999999999,99998],[999999998,99999]]\n2",
+      "desc": "Edge: near-max id"
+    },
+    {
+      "input": "[[403,280,-425,457],[-689,76,-751,3],[-602,732,-299,782],[848,-621,402,473],[-57,-985,392,-824],[821,-74,742,924],[48,-263,424,167],[-79,-839,82,465],[835,-923,-906,-732],[-469,-66,-886,-338]]\n5",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

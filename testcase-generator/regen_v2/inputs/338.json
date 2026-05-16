@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= properties.length <= 1e5, 1 <= attack, defense <= 1e5",
   "input_format": "line1: properties (JSON 2D int array of [attack,defense])",
   "testcases": [
-    {"input": "[[5,5],[6,3],[3,6]]", "desc": "Edge: example1"},
-    {"input": "[[2,2],[3,3]]", "desc": "Edge: example2"},
-    {"input": "[[1,5],[10,4],[4,3]]", "desc": "Edge: example3"},
-    {"input": "[[1,1],[1,1]]", "desc": "Edge: identical, none weak"},
-    {"input": "[[1,1],[100000,100000]]", "desc": "Edge: extreme dominance"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Standard: strictly increasing both"},
-    {"input": "[[5,5],[4,4],[3,3],[2,2],[1,1]]", "desc": "Standard: strictly decreasing"},
-    {"input": "[[1,10],[2,9],[3,8],[4,7],[5,6]]", "desc": "Standard: attack up defense down, none weak"},
-    {"input": "[[10,1],[9,2],[8,3],[7,4],[6,5]]", "desc": "Standard: attack down defense up, none weak"},
-    {"input": "[[5,5],[5,5],[5,5],[5,5]]", "desc": "Edge: all identical"},
-    {"input": "[[1,100000],[100000,1]]", "desc": "Edge: extreme opposites"},
-    {"input": "[[100000,100000],[1,1],[100000,1],[1,100000]]", "desc": "Standard: corners of grid"},
-    {"input": "[[3,3],[3,5],[5,3],[5,5]]", "desc": "Standard: 4 combinations, top dominates bottom"},
-    {"input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11]]", "desc": "Standard: chain of weak chars"},
-    {"input": "[[100,200],[200,100],[150,150],[50,50],[250,250]]", "desc": "Standard: mixed cluster"},
-    {"input": "[[1,1],[2,2]]", "desc": "Edge: n=2 minimum size"},
-    {"input": "[[50000,50000],[49999,50001],[50001,49999]]", "desc": "Standard: tied dominance"},
-    {"input": "[[1,1],[1,2],[2,1],[2,2],[1,3],[3,1],[3,3]]", "desc": "Standard: small grid"},
-    {"input": "[[10,10],[10,10],[10,10],[10,10],[20,20]]", "desc": "Standard: 4 weak under one strong"},
-    {"input": "[[1,2],[1,3],[1,4],[1,5],[2,1],[3,1],[4,1],[5,1]]", "desc": "Standard: 1-row + 1-col patterns"}
+    {
+      "input": "[[5,5],[6,3],[3,6]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[2,2],[3,3]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[1,5],[10,4],[4,3]]",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "[[1,1],[1,1]]",
+      "desc": "Edge: identical, none weak"
+    },
+    {
+      "input": "[[1,1],[100000,100000]]",
+      "desc": "Edge: extreme dominance"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "desc": "Standard: strictly increasing both"
+    },
+    {
+      "input": "[[5,5],[4,4],[3,3],[2,2],[1,1]]",
+      "desc": "Standard: strictly decreasing"
+    },
+    {
+      "input": "[[1,10],[2,9],[3,8],[4,7],[5,6]]",
+      "desc": "Standard: attack up defense down, none weak"
+    },
+    {
+      "input": "[[10,1],[9,2],[8,3],[7,4],[6,5]]",
+      "desc": "Standard: attack down defense up, none weak"
+    },
+    {
+      "input": "[[5,5],[5,5],[5,5],[5,5]]",
+      "desc": "Edge: all identical"
+    },
+    {
+      "input": "[[1,100000],[100000,1]]",
+      "desc": "Edge: extreme opposites"
+    },
+    {
+      "input": "[[100000,100000],[1,1],[100000,1],[1,100000]]",
+      "desc": "Standard: corners of grid"
+    },
+    {
+      "input": "[[3,3],[3,5],[5,3],[5,5]]",
+      "desc": "Standard: 4 combinations, top dominates bottom"
+    },
+    {
+      "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11]]",
+      "desc": "Standard: chain of weak chars"
+    },
+    {
+      "input": "[[100,200],[200,100],[150,150],[50,50],[250,250]]",
+      "desc": "Standard: mixed cluster"
+    },
+    {
+      "input": "[[1,1],[2,2]]",
+      "desc": "Edge: n=2 minimum size"
+    },
+    {
+      "input": "[[50000,50000],[49999,50001],[50001,49999]]",
+      "desc": "Standard: tied dominance"
+    },
+    {
+      "input": "[[1,1],[1,2],[2,1],[2,2],[1,3],[3,1],[3,3]]",
+      "desc": "Standard: small grid"
+    },
+    {
+      "input": "[[10,10],[10,10],[10,10],[10,10],[20,20]]",
+      "desc": "Standard: 4 weak under one strong"
+    },
+    {
+      "input": "[[-648,84,475,654],[389,210,596,758],[-394,-226,55,616],[-713,937,27,-209],[288,781,-746,-924],[-244,-602,-30,174]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
