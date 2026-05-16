@@ -1,0 +1,80 @@
+{
+  "pid": 3089,
+  "slug": "maximum-number-of-consecutive-values-you-can-make",
+  "inferred_constraints": "1 <= n <= 4, -1000000000 <= nums[i] <= 1000000000",
+  "input_format": "line1: nums array (space-separated or JSON)",
+  "testcases": [
+    {
+      "input": "[]",
+      "desc": "Edge: empty array"
+    },
+    {
+      "input": "[-724675]",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[899827,560238]",
+      "desc": "Edge: two elements"
+    },
+    {
+      "input": "[0,0,0,0,0]",
+      "desc": "Edge: all same elements"
+    },
+    {
+      "input": "[-757992811,188131925,251951897,509766113,585820776,780523219,782340282,905145044]",
+      "desc": "Edge: sorted ascending"
+    },
+    {
+      "input": "[383312401,375073159,291065309,182968229,-49644794,-554944189,-577783089,-590764343]",
+      "desc": "Edge: sorted descending"
+    },
+    {
+      "input": "[-886303,993071,-340168,623961]",
+      "desc": "Standard: random n=4"
+    },
+    {
+      "input": "[-840769,-28080,792576,985904]",
+      "desc": "Standard: random n=4"
+    },
+    {
+      "input": "[-172140,-794144,168140,-833529]",
+      "desc": "Standard: random n=4"
+    },
+    {
+      "input": "[-448578,477999,-974956,684498]",
+      "desc": "Standard: random n=4"
+    },
+    {
+      "input": "[18878,-943543,51087,182756]",
+      "desc": "Standard: random n=4"
+    },
+    {
+      "input": "[-325210,413881,916901,-257405]",
+      "desc": "Standard: random n=4"
+    },
+    {
+      "input": "[600250,781157,421316,-246934]",
+      "desc": "Standard: random n=4"
+    },
+    {
+      "input": "[11709,-319061,-631859,674843]",
+      "desc": "Stress: n=4"
+    },
+    {
+      "input": "[-981900,123374,-806325,722921]",
+      "desc": "Stress: large random"
+    },
+    {
+      "input": "[755862,-143220,8714,468107]",
+      "desc": "Stress: max size"
+    },
+    {
+      "input": "[-1000000000,1000000000,-1000000000,1000000000,0]",
+      "desc": "Killer: boundary values min/max"
+    },
+    {
+      "input": "[-792836,527985,570692,623668]",
+      "desc": "Killer: near-max stress"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "pid": 3102,
+  "slug": "minimum-operations-to-make-median-of-array-equal-to-k",
+  "inferred_constraints": "1 <= n <= 2, 1 <= nums[i] <= 1000000000",
+  "input_format": "line1: nums array (space-separated or JSON); line2: k",
+  "testcases": [
+    {
+      "input": "[]\n1",
+      "desc": "Edge: empty array"
+    },
+    {
+      "input": "[817790]\n1",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[737831,890315]\n1",
+      "desc": "Edge: two elements"
+    },
+    {
+      "input": "[500000000,500000000,500000000,500000000,500000000]\n5",
+      "desc": "Edge: all same elements"
+    },
+    {
+      "input": "[23294431,173956264,378567003,449865177,457003210,608833042,618749078,738410921]\n4",
+      "desc": "Edge: sorted ascending"
+    },
+    {
+      "input": "[934945806,925036970,464745653,258512242,209581875,183435336,166776722,118719068]\n2",
+      "desc": "Edge: sorted descending"
+    },
+    {
+      "input": "[167249,178916]\n2",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[307,197155]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[771895,789142]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[568060,772255]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[371977,452552]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[4176,27533]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[192069,213999]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[856595,888821]\n1",
+      "desc": "Stress: n=2"
+    },
+    {
+      "input": "[70163,253690]\n1",
+      "desc": "Stress: large random"
+    },
+    {
+      "input": "[119663,666133]\n2",
+      "desc": "Stress: max size"
+    },
+    {
+      "input": "[1,1000000000,1,1000000000,1]\n2",
+      "desc": "Killer: boundary values min/max"
+    },
+    {
+      "input": "[622432,892871]\n2",
+      "desc": "Killer: near-max stress"
+    }
+  ]
+}

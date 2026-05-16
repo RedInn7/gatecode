@@ -1,0 +1,80 @@
+{
+  "pid": 3079,
+  "slug": "largest-component-size-by-common-factor",
+  "inferred_constraints": "1 <= n <= 2, 1 <= nums[i] <= 100000",
+  "input_format": "line1: nums array (space-separated or JSON)",
+  "testcases": [
+    {
+      "input": "[]",
+      "desc": "Edge: empty array"
+    },
+    {
+      "input": "[31701]",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[5922,14540]",
+      "desc": "Edge: two elements"
+    },
+    {
+      "input": "[50000,50000,50000,50000,50000]",
+      "desc": "Edge: all same elements"
+    },
+    {
+      "input": "[1426,10081,19280,25465,41762,55438,59814,81224]",
+      "desc": "Edge: sorted ascending"
+    },
+    {
+      "input": "[61238,59697,48172,30338,26192,20235,13531,9243]",
+      "desc": "Edge: sorted descending"
+    },
+    {
+      "input": "[8649,59606]",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[21997,48537]",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[42056,5035]",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[80359,34145]",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[50163,7266]",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[87517,51]",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[76145,89245]",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[43505,67919]",
+      "desc": "Stress: n=2"
+    },
+    {
+      "input": "[83162,70591]",
+      "desc": "Stress: large random"
+    },
+    {
+      "input": "[48342,19778]",
+      "desc": "Stress: max size"
+    },
+    {
+      "input": "[1,100000,1,100000,1]",
+      "desc": "Killer: boundary values min/max"
+    },
+    {
+      "input": "[60592,63975]",
+      "desc": "Killer: near-max stress"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "pid": 3053,
+  "slug": "subarray-product-less-than-k",
+  "inferred_constraints": "1 <= n <= 3, 1 <= nums[i] <= 1000",
+  "input_format": "line1: nums array (space-separated or JSON); line2: k",
+  "testcases": [
+    {
+      "input": "[]\n1",
+      "desc": "Edge: empty array"
+    },
+    {
+      "input": "[872]\n1",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[81,855]\n2",
+      "desc": "Edge: two elements"
+    },
+    {
+      "input": "[500,500,500,500,500]\n3",
+      "desc": "Edge: all same elements"
+    },
+    {
+      "input": "[324,341,348,457,536,723,928,954]\n8",
+      "desc": "Edge: sorted ascending"
+    },
+    {
+      "input": "[891,835,821,666,568,374,137,123]\n1",
+      "desc": "Edge: sorted descending"
+    },
+    {
+      "input": "[505,663,378]\n3",
+      "desc": "Standard: random n=3"
+    },
+    {
+      "input": "[371,285,241]\n1",
+      "desc": "Standard: random n=3"
+    },
+    {
+      "input": "[627,57,83]\n3",
+      "desc": "Standard: random n=3"
+    },
+    {
+      "input": "[174,738,10]\n2",
+      "desc": "Standard: random n=3"
+    },
+    {
+      "input": "[38,804,605]\n1",
+      "desc": "Standard: random n=3"
+    },
+    {
+      "input": "[175,424,186]\n1",
+      "desc": "Standard: random n=3"
+    },
+    {
+      "input": "[292,926,743]\n3",
+      "desc": "Standard: random n=3"
+    },
+    {
+      "input": "[501,931,225]\n3",
+      "desc": "Stress: n=3"
+    },
+    {
+      "input": "[916,383,897]\n2",
+      "desc": "Stress: large random"
+    },
+    {
+      "input": "[148,660,491]\n3",
+      "desc": "Stress: max size"
+    },
+    {
+      "input": "[1,1000,1,1000,1]\n2",
+      "desc": "Killer: boundary values min/max"
+    },
+    {
+      "input": "[646,352,892]\n1",
+      "desc": "Killer: near-max stress"
+    }
+  ]
+}

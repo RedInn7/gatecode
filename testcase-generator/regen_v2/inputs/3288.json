@@ -1,0 +1,80 @@
+{
+  "pid": 3288,
+  "slug": "shortest-subarray-with-or-at-least-k-ii",
+  "inferred_constraints": "1 <= n <= 2, 0 <= nums[i] <= 1000000000",
+  "input_format": "line1: nums array (space-separated or JSON); line2: k",
+  "testcases": [
+    {
+      "input": "[]\n1",
+      "desc": "Edge: empty array"
+    },
+    {
+      "input": "[665139]\n1",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[386373,319734]\n1",
+      "desc": "Edge: two elements"
+    },
+    {
+      "input": "[500000000,500000000,500000000,500000000,500000000]\n4",
+      "desc": "Edge: all same elements"
+    },
+    {
+      "input": "[46891073,74881909,228093217,241343255,482228187,665750310,684523020,693874417]\n4",
+      "desc": "Edge: sorted ascending"
+    },
+    {
+      "input": "[939557906,934724255,713748278,512554990,475149089,377183852,322209101,229982364]\n5",
+      "desc": "Edge: sorted descending"
+    },
+    {
+      "input": "[355756,612899]\n2",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[394209,371348]\n2",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[613588,780034]\n2",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[482367,288808]\n2",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[51593,300313]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[506505,603483]\n2",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[122556,328616]\n1",
+      "desc": "Standard: random n=2"
+    },
+    {
+      "input": "[517115,878634]\n1",
+      "desc": "Stress: n=2"
+    },
+    {
+      "input": "[321160,219096]\n2",
+      "desc": "Stress: large random"
+    },
+    {
+      "input": "[568697,686047]\n2",
+      "desc": "Stress: max size"
+    },
+    {
+      "input": "[0,1000000000,0,1000000000,0]\n2",
+      "desc": "Killer: boundary values min/max"
+    },
+    {
+      "input": "[7325,350145]\n1",
+      "desc": "Killer: near-max stress"
+    }
+  ]
+}
