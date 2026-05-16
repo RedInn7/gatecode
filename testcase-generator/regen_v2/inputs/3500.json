@@ -1,0 +1,76 @@
+{
+  "pid": 3500,
+  "slug": "prime-arrangements",
+  "inferred_constraints": "0 <= n <= 100",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "99",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "45",
+      "desc": "Standard: n=45"
+    },
+    {
+      "input": "60",
+      "desc": "Standard: n=60"
+    },
+    {
+      "input": "23",
+      "desc": "Standard: n=23"
+    },
+    {
+      "input": "61",
+      "desc": "Standard: n=61"
+    },
+    {
+      "input": "56",
+      "desc": "Standard: n=56"
+    },
+    {
+      "input": "73",
+      "desc": "Standard: n=73"
+    },
+    {
+      "input": "96",
+      "desc": "Standard: n=96"
+    },
+    {
+      "input": "18",
+      "desc": "Standard: n=18"
+    },
+    {
+      "input": "100",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "100",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "100",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

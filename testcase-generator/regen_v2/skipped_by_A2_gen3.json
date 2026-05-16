@@ -39,6 +39,11 @@
       "pid": 3516,
       "slug": "decode-the-message",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3512,
+      "slug": "the-earliest-and-latest-rounds-where-players-compete",
+      "reason": "ACM mode problem"
     }
   ]
 }
