@@ -4,25 +4,85 @@
   "inferred_constraints": "IntegerPart 1-4 chars; NonRepeatingPart 0-4 chars; RepeatingPart 1-4 chars (if present)",
   "input_format": "line1: s (raw string); line2: t (raw string)",
   "testcases": [
-    {"input": "0.(52)\n0.5(25)", "desc": "Edge: example1 same number different form"},
-    {"input": "0.1666(6)\n0.166(66)", "desc": "Edge: example2"},
-    {"input": "0.9(9)\n1.", "desc": "Edge: example3 0.999...=1"},
-    {"input": "0\n0", "desc": "Edge: both zero integer"},
-    {"input": "0\n0.0", "desc": "Edge: 0 vs 0.0"},
-    {"input": "1\n1.0", "desc": "Edge: 1 vs 1.0"},
-    {"input": "1.\n1.0", "desc": "Edge: 1. vs 1.0"},
-    {"input": "1.5\n1.5", "desc": "Edge: identical decimals"},
-    {"input": "1.5\n1.6", "desc": "Edge: different decimals"},
-    {"input": "0.(3)\n0.3(3)", "desc": "Standard: 1/3 different forms"},
-    {"input": "0.(142857)\n0.1(428571)", "desc": "Standard: 1/7"},
-    {"input": "9999.9999\n9999.9999", "desc": "Edge: max integer & decimal"},
-    {"input": "0.0(0)\n0", "desc": "Edge: trailing zeros == 0"},
-    {"input": "9999.(9)\n10000.", "desc": "Edge: 9999.999...=10000"},
-    {"input": "1.2(3)\n1.23(33)", "desc": "Standard: same repeating"},
-    {"input": "1.2(34)\n1.23(43)", "desc": "Standard: 1.23434... == 1.23(43)? Actually 1.23(43)=1.234343... — equal"},
-    {"input": "0.5\n0.50", "desc": "Edge: trailing zero"},
-    {"input": "12.34\n12.34(0)", "desc": "Edge: explicit zero repeat"},
-    {"input": "0.(0001)\n0.0001(0001)", "desc": "Standard: max repeating length"},
-    {"input": "1.0(9)\n1.1", "desc": "Edge: 1.0999...=1.1"}
+    {
+      "input": "0\n0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "0.1666(6)\n0.166(66)",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "0\n0",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "0\n1",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "0\n0.0",
+      "desc": "Edge: 0 vs 0.0"
+    },
+    {
+      "input": "1\n1.0",
+      "desc": "Edge: 1 vs 1.0"
+    },
+    {
+      "input": "1.\n1.0",
+      "desc": "Edge: 1. vs 1.0"
+    },
+    {
+      "input": "1.5\n1.5",
+      "desc": "Edge: identical decimals"
+    },
+    {
+      "input": "1.5\n1.6",
+      "desc": "Edge: different decimals"
+    },
+    {
+      "input": "0.(3)\n0.3(3)",
+      "desc": "Standard: 1/3 different forms"
+    },
+    {
+      "input": "0.(142857)\n0.1(428571)",
+      "desc": "Standard: 1/7"
+    },
+    {
+      "input": "9999.9999\n9999.9999",
+      "desc": "Edge: max integer & decimal"
+    },
+    {
+      "input": "0.0(0)\n0",
+      "desc": "Edge: trailing zeros == 0"
+    },
+    {
+      "input": "9999.(9)\n10000.",
+      "desc": "Edge: 9999.999...=10000"
+    },
+    {
+      "input": "1.2(3)\n1.23(33)",
+      "desc": "Standard: same repeating"
+    },
+    {
+      "input": "1.2(34)\n1.23(43)",
+      "desc": "Standard: 1.23434... == 1.23(43)? Actually 1.23(43)=1.234343... — equal"
+    },
+    {
+      "input": "0.5\n0.50",
+      "desc": "Edge: trailing zero"
+    },
+    {
+      "input": "12.34\n12.34(0)",
+      "desc": "Edge: explicit zero repeat"
+    },
+    {
+      "input": "0.(0001)\n0.0001(0001)",
+      "desc": "Standard: max repeating length"
+    },
+    {
+      "input": "1.0(9)\n1.1",
+      "desc": "Edge: 1.0999...=1.1"
+    }
   ]
 }

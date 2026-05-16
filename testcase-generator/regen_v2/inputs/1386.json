@@ -1,0 +1,88 @@
+{
+  "pid": 1386,
+  "slug": "split-array-with-equal-sum",
+  "inferred_constraints": "1<=nums.length<=2000; -10^4<=nums[i]<=10^4",
+  "input_format": "line 1: nums (JSON array)",
+  "testcases": [
+    {
+      "input": "[-10000]",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "desc": "Edge: all zeros -> depends"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Edge: too short -> false"
+    },
+    {
+      "input": "[3,3,3,3]",
+      "desc": "Standard: 4 elements"
+    },
+    {
+      "input": "[0,1,0,1,0,1,0]",
+      "desc": "Standard: alternating 0 1"
+    },
+    {
+      "input": "[1,-1,1,-1,1,-1,1]",
+      "desc": "Killer: alternating pos/neg"
+    },
+    {
+      "input": "[1,2,3,4,3,2,1]",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "[10,0,0,0,0,0,0]",
+      "desc": "Killer: leading large"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1]",
+      "desc": "Standard: all ones"
+    },
+    {
+      "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9]",
+      "desc": "Standard: 1-9"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0]",
+      "desc": "Standard: all zero"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9]",
+      "desc": "Stress: ascending"
+    },
+    {
+      "input": "[-1,-2,-3,-4,-3,-2,-1]",
+      "desc": "Killer: all negative palindrome"
+    },
+    {
+      "input": "[5,4,3,2,1,2,3,4,5]",
+      "desc": "Standard: symmetric 9"
+    },
+    {
+      "input": "[1,0,1,0,1,0,1]",
+      "desc": "Standard: alternating 1 0"
+    },
+    {
+      "input": "[100,-100,100,-100,100,-100,100]",
+      "desc": "Killer: large alternating"
+    },
+    {
+      "input": "[0,0,1,0,0,1,0]",
+      "desc": "Standard: sparse ones"
+    },
+    {
+      "input": "[2,2,2,2,2,2,2]",
+      "desc": "Standard: all twos"
+    },
+    {
+      "input": "[1,2,3,0,3,2,1]",
+      "desc": "Killer: zero center"
+    },
+    {
+      "input": "[-5,0,5,0,-5,0,5]",
+      "desc": "Stress: neg zero pos"
+    }
+  ]
+}
