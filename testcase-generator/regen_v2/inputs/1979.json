@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= rows <= 1000, 1 <= encodedText.length <= 10^6, encodedText.length % rows == 0",
   "input_format": "line1: encodedText (JSON string); line2: rows (int)",
   "testcases": [
-    {"input": "\"ch   ie   pr\"\n3", "desc": "Standard: example 1 (rows=3 'cipher')"},
-    {"input": "\"iveo    eed   l te   olc\"\n4", "desc": "Standard: example 2"},
-    {"input": "\"ab\"\n2", "desc": "Edge: min rows=2"},
-    {"input": "\"abcdef\"\n3", "desc": "Edge: rows=3 simple"},
-    {"input": "\"a\"\n1", "desc": "Edge: rows must be >=2, skip if invalid"},
-    {"input": "\"abcd\"\n2", "desc": "Standard: 2x2"},
-    {"input": "\"aabbcc\"\n2", "desc": "Standard: 2x3"},
-    {"input": "\"abcdefghij\"\n5", "desc": "Standard: 5 rows"},
-    {"input": "\"helloworld    \"\n3", "desc": "Standard: padded"},
-    {"input": "\"      \"\n2", "desc": "Edge: all spaces"},
-    {"input": "\"abcdefghijklmnopqr\"\n3", "desc": "Standard: 3x6"},
-    {"input": "\"xyzxyzxyz\"\n3", "desc": "Standard: 3x3"},
-    {"input": "\"a b c d e f\"\n2", "desc": "Standard: spaces in middle"},
-    {"input": "\"hello world\"\n2", "desc": "Standard"},
-    {"input": "\"testing testing 1 2 3\"\n5", "desc": "Standard: longer"},
-    {"input": "\"abcde abcde\"\n2", "desc": "Standard"},
-    {"input": "\"  hello  \"\n3", "desc": "Edge: leading/trailing spaces"},
-    {"input": "\"abcdefghijklmnopqrst\"\n4", "desc": "Standard: 4x5"},
-    {"input": "\"a               \"\n4", "desc": "Edge: mostly empty"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz0123456789\"\n6", "desc": "Standard: 6 rows alphanumeric"}
+    {
+      "input": "\"ch   ie   pr\"\n3",
+      "desc": "Standard: example 1 (rows=3 'cipher')"
+    },
+    {
+      "input": "\"iveo    eed   l te   olc\"\n4",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"ab\"\n2",
+      "desc": "Edge: min rows=2"
+    },
+    {
+      "input": "\"abcdef\"\n3",
+      "desc": "Edge: rows=3 simple"
+    },
+    {
+      "input": "\"a\"\n1",
+      "desc": "Edge: rows must be >=2, skip if invalid"
+    },
+    {
+      "input": "\"abcd\"\n2",
+      "desc": "Standard: 2x2"
+    },
+    {
+      "input": "\"aabbcc\"\n2",
+      "desc": "Standard: 2x3"
+    },
+    {
+      "input": "\"abcdefghij\"\n5",
+      "desc": "Standard: 5 rows"
+    },
+    {
+      "input": "\"helloworld    \"\n3",
+      "desc": "Standard: padded"
+    },
+    {
+      "input": "\"      \"\n2",
+      "desc": "Edge: all spaces"
+    },
+    {
+      "input": "\"abcdefghijklmnopqr\"\n3",
+      "desc": "Standard: 3x6"
+    },
+    {
+      "input": "\"xyzxyzxyz\"\n3",
+      "desc": "Standard: 3x3"
+    },
+    {
+      "input": "\"a b c d e f\"\n2",
+      "desc": "Standard: spaces in middle"
+    },
+    {
+      "input": "\"hello world\"\n2",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"testing testing 1 2 3\"\n5",
+      "desc": "Standard: longer"
+    },
+    {
+      "input": "\"abcde abcde\"\n2",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"  hello  \"\n3",
+      "desc": "Edge: leading/trailing spaces"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrst\"\n4",
+      "desc": "Standard: 4x5"
+    },
+    {
+      "input": "\"a               \"\n4",
+      "desc": "Edge: mostly empty"
+    },
+    {
+      "input": "\"kyoxxzyakzrcfvdueydlzdwrzazkgsfbvohtpphtvuodhgqd\"\n4",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

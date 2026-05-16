@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums.length <= 100, 1 <= nums[i] <= 100",
   "input_format": "single line: nums (JSON array)",
   "testcases": [
-    {"input": "[5,4,3]", "desc": "Standard: example 1"},
-    {"input": "[4,1,2]", "desc": "Standard: example 2"},
-    {"input": "[1]", "desc": "Edge: n=1 no dominant (last)"},
-    {"input": "[100]", "desc": "Edge: n=1 max"},
-    {"input": "[1,1]", "desc": "Edge: n=2 same"},
-    {"input": "[2,1]", "desc": "Edge: n=2 dom"},
-    {"input": "[1,2]", "desc": "Edge: n=2 not dom"},
-    {"input": "[100,99,98,97,96,95]", "desc": "Standard: descending all dom"},
-    {"input": "[1,2,3,4,5,6]", "desc": "Standard: ascending no dom"},
-    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
-    {"input": "[1,1,1,1,1]", "desc": "Edge: all min"},
-    {"input": "[100,100,100,100,100]", "desc": "Edge: all max"},
-    {"input": "[50,50,50,1,1]", "desc": "Standard: high then low"},
-    {"input": "[1,100,1,100,1]", "desc": "Standard: peaks"},
-    {"input": "[50,49,48,47,46,45,44,43,42,41]", "desc": "Standard: descending 10"},
-    {"input": "[2,1,2,1,2,1,2,1,2,1]", "desc": "Standard: alternating"},
-    {"input": "[100,1,1,1,1,1,1,1,1,1]", "desc": "Standard: peak at start"},
-    {"input": "[1,1,1,1,1,1,1,1,1,100]", "desc": "Standard: peak at end (not dom for last)"},
-    {"input": "[10,20,30,40,50,60,70,80,90,100]", "desc": "Standard: full range"},
-    {"input": "[3,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: longer"}
+    {
+      "input": "[5,4,3]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[4,1,2]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1 no dominant (last)"
+    },
+    {
+      "input": "[100]",
+      "desc": "Edge: n=1 max"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "[2,1]",
+      "desc": "Edge: n=2 dom"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: n=2 not dom"
+    },
+    {
+      "input": "[100,99,98,97,96,95]",
+      "desc": "Standard: descending all dom"
+    },
+    {
+      "input": "[1,2,3,4,5,6]",
+      "desc": "Standard: ascending no dom"
+    },
+    {
+      "input": "[5,5,5,5,5]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[1,1,1,1,1]",
+      "desc": "Edge: all min"
+    },
+    {
+      "input": "[100,100,100,100,100]",
+      "desc": "Edge: all max"
+    },
+    {
+      "input": "[50,50,50,1,1]",
+      "desc": "Standard: high then low"
+    },
+    {
+      "input": "[1,100,1,100,1]",
+      "desc": "Standard: peaks"
+    },
+    {
+      "input": "[50,49,48,47,46,45,44,43,42,41]",
+      "desc": "Standard: descending 10"
+    },
+    {
+      "input": "[2,1,2,1,2,1,2,1,2,1]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[69,43,18,86,64,58,9,95,89,9,31,76,59,94,74,27,73,51,28,99,88,71,83,4,75,81,6,58,35,79,99,68,93,98,79,100,60,9,72,65,63,84,4,49,25,56,61,48,59]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[48,86,27,57,50,71,54,87,4,54,86,96,33,4,35,46,44,98,58,76,83,98,3,10,65,99,53,50,59,47,54,7,95,94,34,20,35,88,81,70,19,89,44,41,87,38,7,67,65,80,17,11,29,59,7,28,19,58,76,98,88,44,81,37,57,70,63,88,22,4,76,17,20,19,9,13,42,43,54,4,84,4,51,47,9,32,20,45,62,7,80,77,35,73,43,85,54,1,62,68]",
+      "desc": "Regenerated: stress at position 17"
+    },
+    {
+      "input": "[10,20,30,40,50,60,70,80,90,100]",
+      "desc": "Standard: full range"
+    },
+    {
+      "input": "[3,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
+      "desc": "Standard: longer"
+    }
   ]
 }
