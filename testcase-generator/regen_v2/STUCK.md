@@ -615,3 +615,21 @@ Audited at: 2026-05-16T15:37:04.832284
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=20000.0)
 Audited at: 2026-05-16T15:37:04.836405
+
+## PID 259 (partition-string)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:06.967269
+
+## PID 26 (find-the-first-player-to-win-k-games-in-a-row)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:06.972288
+
+## PID 260 (minimum-number-of-moves-to-make-palindrome)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=2000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:06.972539
