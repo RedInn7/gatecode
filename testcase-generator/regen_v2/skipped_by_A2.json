@@ -309,6 +309,11 @@
       "pid": 2674,
       "slug": "design-a-3d-binary-matrix-with-efficient-layer-tracking",
       "reason": "design class Matrix3D stateful setCell/unsetCell/largestMatrix"
+    },
+    {
+      "pid": 2683,
+      "slug": "maximum-font-to-fit-a-sentence-in-a-screen",
+      "reason": "interactive FontInfo API problem"
     }
   ]
 }
