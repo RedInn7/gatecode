@@ -69,6 +69,11 @@
       "pid": 1182,
       "slug": "restore-finishing-order",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1172,
+      "slug": "product-of-two-run-length-encoded-arrays",
+      "reason": "ACM mode problem"
     }
   ]
 }
