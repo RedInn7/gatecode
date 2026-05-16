@@ -1,0 +1,28 @@
+{
+  "pid": 3843,
+  "slug": "encode-number",
+  "inferred_constraints": "0 <= num <= 10^9",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "23", "desc": "Example 1"},
+    {"input": "107", "desc": "Example 2"},
+    {"input": "0", "desc": "Edge: zero"},
+    {"input": "1", "desc": "Edge: one"},
+    {"input": "2", "desc": "Edge: two"},
+    {"input": "3", "desc": "Edge: three"},
+    {"input": "4", "desc": "Edge: four"},
+    {"input": "5", "desc": "Standard"},
+    {"input": "6", "desc": "Standard"},
+    {"input": "14", "desc": "Standard"},
+    {"input": "100", "desc": "Standard"},
+    {"input": "255", "desc": "Standard 2^8-1"},
+    {"input": "256", "desc": "Standard 2^8"},
+    {"input": "1023", "desc": "Standard 2^10-1"},
+    {"input": "1024", "desc": "Standard 2^10"},
+    {"input": "999999", "desc": "Standard"},
+    {"input": "536870912", "desc": "Stress 2^29"},
+    {"input": "1000000000", "desc": "Stress max constraint"},
+    {"input": "999999999", "desc": "Stress near max"},
+    {"input": "65535", "desc": "Standard 2^16-1"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2212,
+  "slug": "put-marbles-in-bags",
+  "inferred_constraints": "1 <= k <= weights.length <= 10^5, 1 <= weights[i] <= 10^9",
+  "input_format": "line1: weights (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[1,3,5,1]\n2", "desc": "Standard: example 1"},
+    {"input": "[1,3]\n2", "desc": "Standard: example 2"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 k=1"},
+    {"input": "[1,2,3,4,5]\n1", "desc": "Edge: k=1 one bag"},
+    {"input": "[1,2,3,4,5]\n5", "desc": "Edge: k=n each bag"},
+    {"input": "[1000000000]\n1", "desc": "Edge: max single"},
+    {"input": "[1,1,1,1,1]\n3", "desc": "Edge: all same"},
+    {"input": "[5,4,3,2,1]\n3", "desc": "Standard dec"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard"},
+    {"input": "[100,1,100,1,100]\n2", "desc": "Standard"},
+    {"input": "[1000000000,1,1000000000,1]\n2", "desc": "Standard extreme"},
+    {"input": "[1,1000000000,1,1000000000,1]\n3", "desc": "Standard"},
+    {"input": "[7,11,13,17,19,23]\n3", "desc": "Standard primes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12]\n6", "desc": "Standard"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100]\n5", "desc": "Standard"},
+    {"input": "[1,2]\n1", "desc": "Edge: k=1"},
+    {"input": "[1,2,3]\n3", "desc": "Edge"},
+    {"input": "[100,200,100,200,100,200,100,200,100,200]\n5", "desc": "Standard"},
+    {"input": "[1,1,1,1,1,2,2,2,2,2,3,3,3,3,3]\n5", "desc": "Standard grouped"}
+  ]
+}

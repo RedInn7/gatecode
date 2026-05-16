@@ -1,0 +1,28 @@
+{
+  "pid": 199,
+  "slug": "total-score-of-dungeon-runs",
+  "inferred_constraints": "1 <= hp <= 1e9, 1 <= n <= 1e5, 1 <= damage[i], requirement[i] <= 1e4",
+  "input_format": "line1: hp (int); line2: damage (JSON int array); line3: requirement (JSON int array)",
+  "testcases": [
+    {"input": "11\n[3,6,7]\n[4,2,5]", "desc": "Edge: example1"},
+    {"input": "2\n[10000,1]\n[1,1]", "desc": "Edge: example2"},
+    {"input": "1\n[1]\n[1]", "desc": "Edge: minimum hp=1 single"},
+    {"input": "1\n[1]\n[100]", "desc": "Edge: requirement too high"},
+    {"input": "100\n[10]\n[1]", "desc": "Edge: huge hp single low req"},
+    {"input": "1000000000\n[1]\n[1]", "desc": "Edge: max hp single"},
+    {"input": "10\n[10000,10000,10000]\n[1,1,1]", "desc": "Edge: damage exceeds hp on first"},
+    {"input": "10000\n[1,1,1,1,1]\n[1,1,1,1,1]", "desc": "Edge: many easy levels"},
+    {"input": "5\n[2,3,1,4]\n[1,1,1,1]", "desc": "Standard: chain of damages"},
+    {"input": "100\n[10,20,30,40]\n[5,10,15,20]", "desc": "Standard: progressive"},
+    {"input": "50\n[5,5,5,5,5,5,5,5,5,5]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: many small"},
+    {"input": "10\n[10,1,1,1,1]\n[1,1,1,1,1]", "desc": "Standard: kill on first dungeon"},
+    {"input": "100\n[1,2,3,4,5,6,7,8,9,10]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: damage = requirement"},
+    {"input": "100\n[10,9,8,7,6,5,4,3,2,1]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: dam desc req asc"},
+    {"input": "100\n[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: req desc"},
+    {"input": "1000\n[100,200,300,400,500]\n[100,200,300,400,500]", "desc": "Standard: equal pairs"},
+    {"input": "100\n[20,30,15,10,5,8,2,1]\n[5,5,5,5,5,5,5,5]", "desc": "Standard: req constant"},
+    {"input": "1000000000\n[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: max hp, max damage 20 levels"},
+    {"input": "1\n[10000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: insta-kill on first"},
+    {"input": "999999999\n[1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,10000]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: exponential damage 15 levels"}
+  ]
+}

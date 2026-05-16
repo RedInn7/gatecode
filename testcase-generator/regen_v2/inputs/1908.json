@@ -1,0 +1,28 @@
+{
+  "pid": 1908,
+  "slug": "neighboring-bitwise-xor",
+  "inferred_constraints": "n == derived.length, 1 <= n <= 10^5, derived[i] in {0,1}",
+  "input_format": "line1: derived (JSON int array of 0/1)",
+  "testcases": [
+    {"input": "[1,1,0]", "desc": "Edge: example1 true"},
+    {"input": "[1,1]", "desc": "Edge: example2 true"},
+    {"input": "[1,0]", "desc": "Edge: example3 false (odd ones)"},
+    {"input": "[0]", "desc": "Edge: n=1 zero -> true"},
+    {"input": "[1]", "desc": "Edge: n=1 one -> false"},
+    {"input": "[0,0]", "desc": "Edge: two zeros -> true"},
+    {"input": "[1,1,1,1]", "desc": "Edge: all ones even -> true"},
+    {"input": "[1,1,1]", "desc": "Edge: all ones odd -> false"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: all zeros n=10"},
+    {"input": "[1,0,1,0,1,0,1,0,1,0]", "desc": "Standard: alternating starting 1"},
+    {"input": "[0,1,0,1,0,1,0,1,0,1]", "desc": "Standard: alternating starting 0"},
+    {"input": "[1,1,0,0,1,1,0,0,1,1]", "desc": "Standard: pairs alternating"},
+    {"input": "[1,0,0,1,1,0,0,1,1,0]", "desc": "Standard: random pattern"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Stress: 50 zeros"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 ones even -> true"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 49 ones odd -> false"},
+    {"input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]", "desc": "Stress: 50 alternating (25 ones)"},
+    {"input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]", "desc": "Stress: 100 alternating"},
+    {"input": "[1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0]", "desc": "Special: blocks of 5"},
+    {"input": "[0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1]", "desc": "Special: triple pattern"}
+  ]
+}

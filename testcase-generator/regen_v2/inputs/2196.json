@@ -1,0 +1,28 @@
+{
+  "pid": 2196,
+  "slug": "once-twice",
+  "inferred_constraints": "1 <= nums.length <= 10^5, integer values, exactly one once, one twice, rest thrice",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,2,3,2,5,5,5,7,7]", "desc": "Standard: example 1"},
+    {"input": "[4,4,6,4,9,9,9,6,8]", "desc": "Standard: example 2"},
+    {"input": "[1,2,2]", "desc": "Edge: minimal n=3"},
+    {"input": "[1,1,2]", "desc": "Edge: minimal"},
+    {"input": "[1,1,1,2,3,3]", "desc": "Edge: small"},
+    {"input": "[5,5,5,1,1,2]", "desc": "Standard"},
+    {"input": "[100,100,1,2,2,100]", "desc": "Standard"},
+    {"input": "[7,7,7,1,1,2]", "desc": "Standard"},
+    {"input": "[10,10,10,20,20,30]", "desc": "Standard"},
+    {"input": "[3,3,3,5,5,7]", "desc": "Standard"},
+    {"input": "[1,2,2,3,3,3]", "desc": "Standard"},
+    {"input": "[0,0,1,1,1,2]", "desc": "Standard with zero"},
+    {"input": "[1000,1000,1000,1,1,2]", "desc": "Standard large"},
+    {"input": "[-5,-5,-5,-1,-1,-3]", "desc": "Standard negatives"},
+    {"input": "[1,1,1,2,2,2,3,3,3,5,5,7]", "desc": "Standard"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4,4,4,5,5,7]", "desc": "Standard"},
+    {"input": "[100,100,100,200,200,200,300,300,300,400,400,500]", "desc": "Standard"},
+    {"input": "[7,7,7,11,11,11,13,13,13,17,17,19]", "desc": "Standard primes"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,7]", "desc": "Standard"},
+    {"input": "[100000,100000,100000,1,1,2]", "desc": "Edge: max value"}
+  ]
+}

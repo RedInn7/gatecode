@@ -1,0 +1,28 @@
+{
+  "pid": 180,
+  "slug": "delete-tree-nodes",
+  "inferred_constraints": "1 <= nodes <= 1e4, parent.length == nodes, parent[0]=-1, value.length == nodes, -1e5 <= value[i] <= 1e5, valid tree",
+  "input_format": "line1: nodes (int); line2: parent (JSON int array); line3: value (JSON int array)",
+  "testcases": [
+    {"input": "7\n[-1,0,0,1,2,2,2]\n[1,-2,4,0,-2,-1,-1]", "desc": "Edge: example1"},
+    {"input": "7\n[-1,0,0,1,2,2,2]\n[1,-2,4,0,-2,-1,-2]", "desc": "Edge: example2"},
+    {"input": "1\n[-1]\n[0]", "desc": "Edge: single node with zero value"},
+    {"input": "1\n[-1]\n[5]", "desc": "Edge: single node positive"},
+    {"input": "1\n[-1]\n[-5]", "desc": "Edge: single node negative, would be deleted"},
+    {"input": "1\n[-1]\n[100000]", "desc": "Edge: single max"},
+    {"input": "1\n[-1]\n[-100000]", "desc": "Edge: single min"},
+    {"input": "3\n[-1,0,0]\n[0,1,-1]", "desc": "Edge: root + 2 children sum to 0"},
+    {"input": "3\n[-1,0,0]\n[1,1,1]", "desc": "Edge: all positive sum to 3, keep all"},
+    {"input": "5\n[-1,0,1,2,3]\n[1,2,-3,2,1]", "desc": "Standard: chain"},
+    {"input": "5\n[-1,0,0,0,0]\n[1,2,3,4,5]", "desc": "Standard: star with 4 children"},
+    {"input": "5\n[-1,0,0,1,1]\n[1,-5,3,-2,2]", "desc": "Standard: small tree"},
+    {"input": "10\n[-1,0,0,1,1,2,2,3,3,4]\n[5,-3,2,1,-1,1,-1,1,1,-2]", "desc": "Standard: 10 nodes balanced"},
+    {"input": "10\n[-1,0,1,2,3,4,5,6,7,8]\n[1,-1,1,-1,1,-1,1,-1,1,-1]", "desc": "Standard: chain alternating"},
+    {"input": "7\n[-1,0,0,1,1,2,2]\n[10,5,5,-2,-3,-2,-3]", "desc": "Standard: full binary tree"},
+    {"input": "8\n[-1,0,0,0,0,0,0,0]\n[1,2,3,4,5,6,7,8]", "desc": "Standard: root with 7 children"},
+    {"input": "6\n[-1,0,1,2,3,4]\n[-1,-1,-1,-1,-1,-1]", "desc": "Edge: all negative"},
+    {"input": "6\n[-1,0,1,2,3,4]\n[1,1,1,1,1,1]", "desc": "Edge: all positive"},
+    {"input": "15\n[-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6]\n[1,1,1,1,1,1,1,-15,1,1,1,1,1,1,1]", "desc": "Stress: 15-node full binary tree, one deep negative"},
+    {"input": "20\n[-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9]\n[100,50,50,25,25,25,25,-50,12,-12,12,-12,12,-12,12,1,1,1,1,1]", "desc": "Stress: 20-node tree mixed"}
+  ]
+}

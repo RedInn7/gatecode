@@ -1,0 +1,28 @@
+{
+  "pid": 3842,
+  "slug": "first-day-where-you-have-been-in-all-the-rooms",
+  "inferred_constraints": "n == nextVisit.length, 1 <= n <= 10^5, 0 <= nextVisit[i] <= i",
+  "input_format": "line1: nextVisit (JSON array)",
+  "testcases": [
+    {"input": "[0,0]", "desc": "Example 1"},
+    {"input": "[0,0,2]", "desc": "Example: 3 rooms"},
+    {"input": "[0,1,2,0]", "desc": "Example variant"},
+    {"input": "[0]", "desc": "Edge: single room"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all reset to 0"},
+    {"input": "[0,1,2,3,4]", "desc": "Edge: nextVisit[i]=i staircase"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]", "desc": "Standard chain"},
+    {"input": "[0,0,1,1,2,2]", "desc": "Standard"},
+    {"input": "[0,0,0]", "desc": "Standard"},
+    {"input": "[0,1,1,2,3]", "desc": "Standard"},
+    {"input": "[0,1,0,3,2]", "desc": "Standard alternating"},
+    {"input": "[0,0,1,2,3,4,5,6,7,8]", "desc": "Standard linear"},
+    {"input": "[0,0,2,3,4]", "desc": "Standard"},
+    {"input": "[0,1,2,1,3,4,2,5]", "desc": "Standard mixed"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]", "desc": "Standard 15 staircase"},
+    {"input": "[0,0,1,0,2,0,3,0,4,0]", "desc": "Killer alternating reset"},
+    {"input": "[0,0,1,1,1,2,2,2,3,3]", "desc": "Standard"},
+    {"input": "[0,1,1,1,1,1,1,1,1,1]", "desc": "Killer mostly 1"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Stress all zero 20"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]", "desc": "Stress staircase 20"}
+  ]
+}

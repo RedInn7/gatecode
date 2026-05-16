@@ -1,0 +1,28 @@
+{
+  "pid": 2207,
+  "slug": "fancy-sequence",
+  "inferred_constraints": "1 <= val, inc, m <= 100, 0 <= idx <= 10^5, at most 10^5 ops",
+  "input_format": "line1: ops (JSON array); line2: args (JSON 2D)",
+  "testcases": [
+    {"input": "[\"Fancy\",\"append\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[2],[3],[7],[2],[0],[3],[10],[2],[0],[1],[2]]", "desc": "Standard: example 1"},
+    {"input": "[\"Fancy\"]\n[[]]", "desc": "Edge: just init"},
+    {"input": "[\"Fancy\",\"getIndex\"]\n[[],[0]]", "desc": "Edge: empty get"},
+    {"input": "[\"Fancy\",\"append\",\"getIndex\"]\n[[],[5],[0]]", "desc": "Edge: single append"},
+    {"input": "[\"Fancy\",\"append\",\"addAll\",\"getIndex\"]\n[[],[5],[10],[0]]", "desc": "Edge: add"},
+    {"input": "[\"Fancy\",\"append\",\"multAll\",\"getIndex\"]\n[[],[5],[10],[0]]", "desc": "Edge: mult"},
+    {"input": "[\"Fancy\",\"append\",\"append\",\"append\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[1],[2],[3],[0],[1],[2]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"append\",\"addAll\",\"getIndex\",\"getIndex\"]\n[[],[1],[2],[5],[0],[1]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"multAll\",\"append\",\"getIndex\",\"getIndex\"]\n[[],[2],[3],[5],[0],[1]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"addAll\",\"multAll\",\"addAll\",\"getIndex\"]\n[[],[1],[2],[3],[4],[0]]", "desc": "Standard complex"},
+    {"input": "[\"Fancy\",\"append\",\"append\",\"append\",\"append\",\"append\",\"addAll\",\"multAll\",\"getIndex\",\"getIndex\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[1],[2],[3],[4],[5],[10],[2],[0],[1],[2],[3],[4]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"getIndex\"]\n[[],[1],[5]]", "desc": "Edge: out of bound"},
+    {"input": "[\"Fancy\",\"multAll\",\"addAll\",\"append\",\"getIndex\"]\n[[],[5],[10],[1],[0]]", "desc": "Standard mult before append"},
+    {"input": "[\"Fancy\",\"append\",\"multAll\",\"multAll\",\"multAll\",\"getIndex\"]\n[[],[1],[2],[2],[2],[0]]", "desc": "Standard chain mult"},
+    {"input": "[\"Fancy\",\"append\",\"addAll\",\"addAll\",\"addAll\",\"getIndex\"]\n[[],[0],[1],[2],[3],[0]]", "desc": "Standard chain add"},
+    {"input": "[\"Fancy\",\"append\",\"append\",\"multAll\",\"append\",\"addAll\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[10],[20],[3],[30],[5],[0],[1],[2]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"append\",\"append\",\"append\",\"multAll\",\"addAll\",\"getIndex\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[1],[2],[3],[4],[2],[1],[0],[1],[2],[3]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"append\",\"append\",\"append\",\"append\",\"append\",\"append\",\"append\",\"append\",\"append\",\"getIndex\"]\n[[],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[9]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"addAll\",\"append\",\"multAll\",\"append\",\"addAll\",\"multAll\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[5],[10],[15],[2],[25],[5],[3],[0],[1],[2]]", "desc": "Standard"},
+    {"input": "[\"Fancy\",\"append\",\"getIndex\",\"append\",\"getIndex\",\"append\",\"getIndex\"]\n[[],[1],[0],[2],[1],[3],[2]]", "desc": "Standard"}
+  ]
+}

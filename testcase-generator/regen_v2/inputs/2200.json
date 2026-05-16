@@ -1,0 +1,28 @@
+{
+  "pid": 2200,
+  "slug": "largest-substring-between-two-equal-characters",
+  "inferred_constraints": "1 <= s.length <= 300, lowercase",
+  "input_format": "single line: s (quoted)",
+  "testcases": [
+    {"input": "\"aa\"", "desc": "Standard: example 1"},
+    {"input": "\"abca\"", "desc": "Standard: example 2"},
+    {"input": "\"cbzxy\"", "desc": "Standard: example 3"},
+    {"input": "\"a\"", "desc": "Edge: n=1 no pair"},
+    {"input": "\"ab\"", "desc": "Edge: n=2 no pair"},
+    {"input": "\"aba\"", "desc": "Edge: simple"},
+    {"input": "\"aaa\"", "desc": "Edge: 3 same"},
+    {"input": "\"abcdefghij\"", "desc": "Edge: all distinct"},
+    {"input": "\"abcdefghija\"", "desc": "Standard"},
+    {"input": "\"banana\"", "desc": "Standard"},
+    {"input": "\"mississippi\"", "desc": "Standard"},
+    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
+    {"input": "\"abcabc\"", "desc": "Standard"},
+    {"input": "\"aaaaaaaaaa\"", "desc": "Standard all same"},
+    {"input": "\"zabcdefghijklmnopqrstuvwxyz\"", "desc": "Standard z-pair"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: no repeat"},
+    {"input": "\"aabbccddee\"", "desc": "Standard"},
+    {"input": "\"abcdeedcba\"", "desc": "Standard palindrome"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyza\"", "desc": "Standard"},
+    {"input": "\"qwertyuiopasdfghjklzxcvbnm\"", "desc": "Standard alphabet shuffled"}
+  ]
+}

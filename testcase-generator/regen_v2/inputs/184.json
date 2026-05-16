@@ -1,0 +1,28 @@
+{
+  "pid": 184,
+  "slug": "maximum-number-of-groups-with-increasing-length",
+  "inferred_constraints": "1 <= usageLimits.length <= 1e5, 1 <= usageLimits[i] <= 1e9",
+  "input_format": "line1: usageLimits (JSON int array)",
+  "testcases": [
+    {"input": "[1,2,5]", "desc": "Edge: example1"},
+    {"input": "[2,1,2]", "desc": "Edge: example2"},
+    {"input": "[1,1]", "desc": "Edge: example3 -> 1"},
+    {"input": "[1]", "desc": "Edge: n=1 single 1"},
+    {"input": "[1000000000]", "desc": "Edge: max value"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: 5 ones"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: 5 fives"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Edge: descending"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 10 ones"},
+    {"input": "[2,2,2,2,2]", "desc": "Standard: all twos"},
+    {"input": "[10,10,10,10,10]", "desc": "Standard: all tens"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending 10"},
+    {"input": "[1,2,4,7,11,16,22,29,37,46]", "desc": "Standard: triangular gaps"},
+    {"input": "[100,100,100,100,100,100,100,100,100,100]", "desc": "Standard: 10 hundreds"},
+    {"input": "[1000000000,1000000000,1000000000]", "desc": "Standard: max value triplet"},
+    {"input": "[1,1000000000,1]", "desc": "Standard: spike middle"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: ascending 20"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 40 ones"},
+    {"input": "[1000000000,999999999,999999998,999999997,999999996,999999995,999999994,999999993,999999992,999999991,999999990,999999989,999999988,999999987,999999986]", "desc": "Stress: 15 near-max"}
+  ]
+}

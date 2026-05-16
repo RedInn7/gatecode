@@ -1,0 +1,28 @@
+{
+  "pid": 1900,
+  "slug": "circular-permutation-in-binary-representation",
+  "inferred_constraints": "1 <= n <= 16, 0 <= start < 2^n",
+  "input_format": "line1: n (int)\nline2: start (int)",
+  "testcases": [
+    {"input": "2\n3", "desc": "Edge: example1 n=2 start=3"},
+    {"input": "3\n2", "desc": "Edge: example2 n=3 start=2"},
+    {"input": "1\n0", "desc": "Edge: min n=1 start=0"},
+    {"input": "1\n1", "desc": "Edge: min n=1 start=1"},
+    {"input": "2\n0", "desc": "Edge: n=2 start=0"},
+    {"input": "2\n1", "desc": "Edge: n=2 start=1"},
+    {"input": "3\n0", "desc": "Standard: n=3 start=0"},
+    {"input": "3\n7", "desc": "Standard: n=3 start=max"},
+    {"input": "4\n0", "desc": "Standard: n=4 start=0"},
+    {"input": "4\n5", "desc": "Standard: n=4 start mid"},
+    {"input": "4\n15", "desc": "Standard: n=4 start=max"},
+    {"input": "5\n10", "desc": "Standard: n=5 start mid"},
+    {"input": "6\n0", "desc": "Standard: n=6 start=0"},
+    {"input": "8\n128", "desc": "Standard: n=8 start mid-power-of-2"},
+    {"input": "10\n0", "desc": "Standard: n=10 zero"},
+    {"input": "12\n2048", "desc": "Stress: n=12 mid"},
+    {"input": "14\n8191", "desc": "Stress: n=14 near max"},
+    {"input": "15\n0", "desc": "Stress: n=15 zero"},
+    {"input": "16\n0", "desc": "Stress: n=16 max size start=0"},
+    {"input": "16\n65535", "desc": "Stress: n=16 max size start=max"}
+  ]
+}

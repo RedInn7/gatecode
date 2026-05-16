@@ -1,0 +1,28 @@
+{
+  "pid": 1905,
+  "slug": "detect-pattern-of-length-m-repeated-k-or-more-times",
+  "inferred_constraints": "2 <= arr.length <= 100, 1 <= arr[i] <= 100, 1 <= m <= 100, 2 <= k <= 100",
+  "input_format": "line1: arr (JSON int array)\nline2: m (int)\nline3: k (int)",
+  "testcases": [
+    {"input": "[1,2,4,4,4,4]\n1\n3", "desc": "Edge: example1 true"},
+    {"input": "[1,2,1,2,1,1,1,3]\n2\n2", "desc": "Edge: example2 true"},
+    {"input": "[1,2,1,2,1,3]\n2\n3", "desc": "Edge: example3 false"},
+    {"input": "[1,1]\n1\n2", "desc": "Edge: minimum size match"},
+    {"input": "[1,2]\n1\n2", "desc": "Edge: minimum size no match"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n1\n2", "desc": "Edge: all same many reps"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n2\n5", "desc": "Edge: all same m=2"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]\n2\n5", "desc": "Standard: alternating m=2 k=5"},
+    {"input": "[1,2,3,1,2,3,1,2,3]\n3\n3", "desc": "Standard: repeating triple"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1\n2", "desc": "Standard: all distinct false"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]\n10\n5", "desc": "Stress: all same n=100 m=10 k=5"},
+    {"input": "[1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3]\n3\n10", "desc": "Stress: triple repeated 10x"},
+    {"input": "[1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3]\n3\n11", "desc": "Stress: triple repeated 10x but k=11"},
+    {"input": "[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]\n5\n5", "desc": "Standard: 5-pattern repeated 5x"},
+    {"input": "[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]\n5\n6", "desc": "Standard: 5-pattern 5x k=6 false"},
+    {"input": "[7,7,7,7,7,7,7,7]\n4\n2", "desc": "Standard: all 7 m=4 k=2"},
+    {"input": "[100,100,100,100,100,100]\n2\n3", "desc": "Standard: max val m=2 k=3"},
+    {"input": "[1,2,1,2,1,2,3,4,3,4,3,4]\n2\n3", "desc": "Standard: two different patterns each k=3"},
+    {"input": "[1,2,3,1,2,3,1,2,3,5,6,7,5,6,7,5,6,7]\n3\n3", "desc": "Special: 3-pattern then different 3-pattern"},
+    {"input": "[1,2,1,2,1,2,2,1,2,1,2,1]\n2\n3", "desc": "Special: pattern then reversed pattern"}
+  ]
+}

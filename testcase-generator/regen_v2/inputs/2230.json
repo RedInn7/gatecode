@@ -1,0 +1,28 @@
+{
+  "pid": 2230,
+  "slug": "longest-continuous-increasing-subsequence",
+  "inferred_constraints": "0 <= nums.length <= 10^4, -10^9 <= nums[i] <= 10^9",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,3,5,4,7]", "desc": "Standard: example 1"},
+    {"input": "[2,2,2,2,2]", "desc": "Standard: example 2"},
+    {"input": "[]", "desc": "Edge: empty"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,2]", "desc": "Edge: 2 inc"},
+    {"input": "[2,1]", "desc": "Edge: 2 dec"},
+    {"input": "[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Edge: all inc"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Edge: all dec"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]", "desc": "Standard alternating"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[-5,-3,-1,0,1,3,5]", "desc": "Standard with negatives"},
+    {"input": "[1000000000,-1000000000,500000000]", "desc": "Edge: extremes"},
+    {"input": "[3,1,4,1,5,9,2,6,5,3,5]", "desc": "Standard pi digits"},
+    {"input": "[1,2,3,1,2,3,1,2,3]", "desc": "Standard repeating"},
+    {"input": "[1,2,3,4,5,4,5,6,7,8,9,10]", "desc": "Standard split"},
+    {"input": "[10,1,2,3,4,5,6,7,8,9]", "desc": "Standard with leading max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard 20 inc"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]", "desc": "Standard 10 dec"},
+    {"input": "[1,3,2,4,5,3,7,8,9,10,11,12,13,14,15]", "desc": "Standard"}
+  ]
+}

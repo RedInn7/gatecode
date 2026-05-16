@@ -1,0 +1,28 @@
+{
+  "pid": 2192,
+  "slug": "sentence-similarity",
+  "inferred_constraints": "1 <= sentence1.length, sentence2.length <= 1000, 0 <= similarPairs.length <= 2000",
+  "input_format": "line1: sentence1 (JSON array); line2: sentence2 (JSON array); line3: similarPairs (JSON 2D)",
+  "testcases": [
+    {"input": "[\"great\",\"acting\",\"skills\"]\n[\"fine\",\"drama\",\"talent\"]\n[[\"great\",\"fine\"],[\"acting\",\"drama\"],[\"skills\",\"talent\"]]", "desc": "Standard: example 1"},
+    {"input": "[\"great\"]\n[\"great\"]\n[]", "desc": "Standard same"},
+    {"input": "[\"great\"]\n[\"doubleplus\",\"good\"]\n[[\"great\",\"doubleplus\"]]", "desc": "Edge: different length"},
+    {"input": "[\"a\"]\n[\"b\"]\n[[\"a\",\"b\"]]", "desc": "Edge: pair"},
+    {"input": "[\"a\"]\n[\"a\"]\n[]", "desc": "Edge: same no pairs"},
+    {"input": "[\"a\"]\n[\"b\"]\n[]", "desc": "Edge: different no pairs"},
+    {"input": "[\"hello\",\"world\"]\n[\"hi\",\"earth\"]\n[[\"hello\",\"hi\"],[\"world\",\"earth\"]]", "desc": "Standard"},
+    {"input": "[\"hello\",\"world\"]\n[\"hi\",\"earth\"]\n[[\"hello\",\"hi\"]]", "desc": "Edge: missing pair"},
+    {"input": "[\"the\",\"quick\",\"brown\",\"fox\"]\n[\"a\",\"fast\",\"red\",\"animal\"]\n[[\"the\",\"a\"],[\"quick\",\"fast\"],[\"brown\",\"red\"],[\"fox\",\"animal\"]]", "desc": "Standard"},
+    {"input": "[\"a\",\"a\",\"a\"]\n[\"a\",\"a\",\"a\"]\n[]", "desc": "Edge: all identical"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"x\",\"y\",\"z\"]\n[[\"a\",\"x\"],[\"b\",\"y\"],[\"c\",\"z\"]]", "desc": "Standard"},
+    {"input": "[\"hello\",\"world\"]\n[\"world\",\"hello\"]\n[[\"hello\",\"world\"]]", "desc": "Edge: relation not symmetric"},
+    {"input": "[\"x\",\"y\"]\n[\"y\",\"x\"]\n[[\"x\",\"y\"],[\"y\",\"x\"]]", "desc": "Standard symmetric"},
+    {"input": "[\"a\",\"b\"]\n[\"a\",\"c\"]\n[[\"b\",\"c\"]]", "desc": "Standard partial"},
+    {"input": "[\"hello\"]\n[\"world\"]\n[]", "desc": "Edge: no pairs no match"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[]", "desc": "Edge: 5 same"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"e\",\"d\",\"c\",\"b\",\"a\"]\n[]", "desc": "Edge: reversed"},
+    {"input": "[\"one\",\"two\",\"three\"]\n[\"un\",\"deux\",\"trois\"]\n[[\"one\",\"un\"],[\"two\",\"deux\"],[\"three\",\"trois\"]]", "desc": "Standard"},
+    {"input": "[\"cat\",\"dog\",\"bird\"]\n[\"feline\",\"canine\",\"avian\"]\n[[\"cat\",\"feline\"],[\"dog\",\"canine\"],[\"bird\",\"avian\"]]", "desc": "Standard"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"a\",\"b\",\"c\"]\n[[\"a\",\"a\"]]", "desc": "Edge: self-pair noop"}
+  ]
+}

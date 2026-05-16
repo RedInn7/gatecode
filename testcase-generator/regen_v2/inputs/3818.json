@@ -1,0 +1,28 @@
+{
+  "pid": 3818,
+  "slug": "check-divisibility-by-digit-sum-and-product",
+  "inferred_constraints": "1 <= n <= 10^6",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "99", "desc": "Example 1"},
+    {"input": "23", "desc": "Example 2"},
+    {"input": "1", "desc": "Edge: single digit 1"},
+    {"input": "9", "desc": "Edge: single digit 9"},
+    {"input": "10", "desc": "Edge: has zero digit"},
+    {"input": "100", "desc": "Edge: 100"},
+    {"input": "11", "desc": "Standard 1+1+1*1=3, 11%3"},
+    {"input": "12", "desc": "Standard"},
+    {"input": "20", "desc": "Standard"},
+    {"input": "30", "desc": "Standard"},
+    {"input": "50", "desc": "Standard"},
+    {"input": "111", "desc": "Standard"},
+    {"input": "123", "desc": "Standard"},
+    {"input": "1000", "desc": "Standard with zeros"},
+    {"input": "5555", "desc": "Standard repeated digit"},
+    {"input": "999", "desc": "Standard all 9"},
+    {"input": "1234", "desc": "Standard"},
+    {"input": "12345", "desc": "Standard 5 digits"},
+    {"input": "100000", "desc": "Standard"},
+    {"input": "1000000", "desc": "Stress max"}
+  ]
+}

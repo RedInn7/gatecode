@@ -1,0 +1,28 @@
+{
+  "pid": 201,
+  "slug": "collect-coins-in-a-tree",
+  "inferred_constraints": "1 <= n <= 3e4, coins[i] in {0,1}, edges.length == n-1, valid tree",
+  "input_format": "line1: coins (JSON int array 0/1); line2: edges (JSON 2D int)",
+  "testcases": [
+    {"input": "[1,0,0,0,0,1]\n[[0,1],[1,2],[2,3],[3,4],[4,5]]", "desc": "Edge: example1 chain"},
+    {"input": "[0,0,0,1,1,0,0,1]\n[[0,1],[0,2],[1,3],[1,4],[2,5],[5,6],[5,7]]", "desc": "Edge: example2"},
+    {"input": "[0]\n[]", "desc": "Edge: n=1 no coin"},
+    {"input": "[1]\n[]", "desc": "Edge: n=1 single coin"},
+    {"input": "[0,0]\n[[0,1]]", "desc": "Edge: n=2 no coins"},
+    {"input": "[1,1]\n[[0,1]]", "desc": "Edge: n=2 both coins"},
+    {"input": "[1,0]\n[[0,1]]", "desc": "Edge: n=2 one coin"},
+    {"input": "[1,0,1]\n[[0,1],[1,2]]", "desc": "Edge: n=3 chain with coins on ends"},
+    {"input": "[0,1,0]\n[[0,1],[1,2]]", "desc": "Edge: n=3 chain with coin in middle"},
+    {"input": "[1,1,1,1,1]\n[[0,1],[1,2],[2,3],[3,4]]", "desc": "Standard: all coins chain"},
+    {"input": "[0,0,0,0,0]\n[[0,1],[1,2],[2,3],[3,4]]", "desc": "Standard: no coins chain"},
+    {"input": "[1,0,0,0,1]\n[[0,1],[0,2],[0,3],[0,4]]", "desc": "Standard: star, coin at root and leaf"},
+    {"input": "[0,1,0,1,0,1]\n[[0,1],[0,2],[0,3],[0,4],[0,5]]", "desc": "Standard: star, alternating coins"},
+    {"input": "[1,1,0,0,1,1]\n[[0,1],[1,2],[2,3],[3,4],[4,5]]", "desc": "Standard: chain with coin pairs"},
+    {"input": "[0,0,1,0,1,0,1,0]\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]", "desc": "Standard: chain spread coins"},
+    {"input": "[1,0,1,0,0,1,0,0,0,1]\n[[0,1],[1,2],[2,3],[2,4],[3,5],[4,6],[5,7],[5,8],[6,9]]", "desc": "Standard: branching tree"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[4,8],[5,9]]", "desc": "Standard: all coins balanced tree"},
+    {"input": "[1,0,0,0,0,0,0,0,0,1]\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]", "desc": "Stress: chain 10, coins on ends"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19]]", "desc": "Stress: chain 20 all coins"},
+    {"input": "[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1]\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[0,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19]]", "desc": "Stress: 20-node 2-branch with deep coins"}
+  ]
+}

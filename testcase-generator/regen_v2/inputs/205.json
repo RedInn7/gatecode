@@ -1,0 +1,28 @@
+{
+  "pid": 205,
+  "slug": "remove-one-element-to-make-the-array-strictly-increasing",
+  "inferred_constraints": "2 <= nums.length <= 1000, 1 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1,2,10,5,7]", "desc": "Edge: example1 remove 10"},
+    {"input": "[2,3,1,2]", "desc": "Edge: example2 cannot"},
+    {"input": "[1,1,1]", "desc": "Edge: example3 all same"},
+    {"input": "[1,2]", "desc": "Edge: n=2 already strict"},
+    {"input": "[2,1]", "desc": "Edge: n=2 desc, remove either"},
+    {"input": "[1,1]", "desc": "Edge: n=2 equal"},
+    {"input": "[1000,1000]", "desc": "Edge: n=2 both max"},
+    {"input": "[1,1,2,3,4]", "desc": "Edge: remove first dup"},
+    {"input": "[1,2,3,4,4]", "desc": "Edge: remove last dup"},
+    {"input": "[1,2,3]", "desc": "Edge: already strict, remove any single"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: long strict"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending - cannot fix"},
+    {"input": "[5,1,2,3,4]", "desc": "Standard: remove first"},
+    {"input": "[1,2,3,4,0]", "desc": "Standard: remove last"},
+    {"input": "[1,2,100,3,4]", "desc": "Standard: remove middle 100"},
+    {"input": "[1,1,2]", "desc": "Standard: remove first 1"},
+    {"input": "[100,1,2,3,4,5,6,7,8,9]", "desc": "Standard: remove 100 at start"},
+    {"input": "[1,2,3,4,5,6,7,8,9,1]", "desc": "Stress: remove last 1"},
+    {"input": "[1,2,3,4,5,6,7,8,1000,1000]", "desc": "Stress: cannot fix two dups"},
+    {"input": "[1,2,3,4,5,5,6,7,8,9]", "desc": "Stress: remove dup in middle"}
+  ]
+}

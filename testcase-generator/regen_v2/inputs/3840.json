@@ -1,0 +1,28 @@
+{
+  "pid": 3840,
+  "slug": "my-calendar-i",
+  "inferred_constraints": "0 <= start < end <= 10^9, up to 1000 calls to book",
+  "input_format": "Design class. line1: methods array; line2: args array",
+  "testcases": [
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[10,20],[15,25],[20,30]]", "desc": "Example 1"},
+    {"input": "[\"MyCalendar\",\"book\"]\n[[],[0,1]]", "desc": "Edge: single book"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[0,10],[10,20]]", "desc": "Edge: adjacent (half-open)"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[10,20],[10,20]]", "desc": "Edge: exact overlap"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[5,10],[3,7]]", "desc": "Standard partial overlap"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[5,10],[7,12]]", "desc": "Standard tail overlap"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[5,10],[3,15]]", "desc": "Standard contain"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\"]\n[[],[1,2],[3,4],[5,6],[7,8]]", "desc": "Standard disjoint"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[20,30],[30,40],[40,50]]", "desc": "Standard touching"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[0,1000000000],[0,1],[999999999,1000000000]]", "desc": "Edge: max range"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[30,40],[50,60],[70,80],[15,18]]", "desc": "Standard fits"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[30,40],[50,60],[70,80],[15,35]]", "desc": "Standard overlap crossing"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\"]\n[[],[100,200],[150,160],[180,250],[300,400]]", "desc": "Standard nested overlap"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[5,10],[10,15],[15,20]]", "desc": "Standard chain touch"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[20,30],[40,50],[60,70],[80,90],[100,110],[25,35],[45,55],[65,75],[5,15]]", "desc": "Standard mixed"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[47,50],[33,41],[39,45],[33,42],[25,32]]", "desc": "Killer chain conflicts"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[37,46],[42,47],[7,12],[6,18],[7,11],[44,46],[16,18]]", "desc": "Killer random overlapping"},
+    {"input": "[\"MyCalendar\",\"book\"]\n[[],[999999998,999999999]]", "desc": "Edge near max"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[0,500000000],[500000000,1000000000]]", "desc": "Standard halves"},
+    {"input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[0,10],[10,20],[20,30],[30,40],[40,50],[5,8],[15,18],[25,28],[35,38],[45,48]]", "desc": "Stress 10 ops"}
+  ]
+}

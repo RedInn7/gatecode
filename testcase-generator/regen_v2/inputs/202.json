@@ -1,0 +1,29 @@
+{
+  "pid": 202,
+  "slug": "implement-stack-using-queues",
+  "inferred_constraints": "1 <= x <= 9, at most 100 calls",
+  "input_format": "Design class: line1: operations (JSON string array); line2: arguments (JSON 2D)",
+  "testcases": [
+    {"input": "[\"MyStack\",\"push\",\"push\",\"top\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]", "desc": "Edge: example1"},
+    {"input": "[\"MyStack\",\"empty\"]\n[[],[]]", "desc": "Edge: empty check on new stack"},
+    {"input": "[\"MyStack\",\"push\",\"top\"]\n[[],[5],[]]", "desc": "Edge: single push then top"},
+    {"input": "[\"MyStack\",\"push\",\"pop\"]\n[[],[5],[]]", "desc": "Edge: single push then pop"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\"]\n[[],[1],[2],[3],[],[],[]]", "desc": "Edge: LIFO check"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"top\",\"top\",\"top\"]\n[[],[1],[2],[3],[],[],[]]", "desc": "Edge: top doesn't pop"},
+    {"input": "[\"MyStack\",\"push\",\"pop\",\"empty\"]\n[[],[1],[],[]]", "desc": "Edge: push pop empty"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"pop\",\"push\",\"top\"]\n[[],[1],[2],[],[3],[]]", "desc": "Standard: mixed ops"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\"]\n[[],[1],[2],[3],[4],[5]]", "desc": "Standard: many pushes"},
+    {"input": "[\"MyStack\",\"push\",\"top\",\"pop\",\"push\",\"top\",\"pop\",\"push\",\"top\",\"pop\"]\n[[],[1],[],[],[2],[],[],[3],[],[]]", "desc": "Standard: push-top-pop loop"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[],[1],[2],[3],[4],[5],[],[],[],[],[]]", "desc": "Standard: 5 push 5 pop"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"empty\",\"pop\",\"empty\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[],[],[]]", "desc": "Standard: empty checks"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"top\",\"pop\",\"top\",\"pop\",\"top\",\"pop\",\"top\",\"pop\",\"top\",\"pop\",\"empty\"]\n[[],[1],[2],[3],[4],[5],[],[],[],[],[],[],[],[],[],[],[]]", "desc": "Standard: full cycle"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\"]\n[[],[9],[8],[7],[6],[5],[4],[3],[2],[1]]", "desc": "Standard: descending pushes"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\"]\n[[],[1],[1],[1],[1],[1],[1],[1],[1],[1]]", "desc": "Standard: all same value"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"pop\",\"push\",\"pop\"]\n[[],[1],[2],[],[3],[],[4],[],[5],[]]", "desc": "Standard: alternating push/pop"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"top\",\"top\",\"top\",\"top\"]\n[[],[5],[4],[3],[2],[1],[],[],[],[]]", "desc": "Standard: pushes + top many times"},
+    {"input": "[\"MyStack\",\"push\",\"pop\",\"empty\",\"push\",\"top\",\"pop\",\"empty\",\"push\",\"push\",\"top\",\"pop\",\"top\",\"pop\",\"empty\"]\n[[],[1],[],[],[2],[],[],[],[3],[4],[],[],[],[],[]]", "desc": "Standard: comprehensive sequence"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\"]\n[[],[1],[2],[3],[4],[5],[6],[7],[8],[9],[1],[2],[3],[4],[5],[6],[7],[8],[9],[1],[2]]", "desc": "Stress: 20 pushes"},
+    {"input": "[\"MyStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[],[1],[2],[3],[4],[5],[6],[7],[8],[9],[1],[],[],[],[],[],[],[],[],[],[]]", "desc": "Stress: 10 push 10 pop alternating LIFO"},
+    {"input": "[\"MyStack\",\"push\",\"top\",\"push\",\"top\",\"push\",\"top\",\"push\",\"top\",\"push\",\"top\",\"pop\",\"top\",\"pop\",\"top\",\"pop\",\"top\",\"pop\",\"top\",\"pop\",\"empty\"]\n[[],[1],[],[2],[],[3],[],[4],[],[5],[],[],[],[],[],[],[],[],[],[],[]]", "desc": "Stress: build up tear down"}
+  ]
+}

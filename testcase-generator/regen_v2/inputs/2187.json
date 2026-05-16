@@ -1,0 +1,28 @@
+{
+  "pid": 2187,
+  "slug": "maximum-total-area-occupied-by-pistons",
+  "inferred_constraints": "1 <= height, 1 <= positions.length <= 10^5, 0 <= positions[i] <= height, directions in {U,D}",
+  "input_format": "line1: height (int); line2: positions (JSON array); line3: directions (quoted)",
+  "testcases": [
+    {"input": "5\n[2,5,4]\n\"UDD\"", "desc": "Standard: example 1"},
+    {"input": "10\n[0,5,10]\n\"UUD\"", "desc": "Standard"},
+    {"input": "1\n[0]\n\"U\"", "desc": "Edge: single piston at 0"},
+    {"input": "1\n[1]\n\"D\"", "desc": "Edge: single piston at max"},
+    {"input": "100\n[50]\n\"U\"", "desc": "Edge: single piston mid up"},
+    {"input": "100\n[50]\n\"D\"", "desc": "Edge: single piston mid down"},
+    {"input": "10\n[0,0,0,0,0]\n\"UUUUU\"", "desc": "Edge: all bottom up"},
+    {"input": "10\n[10,10,10,10,10]\n\"DDDDD\"", "desc": "Edge: all top down"},
+    {"input": "10\n[5,5,5,5,5]\n\"UUUUU\"", "desc": "Edge: middle all up"},
+    {"input": "10\n[5,5,5,5,5]\n\"DDDDD\"", "desc": "Edge: middle all down"},
+    {"input": "5\n[0,1,2,3,4,5]\n\"UUUUUU\"", "desc": "Standard ascending all up"},
+    {"input": "5\n[5,4,3,2,1,0]\n\"DDDDDD\"", "desc": "Standard descending all down"},
+    {"input": "10\n[0,10,0,10,0,10]\n\"UDUDUD\"", "desc": "Standard"},
+    {"input": "100\n[50,50,50,50,50]\n\"UDUDU\"", "desc": "Standard"},
+    {"input": "20\n[5,10,15,20]\n\"UUDD\"", "desc": "Standard"},
+    {"input": "50\n[10,20,30,40,50]\n\"UDUDU\"", "desc": "Standard"},
+    {"input": "1000\n[100,200,300,400,500]\n\"UUUUU\"", "desc": "Standard"},
+    {"input": "10\n[1,2,3,4,5,6,7,8,9]\n\"UUUDDDUUU\"", "desc": "Standard mixed"},
+    {"input": "10\n[5,5,5,5]\n\"UUDD\"", "desc": "Standard"},
+    {"input": "100000\n[0,100000]\n\"UD\"", "desc": "Stress big height"}
+  ]
+}

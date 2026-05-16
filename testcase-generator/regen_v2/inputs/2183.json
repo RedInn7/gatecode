@@ -1,0 +1,28 @@
+{
+  "pid": 2183,
+  "slug": "earliest-second-to-mark-indices-ii",
+  "inferred_constraints": "1 <= n, m <= 5000, 0 <= nums[i] <= 10^9, 1 <= changeIndices[i] <= n",
+  "input_format": "line1: nums (JSON array); line2: changeIndices (JSON array)",
+  "testcases": [
+    {"input": "[3,2,3]\n[1,3,2,2,2,2,3]", "desc": "Standard: example 1"},
+    {"input": "[0,0,1,2]\n[1,2,1,2,1,2,1,2]", "desc": "Standard"},
+    {"input": "[1,2,3]\n[1,2,3]", "desc": "Edge: minimal but impossible"},
+    {"input": "[0]\n[1]", "desc": "Edge: n=1 m=1 trivial"},
+    {"input": "[5]\n[1,1,1,1,1,1]", "desc": "Edge: n=1 with set"},
+    {"input": "[0,0]\n[1,2]", "desc": "Edge: 2 zeros each set once"},
+    {"input": "[1,1]\n[1,2,1,2]", "desc": "Standard"},
+    {"input": "[10]\n[1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard"},
+    {"input": "[3,3,3]\n[1,2,3,1,2,3,1,2,3]", "desc": "Standard cyclic"},
+    {"input": "[5,5,5,5]\n[1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4]", "desc": "Standard"},
+    {"input": "[0,0,0]\n[1,2,3]", "desc": "Edge: 3 zeros set each"},
+    {"input": "[1,0,2]\n[1,2,3,1,2,3]", "desc": "Standard"},
+    {"input": "[100,100]\n[1,2,1,2,1,2]", "desc": "Edge impossible (m=6 < 200)"},
+    {"input": "[1,2,3,4,5]\n[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]", "desc": "Standard"},
+    {"input": "[2,2]\n[1,2,1,2,1,2,1,2]", "desc": "Standard"},
+    {"input": "[5,5,5]\n[1,1,2,2,3,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3]", "desc": "Standard"},
+    {"input": "[10,10]\n[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Standard"},
+    {"input": "[0,1,2]\n[3,2,1,3,2,1,3,2,1]", "desc": "Standard"},
+    {"input": "[1,1,1,1]\n[1,2,3,4,1,2,3,4,1,2,3,4]", "desc": "Standard"},
+    {"input": "[3]\n[1,1,1,1,1,1,1,1]", "desc": "Standard"}
+  ]
+}

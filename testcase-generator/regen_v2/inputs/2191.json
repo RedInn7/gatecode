@@ -1,0 +1,28 @@
+{
+  "pid": 2191,
+  "slug": "find-minimum-in-rotated-sorted-array-ii",
+  "inferred_constraints": "1 <= nums.length <= 5000, -5000 <= nums[i] <= 5000, sorted rotated",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,3,5]", "desc": "Standard: example 1"},
+    {"input": "[2,2,2,0,1]", "desc": "Standard: example 2"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]", "desc": "Edge: 2 sorted"},
+    {"input": "[2,1]", "desc": "Edge: 2 rotated"},
+    {"input": "[1,1,1]", "desc": "Edge: 3 same"},
+    {"input": "[3,3,1,3]", "desc": "Standard duplicates"},
+    {"input": "[5,5,5,1,5]", "desc": "Standard"},
+    {"input": "[10,1,10,10,10]", "desc": "Standard"},
+    {"input": "[-5000,5000]", "desc": "Edge: extremes"},
+    {"input": "[5000,-5000]", "desc": "Edge: extremes rotated"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: no rotation"},
+    {"input": "[5,1,2,3,4]", "desc": "Standard rotated"},
+    {"input": "[2,2,2,2,2,2,2,2,1,2]", "desc": "Standard duplicates"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,1,1,1,1,1,1,0,1]", "desc": "Standard"},
+    {"input": "[3,1,3]", "desc": "Standard small"},
+    {"input": "[10,1,10,10,10,10,10,10,10,10]", "desc": "Standard"},
+    {"input": "[-1,-1,-1,-2,-1,-1,-1,-1]", "desc": "Standard negatives"}
+  ]
+}

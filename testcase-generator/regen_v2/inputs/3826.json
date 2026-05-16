@@ -1,0 +1,28 @@
+{
+  "pid": 3826,
+  "slug": "minimum-number-of-frogs-croaking",
+  "inferred_constraints": "1 <= croakOfFrogs.length <= 10^5, chars in {c,r,o,a,k}",
+  "input_format": "line1: croakOfFrogs (string, raw)",
+  "testcases": [
+    {"input": "croakcroak", "desc": "Example 1"},
+    {"input": "crcoakroak", "desc": "Example 2"},
+    {"input": "croakcrook", "desc": "Example 3: invalid"},
+    {"input": "c", "desc": "Edge: single c invalid"},
+    {"input": "croak", "desc": "Edge: single complete"},
+    {"input": "kroac", "desc": "Edge: wrong order"},
+    {"input": "ccroakroak", "desc": "Edge: extra c invalid"},
+    {"input": "ccroakroak", "desc": "Edge: duplicate"},
+    {"input": "ccrroaakk", "desc": "Standard: 2 frogs interleaved missing o"},
+    {"input": "ccrroookk", "desc": "Edge: invalid (no a)"},
+    {"input": "ccrroaakkrcoakroak", "desc": "Standard"},
+    {"input": "croakcroakcroakcroakcroakcroakcroakcroak", "desc": "Standard 8 frogs sequential"},
+    {"input": "cccrrroooaaakkk", "desc": "Standard 3 frogs in parallel"},
+    {"input": "ccccrrrroooaaaakkkk", "desc": "Edge: invalid (counts off by 1)"},
+    {"input": "ccccrrrroooaaaakkkk", "desc": "Standard: 4 frogs but missing o"},
+    {"input": "ccccrrrrooooaaaakkkk", "desc": "Standard 4 frogs parallel"},
+    {"input": "croakcroakccroaakkroak", "desc": "Standard mixed"},
+    {"input": "rcoakrcoakcroakcroak", "desc": "Edge: invalid leading r"},
+    {"input": "ccrcrokakroakroakoak", "desc": "Standard interleaved"},
+    {"input": "croakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroakcroak", "desc": "Stress 20 croaks sequential"}
+  ]
+}

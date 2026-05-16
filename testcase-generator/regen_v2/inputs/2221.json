@@ -1,0 +1,28 @@
+{
+  "pid": 2221,
+  "slug": "find-common-characters",
+  "inferred_constraints": "1 <= words.length <= 100, 1 <= words[i].length <= 100, lowercase",
+  "input_format": "single line: words (JSON array)",
+  "testcases": [
+    {"input": "[\"bella\",\"label\",\"roller\"]", "desc": "Standard: example 1"},
+    {"input": "[\"cool\",\"lock\",\"cook\"]", "desc": "Standard: example 2"},
+    {"input": "[\"a\"]", "desc": "Edge: n=1"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: 2 same"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: no common"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Edge: all same"},
+    {"input": "[\"aabbcc\",\"abcabc\",\"abccba\"]", "desc": "Standard"},
+    {"input": "[\"hello\",\"world\"]", "desc": "Standard 2 words"},
+    {"input": "[\"banana\",\"anana\",\"nana\"]", "desc": "Standard"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]", "desc": "Standard all a"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]", "desc": "Standard distinct"},
+    {"input": "[\"aaaa\",\"aaaaa\",\"aaa\"]", "desc": "Standard"},
+    {"input": "[\"thequickbrownfox\",\"jumpsoverthelazydog\"]", "desc": "Standard"},
+    {"input": "[\"abcdefghij\",\"abcdefghij\",\"abcdefghij\"]", "desc": "Edge: identical"},
+    {"input": "[\"abc\",\"abcabc\",\"abcabcabc\"]", "desc": "Standard"},
+    {"input": "[\"aabbcc\",\"abc\",\"aabbcc\"]", "desc": "Standard"},
+    {"input": "[\"xyz\",\"zyx\",\"yzx\"]", "desc": "Standard anagrams"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\"]", "desc": "Standard"},
+    {"input": "[\"hello\",\"yellow\",\"belly\",\"jelly\"]", "desc": "Standard"},
+    {"input": "[\"mississippi\",\"missing\",\"mister\",\"misery\"]", "desc": "Standard prefix"}
+  ]
+}

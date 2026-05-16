@@ -1,0 +1,28 @@
+{
+  "pid": 2216,
+  "slug": "jewels-and-stones",
+  "inferred_constraints": "1 <= jewels.length, stones.length <= 50, English letters, jewels distinct",
+  "input_format": "line1: jewels (quoted); line2: stones (quoted)",
+  "testcases": [
+    {"input": "\"aA\"\n\"aAAbbbb\"", "desc": "Standard: example 1"},
+    {"input": "\"z\"\n\"ZZ\"", "desc": "Standard: example 2"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: single match"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: no match"},
+    {"input": "\"A\"\n\"a\"", "desc": "Edge: case sensitive"},
+    {"input": "\"abc\"\n\"abcabcabc\"", "desc": "Standard repeating"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: full alphabet"},
+    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: case differ"},
+    {"input": "\"aA\"\n\"AAAA\"", "desc": "Edge: all match upper"},
+    {"input": "\"aA\"\n\"a\"", "desc": "Edge single stone"},
+    {"input": "\"xyz\"\n\"abcdefghijklmnopqrstuvw\"", "desc": "Edge: no jewels"},
+    {"input": "\"qwerty\"\n\"qwertyuiopasdfghjkl\"", "desc": "Standard"},
+    {"input": "\"AaBb\"\n\"AaBbCcDdEeFfGgHh\"", "desc": "Standard"},
+    {"input": "\"a\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Standard 26 a's"},
+    {"input": "\"Z\"\n\"abcdefghijklmnopqrstuvwxyzZ\"", "desc": "Standard"},
+    {"input": "\"abcde\"\n\"fghij\"", "desc": "Edge: no overlap"},
+    {"input": "\"AaBbCc\"\n\"AAaaBBbbCCcc\"", "desc": "Standard"},
+    {"input": "\"x\"\n\"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\"", "desc": "Stress 50 stones no match"},
+    {"input": "\"abcdefghij\"\n\"jihgfedcba\"", "desc": "Standard all match"},
+    {"input": "\"AB\"\n\"AaBbCcDd\"", "desc": "Standard"}
+  ]
+}

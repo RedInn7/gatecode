@@ -1,0 +1,28 @@
+{
+  "pid": 2199,
+  "slug": "two-letter-card-game",
+  "inferred_constraints": "1 <= cards.length <= 10^5, each card 2 lowercase letters, x is lowercase",
+  "input_format": "line1: cards (JSON array); line2: x (quoted char)",
+  "testcases": [
+    {"input": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"a\"", "desc": "Standard: example 1"},
+    {"input": "[\"aa\"]\n\"a\"", "desc": "Edge: single card"},
+    {"input": "[\"aa\",\"aa\"]\n\"a\"", "desc": "Edge: 2 same cards"},
+    {"input": "[\"ab\",\"ba\"]\n\"a\"", "desc": "Edge: pair compatible"},
+    {"input": "[\"ab\",\"cd\"]\n\"a\"", "desc": "Edge: not compatible"},
+    {"input": "[\"aa\",\"bb\"]\n\"a\"", "desc": "Edge: no x in second"},
+    {"input": "[\"za\",\"zb\",\"zc\"]\n\"z\"", "desc": "Standard"},
+    {"input": "[\"aa\",\"ab\",\"ac\",\"ad\",\"ae\"]\n\"a\"", "desc": "Standard"},
+    {"input": "[\"ab\",\"ac\",\"ad\",\"ae\",\"af\"]\n\"a\"", "desc": "Standard"},
+    {"input": "[\"aa\",\"aa\",\"aa\",\"aa\"]\n\"a\"", "desc": "Edge: all same"},
+    {"input": "[\"ab\",\"ba\",\"ab\",\"ba\"]\n\"a\"", "desc": "Standard"},
+    {"input": "[\"xy\",\"xz\",\"yx\",\"zx\"]\n\"x\"", "desc": "Standard"},
+    {"input": "[\"aa\",\"ab\",\"ac\",\"ad\",\"ae\",\"af\",\"ag\",\"ah\",\"ai\",\"aj\"]\n\"a\"", "desc": "Standard"},
+    {"input": "[\"ba\",\"ca\",\"da\",\"ea\",\"fa\"]\n\"a\"", "desc": "Standard a in second"},
+    {"input": "[\"ab\",\"cd\",\"ef\",\"gh\"]\n\"z\"", "desc": "Edge: x not in any"},
+    {"input": "[\"za\",\"za\",\"zb\",\"zb\",\"zc\",\"zc\"]\n\"z\"", "desc": "Standard pairs"},
+    {"input": "[\"ax\",\"by\",\"cz\",\"ax\",\"by\"]\n\"x\"", "desc": "Standard"},
+    {"input": "[\"aa\",\"ab\",\"bc\",\"cd\",\"de\"]\n\"b\"", "desc": "Standard"},
+    {"input": "[\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\"]\n\"a\"", "desc": "Standard 10 same"},
+    {"input": "[\"ab\",\"ac\",\"ad\",\"ae\",\"af\",\"ag\",\"ba\",\"ca\",\"da\",\"ea\"]\n\"a\"", "desc": "Standard mixed"}
+  ]
+}

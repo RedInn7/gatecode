@@ -9,6 +9,8 @@
     {"pid": 2109, "slug": "group-by", "reason": "JavaScript-only problem - prototype enhancement"},
     {"pid": 2144, "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees", "reason": "QuadTree node input/output format not amenable to standard I/O testing"},
     {"pid": 2146, "slug": "event-emitter", "reason": "JavaScript-only problem - takes callback functions"},
-    {"pid": 2180, "slug": "clone-binary-tree-with-random-pointer", "reason": "complex random pointer tree I/O format - non-trivial serialization"}
+    {"pid": 2180, "slug": "clone-binary-tree-with-random-pointer", "reason": "complex random pointer tree I/O format - non-trivial serialization"},
+    {"pid": 2193, "slug": "guess-the-number-using-bitwise-questions-ii", "reason": "interactive problem with commonBits API"},
+    {"pid": 3833, "slug": "insert-into-a-sorted-circular-linked-list", "reason": "circular linked list with non-deterministic insertion point (any valid place); non-trivial output equality"}
   ]
 }

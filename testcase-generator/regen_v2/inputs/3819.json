@@ -1,0 +1,28 @@
+{
+  "pid": 3819,
+  "slug": "task-scheduler",
+  "inferred_constraints": "1 <= tasks.length <= 10^4, uppercase letters, 0 <= n <= 100",
+  "input_format": "line1: tasks (JSON array of single-char strings); line2: n (int)",
+  "testcases": [
+    {"input": "[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]\n2", "desc": "Example 1"},
+    {"input": "[\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"]\n1", "desc": "Example 2"},
+    {"input": "[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]\n3", "desc": "Example 3"},
+    {"input": "[\"A\"]\n0", "desc": "Edge: single"},
+    {"input": "[\"A\"]\n100", "desc": "Edge: single huge n"},
+    {"input": "[\"A\",\"A\"]\n0", "desc": "Edge: 2 same n=0"},
+    {"input": "[\"A\",\"A\"]\n2", "desc": "Edge: cooling required"},
+    {"input": "[\"A\",\"B\"]\n100", "desc": "Edge: 2 distinct"},
+    {"input": "[\"A\",\"A\",\"A\",\"A\",\"A\"]\n2", "desc": "Standard all same"},
+    {"input": "[\"A\",\"B\",\"C\",\"D\",\"E\"]\n3", "desc": "Standard all distinct"},
+    {"input": "[\"A\",\"A\",\"A\",\"B\",\"B\",\"C\",\"C\"]\n2", "desc": "Standard mixed"},
+    {"input": "[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\",\"C\",\"C\",\"C\"]\n2", "desc": "Standard 3x3"},
+    {"input": "[\"A\",\"A\",\"A\",\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]\n2", "desc": "Standard"},
+    {"input": "[\"A\",\"B\",\"A\",\"B\",\"A\",\"B\"]\n0", "desc": "Standard alternating"},
+    {"input": "[\"A\",\"A\",\"A\",\"A\",\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"]\n2", "desc": "Standard idle dominated"},
+    {"input": "[\"A\",\"B\",\"C\",\"A\",\"B\",\"C\",\"A\",\"B\",\"C\"]\n2", "desc": "Standard balanced"},
+    {"input": "[\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\"]\n2", "desc": "Standard"},
+    {"input": "[\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\"]\n5", "desc": "Stress 20 same"},
+    {"input": "[\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\",\"I\",\"J\",\"K\",\"L\",\"M\",\"N\",\"O\",\"P\",\"Q\",\"R\",\"S\",\"T\",\"U\",\"V\",\"W\",\"X\",\"Y\",\"Z\"]\n5", "desc": "Stress 26 distinct"},
+    {"input": "[\"A\",\"A\",\"A\",\"A\",\"A\",\"B\",\"B\",\"B\",\"B\",\"B\",\"C\",\"C\",\"C\",\"C\",\"C\",\"D\",\"D\",\"D\",\"D\",\"D\"]\n3", "desc": "Stress 4x5"}
+  ]
+}

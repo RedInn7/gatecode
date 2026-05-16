@@ -1,0 +1,28 @@
+{
+  "pid": 200,
+  "slug": "max-chunks-to-make-sorted",
+  "inferred_constraints": "n == arr.length, 1 <= n <= 10, 0 <= arr[i] < n, all unique",
+  "input_format": "line1: arr (JSON int array permutation of [0, n-1])",
+  "testcases": [
+    {"input": "[4,3,2,1,0]", "desc": "Edge: example1 reversed"},
+    {"input": "[1,0,2,3,4]", "desc": "Edge: example2 mostly sorted"},
+    {"input": "[0]", "desc": "Edge: n=1"},
+    {"input": "[1,0]", "desc": "Edge: n=2 swapped"},
+    {"input": "[0,1]", "desc": "Edge: n=2 sorted"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]", "desc": "Edge: n=10 sorted gives 10 chunks"},
+    {"input": "[9,8,7,6,5,4,3,2,1,0]", "desc": "Edge: n=10 reversed gives 1 chunk"},
+    {"input": "[1,2,0]", "desc": "Edge: n=3 rotation"},
+    {"input": "[2,0,1]", "desc": "Edge: n=3 different rotation"},
+    {"input": "[1,2,0,3]", "desc": "Standard: rotation + 1"},
+    {"input": "[2,1,0,3,4]", "desc": "Standard: 3-block then sorted"},
+    {"input": "[0,2,1,4,3]", "desc": "Standard: chunks of 1, swap, swap"},
+    {"input": "[0,1,3,2,4]", "desc": "Standard: single swap in middle"},
+    {"input": "[0,3,2,1,4]", "desc": "Standard: 3-chunk in middle"},
+    {"input": "[3,2,1,0,4,5]", "desc": "Standard: reversed first half"},
+    {"input": "[5,4,3,2,1,0]", "desc": "Standard: full reverse 6"},
+    {"input": "[1,0,3,2,5,4]", "desc": "Standard: alternating swaps"},
+    {"input": "[4,3,2,1,0,5,6,7,8,9]", "desc": "Stress: reversed first half max"},
+    {"input": "[5,6,7,8,9,0,1,2,3,4]", "desc": "Stress: halves swapped"},
+    {"input": "[2,1,0,4,3,5,7,6,9,8]", "desc": "Stress: small mini-chunks"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 3831,
+  "slug": "find-the-kth-largest-integer-in-the-array",
+  "inferred_constraints": "1 <= k <= nums.length <= 10^4, 1 <= nums[i].length <= 100, digits only, no leading zeros",
+  "input_format": "line1: nums (JSON array of strings); line2: k (int)",
+  "testcases": [
+    {"input": "[\"3\",\"6\",\"7\",\"10\"]\n4", "desc": "Example 1"},
+    {"input": "[\"2\",\"21\",\"12\",\"1\"]\n3", "desc": "Example 2"},
+    {"input": "[\"0\",\"0\"]\n2", "desc": "Example 3"},
+    {"input": "[\"1\"]\n1", "desc": "Edge: single"},
+    {"input": "[\"123456789\"]\n1", "desc": "Edge: single big"},
+    {"input": "[\"1\",\"2\"]\n1", "desc": "Edge: 2 elements k=1"},
+    {"input": "[\"1\",\"2\"]\n2", "desc": "Edge: 2 elements k=2"},
+    {"input": "[\"5\",\"5\",\"5\",\"5\"]\n2", "desc": "Edge: all same"},
+    {"input": "[\"100\",\"99\",\"98\",\"97\",\"96\"]\n3", "desc": "Standard"},
+    {"input": "[\"1\",\"10\",\"100\",\"1000\",\"10000\"]\n3", "desc": "Standard varied lengths"},
+    {"input": "[\"99999999999999999999\",\"1\",\"50\"]\n1", "desc": "Standard big number"},
+    {"input": "[\"10\",\"2\",\"3\",\"1\"]\n2", "desc": "Standard mixed lengths"},
+    {"input": "[\"5\",\"3\",\"1\",\"4\",\"2\",\"6\",\"7\",\"8\",\"9\",\"10\"]\n5", "desc": "Standard"},
+    {"input": "[\"1234567890123456789012345\",\"9876543210987654321098765\",\"5555555555555555555555555\"]\n2", "desc": "Standard 25 digits"},
+    {"input": "[\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\"]\n5", "desc": "Standard all 1"},
+    {"input": "[\"100\",\"10\",\"1\",\"1000\",\"10000\",\"100000\",\"1000000\",\"10000000\",\"100000000\",\"1000000000\"]\n5", "desc": "Standard powers of 10"},
+    {"input": "[\"7\",\"8\",\"5\",\"6\",\"3\",\"4\",\"1\",\"2\"]\n4", "desc": "Standard"},
+    {"input": "[\"99\",\"98\",\"97\",\"100\",\"101\",\"102\"]\n1", "desc": "Standard"},
+    {"input": "[\"123\",\"45\",\"6789\",\"12\",\"345\",\"67\",\"89\",\"1234\"]\n3", "desc": "Standard varied"},
+    {"input": "[\"99999\",\"99998\",\"99997\",\"99996\",\"99995\",\"99994\",\"99993\",\"99992\",\"99991\",\"99990\",\"99989\",\"99988\",\"99987\",\"99986\",\"99985\"]\n8", "desc": "Standard 15 close values"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 3841,
+  "slug": "maximize-the-confusion-of-an-exam",
+  "inferred_constraints": "n == answerKey.length, 1 <= n <= 5*10^4, T/F only, 1 <= k <= n",
+  "input_format": "line1: answerKey (string, raw); line2: k (int)",
+  "testcases": [
+    {"input": "TTFF\n2", "desc": "Example 1"},
+    {"input": "TFFT\n1", "desc": "Example 2"},
+    {"input": "TTFTTFTT\n1", "desc": "Example 3"},
+    {"input": "T\n1", "desc": "Edge: single T"},
+    {"input": "F\n1", "desc": "Edge: single F"},
+    {"input": "TT\n1", "desc": "Edge: 2 same"},
+    {"input": "TF\n1", "desc": "Edge: 2 different k=1"},
+    {"input": "TF\n2", "desc": "Edge: k=n"},
+    {"input": "TTTTT\n2", "desc": "Standard all T"},
+    {"input": "FFFFF\n3", "desc": "Standard all F"},
+    {"input": "TFTFTFTF\n2", "desc": "Standard alternating"},
+    {"input": "TFTFTFTFTFTF\n3", "desc": "Standard alternating k=3"},
+    {"input": "TTTFFFTTTFFF\n2", "desc": "Standard chunks"},
+    {"input": "FFFFTTTTFFFFTTTT\n4", "desc": "Standard 4-chunks"},
+    {"input": "TFFTFFTFFTFFTFFTFF\n3", "desc": "Killer T sparse"},
+    {"input": "FTTFTTFTTFTTFTTFTT\n3", "desc": "Killer F sparse"},
+    {"input": "TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF\n5", "desc": "Stress alternating"},
+    {"input": "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT\n10", "desc": "Stress 52 T"},
+    {"input": "FTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFT\n10", "desc": "Stress alternating long"},
+    {"input": "TTTTTFFFFFTTTTTFFFFFTTTTTFFFFFTTTTTFFFFFTTTTTFFFFFTTTTT\n5", "desc": "Stress repeating blocks"}
+  ]
+}

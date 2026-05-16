@@ -1,0 +1,28 @@
+{
+  "pid": 2219,
+  "slug": "the-k-weakest-rows-in-a-matrix",
+  "inferred_constraints": "2 <= n, m <= 100, 1 <= k <= m, matrix in {0,1}, 1s before 0s per row",
+  "input_format": "line1: mat (JSON 2D); line2: k (int)",
+  "testcases": [
+    {"input": "[[1,1,0,0,0],[1,1,1,1,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,1,1]]\n3", "desc": "Standard: example 1"},
+    {"input": "[[1,0,0,0],[1,1,1,1],[1,0,0,0],[1,0,0,0]]\n2", "desc": "Standard: example 2"},
+    {"input": "[[1,1],[1,0]]\n1", "desc": "Edge: minimal"},
+    {"input": "[[1,1],[1,1]]\n1", "desc": "Edge: all same strength"},
+    {"input": "[[0,0],[0,0]]\n1", "desc": "Edge: all civilians"},
+    {"input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]\n2", "desc": "Edge: all soldiers"},
+    {"input": "[[0,0,0],[1,0,0],[1,1,0],[1,1,1]]\n2", "desc": "Standard ascending"},
+    {"input": "[[1,1,1],[1,1,0],[1,0,0],[0,0,0]]\n2", "desc": "Standard descending"},
+    {"input": "[[1,0,0,0,0,0,0,0],[1,1,1,0,0,0,0,0],[1,1,1,1,1,0,0,0],[1,1,0,0,0,0,0,0]]\n3", "desc": "Standard"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,0,0,0],[1,1,1,1,0,0,0,0,0,0],[1,1,1,1,1,1,1,1,0,0]]\n2", "desc": "Standard"},
+    {"input": "[[0,0,0,0,0],[0,0,0,0,0]]\n2", "desc": "Edge: all zeros"},
+    {"input": "[[1],[0],[1],[0]]\n2", "desc": "Edge: 1 col"},
+    {"input": "[[1,1,0,0,0,0]]\n1", "desc": "Edge: 1 row"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,0],[1,1,1,1,1,1,1,1,0,0],[1,1,1,1,1,1,1,0,0,0]]\n3", "desc": "Standard"},
+    {"input": "[[1,0],[1,0],[1,0],[1,0],[1,0]]\n3", "desc": "Standard same strength"},
+    {"input": "[[1,1,1],[1,0,0],[0,0,0],[1,1,0],[1,1,1]]\n3", "desc": "Standard"},
+    {"input": "[[1,1,1,0,0],[1,0,0,0,0],[1,1,1,1,1],[1,1,1,1,0],[1,1,0,0,0]]\n4", "desc": "Standard"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,0,0,0]]\n1", "desc": "Edge: max contrast"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]]\n1", "desc": "Edge: same all soldier"},
+    {"input": "[[1,1,1,0,0],[1,1,1,1,0],[1,1,1,1,1],[1,0,0,0,0],[1,1,0,0,0]]\n5", "desc": "Edge: k=m all"}
+  ]
+}

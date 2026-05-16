@@ -1,0 +1,28 @@
+{
+  "pid": 3821,
+  "slug": "sum-of-prefix-scores-of-strings",
+  "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 1000, lowercase",
+  "input_format": "line1: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"abc\",\"ab\",\"bc\",\"b\"]", "desc": "Example 1"},
+    {"input": "[\"abcd\"]", "desc": "Example 2"},
+    {"input": "[\"a\"]", "desc": "Edge: single short"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: 2 same"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 diff single"},
+    {"input": "[\"abc\"]", "desc": "Edge: single 3 chars"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Standard duplicates"},
+    {"input": "[\"abc\",\"abd\",\"abe\"]", "desc": "Standard common prefix"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard nested"},
+    {"input": "[\"abcde\",\"abcd\",\"abc\",\"ab\",\"a\"]", "desc": "Standard reverse nested"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]", "desc": "Standard disjoint"},
+    {"input": "[\"aaa\",\"aa\",\"a\"]", "desc": "Standard same prefix all a"},
+    {"input": "[\"zzz\",\"zz\",\"z\"]", "desc": "Standard same prefix all z"},
+    {"input": "[\"hello\",\"help\",\"helpme\",\"helps\",\"helping\"]", "desc": "Standard help prefix"},
+    {"input": "[\"apple\",\"app\",\"application\",\"apply\",\"appease\"]", "desc": "Standard"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]", "desc": "Standard 10 singles distinct"},
+    {"input": "[\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\"]", "desc": "Standard nested 8"},
+    {"input": "[\"prog\",\"program\",\"programs\",\"programmer\",\"programming\",\"progresses\",\"progressive\",\"progression\"]", "desc": "Standard"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\",\"abcdefghijklmnop\",\"abcdef\",\"abc\"]", "desc": "Standard longer"},
+    {"input": "[\"aaaaaaaaaaaaaaaaaaaa\",\"aaaaaaaaaaaaaaa\",\"aaaaaaaaaa\",\"aaaaa\",\"a\"]", "desc": "Killer all a nested"}
+  ]
+}
