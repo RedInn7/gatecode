@@ -1,0 +1,88 @@
+{
+  "pid": 1780,
+  "slug": "substring-with-concatenation-of-all-words",
+  "inferred_constraints": "1<=s.length<=10^4, 1<=words.length<=5000, 1<=words[i].length<=30",
+  "input_format": "line1: s; line2: words",
+  "testcases": [
+    {
+      "input": "\"barfoothefoobarman\"\n[\"foo\",\"bar\"]",
+      "desc": "Standard: example1"
+    },
+    {
+      "input": "\"wordgoodgoodgoodbestword\"\n[\"word\",\"good\",\"best\",\"word\"]",
+      "desc": "Standard: example2"
+    },
+    {
+      "input": "\"barfoofoobarthefoobarman\"\n[\"bar\",\"foo\",\"the\"]",
+      "desc": "Standard: example3"
+    },
+    {
+      "input": "\"a\"\n[\"a\"]",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"aa\"\n[\"a\",\"a\"]",
+      "desc": "Edge: two same words"
+    },
+    {
+      "input": "\"aaa\"\n[\"a\",\"a\"]",
+      "desc": "Standard: overlapping"
+    },
+    {
+      "input": "\"foobar\"\n[\"foo\",\"bar\"]",
+      "desc": "Standard: exact match"
+    },
+    {
+      "input": "\"barfoo\"\n[\"foo\",\"bar\"]",
+      "desc": "Standard: reversed"
+    },
+    {
+      "input": "\"wordword\"\n[\"word\",\"word\"]",
+      "desc": "Standard: same word twice"
+    },
+    {
+      "input": "\"\"\n[\"a\"]",
+      "desc": "Edge: empty s"
+    },
+    {
+      "input": "\"a\"\n[\"aa\"]",
+      "desc": "Edge: word longer than s"
+    },
+    {
+      "input": "\"ababababab\"\n[\"ab\",\"ab\"]",
+      "desc": "Standard: overlapping ab"
+    },
+    {
+      "input": "\"abcdefghij\"\n[\"abc\",\"def\"]",
+      "desc": "Standard: non-overlapping"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"a\",\"a\",\"a\"]",
+      "desc": "Stress: all same char"
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n[\"ab\",\"ab\",\"ab\"]",
+      "desc": "Stress: large s"
+    },
+    {
+      "input": "\"mississippi\"\n[\"is\",\"si\"]",
+      "desc": "Killer: overlapping"
+    },
+    {
+      "input": "\"lingmindraboofooowingdingbarrwingmonkeypoundcake\"\n[\"fooo\",\"barr\",\"wing\",\"ding\",\"wing\"]",
+      "desc": "Standard: longer words"
+    },
+    {
+      "input": "\"abcabc\"\n[\"abc\",\"abc\"]",
+      "desc": "Standard: two same long"
+    },
+    {
+      "input": "\"onetwothree\"\n[\"one\",\"two\",\"three\"]",
+      "desc": "Standard: exact concat"
+    },
+    {
+      "input": "\"onetwothreefourfive\"\n[\"one\",\"two\",\"three\",\"four\",\"five\"]",
+      "desc": "Stress: 5 words"
+    }
+  ]
+}

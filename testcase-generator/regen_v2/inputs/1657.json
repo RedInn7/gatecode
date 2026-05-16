@@ -1,0 +1,88 @@
+{
+  "pid": 1657,
+  "slug": "smallest-string-starting-from-leaf",
+  "inferred_constraints": "1<=nodes<=8500, 0<=Node.val<=25",
+  "input_format": "line1: root (BFS array, values 0-25)",
+  "testcases": [
+    {
+      "input": "[0,1,2,3,4,3,4]",
+      "desc": "Standard: example1"
+    },
+    {
+      "input": "[25,1,3,1,3,0,2]",
+      "desc": "Standard: example2"
+    },
+    {
+      "input": "[2,2,1,null,1,0,null,0]",
+      "desc": "Standard: example3"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: single leaf"
+    },
+    {
+      "input": "[1,0,2]",
+      "desc": "Standard: 3 nodes"
+    },
+    {
+      "input": "[0,null,1,null,2,null,3]",
+      "desc": "Standard: right chain"
+    },
+    {
+      "input": "[0,1,null,2,null,3]",
+      "desc": "Standard: left chain"
+    },
+    {
+      "input": "[25,24,23,22,21,20,19]",
+      "desc": "Standard: 7 z-y-x..."
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]",
+      "desc": "Stress: 15 'a' nodes"
+    },
+    {
+      "input": "[1,0,1,0,null,0,null,0,null,null,null,0]",
+      "desc": "Stress: mixed"
+    },
+    {
+      "input": "[25,25,25,25,25,25,25,25,25,25,25,25,25,25,25]",
+      "desc": "Stress: 15 z nodes"
+    },
+    {
+      "input": "[5,5,5,5,5,null,null,5,null,null,5,null,null,null,null,5]",
+      "desc": "Standard: deep left"
+    },
+    {
+      "input": "[3,7,4,2,null,1,4,4,1,null,null,null,null,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]",
+      "desc": "Stress: complex"
+    },
+    {
+      "input": "[0,1]",
+      "desc": "Edge: root with left child"
+    },
+    {
+      "input": "[1,null,0]",
+      "desc": "Edge: root with right child"
+    },
+    {
+      "input": "[24,23,22,21,20]",
+      "desc": "Standard: 5 nodes desc"
+    },
+    {
+      "input": "[0,25,0,null,null,25,0]",
+      "desc": "Killer: a vs z paths"
+    },
+    {
+      "input": "[4,3,5,2,4,null,null,1,null,null,3]",
+      "desc": "Stress: deeper"
+    },
+    {
+      "input": "[5,4,6,3,null,null,7,2,null,null,null,null,null,null,8]",
+      "desc": "Stress: 8 levels"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0,0]",
+      "desc": "Standard: 9 zeros"
+    }
+  ]
+}

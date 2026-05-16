@@ -1,0 +1,88 @@
+{
+  "pid": 1579,
+  "slug": "string-matching-in-an-array",
+  "inferred_constraints": "Parsed from signature: stringMatching",
+  "input_format": "line1: words (string array)",
+  "testcases": [
+    {
+      "input": "[\"x\"]",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "[\"pcr\"]",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "[\"nn\"]",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "[\"dsfw\"]",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "[\"punn\"]",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "[\"i\",\"jcw\",\"fc\",\"smdg\",\"bdft\",\"nl\"]",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "[\"m\",\"uepjv\",\"pphta\",\"an\",\"th\"]",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "[\"n\",\"fj\"]",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "[\"g\",\"lzo\"]",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "[\"idikr\",\"izmq\",\"xwsva\",\"j\",\"wz\",\"ohx\",\"mn\"]",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "[\"nvr\",\"id\",\"t\",\"osi\"]",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "[\"ge\",\"xx\",\"vivhf\",\"ohjpl\",\"tab\",\"hbhu\",\"jkasl\",\"osb\"]",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "[\"nqge\",\"s\",\"she\",\"y\"]",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "[\"o\",\"u\"]",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "[\"ui\",\"ohfl\",\"s\",\"jd\",\"flt\"]",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "[\"jb\",\"q\",\"xtvm\",\"eqkj\",\"y\",\"evz\",\"cjcdx\"]",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "[\"n\",\"bkbb\",\"yju\"]",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "[\"yaks\",\"uzadr\",\"pxkc\",\"km\",\"vbmxl\"]",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "[\"ds\",\"g\"]",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "[\"uvp\",\"djb\",\"k\",\"dgf\",\"pfeuq\",\"msz\"]",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

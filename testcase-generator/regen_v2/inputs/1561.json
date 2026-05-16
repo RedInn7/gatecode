@@ -1,0 +1,88 @@
+{
+  "pid": 1561,
+  "slug": "minimum-number-of-primes-to-sum-to-target",
+  "inferred_constraints": "Parsed from signature: minNumberOfPrimes",
+  "input_format": "line1: n (int); line2: m (int)",
+  "testcases": [
+    {
+      "input": "-2147483648\n1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "-2147483648\n-2147483648",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "100\n2147483647",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "0\n-1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "100\n-2147483648",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "-379\n207",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "598\n810",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "803\n-132",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-133\n968",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "482\n43",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "741\n95",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "236\n511",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-241\n-838",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "528\n3",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "968\n395",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "109\n-930",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-754\n866",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "490\n747",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "394\n972",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "-345\n76",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

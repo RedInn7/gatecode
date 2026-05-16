@@ -1,0 +1,84 @@
+{
+  "pid": 1741,
+  "slug": "create-binary-tree-from-descriptions",
+  "inferred_constraints": "1<=descriptions.length<=10^4, 2<=parent,child<=10^4, 0<=isLeft<=1",
+  "input_format": "line1: descriptions [[parent,child,isLeft],...]",
+  "testcases": [
+    {
+      "input": "[[20,15,1],[20,17,0],[50,20,1],[50,80,0],[80,19,1]]",
+      "desc": "Standard: example1"
+    },
+    {
+      "input": "[[1,2,1],[2,3,0],[3,4,1]]",
+      "desc": "Standard: chain"
+    },
+    {
+      "input": "[[5,3,1]]",
+      "desc": "Edge: single pair root+child"
+    },
+    {
+      "input": "[[10,5,1],[10,15,0]]",
+      "desc": "Edge: root with two children"
+    },
+    {
+      "input": "[[1,2,1],[1,3,0],[2,4,1],[2,5,0],[3,6,1],[3,7,0]]",
+      "desc": "Standard: full binary tree 7"
+    },
+    {
+      "input": "[[100,50,1],[50,25,1],[50,75,0],[25,10,1]]",
+      "desc": "Standard: BST-like"
+    },
+    {
+      "input": "[[1,2,1],[2,3,1],[3,4,1],[4,5,1]]",
+      "desc": "Standard: left chain"
+    },
+    {
+      "input": "[[1,2,0],[2,3,0],[3,4,0],[4,5,0]]",
+      "desc": "Standard: right chain"
+    },
+    {
+      "input": "[[10,5,1],[5,3,1],[5,7,0],[10,15,0],[15,13,1],[15,20,0]]",
+      "desc": "Stress: balanced"
+    },
+    {
+      "input": "[[1,2,0],[2,3,1],[1,4,0],[1,5,0],[2,6,1],[4,7,1],[2,8,0],[3,9,1],[1,10,1],[10,11,0]]",
+      "desc": "Stress: random tree 11 nodes"
+    },
+    {
+      "input": "[[50,30,1],[30,20,1],[30,40,0],[50,70,0],[70,60,1],[70,80,0]]",
+      "desc": "Stress: full tree 7"
+    },
+    {
+      "input": "[[1,2,1]]",
+      "desc": "Edge: root left child"
+    },
+    {
+      "input": "[[1,2,0]]",
+      "desc": "Edge: root right child"
+    },
+    {
+      "input": "[[10,5,1],[10,15,0],[5,3,1],[5,7,0],[15,12,1],[15,20,0],[3,1,1],[3,4,0]]",
+      "desc": "Standard: larger tree"
+    },
+    {
+      "input": "[[100,200,1],[100,300,0],[200,400,1],[200,500,0],[300,600,1],[300,700,0]]",
+      "desc": "Standard: large values"
+    },
+    {
+      "input": "[[1,2,1],[2,4,1],[4,8,1],[8,16,1],[16,32,1]]",
+      "desc": "Killer: left-skewed deep"
+    },
+    {
+      "input": "[[1,2,0],[2,4,0],[4,8,0],[8,16,0],[16,32,0]]",
+      "desc": "Killer: right-skewed deep"
+    },
+    {
+      "input": "[[5,3,1],[5,7,0],[3,2,1],[3,4,0],[7,6,1],[7,8,0],[2,1,1]]",
+      "desc": "Stress: near-complete"
+    },
+    {
+      "input": "[[1000,500,1],[500,250,1],[500,750,0],[1000,1500,0]]",
+      "desc": "Standard: large node values"
+    }
+  ]
+}

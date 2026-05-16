@@ -1,0 +1,88 @@
+{
+  "pid": 1529,
+  "slug": "minimum-deletions-to-make-string-balanced",
+  "inferred_constraints": "Parsed from signature: minimumDeletions",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"k\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"d\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"e\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"l\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"zniuqoysj\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"ixmsdg\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"exmpfcwn\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"xnwpc\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"npisqknqajohed\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"khywak\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"lrtwswxvixoin\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"gbpf\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"poaettmmjun\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"stzhtc\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"xfy\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"bsvwhpolcbynbv\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"nqveabxrsuxdt\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"wxiwiskgqzx\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"xdxjgeywfam\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

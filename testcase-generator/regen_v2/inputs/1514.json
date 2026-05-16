@@ -1,0 +1,88 @@
+{
+  "pid": 1514,
+  "slug": "find-longest-self-contained-substring",
+  "inferred_constraints": "Parsed from signature: maxSubstringLength",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"a\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"e\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"j\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"ryfqroyjt\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"wnvqygcswoan\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"azgbjl\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"izwggq\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"oqjdxjwd\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"ltfaqzlzub\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"dsnjsdxecwhbe\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"ca\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"grbryq\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"yogcquxfl\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"ophvmpfmmiyrazb\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"fyfqattxbu\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"rkln\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"kiv\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"owfiznirfg\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

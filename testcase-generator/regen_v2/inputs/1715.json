@@ -1,0 +1,88 @@
+{
+  "pid": 1715,
+  "slug": "sort-linked-list-already-sorted-using-absolute-values",
+  "inferred_constraints": "1<=n<=10^5, -10^5<=Node.val<=10^5",
+  "input_format": "line1: head (linked list as array of values sorted by abs)",
+  "testcases": [
+    {
+      "input": "[0,2,-5,5,10,-10]",
+      "desc": "Standard: example"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: single zero"
+    },
+    {
+      "input": "[-1]",
+      "desc": "Edge: single negative"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Standard: all positive sorted"
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]",
+      "desc": "Standard: all negative"
+    },
+    {
+      "input": "[0,-1,-2,-3,-4]",
+      "desc": "Standard: zero then negatives"
+    },
+    {
+      "input": "[1,-1,2,-2,3,-3]",
+      "desc": "Standard: alternating by abs"
+    },
+    {
+      "input": "[0,1,-1,2,-2,3,-3,5,-5]",
+      "desc": "Stress: mixed"
+    },
+    {
+      "input": "[1,2,-3,4,-5,6,-7,8,-9,10,-10]",
+      "desc": "Stress: longer"
+    },
+    {
+      "input": "[0,5,-5,10,-10,15,-15,20,-20]",
+      "desc": "Stress: pairs"
+    },
+    {
+      "input": "[2,3,-4,-4,14,-14,15,27,28,31,32,-33,-39,41,-50]",
+      "desc": "Stress: 15 sorted by abs"
+    },
+    {
+      "input": "[0,0,0]",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "[1,2,3,-4,-5,-6,-7,-8,-9,-10]",
+      "desc": "Standard: pos then neg"
+    },
+    {
+      "input": "[-1,1,-2,2,-3,3,-4,4,-5,5,-6,6,-7,7,-8,8,-9,9,-10,10]",
+      "desc": "Killer: 20 paired"
+    },
+    {
+      "input": "[100,-100,200,-200]",
+      "desc": "Standard: large values"
+    },
+    {
+      "input": "[-2147483648,0,2147483647]",
+      "desc": "Killer: int extremes"
+    },
+    {
+      "input": "[1,1,1,-2,-2,-2,3,3,3]",
+      "desc": "Standard: repeated abs"
+    },
+    {
+      "input": "[0,0,0,0,0]",
+      "desc": "Edge: five zeros"
+    },
+    {
+      "input": "[1,-1]",
+      "desc": "Edge: two pair"
+    }
+  ]
+}

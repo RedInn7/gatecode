@@ -1,0 +1,88 @@
+{
+  "pid": 1531,
+  "slug": "count-ways-to-build-good-strings",
+  "inferred_constraints": "Parsed from signature: countGoodStrings",
+  "input_format": "line1: low (int); line2: high (int); line3: zero (int); line4: one (int)",
+  "testcases": [
+    {
+      "input": "2147483647\n0\n1\n100",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "-2147483648\n2147483647\n1\n-2147483648",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "-1\n-100\n0\n100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "2147483647\n-1\n-100\n-100",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "2147483647\n2147483647\n0\n100",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "-63\n-639\n-933\n537",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-957\n517\n498\n901",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "993\n-508\n254\n557",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-413\n463\n-762\n9",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "623\n61\n-76\n730",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "-881\n85\n125\n-415",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-615\n111\n-174\n-963",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "330\n274\n977\n876",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-958\n615\n722\n213",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "-204\n56\n475\n185",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "-911\n941\n-47\n-145",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-717\n243\n-81\n123",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-221\n-655\n-763\n771",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "0\n77\n-211\n313",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "286\n-96\n508\n721",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

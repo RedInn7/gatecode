@@ -1,0 +1,88 @@
+{
+  "pid": 1568,
+  "slug": "minimum-addition-to-make-integer-beautiful",
+  "inferred_constraints": "Parsed from signature: makeIntegerBeautiful",
+  "input_format": "line1: n (long long); line2: target (int)",
+  "testcases": [
+    {
+      "input": "1000000000\n100",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "9223372036854775807\n-2147483648",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "-1000000000\n-100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "0\n1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "9223372036854775807\n-2147483648",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "223127277\n8",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "683647076\n-202",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-90206817\n-779",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-785117332\n726",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "23591498\n-329",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "802883981\n-20",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-541071071\n-561",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-998689699\n-956",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "993258585\n199",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "564828303\n-895",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "312092905\n340",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-289980036\n674",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "747507632\n-81",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "-85975304\n576",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "-45344657\n806",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

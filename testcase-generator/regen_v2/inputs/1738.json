@@ -1,0 +1,88 @@
+{
+  "pid": 1738,
+  "slug": "color-the-triangle-red",
+  "inferred_constraints": "1<=n<=1000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "3",
+      "desc": "Standard: n=3"
+    },
+    {
+      "input": "4",
+      "desc": "Standard: n=4"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: n=5"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: n=7"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "10",
+      "desc": "Stress: n=10"
+    },
+    {
+      "input": "15",
+      "desc": "Stress: n=15"
+    },
+    {
+      "input": "20",
+      "desc": "Stress: n=20"
+    },
+    {
+      "input": "50",
+      "desc": "Stress: n=50"
+    },
+    {
+      "input": "100",
+      "desc": "Stress: n=100"
+    },
+    {
+      "input": "500",
+      "desc": "Killer: n=500"
+    },
+    {
+      "input": "1000",
+      "desc": "Killer: n=1000"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: n=12"
+    },
+    {
+      "input": "25",
+      "desc": "Standard: n=25"
+    },
+    {
+      "input": "30",
+      "desc": "Stress: n=30"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: n=9"
+    },
+    {
+      "input": "11",
+      "desc": "Standard: n=11"
+    }
+  ]
+}

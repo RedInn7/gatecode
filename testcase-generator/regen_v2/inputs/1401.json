@@ -1,0 +1,88 @@
+{
+  "pid": 1401,
+  "slug": "android-unlock-patterns",
+  "inferred_constraints": "Parsed from signature: numberOfPatterns",
+  "input_format": "line1: m (int); line2: n (int)",
+  "testcases": [
+    {
+      "input": "2147483647\n100",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "0\n2147483647",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "1\n100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "100\n-2147483648",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "-100\n1",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "629\n-430",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-3\n-69",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "820\n665",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-259\n587",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "-432\n333",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "707\n821",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "760\n87",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-800\n-298",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-525\n-143",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "582\n677",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "80\n874",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "324\n449",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-116\n560",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "-55\n-702",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "-313\n-237",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

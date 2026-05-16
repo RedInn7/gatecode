@@ -1,0 +1,88 @@
+{
+  "pid": 1503,
+  "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+  "inferred_constraints": "Parsed from signature: minimumRecolors",
+  "input_format": "line1: blocks (string); line2: k (int)",
+  "testcases": [
+    {
+      "input": "\"o\"\n1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"f\"\n-100",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"d\"\n100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"x\"\n-1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"s\"\n2147483647",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"sgqdeovfuudiv\"\n-424",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"iyihdulbcx\"\n-658",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"ynjzyhlv\"\n-775",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"pfc\"\n-644",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"mtaonnntbeury\"\n910",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"blnzgtqdqgdsxn\"\n-11",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"hzqkbsvv\"\n828",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"xngcqrjpdjwz\"\n919",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"fbokwmh\"\n734",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"jmyyicrntv\"\n-86",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"txhneoejragjqf\"\n-513",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"vdspovxnegrfe\"\n282",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"vmojwww\"\n576",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"engeuswxz\"\n-396",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"ohwhvbkeysjjl\"\n510",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

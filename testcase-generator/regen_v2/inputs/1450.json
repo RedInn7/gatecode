@@ -1,0 +1,88 @@
+{
+  "pid": 1450,
+  "slug": "powx-n",
+  "inferred_constraints": "Parsed from signature: myPow",
+  "input_format": "line1: x (float); line2: n (int)",
+  "testcases": [
+    {
+      "input": "9.94\n1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "-53.36\n100",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "-0.53\n100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "-33.33\n0",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "46.96\n2147483647",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "95.26\n180",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "20.78\n478",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "89.84\n-228",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "35.33\n972",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "91.22\n-902",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "-9.95\n-587",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-41.41\n812",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "16.0\n960",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-79.53\n-237",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "76.18\n-144",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "23.06\n-303",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-83.18\n-687",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-90.65\n318",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "-40.82\n862",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "-62.74\n63",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

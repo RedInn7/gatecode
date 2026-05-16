@@ -1,0 +1,88 @@
+{
+  "pid": 1459,
+  "slug": "di-string-match",
+  "inferred_constraints": "Parsed from signature: diStringMatch",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"d\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"p\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"nh\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"qclzcadswambst\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"jtfebzrgw\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"yw\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"emmizr\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"eboxqoorrxrcwhk\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"jnwh\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"pk\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"viagztehkskd\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"lqpyrwadu\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"ktktmfoqr\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"cuzwclehsayj\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"kvx\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"jbelhtbhlqhfd\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"mu\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

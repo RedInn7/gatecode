@@ -1,0 +1,88 @@
+{
+  "pid": 1701,
+  "slug": "lexicographically-smallest-string-after-a-swap",
+  "inferred_constraints": "Parsed from signature: getSmallestString",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"p\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"m\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"o\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"p\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"s\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"hfb\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"qfitm\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"bufz\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"tgsftguyzfhjt\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"hwydupfqimxw\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"vhwjv\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"jkfa\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"vpppaxpwtlphjr\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"tphovvzgzufjmz\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"xuj\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"hcfhmmakywxlw\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"dafaomtiiib\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"okvnyhejhtpmtr\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"xqtxzfnfrbliak\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"bibjuzkc\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

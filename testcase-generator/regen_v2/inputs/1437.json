@@ -1,0 +1,88 @@
+{
+  "pid": 1437,
+  "slug": "convert-a-number-to-hexadecimal",
+  "inferred_constraints": "Parsed from signature: toHex",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "2147483647",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "-100",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "616",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-179",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-289",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "745",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "437",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "419",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-310",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-346",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-56",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "830",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "118",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-183",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "119",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "800",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "17",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

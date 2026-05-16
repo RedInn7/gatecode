@@ -1,0 +1,88 @@
+{
+  "pid": 1585,
+  "slug": "count-distinct-integers-after-removing-zeros",
+  "inferred_constraints": "Parsed from signature: countDistinct",
+  "input_format": "line1: n (long long)",
+  "testcases": [
+    {
+      "input": "-1000000000",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "-1",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "9223372036854775807",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "12696232",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-422567973",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-618886550",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "823531392",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "815214000",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "600317694",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "137061210",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "654456408",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-403890091",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "446285386",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "-157325078",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-878895725",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "461006715",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "-188246014",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "508096749",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

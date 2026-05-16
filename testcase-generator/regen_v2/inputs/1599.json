@@ -1,0 +1,88 @@
+{
+  "pid": 1599,
+  "slug": "filter-characters-by-frequency",
+  "inferred_constraints": "Parsed from signature: filterCharacters",
+  "input_format": "line1: s (string); line2: k (int)",
+  "testcases": [
+    {
+      "input": "\"r\"\n100",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"a\"\n-2147483648",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"g\"\n-100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"t\"\n100",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"g\"\n-100",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"vdk\"\n-72",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"ifeoxyo\"\n934",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"atziperwbxocu\"\n575",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"hzo\"\n-925",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"jcev\"\n205",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"dhvndqtbpm\"\n-316",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"ahmaqhcdqrb\"\n498",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"nttrizloopr\"\n554",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"erhsvowcmmohv\"\n521",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"cfc\"\n142",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"kpnprbxaund\"\n467",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"wwrm\"\n-719",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"lkfsbiieh\"\n-27",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"wgi\"\n-126",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"vklsqqgjsfei\"\n331",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1520,
+  "slug": "shortest-path-to-get-all-keys",
+  "inferred_constraints": "Parsed from signature: shortestPathAllKeys",
+  "input_format": "line1: grid (string array)",
+  "testcases": [
+    {
+      "input": "[\"hgat\"]",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "[\"juakx\"]",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "[\"x\"]",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "[\"uuwt\"]",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "[\"yasbh\"]",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "[\"eytf\",\"qv\",\"br\",\"iach\",\"pydc\",\"y\"]",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "[\"e\",\"w\",\"nu\"]",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "[\"sahco\",\"qttr\",\"cxtow\",\"edph\",\"d\"]",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "[\"obitf\",\"ffp\",\"kfkhc\",\"mbtqr\",\"ulw\"]",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "[\"qjdg\",\"w\",\"k\",\"pcjv\",\"eh\",\"ezm\",\"go\",\"ur\"]",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "[\"haa\",\"yoylz\",\"cu\",\"gha\",\"c\",\"apglk\",\"t\",\"q\"]",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "[\"lex\",\"qtd\",\"jn\",\"tmqgi\",\"nj\",\"qrge\",\"t\",\"rpnke\"]",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "[\"mw\",\"imq\",\"xfsi\",\"lgh\"]",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "[\"r\",\"gmzk\",\"ioc\",\"ln\",\"hu\",\"xjf\"]",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "[\"y\",\"gjg\",\"fcmh\"]",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "[\"ttix\",\"ouz\"]",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "[\"v\",\"knq\",\"y\",\"kx\",\"fjml\",\"mo\"]",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "[\"dheoo\",\"kbsy\",\"h\",\"ydw\",\"lmh\",\"gqmz\",\"d\"]",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "[\"vuun\",\"t\",\"k\",\"nsf\",\"wznen\",\"da\",\"tj\",\"tl\"]",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "[\"aukw\",\"wsuxj\",\"ez\",\"r\"]",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

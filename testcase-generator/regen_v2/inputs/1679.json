@@ -1,0 +1,88 @@
+{
+  "pid": 1679,
+  "slug": "smallest-good-base",
+  "inferred_constraints": "Parsed from signature: smallestGoodBase",
+  "input_format": "line1: n (string)",
+  "testcases": [
+    {
+      "input": "\"c\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"y\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"w\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"g\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"i\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"dhijjbso\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"gafdpdivs\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"mosaptziynpxvjr\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"wjwbqjyeygxws\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"vhx\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"zlxenrvki\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"og\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"hvgc\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"umdo\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"gnidinbjupft\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"rpckwsswmryq\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"twe\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"wgbzdk\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"xcxohnyukddhmhv\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"cnessz\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

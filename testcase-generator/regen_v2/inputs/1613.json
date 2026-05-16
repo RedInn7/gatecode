@@ -1,0 +1,88 @@
+{
+  "pid": 1613,
+  "slug": "determine-the-minimum-sum-of-a-k-avoiding-array",
+  "inferred_constraints": "Parsed from signature: minimumSum",
+  "input_format": "line1: n (int); line2: k (int)",
+  "testcases": [
+    {
+      "input": "-1\n2147483647",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "0\n-2147483648",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "100\n-100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "-2147483648\n1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "2147483647\n-1",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "530\n-258",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-322\n922",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-731\n-924",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-342\n-355",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "279\n-870",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "648\n-316",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-635\n-290",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "637\n-62",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-725\n458",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "188\n245",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "89\n-288",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-264\n-752",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "323\n909",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "-62\n307",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "873\n545",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

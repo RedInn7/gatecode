@@ -1,0 +1,88 @@
+{
+  "pid": 1697,
+  "slug": "roman-to-integer",
+  "inferred_constraints": "Parsed from signature: romanToInt",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"w\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"l\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"p\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"b\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"cbcee\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"qgasymd\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"dcfypdbyftm\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"ay\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"bymdkqcxntr\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"wa\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"enflunpvqmhleq\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"scdjbzouiliqjl\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"staqitphyt\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"wypassusyuyghgc\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"odyaa\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"gsgxt\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"vskurx\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"lh\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"qzmqnfeymtjmjiv\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

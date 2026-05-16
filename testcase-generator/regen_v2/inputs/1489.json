@@ -1,0 +1,88 @@
+{
+  "pid": 1489,
+  "slug": "combination-sum-iii",
+  "inferred_constraints": "1<=k<=9, 1<=n<=60",
+  "input_format": "line1: k; line2: n",
+  "testcases": [
+    {
+      "input": "3\n7",
+      "desc": "Standard: example1"
+    },
+    {
+      "input": "3\n9",
+      "desc": "Standard: example2"
+    },
+    {
+      "input": "4\n1",
+      "desc": "Standard: example3 impossible"
+    },
+    {
+      "input": "1\n1",
+      "desc": "Edge: k=1 n=1"
+    },
+    {
+      "input": "1\n9",
+      "desc": "Edge: k=1 n=9"
+    },
+    {
+      "input": "2\n3",
+      "desc": "Standard: k=2 n=3"
+    },
+    {
+      "input": "2\n17",
+      "desc": "Standard: k=2 n=17=8+9"
+    },
+    {
+      "input": "4\n10",
+      "desc": "Standard: k=4"
+    },
+    {
+      "input": "9\n45",
+      "desc": "Stress: k=9 n=45 (1+2+...+9)"
+    },
+    {
+      "input": "2\n18",
+      "desc": "Standard: k=2 n=18 impossible"
+    },
+    {
+      "input": "3\n15",
+      "desc": "Standard: k=3 n=15"
+    },
+    {
+      "input": "5\n15",
+      "desc": "Stress: k=5 n=15"
+    },
+    {
+      "input": "6\n21",
+      "desc": "Stress: k=6 n=21"
+    },
+    {
+      "input": "7\n28",
+      "desc": "Stress: k=7 n=28"
+    },
+    {
+      "input": "8\n36",
+      "desc": "Stress: k=8 n=36"
+    },
+    {
+      "input": "3\n25",
+      "desc": "Standard: k=3 n=25"
+    },
+    {
+      "input": "4\n14",
+      "desc": "Standard: k=4 n=14"
+    },
+    {
+      "input": "2\n10",
+      "desc": "Standard: k=2 n=10"
+    },
+    {
+      "input": "5\n20",
+      "desc": "Stress: k=5 n=20"
+    },
+    {
+      "input": "9\n10",
+      "desc": "Killer: k=9 n=10 few combos"
+    }
+  ]
+}

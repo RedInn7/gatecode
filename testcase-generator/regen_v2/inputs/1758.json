@@ -1,0 +1,88 @@
+{
+  "pid": 1758,
+  "slug": "search-in-a-binary-search-tree",
+  "inferred_constraints": "1<=nodes<=5000, 1<=Node.val<=10^7, 1<=val<=10^7",
+  "input_format": "line1: root (tree BFS array); line2: val",
+  "testcases": [
+    {
+      "input": "[4,2,7,1,3]\n2",
+      "desc": "Standard: example1, find 2"
+    },
+    {
+      "input": "[4,2,7,1,3]\n5",
+      "desc": "Standard: example2, 5 not found"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge: single node found"
+    },
+    {
+      "input": "[1]\n2",
+      "desc": "Edge: single node not found"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n3",
+      "desc": "Standard: find left subtree"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n8",
+      "desc": "Standard: find right subtree"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n5",
+      "desc": "Standard: find root"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n6",
+      "desc": "Standard: not found"
+    },
+    {
+      "input": "[10,5,15,3,7,null,18]\n5",
+      "desc": "Standard: find mid-level"
+    },
+    {
+      "input": "[2,1,3]\n1",
+      "desc": "Edge: left child"
+    },
+    {
+      "input": "[2,1,3]\n3",
+      "desc": "Edge: right child"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n10",
+      "desc": "Stress: full BST 15 nodes"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n7",
+      "desc": "Stress: leaf node"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n16",
+      "desc": "Stress: not in tree"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]\n3",
+      "desc": "Killer: right-skewed BST"
+    },
+    {
+      "input": "[5,4,null,3,null,2,null,1]\n2",
+      "desc": "Killer: left-skewed BST"
+    },
+    {
+      "input": "[50,25,75,10,30,60,90]\n25",
+      "desc": "Standard: larger values"
+    },
+    {
+      "input": "[50,25,75,10,30,60,90]\n80",
+      "desc": "Standard: not found large"
+    },
+    {
+      "input": "[1000,500,1500,250,750,1250,1750]\n1250",
+      "desc": "Stress: large values"
+    },
+    {
+      "input": "[100]\n100",
+      "desc": "Edge: root is target"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1784,
+  "slug": "word-pattern",
+  "inferred_constraints": "1<=pattern.length<=300, 1<=s.length<=3000",
+  "input_format": "line1: pattern; line2: s",
+  "testcases": [
+    {
+      "input": "abba\ndog cat cat dog",
+      "desc": "Standard: true bijection"
+    },
+    {
+      "input": "abba\ndog cat cat fish",
+      "desc": "Standard: false at last"
+    },
+    {
+      "input": "aaaa\ndog cat cat dog",
+      "desc": "Standard: false same pattern diff words"
+    },
+    {
+      "input": "abba\ndog dog dog dog",
+      "desc": "Standard: false same word"
+    },
+    {
+      "input": "a\ndog",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "ab\ncat fish",
+      "desc": "Edge: two"
+    },
+    {
+      "input": "aa\ndog dog",
+      "desc": "Edge: same"
+    },
+    {
+      "input": "ab\ndog dog",
+      "desc": "Edge: two chars same word"
+    },
+    {
+      "input": "abcde\nalpha beta gamma delta epsilon",
+      "desc": "Standard: all unique"
+    },
+    {
+      "input": "ababab\ncat dog cat dog cat dog",
+      "desc": "Standard: repeating"
+    },
+    {
+      "input": "aabb\nfoo foo bar bar",
+      "desc": "Standard: aabb"
+    },
+    {
+      "input": "abcabc\none two three one two three",
+      "desc": "Standard: periodic"
+    },
+    {
+      "input": "a\ndog cat",
+      "desc": "Edge: mismatch length"
+    },
+    {
+      "input": "ab\ndog",
+      "desc": "Edge: fewer words"
+    },
+    {
+      "input": "aab\ncat cat dog",
+      "desc": "Standard: aab true"
+    },
+    {
+      "input": "aab\ncat dog dog",
+      "desc": "Standard: aab false"
+    },
+    {
+      "input": "abc\nb a a",
+      "desc": "Standard: one-to-many violation"
+    },
+    {
+      "input": "abba\ntitle paper paper title",
+      "desc": "Standard: words true"
+    },
+    {
+      "input": "e\neenie",
+      "desc": "Edge: one char word"
+    },
+    {
+      "input": "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\ncat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog cat dog",
+      "desc": "Stress: length-300 pattern"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1412,
+  "slug": "longest-palindrome-after-substring-concatenation-i",
+  "inferred_constraints": "Parsed from signature: longestPalindrome",
+  "input_format": "line1: s (string); line2: t (string)",
+  "testcases": [
+    {
+      "input": "\"p\"\n\"a\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"u\"\n\"j\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"e\"\n\"m\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"e\"\n\"s\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"l\"\n\"m\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"pfgwxlssn\"\n\"tkugsmmnvefthku\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"lbsymuwpmn\"\n\"yzdhyggjart\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"lz\"\n\"lhfnizleehkgp\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"vdcmx\"\n\"jpgcwjjjfsrpyq\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"snymwjwer\"\n\"zmq\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"npmbbgxp\"\n\"qctsojurab\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"oqhhgbcnasnwcyg\"\n\"xzlisoe\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"ryeoppiw\"\n\"qeaphvxocnxgctp\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"mjnhhmqyijjcfs\"\n\"jwmuvq\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"lndmhgdxstvyymh\"\n\"jpaaw\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"xv\"\n\"ykdwefwverqji\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"jzhkwngi\"\n\"wwnntug\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"ugulk\"\n\"iwkd\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"jyakkclewtibc\"\n\"mlmxks\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"lwyeayoby\"\n\"vibguq\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

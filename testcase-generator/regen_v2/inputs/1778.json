@@ -1,0 +1,88 @@
+{
+  "pid": 1778,
+  "slug": "confusing-number-ii",
+  "inferred_constraints": "0<=n<=10^9",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "20",
+      "desc": "Standard: n=20 (6)"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: n=100"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6 (1)"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: n=9"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10"
+    },
+    {
+      "input": "11",
+      "desc": "Standard: n=11 (11 confusing)"
+    },
+    {
+      "input": "50",
+      "desc": "Standard: n=50"
+    },
+    {
+      "input": "500",
+      "desc": "Stress: n=500"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: n=1000"
+    },
+    {
+      "input": "10000",
+      "desc": "Stress: n=10000"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: n=10^9"
+    },
+    {
+      "input": "999999999",
+      "desc": "Stress: near max"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: n=5 (0)"
+    },
+    {
+      "input": "99",
+      "desc": "Standard: n=99"
+    },
+    {
+      "input": "199",
+      "desc": "Standard: n=199"
+    },
+    {
+      "input": "69",
+      "desc": "Standard: n=69 (both confusing digits)"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: n=100000"
+    },
+    {
+      "input": "888888888",
+      "desc": "Stress: 9 eights near max"
+    }
+  ]
+}

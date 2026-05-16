@@ -1,0 +1,88 @@
+{
+  "pid": 1680,
+  "slug": "equal-tree-partition",
+  "inferred_constraints": "1<=nodes<=10000, -10^5<=Node.val<=10^5",
+  "input_format": "line1: root (BFS array)",
+  "testcases": [
+    {
+      "input": "[5,10,10,null,null,2,3]",
+      "desc": "Standard: example true"
+    },
+    {
+      "input": "[1,2,10,null,null,2,20]",
+      "desc": "Standard: example false"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: 2 nodes equal"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Standard: 2 equal"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Standard: 3 nodes"
+    },
+    {
+      "input": "[4,2,2]",
+      "desc": "Standard: 3 nodes true"
+    },
+    {
+      "input": "[1,null,2,null,3]",
+      "desc": "Standard: right chain"
+    },
+    {
+      "input": "[10,5,5,5,null,null,5,null,null,null,null,null,null,null,5]",
+      "desc": "Stress: complex"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "desc": "Standard: perfect 7"
+    },
+    {
+      "input": "[1,1,1,1,1,null,1,null,1]",
+      "desc": "Standard: 1s"
+    },
+    {
+      "input": "[6,3,3]",
+      "desc": "Standard: simple true"
+    },
+    {
+      "input": "[2,1,1,1,1,1,1]",
+      "desc": "Standard: equal sums"
+    },
+    {
+      "input": "[100,50,50,25,25,25,25]",
+      "desc": "Stress: balanced sum"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0]",
+      "desc": "Standard: all zeros"
+    },
+    {
+      "input": "[-1,0,1]",
+      "desc": "Standard: sum 0"
+    },
+    {
+      "input": "[1,null,2]",
+      "desc": "Standard: two nodes"
+    },
+    {
+      "input": "[3,1,2,null,null,null,null]",
+      "desc": "Standard: 3 nodes"
+    },
+    {
+      "input": "[10,5,5,null,null,3,2]",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
+      "desc": "Stress: 15 nodes"
+    },
+    {
+      "input": "[7,3,4,2,1]",
+      "desc": "Standard: 5 nodes"
+    }
+  ]
+}

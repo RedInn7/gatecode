@@ -1,0 +1,88 @@
+{
+  "pid": 1636,
+  "slug": "maximum-product-of-word-lengths",
+  "inferred_constraints": "Parsed from signature: maxProduct",
+  "input_format": "line1: words (string array)",
+  "testcases": [
+    {
+      "input": "[\"pd\"]",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "[\"z\"]",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "[\"ud\"]",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "[\"rlhbq\"]",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "[\"yjidd\"]",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "[\"pgu\",\"tliss\"]",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "[\"dcco\",\"mkw\",\"mm\",\"na\",\"qq\"]",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "[\"vozkb\",\"ds\",\"zxra\",\"n\",\"xy\",\"p\",\"npyy\"]",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "[\"txvvl\",\"wqsyp\",\"f\",\"rblh\",\"m\",\"mnvmx\"]",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "[\"lhw\",\"ct\",\"kin\",\"ldgwh\",\"gmswx\",\"vj\",\"cqni\",\"om\"]",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "[\"pf\",\"hmmih\",\"h\",\"kenf\",\"n\",\"hfil\",\"t\",\"myomv\"]",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "[\"lb\",\"t\"]",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "[\"cfrrl\",\"oy\",\"iarj\",\"ka\",\"aukz\"]",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "[\"spjhs\",\"s\"]",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "[\"rmx\",\"lyg\",\"vnkc\",\"uc\"]",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "[\"hz\",\"xxn\",\"av\"]",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "[\"hsdo\",\"tfz\",\"reoo\"]",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "[\"cumxd\",\"xvd\",\"dwcs\",\"jkkhe\",\"i\",\"wro\",\"i\"]",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "[\"wtz\",\"n\",\"lvjso\"]",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "[\"jxxkc\",\"lqhim\"]",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

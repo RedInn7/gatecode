@@ -1,0 +1,88 @@
+{
+  "pid": 1411,
+  "slug": "number-of-common-factors",
+  "inferred_constraints": "Parsed from signature: commonFactors",
+  "input_format": "line1: a (int); line2: b (int)",
+  "testcases": [
+    {
+      "input": "-2147483648\n0",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "2147483647\n0",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "100\n0",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "1\n100",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "-1\n-100",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "-850\n76",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "833\n-675",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-772\n633",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "537\n-121",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "-518\n461",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "-765\n526",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "456\n663",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "565\n783",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "371\n549",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "-874\n846",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "363\n367",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "991\n-848",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-254\n-908",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "455\n-620",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "797\n182",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

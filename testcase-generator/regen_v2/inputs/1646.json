@@ -1,0 +1,88 @@
+{
+  "pid": 1646,
+  "slug": "maximum-difference-between-even-and-odd-frequency-ii",
+  "inferred_constraints": "Parsed from signature: maxDifference",
+  "input_format": "line1: s (string); line2: k (int)",
+  "testcases": [
+    {
+      "input": "\"n\"\n-1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"o\"\n100",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"i\"\n2147483647",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"z\"\n1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"l\"\n100",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"ntecmtuojxuwlvd\"\n960",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"axxwelcmehza\"\n120",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"xsmzuxpvgsopn\"\n-547",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"ibwdwagunqfghy\"\n663",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"fi\"\n90",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"zcxyqth\"\n-637",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"efjlnaxzq\"\n129",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"ovlkwnalydtvjzm\"\n-464",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"eaewqemoqmo\"\n-128",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"belkgf\"\n-723",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"vaxxzkbcrslmlsy\"\n0",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"fimdaxomcepno\"\n-475",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"zlhwlpomzx\"\n-520",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"uhkcsgqdpgem\"\n-10",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"bbvvhysakfl\"\n406",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

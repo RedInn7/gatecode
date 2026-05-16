@@ -1,0 +1,88 @@
+{
+  "pid": 1667,
+  "slug": "find-the-encrypted-string",
+  "inferred_constraints": "Parsed from signature: getEncryptedString",
+  "input_format": "line1: s (string); line2: k (int)",
+  "testcases": [
+    {
+      "input": "\"p\"\n-1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"m\"\n-100",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"i\"\n-100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"u\"\n0",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"x\"\n-2147483648",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"bqdaruw\"\n-401",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"kcdetnp\"\n-637",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"fhqsjcns\"\n331",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"egkgmwdysl\"\n285",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"nkzhybbt\"\n-668",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"xkv\"\n974",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"rjiep\"\n839",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"mc\"\n-585",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"osbcit\"\n813",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"lnvzvu\"\n-500",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"gxlwhqe\"\n295",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"ipawexutlte\"\n-234",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"qysdgycztilbqcm\"\n-363",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"qyldsracbzntiae\"\n802",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"bwbjlh\"\n956",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

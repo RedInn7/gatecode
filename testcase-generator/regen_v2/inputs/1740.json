@@ -1,0 +1,88 @@
+{
+  "pid": 1740,
+  "slug": "uncommon-words-from-two-sentences",
+  "inferred_constraints": "Parsed from signature: uncommonFromSentences",
+  "input_format": "line1: s1 (string); line2: s2 (string)",
+  "testcases": [
+    {
+      "input": "\"x\"\n\"h\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"u\"\n\"w\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"f\"\n\"b\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"s\"\n\"w\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"b\"\n\"q\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"jdzuqdwvfg\"\n\"yesmlqfgfsrcoq\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"rqbixve\"\n\"hxrojokrrxc\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"onrvtdaol\"\n\"jtbyv\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"mwxkuct\"\n\"vmtencyg\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"vpbozra\"\n\"flmnsf\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"duj\"\n\"jwpp\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"hm\"\n\"lxfwxfesctkqqiv\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"ipr\"\n\"yjoqpgthabbnzvb\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"ynkxyfratye\"\n\"sabkkogvelezul\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"eobavmr\"\n\"aa\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"pm\"\n\"vdjexwnucffzr\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"ell\"\n\"ym\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"zhlthjuusalr\"\n\"elnurg\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"nifvohoptvozcxs\"\n\"gypt\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"wytif\"\n\"nvvv\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1501,
+  "slug": "substrings-of-size-three-with-distinct-characters",
+  "inferred_constraints": "Parsed from signature: countGoodSubstrings",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"u\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"f\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"b\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"tzxjkwvizahllph\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"rgbplh\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"nhs\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"egbkvndvugf\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"uedawnx\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"pw\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"cz\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"xandr\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"vexzgdy\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"fue\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"vnsnr\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"pqelwztyvce\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"kofhmurcio\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"twdhxijiyjm\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"croyltf\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

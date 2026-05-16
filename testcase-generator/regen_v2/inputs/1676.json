@@ -1,0 +1,88 @@
+{
+  "pid": 1676,
+  "slug": "repeated-string-match",
+  "inferred_constraints": "Parsed from signature: repeatedStringMatch",
+  "input_format": "line1: a (string); line2: b (string)",
+  "testcases": [
+    {
+      "input": "\"a\"\n\"b\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"h\"\n\"i\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"w\"\n\"k\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"o\"\n\"v\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"x\"\n\"y\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"rtbrbuky\"\n\"dysitcmqgtpr\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"zpuuuc\"\n\"ryjkygmpzfs\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"nas\"\n\"zcbdmgv\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"jmmmmgkrkfc\"\n\"ufslu\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"udaxhhvb\"\n\"ykfbspf\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"djmb\"\n\"vghmd\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"oidfrmmkmcv\"\n\"bnmykazyynmvf\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"mnqppmd\"\n\"xgwhqkcw\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"hjyzrpdininzc\"\n\"ihz\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"nkol\"\n\"ocyq\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"rv\"\n\"htfjviefgv\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"lsqnxloayp\"\n\"lcomvd\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"mkij\"\n\"fuuuua\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"ggajpmhlzcvktxq\"\n\"dyffqohengm\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"nw\"\n\"abxblloaurjijiy\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

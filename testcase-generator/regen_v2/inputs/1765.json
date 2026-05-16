@@ -1,0 +1,88 @@
+{
+  "pid": 1765,
+  "slug": "split-concatenated-strings",
+  "inferred_constraints": "Parsed from signature: splitLoopedString",
+  "input_format": "line1: strs (string array)",
+  "testcases": [
+    {
+      "input": "[\"xh\"]",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "[\"pr\"]",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "[\"gvs\"]",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "[\"g\"]",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "[\"qodnd\"]",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "[\"jsod\",\"tz\",\"pi\",\"y\",\"cxtf\",\"exe\"]",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "[\"qk\",\"gmz\",\"kr\",\"imgoq\",\"n\"]",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "[\"qbpd\",\"v\",\"mvldq\"]",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "[\"c\",\"y\"]",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "[\"xximq\",\"fgl\",\"czej\"]",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "[\"pnf\",\"l\",\"is\",\"oi\",\"ba\",\"tjgws\"]",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "[\"lutm\",\"h\",\"x\",\"rnvw\",\"l\",\"bwbuc\",\"rlxmv\"]",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "[\"iq\",\"us\",\"ctvms\",\"b\",\"xl\"]",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "[\"oripx\",\"ijn\",\"hjmfn\",\"cdc\",\"sg\",\"nv\",\"evklq\"]",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "[\"psbnp\",\"imw\",\"fo\",\"lypc\",\"zf\",\"orj\",\"fe\",\"zqo\"]",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "[\"mpqfs\",\"iqc\",\"sqbov\",\"gkc\",\"ffbn\",\"zs\",\"d\"]",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "[\"sisdw\",\"ochzh\",\"htr\"]",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "[\"brya\",\"wr\",\"jsm\",\"zx\",\"calb\",\"hq\",\"uoasw\",\"hxy\"]",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "[\"t\",\"wpfzh\",\"sd\",\"tcjzd\",\"e\",\"pntkd\",\"i\"]",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "[\"bkt\",\"swnk\"]",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

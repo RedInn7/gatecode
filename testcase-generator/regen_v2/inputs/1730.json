@@ -1,0 +1,88 @@
+{
+  "pid": 1730,
+  "slug": "swap-adjacent-in-lr-string",
+  "inferred_constraints": "Parsed from signature: canTransform",
+  "input_format": "line1: start (string); line2: result (string)",
+  "testcases": [
+    {
+      "input": "\"g\"\n\"k\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"f\"\n\"q\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"z\"\n\"m\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"u\"\n\"d\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"c\"\n\"w\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"fkyhlzdzya\"\n\"cjogb\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"cymqkcftqkhso\"\n\"rzgdpgy\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"snrrntapecl\"\n\"srhncbilsk\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"jcyjqe\"\n\"tqmdqynx\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"ofwmyvdmvkauj\"\n\"sufhkoalb\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"igwqgviy\"\n\"gvlyemohoc\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"xijc\"\n\"glsrkb\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"gkgjgxzbxd\"\n\"uhcrlwchwku\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"qehwzectrstbiw\"\n\"uie\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"nfjtpm\"\n\"oxq\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"wbptbipjz\"\n\"hsx\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"xjryq\"\n\"jdudehykjedgkv\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"kwdff\"\n\"bksgzorh\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"pbaeyqupduvmms\"\n\"grnsdnf\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"pnyyyysgaavnrel\"\n\"aaubzicyctlah\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

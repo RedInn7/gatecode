@@ -1,0 +1,88 @@
+{
+  "pid": 1702,
+  "slug": "minimum-ascii-delete-sum-for-two-strings",
+  "inferred_constraints": "Parsed from signature: minimumDeleteSum",
+  "input_format": "line1: s1 (string); line2: s2 (string)",
+  "testcases": [
+    {
+      "input": "\"n\"\n\"g\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"j\"\n\"f\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"e\"\n\"b\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"m\"\n\"l\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"a\"\n\"z\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"wtikdlnjedr\"\n\"idaxegzewvput\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"rnekg\"\n\"sbauksls\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"evjsn\"\n\"imqunbxstji\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"mpnigbqaq\"\n\"pnhcx\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"fxpwuu\"\n\"yntyym\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"vqhwzkisivuquj\"\n\"wntisakymw\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"yvasgwd\"\n\"lnqkdlcwpxwwiw\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"wlxtmyyxt\"\n\"oiruhtwtkzfgk\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"lc\"\n\"wk\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"rysiqyuhyj\"\n\"chujkvtekdqe\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"sibjkghgrozmgmo\"\n\"iwmi\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"dfmqxpdw\"\n\"gzyfubitxnyy\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"ylklllfms\"\n\"ik\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"jpfyjdzvptke\"\n\"vjc\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"hych\"\n\"uaakm\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

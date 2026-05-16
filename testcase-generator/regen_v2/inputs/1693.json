@@ -1,0 +1,88 @@
+{
+  "pid": 1693,
+  "slug": "word-subsets",
+  "inferred_constraints": "Parsed from signature: wordSubsets",
+  "input_format": "line1: words1 (string array); line2: words2 (string array)",
+  "testcases": [
+    {
+      "input": "[\"fq\"]\n[\"sy\"]",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "[\"urnoi\"]\n[\"hhutp\"]",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "[\"nx\"]\n[\"nrsxb\"]",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "[\"nuu\"]\n[\"kkxw\"]",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "[\"t\"]\n[\"aqbu\"]",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "[\"wfjd\",\"hh\",\"aabkj\",\"y\"]\n[\"x\",\"c\",\"bezjs\",\"vc\",\"ylfr\",\"edkob\",\"o\",\"viiy\"]",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "[\"ji\",\"eqvx\",\"yg\",\"i\",\"ni\",\"zi\",\"ik\"]\n[\"v\",\"uyh\",\"lz\",\"oslra\"]",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "[\"fxeu\",\"l\",\"htuk\",\"v\",\"iydps\"]\n[\"ez\",\"my\",\"qftq\",\"gwo\",\"jfdsk\"]",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "[\"ptwiv\",\"ksy\"]\n[\"pweu\",\"wc\",\"vzw\",\"pmikl\",\"g\",\"qkn\",\"fx\"]",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "[\"die\",\"yasxm\",\"vs\",\"r\",\"dya\",\"tzxs\",\"rrd\",\"fnugg\"]\n[\"ex\",\"mat\",\"zibx\",\"cxa\"]",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "[\"x\",\"nd\",\"qnai\"]\n[\"ecwmb\",\"nui\",\"nyc\",\"jlzxl\",\"u\",\"upf\"]",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "[\"scd\",\"lq\",\"oerkl\",\"guie\",\"j\",\"ewosa\"]\n[\"qcgmd\",\"cpoz\",\"hdxo\"]",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "[\"wtq\",\"htmd\",\"pmzp\",\"kobgz\",\"mwqr\",\"jlg\",\"ea\"]\n[\"kgofj\",\"scyf\",\"fm\",\"myfwt\",\"bk\",\"j\"]",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "[\"ouwu\",\"q\",\"mboq\"]\n[\"vzx\",\"rqxqt\",\"rn\",\"y\",\"akm\",\"sii\"]",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "[\"ufok\",\"gkxtl\",\"tjlr\",\"ayyh\"]\n[\"q\",\"s\",\"hm\",\"px\",\"glss\",\"pyf\"]",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "[\"biq\",\"jmg\",\"sus\"]\n[\"kclpc\",\"khydt\",\"zsac\",\"yy\"]",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "[\"wat\",\"xw\",\"blwwf\",\"bof\",\"t\",\"gmjg\",\"o\"]\n[\"t\",\"nci\",\"xyt\",\"n\"]",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "[\"r\",\"s\",\"nfo\",\"riqo\",\"ty\",\"yxc\"]\n[\"co\",\"t\",\"qc\",\"cavcv\",\"h\",\"mol\",\"xwkow\"]",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "[\"id\",\"mwwk\"]\n[\"xrj\",\"n\",\"ajj\",\"ml\",\"gob\"]",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "[\"vrt\",\"pwhk\",\"wfwws\",\"m\",\"gk\",\"slnew\",\"lv\",\"s\"]\n[\"xvttu\",\"uavnj\",\"ny\",\"mff\",\"w\",\"web\",\"xei\",\"efzpx\"]",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1468,
+  "slug": "two-sum-iv-input-is-a-bst",
+  "inferred_constraints": "1<=nodes<=10^4, -10^4<=Node.val<=10^4, -10^5<=k<=10^5",
+  "input_format": "line1: root (BST BFS array); line2: k",
+  "testcases": [
+    {
+      "input": "[5,3,6,2,4,null,7]\n9",
+      "desc": "Standard: example1 true"
+    },
+    {
+      "input": "[5,3,6,2,4,null,7]\n28",
+      "desc": "Standard: example2 false"
+    },
+    {
+      "input": "[2,1,3]\n4",
+      "desc": "Standard: 3 nodes true"
+    },
+    {
+      "input": "[2,1,3]\n5",
+      "desc": "Standard: 3 nodes false"
+    },
+    {
+      "input": "[1]\n2",
+      "desc": "Edge: single node"
+    },
+    {
+      "input": "[1,null,2]\n3",
+      "desc": "Edge: two nodes"
+    },
+    {
+      "input": "[4,2,6,1,3,5,7]\n8",
+      "desc": "Standard: 7 nodes true"
+    },
+    {
+      "input": "[4,2,6,1,3,5,7]\n15",
+      "desc": "Standard: 7 nodes false"
+    },
+    {
+      "input": "[4,2,6,1,3,5,7]\n3",
+      "desc": "Standard: small target"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n20",
+      "desc": "Stress: 15 nodes"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n30",
+      "desc": "Stress: target sum larger"
+    },
+    {
+      "input": "[10,5,15,3,7,null,18]\n22",
+      "desc": "Standard: 7 nodes"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]\n3",
+      "desc": "Standard: right chain"
+    },
+    {
+      "input": "[5,4,null,3,null,2,null,1]\n5",
+      "desc": "Standard: left chain"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]\n9",
+      "desc": "Stress: right chain large"
+    },
+    {
+      "input": "[100,50,200]\n250",
+      "desc": "Standard: large values"
+    },
+    {
+      "input": "[10,5,15]\n20",
+      "desc": "Standard: 3 node sum"
+    },
+    {
+      "input": "[4,2,6,1,3,5,7]\n2",
+      "desc": "Killer: target < 2*min"
+    },
+    {
+      "input": "[50,25,75,10,30,60,90]\n100",
+      "desc": "Stress: 7 balanced"
+    },
+    {
+      "input": "[3,1,4,null,2]\n5",
+      "desc": "Standard: 5 nodes"
+    }
+  ]
+}

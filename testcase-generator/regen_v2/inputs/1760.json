@@ -1,0 +1,88 @@
+{
+  "pid": 1760,
+  "slug": "check-if-digits-are-equal-in-string-after-operations-ii",
+  "inferred_constraints": "Parsed from signature: hasSameDigits",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"q\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"y\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"f\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"hrencxuvp\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"mifpgbdc\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"mfmz\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"ijjhjolasvmd\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"hcwfdxqe\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"eaxt\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"lqrbehmbsht\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"jzrm\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"qkhngpruxfwcpfg\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"upetxotjhunyvsj\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"sqmcabjakjzpo\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"tje\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"eedbd\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"ufafkhu\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"ouibdpt\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

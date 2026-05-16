@@ -1,0 +1,88 @@
+{
+  "pid": 1591,
+  "slug": "report-spam-message",
+  "inferred_constraints": "Parsed from signature: reportSpam",
+  "input_format": "line1: message (string array); line2: bannedWords (string array)",
+  "testcases": [
+    {
+      "input": "[\"xfeox\"]\n[\"bndyh\"]",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "[\"wjdsq\"]\n[\"ihbvh\"]",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "[\"s\"]\n[\"fglcj\"]",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "[\"mxpm\"]\n[\"wscnb\"]",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "[\"wjf\"]\n[\"zshd\"]",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "[\"th\",\"bcop\",\"s\",\"lpw\"]\n[\"ti\",\"m\",\"r\",\"tdld\",\"zko\"]",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "[\"k\",\"t\"]\n[\"kir\",\"lxfq\",\"i\",\"lfu\",\"zvfpw\",\"i\",\"lkni\",\"hry\"]",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "[\"mwi\",\"u\",\"sa\",\"d\",\"rhgsi\"]\n[\"hgw\",\"x\",\"hpdey\",\"m\",\"qnxrv\",\"n\"]",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "[\"uwja\",\"wkwr\",\"wafgf\"]\n[\"m\",\"ljxdk\"]",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "[\"uf\",\"lxzpi\",\"sz\",\"yi\",\"jomf\"]\n[\"ajio\",\"gv\",\"jznhd\",\"rpeo\",\"cj\",\"gfw\",\"oiruo\",\"ls\"]",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "[\"ggjs\",\"jh\"]\n[\"p\",\"xsj\",\"dmck\",\"aofod\",\"fnlbv\"]",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "[\"uzw\",\"gii\",\"sld\",\"kbhaj\",\"pnww\",\"p\",\"sqavg\"]\n[\"q\",\"cnwze\",\"yus\",\"sctam\",\"m\",\"fqkol\"]",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "[\"o\",\"u\"]\n[\"f\",\"fp\",\"kv\",\"y\",\"afowy\",\"txmp\",\"o\",\"ujlz\"]",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "[\"ueyj\",\"eyj\",\"kq\",\"x\",\"vbugp\",\"s\",\"fip\"]\n[\"vnuj\",\"nz\",\"udfb\",\"gs\",\"pm\",\"hpycx\"]",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "[\"bg\",\"o\",\"kyxv\",\"tbm\"]\n[\"utf\",\"m\",\"kbieb\",\"bh\",\"penx\",\"aqn\",\"rk\"]",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "[\"xsy\",\"fwh\",\"ku\",\"bnn\",\"jwc\",\"fwuc\",\"bxzv\",\"vtc\"]\n[\"v\",\"aixx\",\"fpij\",\"bqaz\",\"rkt\"]",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "[\"v\",\"o\",\"k\",\"ggf\"]\n[\"aqc\",\"legu\",\"tfcug\",\"ivl\",\"htdqj\"]",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "[\"ejrc\",\"vevgi\",\"po\",\"qumu\",\"lrfz\",\"aqnvv\"]\n[\"k\",\"rai\",\"a\",\"h\"]",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "[\"ik\",\"zaun\",\"jq\",\"hwj\"]\n[\"ft\",\"bkvaa\",\"aih\",\"fis\",\"ik\",\"gt\"]",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "[\"p\",\"omi\",\"ftxft\",\"emgw\",\"h\",\"mq\",\"k\"]\n[\"l\",\"co\",\"ih\",\"lac\",\"ypg\"]",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

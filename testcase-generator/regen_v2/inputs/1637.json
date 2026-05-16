@@ -1,0 +1,88 @@
+{
+  "pid": 1637,
+  "slug": "count-pairs-of-similar-strings",
+  "inferred_constraints": "Parsed from signature: similarPairs",
+  "input_format": "line1: words (string array)",
+  "testcases": [
+    {
+      "input": "[\"dgt\"]",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "[\"v\"]",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "[\"nzkt\"]",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "[\"jaeu\"]",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "[\"zhlf\"]",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "[\"dadw\",\"o\",\"c\",\"mdidi\",\"ul\",\"lfzt\"]",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "[\"ek\",\"psmib\",\"pdtd\",\"co\",\"x\"]",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "[\"hcmz\",\"skil\",\"lmilf\",\"gdmxt\",\"eilyz\",\"f\"]",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "[\"ktfj\",\"xwbln\",\"ecd\",\"jvk\",\"cj\",\"px\"]",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "[\"kqegz\",\"po\",\"twlwq\",\"uvrv\",\"xtd\"]",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "[\"ywp\",\"cxf\",\"xfof\",\"owxfq\",\"o\"]",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "[\"lx\",\"on\"]",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "[\"d\",\"j\"]",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "[\"btvlt\",\"eulgc\",\"tl\",\"geiww\"]",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "[\"uvs\",\"r\",\"uryh\"]",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "[\"yczac\",\"r\",\"zp\"]",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "[\"d\",\"wc\",\"jg\",\"evd\",\"bytj\",\"gswvi\"]",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "[\"yjrg\",\"h\",\"naoff\",\"uael\",\"f\",\"tfpig\"]",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "[\"jrwlz\",\"z\",\"rg\",\"ku\",\"nitiz\",\"aijf\"]",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "[\"o\",\"svtfs\",\"b\",\"kgda\",\"o\"]",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

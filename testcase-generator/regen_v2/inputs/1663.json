@@ -1,0 +1,88 @@
+{
+  "pid": 1663,
+  "slug": "shortest-string-that-contains-three-strings",
+  "inferred_constraints": "Parsed from signature: minimumString",
+  "input_format": "line1: a (string); line2: b (string); line3: c (string)",
+  "testcases": [
+    {
+      "input": "\"u\"\n\"d\"\n\"c\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"k\"\n\"l\"\n\"k\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"f\"\n\"z\"\n\"t\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"l\"\n\"g\"\n\"f\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"c\"\n\"n\"\n\"z\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"cmkvzpsawvlz\"\n\"zawsklabthxgkm\"\n\"thfnedwddf\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"owdvcwhvjkfid\"\n\"ztwdzg\"\n\"vmwyyaqsjqfybev\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"hahhzurgizk\"\n\"mzpsxfffdrzzk\"\n\"uxixgyhjnidja\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"hn\"\n\"wkjeqxukolwf\"\n\"uzjhlbfkxqywm\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"nmzfiamyvggeg\"\n\"vigiscxymlmp\"\n\"tisxbdtsczaxw\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"kgl\"\n\"gc\"\n\"uzenznxqtpogrc\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"flybmerddgwsiqt\"\n\"jlwrikjwmdf\"\n\"oozv\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"kewfmjsbdoriyb\"\n\"hzqltobuilzkz\"\n\"sxuqhyijdbphvi\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"mdixo\"\n\"wgldfoqg\"\n\"ncvuicz\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"ggpqkwzms\"\n\"fr\"\n\"slxdgffvgn\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"pfzptmyrsgshjqg\"\n\"pqvcisgbt\"\n\"cougvxaotmmc\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"twozq\"\n\"svjhqpdlcz\"\n\"lfwj\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"jkmq\"\n\"snwqjoudrecvx\"\n\"dbrkxrdbvrcc\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"qsytll\"\n\"glrxdehhbidkrw\"\n\"ccrhcguplwz\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"oinayjzgbdj\"\n\"ornyqxhmda\"\n\"selrr\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

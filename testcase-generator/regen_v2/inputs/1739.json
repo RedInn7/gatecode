@@ -1,0 +1,88 @@
+{
+  "pid": 1739,
+  "slug": "range-sum-of-bst",
+  "inferred_constraints": "1<=nodes<=2*10^4, 1<=Node.val<=2*10^5, 1<=low<=high<=2*10^5",
+  "input_format": "line1: root (BFS array); line2: low; line3: high",
+  "testcases": [
+    {
+      "input": "[10,5,15,3,7,null,18]\n7\n15",
+      "desc": "Standard: example1=32"
+    },
+    {
+      "input": "[10,5,15,3,7,13,18,1,null,6]\n6\n10",
+      "desc": "Standard: example2=23"
+    },
+    {
+      "input": "[1]\n1\n1",
+      "desc": "Edge: single node in range"
+    },
+    {
+      "input": "[1]\n2\n5",
+      "desc": "Edge: single node out of range"
+    },
+    {
+      "input": "[5,3,7,1,4,6,9]\n1\n9",
+      "desc": "Standard: all in range"
+    },
+    {
+      "input": "[5,3,7,1,4,6,9]\n10\n20",
+      "desc": "Standard: none in range"
+    },
+    {
+      "input": "[5,3,7,1,4,6,9]\n4\n6",
+      "desc": "Standard: middle range"
+    },
+    {
+      "input": "[20,10,30,5,15,25,35,1,7,12,18]\n10\n25",
+      "desc": "Stress: complex tree"
+    },
+    {
+      "input": "[100,50,150,25,75,125,175]\n50\n150",
+      "desc": "Stress: wide range"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]\n2\n4",
+      "desc": "Killer: right-skewed"
+    },
+    {
+      "input": "[5,4,null,3,null,2,null,1]\n2\n4",
+      "desc": "Killer: left-skewed"
+    },
+    {
+      "input": "[10,5,15,3,7,null,18]\n1\n18",
+      "desc": "Standard: full range"
+    },
+    {
+      "input": "[50,25,75,10,30,60,90,5,15,27,35,55,65,85,95]\n25\n75",
+      "desc": "Stress: 15 nodes"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14]\n5\n11",
+      "desc": "Standard: straddling"
+    },
+    {
+      "input": "[1000,500,2000000]\n100\n2000000",
+      "desc": "Killer: max val=2*10^6"
+    },
+    {
+      "input": "[10,5,15,3,7,null,18]\n7\n7",
+      "desc": "Standard: exact node"
+    },
+    {
+      "input": "[3,1,4,null,2]\n2\n3",
+      "desc": "Standard: two nodes"
+    },
+    {
+      "input": "[6,3,9,1,4,7,10,null,2,null,5,null,null,null,null]\n3\n9",
+      "desc": "Stress: deep tree"
+    },
+    {
+      "input": "[1000000]\n1\n1000000",
+      "desc": "Edge: single max node in range"
+    },
+    {
+      "input": "[5,3,7]\n4\n6",
+      "desc": "Standard: gaps in range"
+    }
+  ]
+}

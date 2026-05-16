@@ -1,0 +1,88 @@
+{
+  "pid": 1762,
+  "slug": "count-number-of-homogenous-substrings",
+  "inferred_constraints": "Parsed from signature: countHomogenous",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"i\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"e\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"e\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"bv\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"wiu\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"mi\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"peqm\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"xdnkgcqws\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"yejpsxioege\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"lqtsar\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"pjbceadms\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"kajrobjxnmbpf\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"maupnehtcuf\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"metgbfzlfpxjkow\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"dcauzwydytv\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"zelwobngcxqla\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"jetia\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"eglyzwbvy\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

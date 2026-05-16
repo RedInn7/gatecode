@@ -1,0 +1,88 @@
+{
+  "pid": 1495,
+  "slug": "smallest-palindromic-rearrangement-i",
+  "inferred_constraints": "Parsed from signature: smallestPalindrome",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"v\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"v\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"q\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"bgof\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"urpooijnv\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"el\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"tdmx\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"psybkfobl\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"qnava\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"nfrro\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"iszvgbio\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"bsbcplmbgzbjvi\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"dmirpvjd\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"enysshezkf\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"kld\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"yrggwkygd\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"vmpidfyxpourpc\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"foinr\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

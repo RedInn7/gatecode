@@ -1,0 +1,88 @@
+{
+  "pid": 1555,
+  "slug": "longer-contiguous-segments-of-ones-than-zeros",
+  "inferred_constraints": "Parsed from signature: checkZeroOnes",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"l\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"x\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"b\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"u\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"ceue\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"schecqavgtrxusg\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"sdylq\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"mgfandzh\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"ji\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"uu\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"bolxbxzrz\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"vknvl\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"whrds\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"tp\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"hm\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"abbwsnwztcrg\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"izqnxa\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"gaiwjotpthyu\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"yivoc\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

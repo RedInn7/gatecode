@@ -1,0 +1,88 @@
+{
+  "pid": 1587,
+  "slug": "minimum-number-of-operations-to-make-word-k-periodic",
+  "inferred_constraints": "Parsed from signature: minimumOperationsToMakeKPeriodic",
+  "input_format": "line1: word (string); line2: k (int)",
+  "testcases": [
+    {
+      "input": "\"c\"\n1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"s\"\n0",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"f\"\n-2147483648",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"c\"\n1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"n\"\n-2147483648",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"pgrfouxg\"\n117",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"lorpajwfgvrzqk\"\n-290",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"rr\"\n123",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"pkxptgkmdevfi\"\n-284",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"vhnbfxuzyddumqk\"\n-823",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"cpxfxfeqhzotjci\"\n-472",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"gborzytnield\"\n104",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"borqffbhxd\"\n445",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"mzvcanawowkvyz\"\n-152",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"aiecity\"\n-764",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"jw\"\n305",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"toh\"\n907",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"qoswdvcdqrjbps\"\n153",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"wjrvertxotbsvr\"\n264",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"kdrstik\"\n-7",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

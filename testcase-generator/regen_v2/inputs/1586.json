@@ -1,0 +1,88 @@
+{
+  "pid": 1586,
+  "slug": "latest-time-by-replacing-hidden-digits",
+  "inferred_constraints": "Parsed from signature: maximumTime",
+  "input_format": "line1: time (string)",
+  "testcases": [
+    {
+      "input": "\"l\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"e\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"c\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"l\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"m\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"ohdp\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"erzwarildeg\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"shftgclxvnuds\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"drcpzfikzs\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"ybiai\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"pdtusjrclxhmwu\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"hegqfnr\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"znrjzqtg\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"lgfyxs\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"yed\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"qhcpl\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"qm\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"hgjupzf\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"nztttmcumjt\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"ipskafkwbr\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

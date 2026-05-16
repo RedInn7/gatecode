@@ -1,0 +1,88 @@
+{
+  "pid": 1604,
+  "slug": "pass-the-pillow",
+  "inferred_constraints": "Parsed from signature: passThePillow",
+  "input_format": "line1: n (int); line2: time (int)",
+  "testcases": [
+    {
+      "input": "0\n-1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "-2147483648\n-2147483648",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "100\n-1",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "1\n-1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "100\n-100",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "906\n-246",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-111\n980",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-591\n-466",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-606\n-549",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "-402\n265",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "-934\n522",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-541\n966",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-808\n850",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "75\n-143",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "-460\n-500",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "395\n970",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-599\n301",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-622\n949",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "702\n360",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "-493\n400",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

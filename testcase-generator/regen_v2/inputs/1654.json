@@ -1,0 +1,88 @@
+{
+  "pid": 1654,
+  "slug": "factor-combinations",
+  "inferred_constraints": "2<=n<=10^7",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 no factors"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2 prime"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: n=3 prime"
+    },
+    {
+      "input": "4",
+      "desc": "Standard: n=4=2*2"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: n=12"
+    },
+    {
+      "input": "32",
+      "desc": "Standard: n=32=2^5"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8=2^3"
+    },
+    {
+      "input": "24",
+      "desc": "Standard: n=24"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: n=100"
+    },
+    {
+      "input": "36",
+      "desc": "Standard: n=36=6*6"
+    },
+    {
+      "input": "48",
+      "desc": "Standard: n=48"
+    },
+    {
+      "input": "64",
+      "desc": "Standard: n=64=2^6"
+    },
+    {
+      "input": "120",
+      "desc": "Stress: n=120"
+    },
+    {
+      "input": "256",
+      "desc": "Stress: n=256=2^8"
+    },
+    {
+      "input": "1024",
+      "desc": "Stress: n=1024=2^10"
+    },
+    {
+      "input": "10000",
+      "desc": "Stress: n=10000"
+    },
+    {
+      "input": "999983",
+      "desc": "Stress: large prime"
+    },
+    {
+      "input": "1000000",
+      "desc": "Killer: n=10^6"
+    },
+    {
+      "input": "720",
+      "desc": "Stress: n=720=6!"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6=2*3"
+    }
+  ]
+}

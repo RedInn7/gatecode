@@ -1,0 +1,88 @@
+{
+  "pid": 1436,
+  "slug": "subtree-of-another-tree",
+  "inferred_constraints": "1<=s.nodes<=2000, 1<=t.nodes<=1000, -10^4<=Node.val<=10^4",
+  "input_format": "line1: root (BFS); line2: subRoot (BFS)",
+  "testcases": [
+    {
+      "input": "[3,4,5,1,2]\n[4,1,2]",
+      "desc": "Standard: example1 true"
+    },
+    {
+      "input": "[3,4,5,1,2,null,null,null,null,0]\n[4,1,2]",
+      "desc": "Standard: example2 false"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: single node true"
+    },
+    {
+      "input": "[1]\n[2]",
+      "desc": "Edge: single node false"
+    },
+    {
+      "input": "[1,2,3]\n[2]",
+      "desc": "Standard: leaf as subtree"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[2,4,5]",
+      "desc": "Standard: subtree at level 2"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n[3,6,7]",
+      "desc": "Standard: right subtree"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n[2,4,5]",
+      "desc": "Standard: left subtree"
+    },
+    {
+      "input": "[1,2,3]\n[1,2,3]",
+      "desc": "Standard: same tree"
+    },
+    {
+      "input": "[1,null,2,null,3]\n[2,null,3]",
+      "desc": "Standard: right chain"
+    },
+    {
+      "input": "[3,4,5,1,null,2]\n[3,1,2]",
+      "desc": "Standard: not subtree"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n[4,2,6,1,3,5,7]",
+      "desc": "Stress: 15 and 7"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n[2,1,3]",
+      "desc": "Stress: leaf subtree"
+    },
+    {
+      "input": "[1,2,3]\n[2,1,3]",
+      "desc": "Standard: wrong order"
+    },
+    {
+      "input": "[1,2,null,3,null,4]\n[2,3,null,4]",
+      "desc": "Standard: deep"
+    },
+    {
+      "input": "[3,4,5,1,2]\n[4,1,null]",
+      "desc": "Standard: partial mismatch"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n[2,3,4,5,6,7,8]",
+      "desc": "Stress: larger trees"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1]\n[1,1,1]",
+      "desc": "Stress: all same values"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[5]",
+      "desc": "Standard: single leaf"
+    },
+    {
+      "input": "[5,4,null,3,null,2,null,1]\n[4,3,null,2,null,1]",
+      "desc": "Stress: left chain"
+    }
+  ]
+}

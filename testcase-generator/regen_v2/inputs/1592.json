@@ -1,0 +1,88 @@
+{
+  "pid": 1592,
+  "slug": "find-largest-value-in-each-tree-row",
+  "inferred_constraints": "0<=nodes<=10^4, -2^31<=Node.val<=2^31-1",
+  "input_format": "line1: root (BFS array)",
+  "testcases": [
+    {
+      "input": "[1,3,2,5,3,null,9]",
+      "desc": "Standard: example1"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Standard: 3 nodes"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "[]",
+      "desc": "Edge: empty"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4]",
+      "desc": "Standard: right chain"
+    },
+    {
+      "input": "[4,3,null,2,null,1]",
+      "desc": "Standard: left chain"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "desc": "Standard: perfect 7"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]",
+      "desc": "Stress: 15 nodes"
+    },
+    {
+      "input": "[-1,-2,-3,-4,-5,-6,-7]",
+      "desc": "Standard: all negative"
+    },
+    {
+      "input": "[0,1,-1,2,-2,3,-3]",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "[100,50,150,25,75,125,175]",
+      "desc": "Standard: large positive"
+    },
+    {
+      "input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "[1,null,3,null,null,null,null,null,5]",
+      "desc": "Standard: right path"
+    },
+    {
+      "input": "[3,1,5,0,2,4,6,-1,null,null,null,null,null,null,null,null,-1]",
+      "desc": "Stress: 8 levels"
+    },
+    {
+      "input": "[10000,-10000,10000,-10000,null,null,-10000,null,null,null,null,null,null,null,10000]",
+      "desc": "Killer: extremes"
+    },
+    {
+      "input": "[2,1,3]",
+      "desc": "Standard: simple"
+    },
+    {
+      "input": "[1,2,null,4,null,8,null,16]",
+      "desc": "Stress: left chain powers"
+    },
+    {
+      "input": "[9,5,null,4,7,null,null,3,null,6,8]",
+      "desc": "Standard: complex"
+    },
+    {
+      "input": "[5,3,8,1,4,6,9,0,2,null,null,null,null,null,null]",
+      "desc": "Stress: 15 BST"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
+      "desc": "Stress: 4 levels complete"
+    }
+  ]
+}

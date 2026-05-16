@@ -1,0 +1,88 @@
+{
+  "pid": 1719,
+  "slug": "time-needed-to-rearrange-a-binary-string",
+  "inferred_constraints": "Parsed from signature: secondsToRemoveOccurrences",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"q\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"m\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"q\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"ushqwbr\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"sta\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"ezkdndpbcpep\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"nrzqba\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"ljgcktudsa\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"fee\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"novialw\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"uusjlbcgzh\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"yvifkmwf\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"gnvfqikxrb\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"hrbzuix\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"ghuziv\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"blhxdekvm\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"qoygifrbhy\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"qilyu\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

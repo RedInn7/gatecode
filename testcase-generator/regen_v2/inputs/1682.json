@@ -1,0 +1,88 @@
+{
+  "pid": 1682,
+  "slug": "majority-frequency-characters",
+  "inferred_constraints": "Parsed from signature: majorityFrequencyGroup",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"l\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"i\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"u\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"kxzrmxqisgmftxi\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"hxpqbglqwvmpr\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"mfcqudotkdnbiio\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"ljnxp\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"nzpnkdzly\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"savighvutqi\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"vyphrwphls\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"gr\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"xdqmapreglnnff\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"xzbhhxapvdm\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"bxwcassccangkmx\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"wxeruyxy\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"psudglrlubgdzso\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"eeqfk\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"savfdu\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

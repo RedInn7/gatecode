@@ -1,0 +1,88 @@
+{
+  "pid": 1526,
+  "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-ii",
+  "inferred_constraints": "Parsed from signature: validSubstringCount",
+  "input_format": "line1: word1 (string); line2: word2 (string)",
+  "testcases": [
+    {
+      "input": "\"t\"\n\"s\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"h\"\n\"r\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"b\"\n\"b\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"z\"\n\"l\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"c\"\n\"w\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"orizluzgjob\"\n\"xnifk\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"uialmaqcfgsr\"\n\"xwagpeezlqwuie\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"dwsijxggco\"\n\"akwnky\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"dazvjgcxqrcgaib\"\n\"lzikftzgwdhn\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"krqaovo\"\n\"eun\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"vurauehsfpxzscj\"\n\"znmuib\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"gpgcu\"\n\"gfzdj\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"ywqkftdpgmissx\"\n\"pbmwvgqqwtzv\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"fa\"\n\"rd\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"tnhpgpo\"\n\"ehfrtltqhob\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"ionnyq\"\n\"syewighustwyfsz\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"unluncdzob\"\n\"ovwvfoyodrfl\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"nomxaesfzh\"\n\"yplbdyoi\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"qmuwrcnxkmxgg\"\n\"dffttcjirdnjzrl\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"kxt\"\n\"iwoku\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

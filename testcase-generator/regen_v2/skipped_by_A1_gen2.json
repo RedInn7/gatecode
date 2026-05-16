@@ -1,0 +1,105 @@
+{
+  "agent": "G2",
+  "skipped": [
+    {
+      "pid": 1744,
+      "slug": "design-an-array-statistics-tracker",
+      "reason": "Design class: StatisticsTracker"
+    },
+    {
+      "pid": 1737,
+      "slug": "debounce",
+      "reason": "No C++/Python3 signatures"
+    },
+    {
+      "pid": 1710,
+      "slug": "undefined-to-null",
+      "reason": "No C++/Python3 signatures"
+    },
+    {
+      "pid": 1689,
+      "slug": "counter",
+      "reason": "No C++/Python3 signatures"
+    },
+    {
+      "pid": 1684,
+      "slug": "range-sum-query-2d-immutable",
+      "reason": "Design class: NumMatrix"
+    },
+    {
+      "pid": 1618,
+      "slug": "tenth-line",
+      "reason": "No C++/Python3 signatures"
+    },
+    {
+      "pid": 1606,
+      "slug": "design-snake-game",
+      "reason": "Design class: SnakeGame"
+    },
+    {
+      "pid": 1590,
+      "slug": "design-a-leaderboard",
+      "reason": "Design class: Leaderboard"
+    },
+    {
+      "pid": 1588,
+      "slug": "min-stack",
+      "reason": "Design class: MinStack"
+    },
+    {
+      "pid": 1540,
+      "slug": "design-cancellable-function",
+      "reason": "No C++/Python3 signatures"
+    },
+    {
+      "pid": 1538,
+      "slug": "moving-average-from-data-stream",
+      "reason": "Design class: MovingAverage"
+    },
+    {
+      "pid": 1519,
+      "slug": "n-ary-tree-level-order-traversal",
+      "reason": "Design class: Node"
+    },
+    {
+      "pid": 1500,
+      "slug": "online-election",
+      "reason": "Design class: TopVotedCandidate"
+    },
+    {
+      "pid": 1486,
+      "slug": "design-in-memory-file-system",
+      "reason": "Design class: FileSystem"
+    },
+    {
+      "pid": 1483,
+      "slug": "apply-discount-every-n-orders",
+      "reason": "Design class: Cashier"
+    },
+    {
+      "pid": 1478,
+      "slug": "bind-function-to-context",
+      "reason": "No C++/Python3 signatures"
+    },
+    {
+      "pid": 1477,
+      "slug": "implement-magic-dictionary",
+      "reason": "Design class: MagicDictionary"
+    },
+    {
+      "pid": 1438,
+      "slug": "infinite-method-object",
+      "reason": "No C++/Python3 signatures"
+    },
+    {
+      "pid": 1435,
+      "slug": "design-phone-directory",
+      "reason": "Design class: PhoneDirectory"
+    },
+    {
+      "pid": 1402,
+      "slug": "throttle",
+      "reason": "No C++/Python3 signatures"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1414,
+  "slug": "valid-word-abbreviation",
+  "inferred_constraints": "Parsed from signature: validWordAbbreviation",
+  "input_format": "line1: word (string); line2: abbr (string)",
+  "testcases": [
+    {
+      "input": "\"e\"\n\"v\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"g\"\n\"c\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"p\"\n\"c\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"x\"\n\"h\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"o\"\n\"y\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"llpcxlazdvribal\"\n\"jyljpapgves\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"tghccren\"\n\"wwzbzawxugf\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"tubccfb\"\n\"lzaa\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"binggxdtvcxc\"\n\"hjadupbofijwj\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"liqfbapnhtyapgi\"\n\"fjthdfstiko\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"sxpno\"\n\"kce\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"tiekrpoywwmz\"\n\"sqoychjmhkwmg\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"mzjblz\"\n\"gsee\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"ut\"\n\"cbgmcr\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"agxsmuvsfzyvtt\"\n\"sypru\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"piqsipgotzol\"\n\"keylsasplfkba\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"osbtni\"\n\"vomtprain\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"hmlvbikeku\"\n\"tbxufv\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"mbmhrqklcs\"\n\"adpijpewzbrz\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"eb\"\n\"bopqjgzdzhosrll\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

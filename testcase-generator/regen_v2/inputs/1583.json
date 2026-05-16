@@ -1,0 +1,88 @@
+{
+  "pid": 1583,
+  "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+  "inferred_constraints": "Parsed from signature: checkOnesSegment",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"g\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"d\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"p\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"f\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"bod\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"qe\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"qtqmfsptvm\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"brqaugwruoqa\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"xvypqklmvx\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"ocfyzxfdv\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"yjlaglb\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"saqzueg\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"dmu\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"mbbbpb\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"sqhyutzolns\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"bbcxazbsjll\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"sd\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"wygfbpszgviyu\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"qhhcrlmo\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1753,
+  "slug": "greatest-common-divisor-of-strings",
+  "inferred_constraints": "Parsed from signature: gcdOfStrings",
+  "input_format": "line1: str1 (string); line2: str2 (string)",
+  "testcases": [
+    {
+      "input": "\"b\"\n\"q\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"h\"\n\"o\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"i\"\n\"f\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"l\"\n\"h\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"w\"\n\"k\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"lmhvyjmunb\"\n\"rmf\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"easpslyypbn\"\n\"vjpyd\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"npdsqgqt\"\n\"rxzfpzwrczi\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"asen\"\n\"arznknwproguto\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"fpiouznrb\"\n\"wkcyrarc\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"liymlxfvvgdic\"\n\"pljkm\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"wpq\"\n\"aofewtz\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"yapltccoamjai\"\n\"mklla\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"xgfrypiszxm\"\n\"rre\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"omqfienvcrm\"\n\"qdwceejrk\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"ekxafnzt\"\n\"wvagoime\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"suzmarwovkwt\"\n\"bdpmjnam\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"rypcxof\"\n\"tviuiufykndxi\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"dh\"\n\"kzdlwcp\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"ck\"\n\"bierxeosdmdtjs\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

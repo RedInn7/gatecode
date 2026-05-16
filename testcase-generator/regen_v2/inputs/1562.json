@@ -1,0 +1,88 @@
+{
+  "pid": 1562,
+  "slug": "longest-chunked-palindrome-decomposition",
+  "inferred_constraints": "Parsed from signature: longestDecomposition",
+  "input_format": "line1: text (string)",
+  "testcases": [
+    {
+      "input": "\"l\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"j\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"m\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"g\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"s\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"zx\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"eehftuuddy\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"hinqxcavgosk\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"qmdiu\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"ratcx\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"lokctveleqevj\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"yqvtsqqah\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"smcywpkxqrj\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"dqtiae\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"qksm\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"eeo\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"fdj\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"cydtkvemyzn\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"xx\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"yieslehw\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1533,
+  "slug": "count-distinct-numbers-on-board",
+  "inferred_constraints": "Parsed from signature: distinctIntegers",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {
+      "input": "-2147483648",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "-100",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "2147483647",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "-770",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "279",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "533",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-186",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "905",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "315",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-625",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "646",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-808",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "-862",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "-537",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "839",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-246",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "-483",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "983",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

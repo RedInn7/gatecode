@@ -1,0 +1,88 @@
+{
+  "pid": 1565,
+  "slug": "valid-palindrome",
+  "inferred_constraints": "Parsed from signature: isPalindrome",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"t\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"j\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"x\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"p\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"ixjgnwfy\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"oszbawdqzgndu\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"hmp\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"gzbxgvnsqlss\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"mlapyqocxrd\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"hlu\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"wkdstkrxcom\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"xuvfyhvayg\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"ikeumxhclsqn\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"si\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"lpa\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"mtakuovrrtl\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"cxsazoesflild\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"gmrbgksynt\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"zlzrrwvec\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

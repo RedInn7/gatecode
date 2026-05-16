@@ -1,0 +1,88 @@
+{
+  "pid": 1770,
+  "slug": "generate-binary-strings-without-adjacent-zeros",
+  "inferred_constraints": "Parsed from signature: validStrings",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {
+      "input": "-1",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "-100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "-100",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "-109",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "122",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-652",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "874",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "-581",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "332",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "410",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-321",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "881",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "518",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "-973",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-87",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-287",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "-66",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "-607",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

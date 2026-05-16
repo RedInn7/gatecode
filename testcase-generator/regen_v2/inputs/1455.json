@@ -1,0 +1,88 @@
+{
+  "pid": 1455,
+  "slug": "vowel-consonant-score",
+  "inferred_constraints": "Parsed from signature: vowelConsonantScore",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"r\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"b\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"k\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"x\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"gxbgp\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"xaldoopmzm\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"yjqfetnhbcishq\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"nvspweiztn\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"lp\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"dswxnqrian\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"bjgfkyqdo\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"ranlhsdiva\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"dqkkzzjmisxv\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"qmoiehtw\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"gjvn\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"hmwqp\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"wyhdtdppbe\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"tlzxplaytblyjqt\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"teyqjs\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

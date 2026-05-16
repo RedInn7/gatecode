@@ -1,0 +1,88 @@
+{
+  "pid": 1582,
+  "slug": "maximum-substrings-with-distinct-start",
+  "inferred_constraints": "Parsed from signature: maxDistinct",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "\"g\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"n\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"w\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"lukybwux\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"obpkgshszdzmvh\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"hnmedsbkrtbkn\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"wafkecf\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"mibtxkg\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"aeougudquuc\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"dkqbaootafjcfkq\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"hdsdfsmuezsehgh\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"obv\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"wfugn\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"sndggnnihhx\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"ybjmzgyfxiu\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"pf\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"ofulqhrurfu\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"mtvqsceb\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

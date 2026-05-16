@@ -1,0 +1,88 @@
+{
+  "pid": 1777,
+  "slug": "hexadecimal-and-hexatrigesimal-conversion",
+  "inferred_constraints": "1<=n<=10^6",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "13",
+      "desc": "Standard: example"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: min"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10"
+    },
+    {
+      "input": "15",
+      "desc": "Standard: 0xF"
+    },
+    {
+      "input": "16",
+      "desc": "Standard: 0x10"
+    },
+    {
+      "input": "35",
+      "desc": "Standard: Z in base36"
+    },
+    {
+      "input": "36",
+      "desc": "Standard: 10 in base36"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: n=100"
+    },
+    {
+      "input": "255",
+      "desc": "Standard: 0xFF"
+    },
+    {
+      "input": "256",
+      "desc": "Standard: 0x100"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: n=1000"
+    },
+    {
+      "input": "1296",
+      "desc": "Standard: 36^2"
+    },
+    {
+      "input": "4096",
+      "desc": "Standard: 16^3"
+    },
+    {
+      "input": "10000",
+      "desc": "Stress: n=10000"
+    },
+    {
+      "input": "65535",
+      "desc": "Standard: 0xFFFF"
+    },
+    {
+      "input": "65536",
+      "desc": "Standard: 0x10000"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: n=100000"
+    },
+    {
+      "input": "500000",
+      "desc": "Stress: n=500000"
+    },
+    {
+      "input": "999999",
+      "desc": "Stress: near max"
+    },
+    {
+      "input": "1000000",
+      "desc": "Killer: n=10^6 max"
+    }
+  ]
+}

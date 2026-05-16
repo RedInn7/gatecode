@@ -1,0 +1,88 @@
+{
+  "pid": 1664,
+  "slug": "longest-common-subsequence",
+  "inferred_constraints": "Parsed from signature: longestCommonSubsequence",
+  "input_format": "line1: text1 (string); line2: text2 (string)",
+  "testcases": [
+    {
+      "input": "\"x\"\n\"m\"",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"x\"\n\"j\"",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"a\"\n\"w\"",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"q\"\n\"h\"",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"j\"\n\"r\"",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"ienhakjosdgpgau\"\n\"ugz\"",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"ucoqfmvymxgxbta\"\n\"eno\"",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"dytxkmdefobtuya\"\n\"sec\"",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"uhxlvuqiirha\"\n\"kakc\"",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"iteeinqhujw\"\n\"yr\"",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"rc\"\n\"ycvvuvdmzi\"",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"odewozxaw\"\n\"fdaeay\"",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"om\"\n\"mtw\"",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"fbiehaqbdlvjm\"\n\"fqtvdwo\"",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"xqpyno\"\n\"qqcltjudfqvkrc\"",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"zbyqkokb\"\n\"bsmt\"",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"pca\"\n\"qr\"",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"asctsmk\"\n\"ic\"",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"lzkqhmektr\"\n\"iik\"",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"yllyzw\"\n\"kiewlojvxyj\"",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

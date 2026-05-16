@@ -1,0 +1,88 @@
+{
+  "pid": 1723,
+  "slug": "binary-tree-upside-down",
+  "inferred_constraints": "1<=nodes<=10, 1<=Node.val<=10",
+  "input_format": "line1: root (BFS tree array)",
+  "testcases": [
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Standard: example"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single node"
+    },
+    {
+      "input": "[]",
+      "desc": "Edge: empty"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Standard: 3 nodes"
+    },
+    {
+      "input": "[1,2,null,3,4]",
+      "desc": "Standard: left chain with right"
+    },
+    {
+      "input": "[1,2,null,3,4,null,null,5,6]",
+      "desc": "Stress: deeper"
+    },
+    {
+      "input": "[1,2,3,4,5,null,null,6,7]",
+      "desc": "Stress: partial 4 levels"
+    },
+    {
+      "input": "[1,2,null]",
+      "desc": "Standard: left child only"
+    },
+    {
+      "input": "[1,null,2]",
+      "desc": "Standard: right child (if valid)"
+    },
+    {
+      "input": "[1,2,3,4,5,null,null]",
+      "desc": "Standard: 5 nodes"
+    },
+    {
+      "input": "[1,2,3,4,null,null,null,5]",
+      "desc": "Standard: deep left"
+    },
+    {
+      "input": "[10,20,30,40,50]",
+      "desc": "Standard: larger values"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "desc": "Stress: deep left chain 4 levels"
+    },
+    {
+      "input": "[5,3,null,2,4,null,null,1,null]",
+      "desc": "Standard: deep left"
+    },
+    {
+      "input": "[100,50,60]",
+      "desc": "Standard: root left right"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Repeat: 3 nodes"
+    },
+    {
+      "input": "[1,2,3,4,5,null,null,6,7,8,9]",
+      "desc": "Killer: 5 levels"
+    },
+    {
+      "input": "[1,2,null,3,null]",
+      "desc": "Standard: left chain 3"
+    },
+    {
+      "input": "[1,2,null,3,4,null,null,5,6,null,null,null,null,null,null]",
+      "desc": "Stress: 4 levels"
+    },
+    {
+      "input": "[7,6,8,5,null,null,null,4,null]",
+      "desc": "Killer: deep left skewed"
+    }
+  ]
+}

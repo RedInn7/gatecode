@@ -1,0 +1,88 @@
+{
+  "pid": 1549,
+  "slug": "longest-substring-with-at-most-k-distinct-characters",
+  "inferred_constraints": "Parsed from signature: lengthOfLongestSubstringKDistinct",
+  "input_format": "line1: s (string); line2: k (int)",
+  "testcases": [
+    {
+      "input": "\"q\"\n2147483647",
+      "desc": "Edge: case 1"
+    },
+    {
+      "input": "\"q\"\n1",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "\"d\"\n-2147483648",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "\"r\"\n0",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "\"r\"\n2147483647",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "\"zosb\"\n-921",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "\"ounnlgm\"\n-195",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "\"zxzczimyyefc\"\n-451",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "\"xk\"\n765",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "\"hkblkwch\"\n76",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "\"pkyzzvk\"\n-10",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "\"cangvct\"\n553",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "\"khozm\"\n-194",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "\"pzxsj\"\n176",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "\"fuds\"\n-153",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "\"iy\"\n589",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "\"yilkrink\"\n269",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "\"lypchqyhx\"\n-386",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "\"sdjddbuzbkiuf\"\n-624",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "\"qyi\"\n-221",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}
