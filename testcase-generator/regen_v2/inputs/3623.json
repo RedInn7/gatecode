@@ -71,6 +71,18 @@
     {
       "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
       "desc": "Killer: all same char max"
+    },
+    {
+      "input": "\"zidybphivz\"\n4",
+      "desc": "Generated: stress at position 17"
+    },
+    {
+      "input": "\"ymusxrzsel\"\n4",
+      "desc": "Generated: stress at position 18"
+    },
+    {
+      "input": "\"bwrwjntxwf\"\n4",
+      "desc": "Stress: large n near max boundary"
     }
   ]
 }
