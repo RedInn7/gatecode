@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= num.length <= 12, num doesn't start with 0",
   "input_format": "single line: num",
   "testcases": [
-    {"input": "257", "desc": "Edge: example1 IOI"},
-    {"input": "3", "desc": "Edge: example2 invalid"},
-    {"input": "1", "desc": "Edge: smallest = I"},
-    {"input": "2", "desc": "Edge: 2 = invalid"},
-    {"input": "10", "desc": "Edge: 10 = A"},
-    {"input": "11", "desc": "Edge: 11 = B"},
-    {"input": "12", "desc": "Edge: 12 = C"},
-    {"input": "13", "desc": "Edge: 13 = D"},
-    {"input": "14", "desc": "Edge: 14 = E"},
-    {"input": "15", "desc": "Edge: 15 = F"},
-    {"input": "16", "desc": "Edge: 16 = 10 = IO"},
-    {"input": "100", "desc": "Standard: 100 = 64 = invalid (6)"},
-    {"input": "256", "desc": "Standard: 256 = 100 = IOO"},
-    {"input": "171", "desc": "Standard: 171 = AB"},
-    {"input": "47802", "desc": "Standard: BABBA wait 47802=hex BABBA? no"},
-    {"input": "987654", "desc": "Standard: F1206 invalid (2)"},
-    {"input": "245793", "desc": "Standard: 3C001 invalid"},
-    {"input": "10683", "desc": "Standard: hex 29BB invalid (2,9)"},
-    {"input": "12648430", "desc": "Stress: C0FFEE no E? E ok, 0=O, F=F = COFFEE valid"},
-    {"input": "747817593135", "desc": "Killer: AE1DDFE0F0F - has E,A but mixed digits"}
+    {
+      "input": "257",
+      "desc": "Edge: example1 IOI",
+      "output": "\"IOI\""
+    },
+    {
+      "input": "3",
+      "desc": "Edge: example2 invalid",
+      "output": "\"ERROR\""
+    },
+    {
+      "input": "1",
+      "desc": "Edge: smallest = I",
+      "output": "\"I\""
+    },
+    {
+      "input": "2",
+      "desc": "Edge: 2 = invalid",
+      "output": "\"ERROR\""
+    },
+    {
+      "input": "10",
+      "desc": "Edge: 10 = A",
+      "output": "\"A\""
+    },
+    {
+      "input": "11",
+      "desc": "Edge: 11 = B",
+      "output": "\"B\""
+    },
+    {
+      "input": "12",
+      "desc": "Edge: 12 = C",
+      "output": "\"C\""
+    },
+    {
+      "input": "13",
+      "desc": "Edge: 13 = D",
+      "output": "\"D\""
+    },
+    {
+      "input": "14",
+      "desc": "Edge: 14 = E",
+      "output": "\"E\""
+    },
+    {
+      "input": "15",
+      "desc": "Edge: 15 = F",
+      "output": "\"F\""
+    },
+    {
+      "input": "16",
+      "desc": "Edge: 16 = 10 = IO",
+      "output": "\"IO\""
+    },
+    {
+      "input": "100",
+      "desc": "Standard: 100 = 64 = invalid (6)",
+      "output": "\"ERROR\""
+    },
+    {
+      "input": "256",
+      "desc": "Standard: 256 = 100 = IOO",
+      "output": "\"IOO\""
+    },
+    {
+      "input": "171",
+      "desc": "Standard: 171 = AB",
+      "output": "\"AB\""
+    },
+    {
+      "input": "47802",
+      "desc": "Standard: BABBA wait 47802=hex BABBA? no",
+      "output": "\"BABA\""
+    },
+    {
+      "input": "987654",
+      "desc": "Standard: F1206 invalid (2)",
+      "output": "\"ERROR\""
+    },
+    {
+      "input": "245793",
+      "desc": "Standard: 3C001 invalid",
+      "output": "\"ERROR\""
+    },
+    {
+      "input": "10683",
+      "desc": "Standard: hex 29BB invalid (2,9)",
+      "output": "\"ERROR\""
+    },
+    {
+      "input": "12648430",
+      "desc": "Stress: C0FFEE no E? E ok, 0=O, F=F = COFFEE valid",
+      "output": "\"COFFEE\""
+    },
+    {
+      "input": "747817593135",
+      "desc": "Killer: AE1DDFE0F0F - has E,A but mixed digits",
+      "output": "\"ERROR\""
+    }
   ]
 }

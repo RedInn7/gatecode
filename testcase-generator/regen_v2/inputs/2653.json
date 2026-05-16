@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[2,2,3,3]\n5\n5",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "1"
     },
     {
       "input": "[2,2,3,3]\n3\n4",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "2"
     },
     {
       "input": "[5]\n10\n8",
-      "desc": "Edge: single plant"
+      "desc": "Edge: single plant",
+      "output": "0"
     },
     {
       "input": "[5]\n5\n5",
-      "desc": "Edge: single plant exact"
+      "desc": "Edge: single plant exact",
+      "output": "0"
     },
     {
       "input": "[1,1]\n1\n1",
-      "desc": "Edge: 2 plants meet"
+      "desc": "Edge: 2 plants meet",
+      "output": "0"
     },
     {
       "input": "[3,3]\n3\n3",
-      "desc": "Edge: 2 plants both"
+      "desc": "Edge: 2 plants both",
+      "output": "0"
     },
     {
       "input": "[1,2,3]\n5\n5",
-      "desc": "Edge: 3 plants no refill"
+      "desc": "Edge: 3 plants no refill",
+      "output": "0"
     },
     {
       "input": "[2,2,3,3,5]\n7\n7",
-      "desc": "Edge: 5 plants meet middle"
+      "desc": "Edge: 5 plants meet middle",
+      "output": "1"
     },
     {
       "input": "[1,2,4,4,5]\n6\n5",
-      "desc": "Edge: meet at index 2"
+      "desc": "Edge: meet at index 2",
+      "output": "2"
     },
     {
       "input": "[1,1,1,1,1,1,1,1,1,1]\n2\n2",
-      "desc": "Standard: 10 same"
+      "desc": "Standard: 10 same",
+      "output": "4"
     },
     {
       "input": "[113976,523079,570573,226463,938181,29498,682791,374891,312300,412872,745600,390910,835445,210581,297699,475821,74891,391936,166383,221700,948977,389978,956601,671365,579394,79866,176722,951384,831876,158243,254799,483492,598577,191676,65944,874482,227020,874109,643127,244772,709330,170465,650877,14652,510885,594267,922039,835309,291760,265174,418757,884127,371930,726248,33684,366417,556062,206681,54613,168099,869289,840086,988851,310909,451921,434771,580578,561410,9537,222248,12590,627390,531156,823587,176555,503299,898507,755327,8707,994131,524107,620413]\n1\n3",
-      "desc": "Regenerated: standard at position 10"
+      "desc": "Regenerated: standard at position 10",
+      "output": "82"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n15\n10",
-      "desc": "Standard: increasing"
+      "desc": "Standard: increasing",
+      "output": "4"
     },
     {
       "input": "[10,9,8,7,6,5,4,3,2,1]\n10\n15",
-      "desc": "Standard: decreasing"
+      "desc": "Standard: decreasing",
+      "output": "4"
     },
     {
       "input": "[5,1,5,1,5,1,5,1]\n5\n5",
-      "desc": "Standard: alt large small"
+      "desc": "Standard: alt large small",
+      "output": "6"
     },
     {
       "input": "[10,10,10,10,10]\n10\n10",
-      "desc": "Standard: all max"
+      "desc": "Standard: all max",
+      "output": "3"
     },
     {
       "input": "[1,2,3,4,5,5,4,3,2,1]\n10\n10",
-      "desc": "Standard: pyramid"
+      "desc": "Standard: pyramid",
+      "output": "2"
     },
     {
       "input": "[1000000,1000000]\n1000000\n1000000",
-      "desc": "Standard: max plant"
+      "desc": "Standard: max plant",
+      "output": "0"
     },
     {
       "input": "[1,1,1,1,1,1,1,1,1]\n9\n9",
-      "desc": "Standard: odd count"
+      "desc": "Standard: odd count",
+      "output": "0"
     },
     {
       "input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n50\n50",
-      "desc": "Stress: 100 plants"
+      "desc": "Stress: 100 plants",
+      "output": "0"
     },
     {
       "input": "[1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000]\n1000000\n1000000",
-      "desc": "Killer: max all"
+      "desc": "Killer: max all",
+      "output": "8"
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "Tree nodes <= 2500, list nodes <= 100, 1 <= Node.val <= 100",
   "input_format": "line1: head (JSON array linked list); line2: root (JSON array tree level-order)",
   "testcases": [
-    {"input": "[4,2,8]\n[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", "desc": "Edge: example1"},
-    {"input": "[1,4,2,6]\n[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", "desc": "Edge: example2"},
-    {"input": "[1,4,2,6,8]\n[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", "desc": "Edge: example3 false"},
-    {"input": "[1]\n[1]", "desc": "Edge: single match"},
-    {"input": "[1]\n[2]", "desc": "Edge: single no match"},
-    {"input": "[1,2]\n[1,2]", "desc": "Edge: 2 node path"},
-    {"input": "[1,2]\n[1,3,2]", "desc": "Edge: must descend"},
-    {"input": "[1,2,3]\n[1,2,null,null,3]", "desc": "Edge: linear path"},
-    {"input": "[5]\n[1,2,3,4,5,6,7]", "desc": "Edge: leaf match"},
-    {"input": "[1,2,3]\n[1,2,3,4,5,6,7]", "desc": "Standard: 1->2 then 1->3 wait need consecutive"},
-    {"input": "[1,2,4]\n[1,2,3,4,5,6,7]", "desc": "Standard: 1->2->4"},
-    {"input": "[4]\n[1,2,3,4,5,6,7]", "desc": "Standard: single leaf"},
-    {"input": "[3,7]\n[1,2,3,4,5,6,7]", "desc": "Standard: 3->7"},
-    {"input": "[1,1,1]\n[1,1,1,1,1,1,1]", "desc": "Standard: all 1s"},
-    {"input": "[2,5]\n[1,2,3,4,5,6,7]", "desc": "Standard: 2->5"},
-    {"input": "[1,2,4,8]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: 4 deep"},
-    {"input": "[5,10]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: leaf chain"},
-    {"input": "[1,3,7,15]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: right spine"},
-    {"input": "[1,2,4,8,16]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]", "desc": "Stress: deeper"},
-    {"input": "[1,2,3,4,5]\n[1,1,1,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]", "desc": "Killer: 5 level chain"}
+    {
+      "input": "[4,2,8]\n[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]",
+      "desc": "Edge: example1",
+      "output": "true"
+    },
+    {
+      "input": "[1,4,2,6]\n[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]",
+      "desc": "Edge: example2",
+      "output": "true"
+    },
+    {
+      "input": "[1,4,2,6,8]\n[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]",
+      "desc": "Edge: example3 false",
+      "output": "false"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: single match",
+      "output": "true"
+    },
+    {
+      "input": "[1]\n[2]",
+      "desc": "Edge: single no match",
+      "output": "false"
+    },
+    {
+      "input": "[1,2]\n[1,2]",
+      "desc": "Edge: 2 node path",
+      "output": "true"
+    },
+    {
+      "input": "[1,2]\n[1,3,2]",
+      "desc": "Edge: must descend",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3]\n[1,2,null,null,3]",
+      "desc": "Edge: linear path",
+      "output": "true"
+    },
+    {
+      "input": "[5]\n[1,2,3,4,5,6,7]",
+      "desc": "Edge: leaf match",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3]\n[1,2,3,4,5,6,7]",
+      "desc": "Standard: 1->2 then 1->3 wait need consecutive",
+      "output": "false"
+    },
+    {
+      "input": "[1,2,4]\n[1,2,3,4,5,6,7]",
+      "desc": "Standard: 1->2->4",
+      "output": "true"
+    },
+    {
+      "input": "[4]\n[1,2,3,4,5,6,7]",
+      "desc": "Standard: single leaf",
+      "output": "true"
+    },
+    {
+      "input": "[3,7]\n[1,2,3,4,5,6,7]",
+      "desc": "Standard: 3->7",
+      "output": "true"
+    },
+    {
+      "input": "[1,1,1]\n[1,1,1,1,1,1,1]",
+      "desc": "Standard: all 1s",
+      "output": "true"
+    },
+    {
+      "input": "[2,5]\n[1,2,3,4,5,6,7]",
+      "desc": "Standard: 2->5",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,4,8]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
+      "desc": "Standard: 4 deep",
+      "output": "true"
+    },
+    {
+      "input": "[5,10]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
+      "desc": "Standard: leaf chain",
+      "output": "true"
+    },
+    {
+      "input": "[1,3,7,15]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
+      "desc": "Standard: right spine",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,4,8,16]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]",
+      "desc": "Stress: deeper",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[1,1,1,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]",
+      "desc": "Killer: 5 level chain",
+      "output": "false"
+    }
   ]
 }

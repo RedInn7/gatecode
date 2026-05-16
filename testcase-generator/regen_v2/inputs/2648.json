@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= m, n <= 20, classroom[i][j] in {S, L, R, X, .}, 1 <= energy <= 50, exactly one S",
   "input_format": "line1: classroom (JSON array of strings); line2: energy (int)",
   "testcases": [
-    {"input": "[\"S.\",\"XL\"]\n2", "desc": "Edge: example1"},
-    {"input": "[\"LS\",\"RL\"]\n4", "desc": "Edge: example2"},
-    {"input": "[\"L.S\",\"RXL\",\"...\"]\n3", "desc": "Edge: example3"},
-    {"input": "[\"S\"]\n1", "desc": "Edge: 1x1 only S"},
-    {"input": "[\"SL\"]\n1", "desc": "Edge: 1x2"},
-    {"input": "[\"SL\"]\n5", "desc": "Edge: 1x2 plenty energy"},
-    {"input": "[\"S.L\"]\n2", "desc": "Edge: distance 2"},
-    {"input": "[\"S.L\"]\n1", "desc": "Edge: distance 2 low energy"},
-    {"input": "[\"SLR\"]\n3", "desc": "Edge: with reset"},
-    {"input": "[\"S..L\",\"....\",\"....\"]\n5", "desc": "Standard: 3x4"},
-    {"input": "[\"SXL\"]\n10", "desc": "Standard: blocked"},
-    {"input": "[\"S.X.L\",\".....\",\".....\"]\n10", "desc": "Standard: 3x5 with X"},
-    {"input": "[\"S.L.L\",\".....\",\"R...L\"]\n5", "desc": "Standard: with reset"},
-    {"input": "[\"S....\",\".....\",\".....\",\"....L\"]\n10", "desc": "Standard: 4x5 corner"},
-    {"input": "[\"S...L\",\".XXX.\",\".X.X.\",\".XXX.\",\"L...L\"]\n20", "desc": "Standard: maze"},
-    {"input": "[\"SL..L\",\".RXX.\",\"..R..\",\"L....\",\"....L\"]\n4", "desc": "Standard: resets help"},
-    {"input": "[\"S....L\",\"...R..\",\"X.X.XX\",\"L....L\"]\n8", "desc": "Standard: 4x6"},
-    {"input": "[\"SL\",\"LR\",\"RL\",\"LL\"]\n5", "desc": "Standard: 4x2"},
-    {"input": "[\"S..........\",\"...........\",\"...........\",\"..........L\"]\n30", "desc": "Stress: 4x11 corner"},
-    {"input": "[\"S.L.L.L.L.L.L.L.L.L.\",\".R..R..R..R..R..R..R\",\"....................\"]\n10", "desc": "Killer: many L with resets"}
+    {
+      "input": "[\"S.\",\"XL\"]\n2",
+      "desc": "Edge: example1",
+      "output": "2"
+    },
+    {
+      "input": "[\"LS\",\"RL\"]\n4",
+      "desc": "Edge: example2",
+      "output": "3"
+    },
+    {
+      "input": "[\"L.S\",\"RXL\",\"...\"]\n3",
+      "desc": "Edge: example3",
+      "output": "-1"
+    },
+    {
+      "input": "[\"S\"]\n1",
+      "desc": "Edge: 1x1 only S",
+      "output": "0"
+    },
+    {
+      "input": "[\"SL\"]\n1",
+      "desc": "Edge: 1x2",
+      "output": "1"
+    },
+    {
+      "input": "[\"SL\"]\n5",
+      "desc": "Edge: 1x2 plenty energy",
+      "output": "1"
+    },
+    {
+      "input": "[\"S.L\"]\n2",
+      "desc": "Edge: distance 2",
+      "output": "2"
+    },
+    {
+      "input": "[\"S.L\"]\n1",
+      "desc": "Edge: distance 2 low energy",
+      "output": "-1"
+    },
+    {
+      "input": "[\"SLR\"]\n3",
+      "desc": "Edge: with reset",
+      "output": "1"
+    },
+    {
+      "input": "[\"S..L\",\"....\",\"....\"]\n5",
+      "desc": "Standard: 3x4",
+      "output": "3"
+    },
+    {
+      "input": "[\"SXL\"]\n10",
+      "desc": "Standard: blocked",
+      "output": "-1"
+    },
+    {
+      "input": "[\"S.X.L\",\".....\",\".....\"]\n10",
+      "desc": "Standard: 3x5 with X",
+      "output": "6"
+    },
+    {
+      "input": "[\"S.L.L\",\".....\",\"R...L\"]\n5",
+      "desc": "Standard: with reset",
+      "output": "-1"
+    },
+    {
+      "input": "[\"S....\",\".....\",\".....\",\"....L\"]\n10",
+      "desc": "Standard: 4x5 corner",
+      "output": "7"
+    },
+    {
+      "input": "[\"S...L\",\".XXX.\",\".X.X.\",\".XXX.\",\"L...L\"]\n20",
+      "desc": "Standard: maze",
+      "output": "12"
+    },
+    {
+      "input": "[\"SL..L\",\".RXX.\",\"..R..\",\"L....\",\"....L\"]\n4",
+      "desc": "Standard: resets help",
+      "output": "-1"
+    },
+    {
+      "input": "[\"S....L\",\"...R..\",\"X.X.XX\",\"L....L\"]\n8",
+      "desc": "Standard: 4x6",
+      "output": "21"
+    },
+    {
+      "input": "[\"SL\",\"LR\",\"RL\",\"LL\"]\n5",
+      "desc": "Standard: 4x2",
+      "output": "7"
+    },
+    {
+      "input": "[\"S..........\",\"...........\",\"...........\",\"..........L\"]\n30",
+      "desc": "Stress: 4x11 corner",
+      "output": "13"
+    },
+    {
+      "input": "[\"S.L.L.L.L.L.L.L.L.L.\",\".R..R..R..R..R..R..R\",\"....................\"]\n10",
+      "desc": "Killer: many L with resets",
+      "output": "22"
+    }
   ]
 }

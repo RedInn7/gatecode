@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[2,2,5,null,null,5,7]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "5"
     },
     {
       "input": "[2,2,2]",
-      "desc": "Edge: example2 all same"
+      "desc": "Edge: example2 all same",
+      "output": "-1"
     },
     {
       "input": "[1]",
-      "desc": "Edge: single node"
+      "desc": "Edge: single node",
+      "output": "-1"
     },
     {
       "input": "[1,1,1]",
-      "desc": "Edge: 3 same"
+      "desc": "Edge: 3 same",
+      "output": "-1"
     },
     {
       "input": "[1,1,2]",
-      "desc": "Edge: 1 and 2"
+      "desc": "Edge: 1 and 2",
+      "output": "2"
     },
     {
       "input": "[1,2,1]",
-      "desc": "Edge: 2 in left"
+      "desc": "Edge: 2 in left",
+      "output": "2"
     },
     {
       "input": "[2,2,2,2,2,2,2]",
-      "desc": "Edge: all 2s"
+      "desc": "Edge: all 2s",
+      "output": "-1"
     },
     {
       "input": "[1,1,3,1,1,3,4]",
-      "desc": "Edge: bigger tree"
+      "desc": "Edge: bigger tree",
+      "output": "3"
     },
     {
       "input": "[1,1,2,1,1,2,3]",
-      "desc": "Edge: 1s then 2,3"
+      "desc": "Edge: 1s then 2,3",
+      "output": "2"
     },
     {
       "input": "[5,5,8,5,5,8,9]",
-      "desc": "Standard: 5 8 9"
+      "desc": "Standard: 5 8 9",
+      "output": "8"
     },
     {
       "input": "[1,1,1,1,1,1,1]",
-      "desc": "Standard: 7 ones"
+      "desc": "Standard: 7 ones",
+      "output": "-1"
     },
     {
       "input": "[1,1,2,1,1,2,3,1,1,2,3,2,3,4,5]",
-      "desc": "Standard: 15 nodes mixed"
+      "desc": "Standard: 15 nodes mixed",
+      "output": "2"
     },
     {
       "input": "[1,1,5,1,1,5,9]",
-      "desc": "Standard: 1 5 9"
+      "desc": "Standard: 1 5 9",
+      "output": "5"
     },
     {
       "input": "[2,2,3,2,2,3,5]",
-      "desc": "Standard: 2 3 5"
+      "desc": "Standard: 2 3 5",
+      "output": "3"
     },
     {
       "input": "[3,3,4,3,3,4,5,3,3,4,5,4,5,6,7]",
-      "desc": "Standard: large balanced"
+      "desc": "Standard: large balanced",
+      "output": "4"
     },
     {
       "input": "[1,1,3,1,1,5,7,1,1,5,7,5,7,9,11]",
-      "desc": "Standard: chain"
+      "desc": "Standard: chain",
+      "output": "3"
     },
     {
       "input": "[2147483647,2147483647,2147483647]",
-      "desc": "Standard: all max"
+      "desc": "Standard: all max",
+      "output": "-1"
     },
     {
       "input": "[1,1,2147483647]",
-      "desc": "Standard: min vs max"
+      "desc": "Standard: min vs max",
+      "output": "2147483647"
     },
     {
       "input": "[1,1,2,1,1,2,3,1,1,2,3,2,3,4,5,1,1,2,3,2,3,4,5,2,3]",
-      "desc": "Stress: 25 nodes"
+      "desc": "Stress: 25 nodes",
+      "output": "2"
     },
     {
       "input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
-      "desc": "Killer: 25 ones"
+      "desc": "Killer: 25 ones",
+      "output": "-1"
     }
   ]
 }
