@@ -5,8 +5,8 @@
   "input_format": "line1: word (raw)",
   "testcases": [
     {
-      "input": "USA",
-      "desc": "Edge: example1 all caps"
+      "input": "\"x\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "FlaG",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"csaiksbq\"",
+      "input": "\"c\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Edge: full uppercase alphabet"
     },
     {
-      "input": "\"jbmbrtbggchdfeij\"",
+      "input": "\"igwdmetheggcuziy\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

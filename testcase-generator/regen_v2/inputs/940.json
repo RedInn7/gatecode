@@ -21,8 +21,8 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "AAAAAAAAAA",
-      "desc": "Edge: length 10 exactly one window"
+      "input": "\"adkmxo\"",
+      "desc": "Edge: all-equal elements"
     },
     {
       "input": "AAAAAAAAAAA",
@@ -81,7 +81,7 @@
       "desc": "Stress: mixed long"
     },
     {
-      "input": "\"gcyxsntutseaajyaokwyimcidxutzuzgwhbbywnbrwlnpvpqatkgdqqpclinwenx\"",
+      "input": "\"lajdpqdpzdyodbdeijhizqwwru\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
