@@ -1,0 +1,28 @@
+{
+  "pid": 2458,
+  "slug": "prime-subtraction-operation",
+  "inferred_constraints": "1 <= nums.length <= 1000; 1 <= nums[i] <= 1000",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[4,9,6,10]", "desc": "Standard example 1"},
+    {"input": "[6,8,11,12]", "desc": "Standard example 2"},
+    {"input": "[5,8,3]", "desc": "Standard example 3 false"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1000]", "desc": "Edge: max"},
+    {"input": "[1,2]", "desc": "Edge: already inc"},
+    {"input": "[2,1]", "desc": "Edge: desc"},
+    {"input": "[1,1]", "desc": "Edge: same"},
+    {"input": "[2,2]", "desc": "Edge: 2 same"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]", "desc": "Desc 10"},
+    {"input": "[5,5,5,5,5]", "desc": "All same"},
+    {"input": "[2,3,4,5,6,7,8,9,10,11]", "desc": "Sequential"},
+    {"input": "[1000,1000,1000,1000,1000]", "desc": "All max"},
+    {"input": "[100,50,25,12,6]", "desc": "Halving (desc)"},
+    {"input": "[1,3,5,7,9]", "desc": "Already inc odds"},
+    {"input": "[10,20,30,40,50]", "desc": "Step inc"},
+    {"input": "[50,40,30,20,10]", "desc": "Step desc"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Pairs"},
+    {"input": "[1000,999,998,997,996,995,994,993,992,991,990,989,988,987,986,985,984,983,982,981]", "desc": "20 desc"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]", "desc": "20 primes"}
+  ]
+}

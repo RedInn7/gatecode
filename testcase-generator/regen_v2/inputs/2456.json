@@ -1,0 +1,28 @@
+{
+  "pid": 2456,
+  "slug": "longest-palindrome-by-concatenating-two-letter-words",
+  "inferred_constraints": "1 <= words.length <= 10^5; words[i].length == 2; lowercase letters",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"lc\",\"cl\",\"gg\"]", "desc": "Standard example 1"},
+    {"input": "[\"ab\",\"ty\",\"yt\",\"lc\",\"cl\",\"ab\"]", "desc": "Standard example 2"},
+    {"input": "[\"cc\",\"ll\",\"xx\"]", "desc": "Standard example 3 all double"},
+    {"input": "[\"ab\"]", "desc": "Edge: single non-pal"},
+    {"input": "[\"aa\"]", "desc": "Edge: single pal-self"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: mirror pair"},
+    {"input": "[\"ab\",\"ab\"]", "desc": "Edge: 2 same non-pal"},
+    {"input": "[\"aa\",\"aa\"]", "desc": "Edge: 2 same pal-self"},
+    {"input": "[\"aa\",\"bb\",\"cc\"]", "desc": "3 distinct self-pal"},
+    {"input": "[\"ab\",\"cd\",\"ef\"]", "desc": "All disjoint no mirror"},
+    {"input": "[\"ab\",\"ba\",\"cd\",\"dc\",\"ef\",\"fe\"]", "desc": "3 mirror pairs"},
+    {"input": "[\"aa\",\"aa\",\"aa\",\"aa\",\"aa\"]", "desc": "5 same self-pal"},
+    {"input": "[\"ab\",\"ba\",\"ab\",\"ba\",\"ab\"]", "desc": "Multi same pairs"},
+    {"input": "[\"ab\",\"ab\",\"ba\",\"ba\"]", "desc": "Two pairs each"},
+    {"input": "[\"qq\",\"ww\",\"ee\",\"rr\",\"tt\",\"yy\"]", "desc": "6 self-pal"},
+    {"input": "[\"ab\",\"ba\",\"cd\",\"dc\",\"ee\",\"ff\"]", "desc": "Mix"},
+    {"input": "[\"lc\",\"cl\",\"gg\",\"ab\",\"ba\",\"ty\",\"yt\"]", "desc": "Complex"},
+    {"input": "[\"ab\",\"ba\",\"ab\",\"ba\",\"ab\",\"ba\",\"ab\",\"ba\",\"ab\",\"ba\"]", "desc": "5 of each ab,ba"},
+    {"input": "[\"aa\",\"bb\",\"cc\",\"aa\",\"bb\",\"cc\",\"aa\",\"bb\",\"cc\"]", "desc": "9 self-pal"},
+    {"input": "[\"ab\",\"cd\",\"ef\",\"gh\",\"ij\",\"kl\",\"mn\",\"op\"]", "desc": "8 distinct no mirror"}
+  ]
+}

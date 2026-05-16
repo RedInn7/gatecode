@@ -1,0 +1,28 @@
+{
+  "pid": 2460,
+  "slug": "maximum-score-from-removing-substrings",
+  "inferred_constraints": "1 <= s.length <= 10^5; lowercase letters; 1 <= x, y <= 10^4",
+  "input_format": "line1: s (quoted string); line2: x; line3: y",
+  "testcases": [
+    {"input": "\"cdbcbbaaabab\"\n4\n5", "desc": "Standard example 1"},
+    {"input": "\"aabbaaxybbaabb\"\n5\n4", "desc": "Standard example 2"},
+    {"input": "\"a\"\n1\n1", "desc": "Edge: single letter no removal"},
+    {"input": "\"ab\"\n1\n1", "desc": "Edge: ab x=1"},
+    {"input": "\"ba\"\n1\n1", "desc": "Edge: ba y=1"},
+    {"input": "\"abab\"\n1\n1", "desc": "abab two ab"},
+    {"input": "\"baba\"\n1\n1", "desc": "baba two ba"},
+    {"input": "\"aaaa\"\n1\n1", "desc": "All a no ab"},
+    {"input": "\"bbbb\"\n1\n1", "desc": "All b no removal"},
+    {"input": "\"aabb\"\n1\n1", "desc": "Block one ab"},
+    {"input": "\"bbaa\"\n1\n1", "desc": "Block one ba"},
+    {"input": "\"abba\"\n5\n4", "desc": "Mix x>y favor ab"},
+    {"input": "\"abba\"\n4\n5", "desc": "Mix y>x favor ba"},
+    {"input": "\"aabbaabb\"\n10\n5", "desc": "Multi blocks"},
+    {"input": "\"baxabab\"\n3\n4", "desc": "Mixed with x letter"},
+    {"input": "\"abc\"\n100\n100", "desc": "Only ab"},
+    {"input": "\"aaaaabbbbb\"\n1\n1", "desc": "5+5 blocks"},
+    {"input": "\"abababababab\"\n7\n3", "desc": "Long alt favor ab"},
+    {"input": "\"bababababababa\"\n3\n7", "desc": "Long alt favor ba"},
+    {"input": "\"aabbccddabba\"\n10000\n10000", "desc": "Max scores"}
+  ]
+}

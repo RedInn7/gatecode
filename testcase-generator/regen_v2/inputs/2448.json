@@ -1,0 +1,28 @@
+{
+  "pid": 2448,
+  "slug": "number-of-divisible-substrings",
+  "inferred_constraints": "1 <= word.length <= 2000; lowercase letters; mapping a->1, b->1, c->2, ..., z->9 (variant; per problem definition)",
+  "input_format": "single line: word (quoted string)",
+  "testcases": [
+    {"input": "\"asdf\"", "desc": "Standard example"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"z\"", "desc": "Edge: n=1 max value"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"ab\"", "desc": "Edge: 2 different"},
+    {"input": "\"aaa\"", "desc": "All same"},
+    {"input": "\"abc\"", "desc": "3 distinct"},
+    {"input": "\"helloworld\"", "desc": "Common word"},
+    {"input": "\"abcdefghij\"", "desc": "10 letters asc"},
+    {"input": "\"zyxwvutsrq\"", "desc": "Reverse"},
+    {"input": "\"aaaaaaaaaa\"", "desc": "10 a's"},
+    {"input": "\"zzzzzzzzzz\"", "desc": "10 z's"},
+    {"input": "\"abcabcabc\"", "desc": "Period 3"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Alphabet"},
+    {"input": "\"thequickbrownfox\"", "desc": "Common phrase"},
+    {"input": "\"programming\"", "desc": "Word with repeats"},
+    {"input": "\"aaaabbbbcccc\"", "desc": "Blocks"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Double alphabet"},
+    {"input": "\"abababababababab\"", "desc": "16 alt"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "50 a's"}
+  ]
+}
