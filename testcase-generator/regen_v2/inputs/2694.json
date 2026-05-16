@@ -1,0 +1,28 @@
+{
+  "pid": 2694,
+  "slug": "number-complement",
+  "inferred_constraints": "1 <= num < 2^31",
+  "input_format": "single line: num (int)",
+  "testcases": [
+    {"input": "5", "desc": "Edge: example1"},
+    {"input": "1", "desc": "Edge: example2"},
+    {"input": "2", "desc": "Edge: 2 -> 1"},
+    {"input": "3", "desc": "Edge: 3 -> 0"},
+    {"input": "4", "desc": "Edge: 4 -> 3"},
+    {"input": "7", "desc": "Edge: 7 -> 0"},
+    {"input": "8", "desc": "Edge: 8 -> 7"},
+    {"input": "15", "desc": "Edge: 15 -> 0"},
+    {"input": "16", "desc": "Edge: 16 -> 15"},
+    {"input": "100", "desc": "Standard: 100"},
+    {"input": "1000", "desc": "Standard: 1000"},
+    {"input": "1023", "desc": "Standard: all 1s 10-bit"},
+    {"input": "1024", "desc": "Standard: 2^10"},
+    {"input": "65535", "desc": "Standard: 16-bit"},
+    {"input": "65536", "desc": "Standard: 2^16"},
+    {"input": "1048575", "desc": "Standard: 20-bit ones"},
+    {"input": "1048576", "desc": "Standard: 2^20"},
+    {"input": "1073741823", "desc": "Standard: 30-bit ones"},
+    {"input": "2147483646", "desc": "Stress: near max"},
+    {"input": "2147483647", "desc": "Killer: MAX_INT all 1"}
+  ]
+}

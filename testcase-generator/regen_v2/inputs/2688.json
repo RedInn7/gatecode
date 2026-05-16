@@ -1,0 +1,28 @@
+{
+  "pid": 2688,
+  "slug": "flip-string-to-monotone-increasing",
+  "inferred_constraints": "1 <= s.length <= 10^5, s[i] is '0' or '1'",
+  "input_format": "single line: s",
+  "testcases": [
+    {"input": "00110", "desc": "Edge: example1"},
+    {"input": "010110", "desc": "Edge: example2"},
+    {"input": "00011000", "desc": "Edge: example3"},
+    {"input": "0", "desc": "Edge: single 0"},
+    {"input": "1", "desc": "Edge: single 1"},
+    {"input": "00", "desc": "Edge: 2 zeros"},
+    {"input": "11", "desc": "Edge: 2 ones"},
+    {"input": "01", "desc": "Edge: already mono"},
+    {"input": "10", "desc": "Edge: 1 flip"},
+    {"input": "0000", "desc": "Standard: all 0s"},
+    {"input": "1111", "desc": "Standard: all 1s"},
+    {"input": "0011", "desc": "Standard: mono"},
+    {"input": "1100", "desc": "Standard: reverse"},
+    {"input": "010101", "desc": "Standard: alt"},
+    {"input": "101010", "desc": "Standard: alt reverse"},
+    {"input": "0000011111", "desc": "Standard: clean"},
+    {"input": "1111100000", "desc": "Standard: all reverse"},
+    {"input": "001011110001111", "desc": "Standard: complex"},
+    {"input": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "desc": "Stress: 200 mono"},
+    {"input": "10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010", "desc": "Killer: 200 alt"}
+  ]
+}

@@ -314,6 +314,16 @@
       "pid": 2683,
       "slug": "maximum-font-to-fit-a-sentence-in-a-screen",
       "reason": "interactive FontInfo API problem"
+    },
+    {
+      "pid": 2692,
+      "slug": "check-if-object-instance-of-class",
+      "reason": "JavaScript-only typeof/instanceof problem"
+    },
+    {
+      "pid": 2693,
+      "slug": "array-wrapper",
+      "reason": "JavaScript-only class with operator overloading"
     }
   ]
 }
