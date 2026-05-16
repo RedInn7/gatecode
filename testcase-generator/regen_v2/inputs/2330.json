@@ -1,0 +1,28 @@
+{
+  "pid": 2330,
+  "slug": "h-index-ii",
+  "inferred_constraints": "1 <= n <= 10^5; 0 <= citations[i] <= 1000; sorted asc",
+  "input_format": "single line: citations (JSON array)",
+  "testcases": [
+    {"input": "[0,1,3,5,6]", "desc": "Standard example 1"},
+    {"input": "[1,2,100]", "desc": "Standard example 2"},
+    {"input": "[0]", "desc": "Edge: n=1, 0 citations"},
+    {"input": "[1]", "desc": "Edge: n=1, 1 citation"},
+    {"input": "[1000]", "desc": "Edge: n=1, max citation"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,1,1,1]", "desc": "All ones"},
+    {"input": "[1000,1000,1000,1000,1000]", "desc": "All max"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]", "desc": "Asc 0-9"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Asc 1-10"},
+    {"input": "[0,0,0,0,5,5,5,5,5,5]", "desc": "Bimodal"},
+    {"input": "[0,1,1,2,2,3,3,4,4,5]", "desc": "Duplicates"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "All same 5"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]", "desc": "Spread large"},
+    {"input": "[0,0,0,1,2,3,4,5,6,7,8,9,10]", "desc": "Mixed"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "21 asc"},
+    {"input": "[10,10,10,10,10,10,10,10,10,10]", "desc": "All 10"},
+    {"input": "[3,5,6,7,8,9,10,15,20,25,30,35,40,45,50]", "desc": "Mix small big"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1000]", "desc": "All zeros plus one max"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,5,5,5,5,5,5,5,5,5,5,10,10,10,10,10,10,10,10,10,10,50,50,50,50,50,50,50,50,50,50]", "desc": "50 sorted varied"}
+  ]
+}

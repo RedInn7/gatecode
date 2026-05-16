@@ -1,0 +1,28 @@
+{
+  "pid": 2323,
+  "slug": "generalized-abbreviation",
+  "inferred_constraints": "1 <= word.length <= 15; word lowercase English letters",
+  "input_format": "single line: word (quoted string)",
+  "testcases": [
+    {"input": "\"word\"", "desc": "Standard example 1"},
+    {"input": "\"a\"", "desc": "Standard example 2: single char"},
+    {"input": "\"ab\"", "desc": "Edge: 2 chars"},
+    {"input": "\"aa\"", "desc": "Edge: 2 chars same"},
+    {"input": "\"abc\"", "desc": "Standard 3 chars"},
+    {"input": "\"hello\"", "desc": "Standard 5 chars"},
+    {"input": "\"z\"", "desc": "Edge: single z"},
+    {"input": "\"aaaa\"", "desc": "Edge: 4 same chars"},
+    {"input": "\"abcd\"", "desc": "Standard 4 distinct"},
+    {"input": "\"abcde\"", "desc": "Standard 5 distinct"},
+    {"input": "\"aabb\"", "desc": "Standard pairs"},
+    {"input": "\"abab\"", "desc": "Alternating"},
+    {"input": "\"abcdefg\"", "desc": "Standard 7 chars"},
+    {"input": "\"aaaaaaaaaaaaaaa\"", "desc": "Stress max length all same"},
+    {"input": "\"abcdefghijklmno\"", "desc": "Stress max length all distinct"},
+    {"input": "\"abcabcabcabcabc\"", "desc": "Stress 15 repeating"},
+    {"input": "\"zzzzzzzzzzzzzz\"", "desc": "14 same"},
+    {"input": "\"helloworld\"", "desc": "10 chars common"},
+    {"input": "\"programming\"", "desc": "11 chars varied"},
+    {"input": "\"abcdefghij\"", "desc": "10 distinct"}
+  ]
+}

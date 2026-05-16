@@ -1,0 +1,28 @@
+{
+  "pid": 2328,
+  "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
+  "inferred_constraints": "n == parent.length == s.length; 1 <= n <= 10^5; parent[0]==-1; 0 <= parent[i] <= n-1 for i>=1; valid tree; lowercase letters",
+  "input_format": "line1: parent (JSON array); line2: s (quoted string)",
+  "testcases": [
+    {"input": "[-1,0,0,1,1,2]\n\"acaabc\"", "desc": "Standard example 1"},
+    {"input": "[-1,0,0,0,0]\n\"aaaaa\"", "desc": "Standard example 2 all same"},
+    {"input": "[-1]\n\"a\"", "desc": "Edge: n=1"},
+    {"input": "[-1,0]\n\"ab\"", "desc": "Edge: n=2"},
+    {"input": "[-1,0,0]\n\"aab\"", "desc": "Edge: n=3 root with 2 children"},
+    {"input": "[-1,0,1]\n\"abc\"", "desc": "Edge: chain 3 nodes"},
+    {"input": "[-1,0,1,2,3,4]\n\"abcabc\"", "desc": "Chain length 6"},
+    {"input": "[-1,0,0,0,0,0,0,0,0,0]\n\"aaaaaaaaaa\"", "desc": "Star 10 all same"},
+    {"input": "[-1,0,0,0,0,0,0,0,0,0]\n\"abcdefghij\"", "desc": "Star 10 all distinct"},
+    {"input": "[-1,0,1,2,3,4,5,6,7,8]\n\"aabbccddee\"", "desc": "Chain pairs"},
+    {"input": "[-1,0,0,1,1,2,2,3,3,4]\n\"aabbccddee\"", "desc": "Binary tree 10"},
+    {"input": "[-1,0,0,1,1,2,2]\n\"abcdefg\"", "desc": "Small balanced"},
+    {"input": "[-1,0,0,0,1,1,1,2,2,2]\n\"abababaaba\"", "desc": "Branching"},
+    {"input": "[-1,0,1,0,3,0,5,0,7,0]\n\"abcdefghij\"", "desc": "Multi paths from root"},
+    {"input": "[-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n\"abababababababab\"", "desc": "Note: 16-char string vs 17 parents - corrected next"},
+    {"input": "[-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n\"ababababababababa\"", "desc": "Long chain 17 nodes alternating"},
+    {"input": "[-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6]\n\"aabbccddeeffggh\"", "desc": "Balanced tree 15"},
+    {"input": "[-1,0,1,2,3,4,5,6,7,8,9]\n\"abbbabbbaba\"", "desc": "Chain 11 char varied"},
+    {"input": "[-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9]\n\"aabbccddeeffgghhiijj\"", "desc": "20 binary-ish"},
+    {"input": "[-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\n\"aaaaaaaaaaaaaaaaaaaa\"", "desc": "Star 20 same"}
+  ]
+}

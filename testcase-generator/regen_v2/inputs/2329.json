@@ -1,0 +1,28 @@
+{
+  "pid": 2329,
+  "slug": "avoid-flood-in-the-city",
+  "inferred_constraints": "1 <= rains.length <= 10^5; 0 <= rains[i] <= 10^9",
+  "input_format": "single line: rains (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,4]", "desc": "Standard example 1 no zeros"},
+    {"input": "[1,2,0,0,2,1]", "desc": "Standard example 2"},
+    {"input": "[1,2,0,1,2]", "desc": "Standard example 3 (impossible)"},
+    {"input": "[0]", "desc": "Edge: single dry"},
+    {"input": "[1]", "desc": "Edge: single rain"},
+    {"input": "[1,1]", "desc": "Edge: rain same twice no dry (flood)"},
+    {"input": "[1,0,1]", "desc": "Edge: dry between"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "All distinct rain"},
+    {"input": "[1,2,0,3,2,0,1]", "desc": "Multi dry"},
+    {"input": "[0,0,0,0,0]", "desc": "All dry"},
+    {"input": "[1,2,3,0,0,0,4,5,6]", "desc": "Block then varied"},
+    {"input": "[69,0,0,0,69]", "desc": "One repeat with 3 zeros"},
+    {"input": "[10,20,20]", "desc": "Flood case no dry"},
+    {"input": "[1,0,2,0,1,0,2]", "desc": "Alternating zeros"},
+    {"input": "[1000000000,0,1000000000]", "desc": "Large id with dry"},
+    {"input": "[1,2,3,4,5,0,5,0,4,0,3,0,2,0,1]", "desc": "Mix"},
+    {"input": "[1,1,0,0]", "desc": "Flood at index 1 (impossible)"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]", "desc": "Repeats no dry (flood)"},
+    {"input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]", "desc": "Alternating one lake"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,0,0,0,0,0,0,0,0,0,0,10,9,8,7,6,5,4,3,2,1]", "desc": "Mixed long"}
+  ]
+}

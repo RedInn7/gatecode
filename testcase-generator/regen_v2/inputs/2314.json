@@ -1,0 +1,28 @@
+{
+  "pid": 2314,
+  "slug": "final-prices-with-a-special-discount-in-a-shop",
+  "inferred_constraints": "1 <= prices.length <= 500; 1 <= prices[i] <= 1000",
+  "input_format": "single line: prices (JSON array)",
+  "testcases": [
+    {"input": "[8,4,6,2,3]", "desc": "Standard example 1"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard example 2 strictly increasing (no discounts)"},
+    {"input": "[10,1,1,6]", "desc": "Standard example 3"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1000]", "desc": "Edge: n=1 max"},
+    {"input": "[1,1]", "desc": "Edge: n=2 equal"},
+    {"input": "[2,1]", "desc": "Edge: n=2 desc"},
+    {"input": "[1000,1000,1000,1000,1000]", "desc": "All same max"},
+    {"input": "[5,4,3,2,1]", "desc": "Strictly decreasing"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Strictly increasing"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Strictly decreasing 10"},
+    {"input": "[5,3,4,2,1,6,7,2]", "desc": "Random varied"},
+    {"input": "[1,1,1,1,1]", "desc": "All ones"},
+    {"input": "[1000,1,1000,1,1000]", "desc": "Alternating"},
+    {"input": "[500,499,498,497,496,495,494,493,492,491]", "desc": "10 large desc"},
+    {"input": "[100,200,300,400,500,400,300,200,100]", "desc": "Pyramid"},
+    {"input": "[500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500]", "desc": "20 same"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Alternating 1,2"},
+    {"input": "[1000,999,998,997,996,995,994,993,992,991,990,989,988,987,986,985,984,983,982,981,980,979,978,977,976,975,974,973,972,971,970,969,968,967,966,965,964,963,962,961,960,959,958,957,956,955,954,953,952,951,950,949,948,947,946,945,944,943,942,941,940,939,938,937,936,935,934,933,932,931,930,929,928,927,926,925,924,923,922,921,920,919,918,917,916,915,914,913,912,911,910,909,908,907,906,905,904,903,902,901]", "desc": "100 desc large"},
+    {"input": "[3,5,2,8,1,9,4,7,6,10,11,15,13,12,14,20,18,17,19,16]", "desc": "Mixed 20"}
+  ]
+}

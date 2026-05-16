@@ -1,0 +1,28 @@
+{
+  "pid": 2324,
+  "slug": "construct-string-with-minimum-cost-easy",
+  "inferred_constraints": "1 <= target.length <= 2000; 1 <= words.length == costs.length <= 50; 1 <= words[i].length <= target.length; lowercase letters; 1 <= costs[i] <= 10^5",
+  "input_format": "line1: target (quoted string); line2: words (JSON array); line3: costs (JSON array)",
+  "testcases": [
+    {"input": "\"abcdef\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]", "desc": "Standard example 1"},
+    {"input": "\"aaaa\"\n[\"z\",\"zz\",\"zzz\"]\n[1,10,100]", "desc": "Standard example 2 (impossible)"},
+    {"input": "\"a\"\n[\"a\"]\n[5]", "desc": "Edge: min target len 1"},
+    {"input": "\"a\"\n[\"b\"]\n[5]", "desc": "Edge: impossible"},
+    {"input": "\"ab\"\n[\"a\",\"b\"]\n[1,2]", "desc": "Edge: 2 chars 2 words"},
+    {"input": "\"ab\"\n[\"ab\"]\n[3]", "desc": "Edge: single word covers"},
+    {"input": "\"ab\"\n[\"a\",\"ab\",\"b\"]\n[1,5,1]", "desc": "Choose cheaper"},
+    {"input": "\"aaa\"\n[\"a\",\"aa\",\"aaa\"]\n[3,4,7]", "desc": "Multiple matches"},
+    {"input": "\"aaaa\"\n[\"a\",\"aa\"]\n[1,3]", "desc": "Greedy vs DP"},
+    {"input": "\"abcde\"\n[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[1,1,1,1,1]", "desc": "All single chars"},
+    {"input": "\"hello\"\n[\"hello\",\"h\",\"e\",\"l\",\"o\"]\n[10,2,2,2,2]", "desc": "Full vs pieces"},
+    {"input": "\"abcabcabc\"\n[\"abc\",\"ab\",\"c\",\"a\"]\n[10,5,3,2]", "desc": "Repeated pattern"},
+    {"input": "\"aaaaa\"\n[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\"]\n[5,8,10,11,12]", "desc": "All as prefixes"},
+    {"input": "\"abc\"\n[\"d\",\"e\"]\n[1,1]", "desc": "Impossible no letters match"},
+    {"input": "\"xyzxyz\"\n[\"xyz\",\"xy\",\"z\"]\n[5,3,1]", "desc": "Repeat"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Alphabet pieces"},
+    {"input": "\"aaaaaaaaaaaaaaaa\"\n[\"a\",\"aa\",\"aaaa\",\"aaaaaaaa\",\"aaaaaaaaaaaaaaaa\"]\n[1000,1500,2500,4000,7000]", "desc": "Power-of-2 pieces"},
+    {"input": "\"abcabcabcabc\"\n[\"a\",\"bc\",\"abc\",\"abcabc\",\"abcabcabcabc\"]\n[5,3,7,12,20]", "desc": "Repeat with various"},
+    {"input": "\"thequickbrownfox\"\n[\"the\",\"quick\",\"brown\",\"fox\",\"th\",\"e\"]\n[3,5,5,3,2,1]", "desc": "Words from phrase"},
+    {"input": "\"abcdefghijklmnopqrst\"\n[\"abcde\",\"fghij\",\"klmno\",\"pqrst\"]\n[5,5,5,5]", "desc": "Exact non-overlap split"}
+  ]
+}

@@ -1,36 +1,174 @@
 {
   "skipped": [
-    {"pid": 1952, "slug": "fizz-buzz-multithreaded", "reason": "multithreaded design problem - not amenable to standard input/output testing"},
-    {"pid": 1997, "slug": "number-of-unique-categories", "reason": "interactive class problem with CategoryHandler - not amenable to LeetCode-style I/O testing"},
-    {"pid": 2040, "slug": "number-of-ships-in-a-rectangle", "reason": "interactive problem with Sea API - cannot test via standard I/O"},
-    {"pid": 2048, "slug": "call-function-with-custom-context", "reason": "JavaScript-only problem - no C++/Python signatures"},
-    {"pid": 2082, "slug": "sort-by", "reason": "JavaScript-only problem - takes function arg, no C++/Python signatures"},
-    {"pid": 2088, "slug": "countries-you-can-safely-invest-in", "reason": "SQL problem with table schemas"},
-    {"pid": 2109, "slug": "group-by", "reason": "JavaScript-only problem - prototype enhancement"},
-    {"pid": 2144, "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees", "reason": "QuadTree node input/output format not amenable to standard I/O testing"},
-    {"pid": 2146, "slug": "event-emitter", "reason": "JavaScript-only problem - takes callback functions"},
-    {"pid": 2180, "slug": "clone-binary-tree-with-random-pointer", "reason": "complex random pointer tree I/O format - non-trivial serialization"},
-    {"pid": 2193, "slug": "guess-the-number-using-bitwise-questions-ii", "reason": "interactive problem with commonBits API"},
-    {"pid": 3833, "slug": "insert-into-a-sorted-circular-linked-list", "reason": "circular linked list with non-deterministic insertion point (any valid place); non-trivial output equality"},
-    {"pid": 3790, "slug": "copy-list-with-random-pointer", "reason": "linked list with random pointers; complex serialization format [[val, random_index]] not handled by sandbox runner"},
-    {"pid": 3776, "slug": "wiggle-sort", "reason": "in-place reorder with multiple valid outputs (e.g. [3,5,1,6,2,4] or [1,6,2,5,3,4]); needs SPJ"},
-    {"pid": 3764, "slug": "convert-sorted-array-to-binary-search-tree", "reason": "multiple valid height-balanced BSTs; output is non-unique"},
-    {"pid": 3761, "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list", "reason": "in-place BST -> circular doubly-linked-list transform; output representation non-trivial"},
-    {"pid": 3759, "slug": "add-two-promises", "reason": "JavaScript-only problem with Promise async behavior"},
-    {"pid": 3752, "slug": "generate-random-point-in-a-circle", "reason": "randomized output; needs statistical SPJ"},
-    {"pid": 3748, "slug": "restore-the-array-from-adjacent-pairs", "reason": "multiple valid arrays accepted (forward or reverse); needs SPJ"},
-    {"pid": 3740, "slug": "erect-the-fence-ii", "reason": "returns smallest enclosing circle [cx, cy, r] as doubles; needs floating-point SPJ"},
-    {"pid": 3705, "slug": "extract-kth-character-from-the-rope-tree", "reason": "custom RopeTreeNode with len + val; non-standard tree serialization"},
-    {"pid": 3699, "slug": "design-bounded-blocking-queue", "reason": "multithreaded blocking queue; cannot test via standard I/O"},
-    {"pid": 3691, "slug": "insufficient-nodes-in-root-to-leaf-paths", "reason": "returns modified tree root; serialization complex with internal nulls"},
-    {"pid": 3687, "slug": "implement-rand10-using-rand7", "reason": "randomized output; needs statistical SPJ"},
-    {"pid": 3681, "slug": "calculator-with-method-chaining", "reason": "JavaScript-only method-chaining design; no C++/Python signatures"},
-    {"pid": 3678, "slug": "leftmost-column-with-at-least-a-one", "reason": "interactive BinaryMatrix.get API; cannot test via standard I/O"},
-    {"pid": 3673, "slug": "group-shifted-strings", "reason": "returns list of groups with non-deterministic ordering both outer and inner"},
-    {"pid": 3670, "slug": "n-ary-tree-preorder-traversal", "reason": "n-ary tree with custom level-order-null serialization not standard"},
-    {"pid": 3669, "slug": "find-in-mountain-array", "reason": "interactive MountainArray.get with call-count constraint"},
-    {"pid": 3667, "slug": "encode-string-with-shortest-length", "reason": "multiple valid encodings of same length acceptable"},
-    {"pid": 3655, "slug": "flatten-a-multilevel-doubly-linked-list", "reason": "multilevel doubly linked list with custom Node; complex serialization"},
-    {"pid": 3648, "slug": "rearrange-string-k-distance-apart", "reason": "multiple valid rearrangements possible; needs SPJ"}
+    {
+      "pid": 1952,
+      "slug": "fizz-buzz-multithreaded",
+      "reason": "multithreaded design problem - not amenable to standard input/output testing"
+    },
+    {
+      "pid": 1997,
+      "slug": "number-of-unique-categories",
+      "reason": "interactive class problem with CategoryHandler - not amenable to LeetCode-style I/O testing"
+    },
+    {
+      "pid": 2040,
+      "slug": "number-of-ships-in-a-rectangle",
+      "reason": "interactive problem with Sea API - cannot test via standard I/O"
+    },
+    {
+      "pid": 2048,
+      "slug": "call-function-with-custom-context",
+      "reason": "JavaScript-only problem - no C++/Python signatures"
+    },
+    {
+      "pid": 2082,
+      "slug": "sort-by",
+      "reason": "JavaScript-only problem - takes function arg, no C++/Python signatures"
+    },
+    {
+      "pid": 2088,
+      "slug": "countries-you-can-safely-invest-in",
+      "reason": "SQL problem with table schemas"
+    },
+    {
+      "pid": 2109,
+      "slug": "group-by",
+      "reason": "JavaScript-only problem - prototype enhancement"
+    },
+    {
+      "pid": 2144,
+      "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees",
+      "reason": "QuadTree node input/output format not amenable to standard I/O testing"
+    },
+    {
+      "pid": 2146,
+      "slug": "event-emitter",
+      "reason": "JavaScript-only problem - takes callback functions"
+    },
+    {
+      "pid": 2180,
+      "slug": "clone-binary-tree-with-random-pointer",
+      "reason": "complex random pointer tree I/O format - non-trivial serialization"
+    },
+    {
+      "pid": 2193,
+      "slug": "guess-the-number-using-bitwise-questions-ii",
+      "reason": "interactive problem with commonBits API"
+    },
+    {
+      "pid": 3833,
+      "slug": "insert-into-a-sorted-circular-linked-list",
+      "reason": "circular linked list with non-deterministic insertion point (any valid place); non-trivial output equality"
+    },
+    {
+      "pid": 3790,
+      "slug": "copy-list-with-random-pointer",
+      "reason": "linked list with random pointers; complex serialization format [[val, random_index]] not handled by sandbox runner"
+    },
+    {
+      "pid": 3776,
+      "slug": "wiggle-sort",
+      "reason": "in-place reorder with multiple valid outputs (e.g. [3,5,1,6,2,4] or [1,6,2,5,3,4]); needs SPJ"
+    },
+    {
+      "pid": 3764,
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "reason": "multiple valid height-balanced BSTs; output is non-unique"
+    },
+    {
+      "pid": 3761,
+      "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+      "reason": "in-place BST -> circular doubly-linked-list transform; output representation non-trivial"
+    },
+    {
+      "pid": 3759,
+      "slug": "add-two-promises",
+      "reason": "JavaScript-only problem with Promise async behavior"
+    },
+    {
+      "pid": 3752,
+      "slug": "generate-random-point-in-a-circle",
+      "reason": "randomized output; needs statistical SPJ"
+    },
+    {
+      "pid": 3748,
+      "slug": "restore-the-array-from-adjacent-pairs",
+      "reason": "multiple valid arrays accepted (forward or reverse); needs SPJ"
+    },
+    {
+      "pid": 3740,
+      "slug": "erect-the-fence-ii",
+      "reason": "returns smallest enclosing circle [cx, cy, r] as doubles; needs floating-point SPJ"
+    },
+    {
+      "pid": 3705,
+      "slug": "extract-kth-character-from-the-rope-tree",
+      "reason": "custom RopeTreeNode with len + val; non-standard tree serialization"
+    },
+    {
+      "pid": 3699,
+      "slug": "design-bounded-blocking-queue",
+      "reason": "multithreaded blocking queue; cannot test via standard I/O"
+    },
+    {
+      "pid": 3691,
+      "slug": "insufficient-nodes-in-root-to-leaf-paths",
+      "reason": "returns modified tree root; serialization complex with internal nulls"
+    },
+    {
+      "pid": 3687,
+      "slug": "implement-rand10-using-rand7",
+      "reason": "randomized output; needs statistical SPJ"
+    },
+    {
+      "pid": 3681,
+      "slug": "calculator-with-method-chaining",
+      "reason": "JavaScript-only method-chaining design; no C++/Python signatures"
+    },
+    {
+      "pid": 3678,
+      "slug": "leftmost-column-with-at-least-a-one",
+      "reason": "interactive BinaryMatrix.get API; cannot test via standard I/O"
+    },
+    {
+      "pid": 3673,
+      "slug": "group-shifted-strings",
+      "reason": "returns list of groups with non-deterministic ordering both outer and inner"
+    },
+    {
+      "pid": 3670,
+      "slug": "n-ary-tree-preorder-traversal",
+      "reason": "n-ary tree with custom level-order-null serialization not standard"
+    },
+    {
+      "pid": 3669,
+      "slug": "find-in-mountain-array",
+      "reason": "interactive MountainArray.get with call-count constraint"
+    },
+    {
+      "pid": 3667,
+      "slug": "encode-string-with-shortest-length",
+      "reason": "multiple valid encodings of same length acceptable"
+    },
+    {
+      "pid": 3655,
+      "slug": "flatten-a-multilevel-doubly-linked-list",
+      "reason": "multilevel doubly linked list with custom Node; complex serialization"
+    },
+    {
+      "pid": 3648,
+      "slug": "rearrange-string-k-distance-apart",
+      "reason": "multiple valid rearrangements possible; needs SPJ"
+    },
+    {
+      "pid": 2315,
+      "slug": "building-h2o",
+      "reason": "multithreaded synchronization design problem - not amenable to standard input/output testing"
+    },
+    {
+      "pid": 2335,
+      "slug": "convert-callback-based-function-to-promise-based-function",
+      "reason": "JavaScript-only promise-based function problem"
+    }
   ]
 }

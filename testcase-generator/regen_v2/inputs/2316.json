@@ -1,0 +1,28 @@
+{
+  "pid": 2316,
+  "slug": "4sum",
+  "inferred_constraints": "1 <= nums.length <= 200; -10^9 <= nums[i] <= 10^9; -10^9 <= target <= 10^9",
+  "input_format": "line1: nums (JSON array); line2: target",
+  "testcases": [
+    {"input": "[1,0,-1,0,-2,2]\n0", "desc": "Standard example 1"},
+    {"input": "[2,2,2,2,2]\n8", "desc": "Standard example 2"},
+    {"input": "[1]\n0", "desc": "Edge: n=1 no quad possible"},
+    {"input": "[1,2,3]\n6", "desc": "Edge: n=3 no quad"},
+    {"input": "[1,2,3,4]\n10", "desc": "Edge: n=4 exact one"},
+    {"input": "[1,2,3,4]\n11", "desc": "Edge: n=4 no quad"},
+    {"input": "[0,0,0,0]\n0", "desc": "All zeros"},
+    {"input": "[-1000000000,-1000000000,1000000000,1000000000]\n0", "desc": "Extreme values"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000]\n-1000000000", "desc": "Extreme positive sum target negative"},
+    {"input": "[-3,-2,-1,0,0,1,2,3]\n0", "desc": "Symmetric"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n4", "desc": "All same many"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n22", "desc": "10 ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n22", "desc": "10 descending"},
+    {"input": "[-5,-4,-3,-2,-1,0,1,2,3,4,5]\n0", "desc": "11 symmetric"},
+    {"input": "[5,5,3,5,1,-5,1,-2]\n8", "desc": "Mixed signs"},
+    {"input": "[1000000000,-1000000000,500000000,-500000000,0]\n0", "desc": "Big mixed"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]\n8", "desc": "20 same"},
+    {"input": "[-3,-1,0,2,4,5]\n2", "desc": "Smaller mix"},
+    {"input": "[1,0,-1,0,-2,2,3,-3,4,-4,5,-5,6,-6,7,-7,8,-8,9,-9,10,-10]\n0", "desc": "22 symmetric mix"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20]\n50", "desc": "40 pairs"}
+  ]
+}
