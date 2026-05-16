@@ -1,0 +1,27 @@
+{
+  "pid": 109, "slug": "check-if-array-pairs-are-divisible-by-k",
+  "inferred_constraints": "1 <= n <= 1e5 (even), -1e9 <= arr[i] <= 1e9, 1 <= k <= 1e5",
+  "input_format": "line1: arr (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,10,6,7,8,9]\n5", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,5,6]\n7", "desc": "Edge: example2"},
+    {"input": "[1,2,3,4,5,6]\n10", "desc": "Edge: example3 false"},
+    {"input": "[1,1]\n2", "desc": "Edge: minimum pair"},
+    {"input": "[1,2]\n3", "desc": "Edge: another pair"},
+    {"input": "[1,2]\n5", "desc": "Edge: impossible"},
+    {"input": "[0,0]\n5", "desc": "Edge: zeros, divisible"},
+    {"input": "[-1,1]\n2", "desc": "Edge: negative and positive"},
+    {"input": "[-1000000000,1000000000]\n1", "desc": "Edge: extreme range k=1"},
+    {"input": "[1,2,3,4]\n1", "desc": "Edge: k=1 always true"},
+    {"input": "[5,5,5,5,5,5]\n5", "desc": "Standard: all same"},
+    {"input": "[3,3,3,3,3,3]\n6", "desc": "Standard: all 3s, sums to 6"},
+    {"input": "[7,14,21,28]\n7", "desc": "Standard: multiples of 7"},
+    {"input": "[1,3,5,7,9,11]\n4", "desc": "Standard: odd numbers"},
+    {"input": "[10,20,30,40,50,60]\n10", "desc": "Standard: multiples"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12]\n6", "desc": "Standard: 12 elements"},
+    {"input": "[-7,-7,7,7]\n7", "desc": "Standard: positive and negative"},
+    {"input": "[-3,3,-3,3]\n6", "desc": "Standard: pairs sum to 0 (div 6)"},
+    {"input": "[100000,99999]\n1", "desc": "Edge: large k=1"},
+    {"input": "[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]\n4", "desc": "Stress: 20 evens"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 112, "slug": "utf-8-validation",
+  "inferred_constraints": "1 <= data.length <= 2e4, 0 <= data[i] <= 255",
+  "input_format": "single line: data (JSON array)",
+  "testcases": [
+    {"input": "[197,130,1]", "desc": "Edge: example1 valid"},
+    {"input": "[235,140,4]", "desc": "Edge: example2 invalid"},
+    {"input": "[0]", "desc": "Edge: single 1-byte char 0"},
+    {"input": "[127]", "desc": "Edge: max 1-byte 0x7F"},
+    {"input": "[128]", "desc": "Edge: invalid first byte"},
+    {"input": "[255]", "desc": "Edge: invalid first byte 11111111"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: 5 ASCII chars"},
+    {"input": "[192,128]", "desc": "Standard: 2-byte char 110xxxxx 10xxxxxx"},
+    {"input": "[224,128,128]", "desc": "Standard: 3-byte char"},
+    {"input": "[240,128,128,128]", "desc": "Standard: 4-byte char"},
+    {"input": "[248,128,128,128,128]", "desc": "Edge: invalid 5-byte"},
+    {"input": "[192]", "desc": "Edge: 2-byte missing follow-up"},
+    {"input": "[128,1]", "desc": "Edge: invalid first byte"},
+    {"input": "[197,130,1,197,130,1]", "desc": "Standard: 2x example1"},
+    {"input": "[197,1]", "desc": "Edge: 2-byte invalid follow-up"},
+    {"input": "[224,128]", "desc": "Edge: 3-byte missing one"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: 10 ASCII zeros"},
+    {"input": "[197,130,197,130,197,130]", "desc": "Standard: 3 valid 2-byte chars"},
+    {"input": "[240,128,128,128,1]", "desc": "Standard: 4-byte + 1 ASCII"},
+    {"input": "[197,130,1,224,128,128,1,240,128,128,128]", "desc": "Stress: mix of all"}
+  ]
+}

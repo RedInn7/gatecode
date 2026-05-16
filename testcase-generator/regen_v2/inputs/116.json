@@ -1,0 +1,27 @@
+{
+  "pid": 116, "slug": "find-the-k-th-character-in-string-game-ii",
+  "inferred_constraints": "1 <= k <= 1e14, 1 <= operations.length <= 100, operations[i] in {0,1}",
+  "input_format": "line1: k (int); line2: operations (JSON array)",
+  "testcases": [
+    {"input": "5\n[0,0,0]", "desc": "Edge: example1"},
+    {"input": "10\n[0,1,0,1]", "desc": "Edge: example2"},
+    {"input": "1\n[0]", "desc": "Edge: k=1, always 'a'"},
+    {"input": "2\n[0]", "desc": "Edge: k=2 after one double"},
+    {"input": "2\n[1]", "desc": "Edge: k=2 after one shift"},
+    {"input": "100000000000000\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: max k, all shift"},
+    {"input": "100000000000000\n[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: max k, all double, returns 'a'"},
+    {"input": "1\n[1]", "desc": "Edge: k=1 always 'a'"},
+    {"input": "3\n[1]", "desc": "Edge: k=3 'a','b' — out of range; expand by 1 -> 'ab' only 2"},
+    {"input": "4\n[1,0]", "desc": "Standard: 'ab' -> 'abab'"},
+    {"input": "5\n[1,1,1]", "desc": "Standard: 'a','ab','abbc','abbcbccd' k=5"},
+    {"input": "8\n[1,1,1]", "desc": "Standard: length 8 k=8"},
+    {"input": "100\n[0,0,0,0,0,0,0]", "desc": "Standard: doubles to 128"},
+    {"input": "1024\n[0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: doubles to 1024"},
+    {"input": "1024\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: shifts to 1024"},
+    {"input": "999999999999\n[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]", "desc": "Standard: alternating"},
+    {"input": "16\n[0,0,0,0]", "desc": "Standard: power of 2"},
+    {"input": "17\n[1,0,1,0,1]", "desc": "Standard: mixed"},
+    {"input": "50000000000\n[1,0,1,1,0,1,0,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,0]", "desc": "Stress: complex mix"},
+    {"input": "100000000000000\n[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]", "desc": "Stress: max k, 47 mixed"}
+  ]
+}

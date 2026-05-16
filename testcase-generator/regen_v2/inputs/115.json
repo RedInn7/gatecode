@@ -1,0 +1,27 @@
+{
+  "pid": 115, "slug": "maximum-points-inside-the-square",
+  "inferred_constraints": "1 <= n <= 1e5, -1e9 <= coord <= 1e9, lowercase tags",
+  "input_format": "line1: points (JSON 2D); line2: s (raw string)",
+  "testcases": [
+    {"input": "[[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]]\nabdca", "desc": "Edge: example1"},
+    {"input": "[[1,1],[-2,-2],[-2,2]]\nabb", "desc": "Edge: example2"},
+    {"input": "[[1,1],[-1,-1],[2,-2]]\nccd", "desc": "Edge: example3"},
+    {"input": "[[0,0]]\na", "desc": "Edge: single at origin"},
+    {"input": "[[1,0]]\na", "desc": "Edge: single point"},
+    {"input": "[[1000000000,1000000000]]\na", "desc": "Edge: max coordinate"},
+    {"input": "[[-1000000000,-1000000000]]\na", "desc": "Edge: min coordinate"},
+    {"input": "[[1,1],[2,2],[3,3]]\nabc", "desc": "Standard: 3 distinct tags"},
+    {"input": "[[1,1],[2,2],[3,3]]\naaa", "desc": "Edge: all same tag"},
+    {"input": "[[1,1],[-1,1],[1,-1],[-1,-1]]\nabcd", "desc": "Standard: 4 corners"},
+    {"input": "[[1,1],[-1,1],[1,-1],[-1,-1]]\naabb", "desc": "Standard: dup tags 4 corners"},
+    {"input": "[[5,5],[10,10],[15,15],[20,20]]\nabcd", "desc": "Standard: ascending distance"},
+    {"input": "[[1,0],[0,1],[-1,0],[0,-1]]\nabcd", "desc": "Standard: axis aligned"},
+    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]\nabcde", "desc": "Standard: 5 distinct"},
+    {"input": "[[1,1],[2,2],[1,1],[2,2]]\nabab", "desc": "Note: distinct coords required; spec violation"},
+    {"input": "[[100,100],[100,-100],[-100,100],[-100,-100]]\nabcd", "desc": "Standard: 4 max corners"},
+    {"input": "[[0,1],[1,0],[2,1],[1,2],[-1,0],[0,-1]]\nabcdef", "desc": "Standard: 6 points all distinct tags"},
+    {"input": "[[1,0],[0,1],[-1,0],[0,-1],[2,0],[0,2],[-2,0],[0,-2]]\nabcdefgh", "desc": "Standard: 8 points"},
+    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]\nabcabcabca", "desc": "Standard: dup pattern"},
+    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[11,12],[13,14],[15,16],[17,18],[19,20]]\nabcdefghij", "desc": "Stress: 10 distinct"}
+  ]
+}
