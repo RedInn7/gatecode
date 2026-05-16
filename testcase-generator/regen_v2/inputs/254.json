@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"xgtvzzvezpfqnlo\"",
+      "input": "\"gtacb\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: chain mul"
     },
     {
-      "input": "\"ohmjwspcvgjlsjdjgfnqoebkawhtrtljsmhyjf\"",
+      "input": "\"muoysyswphtgzygwflrakbtexdwzmykyeeirpw\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

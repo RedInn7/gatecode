@@ -81,7 +81,7 @@
       "desc": "Stress: 19 chars"
     },
     {
-      "input": "\"ovppabjo\"\n2",
+      "input": "\"irbydirm\"\n2",
       "desc": "Stress: large n near max boundary"
     }
   ]
