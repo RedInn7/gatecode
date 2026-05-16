@@ -1,0 +1,28 @@
+{
+  "pid": 2958,
+  "slug": "minimum-number-of-operations-to-reinitialize-a-permutation",
+  "inferred_constraints": "2 <= n <= 1000; n is even",
+  "input_format": "single line: n",
+  "testcases": [
+    {"input": "2", "desc": "Edge: example1 n=2"},
+    {"input": "4", "desc": "Edge: example2 n=4"},
+    {"input": "6", "desc": "Edge: example3 n=6"},
+    {"input": "8", "desc": "Edge: n=8"},
+    {"input": "10", "desc": "Standard: n=10"},
+    {"input": "12", "desc": "Standard: n=12"},
+    {"input": "14", "desc": "Standard: n=14"},
+    {"input": "16", "desc": "Standard: n=16"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "32", "desc": "Standard: power of 2"},
+    {"input": "50", "desc": "Standard: n=50"},
+    {"input": "64", "desc": "Standard: power of 2"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "128", "desc": "Standard: power of 2"},
+    {"input": "200", "desc": "Standard: n=200"},
+    {"input": "256", "desc": "Standard: power of 2"},
+    {"input": "512", "desc": "Stress: power of 2"},
+    {"input": "800", "desc": "Stress: large"},
+    {"input": "998", "desc": "Stress: near max"},
+    {"input": "1000", "desc": "Stress: max"}
+  ]
+}

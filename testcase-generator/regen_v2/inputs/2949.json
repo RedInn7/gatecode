@@ -1,0 +1,28 @@
+{
+  "pid": 2949,
+  "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+  "inferred_constraints": "m == rowCosts.length; n == colCosts.length; 1 <= m,n <= 10^5; 0 <= startPos, homePos within bounds; 1 <= rowCosts[i], colCosts[i] <= 10^4",
+  "input_format": "line1: startPos (JSON [r,c]); line2: homePos (JSON [r,c]); line3: rowCosts (JSON array); line4: colCosts (JSON array)",
+  "testcases": [
+    {"input": "[1,0]\n[2,3]\n[5,4,3]\n[8,2,6,7]", "desc": "Edge: example1"},
+    {"input": "[0,0]\n[0,0]\n[5]\n[26]", "desc": "Edge: example2 same pos"},
+    {"input": "[0,0]\n[0,1]\n[1]\n[1,2]", "desc": "Edge: 1 step right"},
+    {"input": "[0,0]\n[1,0]\n[1,2]\n[1]", "desc": "Edge: 1 step down"},
+    {"input": "[0,0]\n[1,1]\n[1,2]\n[1,2]", "desc": "Edge: diagonal 2x2"},
+    {"input": "[1,1]\n[0,0]\n[1,2]\n[1,2]", "desc": "Edge: reverse diagonal"},
+    {"input": "[0,0]\n[2,2]\n[1,1,1]\n[1,1,1]", "desc": "Edge: 3x3 all same cost"},
+    {"input": "[0,0]\n[3,3]\n[1,5,1,1]\n[5,1,1,1]", "desc": "Standard: varied costs"},
+    {"input": "[2,2]\n[0,0]\n[1,2,3]\n[3,2,1]", "desc": "Standard: corner trip"},
+    {"input": "[1,2]\n[3,4]\n[10,1,2,3,4]\n[5,10,1,2,3]", "desc": "Standard: 5x5 mid"},
+    {"input": "[0,0]\n[4,4]\n[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Standard: 5x5 diagonal"},
+    {"input": "[0,0]\n[0,9]\n[5]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1xN horizontal"},
+    {"input": "[0,0]\n[9,0]\n[1,2,3,4,5,6,7,8,9,10]\n[5]", "desc": "Standard: Nx1 vertical"},
+    {"input": "[5,5]\n[10,10]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n[15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: 15x15 mid to corner"},
+    {"input": "[3,7]\n[7,3]\n[1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: cross moves"},
+    {"input": "[0,5]\n[5,0]\n[1,2,3,4,5,6]\n[6,5,4,3,2,1]", "desc": "Standard: opposite corners"},
+    {"input": "[0,0]\n[19,19]\n[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]", "desc": "Stress: 20x20 max cost"},
+    {"input": "[0,0]\n[99,99]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 100x100 all 1s"},
+    {"input": "[10,10]\n[0,0]\n[100,100,100,100,100,100,100,100,100,100,100]\n[100,100,100,100,100,100,100,100,100,100,100]", "desc": "Stress: backward trip"},
+    {"input": "[0,0]\n[0,0]\n[10000]\n[10000]", "desc": "Killer: 1x1 grid (cost 0)"}
+  ]
+}

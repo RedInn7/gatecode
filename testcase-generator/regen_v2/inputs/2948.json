@@ -1,0 +1,28 @@
+{
+  "pid": 2948,
+  "slug": "make-sum-divisible-by-p",
+  "inferred_constraints": "1 <= nums.length <= 10^5; 1 <= nums[i] <= 10^9; 1 <= p <= 10^9",
+  "input_format": "line1: nums (JSON array); line2: p",
+  "testcases": [
+    {"input": "[3,1,4,2]\n6", "desc": "Edge: example1"},
+    {"input": "[6,3,5,2]\n9", "desc": "Edge: example2"},
+    {"input": "[1,2,3]\n3", "desc": "Edge: example3 (already div)"},
+    {"input": "[1]\n2", "desc": "Edge: single not div - impossible"},
+    {"input": "[2]\n2", "desc": "Edge: single div"},
+    {"input": "[1,1]\n2", "desc": "Edge: 2 sum div"},
+    {"input": "[1,1,1]\n3", "desc": "Edge: 3 sum div"},
+    {"input": "[1,2,3,4]\n10", "desc": "Edge: already div"},
+    {"input": "[3,2,4,1,5]\n7", "desc": "Standard: 5 elements"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n11", "desc": "Standard: sum 55 / 11 = 5"},
+    {"input": "[5,5,5,5,5]\n10", "desc": "Standard: all same"},
+    {"input": "[10,20,30,40,50]\n100", "desc": "Standard: divisible"},
+    {"input": "[1,1,1,1,1,1,1]\n5", "desc": "Standard: 7 ones"},
+    {"input": "[100,200,300,400,500]\n7", "desc": "Standard: hundreds"},
+    {"input": "[1000000000,1000000000,1000000000]\n3", "desc": "Standard: large vals"},
+    {"input": "[7,11,13,17,19,23,29,31]\n10", "desc": "Standard: primes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n21", "desc": "Stress: 20 ascending"},
+    {"input": "[1000000000,1,1000000000,1,1000000000]\n7", "desc": "Stress: extreme"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n31", "desc": "Stress: 30 ones, sum=30 p=31"},
+    {"input": "[3]\n2", "desc": "Killer: cannot remove whole array, no subarray works"}
+  ]
+}

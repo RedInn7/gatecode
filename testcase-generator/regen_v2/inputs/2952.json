@@ -1,0 +1,28 @@
+{
+  "pid": 2952,
+  "slug": "minimum-number-of-flips-to-make-binary-grid-palindromic-ii",
+  "inferred_constraints": "m == grid.length; n == grid[i].length; 1 <= m*n <= 2*10^5; grid[i][j] in {0,1}",
+  "input_format": "single line: grid (JSON 2D)",
+  "testcases": [
+    {"input": "[[1,0,0],[0,1,0],[0,0,1]]", "desc": "Edge: example1"},
+    {"input": "[[0,1],[0,1],[0,0]]", "desc": "Edge: example2"},
+    {"input": "[[1],[1]]", "desc": "Edge: example3"},
+    {"input": "[[0]]", "desc": "Edge: 1x1 zero"},
+    {"input": "[[1]]", "desc": "Edge: 1x1 one"},
+    {"input": "[[1,1]]", "desc": "Edge: 1x2 palin"},
+    {"input": "[[1,0]]", "desc": "Edge: 1x2 not palin"},
+    {"input": "[[1],[0]]", "desc": "Edge: 2x1 not palin"},
+    {"input": "[[0,0],[0,0]]", "desc": "Standard: 2x2 all zero"},
+    {"input": "[[1,1],[1,1]]", "desc": "Standard: 2x2 all one"},
+    {"input": "[[1,0],[0,1]]", "desc": "Standard: 2x2 diagonal"},
+    {"input": "[[1,0,1],[0,1,0],[1,0,1]]", "desc": "Standard: 3x3 already palin"},
+    {"input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]", "desc": "Standard: 4x4 all ones"},
+    {"input": "[[1,0,0,1],[0,1,1,0],[0,1,1,0],[1,0,0,1]]", "desc": "Standard: 4x4 symmetric"},
+    {"input": "[[0,1,0],[1,0,1],[0,1,0],[1,0,1],[0,1,0]]", "desc": "Standard: 5x3 alt"},
+    {"input": "[[1,0,1,0,1],[0,1,0,1,0],[1,0,1,0,1]]", "desc": "Standard: 3x5 checker"},
+    {"input": "[[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,1,1]]", "desc": "Stress: 4x6 all ones"},
+    {"input": "[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]", "desc": "Stress: 4x10 zeros"},
+    {"input": "[[1,0,0,0,0,0,0,0,0,1],[0,1,0,0,0,0,0,0,1,0],[0,0,1,0,0,0,0,1,0,0],[0,0,0,1,0,0,1,0,0,0]]", "desc": "Stress: 4x10 symmetric"},
+    {"input": "[[1,1,0,0,1,1],[0,0,1,1,0,0],[1,1,0,0,1,1]]", "desc": "Killer: 3x6 pattern"}
+  ]
+}

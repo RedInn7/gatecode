@@ -1,0 +1,28 @@
+{
+  "pid": 2947,
+  "slug": "maximum-score-of-spliced-array",
+  "inferred_constraints": "n == nums1.length == nums2.length; 1 <= n <= 10^5; 1 <= nums1[i], nums2[i] <= 10^4",
+  "input_format": "line1: nums1 (JSON array); line2: nums2 (JSON array)",
+  "testcases": [
+    {"input": "[60,60,60]\n[10,90,10]", "desc": "Edge: example1"},
+    {"input": "[20,40,20,70,30]\n[50,20,50,40,20]", "desc": "Edge: example2"},
+    {"input": "[7,11,13]\n[1,1,1]", "desc": "Edge: example3"},
+    {"input": "[1]\n[1]", "desc": "Edge: minimal"},
+    {"input": "[5]\n[1]", "desc": "Edge: 5 vs 1"},
+    {"input": "[1,1]\n[2,2]", "desc": "Edge: 2 elements"},
+    {"input": "[10000,10000]\n[1,1]", "desc": "Edge: extremes"},
+    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Standard: reversed"},
+    {"input": "[1,1,1,1,1]\n[2,2,2,2,2]", "desc": "Standard: full swap"},
+    {"input": "[100,100,1,100,100]\n[1,1,100,1,1]", "desc": "Standard: middle swap"},
+    {"input": "[50,50,50,50]\n[50,50,50,50]", "desc": "Standard: identical"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: 10 reversed"},
+    {"input": "[5,4,3,2,1,2,3,4,5]\n[1,2,3,4,5,4,3,2,1]", "desc": "Standard: palindromes mirror"},
+    {"input": "[10000,1,10000,1,10000]\n[1,10000,1,10000,1]", "desc": "Standard: alternating"},
+    {"input": "[1,1,1,1,1,1,10000,1,1,1]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: single peak"},
+    {"input": "[10,20,30,40,50]\n[5,15,25,35,45]", "desc": "Standard: linear shift"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]", "desc": "Stress: 20 extreme"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 20 reverse extreme"},
+    {"input": "[5000,5000,5000,5000,5000]\n[5000,5000,5000,5000,5000]", "desc": "Stress: all same mid"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Killer: identical (no swap gain)"}
+  ]
+}

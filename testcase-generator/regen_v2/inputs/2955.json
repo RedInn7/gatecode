@@ -1,0 +1,28 @@
+{
+  "pid": 2955,
+  "slug": "count-numbers-with-unique-digits-ii",
+  "inferred_constraints": "1 <= a <= b <= 1000",
+  "input_format": "line1: a; line2: b",
+  "testcases": [
+    {"input": "1\n20", "desc": "Edge: example1"},
+    {"input": "9\n19", "desc": "Edge: example2"},
+    {"input": "80\n120", "desc": "Edge: example3"},
+    {"input": "1\n1", "desc": "Edge: single 1"},
+    {"input": "10\n10", "desc": "Edge: single non-unique"},
+    {"input": "11\n11", "desc": "Edge: single not unique"},
+    {"input": "1\n9", "desc": "Edge: all 1-digit"},
+    {"input": "100\n100", "desc": "Edge: 100"},
+    {"input": "1000\n1000", "desc": "Edge: 1000 not unique"},
+    {"input": "1\n100", "desc": "Standard: 1-100"},
+    {"input": "1\n1000", "desc": "Standard: full range"},
+    {"input": "10\n99", "desc": "Standard: 2-digit"},
+    {"input": "100\n999", "desc": "Standard: 3-digit"},
+    {"input": "50\n150", "desc": "Standard: across hundreds"},
+    {"input": "111\n777", "desc": "Standard: mid 3-digit"},
+    {"input": "111\n333", "desc": "Standard: many repeats"},
+    {"input": "500\n900", "desc": "Stress: late hundreds"},
+    {"input": "200\n800", "desc": "Stress: large range"},
+    {"input": "990\n1000", "desc": "Stress: tail"},
+    {"input": "111\n111", "desc": "Killer: 111 has dup"}
+  ]
+}

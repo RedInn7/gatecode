@@ -1,0 +1,28 @@
+{
+  "pid": 2960,
+  "slug": "count-the-number-of-powerful-integers",
+  "inferred_constraints": "1 <= start <= finish <= 10^15; 1 <= limit <= 9; 1 <= s.length <= 16; s consists of digits 0-limit, no leading zeros",
+  "input_format": "line1: start; line2: finish; line3: limit; line4: s (JSON string)",
+  "testcases": [
+    {"input": "1\n6000\n4\n\"124\"", "desc": "Edge: example1"},
+    {"input": "15\n215\n6\n\"10\"", "desc": "Edge: example2"},
+    {"input": "1000\n2000\n4\n\"3000\"", "desc": "Edge: example3 (no answer)"},
+    {"input": "1\n1\n1\n\"1\"", "desc": "Edge: minimal"},
+    {"input": "1\n100\n9\n\"5\"", "desc": "Edge: 1-100 with 5"},
+    {"input": "100\n200\n9\n\"50\"", "desc": "Edge: 100-200"},
+    {"input": "1\n10\n1\n\"1\"", "desc": "Edge: limit 1"},
+    {"input": "1\n9\n5\n\"5\"", "desc": "Edge: single match"},
+    {"input": "1\n1000\n9\n\"123\"", "desc": "Standard: ends with 123"},
+    {"input": "100\n999\n9\n\"99\"", "desc": "Standard: 3-digit ends with 99"},
+    {"input": "1\n1000000\n9\n\"1\"", "desc": "Standard: many ending in 1"},
+    {"input": "1\n100000\n5\n\"55\"", "desc": "Standard: digits up to 5 ending 55"},
+    {"input": "1\n10000\n7\n\"77\"", "desc": "Standard: ending 77"},
+    {"input": "10000\n100000\n9\n\"123\"", "desc": "Standard: 5-digit range"},
+    {"input": "1\n1000000000\n9\n\"123456\"", "desc": "Standard: 6-digit suffix"},
+    {"input": "1\n999999999999\n9\n\"1\"", "desc": "Standard: huge range"},
+    {"input": "1\n1000000000000000\n9\n\"1\"", "desc": "Stress: 10^15 range"},
+    {"input": "1\n1000000000000000\n1\n\"1\"", "desc": "Stress: limit 1"},
+    {"input": "1\n1000000000000000\n9\n\"123456789\"", "desc": "Stress: 9-digit suffix"},
+    {"input": "1000000000000\n1000000000000000\n5\n\"5\"", "desc": "Killer: huge start"}
+  ]
+}

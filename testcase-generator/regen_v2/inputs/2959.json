@@ -1,0 +1,28 @@
+{
+  "pid": 2959,
+  "slug": "remove-adjacent-almost-equal-characters",
+  "inferred_constraints": "1 <= word.length <= 100; lowercase letters",
+  "input_format": "single line: word (JSON string)",
+  "testcases": [
+    {"input": "\"aaaaa\"", "desc": "Edge: example1"},
+    {"input": "\"abddez\"", "desc": "Edge: example2"},
+    {"input": "\"zyxyxyz\"", "desc": "Edge: example3"},
+    {"input": "\"a\"", "desc": "Edge: single char"},
+    {"input": "\"ab\"", "desc": "Edge: 2 adjacent"},
+    {"input": "\"ac\"", "desc": "Edge: 2 distant"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"az\"", "desc": "Edge: extremes"},
+    {"input": "\"abc\"", "desc": "Standard: 3 alphabetic"},
+    {"input": "\"aceg\"", "desc": "Standard: all distant"},
+    {"input": "\"abcdefghij\"", "desc": "Standard: alphabet"},
+    {"input": "\"zzzzzzzzz\"", "desc": "Standard: all same z"},
+    {"input": "\"aaaabbbb\"", "desc": "Standard: blocks"},
+    {"input": "\"abababab\"", "desc": "Standard: alternating ab"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: full alphabet"},
+    {"input": "\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard: reverse alphabet"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 50 a's"},
+    {"input": "\"abababababababababababababababababababababababababab\"", "desc": "Stress: 26 abs"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 100 a's"},
+    {"input": "\"abcdcba\"", "desc": "Killer: palindrome adjacent"}
+  ]
+}
