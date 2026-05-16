@@ -1,0 +1,28 @@
+{
+  "pid": 512,
+  "slug": "find-all-possible-recipes-from-given-supplies",
+  "inferred_constraints": "n == recipes.length == ingredients.length, 1 <= n <= 100, 1 <= ingredient list length <= 100, 1 <= supplies.length <= 100, lowercase strings",
+  "input_format": "line1: recipes (JSON string array); line2: ingredients (JSON 2D string array); line3: supplies (JSON string array)",
+  "testcases": [
+    {"input": "[\"bread\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]", "desc": "Edge: example1"},
+    {"input": "[\"bread\",\"sandwich\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"]]\n[\"yeast\",\"flour\",\"meat\"]", "desc": "Edge: example2 chain"},
+    {"input": "[\"bread\",\"sandwich\",\"burger\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]]\n[\"yeast\",\"flour\",\"meat\"]", "desc": "Edge: example3"},
+    {"input": "[\"a\"]\n[[\"b\"]]\n[\"b\"]", "desc": "Edge: minimal direct"},
+    {"input": "[\"a\"]\n[[\"b\"]]\n[\"c\"]", "desc": "Edge: cannot make"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[[\"x\"],[\"y\"],[\"z\"]]\n[\"x\",\"y\"]", "desc": "Standard: partial supplies"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[[\"x\"],[\"a\"],[\"b\"]]\n[\"x\"]", "desc": "Standard: chain a->b->c"},
+    {"input": "[\"a\",\"b\"]\n[[\"b\"],[\"a\"]]\n[\"x\"]", "desc": "Edge: cycle, none made"},
+    {"input": "[\"recipe1\"]\n[[\"ing1\",\"ing2\",\"ing3\"]]\n[\"ing1\",\"ing2\",\"ing3\"]", "desc": "Standard: 3 ingredients"},
+    {"input": "[\"r1\",\"r2\",\"r3\"]\n[[\"i1\"],[\"i2\"],[\"i3\"]]\n[\"i1\",\"i2\",\"i3\"]", "desc": "Standard: 3 distinct"},
+    {"input": "[\"r1\",\"r2\",\"r3\"]\n[[\"r2\"],[\"r3\"],[\"a\"]]\n[\"a\"]", "desc": "Standard: long chain"},
+    {"input": "[\"x\"]\n[[\"y\"]]\n[\"x\",\"y\"]", "desc": "Edge: x in supplies but recipe needs y"},
+    {"input": "[\"cake\",\"cookie\"]\n[[\"flour\",\"egg\"],[\"flour\",\"sugar\"]]\n[\"flour\"]", "desc": "Standard: missing ingredients"},
+    {"input": "[\"cake\",\"cookie\"]\n[[\"flour\",\"egg\"],[\"flour\",\"sugar\"]]\n[\"flour\",\"egg\",\"sugar\"]", "desc": "Standard: enough for all"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[[\"a\"],[\"a\"],[\"a\"],[\"a\"],[\"a\"]]\n[\"a\"]", "desc": "Edge: self-loop a"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[[\"x\"],[\"a\"],[\"b\"],[\"c\"],[\"d\"]]\n[\"x\"]", "desc": "Standard: chain a-e"},
+    {"input": "[\"r\"]\n[[\"x\",\"y\",\"z\"]]\n[\"x\"]", "desc": "Edge: partial supplies"},
+    {"input": "[\"a\",\"b\"]\n[[\"x\",\"y\"],[\"y\",\"z\"]]\n[\"x\",\"y\",\"z\"]", "desc": "Standard: 2 distinct"},
+    {"input": "[\"alpha\",\"beta\",\"gamma\"]\n[[\"omega\"],[\"alpha\",\"omega\"],[\"beta\",\"alpha\"]]\n[\"omega\"]", "desc": "Standard: chain"},
+    {"input": "[\"r1\",\"r2\",\"r3\",\"r4\",\"r5\"]\n[[\"a\"],[\"r1\"],[\"r2\"],[\"r3\"],[\"r4\"]]\n[\"a\"]", "desc": "Standard: 5-chain"}
+  ]
+}

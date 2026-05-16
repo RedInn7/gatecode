@@ -1,0 +1,28 @@
+{
+  "pid": 514,
+  "slug": "two-best-non-overlapping-events",
+  "inferred_constraints": "2 <= events.length <= 1e5, events[i].length == 3, 1 <= start, end, value <= 1e9, start <= end",
+  "input_format": "line1: events (JSON 2D int array [start,end,value])",
+  "testcases": [
+    {"input": "[[1,3,2],[4,5,2],[2,4,3]]", "desc": "Edge: example1"},
+    {"input": "[[1,3,2],[4,5,2],[1,5,5]]", "desc": "Edge: example2"},
+    {"input": "[[1,5,3],[1,5,1],[6,6,5]]", "desc": "Edge: example3"},
+    {"input": "[[1,1,1],[2,2,1]]", "desc": "Edge: 2 events single time"},
+    {"input": "[[1,1,1000000000],[2,2,1000000000]]", "desc": "Edge: max values"},
+    {"input": "[[1,10,5],[2,9,10]]", "desc": "Edge: 2 overlapping"},
+    {"input": "[[1,5,10],[6,10,20]]", "desc": "Edge: 2 non-overlapping"},
+    {"input": "[[1,5,10],[5,10,20]]", "desc": "Edge: touching at 5 (overlapping)"},
+    {"input": "[[1,3,5],[4,6,10],[7,9,15]]", "desc": "Standard: 3 non-overlapping"},
+    {"input": "[[1,10,10],[2,9,9],[3,8,8]]", "desc": "Standard: nested"},
+    {"input": "[[1,1,1000000000],[1000000000,1000000000,1000000000]]", "desc": "Edge: extreme times"},
+    {"input": "[[1,2,1],[3,4,1],[5,6,1],[7,8,1],[9,10,1]]", "desc": "Standard: 5 non-overlapping small"},
+    {"input": "[[1,100,100]]", "desc": "Edge: single event"},
+    {"input": "[[1,5,5],[5,10,5],[10,15,5]]", "desc": "Edge: 3 touching"},
+    {"input": "[[1,10,100],[2,3,50],[5,6,75]]", "desc": "Standard: long event"},
+    {"input": "[[1,2,5],[1,2,3]]", "desc": "Edge: same time different value"},
+    {"input": "[[1,1,1],[2,2,2],[3,3,3],[4,4,4],[5,5,5]]", "desc": "Standard: 5 single-times ascending"},
+    {"input": "[[1,2,10],[3,4,20],[5,6,30],[7,8,40],[9,10,50]]", "desc": "Standard: increasing values"},
+    {"input": "[[1,10,1],[2,5,2],[6,9,3],[3,4,4],[7,8,5]]", "desc": "Standard: complex"},
+    {"input": "[[100,200,500],[300,400,600],[500,600,700],[700,800,800],[900,1000,1000]]", "desc": "Standard: 5 separated"}
+  ]
+}

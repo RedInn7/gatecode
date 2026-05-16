@@ -1,0 +1,28 @@
+{
+  "pid": 515,
+  "slug": "the-number-of-the-smallest-unoccupied-chair",
+  "inferred_constraints": "n == times.length, 2 <= n <= 1e4, times[i].length == 2, 1 <= arrival < leave <= 1e5, 0 <= targetFriend <= n-1, all arrivals distinct",
+  "input_format": "line1: times (JSON 2D int array); line2: targetFriend (int)",
+  "testcases": [
+    {"input": "[[1,4],[2,3],[4,6]]\n1", "desc": "Edge: example1"},
+    {"input": "[[3,10],[1,5],[2,6]]\n0", "desc": "Edge: example2"},
+    {"input": "[[1,2],[2,3]]\n0", "desc": "Edge: 2 friends"},
+    {"input": "[[1,2],[2,3]]\n1", "desc": "Edge: 2 friends target=1"},
+    {"input": "[[1,100000]]\n0", "desc": "Edge: but n>=2; need 2 friends"},
+    {"input": "[[1,100],[50,200]]\n1", "desc": "Standard: overlap"},
+    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]\n4", "desc": "Standard: 5 friends no overlap"},
+    {"input": "[[1,10],[2,9],[3,8],[4,7],[5,6]]\n4", "desc": "Standard: nested"},
+    {"input": "[[1,100],[2,99],[3,98],[4,97],[5,96]]\n0", "desc": "Standard: all overlap"},
+    {"input": "[[1,2],[3,4]]\n0", "desc": "Edge: minimum n=2 simple"},
+    {"input": "[[5,6],[1,2]]\n0", "desc": "Edge: order reversed input"},
+    {"input": "[[1,99999],[2,100000]]\n0", "desc": "Edge: extreme times"},
+    {"input": "[[1,5],[2,4],[3,6],[4,7],[5,8]]\n2", "desc": "Standard: complex overlap"},
+    {"input": "[[10,20],[20,30],[30,40]]\n2", "desc": "Standard: chain"},
+    {"input": "[[1,2],[1,3]]\n0", "desc": "Edge: same arrival (not allowed per constraint)"},
+    {"input": "[[100,200],[50,150],[10,80]]\n2", "desc": "Standard: 3 friends overlapping"},
+    {"input": "[[1,10],[5,15],[10,20],[15,25],[20,30]]\n3", "desc": "Standard: 5 staggered overlap"},
+    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[11,12],[13,14]]\n3", "desc": "Standard: 7 non-overlap"},
+    {"input": "[[1,100],[2,5],[3,4],[6,99]]\n2", "desc": "Standard: 4 friends mix"},
+    {"input": "[[1,10000],[2,9999],[3,9998],[4,9997]]\n3", "desc": "Stress: 4 long events"}
+  ]
+}

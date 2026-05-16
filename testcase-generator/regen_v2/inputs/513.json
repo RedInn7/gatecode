@@ -1,0 +1,28 @@
+{
+  "pid": 513,
+  "slug": "pascals-triangle",
+  "inferred_constraints": "1 <= numRows <= 30",
+  "input_format": "line1: numRows (int)",
+  "testcases": [
+    {"input": "5", "desc": "Edge: example1"},
+    {"input": "1", "desc": "Edge: example2 minimum"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "3", "desc": "Edge: n=3"},
+    {"input": "4", "desc": "Edge: n=4"},
+    {"input": "10", "desc": "Standard: n=10"},
+    {"input": "15", "desc": "Standard: n=15"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "25", "desc": "Standard: n=25"},
+    {"input": "30", "desc": "Edge: max n=30"},
+    {"input": "6", "desc": "Standard: n=6"},
+    {"input": "7", "desc": "Standard: n=7"},
+    {"input": "8", "desc": "Standard: n=8"},
+    {"input": "9", "desc": "Standard: n=9"},
+    {"input": "11", "desc": "Standard: n=11"},
+    {"input": "12", "desc": "Standard: n=12"},
+    {"input": "14", "desc": "Standard: n=14"},
+    {"input": "18", "desc": "Standard: n=18"},
+    {"input": "22", "desc": "Standard: n=22"},
+    {"input": "28", "desc": "Standard: n=28"}
+  ]
+}
