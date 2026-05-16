@@ -1,0 +1,28 @@
+{
+  "pid": 243,
+  "slug": "find-if-digit-game-can-be-won",
+  "inferred_constraints": "1 <= nums.length <= 100, 1 <= nums[i] <= 99",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1,2,3,4,10]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,5,14]", "desc": "Edge: example2"},
+    {"input": "[5,5,5,25]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: n=1 single digit"},
+    {"input": "[10]", "desc": "Edge: n=1 two-digit"},
+    {"input": "[99]", "desc": "Edge: max two-digit"},
+    {"input": "[1,9]", "desc": "Edge: 2 single equal sum to two-digit"},
+    {"input": "[5,4]", "desc": "Edge: 2 single sum > both"},
+    {"input": "[10,11,12]", "desc": "Edge: all two-digit"},
+    {"input": "[1,2,3,4,5,6,7,8,9]", "desc": "Edge: all 1-9"},
+    {"input": "[10,20,30,40,50]", "desc": "Standard: all two-digit round"},
+    {"input": "[1,9,10,90,5,50]", "desc": "Standard: half-half"},
+    {"input": "[99,99,99,99,99]", "desc": "Standard: all max"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: all 1s"},
+    {"input": "[9,9,9,9,9]", "desc": "Standard: all 9s, sum=45 > all 2-digit"},
+    {"input": "[1,2,3,4,5,6,7,8,9,99]", "desc": "Standard: 9 singles + 1 max"},
+    {"input": "[10,11,12,13,14,15,16,17,18,19]", "desc": "Standard: 10 two-digit"},
+    {"input": "[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]", "desc": "Stress: 18 singles"},
+    {"input": "[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]", "desc": "Stress: 41 two-digit"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,99,99,99,99,99,99,99,99,99,99]", "desc": "Stress: 10 ones + 10 max"}
+  ]
+}

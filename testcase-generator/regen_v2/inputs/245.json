@@ -1,0 +1,28 @@
+{
+  "pid": 245,
+  "slug": "count-connected-components-in-lcm-graph",
+  "inferred_constraints": "1 <= nums.length <= 1e5, 1 <= nums[i] <= 1e9, all unique, 1 <= threshold <= 2e5",
+  "input_format": "line1: nums (JSON int array); line2: threshold (int)",
+  "testcases": [
+    {"input": "[2,4,8,3,9]\n5", "desc": "Edge: example1"},
+    {"input": "[2,4,8,3,9,12]\n10", "desc": "Edge: example2"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 single"},
+    {"input": "[1,2]\n1", "desc": "Edge: lcm(1,2)=2>1 disconnected"},
+    {"input": "[1,2]\n2", "desc": "Edge: lcm(1,2)=2 connected"},
+    {"input": "[2,3]\n5", "desc": "Edge: lcm=6 > 5 -> 2 components"},
+    {"input": "[2,3]\n6", "desc": "Edge: lcm=6 connected"},
+    {"input": "[1000000000]\n1", "desc": "Edge: single max value"},
+    {"input": "[1,2,3,4,5]\n1", "desc": "Edge: only 1's connections possible"},
+    {"input": "[1,2,3,4,5]\n200000", "desc": "Edge: max threshold all may connect"},
+    {"input": "[2,3,5,7,11]\n200000", "desc": "Standard: primes"},
+    {"input": "[2,4,6,8,10]\n20", "desc": "Standard: even multiples"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n20", "desc": "Standard: 1-10"},
+    {"input": "[15,21,35,33,77]\n100", "desc": "Standard: composite numbers"},
+    {"input": "[100,200,300,400,500]\n1000", "desc": "Standard: multiples of 100"},
+    {"input": "[1000000,2000000,3000000,4000000,5000000]\n200000", "desc": "Standard: large values low threshold"},
+    {"input": "[2,4,8,16,32,64,128,256,512,1024]\n2048", "desc": "Standard: powers of 2"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n50", "desc": "Stress: 20 values"},
+    {"input": "[3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73]\n200000", "desc": "Stress: 20 primes"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000]\n5000", "desc": "Stress: 20 multiples"}
+  ]
+}
