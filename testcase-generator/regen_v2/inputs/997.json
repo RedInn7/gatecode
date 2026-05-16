@@ -1,0 +1,28 @@
+{
+  "pid": 997,
+  "slug": "find-the-child-who-has-the-ball-after-k-seconds",
+  "inferred_constraints": "2 <= n <= 50, 1 <= k <= 50",
+  "input_format": "line1: n (int); line2: k (int)",
+  "testcases": [
+    {"input": "3\n5", "desc": "Edge: example1 -> 1"},
+    {"input": "5\n6", "desc": "Edge: example2 -> 2"},
+    {"input": "4\n2", "desc": "Edge: example3 -> 2"},
+    {"input": "2\n1", "desc": "Edge: minimal n,k=1"},
+    {"input": "2\n2", "desc": "Edge: n=2 k=2 back"},
+    {"input": "50\n50", "desc": "Edge: max n max k"},
+    {"input": "50\n1", "desc": "Edge: max n k=1"},
+    {"input": "2\n50", "desc": "Edge: min n max k"},
+    {"input": "5\n0", "desc": "Edge: k=0 (if allowed) -> 0"},
+    {"input": "3\n2", "desc": "Standard: reach n-1"},
+    {"input": "5\n4", "desc": "Standard: 4 steps reaches end"},
+    {"input": "10\n9", "desc": "Standard: reach end"},
+    {"input": "10\n18", "desc": "Standard: back to start"},
+    {"input": "10\n10", "desc": "Standard: 1 past end then back"},
+    {"input": "25\n12", "desc": "Standard: mid pos"},
+    {"input": "25\n24", "desc": "Standard: 24 = end"},
+    {"input": "25\n48", "desc": "Standard: 48 = back start"},
+    {"input": "50\n25", "desc": "Standard: half way"},
+    {"input": "50\n49", "desc": "Standard: exactly at end"},
+    {"input": "50\n98", "desc": "Killer: 98 = full round back"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 1010,
+  "slug": "count-number-of-special-subsequences",
+  "inferred_constraints": "1 <= n <= 1e5, 0 <= nums[i] <= 2, mod 1e9+7",
+  "input_format": "line1: nums (JSON array values in {0,1,2})",
+  "testcases": [
+    {"input": "[0,1,2,2]", "desc": "Edge: example1 -> 3"},
+    {"input": "[2,2,0,0]", "desc": "Edge: example2 -> 0"},
+    {"input": "[0,1,2,0,1,2]", "desc": "Edge: example3 -> 7"},
+    {"input": "[0]", "desc": "Edge: single 0"},
+    {"input": "[2]", "desc": "Edge: single 2"},
+    {"input": "[0,1,2]", "desc": "Edge: minimal valid"},
+    {"input": "[2,1,0]", "desc": "Edge: reversed -> 0"},
+    {"input": "[0,1,2,0,1,2,0,1,2]", "desc": "Standard: 3 copies"},
+    {"input": "[0,0,1,1,2,2]", "desc": "Standard: pairs"},
+    {"input": "[0,0,0,1,1,1,2,2,2]", "desc": "Standard: 3-3-3"},
+    {"input": "[0,1,1,2,2,2]", "desc": "Standard: blocks"},
+    {"input": "[0,0,0,0,0]", "desc": "Standard: all 0 -> 0"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: all 1 -> 0"},
+    {"input": "[2,2,2,2,2]", "desc": "Standard: all 2 -> 0"},
+    {"input": "[0,1,0,1,2,1,2,0,1,2]", "desc": "Standard: mixed"},
+    {"input": "[0,1,2,1,2,1,2,1,2]", "desc": "Standard: alt 1 and 2"},
+    {"input": "[0,1,2,0,1,2,0,1,2,0,1,2,0,1,2]", "desc": "Standard: 5 copies"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]", "desc": "Standard: 10-10-10"},
+    {"input": "[0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2]", "desc": "Stress: long pattern"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Killer: 30-30-30 stress"}
+  ]
+}

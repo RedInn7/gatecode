@@ -1,0 +1,28 @@
+{
+  "pid": 994,
+  "slug": "minimum-insertions-to-balance-a-parentheses-string",
+  "inferred_constraints": "1 <= |s| <= 1e5, chars in {(,)}",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "(()))", "desc": "Edge: example1 -> 1"},
+    {"input": "())", "desc": "Edge: example2 -> 0"},
+    {"input": "))())(", "desc": "Edge: example3 -> 3"},
+    {"input": "(", "desc": "Edge: single open"},
+    {"input": ")", "desc": "Edge: single close"},
+    {"input": "()", "desc": "Edge: simple paren"},
+    {"input": "((", "desc": "Edge: 2 opens"},
+    {"input": "))", "desc": "Edge: 2 closes"},
+    {"input": "()()", "desc": "Standard: 2 simple"},
+    {"input": "()))(()))", "desc": "Standard: mixed"},
+    {"input": "()()()()()", "desc": "Standard: 5 simple"},
+    {"input": "(((", "desc": "Edge: 3 opens"},
+    {"input": ")))", "desc": "Edge: 3 closes"},
+    {"input": "()()()()()()()()", "desc": "Standard: 8 simple"},
+    {"input": "((((((", "desc": "Edge: 6 opens"},
+    {"input": "))))))", "desc": "Edge: 6 closes"},
+    {"input": "(())()()(())()()(())()()", "desc": "Standard: nested mixed"},
+    {"input": "((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((", "desc": "Stress: 200 opens"},
+    {"input": "))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))", "desc": "Stress: 200 closes"},
+    {"input": "(()))((())))(((()))((())))((())))((((())))))(()))()()()()((((())))))()()()()(()))((())))(()))((())))", "desc": "Killer: complex 100 chars"}
+  ]
+}

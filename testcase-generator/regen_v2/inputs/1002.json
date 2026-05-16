@@ -1,0 +1,28 @@
+{
+  "pid": 1002,
+  "slug": "single-number-iii",
+  "inferred_constraints": "2 <= n <= 3e4 (even), -2^31 <= nums[i] <= 2^31-1, exactly 2 singles",
+  "input_format": "line1: nums (JSON array, two unique, rest pairs)",
+  "testcases": [
+    {"input": "[1,2,1,3,2,5]", "desc": "Edge: example1 -> [3,5]"},
+    {"input": "[-1,0]", "desc": "Edge: example2 minimal"},
+    {"input": "[0,1]", "desc": "Edge: example3 minimal"},
+    {"input": "[100,200]", "desc": "Edge: 2 singles"},
+    {"input": "[-2147483648,2147483647]", "desc": "Edge: INT extremes"},
+    {"input": "[2147483647,2147483647,-2147483648,-2147483647]", "desc": "Edge: INT extremes with pair"},
+    {"input": "[1,1,2,3]", "desc": "Standard: small"},
+    {"input": "[1,1,2,2,3,4]", "desc": "Standard: 6 elems"},
+    {"input": "[1,2,3,4,1,2,3,5]", "desc": "Standard: bigger"},
+    {"input": "[-5,-5,1,2]", "desc": "Standard: negative pair"},
+    {"input": "[0,0,1,2]", "desc": "Standard: pair of zeros"},
+    {"input": "[1,1,1000000,1000001]", "desc": "Standard: large singles"},
+    {"input": "[10,20,30,40,10,20,30,99]", "desc": "Standard: one stays original + one new"},
+    {"input": "[-1,-2,-3,-4,-1,-2,-3,-5]", "desc": "Standard: all negatives"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,11,12]", "desc": "Standard: 20 with 2 unique end"},
+    {"input": "[100,200,100,300]", "desc": "Standard: 4 elems"},
+    {"input": "[-100,-100,-50,50]", "desc": "Standard: with neg pair"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,11]", "desc": "Stress: 10 pairs + 2 singles"},
+    {"input": "[1,1,1000000000,1000000000,2000000000,-1000000000]", "desc": "Stress: big values"},
+    {"input": "[-2147483648,2147483647,-2147483648,2147483647,0,1]", "desc": "Killer: INT extremes paired + 2 small unique"}
+  ]
+}

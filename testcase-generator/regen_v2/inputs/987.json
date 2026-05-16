@@ -1,0 +1,28 @@
+{
+  "pid": 987,
+  "slug": "maximum-points-after-enemy-battles",
+  "inferred_constraints": "1 <= n <= 1e5, 1 <= enemyEnergies[i], currentEnergy <= 1e9",
+  "input_format": "line1: enemyEnergies (JSON array); line2: currentEnergy (int)",
+  "testcases": [
+    {"input": "[3,2,2]\n2", "desc": "Edge: example1 -> 3"},
+    {"input": "[2]\n10", "desc": "Edge: example2 -> 5"},
+    {"input": "[1]\n1", "desc": "Edge: minimal exact"},
+    {"input": "[10]\n1", "desc": "Edge: insufficient -> 0"},
+    {"input": "[1]\n1000000000", "desc": "Edge: huge energy"},
+    {"input": "[1000000000]\n1", "desc": "Edge: enemy too strong"},
+    {"input": "[1000000000]\n1000000000", "desc": "Edge: exact match max"},
+    {"input": "[5,5,5]\n10", "desc": "Standard: 3 equal"},
+    {"input": "[1,2,3,4,5]\n5", "desc": "Standard: increasing"},
+    {"input": "[5,4,3,2,1]\n5", "desc": "Standard: decreasing"},
+    {"input": "[1,1,1,1,1]\n5", "desc": "Standard: 5 ones"},
+    {"input": "[10,10,10,10,10]\n100", "desc": "Standard: ample energy"},
+    {"input": "[100,200,300,400,500]\n50", "desc": "Standard: all too strong"},
+    {"input": "[1,1000,1,1000,1]\n10", "desc": "Standard: mixed"},
+    {"input": "[3,3,3,3,3,3,3,3,3,3]\n5", "desc": "Standard: uniform"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]\n50", "desc": "Standard: bigger"},
+    {"input": "[100,100,100,100,100,100,100,100,100,100]\n100", "desc": "Standard: 10 of 100"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]\n100", "desc": "Stress: 30 ascending"},
+    {"input": "[1000000000,999999999,999999998,999999997,999999996,999999995,999999994,999999993,999999992,999999991]\n1000000000", "desc": "Stress: max range"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1", "desc": "Killer: 50 ones tiny start"}
+  ]
+}

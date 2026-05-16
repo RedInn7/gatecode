@@ -1,0 +1,28 @@
+{
+  "pid": 1012,
+  "slug": "find-closest-person",
+  "inferred_constraints": "constraints simple positions",
+  "input_format": "line1: x (int); line2: y (int); line3: z (int)",
+  "testcases": [
+    {"input": "2\n7\n4", "desc": "Edge: example1 -> 1"},
+    {"input": "2\n5\n6", "desc": "Edge: example2 -> 2"},
+    {"input": "1\n5\n3", "desc": "Edge: example3 -> 0"},
+    {"input": "1\n1\n1", "desc": "Edge: all same -> 0"},
+    {"input": "1\n2\n1", "desc": "Edge: x at z"},
+    {"input": "2\n1\n1", "desc": "Edge: y at z"},
+    {"input": "1\n3\n2", "desc": "Edge: equal distance -> 0"},
+    {"input": "100\n200\n150", "desc": "Standard: equal mid -> 0"},
+    {"input": "10\n100\n20", "desc": "Standard: x closer"},
+    {"input": "100\n10\n20", "desc": "Standard: y closer"},
+    {"input": "5\n10\n0", "desc": "Standard: both negative side"},
+    {"input": "10\n20\n100", "desc": "Standard: both far same side"},
+    {"input": "10\n20\n5", "desc": "Standard: both above z"},
+    {"input": "50\n60\n55", "desc": "Standard: equal distance -> 0"},
+    {"input": "1\n1000\n500", "desc": "Standard: x far below"},
+    {"input": "1000\n1\n500", "desc": "Standard: y far below"},
+    {"input": "1\n1000\n1", "desc": "Standard: x at z y far"},
+    {"input": "1\n1000\n1000", "desc": "Standard: y at z x far"},
+    {"input": "999\n1\n500", "desc": "Standard: equal far apart -> 0"},
+    {"input": "1\n1000\n999", "desc": "Killer: extreme close to y"}
+  ]
+}

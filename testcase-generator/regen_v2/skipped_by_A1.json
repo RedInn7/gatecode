@@ -382,6 +382,11 @@
       "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
+      "pid": 1004,
+      "slug": "design-a-file-sharing-system",
+      "reason": "Design class FileSharing with stateful join/leave/request methods"
+    },
+    {
       "pid": 1049,
       "slug": "convert-json-string-to-object",
       "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"

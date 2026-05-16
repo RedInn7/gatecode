@@ -1,0 +1,28 @@
+{
+  "pid": 990,
+  "slug": "minimum-operations-to-reduce-x-to-zero",
+  "inferred_constraints": "1 <= n <= 1e5, 1 <= nums[i] <= 1e4, 1 <= x <= 1e9",
+  "input_format": "line1: nums (JSON array); line2: x (int)",
+  "testcases": [
+    {"input": "[1,1,4,2,3]\n5", "desc": "Edge: example1 -> 2"},
+    {"input": "[5,6,7,8,9]\n4", "desc": "Edge: example2 -> -1"},
+    {"input": "[3,2,20,1,1,3]\n10", "desc": "Edge: example3 -> 5"},
+    {"input": "[1]\n1", "desc": "Edge: single match"},
+    {"input": "[1]\n2", "desc": "Edge: not enough"},
+    {"input": "[5]\n5", "desc": "Edge: exact single"},
+    {"input": "[1,1]\n2", "desc": "Edge: 2 ones"},
+    {"input": "[10,10,10]\n30", "desc": "Edge: take all"},
+    {"input": "[1,2,3,4,5]\n15", "desc": "Standard: sum entire"},
+    {"input": "[1,2,3,4,5]\n6", "desc": "Standard: split"},
+    {"input": "[5,4,3,2,1]\n9", "desc": "Standard: take from ends"},
+    {"input": "[10000,1,1,1,1,1,1,10000]\n20002", "desc": "Standard: end pair"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n5", "desc": "Standard: 10 ones x=5"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]\n50", "desc": "Standard: take all 10"},
+    {"input": "[100,1,2,3,100,5,6,7,100]\n200", "desc": "Standard: take 2 ends"},
+    {"input": "[8,1,4,5,7,4,2,3,5,9,7,1]\n34", "desc": "Standard: random"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n45", "desc": "Standard: 20 elems"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n100000", "desc": "Stress: 10 of 10000"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n25", "desc": "Stress: 50 ones"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n1000000000", "desc": "Killer: x impossible too big"}
+  ]
+}

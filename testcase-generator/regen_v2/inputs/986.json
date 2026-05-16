@@ -1,0 +1,28 @@
+{
+  "pid": 986,
+  "slug": "count-stable-subarrays",
+  "inferred_constraints": "1 <= n <= 1e5, 1 <= nums[i] <= 1e9, q <= 1e5, 0 <= l <= r < n",
+  "input_format": "line1: nums (JSON array); line2: queries (JSON 2D)",
+  "testcases": [
+    {"input": "[3,1,2]\n[[0,1],[1,2],[0,2]]", "desc": "Edge: example1"},
+    {"input": "[1]\n[[0,0]]", "desc": "Edge: single elem"},
+    {"input": "[5,5]\n[[0,0],[1,1],[0,1]]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]\n[[0,1]]", "desc": "Edge: sorted pair"},
+    {"input": "[2,1]\n[[0,1]]", "desc": "Edge: reverse pair"},
+    {"input": "[1,1,1,1,1]\n[[0,4],[1,3],[2,2]]", "desc": "Edge: all same"},
+    {"input": "[5,4,3,2,1]\n[[0,4]]", "desc": "Edge: strictly desc"},
+    {"input": "[1,2,3,4,5]\n[[0,4]]", "desc": "Edge: strictly asc"},
+    {"input": "[1,2,3,4,5]\n[[0,0],[0,1],[0,2],[0,3],[0,4]]", "desc": "Standard: asc all prefixes"},
+    {"input": "[5,4,3,2,1]\n[[0,0],[0,1],[0,2],[0,3],[0,4]]", "desc": "Standard: desc all prefixes"},
+    {"input": "[1,3,2,4,3]\n[[0,4],[0,2],[1,3]]", "desc": "Standard: zigzag"},
+    {"input": "[5,4,5,4,5]\n[[0,4],[1,3]]", "desc": "Standard: alternating"},
+    {"input": "[1,2,3,2,1,2,3,4]\n[[0,7],[2,5],[4,7]]", "desc": "Standard: mountain valley"},
+    {"input": "[10,20,30,10,20,30]\n[[0,5],[0,2],[3,5]]", "desc": "Standard: 2 sorted blocks"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[0,9],[0,4],[5,9],[2,7]]", "desc": "Standard: full asc multi"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n[[0,9],[3,8],[1,7]]", "desc": "Standard: full desc multi"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]\n[[0,9],[0,4],[5,9]]", "desc": "Standard: pairs"},
+    {"input": "[5,1,4,2,3,6,7,1,2,3]\n[[0,9],[0,4],[5,9],[2,6]]", "desc": "Standard: random with sorted seg"},
+    {"input": "[1,2,3,4,5,4,3,2,1,2,3,4,5,4,3,2,1,2,3,4,5,4,3,2,1]\n[[0,24],[10,20],[5,15],[0,12],[12,24]]", "desc": "Stress: longer wave"},
+    {"input": "[1000000000,999999999,999999998,999999997,999999996,999999995]\n[[0,5],[0,2],[3,5]]", "desc": "Killer: extreme values"}
+  ]
+}
