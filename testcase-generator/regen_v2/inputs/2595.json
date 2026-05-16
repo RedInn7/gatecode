@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "123",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "\"One Hundred Twenty Three\""
     },
     {
       "input": "12345",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "\"Twelve Thousand Three Hundred Forty Five\""
     },
     {
       "input": "1234567",
-      "desc": "Edge: example3"
+      "desc": "Edge: example3",
+      "output": "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\""
     },
     {
       "input": "0",
-      "desc": "Edge: zero"
+      "desc": "Edge: zero",
+      "output": "\"Zero\""
     },
     {
       "input": "1",
-      "desc": "Edge: one"
+      "desc": "Edge: one",
+      "output": "\"One\""
     },
     {
       "input": "9",
-      "desc": "Edge: single digit max"
+      "desc": "Edge: single digit max",
+      "output": "\"Nine\""
     },
     {
       "input": "10",
-      "desc": "Edge: ten"
+      "desc": "Edge: ten",
+      "output": "\"Ten\""
     },
     {
       "input": "11",
-      "desc": "Edge: eleven"
+      "desc": "Edge: eleven",
+      "output": "\"Eleven\""
     },
     {
       "input": "19",
-      "desc": "Edge: nineteen"
+      "desc": "Edge: nineteen",
+      "output": "\"Nineteen\""
     },
     {
       "input": "20",
-      "desc": "Edge: twenty"
+      "desc": "Edge: twenty",
+      "output": "\"Twenty\""
     },
     {
       "input": "99",
-      "desc": "Edge: ninety-nine"
+      "desc": "Edge: ninety-nine",
+      "output": "\"Ninety Nine\""
     },
     {
       "input": "100",
-      "desc": "Standard: hundred"
+      "desc": "Standard: hundred",
+      "output": "\"One Hundred\""
     },
     {
       "input": "1000",
-      "desc": "Standard: thousand"
+      "desc": "Standard: thousand",
+      "output": "\"One Thousand\""
     },
     {
       "input": "1000000",
-      "desc": "Standard: million"
+      "desc": "Standard: million",
+      "output": "\"One Million\""
     },
     {
       "input": "1000000000",
-      "desc": "Standard: billion"
+      "desc": "Standard: billion",
+      "output": "\"One Billion\""
     },
     {
       "input": "1234567891",
-      "desc": "Standard: large"
+      "desc": "Standard: large",
+      "output": "\"One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One\""
     },
     {
       "input": "999999999",
-      "desc": "Standard: nines"
+      "desc": "Standard: nines",
+      "output": "\"Nine Hundred Ninety Nine Million Nine Hundred Ninety Nine Thousand Nine Hundred Ninety Nine\""
     },
     {
       "input": "1000001",
-      "desc": "Standard: million one"
+      "desc": "Standard: million one",
+      "output": "\"One Million One\""
     },
     {
       "input": "2000000000",
-      "desc": "Stress: two billion"
+      "desc": "Stress: two billion",
+      "output": "\"Two Billion\""
     },
     {
       "input": "2147483647",
-      "desc": "Killer: MAX_INT"
+      "desc": "Killer: MAX_INT",
+      "output": "\"Two Billion One Hundred Forty Seven Million Four Hundred Eighty Three Thousand Six Hundred Forty Seven\""
     }
   ]
 }

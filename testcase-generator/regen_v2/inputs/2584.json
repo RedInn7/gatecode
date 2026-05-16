@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= piles.length <= 10^5, 1 <= piles[i] <= 10^4, 1 <= k <= 10^5",
   "input_format": "line1: piles (JSON array); line2: k (int)",
   "testcases": [
-    {"input": "[5,4,9]\n2", "desc": "Edge: example1"},
-    {"input": "[4,3,6,7]\n3", "desc": "Edge: example2"},
-    {"input": "[1]\n1", "desc": "Edge: n=1"},
-    {"input": "[2]\n1", "desc": "Edge: 2 to 1"},
-    {"input": "[1,1]\n1", "desc": "Edge: cannot reduce 1s"},
-    {"input": "[1,1,1,1,1]\n5", "desc": "Edge: all 1s"},
-    {"input": "[10000]\n1", "desc": "Edge: single max"},
-    {"input": "[10000,10000]\n1", "desc": "Edge: 2 max one op"},
-    {"input": "[10]\n4", "desc": "Edge: reduce repeatedly"},
-    {"input": "[100,200,300]\n5", "desc": "Standard: small"},
-    {"input": "[5,4,3,2,1]\n3", "desc": "Standard: descending"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n10", "desc": "Standard: 1-10"},
-    {"input": "[100,100,100,100,100]\n10", "desc": "Standard: 5 hundreds"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n20", "desc": "Standard: all 1s many ops"},
-    {"input": "[1000,500,250,125,62]\n5", "desc": "Standard: halving"},
-    {"input": "[1234,5678,9012,3456,7890]\n10", "desc": "Standard: random"},
-    {"input": "[10000,10000,10000,10000,10000]\n50", "desc": "Standard: max vals"},
-    {"input": "[1,10000]\n100", "desc": "Standard: extreme spread"},
-    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n100", "desc": "Stress: 50 max k=100"},
-    {"input": "[10000]\n100000", "desc": "Killer: single pile, many ops"}
+    {
+      "input": "[5,4,9]\n2",
+      "desc": "Edge: example1",
+      "output": "12"
+    },
+    {
+      "input": "[4,3,6,7]\n3",
+      "desc": "Edge: example2",
+      "output": "12"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "[2]\n1",
+      "desc": "Edge: 2 to 1",
+      "output": "1"
+    },
+    {
+      "input": "[1,1]\n1",
+      "desc": "Edge: cannot reduce 1s",
+      "output": "2"
+    },
+    {
+      "input": "[1,1,1,1,1]\n5",
+      "desc": "Edge: all 1s",
+      "output": "5"
+    },
+    {
+      "input": "[10000]\n1",
+      "desc": "Edge: single max",
+      "output": "5000"
+    },
+    {
+      "input": "[10000,10000]\n1",
+      "desc": "Edge: 2 max one op",
+      "output": "15000"
+    },
+    {
+      "input": "[10]\n4",
+      "desc": "Edge: reduce repeatedly",
+      "output": "1"
+    },
+    {
+      "input": "[100,200,300]\n5",
+      "desc": "Standard: small",
+      "output": "175"
+    },
+    {
+      "input": "[5,4,3,2,1]\n3",
+      "desc": "Standard: descending",
+      "output": "10"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n10",
+      "desc": "Standard: 1-10",
+      "output": "26"
+    },
+    {
+      "input": "[100,100,100,100,100]\n10",
+      "desc": "Standard: 5 hundreds",
+      "output": "125"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1]\n20",
+      "desc": "Standard: all 1s many ops",
+      "output": "10"
+    },
+    {
+      "input": "[1000,500,250,125,62]\n5",
+      "desc": "Standard: halving",
+      "output": "687"
+    },
+    {
+      "input": "[1234,5678,9012,3456,7890]\n10",
+      "desc": "Standard: random",
+      "output": "5632"
+    },
+    {
+      "input": "[10000,10000,10000,10000,10000]\n50",
+      "desc": "Standard: max vals",
+      "output": "50"
+    },
+    {
+      "input": "[1,10000]\n100",
+      "desc": "Standard: extreme spread",
+      "output": "2"
+    },
+    {
+      "input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n100",
+      "desc": "Stress: 50 max k=100",
+      "output": "125000"
+    },
+    {
+      "input": "[10000]\n100000",
+      "desc": "Killer: single pile, many ops",
+      "output": "1"
+    }
   ]
 }

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[\".A..\",\"A##.\",\"...A\"]",
-      "desc": "Edge: example1 portal A"
+      "desc": "Edge: example1 portal A",
+      "output": "1"
     },
     {
       "input": "[\".#\",\"#.\"]",
-      "desc": "Edge: blocked path -1"
+      "desc": "Edge: blocked path -1",
+      "output": "-1"
     },
     {
       "input": "[\".\"]",
-      "desc": "Edge: 1x1 empty"
+      "desc": "Edge: 1x1 empty",
+      "output": "0"
     },
     {
       "input": "[\"..\"]",
-      "desc": "Edge: 1x2 row"
+      "desc": "Edge: 1x2 row",
+      "output": "1"
     },
     {
       "input": "[\".\",\".\"]",
-      "desc": "Edge: 2x1 col"
+      "desc": "Edge: 2x1 col",
+      "output": "1"
     },
     {
       "input": "[\".A\",\"A.\"]",
-      "desc": "Edge: 2x2 portal corners"
+      "desc": "Edge: 2x2 portal corners",
+      "output": "2"
     },
     {
       "input": "[\"..\",\"..\"]",
-      "desc": "Edge: 2x2 no obstacle"
+      "desc": "Edge: 2x2 no obstacle",
+      "output": "2"
     },
     {
       "input": "[\".A\",\".A\"]",
-      "desc": "Edge: 2x2 portals same col"
+      "desc": "Edge: 2x2 portals same col",
+      "output": "1"
     },
     {
       "input": "[\".#.\",\"...\",\".#.\"]",
-      "desc": "Edge: 3x3 obstacles"
+      "desc": "Edge: 3x3 obstacles",
+      "output": "4"
     },
     {
       "input": "[\".AB\",\"###\",\"AB.\"]",
-      "desc": "Standard: two portals teleport"
+      "desc": "Standard: two portals teleport",
+      "output": "3"
     },
     {
       "input": "[\"....\",\"....\",\"....\",\"....\"]",
-      "desc": "Standard: 4x4 empty"
+      "desc": "Standard: 4x4 empty",
+      "output": "6"
     },
     {
       "input": "[\".####\",\".####\",\".####\",\".####\",\".....\"]",
-      "desc": "Standard: long path"
+      "desc": "Standard: long path",
+      "output": "8"
     },
     {
       "input": "[\".A.\",\"###\",\"A.A\",\"###\",\"A..\"]",
-      "desc": "Standard: chain portals"
+      "desc": "Standard: chain portals",
+      "output": "3"
     },
     {
       "input": "[\"...A\",\"....\",\"A...\"]",
-      "desc": "Standard: corner portals"
+      "desc": "Standard: corner portals",
+      "output": "4"
     },
     {
       "input": "[\".....\",\".###.\",\".#.#.\",\".###.\",\".....\"]",
-      "desc": "Standard: maze"
+      "desc": "Standard: maze",
+      "output": "8"
     },
     {
       "input": "[\".ABCD\",\"#####\",\"DCBA.\"]",
-      "desc": "Standard: many portals"
+      "desc": "Standard: many portals",
+      "output": "2"
     },
     {
       "input": "[\".A.B.\",\"#####\",\"A.B..\"]",
-      "desc": "Standard: 2 portal types"
+      "desc": "Standard: 2 portal types",
+      "output": "5"
     },
     {
       "input": "[\".....\",\"#####\",\".....\"]",
-      "desc": "Standard: no portal middle wall"
+      "desc": "Standard: no portal middle wall",
+      "output": "-1"
     },
     {
       "input": "[\".#########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#........#\",\".........#\"]",
-      "desc": "Stress: long maze"
+      "desc": "Stress: long maze",
+      "output": "-1"
     },
     {
       "input": "[\".AAAAAAAAAA\",\"###########\",\"AAAAAAAAAA.\"]",
-      "desc": "Killer: many A portals"
+      "desc": "Killer: many A portals",
+      "output": "2"
     }
   ]
 }

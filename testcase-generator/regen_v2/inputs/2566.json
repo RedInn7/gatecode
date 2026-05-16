@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 100, s consists of uppercase and lowercase letters",
   "input_format": "line1: s (JSON string)",
   "testcases": [
-    {"input": "\"YazaAay\"", "desc": "Edge: example1"},
-    {"input": "\"Bb\"", "desc": "Edge: example2"},
-    {"input": "\"c\"", "desc": "Edge: example3 no upper"},
-    {"input": "\"a\"", "desc": "Edge: single lower"},
-    {"input": "\"A\"", "desc": "Edge: single upper"},
-    {"input": "\"aA\"", "desc": "Edge: minimal nice"},
-    {"input": "\"Aa\"", "desc": "Edge: reverse minimal"},
-    {"input": "\"abAB\"", "desc": "Edge: 2 pairs"},
-    {"input": "\"abc\"", "desc": "Edge: all lower no nice"},
-    {"input": "\"ABC\"", "desc": "Edge: all upper no nice"},
-    {"input": "\"aAbBcC\"", "desc": "Standard: 3 pairs"},
-    {"input": "\"aaaa\"", "desc": "Standard: all same lower"},
-    {"input": "\"AAAA\"", "desc": "Standard: all same upper"},
-    {"input": "\"abcABC\"", "desc": "Standard: 3 pairs separate"},
-    {"input": "\"AbBaCc\"", "desc": "Standard: mixed order"},
-    {"input": "\"AaBbCcDd\"", "desc": "Standard: 4 pairs"},
-    {"input": "\"hellOoLLeh\"", "desc": "Standard: real word style"},
-    {"input": "\"dDzZxX\"", "desc": "Standard: 3 pairs"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Stress: full alphabet"},
-    {"input": "\"AaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAa\"", "desc": "Killer: 50 alternating"}
+    {
+      "input": "\"YazaAay\"",
+      "desc": "Edge: example1",
+      "output": "\"aAa\""
+    },
+    {
+      "input": "\"Bb\"",
+      "desc": "Edge: example2",
+      "output": "\"Bb\""
+    },
+    {
+      "input": "\"c\"",
+      "desc": "Edge: example3 no upper",
+      "output": "\"\""
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: single lower",
+      "output": "\"\""
+    },
+    {
+      "input": "\"A\"",
+      "desc": "Edge: single upper",
+      "output": "\"\""
+    },
+    {
+      "input": "\"aA\"",
+      "desc": "Edge: minimal nice",
+      "output": "\"aA\""
+    },
+    {
+      "input": "\"Aa\"",
+      "desc": "Edge: reverse minimal",
+      "output": "\"Aa\""
+    },
+    {
+      "input": "\"abAB\"",
+      "desc": "Edge: 2 pairs",
+      "output": "\"abAB\""
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: all lower no nice",
+      "output": "\"\""
+    },
+    {
+      "input": "\"ABC\"",
+      "desc": "Edge: all upper no nice",
+      "output": "\"\""
+    },
+    {
+      "input": "\"aAbBcC\"",
+      "desc": "Standard: 3 pairs",
+      "output": "\"aAbBcC\""
+    },
+    {
+      "input": "\"aaaa\"",
+      "desc": "Standard: all same lower",
+      "output": "\"\""
+    },
+    {
+      "input": "\"AAAA\"",
+      "desc": "Standard: all same upper",
+      "output": "\"\""
+    },
+    {
+      "input": "\"abcABC\"",
+      "desc": "Standard: 3 pairs separate",
+      "output": "\"abcABC\""
+    },
+    {
+      "input": "\"AbBaCc\"",
+      "desc": "Standard: mixed order",
+      "output": "\"AbBaCc\""
+    },
+    {
+      "input": "\"AaBbCcDd\"",
+      "desc": "Standard: 4 pairs",
+      "output": "\"AaBbCcDd\""
+    },
+    {
+      "input": "\"hellOoLLeh\"",
+      "desc": "Standard: real word style",
+      "output": "\"llOoLL\""
+    },
+    {
+      "input": "\"dDzZxX\"",
+      "desc": "Standard: 3 pairs",
+      "output": "\"dDzZxX\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
+      "desc": "Stress: full alphabet",
+      "output": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+    },
+    {
+      "input": "\"AaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAa\"",
+      "desc": "Killer: 50 alternating",
+      "output": "\"AaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAa\""
+    }
   ]
 }
