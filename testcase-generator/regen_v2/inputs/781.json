@@ -1,27 +1,88 @@
 {
-  "pid": 781, "slug": "count-sorted-vowel-strings",
+  "pid": 781,
+  "slug": "count-sorted-vowel-strings",
   "inferred_constraints": "1 <= n <= 50",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: example1"},
-    {"input": "2", "desc": "Edge: example2"},
-    {"input": "33", "desc": "Edge: example3"},
-    {"input": "3", "desc": "Standard"},
-    {"input": "4", "desc": "Standard"},
-    {"input": "5", "desc": "Standard"},
-    {"input": "10", "desc": "Standard"},
-    {"input": "20", "desc": "Standard"},
-    {"input": "30", "desc": "Standard"},
-    {"input": "40", "desc": "Standard"},
-    {"input": "50", "desc": "Edge: max"},
-    {"input": "49", "desc": "Stress: near max"},
-    {"input": "45", "desc": "Standard"},
-    {"input": "15", "desc": "Standard"},
-    {"input": "25", "desc": "Standard"},
-    {"input": "6", "desc": "Standard"},
-    {"input": "7", "desc": "Standard"},
-    {"input": "8", "desc": "Standard"},
-    {"input": "9", "desc": "Standard"},
-    {"input": "11", "desc": "Standard"}
+    {
+      "input": "1",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "33",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "5",
+      "desc": "Standard"
+    },
+    {
+      "input": "10",
+      "desc": "Standard"
+    },
+    {
+      "input": "20",
+      "desc": "Standard"
+    },
+    {
+      "input": "30",
+      "desc": "Standard"
+    },
+    {
+      "input": "40",
+      "desc": "Standard"
+    },
+    {
+      "input": "50",
+      "desc": "Edge: max"
+    },
+    {
+      "input": "49",
+      "desc": "Stress: near max"
+    },
+    {
+      "input": "45",
+      "desc": "Standard"
+    },
+    {
+      "input": "15",
+      "desc": "Standard"
+    },
+    {
+      "input": "25",
+      "desc": "Standard"
+    },
+    {
+      "input": "6",
+      "desc": "Standard"
+    },
+    {
+      "input": "7",
+      "desc": "Standard"
+    },
+    {
+      "input": "8",
+      "desc": "Standard"
+    },
+    {
+      "input": "9",
+      "desc": "Standard"
+    },
+    {
+      "input": "33",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -1,27 +1,88 @@
 {
-  "pid": 778, "slug": "complete-prime-number",
+  "pid": 778,
+  "slug": "complete-prime-number",
   "inferred_constraints": "1 <= num <= 1e9",
   "input_format": "line1: num (int)",
   "testcases": [
-    {"input": "23", "desc": "Edge: example1 true"},
-    {"input": "39", "desc": "Edge: example2 false"},
-    {"input": "7", "desc": "Edge: example3 single prime"},
-    {"input": "1", "desc": "Edge: 1 not prime"},
-    {"input": "2", "desc": "Edge: 2 prime single"},
-    {"input": "3", "desc": "Edge: 3 prime single"},
-    {"input": "5", "desc": "Edge: 5 prime single"},
-    {"input": "11", "desc": "Edge: 11 prime"},
-    {"input": "13", "desc": "Edge: 13 prefix 1 not prime"},
-    {"input": "17", "desc": "Edge: 17"},
-    {"input": "29", "desc": "Edge: 29"},
-    {"input": "37", "desc": "Standard: 37 prime"},
-    {"input": "53", "desc": "Standard: 53 prime"},
-    {"input": "73", "desc": "Standard: 73 - is 73 prime and 7 and 3 prime"},
-    {"input": "97", "desc": "Standard: 97 - 9 not prime"},
-    {"input": "100", "desc": "Standard: 100"},
-    {"input": "1000", "desc": "Standard: 1000"},
-    {"input": "999999937", "desc": "Edge: prime near max"},
-    {"input": "1000000000", "desc": "Edge: max"},
-    {"input": "233", "desc": "Special: 233 multi-digit"}
+    {
+      "input": "23",
+      "desc": "Edge: example1 true"
+    },
+    {
+      "input": "39",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "39",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: 3 prime single"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: 5 prime single"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: 11 prime"
+    },
+    {
+      "input": "13",
+      "desc": "Edge: 13 prefix 1 not prime"
+    },
+    {
+      "input": "17",
+      "desc": "Edge: 17"
+    },
+    {
+      "input": "29",
+      "desc": "Edge: 29"
+    },
+    {
+      "input": "37",
+      "desc": "Standard: 37 prime"
+    },
+    {
+      "input": "53",
+      "desc": "Standard: 53 prime"
+    },
+    {
+      "input": "73",
+      "desc": "Standard: 73 - is 73 prime and 7 and 3 prime"
+    },
+    {
+      "input": "97",
+      "desc": "Standard: 97 - 9 not prime"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: 100"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard: 1000"
+    },
+    {
+      "input": "999999937",
+      "desc": "Edge: prime near max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: max"
+    },
+    {
+      "input": "233",
+      "desc": "Special: 233 multi-digit"
+    }
   ]
 }

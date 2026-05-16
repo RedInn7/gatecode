@@ -1,27 +1,88 @@
 {
-  "pid": 779, "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
+  "pid": 779,
+  "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
   "inferred_constraints": "1 <= grid.length, grid[i].length <= 1000, chars X/Y/.",
   "input_format": "line1: grid (JSON 2D of strings)",
   "testcases": [
-    {"input": "[[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]", "desc": "Edge: example1"},
-    {"input": "[[\"X\",\"X\"],[\"X\",\"Y\"]]", "desc": "Edge: example2"},
-    {"input": "[[\".\",\".\"],[\".\",\".\"]]", "desc": "Edge: example3 no X"},
-    {"input": "[[\"X\"]]", "desc": "Edge: 1x1 X"},
-    {"input": "[[\"Y\"]]", "desc": "Edge: 1x1 Y"},
-    {"input": "[[\".\"]]", "desc": "Edge: 1x1 dot"},
-    {"input": "[[\"X\",\"Y\"]]", "desc": "Edge: 1x2 XY"},
-    {"input": "[[\"X\"],[\"Y\"]]", "desc": "Edge: 2x1 XY"},
-    {"input": "[[\"X\",\"X\",\"Y\",\"Y\"]]", "desc": "Standard: 1x4"},
-    {"input": "[[\"X\",\"Y\",\"X\",\"Y\"],[\"Y\",\"X\",\"Y\",\"X\"]]", "desc": "Standard: 2x4 alternating"},
-    {"input": "[[\"X\",\"X\",\"X\"],[\"Y\",\"Y\",\"Y\"]]", "desc": "Standard: 2x3 stacked"},
-    {"input": "[[\"X\",\"Y\",\".\"],[\".\",\"X\",\"Y\"],[\"Y\",\".\",\"X\"]]", "desc": "Standard: 3x3 mixed"},
-    {"input": "[[\".\",\".\",\".\"],[\".\",\"X\",\"Y\"],[\".\",\"Y\",\"X\"]]", "desc": "Standard: dots and XY"},
-    {"input": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"Y\",\"Y\",\"X\"],[\"X\",\"Y\",\"Y\",\"X\"],[\"X\",\"X\",\"X\",\"X\"]]", "desc": "Standard: frame"},
-    {"input": "[[\"X\",\"X\",\"X\",\"X\",\"X\"]]", "desc": "Standard: 1x5 all X"},
-    {"input": "[[\"Y\",\"Y\",\"Y\",\"Y\",\"Y\"]]", "desc": "Standard: 1x5 all Y"},
-    {"input": "[[\"X\",\".\",\"X\"],[\".\",\"Y\",\".\"],[\"Y\",\".\",\"Y\"]]", "desc": "Standard: diagonal"},
-    {"input": "[[\"X\",\"X\",\"X\"],[\"X\",\"Y\",\"X\"],[\"X\",\"X\",\"X\"]]", "desc": "Standard: X with Y center"},
-    {"input": "[[\"X\",\"Y\",\"X\",\"Y\",\"X\",\"Y\",\"X\",\"Y\",\"X\",\"Y\"]]", "desc": "Standard: 1x10 alternating"},
-    {"input": "[[\"X\",\"Y\",\"X\"],[\"Y\",\"X\",\"Y\"],[\"X\",\"Y\",\"X\"]]", "desc": "Special: 3x3 checkerboard"}
+    {
+      "input": "[[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[\"X\",\"X\"],[\"X\",\"Y\"]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[-568,-204,-466],[459,-960,-105]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[244,-164,432],[410,640,-839]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[\"Y\"]]",
+      "desc": "Edge: 1x1 Y"
+    },
+    {
+      "input": "[[\".\"]]",
+      "desc": "Edge: 1x1 dot"
+    },
+    {
+      "input": "[[\"X\",\"Y\"]]",
+      "desc": "Edge: 1x2 XY"
+    },
+    {
+      "input": "[[\"X\"],[\"Y\"]]",
+      "desc": "Edge: 2x1 XY"
+    },
+    {
+      "input": "[[\"X\",\"X\",\"Y\",\"Y\"]]",
+      "desc": "Standard: 1x4"
+    },
+    {
+      "input": "[[\"X\",\"Y\",\"X\",\"Y\"],[\"Y\",\"X\",\"Y\",\"X\"]]",
+      "desc": "Standard: 2x4 alternating"
+    },
+    {
+      "input": "[[\"X\",\"X\",\"X\"],[\"Y\",\"Y\",\"Y\"]]",
+      "desc": "Standard: 2x3 stacked"
+    },
+    {
+      "input": "[[\"X\",\"Y\",\".\"],[\".\",\"X\",\"Y\"],[\"Y\",\".\",\"X\"]]",
+      "desc": "Standard: 3x3 mixed"
+    },
+    {
+      "input": "[[\".\",\".\",\".\"],[\".\",\"X\",\"Y\"],[\".\",\"Y\",\"X\"]]",
+      "desc": "Standard: dots and XY"
+    },
+    {
+      "input": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"Y\",\"Y\",\"X\"],[\"X\",\"Y\",\"Y\",\"X\"],[\"X\",\"X\",\"X\",\"X\"]]",
+      "desc": "Standard: frame"
+    },
+    {
+      "input": "[[\"X\",\"X\",\"X\",\"X\",\"X\"]]",
+      "desc": "Standard: 1x5 all X"
+    },
+    {
+      "input": "[[\"Y\",\"Y\",\"Y\",\"Y\",\"Y\"]]",
+      "desc": "Standard: 1x5 all Y"
+    },
+    {
+      "input": "[[\"X\",\".\",\"X\"],[\".\",\"Y\",\".\"],[\"Y\",\".\",\"Y\"]]",
+      "desc": "Standard: diagonal"
+    },
+    {
+      "input": "[[\"X\",\"X\",\"X\"],[\"X\",\"Y\",\"X\"],[\"X\",\"X\",\"X\"]]",
+      "desc": "Standard: X with Y center"
+    },
+    {
+      "input": "[[\"X\",\"Y\",\"X\",\"Y\",\"X\",\"Y\",\"X\",\"Y\",\"X\",\"Y\"]]",
+      "desc": "Standard: 1x10 alternating"
+    },
+    {
+      "input": "[[\"X\",\"Y\",\"X\"],[\"Y\",\"X\",\"Y\"],[\"X\",\"Y\",\"X\"]]",
+      "desc": "Special: 3x3 checkerboard"
+    }
   ]
 }
