@@ -4,25 +4,85 @@
   "inferred_constraints": "5 <= expression.length <= 10^4; digits, T, F, ?, :; valid ternary; one-digit numbers",
   "input_format": "single line: expression (quoted string)",
   "testcases": [
-    {"input": "\"T?2:3\"", "desc": "Standard example 1"},
-    {"input": "\"F?1:T?4:5\"", "desc": "Standard example 2"},
-    {"input": "\"T?T?F:5:3\"", "desc": "Standard example 3"},
-    {"input": "\"T?1:0\"", "desc": "Edge: minimal T"},
-    {"input": "\"F?1:0\"", "desc": "Edge: minimal F"},
-    {"input": "\"T?T:F\"", "desc": "T/F results"},
-    {"input": "\"F?T:F\"", "desc": "F leads to F"},
-    {"input": "\"T?0:T?1:T?2:3\"", "desc": "Nested all T"},
-    {"input": "\"F?0:F?1:F?2:3\"", "desc": "Nested all F"},
-    {"input": "\"T?F?1:2:3\"", "desc": "Left nest"},
-    {"input": "\"F?T?1:2:T?3:4\"", "desc": "Both branch nest"},
-    {"input": "\"T?T?T?9:8:7:6\"", "desc": "Triple nest T"},
-    {"input": "\"F?9:F?8:F?7:F?6:5\"", "desc": "Right chain F"},
-    {"input": "\"T?T?T?T?T?T?T?T?T?9:8:7:6:5:4:3:2:1:0\"", "desc": "Deep left T"},
-    {"input": "\"F?T:F?T:F?T:F?T:9\"", "desc": "Right chain F mixed"},
-    {"input": "\"T?2:F?3:T?4:5\"", "desc": "Mixed"},
-    {"input": "\"T?5:6\"", "desc": "Simple"},
-    {"input": "\"F?5:6\"", "desc": "Simple F"},
-    {"input": "\"T?F?T?0:1:2:3\"", "desc": "Nested mixed"},
-    {"input": "\"T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?T?9:8:7:6:5:4:3:2:1:0:9:8:7:6:5:4:3:2:1:0:9:8:7:6:5:4:3:2:1:0:1:2:3\"", "desc": "Long deep T nested"}
+    {
+      "input": "\"T?2:3\"",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "\"F?1:T?4:5\"",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "\"T?T?F:5:3\"",
+      "desc": "Standard example 3"
+    },
+    {
+      "input": "\"T?1:0\"",
+      "desc": "Edge: minimal T"
+    },
+    {
+      "input": "\"F?1:0\"",
+      "desc": "Edge: minimal F"
+    },
+    {
+      "input": "\"T?T:F\"",
+      "desc": "T/F results"
+    },
+    {
+      "input": "\"F?T:F\"",
+      "desc": "F leads to F"
+    },
+    {
+      "input": "\"T?0:T?1:T?2:3\"",
+      "desc": "Nested all T"
+    },
+    {
+      "input": "\"F?0:F?1:F?2:3\"",
+      "desc": "Nested all F"
+    },
+    {
+      "input": "\"T?F?1:2:3\"",
+      "desc": "Left nest"
+    },
+    {
+      "input": "\"F?T?1:2:T?3:4\"",
+      "desc": "Both branch nest"
+    },
+    {
+      "input": "\"T?T?T?9:8:7:6\"",
+      "desc": "Triple nest T"
+    },
+    {
+      "input": "\"F?9:F?8:F?7:F?6:5\"",
+      "desc": "Right chain F"
+    },
+    {
+      "input": "\"T?T?T?T?T?T?T?T?T?9:8:7:6:5:4:3:2:1:0\"",
+      "desc": "Deep left T"
+    },
+    {
+      "input": "\"F?T:F?T:F?T:F?T:9\"",
+      "desc": "Right chain F mixed"
+    },
+    {
+      "input": "\"T?2:F?3:T?4:5\"",
+      "desc": "Mixed"
+    },
+    {
+      "input": "\"T?5:6\"",
+      "desc": "Simple"
+    },
+    {
+      "input": "\"F?5:6\"",
+      "desc": "Simple F"
+    },
+    {
+      "input": "\"T?F?T?0:1:2:3\"",
+      "desc": "Nested mixed"
+    },
+    {
+      "input": "\"ehzouqydzaxyuzqauv\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
