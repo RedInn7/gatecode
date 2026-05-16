@@ -1,0 +1,28 @@
+{
+  "pid": 504,
+  "slug": "cousins-in-binary-tree",
+  "inferred_constraints": "2 <= node count <= 100, 1 <= Node.val <= 100, unique values",
+  "input_format": "line1: root (JSON level-order with nulls); line2: x (int); line3: y (int)",
+  "testcases": [
+    {"input": "[1,2,3,4]\n4\n3", "desc": "Edge: example1 false (different depth or same parent? 3 is at depth 1, 4 at depth 2)"},
+    {"input": "[1,2,3,null,4,null,5]\n5\n4", "desc": "Edge: example2 true cousins"},
+    {"input": "[1,2,3,null,4]\n2\n3", "desc": "Edge: example3 same depth, different parents but 2 and 3 are at depth 1, not cousins (same level but root parent shared? No - root only one)"},
+    {"input": "[1,2,3]\n2\n3", "desc": "Edge: siblings false"},
+    {"input": "[1,2,3,4,5,6,7]\n4\n6", "desc": "Standard: cousins (different parents same depth)"},
+    {"input": "[1,2,3,4,5,6,7]\n4\n5", "desc": "Standard: siblings false"},
+    {"input": "[1,2,3,4,5,6,7]\n6\n7", "desc": "Standard: siblings false"},
+    {"input": "[1,2,3,4,5,6,7]\n4\n7", "desc": "Standard: cousins true"},
+    {"input": "[1,2,3,4,5,6,7]\n5\n6", "desc": "Standard: cousins true"},
+    {"input": "[1,2,3,null,4,null,5]\n4\n5", "desc": "Standard: cousins true"},
+    {"input": "[1,2,3,4,null,null,5]\n4\n5", "desc": "Standard: cousins"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n8\n15", "desc": "Standard: deepest cousins"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n8\n10", "desc": "Standard: siblings at deep"},
+    {"input": "[1,2,3,4,5,6,7,8,9]\n8\n6", "desc": "Standard: different parents same depth"},
+    {"input": "[10,20,30,40,50]\n40\n50", "desc": "Standard: siblings"},
+    {"input": "[10,20,30,40,null,null,50]\n40\n50", "desc": "Standard: cousins"},
+    {"input": "[5,3,7,1,4,6,8]\n1\n8", "desc": "Standard: deep cousins"},
+    {"input": "[1,2,3,null,4,5,null]\n4\n5", "desc": "Edge: cousins at depth 2"},
+    {"input": "[100,1,2,3,4,5,6]\n3\n6", "desc": "Standard: cousins"},
+    {"input": "[1,2,3,4,5,null,null,6,7]\n6\n7", "desc": "Standard: siblings deep"}
+  ]
+}

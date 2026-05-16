@@ -1,0 +1,28 @@
+{
+  "pid": 505,
+  "slug": "maximum-sum-of-subsequence-with-non-adjacent-elements",
+  "inferred_constraints": "1 <= nums.length <= 5e4, 1 <= queries.length <= 5e4, -1e9 <= values <= 1e9",
+  "input_format": "line1: nums (JSON int array); line2: queries (JSON 2D int array [pos,x])",
+  "testcases": [
+    {"input": "[3,5,9]\n[[1,-2],[0,-3]]", "desc": "Edge: example1"},
+    {"input": "[0,-1]\n[[0,-5]]", "desc": "Edge: example2"},
+    {"input": "[1]\n[[0,1]]", "desc": "Edge: n=1"},
+    {"input": "[1,2]\n[[0,5]]", "desc": "Edge: n=2 update first"},
+    {"input": "[1,2]\n[[1,5]]", "desc": "Edge: n=2 update second"},
+    {"input": "[1000000000,1000000000]\n[[0,1000000000]]", "desc": "Edge: max"},
+    {"input": "[-1000000000,-1000000000]\n[[0,-1000000000]]", "desc": "Edge: all min"},
+    {"input": "[1,2,3,4,5]\n[[0,10],[1,20],[2,30]]", "desc": "Standard: multiple queries"},
+    {"input": "[5,5,5,5,5]\n[[0,5]]", "desc": "Edge: all same"},
+    {"input": "[1,1,1,1,1]\n[[0,100],[1,100]]", "desc": "Standard: large updates"},
+    {"input": "[-1,-2,-3,-4,-5]\n[[2,10]]", "desc": "Standard: negatives + one positive"},
+    {"input": "[10,20,30]\n[[0,-5],[1,-15],[2,-30]]", "desc": "Standard: make negative"},
+    {"input": "[100,200,300,400,500]\n[[2,0]]", "desc": "Standard: zero out middle"},
+    {"input": "[3,5,9,8,2,7,1]\n[[3,-5],[6,10]]", "desc": "Standard: 7 elements"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[0,-1],[9,-1]]", "desc": "Standard: 10 elements"},
+    {"input": "[0,0,0,0,0]\n[[0,1]]", "desc": "Edge: all zeros"},
+    {"input": "[1000000000]\n[[0,-1000000000]]", "desc": "Edge: max swing"},
+    {"input": "[1,-1,1,-1,1,-1]\n[[0,2]]", "desc": "Standard: alternating"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100]\n[[0,-100],[5,-50]]", "desc": "Standard: 10 mid-updates"},
+    {"input": "[1,2]\n[[0,3],[1,-1],[0,-5]]", "desc": "Standard: multiple updates"}
+  ]
+}

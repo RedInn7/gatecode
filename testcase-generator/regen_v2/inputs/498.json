@@ -1,0 +1,28 @@
+{
+  "pid": 498,
+  "slug": "count-prefix-and-suffix-pairs-ii",
+  "inferred_constraints": "1 <= words.length <= 1e5, 1 <= words[i].length <= 1e5, sum length <= 5e5, lowercase letters",
+  "input_format": "line1: words (JSON string array)",
+  "testcases": [
+    {"input": "[\"a\",\"aba\",\"ababa\",\"aa\"]", "desc": "Edge: example1"},
+    {"input": "[\"pa\",\"papa\",\"ma\",\"mama\"]", "desc": "Edge: example2"},
+    {"input": "[\"abab\",\"ab\"]", "desc": "Edge: example3 false"},
+    {"input": "[\"a\"]", "desc": "Edge: n=1"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: 2 same"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 distinct"},
+    {"input": "[\"abc\",\"abcabc\"]", "desc": "Standard: prefix+suffix"},
+    {"input": "[\"abc\",\"abcd\"]", "desc": "Edge: prefix only no suffix"},
+    {"input": "[\"abc\",\"dabc\"]", "desc": "Edge: suffix only no prefix"},
+    {"input": "[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\"]", "desc": "Standard: 5 increasing a-strings"},
+    {"input": "[\"aaa\",\"aaa\",\"aaa\"]", "desc": "Edge: 3 same"},
+    {"input": "[\"abcdef\",\"abcdef\",\"abcdef\"]", "desc": "Edge: 3 distinct same"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard: chain"},
+    {"input": "[\"abc\",\"defabc\",\"abcabc\",\"abcdefabc\"]", "desc": "Standard: a as prefix and suffix"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]", "desc": "Edge: 5 a"},
+    {"input": "[\"ab\",\"aba\",\"abab\"]", "desc": "Standard: mixed"},
+    {"input": "[\"hello\",\"world\",\"hellohelloworld\"]", "desc": "Standard: different prefix"},
+    {"input": "[\"x\",\"xyz\",\"xyzxyzx\"]", "desc": "Standard: x bookends"},
+    {"input": "[\"abcd\",\"abcdabcd\",\"abcdabcdabcd\"]", "desc": "Standard: ABCD repeats"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\"]", "desc": "Edge: 7 distinct singles"}
+  ]
+}

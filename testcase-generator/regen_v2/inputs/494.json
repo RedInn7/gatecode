@@ -1,0 +1,28 @@
+{
+  "pid": 494,
+  "slug": "delete-leaves-with-a-given-value",
+  "inferred_constraints": "1 <= node count <= 3000, 1 <= Node.val, target <= 1000",
+  "input_format": "line1: root (JSON level-order with nulls); line2: target (int)",
+  "testcases": [
+    {"input": "[1,2,3,2,null,2,4]\n2", "desc": "Edge: example1"},
+    {"input": "[1,3,3,3,2]\n3", "desc": "Edge: example2"},
+    {"input": "[1,2,null,2,null,2]\n2", "desc": "Edge: example3 left chain all 2 except root"},
+    {"input": "[1]\n1", "desc": "Edge: single root match deletes all"},
+    {"input": "[1]\n2", "desc": "Edge: single root no match"},
+    {"input": "[2]\n2", "desc": "Edge: single root match"},
+    {"input": "[1,2]\n2", "desc": "Edge: root with leaf=target"},
+    {"input": "[1,2]\n1", "desc": "Edge: root=target with leaf"},
+    {"input": "[2,2,2]\n2", "desc": "Edge: all 2"},
+    {"input": "[1,2,3,4,5,6,7]\n1", "desc": "Edge: target=root, no leaves match"},
+    {"input": "[5,3,8,2,4,7,9]\n4", "desc": "Standard: target=4 single leaf"},
+    {"input": "[1,1,1,1,1,1,1]\n1", "desc": "Edge: all same root=target deletes everything"},
+    {"input": "[5,5,5,5,null,5,5]\n5", "desc": "Edge: 5s with structure"},
+    {"input": "[1,2,3,null,4,5,6,7,8]\n8", "desc": "Standard: deep leaf"},
+    {"input": "[10,5,15,3,7,12,18]\n100", "desc": "Edge: target not in tree"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n10", "desc": "Standard: single deepest leaf"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n8", "desc": "Standard: single deep leaf"},
+    {"input": "[2,2,3,2,null,3,2]\n2", "desc": "Standard: chained deletion"},
+    {"input": "[1,2,3,2,2,2,2,2,2,2,2]\n2", "desc": "Standard: many leaf 2s"},
+    {"input": "[7]\n5", "desc": "Edge: single no match"}
+  ]
+}

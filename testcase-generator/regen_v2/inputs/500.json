@@ -1,0 +1,28 @@
+{
+  "pid": 500,
+  "slug": "simplified-fractions",
+  "inferred_constraints": "1 <= n <= 100",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "2", "desc": "Edge: example1"},
+    {"input": "3", "desc": "Edge: example2"},
+    {"input": "4", "desc": "Edge: example3"},
+    {"input": "1", "desc": "Edge: n=1 empty list"},
+    {"input": "5", "desc": "Edge: n=5"},
+    {"input": "6", "desc": "Edge: n=6"},
+    {"input": "10", "desc": "Standard: n=10"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "50", "desc": "Standard: n=50"},
+    {"input": "100", "desc": "Edge: max n"},
+    {"input": "7", "desc": "Edge: prime"},
+    {"input": "11", "desc": "Edge: prime"},
+    {"input": "12", "desc": "Edge: composite"},
+    {"input": "15", "desc": "Standard"},
+    {"input": "25", "desc": "Edge: square"},
+    {"input": "30", "desc": "Standard"},
+    {"input": "60", "desc": "Standard: many divisors"},
+    {"input": "97", "desc": "Edge: large prime"},
+    {"input": "99", "desc": "Standard"},
+    {"input": "8", "desc": "Edge: power of 2"}
+  ]
+}

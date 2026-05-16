@@ -1,0 +1,28 @@
+{
+  "pid": 503,
+  "slug": "maximum-width-ramp",
+  "inferred_constraints": "2 <= nums.length <= 5e4, 0 <= nums[i] <= 5e4",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[6,0,8,2,1,5]", "desc": "Edge: example1"},
+    {"input": "[9,8,1,0,1,9,4,0,4,1]", "desc": "Edge: example2"},
+    {"input": "[1,2]", "desc": "Edge: n=2 ascending"},
+    {"input": "[2,1]", "desc": "Edge: n=2 descending, no ramp"},
+    {"input": "[1,1]", "desc": "Edge: same"},
+    {"input": "[0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[50000,50000]", "desc": "Edge: max values"},
+    {"input": "[50000,0]", "desc": "Edge: extreme descend"},
+    {"input": "[0,50000]", "desc": "Edge: extreme ascend"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: strict ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Edge: descending"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[1,2,3,4,5,4,3,2,1]", "desc": "Standard: mountain"},
+    {"input": "[10,1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: high then ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1,1]", "desc": "Standard: desc + 1 at end"},
+    {"input": "[5,1,2,3,4,5,6,7,8,9]", "desc": "Standard: 5 then ascending"},
+    {"input": "[100,99,98,97,96,1,2,3,4,5]", "desc": "Standard: descending then asc"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5]", "desc": "Standard: two segments"},
+    {"input": "[50000,49999,49998,49997,49996]", "desc": "Edge: near max descending"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: ascending 21"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 495,
+  "slug": "split-the-array",
+  "inferred_constraints": "1 <= nums.length <= 100, nums.length even, 1 <= nums[i] <= 100",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1,1,2,2,3,4]", "desc": "Edge: example1"},
+    {"input": "[1,1,1,1]", "desc": "Edge: example2 false"},
+    {"input": "[1,2]", "desc": "Edge: n=2 minimum distinct"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same false"},
+    {"input": "[1,2,3,4]", "desc": "Edge: 4 distinct"},
+    {"input": "[1,2,1,2]", "desc": "Edge: pairs"},
+    {"input": "[100,100]", "desc": "Edge: max same"},
+    {"input": "[1,2,3,4,5,6]", "desc": "Standard: 6 distinct"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: 3 pairs"},
+    {"input": "[1,1,1,2,2,2]", "desc": "Edge: 3 same each"},
+    {"input": "[1,2,3,1,2,3]", "desc": "Standard: 2 of each"},
+    {"input": "[5,5,5,5,5,5,5,5]", "desc": "Edge: 8 same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 10 distinct"},
+    {"input": "[1,1,2,2,3,3,4,4]", "desc": "Standard: 4 pairs"},
+    {"input": "[1,1,1,1,2,2,2,2]", "desc": "Edge: 4 each"},
+    {"input": "[1,2,3,4,1,2,3,4]", "desc": "Standard: 2 of each"},
+    {"input": "[100,99,98,97,96,95,94,93,92,91]", "desc": "Standard: 10 distinct high"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 distinct"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]", "desc": "Edge: 10 each pair"},
+    {"input": "[50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50]", "desc": "Edge: 20 same false"}
+  ]
+}
