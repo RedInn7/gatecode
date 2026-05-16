@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 2*10^9",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "10", "desc": "Edge: example1"},
-    {"input": "6", "desc": "Edge: example2"},
-    {"input": "1", "desc": "Edge: n=1"},
-    {"input": "2", "desc": "Edge: n=2"},
-    {"input": "3", "desc": "Edge: n=3"},
-    {"input": "4", "desc": "Edge: n=4"},
-    {"input": "5", "desc": "Edge: n=5"},
-    {"input": "7", "desc": "Edge: n=7"},
-    {"input": "8", "desc": "Edge: n=8"},
-    {"input": "9", "desc": "Standard: n=9 mult 3"},
-    {"input": "12", "desc": "Standard: mult both"},
-    {"input": "100", "desc": "Standard: small"},
-    {"input": "1000", "desc": "Standard: 1k"},
-    {"input": "100000", "desc": "Standard: 100k"},
-    {"input": "1000000", "desc": "Standard: 1M"},
-    {"input": "1000000000", "desc": "Standard: 1B"},
-    {"input": "1500000000", "desc": "Standard: 1.5B"},
-    {"input": "2000000000", "desc": "Standard: 2B"},
-    {"input": "1999999999", "desc": "Stress: max-1"},
-    {"input": "2000000000", "desc": "Killer: max"}
+    {
+      "input": "10",
+      "desc": "Edge: example1",
+      "output": "4"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: example2",
+      "output": "3"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2",
+      "output": "2"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: n=3",
+      "output": "2"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: n=4",
+      "output": "3"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: n=5",
+      "output": "4"
+    },
+    {
+      "input": "7",
+      "desc": "Edge: n=7",
+      "output": "4"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: n=8",
+      "output": "4"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: n=9 mult 3",
+      "output": "3"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: mult both",
+      "output": "4"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: small",
+      "output": "8"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard: 1k",
+      "output": "10"
+    },
+    {
+      "input": "100000",
+      "desc": "Standard: 100k",
+      "output": "19"
+    },
+    {
+      "input": "1000000",
+      "desc": "Standard: 1M",
+      "output": "20"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Standard: 1B",
+      "output": "31"
+    },
+    {
+      "input": "1500000000",
+      "desc": "Standard: 1.5B",
+      "output": "32"
+    },
+    {
+      "input": "2000000000",
+      "desc": "Standard: 2B",
+      "output": "32"
+    },
+    {
+      "input": "1999999999",
+      "desc": "Stress: max-1",
+      "output": "32"
+    },
+    {
+      "input": "2000000000",
+      "desc": "Killer: max",
+      "output": "32"
+    }
   ]
 }

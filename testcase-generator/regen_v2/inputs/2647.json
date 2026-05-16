@@ -4,25 +4,105 @@
   "inferred_constraints": "-2^31 <= n <= 2^31 - 1",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: example1 2^0"},
-    {"input": "16", "desc": "Edge: example2 2^4"},
-    {"input": "3", "desc": "Edge: example3"},
-    {"input": "0", "desc": "Edge: zero"},
-    {"input": "-1", "desc": "Edge: negative"},
-    {"input": "-2", "desc": "Edge: negative even"},
-    {"input": "2", "desc": "Edge: 2"},
-    {"input": "4", "desc": "Edge: 2^2"},
-    {"input": "8", "desc": "Edge: 2^3"},
-    {"input": "1024", "desc": "Standard: 2^10"},
-    {"input": "1023", "desc": "Standard: not 2^x"},
-    {"input": "1048576", "desc": "Standard: 2^20"},
-    {"input": "1073741824", "desc": "Standard: 2^30"},
-    {"input": "100", "desc": "Standard: not 2^x"},
-    {"input": "536870912", "desc": "Standard: 2^29"},
-    {"input": "1000000000", "desc": "Standard: not 2^x"},
-    {"input": "33554432", "desc": "Standard: 2^25"},
-    {"input": "2147483647", "desc": "Standard: MAX_INT not"},
-    {"input": "1073741823", "desc": "Stress: near max"},
-    {"input": "-2147483648", "desc": "Killer: MIN_INT"}
+    {
+      "input": "1",
+      "desc": "Edge: example1 2^0",
+      "output": "true"
+    },
+    {
+      "input": "16",
+      "desc": "Edge: example2 2^4",
+      "output": "true"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: example3",
+      "output": "false"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: zero",
+      "output": "false"
+    },
+    {
+      "input": "-1",
+      "desc": "Edge: negative",
+      "output": "false"
+    },
+    {
+      "input": "-2",
+      "desc": "Edge: negative even",
+      "output": "false"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: 2",
+      "output": "true"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: 2^2",
+      "output": "true"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: 2^3",
+      "output": "true"
+    },
+    {
+      "input": "1024",
+      "desc": "Standard: 2^10",
+      "output": "true"
+    },
+    {
+      "input": "1023",
+      "desc": "Standard: not 2^x",
+      "output": "false"
+    },
+    {
+      "input": "1048576",
+      "desc": "Standard: 2^20",
+      "output": "true"
+    },
+    {
+      "input": "1073741824",
+      "desc": "Standard: 2^30",
+      "output": "true"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: not 2^x",
+      "output": "false"
+    },
+    {
+      "input": "536870912",
+      "desc": "Standard: 2^29",
+      "output": "true"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Standard: not 2^x",
+      "output": "false"
+    },
+    {
+      "input": "33554432",
+      "desc": "Standard: 2^25",
+      "output": "true"
+    },
+    {
+      "input": "2147483647",
+      "desc": "Standard: MAX_INT not",
+      "output": "false"
+    },
+    {
+      "input": "1073741823",
+      "desc": "Stress: near max",
+      "output": "false"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Killer: MIN_INT",
+      "output": "false"
+    }
   ]
 }

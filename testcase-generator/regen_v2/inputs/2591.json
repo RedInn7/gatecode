@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= piles.length <= 7, 1 <= piles[i] <= 7",
   "input_format": "single line: piles (JSON array)",
   "testcases": [
-    {"input": "[1]", "desc": "Edge: 1 pile 1 stone Alice wins"},
-    {"input": "[1,1]", "desc": "Edge: XOR=0 Bob wins"},
-    {"input": "[2]", "desc": "Edge: 1 pile 2 stones"},
-    {"input": "[7]", "desc": "Edge: max single pile"},
-    {"input": "[7,7]", "desc": "Edge: 2 max XOR=0"},
-    {"input": "[1,2]", "desc": "Edge: XOR=3 Alice wins"},
-    {"input": "[1,1,1]", "desc": "Edge: XOR=1 Alice"},
-    {"input": "[2,2]", "desc": "Edge: XOR=0 Bob"},
-    {"input": "[3,3,3]", "desc": "Edge: XOR=3 Alice"},
-    {"input": "[1,2,3]", "desc": "Standard: XOR=0 Bob"},
-    {"input": "[1,2,3,4]", "desc": "Standard: XOR=4 Alice"},
-    {"input": "[1,2,3,4,5]", "desc": "Standard: XOR=1 Alice"},
-    {"input": "[2,3,5]", "desc": "Standard: XOR=4 Alice"},
-    {"input": "[5,5,5,5]", "desc": "Standard: even fives XOR=0 Bob"},
-    {"input": "[4,5,6,7]", "desc": "Standard: XOR=4 Alice"},
-    {"input": "[7,7,7,7,7,7,7]", "desc": "Standard: 7 sevens XOR=7"},
-    {"input": "[1,1,1,1,1,1,1]", "desc": "Standard: 7 ones XOR=1"},
-    {"input": "[6,6,6,6]", "desc": "Standard: 4 sixes XOR=0"},
-    {"input": "[7,7,7,7,7,7,7]", "desc": "Stress: 7 sevens"},
-    {"input": "[3,5,7,1,2,4,6]", "desc": "Killer: 7 diff piles"}
+    {
+      "input": "[1]",
+      "desc": "Edge: 1 pile 1 stone Alice wins",
+      "output": "true"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: XOR=0 Bob wins",
+      "output": "false"
+    },
+    {
+      "input": "[2]",
+      "desc": "Edge: 1 pile 2 stones",
+      "output": "true"
+    },
+    {
+      "input": "[7]",
+      "desc": "Edge: max single pile",
+      "output": "true"
+    },
+    {
+      "input": "[7,7]",
+      "desc": "Edge: 2 max XOR=0",
+      "output": "false"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: XOR=3 Alice wins",
+      "output": "true"
+    },
+    {
+      "input": "[1,1,1]",
+      "desc": "Edge: XOR=1 Alice",
+      "output": "true"
+    },
+    {
+      "input": "[2,2]",
+      "desc": "Edge: XOR=0 Bob",
+      "output": "false"
+    },
+    {
+      "input": "[3,3,3]",
+      "desc": "Edge: XOR=3 Alice",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Standard: XOR=0 Bob",
+      "output": "false"
+    },
+    {
+      "input": "[1,2,3,4]",
+      "desc": "Standard: XOR=4 Alice",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Standard: XOR=1 Alice",
+      "output": "true"
+    },
+    {
+      "input": "[2,3,5]",
+      "desc": "Standard: XOR=4 Alice",
+      "output": "true"
+    },
+    {
+      "input": "[5,5,5,5]",
+      "desc": "Standard: even fives XOR=0 Bob",
+      "output": "false"
+    },
+    {
+      "input": "[4,5,6,7]",
+      "desc": "Standard: XOR=4 Alice",
+      "output": "false"
+    },
+    {
+      "input": "[7,7,7,7,7,7,7]",
+      "desc": "Standard: 7 sevens XOR=7",
+      "output": "true"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1]",
+      "desc": "Standard: 7 ones XOR=1",
+      "output": "true"
+    },
+    {
+      "input": "[6,6,6,6]",
+      "desc": "Standard: 4 sixes XOR=0",
+      "output": "false"
+    },
+    {
+      "input": "[7,7,7,7,7,7,7]",
+      "desc": "Stress: 7 sevens",
+      "output": "true"
+    },
+    {
+      "input": "[3,5,7,1,2,4,6]",
+      "desc": "Killer: 7 diff piles",
+      "output": "false"
+    }
   ]
 }

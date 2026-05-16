@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= moves.length <= 9, moves[i].length == 2, 0 <= moves[i][j] <= 2, no duplicate moves, moves follow rules",
   "input_format": "single line: moves (JSON 2D array)",
   "testcases": [
-    {"input": "[[0,0],[2,0],[1,1],[2,1],[2,2]]", "desc": "Edge: example1 A wins"},
-    {"input": "[[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]", "desc": "Edge: example2 B wins"},
-    {"input": "[[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]", "desc": "Edge: example3 Draw"},
-    {"input": "[[0,0]]", "desc": "Edge: single move"},
-    {"input": "[[0,0],[0,1]]", "desc": "Edge: 2 moves pending"},
-    {"input": "[[0,0],[1,0],[0,1],[1,1],[0,2]]", "desc": "Edge: A wins row 0"},
-    {"input": "[[0,0],[0,1],[1,0],[0,2],[2,0]]", "desc": "Edge: A wins col 0"},
-    {"input": "[[0,0],[1,0],[1,1],[2,0],[2,2]]", "desc": "Edge: A wins diag"},
-    {"input": "[[0,2],[1,0],[1,1],[2,0],[2,0]]", "desc": "Edge: invalid wait should be valid moves"},
-    {"input": "[[1,1],[0,0],[0,1],[2,0],[1,0],[1,2],[2,1]]", "desc": "Standard: A wins col 1"},
-    {"input": "[[2,2],[0,0],[1,1],[0,1],[0,2]]", "desc": "Standard: B wins col 0"},
-    {"input": "[[0,0],[2,2],[0,2],[1,0],[0,1],[2,0]]", "desc": "Standard: A wins row 0"},
-    {"input": "[[1,0],[2,1],[1,1],[2,0],[1,2]]", "desc": "Standard: A wins row 1"},
-    {"input": "[[2,0],[0,0],[2,1],[0,1],[2,2]]", "desc": "Standard: A wins row 2"},
-    {"input": "[[0,0],[1,1],[1,0],[0,1],[2,0]]", "desc": "Standard: A wins col 0"},
-    {"input": "[[0,2],[1,0],[1,2],[1,1],[2,2]]", "desc": "Standard: A wins col 2"},
-    {"input": "[[1,1],[0,0],[0,2],[2,0],[1,2],[2,2]]", "desc": "Standard: B wins anti-diag"},
-    {"input": "[[0,0],[1,2],[1,1],[2,1],[2,2]]", "desc": "Standard: A wins diag"},
-    {"input": "[[0,0],[1,1]]", "desc": "Stress: 2 moves pending"},
-    {"input": "[[0,0],[2,2],[1,1],[1,0],[2,0]]", "desc": "Killer: A wins anti-diag"}
+    {
+      "input": "[[0,0],[2,0],[1,1],[2,1],[2,2]]",
+      "desc": "Edge: example1 A wins",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]",
+      "desc": "Edge: example2 B wins",
+      "output": "\"B\""
+    },
+    {
+      "input": "[[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]",
+      "desc": "Edge: example3 Draw",
+      "output": "\"Draw\""
+    },
+    {
+      "input": "[[0,0]]",
+      "desc": "Edge: single move",
+      "output": "\"Pending\""
+    },
+    {
+      "input": "[[0,0],[0,1]]",
+      "desc": "Edge: 2 moves pending",
+      "output": "\"Pending\""
+    },
+    {
+      "input": "[[0,0],[1,0],[0,1],[1,1],[0,2]]",
+      "desc": "Edge: A wins row 0",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[0,0],[0,1],[1,0],[0,2],[2,0]]",
+      "desc": "Edge: A wins col 0",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[0,0],[1,0],[1,1],[2,0],[2,2]]",
+      "desc": "Edge: A wins diag",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[0,2],[1,0],[1,1],[2,0],[2,0]]",
+      "desc": "Edge: invalid wait should be valid moves",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[1,1],[0,0],[0,1],[2,0],[1,0],[1,2],[2,1]]",
+      "desc": "Standard: A wins col 1",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[2,2],[0,0],[1,1],[0,1],[0,2]]",
+      "desc": "Standard: B wins col 0",
+      "output": "\"Pending\""
+    },
+    {
+      "input": "[[0,0],[2,2],[0,2],[1,0],[0,1],[2,0]]",
+      "desc": "Standard: A wins row 0",
+      "output": "\"Pending\""
+    },
+    {
+      "input": "[[1,0],[2,1],[1,1],[2,0],[1,2]]",
+      "desc": "Standard: A wins row 1",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[2,0],[0,0],[2,1],[0,1],[2,2]]",
+      "desc": "Standard: A wins row 2",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[0,0],[1,1],[1,0],[0,1],[2,0]]",
+      "desc": "Standard: A wins col 0",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[0,2],[1,0],[1,2],[1,1],[2,2]]",
+      "desc": "Standard: A wins col 2",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[1,1],[0,0],[0,2],[2,0],[1,2],[2,2]]",
+      "desc": "Standard: B wins anti-diag",
+      "output": "\"Pending\""
+    },
+    {
+      "input": "[[0,0],[1,2],[1,1],[2,1],[2,2]]",
+      "desc": "Standard: A wins diag",
+      "output": "\"A\""
+    },
+    {
+      "input": "[[0,0],[1,1]]",
+      "desc": "Stress: 2 moves pending",
+      "output": "\"Pending\""
+    },
+    {
+      "input": "[[0,0],[2,2],[1,1],[1,0],[2,0]]",
+      "desc": "Killer: A wins anti-diag",
+      "output": "\"Pending\""
+    }
   ]
 }
