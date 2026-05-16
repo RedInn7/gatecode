@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1000; s consists of lowercase letters, '|', and '*'; even number of '|' in s",
   "input_format": "line1: s (string)",
   "testcases": [
-    {"input": "l|*e*et|c**o|*de|", "desc": "Edge: example1"},
-    {"input": "iamprogrammer", "desc": "Edge: example2 no asterisks"},
-    {"input": "yo|uar|e**|b|e***au|tifu|l", "desc": "Edge: example3"},
-    {"input": "*", "desc": "Edge: single asterisk"},
-    {"input": "||", "desc": "Edge: empty pair only"},
-    {"input": "|*|", "desc": "Edge: single ast inside pair"},
-    {"input": "*|*|", "desc": "Edge: ast outside then pair"},
-    {"input": "|*|*", "desc": "Edge: pair then outside"},
-    {"input": "a", "desc": "Edge: single letter"},
-    {"input": "***", "desc": "Standard: only asterisks no pipes"},
-    {"input": "**||**||**", "desc": "Standard: pairs in middle"},
-    {"input": "|*|*|*|*|", "desc": "Standard: alternating asts inside outside"},
-    {"input": "***|**|***|**|***", "desc": "Standard: alternating bursts"},
-    {"input": "abc|*|def|*|ghi", "desc": "Standard: letters around"},
-    {"input": "*a*|b*c|d*e|f*g|h*i*", "desc": "Standard: mixed"},
-    {"input": "|||||||||||||||", "desc": "Standard: odd pipes (skip if invalid; use even)"},
-    {"input": "********************************************************************************", "desc": "Stress: 80 asts no pipes"},
-    {"input": "|********||********|", "desc": "Stress: bunch inside two pairs"},
-    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Stress: 26 letters no special"},
-    {"input": "*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|", "desc": "Special: 20 ast 20 pipes (10 pairs) alternating killer"}
+    {
+      "input": "l|*e*et|c**o|*de|",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "iamprogrammer",
+      "desc": "Edge: example2 no asterisks"
+    },
+    {
+      "input": "\"dxmtdasyzo\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"chwhjubpig\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"timphgsdyzsxa\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "|*|",
+      "desc": "Edge: single ast inside pair"
+    },
+    {
+      "input": "*|*|",
+      "desc": "Edge: ast outside then pair"
+    },
+    {
+      "input": "|*|*",
+      "desc": "Edge: pair then outside"
+    },
+    {
+      "input": "a",
+      "desc": "Edge: single letter"
+    },
+    {
+      "input": "***",
+      "desc": "Standard: only asterisks no pipes"
+    },
+    {
+      "input": "**||**||**",
+      "desc": "Standard: pairs in middle"
+    },
+    {
+      "input": "|*|*|*|*|",
+      "desc": "Standard: alternating asts inside outside"
+    },
+    {
+      "input": "***|**|***|**|***",
+      "desc": "Standard: alternating bursts"
+    },
+    {
+      "input": "abc|*|def|*|ghi",
+      "desc": "Standard: letters around"
+    },
+    {
+      "input": "*a*|b*c|d*e|f*g|h*i*",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "|||||||||||||||",
+      "desc": "Standard: odd pipes (skip if invalid; use even)"
+    },
+    {
+      "input": "********************************************************************************",
+      "desc": "Stress: 80 asts no pipes"
+    },
+    {
+      "input": "|********||********|",
+      "desc": "Stress: bunch inside two pairs"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "desc": "Stress: 26 letters no special"
+    },
+    {
+      "input": "\"xqjnskmixdklhleehmjygdcmmorbeqcvldltozhcfhupgxmzctsj\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
