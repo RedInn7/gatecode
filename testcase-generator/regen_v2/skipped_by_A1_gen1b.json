@@ -114,6 +114,16 @@
       "pid": 1050,
       "slug": "design-exam-scores-tracker",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1039,
+      "slug": "find-mode-in-binary-search-tree",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1027,
+      "slug": "separate-squares-i",
+      "reason": "ACM mode problem"
     }
   ]
 }

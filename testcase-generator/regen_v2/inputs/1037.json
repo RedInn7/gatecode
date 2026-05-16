@@ -1,0 +1,88 @@
+{
+  "pid": 1037,
+  "slug": "count-number-of-texts",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"7\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"nk\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"bcecd\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"brwwrb\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"ionukoj1qvky0ntgayfgo\"",
+      "desc": "Standard: len=21"
+    },
+    {
+      "input": "\"e7m371sbcyj470ycmslffey0v65cxbzj\"",
+      "desc": "Standard: len=32"
+    },
+    {
+      "input": "\"t4267xsstjjo84gbwph\"",
+      "desc": "Standard: len=19"
+    },
+    {
+      "input": "\"2sb0r8o8f63gzmqiefp0rlc90zle5728dv63xv\"",
+      "desc": "Standard: len=38"
+    },
+    {
+      "input": "\"iv2vcvqyr5g6g4ou85yy7v03z2it\"",
+      "desc": "Standard: len=28"
+    },
+    {
+      "input": "\"l2tu4w6ilcg2x9uv4qrxpdkem83wnrc3fjvcajmsy\"",
+      "desc": "Standard: len=41"
+    },
+    {
+      "input": "\"2j15zm6t9bl74ik3mdxrx7s2r9p5a94jk\"",
+      "desc": "Standard: len=33"
+    },
+    {
+      "input": "\"3o9aks11xhiybigacmw3s11xyk9v3i4sgo\"",
+      "desc": "Standard: len=34"
+    },
+    {
+      "input": "\"j9emrfe4bm1ruwdpqcss3bkuj5ixbqgnuefi1duko9tgt8c8ezypdznhrw4wvwpxerynibscai1m0cgedlj8qxuiwb3cozvfukjv1e0xxw0usa4kr0dv22uam2xrev6majb9wlwpojcc6tiqh1y46gr4yehywue1gh2hdeyjvs4ljdeozlx9225hyuxpjh8p8dfrl1vt\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"ym9whvaj73e3kg07pa07dszovd3en5a4me6b1i4k3nvs3kujnp63q2n3j41ob9vlecrbj0lgjw3p0lnod2oril6v7u2176q4bxk2efpbx3cd882qdpx9txvt64w1w1ta41hpaclwsntsf0utvz4zz0dr670921ygs6xjgnovouej6kfzeigplaznybfrfbt39gec5rfzpnb08ctar5pt532j7wozyqsj6gjfkpatsvke48hnvgdmq9vu3p7pwoeyzsz1qfeo1ikg9pki2p9cnva5f9n1dj38mkdrbwod1gys7addzmai8adsc15onykv33gnvdhsr1id83tqqeuddnbggaqy9mze2m63qpjmzhrlq21m5it1xrxeem2ongbvwqpdwgv3jfypytkl3w50ul9yivple8ytr1907w85siprcqv122p6t0pttnpjl2dl089vdab1ukisir5sfo2db1f3wyxutfjcdu5s5ll404ltdra9v18h\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"h9x8otxtb9875vzqgcror8x1tkumq1dc0maacsln0xu5lo44v9tisi3vkabsrl0xp54gxjz4jc9acbdesw9fh70mtwf3kgu29mi70t6sosavuzxkpdz91u5k6u9sewdgdmjlwdmdckunwhphvdw4kyepwf725gjsxdr9heqwjs89so7zf05bnj8qahwko9l2d00278u5t03pogjzorbg3xwjx9y83kxy0eq53hv9edf4v900u27cp79gmhphkes8un7e0cnuwn5ka4bj0divbeizr2w1cq9x4oput3m4mz5gmthh0mjpzsv61cgfeh1zq2qyrvt8730mmegf4kl0du8x38kvj68qlc6j5wsi9efqttyaflu1sn8tjgfcs999wmx3t1b9hawlap4lq2lbbozghqjdbndom3d5hlqhbmht0s8hp96lxva7zunzarorkloh8yes4rrxkes0zagombrgpoqpy3f87g84fgd7y76pfb2m3e3aa7hxlz21c80hp8ibf570dq9d8n4sdwde73g3ivs96gu4y7wmh8id594pjay4z1oryj67y8dr3ntppiesbstiq76cjddhu8uosmst4tvxfa0jy1huc59k2vs0cbwqw8uaanrwb4192h9b34hf1p35la8lsc9yoebnfidg34ay1gb3enpdstmag9zm1guvap8m78epahiu9zy4kc59p810wr935cwh93ae64qbmbbtr5198aszu62u5iiq40w2ox7vke6fus52ftzmsax90nx8kp1fl0rrv2lycmrz0pvnca8s6golt6evaq21anh7y72povkw873dj59ehj8kx4nlr6o8kmien4kl9bn9ue2x9dlu9kwziioi7rr17uz4eiqzsph1gqvl83jeozyknankrffb5wwdg5zsxofxoq22hn5bmota0czkfb6rd9ngbh8xi5etnz9aqdmqwm4bl4snmqpim78szsb2wf4z03gun65hcracel0i\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"jaee6ewrkiy8udt9vs01wbk1l1qf01f15bai6fs8hzvfxm7xwgpf65mjhlpf49ln68bdhbjehvzyizhwtatdf3phk4ei71fw8bc7atb58iayh8edtpnrm16do62ndjmcwshj1t7febieldondq3ac7vqmwy6hphapvcymefuctyofcet45izfg7j837eyql5jq7osrqnvtm99vuhk5mmma1j21pwzak1uvgnvnbt7d0iah831r2vsdlpq20c8ca0co87fqd19zdegp6txle4039mwxq1brqn3vx6pf5ys2npyejfii1zbagwmcrt5ofy2ostgtyuto739m8yyjbxk3955mzxtt24i4yahq91nxh35zy3zpt22q1vjy9zve926s9bjnmdsv0yglie4qeaoj1et4pl0zoew7x1bilw8pylbsk1hw0wqxxpf6squumsix91xscv2xwbloiuwn1cvnlr1ipnidpgqtzy93fg9o63mw1ww5vtkx388pwfaftr8d319wwsy91epeizn1zhq0yhf7u4hg0azaipvqhr30jgif458tz2t7ueb122x8xhq85r8qqcnm6tzs86bde65pnvqy9j7dh4hs4zbgauuhl01snzfbgrsamlj2h9xr13v9o8zxurprtm51pfiqh1hm1szv0k7vhd3pit71na2dodoyd4j18dpi874fxpzz3k0tzczuoq6gu5qd9faoligbopx0m2vwgpd91iru7fikf6fqxnspgffs8luow7k1o80cse0vpeopjwzwuroi8eovokkfq4qg711gbe4b8qwmspfzmbawqa6gi4zdmas3j2ovmfeaxc6nt3efzqq8ufrayzb5f13fa89o4ql61tg7hwaq1e4wp4wq85ln194v4trt4uvvcuyspldg16bi0iaof93pntih1t0q6lfedokeb577bq74ekhmoi9g1tjycjtqjf1wpgdfbb8w85baypt95ohyjd8tdoe9hqepqx\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}
