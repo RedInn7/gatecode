@@ -1,0 +1,76 @@
+{
+  "pid": 3148,
+  "slug": "knight-dialer",
+  "inferred_constraints": "0 <= n <= 5000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "5000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "4999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "2885",
+      "desc": "Standard: n=2885"
+    },
+    {
+      "input": "2267",
+      "desc": "Standard: n=2267"
+    },
+    {
+      "input": "3140",
+      "desc": "Standard: n=3140"
+    },
+    {
+      "input": "423",
+      "desc": "Standard: n=423"
+    },
+    {
+      "input": "1447",
+      "desc": "Standard: n=1447"
+    },
+    {
+      "input": "1146",
+      "desc": "Standard: n=1146"
+    },
+    {
+      "input": "3700",
+      "desc": "Standard: n=3700"
+    },
+    {
+      "input": "4359",
+      "desc": "Standard: n=4359"
+    },
+    {
+      "input": "5000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "5000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "5000",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "5000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

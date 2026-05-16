@@ -1,0 +1,76 @@
+{
+  "pid": 3151,
+  "slug": "daily-temperatures",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "405029",
+      "desc": "Standard: n=405029"
+    },
+    {
+      "input": "179209",
+      "desc": "Standard: n=179209"
+    },
+    {
+      "input": "63120",
+      "desc": "Standard: n=63120"
+    },
+    {
+      "input": "729101",
+      "desc": "Standard: n=729101"
+    },
+    {
+      "input": "836490",
+      "desc": "Standard: n=836490"
+    },
+    {
+      "input": "884400",
+      "desc": "Standard: n=884400"
+    },
+    {
+      "input": "410763",
+      "desc": "Standard: n=410763"
+    },
+    {
+      "input": "306861",
+      "desc": "Standard: n=306861"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

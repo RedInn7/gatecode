@@ -1,0 +1,76 @@
+{
+  "pid": 3156,
+  "slug": "gray-code",
+  "inferred_constraints": "0 <= n <= 16",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "16",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "15",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: n=12"
+    },
+    {
+      "input": "2",
+      "desc": "Standard: n=2"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: n=12"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: n=9"
+    },
+    {
+      "input": "2",
+      "desc": "Standard: n=2"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: n=7"
+    },
+    {
+      "input": "4",
+      "desc": "Standard: n=4"
+    },
+    {
+      "input": "16",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "16",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "16",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "16",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

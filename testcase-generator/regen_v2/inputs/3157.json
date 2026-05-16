@@ -1,0 +1,76 @@
+{
+  "pid": 3157,
+  "slug": "partition-string-into-minimum-beautiful-substrings",
+  "inferred_constraints": "0 <= s.length <= 15",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"jm\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"cedec\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"lyqbo\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"nfaifvanxldhevw\"",
+      "desc": "Standard: len=15"
+    },
+    {
+      "input": "\"dwzkgauuz\"",
+      "desc": "Standard: len=9"
+    },
+    {
+      "input": "\"qlkxe\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"adyudxrzs\"",
+      "desc": "Standard: len=9"
+    },
+    {
+      "input": "\"pkcvgaiuuv\"",
+      "desc": "Standard: len=10"
+    },
+    {
+      "input": "\"kynkaunba\"",
+      "desc": "Standard: len=9"
+    },
+    {
+      "input": "\"xwxvsgh\"",
+      "desc": "Standard: len=7"
+    },
+    {
+      "input": "\"ygomrvfxudkkqgh\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"hsjzounjqvcddca\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}
