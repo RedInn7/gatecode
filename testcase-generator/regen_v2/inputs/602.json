@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= items.length <= 1e5; items[i].length == 2; 1 <= price_i, weight_i <= 1e4; 1 <= capacity <= 1e9",
   "input_format": "line1: items (JSON 2D); line2: capacity (int)",
   "testcases": [
-    {"input": "[[50,1],[10,8]]\n5", "desc": "Edge: example1 fractional"},
-    {"input": "[[100,30]]\n50", "desc": "Edge: example2 not enough weight"},
-    {"input": "[[1,1]]\n1", "desc": "Edge: minimum match"},
-    {"input": "[[1,1]]\n2", "desc": "Edge: capacity > item weight"},
-    {"input": "[[10000,1]]\n1", "desc": "Edge: max price"},
-    {"input": "[[1,10000]]\n1", "desc": "Edge: heavy item small cap"},
-    {"input": "[[5,5],[5,5],[5,5]]\n10", "desc": "Edge: 3 same items"},
-    {"input": "[[100,1],[50,1],[10,1]]\n2", "desc": "Standard: 2 picks"},
-    {"input": "[[60,10],[100,20],[120,30]]\n50", "desc": "Standard: classic knapsack"},
-    {"input": "[[10,5],[20,10],[30,15]]\n7", "desc": "Standard: partial last"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]\n10", "desc": "Standard: equal ratio"},
-    {"input": "[[100,10],[200,20],[300,30]]\n15", "desc": "Standard: pick one and half"},
-    {"input": "[[10,1],[10,1],[10,1],[10,1],[10,1]]\n3", "desc": "Standard: identical items"},
-    {"input": "[[1,1],[100,100]]\n50", "desc": "Standard: choose heavy fraction"},
-    {"input": "[[100,1],[1,100]]\n50", "desc": "Standard: prefer dense"},
-    {"input": "[[1000,1],[2000,2],[3000,3]]\n5", "desc": "Standard: high prices"},
-    {"input": "[[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1]]\n5", "desc": "Stress: max price 10 items"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12],[13,13],[14,14],[15,15],[16,16],[17,17],[18,18],[19,19],[20,20]]\n100", "desc": "Stress: 20 items"},
-    {"input": "[[5,10],[5,10],[5,10],[5,10],[5,10]]\n7", "desc": "Stress: 5 same fraction"},
-    {"input": "[[1,1],[2,1],[3,1],[4,1],[5,1]]\n3", "desc": "Special: same weight pick best 3"}
+    {
+      "input": "[[50,1],[10,8]]\n5",
+      "desc": "Edge: example1 fractional"
+    },
+    {
+      "input": "[[100,30]]\n50",
+      "desc": "Edge: example2 not enough weight"
+    },
+    {
+      "input": "[[882,360],[394,344]]\n2",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[226,-355],[608,125]]\n37",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[10000,1]]\n1",
+      "desc": "Edge: max price"
+    },
+    {
+      "input": "[[1,10000]]\n1",
+      "desc": "Edge: heavy item small cap"
+    },
+    {
+      "input": "[[5,5],[5,5],[5,5]]\n10",
+      "desc": "Edge: 3 same items"
+    },
+    {
+      "input": "[[100,1],[50,1],[10,1]]\n2",
+      "desc": "Standard: 2 picks"
+    },
+    {
+      "input": "[[60,10],[100,20],[120,30]]\n50",
+      "desc": "Standard: classic knapsack"
+    },
+    {
+      "input": "[[10,5],[20,10],[30,15]]\n7",
+      "desc": "Standard: partial last"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]\n10",
+      "desc": "Standard: equal ratio"
+    },
+    {
+      "input": "[[100,10],[200,20],[300,30]]\n15",
+      "desc": "Standard: pick one and half"
+    },
+    {
+      "input": "[[10,1],[10,1],[10,1],[10,1],[10,1]]\n3",
+      "desc": "Standard: identical items"
+    },
+    {
+      "input": "[[1,1],[100,100]]\n50",
+      "desc": "Standard: choose heavy fraction"
+    },
+    {
+      "input": "[[100,1],[1,100]]\n50",
+      "desc": "Standard: prefer dense"
+    },
+    {
+      "input": "[[1000,1],[2000,2],[3000,3]]\n5",
+      "desc": "Standard: high prices"
+    },
+    {
+      "input": "[[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1],[10000,1]]\n5",
+      "desc": "Stress: max price 10 items"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12],[13,13],[14,14],[15,15],[16,16],[17,17],[18,18],[19,19],[20,20]]\n100",
+      "desc": "Stress: 20 items"
+    },
+    {
+      "input": "[[5,10],[5,10],[5,10],[5,10],[5,10]]\n7",
+      "desc": "Stress: 5 same fraction"
+    },
+    {
+      "input": "[[-144,609,506,-873],[-239,-218,-294,-330],[-966,-583,-311,-986],[992,-937,-713,-197]]\n50",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
