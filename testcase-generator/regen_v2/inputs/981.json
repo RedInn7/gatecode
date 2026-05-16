@@ -1,0 +1,28 @@
+{
+  "pid": 981,
+  "slug": "count-the-digits-that-divide-a-number",
+  "inferred_constraints": "1 <= num <= 1e9, no zero digits",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "7", "desc": "Edge: example1 -> 1"},
+    {"input": "121", "desc": "Edge: example2 -> 2"},
+    {"input": "1248", "desc": "Edge: example3 -> 4"},
+    {"input": "1", "desc": "Edge: minimal"},
+    {"input": "9", "desc": "Edge: single 9 div self"},
+    {"input": "11", "desc": "Standard: both 1's divide"},
+    {"input": "111", "desc": "Standard: 3 ones"},
+    {"input": "12", "desc": "Standard: 12/1 12/2 = 2"},
+    {"input": "13", "desc": "Standard: 13/1 yes 13/3 no = 1"},
+    {"input": "24", "desc": "Standard: 24/2 yes 24/4 yes = 2"},
+    {"input": "36", "desc": "Standard: 36/3 36/6 = 2"},
+    {"input": "777777777", "desc": "Standard: all 7's, 7|self"},
+    {"input": "123456789", "desc": "Standard: 1-9 distinct"},
+    {"input": "9876543", "desc": "Standard: 7 digits desc"},
+    {"input": "111111111", "desc": "Standard: all ones max"},
+    {"input": "999999999", "desc": "Standard: all 9 max"},
+    {"input": "1111111", "desc": "Standard: 7 ones"},
+    {"input": "248", "desc": "Standard: 248/2 yes 248/4 yes 248/8 yes = 3"},
+    {"input": "135792468", "desc": "Standard: complex digits"},
+    {"input": "836419572", "desc": "Standard: random with 9 digits"}
+  ]
+}

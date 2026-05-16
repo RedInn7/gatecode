@@ -372,6 +372,11 @@
       "reason": "Design class MyHashSet — stateful operation sequence"
     },
     {
+      "pid": 957,
+      "slug": "guess-number-higher-or-lower",
+      "reason": "Interactive API (guess function) — not suitable for stdin/stdout judging"
+    },
+    {
       "pid": 1000,
       "slug": "sleep",
       "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"

@@ -1,0 +1,28 @@
+{
+  "pid": 970,
+  "slug": "number-of-ways-to-reach-destination-in-the-grid",
+  "inferred_constraints": "2 <= n,m <= 1e9, 1 <= k <= 1e5, mod 1e9+7",
+  "input_format": "line1: n; line2: m; line3: k; line4: source [JSON 2-int]; line5: dest [JSON 2-int]",
+  "testcases": [
+    {"input": "3\n2\n2\n[1,1]\n[2,2]", "desc": "Edge: example1 -> 2"},
+    {"input": "3\n4\n3\n[1,2]\n[2,3]", "desc": "Edge: example2 -> 9"},
+    {"input": "2\n2\n1\n[1,1]\n[1,2]", "desc": "Edge: k=1 same row"},
+    {"input": "2\n2\n1\n[1,1]\n[2,1]", "desc": "Edge: k=1 same col"},
+    {"input": "2\n2\n1\n[1,1]\n[2,2]", "desc": "Edge: k=1 diagonal -> 0"},
+    {"input": "2\n2\n1\n[1,1]\n[1,1]", "desc": "Edge: k=1 same cell -> 0"},
+    {"input": "2\n2\n2\n[1,1]\n[1,1]", "desc": "Edge: return to start k=2"},
+    {"input": "1000000000\n1000000000\n1\n[1,1]\n[1,2]", "desc": "Edge: max grid k=1 row"},
+    {"input": "1000000000\n1000000000\n1\n[500000000,500000000]\n[500000000,500000001]", "desc": "Edge: max grid mid k=1"},
+    {"input": "5\n5\n3\n[1,1]\n[5,5]", "desc": "Standard: small grid k=3"},
+    {"input": "10\n10\n5\n[1,1]\n[10,10]", "desc": "Standard: 10x10 k=5"},
+    {"input": "100\n100\n10\n[50,50]\n[51,51]", "desc": "Standard: mid pos k=10"},
+    {"input": "3\n3\n4\n[1,1]\n[1,1]", "desc": "Standard: same cell k=4"},
+    {"input": "5\n5\n100\n[1,1]\n[3,3]", "desc": "Standard: larger k=100"},
+    {"input": "1000000000\n2\n1\n[1,1]\n[2,1]", "desc": "Standard: tall narrow"},
+    {"input": "2\n1000000000\n1\n[1,1]\n[1,2]", "desc": "Standard: short wide"},
+    {"input": "1000000000\n1000000000\n100000\n[1,1]\n[1000000000,1000000000]", "desc": "Stress: max k"},
+    {"input": "1000000000\n1000000000\n100000\n[1,1]\n[1,1]", "desc": "Stress: max k return"},
+    {"input": "2\n2\n100000\n[1,1]\n[2,2]", "desc": "Stress: tiny grid max k"},
+    {"input": "1000000000\n1000000000\n1\n[1,1]\n[1000000000,1000000000]", "desc": "Killer: diagonal extreme"}
+  ]
+}

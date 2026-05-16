@@ -1,0 +1,28 @@
+{
+  "pid": 982,
+  "slug": "count-residue-prefixes",
+  "inferred_constraints": "1 <= |s| <= 100, lowercase letters",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "abc", "desc": "Edge: example1 -> 2"},
+    {"input": "dd", "desc": "Edge: example2 -> 1"},
+    {"input": "bob", "desc": "Edge: example3 -> 2"},
+    {"input": "a", "desc": "Edge: single -> 1"},
+    {"input": "aa", "desc": "Edge: same pair -> 0"},
+    {"input": "ab", "desc": "Edge: distinct pair -> 2"},
+    {"input": "aaa", "desc": "Edge: 3 same -> 1 prefix"},
+    {"input": "aaaa", "desc": "Edge: 4 same"},
+    {"input": "abcabc", "desc": "Standard: pattern"},
+    {"input": "abcdefghij", "desc": "Standard: 10 distinct"},
+    {"input": "aaaaaaaaaa", "desc": "Standard: 10 same"},
+    {"input": "ababab", "desc": "Standard: alternating"},
+    {"input": "abcdefabcdef", "desc": "Standard: 12 chars pattern"},
+    {"input": "zyxwvutsrq", "desc": "Standard: 10 desc distinct"},
+    {"input": "aabbccddeeff", "desc": "Standard: pairs"},
+    {"input": "abacabadabac", "desc": "Standard: complex pattern"},
+    {"input": "qwertyuiopasdfghjklzxcvbnm", "desc": "Standard: 26 distinct"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a's"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv", "desc": "Stress: 100 chars 4 copies of alphabet"},
+    {"input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc", "desc": "Killer: abc x 34"}
+  ]
+}

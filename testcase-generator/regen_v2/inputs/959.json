@@ -1,0 +1,28 @@
+{
+  "pid": 959,
+  "slug": "lexicographically-smallest-string-after-reverse",
+  "inferred_constraints": "1 <= n <= 1000, lowercase letters, exactly one reverse op",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "dcab", "desc": "Edge: example1 -> acdb"},
+    {"input": "abba", "desc": "Edge: example2 -> aabb"},
+    {"input": "zxy", "desc": "Edge: example3 -> xzy"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "z", "desc": "Edge: single max char"},
+    {"input": "ab", "desc": "Edge: length 2 sorted"},
+    {"input": "ba", "desc": "Edge: length 2 reverse"},
+    {"input": "aa", "desc": "Edge: length 2 same"},
+    {"input": "abcdefghij", "desc": "Standard: sorted ascending"},
+    {"input": "jihgfedcba", "desc": "Standard: sorted descending"},
+    {"input": "aaaa", "desc": "Edge: all same"},
+    {"input": "zzzz", "desc": "Edge: all max"},
+    {"input": "azazaza", "desc": "Standard: alternating extremes"},
+    {"input": "leetcode", "desc": "Standard: example word"},
+    {"input": "programming", "desc": "Standard: real word"},
+    {"input": "abcabcabc", "desc": "Standard: repeating pattern"},
+    {"input": "zabcdefghij", "desc": "Standard: max at start"},
+    {"input": "abcdefghijz", "desc": "Standard: max at end"},
+    {"input": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm", "desc": "Stress: ~260 chars"},
+    {"input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", "desc": "Killer: 1000 z's"}
+  ]
+}

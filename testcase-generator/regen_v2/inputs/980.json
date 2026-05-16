@@ -1,0 +1,28 @@
+{
+  "pid": 980,
+  "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+  "inferred_constraints": "0 <= n <= 1e9",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "10203004", "desc": "Edge: example1 -> 12340"},
+    {"input": "1000", "desc": "Edge: example2 -> 1"},
+    {"input": "0", "desc": "Edge: zero"},
+    {"input": "1", "desc": "Edge: single 1"},
+    {"input": "9", "desc": "Edge: single 9"},
+    {"input": "10", "desc": "Edge: 10 -> 1*1=1"},
+    {"input": "100", "desc": "Edge: 100 -> 1"},
+    {"input": "123", "desc": "Standard: 123 sum=6 -> 738"},
+    {"input": "111111111", "desc": "Standard: 9 ones"},
+    {"input": "999999999", "desc": "Standard: 9 nines"},
+    {"input": "1000000000", "desc": "Edge: max value all zeros except 1"},
+    {"input": "987654321", "desc": "Standard: 9 distinct digits"},
+    {"input": "100200300", "desc": "Standard: zeros mid"},
+    {"input": "404040404", "desc": "Standard: alt 0 and 4"},
+    {"input": "505050505", "desc": "Standard: alt 0 and 5"},
+    {"input": "10000000", "desc": "Edge: ten million"},
+    {"input": "9876543", "desc": "Standard: 7 digits desc"},
+    {"input": "1234567", "desc": "Standard: 7 digits asc"},
+    {"input": "555555555", "desc": "Standard: 9 fives"},
+    {"input": "100200300", "desc": "Standard: triple zero pattern"}
+  ]
+}

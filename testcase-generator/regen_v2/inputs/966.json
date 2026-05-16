@@ -1,0 +1,28 @@
+{
+  "pid": 966,
+  "slug": "minimum-money-required-before-transactions",
+  "inferred_constraints": "1 <= n <= 1e5, 0 <= cost, cashback <= 1e9",
+  "input_format": "line1: transactions (JSON 2D array, each [cost,cashback])",
+  "testcases": [
+    {"input": "[[2,1],[5,0],[4,2]]", "desc": "Edge: example1 -> 10"},
+    {"input": "[[3,0],[0,3]]", "desc": "Edge: example2 -> 3"},
+    {"input": "[[0,0]]", "desc": "Edge: single zero"},
+    {"input": "[[1,0]]", "desc": "Edge: single cost only"},
+    {"input": "[[0,1]]", "desc": "Edge: single profit only"},
+    {"input": "[[1000000000,0]]", "desc": "Edge: single max cost"},
+    {"input": "[[1000000000,1000000000]]", "desc": "Edge: single max both"},
+    {"input": "[[5,5],[5,5],[5,5]]", "desc": "Standard: 3 neutral"},
+    {"input": "[[10,0],[10,0],[10,0]]", "desc": "Standard: all losing"},
+    {"input": "[[0,10],[0,10],[0,10]]", "desc": "Standard: all gain"},
+    {"input": "[[5,3],[10,5],[20,15]]", "desc": "Standard: increasing losses"},
+    {"input": "[[100,50],[200,100],[300,150]]", "desc": "Standard: half cashback"},
+    {"input": "[[1,2],[3,1],[5,4],[2,6]]", "desc": "Standard: mixed gain/loss"},
+    {"input": "[[10,0],[20,0],[30,0],[40,0],[50,0]]", "desc": "Standard: pure costs increasing"},
+    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Standard: equal cost cashback"},
+    {"input": "[[1000000000,999999999],[1,0]]", "desc": "Standard: big loss small"},
+    {"input": "[[100,1],[1,100],[50,50]]", "desc": "Standard: mixed"},
+    {"input": "[[1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[1,0]]", "desc": "Stress: 10 pure losses"},
+    {"input": "[[100,200],[300,400],[500,600],[700,800],[900,1000],[1100,1200],[1300,1400],[1500,1600],[1700,1800],[1900,2000]]", "desc": "Stress: 10 gains"},
+    {"input": "[[1000000000,0],[1000000000,0],[1000000000,0],[1000000000,0],[1000000000,0]]", "desc": "Killer: 5 max pure losses"}
+  ]
+}

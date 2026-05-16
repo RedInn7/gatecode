@@ -1,0 +1,28 @@
+{
+  "pid": 973,
+  "slug": "minimum-penalty-for-a-shop",
+  "inferred_constraints": "1 <= n <= 1e5, chars in {Y,N}",
+  "input_format": "line1: customers (raw string)",
+  "testcases": [
+    {"input": "YYNY", "desc": "Edge: example1 -> 2"},
+    {"input": "NNNNN", "desc": "Edge: example2 -> 0"},
+    {"input": "YYYY", "desc": "Edge: example3 -> 4"},
+    {"input": "Y", "desc": "Edge: single Y"},
+    {"input": "N", "desc": "Edge: single N"},
+    {"input": "YY", "desc": "Edge: 2 Y's"},
+    {"input": "NN", "desc": "Edge: 2 N's"},
+    {"input": "YN", "desc": "Edge: Y then N"},
+    {"input": "NY", "desc": "Edge: N then Y"},
+    {"input": "YYYYYYYYYY", "desc": "Standard: 10 Y's"},
+    {"input": "NNNNNNNNNN", "desc": "Standard: 10 N's"},
+    {"input": "YNYNYNYNYN", "desc": "Standard: alternating"},
+    {"input": "NYNYNYNYNY", "desc": "Standard: alt other"},
+    {"input": "YYYYYNNNNN", "desc": "Standard: Y block then N"},
+    {"input": "NNNNNYYYYY", "desc": "Standard: N block then Y"},
+    {"input": "YNYYNNYNYN", "desc": "Standard: random"},
+    {"input": "YYYYYYYYYYYYYYYYYYYYNNNNNNNNNNNNNNNNNNNN", "desc": "Standard: 20Y 20N"},
+    {"input": "NNNNNNNNNNYYYYYYYYYYNNNNNNNNNN", "desc": "Standard: 10N 10Y 10N"},
+    {"input": "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY", "desc": "Stress: 100 Y's"},
+    {"input": "YNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYN", "desc": "Killer: 200 alt YN"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 977,
+  "slug": "minimum-number-of-valid-strings-to-form-target-i",
+  "inferred_constraints": "1 <= |words| <= 100, sum |words[i]| <= 1e5, 1 <= |target| <= 5e3, lowercase",
+  "input_format": "line1: words (JSON array of strings); line2: target (raw)",
+  "testcases": [
+    {"input": "[\"abc\",\"aaaaa\",\"bcdef\"]\naabcdabc", "desc": "Edge: example1 -> 3"},
+    {"input": "[\"abababab\",\"ab\"]\nababaababa", "desc": "Edge: example2 -> 2"},
+    {"input": "[\"abcdef\"]\nxyz", "desc": "Edge: example3 -> -1"},
+    {"input": "[\"a\"]\na", "desc": "Edge: minimal exact"},
+    {"input": "[\"a\"]\naaaa", "desc": "Edge: 4 single chars"},
+    {"input": "[\"a\"]\nb", "desc": "Edge: impossible"},
+    {"input": "[\"abc\"]\nab", "desc": "Edge: prefix match"},
+    {"input": "[\"hello\"]\nhello", "desc": "Standard: exact match"},
+    {"input": "[\"hello\",\"world\"]\nhelloworld", "desc": "Standard: 2 words concat"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]\nabcdefghi", "desc": "Standard: 3 words concat"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]\nabcabcabc", "desc": "Standard: repeat first"},
+    {"input": "[\"longword\",\"long\",\"word\"]\nlongwordlongword", "desc": "Standard: combos"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]\nabcdef", "desc": "Standard: extending prefixes -> -1"},
+    {"input": "[\"abcdefghij\"]\nabcde", "desc": "Standard: prefix only"},
+    {"input": "[\"abc\",\"abcdef\",\"abcdefghij\"]\nabcdefghijabc", "desc": "Standard: longest+shortest"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\nabcde", "desc": "Standard: many singles"},
+    {"input": "[\"aa\"]\naaaaaaaaaa", "desc": "Standard: 10 a's by aa prefix"},
+    {"input": "[\"helloworld\",\"helloworlds\"]\nhelloworldhelloworld", "desc": "Standard: prefix reuse"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\"]\nabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Stress: long word reuse"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]\nthequickbrownfoxjumpsoverthelazydog", "desc": "Killer: 26 singles word target"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 965,
+  "slug": "number-of-ways-of-cutting-a-pizza",
+  "inferred_constraints": "1 <= rows, cols <= 50, 1 <= k <= 10, pizza chars in {A,.}",
+  "input_format": "line1: pizza (JSON array of strings); line2: k (int)",
+  "testcases": [
+    {"input": "[\"A..\",\"AAA\",\"...\"]\n3", "desc": "Edge: example1 -> 3"},
+    {"input": "[\"A..\",\"AA.\",\"...\"]\n3", "desc": "Edge: example2 -> 1"},
+    {"input": "[\"A..\",\"A..\",\"...\"]\n1", "desc": "Edge: example3 -> 1"},
+    {"input": "[\"A\"]\n1", "desc": "Edge: 1x1 apple k=1"},
+    {"input": "[\".\"]\n1", "desc": "Edge: 1x1 empty k=1"},
+    {"input": "[\"AA\"]\n2", "desc": "Edge: 1x2 two apples k=2"},
+    {"input": "[\"AA\",\"AA\"]\n2", "desc": "Edge: 2x2 all apples"},
+    {"input": "[\"AAAA\",\"AAAA\",\"AAAA\"]\n3", "desc": "Standard: all apples 3x4"},
+    {"input": "[\"A...\",\"..A.\",\"...A\"]\n3", "desc": "Standard: diagonal apples"},
+    {"input": "[\"A.A.A\",\".A.A.\",\"A.A.A\"]\n5", "desc": "Standard: checker apples k=5"},
+    {"input": "[\"AAAAA\",\".....\",\".....\"]\n2", "desc": "Standard: top row apples"},
+    {"input": "[\"A....\",\"A....\",\"A....\",\"A....\",\"A....\"]\n2", "desc": "Standard: left col apples"},
+    {"input": "[\".....\",\".....\",\"..A..\",\".....\",\".....\"]\n1", "desc": "Standard: center single"},
+    {"input": "[\"AA..AA\",\"AA..AA\",\".....\",\"AA..AA\",\"AA..AA\"]\n4", "desc": "Standard: 4 corner blocks"},
+    {"input": "[\"AAAAAAAAAA\"]\n5", "desc": "Standard: 1x10 all apples"},
+    {"input": "[\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"A\"]\n5", "desc": "Standard: 10x1 all apples"},
+    {"input": "[\"AAA\",\"AAA\",\"AAA\",\"AAA\",\"AAA\",\"AAA\",\"AAA\",\"AAA\"]\n8", "desc": "Standard: 8x3 all apples"},
+    {"input": "[\"...A...\",\".A...A.\",\"A.....A\",\".A...A.\",\"...A...\"]\n4", "desc": "Standard: diamond apples"},
+    {"input": "[\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\",\"AAAAAAAAAA\"]\n10", "desc": "Stress: 10x10 all apples k=10"},
+    {"input": "[\"A.........\",\".A........\",\"..A.......\",\"...A......\",\"....A.....\",\".....A....\",\"......A...\",\".......A..\",\"........A.\",\".........A\"]\n10", "desc": "Killer: diagonal 10x10 k=10"}
+  ]
+}

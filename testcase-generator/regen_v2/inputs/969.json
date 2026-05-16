@@ -1,0 +1,28 @@
+{
+  "pid": 969,
+  "slug": "substring-with-largest-variance",
+  "inferred_constraints": "1 <= s.length <= 1e4, lowercase letters",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "aababbb", "desc": "Edge: example1 -> 3"},
+    {"input": "abcde", "desc": "Edge: example2 -> 0"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "aa", "desc": "Edge: two same"},
+    {"input": "ab", "desc": "Edge: two distinct"},
+    {"input": "aaa", "desc": "Edge: all same -> 0"},
+    {"input": "zzzzz", "desc": "Edge: 5 same"},
+    {"input": "abcabcabc", "desc": "Standard: 3 letters cyclic"},
+    {"input": "aaaaabbbbb", "desc": "Standard: blocks"},
+    {"input": "aaaaaaaabb", "desc": "Standard: 8a 2b"},
+    {"input": "aaaabbbbcccc", "desc": "Standard: 3 letters blocks"},
+    {"input": "babbbbb", "desc": "Standard: 1a 6b"},
+    {"input": "abababab", "desc": "Standard: alt -> 1"},
+    {"input": "aaabbbabaabb", "desc": "Standard: mixed"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: all distinct"},
+    {"input": "aaaaaaaaaabbbbbbbbbb", "desc": "Standard: 10/10"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Standard: 2 copies"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", "desc": "Stress: 99 a's + 1 b"},
+    {"input": "aabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaabaab", "desc": "Stress: aab repeating"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "desc": "Killer: 200a + 200b"}
+  ]
+}
