@@ -1,0 +1,28 @@
+{
+  "pid": 1808,
+  "slug": "count-good-nodes-in-binary-tree",
+  "inferred_constraints": "1 <= n <= 10^5, -10^4 <= Node.val <= 10^4",
+  "input_format": "line1: root (JSON tree array with nulls)",
+  "testcases": [
+    {"input": "[3,1,4,3,null,1,5]", "desc": "Edge: example1 -> 4"},
+    {"input": "[3,3,null,4,2]", "desc": "Edge: example2 -> 3"},
+    {"input": "[1]", "desc": "Edge: single node"},
+    {"input": "[0]", "desc": "Edge: single zero"},
+    {"input": "[10000]", "desc": "Edge: max value single"},
+    {"input": "[-10000]", "desc": "Edge: min value single"},
+    {"input": "[1,2]", "desc": "Edge: 2 nodes asc"},
+    {"input": "[2,1]", "desc": "Edge: 2 nodes desc"},
+    {"input": "[1,1,1]", "desc": "Edge: all same"},
+    {"input": "[5,5,5,5,5,5,5]", "desc": "Edge: 7 same value"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: balanced asc"},
+    {"input": "[7,6,5,4,3,2,1]", "desc": "Standard: balanced desc"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left chain asc"},
+    {"input": "[5,null,4,null,3,null,2,null,1]", "desc": "Standard: right chain desc"},
+    {"input": "[10,5,15,3,7,12,18,1,4,6,8,11,13,17,20]", "desc": "Standard: BST-shape"},
+    {"input": "[-5,-10,-3,-15,-8,-7,-1]", "desc": "Standard: all negatives"},
+    {"input": "[10000,-10000,10000,-10000,10000,-10000,10000]", "desc": "Standard: extremes alternating"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]", "desc": "Stress: 31 nodes asc"},
+    {"input": "[10000,9999,9998,9997,9996,9995,9994,9993,9992,9991,9990,9989,9988,9987,9986,9985,9984,9983,9982,9981,9980,9979,9978,9977,9976,9975,9974,9973,9972,9971,9970]", "desc": "Stress: 31 high values desc"},
+    {"input": "[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]", "desc": "Special: 15 same"}
+  ]
+}

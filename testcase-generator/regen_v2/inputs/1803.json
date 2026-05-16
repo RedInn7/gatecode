@@ -1,0 +1,28 @@
+{
+  "pid": 1803,
+  "slug": "word-ladder",
+  "inferred_constraints": "1 <= beginWord.length <= 10, endWord.length == beginWord.length, 1 <= wordList.length <= 5000, lowercase, beginWord != endWord, all wordList unique",
+  "input_format": "line1: beginWord (raw string)\nline2: endWord (raw string)\nline3: wordList (JSON array of strings)",
+  "testcases": [
+    {"input": "hit\ncog\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]", "desc": "Edge: example1 -> 5"},
+    {"input": "hit\ncog\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]", "desc": "Edge: example2 -> 0 (no cog)"},
+    {"input": "a\nc\n[\"a\",\"b\",\"c\"]", "desc": "Edge: minimum length"},
+    {"input": "a\nz\n[\"z\"]", "desc": "Edge: direct one-step"},
+    {"input": "ab\ncd\n[\"ad\",\"cd\"]", "desc": "Edge: 2-char path"},
+    {"input": "ab\ncd\n[]", "desc": "Edge: empty wordList"},
+    {"input": "abc\nxyz\n[\"xyz\"]", "desc": "Edge: no transformation possible"},
+    {"input": "aaa\nzzz\n[\"baa\",\"caa\",\"daa\",\"eaa\",\"faa\",\"zzz\",\"zaa\",\"zza\"]", "desc": "Edge: needs multi-step"},
+    {"input": "hot\ndog\n[\"hot\",\"dog\"]", "desc": "Edge: 3-char no intermediate"},
+    {"input": "hot\ndog\n[\"hot\",\"dog\",\"dot\"]", "desc": "Edge: with intermediate"},
+    {"input": "lost\nmiss\n[\"most\",\"mist\",\"miss\"]", "desc": "Standard: 4-char"},
+    {"input": "qa\nsq\n[\"si\",\"go\",\"se\",\"cm\",\"so\",\"ph\",\"mt\",\"db\",\"mb\",\"sb\",\"kr\",\"ln\",\"tm\",\"le\",\"av\",\"sm\",\"ar\",\"ci\",\"ca\",\"br\",\"ti\",\"ba\",\"to\",\"ra\",\"fa\",\"yo\",\"ow\",\"sn\",\"ya\",\"cr\",\"po\",\"fe\",\"ho\",\"ma\",\"re\",\"or\",\"rn\",\"qa\",\"la\",\"ws\",\"sn\",\"qa\",\"tm\",\"mt\",\"yo\",\"da\"]", "desc": "Standard: 2-char large list"},
+    {"input": "cat\nbat\n[\"bat\"]", "desc": "Standard: 1-step direct"},
+    {"input": "hello\nworld\n[\"hello\",\"hallo\",\"world\",\"wallo\"]", "desc": "Standard: 5-char"},
+    {"input": "leet\ncode\n[\"leet\",\"leot\",\"loot\",\"loot\",\"loot\",\"loop\",\"loup\",\"code\"]", "desc": "Standard: 4-char unique"},
+    {"input": "ab\ncd\n[\"ab\",\"cb\",\"cd\",\"ad\"]", "desc": "Stress: small 2-char with multi paths"},
+    {"input": "abcdefghij\nabcdefghik\n[\"abcdefghik\"]", "desc": "Stress: 10-char single transform"},
+    {"input": "aaaaaaaaaa\nzzzzzzzzzz\n[\"baaaaaaaaa\",\"bbaaaaaaaa\",\"bbbaaaaaaa\",\"bbbbaaaaaa\",\"bbbbbaaaaa\",\"bbbbbbaaaa\",\"bbbbbbbaaa\",\"bbbbbbbbaa\",\"bbbbbbbbba\",\"bbbbbbbbbb\",\"cbbbbbbbbb\",\"ccbbbbbbbb\",\"cccbbbbbbb\",\"ccccbbbbbb\",\"cccccbbbbb\",\"ccccccbbbb\",\"cccccccbbb\",\"ccccccccbb\",\"cccccccccb\",\"cccccccccc\",\"zzzzzzzzzz\"]", "desc": "Stress: needs many steps"},
+    {"input": "ab\ncd\n[\"ab\",\"cb\",\"cd\"]", "desc": "Special: minimal path"},
+    {"input": "abc\nxyz\n[\"abz\",\"xbz\",\"xyz\",\"xbc\",\"abc\"]", "desc": "Special: branching"}
+  ]
+}

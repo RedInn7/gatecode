@@ -1,0 +1,28 @@
+{
+  "pid": 1811,
+  "slug": "chalkboard-xor-game",
+  "inferred_constraints": "1 <= nums.length <= 1000, 0 <= nums[i] < 2^16",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1,1,2]", "desc": "Edge: example1 -> false"},
+    {"input": "[0,1]", "desc": "Edge: example2 -> true"},
+    {"input": "[1,2,3]", "desc": "Edge: example3 -> true"},
+    {"input": "[0]", "desc": "Edge: single 0 (xor=0)"},
+    {"input": "[1]", "desc": "Edge: single 1"},
+    {"input": "[65535]", "desc": "Edge: single max"},
+    {"input": "[0,0]", "desc": "Edge: 2 zeros"},
+    {"input": "[1,1]", "desc": "Edge: 2 same (xor=0)"},
+    {"input": "[1,2]", "desc": "Edge: 2 diff"},
+    {"input": "[0,0,0,0]", "desc": "Edge: 4 zeros"},
+    {"input": "[1,1,1,1]", "desc": "Edge: 4 ones (xor=0)"},
+    {"input": "[1,2,3,4]", "desc": "Standard: 4 distinct"},
+    {"input": "[5,5,5,5]", "desc": "Standard: 4 same"},
+    {"input": "[1,2,4,8,16]", "desc": "Standard: powers of 2"},
+    {"input": "[1,3,5,7,9,11,13,15]", "desc": "Standard: 8 odd numbers"},
+    {"input": "[65535,65534,65533,65532,65531,65530,65529,65528,65527,65526]", "desc": "Stress: max values"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 ones (xor=0)"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Stress: 100 zeros"},
+    {"input": "[65535,0,65535,0]", "desc": "Special: alt extremes"},
+    {"input": "[5,5,5]", "desc": "Special: 3 same"}
+  ]
+}
