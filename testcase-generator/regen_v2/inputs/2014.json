@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 3, mat[i][j] in {0,1}",
   "input_format": "single line: mat (JSON 2D)",
   "testcases": [
-    {"input": "[[0,0],[0,1]]", "desc": "Standard: example 1"},
-    {"input": "[[0]]", "desc": "Standard: example 2 zero matrix"},
-    {"input": "[[1,0,0],[1,0,0]]", "desc": "Standard: example 3 impossible"},
-    {"input": "[[1]]", "desc": "Edge: 1x1 single 1"},
-    {"input": "[[0,0]]", "desc": "Edge: 1x2 zero"},
-    {"input": "[[1,1]]", "desc": "Edge: 1x2 ones"},
-    {"input": "[[0],[0]]", "desc": "Edge: 2x1 zero"},
-    {"input": "[[1],[1]]", "desc": "Edge: 2x1 ones"},
-    {"input": "[[1,0],[0,0]]", "desc": "Edge: 2x2 single 1"},
-    {"input": "[[1,1],[1,1]]", "desc": "Edge: 2x2 all 1s"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1]]", "desc": "Edge: 3x3 all 1s"},
-    {"input": "[[0,0,0],[0,1,0],[0,0,0]]", "desc": "Edge: 3x3 center only"},
-    {"input": "[[1,0,1],[0,0,0],[1,0,1]]", "desc": "Standard: corners"},
-    {"input": "[[1,0,0],[0,1,0],[0,0,1]]", "desc": "Standard: diagonal"},
-    {"input": "[[1,1,1],[0,0,0],[1,1,1]]", "desc": "Standard: stripes"},
-    {"input": "[[1,0,1],[0,1,0],[1,0,1]]", "desc": "Standard: checker"},
-    {"input": "[[0,1,0],[1,0,1],[0,1,0]]", "desc": "Standard: checker reverse"},
-    {"input": "[[0,0,0],[0,0,0],[0,0,0]]", "desc": "Edge: 3x3 zero"},
-    {"input": "[[1,1],[0,0],[0,1]]", "desc": "Standard: 3x2"},
-    {"input": "[[1,0,1]]", "desc": "Edge: 1x3 alternating"}
+    {
+      "input": "[[0,0],[0,1]]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[[0]]",
+      "desc": "Standard: example 2 zero matrix"
+    },
+    {
+      "input": "[[1,0,0],[1,0,0]]",
+      "desc": "Standard: example 3 impossible"
+    },
+    {
+      "input": "[[1]]",
+      "desc": "Edge: 1x1 single 1"
+    },
+    {
+      "input": "[[0,0]]",
+      "desc": "Edge: 1x2 zero"
+    },
+    {
+      "input": "[[1,1]]",
+      "desc": "Edge: 1x2 ones"
+    },
+    {
+      "input": "[[0],[0]]",
+      "desc": "Edge: 2x1 zero"
+    },
+    {
+      "input": "[[1],[1]]",
+      "desc": "Edge: 2x1 ones"
+    },
+    {
+      "input": "[[1,0],[0,0]]",
+      "desc": "Edge: 2x2 single 1"
+    },
+    {
+      "input": "[[1,1],[1,1]]",
+      "desc": "Edge: 2x2 all 1s"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1]]",
+      "desc": "Edge: 3x3 all 1s"
+    },
+    {
+      "input": "[[0,0,0],[0,1,0],[0,0,0]]",
+      "desc": "Edge: 3x3 center only"
+    },
+    {
+      "input": "[[1,0,1],[0,0,0],[1,0,1]]",
+      "desc": "Standard: corners"
+    },
+    {
+      "input": "[[1,0,0],[0,1,0],[0,0,1]]",
+      "desc": "Standard: diagonal"
+    },
+    {
+      "input": "[[1,1,1],[0,0,0],[1,1,1]]",
+      "desc": "Standard: stripes"
+    },
+    {
+      "input": "[[1,0,1],[0,1,0],[1,0,1]]",
+      "desc": "Standard: checker"
+    },
+    {
+      "input": "[[0,1,0],[1,0,1],[0,1,0]]",
+      "desc": "Standard: checker reverse"
+    },
+    {
+      "input": "[[0,0,0],[0,0,0],[0,0,0]]",
+      "desc": "Edge: 3x3 zero"
+    },
+    {
+      "input": "[[1,1],[0,0],[0,1]]",
+      "desc": "Standard: 3x2"
+    },
+    {
+      "input": "[[862,138,263,984],[-507,667,-584,349],[24,311,-636,-909],[440,652,-461,940]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 4000, lowercase English",
   "input_format": "single line: s (JSON string)",
   "testcases": [
-    {"input": "\"abcabcdabc\"", "desc": "Standard: example 1"},
-    {"input": "\"aaabaab\"", "desc": "Standard: example 2"},
-    {"input": "\"aaaaa\"", "desc": "Standard: all same"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"ab\"", "desc": "Edge: n=2 distinct"},
-    {"input": "\"aa\"", "desc": "Edge: n=2 same"},
-    {"input": "\"abc\"", "desc": "Edge: 3 distinct"},
-    {"input": "\"abab\"", "desc": "Standard: repeated pair"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "Edge: 10 same"},
-    {"input": "\"aabbaabb\"", "desc": "Standard: 2-char repeat"},
-    {"input": "\"abcabc\"", "desc": "Standard: 3-char repeat"},
-    {"input": "\"abcabcabc\"", "desc": "Standard: 3 reps"},
-    {"input": "\"abcdef\"", "desc": "Standard: all distinct"},
-    {"input": "\"xyzxyz\"", "desc": "Standard"},
-    {"input": "\"zzzzzzzzzzzzzzzz\"", "desc": "Edge: 16 same"},
-    {"input": "\"abcabcabcabcabc\"", "desc": "Standard: long repeat"},
-    {"input": "\"aaaaabbbbbccccc\"", "desc": "Standard: blocks"},
-    {"input": "\"hello\"", "desc": "Standard"},
-    {"input": "\"abcdabcd\"", "desc": "Standard: 4-char repeat"},
-    {"input": "\"abcdefghabcdefgh\"", "desc": "Standard: 8-char repeat"}
+    {
+      "input": "\"abcabcdabc\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"aaabaab\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: n=2 distinct"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: 3 distinct"
+    },
+    {
+      "input": "\"abab\"",
+      "desc": "Standard: repeated pair"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "Edge: 10 same"
+    },
+    {
+      "input": "\"aabbaabb\"",
+      "desc": "Standard: 2-char repeat"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Standard: 3-char repeat"
+    },
+    {
+      "input": "\"abcabcabc\"",
+      "desc": "Standard: 3 reps"
+    },
+    {
+      "input": "\"abcdef\"",
+      "desc": "Standard: all distinct"
+    },
+    {
+      "input": "\"xyzxyz\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzz\"",
+      "desc": "Edge: 16 same"
+    },
+    {
+      "input": "\"abcabcabcabcabc\"",
+      "desc": "Standard: long repeat"
+    },
+    {
+      "input": "\"aaaaabbbbbccccc\"",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "\"hello\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdabcd\"",
+      "desc": "Standard: 4-char repeat"
+    },
+    {
+      "input": "\"ubcdzykybxfkztivlbeb\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= names.length <= 5*10^4, 1 <= names[i].length <= 20, lowercase letters/digits/(/)",
   "input_format": "single line: names (JSON array of strings)",
   "testcases": [
-    {"input": "[\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]", "desc": "Standard: example 1"},
-    {"input": "[\"gta\",\"gta(1)\",\"gta\",\"avalon\"]", "desc": "Standard: example 2"},
-    {"input": "[\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece\"]", "desc": "Standard: example 3"},
-    {"input": "[\"wano\",\"wano\",\"wano\",\"wano\"]", "desc": "Standard: example 4"},
-    {"input": "[\"a\"]", "desc": "Edge: n=1"},
-    {"input": "[\"a\",\"a\"]", "desc": "Edge: 2 duplicates"},
-    {"input": "[\"a\",\"a\",\"a\"]", "desc": "Edge: 3 duplicates"},
-    {"input": "[\"a\",\"b\",\"c\"]", "desc": "Edge: distinct"},
-    {"input": "[\"a\",\"a(1)\",\"a\"]", "desc": "Edge: pre-existing suffix"},
-    {"input": "[\"file\",\"file(1)\",\"file(1)\",\"file\"]", "desc": "Standard: complex collision"},
-    {"input": "[\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\"]", "desc": "Standard: 10 same"},
-    {"input": "[\"kaido\",\"kaido(1)\",\"kaido\",\"kaido(1)\"]", "desc": "Standard: tricky"},
-    {"input": "[\"foo\",\"foo(2)\",\"foo\",\"foo(3)\"]", "desc": "Standard: gap suffix"},
-    {"input": "[\"abc\",\"abc(1)\",\"abc(2)\",\"abc(3)\",\"abc(4)\",\"abc(5)\"]", "desc": "Standard: pre-numbered series"},
-    {"input": "[\"name\",\"name\",\"name\",\"name\",\"name\",\"name(1)\",\"name(2)\",\"name(3)\"]", "desc": "Standard: mix"},
-    {"input": "[\"a(0)\",\"a\",\"a\",\"a\"]", "desc": "Standard: (0) exists"},
-    {"input": "[\"folder\",\"folder(1)\",\"folder(2)\",\"folder\",\"folder(1)\",\"folder(2)\"]", "desc": "Standard"},
-    {"input": "[\"q\",\"r\",\"q\",\"r\",\"q\",\"r\",\"q\"]", "desc": "Standard: alternating"},
-    {"input": "[\"abc(1)\",\"abc(1)\",\"abc(2)\",\"abc\"]", "desc": "Standard: numbered first"},
-    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a(1)\",\"a(2)\",\"a(3)\"]", "desc": "Standard: dupes then numbered"}
+    {
+      "input": "[\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[\"gta\",\"gta(1)\",\"gta\",\"avalon\"]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece\"]",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "[\"wano\",\"wano\",\"wano\",\"wano\"]",
+      "desc": "Standard: example 4"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "desc": "Edge: 2 duplicates"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\"]",
+      "desc": "Edge: 3 duplicates"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\"]",
+      "desc": "Edge: distinct"
+    },
+    {
+      "input": "[\"a\",\"a(1)\",\"a\"]",
+      "desc": "Edge: pre-existing suffix"
+    },
+    {
+      "input": "[\"file\",\"file(1)\",\"file(1)\",\"file\"]",
+      "desc": "Standard: complex collision"
+    },
+    {
+      "input": "[\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\"]",
+      "desc": "Standard: 10 same"
+    },
+    {
+      "input": "[\"kaido\",\"kaido(1)\",\"kaido\",\"kaido(1)\"]",
+      "desc": "Standard: tricky"
+    },
+    {
+      "input": "[\"foo\",\"foo(2)\",\"foo\",\"foo(3)\"]",
+      "desc": "Standard: gap suffix"
+    },
+    {
+      "input": "[\"abc\",\"abc(1)\",\"abc(2)\",\"abc(3)\",\"abc(4)\",\"abc(5)\"]",
+      "desc": "Standard: pre-numbered series"
+    },
+    {
+      "input": "[\"name\",\"name\",\"name\",\"name\",\"name\",\"name(1)\",\"name(2)\",\"name(3)\"]",
+      "desc": "Standard: mix"
+    },
+    {
+      "input": "[\"a(0)\",\"a\",\"a\",\"a\"]",
+      "desc": "Standard: (0) exists"
+    },
+    {
+      "input": "[\"folder\",\"folder(1)\",\"folder(2)\",\"folder\",\"folder(1)\",\"folder(2)\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"q\",\"r\",\"q\",\"r\",\"q\",\"r\",\"q\"]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[\"abc(1)\",\"abc(1)\",\"abc(2)\",\"abc\"]",
+      "desc": "Standard: numbered first"
+    },
+    {
+      "input": "[-800,566,-361,828,-506]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
