@@ -81,7 +81,7 @@
       "desc": "Stress: 100 ppl judge 50"
     },
     {
-      "input": "3\n[[-440,-44,784,-706],[781,-15,560,465]]",
+      "input": "3\n[[313,-676,-994,998],[321,76,-319,390]]",
       "desc": "Stress: large n near max boundary"
     }
   ]
