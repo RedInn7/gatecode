@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw string); line2: k (int)",
   "testcases": [
     {
-      "input": "abcdbaefab\n2",
-      "desc": "Edge: example1"
+      "input": "\"i\"\n0",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "cdefdc\n3",
