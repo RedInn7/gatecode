@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^4, lowercase English letters",
   "input_format": "line1: s (string, raw)",
   "testcases": [
-    {"input": "abab", "desc": "Example 1: ab*2"},
-    {"input": "aba", "desc": "Example 2: cannot"},
-    {"input": "abcabcabcabc", "desc": "Example 3: abc*4"},
-    {"input": "a", "desc": "Edge: single char"},
-    {"input": "aa", "desc": "Edge: aa = a*2"},
-    {"input": "ab", "desc": "Edge: length 2 distinct"},
-    {"input": "aaaa", "desc": "Edge: all same"},
-    {"input": "abcd", "desc": "Standard: all distinct length 4"},
-    {"input": "abcabc", "desc": "Standard: abc*2"},
-    {"input": "abaababaab", "desc": "Standard: abaab*2"},
-    {"input": "abcabcabcabd", "desc": "Standard: nearly repeated"},
-    {"input": "abacabac", "desc": "Standard: abac*2"},
-    {"input": "ababab", "desc": "Standard: ab*3"},
-    {"input": "zzzzzzzzzz", "desc": "Standard: all z"},
-    {"input": "abcabcabcabcabcabcabcabcabcabc", "desc": "Standard: abc*10"},
-    {"input": "abcdabcd", "desc": "Standard: abcd*2"},
-    {"input": "xyxyxyxy", "desc": "Standard: xy*4"},
-    {"input": "abcdefg", "desc": "Standard: no period"},
-    {"input": "aaaaaaaaab", "desc": "Killer: almost all same"},
-    {"input": "abcabcab", "desc": "Killer: partial repetition only"}
+    {
+      "input": "abab",
+      "desc": "Example 1: ab*2"
+    },
+    {
+      "input": "aba",
+      "desc": "Example 2: cannot"
+    },
+    {
+      "input": "abcabcabcabc",
+      "desc": "Example 3: abc*4"
+    },
+    {
+      "input": "a",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "aa",
+      "desc": "Edge: aa = a*2"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: length 2 distinct"
+    },
+    {
+      "input": "aaaa",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "abcd",
+      "desc": "Standard: all distinct length 4"
+    },
+    {
+      "input": "abcabc",
+      "desc": "Standard: abc*2"
+    },
+    {
+      "input": "abaababaab",
+      "desc": "Standard: abaab*2"
+    },
+    {
+      "input": "abcabcabcabd",
+      "desc": "Standard: nearly repeated"
+    },
+    {
+      "input": "abacabac",
+      "desc": "Standard: abac*2"
+    },
+    {
+      "input": "ababab",
+      "desc": "Standard: ab*3"
+    },
+    {
+      "input": "zzzzzzzzzz",
+      "desc": "Standard: all z"
+    },
+    {
+      "input": "abcabcabcabcabcabcabcabcabcabc",
+      "desc": "Standard: abc*10"
+    },
+    {
+      "input": "abcdabcd",
+      "desc": "Standard: abcd*2"
+    },
+    {
+      "input": "xyxyxyxy",
+      "desc": "Standard: xy*4"
+    },
+    {
+      "input": "abcdefg",
+      "desc": "Standard: no period"
+    },
+    {
+      "input": "aaaaaaaaab",
+      "desc": "Killer: almost all same"
+    },
+    {
+      "input": "\"asbmfhbxvovkrdrwifjefket\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
