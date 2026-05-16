@@ -1,0 +1,76 @@
+{
+  "pid": 3494,
+  "slug": "angle-between-hands-of-a-clock",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "656560",
+      "desc": "Standard: n=656560"
+    },
+    {
+      "input": "540397",
+      "desc": "Standard: n=540397"
+    },
+    {
+      "input": "115728",
+      "desc": "Standard: n=115728"
+    },
+    {
+      "input": "403452",
+      "desc": "Standard: n=403452"
+    },
+    {
+      "input": "807977",
+      "desc": "Standard: n=807977"
+    },
+    {
+      "input": "397053",
+      "desc": "Standard: n=397053"
+    },
+    {
+      "input": "108182",
+      "desc": "Standard: n=108182"
+    },
+    {
+      "input": "523811",
+      "desc": "Standard: n=523811"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

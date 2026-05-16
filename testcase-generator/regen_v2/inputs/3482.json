@@ -1,0 +1,76 @@
+{
+  "pid": 3482,
+  "slug": "determine-if-two-strings-are-close",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"\n\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"k\"\n\"h\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"uq\"\n\"f\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"\n\"b\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"adcec\"\n\"acc\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"qaofogzfpfjilxjbnyxmvsjk\"\n\"wwgwclaqewjpcsjqja\"",
+      "desc": "Standard: len=24"
+    },
+    {
+      "input": "\"iewqovydfcnckxgfscnapkubkavccdmthtrkwko\"\n\"kvekwjmpcjy\"",
+      "desc": "Standard: len=39"
+    },
+    {
+      "input": "\"xeqhwecxqdtcjfdy\"\n\"tjhhefjcrq\"",
+      "desc": "Standard: len=16"
+    },
+    {
+      "input": "\"djbechvuosiujv\"\n\"ehvrdtir\"",
+      "desc": "Standard: len=14"
+    },
+    {
+      "input": "\"ygkocibngjyrlmhvttmpghusoajydvvglqmuppwlhkegvrewc\"\n\"xiouvlgjqwvniuhoypvtmuzrlgxudrd\"",
+      "desc": "Standard: len=49"
+    },
+    {
+      "input": "\"ngutrcgsnsloowmg\"\n\"lyknrgk\"",
+      "desc": "Standard: len=16"
+    },
+    {
+      "input": "\"xtnpyy\"\n\"uw\"",
+      "desc": "Standard: len=6"
+    },
+    {
+      "input": "\"tgkufapnrrofnhvddxycijjnogyvskzvskquegx\"\n\"npqjobgandrvwfhayngcuimvviguclnqcsiep\"",
+      "desc": "Standard: len=39"
+    },
+    {
+      "input": "\"prmqelpptjkvypmwfisjihcdfkkmcrugbbtebfowmmxkyclmwmlwvjxzzwdnrsakynlzcenymmfquhlazbcyvziarmpfcryzcgbgjfsomdhuxrmxvfmrpinamkvfvatszqsyxjdeqitilnvrymxzufdwyknvqyrrkswgyfhfthpiqdncqsllbduwspzyvswgondvckvwxtuokfnpqjkkhejggsrzucfajnjdqubigyofudajdrfidryqlngbfoidhtraqunbhvlwijtnlfgfqmsxhyvajxkytuevvmlgzmnuudhnzkgmgutowtytsgymbwsddqijvtrszbfelkzgkvjsjqsdizacpsgavwvhxrsuyukwmtvnalkhbxappbiylxpoocueivwdpntdqovsvmlwmfkgsmeezyjaazlexwpdndbsknsgowgbegtxpfkqvdtcoqewtgykjypddfrlpyrcnvwsvqiywkhlxnbnzadpxokisnnr\"\n\"qmjcffhwsbdclwwiewfdnxsaoqzcycsdonklhcvvopqxtyelqpzppsrdkbcrrsdkawshiezqqfvgvkmbcwjisbwrjipmzhllllhxuyobmrgjxiqvroqgqoylfwvpybuzrkuxchjiawqcnijtigxoyfndqpplhwmtcrrpaoipojldbdkfozwuepbnmgpsjhkkgjvrlvvwwzbioqpbtirmvxxzbbezixbtgrbwihcoeejahkihyyqspmroodrtogdgvvlnmhjiczxusazuxfcgrnsmgmwqmkdwpugcjpalhwlkjnpxqqrasnvichysavzeaezczrwdqoizozaiyuhivdezvtnptnmvtwhpkc\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"czrxgmejwzqussikkuyjftswuiyuugemlxaegaaqahpgacpewxeunjkwqaqihiltuildzgrngkapadhwkyivowtcxqjfrcxlzrdculkgbbsbfkdnjqehjdycmhprouxutjenyruwkjvurnstdigtzbpaywdxhmcvlrvfjdhyzdyzjgipihhbrsmrzyppobzpfirfyfearxwspfcyuynghidysusmctykjujopvwnthhmwlgzmmhqxpqxmdpoqpnbpocwkrgneccsbpoositcgfnvufwpsxnajduxwwzycjhweacwyiknwbdkcwinlaqtblekewdouzjwhbhsobvsqmismmztcdplzzxlznukrwafrevtfhidridbqzoidxppkjjujjjwvwvnkrmwckivuatwbuhmmjkqarztgeymueoxgmfrlkvhhrnffzaocboruphjgwpxjbcywmrlaowkpynewkzpxveublayaawqjbukznxomtnetnjpiigejnonsxsllqfcvhacxmofbvaerrpmackshhaqwnxguqyvtrnmtjlsfcwdacphvzzfycsauxekgosqjhprnipgtkfkynewqackgiomexrjyeddvxjrffbaxjdgvkxxzyruswvhucisjlqhtalaebqvqbmqtonzksfirtbxzaqcsswhnfhifmvczarbckopnoknvluvccjucpmollfekigjpgfziqbkquqcedbdikdwfuzyufwbjifewyreutwpyjksqdscoqjjyweprvvywidyifffjdsnzdutnusvvcldxkdqurgwzswpjnyknlhoerkbhxwwtwrhelnmwczrxivdcjgccpxcenbqvgfpocahcchtfxkgsnwjqtjrsewbdsfyteqwiusvckzxbzmkyxqgohyekyitdztgtkweswvhgnobcskubvclcqlzkomhzwxgzklmejttytixxdwxundvfyqmgkeptebjasdcvrihkssp\"\n\"ussncaigkdspjklgaktpetejcxycqdximnfxwfptmrwzylghkeaqslurjbsrtrmtunynamhnmmecgdwmpumbvbysskixrrqnjhhmgihjaqjhmctxmwuylucpkafuwcivarjvbiybgmoimmufnplwhyptqpqylppocbwvjwtoxuxjkcxtxigibpztwbwmxzfscwlpittggcuuvnwggyeskwyyufypsvctndybgcgafixufikubjcebtltbowjqlvtfsfesmuuguqweo\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"\n\"abcde\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

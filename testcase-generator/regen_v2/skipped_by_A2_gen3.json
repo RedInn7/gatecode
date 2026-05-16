@@ -44,6 +44,11 @@
       "pid": 3512,
       "slug": "the-earliest-and-latest-rounds-where-players-compete",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3490,
+      "slug": "find-array-given-subset-sums",
+      "reason": "ACM mode problem"
     }
   ]
 }
