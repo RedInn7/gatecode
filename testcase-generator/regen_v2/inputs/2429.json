@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= instructions.length <= 100; instructions is one of {G, L, R}",
   "input_format": "single line: instructions (quoted string)",
   "testcases": [
-    {"input": "\"GGLLGG\"", "desc": "Standard example 1"},
-    {"input": "\"GG\"", "desc": "Standard example 2"},
-    {"input": "\"GL\"", "desc": "Standard example 3"},
-    {"input": "\"G\"", "desc": "Edge: just G"},
-    {"input": "\"L\"", "desc": "Edge: just L"},
-    {"input": "\"R\"", "desc": "Edge: just R"},
-    {"input": "\"LL\"", "desc": "Edge: 2 lefts"},
-    {"input": "\"RR\"", "desc": "Edge: 2 rights"},
-    {"input": "\"LR\"", "desc": "Cancel"},
-    {"input": "\"GLGLGLGL\"", "desc": "Box loop"},
-    {"input": "\"GLGRGLGR\"", "desc": "Mixed turns"},
-    {"input": "\"GGGGGGGGGG\"", "desc": "All forward (not bounded)"},
-    {"input": "\"LLLL\"", "desc": "4 lefts back to start"},
-    {"input": "\"RRRR\"", "desc": "4 rights"},
-    {"input": "\"GLLLGGLLLG\"", "desc": "Mixed"},
-    {"input": "\"GGGLGGGGRGGGL\"", "desc": "Complex"},
-    {"input": "\"GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\"", "desc": "100 G's"},
-    {"input": "\"GRGRGRGR\"", "desc": "Box right"},
-    {"input": "\"LRLRLRLR\"", "desc": "Cancel many"},
-    {"input": "\"GLLGGGRGGLRGGGRGGLR\"", "desc": "Random pattern"}
+    {
+      "input": "\"GGLLGG\"",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "\"GG\"",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "\"GL\"",
+      "desc": "Standard example 3"
+    },
+    {
+      "input": "\"G\"",
+      "desc": "Edge: just G"
+    },
+    {
+      "input": "\"L\"",
+      "desc": "Edge: just L"
+    },
+    {
+      "input": "\"R\"",
+      "desc": "Edge: just R"
+    },
+    {
+      "input": "\"LL\"",
+      "desc": "Edge: 2 lefts"
+    },
+    {
+      "input": "\"RR\"",
+      "desc": "Edge: 2 rights"
+    },
+    {
+      "input": "\"LR\"",
+      "desc": "Cancel"
+    },
+    {
+      "input": "\"GLGLGLGL\"",
+      "desc": "Box loop"
+    },
+    {
+      "input": "\"GLGRGLGR\"",
+      "desc": "Mixed turns"
+    },
+    {
+      "input": "\"GGGGGGGGGG\"",
+      "desc": "All forward (not bounded)"
+    },
+    {
+      "input": "\"LLLL\"",
+      "desc": "4 lefts back to start"
+    },
+    {
+      "input": "\"RRRR\"",
+      "desc": "4 rights"
+    },
+    {
+      "input": "\"GLLLGGLLLG\"",
+      "desc": "Mixed"
+    },
+    {
+      "input": "\"GGGLGGGGRGGGL\"",
+      "desc": "Complex"
+    },
+    {
+      "input": "\"GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\"",
+      "desc": "100 G's"
+    },
+    {
+      "input": "\"GRGRGRGR\"",
+      "desc": "Box right"
+    },
+    {
+      "input": "\"LRLRLRLR\"",
+      "desc": "Cancel many"
+    },
+    {
+      "input": "\"asvlcngjxavm\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

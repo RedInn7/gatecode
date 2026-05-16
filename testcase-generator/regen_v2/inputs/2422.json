@@ -4,25 +4,85 @@
   "inferred_constraints": "grid is 3x3; grid[i][j] is 'B' or 'W'",
   "input_format": "single line: grid (JSON 2D array of strings)",
   "testcases": [
-    {"input": "[[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]", "desc": "Standard example 1 true"},
-    {"input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]", "desc": "Checkerboard false"},
-    {"input": "[[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\"]]", "desc": "All black"},
-    {"input": "[[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"]]", "desc": "All white"},
-    {"input": "[[\"B\",\"B\",\"W\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]", "desc": "Already 2x2 black"},
-    {"input": "[[\"W\",\"W\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"B\",\"B\"]]", "desc": "Already 2x2 white"},
-    {"input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"W\"]]", "desc": "3 W in corner - 1 swap fixes"},
-    {"input": "[[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"],[\"B\",\"B\",\"B\"]]", "desc": "2x2 W already true"},
-    {"input": "[[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"]]", "desc": "Anti-checker false"},
-    {"input": "[[\"B\",\"B\",\"W\"],[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"B\"]]", "desc": "Mixed need swap"},
-    {"input": "[[\"B\",\"B\",\"B\"],[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"W\"]]", "desc": "Top-right 2x2 black"},
-    {"input": "[[\"W\",\"W\",\"W\"],[\"B\",\"W\",\"W\"],[\"B\",\"B\",\"B\"]]", "desc": "Top-right 2x2 white"},
-    {"input": "[[\"B\",\"W\",\"B\"],[\"B\",\"B\",\"W\"],[\"W\",\"B\",\"B\"]]", "desc": "Diagonal pattern"},
-    {"input": "[[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"W\",\"W\"]]", "desc": "Diff diagonal"},
-    {"input": "[[\"B\",\"W\",\"W\"],[\"W\",\"B\",\"B\"],[\"W\",\"B\",\"B\"]]", "desc": "Bottom-right 2x2 black"},
-    {"input": "[[\"W\",\"B\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]", "desc": "Bottom-right 2x2 white"},
-    {"input": "[[\"B\",\"B\",\"W\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]", "desc": "Top-left 2x2 B"},
-    {"input": "[[\"W\",\"W\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"B\",\"B\"]]", "desc": "Top-left 2x2 W"},
-    {"input": "[[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]", "desc": "Top-left 2x2 B exact"},
-    {"input": "[[\"B\",\"W\",\"B\"],[\"W\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]", "desc": "Middle white plus corner B"}
+    {
+      "input": "[[504,555,708],[-846,821,-612],[860,-154,-36]]",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]",
+      "desc": "Checkerboard false"
+    },
+    {
+      "input": "[[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\"]]",
+      "desc": "All black"
+    },
+    {
+      "input": "[[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"]]",
+      "desc": "All white"
+    },
+    {
+      "input": "[[\"B\",\"B\",\"W\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]",
+      "desc": "Already 2x2 black"
+    },
+    {
+      "input": "[[\"W\",\"W\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"B\",\"B\"]]",
+      "desc": "Already 2x2 white"
+    },
+    {
+      "input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"W\"]]",
+      "desc": "3 W in corner - 1 swap fixes"
+    },
+    {
+      "input": "[[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"],[\"B\",\"B\",\"B\"]]",
+      "desc": "2x2 W already true"
+    },
+    {
+      "input": "[[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"]]",
+      "desc": "Anti-checker false"
+    },
+    {
+      "input": "[[\"B\",\"B\",\"W\"],[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"B\"]]",
+      "desc": "Mixed need swap"
+    },
+    {
+      "input": "[[\"B\",\"B\",\"B\"],[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"W\"]]",
+      "desc": "Top-right 2x2 black"
+    },
+    {
+      "input": "[[\"W\",\"W\",\"W\"],[\"B\",\"W\",\"W\"],[\"B\",\"B\",\"B\"]]",
+      "desc": "Top-right 2x2 white"
+    },
+    {
+      "input": "[[\"B\",\"W\",\"B\"],[\"B\",\"B\",\"W\"],[\"W\",\"B\",\"B\"]]",
+      "desc": "Diagonal pattern"
+    },
+    {
+      "input": "[[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"W\",\"W\"]]",
+      "desc": "Diff diagonal"
+    },
+    {
+      "input": "[[\"B\",\"W\",\"W\"],[\"W\",\"B\",\"B\"],[\"W\",\"B\",\"B\"]]",
+      "desc": "Bottom-right 2x2 black"
+    },
+    {
+      "input": "[[\"W\",\"B\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]",
+      "desc": "Bottom-right 2x2 white"
+    },
+    {
+      "input": "[[\"B\",\"B\",\"W\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]",
+      "desc": "Top-left 2x2 B"
+    },
+    {
+      "input": "[[\"W\",\"W\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"B\",\"B\"]]",
+      "desc": "Top-left 2x2 W"
+    },
+    {
+      "input": "[[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]",
+      "desc": "Top-left 2x2 B exact"
+    },
+    {
+      "input": "[[874,-127,-275,-220,-280,-661],[863,101,-969,-586,-302,900],[607,55,833,221,261,-817],[-991,379,-941,517,-915,-369],[-975,862,-24,-86,-875,909],[410,-285,-185,-927,615,250]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
