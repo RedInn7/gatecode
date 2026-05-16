@@ -109,6 +109,11 @@
       "pid": 1078,
       "slug": "synonymous-sentences",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1050,
+      "slug": "design-exam-scores-tracker",
+      "reason": "ACM mode problem"
     }
   ]
 }

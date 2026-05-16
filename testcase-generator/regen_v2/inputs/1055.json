@@ -1,0 +1,88 @@
+{
+  "pid": 1055,
+  "slug": "find-the-closest-palindrome",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"j\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"yy\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"bccec\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"w6qq6w\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"n8nlxzswplslwc5xqnsmkhjr\"",
+      "desc": "Standard: len=24"
+    },
+    {
+      "input": "\"54y4nhronlneyfl0bb6bcqeco6iul9oq2rbafxljo9lwsju8\"",
+      "desc": "Standard: len=48"
+    },
+    {
+      "input": "\"ap3nkoph34drxss610y2szv2z1zsrl2po6v9qd\"",
+      "desc": "Standard: len=38"
+    },
+    {
+      "input": "\"8yrdqrzkhoc17c9ha4wndrbree5xms\"",
+      "desc": "Standard: len=30"
+    },
+    {
+      "input": "\"ql9bfwh1ind32um9qezl6rwa\"",
+      "desc": "Standard: len=24"
+    },
+    {
+      "input": "\"3epdx72n7439jszrktdgqo9kmc4jc561u4ljoe1at6vfuhi\"",
+      "desc": "Standard: len=47"
+    },
+    {
+      "input": "\"s7ok7roibhyvlr\"",
+      "desc": "Standard: len=14"
+    },
+    {
+      "input": "\"7axi1hrxczy5qiyv9gkyp\"",
+      "desc": "Standard: len=21"
+    },
+    {
+      "input": "\"5hsze6dk9u94ojksfkzaks1en2e2u2csg2arfjzh7ylqj5j70aesfke04wse1a527tu7f0m0sp1tg2bkl7r6tt3irtws8vmzhhij8x9rdu74y8ip52oz3vuolhxbea47v4s559qsmdhd23t6leohfjato52tjpodvyo17qt615puc0ui4h5pxhi5opy1xq07qr6ovwrb\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"akx90n9fyhjkloufq41ce1vl7j7f9wybxsko3r5cb3c560dvqew2f3x0hwhigkpon5hz8ltzihi65isyz4e05fu6wp2yrndng1xskugz99zl1ffpooud01kklzorprn3uwhisoen7v0ml7e6m7hcldyhh1cipu38xlkz7c1trultkfj8cpai762s3zua9mwqlh5a0py2vf122scno5nkst24bca47jv4nnzf3mpcaiwfps6tx4a0cev6cc7r754d5mah37o0mer3euax98wyrzt4yhdirori55jemkt2jznge508y0zydiul1tj5ytot8aic96f5ecptrslh2l75f7sjssnddmj3e3nvxyywqguc72mehvup9yr3ab3063b0h3y6wbk644p39h3jx9s8p8wuxwb1vo7m32hbe2lkfnlxm1babezeyaypa9u9gkwl457vwslkirafut51p3bee1t0nl9x3qci1m3umkc1bqsbjizb8kt9\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"dzk56m30g5ith0jf9a5hzo6jldkb1a282rybg44ggkbvzrdjxrtn5hx4zqdkhjl0gvgq73kaymmtbsjqr33933l8r4z9jnnbq4xfvrbftjm66ccl5clcrom9wownb1j7a047ebns97zct1wn8umu4h0ckznsa3c80ftqmr9qssk7mm6b1pg02r9ngfv76uywn2cymreh8gof15pajvm0l49jqb8v99rm8tavafxavhlp8rfiq3y0quh2wo7i9ezv5v6cb91fj9n3uwjb0bu8d57z7utndh9j3r3mnyea77juxd6gq42zxpairf4dkjwmxpuadhj9h3323868i85axuldvqt3zc6ilpqwv4ub680rhbfieobx9zzbgrhjs5xkf577m8ed8buff0gcn7lf0kk94wya5cdggzpjudpl105xvcpmjmrfbrbju7u6aar58svsjxhkp5i9qw2e9lgreu07ls27bve8ualamiab9ruo3ph7xihof1sgtwx4zpiv3465j0mwy5wprc0g3dejxrhz3qfxkxk8vi4nw6gk5t0ouz0a0wbm1mq7hmkjgr8iwm24262try27qyk6nbfikkm15t8imp59aqwy40iio1cnu9nvax7zkmu0idiq0z7yvdboeqdadgs7xt7s5y8aicc0kek4g1cffizjmpwf53n1azyxr0q5qplcpcomo4b64eofe7tpkjhbi93g52unvn78gnif0m1tsc3al6z70s1remy4eh0t69o3ivy3krkn0y9pwa6f4dajxvdrsmyelczja0dvco5hqcpl1wswgh6eei7wrudraebkbyce06bsyrppcxv3bxgef1wra5j0nobheodnq6a57nhg2tuh9jcac0u7awb9s09vpvxfhaz9iuu0u7tuwfk92tjckiy4s5v2dyeap009cu7eeygbxrgrap4twuh0wy7da8p46njmjn8rpdjq3z9edgc8f71r54mktds19m8eqv34v04l\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"qkfj4dn3sgbke3fuj3nt6z2rw7fk9ogzbawhi8ud4phji2dlug0htl5a28r9ynkz38s37tcgxrssfdaupkvha44d65y9l2z8o3a36nwt95mnv72i8ginrql6xgawnzneegumu677v8de4v4lbc6udj724531fcme2vihe81jlc1c5mbne5ty8lide8qgmnhk7rdneue373mq2okfslrm0urp2gzujxzhxcqt2sw607fqo42oca9q0m9hgz17s1cn9bi86tpvxrw2jihwqsbqocikjwnjxclfbhm542xshj7vmt4c3ccsdmvkmyeq1cq007i5kz6lvggpptnib4wtigvwlebtct433oqe4jdw5l05av7xlufoabi0oaxbh0eod9jrhj4exm49ykjbvuc9ygsp1haz9bi14z41w4h0kq1kd5mcmb3x56z9paosnnvwy6b4bneaybryghzvw2ki6lvrpqrzlnp6lxhwax47b45h447eomge4exkvpg38ivb93b0ipsz7xtw9ceeoaxulisnuyrcg67v6f66s8xeqhhg4yxwdp5ivztgxywpjt3pip7tod9c660uo0thdpl9tuofe5ue7bysysmz0gk16t9aimxfvn5q304gnql97slmykulav4iygheywoa7atdwtjtjekz5ejw6yafvnlo1bnotiyd8fzhzkmeoi40i69pko3awlmdx8yhi0boap8v0uoqh8cwa95otsxidf0yzqljsqpe74yai05l58j4sf7scwrnveejx6oombbtz2st4s2kwwiwym6n9iwhsu4k7jiddjmvnipgvxpouoktboln9nt0tcxyuuiyaslsdya8k3xdao5ekg37ltitlw1pvjk85wlj013ncjq245ymqrnrbo2l7todrgtvjqkgp2pyh5jor509ikgjf4wxl3fe7ii4v1sq4ief3dmo2kwuzlq1x3e39gscp9vm8n5lq5v35wsp6nd7xlxmqgxd7c36\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}
