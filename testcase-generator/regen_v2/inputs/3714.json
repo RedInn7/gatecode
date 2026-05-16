@@ -1,0 +1,28 @@
+{
+  "pid": 3714,
+  "slug": "binary-string-with-substrings-representing-1-to-n",
+  "inferred_constraints": "1 <= s.length <= 1000, binary, 1 <= n <= 10^9",
+  "input_format": "line1: s (string, raw); line2: n (int)",
+  "testcases": [
+    {"input": "0110\n3", "desc": "Example 1: true"},
+    {"input": "0110\n4", "desc": "Example 2: false"},
+    {"input": "1\n1", "desc": "Edge: single 1, n=1"},
+    {"input": "0\n1", "desc": "Edge: single 0, n=1 false"},
+    {"input": "10\n1", "desc": "Edge"},
+    {"input": "11\n3", "desc": "Edge"},
+    {"input": "100\n4", "desc": "Standard"},
+    {"input": "0110\n2", "desc": "Standard"},
+    {"input": "111\n7", "desc": "Standard"},
+    {"input": "1010\n3", "desc": "Standard"},
+    {"input": "1101011\n7", "desc": "Standard"},
+    {"input": "10110111\n7", "desc": "Standard"},
+    {"input": "1011011000011110\n15", "desc": "Standard"},
+    {"input": "11110000\n4", "desc": "Standard"},
+    {"input": "0\n1000000000", "desc": "Edge: false very high n"},
+    {"input": "1\n1000000000", "desc": "Edge: false very high n"},
+    {"input": "0110\n1", "desc": "Standard"},
+    {"input": "1110\n6", "desc": "Standard"},
+    {"input": "1001100110011001\n9", "desc": "Standard"},
+    {"input": "111111111111111\n7", "desc": "Standard"}
+  ]
+}

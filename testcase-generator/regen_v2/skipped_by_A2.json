@@ -18,6 +18,7 @@
     {"pid": 3761, "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list", "reason": "in-place BST -> circular doubly-linked-list transform; output representation non-trivial"},
     {"pid": 3759, "slug": "add-two-promises", "reason": "JavaScript-only problem with Promise async behavior"},
     {"pid": 3752, "slug": "generate-random-point-in-a-circle", "reason": "randomized output; needs statistical SPJ"},
-    {"pid": 3748, "slug": "restore-the-array-from-adjacent-pairs", "reason": "multiple valid arrays accepted (forward or reverse); needs SPJ"}
+    {"pid": 3748, "slug": "restore-the-array-from-adjacent-pairs", "reason": "multiple valid arrays accepted (forward or reverse); needs SPJ"},
+    {"pid": 3740, "slug": "erect-the-fence-ii", "reason": "returns smallest enclosing circle [cx, cy, r] as doubles; needs floating-point SPJ"}
   ]
 }
