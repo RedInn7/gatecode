@@ -5,8 +5,8 @@
   "input_format": "line1: customers (raw string)",
   "testcases": [
     {
-      "input": "YYNY",
-      "desc": "Edge: example1 -> 2"
+      "input": "\"w\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "NNNNN",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"mayx\"",
+      "input": "\"n\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 Y's"
     },
     {
-      "input": "\"gzlfwlpuae\"",
+      "input": "\"dbzalbqzwc\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

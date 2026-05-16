@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw string)",
   "testcases": [
     {
-      "input": "abc",
-      "desc": "Edge: example1 -> 2"
+      "input": "\"v\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "dd",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"l\"",
+      "input": "\"umo\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 chars 4 copies of alphabet"
     },
     {
-      "input": "\"bihvni\"",
+      "input": "\"bcuifs\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
