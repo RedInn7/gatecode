@@ -1,0 +1,28 @@
+{
+  "pid": 2580,
+  "slug": "reverse-string-ii",
+  "inferred_constraints": "1 <= s.length <= 10^4, s consists of only lowercase English letters, 1 <= k <= 10^4",
+  "input_format": "line1: s; line2: k (int)",
+  "testcases": [
+    {"input": "abcdefg\n2", "desc": "Edge: example1"},
+    {"input": "abcd\n2", "desc": "Edge: example2"},
+    {"input": "a\n1", "desc": "Edge: single char k=1"},
+    {"input": "a\n2", "desc": "Edge: single char k>len"},
+    {"input": "ab\n1", "desc": "Edge: 2 chars k=1"},
+    {"input": "ab\n2", "desc": "Edge: 2 chars k=len"},
+    {"input": "ab\n3", "desc": "Edge: 2 chars k>len"},
+    {"input": "abc\n2", "desc": "Edge: 3 chars k=2"},
+    {"input": "abcd\n1", "desc": "Edge: 4 chars k=1"},
+    {"input": "abcd\n4", "desc": "Edge: 4 chars k=len"},
+    {"input": "abcdefghij\n3", "desc": "Standard: 10 chars k=3"},
+    {"input": "abcdefghij\n5", "desc": "Standard: 10 chars k=5"},
+    {"input": "abcdefghij\n10", "desc": "Standard: 10 chars k=10"},
+    {"input": "abcdefghijklmnop\n4", "desc": "Standard: 16 chars k=4"},
+    {"input": "aaaaaaa\n3", "desc": "Standard: all same"},
+    {"input": "zzzzzzzzzz\n2", "desc": "Standard: all z"},
+    {"input": "abcdefghijabcdefghijabcdefghijabcdefghij\n5", "desc": "Standard: 40 chars k=5"},
+    {"input": "hello\n2", "desc": "Standard: word"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n7", "desc": "Stress: 182 chars k=7"},
+    {"input": "abcdefghij\n10000", "desc": "Killer: k much larger than len"}
+  ]
+}

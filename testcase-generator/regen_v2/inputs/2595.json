@@ -1,0 +1,28 @@
+{
+  "pid": 2595,
+  "slug": "integer-to-english-words",
+  "inferred_constraints": "0 <= num <= 2^31 - 1",
+  "input_format": "single line: num (int)",
+  "testcases": [
+    {"input": "123", "desc": "Edge: example1"},
+    {"input": "12345", "desc": "Edge: example2"},
+    {"input": "1234567", "desc": "Edge: example3"},
+    {"input": "0", "desc": "Edge: zero"},
+    {"input": "1", "desc": "Edge: one"},
+    {"input": "9", "desc": "Edge: single digit max"},
+    {"input": "10", "desc": "Edge: ten"},
+    {"input": "11", "desc": "Edge: eleven"},
+    {"input": "19", "desc": "Edge: nineteen"},
+    {"input": "20", "desc": "Edge: twenty"},
+    {"input": "99", "desc": "Edge: ninety-nine"},
+    {"input": "100", "desc": "Standard: hundred"},
+    {"input": "1000", "desc": "Standard: thousand"},
+    {"input": "1000000", "desc": "Standard: million"},
+    {"input": "1000000000", "desc": "Standard: billion"},
+    {"input": "1234567891", "desc": "Standard: large"},
+    {"input": "999999999", "desc": "Standard: nines"},
+    {"input": "1000001", "desc": "Standard: million one"},
+    {"input": "2000000000", "desc": "Stress: two billion"},
+    {"input": "2147483647", "desc": "Killer: MAX_INT"}
+  ]
+}

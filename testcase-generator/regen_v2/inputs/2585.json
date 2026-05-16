@@ -1,0 +1,28 @@
+{
+  "pid": 2585,
+  "slug": "truncate-sentence",
+  "inferred_constraints": "1 <= s.length <= 500, k is in the range [1, number of words], s consists of English letters and spaces only, no extra spaces, 1 <= k <= number of words",
+  "input_format": "line1: s; line2: k (int)",
+  "testcases": [
+    {"input": "Hello how are you Contestant\n4", "desc": "Edge: example1"},
+    {"input": "What is the solution to this problem\n4", "desc": "Edge: example2"},
+    {"input": "chopper is not a tanuki\n5", "desc": "Edge: example3 k=all"},
+    {"input": "Hello\n1", "desc": "Edge: single word"},
+    {"input": "a\n1", "desc": "Edge: single char"},
+    {"input": "a b\n1", "desc": "Edge: 2 words k=1"},
+    {"input": "a b\n2", "desc": "Edge: 2 words k=2"},
+    {"input": "a b c d e\n3", "desc": "Edge: 5 single chars k=3"},
+    {"input": "Hello world\n2", "desc": "Edge: 2 words k=all"},
+    {"input": "The quick brown fox\n2", "desc": "Standard: 4 words k=2"},
+    {"input": "I love programming and algorithms\n3", "desc": "Standard: 5 words k=3"},
+    {"input": "abc def ghi jkl mno pqr stu\n5", "desc": "Standard: 7 words"},
+    {"input": "ABC DEF GHI\n1", "desc": "Standard: upper letters"},
+    {"input": "aaaaa bbbbb ccccc ddddd eeeee\n3", "desc": "Standard: same chars per word"},
+    {"input": "x y z a b c d e f g h i j k\n7", "desc": "Standard: many short"},
+    {"input": "Programming is fun and challenging in equal measure\n5", "desc": "Standard: medium"},
+    {"input": "Hello World Foo Bar Baz Qux Quux\n4", "desc": "Standard: 7 words k=4"},
+    {"input": "alpha beta gamma delta epsilon zeta eta theta iota kappa\n8", "desc": "Standard: greek"},
+    {"input": "a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z\n50", "desc": "Stress: 52 single-char words"},
+    {"input": "supercalifragilisticexpialidocious antidisestablishmentarianism pneumonoultramicroscopicsilicovolcanoconiosis incomprehensibilities honorificabilitudinitatibus\n3", "desc": "Killer: long words"}
+  ]
+}

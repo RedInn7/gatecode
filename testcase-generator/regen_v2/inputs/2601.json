@@ -1,0 +1,28 @@
+{
+  "pid": 2601,
+  "slug": "find-subtree-sizes-after-changes",
+  "inferred_constraints": "1 <= n <= 10^5, parent.length == n, parent[0] == -1, 0 <= parent[i] < n, s.length == n, lowercase letters",
+  "input_format": "line1: parent (JSON array); line2: s",
+  "testcases": [
+    {"input": "[-1,0,0,1,1,1]\nabaabc", "desc": "Edge: example1"},
+    {"input": "[-1,0,4,0,1]\nabbba", "desc": "Edge: example2"},
+    {"input": "[-1]\na", "desc": "Edge: n=1"},
+    {"input": "[-1,0]\nab", "desc": "Edge: n=2"},
+    {"input": "[-1,0]\naa", "desc": "Edge: n=2 same char"},
+    {"input": "[-1,0,0]\naab", "desc": "Edge: 2 kids same char"},
+    {"input": "[-1,0,0]\nabc", "desc": "Edge: 2 kids diff"},
+    {"input": "[-1,0,1,2,3]\nabcde", "desc": "Edge: linear chain"},
+    {"input": "[-1,0,1,2,3]\naaaaa", "desc": "Edge: linear same char"},
+    {"input": "[-1,0,0,0,0,0]\nabbbbb", "desc": "Standard: star"},
+    {"input": "[-1,0,0,1,1,2,2]\nabcabca", "desc": "Standard: balanced binary"},
+    {"input": "[-1,0,1,1,2,2,3,3]\nabcdefgh", "desc": "Standard: irregular"},
+    {"input": "[-1,0,1,2,3,4,5,6,7,8]\nabcdefghij", "desc": "Standard: long chain"},
+    {"input": "[-1,0,0,1,1,2,2,3,3,4,4]\nabaabaabaab", "desc": "Standard: repeating"},
+    {"input": "[-1,0,0,0,1,1,2,2,3,3]\nzzazbzczdzez", "desc": "Standard: deep tree"},
+    {"input": "[-1,0,0,1,2,3,4,5,6,7]\nabcdefghij", "desc": "Standard: mixed depths"},
+    {"input": "[-1,0,1,0,2,3,1,4,5,2]\naabbccddee", "desc": "Standard: random structure"},
+    {"input": "[-1,0,0,0,0,0,0,0,0,0]\nabbbbbbbbb", "desc": "Standard: star n=10"},
+    {"input": "[-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]\nabcdefghijklmnopqrstu", "desc": "Stress: linear n=21"},
+    {"input": "[-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\nazzzzzzzzzzzzzzzzzzz", "desc": "Killer: star same letter"}
+  ]
+}

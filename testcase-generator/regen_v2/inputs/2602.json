@@ -1,0 +1,28 @@
+{
+  "pid": 2602,
+  "slug": "maximum-product-of-three-elements-after-one-replacement",
+  "inferred_constraints": "3 <= nums.length <= 10^5, -10^5 <= nums[i] <= 10^5",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[-4,-5,2,3]", "desc": "Edge: example1"},
+    {"input": "[1,2,3]", "desc": "Edge: example2 min n"},
+    {"input": "[-1,-2,-3]", "desc": "Edge: all negative"},
+    {"input": "[0,0,0]", "desc": "Edge: all zero"},
+    {"input": "[100000,100000,100000]", "desc": "Edge: all max"},
+    {"input": "[-100000,-100000,-100000]", "desc": "Edge: all min"},
+    {"input": "[-100000,-100000,100000]", "desc": "Edge: 2 min 1 max"},
+    {"input": "[1,1,1]", "desc": "Edge: all 1"},
+    {"input": "[100000,1,1]", "desc": "Edge: 1 large"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: small ascending"},
+    {"input": "[-5,-4,-3,-2,-1]", "desc": "Standard: all neg"},
+    {"input": "[10,20,30,40,50]", "desc": "Standard: ascending 10s"},
+    {"input": "[-10,-5,0,5,10]", "desc": "Standard: balanced"},
+    {"input": "[-100,-50,-25,1,2,3]", "desc": "Standard: mix neg small pos"},
+    {"input": "[100000,99999,99998]", "desc": "Standard: near max 3"},
+    {"input": "[-100000,99999,99998]", "desc": "Standard: 1 neg max"},
+    {"input": "[5,5,5,5,5]", "desc": "Standard: all 5s"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,-1,-2,-3]", "desc": "Standard: mixed"},
+    {"input": "[-100000,-99999,-99998,-99997,-99996,-99995,-99994,-99993,-99992,-99991,-99990,-99989,-99988,-99987,-99986,-99985,-99984,-99983,-99982,-99981]", "desc": "Stress: 20 large neg"},
+    {"input": "[100000,-100000,100000,-100000,100000,-100000,100000,-100000,100000,-100000]", "desc": "Killer: alt max extreme"}
+  ]
+}
