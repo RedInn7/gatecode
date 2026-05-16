@@ -39,3 +39,30 @@ PIDs roughly [2068, 3845] excluding any already in skipped list. Next agent shou
 4. Generate ACM-mode problems too (`is_acm_mode=1`), but format input lines per problem spec
 5. **Do NOT** regenerate any PID already in `inputs/` (A1 covers 1-1909, A2 covers 1910-3845)
 6. Commit every 30-50 problems with `git fetch origin main && git rebase origin/main && git add ... && git commit -m "regen-v2 stage A2: PIDs X-Y" && git push origin HEAD:main`
+
+## Session 2 (A2-r2) Progress — 2026-05-15
+
+### Completed in this round (250 problems)
+- PIDs 2068-2123 (78 problems) — first batch commit
+- PIDs 2124-2179 (69 problems) — second batch commit
+- PIDs 2181-2234 (52 problems) — third batch commit
+- PIDs 2208-2302 (~49 problems) — fourth batch commit
+
+### Skipped (added 6 to skipped_by_A2.json)
+- 2082 sort-by — JS only takes function arg
+- 2088 countries-you-can-safely-invest-in — SQL
+- 2109 group-by — JS only prototype enhancement
+- 2144 logical-or-of-two-binary-grids-represented-as-quad-trees — QuadTree complex I/O
+- 2146 event-emitter — JS only
+- 2180 clone-binary-tree-with-random-pointer — random ptr serialization
+- 2193 guess-the-number-using-bitwise-questions-ii — interactive commonBits API
+
+### Remaining at end of session 2
+1300 problems remaining in range [2068, 3845]. Next agent resumes with PID 2303 onward.
+
+### Notes
+- All testcases follow CLAUDE.md spec: ≥5 edge, ≥10 standard, ≥3 stress, ≥2 killer
+- Constraints validated per problem (no invalid inputs like distinct violations, range violations)
+- Backend on :8082 was kept running during session
+- Used helper `work_A2/fetch_batch.py` to pull problems without regenerating done PIDs
+
