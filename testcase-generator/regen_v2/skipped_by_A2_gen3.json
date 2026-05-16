@@ -254,6 +254,11 @@
       "pid": 2988,
       "slug": "number-of-beautiful-pairs",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 2980,
+      "slug": "find-the-number-of-winning-players",
+      "reason": "ACM mode problem"
     }
   ]
 }
