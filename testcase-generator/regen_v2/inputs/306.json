@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, uppercase, 0 <= k <= s.length",
   "input_format": "line1: s (string in JSON quotes); line2: k (int)",
   "testcases": [
-    {"input": "\"ABAB\"\n2", "desc": "Edge: example1"},
-    {"input": "\"AABABBA\"\n1", "desc": "Edge: example2"},
-    {"input": "\"A\"\n0", "desc": "Edge: n=1 k=0"},
-    {"input": "\"A\"\n1", "desc": "Edge: n=1 k=1"},
-    {"input": "\"AA\"\n0", "desc": "Edge: 2 same"},
-    {"input": "\"AB\"\n0", "desc": "Edge: 2 distinct k=0"},
-    {"input": "\"AB\"\n1", "desc": "Edge: 2 distinct k=1"},
-    {"input": "\"AAAAA\"\n0", "desc": "Edge: all same"},
-    {"input": "\"AAAAA\"\n5", "desc": "Edge: all same large k"},
-    {"input": "\"ABCDE\"\n0", "desc": "Edge: distinct k=0"},
-    {"input": "\"ABCDE\"\n4", "desc": "Standard: distinct k=4"},
-    {"input": "\"AABBCC\"\n2", "desc": "Standard: pairs k=2"},
-    {"input": "\"AABBCC\"\n4", "desc": "Standard: pairs k=4"},
-    {"input": "\"ABCABC\"\n3", "desc": "Standard: cycle"},
-    {"input": "\"AAAAABBBBBCCCCC\"\n5", "desc": "Standard: 3 blocks of 5"},
-    {"input": "\"ABABABABAB\"\n5", "desc": "Standard: 10 alt k=5"},
-    {"input": "\"ZZZZZAAAAAZZZZZ\"\n5", "desc": "Standard: bracketed"},
-    {"input": "\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n50", "desc": "Stress: 50 A k=50"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n10", "desc": "Stress: 2 alphabets k=10"},
-    {"input": "\"ABABABABABABABABABABABABABABABABABABABABABABABABABAB\"\n26", "desc": "Stress: 52 alt k=26"}
+    {
+      "input": "\"ABAB\"\n2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"AABABBA\"\n1",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"aldp\"\n1",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"pvhgon\"\n2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"AA\"\n0",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "\"AB\"\n0",
+      "desc": "Edge: 2 distinct k=0"
+    },
+    {
+      "input": "\"AB\"\n1",
+      "desc": "Edge: 2 distinct k=1"
+    },
+    {
+      "input": "\"AAAAA\"\n0",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "\"AAAAA\"\n5",
+      "desc": "Edge: all same large k"
+    },
+    {
+      "input": "\"ABCDE\"\n0",
+      "desc": "Edge: distinct k=0"
+    },
+    {
+      "input": "\"ABCDE\"\n4",
+      "desc": "Standard: distinct k=4"
+    },
+    {
+      "input": "\"AABBCC\"\n2",
+      "desc": "Standard: pairs k=2"
+    },
+    {
+      "input": "\"AABBCC\"\n4",
+      "desc": "Standard: pairs k=4"
+    },
+    {
+      "input": "\"ABCABC\"\n3",
+      "desc": "Standard: cycle"
+    },
+    {
+      "input": "\"AAAAABBBBBCCCCC\"\n5",
+      "desc": "Standard: 3 blocks of 5"
+    },
+    {
+      "input": "\"ABABABABAB\"\n5",
+      "desc": "Standard: 10 alt k=5"
+    },
+    {
+      "input": "\"ZZZZZAAAAAZZZZZ\"\n5",
+      "desc": "Standard: bracketed"
+    },
+    {
+      "input": "\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n50",
+      "desc": "Stress: 50 A k=50"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n10",
+      "desc": "Stress: 2 alphabets k=10"
+    },
+    {
+      "input": "\"eglrkkwqtrmjfy\"\n2",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
