@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= wordlist.length, queries.length <= 5000; 1 <= wordlist[i].length, queries[i].length <= 7; words contain English letters",
   "input_format": "line1: wordlist (JSON array of strings); line2: queries (JSON array of strings)",
   "testcases": [
-    {"input": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]", "desc": "Edge: example1"},
-    {"input": "[\"yellow\"]\n[\"YellOw\"]", "desc": "Edge: capitalization fix"},
-    {"input": "[\"yellow\"]\n[\"yellow\"]", "desc": "Edge: exact match"},
-    {"input": "[\"yellow\"]\n[\"yollow\"]", "desc": "Edge: vowel fix"},
-    {"input": "[\"yellow\"]\n[\"yllw\"]", "desc": "Edge: no match (consonant only)"},
-    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: single char"},
-    {"input": "[\"a\"]\n[\"e\"]", "desc": "Edge: single vowel fix"},
-    {"input": "[\"abc\"]\n[\"xyz\"]", "desc": "Edge: no match"},
-    {"input": "[\"Yellow\"]\n[\"yellow\"]", "desc": "Standard: case fix"},
-    {"input": "[\"YellOw\"]\n[\"yeellow\"]", "desc": "Standard: too many letters no match"},
-    {"input": "[\"hello\",\"world\"]\n[\"HELLO\",\"WORLD\"]", "desc": "Standard: case fix multi"},
-    {"input": "[\"aaa\",\"AAA\"]\n[\"aaa\",\"AAA\",\"aAa\"]", "desc": "Standard: ambiguous"},
-    {"input": "[\"cat\",\"dog\",\"fish\"]\n[\"CAT\",\"Dog\",\"FISH\"]", "desc": "Standard: triple case fix"},
-    {"input": "[\"Apple\"]\n[\"apple\",\"APPLE\",\"ApPlE\"]", "desc": "Standard: all case variations"},
-    {"input": "[\"hare\",\"Hare\"]\n[\"hAre\",\"hARE\"]", "desc": "Standard: case priority"},
-    {"input": "[\"keti\"]\n[\"keto\",\"kete\",\"keta\",\"ketu\"]", "desc": "Standard: vowel variants"},
-    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]", "desc": "Stress: 10 singletons"},
-    {"input": "[\"abcdef\",\"ABCDEF\",\"AbCdEf\"]\n[\"abcdef\",\"ABCDEF\",\"AbCdEf\",\"abcdEF\",\"ABCDef\"]", "desc": "Stress: case mixing"},
-    {"input": "[\"hello\",\"hallo\",\"hullo\",\"hillo\",\"hollo\"]\n[\"hello\",\"hallo\",\"hxllo\",\"hxllo\",\"hyllo\"]", "desc": "Stress: vowel options"},
-    {"input": "[\"abc\"]\n[\"abc\",\"ABC\",\"Abc\",\"abC\",\"axc\",\"axxc\"]", "desc": "Special: priority resolution killer"}
+    {
+      "input": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[\"yellow\"]\n[\"YellOw\"]",
+      "desc": "Edge: capitalization fix"
+    },
+    {
+      "input": "[-994,-989,-974,-950,-948,-935,-910,-898,-883,-846,-844,-811,-794,-784,-779,-744,-738,-684,-651,-650,-638,-608,-579,-538,-514,-509,-461,-456,-446,-443,-442,-399,-368,-362,-360,-345,-318,-302,-298,-282,-276,-235,-198,-185,-161,-90,-43,-36,-30,-26,9,10,27,31,68,70,78,187,232,234,244,247,283,288,313,345,346,353,374,397,399,455,484,498,509,532,540,548,568,570,607,628,633,661,703,728,787,795,827,839,867,892,899,906,913,957,958,982]\n[-998,-965,-961,-958,-954,-947,-946,-937,-927,-885,-880,-878,-850,-846,-842,-827,-747,-641,-623,-603,-582,-559,-554,-481,-462,-427,-398,-389,-388,-371,-354,-340,-328,-306,-288,-279,-267,-247,-212,-207,-206,-193,-187,-161,-94,-88,-79,-69,-43,-33,-25,-10,16,53,61,77,79,146,150,183,189,211,224,228,259,303,310,331,339,411,412,418,424,430,436,440,442,444,460,474,509,515,521,530,551,565,590,640,645,745,753,769,829,830,840,871,918,922]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[777,770,496,22,-213,-246,-339,-757,-813,-900]\n[958,768,612,574,496,450,63,-738,-899,-911]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460]\n[-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890,-890]",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "[\"a\"]\n[\"a\"]",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "[\"a\"]\n[\"e\"]",
+      "desc": "Edge: single vowel fix"
+    },
+    {
+      "input": "[\"abc\"]\n[\"xyz\"]",
+      "desc": "Edge: no match"
+    },
+    {
+      "input": "[\"Yellow\"]\n[\"yellow\"]",
+      "desc": "Standard: case fix"
+    },
+    {
+      "input": "[\"YellOw\"]\n[\"yeellow\"]",
+      "desc": "Standard: too many letters no match"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[\"HELLO\",\"WORLD\"]",
+      "desc": "Standard: case fix multi"
+    },
+    {
+      "input": "[\"aaa\",\"AAA\"]\n[\"aaa\",\"AAA\",\"aAa\"]",
+      "desc": "Standard: ambiguous"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"fish\"]\n[\"CAT\",\"Dog\",\"FISH\"]",
+      "desc": "Standard: triple case fix"
+    },
+    {
+      "input": "[\"Apple\"]\n[\"apple\",\"APPLE\",\"ApPlE\"]",
+      "desc": "Standard: all case variations"
+    },
+    {
+      "input": "[\"hare\",\"Hare\"]\n[\"hAre\",\"hARE\"]",
+      "desc": "Standard: case priority"
+    },
+    {
+      "input": "[\"keti\"]\n[\"keto\",\"kete\",\"keta\",\"ketu\"]",
+      "desc": "Standard: vowel variants"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]",
+      "desc": "Stress: 10 singletons"
+    },
+    {
+      "input": "[\"abcdef\",\"ABCDEF\",\"AbCdEf\"]\n[\"abcdef\",\"ABCDEF\",\"AbCdEf\",\"abcdEF\",\"ABCDef\"]",
+      "desc": "Stress: case mixing"
+    },
+    {
+      "input": "[\"hello\",\"hallo\",\"hullo\",\"hillo\",\"hollo\"]\n[\"hello\",\"hallo\",\"hxllo\",\"hxllo\",\"hyllo\"]",
+      "desc": "Stress: vowel options"
+    },
+    {
+      "input": "[\"abc\"]\n[\"abc\",\"ABC\",\"Abc\",\"abC\",\"axc\",\"axxc\"]",
+      "desc": "Special: priority resolution killer"
+    }
   ]
 }

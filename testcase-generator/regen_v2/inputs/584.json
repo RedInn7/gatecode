@@ -1,28 +1,88 @@
 {
   "pid": 584,
-  "slug": "maximum-amount-of-money-robot-can-earn",
+  "slug": "maximize-amount-after-two-days-of-conversions",
   "inferred_constraints": "Initial currency string; pairs1/rates1 and pairs2/rates2 conversion rates; currencies are 3-letter strings; 1 <= pairs.length <= 10; 1.0 <= rate <= 10.0; output max with relative error 1e-5",
   "input_format": "line1: initialCurrency (string); line2: pairs1 (JSON 2D string); line3: rates1 (JSON array of floats); line4: pairs2 (JSON 2D string); line5: rates2 (JSON array of floats)",
   "testcases": [
-    {"input": "EUR\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]", "desc": "Edge: example1 chain"},
-    {"input": "USD\n[[\"USD\",\"EUR\"]]\n[2.0]\n[]\n[]", "desc": "Edge: only day1 pairs"},
-    {"input": "USD\n[]\n[]\n[]\n[]", "desc": "Edge: no conversions"},
-    {"input": "USD\n[]\n[]\n[[\"USD\",\"EUR\"]]\n[3.0]", "desc": "Edge: only day2"},
-    {"input": "AAA\n[[\"AAA\",\"BBB\"]]\n[5.0]\n[[\"BBB\",\"AAA\"]]\n[1.0]", "desc": "Edge: round trip"},
-    {"input": "EUR\n[[\"EUR\",\"USD\"]]\n[2.0]\n[[\"USD\",\"EUR\"]]\n[2.0]", "desc": "Edge: same pair both days"},
-    {"input": "X\n[[\"X\",\"Y\"]]\n[10.0]\n[[\"Y\",\"X\"]]\n[10.0]", "desc": "Standard: max rate both"},
-    {"input": "USD\n[[\"USD\",\"EUR\"],[\"EUR\",\"GBP\"]]\n[2.0,2.0]\n[[\"GBP\",\"USD\"]]\n[3.0]", "desc": "Standard: chain"},
-    {"input": "A\n[[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"]]\n[1.5,2.0,3.0]\n[[\"D\",\"A\"]]\n[2.0]", "desc": "Standard: long chain"},
-    {"input": "A\n[[\"A\",\"B\"]]\n[1.0]\n[[\"A\",\"B\"]]\n[1.0]", "desc": "Standard: no change"},
-    {"input": "USD\n[[\"USD\",\"EUR\"],[\"EUR\",\"USD\"]]\n[2.0,0.5]\n[]\n[]", "desc": "Standard: round-trip break-even"},
-    {"input": "X\n[[\"X\",\"Y\"]]\n[5.5]\n[[\"Y\",\"Z\"],[\"Z\",\"X\"]]\n[2.0,3.0]", "desc": "Standard: split chain"},
-    {"input": "ABC\n[[\"ABC\",\"DEF\"],[\"DEF\",\"GHI\"]]\n[3.0,4.0]\n[[\"GHI\",\"ABC\"]]\n[2.5]", "desc": "Standard: complete loop"},
-    {"input": "USD\n[[\"USD\",\"EUR\"],[\"USD\",\"GBP\"]]\n[2.0,3.0]\n[[\"GBP\",\"USD\"]]\n[1.5]", "desc": "Standard: choose best path"},
-    {"input": "A\n[[\"A\",\"B\"],[\"B\",\"C\"]]\n[2.0,3.0]\n[[\"C\",\"D\"],[\"D\",\"A\"]]\n[2.0,2.0]", "desc": "Standard: must use day2"},
-    {"input": "X\n[[\"X\",\"Y\"],[\"Y\",\"X\"]]\n[10.0,10.0]\n[[\"X\",\"Y\"],[\"Y\",\"X\"]]\n[10.0,10.0]", "desc": "Standard: infinite cycle? actually bounded"},
-    {"input": "A\n[[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"],[\"D\",\"E\"],[\"E\",\"F\"],[\"F\",\"G\"],[\"G\",\"H\"],[\"H\",\"I\"],[\"I\",\"J\"],[\"J\",\"K\"]]\n[2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0]\n[[\"K\",\"A\"]]\n[2.0]", "desc": "Stress: 10 chain back"},
-    {"input": "A\n[[\"A\",\"B\"]]\n[10.0]\n[[\"A\",\"B\"]]\n[10.0]", "desc": "Stress: max rate same pair"},
-    {"input": "A\n[[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"]]\n[2.0,2.0,2.0]\n[[\"D\",\"C\"],[\"C\",\"B\"],[\"B\",\"A\"]]\n[2.0,2.0,2.0]", "desc": "Stress: forward back chain"},
-    {"input": "USD\n[[\"USD\",\"EUR\"]]\n[1.0]\n[[\"USD\",\"EUR\"]]\n[1.0]", "desc": "Special: unit rate stays 1"}
+    {
+      "input": "EUR\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "desc": "Edge: example1 chain"
+    },
+    {
+      "input": "USD\n[[\"USD\",\"EUR\"]]\n[2.0]\n[]\n[]",
+      "desc": "Edge: only day1 pairs"
+    },
+    {
+      "input": "USD\n[]\n[]\n[]\n[]",
+      "desc": "Edge: no conversions"
+    },
+    {
+      "input": "USD\n[]\n[]\n[[\"USD\",\"EUR\"]]\n[3.0]",
+      "desc": "Edge: only day2"
+    },
+    {
+      "input": "AAA\n[[\"AAA\",\"BBB\"]]\n[5.0]\n[[\"BBB\",\"AAA\"]]\n[1.0]",
+      "desc": "Edge: round trip"
+    },
+    {
+      "input": "EUR\n[[\"EUR\",\"USD\"]]\n[2.0]\n[[\"USD\",\"EUR\"]]\n[2.0]",
+      "desc": "Edge: same pair both days"
+    },
+    {
+      "input": "X\n[[\"X\",\"Y\"]]\n[10.0]\n[[\"Y\",\"X\"]]\n[10.0]",
+      "desc": "Standard: max rate both"
+    },
+    {
+      "input": "USD\n[[\"USD\",\"EUR\"],[\"EUR\",\"GBP\"]]\n[2.0,2.0]\n[[\"GBP\",\"USD\"]]\n[3.0]",
+      "desc": "Standard: chain"
+    },
+    {
+      "input": "A\n[[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"]]\n[1.5,2.0,3.0]\n[[\"D\",\"A\"]]\n[2.0]",
+      "desc": "Standard: long chain"
+    },
+    {
+      "input": "A\n[[\"A\",\"B\"]]\n[1.0]\n[[\"A\",\"B\"]]\n[1.0]",
+      "desc": "Standard: no change"
+    },
+    {
+      "input": "USD\n[[\"USD\",\"EUR\"],[\"EUR\",\"USD\"]]\n[2.0,0.5]\n[]\n[]",
+      "desc": "Standard: round-trip break-even"
+    },
+    {
+      "input": "X\n[[\"X\",\"Y\"]]\n[5.5]\n[[\"Y\",\"Z\"],[\"Z\",\"X\"]]\n[2.0,3.0]",
+      "desc": "Standard: split chain"
+    },
+    {
+      "input": "ABC\n[[\"ABC\",\"DEF\"],[\"DEF\",\"GHI\"]]\n[3.0,4.0]\n[[\"GHI\",\"ABC\"]]\n[2.5]",
+      "desc": "Standard: complete loop"
+    },
+    {
+      "input": "USD\n[[\"USD\",\"EUR\"],[\"USD\",\"GBP\"]]\n[2.0,3.0]\n[[\"GBP\",\"USD\"]]\n[1.5]",
+      "desc": "Standard: choose best path"
+    },
+    {
+      "input": "A\n[[\"A\",\"B\"],[\"B\",\"C\"]]\n[2.0,3.0]\n[[\"C\",\"D\"],[\"D\",\"A\"]]\n[2.0,2.0]",
+      "desc": "Standard: must use day2"
+    },
+    {
+      "input": "X\n[[\"X\",\"Y\"],[\"Y\",\"X\"]]\n[10.0,10.0]\n[[\"X\",\"Y\"],[\"Y\",\"X\"]]\n[10.0,10.0]",
+      "desc": "Standard: infinite cycle? actually bounded"
+    },
+    {
+      "input": "\"j\"\n[[848,953],[-83,669]]\n[-801,443,-484]\n[[-756,-699],[-432,-138],[-315,-232]]\n[-206,-360,-193]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "A\n[[\"A\",\"B\"]]\n[10.0]\n[[\"A\",\"B\"]]\n[10.0]",
+      "desc": "Stress: max rate same pair"
+    },
+    {
+      "input": "A\n[[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"]]\n[2.0,2.0,2.0]\n[[\"D\",\"C\"],[\"C\",\"B\"],[\"B\",\"A\"]]\n[2.0,2.0,2.0]",
+      "desc": "Stress: forward back chain"
+    },
+    {
+      "input": "USD\n[[\"USD\",\"EUR\"]]\n[1.0]\n[[\"USD\",\"EUR\"]]\n[1.0]",
+      "desc": "Special: unit rate stays 1"
+    }
   ]
 }

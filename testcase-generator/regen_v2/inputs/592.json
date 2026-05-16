@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= s.length <= 1000; t.length == s.length + 1; lowercase English letters",
   "input_format": "line1: s (string); line2: t (string)",
   "testcases": [
-    {"input": "abcd\nabcde", "desc": "Edge: example1"},
-    {"input": "\ny", "desc": "Edge: example2 empty s"},
-    {"input": "\na", "desc": "Edge: empty s added a"},
-    {"input": "\nz", "desc": "Edge: empty s added z"},
-    {"input": "a\nab", "desc": "Edge: single letter"},
-    {"input": "a\nba", "desc": "Edge: prepended"},
-    {"input": "a\naa", "desc": "Edge: same letter added"},
-    {"input": "abc\nabcd", "desc": "Standard: simple append"},
-    {"input": "abc\ndcba", "desc": "Standard: shuffled add"},
-    {"input": "abc\nxabc", "desc": "Standard: prepend"},
-    {"input": "ab\naba", "desc": "Standard: duplicate"},
-    {"input": "ab\naab", "desc": "Standard: duplicate front"},
-    {"input": "xyz\nzyxw", "desc": "Standard: shuffle and add"},
-    {"input": "hello\nhelloo", "desc": "Standard: append same letter"},
-    {"input": "abcde\nedcbaa", "desc": "Standard: reverse and add"},
-    {"input": "aaaa\naaaab", "desc": "Standard: same string add diff"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyzz", "desc": "Stress: full alphabet add z"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\naabcdefghijklmnopqrstuvwxyz", "desc": "Stress: full alphabet add a"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", "desc": "Stress: 40 a's add b"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\nzyxwvutsrqponmlkjihgfedcbaz", "desc": "Special: reversed and double-z killer"}
+    {
+      "input": "abcd\nabcde",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\ny",
+      "desc": "Edge: example2 empty s"
+    },
+    {
+      "input": "\"d\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"i\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "a\nba",
+      "desc": "Edge: prepended"
+    },
+    {
+      "input": "a\naa",
+      "desc": "Edge: same letter added"
+    },
+    {
+      "input": "abc\nabcd",
+      "desc": "Standard: simple append"
+    },
+    {
+      "input": "abc\ndcba",
+      "desc": "Standard: shuffled add"
+    },
+    {
+      "input": "abc\nxabc",
+      "desc": "Standard: prepend"
+    },
+    {
+      "input": "ab\naba",
+      "desc": "Standard: duplicate"
+    },
+    {
+      "input": "ab\naab",
+      "desc": "Standard: duplicate front"
+    },
+    {
+      "input": "xyz\nzyxw",
+      "desc": "Standard: shuffle and add"
+    },
+    {
+      "input": "hello\nhelloo",
+      "desc": "Standard: append same letter"
+    },
+    {
+      "input": "abcde\nedcbaa",
+      "desc": "Standard: reverse and add"
+    },
+    {
+      "input": "aaaa\naaaab",
+      "desc": "Standard: same string add diff"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyzz",
+      "desc": "Stress: full alphabet add z"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\naabcdefghijklmnopqrstuvwxyz",
+      "desc": "Stress: full alphabet add a"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+      "desc": "Stress: 40 a's add b"
+    },
+    {
+      "input": "\"hu\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
