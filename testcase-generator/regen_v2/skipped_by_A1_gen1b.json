@@ -34,6 +34,16 @@
       "pid": 1259,
       "slug": "add-two-polynomials-represented-as-linked-lists",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1246,
+      "slug": "linked-list-random-node",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1234,
+      "slug": "find-substring-with-given-hash-value",
+      "reason": "ACM mode problem"
     }
   ]
 }
