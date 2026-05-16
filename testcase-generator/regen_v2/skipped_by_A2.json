@@ -274,6 +274,21 @@
       "pid": 2635,
       "slug": "duplicate-emails",
       "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2649,
+      "slug": "first-letter-capitalization-ii",
+      "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2650,
+      "slug": "flatten-2d-vector",
+      "reason": "design class Vector2D with stateful next/hasNext"
+    },
+    {
+      "pid": 2652,
+      "slug": "walking-robot-simulation-ii",
+      "reason": "design class Robot with stateful move/getPos/getDir"
     }
   ]
 }

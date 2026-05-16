@@ -1,0 +1,28 @@
+{
+  "pid": 2646,
+  "slug": "build-a-matrix-with-conditions",
+  "inferred_constraints": "2 <= k <= 400, 1 <= rowConditions.length, colConditions.length <= 10^4",
+  "input_format": "line1: k (int); line2: rowConditions (JSON 2D array); line3: colConditions (JSON 2D array)",
+  "testcases": [
+    {"input": "3\n[[1,2],[3,2]]\n[[2,1],[3,2]]", "desc": "Edge: example1"},
+    {"input": "3\n[[1,2],[2,3],[3,1],[2,3]]\n[[2,1]]", "desc": "Edge: example2 cycle"},
+    {"input": "2\n[[1,2]]\n[[1,2]]", "desc": "Edge: k=2 min"},
+    {"input": "2\n[[1,2]]\n[[2,1]]", "desc": "Edge: k=2 swap col"},
+    {"input": "2\n[[2,1]]\n[[1,2]]", "desc": "Edge: k=2 swap row"},
+    {"input": "3\n[[1,2],[2,3]]\n[[1,2],[2,3]]", "desc": "Edge: linear k=3"},
+    {"input": "3\n[[3,2],[2,1]]\n[[3,2],[2,1]]", "desc": "Edge: linear k=3 reversed"},
+    {"input": "4\n[[1,2],[2,3],[3,4]]\n[[1,2],[2,3],[3,4]]", "desc": "Edge: linear k=4"},
+    {"input": "3\n[[1,3]]\n[[1,3]]", "desc": "Edge: single condition each"},
+    {"input": "5\n[[1,2],[2,3],[3,4],[4,5]]\n[[5,4],[4,3],[3,2],[2,1]]", "desc": "Standard: opposite chains"},
+    {"input": "4\n[[1,2],[3,2],[4,2]]\n[[1,2],[3,2],[4,2]]", "desc": "Standard: star to 2"},
+    {"input": "4\n[[2,1],[2,3],[2,4]]\n[[2,1],[2,3],[2,4]]", "desc": "Standard: star from 2"},
+    {"input": "5\n[[1,2],[2,3]]\n[[4,5],[3,4]]", "desc": "Standard: disjoint"},
+    {"input": "6\n[[1,6],[2,5],[3,4]]\n[[1,2],[3,4],[5,6]]", "desc": "Standard: pairings"},
+    {"input": "5\n[[1,2],[2,3],[3,4],[4,5],[1,5]]\n[[5,4],[4,3],[3,2],[2,1]]", "desc": "Standard: redundant"},
+    {"input": "6\n[[1,2],[2,3],[1,3],[4,5],[5,6],[4,6]]\n[[1,4],[2,5],[3,6]]", "desc": "Standard: 2 chains"},
+    {"input": "5\n[[1,2],[3,2],[3,5],[1,4]]\n[[3,1],[2,5],[1,4]]", "desc": "Standard: complex"},
+    {"input": "8\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]]\n[[8,7],[7,6],[6,5],[5,4],[4,3],[3,2],[2,1]]", "desc": "Standard: full chains"},
+    {"input": "10\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]", "desc": "Stress: 10 linear"},
+    {"input": "4\n[[1,2],[2,3],[3,4],[4,1]]\n[[1,2],[2,3],[3,4],[4,1]]", "desc": "Killer: cycle should fail"}
+  ]
+}

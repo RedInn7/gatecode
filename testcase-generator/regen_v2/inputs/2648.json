@@ -1,0 +1,28 @@
+{
+  "pid": 2648,
+  "slug": "minimum-moves-to-clean-the-classroom",
+  "inferred_constraints": "1 <= m, n <= 20, classroom[i][j] in {S, L, R, X, .}, 1 <= energy <= 50, exactly one S",
+  "input_format": "line1: classroom (JSON array of strings); line2: energy (int)",
+  "testcases": [
+    {"input": "[\"S.\",\"XL\"]\n2", "desc": "Edge: example1"},
+    {"input": "[\"LS\",\"RL\"]\n4", "desc": "Edge: example2"},
+    {"input": "[\"L.S\",\"RXL\",\"...\"]\n3", "desc": "Edge: example3"},
+    {"input": "[\"S\"]\n1", "desc": "Edge: 1x1 only S"},
+    {"input": "[\"SL\"]\n1", "desc": "Edge: 1x2"},
+    {"input": "[\"SL\"]\n5", "desc": "Edge: 1x2 plenty energy"},
+    {"input": "[\"S.L\"]\n2", "desc": "Edge: distance 2"},
+    {"input": "[\"S.L\"]\n1", "desc": "Edge: distance 2 low energy"},
+    {"input": "[\"SLR\"]\n3", "desc": "Edge: with reset"},
+    {"input": "[\"S..L\",\"....\",\"....\"]\n5", "desc": "Standard: 3x4"},
+    {"input": "[\"SXL\"]\n10", "desc": "Standard: blocked"},
+    {"input": "[\"S.X.L\",\".....\",\".....\"]\n10", "desc": "Standard: 3x5 with X"},
+    {"input": "[\"S.L.L\",\".....\",\"R...L\"]\n5", "desc": "Standard: with reset"},
+    {"input": "[\"S....\",\".....\",\".....\",\"....L\"]\n10", "desc": "Standard: 4x5 corner"},
+    {"input": "[\"S...L\",\".XXX.\",\".X.X.\",\".XXX.\",\"L...L\"]\n20", "desc": "Standard: maze"},
+    {"input": "[\"SL..L\",\".RXX.\",\"..R..\",\"L....\",\"....L\"]\n4", "desc": "Standard: resets help"},
+    {"input": "[\"S....L\",\"...R..\",\"X.X.XX\",\"L....L\"]\n8", "desc": "Standard: 4x6"},
+    {"input": "[\"SL\",\"LR\",\"RL\",\"LL\"]\n5", "desc": "Standard: 4x2"},
+    {"input": "[\"S..........\",\"...........\",\"...........\",\"..........L\"]\n30", "desc": "Stress: 4x11 corner"},
+    {"input": "[\"S.L.L.L.L.L.L.L.L.L.\",\".R..R..R..R..R..R..R\",\"....................\"]\n10", "desc": "Killer: many L with resets"}
+  ]
+}
