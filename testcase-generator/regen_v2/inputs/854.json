@@ -1,27 +1,88 @@
 {
-  "pid": 854, "slug": "reformat-date",
+  "pid": 854,
+  "slug": "reformat-date",
   "inferred_constraints": "valid date Day Month Year, Year [1900, 2100]",
   "input_format": "line1: date (raw)",
   "testcases": [
-    {"input": "20th Oct 2052", "desc": "Edge: example1"},
-    {"input": "6th Jun 1933", "desc": "Edge: example2"},
-    {"input": "26th May 1960", "desc": "Edge: example3"},
-    {"input": "1st Jan 1900", "desc": "Edge: min year"},
-    {"input": "31st Dec 2100", "desc": "Edge: max year"},
-    {"input": "1st Jan 2000", "desc": "Standard: Y2K"},
-    {"input": "29th Feb 2000", "desc": "Edge: leap day"},
-    {"input": "2nd Feb 1992", "desc": "Standard: 2nd"},
-    {"input": "3rd Mar 1993", "desc": "Standard: 3rd"},
-    {"input": "4th Apr 1994", "desc": "Standard: 4th"},
-    {"input": "5th May 1995", "desc": "Standard: 5th"},
-    {"input": "11th Jul 2011", "desc": "Standard: teens"},
-    {"input": "12th Aug 2012", "desc": "Standard: 12th"},
-    {"input": "21st Sep 2021", "desc": "Standard: 21st"},
-    {"input": "22nd Nov 2022", "desc": "Standard: 22nd"},
-    {"input": "23rd Dec 2023", "desc": "Standard: 23rd"},
-    {"input": "31st Mar 2024", "desc": "Standard: 31st March"},
-    {"input": "30th Apr 1999", "desc": "Standard: 30th April"},
-    {"input": "1st Feb 1969", "desc": "Standard: 1st Feb"},
-    {"input": "15th Aug 1947", "desc": "Special: 15th August 1947"}
+    {
+      "input": "\"l\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "6th Jun 1933",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"fguqmvektjlt\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"xkl\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"ladj\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "1st Jan 2000",
+      "desc": "Standard: Y2K"
+    },
+    {
+      "input": "29th Feb 2000",
+      "desc": "Edge: leap day"
+    },
+    {
+      "input": "2nd Feb 1992",
+      "desc": "Standard: 2nd"
+    },
+    {
+      "input": "3rd Mar 1993",
+      "desc": "Standard: 3rd"
+    },
+    {
+      "input": "4th Apr 1994",
+      "desc": "Standard: 4th"
+    },
+    {
+      "input": "5th May 1995",
+      "desc": "Standard: 5th"
+    },
+    {
+      "input": "11th Jul 2011",
+      "desc": "Standard: teens"
+    },
+    {
+      "input": "12th Aug 2012",
+      "desc": "Standard: 12th"
+    },
+    {
+      "input": "21st Sep 2021",
+      "desc": "Standard: 21st"
+    },
+    {
+      "input": "22nd Nov 2022",
+      "desc": "Standard: 22nd"
+    },
+    {
+      "input": "23rd Dec 2023",
+      "desc": "Standard: 23rd"
+    },
+    {
+      "input": "31st Mar 2024",
+      "desc": "Standard: 31st March"
+    },
+    {
+      "input": "30th Apr 1999",
+      "desc": "Standard: 30th April"
+    },
+    {
+      "input": "1st Feb 1969",
+      "desc": "Standard: 1st Feb"
+    },
+    {
+      "input": "15th Aug 1947",
+      "desc": "Special: 15th August 1947"
+    }
   ]
 }

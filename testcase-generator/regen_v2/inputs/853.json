@@ -1,27 +1,88 @@
 {
-  "pid": 853, "slug": "count-operations-to-obtain-zero",
+  "pid": 853,
+  "slug": "count-operations-to-obtain-zero",
   "inferred_constraints": "0 <= num1, num2 <= 1e5",
   "input_format": "line1: num1 (int); line2: num2 (int)",
   "testcases": [
-    {"input": "2\n3", "desc": "Edge: example1"},
-    {"input": "10\n10", "desc": "Edge: example2"},
-    {"input": "0\n0", "desc": "Edge: both zero"},
-    {"input": "0\n5", "desc": "Edge: num1 zero"},
-    {"input": "5\n0", "desc": "Edge: num2 zero"},
-    {"input": "1\n1", "desc": "Edge: 1 1"},
-    {"input": "100000\n1", "desc": "Edge: max diff (many ops)"},
-    {"input": "1\n100000", "desc": "Edge: reverse max"},
-    {"input": "100000\n100000", "desc": "Edge: both max same"},
-    {"input": "100000\n99999", "desc": "Standard: max near"},
-    {"input": "10\n3", "desc": "Standard: 10 3"},
-    {"input": "21\n13", "desc": "Standard: fibonacci-like"},
-    {"input": "8\n5", "desc": "Standard: fibonacci"},
-    {"input": "100\n7", "desc": "Standard: 100 7"},
-    {"input": "1000\n997", "desc": "Standard: large close"},
-    {"input": "50000\n50000", "desc": "Standard: both 50000"},
-    {"input": "12345\n67890", "desc": "Standard: random"},
-    {"input": "99999\n99998", "desc": "Standard: max diff 1"},
-    {"input": "2\n2", "desc": "Edge: 2 2"},
-    {"input": "55\n34", "desc": "Special: fibonacci"}
+    {
+      "input": "0\n0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "10\n10",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "9\n1",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "4\n9",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "8\n4",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "1\n1",
+      "desc": "Edge: 1 1"
+    },
+    {
+      "input": "100000\n1",
+      "desc": "Edge: max diff (many ops)"
+    },
+    {
+      "input": "1\n100000",
+      "desc": "Edge: reverse max"
+    },
+    {
+      "input": "100000\n100000",
+      "desc": "Edge: both max same"
+    },
+    {
+      "input": "100000\n99999",
+      "desc": "Standard: max near"
+    },
+    {
+      "input": "10\n3",
+      "desc": "Standard: 10 3"
+    },
+    {
+      "input": "21\n13",
+      "desc": "Standard: fibonacci-like"
+    },
+    {
+      "input": "8\n5",
+      "desc": "Standard: fibonacci"
+    },
+    {
+      "input": "100\n7",
+      "desc": "Standard: 100 7"
+    },
+    {
+      "input": "1000\n997",
+      "desc": "Standard: large close"
+    },
+    {
+      "input": "50000\n50000",
+      "desc": "Standard: both 50000"
+    },
+    {
+      "input": "12345\n67890",
+      "desc": "Standard: random"
+    },
+    {
+      "input": "99999\n99998",
+      "desc": "Standard: max diff 1"
+    },
+    {
+      "input": "2\n2",
+      "desc": "Edge: 2 2"
+    },
+    {
+      "input": "55\n34",
+      "desc": "Special: fibonacci"
+    }
   ]
 }
