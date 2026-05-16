@@ -1,0 +1,88 @@
+{
+  "pid": 2977,
+  "slug": "apply-discount-to-prices",
+  "inferred_constraints": "1 <= sentence.length <= 10^5; 0 <= discount <= 100; price prefix '$' followed by digits, fits in 32-bit int",
+  "input_format": "line1: sentence (JSON string); line2: discount",
+  "testcases": [
+    {
+      "input": "\"there are $1 $2 and 5$ candies in the shop\"\n50",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"1 2 $3 4 $5 $6 7 8$ $9 $10$\"\n100",
+      "desc": "Edge: example2 100%"
+    },
+    {
+      "input": "\"$1\"\n0",
+      "desc": "Edge: single price 0% discount"
+    },
+    {
+      "input": "\"$1\"\n100",
+      "desc": "Edge: single price 100%"
+    },
+    {
+      "input": "\"hello world\"\n50",
+      "desc": "Edge: no prices"
+    },
+    {
+      "input": "\"$0\"\n50",
+      "desc": "Edge: zero price"
+    },
+    {
+      "input": "\"$1000000000\"\n0",
+      "desc": "Edge: large price"
+    },
+    {
+      "input": "\"$\"\n50",
+      "desc": "Edge: dollar only (not price)"
+    },
+    {
+      "input": "\"$5 $10 $15\"\n10",
+      "desc": "Standard: 3 prices"
+    },
+    {
+      "input": "\"my $100 dollars and $200 more\"\n25",
+      "desc": "Standard: 25%"
+    },
+    {
+      "input": "\"$1 $2 $3 $4 $5\"\n50",
+      "desc": "Standard: ascending prices"
+    },
+    {
+      "input": "\"hello $abc world\"\n50",
+      "desc": "Standard: invalid $abc"
+    },
+    {
+      "input": "\"$10 hello $20 world\"\n75",
+      "desc": "Standard: 75% discount"
+    },
+    {
+      "input": "\"buy $50 for $25\"\n10",
+      "desc": "Standard: small discount"
+    },
+    {
+      "input": "\"$1234 $5678 $9012\"\n33",
+      "desc": "Standard: 33% discount"
+    },
+    {
+      "input": "\"$100 $200 $300 $400 $500\"\n80",
+      "desc": "Standard: 5 prices 80%"
+    },
+    {
+      "input": "\"$1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20\"\n50",
+      "desc": "Stress: 20 prices"
+    },
+    {
+      "input": "\"$1000000000 $999999999 $1\"\n0",
+      "desc": "Stress: large prices 0%"
+    },
+    {
+      "input": "\"$1000000000 $999999999 $999999998\"\n50",
+      "desc": "Stress: large prices half"
+    },
+    {
+      "input": "\"otyvoeygjkpjhltnqjkhzfgrpefmdbkglmzxbitusqtnqsslpcqqbudwkuagaajarhlbcifrwuaxryylfris\"\n100",
+      "desc": "Stress: large n near max boundary"
+    }
+  ]
+}
