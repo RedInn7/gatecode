@@ -124,5 +124,23 @@
     "slug": "restore-the-array",
     "fqid": 1416,
     "reason": "No Python3 solution found for fqid=1416"
+  },
+  {
+    "pid": 1047,
+    "slug": "minimum-stability-factor-of-array",
+    "fqid": 3605,
+    "reason": "No Python3 solution found for fqid=3605"
+  },
+  {
+    "pid": 1066,
+    "slug": "maximum-frequency-after-subarray-operation",
+    "fqid": 3434,
+    "reason": "No Python3 solution found for fqid=3434"
+  },
+  {
+    "pid": 1075,
+    "slug": "maximum-and-minimum-sums-of-at-most-size-k-subarrays",
+    "fqid": 3430,
+    "reason": "No Python3 solution found for fqid=3430"
   }
 ]

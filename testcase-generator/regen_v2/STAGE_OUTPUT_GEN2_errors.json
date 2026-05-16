@@ -22,5 +22,89 @@
     "slug": "sequential-digits",
     "fqid": 1291,
     "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpw1birydb.py\", line 282, in <module>\n    _result = Solution().sequentialDigits(*_args)\n              ^^^^^"
+  },
+  {
+    "pid": 1056,
+    "slug": "freedom-trail",
+    "fqid": 514,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp5ioo88y2.py\", line 288, in <module>\n    _result = Solution().findRotateSteps(*_args)\n              ^^^^^^"
+  },
+  {
+    "pid": 1052,
+    "slug": "crawler-log-folder",
+    "fqid": 1598,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpcp_bkq2y.py\", line 281, in <module>\n    _result = Solution().minOperations(*_args)\n              ^^^^^^^^"
+  },
+  {
+    "pid": 1064,
+    "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+    "fqid": 2148,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmppyt6ng84.py\", line 276, in <module>\n    _result = Solution().countElements(*_args)\n              ^^^^^^^^"
+  },
+  {
+    "pid": 1054,
+    "slug": "filling-bookcase-shelves",
+    "fqid": 1105,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpljey33t7.py\", line 285, in <module>\n    _result = Solution().minHeightShelves(*_args)\n              ^^^^^"
+  },
+  {
+    "pid": 1055,
+    "slug": "find-the-closest-palindrome",
+    "fqid": 564,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpjit8a2dk.py\", line 295, in <module>\n    _result = Solution().nearestPalindromic(*_args)\n              ^^^"
+  },
+  {
+    "pid": 1072,
+    "slug": "semi-ordered-permutation",
+    "fqid": 2717,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpw6me3ij6.py\", line 279, in <module>\n    _result = Solution().semiOrderedPermutation(*_args)\n             "
+  },
+  {
+    "pid": 1085,
+    "slug": "longest-subarray-of-1s-after-deleting-one-element",
+    "fqid": 1493,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpnfmkz4ze.py\", line 284, in <module>\n    _result = Solution().longestSubarray(*_args)\n              ^^^^^^"
+  },
+  {
+    "pid": 1070,
+    "slug": "categorize-box-according-to-criteria",
+    "fqid": 2525,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp0i6ayugh.py\", line 280, in <module>\n    _result = Solution().categorizeBox(*_args)\n              ^^^^^^^^"
+  },
+  {
+    "pid": 1083,
+    "slug": "maximum-value-of-a-string-in-an-array",
+    "fqid": 2496,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpu2cguwsq.py\", line 278, in <module>\n    _result = Solution().maximumValue(*_args)\n              ^^^^^^^^^"
+  },
+  {
+    "pid": 1082,
+    "slug": "minimum-genetic-mutation",
+    "fqid": 433,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp7d2jrd9e.py\", line 286, in <module>\n    _result = Solution().minMutation(*_args)\n              ^^^^^^^^^^"
+  },
+  {
+    "pid": 1065,
+    "slug": "divide-a-string-into-groups-of-size-k",
+    "fqid": 2138,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpfnn7e10k.py\", line 275, in <module>\n    _result = Solution().divideString(*_args)\n              ^^^^^^^^^"
+  },
+  {
+    "pid": 1067,
+    "slug": "strings-differ-by-one-character",
+    "fqid": 1554,
+    "error": "Testcase 1 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpf99z_2u4.py\", line 282, in <module>\n    _result = Solution().differByOne(*_args)\n              ^^^^^^^^^^"
+  },
+  {
+    "pid": 1088,
+    "slug": "first-bad-version",
+    "fqid": 278,
+    "error": "Testcase 2 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmpgfdibnmo.py\", line 286, in <module>\n    _result = Solution().firstBadVersion(*_args)\n              ^^^^^^"
+  },
+  {
+    "pid": 1062,
+    "slug": "check-if-it-is-possible-to-split-array",
+    "fqid": 2811,
+    "error": "Testcase 17 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/var/folders/7c/r4hwfvc92w36gxfm_gs3fvzw0000gn/T/tmp59g6j439.py\", line 149, in dfs\n    if a and b and dfs(i, k) and dfs(k + 1, j):\n                          "
   }
 ]
