@@ -190,5 +190,17 @@
     "slug": "house-robber-v",
     "fqid": 3840,
     "reason": "No Python3 solution found for fqid=3840"
+  },
+  {
+    "pid": 1254,
+    "slug": "find-minimum-cost-to-remove-array-elements",
+    "fqid": 3469,
+    "reason": "No Python3 solution found for fqid=3469"
+  },
+  {
+    "pid": 1260,
+    "slug": "maximize-cyclic-partition-score",
+    "fqid": 3743,
+    "reason": "No Python3 solution found for fqid=3743"
   }
 ]

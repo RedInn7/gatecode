@@ -298,5 +298,71 @@
     "slug": "minimum-changes-to-make-k-semi-palindromes",
     "fqid": 2911,
     "error": "Testcase 16 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1264,
+    "slug": "palindrome-linked-list",
+    "fqid": 234,
+    "error": "Testcase 0 failed: RE (exit 1): .py\", line 292, in <module>\n    _result = Solution().isPalindrome(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpba_gsdnp.py\", line 147, in isPalindrome\n    slow, fast = head, head.next\n                       ^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'next'\n"
+  },
+  {
+    "pid": 1273,
+    "slug": "count-substrings-starting-and-ending-with-given-character",
+    "fqid": 3084,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpbr8q5ygv.py\", line 276, in <module>\n    _result = Solution().countSubstrings(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.countSubstrings() missing 1 required positional argument: 'c'\n"
+  },
+  {
+    "pid": 1258,
+    "slug": "number-of-substrings-with-fixed-ratio",
+    "fqid": 2489,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpp2lr7213.py\", line 284, in <module>\n    _result = Solution().fixedRatio(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.fixedRatio() missing 1 required positional argument: 'num2'\n"
+  },
+  {
+    "pid": 1278,
+    "slug": "design-add-and-search-words-data-structure",
+    "fqid": 211,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpxwgt63nh.py\", line 188, in <module>\n    _vals = _json.loads(_lines[1])\n                        ~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1279,
+    "slug": "word-break-ii",
+    "fqid": 140,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp8mxv25zj.py\", line 313, in <module>\n    _result = Solution().wordBreak(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.wordBreak() missing 1 required positional argument: 'wordDict'\n"
+  },
+  {
+    "pid": 1261,
+    "slug": "magical-string",
+    "fqid": 481,
+    "error": "Testcase 0 failed: RE (exit 1): /tmpz9fc0vg9.py\", line 282, in <module>\n    _result = Solution().magicalString(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpz9fc0vg9.py\", line 144, in magicalString\n    while len(s) < n:\n          ^^^^^^^^^^\nTypeError: '<' not supported between instances of 'int' and 'str'\n"
+  },
+  {
+    "pid": 1267,
+    "slug": "projection-area-of-3d-shapes",
+    "fqid": 883,
+    "error": "Testcase 0 failed: RE (exit 1): ^^^^\n  File \"/tmp/tmpvzlyjlip.py\", line 143, in projectionArea\n    yz = sum(max(row) for row in grid)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpvzlyjlip.py\", line 143, in <genexpr>\n    yz = sum(max(row) for row in grid)\n             ^^^^^^^^\nValueError: max() iterable argument is empty\n"
+  },
+  {
+    "pid": 1283,
+    "slug": "minimum-number-of-visited-cells-in-a-grid",
+    "fqid": 2617,
+    "error": "Testcase 0 failed: RE (exit 1): File \"/tmp/tmpvmrqr5pm.py\", line 293, in <module>\n    _result = Solution().minimumVisitedCells(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpvmrqr5pm.py\", line 144, in minimumVisitedCells\n    dist[0][0] = 1\n    ~~~~~~~^^^\nIndexError: list assignment index out of range\n"
+  },
+  {
+    "pid": 1293,
+    "slug": "find-minimum-time-to-reach-last-room-i",
+    "fqid": 3341,
+    "error": "Testcase 0 failed: RE (exit 1):  call last):\n  File \"/tmp/tmpp483m67h.py\", line 292, in <module>\n    _result = Solution().minTimeToReach(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpp483m67h.py\", line 144, in minTimeToReach\n    dist[0][0] = 0\n    ~~~~~~~^^^\nIndexError: list assignment index out of range\n"
+  },
+  {
+    "pid": 1291,
+    "slug": "make-string-anti-palindrome",
+    "fqid": 3088,
+    "error": "Testcase 0 failed: RE (exit 1): ast):\n  File \"/tmp/tmp522j4i9c.py\", line 288, in <module>\n    _result = Solution().makeAntiPalindrome(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp522j4i9c.py\", line 145, in makeAntiPalindrome\n    if cs[m] == cs[m - 1]:\n       ~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1275,
+    "slug": "number-of-1-bits",
+    "fqid": 191,
+    "error": "Testcase 1 failed: RE (exit 1): st):\n  File \"/tmp/tmpcmb7fwf1.py\", line 279, in <module>\n    _result = Solution().hammingWeight(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpcmb7fwf1.py\", line 144, in hammingWeight\n    n &= n - 1\n         ~~^~~\nTypeError: unsupported operand type(s) for -: 'str' and 'int'\n"
   }
 ]

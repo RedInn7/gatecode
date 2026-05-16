@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "1",
-      "desc": "Edge: n=1 minimum"
+      "desc": "Edge: n=1 minimum",
+      "output": "2"
     },
     {
       "input": "0",
-      "desc": "Edge: n=0"
+      "desc": "Edge: n=0",
+      "output": "1"
     },
     {
       "input": "1000",
-      "desc": "Edge: n=max"
+      "desc": "Edge: n=max",
+      "output": "10"
     },
     {
       "input": "999",
-      "desc": "Edge: n=max-1"
+      "desc": "Edge: n=max-1",
+      "output": "10"
     },
     {
       "input": "2",
-      "desc": "Edge: n=2"
+      "desc": "Edge: n=2",
+      "output": "2"
     },
     {
       "input": "10",
-      "desc": "Edge: n=10"
+      "desc": "Edge: n=10",
+      "output": "4"
     },
     {
       "input": "100",
-      "desc": "Edge: n=100"
+      "desc": "Edge: n=100",
+      "output": "7"
     },
     {
       "input": "908",
-      "desc": "Standard: n=908"
+      "desc": "Standard: n=908",
+      "output": "10"
     },
     {
       "input": "220",
-      "desc": "Standard: n=220"
+      "desc": "Standard: n=220",
+      "output": "8"
     },
     {
       "input": "478",
-      "desc": "Standard: n=478"
+      "desc": "Standard: n=478",
+      "output": "9"
     },
     {
       "input": "981",
-      "desc": "Standard: n=981"
+      "desc": "Standard: n=981",
+      "output": "10"
     },
     {
       "input": "110",
-      "desc": "Standard: n=110"
+      "desc": "Standard: n=110",
+      "output": "7"
     },
     {
       "input": "972",
-      "desc": "Standard: n=972"
+      "desc": "Standard: n=972",
+      "output": "10"
     },
     {
       "input": "141",
-      "desc": "Standard: n=141"
+      "desc": "Standard: n=141",
+      "output": "8"
     },
     {
       "input": "1000",
-      "desc": "Stress: n=10^5"
+      "desc": "Stress: n=10^5",
+      "output": "10"
     },
     {
       "input": "1000",
-      "desc": "Stress: n=10^6"
+      "desc": "Stress: n=10^6",
+      "output": "10"
     },
     {
       "input": "1000",
-      "desc": "Stress: very large"
+      "desc": "Stress: very large",
+      "output": "10"
     },
     {
       "input": "1000",
-      "desc": "Killer: near-max"
+      "desc": "Killer: near-max",
+      "output": "10"
     },
     {
       "input": "1000",
-      "desc": "Killer: absolute max"
+      "desc": "Killer: absolute max",
+      "output": "10"
     },
     {
       "input": "1",
-      "desc": "Edge: n=1 minimum"
+      "desc": "Edge: n=1 minimum",
+      "output": "2"
     }
   ]
 }
