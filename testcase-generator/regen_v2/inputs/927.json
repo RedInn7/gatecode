@@ -1,27 +1,88 @@
 {
-  "pid": 927, "slug": "distribute-repeating-integers",
+  "pid": 927,
+  "slug": "distribute-repeating-integers",
   "inferred_constraints": "1 <= nums.length <= 50, 1 <= quantity.length <= 10",
   "input_format": "line1: nums (JSON array); line2: quantity (JSON array)",
   "testcases": [
-    {"input": "[1,2,3,4]\n[2]", "desc": "Edge: example1"},
-    {"input": "[1,2,3,3]\n[2]", "desc": "Edge: example2 yes"},
-    {"input": "[1,1,2,2]\n[2,2]", "desc": "Edge: example3"},
-    {"input": "[1]\n[1]", "desc": "Edge: min"},
-    {"input": "[1,1]\n[2]", "desc": "Edge: exact match"},
-    {"input": "[1,2]\n[2]", "desc": "Edge: cannot distribute"},
-    {"input": "[1,1,1,1,1]\n[1,1,1]", "desc": "Standard: easy"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,1,1,1,1]", "desc": "Standard: 10 distinct 5 customers"},
-    {"input": "[1,1,1,2,2,3,3,3,3]\n[2,2,3]", "desc": "Standard"},
-    {"input": "[5,5,5,5,5,5,5,5,5,5]\n[5,5]", "desc": "Edge: all same"},
-    {"input": "[1,1,2,2,3,3,4,4,5,5]\n[2,2,2,2,2]", "desc": "Standard: pairs to 5"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[10]", "desc": "Edge: all to one"},
-    {"input": "[1,2,3,4,5]\n[5]", "desc": "Edge: 5 distinct cannot single"},
-    {"input": "[1]\n[2]", "desc": "Edge: impossible"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[3,3,3,3,3]", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,5,5,5,5,5,5,5,5,5,5]\n[10]", "desc": "Standard: one bulk"},
-    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10]\n[2,2,2,2,2,2,2,2,2,2]", "desc": "Standard: 10 customers"},
-    {"input": "[7,7,7,7,7,7]\n[3,3]", "desc": "Edge: same value 3+3"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 distinct"},
-    {"input": "[1,1,1,1,2,2,2,2,3,3,3,3]\n[4,4,4]", "desc": "Special: 3 groups of 4"}
+    {
+      "input": "[1,2,3,4]\n[2]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[1,2,3,3]\n[2]",
+      "desc": "Edge: example2 yes"
+    },
+    {
+      "input": "[1,1,2,2]\n[2,2]",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: min"
+    },
+    {
+      "input": "[1,1]\n[2]",
+      "desc": "Edge: exact match"
+    },
+    {
+      "input": "[1,2]\n[2]",
+      "desc": "Edge: cannot distribute"
+    },
+    {
+      "input": "[315,435,153,-514,-31,-468,662,-121,710,622]\n[779,-211,-340,-918,188,-681,-773,-192,-235,77]",
+      "desc": "Regenerated: diverse at position 6"
+    },
+    {
+      "input": "[412,-327,-498,-716,552,793,175,256,257]\n[322,990,893,236,177,-12,-810,-896,-97]",
+      "desc": "Regenerated: diverse at position 7"
+    },
+    {
+      "input": "[1,1,1,2,2,3,3,3,3]\n[2,2,3]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[5,5,5,5,5,5,5,5,5,5]\n[5,5]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[-679,-117,449,-991,942]\n[-333,117,906,-733,-18]",
+      "desc": "Regenerated: standard at position 10"
+    },
+    {
+      "input": "[716,-194,136,367,55,-835,-304]\n[-489,-17,-389,446,-233,-808,-477]",
+      "desc": "Regenerated: standard at position 11"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[5]",
+      "desc": "Edge: 5 distinct cannot single"
+    },
+    {
+      "input": "[1]\n[2]",
+      "desc": "Edge: impossible"
+    },
+    {
+      "input": "[-215,967,296,135,583,-173,339,-321]\n[738,-87,-331,-760,-5,-965,-5,596]",
+      "desc": "Regenerated: standard at position 14"
+    },
+    {
+      "input": "[1,2,3,4,5,5,5,5,5,5,5,5,5,5,5]\n[10]",
+      "desc": "Standard: one bulk"
+    },
+    {
+      "input": "[134,667,229,-822,-414,-215,-941,-749]\n[-536,-725,298,273,-469,527,-941,-120]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[-488,-594,-469,-509,874,677,378,927,-313,17]\n[481,-465,-706,-764,-545,-432,513,-154,751,-18]",
+      "desc": "Regenerated: stress at position 17"
+    },
+    {
+      "input": "[650,-665,-17,-975,180,801,-642,308,493,496]\n[-620,-489,385,-698,-620,-266,468,477,878,241]",
+      "desc": "Regenerated: stress at position 18"
+    },
+    {
+      "input": "[-326,766,997,492,546,-869,-95,470,-905,622]\n[-11,-216,-214,-94,-48,-137,-214,929,-175,-738]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
