@@ -874,3 +874,13 @@ Audited at: 2026-05-16T15:37:58.612436
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:38:00.847222
+
+## PID 34 (number-of-burgers-with-no-waste-of-ingredients)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:03.003924
+
+## PID 340 (furthest-building-you-can-reach)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:38:03.004204
