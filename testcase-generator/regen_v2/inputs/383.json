@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, lowercase letters",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "leetcoder", "desc": "Edge: example1 Alice wins"},
-    {"input": "bbcd", "desc": "Edge: example2 Alice loses (no vowels)"},
-    {"input": "a", "desc": "Edge: single vowel"},
-    {"input": "b", "desc": "Edge: single consonant"},
-    {"input": "e", "desc": "Edge: single vowel e"},
-    {"input": "i", "desc": "Edge: single vowel i"},
-    {"input": "o", "desc": "Edge: single vowel o"},
-    {"input": "u", "desc": "Edge: single vowel u"},
-    {"input": "aa", "desc": "Edge: 2 vowels"},
-    {"input": "ae", "desc": "Edge: 2 distinct vowels"},
-    {"input": "bc", "desc": "Edge: no vowels"},
-    {"input": "abc", "desc": "Edge: 1 vowel mix"},
-    {"input": "abe", "desc": "Edge: 2 vowels"},
-    {"input": "abcde", "desc": "Standard: 2 vowels"},
-    {"input": "xyz", "desc": "Edge: no vowels longer"},
-    {"input": "aeiou", "desc": "Edge: 5 vowels only"},
-    {"input": "bbbbbbbbbb", "desc": "Edge: all consonants long"},
-    {"input": "aaaaaaaaaa", "desc": "Edge: all vowels"},
-    {"input": "leetcode", "desc": "Standard: typical word"},
-    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: full alphabet"}
+    {
+      "input": "leetcoder",
+      "desc": "Edge: example1 Alice wins"
+    },
+    {
+      "input": "bbcd",
+      "desc": "Edge: example2 Alice loses (no vowels)"
+    },
+    {
+      "input": "\"x\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"ywcmmsow\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"ysujzst\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "i",
+      "desc": "Edge: single vowel i"
+    },
+    {
+      "input": "o",
+      "desc": "Edge: single vowel o"
+    },
+    {
+      "input": "u",
+      "desc": "Edge: single vowel u"
+    },
+    {
+      "input": "aa",
+      "desc": "Edge: 2 vowels"
+    },
+    {
+      "input": "ae",
+      "desc": "Edge: 2 distinct vowels"
+    },
+    {
+      "input": "bc",
+      "desc": "Edge: no vowels"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: 1 vowel mix"
+    },
+    {
+      "input": "abe",
+      "desc": "Edge: 2 vowels"
+    },
+    {
+      "input": "abcde",
+      "desc": "Standard: 2 vowels"
+    },
+    {
+      "input": "xyz",
+      "desc": "Edge: no vowels longer"
+    },
+    {
+      "input": "aeiou",
+      "desc": "Edge: 5 vowels only"
+    },
+    {
+      "input": "bbbbbbbbbb",
+      "desc": "Edge: all consonants long"
+    },
+    {
+      "input": "aaaaaaaaaa",
+      "desc": "Edge: all vowels"
+    },
+    {
+      "input": "leetcode",
+      "desc": "Standard: typical word"
+    },
+    {
+      "input": "\"epdtcxvjtdlddldtta\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

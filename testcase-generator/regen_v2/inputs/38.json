@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, lowercase letters and '*', guaranteed feasible",
   "input_format": "single line: s (raw string)",
   "testcases": [
-    {"input": "aaba*", "desc": "Edge: example1"},
-    {"input": "abc", "desc": "Edge: example2 no star"},
-    {"input": "a", "desc": "Edge: n=1, no star"},
-    {"input": "ab*", "desc": "Edge: simple star"},
-    {"input": "ba*", "desc": "Edge: remove 'a' to keep 'b'"},
-    {"input": "z*", "desc": "Edge: remove single z"},
-    {"input": "ab*c", "desc": "Edge: star mid"},
-    {"input": "abc*def*", "desc": "Standard: 2 stars"},
-    {"input": "zyxwvutsrqponmlkjihgfedcba*", "desc": "Standard: reversed alphabet, remove 'a'"},
-    {"input": "aaaaa*", "desc": "Edge: many a's, remove one"},
-    {"input": "zzzzz*", "desc": "Edge: many z's, remove one"},
-    {"input": "abcde*fghij*klmno*pqrst*", "desc": "Standard: 4 stars"},
-    {"input": "*", "desc": "Edge: star only — but constraint says feasible, so at least one letter before. Use a* instead"},
-    {"input": "a*", "desc": "Edge: minimum with star"},
-    {"input": "ba*ba*ba*ba*", "desc": "Standard: repeating pattern"},
-    {"input": "abcdefghijklmnopqrstuvwxyz*", "desc": "Edge: full alphabet + star"},
-    {"input": "zyxwvutsrqponmlkjihgfedcba**", "desc": "Standard: 2 stars at end"},
-    {"input": "abracadabra*", "desc": "Standard: word with star"},
-    {"input": "leetcode*leetcode*leetcode*", "desc": "Standard: repeated word"},
-    {"input": "abcabcabcabcabcabcabcabcabc**", "desc": "Stress: longer with stars"}
+    {
+      "input": "aaba*",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: example2 no star"
+    },
+    {
+      "input": "\"ms\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"fiwmn\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"vc\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "z*",
+      "desc": "Edge: remove single z"
+    },
+    {
+      "input": "ab*c",
+      "desc": "Edge: star mid"
+    },
+    {
+      "input": "abc*def*",
+      "desc": "Standard: 2 stars"
+    },
+    {
+      "input": "zyxwvutsrqponmlkjihgfedcba*",
+      "desc": "Standard: reversed alphabet, remove 'a'"
+    },
+    {
+      "input": "aaaaa*",
+      "desc": "Edge: many a's, remove one"
+    },
+    {
+      "input": "zzzzz*",
+      "desc": "Edge: many z's, remove one"
+    },
+    {
+      "input": "abcde*fghij*klmno*pqrst*",
+      "desc": "Standard: 4 stars"
+    },
+    {
+      "input": "*",
+      "desc": "Edge: star only — but constraint says feasible, so at least one letter before. Use a* instead"
+    },
+    {
+      "input": "a*",
+      "desc": "Edge: minimum with star"
+    },
+    {
+      "input": "ba*ba*ba*ba*",
+      "desc": "Standard: repeating pattern"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz*",
+      "desc": "Edge: full alphabet + star"
+    },
+    {
+      "input": "zyxwvutsrqponmlkjihgfedcba**",
+      "desc": "Standard: 2 stars at end"
+    },
+    {
+      "input": "abracadabra*",
+      "desc": "Standard: word with star"
+    },
+    {
+      "input": "leetcode*leetcode*leetcode*",
+      "desc": "Standard: repeated word"
+    },
+    {
+      "input": "\"jhqyczyykd\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
