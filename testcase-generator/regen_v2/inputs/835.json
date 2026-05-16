@@ -5,8 +5,8 @@
   "input_format": "line1: words (JSON array); line2: order (raw)",
   "testcases": [
     {
-      "input": "[\"hello\",\"leetcode\"]\nhlabcdefgijkmnopqrstuvwxyz",
-      "desc": "Edge: example1"
+      "input": "[-1000]\n\"x\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "[\"word\",\"world\",\"row\"]\nworldabcefghijkmnpqstuvxyz",

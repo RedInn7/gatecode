@@ -6,7 +6,7 @@
   "testcases": [
     {
       "input": "0",
-      "desc": "Edge: example1 true"
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "e",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "44",
+      "input": "34",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Edge: double sign"
     },
     {
-      "input": "89",
+      "input": "44",
       "desc": "Stress: large n near max boundary"
     }
   ]
