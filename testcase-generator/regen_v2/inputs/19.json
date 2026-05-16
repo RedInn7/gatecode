@@ -5,7 +5,7 @@
   "input_format": "line1: methods JSON array, e.g. [\"RLEIterator\",\"next\",\"next\"]; line2: args JSON 2D array, e.g. [[[3,8,0,9,2,5]],[2],[1]]",
   "testcases": [
     {
-      "input": "[0]\n[[854960575],[528907010]]",
+      "input": "[0]\n[[868860542],[353298626]]",
       "desc": "Regenerated: edge_min at position 0"
     },
     {
