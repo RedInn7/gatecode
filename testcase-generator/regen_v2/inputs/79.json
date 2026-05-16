@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= num1 <= num2 <= 1e15",
   "input_format": "line1: num1 (int); line2: num2 (int)",
   "testcases": [
-    {"input": "120\n130", "desc": "Edge: example1"},
-    {"input": "198\n202", "desc": "Edge: example2"},
-    {"input": "4848\n4848", "desc": "Edge: example3 single number"},
-    {"input": "1\n1", "desc": "Edge: minimum single"},
-    {"input": "1\n9", "desc": "Edge: single digits"},
-    {"input": "10\n99", "desc": "Edge: 2-digit (no waviness)"},
-    {"input": "100\n999", "desc": "Standard: 3-digit range"},
-    {"input": "1\n100", "desc": "Standard: span 1 to 100"},
-    {"input": "1\n1000", "desc": "Standard: span to 1000"},
-    {"input": "1\n10000", "desc": "Standard: span to 10000"},
-    {"input": "1000000000\n1000000000", "desc": "Edge: 10-digit single"},
-    {"input": "1\n1000000000000000", "desc": "Edge: max range"},
-    {"input": "999999999999999\n1000000000000000", "desc": "Edge: near max"},
-    {"input": "12345\n12346", "desc": "Standard: small pair"},
-    {"input": "11111\n22222", "desc": "Standard: monotonic — no waviness within"},
-    {"input": "12321\n12321", "desc": "Edge: palindrome single"},
-    {"input": "120\n120", "desc": "Edge: single peak"},
-    {"input": "100\n100", "desc": "Edge: single valley? 0 between 1 and 0 — no, last digit 0 not valley"},
-    {"input": "10000000000000\n10000000000000", "desc": "Edge: large valley single"},
-    {"input": "9999999999\n9999999999", "desc": "Edge: 10 nines (no waviness)"}
+    {
+      "input": "120\n130",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "198\n202",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "1393\n429",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "524\n1733",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "2264\n2409",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "10\n99",
+      "desc": "Edge: 2-digit (no waviness)"
+    },
+    {
+      "input": "100\n999",
+      "desc": "Standard: 3-digit range"
+    },
+    {
+      "input": "1\n100",
+      "desc": "Standard: span 1 to 100"
+    },
+    {
+      "input": "1\n1000",
+      "desc": "Standard: span to 1000"
+    },
+    {
+      "input": "1\n10000",
+      "desc": "Standard: span to 10000"
+    },
+    {
+      "input": "1000000000\n1000000000",
+      "desc": "Edge: 10-digit single"
+    },
+    {
+      "input": "1\n1000000000000000",
+      "desc": "Edge: max range"
+    },
+    {
+      "input": "999999999999999\n1000000000000000",
+      "desc": "Edge: near max"
+    },
+    {
+      "input": "12345\n12346",
+      "desc": "Standard: small pair"
+    },
+    {
+      "input": "11111\n22222",
+      "desc": "Standard: monotonic — no waviness within"
+    },
+    {
+      "input": "12321\n12321",
+      "desc": "Edge: palindrome single"
+    },
+    {
+      "input": "120\n120",
+      "desc": "Edge: single peak"
+    },
+    {
+      "input": "100\n100",
+      "desc": "Edge: single valley? 0 between 1 and 0 — no, last digit 0 not valley"
+    },
+    {
+      "input": "10000000000000\n10000000000000",
+      "desc": "Edge: large valley single"
+    },
+    {
+      "input": "9999999999\n9999999999",
+      "desc": "Edge: 10 nines (no waviness)"
+    }
   ]
 }

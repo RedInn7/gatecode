@@ -1,27 +1,88 @@
 {
-  "pid": 794, "slug": "count-palindromic-subsequences",
+  "pid": 794,
+  "slug": "count-palindromic-subsequences",
   "inferred_constraints": "1 <= s.length <= 1e4, digit chars",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "103301", "desc": "Edge: example1"},
-    {"input": "0000000", "desc": "Edge: example2 all 0"},
-    {"input": "9999900000", "desc": "Edge: example3"},
-    {"input": "00000", "desc": "Edge: n=5 all 0"},
-    {"input": "1234", "desc": "Edge: n<5"},
-    {"input": "12345", "desc": "Edge: n=5 distinct"},
-    {"input": "11111", "desc": "Edge: 5 same"},
-    {"input": "0123456789", "desc": "Standard: 10 distinct digits"},
-    {"input": "9876543210", "desc": "Standard: 10 reverse"},
-    {"input": "1212121212", "desc": "Standard: alternating"},
-    {"input": "1234321", "desc": "Standard: 7-palindrome"},
-    {"input": "12321", "desc": "Standard: 5-palindrome"},
-    {"input": "00100", "desc": "Standard: palindrome 5"},
-    {"input": "12345678901234567890", "desc": "Standard: 20 cycled"},
-    {"input": "11111111111111111111", "desc": "Standard: 20 same"},
-    {"input": "98765432109876543210", "desc": "Standard: 20 desc cycled"},
-    {"input": "01010101010101010101", "desc": "Standard: 20 alternating"},
-    {"input": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "desc": "Stress: 100 zeros"},
-    {"input": "1234567890123456789012345678901234567890123456789012345678901234567890", "desc": "Stress: 70 cycled"},
-    {"input": "55005500550055005500550055005500", "desc": "Special: pattern 5500"}
+    {
+      "input": "0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "0000000",
+      "desc": "Edge: example2 all 0"
+    },
+    {
+      "input": "6084553546",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "9007376988",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "5725582922",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "12345",
+      "desc": "Edge: n=5 distinct"
+    },
+    {
+      "input": "11111",
+      "desc": "Edge: 5 same"
+    },
+    {
+      "input": "0123456789",
+      "desc": "Standard: 10 distinct digits"
+    },
+    {
+      "input": "9876543210",
+      "desc": "Standard: 10 reverse"
+    },
+    {
+      "input": "1212121212",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "1234321",
+      "desc": "Standard: 7-palindrome"
+    },
+    {
+      "input": "12321",
+      "desc": "Standard: 5-palindrome"
+    },
+    {
+      "input": "00100",
+      "desc": "Standard: palindrome 5"
+    },
+    {
+      "input": "12345678901234567890",
+      "desc": "Standard: 20 cycled"
+    },
+    {
+      "input": "11111111111111111111",
+      "desc": "Standard: 20 same"
+    },
+    {
+      "input": "98765432109876543210",
+      "desc": "Standard: 20 desc cycled"
+    },
+    {
+      "input": "01010101010101010101",
+      "desc": "Standard: 20 alternating"
+    },
+    {
+      "input": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "desc": "Stress: 100 zeros"
+    },
+    {
+      "input": "1234567890123456789012345678901234567890123456789012345678901234567890",
+      "desc": "Stress: 70 cycled"
+    },
+    {
+      "input": "9999900000",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

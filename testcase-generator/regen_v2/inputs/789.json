@@ -1,27 +1,88 @@
 {
-  "pid": 789, "slug": "find-eventual-safe-states",
+  "pid": 789,
+  "slug": "find-eventual-safe-states",
   "inferred_constraints": "1 <= n <= 1e4, 0 <= graph[i].length <= n, edges in [1, 4e4]",
   "input_format": "line1: graph (JSON 2D)",
   "testcases": [
-    {"input": "[[1,2],[2,3],[5],[0],[5],[],[]]", "desc": "Edge: example1"},
-    {"input": "[[1,2,3,4],[1,2],[3,4],[0,4],[]]", "desc": "Edge: example2"},
-    {"input": "[[]]", "desc": "Edge: n=1 terminal"},
-    {"input": "[[0]]", "desc": "Edge: n=1 self-loop"},
-    {"input": "[[],[]]", "desc": "Edge: n=2 both terminal"},
-    {"input": "[[1],[]]", "desc": "Edge: n=2 chain"},
-    {"input": "[[1],[0]]", "desc": "Edge: 2-cycle"},
-    {"input": "[[1],[2],[0]]", "desc": "Edge: 3-cycle"},
-    {"input": "[[1,2],[3,4],[5,6],[],[],[],[]]", "desc": "Standard: tree DAG all safe"},
-    {"input": "[[1],[2],[3],[4],[]]", "desc": "Standard: chain to terminal"},
-    {"input": "[[1],[2],[3],[4],[0]]", "desc": "Standard: cycle 5"},
-    {"input": "[[1,2],[3],[4],[],[]]", "desc": "Standard: 5 all safe"},
-    {"input": "[[1],[2,3],[3,4],[4],[]]", "desc": "Standard: DAG mixed"},
-    {"input": "[[],[0],[1,0],[3,2],[1,5,7,8],[1,9],[1,7],[5,0],[3,7,0],[1,3,4,9]]", "desc": "Standard: complex 10"},
-    {"input": "[[1,2,3,4,5,6,7,8,9],[],[],[],[],[],[],[],[],[]]", "desc": "Standard: star to all terminal"},
-    {"input": "[[1],[2],[3],[4],[5],[6],[7],[8],[9],[]]", "desc": "Standard: long chain"},
-    {"input": "[[1,2],[0,2],[0,1]]", "desc": "Standard: K3 cycle"},
-    {"input": "[[1],[2],[0],[]]", "desc": "Standard: cycle + terminal"},
-    {"input": "[[1],[2,3],[4],[1],[]]", "desc": "Standard: small unsafe"},
-    {"input": "[[1],[2],[],[4],[]]", "desc": "Special: 2 chains"}
+    {
+      "input": "[[1,2],[2,3],[5],[0],[5],[],[]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[1,2,3,4],[1,2],[3,4],[0,4],[]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[-354,251],[-225,-777],[-863,-328],[-329,426],[-836,266],[564,-458],[-802,564]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[-823,983],[-756,427],[340,-379],[367,886],[702,636],[222,-498],[649,-519]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[],[]]",
+      "desc": "Edge: n=2 both terminal"
+    },
+    {
+      "input": "[[1],[]]",
+      "desc": "Edge: n=2 chain"
+    },
+    {
+      "input": "[[1],[0]]",
+      "desc": "Edge: 2-cycle"
+    },
+    {
+      "input": "[[1],[2],[0]]",
+      "desc": "Edge: 3-cycle"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[],[],[],[]]",
+      "desc": "Standard: tree DAG all safe"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[]]",
+      "desc": "Standard: chain to terminal"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[0]]",
+      "desc": "Standard: cycle 5"
+    },
+    {
+      "input": "[[1,2],[3],[4],[],[]]",
+      "desc": "Standard: 5 all safe"
+    },
+    {
+      "input": "[[1],[2,3],[3,4],[4],[]]",
+      "desc": "Standard: DAG mixed"
+    },
+    {
+      "input": "[[],[0],[1,0],[3,2],[1,5,7,8],[1,9],[1,7],[5,0],[3,7,0],[1,3,4,9]]",
+      "desc": "Standard: complex 10"
+    },
+    {
+      "input": "[[1,2,3,4,5,6,7,8,9],[],[],[],[],[],[],[],[],[]]",
+      "desc": "Standard: star to all terminal"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[5],[6],[7],[8],[9],[]]",
+      "desc": "Standard: long chain"
+    },
+    {
+      "input": "[[1,2],[0,2],[0,1]]",
+      "desc": "Standard: K3 cycle"
+    },
+    {
+      "input": "[[1],[2],[0],[]]",
+      "desc": "Standard: cycle + terminal"
+    },
+    {
+      "input": "[[1],[2,3],[4],[1],[]]",
+      "desc": "Standard: small unsafe"
+    },
+    {
+      "input": "[[-303,-688,656,953],[769,170,410,32],[751,-630,-585,-428],[-781,-22,951,-291],[638,456,-240,174],[557,457,550,234],[-633,604,-582,-759],[931,59,85,488],[-50,190,-293,-271],[-10,292,-467,-966],[-914,-153,-307,511],[542,680,78,663],[194,28,-984,-897],[575,-478,965,18]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

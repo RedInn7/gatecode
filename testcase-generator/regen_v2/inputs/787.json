@@ -1,27 +1,88 @@
 {
-  "pid": 787, "slug": "positions-of-large-groups",
+  "pid": 787,
+  "slug": "positions-of-large-groups",
   "inferred_constraints": "1 <= s.length <= 1000, lowercase letters",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "abbxxxxzzy", "desc": "Edge: example1"},
-    {"input": "abc", "desc": "Edge: example2 no large"},
-    {"input": "abcdddeeeeaabbbcd", "desc": "Edge: example3"},
-    {"input": "a", "desc": "Edge: single char"},
-    {"input": "aa", "desc": "Edge: pair not large"},
-    {"input": "aaa", "desc": "Edge: 3 chars large"},
-    {"input": "aaaa", "desc": "Edge: 4 chars large"},
-    {"input": "abcdef", "desc": "Edge: all distinct"},
-    {"input": "aaabbbccc", "desc": "Standard: 3 groups all large"},
-    {"input": "aabbccddee", "desc": "Standard: all pairs"},
-    {"input": "aaaaaaaaaa", "desc": "Standard: 10 same"},
-    {"input": "aaabbcccddddeeeee", "desc": "Standard: mixed sizes"},
-    {"input": "abbbcccccddddddeeeeeee", "desc": "Standard: increasing groups"},
-    {"input": "zzzzzzzzzzaaaaaaaaaa", "desc": "Standard: 10+10"},
-    {"input": "aaaaaabbbbbbccccccdddddd", "desc": "Standard: 4 groups of 6"},
-    {"input": "abcabcabc", "desc": "Standard: repeating no large"},
-    {"input": "aaabaaabaaa", "desc": "Standard: aaab pattern"},
-    {"input": "xxx", "desc": "Edge: exactly 3"},
-    {"input": "aabbccaa", "desc": "Standard: pair end pair"},
-    {"input": "abbcccddddeeeeeffffff", "desc": "Special: progressively larger"}
+    {
+      "input": "abbxxxxzzy",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: example2 no large"
+    },
+    {
+      "input": "abcdddeeeeaabbbcd",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "\"ofdm\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"uwvejf\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "aaa",
+      "desc": "Edge: 3 chars large"
+    },
+    {
+      "input": "aaaa",
+      "desc": "Edge: 4 chars large"
+    },
+    {
+      "input": "abcdef",
+      "desc": "Edge: all distinct"
+    },
+    {
+      "input": "aaabbbccc",
+      "desc": "Standard: 3 groups all large"
+    },
+    {
+      "input": "aabbccddee",
+      "desc": "Standard: all pairs"
+    },
+    {
+      "input": "aaaaaaaaaa",
+      "desc": "Standard: 10 same"
+    },
+    {
+      "input": "aaabbcccddddeeeee",
+      "desc": "Standard: mixed sizes"
+    },
+    {
+      "input": "abbbcccccddddddeeeeeee",
+      "desc": "Standard: increasing groups"
+    },
+    {
+      "input": "zzzzzzzzzzaaaaaaaaaa",
+      "desc": "Standard: 10+10"
+    },
+    {
+      "input": "aaaaaabbbbbbccccccdddddd",
+      "desc": "Standard: 4 groups of 6"
+    },
+    {
+      "input": "abcabcabc",
+      "desc": "Standard: repeating no large"
+    },
+    {
+      "input": "aaabaaabaaa",
+      "desc": "Standard: aaab pattern"
+    },
+    {
+      "input": "xxx",
+      "desc": "Edge: exactly 3"
+    },
+    {
+      "input": "aabbccaa",
+      "desc": "Standard: pair end pair"
+    },
+    {
+      "input": "\"idxlekkwwlqciluenwlpqrkgcxohwfbodj\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
