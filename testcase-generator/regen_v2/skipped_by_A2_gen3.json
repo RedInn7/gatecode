@@ -199,6 +199,11 @@
       "pid": 3076,
       "slug": "maximum-profitable-triplets-with-increasing-prices-i",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3056,
+      "slug": "insert-delete-getrandom-o1",
+      "reason": "ACM mode problem"
     }
   ]
 }
