@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, s contains only valid digit-spelling chars",
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
-    {"input": "\"owoztneoer\"", "desc": "Edge: example1 -> 012"},
-    {"input": "\"fviefuro\"", "desc": "Edge: example2 -> 45"},
-    {"input": "\"zero\"", "desc": "Edge: just 0"},
-    {"input": "\"one\"", "desc": "Edge: just 1"},
-    {"input": "\"two\"", "desc": "Edge: just 2"},
-    {"input": "\"three\"", "desc": "Edge: just 3"},
-    {"input": "\"four\"", "desc": "Edge: just 4"},
-    {"input": "\"five\"", "desc": "Edge: just 5"},
-    {"input": "\"six\"", "desc": "Edge: just 6"},
-    {"input": "\"seven\"", "desc": "Edge: just 7"},
-    {"input": "\"eight\"", "desc": "Edge: just 8"},
-    {"input": "\"nine\"", "desc": "Edge: just 9"},
-    {"input": "\"zeroonetwothreefourfivesixseveneightnine\"", "desc": "Standard: 0-9 in order"},
-    {"input": "\"oneone\"", "desc": "Standard: 11"},
-    {"input": "\"zerozerozero\"", "desc": "Standard: 000"},
-    {"input": "\"ninenineeight\"", "desc": "Standard: 998"},
-    {"input": "\"oneone\"", "desc": "Standard: 11"},
-    {"input": "\"nineeighteightseveneightseven\"", "desc": "Edge: 9 8 8 7 8 7"},
-    {"input": "\"zeroonetwothreefourfivesixseveneightninezeroonetwothreefourfivesixseveneightninezeroonetwothreefourfivesixseveneightnine\"", "desc": "Stress: 3 sets of 0-9"},
-    {"input": "\"onetwothreefourfivesixseveneightnine\"", "desc": "Stress: 1-9"}
+    {
+      "input": "\"e\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "\"fviefuro\"",
+      "desc": "Edge: example2 -> 45"
+    },
+    {
+      "input": "\"xthigo\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"usyokso\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"yxf\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"three\"",
+      "desc": "Edge: just 3"
+    },
+    {
+      "input": "\"four\"",
+      "desc": "Edge: just 4"
+    },
+    {
+      "input": "\"five\"",
+      "desc": "Edge: just 5"
+    },
+    {
+      "input": "\"six\"",
+      "desc": "Edge: just 6"
+    },
+    {
+      "input": "\"seven\"",
+      "desc": "Edge: just 7"
+    },
+    {
+      "input": "\"eight\"",
+      "desc": "Edge: just 8"
+    },
+    {
+      "input": "\"nine\"",
+      "desc": "Edge: just 9"
+    },
+    {
+      "input": "\"zeroonetwothreefourfivesixseveneightnine\"",
+      "desc": "Standard: 0-9 in order"
+    },
+    {
+      "input": "\"oneone\"",
+      "desc": "Standard: 11"
+    },
+    {
+      "input": "\"zerozerozero\"",
+      "desc": "Standard: 000"
+    },
+    {
+      "input": "\"ninenineeight\"",
+      "desc": "Standard: 998"
+    },
+    {
+      "input": "\"oneone\"",
+      "desc": "Standard: 11"
+    },
+    {
+      "input": "\"nineeighteightseveneightseven\"",
+      "desc": "Edge: 9 8 8 7 8 7"
+    },
+    {
+      "input": "\"zeroonetwothreefourfivesixseveneightninezeroonetwothreefourfivesixseveneightninezeroonetwothreefourfivesixseveneightnine\"",
+      "desc": "Stress: 3 sets of 0-9"
+    },
+    {
+      "input": "\"sudsywicdvscozqqhcui\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

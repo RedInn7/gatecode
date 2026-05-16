@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= a, b, c <= 1e9",
   "input_format": "line1: a (int); line2: b (int); line3: c (int)",
   "testcases": [
-    {"input": "2\n6\n5", "desc": "Edge: example1"},
-    {"input": "4\n2\n7", "desc": "Edge: example2"},
-    {"input": "1\n2\n3", "desc": "Edge: example3 zero flips"},
-    {"input": "1\n1\n1", "desc": "Edge: smallest values all equal"},
-    {"input": "1000000000\n1000000000\n1000000000", "desc": "Edge: max all equal"},
-    {"input": "1\n1\n2", "desc": "Edge: small values 1|1=1 vs 2"},
-    {"input": "536870912\n268435456\n805306368", "desc": "Standard: high bits combine to c"},
-    {"input": "1023\n1023\n0", "desc": "Standard: flip all 10 bits in both"},
-    {"input": "0\n0\n0", "desc": "Edge: but constraint says 1<=, use minimum allowed"},
-    {"input": "7\n8\n15", "desc": "Standard: complementary bits"},
-    {"input": "15\n15\n0", "desc": "Standard: all bits need clearing"},
-    {"input": "999999999\n999999999\n999999999", "desc": "Stress: near max equal"},
-    {"input": "1000000000\n1\n1000000001", "desc": "Edge: out of constraint, use 999999999"},
-    {"input": "1000000000\n1\n999999999", "desc": "Stress: max edge"},
-    {"input": "5\n10\n15", "desc": "Standard: 5|10=15 zero flips"},
-    {"input": "5\n10\n0", "desc": "Standard: zero target"},
-    {"input": "1\n1000000000\n1", "desc": "Standard: big b vs small target"},
-    {"input": "1\n1000000000\n999999999", "desc": "Standard: large mix"},
-    {"input": "536870911\n536870911\n536870911", "desc": "Stress: same near max value"},
-    {"input": "1\n2\n4", "desc": "Standard: distinct single bits"}
+    {
+      "input": "2\n6\n5",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "4\n2\n7",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "115703065\n587784345\n441290528",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "553056236\n13002348\n386927844",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "1000000000\n1000000000\n1000000000",
+      "desc": "Edge: max all equal"
+    },
+    {
+      "input": "1\n1\n2",
+      "desc": "Edge: small values 1|1=1 vs 2"
+    },
+    {
+      "input": "536870912\n268435456\n805306368",
+      "desc": "Standard: high bits combine to c"
+    },
+    {
+      "input": "1023\n1023\n0",
+      "desc": "Standard: flip all 10 bits in both"
+    },
+    {
+      "input": "0\n0\n0",
+      "desc": "Edge: but constraint says 1<=, use minimum allowed"
+    },
+    {
+      "input": "7\n8\n15",
+      "desc": "Standard: complementary bits"
+    },
+    {
+      "input": "15\n15\n0",
+      "desc": "Standard: all bits need clearing"
+    },
+    {
+      "input": "999999999\n999999999\n999999999",
+      "desc": "Stress: near max equal"
+    },
+    {
+      "input": "1000000000\n1\n1000000001",
+      "desc": "Edge: out of constraint, use 999999999"
+    },
+    {
+      "input": "1000000000\n1\n999999999",
+      "desc": "Stress: max edge"
+    },
+    {
+      "input": "5\n10\n15",
+      "desc": "Standard: 5|10=15 zero flips"
+    },
+    {
+      "input": "5\n10\n0",
+      "desc": "Standard: zero target"
+    },
+    {
+      "input": "1\n1000000000\n1",
+      "desc": "Standard: big b vs small target"
+    },
+    {
+      "input": "1\n1000000000\n999999999",
+      "desc": "Standard: large mix"
+    },
+    {
+      "input": "536870911\n536870911\n536870911",
+      "desc": "Stress: same near max value"
+    },
+    {
+      "input": "1\n2\n4",
+      "desc": "Standard: distinct single bits"
+    }
   ]
 }
