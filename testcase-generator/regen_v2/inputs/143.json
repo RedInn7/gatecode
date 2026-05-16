@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"klddj\"",
+      "input": "\"eoazq\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 35 digits with all dashes"
     },
     {
-      "input": "\"ixukujvwivtkahuuqx\"",
+      "input": "\"ndjbavfnboufaozzfz\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
