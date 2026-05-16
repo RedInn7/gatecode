@@ -59,6 +59,16 @@
       "pid": 3457,
       "slug": "intersection-of-two-linked-lists",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3455,
+      "slug": "find-the-closest-marked-node",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3450,
+      "slug": "check-if-two-chessboard-squares-have-the-same-color",
+      "reason": "ACM mode problem"
     }
   ]
 }

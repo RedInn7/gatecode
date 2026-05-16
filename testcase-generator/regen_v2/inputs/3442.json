@@ -1,0 +1,76 @@
+{
+  "pid": 3442,
+  "slug": "get-watched-videos-by-your-friends",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "895390",
+      "desc": "Standard: n=895390"
+    },
+    {
+      "input": "288346",
+      "desc": "Standard: n=288346"
+    },
+    {
+      "input": "514734",
+      "desc": "Standard: n=514734"
+    },
+    {
+      "input": "193998",
+      "desc": "Standard: n=193998"
+    },
+    {
+      "input": "159090",
+      "desc": "Standard: n=159090"
+    },
+    {
+      "input": "743049",
+      "desc": "Standard: n=743049"
+    },
+    {
+      "input": "540439",
+      "desc": "Standard: n=540439"
+    },
+    {
+      "input": "533860",
+      "desc": "Standard: n=533860"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

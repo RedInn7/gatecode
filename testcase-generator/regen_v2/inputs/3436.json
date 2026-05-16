@@ -1,0 +1,76 @@
+{
+  "pid": 3436,
+  "slug": "factorial-trailing-zeroes",
+  "inferred_constraints": "0 <= n <= 10000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "10000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "9999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "3112",
+      "desc": "Standard: n=3112"
+    },
+    {
+      "input": "4774",
+      "desc": "Standard: n=4774"
+    },
+    {
+      "input": "8059",
+      "desc": "Standard: n=8059"
+    },
+    {
+      "input": "9940",
+      "desc": "Standard: n=9940"
+    },
+    {
+      "input": "4100",
+      "desc": "Standard: n=4100"
+    },
+    {
+      "input": "2255",
+      "desc": "Standard: n=2255"
+    },
+    {
+      "input": "6673",
+      "desc": "Standard: n=6673"
+    },
+    {
+      "input": "9136",
+      "desc": "Standard: n=9136"
+    },
+    {
+      "input": "10000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "10000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "10000",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "10000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
