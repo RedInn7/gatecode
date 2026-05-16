@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= text.length <= 1e5, pattern.length == 2, lowercase letters",
   "input_format": "line1: text (raw); line2: pattern (raw, len 2)",
   "testcases": [
-    {"input": "abdcdbc\nac", "desc": "Edge: example1 -> 4"},
-    {"input": "aabb\nab", "desc": "Edge: example2 -> 6"},
-    {"input": "a\nab", "desc": "Edge: text length 1"},
-    {"input": "b\nab", "desc": "Edge: text only 'b'"},
-    {"input": "z\nab", "desc": "Edge: neither letter"},
-    {"input": "aa\nab", "desc": "Edge: only a, append b -> 2"},
-    {"input": "bb\nab", "desc": "Edge: only b, prepend a -> 2"},
-    {"input": "ab\nab", "desc": "Edge: minimal exact"},
-    {"input": "ba\nab", "desc": "Edge: reversed order"},
-    {"input": "aaaa\nab", "desc": "Standard: all a"},
-    {"input": "bbbb\nab", "desc": "Standard: all b"},
-    {"input": "ababab\nab", "desc": "Standard: alternating"},
-    {"input": "aaaaabbbbb\nab", "desc": "Standard: a-block then b-block"},
-    {"input": "bbbbbaaaaa\nab", "desc": "Standard: reverse blocks"},
-    {"input": "aaaa\naa", "desc": "Standard: same letters pattern"},
-    {"input": "abcabcabcabc\nac", "desc": "Standard: pattern with c"},
-    {"input": "abcdefghijklmnop\nap", "desc": "Standard: ends"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naa", "desc": "Standard: 30 a's"},
-    {"input": "aabaabaabaabaab\nab", "desc": "Stress: 15 pattern"},
-    {"input": "abababababababababababababababababababababababababababababababababababababababababababababababababab\nab", "desc": "Killer: 100 alt chars"}
+    {
+      "input": "\"z\"\n\"l\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "aabb\nab",
+      "desc": "Edge: example2 -> 6"
+    },
+    {
+      "input": "\"iuox\"\n\"e\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"vce\"\n\"kd\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"h\"\n\"a\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "aa\nab",
+      "desc": "Edge: only a, append b -> 2"
+    },
+    {
+      "input": "bb\nab",
+      "desc": "Edge: only b, prepend a -> 2"
+    },
+    {
+      "input": "ab\nab",
+      "desc": "Edge: minimal exact"
+    },
+    {
+      "input": "ba\nab",
+      "desc": "Edge: reversed order"
+    },
+    {
+      "input": "aaaa\nab",
+      "desc": "Standard: all a"
+    },
+    {
+      "input": "bbbb\nab",
+      "desc": "Standard: all b"
+    },
+    {
+      "input": "ababab\nab",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "aaaaabbbbb\nab",
+      "desc": "Standard: a-block then b-block"
+    },
+    {
+      "input": "bbbbbaaaaa\nab",
+      "desc": "Standard: reverse blocks"
+    },
+    {
+      "input": "aaaa\naa",
+      "desc": "Standard: same letters pattern"
+    },
+    {
+      "input": "abcabcabcabc\nac",
+      "desc": "Standard: pattern with c"
+    },
+    {
+      "input": "abcdefghijklmnop\nap",
+      "desc": "Standard: ends"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naa",
+      "desc": "Standard: 30 a's"
+    },
+    {
+      "input": "aabaabaabaabaab\nab",
+      "desc": "Stress: 15 pattern"
+    },
+    {
+      "input": "\"wczlcuxfpanvnw\"\n\"pvts\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

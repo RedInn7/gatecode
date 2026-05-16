@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= lowLimit <= highLimit <= 1e5",
   "input_format": "line1: lowLimit (int); line2: highLimit (int)",
   "testcases": [
-    {"input": "1\n10", "desc": "Edge: example1 -> 2"},
-    {"input": "5\n15", "desc": "Edge: example2 -> 2"},
-    {"input": "19\n28", "desc": "Edge: example3 -> 2"},
-    {"input": "1\n1", "desc": "Edge: single ball"},
-    {"input": "100000\n100000", "desc": "Edge: single max ball"},
-    {"input": "1\n9", "desc": "Edge: 1-digit only"},
-    {"input": "10\n99", "desc": "Edge: all 2-digit"},
-    {"input": "100\n999", "desc": "Standard: all 3-digit"},
-    {"input": "1000\n9999", "desc": "Standard: all 4-digit"},
-    {"input": "10000\n99999", "desc": "Standard: all 5-digit"},
-    {"input": "1\n100", "desc": "Standard: full small range"},
-    {"input": "50\n150", "desc": "Standard: crossing 99/100"},
-    {"input": "999\n1001", "desc": "Standard: crossing 1000"},
-    {"input": "99\n100", "desc": "Edge: 2 balls boundary"},
-    {"input": "1\n1000", "desc": "Standard: full 1000"},
-    {"input": "1\n10000", "desc": "Standard: full 10000"},
-    {"input": "12345\n67890", "desc": "Standard: middle big range"},
-    {"input": "99000\n100000", "desc": "Standard: near max range"},
-    {"input": "1\n100000", "desc": "Stress: max range full"},
-    {"input": "55555\n55555", "desc": "Killer: special single 5+5+5+5+5"}
+    {
+      "input": "1\n10",
+      "desc": "Edge: example1 -> 2"
+    },
+    {
+      "input": "5\n15",
+      "desc": "Edge: example2 -> 2"
+    },
+    {
+      "input": "37739\n98034",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "42668\n64611",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "50162\n81880",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "1\n9",
+      "desc": "Edge: 1-digit only"
+    },
+    {
+      "input": "10\n99",
+      "desc": "Edge: all 2-digit"
+    },
+    {
+      "input": "100\n999",
+      "desc": "Standard: all 3-digit"
+    },
+    {
+      "input": "1000\n9999",
+      "desc": "Standard: all 4-digit"
+    },
+    {
+      "input": "10000\n99999",
+      "desc": "Standard: all 5-digit"
+    },
+    {
+      "input": "1\n100",
+      "desc": "Standard: full small range"
+    },
+    {
+      "input": "50\n150",
+      "desc": "Standard: crossing 99/100"
+    },
+    {
+      "input": "999\n1001",
+      "desc": "Standard: crossing 1000"
+    },
+    {
+      "input": "99\n100",
+      "desc": "Edge: 2 balls boundary"
+    },
+    {
+      "input": "1\n1000",
+      "desc": "Standard: full 1000"
+    },
+    {
+      "input": "1\n10000",
+      "desc": "Standard: full 10000"
+    },
+    {
+      "input": "12345\n67890",
+      "desc": "Standard: middle big range"
+    },
+    {
+      "input": "99000\n100000",
+      "desc": "Standard: near max range"
+    },
+    {
+      "input": "1\n100000",
+      "desc": "Stress: max range full"
+    },
+    {
+      "input": "55555\n55555",
+      "desc": "Killer: special single 5+5+5+5+5"
+    }
   ]
 }

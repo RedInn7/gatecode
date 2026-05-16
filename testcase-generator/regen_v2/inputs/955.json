@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= lists.length <= 12, 1 <= lists[i].length <= 500, -1e9 <= lists[i][j] <= 1e9, sum lengths <= 2000",
   "input_format": "line1: lists (JSON 2D array, each sorted non-decreasing)",
   "testcases": [
-    {"input": "[[1,3,5],[2,4],[6,7,8]]", "desc": "Edge: example1 -> 18"},
-    {"input": "[[1,1,5],[1,4,7,8]]", "desc": "Edge: example2 -> 10"},
-    {"input": "[[1],[3]]", "desc": "Edge: example3 -> 4"},
-    {"input": "[[1],[1]]", "desc": "Edge: example4 -> 2 equal medians"},
-    {"input": "[[0],[0]]", "desc": "Edge: zero medians"},
-    {"input": "[[-1000000000],[1000000000]]", "desc": "Edge: extreme range"},
-    {"input": "[[1,2,3],[4,5,6]]", "desc": "Standard: clean medians"},
-    {"input": "[[1,2],[3,4],[5,6]]", "desc": "Standard: 3 small lists"},
-    {"input": "[[1],[2],[3],[4]]", "desc": "Standard: 4 singletons"},
-    {"input": "[[1,1,1,1,1],[2,2,2,2,2]]", "desc": "Standard: all-equal lists"},
-    {"input": "[[1,2,3,4,5,6,7,8,9,10],[11,12,13,14,15,16,17,18,19,20]]", "desc": "Standard: equal-size sequential"},
-    {"input": "[[1,5,9],[2,6,10],[3,7,11],[4,8,12]]", "desc": "Standard: 4 interleaved"},
-    {"input": "[[-5,-3,-1],[1,3,5]]", "desc": "Standard: negatives & positives"},
-    {"input": "[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]", "desc": "Standard: 12 singletons"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6]]", "desc": "Standard: 6 pairs"},
-    {"input": "[[0,0,0,0,0],[1,1,1,1,1],[2,2,2,2,2]]", "desc": "Standard: 3 constant lists"},
-    {"input": "[[1,3,5,7,9,11,13,15,17,19],[2,4,6,8,10,12,14,16,18,20],[21,22,23,24,25,26,27,28,29,30]]", "desc": "Standard: 3 sequential 10-lists"},
-    {"input": "[[-1000000000,-500000000,0],[0,500000000,1000000000]]", "desc": "Standard: extreme spread"},
-    {"input": "[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]]", "desc": "Stress: 5 equal lists"},
-    {"input": "[[-1000000000,-1000000000],[1000000000,1000000000],[-1000000000,1000000000],[-500000000,500000000],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]", "desc": "Killer: 12 lists with extremes"}
+    {
+      "input": "[[1,3,5],[2,4],[6,7,8]]",
+      "desc": "Edge: example1 -> 18"
+    },
+    {
+      "input": "[[1,1,5],[1,4,7,8]]",
+      "desc": "Edge: example2 -> 10"
+    },
+    {
+      "input": "[[178,-143,415],[-475,-159,736],[-782,477,-973]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[-601,-210,-896],[655,-651,-843],[404,208,-874]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[0],[0]]",
+      "desc": "Edge: zero medians"
+    },
+    {
+      "input": "[[-1000000000],[1000000000]]",
+      "desc": "Edge: extreme range"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6]]",
+      "desc": "Standard: clean medians"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6]]",
+      "desc": "Standard: 3 small lists"
+    },
+    {
+      "input": "[[1],[2],[3],[4]]",
+      "desc": "Standard: 4 singletons"
+    },
+    {
+      "input": "[[1,1,1,1,1],[2,2,2,2,2]]",
+      "desc": "Standard: all-equal lists"
+    },
+    {
+      "input": "[[1,2,3,4,5,6,7,8,9,10],[11,12,13,14,15,16,17,18,19,20]]",
+      "desc": "Standard: equal-size sequential"
+    },
+    {
+      "input": "[[1,5,9],[2,6,10],[3,7,11],[4,8,12]]",
+      "desc": "Standard: 4 interleaved"
+    },
+    {
+      "input": "[[-5,-3,-1],[1,3,5]]",
+      "desc": "Standard: negatives & positives"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]",
+      "desc": "Standard: 12 singletons"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6]]",
+      "desc": "Standard: 6 pairs"
+    },
+    {
+      "input": "[[0,0,0,0,0],[1,1,1,1,1],[2,2,2,2,2]]",
+      "desc": "Standard: 3 constant lists"
+    },
+    {
+      "input": "[[1,3,5,7,9,11,13,15,17,19],[2,4,6,8,10,12,14,16,18,20],[21,22,23,24,25,26,27,28,29,30]]",
+      "desc": "Standard: 3 sequential 10-lists"
+    },
+    {
+      "input": "[[-1000000000,-500000000,0],[0,500000000,1000000000]]",
+      "desc": "Standard: extreme spread"
+    },
+    {
+      "input": "[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]]",
+      "desc": "Stress: 5 equal lists"
+    },
+    {
+      "input": "[[-1000000000,-1000000000],[1000000000,1000000000],[-1000000000,1000000000],[-500000000,500000000],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]",
+      "desc": "Killer: 12 lists with extremes"
+    }
   ]
 }
