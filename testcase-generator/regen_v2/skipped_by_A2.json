@@ -334,6 +334,26 @@
       "pid": 2701,
       "slug": "find-top-scoring-students-ii",
       "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2706,
+      "slug": "next-day",
+      "reason": "JavaScript-only Date.prototype.nextDay extension"
+    },
+    {
+      "pid": 2708,
+      "slug": "snail-traversal",
+      "reason": "JavaScript-only Array.prototype.snail extension"
+    },
+    {
+      "pid": 2709,
+      "slug": "my-calendar-iii",
+      "reason": "design class MyCalendarThree with stateful book"
+    },
+    {
+      "pid": 2710,
+      "slug": "promise-pool",
+      "reason": "JavaScript-only Promise pool implementation"
     }
   ]
 }
