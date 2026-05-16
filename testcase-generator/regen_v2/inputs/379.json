@@ -1,0 +1,28 @@
+{
+  "pid": 379,
+  "slug": "count-nodes-equal-to-average-of-subtree",
+  "inferred_constraints": "1 <= node count <= 1000, 0 <= Node.val <= 1000",
+  "input_format": "line1: root (JSON level-order with nulls)",
+  "testcases": [
+    {"input": "[4,8,5,0,1,null,6]", "desc": "Edge: example1"},
+    {"input": "[1]", "desc": "Edge: example2 single node"},
+    {"input": "[0]", "desc": "Edge: single zero (avg=0)"},
+    {"input": "[1000]", "desc": "Edge: single max value"},
+    {"input": "[1,1]", "desc": "Edge: 2 same nodes (1+1)/2=1"},
+    {"input": "[1,2]", "desc": "Edge: root=1 child=2, avg=1, root matches"},
+    {"input": "[2,1]", "desc": "Edge: root=2 child=1, avg=1"},
+    {"input": "[5,5,5]", "desc": "Edge: all same value, all match"},
+    {"input": "[0,0,0,0,0,0,0]", "desc": "Edge: all zeros, all match"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full balanced"},
+    {"input": "[10,5,15,3,7,12,18]", "desc": "Standard: BST balanced"},
+    {"input": "[1,2,null,3,null,4]", "desc": "Standard: left chain"},
+    {"input": "[1,null,2,null,3,null,4]", "desc": "Standard: right chain"},
+    {"input": "[4,2,6,1,3,5,7]", "desc": "Standard: balanced BST"},
+    {"input": "[10,10,10,10,10,10,10]", "desc": "Edge: all 10s, all match"},
+    {"input": "[5,4,8,11,null,17,4,7,null,null,null,null,5]", "desc": "Standard: deep tree"},
+    {"input": "[1000,1000,1000,1000,1000,1000,1000]", "desc": "Edge: all max value"},
+    {"input": "[1,0,2]", "desc": "Standard: avg of {0,1,2}=1 matches root"},
+    {"input": "[6,3,9,1,5,7,11,0,2,4,6,null,null,10,12]", "desc": "Standard: complex"},
+    {"input": "[500,250,750,125,375,625,875,62,187,312,437,562,687,812,937]", "desc": "Standard: full 4-level balanced BST"}
+  ]
+}

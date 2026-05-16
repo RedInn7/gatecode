@@ -1,0 +1,28 @@
+{
+  "pid": 373,
+  "slug": "string-transformation",
+  "inferred_constraints": "2 <= s.length <= 5e5, 1 <= k <= 1e15, s.length == t.length, lowercase letters",
+  "input_format": "line1: s (raw string); line2: t (raw string); line3: k (int)",
+  "testcases": [
+    {"input": "abcd\ncdab\n2", "desc": "Edge: example1"},
+    {"input": "ababab\nababab\n1", "desc": "Edge: example2"},
+    {"input": "ab\nab\n1", "desc": "Edge: n=2 same k=1"},
+    {"input": "ab\nba\n1", "desc": "Edge: n=2 swap k=1"},
+    {"input": "ab\nab\n2", "desc": "Edge: n=2 same k=2"},
+    {"input": "ab\nba\n2", "desc": "Edge: n=2 swap k=2"},
+    {"input": "abc\nabc\n1", "desc": "Edge: n=3 same k=1 (cyclic shift)"},
+    {"input": "abc\nbca\n1", "desc": "Edge: n=3 one rotation"},
+    {"input": "abc\ncab\n1", "desc": "Edge: n=3 two rotations one move"},
+    {"input": "abcd\nabcd\n3", "desc": "Standard: n=4 same k=3"},
+    {"input": "aaaa\naaaa\n5", "desc": "Edge: all same"},
+    {"input": "aaaaaa\naaaaaa\n1000000000000000", "desc": "Stress: all same max k"},
+    {"input": "ababab\nbababa\n3", "desc": "Standard: alternating"},
+    {"input": "abcdef\ncdefab\n2", "desc": "Standard: 6 chars rotate by 2"},
+    {"input": "abcdef\nfabcde\n1", "desc": "Standard: rotate by 1"},
+    {"input": "leetcode\ncodeleet\n3", "desc": "Standard: typical rotation"},
+    {"input": "leetcode\nleetcode\n2", "desc": "Standard: same string"},
+    {"input": "abab\nabab\n1000000000", "desc": "Stress: period 2 large k"},
+    {"input": "abcdefgh\nbcdefgha\n1", "desc": "Standard: shift by 1"},
+    {"input": "abcdefgh\nefghabcd\n4", "desc": "Standard: shift by 4"}
+  ]
+}

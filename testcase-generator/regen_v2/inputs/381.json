@@ -1,0 +1,28 @@
+{
+  "pid": 381,
+  "slug": "split-the-array-to-make-coprime-products",
+  "inferred_constraints": "1 <= n <= 1e4, 1 <= nums[i] <= 1e6",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[4,7,8,15,3,5]", "desc": "Edge: example1 valid at 2"},
+    {"input": "[4,7,15,8,3,5]", "desc": "Edge: example2 no valid"},
+    {"input": "[1,1]", "desc": "Edge: n=2 coprime"},
+    {"input": "[2,3]", "desc": "Edge: n=2 distinct primes"},
+    {"input": "[2,4]", "desc": "Edge: n=2 share factor 2"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all 1s coprime everywhere"},
+    {"input": "[2,2,2,2,2]", "desc": "Edge: all 2s never coprime"},
+    {"input": "[1000000,1000000]", "desc": "Edge: max values share factors"},
+    {"input": "[999983,2]", "desc": "Edge: large prime and 2 (coprime)"},
+    {"input": "[2,3,5,7,11,13]", "desc": "Standard: distinct primes"},
+    {"input": "[6,10,15,21]", "desc": "Standard: pairwise share some primes"},
+    {"input": "[4,9,25,49]", "desc": "Standard: distinct prime squares"},
+    {"input": "[2,4,6,8,10]", "desc": "Standard: all even"},
+    {"input": "[3,9,27,81,243]", "desc": "Standard: powers of 3"},
+    {"input": "[2,3,2,3,2,3]", "desc": "Standard: alternating 2,3"},
+    {"input": "[15,28,33,49,77]", "desc": "Standard: composite mix"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1..10"},
+    {"input": "[6,12,18,24,30]", "desc": "Standard: all multiples of 6"},
+    {"input": "[7,11,13,17,19,23,29,31,37,41]", "desc": "Standard: 10 distinct primes"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]", "desc": "Standard: multiples of 100"}
+  ]
+}

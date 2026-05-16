@@ -1,0 +1,28 @@
+{
+  "pid": 377,
+  "slug": "number-of-divisible-triplet-sums",
+  "inferred_constraints": "1 <= nums.length <= 1000, 1 <= nums[i] <= 1e9, 1 <= d <= 1e9",
+  "input_format": "line1: nums (JSON int array); line2: d (int)",
+  "testcases": [
+    {"input": "[3,3,4,7,8]\n5", "desc": "Edge: example1"},
+    {"input": "[3,3,3,3]\n3", "desc": "Edge: example2 all divisible"},
+    {"input": "[3,3,3,3]\n6", "desc": "Edge: example3 none divisible"},
+    {"input": "[1,2,3]\n1", "desc": "Edge: n=3 d=1 always works"},
+    {"input": "[1,2,3]\n6", "desc": "Edge: n=3 sum 6 div 6"},
+    {"input": "[1,2,3]\n7", "desc": "Edge: n=3 d=7 not divisible"},
+    {"input": "[1,1,1]\n1", "desc": "Edge: all same d=1"},
+    {"input": "[1,1,1]\n3", "desc": "Edge: 3 ones d=3"},
+    {"input": "[1000000000,1000000000,1000000000]\n1000000000", "desc": "Edge: max values"},
+    {"input": "[5,5,5,5,5]\n5", "desc": "Standard: all 5s d=5"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]\n15", "desc": "Standard: 10 fives d=15"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: 1..10 d=5"},
+    {"input": "[10,20,30,40,50]\n10", "desc": "Standard: all div by 10"},
+    {"input": "[3,6,9,12,15]\n3", "desc": "Standard: all div by 3"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]\n7", "desc": "Standard: powers of 2 d=7"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n3", "desc": "Standard: 1..20 d=3"},
+    {"input": "[7,14,21,28,35,42,49,56,63,70]\n7", "desc": "Standard: multiples of 7"},
+    {"input": "[1000000,999999,999998,999997]\n3", "desc": "Edge: large nearby values"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n100", "desc": "Standard: multiples of 100"},
+    {"input": "[3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,2,8,8,4,1,9,7,1]\n10", "desc": "Stress: n=40 pi digits d=10"}
+  ]
+}

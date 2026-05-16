@@ -280,6 +280,11 @@
       "pid": 1737,
       "slug": "debounce",
       "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 382,
+      "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+      "reason": "Returns a TreeNode reference in cloned tree - requires special judge to compare identity/value path; not directly judgeable via output JSON serialization"
     }
   ]
 }
