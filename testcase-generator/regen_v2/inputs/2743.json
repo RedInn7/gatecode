@@ -1,0 +1,28 @@
+{
+  "pid": 2743,
+  "slug": "count-positions-on-street-with-required-brightness",
+  "inferred_constraints": "1 <= n <= 10^5, 1 <= lights.length <= 10^5, 0 <= position, range < n, requirement.length == n",
+  "input_format": "line1: n (int); line2: lights (JSON 2D array); line3: requirement (JSON array)",
+  "testcases": [
+    {"input": "5\n[[0,1],[2,1],[3,2]]\n[0,2,1,4,1]", "desc": "Edge: example1"},
+    {"input": "1\n[[0,1]]\n[2]", "desc": "Edge: example2"},
+    {"input": "1\n[[0,0]]\n[1]", "desc": "Edge: single position"},
+    {"input": "2\n[[0,0]]\n[1,0]", "desc": "Edge: 2 positions"},
+    {"input": "3\n[[1,1]]\n[1,1,1]", "desc": "Edge: center light"},
+    {"input": "5\n[[0,4]]\n[1,1,1,1,1]", "desc": "Edge: one light covers all"},
+    {"input": "5\n[]\n[1,1,1,1,1]", "desc": "Edge: no lights"},
+    {"input": "5\n[[0,0]]\n[1,1,1,1,1]", "desc": "Edge: only first lit"},
+    {"input": "5\n[[2,1]]\n[1,1,1,1,1]", "desc": "Edge: small light"},
+    {"input": "10\n[[0,2],[5,2],[9,1]]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 3 lights"},
+    {"input": "10\n[[5,10]]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: wide light"},
+    {"input": "5\n[[0,1],[2,1],[4,1]]\n[1,2,1,2,1]", "desc": "Standard: 3 lights req varies"},
+    {"input": "20\n[[5,5],[10,5],[15,5]]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: overlapping"},
+    {"input": "10\n[[0,1],[1,1],[2,1],[3,1]]\n[1,2,3,2,1,0,0,0,0,0]", "desc": "Standard: clustered"},
+    {"input": "5\n[[0,0],[1,0],[2,0],[3,0],[4,0]]\n[1,1,1,1,1]", "desc": "Standard: 1-1 lights"},
+    {"input": "10\n[[0,5],[5,5],[9,5]]\n[2,2,2,2,2,2,2,2,2,2]", "desc": "Standard: heavy req"},
+    {"input": "10\n[[0,9]]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: full coverage"},
+    {"input": "10\n[[5,5]]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: center covers"},
+    {"input": "100\n[[10,10],[30,10],[50,10],[70,10],[90,10]]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 100 positions"},
+    {"input": "10\n[[0,9],[0,9],[0,9],[0,9],[0,9]]\n[5,5,5,5,5,5,5,5,5,5]", "desc": "Killer: 5 full lights"}
+  ]
+}

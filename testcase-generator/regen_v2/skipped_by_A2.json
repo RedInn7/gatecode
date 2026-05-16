@@ -369,6 +369,26 @@
       "pid": 2731,
       "slug": "range-sum-query-mutable",
       "reason": "design class NumArray with stateful update/sumRange"
+    },
+    {
+      "pid": 2736,
+      "slug": "longest-winning-streak",
+      "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2738,
+      "slug": "find-drivers-with-improved-fuel-efficiency",
+      "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2740,
+      "slug": "curry",
+      "reason": "JavaScript-only function currying"
+    },
+    {
+      "pid": 2741,
+      "slug": "kth-largest-element-in-a-stream",
+      "reason": "design class KthLargest with stateful add"
     }
   ]
 }

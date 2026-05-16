@@ -1,0 +1,28 @@
+{
+  "pid": 2744,
+  "slug": "count-special-quadruplets",
+  "inferred_constraints": "4 <= nums.length <= 50, 1 <= nums[i] <= 100",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,6]", "desc": "Edge: example1"},
+    {"input": "[3,3,6,4,5]", "desc": "Edge: example2"},
+    {"input": "[1,1,1,3,5]", "desc": "Edge: example3"},
+    {"input": "[1,2,3,5]", "desc": "Edge: min n=4 no quad"},
+    {"input": "[1,2,3,4]", "desc": "Edge: no quad"},
+    {"input": "[1,1,1,1]", "desc": "Edge: all 1s no quad"},
+    {"input": "[1,2,3,5,8]", "desc": "Edge: Fibonacci like"},
+    {"input": "[100,100,100,100]", "desc": "Edge: all max no quad"},
+    {"input": "[1,1,1,3]", "desc": "Edge: 1+1+1=3 one quad"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10"},
+    {"input": "[1,1,1,1,3,3,3,3]", "desc": "Standard: many duplicates"},
+    {"input": "[5,5,5,5,5,5,5]", "desc": "Standard: all 5s no quad"},
+    {"input": "[1,2,3,6,4,5,7,8,9,10]", "desc": "Standard: 10 random"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: pairs"},
+    {"input": "[2,4,6,8,10,12,14,16]", "desc": "Standard: even"},
+    {"input": "[1,3,5,7,9,11,13,15]", "desc": "Standard: odd"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: 1-20"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100]", "desc": "Standard: multiples 10"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]", "desc": "Stress: 50 distinct"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3]", "desc": "Killer: 47 ones 3 threes"}
+  ]
+}
