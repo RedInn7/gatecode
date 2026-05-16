@@ -425,6 +425,11 @@
       "pid": 737,
       "slug": "matrix-cells-in-distance-order",
       "reason": "Returns cells in any order satisfying distance condition — non-unique"
+    },
+    {
+      "pid": 749,
+      "slug": "product-of-the-last-k-numbers",
+      "reason": "Design class ProductOfNumbers with add/getProduct stateful methods"
     }
   ]
 }

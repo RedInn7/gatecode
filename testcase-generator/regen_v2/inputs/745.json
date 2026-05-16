@@ -1,0 +1,27 @@
+{
+  "pid": 745, "slug": "construct-the-minimum-bitwise-array-i",
+  "inferred_constraints": "1 <= nums.length <= 100, 2 <= nums[i] <= 1000, nums[i] prime",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,3,5,7]", "desc": "Edge: example1"},
+    {"input": "[11,13,31]", "desc": "Edge: example2"},
+    {"input": "[2]", "desc": "Edge: n=1 prime 2 only"},
+    {"input": "[3]", "desc": "Edge: n=1 prime 3"},
+    {"input": "[997]", "desc": "Edge: largest prime under 1000"},
+    {"input": "[2,2,2,2,2]", "desc": "Edge: all 2"},
+    {"input": "[3,3,3,3,3]", "desc": "Edge: all 3"},
+    {"input": "[7,11,13,17,19,23,29,31]", "desc": "Edge: small primes"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29]", "desc": "Standard: first 10 primes"},
+    {"input": "[101,103,107,109,113]", "desc": "Standard: primes near 100"},
+    {"input": "[983,977,971,967,953]", "desc": "Standard: primes near 1000"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]", "desc": "Standard: first 20 primes"},
+    {"input": "[5,11,17,23,29]", "desc": "Standard: mixed bit patterns"},
+    {"input": "[127,131,137,139,149]", "desc": "Standard: 3-digit primes"},
+    {"input": "[2,3,2,3,2,3,2,3,2,3]", "desc": "Standard: alternating"},
+    {"input": "[997,991,983,977,971,967,953,947,941,937]", "desc": "Standard: top primes"},
+    {"input": "[2,11,101,997,3,5,7,127,251,509]", "desc": "Standard: scattered"},
+    {"input": "[521,523,541,547,557,563,569,571,577,587]", "desc": "Standard: mid primes"},
+    {"input": "[2,2,3,3,5,5,7,7,11,11,13,13,17,17,19,19,23,23,29,29,31,31,37,37,41,41,43,43,47,47,53,53,59,59,61,61,67,67,71,71,73,73,79,79,83,83,89,89,97,97]", "desc": "Stress: 50 primes"},
+    {"input": "[131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233]", "desc": "Special: 3-digit run"}
+  ]
+}

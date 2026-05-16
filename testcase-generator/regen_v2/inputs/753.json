@@ -1,0 +1,27 @@
+{
+  "pid": 753, "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list",
+  "inferred_constraints": "1 <= nodes <= 1e4, 1 <= Node.val <= 1e6, 1 <= m, n <= 1000",
+  "input_format": "line1: head (JSON array); line2: m (int); line3: n (int)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13]\n2\n3", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11]\n1\n3", "desc": "Edge: example2"},
+    {"input": "[1]\n1\n1", "desc": "Edge: single node"},
+    {"input": "[1,2]\n1\n1", "desc": "Edge: 2 nodes"},
+    {"input": "[1,2,3]\n2\n3", "desc": "Edge: shorter than skip"},
+    {"input": "[1,2,3,4,5]\n5\n1", "desc": "Edge: m >= n"},
+    {"input": "[1,2,3,4,5]\n1\n5", "desc": "Edge: keep just first"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3\n2", "desc": "Standard: keep 3 delete 2"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1\n1", "desc": "Standard: alternating"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n2\n2", "desc": "Standard: keep 2 del 2"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]\n3\n2", "desc": "Edge: all same val"},
+    {"input": "[1000000,1000000,1000000,1000000]\n1\n2", "desc": "Edge: max values"},
+    {"input": "[1,2,3]\n10\n5", "desc": "Edge: m bigger than list"},
+    {"input": "[1,2,3,4,5]\n2\n3", "desc": "Standard: classic"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n3\n3", "desc": "Standard: even pattern"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n4\n2", "desc": "Standard: keep 4 del 2"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n5\n3", "desc": "Standard: all same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n2\n4", "desc": "Standard: n=20"},
+    {"input": "[10,20,30,40,50,60,70,80,90,100]\n10\n10", "desc": "Edge: m=n=10 len=10"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n1\n14", "desc": "Special: keep 1 del 14"}
+  ]
+}
