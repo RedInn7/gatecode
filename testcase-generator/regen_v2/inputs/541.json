@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= arr1.length, arr2.length <= 1e5, 0 <= arr1[i], arr2[j] <= 1e9",
   "input_format": "line1: arr1 (JSON int array); line2: arr2 (JSON int array)",
   "testcases": [
-    {"input": "[1,2,3]\n[6,5]", "desc": "Edge: example1"},
-    {"input": "[12]\n[4]", "desc": "Edge: example2"},
-    {"input": "[1]\n[1]", "desc": "Edge: minimum"},
-    {"input": "[0]\n[0]", "desc": "Edge: zero"},
-    {"input": "[1000000000]\n[1000000000]", "desc": "Edge: max value"},
-    {"input": "[1,1,1,1,1]\n[1,1,1,1,1]", "desc": "Edge: all 1s"},
-    {"input": "[0,0,0,0,0]\n[1,1,1,1,1]", "desc": "Edge: all zeros vs ones"},
-    {"input": "[1,2,4,8,16]\n[16,8,4,2,1]", "desc": "Standard: powers of 2"},
-    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Standard: 1..5"},
-    {"input": "[3,5,7,9]\n[2,4,6,8]", "desc": "Standard: odds and evens"},
-    {"input": "[100,200,300]\n[150,250,350]", "desc": "Standard: hundreds"},
-    {"input": "[1000000000,999999999]\n[1,2]", "desc": "Edge: extreme mix"},
-    {"input": "[7,7,7]\n[3,3,3]", "desc": "Edge: 3 same each"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: 10x10"},
-    {"input": "[15,15,15,15]\n[15,15,15,15]", "desc": "Edge: 4 same"},
-    {"input": "[1,2,4,8,16,32,64,128,256,512]\n[512,256,128,64,32,16,8,4,2,1]", "desc": "Standard: powers reverse"},
-    {"input": "[1]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1 vs many"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1]", "desc": "Standard: many vs 1"},
-    {"input": "[0,1,2,3,4,5,6,7,8,9]\n[0,1,2,3,4,5,6,7,8,9]", "desc": "Standard: same arrays"},
-    {"input": "[1023,1023,1023]\n[1023,1023,1023]", "desc": "Edge: all 10-bit max"}
+    {
+      "input": "[1,2,3]\n[6,5]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[12]\n[4]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: minimum"
+    },
+    {
+      "input": "[0]\n[0]",
+      "desc": "Edge: zero"
+    },
+    {
+      "input": "[1000000000]\n[1000000000]",
+      "desc": "Edge: max value"
+    },
+    {
+      "input": "[-963,-97,-108,-893,-804,-152,-751,-478,-414,-18,-129,-546,-892,-671,-75,-529,-516,-264,-493,-823,-898,-553,-693,-321,-948,-471,-639,-498,-857,-639,-109,-788,-594,-367,-284,-127,-673,-713,-257,-232,-916,-215,-420,-115,-616,-60,-253,-916,-506,-186,-703,-262,-472,-218,-541,-387,-349,-919,-116,-689,-521,-413]\n[-465,-791,-54,-160,-163,-904,-583,-171,-135,-63,-280,-31,-688,-759,-61,-859,-535,-354,-248,-648,-548,-95,-827,-640,-501,-67,-889,-578,-503,-924,-85,-503,-858,-278,-514,-566,-780,-923,-951,-555,-570,-850,-265,-4,-682,-646,-849,-233,-834,-927,-246,-168,-537,-488,-470,-354,-477,-287,-193,-824,-28,-264]",
+      "desc": "Regenerated: negative at position 5"
+    },
+    {
+      "input": "[0,0,0,0,0]\n[1,1,1,1,1]",
+      "desc": "Edge: all zeros vs ones"
+    },
+    {
+      "input": "[1,2,4,8,16]\n[16,8,4,2,1]",
+      "desc": "Standard: powers of 2"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[5,4,3,2,1]",
+      "desc": "Standard: 1..5"
+    },
+    {
+      "input": "[3,5,7,9]\n[2,4,6,8]",
+      "desc": "Standard: odds and evens"
+    },
+    {
+      "input": "[100,200,300]\n[150,250,350]",
+      "desc": "Standard: hundreds"
+    },
+    {
+      "input": "[1000000000,999999999]\n[1,2]",
+      "desc": "Edge: extreme mix"
+    },
+    {
+      "input": "[7,7,7]\n[3,3,3]",
+      "desc": "Edge: 3 same each"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]",
+      "desc": "Standard: 10x10"
+    },
+    {
+      "input": "[15,15,15,15]\n[15,15,15,15]",
+      "desc": "Edge: 4 same"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64,128,256,512]\n[512,256,128,64,32,16,8,4,2,1]",
+      "desc": "Standard: powers reverse"
+    },
+    {
+      "input": "[1]\n[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: 1 vs many"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[1]",
+      "desc": "Standard: many vs 1"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9]\n[0,1,2,3,4,5,6,7,8,9]",
+      "desc": "Standard: same arrays"
+    },
+    {
+      "input": "[1023,1023,1023]\n[1023,1023,1023]",
+      "desc": "Edge: all 10-bit max"
+    }
   ]
 }

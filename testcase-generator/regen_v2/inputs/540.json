@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 250, lowercase letters",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "bbabab", "desc": "Edge: example1"},
-    {"input": "dcbccacdb", "desc": "Edge: example2"},
-    {"input": "a", "desc": "Edge: n=1"},
-    {"input": "aa", "desc": "Edge: n=2 same"},
-    {"input": "ab", "desc": "Edge: n=2 distinct"},
-    {"input": "abba", "desc": "Edge: n=4 palindrome"},
-    {"input": "abab", "desc": "Edge: n=4 alternating"},
-    {"input": "abcba", "desc": "Edge: n=5 odd palindrome"},
-    {"input": "abccba", "desc": "Edge: n=6 even palindrome"},
-    {"input": "aaaa", "desc": "Edge: all same"},
-    {"input": "abcdefg", "desc": "Edge: all distinct"},
-    {"input": "abcabc", "desc": "Standard: 6 mixed"},
-    {"input": "abacaba", "desc": "Standard: palindrome"},
-    {"input": "abcdcba", "desc": "Standard: palindrome"},
-    {"input": "abbabbabb", "desc": "Standard: repetition"},
-    {"input": "leetcode", "desc": "Standard: word"},
-    {"input": "racecar", "desc": "Standard: palindrome word"},
-    {"input": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba", "desc": "Standard: full palindrome alphabet"},
-    {"input": "aabbccddeeffggaabbccddeeffgg", "desc": "Standard: paired"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Standard: 52 chars"}
+    {
+      "input": "bbabab",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "dcbccacdb",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"exeyzr\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"dkycaudw\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: n=2 distinct"
+    },
+    {
+      "input": "abba",
+      "desc": "Edge: n=4 palindrome"
+    },
+    {
+      "input": "abab",
+      "desc": "Edge: n=4 alternating"
+    },
+    {
+      "input": "abcba",
+      "desc": "Edge: n=5 odd palindrome"
+    },
+    {
+      "input": "abccba",
+      "desc": "Edge: n=6 even palindrome"
+    },
+    {
+      "input": "aaaa",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "abcdefg",
+      "desc": "Edge: all distinct"
+    },
+    {
+      "input": "abcabc",
+      "desc": "Standard: 6 mixed"
+    },
+    {
+      "input": "abacaba",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "abcdcba",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "abbabbabb",
+      "desc": "Standard: repetition"
+    },
+    {
+      "input": "leetcode",
+      "desc": "Standard: word"
+    },
+    {
+      "input": "racecar",
+      "desc": "Standard: palindrome word"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba",
+      "desc": "Standard: full palindrome alphabet"
+    },
+    {
+      "input": "aabbccddeeffggaabbccddeeffgg",
+      "desc": "Standard: paired"
+    },
+    {
+      "input": "\"nfslulopjbhmgjqcdq\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

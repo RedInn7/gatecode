@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= source.length, target.length <= 1000, lowercase letters",
   "input_format": "line1: source (raw string); line2: target (raw string)",
   "testcases": [
-    {"input": "abc\nabcbc", "desc": "Edge: example1"},
-    {"input": "abc\nacdbc", "desc": "Edge: example2 impossible"},
-    {"input": "xyz\nxzyxz", "desc": "Edge: example3"},
-    {"input": "a\na", "desc": "Edge: identical 1-char"},
-    {"input": "a\nb", "desc": "Edge: impossible 1-char"},
-    {"input": "ab\nab", "desc": "Edge: identical 2-char"},
-    {"input": "ab\nba", "desc": "Edge: requires 2 copies"},
-    {"input": "a\naaaa", "desc": "Edge: source=a target=4 a"},
-    {"input": "abc\nabcabc", "desc": "Standard: 2 copies"},
-    {"input": "abc\naaa", "desc": "Standard: pick same char 3x"},
-    {"input": "abc\nccc", "desc": "Standard: pick last char 3x"},
-    {"input": "abcdef\nfedcba", "desc": "Standard: reverse 6 copies"},
-    {"input": "abcdef\nabcdefabcdef", "desc": "Standard: 2 copies"},
-    {"input": "hello\nhelloworld", "desc": "Edge: contains 'w' not in source - impossible"},
-    {"input": "abcde\nedcba", "desc": "Standard: reverse 5 copies"},
-    {"input": "leetcode\nleet", "desc": "Standard: prefix match"},
-    {"input": "leetcode\ncode", "desc": "Standard: suffix match"},
-    {"input": "leetcode\nleecode", "desc": "Standard: missing chars"},
-    {"input": "abcdef\nabcdefghi", "desc": "Edge: missing chars impossible"},
-    {"input": "aaaaa\nbbbbb", "desc": "Edge: completely different impossible"}
+    {
+      "input": "\"u\"\n\"y\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "abc\nacdbc",
+      "desc": "Edge: example2 impossible"
+    },
+    {
+      "input": "\"r\"\n\"klfq\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"q\"\n\"kdm\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "a\nb",
+      "desc": "Edge: impossible 1-char"
+    },
+    {
+      "input": "ab\nab",
+      "desc": "Edge: identical 2-char"
+    },
+    {
+      "input": "ab\nba",
+      "desc": "Edge: requires 2 copies"
+    },
+    {
+      "input": "a\naaaa",
+      "desc": "Edge: source=a target=4 a"
+    },
+    {
+      "input": "abc\nabcabc",
+      "desc": "Standard: 2 copies"
+    },
+    {
+      "input": "abc\naaa",
+      "desc": "Standard: pick same char 3x"
+    },
+    {
+      "input": "abc\nccc",
+      "desc": "Standard: pick last char 3x"
+    },
+    {
+      "input": "abcdef\nfedcba",
+      "desc": "Standard: reverse 6 copies"
+    },
+    {
+      "input": "abcdef\nabcdefabcdef",
+      "desc": "Standard: 2 copies"
+    },
+    {
+      "input": "hello\nhelloworld",
+      "desc": "Edge: contains 'w' not in source - impossible"
+    },
+    {
+      "input": "abcde\nedcba",
+      "desc": "Standard: reverse 5 copies"
+    },
+    {
+      "input": "leetcode\nleet",
+      "desc": "Standard: prefix match"
+    },
+    {
+      "input": "leetcode\ncode",
+      "desc": "Standard: suffix match"
+    },
+    {
+      "input": "leetcode\nleecode",
+      "desc": "Standard: missing chars"
+    },
+    {
+      "input": "abcdef\nabcdefghi",
+      "desc": "Edge: missing chars impossible"
+    },
+    {
+      "input": "aaaaa\nbbbbb",
+      "desc": "Edge: completely different impossible"
+    }
   ]
 }
