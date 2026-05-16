@@ -1,0 +1,28 @@
+{
+  "pid": 2748,
+  "slug": "add-two-numbers-ii",
+  "inferred_constraints": "Number of nodes in each list is in [1, 100], 0 <= Node.val <= 9, no leading zeros (except 0 itself)",
+  "input_format": "line1: l1 (JSON array); line2: l2 (JSON array)",
+  "testcases": [
+    {"input": "[7,2,4,3]\n[5,6,4]", "desc": "Edge: example1"},
+    {"input": "[2,4,3]\n[5,6,4]", "desc": "Edge: example2"},
+    {"input": "[0]\n[0]", "desc": "Edge: example3 zeros"},
+    {"input": "[1]\n[1]", "desc": "Edge: 1+1"},
+    {"input": "[9]\n[1]", "desc": "Edge: carry"},
+    {"input": "[1]\n[9]", "desc": "Edge: carry reverse"},
+    {"input": "[5]\n[5]", "desc": "Edge: 10"},
+    {"input": "[0]\n[1]", "desc": "Edge: zero plus one"},
+    {"input": "[9,9,9]\n[1]", "desc": "Edge: 999+1=1000"},
+    {"input": "[1,2,3]\n[4,5,6]", "desc": "Standard: 123+456"},
+    {"input": "[5,6,7]\n[8,9,0]", "desc": "Standard: with carry"},
+    {"input": "[1,0,0,0]\n[9,0,0]", "desc": "Standard: 1000+900"},
+    {"input": "[1,2,3,4,5]\n[6,7,8,9]", "desc": "Standard: 12345+6789"},
+    {"input": "[9,9,9,9,9,9,9]\n[1]", "desc": "Standard: 9999999+1"},
+    {"input": "[1]\n[9,9,9,9,9,9,9]", "desc": "Standard: 1+9999999"},
+    {"input": "[5,5,5,5,5]\n[5,5,5,5,5]", "desc": "Standard: identical fives"},
+    {"input": "[1,2,3,4,5,6,7,8,9,0]\n[9,8,7,6,5,4,3,2,1,0]", "desc": "Standard: 10 digit each"},
+    {"input": "[0]\n[1,2,3,4,5]", "desc": "Standard: zero + big"},
+    {"input": "[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1]\n[1]", "desc": "Stress: 100 digits + 1"},
+    {"input": "[9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]\n[1]", "desc": "Killer: 100 9s + 1"}
+  ]
+}

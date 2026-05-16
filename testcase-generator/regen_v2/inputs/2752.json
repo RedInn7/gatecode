@@ -1,0 +1,28 @@
+{
+  "pid": 2752,
+  "slug": "kth-smallest-number-in-multiplication-table",
+  "inferred_constraints": "1 <= m, n <= 3*10^4, 1 <= k <= m*n",
+  "input_format": "line1: m (int); line2: n (int); line3: k (int)",
+  "testcases": [
+    {"input": "3\n3\n5", "desc": "Edge: example1"},
+    {"input": "2\n3\n6", "desc": "Edge: example2"},
+    {"input": "1\n1\n1", "desc": "Edge: minimum"},
+    {"input": "1\n2\n1", "desc": "Edge: 1x2 k=1"},
+    {"input": "1\n2\n2", "desc": "Edge: 1x2 k=2"},
+    {"input": "2\n2\n1", "desc": "Edge: 2x2 k=1"},
+    {"input": "2\n2\n4", "desc": "Edge: 2x2 k=last"},
+    {"input": "5\n5\n1", "desc": "Edge: 5x5 k=1"},
+    {"input": "5\n5\n25", "desc": "Edge: 5x5 k=max"},
+    {"input": "10\n10\n50", "desc": "Standard: 10x10"},
+    {"input": "100\n100\n5000", "desc": "Standard: 100x100"},
+    {"input": "100\n50\n2500", "desc": "Standard: 100x50"},
+    {"input": "1000\n1000\n500000", "desc": "Standard: 1Kx1K"},
+    {"input": "5\n10\n30", "desc": "Standard: 5x10"},
+    {"input": "10\n5\n30", "desc": "Standard: 10x5"},
+    {"input": "100\n200\n10000", "desc": "Standard: 100x200"},
+    {"input": "10000\n10000\n50000000", "desc": "Standard: large"},
+    {"input": "1\n30000\n15000", "desc": "Standard: 1 row max"},
+    {"input": "30000\n30000\n450000000", "desc": "Stress: max"},
+    {"input": "30000\n30000\n900000000", "desc": "Killer: max k"}
+  ]
+}
