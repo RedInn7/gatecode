@@ -1,0 +1,28 @@
+{
+  "pid": 572,
+  "slug": "compare-strings-by-frequency-of-the-smallest-character",
+  "inferred_constraints": "1 <= queries.length <= 2000; 1 <= words.length <= 2000; 1 <= queries[i].length, words[i].length <= 10; lowercase English letters",
+  "input_format": "line1: queries (JSON array); line2: words (JSON array)",
+  "testcases": [
+    {"input": "[\"cbd\"]\n[\"zaaaz\"]", "desc": "Edge: example1"},
+    {"input": "[\"bbb\",\"cc\"]\n[\"a\",\"aa\",\"aaa\",\"aaaa\"]", "desc": "Edge: example2"},
+    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: single equal"},
+    {"input": "[\"a\"]\n[\"b\"]", "desc": "Edge: single different"},
+    {"input": "[\"z\"]\n[\"a\"]", "desc": "Edge: extreme letters"},
+    {"input": "[\"aaaaaaaaaa\"]\n[\"a\"]", "desc": "Edge: max queryfreq vs min wordfreq"},
+    {"input": "[\"a\"]\n[\"aaaaaaaaaa\"]", "desc": "Edge: opposite"},
+    {"input": "[\"abc\"]\n[\"abc\",\"xyz\"]", "desc": "Standard: simple"},
+    {"input": "[\"bbb\"]\n[\"bbb\",\"bbb\"]", "desc": "Standard: same letter same freq"},
+    {"input": "[\"abc\",\"xyz\"]\n[\"a\",\"b\",\"c\"]", "desc": "Standard: each query single letter words"},
+    {"input": "[\"abcdef\",\"fedcba\"]\n[\"abcdef\",\"abcdef\"]", "desc": "Standard: equal freq=1"},
+    {"input": "[\"aaa\",\"bbb\",\"ccc\"]\n[\"aaa\",\"bbb\",\"ccc\"]", "desc": "Standard: same group"},
+    {"input": "[\"ab\",\"cd\",\"ef\"]\n[\"gh\",\"ij\",\"kl\"]", "desc": "Standard: all freq=1"},
+    {"input": "[\"aab\"]\n[\"aaa\",\"aab\",\"abb\",\"bbb\"]", "desc": "Standard: query freq mid"},
+    {"input": "[\"a\",\"aa\",\"aaa\"]\n[\"a\",\"aa\",\"aaa\"]", "desc": "Standard: same array each"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"aa\",\"aa\",\"aa\",\"aa\",\"aa\"]", "desc": "Standard: each query=1 word=2"},
+    {"input": "[\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\",\"aaaaa\"]\n[\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\",\"a\"]", "desc": "Stress: 10 each freq=5 vs 1"},
+    {"input": "[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\",\"aaaaaa\",\"aaaaaaa\",\"aaaaaaaa\",\"aaaaaaaaa\",\"aaaaaaaaaa\"]\n[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\",\"aaaaaa\",\"aaaaaaa\",\"aaaaaaaa\",\"aaaaaaaaa\",\"aaaaaaaaaa\"]", "desc": "Stress: increasing freq match"},
+    {"input": "[\"abcdefghij\",\"jihgfedcba\",\"aabbccddee\",\"abcabcabca\",\"xyzxyzxyzx\"]\n[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\",\"pqr\",\"stu\",\"vwx\",\"yza\",\"bcd\"]", "desc": "Stress: 5x10 mixed"},
+    {"input": "[\"aabc\",\"baca\",\"caab\"]\n[\"zzzz\",\"yyyy\",\"xxxx\"]", "desc": "Special: same letter rearrangements"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 568,
+  "slug": "equal-sum-grid-partition-i",
+  "inferred_constraints": "1 <= m == grid.length <= 1e5; 1 <= n == grid[i].length <= 1e5; 2 <= m*n <= 1e5; 1 <= grid[i][j] <= 1e5",
+  "input_format": "line1: grid (JSON 2D array)",
+  "testcases": [
+    {"input": "[[1,4],[2,3]]", "desc": "Edge: example1 horizontal cut works"},
+    {"input": "[[1,3],[2,4]]", "desc": "Edge: example2 no cut works"},
+    {"input": "[[1,1]]", "desc": "Edge: single row vertical cut works"},
+    {"input": "[[1],[1]]", "desc": "Edge: single col horizontal cut works"},
+    {"input": "[[1,2]]", "desc": "Edge: single row no cut works"},
+    {"input": "[[1],[2]]", "desc": "Edge: single col no cut works"},
+    {"input": "[[100000,100000]]", "desc": "Edge: max values single row works"},
+    {"input": "[[1,1,1,1]]", "desc": "Standard: single row even partition"},
+    {"input": "[[1,1,1]]", "desc": "Standard: single row odd sum"},
+    {"input": "[[1,2,3],[4,5,6]]", "desc": "Standard: 2x3 grid"},
+    {"input": "[[2,2,2],[2,2,2]]", "desc": "Standard: uniform 2x3 horizontal cut"},
+    {"input": "[[1,2],[3,4],[5,6]]", "desc": "Standard: 3x2 grid"},
+    {"input": "[[3,1,4,1,5],[9,2,6,5,3]]", "desc": "Standard: 2x5 grid"},
+    {"input": "[[1,1,1,1,1,1,1,1]]", "desc": "Standard: 8 ones row vert cut"},
+    {"input": "[[5,5],[5,5],[5,5],[5,5]]", "desc": "Standard: uniform 4x2"},
+    {"input": "[[10],[10],[10],[10],[10]]", "desc": "Standard: col only 5 same"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10]]", "desc": "Stress: 1x10 row asc"},
+    {"input": "[[100000],[100000]]", "desc": "Stress: max equal pair"},
+    {"input": "[[1,99999],[99999,1]]", "desc": "Stress: extreme imbalance"},
+    {"input": "[[1,2,3,4],[5,6,7,8],[9,10,11,12]]", "desc": "Special: 3x4 grid mixed"}
+  ]
+}

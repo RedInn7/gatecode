@@ -1,0 +1,28 @@
+{
+  "pid": 578,
+  "slug": "perfect-number",
+  "inferred_constraints": "1 <= num <= 1e8",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "28", "desc": "Edge: example1"},
+    {"input": "7", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: min num, not perfect"},
+    {"input": "2", "desc": "Edge: smallest >1, not perfect"},
+    {"input": "6", "desc": "Edge: smallest perfect number"},
+    {"input": "100000000", "desc": "Edge: max not perfect"},
+    {"input": "33550336", "desc": "Standard: perfect in range"},
+    {"input": "8128", "desc": "Standard: 4th perfect"},
+    {"input": "496", "desc": "Standard: 3rd perfect"},
+    {"input": "29", "desc": "Standard: prime not perfect"},
+    {"input": "100", "desc": "Standard: composite not perfect"},
+    {"input": "1000", "desc": "Standard: not perfect"},
+    {"input": "10000", "desc": "Standard: not perfect"},
+    {"input": "9999991", "desc": "Standard: large prime not perfect"},
+    {"input": "12", "desc": "Standard: abundant not perfect"},
+    {"input": "10", "desc": "Standard: deficient not perfect"},
+    {"input": "99999999", "desc": "Stress: 8 nines"},
+    {"input": "67108864", "desc": "Stress: 2^26"},
+    {"input": "33550337", "desc": "Stress: perfect+1"},
+    {"input": "33550335", "desc": "Special: perfect-1 killer"}
+  ]
+}

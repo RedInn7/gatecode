@@ -1,0 +1,28 @@
+{
+  "pid": 561,
+  "slug": "distance-between-bus-stops",
+  "inferred_constraints": "1 <= n <= 1e4; distance.length == n; 0 <= start, destination < n; 0 <= distance[i] <= 1e4",
+  "input_format": "line1: distance (JSON array); line2: start (int); line3: destination (int)",
+  "testcases": [
+    {"input": "[1,2,3,4]\n0\n1", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4]\n0\n2", "desc": "Edge: example2"},
+    {"input": "[1,2,3,4]\n0\n3", "desc": "Edge: example3"},
+    {"input": "[1]\n0\n0", "desc": "Edge: n=1 same stop"},
+    {"input": "[0]\n0\n0", "desc": "Edge: n=1 zero distance"},
+    {"input": "[5,5]\n0\n1", "desc": "Edge: n=2 both directions equal"},
+    {"input": "[10000,10000]\n0\n1", "desc": "Edge: max values n=2"},
+    {"input": "[0,0,0,0]\n0\n2", "desc": "Edge: all zero distances"},
+    {"input": "[5,3,8,2,4]\n2\n2", "desc": "Standard: same start dest"},
+    {"input": "[1,1,1,1,1]\n0\n2", "desc": "Standard: uniform distances"},
+    {"input": "[10,20,30,40,50]\n1\n4", "desc": "Standard: skip far direction"},
+    {"input": "[100,200,300,400]\n3\n0", "desc": "Standard: end to start"},
+    {"input": "[5,5,5,5,5,5,5,5]\n0\n4", "desc": "Standard: equal distances midpoint"},
+    {"input": "[7,2,9,4,1,6,3,8,5]\n2\n6", "desc": "Standard: 9 stops mixed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n0\n5", "desc": "Standard: 10 stops"},
+    {"input": "[100,1,1,1,100]\n0\n4", "desc": "Standard: cheaper backwards"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n5\n45", "desc": "Stress: 50 stops choose cheap direction"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n0\n5", "desc": "Stress: max distances"},
+    {"input": "[1,10000,1,10000,1,10000,1,10000]\n0\n4", "desc": "Stress: alternating extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n9\n0", "desc": "Special: opposite ends pick shorter"}
+  ]
+}

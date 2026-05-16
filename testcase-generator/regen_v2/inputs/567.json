@@ -1,0 +1,28 @@
+{
+  "pid": 567,
+  "slug": "shortest-unsorted-continuous-subarray",
+  "inferred_constraints": "1 <= nums.length <= 1e4; -1e5 <= nums[i] <= 1e5",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,6,4,8,10,9,15]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4]", "desc": "Edge: example2 already sorted"},
+    {"input": "[1]", "desc": "Edge: example3 single element"},
+    {"input": "[1,1,1,1]", "desc": "Edge: all same already sorted"},
+    {"input": "[2,1]", "desc": "Edge: n=2 swap needed"},
+    {"input": "[100000,-100000]", "desc": "Edge: extreme values"},
+    {"input": "[-100000,100000]", "desc": "Edge: extreme sorted"},
+    {"input": "[5,4,3,2,1]", "desc": "Edge: fully reversed"},
+    {"input": "[1,2,3,3,3,2,4]", "desc": "Standard: middle disorder"},
+    {"input": "[1,3,2,4,5]", "desc": "Standard: small middle swap"},
+    {"input": "[1,2,5,3,4,6]", "desc": "Standard: middle disorder pair"},
+    {"input": "[1,3,2,2,2]", "desc": "Standard: trailing equal"},
+    {"input": "[2,3,3,2,4]", "desc": "Standard: duplicate forming swap"},
+    {"input": "[0,-1,2,-2,3]", "desc": "Standard: with negatives"},
+    {"input": "[1,2,4,3,5,7,6]", "desc": "Standard: two small swaps span"},
+    {"input": "[1,2,3,3,3]", "desc": "Standard: trailing duplicates"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1,0,-1,-2,-3,-4,-5,-6,-7,-8,-9,-10]", "desc": "Stress: 21 reversed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 sorted answer=0"},
+    {"input": "[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991,99990,99989,99988,99987,99986,99985,99984,99983,99982,99981,99980]", "desc": "Stress: 21 large reversed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,5,11,12,13,14,15,16,17,18,19,20]", "desc": "Special: single misplaced kills"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 562,
+  "slug": "circular-sentence",
+  "inferred_constraints": "1 <= sentence.length <= 500; sentence is words separated by single spaces, no leading/trailing spaces; words are upper/lowercase letters",
+  "input_format": "line1: sentence (string)",
+  "testcases": [
+    {"input": "leetcode exercises sound delightful", "desc": "Edge: example1 circular"},
+    {"input": "eetcode", "desc": "Edge: example2 single word self-circular"},
+    {"input": "Leetcode is cool", "desc": "Edge: example3 not circular"},
+    {"input": "a", "desc": "Edge: single letter word"},
+    {"input": "aa", "desc": "Edge: single word 2 chars, self-circular"},
+    {"input": "ab", "desc": "Edge: single word 'ab', a!=b not circular"},
+    {"input": "a b a", "desc": "Edge: minimal 3 single-letter circular"},
+    {"input": "a b c", "desc": "Edge: a b c not circular"},
+    {"input": "hello olleh", "desc": "Standard: two words circular"},
+    {"input": "hello world", "desc": "Standard: two words not circular"},
+    {"input": "abc cba abc", "desc": "Standard: 3 words circular"},
+    {"input": "leetcode eats soul", "desc": "Standard: example circular"},
+    {"input": "happy Leetcode", "desc": "Standard: case sensitivity (y vs L)"},
+    {"input": "Aa aA aA aA", "desc": "Standard: case sensitive boundary"},
+    {"input": "ABC CBA ABC CBA", "desc": "Standard: uppercase circular"},
+    {"input": "x y z x", "desc": "Standard: chain mismatch"},
+    {"input": "aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa", "desc": "Stress: many repeated identical words"},
+    {"input": "ab ba ab ba ab ba ab ba ab ba ab ba ab ba ab ba", "desc": "Stress: alternating two-letter pattern circular"},
+    {"input": "abcdefghijklmnopqrstuvwxyz zyx", "desc": "Stress: long word edge match"},
+    {"input": "Leetcode", "desc": "Special: single word L vs e not circular"}
+  ]
+}

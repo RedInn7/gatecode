@@ -1,0 +1,28 @@
+{
+  "pid": 552,
+  "slug": "minimum-time-to-revert-word-to-initial-state-ii",
+  "inferred_constraints": "1 <= word.length <= 1e6; 1 <= k <= word.length; word consists of lowercase English letters",
+  "input_format": "line1: word (string); line2: k (int)",
+  "testcases": [
+    {"input": "abacaba\n3", "desc": "Edge: example1"},
+    {"input": "abacaba\n4", "desc": "Edge: example2 k=4"},
+    {"input": "abcbabcd\n2", "desc": "Edge: example3"},
+    {"input": "a\n1", "desc": "Edge: minimum length"},
+    {"input": "aaaa\n2", "desc": "Edge: all same letters"},
+    {"input": "ab\n1", "desc": "Edge: n=2 k=1"},
+    {"input": "ab\n2", "desc": "Edge: n=2 k=n means trivially 1"},
+    {"input": "abcdef\n6", "desc": "Edge: k equals length"},
+    {"input": "abcabc\n3", "desc": "Standard: prefix match at k"},
+    {"input": "abcabcabc\n3", "desc": "Standard: prefix match every 3"},
+    {"input": "abcdefabcdef\n6", "desc": "Standard: doubled pattern"},
+    {"input": "aabbaabbaabb\n4", "desc": "Standard: pattern alignment"},
+    {"input": "xyzxyzxyzxyz\n3", "desc": "Standard: cyclic xyz"},
+    {"input": "abcdefghijabcdefghij\n10", "desc": "Standard: 20-len doubled"},
+    {"input": "qwertyqwerty\n3", "desc": "Standard: middle alignment"},
+    {"input": "abcabcdef\n3", "desc": "Standard: partial prefix repeat"},
+    {"input": "zzzzzzzzzzzzzzzzzzzz\n5", "desc": "Stress: 20 z's k=5"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n26", "desc": "Stress: alphabet repeat"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n7", "desc": "Stress: 170 a's k=7"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n1", "desc": "Special: alphabet k=1 no early match"}
+  ]
+}

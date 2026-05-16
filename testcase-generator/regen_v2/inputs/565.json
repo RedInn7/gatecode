@@ -1,0 +1,28 @@
+{
+  "pid": 565,
+  "slug": "flatten-binary-tree-to-linked-list",
+  "inferred_constraints": "Number of nodes in [0, 2000]; -100 <= Node.val <= 100",
+  "input_format": "line1: root (JSON array level-order with nulls)",
+  "testcases": [
+    {"input": "[1,2,5,3,4,null,6]", "desc": "Edge: example1"},
+    {"input": "[]", "desc": "Edge: example2 empty tree"},
+    {"input": "[0]", "desc": "Edge: example3 single node"},
+    {"input": "[-100]", "desc": "Edge: single node min value"},
+    {"input": "[100]", "desc": "Edge: single node max value"},
+    {"input": "[1,null,2]", "desc": "Edge: right-only"},
+    {"input": "[1,2]", "desc": "Edge: left-only"},
+    {"input": "[1,2,3]", "desc": "Edge: depth 2 perfect"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left-skewed chain"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right-skewed chain"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: depth 2 perfect"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: depth 3 perfect"},
+    {"input": "[5,4,8,11,null,13,4,7,2,null,null,null,1]", "desc": "Standard: irregular"},
+    {"input": "[0,0,0,0,0,0,0]", "desc": "Standard: all zeros"},
+    {"input": "[100,-100,50,-50,75,null,null]", "desc": "Standard: negative and positive"},
+    {"input": "[1,2,3,null,4,5,null,null,6]", "desc": "Standard: mixed nulls"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]", "desc": "Stress: depth 4 perfect (31 nodes)"},
+    {"input": "[1,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9,null,10]", "desc": "Stress: deep left chain"},
+    {"input": "[1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9,null,10]", "desc": "Stress: deep right chain"},
+    {"input": "[1,2,null,3,4,null,5,null,6,7]", "desc": "Special: complex left-heavy"}
+  ]
+}

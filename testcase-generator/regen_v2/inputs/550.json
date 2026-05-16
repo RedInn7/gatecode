@@ -1,0 +1,28 @@
+{
+  "pid": 550,
+  "slug": "satisfiability-of-equality-equations",
+  "inferred_constraints": "1 <= equations.length <= 500; equations[i].length == 4; equations[i][0] and equations[i][3] are lowercase letters; equations[i][1] is '=' or '!'; equations[i][2] is '='",
+  "input_format": "line1: equations (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"a==b\",\"b!=a\"]", "desc": "Edge: example1 contradiction"},
+    {"input": "[\"b==a\",\"a==b\"]", "desc": "Edge: example2 trivially consistent"},
+    {"input": "[\"a==b\"]", "desc": "Edge: single equation"},
+    {"input": "[\"a!=b\"]", "desc": "Edge: single inequality"},
+    {"input": "[\"a==a\"]", "desc": "Edge: tautology"},
+    {"input": "[\"a!=a\"]", "desc": "Edge: self-contradiction"},
+    {"input": "[\"a==b\",\"b==c\",\"a==c\"]", "desc": "Standard: transitive chain consistent"},
+    {"input": "[\"a==b\",\"b==c\",\"a!=c\"]", "desc": "Standard: transitive chain conflict"},
+    {"input": "[\"c==c\",\"b==d\",\"x!=z\"]", "desc": "Standard: disjoint equations"},
+    {"input": "[\"a==b\",\"c==d\",\"b!=c\"]", "desc": "Standard: two independent groups"},
+    {"input": "[\"a==b\",\"c==e\",\"b==c\",\"a!=e\"]", "desc": "Standard: chain merge conflict"},
+    {"input": "[\"a==b\",\"b!=c\",\"c==a\"]", "desc": "Standard: cycle conflict"},
+    {"input": "[\"a!=b\",\"b!=c\",\"a!=c\"]", "desc": "Standard: all inequalities consistent"},
+    {"input": "[\"a==b\",\"b==c\",\"c==d\",\"d==e\",\"e==a\"]", "desc": "Standard: cycle equalities"},
+    {"input": "[\"a==b\",\"b==c\",\"c==d\",\"d==e\",\"a!=e\"]", "desc": "Standard: long chain conflict"},
+    {"input": "[\"x==y\",\"y==z\",\"z==w\",\"w==v\",\"v==u\",\"u!=x\"]", "desc": "Standard: longer chain conflict"},
+    {"input": "[\"a==b\",\"a==c\",\"a==d\",\"a==e\",\"a==f\",\"b==c\",\"c==d\",\"d==e\",\"e==f\"]", "desc": "Stress: all equals to a"},
+    {"input": "[\"a==b\",\"a==c\",\"a==d\",\"a==e\",\"a==f\",\"a==g\",\"a==h\",\"a==i\",\"a==j\",\"a==k\",\"a==l\",\"a==m\",\"a==n\",\"a==o\",\"a==p\",\"a==q\",\"a==r\",\"a==s\",\"a==t\",\"a==u\",\"a==v\",\"a==w\",\"a==x\",\"a==y\",\"a==z\"]", "desc": "Stress: 26 letter chain"},
+    {"input": "[\"a==a\",\"b==b\",\"c==c\",\"d==d\",\"e==e\",\"f==f\",\"g==g\",\"h==h\",\"i==i\",\"j==j\"]", "desc": "Stress: all self-equalities"},
+    {"input": "[\"a==b\",\"b==c\",\"c==d\",\"d==e\",\"e==f\",\"f==g\",\"g==h\",\"h==i\",\"i==j\",\"j==k\",\"k==l\",\"l==m\",\"m==n\",\"n==o\",\"o==p\",\"p==q\",\"q==r\",\"r==s\",\"s==t\",\"t==u\",\"u==v\",\"v==w\",\"w==x\",\"x==y\",\"y==z\",\"a!=z\"]", "desc": "Special: full alphabet chain conflict killer"}
+  ]
+}
