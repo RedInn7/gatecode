@@ -1,0 +1,88 @@
+{
+  "pid": 1365,
+  "slug": "split-a-string-into-the-max-number-of-unique-substrings",
+  "inferred_constraints": "0 <= s.length <= 16",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"h\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"lf\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"daacd\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"zannaz\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"qdoralycgdif\"",
+      "desc": "Standard: len=12"
+    },
+    {
+      "input": "\"onuqhdn\"",
+      "desc": "Standard: len=7"
+    },
+    {
+      "input": "\"rxiatbzweva\"",
+      "desc": "Standard: len=11"
+    },
+    {
+      "input": "\"lczwzydpqnkwo\"",
+      "desc": "Standard: len=13"
+    },
+    {
+      "input": "\"yfdea\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"hgvqfwxjquvcjnk\"",
+      "desc": "Standard: len=15"
+    },
+    {
+      "input": "\"oizkhr\"",
+      "desc": "Standard: len=6"
+    },
+    {
+      "input": "\"vgxprrzhtqm\"",
+      "desc": "Standard: len=11"
+    },
+    {
+      "input": "\"dblmtudaibuegseh\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"sqsmkkcbpavrxxpr\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"oxwiddubwesgtsnv\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"mkqayrpgbbgwyqlx\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}
