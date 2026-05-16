@@ -5,8 +5,8 @@
   "input_format": "line1: s (string in JSON quotes); line2: k (int)",
   "testcases": [
     {
-      "input": "\"abciiidef\"\n3",
-      "desc": "Edge: example1"
+      "input": "\"v\"\n1",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"aeiou\"\n2",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"bhpcb\"\n3",
+      "input": "\"nosvf\"\n2",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 vowels window 10"
     },
     {
-      "input": "\"rbuthevecfldqkyecp\"\n3",
+      "input": "\"kcafbyfhclzfwznhog\"\n3",
       "desc": "Stress: large n near max boundary"
     }
   ]

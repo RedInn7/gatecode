@@ -5,8 +5,8 @@
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"aaabbb\"",
-      "desc": "Edge: example1 true"
+      "input": "\"b\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"abab\"",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"rmu\"",
+      "input": "\"a\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: a at end invalid"
     },
     {
-      "input": "\"eesuqmpdevgc\"",
+      "input": "\"xyloealcpegt\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
