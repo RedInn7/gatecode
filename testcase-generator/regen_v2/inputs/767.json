@@ -1,27 +1,88 @@
 {
-  "pid": 767, "slug": "fibonacci-number",
+  "pid": 767,
+  "slug": "fibonacci-number",
   "inferred_constraints": "0 <= n <= 30",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "2", "desc": "Edge: example1"},
-    {"input": "3", "desc": "Edge: example2"},
-    {"input": "4", "desc": "Edge: example3"},
-    {"input": "0", "desc": "Edge: n=0"},
-    {"input": "1", "desc": "Edge: n=1"},
-    {"input": "5", "desc": "Standard: n=5"},
-    {"input": "10", "desc": "Standard: n=10"},
-    {"input": "15", "desc": "Standard: n=15"},
-    {"input": "20", "desc": "Standard: n=20"},
-    {"input": "25", "desc": "Standard: n=25"},
-    {"input": "30", "desc": "Edge: max n=30"},
-    {"input": "6", "desc": "Standard: n=6"},
-    {"input": "7", "desc": "Standard: n=7"},
-    {"input": "8", "desc": "Standard: n=8"},
-    {"input": "9", "desc": "Standard: n=9"},
-    {"input": "11", "desc": "Standard: n=11"},
-    {"input": "12", "desc": "Standard: n=12"},
-    {"input": "13", "desc": "Standard: n=13"},
-    {"input": "29", "desc": "Stress: near max"},
-    {"input": "17", "desc": "Special: F17=1597"}
+    {
+      "input": "2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: n=5"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10"
+    },
+    {
+      "input": "15",
+      "desc": "Standard: n=15"
+    },
+    {
+      "input": "20",
+      "desc": "Standard: n=20"
+    },
+    {
+      "input": "25",
+      "desc": "Standard: n=25"
+    },
+    {
+      "input": "30",
+      "desc": "Edge: max n=30"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: n=7"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: n=9"
+    },
+    {
+      "input": "11",
+      "desc": "Standard: n=11"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: n=12"
+    },
+    {
+      "input": "13",
+      "desc": "Standard: n=13"
+    },
+    {
+      "input": "29",
+      "desc": "Stress: near max"
+    },
+    {
+      "input": "4",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

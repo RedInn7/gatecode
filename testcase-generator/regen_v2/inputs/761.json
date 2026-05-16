@@ -1,27 +1,88 @@
 {
-  "pid": 761, "slug": "make-the-xor-of-all-segments-equal-to-zero",
+  "pid": 761,
+  "slug": "make-the-xor-of-all-segments-equal-to-zero",
   "inferred_constraints": "1 <= k <= nums.length <= 2000, 0 <= nums[i] < 2^10",
   "input_format": "line1: nums (JSON array); line2: k (int)",
   "testcases": [
-    {"input": "[1,2,0,3,0]\n1", "desc": "Edge: example1"},
-    {"input": "[3,4,5,2,1,7,3,4,7]\n3", "desc": "Edge: example2"},
-    {"input": "[1,2,4,1,2,5,1,2,6]\n3", "desc": "Edge: example3"},
-    {"input": "[0]\n1", "desc": "Edge: n=1 zero k=1"},
-    {"input": "[5]\n1", "desc": "Edge: n=1 nonzero k=1"},
-    {"input": "[0,0,0,0]\n2", "desc": "Edge: all zero k=2"},
-    {"input": "[1,1,1,1]\n2", "desc": "Edge: all 1 k=2"},
-    {"input": "[1023,1023,1023,1023]\n2", "desc": "Edge: max value"},
-    {"input": "[1,2,3,4,5,6,7,8]\n4", "desc": "Standard: k=4"},
-    {"input": "[1,1,2,2,1,1,2,2]\n4", "desc": "Standard: periodic"},
-    {"input": "[0,1,2,3,4,5,6,7]\n2", "desc": "Standard: k=2"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1]\n3", "desc": "Standard: all 1 k=3"},
-    {"input": "[1,2,3,4,1,2,3,4,1,2,3,4]\n4", "desc": "Standard: already periodic"},
-    {"input": "[7,8,9,10,11,12,13,14,15,16]\n5", "desc": "Standard: varied k=5"},
-    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n3", "desc": "Standard: large vals"},
-    {"input": "[0,1,0,1,0,1,0,1]\n2", "desc": "Standard: alternating already"},
-    {"input": "[5]\n1", "desc": "Edge: tiny"},
-    {"input": "[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]\n5", "desc": "Standard: k=5 n=15"},
-    {"input": "[1023,512,256,128,64,32,16,8,4,2,1,0]\n3", "desc": "Standard: powers of 2"},
-    {"input": "[15,30,45,60,75,90,15,30,45,60,75,90]\n6", "desc": "Special: 6-periodic"}
+    {
+      "input": "[1,2,0,3,0]\n1",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[3,4,5,2,1,7,3,4,7]\n3",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1,2,4,1,2,5,1,2,6]\n3",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "[0]\n1",
+      "desc": "Edge: n=1 zero k=1"
+    },
+    {
+      "input": "[5]\n1",
+      "desc": "Edge: n=1 nonzero k=1"
+    },
+    {
+      "input": "[0,0,0,0]\n2",
+      "desc": "Edge: all zero k=2"
+    },
+    {
+      "input": "[1,1,1,1]\n2",
+      "desc": "Edge: all 1 k=2"
+    },
+    {
+      "input": "[1023,1023,1023,1023]\n2",
+      "desc": "Edge: max value"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8]\n4",
+      "desc": "Standard: k=4"
+    },
+    {
+      "input": "[1,1,2,2,1,1,2,2]\n4",
+      "desc": "Standard: periodic"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7]\n2",
+      "desc": "Standard: k=2"
+    },
+    {
+      "input": "[657,-85,-670,-411,-610,-847,516,807,-916,-513,394,103,-604,220,525,757,-674,89,-642,729,-748,365,93,58,668,760,-536,-310,-276,-678,-466,310,-880,-671,-554,359,-839,105,-830,-796,-710,-42,-804,320,-526,702,-14,938,884,-795,30,566,-553,535,-482,-226,-961,609,192,-453,983,320,816,-264,674,265,920,212,-93,329,-878,-762,-604,-792,-193,85,-536,-135,306,-386,-688,592,964,-823,217,763]\n1",
+      "desc": "Regenerated: standard at position 11"
+    },
+    {
+      "input": "[1,2,3,4,1,2,3,4,1,2,3,4]\n4",
+      "desc": "Standard: already periodic"
+    },
+    {
+      "input": "[7,8,9,10,11,12,13,14,15,16]\n5",
+      "desc": "Standard: varied k=5"
+    },
+    {
+      "input": "[100,200,300,400,500,600,700,800,900,1000]\n3",
+      "desc": "Standard: large vals"
+    },
+    {
+      "input": "[0,1,0,1,0,1,0,1]\n2",
+      "desc": "Standard: alternating already"
+    },
+    {
+      "input": "[5]\n1",
+      "desc": "Edge: tiny"
+    },
+    {
+      "input": "[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]\n5",
+      "desc": "Standard: k=5 n=15"
+    },
+    {
+      "input": "[1023,512,256,128,64,32,16,8,4,2,1,0]\n3",
+      "desc": "Standard: powers of 2"
+    },
+    {
+      "input": "[15,30,45,60,75,90,15,30,45,60,75,90]\n6",
+      "desc": "Special: 6-periodic"
+    }
   ]
 }

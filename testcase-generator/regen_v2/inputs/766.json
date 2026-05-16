@@ -1,27 +1,88 @@
 {
-  "pid": 766, "slug": "sort-vowels-in-a-string",
+  "pid": 766,
+  "slug": "sort-vowels-in-a-string",
   "inferred_constraints": "1 <= s.length <= 1e5, English letters mixed case",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "lEetcOde", "desc": "Edge: example1"},
-    {"input": "lYmpH", "desc": "Edge: example2 no vowels"},
-    {"input": "a", "desc": "Edge: single vowel"},
-    {"input": "z", "desc": "Edge: single consonant"},
-    {"input": "A", "desc": "Edge: single uppercase vowel"},
-    {"input": "Z", "desc": "Edge: single uppercase consonant"},
-    {"input": "ae", "desc": "Edge: 2 vowels"},
-    {"input": "ea", "desc": "Edge: 2 vowels reversed"},
-    {"input": "bc", "desc": "Edge: 2 consonants"},
-    {"input": "aeiou", "desc": "Edge: all 5 vowels"},
-    {"input": "uoiea", "desc": "Edge: reverse vowels"},
-    {"input": "AEIOU", "desc": "Edge: uppercase vowels"},
-    {"input": "AaEeIiOoUu", "desc": "Standard: pairs case"},
-    {"input": "Hello", "desc": "Standard: short word"},
-    {"input": "leetcode", "desc": "Standard: leetcode"},
-    {"input": "programming", "desc": "Standard: longer word"},
-    {"input": "aAeEiIoOuU", "desc": "Standard: alternating case"},
-    {"input": "thequickbrownfoxjumpsoverthelazydog", "desc": "Standard: pangram"},
-    {"input": "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG", "desc": "Standard: upper pangram"},
-    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Special: alphabet"}
+    {
+      "input": "lEetcOde",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "lYmpH",
+      "desc": "Edge: example2 no vowels"
+    },
+    {
+      "input": "\"xk\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"dv\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"vgva\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "Z",
+      "desc": "Edge: single uppercase consonant"
+    },
+    {
+      "input": "ae",
+      "desc": "Edge: 2 vowels"
+    },
+    {
+      "input": "ea",
+      "desc": "Edge: 2 vowels reversed"
+    },
+    {
+      "input": "bc",
+      "desc": "Edge: 2 consonants"
+    },
+    {
+      "input": "aeiou",
+      "desc": "Edge: all 5 vowels"
+    },
+    {
+      "input": "uoiea",
+      "desc": "Edge: reverse vowels"
+    },
+    {
+      "input": "AEIOU",
+      "desc": "Edge: uppercase vowels"
+    },
+    {
+      "input": "AaEeIiOoUu",
+      "desc": "Standard: pairs case"
+    },
+    {
+      "input": "Hello",
+      "desc": "Standard: short word"
+    },
+    {
+      "input": "leetcode",
+      "desc": "Standard: leetcode"
+    },
+    {
+      "input": "programming",
+      "desc": "Standard: longer word"
+    },
+    {
+      "input": "aAeEiIoOuU",
+      "desc": "Standard: alternating case"
+    },
+    {
+      "input": "thequickbrownfoxjumpsoverthelazydog",
+      "desc": "Standard: pangram"
+    },
+    {
+      "input": "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG",
+      "desc": "Standard: upper pangram"
+    },
+    {
+      "input": "\"mmjpqartlzzufgzw\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
