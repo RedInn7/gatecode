@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 100, printable ASCII",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"Hello\"", "desc": "Standard: example 1"},
-    {"input": "\"here\"", "desc": "Standard: example 2"},
-    {"input": "\"LOVELY\"", "desc": "Standard: example 3"},
-    {"input": "\"A\"", "desc": "Edge: n=1 upper"},
-    {"input": "\"a\"", "desc": "Edge: n=1 lower"},
-    {"input": "\"1\"", "desc": "Edge: digit"},
-    {"input": "\"!\"", "desc": "Edge: symbol"},
-    {"input": "\"AaBbCcDdEe\"", "desc": "Standard mixed"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Edge: all upper"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: all lower"},
-    {"input": "\"Hello, World!\"", "desc": "Standard with punct"},
-    {"input": "\"The Quick Brown Fox\"", "desc": "Standard sentence"},
-    {"input": "\"1234567890\"", "desc": "Edge: digits"},
-    {"input": "\"!@#$%^&*()\"", "desc": "Edge: symbols"},
-    {"input": "\"AABBCCDDEEFFGGHHIIJJKKLLMMNNOOPPQQRRSSTTUUVVWWXXYYZZ\"", "desc": "Standard doubled"},
-    {"input": "\"Hello123World\"", "desc": "Standard mixed alphanum"},
-    {"input": "\"   SPACES   \"", "desc": "Standard with spaces"},
-    {"input": "\"MixedCASEString\"", "desc": "Standard"},
-    {"input": "\"A1B2C3D4E5\"", "desc": "Standard"},
-    {"input": "\"ZZZZZZZZZZ\"", "desc": "Edge: 10 Z's"}
+    {
+      "input": "\"Hello\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"here\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"LOVELY\"",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "\"A\"",
+      "desc": "Edge: n=1 upper"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1 lower"
+    },
+    {
+      "input": "\"1\"",
+      "desc": "Edge: digit"
+    },
+    {
+      "input": "\"!\"",
+      "desc": "Edge: symbol"
+    },
+    {
+      "input": "\"AaBbCcDdEe\"",
+      "desc": "Standard mixed"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
+      "desc": "Edge: all upper"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Edge: all lower"
+    },
+    {
+      "input": "\"Hello, World!\"",
+      "desc": "Standard with punct"
+    },
+    {
+      "input": "\"The Quick Brown Fox\"",
+      "desc": "Standard sentence"
+    },
+    {
+      "input": "\"1234567890\"",
+      "desc": "Edge: digits"
+    },
+    {
+      "input": "\"!@#$%^&*()\"",
+      "desc": "Edge: symbols"
+    },
+    {
+      "input": "\"AABBCCDDEEFFGGHHIIJJKKLLMMNNOOPPQQRRSSTTUUVVWWXXYYZZ\"",
+      "desc": "Standard doubled"
+    },
+    {
+      "input": "\"Hello123World\"",
+      "desc": "Standard mixed alphanum"
+    },
+    {
+      "input": "\"   SPACES   \"",
+      "desc": "Standard with spaces"
+    },
+    {
+      "input": "\"MixedCASEString\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"A1B2C3D4E5\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"nyksgajzbymm\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
