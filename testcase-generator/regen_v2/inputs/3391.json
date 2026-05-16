@@ -1,0 +1,76 @@
+{
+  "pid": 3391,
+  "slug": "dota2-senate",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"b\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"of\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"bedbd\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"jqxroo\"",
+      "desc": "Standard: len=6"
+    },
+    {
+      "input": "\"meeapooroumijgtuurllpopk\"",
+      "desc": "Standard: len=24"
+    },
+    {
+      "input": "\"oaoludolhqkuobbhusjl\"",
+      "desc": "Standard: len=20"
+    },
+    {
+      "input": "\"tflzqayxbtejiectlsgmcovehpv\"",
+      "desc": "Standard: len=27"
+    },
+    {
+      "input": "\"gzklnevsavdxnllfsafbslqolbewp\"",
+      "desc": "Standard: len=29"
+    },
+    {
+      "input": "\"ocjygjyjuewbcfuxkgrruwijmoezmansdakeaqrlmkjbelv\"",
+      "desc": "Standard: len=47"
+    },
+    {
+      "input": "\"rwcqqo\"",
+      "desc": "Standard: len=6"
+    },
+    {
+      "input": "\"zoopnkdcllcrmcyzifvtthpwwnmjmleesea\"",
+      "desc": "Standard: len=35"
+    },
+    {
+      "input": "\"xowxnnizsaoqhbuzjzghyoidepdfxluxnlmhkvplwfkjdujgnfqiefhwqwulwpmamengrpuyptttjvmniezodxcdxzpcayffududdrdxwotvyjpzsahsfjpwdgdvyfbxqfkruewflghgqmhyooyoflivgfenuolddwreeoqnupiktuwkwolevqxflgdkqjnbrihxhnxdtaojspnnugguhdhfiwmstnycjirsglabziejwbbgtesxwyxombfejggmsclomolhgtitxdpcchchwbmzyqwaynwaawbpiwdpehavuosytafkqcxvjepvtlikxzznyeqosdwljxyfnmyzjnnqfahboamazpmuicmguyaxslwadtrfjdyhrownlueiunhtyorqeosmzvvlkmplzcibnbxyqlvpsunfifojbveqndlpmnmrfflmihrzuhjlznxobheucvhqeuvxvnegumzenshzieyhbgxgcmydtjigqpefeegq\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"jvxftsqmfhovwizmbzkyvtpjemoynljqxawsiurqwdnvpygzaumtqprkbnklcyhgaexdrpxnpvbxkwyiuyahiemygumecsqeuzgbrzwahnctlfezkzncfkxdkcxcnfgrvtgdmrkeruzamefoshajsqeuntmovvrpibgohkjlyzkyqlotbjbniwxfyigugldruurzzwdrdbyoepslxqybufvcoixpoeudzgcfkngahzrugyywhmaktgvdagaxlvqlkxrzjgavlqlrmmmhldjvrdtzneddgoobwkaefqdiymueqawetuaulvnlpvezjomcmwfyievapyfvlakkqfindvkcfphkckevjtqzcuuhurvobmyxtafflpkdastrukhohghfuotbpmlkrobvqswozvbcskbqjgdkovdmmlgzpmojilcvxwyridwitcvbytuyzfwhnfwiuebfjpapukuxybicdosvuklkqmhlualrgmkjlvllesjvvrtmxarvtszcewpcbbsmrlfgkjdjugkkrmszmzclrlghfbposvfhfvlejiwclfwalnkcickdvujxlmidqrbdnipvxcnccmthqdgyevznpqawamoypswrigwksebvetnolkytnayvwibztulavjbxjlphysdzbiwtdvonwpeazcvxzlfukgnfxoislxjcimntgecspemumqhraldymgxdjfuvbuslityvqjoumufeswqjnyjxnqfizyzhksutzbfiwnaexzwyudzrqozsanzgolhjbjaonbaltqyvqzwqbaudwpecmhnaxsvjwevtjusifwhflfpvpqxqsofjcwdiaftbbqdrjpknlixgcinmzqpuqtagkvmzvpstesjnonzzktrremveikccsgawordgjqxtkrtllstjmccbfqngeixvmnnoiotbicdcvieweldnppwqakrnqxnfbrlryyuhzdhcwdwtmrkjyvzkzyhviqsawxtcpfss\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

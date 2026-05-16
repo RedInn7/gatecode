@@ -84,6 +84,11 @@
       "pid": 3405,
       "slug": "guess-the-majority-in-a-hidden-array",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3396,
+      "slug": "maximum-strong-pair-xor-ii",
+      "reason": "ACM mode problem"
     }
   ]
 }
