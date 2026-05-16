@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "5725582922",
+      "input": "8383204848",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 70 cycled"
     },
     {
-      "input": "9999900000",
+      "input": "9007376988",
       "desc": "Stress: large n near max boundary"
     }
   ]

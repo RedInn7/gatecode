@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"yrduk\"",
+      "input": "\"if\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 cycled alphabet"
     },
     {
-      "input": "\"lxjftjqymf\"",
+      "input": "\"tvmhavodzx\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

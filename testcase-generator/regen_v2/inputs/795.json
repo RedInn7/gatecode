@@ -21,8 +21,8 @@
       "desc": "Edge: n=1 always works"
     },
     {
-      "input": "[5]\n5",
-      "desc": "Edge: single 5 div 5"
+      "input": "[46207,46207,46207,46207,46207,46207,46207]\n7",
+      "desc": "Edge: all-equal elements"
     },
     {
       "input": "[3]\n5",

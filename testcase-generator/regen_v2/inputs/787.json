@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw string)",
   "testcases": [
     {
-      "input": "abbxxxxzzy",
-      "desc": "Edge: example1"
+      "input": "\"b\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "abc",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"uwvejf\"",
+      "input": "\"drbus\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: pair end pair"
     },
     {
-      "input": "\"idxlekkwwlqciluenwlpqrkgcxohwfbodj\"",
+      "input": "\"wtxwxomrosoazlfppgbomhdxzquihcwicn\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
