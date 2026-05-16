@@ -723,3 +723,15 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 - No monotone increasing sequence testcase
 Audited at: 2026-05-16T15:37:20.668870
+
+## PID 283 (properties-graph)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+Audited at: 2026-05-16T15:37:22.949755
+
+## PID 285 (replace-all-digits-with-characters)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=100.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:22.970666
