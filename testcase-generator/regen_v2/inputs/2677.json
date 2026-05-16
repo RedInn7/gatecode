@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= points.length <= 10^4, points[i].length == 2, -10^8 <= points[i][0], points[i][1] <= 10^8",
   "input_format": "single line: points (JSON 2D array)",
   "testcases": [
-    {"input": "[[1,1],[-1,1]]", "desc": "Edge: example1"},
-    {"input": "[[1,1],[-1,-1]]", "desc": "Edge: example2 false"},
-    {"input": "[[0,0]]", "desc": "Edge: single point"},
-    {"input": "[[1,0],[-1,0]]", "desc": "Edge: symmetric pair"},
-    {"input": "[[1,0],[1,0]]", "desc": "Edge: duplicate"},
-    {"input": "[[0,0],[0,0]]", "desc": "Edge: 2 origin"},
-    {"input": "[[1,1],[1,1],[-1,1],[-1,1]]", "desc": "Edge: 2 each dup symmetric"},
-    {"input": "[[5,5]]", "desc": "Edge: single non-origin"},
-    {"input": "[[1,2],[3,2],[5,2]]", "desc": "Edge: 3 along x"},
-    {"input": "[[0,0],[1,0],[-1,0]]", "desc": "Standard: 3 sym"},
-    {"input": "[[1,1],[2,1],[3,1],[4,1]]", "desc": "Standard: 4 along x"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4]]", "desc": "Standard: diagonal"},
-    {"input": "[[0,0],[1,1],[-1,1]]", "desc": "Standard: 3 sym y axis"},
-    {"input": "[[1,1],[3,1],[5,1],[2,1],[4,1]]", "desc": "Standard: 5 along x"},
-    {"input": "[[1,2],[2,2],[3,2],[4,2],[5,2]]", "desc": "Standard: 5 along x sym at 3"},
-    {"input": "[[1,1],[-1,1],[2,2],[-2,2],[3,3],[-3,3]]", "desc": "Standard: 6 sym"},
-    {"input": "[[1,1],[-1,1],[2,2],[-2,2],[3,3],[4,3]]", "desc": "Standard: false"},
-    {"input": "[[100000000,1],[-100000000,1]]", "desc": "Standard: extreme"},
-    {"input": "[[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1],[10,1],[11,1],[12,1],[13,1],[14,1],[15,1],[16,1],[17,1],[18,1],[19,1],[20,1]]", "desc": "Stress: 20 along x"},
-    {"input": "[[100000000,100000000],[-100000000,-100000000]]", "desc": "Killer: extreme diag false"}
+    {
+      "input": "[[1,1],[-1,1]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[1,1],[-1,-1]]",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "[[0,0]]",
+      "desc": "Edge: single point"
+    },
+    {
+      "input": "[[1,0],[-1,0]]",
+      "desc": "Edge: symmetric pair"
+    },
+    {
+      "input": "[[1,0],[1,0]]",
+      "desc": "Edge: duplicate"
+    },
+    {
+      "input": "[[0,0],[0,0]]",
+      "desc": "Edge: 2 origin"
+    },
+    {
+      "input": "[[1,1],[1,1],[-1,1],[-1,1]]",
+      "desc": "Edge: 2 each dup symmetric"
+    },
+    {
+      "input": "[[5,5]]",
+      "desc": "Edge: single non-origin"
+    },
+    {
+      "input": "[[1,2],[3,2],[5,2]]",
+      "desc": "Edge: 3 along x"
+    },
+    {
+      "input": "[[0,0],[1,0],[-1,0]]",
+      "desc": "Standard: 3 sym"
+    },
+    {
+      "input": "[[1,1],[2,1],[3,1],[4,1]]",
+      "desc": "Standard: 4 along x"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4]]",
+      "desc": "Standard: diagonal"
+    },
+    {
+      "input": "[[0,0],[1,1],[-1,1]]",
+      "desc": "Standard: 3 sym y axis"
+    },
+    {
+      "input": "[[1,1],[3,1],[5,1],[2,1],[4,1]]",
+      "desc": "Standard: 5 along x"
+    },
+    {
+      "input": "[[1,2],[2,2],[3,2],[4,2],[5,2]]",
+      "desc": "Standard: 5 along x sym at 3"
+    },
+    {
+      "input": "[[1,1],[-1,1],[2,2],[-2,2],[3,3],[-3,3]]",
+      "desc": "Standard: 6 sym"
+    },
+    {
+      "input": "[[1,1],[-1,1],[2,2],[-2,2],[3,3],[4,3]]",
+      "desc": "Standard: false"
+    },
+    {
+      "input": "[[100000000,1],[-100000000,1]]",
+      "desc": "Standard: extreme"
+    },
+    {
+      "input": "[[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1],[10,1],[11,1],[12,1],[13,1],[14,1],[15,1],[16,1],[17,1],[18,1],[19,1],[20,1]]",
+      "desc": "Stress: 20 along x"
+    },
+    {
+      "input": "[[367,767,-366,-274],[673,982,-703,476],[267,-889,824,584],[-122,832,672,-158]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "n == plants.length, 1 <= n <= 10^5, 1 <= plants[i] <= 10^6, max(plants) <= capacityA, capacityB <= 10^9",
   "input_format": "line1: plants (JSON array); line2: capacityA (int); line3: capacityB (int)",
   "testcases": [
-    {"input": "[2,2,3,3]\n5\n5", "desc": "Edge: example1"},
-    {"input": "[2,2,3,3]\n3\n4", "desc": "Edge: example2"},
-    {"input": "[5]\n10\n8", "desc": "Edge: single plant"},
-    {"input": "[5]\n5\n5", "desc": "Edge: single plant exact"},
-    {"input": "[1,1]\n1\n1", "desc": "Edge: 2 plants meet"},
-    {"input": "[3,3]\n3\n3", "desc": "Edge: 2 plants both"},
-    {"input": "[1,2,3]\n5\n5", "desc": "Edge: 3 plants no refill"},
-    {"input": "[2,2,3,3,5]\n7\n7", "desc": "Edge: 5 plants meet middle"},
-    {"input": "[1,2,4,4,5]\n6\n5", "desc": "Edge: meet at index 2"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n2\n2", "desc": "Standard: 10 same"},
-    {"input": "[5,5,5,5,5,5,5,5,5,5]\n10\n10", "desc": "Standard: 10 fives"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n15\n10", "desc": "Standard: increasing"},
-    {"input": "[10,9,8,7,6,5,4,3,2,1]\n10\n15", "desc": "Standard: decreasing"},
-    {"input": "[5,1,5,1,5,1,5,1]\n5\n5", "desc": "Standard: alt large small"},
-    {"input": "[10,10,10,10,10]\n10\n10", "desc": "Standard: all max"},
-    {"input": "[1,2,3,4,5,5,4,3,2,1]\n10\n10", "desc": "Standard: pyramid"},
-    {"input": "[1000000,1000000]\n1000000\n1000000", "desc": "Standard: max plant"},
-    {"input": "[1,1,1,1,1,1,1,1,1]\n9\n9", "desc": "Standard: odd count"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n50\n50", "desc": "Stress: 100 plants"},
-    {"input": "[1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000]\n1000000\n1000000", "desc": "Killer: max all"}
+    {
+      "input": "[2,2,3,3]\n5\n5",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[2,2,3,3]\n3\n4",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[5]\n10\n8",
+      "desc": "Edge: single plant"
+    },
+    {
+      "input": "[5]\n5\n5",
+      "desc": "Edge: single plant exact"
+    },
+    {
+      "input": "[1,1]\n1\n1",
+      "desc": "Edge: 2 plants meet"
+    },
+    {
+      "input": "[3,3]\n3\n3",
+      "desc": "Edge: 2 plants both"
+    },
+    {
+      "input": "[1,2,3]\n5\n5",
+      "desc": "Edge: 3 plants no refill"
+    },
+    {
+      "input": "[2,2,3,3,5]\n7\n7",
+      "desc": "Edge: 5 plants meet middle"
+    },
+    {
+      "input": "[1,2,4,4,5]\n6\n5",
+      "desc": "Edge: meet at index 2"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1]\n2\n2",
+      "desc": "Standard: 10 same"
+    },
+    {
+      "input": "[113976,523079,570573,226463,938181,29498,682791,374891,312300,412872,745600,390910,835445,210581,297699,475821,74891,391936,166383,221700,948977,389978,956601,671365,579394,79866,176722,951384,831876,158243,254799,483492,598577,191676,65944,874482,227020,874109,643127,244772,709330,170465,650877,14652,510885,594267,922039,835309,291760,265174,418757,884127,371930,726248,33684,366417,556062,206681,54613,168099,869289,840086,988851,310909,451921,434771,580578,561410,9537,222248,12590,627390,531156,823587,176555,503299,898507,755327,8707,994131,524107,620413]\n1\n3",
+      "desc": "Regenerated: standard at position 10"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n15\n10",
+      "desc": "Standard: increasing"
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n10\n15",
+      "desc": "Standard: decreasing"
+    },
+    {
+      "input": "[5,1,5,1,5,1,5,1]\n5\n5",
+      "desc": "Standard: alt large small"
+    },
+    {
+      "input": "[10,10,10,10,10]\n10\n10",
+      "desc": "Standard: all max"
+    },
+    {
+      "input": "[1,2,3,4,5,5,4,3,2,1]\n10\n10",
+      "desc": "Standard: pyramid"
+    },
+    {
+      "input": "[1000000,1000000]\n1000000\n1000000",
+      "desc": "Standard: max plant"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1]\n9\n9",
+      "desc": "Standard: odd count"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n50\n50",
+      "desc": "Stress: 100 plants"
+    },
+    {
+      "input": "[1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000]\n1000000\n1000000",
+      "desc": "Killer: max all"
+    }
   ]
 }
