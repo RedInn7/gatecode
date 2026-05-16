@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, '0' or '1'",
   "input_format": "line1: s (binary string in JSON quotes)",
   "testcases": [
-    {"input": "\"111000\"", "desc": "Edge: example1"},
-    {"input": "\"010\"", "desc": "Edge: example2 already alternating"},
-    {"input": "\"1110\"", "desc": "Edge: example3"},
-    {"input": "\"0\"", "desc": "Edge: n=1 single 0"},
-    {"input": "\"1\"", "desc": "Edge: n=1 single 1"},
-    {"input": "\"00\"", "desc": "Edge: n=2 both zeros"},
-    {"input": "\"11\"", "desc": "Edge: n=2 both ones"},
-    {"input": "\"01\"", "desc": "Edge: n=2 already alt"},
-    {"input": "\"10\"", "desc": "Edge: n=2 already alt reverse"},
-    {"input": "\"0000\"", "desc": "Edge: all zeros"},
-    {"input": "\"1111\"", "desc": "Edge: all ones"},
-    {"input": "\"010101\"", "desc": "Standard: already alt 01"},
-    {"input": "\"101010\"", "desc": "Standard: already alt 10"},
-    {"input": "\"000111\"", "desc": "Standard: 2 zones"},
-    {"input": "\"111000\"", "desc": "Standard: reverse zones"},
-    {"input": "\"00110011\"", "desc": "Standard: blocks of 2"},
-    {"input": "\"110010\"", "desc": "Standard: mixed"},
-    {"input": "\"00000000000000000000000000000000000000000000000000\"", "desc": "Stress: 50 zeros"},
-    {"input": "\"01010101010101010101010101010101010101010101010101\"", "desc": "Stress: 50 alternating already"},
-    {"input": "\"00110011001100110011001100110011001100110011001100\"", "desc": "Stress: 50 in blocks"}
+    {
+      "input": "\"111000\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"010\"",
+      "desc": "Edge: example2 already alternating"
+    },
+    {
+      "input": "\"rpxb\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"jci\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"1\"",
+      "desc": "Edge: n=1 single 1"
+    },
+    {
+      "input": "\"00\"",
+      "desc": "Edge: n=2 both zeros"
+    },
+    {
+      "input": "\"11\"",
+      "desc": "Edge: n=2 both ones"
+    },
+    {
+      "input": "\"01\"",
+      "desc": "Edge: n=2 already alt"
+    },
+    {
+      "input": "\"10\"",
+      "desc": "Edge: n=2 already alt reverse"
+    },
+    {
+      "input": "\"0000\"",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "\"1111\"",
+      "desc": "Edge: all ones"
+    },
+    {
+      "input": "\"010101\"",
+      "desc": "Standard: already alt 01"
+    },
+    {
+      "input": "\"101010\"",
+      "desc": "Standard: already alt 10"
+    },
+    {
+      "input": "\"000111\"",
+      "desc": "Standard: 2 zones"
+    },
+    {
+      "input": "\"111000\"",
+      "desc": "Standard: reverse zones"
+    },
+    {
+      "input": "\"00110011\"",
+      "desc": "Standard: blocks of 2"
+    },
+    {
+      "input": "\"110010\"",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "\"00000000000000000000000000000000000000000000000000\"",
+      "desc": "Stress: 50 zeros"
+    },
+    {
+      "input": "\"01010101010101010101010101010101010101010101010101\"",
+      "desc": "Stress: 50 alternating already"
+    },
+    {
+      "input": "\"gqprdrgltddn\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

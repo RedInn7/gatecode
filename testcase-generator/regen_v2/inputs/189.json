@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e4, '0' or '1'",
   "input_format": "line1: s (binary string in JSON quotes)",
   "testcases": [
-    {"input": "\"0100\"", "desc": "Edge: example1"},
-    {"input": "\"10\"", "desc": "Edge: example2 already"},
-    {"input": "\"1111\"", "desc": "Edge: example3 all 1"},
-    {"input": "\"0\"", "desc": "Edge: n=1 zero"},
-    {"input": "\"1\"", "desc": "Edge: n=1 one"},
-    {"input": "\"00\"", "desc": "Edge: n=2 both zeros"},
-    {"input": "\"11\"", "desc": "Edge: n=2 both ones"},
-    {"input": "\"01\"", "desc": "Edge: n=2 already alt"},
-    {"input": "\"10\"", "desc": "Edge: n=2 already alt reverse"},
-    {"input": "\"0000\"", "desc": "Edge: all zeros 4"},
-    {"input": "\"1111\"", "desc": "Edge: all ones 4"},
-    {"input": "\"010101\"", "desc": "Standard: alt"},
-    {"input": "\"101010\"", "desc": "Standard: alt reverse"},
-    {"input": "\"00110011\"", "desc": "Standard: blocks"},
-    {"input": "\"0011\"", "desc": "Standard: half each"},
-    {"input": "\"1100\"", "desc": "Standard: half each reverse"},
-    {"input": "\"010010010010\"", "desc": "Standard: period 3 pattern"},
-    {"input": "\"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\"", "desc": "Stress: 100 zeros"},
-    {"input": "\"0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\"", "desc": "Stress: 100 alt"},
-    {"input": "\"0011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011\"", "desc": "Stress: 100 blocks"}
+    {
+      "input": "\"0100\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"10\"",
+      "desc": "Edge: example2 already"
+    },
+    {
+      "input": "\"yuu\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"vqyn\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"1\"",
+      "desc": "Edge: n=1 one"
+    },
+    {
+      "input": "\"00\"",
+      "desc": "Edge: n=2 both zeros"
+    },
+    {
+      "input": "\"11\"",
+      "desc": "Edge: n=2 both ones"
+    },
+    {
+      "input": "\"01\"",
+      "desc": "Edge: n=2 already alt"
+    },
+    {
+      "input": "\"10\"",
+      "desc": "Edge: n=2 already alt reverse"
+    },
+    {
+      "input": "\"0000\"",
+      "desc": "Edge: all zeros 4"
+    },
+    {
+      "input": "\"1111\"",
+      "desc": "Edge: all ones 4"
+    },
+    {
+      "input": "\"010101\"",
+      "desc": "Standard: alt"
+    },
+    {
+      "input": "\"101010\"",
+      "desc": "Standard: alt reverse"
+    },
+    {
+      "input": "\"00110011\"",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "\"0011\"",
+      "desc": "Standard: half each"
+    },
+    {
+      "input": "\"1100\"",
+      "desc": "Standard: half each reverse"
+    },
+    {
+      "input": "\"010010010010\"",
+      "desc": "Standard: period 3 pattern"
+    },
+    {
+      "input": "\"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\"",
+      "desc": "Stress: 100 zeros"
+    },
+    {
+      "input": "\"0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\"",
+      "desc": "Stress: 100 alt"
+    },
+    {
+      "input": "\"qacjqvpl\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
