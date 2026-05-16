@@ -1,0 +1,28 @@
+{
+  "pid": 431,
+  "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
+  "inferred_constraints": "1 <= k <= s.length <= 2000, lowercase letters",
+  "input_format": "line1: s (raw string); line2: k (int)",
+  "testcases": [
+    {"input": "abaccdbbd\n3", "desc": "Edge: example1"},
+    {"input": "adbcda\n2", "desc": "Edge: example2"},
+    {"input": "a\n1", "desc": "Edge: n=1 k=1"},
+    {"input": "ab\n1", "desc": "Edge: n=2 k=1"},
+    {"input": "ab\n2", "desc": "Edge: n=2 k=2 not palindrome"},
+    {"input": "aa\n2", "desc": "Edge: n=2 k=2 palindrome"},
+    {"input": "aaa\n2", "desc": "Edge: 3 a k=2"},
+    {"input": "aaaa\n2", "desc": "Edge: 4 a k=2"},
+    {"input": "aaaaaaaa\n2", "desc": "Edge: 8 a k=2"},
+    {"input": "abcdef\n2", "desc": "Edge: distinct chars no palindromes"},
+    {"input": "racecar\n3", "desc": "Standard: palindrome k=3"},
+    {"input": "abcba\n3", "desc": "Standard: palindrome k=3"},
+    {"input": "abacaba\n3", "desc": "Standard: multi palindromes"},
+    {"input": "abbaabba\n4", "desc": "Standard: nested palindromes"},
+    {"input": "abbaabba\n2", "desc": "Standard: k=2 more palindromes"},
+    {"input": "abcdedcba\n3", "desc": "Standard: 9-char palindrome"},
+    {"input": "aaabbbcccdddeeefffggghhhiiijjj\n3", "desc": "Standard: 30 chars blocks"},
+    {"input": "abcabcabcabcabc\n3", "desc": "Standard: 15 abc pattern"},
+    {"input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\n5", "desc": "Stress: 100 z k=5"},
+    {"input": "abacabadabacabaabacabadabacaba\n3", "desc": "Standard: complex pattern"}
+  ]
+}

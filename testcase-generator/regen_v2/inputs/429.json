@@ -1,0 +1,28 @@
+{
+  "pid": 429,
+  "slug": "groups-of-strings",
+  "inferred_constraints": "1 <= words.length <= 2e4, 1 <= words[i].length <= 26, lowercase letters distinct in each string",
+  "input_format": "line1: words (JSON string array)",
+  "testcases": [
+    {"input": "[\"a\",\"b\",\"ab\",\"cde\"]", "desc": "Edge: example1"},
+    {"input": "[\"a\",\"ab\",\"abc\"]", "desc": "Edge: example2 chain"},
+    {"input": "[\"a\"]", "desc": "Edge: n=1"},
+    {"input": "[\"z\"]", "desc": "Edge: n=1 single"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: n=2 different single chars (connected by replace)"},
+    {"input": "[\"a\",\"z\"]", "desc": "Edge: distant single chars (connected by replace)"},
+    {"input": "[\"abc\",\"xyz\"]", "desc": "Edge: disjoint groups n=2"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Edge: all connected via replace"},
+    {"input": "[\"abc\",\"abd\",\"abe\"]", "desc": "Standard: all connected"},
+    {"input": "[\"abcde\",\"vwxyz\"]", "desc": "Edge: disjoint"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard: chain by add"},
+    {"input": "[\"abcde\",\"abcd\",\"abc\",\"ab\",\"a\"]", "desc": "Standard: chain by remove"},
+    {"input": "[\"abcdefghij\",\"klmnopqrst\"]", "desc": "Edge: long disjoint"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"xyz\",\"yz\",\"y\"]", "desc": "Standard: two chains"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyz\"]", "desc": "Edge: single 26-char word"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]", "desc": "Standard: 10 single chars"},
+    {"input": "[\"ab\",\"bc\",\"cd\",\"de\",\"ef\"]", "desc": "Standard: 5 chain by replace"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\"]", "desc": "Edge: 4 disjoint triplets"},
+    {"input": "[\"a\",\"b\",\"c\",\"abc\",\"ab\",\"bc\"]", "desc": "Standard: dense connections"},
+    {"input": "[\"qwerty\",\"wert\",\"erty\",\"asdf\",\"sdf\",\"zxc\"]", "desc": "Standard: multiple groups"}
+  ]
+}

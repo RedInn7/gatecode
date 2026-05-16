@@ -1,0 +1,28 @@
+{
+  "pid": 430,
+  "slug": "minimum-number-of-operations-to-make-elements-in-array-distinct",
+  "inferred_constraints": "1 <= nums.length <= 100, 1 <= nums[i] <= 100",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1,2,3,4,2,3,3,5,7]", "desc": "Edge: example1"},
+    {"input": "[4,5,6,4,4]", "desc": "Edge: example2"},
+    {"input": "[6,7,8,9]", "desc": "Edge: example3 distinct"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]", "desc": "Edge: 2 distinct"},
+    {"input": "[1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1,1,1,1,1,1]", "desc": "Edge: 6 same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Edge: 10 distinct"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: pairs"},
+    {"input": "[100,100,100,100,100]", "desc": "Edge: all max"},
+    {"input": "[1,2,1,2,1,2]", "desc": "Standard: alternating"},
+    {"input": "[1,2,3,1,2,3,1,2,3]", "desc": "Standard: 3-period"},
+    {"input": "[5,5,5,4,4,4,3,3,3]", "desc": "Standard: 3 groups"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,2,3,4]", "desc": "Edge: many duplicates then distinct"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1]", "desc": "Edge: 10 distinct + 1 dup"},
+    {"input": "[1,1,1,1,1,1,1,1,1,2]", "desc": "Standard: 9 same + 1 different"},
+    {"input": "[1,2,3,4,5,5,4,3,2,1]", "desc": "Standard: palindrome"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 distinct"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7]", "desc": "Stress: 21 elements pairs"}
+  ]
+}

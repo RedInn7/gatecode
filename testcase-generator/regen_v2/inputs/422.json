@@ -1,0 +1,28 @@
+{
+  "pid": 422,
+  "slug": "partition-list",
+  "inferred_constraints": "0 <= n <= 200, -100 <= Node.val <= 100, -200 <= x <= 200",
+  "input_format": "line1: head (JSON int array); line2: x (int)",
+  "testcases": [
+    {"input": "[1,4,3,2,5,2]\n3", "desc": "Edge: example1"},
+    {"input": "[2,1]\n2", "desc": "Edge: example2"},
+    {"input": "[]\n0", "desc": "Edge: empty list"},
+    {"input": "[1]\n0", "desc": "Edge: single node, > x"},
+    {"input": "[1]\n2", "desc": "Edge: single node, < x"},
+    {"input": "[1]\n1", "desc": "Edge: single node = x"},
+    {"input": "[5,4,3,2,1]\n3", "desc": "Edge: descending"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Edge: ascending"},
+    {"input": "[1,2,3,4,5]\n10", "desc": "Edge: all < x"},
+    {"input": "[1,2,3,4,5]\n0", "desc": "Edge: all >= x"},
+    {"input": "[1,1,1,1,1]\n1", "desc": "Edge: all = x"},
+    {"input": "[3,3,3,3,3]\n3", "desc": "Edge: all = x"},
+    {"input": "[-100,100,-100,100]\n0", "desc": "Edge: alternating extremes"},
+    {"input": "[100,99,98,97,96]\n100", "desc": "Edge: all < x"},
+    {"input": "[-100,-99,-98]\n-100", "desc": "Edge: negatives all >= x"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: split middle"},
+    {"input": "[5,4,3,2,1,5,4,3,2,1]\n3", "desc": "Standard: repeating"},
+    {"input": "[1,2,1,2,1,2]\n2", "desc": "Standard: alternating"},
+    {"input": "[100,-100,50,-50,75,-75]\n0", "desc": "Standard: positive/negative mix"},
+    {"input": "[-200,-100,0,100,200]\n-150", "desc": "Edge: full range x near min"}
+  ]
+}
