@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 5000, 1 <= node.val <= 1000",
   "input_format": "line1: head (JSON array, linked-list values)",
   "testcases": [
-    {"input": "[18,6,10,3]", "desc": "Edge: example1"},
-    {"input": "[7]", "desc": "Edge: example2 single"},
-    {"input": "[1]", "desc": "Edge: minimal"},
-    {"input": "[1000]", "desc": "Edge: max single"},
-    {"input": "[1,1]", "desc": "Edge: 2 ones"},
-    {"input": "[1000,1000]", "desc": "Edge: 2 max"},
-    {"input": "[2,4]", "desc": "Edge: gcd=2"},
-    {"input": "[3,5]", "desc": "Edge: coprime"},
-    {"input": "[12,18,24]", "desc": "Standard: gcd 6 each"},
-    {"input": "[100,75,50,25]", "desc": "Standard: chain gcd 25"},
-    {"input": "[7,11,13,17,19,23]", "desc": "Standard: all primes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10"},
-    {"input": "[2,4,6,8,10,12,14,16,18,20]", "desc": "Standard: evens"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all ones"},
-    {"input": "[6,12,18,24,30,36,42,48]", "desc": "Standard: multiples of 6"},
-    {"input": "[100,200,300,400,500,600,700,800,900,1000]", "desc": "Standard: hundreds"},
-    {"input": "[1000,500,250,125,75,25,50,10,5,1]", "desc": "Standard: divisor chain"},
-    {"input": "[997,991,983,977,971,967,953,947,941,937]", "desc": "Stress: 10 large primes"},
-    {"input": "[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113]", "desc": "Stress: 30 primes"},
-    {"input": "[840,420,210,105,840,420,210,105,840,420,210,105,840,420,210,105,840,420,210,105]", "desc": "Killer: divisor pattern"}
+    {
+      "input": "[18,6,10,3]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[7]",
+      "desc": "Edge: example2 single"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: minimal"
+    },
+    {
+      "input": "[1000]",
+      "desc": "Edge: max single"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: 2 ones"
+    },
+    {
+      "input": "[1000,1000]",
+      "desc": "Edge: 2 max"
+    },
+    {
+      "input": "[2,4]",
+      "desc": "Edge: gcd=2"
+    },
+    {
+      "input": "[3,5]",
+      "desc": "Edge: coprime"
+    },
+    {
+      "input": "[12,18,24]",
+      "desc": "Standard: gcd 6 each"
+    },
+    {
+      "input": "[100,75,50,25]",
+      "desc": "Standard: chain gcd 25"
+    },
+    {
+      "input": "[7,11,13,17,19,23]",
+      "desc": "Standard: all primes"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: 1-10"
+    },
+    {
+      "input": "[2,4,6,8,10,12,14,16,18,20]",
+      "desc": "Standard: evens"
+    },
+    {
+      "input": "[-723,688,101,-856,335,-848,241,-148,-61,859,165,-723,104,-489,906,-693,-844,145,-616,-588,-596,938,87,22,-529,-111,-101,214,-998,401,147,182,-888,-863,-749,-196,-345,-949,424,-533,-65,-790,714,-445,37,-912,-749,284,326,965,-767,675,-846,583,-475,-325,-544,435,-271,-320,-9,749,-625,-675,-33,-378,-581,-307,-121,266,-897,971,-443,152,-76,450,837,875,-524]",
+      "desc": "Regenerated: diverse at position 13"
+    },
+    {
+      "input": "[6,12,18,24,30,36,42,48]",
+      "desc": "Standard: multiples of 6"
+    },
+    {
+      "input": "[100,200,300,400,500,600,700,800,900,1000]",
+      "desc": "Standard: hundreds"
+    },
+    {
+      "input": "[1000,500,250,125,75,25,50,10,5,1]",
+      "desc": "Standard: divisor chain"
+    },
+    {
+      "input": "[997,991,983,977,971,967,953,947,941,937]",
+      "desc": "Stress: 10 large primes"
+    },
+    {
+      "input": "[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113]",
+      "desc": "Stress: 30 primes"
+    },
+    {
+      "input": "[840,420,210,105,840,420,210,105,840,420,210,105,840,420,210,105,840,420,210,105]",
+      "desc": "Killer: divisor pattern"
+    }
   ]
 }

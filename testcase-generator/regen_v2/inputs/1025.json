@@ -1,0 +1,88 @@
+{
+  "pid": 1025,
+  "slug": "check-if-n-and-its-double-exist",
+  "inferred_constraints": "2 <= n <= 500, -1000 <= arr[i] <= 1000",
+  "input_format": "line1: arr (JSON array)",
+  "testcases": [
+    {
+      "input": "[-1000]",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "[3,1,7,11]",
+      "desc": "Edge: example2 -> false"
+    },
+    {
+      "input": "[0,0]",
+      "desc": "Edge: two zeros 0 == 2*0 -> true"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: two ones -> false"
+    },
+    {
+      "input": "[-1000,1000]",
+      "desc": "Edge: extreme"
+    },
+    {
+      "input": "[0,1]",
+      "desc": "Edge: 0 1 -> false"
+    },
+    {
+      "input": "[2,4]",
+      "desc": "Edge: 4 = 2*2"
+    },
+    {
+      "input": "[-2,4]",
+      "desc": "Edge: 4 != 2*-2 false"
+    },
+    {
+      "input": "[-2,-4]",
+      "desc": "Edge: -4 = 2*-2 true"
+    },
+    {
+      "input": "[1,2,4,8]",
+      "desc": "Standard: chain"
+    },
+    {
+      "input": "[1,3,5,7,9]",
+      "desc": "Standard: odds"
+    },
+    {
+      "input": "[5,10,15,20]",
+      "desc": "Standard: 10=2*5"
+    },
+    {
+      "input": "[1000,500,250,125]",
+      "desc": "Standard: halving"
+    },
+    {
+      "input": "[100,-200,-400,400]",
+      "desc": "Standard: -400=2*-200"
+    },
+    {
+      "input": "[7,1,14,11]",
+      "desc": "Standard: 14=2*7"
+    },
+    {
+      "input": "[0,2,-1,3]",
+      "desc": "Standard: no zero pair"
+    },
+    {
+      "input": "[3,1,4,1,5,9,2,6,5,3,5]",
+      "desc": "Standard: random no match"
+    },
+    {
+      "input": "[2,4,8,16,32,64,128,256,512,1000]",
+      "desc": "Standard: powers"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
+      "desc": "Standard: 1-20 has 4=2*2 etc"
+    },
+    {
+      "input": "[-1000,-999,-998,-997,-996,-995,-994,-993,-992,-991,-500,-499,-498,-497,-496,-495,-494,-493,-492,-491]",
+      "desc": "Killer: negatives -500=2*-250 wait no"
+    }
+  ]
+}
