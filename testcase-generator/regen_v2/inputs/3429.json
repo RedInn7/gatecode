@@ -1,0 +1,76 @@
+{
+  "pid": 3429,
+  "slug": "find-the-distinct-difference-array",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "24401",
+      "desc": "Standard: n=24401"
+    },
+    {
+      "input": "982001",
+      "desc": "Standard: n=982001"
+    },
+    {
+      "input": "166351",
+      "desc": "Standard: n=166351"
+    },
+    {
+      "input": "239074",
+      "desc": "Standard: n=239074"
+    },
+    {
+      "input": "716342",
+      "desc": "Standard: n=716342"
+    },
+    {
+      "input": "227781",
+      "desc": "Standard: n=227781"
+    },
+    {
+      "input": "63562",
+      "desc": "Standard: n=63562"
+    },
+    {
+      "input": "750533",
+      "desc": "Standard: n=750533"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

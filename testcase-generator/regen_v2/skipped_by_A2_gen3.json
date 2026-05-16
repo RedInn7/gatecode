@@ -69,6 +69,16 @@
       "pid": 3450,
       "slug": "check-if-two-chessboard-squares-have-the-same-color",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3421,
+      "slug": "find-the-maximum-factor-score-of-array",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3415,
+      "slug": "sudoku-solver",
+      "reason": "ACM mode problem"
     }
   ]
 }
