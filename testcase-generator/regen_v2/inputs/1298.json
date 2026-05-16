@@ -1,0 +1,88 @@
+{
+  "pid": 1298,
+  "slug": "queries-on-number-of-points-inside-a-circle",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: n=10"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: n=100"
+    },
+    {
+      "input": "225447",
+      "desc": "Standard: n=225447"
+    },
+    {
+      "input": "391446",
+      "desc": "Standard: n=391446"
+    },
+    {
+      "input": "365886",
+      "desc": "Standard: n=365886"
+    },
+    {
+      "input": "589698",
+      "desc": "Standard: n=589698"
+    },
+    {
+      "input": "187721",
+      "desc": "Standard: n=187721"
+    },
+    {
+      "input": "324304",
+      "desc": "Standard: n=324304"
+    },
+    {
+      "input": "66390",
+      "desc": "Standard: n=66390"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: n=10^5"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: n=10^6"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    }
+  ]
+}

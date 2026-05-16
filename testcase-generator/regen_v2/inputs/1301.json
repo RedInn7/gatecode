@@ -1,0 +1,88 @@
+{
+  "pid": 1301,
+  "slug": "find-leaves-of-binary-tree",
+  "inferred_constraints": "0 <= n <= 100, -100 <= val <= 100",
+  "input_format": "line1: tree (level-order, null for missing)",
+  "testcases": [
+    {
+      "input": "[]",
+      "desc": "Edge: empty tree"
+    },
+    {
+      "input": "[-68]",
+      "desc": "Edge: root only"
+    },
+    {
+      "input": "[-26,-53,null]",
+      "desc": "Edge: root left-child only"
+    },
+    {
+      "input": "[0,null,43]",
+      "desc": "Edge: root right-child only"
+    },
+    {
+      "input": "[-33,-74,76]",
+      "desc": "Edge: full depth-1 tree"
+    },
+    {
+      "input": "[72,null,-56,null,-94,null,-49,null,88,null,78]",
+      "desc": "Edge: left-skewed 6 nodes"
+    },
+    {
+      "input": "[41,30,85,71,47,82]",
+      "desc": "Edge: right-skewed 6 nodes"
+    },
+    {
+      "input": "[71,77,-42,25]",
+      "desc": "Standard: complete n=4"
+    },
+    {
+      "input": "[27,-26,94,-51,20,-29]",
+      "desc": "Standard: complete n=6"
+    },
+    {
+      "input": "[-69,55,-25,55,29,-23,-37,89,-52,-66,57]",
+      "desc": "Standard: complete n=11"
+    },
+    {
+      "input": "[-56,65,-48,95,84,-71,-78,61,-38,74,67]",
+      "desc": "Standard: complete n=11"
+    },
+    {
+      "input": "[-6,49,-64,-63,-35,-97,-31,-36]",
+      "desc": "Standard: complete n=8"
+    },
+    {
+      "input": "[97,-38,-27,-52,-4,-20,-63,33,41,27,-30]",
+      "desc": "Standard: complete n=11"
+    },
+    {
+      "input": "[84,27,9,-9,54,null,null,93,-94,null,-32]",
+      "desc": "Standard: sparse 15 nodes"
+    },
+    {
+      "input": "[-41,-92,56,-53,-99,64,-87,92,-67,-47,-10,-4,-80,-6,-78,4,30,-20,53,-57,-13,99,-12,60,27,94,-18,-73,-98,-32,79,20,-63,52,35,96,1,-41,13,79,-71,96,-30,19,-10,-39,30,78,-21,49,-77,72,-12,-73,-85,-72,5,73,-94,65,99,81,-43,-10,38,60,-45,-90,14,-45,65,-18,26,-92,94,-32,-8,-37,-71,-33,3,-68,-98,37,70,-26,46,-72,-19,-45,16,-29,25,-27,69,40,82,-64,4,26]",
+      "desc": "Stress: right-skew 100"
+    },
+    {
+      "input": "[68,40,51,91,-69,-56,7,86,71,-73,-7,-3,100,78,-96,47,26,-23,-96,38,91,-58,-19,-20,-100,14,-62,-46,-86,-13,82,-92,26,-56,14,92,-41,16,-52,-85,-95,-81,-39,-74,13,-16,-85,-73,-2,-12,-27,74,77,-25,-90,91,-29,-22,29,-13,-24,81,-27,84,-25,-62,-28,-7,71,43,-29,-33,-91,-98,-50,16,61,-80,85,72,89,-76,99,-70,70,-26,-21,66,33,66,-2,-77,-72,-2,65,-38,-96,18,87,44]",
+      "desc": "Stress: complete 127-node"
+    },
+    {
+      "input": "[28,null,76,null,52,null,56,null,-22,null,-81,null,16,null,7,null,18,null,22,null,82,null,-98,null,-49,null,79,null,93,null,-17,null,-48,null,-2,null,52,null,47,null,-29,null,37,null,-78,null,53,null,-44,null,15,null,-86,null,-88,null,-55,null,89,null,-88,null,69,null,48,null,4,null,94,null,71,null,-55,null,-55,null,-14,null,33,null,-40,null,40,null,-44,null,-85,null,-87,null,-26,null,-47,null,-60,null,61,null,3,null,-70,null,98,null,39,null,-7,null,40,null,-40,null,-4,null,32,null,-93,null,87,null,16,null,63,null,-24,null,77,null,-56,null,85,null,-62,null,-78,null,30,null,12,null,81,null,-69,null,-16,null,11,null,62,null,64,null,20,null,-42,null,100,null,-15,null,54,null,56,null,-81,null,-68,null,4,null,90,null,-24,null,-18,null,22,null,-23,null,-12,null,-38,null,-89,null,-50,null,-82,null,-46,null,-91,null,-80,null,11,null,37]",
+      "desc": "Killer: max left-skew"
+    },
+    {
+      "input": "[-76,46,-21,61,81,49,78,-65,80,38,13,19,-57,-93,9,20,-34,42,-69,37,2,73,40,100,-60,-35,0,55,17,99,45,-34,-84,62,-20,89,-78,-34,-87,99,83,-81,89,91,-8,33,25,53,-80,32,65,-18,-39,-3,82,79,-49,41,-43,-86,51,0,32,62,92,-87,8,55,-55,-33,58,-78,48,-7,-97,-6,-73,89,-22,95,-34,44,-9,-67,72,76,-5,-5,7,-41,17,44,73,58,-66,-57,-16,40,29,89]",
+      "desc": "Killer: max complete"
+    },
+    {
+      "input": "[]",
+      "desc": "Edge: empty tree"
+    },
+    {
+      "input": "[-76]",
+      "desc": "Edge: root only"
+    }
+  ]
+}
