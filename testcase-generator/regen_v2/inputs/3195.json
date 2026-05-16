@@ -1,0 +1,76 @@
+{
+  "pid": 3195,
+  "slug": "construct-the-minimum-bitwise-array-ii",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "969098",
+      "desc": "Standard: n=969098"
+    },
+    {
+      "input": "750404",
+      "desc": "Standard: n=750404"
+    },
+    {
+      "input": "725848",
+      "desc": "Standard: n=725848"
+    },
+    {
+      "input": "213070",
+      "desc": "Standard: n=213070"
+    },
+    {
+      "input": "438390",
+      "desc": "Standard: n=438390"
+    },
+    {
+      "input": "853854",
+      "desc": "Standard: n=853854"
+    },
+    {
+      "input": "120863",
+      "desc": "Standard: n=120863"
+    },
+    {
+      "input": "482677",
+      "desc": "Standard: n=482677"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

@@ -144,6 +144,11 @@
       "pid": 3199,
       "slug": "find-positive-integer-solution-for-a-given-equation",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3188,
+      "slug": "linked-list-cycle-ii",
+      "reason": "ACM mode problem"
     }
   ]
 }
