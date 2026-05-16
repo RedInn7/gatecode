@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"zvvlzazcz\"\n3",
+      "input": "\"wltwzh\"\n3",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 10 groups of k=3"
     },
     {
-      "input": "\"ffswwqebsgadzuyxix\"\n3",
+      "input": "\"twyjezweetutexkofb\"\n3",
       "desc": "Stress: large n near max boundary"
     }
   ]
