@@ -836,3 +836,8 @@ Audited at: 2026-05-16T15:37:49.416870
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:37:49.443185
+
+## PID 326 (naming-a-company)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=50000.0)
+Audited at: 2026-05-16T15:37:54.002471
