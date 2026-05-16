@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"vukvyzlszp\"",
+      "input": "\"jlnytaco\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: deep alt"
     },
     {
-      "input": "\"lxeuclxdjqxomlllyirw\"",
+      "input": "\"nbpvucsguxecvlgdnuqb\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

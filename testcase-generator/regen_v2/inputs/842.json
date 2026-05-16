@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"tmyvorhg\"\n3",
+      "input": "\"qjmz\"\n1",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: 8 pairs to 4"
     },
     {
-      "input": "\"xvlyywbzamxqcgmoge\"\n4",
+      "input": "\"cgeajnjuqegdebyh\"\n3",
       "desc": "Stress: large n near max boundary"
     }
   ]
