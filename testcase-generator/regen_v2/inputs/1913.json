@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n == nums.length == forbidden.length <= 10^5",
   "input_format": "line1: nums (JSON array); line2: forbidden (JSON array)",
   "testcases": [
-    {"input": "[1,2,3]\n[3,2,1]", "desc": "Standard: example 1"},
-    {"input": "[4,6,6,5]\n[4,6,5,5]", "desc": "Standard: example 2"},
-    {"input": "[7,7]\n[8,7]", "desc": "Edge: impossible, return -1"},
-    {"input": "[1,2]\n[2,1]", "desc": "Edge: zero swaps needed"},
-    {"input": "[1]\n[1]", "desc": "Edge: n=1 impossible"},
-    {"input": "[1]\n[2]", "desc": "Edge: n=1 ok"},
-    {"input": "[5,5]\n[5,5]", "desc": "Edge: n=2 all match impossible"},
-    {"input": "[1,1,1,1]\n[1,1,1,1]", "desc": "Edge: all equal impossible"},
-    {"input": "[1,2,1,2]\n[2,1,2,1]", "desc": "Standard: already ok"},
-    {"input": "[1,2,3,4,5]\n[1,2,3,4,5]", "desc": "Standard: all forbidden equal value"},
-    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Standard: middle forbidden"},
-    {"input": "[1,1,2,2]\n[1,2,1,2]", "desc": "Standard: partial conflict"},
-    {"input": "[10,20,30,40,50]\n[10,20,30,40,50]", "desc": "Standard: all forbidden distinct"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: forbidden all 1s, only nums[0]=1 conflicts"},
-    {"input": "[1,1,1,2,2,2]\n[2,2,2,1,1,1]", "desc": "Standard: swap halves"},
-    {"input": "[3,3,3,1,1]\n[3,3,3,3,3]", "desc": "Standard: most forbidden, two nums!=3"},
-    {"input": "[1,2,3,4,5,6,7,8]\n[8,7,6,5,4,3,2,1]", "desc": "Standard: reverse forbidden no conflict"},
-    {"input": "[5,5,5,5,5,5]\n[5,5,5,5,5,1]", "desc": "Edge: only one non-conflict in forbidden, impossible if no different val"},
-    {"input": "[2,3,4,5,6,7]\n[2,3,4,5,6,7]", "desc": "Standard: all 6 forbidden"},
-    {"input": "[100000,99999,99998]\n[1,2,3]", "desc": "Edge: large values no conflict"}
+    {
+      "input": "[1,2,3]\n[3,2,1]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[4,6,6,5]\n[4,6,5,5]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[7,7]\n[8,7]",
+      "desc": "Edge: impossible, return -1"
+    },
+    {
+      "input": "[1,2]\n[2,1]",
+      "desc": "Edge: zero swaps needed"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: n=1 impossible"
+    },
+    {
+      "input": "[1]\n[2]",
+      "desc": "Edge: n=1 ok"
+    },
+    {
+      "input": "[5,5]\n[5,5]",
+      "desc": "Edge: n=2 all match impossible"
+    },
+    {
+      "input": "[1,1,1,1]\n[1,1,1,1]",
+      "desc": "Edge: all equal impossible"
+    },
+    {
+      "input": "[1,2,1,2]\n[2,1,2,1]",
+      "desc": "Standard: already ok"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[1,2,3,4,5]",
+      "desc": "Standard: all forbidden equal value"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[5,4,3,2,1]",
+      "desc": "Standard: middle forbidden"
+    },
+    {
+      "input": "[1,1,2,2]\n[1,2,1,2]",
+      "desc": "Standard: partial conflict"
+    },
+    {
+      "input": "[10,20,30,40,50]\n[10,20,30,40,50]",
+      "desc": "Standard: all forbidden distinct"
+    },
+    {
+      "input": "[836,-947,634,-98,717,-642,816,900,-88,-265,417,-139,-527,-486,322,444,164,805]\n[482,-209,-929,70,165,-578,526,912,-813,-75,-407,-104,-122,363,265,156,871,-236]",
+      "desc": "Regenerated: diverse at position 13"
+    },
+    {
+      "input": "[1,1,1,2,2,2]\n[2,2,2,1,1,1]",
+      "desc": "Standard: swap halves"
+    },
+    {
+      "input": "[3,3,3,1,1]\n[3,3,3,3,3]",
+      "desc": "Standard: most forbidden, two nums!=3"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8]\n[8,7,6,5,4,3,2,1]",
+      "desc": "Standard: reverse forbidden no conflict"
+    },
+    {
+      "input": "[5,5,5,5,5,5]\n[5,5,5,5,5,1]",
+      "desc": "Edge: only one non-conflict in forbidden, impossible if no different val"
+    },
+    {
+      "input": "[2,3,4,5,6,7]\n[2,3,4,5,6,7]",
+      "desc": "Standard: all 6 forbidden"
+    },
+    {
+      "input": "[100000,99999,99998]\n[1,2,3]",
+      "desc": "Edge: large values no conflict"
+    }
   ]
 }

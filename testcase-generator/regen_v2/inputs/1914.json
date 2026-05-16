@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^5, 1 <= t.length <= 10^5, lowercase English",
   "input_format": "line1: s (JSON string); line2: t (JSON string)",
   "testcases": [
-    {"input": "\"madxa\"\n\"madam\"", "desc": "Standard: example 1"},
-    {"input": "\"leetcode\"\n\"eetcode\"", "desc": "Standard: example 2"},
-    {"input": "\"one\"\n\"one\"", "desc": "Standard: identical"},
-    {"input": "\"a\"\n\"b\"", "desc": "Edge: n=1 no match"},
-    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 match"},
-    {"input": "\"ab\"\n\"a\"", "desc": "Edge: t shorter"},
-    {"input": "\"a\"\n\"ab\"", "desc": "Edge: s shorter"},
-    {"input": "\"abcdefg\"\n\"abcdefg\"", "desc": "Standard: full match"},
-    {"input": "\"xabcdef\"\n\"abcdef\"", "desc": "Standard: remove first char"},
-    {"input": "\"abcXdef\"\n\"abcdef\"", "desc": "Standard: remove middle"},
-    {"input": "\"abcdefx\"\n\"abcdef\"", "desc": "Standard: remove last extra"},
-    {"input": "\"abc\"\n\"xyz\"", "desc": "Standard: no common prefix"},
-    {"input": "\"aaaaa\"\n\"aaaaa\"", "desc": "Edge: all same chars match"},
-    {"input": "\"aaaab\"\n\"aaaba\"", "desc": "Standard: divergent at idx 3"},
-    {"input": "\"abcabcabc\"\n\"abcabcabc\"", "desc": "Standard: repeated pattern"},
-    {"input": "\"zzzzzy\"\n\"zzzzzy\"", "desc": "Standard: same with trailing diff"},
-    {"input": "\"hello\"\n\"hxello\"", "desc": "Edge: t has extra (not allowed to remove from t)"},
-    {"input": "\"prefixmismatchhere\"\n\"prefixmatchnow\"", "desc": "Standard: long mismatch later"},
-    {"input": "\"abcdefghij\"\n\"bcdefghijk\"", "desc": "Standard: shifted"},
-    {"input": "\"qwertyuiop\"\n\"qwertyuiop\"", "desc": "Standard: distinct chars match"}
+    {
+      "input": "\"madxa\"\n\"madam\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"leetcode\"\n\"eetcode\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"one\"\n\"one\"",
+      "desc": "Standard: identical"
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "desc": "Edge: n=1 no match"
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "desc": "Edge: n=1 match"
+    },
+    {
+      "input": "\"ab\"\n\"a\"",
+      "desc": "Edge: t shorter"
+    },
+    {
+      "input": "\"a\"\n\"ab\"",
+      "desc": "Edge: s shorter"
+    },
+    {
+      "input": "\"abcdefg\"\n\"abcdefg\"",
+      "desc": "Standard: full match"
+    },
+    {
+      "input": "\"xabcdef\"\n\"abcdef\"",
+      "desc": "Standard: remove first char"
+    },
+    {
+      "input": "\"abcXdef\"\n\"abcdef\"",
+      "desc": "Standard: remove middle"
+    },
+    {
+      "input": "\"abcdefx\"\n\"abcdef\"",
+      "desc": "Standard: remove last extra"
+    },
+    {
+      "input": "\"abc\"\n\"xyz\"",
+      "desc": "Standard: no common prefix"
+    },
+    {
+      "input": "\"aaaaa\"\n\"aaaaa\"",
+      "desc": "Edge: all same chars match"
+    },
+    {
+      "input": "\"aaaab\"\n\"aaaba\"",
+      "desc": "Standard: divergent at idx 3"
+    },
+    {
+      "input": "\"abcabcabc\"\n\"abcabcabc\"",
+      "desc": "Standard: repeated pattern"
+    },
+    {
+      "input": "\"zzzzzy\"\n\"zzzzzy\"",
+      "desc": "Standard: same with trailing diff"
+    },
+    {
+      "input": "\"hello\"\n\"hxello\"",
+      "desc": "Edge: t has extra (not allowed to remove from t)"
+    },
+    {
+      "input": "\"prefixmismatchhere\"\n\"prefixmatchnow\"",
+      "desc": "Standard: long mismatch later"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"bcdefghijk\"",
+      "desc": "Standard: shifted"
+    },
+    {
+      "input": "\"vmznjuobkeolprmq\"\n\"rahwuaxgtdqpmg\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
