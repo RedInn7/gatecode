@@ -66,3 +66,17 @@ PIDs roughly [2068, 3845] excluding any already in skipped list. Next agent shou
 - Backend on :8082 was kept running during session
 - Used helper `work_A2/fetch_batch.py` to pull problems without regenerating done PIDs
 
+## Session 3 (A2-r3) Progress — 2026-05-16
+
+### Completed in this round (58 problems from top of range)
+PIDs 3845, 3843, 3842, 3841, 3840, 3839, 3838, 3837, 3836, 3835, 3834, 3832, 3831, 3830, 3829, 3828, 3827, 3826, 3825, 3823, 3822, 3821, 3820, 3819, 3818, 3817, 3815, 3813, 3811, 3810, 3809, 3808, 3807, 3806, 3805, 3804, 3802, 3801, 3800, 3799, 3798, 3797, 3796, 3794, 3793, 3792, 3791, 3789, 3788, 3785, 3784, 3783, 3782, 3781, 3780, 3779, 3778, 3777
+
+### Skipped (added 2 to skipped_by_A2.json)
+- 3833 insert-into-a-sorted-circular-linked-list — non-deterministic insertion point in circular list
+- 3790 copy-list-with-random-pointer — complex random-ptr serialization format [[val, random_index]] not handled
+
+### Strategy
+- Worked from highest PID down (descending) to avoid collisions with concurrent A2 round-2 agent that resumed from low end (around 2186+)
+- Helper: `work_A2/fetch_desc.py` — adds DESC ordering to original fetch_batch.py
+- Each problem manually read for content+signature, tested with edge/standard/stress/killer mix per CLAUDE.md
+
