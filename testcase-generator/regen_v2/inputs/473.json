@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1e4",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "3", "desc": "Edge: example1"},
-    {"input": "6", "desc": "Edge: example2"},
-    {"input": "1", "desc": "Edge: n=1 zero ops"},
-    {"input": "2", "desc": "Edge: n=2"},
-    {"input": "4", "desc": "Edge: n=4"},
-    {"input": "5", "desc": "Edge: n=5"},
-    {"input": "10", "desc": "Standard: n=10"},
-    {"input": "100", "desc": "Standard: n=100"},
-    {"input": "1000", "desc": "Standard: n=1000"},
-    {"input": "10000", "desc": "Edge: max n"},
-    {"input": "9999", "desc": "Edge: near max"},
-    {"input": "7", "desc": "Standard: small odd"},
-    {"input": "8", "desc": "Standard: small even"},
-    {"input": "50", "desc": "Standard: n=50"},
-    {"input": "99", "desc": "Standard: odd close to 100"},
-    {"input": "500", "desc": "Standard: n=500"},
-    {"input": "1234", "desc": "Standard: random"},
-    {"input": "9876", "desc": "Standard: random"},
-    {"input": "5000", "desc": "Standard: n=5000"},
-    {"input": "2500", "desc": "Standard: n=2500"}
+    {
+      "input": "3",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: n=5"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: n=100"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard: n=1000"
+    },
+    {
+      "input": "10000",
+      "desc": "Edge: max n"
+    },
+    {
+      "input": "9999",
+      "desc": "Edge: near max"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: small odd"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: small even"
+    },
+    {
+      "input": "50",
+      "desc": "Standard: n=50"
+    },
+    {
+      "input": "99",
+      "desc": "Standard: odd close to 100"
+    },
+    {
+      "input": "500",
+      "desc": "Standard: n=500"
+    },
+    {
+      "input": "1234",
+      "desc": "Standard: random"
+    },
+    {
+      "input": "9876",
+      "desc": "Standard: random"
+    },
+    {
+      "input": "5000",
+      "desc": "Standard: n=5000"
+    },
+    {
+      "input": "6",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

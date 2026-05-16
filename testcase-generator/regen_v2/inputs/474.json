@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= num.length <= 1000, digits only, no leading zeros",
   "input_format": "line1: num (raw string)",
   "testcases": [
-    {"input": "51230100", "desc": "Edge: example1"},
-    {"input": "123", "desc": "Edge: example2 no zeros"},
-    {"input": "1", "desc": "Edge: single digit"},
-    {"input": "9", "desc": "Edge: single non-zero"},
-    {"input": "10", "desc": "Edge: single trailing zero"},
-    {"input": "100", "desc": "Edge: two trailing zeros"},
-    {"input": "1000", "desc": "Edge: three trailing zeros"},
-    {"input": "10000", "desc": "Edge: four trailing zeros"},
-    {"input": "1234567890", "desc": "Standard: one trailing zero"},
-    {"input": "1020304050", "desc": "Standard: zeros in middle and end"},
-    {"input": "9999999999", "desc": "Edge: all 9s no zeros"},
-    {"input": "10101010", "desc": "Standard: alternating"},
-    {"input": "5000000000", "desc": "Standard: many trailing zeros"},
-    {"input": "1000000000000000000", "desc": "Standard: 1 followed by 18 zeros"},
-    {"input": "123450", "desc": "Standard: 1 trailing zero"},
-    {"input": "1234500", "desc": "Standard: 2 trailing zeros"},
-    {"input": "12345000000", "desc": "Standard: 6 trailing zeros"},
-    {"input": "11111111111", "desc": "Edge: all 1s"},
-    {"input": "1234567891234567891", "desc": "Standard: no trailing zeros"},
-    {"input": "8000000000000000000000", "desc": "Standard: many trailing zeros"}
+    {
+      "input": "51230100",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "123",
+      "desc": "Edge: example2 no zeros"
+    },
+    {
+      "input": "14062093",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "47720633",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "31313407",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: two trailing zeros"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: three trailing zeros"
+    },
+    {
+      "input": "10000",
+      "desc": "Edge: four trailing zeros"
+    },
+    {
+      "input": "1234567890",
+      "desc": "Standard: one trailing zero"
+    },
+    {
+      "input": "1020304050",
+      "desc": "Standard: zeros in middle and end"
+    },
+    {
+      "input": "9999999999",
+      "desc": "Edge: all 9s no zeros"
+    },
+    {
+      "input": "10101010",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "5000000000",
+      "desc": "Standard: many trailing zeros"
+    },
+    {
+      "input": "1000000000000000000",
+      "desc": "Standard: 1 followed by 18 zeros"
+    },
+    {
+      "input": "123450",
+      "desc": "Standard: 1 trailing zero"
+    },
+    {
+      "input": "1234500",
+      "desc": "Standard: 2 trailing zeros"
+    },
+    {
+      "input": "12345000000",
+      "desc": "Standard: 6 trailing zeros"
+    },
+    {
+      "input": "11111111111",
+      "desc": "Edge: all 1s"
+    },
+    {
+      "input": "1234567891234567891",
+      "desc": "Standard: no trailing zeros"
+    },
+    {
+      "input": "51230100",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
