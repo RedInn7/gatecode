@@ -1,0 +1,28 @@
+{
+  "pid": 2644,
+  "slug": "escape-the-ghosts",
+  "inferred_constraints": "1 <= ghosts.length <= 100, ghosts[i].length == 2, -10^4 <= ghosts[i][j], target[i] <= 10^4, target.length == 2",
+  "input_format": "line1: ghosts (JSON 2D array); line2: target (JSON array)",
+  "testcases": [
+    {"input": "[[1,0],[0,3]]\n[0,1]", "desc": "Edge: example1"},
+    {"input": "[[1,0]]\n[2,0]", "desc": "Edge: example2"},
+    {"input": "[[2,0]]\n[1,0]", "desc": "Edge: example3"},
+    {"input": "[[0,0]]\n[1,1]", "desc": "Edge: ghost at origin"},
+    {"input": "[[1,0]]\n[0,1]", "desc": "Edge: ghost adjacent"},
+    {"input": "[[100,100]]\n[1,1]", "desc": "Edge: far ghost"},
+    {"input": "[[5,5]]\n[10,10]", "desc": "Edge: ghost far away"},
+    {"input": "[[10000,10000]]\n[10000,10000]", "desc": "Edge: ghost at target"},
+    {"input": "[[0,1]]\n[0,2]", "desc": "Edge: ghost between"},
+    {"input": "[[2,0],[-2,0]]\n[5,5]", "desc": "Standard: 2 ghosts"},
+    {"input": "[[1,1],[1,-1],[-1,1],[-1,-1]]\n[3,3]", "desc": "Standard: 4 corners"},
+    {"input": "[[5,5],[-5,-5],[5,-5],[-5,5]]\n[0,10]", "desc": "Standard: 4 ghosts"},
+    {"input": "[[100,100],[200,200],[300,300]]\n[1000,1000]", "desc": "Standard: far ghosts"},
+    {"input": "[[-100,-100]]\n[100,100]", "desc": "Standard: opposite ghost"},
+    {"input": "[[0,0],[0,0]]\n[1,1]", "desc": "Standard: dup ghost"},
+    {"input": "[[10,0],[0,10],[-10,0],[0,-10]]\n[5,5]", "desc": "Standard: surrounding"},
+    {"input": "[[1,1]]\n[10000,10000]", "desc": "Standard: far target"},
+    {"input": "[[-10000,-10000]]\n[10000,10000]", "desc": "Standard: extreme bounds"},
+    {"input": "[[0,1],[1,0],[1,2],[2,1],[0,3],[3,0],[3,2],[2,3]]\n[5,5]", "desc": "Stress: many close ghosts"},
+    {"input": "[[5000,5000],[-5000,-5000],[5000,-5000],[-5000,5000],[0,5000],[5000,0],[0,-5000],[-5000,0]]\n[10000,10000]", "desc": "Killer: 8 spread ghosts"}
+  ]
+}

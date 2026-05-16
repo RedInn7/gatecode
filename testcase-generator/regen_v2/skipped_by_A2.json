@@ -269,6 +269,11 @@
       "pid": 2633,
       "slug": "most-common-course-pairs",
       "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2635,
+      "slug": "duplicate-emails",
+      "reason": "SQL/Pandas problem"
     }
   ]
 }
