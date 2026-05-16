@@ -1,0 +1,88 @@
+{
+  "pid": 671,
+  "slug": "longest-uncommon-subsequence-ii",
+  "inferred_constraints": "2 <= strs.length <= 50; 1 <= strs[i].length <= 10; strs[i] lowercase letters",
+  "input_format": "line1: strs (JSON array of strings)",
+  "testcases": [
+    {
+      "input": "[\"aba\",\"cdc\",\"eae\"]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[\"aaa\",\"aaa\",\"aa\"]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[-599,-213,-195,-144,37,372,427,502,517,774,794,932]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[956,947,881,827,797,759,660,544,459,412,298,159,72,39,15,1,-11,-25,-26,-62,-70,-175,-178,-197,-229,-231,-252,-314,-365,-432,-552,-649,-720,-784,-959,-983]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[\"abc\",\"def\"]",
+      "desc": "Edge: distinct triples"
+    },
+    {
+      "input": "[\"a\",\"ab\"]",
+      "desc": "Edge: one substring"
+    },
+    {
+      "input": "[\"abc\",\"abc\",\"abc\"]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "desc": "Standard: different words"
+    },
+    {
+      "input": "[\"abc\",\"bcd\",\"cde\"]",
+      "desc": "Standard: chain"
+    },
+    {
+      "input": "[\"abc\",\"abd\",\"abe\"]",
+      "desc": "Standard: shared prefix"
+    },
+    {
+      "input": "[\"xyz\",\"xyz\",\"abc\"]",
+      "desc": "Standard: pair same plus 1"
+    },
+    {
+      "input": "[\"a\",\"aa\",\"aaa\"]",
+      "desc": "Standard: substring chain"
+    },
+    {
+      "input": "[\"abcabc\",\"abc\",\"ab\"]",
+      "desc": "Standard: longest can be substring"
+    },
+    {
+      "input": "[\"aabb\",\"abab\",\"abba\"]",
+      "desc": "Standard: permutations"
+    },
+    {
+      "input": "[\"abcdef\",\"abcdef\",\"abcdef\"]",
+      "desc": "Standard: all identical 6"
+    },
+    {
+      "input": "[\"abc\",\"def\",\"ghi\",\"jkl\"]",
+      "desc": "Standard: 4 distinct"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]",
+      "desc": "Stress: 10 distinct singles"
+    },
+    {
+      "input": "[\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\"]",
+      "desc": "Stress: 10 identical"
+    },
+    {
+      "input": "[\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghij\",\"abcdefghik\"]",
+      "desc": "Stress: one different"
+    },
+    {
+      "input": "[852,428,-738,912,-86,842,-242,-923,966,-691,589,-211,742,-340,-327,-429,574,-497,-935,-517,290,-548,126,130,-488,132,-206,54,-870,-682,-234,269,647,413,134,562,48,-256,950,-331,21,-84,-76,-167,190,601,-265,-975,-822,630]",
+      "desc": "Stress: large n near max boundary"
+    }
+  ]
+}
