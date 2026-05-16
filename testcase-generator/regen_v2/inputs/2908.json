@@ -1,0 +1,28 @@
+{
+  "pid": 2908,
+  "slug": "maximum-rows-covered-by-columns",
+  "inferred_constraints": "m == matrix.length; n == matrix[i].length; 1 <= m,n <= 12; matrix[i][j] in {0,1}; 1 <= numSelect <= n",
+  "input_format": "line1: matrix (JSON 2D); line2: numSelect",
+  "testcases": [
+    {"input": "[[0,0,0],[1,0,1],[0,1,1],[0,0,1]]\n2", "desc": "Edge: example1-like 4x3"},
+    {"input": "[[1]]\n1", "desc": "Edge: 1x1 select 1"},
+    {"input": "[[0]]\n1", "desc": "Edge: 1x1 zero row covered"},
+    {"input": "[[1,1]]\n1", "desc": "Edge: row needs both"},
+    {"input": "[[1,1]]\n2", "desc": "Edge: select both"},
+    {"input": "[[0,0],[0,0]]\n1", "desc": "Edge: all zero"},
+    {"input": "[[1,0],[0,1]]\n1", "desc": "Standard: 2x2 distinct"},
+    {"input": "[[1,1,1],[1,1,1],[1,1,1]]\n2", "desc": "Standard: full ones"},
+    {"input": "[[1,0,0],[0,1,0],[0,0,1]]\n2", "desc": "Standard: identity 3x3"},
+    {"input": "[[1,0,1],[0,1,0],[1,0,1]]\n2", "desc": "Standard: X pattern"},
+    {"input": "[[1,1,0],[0,1,1],[1,0,1]]\n2", "desc": "Standard: 3x3 mixed"},
+    {"input": "[[1,1,1,0],[0,1,1,1],[1,0,1,1]]\n3", "desc": "Standard: 3x4"},
+    {"input": "[[0,1,1,0,1],[1,0,1,1,0],[0,1,0,1,1]]\n3", "desc": "Standard: 3x5"},
+    {"input": "[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]\n4", "desc": "Standard: identity 4x4"},
+    {"input": "[[1,1,0,0,0],[0,0,1,1,0],[0,0,0,0,1]]\n3", "desc": "Standard: distinct columns"},
+    {"input": "[[1,1,1,1,1,1,1,1]]\n3", "desc": "Standard: long row k=3 (no coverage)"},
+    {"input": "[[1,0,0,0,0,0,0,0,0,0,0,0],[0,1,0,0,0,0,0,0,0,0,0,0],[0,0,1,0,0,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0,0,0,0,0]]\n4", "desc": "Stress: 12 cols"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1,1,1]]\n12", "desc": "Stress: all ones full select"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,0]]\n6", "desc": "Stress: many cols sparse pick"},
+    {"input": "[[1,0,0,0,0,0,0,0,0,0,0,1]]\n1", "desc": "Killer: needs 2 cols can't pick"}
+  ]
+}

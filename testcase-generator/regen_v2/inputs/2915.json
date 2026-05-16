@@ -1,0 +1,28 @@
+{
+  "pid": 2915,
+  "slug": "decode-string",
+  "inferred_constraints": "1 <= s.length <= 30; well-formed; output length <= 10^5",
+  "input_format": "single line: s (JSON string)",
+  "testcases": [
+    {"input": "\"3[a]2[bc]\"", "desc": "Edge: example1"},
+    {"input": "\"3[a2[c]]\"", "desc": "Edge: example2 nested"},
+    {"input": "\"2[abc]3[cd]ef\"", "desc": "Edge: example3"},
+    {"input": "\"a\"", "desc": "Edge: single char"},
+    {"input": "\"abc\"", "desc": "Edge: no brackets"},
+    {"input": "\"1[a]\"", "desc": "Edge: k=1"},
+    {"input": "\"10[a]\"", "desc": "Edge: 2-digit k"},
+    {"input": "\"2[2[2[a]]]\"", "desc": "Standard: triple nested"},
+    {"input": "\"3[abc]\"", "desc": "Standard: simple"},
+    {"input": "\"100[abc]\"", "desc": "Standard: large k"},
+    {"input": "\"2[ab3[cd]]\"", "desc": "Standard: nested with content before"},
+    {"input": "\"xy2[ab]z\"", "desc": "Standard: surround content"},
+    {"input": "\"3[a]4[bc]5[def]\"", "desc": "Standard: 3 groups"},
+    {"input": "\"2[3[4[a]]]\"", "desc": "Standard: deeply nested"},
+    {"input": "\"abc3[de]fgh\"", "desc": "Standard: mid bracket"},
+    {"input": "\"2[a]2[b]2[c]2[d]\"", "desc": "Standard: many parts"},
+    {"input": "\"10[ab10[cd]]\"", "desc": "Stress: 10x10"},
+    {"input": "\"99[a]\"", "desc": "Stress: 99 expansion"},
+    {"input": "\"3[a2[b3[c]]]\"", "desc": "Stress: 3x2x3 nested"},
+    {"input": "\"1[1[1[1[1[1[a]]]]]]\"", "desc": "Killer: deep 1s nesting"}
+  ]
+}

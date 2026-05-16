@@ -1,0 +1,28 @@
+{
+  "pid": 2884,
+  "slug": "can-i-win",
+  "inferred_constraints": "1 <= maxChoosableInteger <= 20; 0 <= desiredTotal <= 300",
+  "input_format": "line1: maxChoosableInteger; line2: desiredTotal",
+  "testcases": [
+    {"input": "10\n11", "desc": "Edge: example1 (false)"},
+    {"input": "10\n0", "desc": "Edge: total=0 trivial win"},
+    {"input": "10\n1", "desc": "Edge: total=1 first plays 1"},
+    {"input": "1\n1", "desc": "Edge: only 1 pick wins"},
+    {"input": "1\n2", "desc": "Edge: impossible total"},
+    {"input": "2\n3", "desc": "Edge: max>=total exactly"},
+    {"input": "5\n10", "desc": "Edge: sum=15 reachable"},
+    {"input": "10\n40", "desc": "Standard: small case"},
+    {"input": "15\n100", "desc": "Standard: 15-100 game"},
+    {"input": "10\n55", "desc": "Standard: max sum = total"},
+    {"input": "10\n50", "desc": "Standard: half total"},
+    {"input": "7\n16", "desc": "Standard: small unique"},
+    {"input": "20\n50", "desc": "Standard: 20-50"},
+    {"input": "20\n100", "desc": "Standard: 20-100"},
+    {"input": "12\n40", "desc": "Standard: 12-40"},
+    {"input": "20\n200", "desc": "Standard: 20-200 sum=210"},
+    {"input": "20\n210", "desc": "Stress: max range, sum=total"},
+    {"input": "20\n211", "desc": "Stress: total > sum (false)"},
+    {"input": "20\n300", "desc": "Stress: max total"},
+    {"input": "20\n1", "desc": "Killer: trivial win with 20 options"}
+  ]
+}

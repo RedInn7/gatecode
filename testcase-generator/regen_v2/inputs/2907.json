@@ -1,0 +1,28 @@
+{
+  "pid": 2907,
+  "slug": "distinct-subsequences",
+  "inferred_constraints": "1 <= s.length, t.length <= 1000; English letters",
+  "input_format": "line1: s (JSON string); line2: t (JSON string)",
+  "testcases": [
+    {"input": "\"rabbbit\"\n\"rabbit\"", "desc": "Edge: example1"},
+    {"input": "\"babgbag\"\n\"bag\"", "desc": "Edge: example2"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: single char match"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: single mismatch"},
+    {"input": "\"ab\"\n\"a\"", "desc": "Edge: short t"},
+    {"input": "\"ab\"\n\"ab\"", "desc": "Edge: equal"},
+    {"input": "\"abc\"\n\"abcd\"", "desc": "Edge: t longer than s"},
+    {"input": "\"aaaa\"\n\"aa\"", "desc": "Standard: count pairs in repeating"},
+    {"input": "\"aaaaa\"\n\"aaa\"", "desc": "Standard: C(5,3)=10"},
+    {"input": "\"abcabc\"\n\"abc\"", "desc": "Standard: 2 distinct overlap"},
+    {"input": "\"banana\"\n\"ban\"", "desc": "Standard: banana count"},
+    {"input": "\"aabbcc\"\n\"abc\"", "desc": "Standard: blocks"},
+    {"input": "\"abcdef\"\n\"ace\"", "desc": "Standard: single subseq"},
+    {"input": "\"aaaaaaaaaa\"\n\"a\"", "desc": "Standard: 10 a's count 10"},
+    {"input": "\"abcdabcdabcd\"\n\"abcd\"", "desc": "Standard: repeated patterns"},
+    {"input": "\"mississippi\"\n\"mis\"", "desc": "Standard: mississippi"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaa\"", "desc": "Stress: C(48,4)"},
+    {"input": "\"abababababababababab\"\n\"abab\"", "desc": "Stress: alternating"},
+    {"input": "\"zzzzzzzzzz\"\n\"zzzzzzzzzz\"", "desc": "Stress: only 1 way"},
+    {"input": "\"abc\"\n\"xyz\"", "desc": "Killer: no common chars"}
+  ]
+}

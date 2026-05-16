@@ -1,0 +1,28 @@
+{
+  "pid": 2903,
+  "slug": "check-if-one-string-swap-can-make-strings-equal",
+  "inferred_constraints": "1 <= s1.length, s2.length <= 100; s1.length == s2.length; lowercase only",
+  "input_format": "line1: s1 (JSON string); line2: s2 (JSON string)",
+  "testcases": [
+    {"input": "\"bank\"\n\"kanb\"", "desc": "Edge: example1"},
+    {"input": "\"attack\"\n\"defend\"", "desc": "Edge: example2"},
+    {"input": "\"kelb\"\n\"kelb\"", "desc": "Edge: example3 (equal)"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: single same"},
+    {"input": "\"a\"\n\"b\"", "desc": "Edge: single diff (one swap can't help)"},
+    {"input": "\"ab\"\n\"ba\"", "desc": "Edge: 2-char swap"},
+    {"input": "\"ab\"\n\"ab\"", "desc": "Edge: 2 identical"},
+    {"input": "\"abc\"\n\"abc\"", "desc": "Edge: 3 identical"},
+    {"input": "\"abc\"\n\"acb\"", "desc": "Standard: 1 swap fixes"},
+    {"input": "\"abcd\"\n\"abdc\"", "desc": "Standard: 1 swap last two"},
+    {"input": "\"abcd\"\n\"bacd\"", "desc": "Standard: 1 swap first two"},
+    {"input": "\"abcd\"\n\"dcba\"", "desc": "Standard: 4 diff - not 1 swap"},
+    {"input": "\"hello\"\n\"holle\"", "desc": "Standard: 1 swap"},
+    {"input": "\"abcde\"\n\"abdce\"", "desc": "Standard: 1 swap mid"},
+    {"input": "\"aaaa\"\n\"bbbb\"", "desc": "Standard: completely different"},
+    {"input": "\"aabb\"\n\"bbaa\"", "desc": "Standard: 4 diffs anagram"},
+    {"input": "\"abcdefghij\"\n\"abcdefghji\"", "desc": "Stress: 10 chars 1 swap end"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zbcdefghijklmnopqrstuvwxya\"", "desc": "Stress: alphabet swap first/last"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 100 all same"},
+    {"input": "\"aaab\"\n\"baaa\"", "desc": "Killer: only 2 diff positions"}
+  ]
+}

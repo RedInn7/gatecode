@@ -1,0 +1,28 @@
+{
+  "pid": 2910,
+  "slug": "most-popular-video-creator",
+  "inferred_constraints": "1 <= n <= 10^5; 1 <= creators[i].length, ids[i].length <= 5; 0 <= views[i] <= 10^5; lowercase letters",
+  "input_format": "line1: creators (JSON array); line2: ids (JSON array); line3: views (JSON array)",
+  "testcases": [
+    {"input": "[\"alice\",\"bob\",\"alice\",\"chris\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]", "desc": "Edge: example1"},
+    {"input": "[\"alice\",\"alice\",\"alice\"]\n[\"a\",\"b\",\"c\"]\n[1,2,2]", "desc": "Edge: example2 lex smallest id"},
+    {"input": "[\"a\"]\n[\"x\"]\n[1]", "desc": "Edge: single video"},
+    {"input": "[\"a\",\"a\"]\n[\"x\",\"y\"]\n[5,5]", "desc": "Edge: 2 same creator same views"},
+    {"input": "[\"a\",\"b\"]\n[\"x\",\"y\"]\n[5,5]", "desc": "Edge: tie between creators"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"x\",\"y\",\"z\"]\n[0,0,0]", "desc": "Edge: all zero views (tie all)"},
+    {"input": "[\"creator1\",\"creator2\"]\n[\"vid1\",\"vid2\"]\n[100,99]", "desc": "Edge: clear winner"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]\n[\"e\",\"d\",\"c\",\"b\",\"a\"]\n[1,1,1,1,1]", "desc": "Standard: all tied views, pick lex smallest id"},
+    {"input": "[\"alice\",\"bob\",\"chris\"]\n[\"a\",\"b\",\"c\"]\n[10,20,15]", "desc": "Standard: bob wins"},
+    {"input": "[\"alice\",\"alice\",\"bob\",\"bob\"]\n[\"a\",\"b\",\"c\",\"d\"]\n[5,5,5,5]", "desc": "Standard: tie creators tie videos"},
+    {"input": "[\"x\",\"y\",\"x\",\"y\",\"x\",\"y\"]\n[\"p\",\"q\",\"r\",\"s\",\"t\",\"u\"]\n[1,2,3,4,5,6]", "desc": "Standard: y wins"},
+    {"input": "[\"a\",\"b\",\"a\",\"b\"]\n[\"a\",\"b\",\"c\",\"d\"]\n[10,10,5,5]", "desc": "Standard: tied sums"},
+    {"input": "[\"creator\",\"creator\",\"creator\"]\n[\"vid1\",\"vid2\",\"vid3\"]\n[100000,50000,1]", "desc": "Standard: large views"},
+    {"input": "[\"abc\",\"abc\",\"xyz\"]\n[\"a1\",\"a2\",\"a1\"]\n[10,20,100]", "desc": "Standard: xyz wins"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[100000,100000,100000,100000,100000]", "desc": "Standard: all tied"},
+    {"input": "[\"alice\",\"alice\",\"alice\",\"alice\",\"alice\",\"alice\",\"alice\",\"alice\",\"alice\",\"alice\"]\n[\"j\",\"i\",\"h\",\"g\",\"f\",\"e\",\"d\",\"c\",\"b\",\"a\"]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: pick lex smallest a"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n[\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\"]\n[10,20,30,40,50,60,70,80,90,100]", "desc": "Stress: ascending picks last"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n[\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\",\"v\"]\n[100,90,80,70,60,50,40,30,20,10]", "desc": "Stress: descending picks first"},
+    {"input": "[\"x\",\"y\",\"x\",\"y\",\"x\",\"y\",\"x\",\"y\",\"x\",\"y\",\"x\",\"y\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\"]\n[1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: alternating tied"},
+    {"input": "[\"a\",\"a\"]\n[\"abc\",\"abd\"]\n[10,10]", "desc": "Killer: same creator tie ids close"}
+  ]
+}

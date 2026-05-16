@@ -56,111 +56,6 @@
       "reason": "interactive problem with commonBits API"
     },
     {
-      "pid": 3833,
-      "slug": "insert-into-a-sorted-circular-linked-list",
-      "reason": "circular linked list with non-deterministic insertion point (any valid place); non-trivial output equality"
-    },
-    {
-      "pid": 3790,
-      "slug": "copy-list-with-random-pointer",
-      "reason": "linked list with random pointers; complex serialization format [[val, random_index]] not handled by sandbox runner"
-    },
-    {
-      "pid": 3776,
-      "slug": "wiggle-sort",
-      "reason": "in-place reorder with multiple valid outputs (e.g. [3,5,1,6,2,4] or [1,6,2,5,3,4]); needs SPJ"
-    },
-    {
-      "pid": 3764,
-      "slug": "convert-sorted-array-to-binary-search-tree",
-      "reason": "multiple valid height-balanced BSTs; output is non-unique"
-    },
-    {
-      "pid": 3761,
-      "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
-      "reason": "in-place BST -> circular doubly-linked-list transform; output representation non-trivial"
-    },
-    {
-      "pid": 3759,
-      "slug": "add-two-promises",
-      "reason": "JavaScript-only problem with Promise async behavior"
-    },
-    {
-      "pid": 3752,
-      "slug": "generate-random-point-in-a-circle",
-      "reason": "randomized output; needs statistical SPJ"
-    },
-    {
-      "pid": 3748,
-      "slug": "restore-the-array-from-adjacent-pairs",
-      "reason": "multiple valid arrays accepted (forward or reverse); needs SPJ"
-    },
-    {
-      "pid": 3740,
-      "slug": "erect-the-fence-ii",
-      "reason": "returns smallest enclosing circle [cx, cy, r] as doubles; needs floating-point SPJ"
-    },
-    {
-      "pid": 3705,
-      "slug": "extract-kth-character-from-the-rope-tree",
-      "reason": "custom RopeTreeNode with len + val; non-standard tree serialization"
-    },
-    {
-      "pid": 3699,
-      "slug": "design-bounded-blocking-queue",
-      "reason": "multithreaded blocking queue; cannot test via standard I/O"
-    },
-    {
-      "pid": 3691,
-      "slug": "insufficient-nodes-in-root-to-leaf-paths",
-      "reason": "returns modified tree root; serialization complex with internal nulls"
-    },
-    {
-      "pid": 3687,
-      "slug": "implement-rand10-using-rand7",
-      "reason": "randomized output; needs statistical SPJ"
-    },
-    {
-      "pid": 3681,
-      "slug": "calculator-with-method-chaining",
-      "reason": "JavaScript-only method-chaining design; no C++/Python signatures"
-    },
-    {
-      "pid": 3678,
-      "slug": "leftmost-column-with-at-least-a-one",
-      "reason": "interactive BinaryMatrix.get API; cannot test via standard I/O"
-    },
-    {
-      "pid": 3673,
-      "slug": "group-shifted-strings",
-      "reason": "returns list of groups with non-deterministic ordering both outer and inner"
-    },
-    {
-      "pid": 3670,
-      "slug": "n-ary-tree-preorder-traversal",
-      "reason": "n-ary tree with custom level-order-null serialization not standard"
-    },
-    {
-      "pid": 3669,
-      "slug": "find-in-mountain-array",
-      "reason": "interactive MountainArray.get with call-count constraint"
-    },
-    {
-      "pid": 3667,
-      "slug": "encode-string-with-shortest-length",
-      "reason": "multiple valid encodings of same length acceptable"
-    },
-    {
-      "pid": 3655,
-      "slug": "flatten-a-multilevel-doubly-linked-list",
-      "reason": "multilevel doubly linked list with custom Node; complex serialization"
-    },
-    {
-      "pid": 3648,
-      "slug": "rearrange-string-k-distance-apart",
-      "reason": "multiple valid rearrangements possible; needs SPJ"
-    },
-    {
       "pid": 2315,
       "slug": "building-h2o",
       "reason": "multithreaded synchronization design problem - not amenable to standard input/output testing"
@@ -434,6 +329,161 @@
       "pid": 2842,
       "slug": "check-if-two-expression-trees-are-equivalent",
       "reason": "special TreeNode with char val (operator/operand) - non-standard tree wrap"
+    },
+    {
+      "pid": 2855,
+      "slug": "counter-ii",
+      "reason": "JavaScript-only problem - returns object with closure methods"
+    },
+    {
+      "pid": 2872,
+      "slug": "to-be-or-not-to-be",
+      "reason": "JavaScript-only problem - expect function with closures"
+    },
+    {
+      "pid": 2876,
+      "slug": "design-bitset",
+      "reason": "Design class with stateful methods (fix/unfix/flip/all/one/count/toString)"
+    },
+    {
+      "pid": 2877,
+      "slug": "complete-binary-tree-inserter",
+      "reason": "Design class with stateful TreeNode insert"
+    },
+    {
+      "pid": 2895,
+      "slug": "word-ladder-ii",
+      "reason": "Returns all shortest paths - multiple valid answers, needs SPJ"
+    },
+    {
+      "pid": 2896,
+      "slug": "design-sql",
+      "reason": "Design class with stateful insertRow/deleteRow/selectCell/exportTable methods"
+    },
+    {
+      "pid": 2898,
+      "slug": "split-a-circular-linked-list",
+      "reason": "Circular linked list split - non-trivial serialization"
+    },
+    {
+      "pid": 2942,
+      "slug": "deep-merge-of-two-objects",
+      "reason": "JavaScript-only problem - operates on JS objects"
+    },
+    {
+      "pid": 2953,
+      "slug": "evaluate-boolean-expression",
+      "reason": "SQL problem with table schemas"
+    },
+    {
+      "pid": 2957,
+      "slug": "calculate-salaries",
+      "reason": "SQL problem with table schemas"
+    },
+    {
+      "pid": 3648,
+      "slug": "rearrange-string-k-distance-apart",
+      "reason": "multiple valid rearrangements possible; needs SPJ"
+    },
+    {
+      "pid": 3655,
+      "slug": "flatten-a-multilevel-doubly-linked-list",
+      "reason": "multilevel doubly linked list with custom Node; complex serialization"
+    },
+    {
+      "pid": 3667,
+      "slug": "encode-string-with-shortest-length",
+      "reason": "multiple valid encodings of same length acceptable"
+    },
+    {
+      "pid": 3669,
+      "slug": "find-in-mountain-array",
+      "reason": "interactive MountainArray.get with call-count constraint"
+    },
+    {
+      "pid": 3670,
+      "slug": "n-ary-tree-preorder-traversal",
+      "reason": "n-ary tree with custom level-order-null serialization not standard"
+    },
+    {
+      "pid": 3673,
+      "slug": "group-shifted-strings",
+      "reason": "returns list of groups with non-deterministic ordering both outer and inner"
+    },
+    {
+      "pid": 3678,
+      "slug": "leftmost-column-with-at-least-a-one",
+      "reason": "interactive BinaryMatrix.get API; cannot test via standard I/O"
+    },
+    {
+      "pid": 3681,
+      "slug": "calculator-with-method-chaining",
+      "reason": "JavaScript-only method-chaining design; no C++/Python signatures"
+    },
+    {
+      "pid": 3687,
+      "slug": "implement-rand10-using-rand7",
+      "reason": "randomized output; needs statistical SPJ"
+    },
+    {
+      "pid": 3691,
+      "slug": "insufficient-nodes-in-root-to-leaf-paths",
+      "reason": "returns modified tree root; serialization complex with internal nulls"
+    },
+    {
+      "pid": 3699,
+      "slug": "design-bounded-blocking-queue",
+      "reason": "multithreaded blocking queue; cannot test via standard I/O"
+    },
+    {
+      "pid": 3705,
+      "slug": "extract-kth-character-from-the-rope-tree",
+      "reason": "custom RopeTreeNode with len + val; non-standard tree serialization"
+    },
+    {
+      "pid": 3740,
+      "slug": "erect-the-fence-ii",
+      "reason": "returns smallest enclosing circle [cx, cy, r] as doubles; needs floating-point SPJ"
+    },
+    {
+      "pid": 3748,
+      "slug": "restore-the-array-from-adjacent-pairs",
+      "reason": "multiple valid arrays accepted (forward or reverse); needs SPJ"
+    },
+    {
+      "pid": 3752,
+      "slug": "generate-random-point-in-a-circle",
+      "reason": "randomized output; needs statistical SPJ"
+    },
+    {
+      "pid": 3759,
+      "slug": "add-two-promises",
+      "reason": "JavaScript-only problem with Promise async behavior"
+    },
+    {
+      "pid": 3761,
+      "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+      "reason": "in-place BST -> circular doubly-linked-list transform; output representation non-trivial"
+    },
+    {
+      "pid": 3764,
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "reason": "multiple valid height-balanced BSTs; output is non-unique"
+    },
+    {
+      "pid": 3776,
+      "slug": "wiggle-sort",
+      "reason": "in-place reorder with multiple valid outputs (e.g. [3,5,1,6,2,4] or [1,6,2,5,3,4]); needs SPJ"
+    },
+    {
+      "pid": 3790,
+      "slug": "copy-list-with-random-pointer",
+      "reason": "linked list with random pointers; complex serialization format [[val, random_index]] not handled by sandbox runner"
+    },
+    {
+      "pid": 3833,
+      "slug": "insert-into-a-sorted-circular-linked-list",
+      "reason": "circular linked list with non-deterministic insertion point (any valid place); non-trivial output equality"
     }
   ]
 }

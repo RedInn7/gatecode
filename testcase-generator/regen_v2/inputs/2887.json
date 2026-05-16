@@ -1,0 +1,28 @@
+{
+  "pid": 2887,
+  "slug": "maximum-product-of-two-elements-in-an-array",
+  "inferred_constraints": "2 <= nums.length <= 500; 1 <= nums[i] <= 1000",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[3,4,5,2]", "desc": "Edge: example1"},
+    {"input": "[1,5,4,5]", "desc": "Edge: example2 (dup max)"},
+    {"input": "[3,7]", "desc": "Edge: example3 (n=2)"},
+    {"input": "[1,1]", "desc": "Edge: smallest values"},
+    {"input": "[1000,1000]", "desc": "Edge: largest values"},
+    {"input": "[1,1000]", "desc": "Edge: min and max"},
+    {"input": "[1,2,3]", "desc": "Edge: tiny ascending"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: all same min"},
+    {"input": "[2,2,2,2,2]", "desc": "Standard: all same"},
+    {"input": "[10,5,3,7,8]", "desc": "Standard: random small"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: ascending"},
+    {"input": "[500,400,300,200,100]", "desc": "Standard: descending"},
+    {"input": "[999,1000,1,2,3]", "desc": "Standard: max pair at start"},
+    {"input": "[1,2,3,999,1000]", "desc": "Standard: max pair at end"},
+    {"input": "[1000,1,2,3,1000]", "desc": "Standard: max at ends"},
+    {"input": "[50,50,50,1,1]", "desc": "Standard: bimodal"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
+    {"input": "[1000,999,998,997,996,995,994,993,992,991,990,989,988,987,986,985,984,983,982,981]", "desc": "Stress: 20 high desc"},
+    {"input": "[500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500]", "desc": "Stress: 50 all 500"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1000]", "desc": "Killer: single large value"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2897,
+  "slug": "camelcase-matching",
+  "inferred_constraints": "1 <= pattern.length, queries[i].length <= 100; 1 <= queries.length <= 100; English letters only",
+  "input_format": "line1: queries (JSON array of strings); line2: pattern (JSON string)",
+  "testcases": [
+    {"input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"", "desc": "Edge: example1"},
+    {"input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBa\"", "desc": "Edge: example2"},
+    {"input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBaT\"", "desc": "Edge: example3"},
+    {"input": "[\"A\"]\n\"A\"", "desc": "Edge: single char match"},
+    {"input": "[\"a\"]\n\"a\"", "desc": "Edge: lowercase match"},
+    {"input": "[\"a\"]\n\"A\"", "desc": "Edge: case mismatch (no)"},
+    {"input": "[\"A\"]\n\"\"", "desc": "Edge: empty pattern with upper - no"},
+    {"input": "[\"abc\"]\n\"\"", "desc": "Edge: empty pattern lowercase - yes"},
+    {"input": "[\"AbCd\",\"ABCD\",\"abcd\"]\n\"AC\"", "desc": "Standard: caps separated"},
+    {"input": "[\"Hello\",\"hello\",\"HELLO\"]\n\"H\"", "desc": "Standard: single upper"},
+    {"input": "[\"camelCase\",\"CamelCase\",\"camelcase\"]\n\"cC\"", "desc": "Standard: cC mixed"},
+    {"input": "[\"abcXYZ\",\"abcxyz\",\"XYZabc\"]\n\"XYZ\"", "desc": "Standard: 3 caps"},
+    {"input": "[\"FooBar\",\"FooBaz\",\"FooBat\"]\n\"FB\"", "desc": "Standard: same pattern multi-match"},
+    {"input": "[\"FooBarBaz\",\"FooBaz\"]\n\"FBB\"", "desc": "Standard: chain caps"},
+    {"input": "[\"ABCDEF\"]\n\"AC\"", "desc": "Standard: no lowers - need adjacent caps"},
+    {"input": "[\"aaaaaaaA\",\"aA\"]\n\"A\"", "desc": "Standard: trailing cap"},
+    {"input": "[\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"]\n\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Stress: long alphabet"},
+    {"input": "[\"FooBarTestBaz\",\"FooBarTest\",\"FooBar\",\"Foo\",\"\"]\n\"FB\"", "desc": "Stress: varied lengths"},
+    {"input": "[\"AaAaAaAaAaAaAaAa\"]\n\"AAAAAAAA\"", "desc": "Stress: 8 As exact"},
+    {"input": "[\"Bb\",\"bB\",\"BB\",\"bb\"]\n\"B\"", "desc": "Killer: capital variations"}
+  ]
+}

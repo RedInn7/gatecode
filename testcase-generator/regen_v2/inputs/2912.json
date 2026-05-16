@@ -1,0 +1,28 @@
+{
+  "pid": 2912,
+  "slug": "duplicate-zeros",
+  "inferred_constraints": "1 <= arr.length <= 10^4; 0 <= arr[i] <= 9",
+  "input_format": "single line: arr (JSON array)",
+  "testcases": [
+    {"input": "[1,0,2,3,0,4,5,0]", "desc": "Edge: example1"},
+    {"input": "[1,2,3]", "desc": "Edge: example2 no zeros"},
+    {"input": "[0]", "desc": "Edge: single zero"},
+    {"input": "[1]", "desc": "Edge: single non-zero"},
+    {"input": "[0,0]", "desc": "Edge: two zeros"},
+    {"input": "[0,1]", "desc": "Edge: 0 first"},
+    {"input": "[1,0]", "desc": "Edge: 0 last"},
+    {"input": "[0,0,0]", "desc": "Edge: all zeros n=3"},
+    {"input": "[9,9,9,9]", "desc": "Standard: no zeros all 9"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]", "desc": "Standard: zero at start"},
+    {"input": "[1,2,3,4,5,6,7,8,9,0]", "desc": "Standard: zero at end"},
+    {"input": "[0,0,1,0,0,1,0,0]", "desc": "Standard: zero groups"},
+    {"input": "[1,0,1,0,1,0,1,0]", "desc": "Standard: alternating"},
+    {"input": "[5,0,0,5,5,0,0]", "desc": "Standard: paired zeros mid"},
+    {"input": "[1,2,0,3,4,0,5,6,0,7]", "desc": "Standard: scattered zeros"},
+    {"input": "[8,4,5,0,0,0,0,7]", "desc": "Standard: 4 zeros mid"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Stress: all zeros n=20"},
+    {"input": "[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2]", "desc": "Stress: 20 no zeros"},
+    {"input": "[1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,1,0]", "desc": "Stress: many zeros 20 len"},
+    {"input": "[8,4,5,0,0,0,0,7]", "desc": "Killer: zero at boundary"}
+  ]
+}

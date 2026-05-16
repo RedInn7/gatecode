@@ -1,0 +1,28 @@
+{
+  "pid": 2891,
+  "slug": "flood-fill",
+  "inferred_constraints": "m == image.length; n == image[i].length; 1 <= m,n <= 50; 0 <= image[i][j] < 2^16; 0 <= sr < m; 0 <= sc < n; 0 <= color < 2^16",
+  "input_format": "line1: image (JSON 2D); line2: sr; line3: sc; line4: color",
+  "testcases": [
+    {"input": "[[1,1,1],[1,1,0],[1,0,1]]\n1\n1\n2", "desc": "Edge: example1"},
+    {"input": "[[0]]\n0\n0\n5", "desc": "Edge: 1x1"},
+    {"input": "[[1]]\n0\n0\n1", "desc": "Edge: 1x1 same color"},
+    {"input": "[[0,0],[0,0]]\n0\n0\n7", "desc": "Edge: 2x2 fill all"},
+    {"input": "[[0,1],[1,0]]\n0\n0\n5", "desc": "Edge: only origin same"},
+    {"input": "[[1,2,3],[4,5,6],[7,8,9]]\n1\n1\n0", "desc": "Edge: all distinct"},
+    {"input": "[[0,0,0],[0,1,1],[0,1,1]]\n2\n2\n3", "desc": "Standard: bottom-right region"},
+    {"input": "[[1,1,1],[1,1,1],[1,1,1]]\n0\n0\n2", "desc": "Standard: all same → fill all"},
+    {"input": "[[1,0,1],[0,1,0],[1,0,1]]\n1\n1\n9", "desc": "Standard: center fill"},
+    {"input": "[[5,5,5,5],[5,5,0,5],[5,0,0,5],[5,5,5,5]]\n0\n0\n2", "desc": "Standard: ring of 5s"},
+    {"input": "[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]\n1\n2\n4", "desc": "Standard: row x col"},
+    {"input": "[[1,2,1,2],[2,1,2,1],[1,2,1,2],[2,1,2,1]]\n0\n0\n9", "desc": "Standard: checker, only corner"},
+    {"input": "[[3,3,3],[3,3,3],[3,3,4]]\n2\n2\n5", "desc": "Standard: corner only"},
+    {"input": "[[1,1,2,2],[1,1,2,2],[3,3,4,4],[3,3,4,4]]\n0\n0\n9", "desc": "Standard: 4 quadrants"},
+    {"input": "[[7,7,7,7,7],[7,0,0,0,7],[7,0,7,0,7],[7,0,0,0,7],[7,7,7,7,7]]\n2\n2\n1", "desc": "Standard: center island"},
+    {"input": "[[1,2,3,4,5],[2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8]]\n0\n0\n0", "desc": "Standard: distinct all"},
+    {"input": "[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]\n2\n5\n9", "desc": "Stress: 5x10 fill all"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,0,0,0,0,0,0,0,0,1],[1,0,1,1,1,1,1,1,0,1],[1,0,1,0,0,0,0,1,0,1],[1,0,1,0,1,1,0,1,0,1],[1,0,1,0,1,1,0,1,0,1],[1,0,1,0,0,0,0,1,0,1],[1,0,1,1,1,1,1,1,0,1],[1,0,0,0,0,0,0,0,0,1],[1,1,1,1,1,1,1,1,1,1]]\n1\n1\n2", "desc": "Stress: spiral 10x10"},
+    {"input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]\n2\n2\n0", "desc": "Stress: 5x5 fill all"},
+    {"input": "[[1,2,1,2,1],[2,1,2,1,2],[1,2,1,2,1],[2,1,2,1,2],[1,2,1,2,1]]\n2\n2\n9", "desc": "Killer: checkerboard, corner only"}
+  ]
+}

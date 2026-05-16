@@ -1,0 +1,28 @@
+{
+  "pid": 2890,
+  "slug": "most-common-word",
+  "inferred_constraints": "1 <= paragraph.length <= 1000; punctuation in !?',;.; 0 <= banned.length <= 100; banned[i] lowercase",
+  "input_format": "line1: paragraph (JSON string); line2: banned (JSON array of strings)",
+  "testcases": [
+    {"input": "\"Bob hit a ball, the hit BALL flew far after it was hit.\"\n[\"hit\"]", "desc": "Edge: example1"},
+    {"input": "\"a.\"\n[]", "desc": "Edge: example2"},
+    {"input": "\"a\"\n[]", "desc": "Edge: single word no punct"},
+    {"input": "\"a a a\"\n[]", "desc": "Edge: all same"},
+    {"input": "\"a b\"\n[\"a\"]", "desc": "Edge: pick other"},
+    {"input": "\"A B C D\"\n[]", "desc": "Edge: all uppercase distinct, last word wins ties (but unique by guarantee — only first)"},
+    {"input": "\"the cat sat on the mat\"\n[]", "desc": "Edge: small natural"},
+    {"input": "\"a, a. a! a? a' a; a:\"\n[]", "desc": "Standard: punct variety"},
+    {"input": "\"Hello, hello, HELLO, world.\"\n[\"world\"]", "desc": "Standard: case mixing"},
+    {"input": "\"one two three two one one\"\n[]", "desc": "Standard: count winner"},
+    {"input": "\"Cat dog cat dog cat!\"\n[\"dog\"]", "desc": "Standard: cat wins"},
+    {"input": "\"X Y X Y X Z\"\n[\"y\"]", "desc": "Standard: pick X"},
+    {"input": "\"abc def abc def abc ghi\"\n[\"def\"]", "desc": "Standard: 3-2-1 banned mid"},
+    {"input": "\"red blue red red green blue red\"\n[\"blue\"]", "desc": "Standard: red dominates"},
+    {"input": "\"alpha beta gamma alpha beta alpha\"\n[\"beta\"]", "desc": "Standard: ban 2nd most"},
+    {"input": "\"The quick brown fox jumps over the lazy dog. The fox is quick.\"\n[\"the\"]", "desc": "Standard: pangram"},
+    {"input": "\"a a a a a b b b b c c c\"\n[\"a\"]", "desc": "Stress: ban top"},
+    {"input": "\"word word word word word word word word word word other\"\n[\"word\"]", "desc": "Stress: ban dominant"},
+    {"input": "\"abc, abc; abc! abc? abc' abc.\"\n[]", "desc": "Stress: all punct types"},
+    {"input": "\"Bob Bob Bob bob bob bob bob alice\"\n[]", "desc": "Killer: case-insensitive Bob dominates"}
+  ]
+}

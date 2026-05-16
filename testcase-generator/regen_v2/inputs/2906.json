@@ -1,0 +1,28 @@
+{
+  "pid": 2906,
+  "slug": "second-largest-digit-in-a-string",
+  "inferred_constraints": "1 <= s.length <= 500; lowercase letters and digits",
+  "input_format": "single line: s (JSON string)",
+  "testcases": [
+    {"input": "\"dfa12321afd\"", "desc": "Edge: example1"},
+    {"input": "\"abc1111\"", "desc": "Edge: example2 only 1 digit type"},
+    {"input": "\"a\"", "desc": "Edge: no digits"},
+    {"input": "\"1\"", "desc": "Edge: single digit"},
+    {"input": "\"ab\"", "desc": "Edge: no digits 2 letters"},
+    {"input": "\"12\"", "desc": "Edge: 2 different digits"},
+    {"input": "\"21\"", "desc": "Edge: 2 in reverse"},
+    {"input": "\"abcdef\"", "desc": "Edge: all letters"},
+    {"input": "\"0\"", "desc": "Edge: 0 only"},
+    {"input": "\"a0\"", "desc": "Edge: a and 0"},
+    {"input": "\"0123456789\"", "desc": "Standard: all digits"},
+    {"input": "\"9876543210\"", "desc": "Standard: all digits reverse"},
+    {"input": "\"ababab123\"", "desc": "Standard: mixed"},
+    {"input": "\"99988877\"", "desc": "Standard: only 9,8,7"},
+    {"input": "\"hello0world9\"", "desc": "Standard: 0 and 9"},
+    {"input": "\"5a5a5a5a\"", "desc": "Standard: only 5"},
+    {"input": "\"abcdefghijklmnop\"", "desc": "Standard: long letters only"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1\"", "desc": "Stress: long with one digit"},
+    {"input": "\"a1b2c3d4e5f6g7h8i9j0\"", "desc": "Stress: spread all digits"},
+    {"input": "\"99\"", "desc": "Killer: only 9 twice"}
+  ]
+}

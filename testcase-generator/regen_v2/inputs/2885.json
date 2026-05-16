@@ -1,0 +1,28 @@
+{
+  "pid": 2885,
+  "slug": "find-the-number-of-possible-ways-for-an-event",
+  "inferred_constraints": "1 <= n, x, y <= 1000",
+  "input_format": "line1: n; line2: x; line3: y",
+  "testcases": [
+    {"input": "1\n1\n1", "desc": "Edge: minimum"},
+    {"input": "1\n2\n1", "desc": "Edge: 1 performer 2 stages"},
+    {"input": "2\n1\n1", "desc": "Edge: 2 performers 1 stage"},
+    {"input": "2\n2\n1", "desc": "Edge: 2,2,1"},
+    {"input": "1\n1\n2", "desc": "Edge: 1 performer score range 2"},
+    {"input": "3\n3\n3", "desc": "Edge: all equal"},
+    {"input": "5\n2\n3", "desc": "Standard: small"},
+    {"input": "5\n3\n2", "desc": "Standard: small reordered"},
+    {"input": "10\n10\n10", "desc": "Standard: 10/10/10"},
+    {"input": "20\n5\n10", "desc": "Standard: 20 performers"},
+    {"input": "50\n100\n200", "desc": "Standard: mid"},
+    {"input": "100\n100\n100", "desc": "Standard: 100s"},
+    {"input": "10\n1\n1000", "desc": "Standard: 1 stage huge score"},
+    {"input": "10\n1000\n1", "desc": "Standard: many stages score=1"},
+    {"input": "200\n200\n200", "desc": "Standard: 200s"},
+    {"input": "500\n500\n500", "desc": "Stress: 500s"},
+    {"input": "1000\n1\n1000", "desc": "Stress: 1 stage 1000 score"},
+    {"input": "1000\n1000\n1", "desc": "Stress: 1000 stages 1 score"},
+    {"input": "1000\n1000\n1000", "desc": "Stress: all 1000"},
+    {"input": "999\n500\n500", "desc": "Killer: large mix"}
+  ]
+}

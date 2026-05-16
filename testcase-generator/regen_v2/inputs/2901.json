@@ -1,0 +1,28 @@
+{
+  "pid": 2901,
+  "slug": "reverse-pairs",
+  "inferred_constraints": "1 <= nums.length <= 5*10^4; -2^31 <= nums[i] <= 2^31 - 1",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,3,2,3,1]", "desc": "Edge: example1"},
+    {"input": "[2,4,3,5,1]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[1,2]", "desc": "Edge: ascending pair"},
+    {"input": "[2,1]", "desc": "Edge: descending pair (no reverse pair: 2>2*1 false)"},
+    {"input": "[3,1]", "desc": "Edge: 3>2*1 -> 1 pair"},
+    {"input": "[-1,-2]", "desc": "Edge: negatives"},
+    {"input": "[0,0]", "desc": "Edge: zeros"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[7,2,5,3,8,1]", "desc": "Standard: mixed"},
+    {"input": "[100,50,25,10,5,1]", "desc": "Standard: halving"},
+    {"input": "[-5,-3,-8,-2,-7,-4]", "desc": "Standard: all negative"},
+    {"input": "[1000,500,250,100,50,25,10,5,1]", "desc": "Standard: many halvings"},
+    {"input": "[2147483647,-2147483648]", "desc": "Standard: int extremes"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all same"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Stress: 10 desc"},
+    {"input": "[1000,1000,1000,1,1,1,1,1,1,1]", "desc": "Stress: high then low"},
+    {"input": "[2147483647,2147483647,2147483647,1,1,1]", "desc": "Stress: max ints"},
+    {"input": "[-2147483648,2147483647,-2147483648,2147483647,-2147483648]", "desc": "Killer: alternating extremes"}
+  ]
+}
