@@ -1,0 +1,28 @@
+{
+  "pid": 323,
+  "slug": "widest-vertical-area-between-two-points-containing-no-points",
+  "inferred_constraints": "2 <= points.length <= 1e5, 0 <= xi, yi <= 1e9",
+  "input_format": "line1: points (JSON 2D int array of [x,y] pairs)",
+  "testcases": [
+    {"input": "[[8,7],[9,9],[7,4],[9,7]]", "desc": "Edge: example1"},
+    {"input": "[[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]", "desc": "Edge: example2"},
+    {"input": "[[0,0],[1,1]]", "desc": "Edge: n=2 minimum"},
+    {"input": "[[0,0],[0,1]]", "desc": "Edge: n=2 same x"},
+    {"input": "[[1000000000,0],[0,1000000000]]", "desc": "Edge: max x gap"},
+    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Standard: increasing diagonal"},
+    {"input": "[[5,5],[5,4],[5,3],[5,2],[5,1]]", "desc": "Standard: all same x"},
+    {"input": "[[1,1],[3,1],[5,1],[7,1],[9,1]]", "desc": "Standard: uniform x gaps"},
+    {"input": "[[0,0],[100,0],[50,50],[25,25],[75,75]]", "desc": "Standard: mixed positions"},
+    {"input": "[[1,1],[1,2],[1,3],[1,4],[2,1]]", "desc": "Edge: most points same x"},
+    {"input": "[[0,0],[1000000000,1000000000]]", "desc": "Edge: max corners"},
+    {"input": "[[10,5],[20,3],[30,7],[40,2],[50,9],[60,1],[70,4],[80,8],[90,6],[100,0]]", "desc": "Standard: uniform spacing"},
+    {"input": "[[1,1],[1,1],[1,1],[2,2]]", "desc": "Edge: duplicate points"},
+    {"input": "[[5,1],[5,2],[5,3],[7,1],[9,1]]", "desc": "Standard: clusters then sparse"},
+    {"input": "[[1,1],[2,1],[100,1],[101,1],[200,1]]", "desc": "Standard: gap of 98 in middle"},
+    {"input": "[[0,0],[500000000,0],[1000000000,0]]", "desc": "Stress: spread across full range"},
+    {"input": "[[7,8],[7,7],[7,6],[7,5],[7,4],[7,3]]", "desc": "Edge: vertical line, gap=0"},
+    {"input": "[[0,5],[10,5],[5,5],[3,5],[8,5]]", "desc": "Standard: horizontal line"},
+    {"input": "[[999999999,0],[1000000000,1000000000],[0,500000000]]", "desc": "Stress: near max coordinates"},
+    {"input": "[[1,0],[100,0],[2,0],[99,0],[50,0],[51,0]]", "desc": "Standard: small clusters at ends"}
+  ]
+}

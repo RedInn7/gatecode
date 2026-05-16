@@ -1,0 +1,28 @@
+{
+  "pid": 326,
+  "slug": "naming-a-company",
+  "inferred_constraints": "2 <= ideas.length <= 5e4, 1 <= ideas[i].length <= 10, lowercase letters, all unique",
+  "input_format": "line1: ideas (JSON string array)",
+  "testcases": [
+    {"input": "[\"coffee\",\"donuts\",\"time\",\"toffee\"]", "desc": "Edge: example1"},
+    {"input": "[\"lack\",\"back\"]", "desc": "Edge: example2 result 0"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: n=2 single chars, swap is no-op"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: swap leads to duplicates"},
+    {"input": "[\"ab\",\"cd\"]", "desc": "Edge: distinct first chars, valid swap"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\"]", "desc": "Standard: all distinct first letters"},
+    {"input": "[\"apple\",\"banana\",\"cherry\",\"date\",\"elderberry\"]", "desc": "Standard: 5 fruits all distinct first"},
+    {"input": "[\"aab\",\"abb\",\"baa\",\"bba\"]", "desc": "Standard: shared suffix groups"},
+    {"input": "[\"aaa\",\"bbb\",\"ccc\",\"ddd\",\"eee\",\"fff\"]", "desc": "Standard: all distinct first letters length 3"},
+    {"input": "[\"a\",\"aa\",\"ab\",\"b\",\"ba\",\"bb\"]", "desc": "Standard: varied lengths"},
+    {"input": "[\"abcdefghij\",\"bcdefghija\",\"cdefghijab\"]", "desc": "Edge: max length 10 strings"},
+    {"input": "[\"x\",\"y\",\"z\"]", "desc": "Edge: 3 single chars distinct"},
+    {"input": "[\"hello\",\"world\",\"hxllo\",\"wxrld\"]", "desc": "Standard: conflict after swap"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Edge: 26 single letters all distinct"},
+    {"input": "[\"aa\",\"bb\",\"cc\",\"dd\",\"ee\",\"ff\",\"gg\",\"hh\",\"ii\",\"jj\"]", "desc": "Standard: 10 doubled letters distinct first"},
+    {"input": "[\"abc\",\"bbc\",\"cbc\",\"dbc\",\"ebc\"]", "desc": "Standard: shared suffix bc"},
+    {"input": "[\"abcd\",\"abce\",\"abcf\"]", "desc": "Edge: all share first letter 'a'"},
+    {"input": "[\"za\",\"zb\",\"yc\",\"yd\",\"xa\",\"xb\"]", "desc": "Standard: multiple shared first letters"},
+    {"input": "[\"abcdefghij\",\"abcdefghik\",\"abcdefghil\",\"abcdefghim\"]", "desc": "Edge: max length all share 'a'"},
+    {"input": "[\"qqq\",\"www\",\"eee\",\"rrr\",\"ttt\",\"yyy\",\"uuu\",\"iii\",\"ooo\",\"ppp\",\"aaa\",\"sss\",\"ddd\",\"fff\",\"ggg\",\"hhh\",\"jjj\",\"kkk\",\"lll\",\"zzz\",\"xxx\",\"ccc\",\"vvv\",\"bbb\",\"nnn\",\"mmm\"]", "desc": "Stress: 26 triplet repeats"}
+  ]
+}

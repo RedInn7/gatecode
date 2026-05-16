@@ -1,0 +1,28 @@
+{
+  "pid": 333,
+  "slug": "account-balance-after-rounded-purchase",
+  "inferred_constraints": "0 <= purchaseAmount <= 100",
+  "input_format": "line1: purchaseAmount (int)",
+  "testcases": [
+    {"input": "9", "desc": "Edge: example1"},
+    {"input": "15", "desc": "Edge: example2 rounds up to 20"},
+    {"input": "10", "desc": "Edge: example3 exact multiple"},
+    {"input": "0", "desc": "Edge: min value 0"},
+    {"input": "100", "desc": "Edge: max value 100"},
+    {"input": "5", "desc": "Edge: boundary 5 rounds up to 10"},
+    {"input": "4", "desc": "Edge: just under 5 rounds down to 0"},
+    {"input": "14", "desc": "Standard: 14 rounds down to 10"},
+    {"input": "25", "desc": "Standard: 25 rounds up to 30"},
+    {"input": "24", "desc": "Standard: 24 rounds down to 20"},
+    {"input": "1", "desc": "Edge: 1 rounds to 0"},
+    {"input": "99", "desc": "Edge: 99 rounds to 100"},
+    {"input": "95", "desc": "Edge: 95 rounds up to 100"},
+    {"input": "94", "desc": "Edge: 94 rounds down to 90"},
+    {"input": "55", "desc": "Standard: 55 rounds up to 60"},
+    {"input": "50", "desc": "Standard: 50 exact"},
+    {"input": "75", "desc": "Standard: 75 rounds to 80"},
+    {"input": "35", "desc": "Standard: 35 rounds to 40"},
+    {"input": "6", "desc": "Edge: 6 rounds up to 10"},
+    {"input": "85", "desc": "Standard: 85 rounds to 90"}
+  ]
+}

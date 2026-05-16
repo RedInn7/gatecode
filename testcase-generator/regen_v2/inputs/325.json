@@ -1,0 +1,28 @@
+{
+  "pid": 325,
+  "slug": "rearrange-k-substrings-to-form-target-string",
+  "inferred_constraints": "1 <= s.length == t.length <= 2e5, 1 <= k <= s.length, s.length % k == 0, lowercase letters, s and t are anagrams",
+  "input_format": "line1: s (raw string); line2: t (raw string); line3: k (int)",
+  "testcases": [
+    {"input": "abcd\ncdab\n2", "desc": "Edge: example1"},
+    {"input": "aabbcc\nbbaacc\n3", "desc": "Edge: example2"},
+    {"input": "aabbcc\nbbaacc\n2", "desc": "Edge: example3 false"},
+    {"input": "a\na\n1", "desc": "Edge: n=1 minimum"},
+    {"input": "ab\nba\n1", "desc": "Edge: k=1 single chunk reorders"},
+    {"input": "ab\nba\n2", "desc": "Edge: k=2 single chars each, must match"},
+    {"input": "aaaa\naaaa\n2", "desc": "Edge: all same chars"},
+    {"input": "abcdef\nabcdef\n1", "desc": "Edge: identical, k=1"},
+    {"input": "abcdef\nabcdef\n6", "desc": "Edge: identical, k=length"},
+    {"input": "abcdef\nfedcba\n6", "desc": "Edge: full reverse k=length (each single char)"},
+    {"input": "abcdef\nfedcba\n2", "desc": "Standard: reverse but k=2 not feasible"},
+    {"input": "aaabbbccc\nbbbcccaaa\n3", "desc": "Standard: chunks of 3 reordered"},
+    {"input": "aaabbbccc\nbbbcccaaa\n9", "desc": "Standard: k=length, individual chars, anagram=true"},
+    {"input": "abcabc\nabcabc\n3", "desc": "Standard: two identical chunks"},
+    {"input": "abcabc\nbcabca\n6", "desc": "Standard: shifted (single chars)"},
+    {"input": "abcabc\ncabbca\n2", "desc": "Standard: anagram but cant chunk"},
+    {"input": "zzzzaaaa\naaaazzzz\n4", "desc": "Edge: swap halves length 8 k=4 (chunks of 2)"},
+    {"input": "abcdefgh\nefghabcd\n4", "desc": "Standard: swap halves k=4 (chunks of 2)"},
+    {"input": "abcdefgh\nefghabcd\n2", "desc": "Standard: swap halves k=2 (chunks of 4)"},
+    {"input": "aabbccddeeffgghh\nhhggffeeddccbbaa\n8", "desc": "Stress: k=8 reversed (pairs)"}
+  ]
+}
