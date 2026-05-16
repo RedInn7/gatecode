@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= s.length <= 3*10^4; lowercase English letters",
   "input_format": "single line: s (quoted string)",
   "testcases": [
-    {"input": "\"banana\"", "desc": "Standard example 1"},
-    {"input": "\"abcd\"", "desc": "Standard example 2 no dup"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"ab\"", "desc": "Edge: 2 distinct"},
-    {"input": "\"aaa\"", "desc": "All same 3"},
-    {"input": "\"aabb\"", "desc": "Two pairs"},
-    {"input": "\"abab\"", "desc": "Alternating"},
-    {"input": "\"abcabc\"", "desc": "Repeat 3"},
-    {"input": "\"aaaaaaaaa\"", "desc": "9 same"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "All distinct"},
-    {"input": "\"abacaba\"", "desc": "Palindrome"},
-    {"input": "\"mississippi\"", "desc": "Common test"},
-    {"input": "\"helloworld\"", "desc": "Word"},
-    {"input": "\"aabaab\"", "desc": "Period 3"},
-    {"input": "\"aabaaabaaaab\"", "desc": "Multiple a-blocks"},
-    {"input": "\"abcdeabcdeabcde\"", "desc": "Period 5"},
-    {"input": "\"abracadabra\"", "desc": "Mixed"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "50 a's"},
-    {"input": "\"aaaaaabbbbbbccccccdddddd\"", "desc": "Blocks"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Double alphabet"}
+    {
+      "input": "\"e\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "\"abcd\"",
+      "desc": "Standard example 2 no dup"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 distinct"
+    },
+    {
+      "input": "\"aaa\"",
+      "desc": "All same 3"
+    },
+    {
+      "input": "\"aabb\"",
+      "desc": "Two pairs"
+    },
+    {
+      "input": "\"abab\"",
+      "desc": "Alternating"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Repeat 3"
+    },
+    {
+      "input": "\"aaaaaaaaa\"",
+      "desc": "9 same"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "All distinct"
+    },
+    {
+      "input": "\"abacaba\"",
+      "desc": "Palindrome"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Common test"
+    },
+    {
+      "input": "\"helloworld\"",
+      "desc": "Word"
+    },
+    {
+      "input": "\"aabaab\"",
+      "desc": "Period 3"
+    },
+    {
+      "input": "\"aabaaabaaaab\"",
+      "desc": "Multiple a-blocks"
+    },
+    {
+      "input": "\"abcdeabcdeabcde\"",
+      "desc": "Period 5"
+    },
+    {
+      "input": "\"abracadabra\"",
+      "desc": "Mixed"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "50 a's"
+    },
+    {
+      "input": "\"aaaaaabbbbbbccccccdddddd\"",
+      "desc": "Blocks"
+    },
+    {
+      "input": "\"ofclgjtmnvvd\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

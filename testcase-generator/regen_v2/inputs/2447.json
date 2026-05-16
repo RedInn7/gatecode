@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= words.length <= 100; 1 <= words[i].length <= 5*10^4; sum(words[i].length) <= 10^5; 1 <= target.length <= 5*10^4; lowercase letters",
   "input_format": "line1: words (JSON array); line2: target (quoted string)",
   "testcases": [
-    {"input": "[\"abc\",\"aaaaa\",\"bcdef\"]\n\"aabcdabc\"", "desc": "Standard example 1"},
-    {"input": "[\"abababab\",\"ab\"]\n\"ababaababa\"", "desc": "Standard example 2"},
-    {"input": "[\"abcdef\"]\n\"xyz\"", "desc": "Edge: impossible"},
-    {"input": "[\"a\"]\n\"a\"", "desc": "Edge: single match"},
-    {"input": "[\"a\"]\n\"aaaaa\"", "desc": "Many a's"},
-    {"input": "[\"ab\"]\n\"abab\"", "desc": "Two abs"},
-    {"input": "[\"hello\"]\n\"hello\"", "desc": "Exact"},
-    {"input": "[\"hello\"]\n\"hellohello\"", "desc": "Two times"},
-    {"input": "[\"a\",\"b\",\"c\"]\n\"abc\"", "desc": "Three singles"},
-    {"input": "[\"abcdef\"]\n\"abcdef\"", "desc": "Full prefix"},
-    {"input": "[\"abc\",\"def\",\"ghi\"]\n\"abcdefghi\"", "desc": "Concatenate"},
-    {"input": "[\"abc\",\"def\"]\n\"abdef\"", "desc": "Prefix 2 then full"},
-    {"input": "[\"a\",\"aa\",\"aaa\"]\n\"aaaa\"", "desc": "Multiple options"},
-    {"input": "[\"abcdef\",\"abcxyz\"]\n\"abc\"", "desc": "Common prefix"},
-    {"input": "[\"zzzz\"]\n\"zzz\"", "desc": "Partial prefix"},
-    {"input": "[\"abc\"]\n\"ab\"", "desc": "Prefix shorter"},
-    {"input": "[\"abc\",\"xyz\"]\n\"abcxyz\"", "desc": "Different prefixes"},
-    {"input": "[\"hello\",\"world\"]\n\"helloworld\"", "desc": "Both full"},
-    {"input": "[\"abc\",\"abd\",\"abe\"]\n\"abcabdabe\"", "desc": "Common prefix vary"},
-    {"input": "[\"abcdefghij\"]\n\"abcdefghijabcdefghij\"", "desc": "Long repeat"}
+    {
+      "input": "[\"abc\",\"aaaaa\",\"bcdef\"]\n\"aabcdabc\"",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "[\"abababab\",\"ab\"]\n\"ababaababa\"",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "[\"abcdef\"]\n\"xyz\"",
+      "desc": "Edge: impossible"
+    },
+    {
+      "input": "[\"a\"]\n\"a\"",
+      "desc": "Edge: single match"
+    },
+    {
+      "input": "[\"a\"]\n\"aaaaa\"",
+      "desc": "Many a's"
+    },
+    {
+      "input": "[\"ab\"]\n\"abab\"",
+      "desc": "Two abs"
+    },
+    {
+      "input": "[\"hello\"]\n\"hello\"",
+      "desc": "Exact"
+    },
+    {
+      "input": "[\"hello\"]\n\"hellohello\"",
+      "desc": "Two times"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\"]\n\"abc\"",
+      "desc": "Three singles"
+    },
+    {
+      "input": "[\"abcdef\"]\n\"abcdef\"",
+      "desc": "Full prefix"
+    },
+    {
+      "input": "[\"abc\",\"def\",\"ghi\"]\n\"abcdefghi\"",
+      "desc": "Concatenate"
+    },
+    {
+      "input": "[\"abc\",\"def\"]\n\"abdef\"",
+      "desc": "Prefix 2 then full"
+    },
+    {
+      "input": "[\"a\",\"aa\",\"aaa\"]\n\"aaaa\"",
+      "desc": "Multiple options"
+    },
+    {
+      "input": "[\"abcdef\",\"abcxyz\"]\n\"abc\"",
+      "desc": "Common prefix"
+    },
+    {
+      "input": "[\"zzzz\"]\n\"zzz\"",
+      "desc": "Partial prefix"
+    },
+    {
+      "input": "[\"abc\"]\n\"ab\"",
+      "desc": "Prefix shorter"
+    },
+    {
+      "input": "[\"abc\",\"xyz\"]\n\"abcxyz\"",
+      "desc": "Different prefixes"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n\"helloworld\"",
+      "desc": "Both full"
+    },
+    {
+      "input": "[\"abc\",\"abd\",\"abe\"]\n\"abcabdabe\"",
+      "desc": "Common prefix vary"
+    },
+    {
+      "input": "[-196,-395,-198,567,-607,551,-416,311,-767,554,598,-312,-777,878,-843,-63,-824,-661,-565,936,-474,837,-448,484,316,355,-668,439,-481,-120,-939,128,943,265,302,-35,740,789,32,-582,-449,-611,-220,434,218,-369,762,-740,923,929,21,-20,369,-56,765,893,-453,684,923,-917,70,122,-464,770,411,-490,83,-533,810,-376,-190,498,196,993,-519,433,-979,-498,-373,40,480,-839,789,-714,-601,820,180,106,393,-437,-135,-532,429,-906,-682,31,762,-286,656,-806]\n\"ptduifgndfiitizlkzwe\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
