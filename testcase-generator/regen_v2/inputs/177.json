@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "[[-171,-663],[208,-394]]",
+      "input": "[[480,-488],[-530,460]]",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 10x20 far apart corners"
     },
     {
-      "input": "[[535,437,133,785],[-350,-563,343,-760],[42,939,-20,422],[-789,819,-253,-220]]",
+      "input": "[[467,-671,-273,163],[-461,805,-60,-568],[393,178,64,-412],[48,-127,262,710]]",
       "desc": "Stress: large n near max boundary"
     }
   ]
