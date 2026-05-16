@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length, a.length, b.length, k <= 10^5 (ish), lowercase letters",
   "input_format": "line1: s (quoted); line2: a (quoted); line3: b (quoted); line4: k (int)",
   "testcases": [
-    {"input": "\"isawsquirrelnearmysquirrelhouseohmy\"\n\"my\"\n\"squirrel\"\n15", "desc": "Standard: example 1"},
-    {"input": "\"abcd\"\n\"a\"\n\"a\"\n4", "desc": "Standard: example 2"},
-    {"input": "\"a\"\n\"a\"\n\"a\"\n0", "desc": "Edge: n=1"},
-    {"input": "\"ab\"\n\"a\"\n\"b\"\n1", "desc": "Edge: 2 chars"},
-    {"input": "\"aaaa\"\n\"aa\"\n\"aa\"\n1", "desc": "Edge: overlapping"},
-    {"input": "\"aaaaaa\"\n\"a\"\n\"a\"\n0", "desc": "Edge: same char k=0"},
-    {"input": "\"abc\"\n\"d\"\n\"a\"\n10", "desc": "Edge: a not found"},
-    {"input": "\"abc\"\n\"a\"\n\"d\"\n10", "desc": "Edge: b not found"},
-    {"input": "\"hello\"\n\"l\"\n\"o\"\n2", "desc": "Standard"},
-    {"input": "\"mississippi\"\n\"iss\"\n\"sip\"\n3", "desc": "Standard multi"},
-    {"input": "\"banana\"\n\"an\"\n\"na\"\n1", "desc": "Standard"},
-    {"input": "\"abcabcabc\"\n\"abc\"\n\"abc\"\n0", "desc": "Standard repeats"},
-    {"input": "\"abcdefghij\"\n\"abc\"\n\"hij\"\n7", "desc": "Standard spread"},
-    {"input": "\"abcdefghij\"\n\"abc\"\n\"hij\"\n3", "desc": "Standard too far"},
-    {"input": "\"xyzxyzxyzxyzxyz\"\n\"xyz\"\n\"xyz\"\n3", "desc": "Standard"},
-    {"input": "\"aaaaaaaaaaaaaaa\"\n\"aaa\"\n\"aaa\"\n5", "desc": "Standard same a b"},
-    {"input": "\"thequickbrownfox\"\n\"the\"\n\"fox\"\n13", "desc": "Standard"},
-    {"input": "\"zzzzzzzzzzzzzzzzzzzz\"\n\"zz\"\n\"zzz\"\n2", "desc": "Standard all z"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"def\"\n\"xyz\"\n100", "desc": "Standard alphabet"},
-    {"input": "\"abacabadabacaba\"\n\"aba\"\n\"aca\"\n2", "desc": "Standard recursive pattern"}
+    {
+      "input": "\"isawsquirrelnearmysquirrelhouseohmy\"\n\"my\"\n\"squirrel\"\n15",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"abcd\"\n\"a\"\n\"a\"\n4",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"a\"\n\"a\"\n\"a\"\n0",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "\"ab\"\n\"a\"\n\"b\"\n1",
+      "desc": "Edge: 2 chars"
+    },
+    {
+      "input": "\"aaaa\"\n\"aa\"\n\"aa\"\n1",
+      "desc": "Edge: overlapping"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"a\"\n\"a\"\n0",
+      "desc": "Edge: same char k=0"
+    },
+    {
+      "input": "\"abc\"\n\"d\"\n\"a\"\n10",
+      "desc": "Edge: a not found"
+    },
+    {
+      "input": "\"abc\"\n\"a\"\n\"d\"\n10",
+      "desc": "Edge: b not found"
+    },
+    {
+      "input": "\"hello\"\n\"l\"\n\"o\"\n2",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"mississippi\"\n\"iss\"\n\"sip\"\n3",
+      "desc": "Standard multi"
+    },
+    {
+      "input": "\"banana\"\n\"an\"\n\"na\"\n1",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcabcabc\"\n\"abc\"\n\"abc\"\n0",
+      "desc": "Standard repeats"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"abc\"\n\"hij\"\n7",
+      "desc": "Standard spread"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"abc\"\n\"hij\"\n3",
+      "desc": "Standard too far"
+    },
+    {
+      "input": "\"xyzxyzxyzxyzxyz\"\n\"xyz\"\n\"xyz\"\n3",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaa\"\n\"aaa\"\n\"aaa\"\n5",
+      "desc": "Standard same a b"
+    },
+    {
+      "input": "\"thequickbrownfox\"\n\"the\"\n\"fox\"\n13",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzz\"\n\"zz\"\n\"zzz\"\n2",
+      "desc": "Standard all z"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"def\"\n\"xyz\"\n100",
+      "desc": "Standard alphabet"
+    },
+    {
+      "input": "\"rtuzqxfsuqiwbuglzqknqxidyfhfrhfzlvdjuwozullkzvihmgpzrunlogfqynznrkzlzn\"\n\"ungn\"\n\"ynylvynyexebehrq\"\n15",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

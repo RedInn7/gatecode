@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^5, k == queryCharacters.length, queryIndices in [0, s.length-1]",
   "input_format": "line1: s (quoted); line2: queryCharacters (quoted); line3: queryIndices (JSON array)",
   "testcases": [
-    {"input": "\"babacc\"\n\"bcb\"\n[1,3,3]", "desc": "Standard: example 1"},
-    {"input": "\"abyzz\"\n\"aa\"\n[2,1]", "desc": "Standard: example 2"},
-    {"input": "\"a\"\n\"b\"\n[0]", "desc": "Edge: n=1"},
-    {"input": "\"a\"\n\"a\"\n[0]", "desc": "Edge: no change"},
-    {"input": "\"ab\"\n\"a\"\n[1]", "desc": "Edge: 2 chars"},
-    {"input": "\"aaaa\"\n\"b\"\n[2]", "desc": "Edge: break"},
-    {"input": "\"abcd\"\n\"a\"\n[1]", "desc": "Edge: form pair"},
-    {"input": "\"aaaaaaaaaa\"\n\"b\"\n[5]", "desc": "Standard split"},
-    {"input": "\"abcabcabc\"\n\"a\"\n[1]", "desc": "Standard"},
-    {"input": "\"aaaabbbb\"\n\"ab\"\n[3,4]", "desc": "Standard"},
-    {"input": "\"abcdefghij\"\n\"aaaaa\"\n[0,1,2,3,4]", "desc": "Standard build"},
-    {"input": "\"zzzzzzzzzz\"\n\"a\"\n[5]", "desc": "Standard split z"},
-    {"input": "\"aaaa\"\n\"aaaa\"\n[0,1,2,3]", "desc": "Edge: same char"},
-    {"input": "\"abababab\"\n\"a\"\n[1]", "desc": "Standard alternating"},
-    {"input": "\"aabb\"\n\"ab\"\n[1,2]", "desc": "Standard swap"},
-    {"input": "\"aaaaaa\"\n\"bb\"\n[2,3]", "desc": "Standard split middle"},
-    {"input": "\"hello\"\n\"l\"\n[0]", "desc": "Standard"},
-    {"input": "\"abcabcabcabc\"\n\"aaaa\"\n[1,4,7,10]", "desc": "Standard transform"},
-    {"input": "\"zzzzzzzzzz\"\n\"abcabcabca\"\n[0,1,2,3,4,5,6,7,8,9]", "desc": "Standard rebuild"},
-    {"input": "\"abcdefghijklmnopqrst\"\n\"aaaaa\"\n[5,6,7,8,9]", "desc": "Standard"}
+    {
+      "input": "\"babacc\"\n\"bcb\"\n[1,3,3]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"abyzz\"\n\"aa\"\n[2,1]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"a\"\n\"b\"\n[0]",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "\"a\"\n\"a\"\n[0]",
+      "desc": "Edge: no change"
+    },
+    {
+      "input": "\"ab\"\n\"a\"\n[1]",
+      "desc": "Edge: 2 chars"
+    },
+    {
+      "input": "\"aaaa\"\n\"b\"\n[2]",
+      "desc": "Edge: break"
+    },
+    {
+      "input": "\"abcd\"\n\"a\"\n[1]",
+      "desc": "Edge: form pair"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"\n\"b\"\n[5]",
+      "desc": "Standard split"
+    },
+    {
+      "input": "\"abcabcabc\"\n\"a\"\n[1]",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aaaabbbb\"\n\"ab\"\n[3,4]",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"aaaaa\"\n[0,1,2,3,4]",
+      "desc": "Standard build"
+    },
+    {
+      "input": "\"zzzzzzzzzz\"\n\"a\"\n[5]",
+      "desc": "Standard split z"
+    },
+    {
+      "input": "\"aaaa\"\n\"aaaa\"\n[0,1,2,3]",
+      "desc": "Edge: same char"
+    },
+    {
+      "input": "\"abababab\"\n\"a\"\n[1]",
+      "desc": "Standard alternating"
+    },
+    {
+      "input": "\"aabb\"\n\"ab\"\n[1,2]",
+      "desc": "Standard swap"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"bb\"\n[2,3]",
+      "desc": "Standard split middle"
+    },
+    {
+      "input": "\"hello\"\n\"l\"\n[0]",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcabcabcabc\"\n\"aaaa\"\n[1,4,7,10]",
+      "desc": "Standard transform"
+    },
+    {
+      "input": "\"zzzzzzzzzz\"\n\"abcabcabca\"\n[0,1,2,3,4,5,6,7,8,9]",
+      "desc": "Standard rebuild"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrst\"\n\"aaaaa\"\n[5,6,7,8,9]",
+      "desc": "Standard"
+    }
   ]
 }
