@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"fc\"\n\"a\"",
+      "input": "\"rd\"\n\"q\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 20 z to 20 a true"
     },
     {
-      "input": "\"xcsufy\"\n\"kxex\"",
+      "input": "\"kqgi\"\n\"dboz\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

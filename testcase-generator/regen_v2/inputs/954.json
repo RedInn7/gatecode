@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"inz\"\n\"bu\"",
+      "input": "\"gmqi\"\n\"lx\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 15 pattern"
     },
     {
-      "input": "\"cekoknot\"\n\"oawm\"",
+      "input": "\"fpjrzpkv\"\n\"mrpx\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
