@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= m, n <= 1000, 4 <= m*n, 0 <= grid[i][j] <= 10^5, grid[0][0]=0",
   "input_format": "single line: grid (JSON 2D array)",
   "testcases": [
-    {"input": "[[0,1,3,2],[5,1,2,5],[4,3,8,6]]", "desc": "Standard: example 1"},
-    {"input": "[[0,2,4],[3,2,1],[1,0,4]]", "desc": "Standard: example 2 (-1 if grid[0][1]>1 and grid[1][0]>1)"},
-    {"input": "[[0,1],[1,1]]", "desc": "Edge: minimum 2x2"},
-    {"input": "[[0,2],[2,2]]", "desc": "Edge: 2x2 impossible (both neighbors need t>=2)"},
-    {"input": "[[0,1],[2,3]]", "desc": "Edge: 2x2 with wait"},
-    {"input": "[[0,0,0],[0,0,0]]", "desc": "Edge: all zeros 2x3"},
-    {"input": "[[0,1,2,3,4],[1,2,3,4,5]]", "desc": "Edge: 2x5 incremental"},
-    {"input": "[[0,100000],[100000,100000]]", "desc": "Edge: max values blocked"},
-    {"input": "[[0,3],[3,0]]", "desc": "Edge: 2x2 needs back-forth"},
-    {"input": "[[0,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]", "desc": "Standard: 4x4 mild"},
-    {"input": "[[0,1,2,3,4],[1,2,3,4,5],[2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8]]", "desc": "Standard: 5x5 increasing"},
-    {"input": "[[0,1,1,1,1],[1,2,2,2,2],[1,2,3,3,3],[1,2,3,4,4],[1,2,3,4,5]]", "desc": "Standard: diagonal levels"},
-    {"input": "[[0,1,2,3,4,5,6,7,8,9],[10,11,12,13,14,15,16,17,18,19]]", "desc": "Standard: 2x10 hard"},
-    {"input": "[[0],[1],[2],[3]]", "desc": "Edge: 4x1 (might violate 2<=n)"},
-    {"input": "[[0,0],[0,0],[0,0],[0,0]]", "desc": "Standard: 4x2 all zero"},
-    {"input": "[[0,1,2,3,4,5],[5,4,3,2,1,0]]", "desc": "Standard: snake harder"},
-    {"input": "[[0,1,3,5,7,9],[1,2,4,6,8,10],[2,3,5,7,9,11],[3,4,6,8,10,12]]", "desc": "Standard: 4x6 stepped"},
-    {"input": "[[0,2,2,2],[2,2,2,2],[2,2,2,2]]", "desc": "Edge: blocked start - return -1"},
-    {"input": "[[0,1,2,3,4,5,6,7,8,9,10,11],[1,2,3,4,5,6,7,8,9,10,11,12]]", "desc": "Standard: 2x12 long"},
-    {"input": "[[0,3,1,2],[1,5,2,4],[6,3,2,1],[1,2,3,4]]", "desc": "Standard: varied 4x4"}
+    {
+      "input": "[[0,1,3,2],[5,1,2,5],[4,3,8,6]]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[[0,2,4],[3,2,1],[1,0,4]]",
+      "desc": "Standard: example 2 (-1 if grid[0][1]>1 and grid[1][0]>1)"
+    },
+    {
+      "input": "[[0,1],[1,1]]",
+      "desc": "Edge: minimum 2x2"
+    },
+    {
+      "input": "[[0,2],[2,2]]",
+      "desc": "Edge: 2x2 impossible (both neighbors need t>=2)"
+    },
+    {
+      "input": "[[0,1],[2,3]]",
+      "desc": "Edge: 2x2 with wait"
+    },
+    {
+      "input": "[[0,0,0],[0,0,0]]",
+      "desc": "Edge: all zeros 2x3"
+    },
+    {
+      "input": "[[0,1,2,3,4],[1,2,3,4,5]]",
+      "desc": "Edge: 2x5 incremental"
+    },
+    {
+      "input": "[[0,100000],[100000,100000]]",
+      "desc": "Edge: max values blocked"
+    },
+    {
+      "input": "[[0,3],[3,0]]",
+      "desc": "Edge: 2x2 needs back-forth"
+    },
+    {
+      "input": "[[0,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]",
+      "desc": "Standard: 4x4 mild"
+    },
+    {
+      "input": "[[0,1,2,3,4],[1,2,3,4,5],[2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8]]",
+      "desc": "Standard: 5x5 increasing"
+    },
+    {
+      "input": "[[0,1,1,1,1],[1,2,2,2,2],[1,2,3,3,3],[1,2,3,4,4],[1,2,3,4,5]]",
+      "desc": "Standard: diagonal levels"
+    },
+    {
+      "input": "[[0,1,2,3,4,5,6,7,8,9],[10,11,12,13,14,15,16,17,18,19]]",
+      "desc": "Standard: 2x10 hard"
+    },
+    {
+      "input": "[[0],[1],[2],[3]]",
+      "desc": "Edge: 4x1 (might violate 2<=n)"
+    },
+    {
+      "input": "[[0,0],[0,0],[0,0],[0,0]]",
+      "desc": "Standard: 4x2 all zero"
+    },
+    {
+      "input": "[[0,1,2,3,4,5],[5,4,3,2,1,0]]",
+      "desc": "Standard: snake harder"
+    },
+    {
+      "input": "[[0,1,3,5,7,9],[1,2,4,6,8,10],[2,3,5,7,9,11],[3,4,6,8,10,12]]",
+      "desc": "Standard: 4x6 stepped"
+    },
+    {
+      "input": "[[0,2,2,2],[2,2,2,2],[2,2,2,2]]",
+      "desc": "Edge: blocked start - return -1"
+    },
+    {
+      "input": "[[0,1,2,3,4,5,6,7,8,9,10,11],[1,2,3,4,5,6,7,8,9,10,11,12]]",
+      "desc": "Standard: 2x12 long"
+    },
+    {
+      "input": "[[0,3,1,2],[1,5,2,4],[6,3,2,1],[1,2,3,4]]",
+      "desc": "Standard: varied 4x4"
+    }
   ]
 }

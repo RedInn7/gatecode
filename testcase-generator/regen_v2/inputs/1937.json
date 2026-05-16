@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= code.length <= 500, code includes uppercase letters, digits, special chars; tag name 1-9 uppercase letters",
   "input_format": "single line: code (JSON string)",
   "testcases": [
-    {"input": "\"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"", "desc": "Standard: valid"},
-    {"input": "\"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"", "desc": "Standard: valid CDATA"},
-    {"input": "\"<A>  <B> </A>   </B>\"", "desc": "Standard: invalid mismatched nesting"},
-    {"input": "\"<DIV>  div tag is not closed  <DIV>\"", "desc": "Standard: invalid unclosed"},
-    {"input": "\"<DIV>  unmatched <  </DIV>\"", "desc": "Standard: valid unmatched <"},
-    {"input": "\"<DIV> closed tags with invalid tag name  <b>123</b> </DIV>\"", "desc": "Standard: invalid lowercase"},
-    {"input": "\"<DIV> unmatched tags with invalid tag name  </1234567890> and <CDATA[[]]>  </DIV>\"", "desc": "Standard: invalid tag name"},
-    {"input": "\"<DIV>  unmatched start tag <B>  and unmatched end tag </C>  </DIV>\"", "desc": "Standard: invalid"},
-    {"input": "\"<A></A>\"", "desc": "Edge: minimal valid"},
-    {"input": "\"<A>B</A>\"", "desc": "Edge: minimal with content"},
-    {"input": "\"<>\"", "desc": "Edge: invalid empty tag name"},
-    {"input": "\"<A></B>\"", "desc": "Edge: invalid mismatch"},
-    {"input": "\"<ABCDEFGHI></ABCDEFGHI>\"", "desc": "Edge: max tag name 9"},
-    {"input": "\"<ABCDEFGHIJ></ABCDEFGHIJ>\"", "desc": "Edge: invalid 10-letter tag"},
-    {"input": "\"<A><B><C></C></B></A>\"", "desc": "Standard: nested valid"},
-    {"input": "\"<A><B></A></B>\"", "desc": "Standard: crossed invalid"},
-    {"input": "\"text only\"", "desc": "Edge: invalid no root"},
-    {"input": "\"<A><![CDATA[content]]></A>\"", "desc": "Standard: CDATA valid"},
-    {"input": "\"<A><![CDATA[unclosed</A>\"", "desc": "Standard: invalid CDATA unclosed"},
-    {"input": "\"<DIV>123!@#$%^&*()</DIV>\"", "desc": "Standard: special chars in content"}
+    {
+      "input": "\"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
+      "desc": "Standard: valid"
+    },
+    {
+      "input": "\"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
+      "desc": "Standard: valid CDATA"
+    },
+    {
+      "input": "\"<A>  <B> </A>   </B>\"",
+      "desc": "Standard: invalid mismatched nesting"
+    },
+    {
+      "input": "\"<DIV>  div tag is not closed  <DIV>\"",
+      "desc": "Standard: invalid unclosed"
+    },
+    {
+      "input": "\"<DIV>  unmatched <  </DIV>\"",
+      "desc": "Standard: valid unmatched <"
+    },
+    {
+      "input": "\"<DIV> closed tags with invalid tag name  <b>123</b> </DIV>\"",
+      "desc": "Standard: invalid lowercase"
+    },
+    {
+      "input": "\"<DIV> unmatched tags with invalid tag name  </1234567890> and <CDATA[[]]>  </DIV>\"",
+      "desc": "Standard: invalid tag name"
+    },
+    {
+      "input": "\"<DIV>  unmatched start tag <B>  and unmatched end tag </C>  </DIV>\"",
+      "desc": "Standard: invalid"
+    },
+    {
+      "input": "\"<A></A>\"",
+      "desc": "Edge: minimal valid"
+    },
+    {
+      "input": "\"<A>B</A>\"",
+      "desc": "Edge: minimal with content"
+    },
+    {
+      "input": "\"<>\"",
+      "desc": "Edge: invalid empty tag name"
+    },
+    {
+      "input": "\"<A></B>\"",
+      "desc": "Edge: invalid mismatch"
+    },
+    {
+      "input": "\"<ABCDEFGHI></ABCDEFGHI>\"",
+      "desc": "Edge: max tag name 9"
+    },
+    {
+      "input": "\"<ABCDEFGHIJ></ABCDEFGHIJ>\"",
+      "desc": "Edge: invalid 10-letter tag"
+    },
+    {
+      "input": "\"<A><B><C></C></B></A>\"",
+      "desc": "Standard: nested valid"
+    },
+    {
+      "input": "\"<A><B></A></B>\"",
+      "desc": "Standard: crossed invalid"
+    },
+    {
+      "input": "\"text only\"",
+      "desc": "Edge: invalid no root"
+    },
+    {
+      "input": "\"<A><![CDATA[content]]></A>\"",
+      "desc": "Standard: CDATA valid"
+    },
+    {
+      "input": "\"<A><![CDATA[unclosed</A>\"",
+      "desc": "Standard: invalid CDATA unclosed"
+    },
+    {
+      "input": "\"<DIV>123!@#$%^&*()</DIV>\"",
+      "desc": "Standard: special chars in content"
+    }
   ]
 }
