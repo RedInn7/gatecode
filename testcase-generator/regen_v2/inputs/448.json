@@ -4,25 +4,85 @@
   "inferred_constraints": "3 <= nums.length <= 100, 1 <= nums[i] <= 1e6",
   "input_format": "line1: nums (JSON int array)",
   "testcases": [
-    {"input": "[12,6,1,2,7]", "desc": "Edge: example1"},
-    {"input": "[1,10,3,4,19]", "desc": "Edge: example2"},
-    {"input": "[1,2,3]", "desc": "Edge: example3 negative result, return 0"},
-    {"input": "[1,1,1]", "desc": "Edge: all same"},
-    {"input": "[1000000,1000000,1000000]", "desc": "Edge: max all same"},
-    {"input": "[1000000,1,1000000]", "desc": "Edge: middle small"},
-    {"input": "[1,1000000,1]", "desc": "Edge: middle big"},
-    {"input": "[3,2,1]", "desc": "Edge: descending"},
-    {"input": "[1,2,3,4,5]", "desc": "Edge: ascending"},
-    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
-    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: long descending"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: long ascending"},
-    {"input": "[100,1,2,3,100]", "desc": "Standard: peaks at ends"},
-    {"input": "[1,100,2,100,3]", "desc": "Standard: alternating"},
-    {"input": "[1000000,500000,750000,250000,1000000]", "desc": "Standard: large values"},
-    {"input": "[1,2,3,1,2,3]", "desc": "Standard: pattern"},
-    {"input": "[100,99,98,1]", "desc": "Standard: 3 high 1 low"},
-    {"input": "[50,1,50,1,50]", "desc": "Standard: alternating"},
-    {"input": "[999999,1,999999,1,999999,1]", "desc": "Standard: alternating extremes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 1..20"}
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "[1,10,3,4,19]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Edge: example3 negative result, return 0"
+    },
+    {
+      "input": "[1,1,1]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[1000000,1000000,1000000]",
+      "desc": "Edge: max all same"
+    },
+    {
+      "input": "[1000000,1,1000000]",
+      "desc": "Edge: middle small"
+    },
+    {
+      "input": "[1,1000000,1]",
+      "desc": "Edge: middle big"
+    },
+    {
+      "input": "[3,2,1]",
+      "desc": "Edge: descending"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Edge: ascending"
+    },
+    {
+      "input": "[5,4,3,2,1]",
+      "desc": "Standard: descending"
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]",
+      "desc": "Standard: long descending"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: long ascending"
+    },
+    {
+      "input": "[100,1,2,3,100]",
+      "desc": "Standard: peaks at ends"
+    },
+    {
+      "input": "[1,100,2,100,3]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[1000000,500000,750000,250000,1000000]",
+      "desc": "Standard: large values"
+    },
+    {
+      "input": "[1,2,3,1,2,3]",
+      "desc": "Standard: pattern"
+    },
+    {
+      "input": "[100,99,98,1]",
+      "desc": "Standard: 3 high 1 low"
+    },
+    {
+      "input": "[50,1,50,1,50]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[999999,1,999999,1,999999,1]",
+      "desc": "Standard: alternating extremes"
+    },
+    {
+      "input": "[202460,508550,699243,176956,310983,140315,423081,321948,345350,643623,132613,432751,703567,480085,245369,935812,62600,803806,919336,720686,253265,235520,455318,140772,229171,866135,922003,794860,825783,718154,557231,989805,561729,352763,532245,316971,519412,53816,622175,305530,827162,239559,978065,137976,827027,46560,81712,14258,499890,307180,743079,46915,930304,853350,50615,809847,767743,981944,243250,803966,968434,924286,160166,74457,781336,718273,643317,675502,250866,130327,722979,386943,456042,63496,244713,8656,761532,718093,240868,215849,117875,2911,262889,319699,848696,71097,504487,149879,926855,261224,158431,53799,24275,859627,721433,332088,788235,471736,961766,97621]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, s of 'a','b','c'",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "ca", "desc": "Edge: example1"},
-    {"input": "cabaabac", "desc": "Edge: example2 fully removed"},
-    {"input": "aabccabba", "desc": "Edge: example3"},
-    {"input": "a", "desc": "Edge: n=1"},
-    {"input": "aa", "desc": "Edge: n=2 same"},
-    {"input": "ab", "desc": "Edge: n=2 different"},
-    {"input": "aaa", "desc": "Edge: all same"},
-    {"input": "aaaa", "desc": "Edge: 4 same"},
-    {"input": "aaaaaaaaaa", "desc": "Edge: 10 same"},
-    {"input": "abc", "desc": "Edge: different ends"},
-    {"input": "abcba", "desc": "Edge: palindrome a ends"},
-    {"input": "aabbaa", "desc": "Standard: removable layers"},
-    {"input": "aaabbbccc", "desc": "Standard: blocks"},
-    {"input": "abcabcabc", "desc": "Standard: pattern abc x3"},
-    {"input": "aaaaabbbbbccccc", "desc": "Standard: 3 large blocks"},
-    {"input": "aabbccaabbcc", "desc": "Standard: doubled blocks"},
-    {"input": "bcabc", "desc": "Standard: different ends b and c"},
-    {"input": "cba", "desc": "Edge: different ends"},
-    {"input": "abccccccccba", "desc": "Standard: peeling layers"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 50 same"}
+    {
+      "input": "ca",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "cabaabac",
+      "desc": "Edge: example2 fully removed"
+    },
+    {
+      "input": "\"p\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"chmnetkco\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "aa",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: n=2 different"
+    },
+    {
+      "input": "aaa",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "aaaa",
+      "desc": "Edge: 4 same"
+    },
+    {
+      "input": "aaaaaaaaaa",
+      "desc": "Edge: 10 same"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: different ends"
+    },
+    {
+      "input": "abcba",
+      "desc": "Edge: palindrome a ends"
+    },
+    {
+      "input": "aabbaa",
+      "desc": "Standard: removable layers"
+    },
+    {
+      "input": "aaabbbccc",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "abcabcabc",
+      "desc": "Standard: pattern abc x3"
+    },
+    {
+      "input": "aaaaabbbbbccccc",
+      "desc": "Standard: 3 large blocks"
+    },
+    {
+      "input": "aabbccaabbcc",
+      "desc": "Standard: doubled blocks"
+    },
+    {
+      "input": "bcabc",
+      "desc": "Standard: different ends b and c"
+    },
+    {
+      "input": "cba",
+      "desc": "Edge: different ends"
+    },
+    {
+      "input": "abccccccccba",
+      "desc": "Standard: peeling layers"
+    },
+    {
+      "input": "\"olkfqkmabfokcqonir\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
