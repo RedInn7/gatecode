@@ -705,9 +705,33 @@ puts JSON.generate(_result)
 const phpRunnerTpl = `
 // runner
 $_stdin = file_get_contents('php://stdin');
-$_lines = array_values(array_filter(array_map('trim', explode("\n", $_stdin))));
+// IMPORTANT: filter by !== '', not the default array_filter — the default
+// drops every "falsy" entry, including the literal string "0" (so target=0
+// inputs would lose a line and crash with ArgumentCountError).
+$_lines = array_values(array_filter(
+    array_map('trim', explode("\n", $_stdin)),
+    function($_l) { return $_l !== ''; }
+));
 $_args = array_map(function($_l) { return json_decode($_l, true); }, $_lines);
-$_result = {{FUNC}}(...$_args);
+// {{FUNC}} can be either a top-level function (function twoSum(...))
+// or a method on class Solution (LeetCode's PHP template).
+if (class_exists('Solution') && method_exists('Solution', '{{FUNC}}')) {
+    $_obj = new Solution();
+    $_result = $_obj->{{FUNC}}(...$_args);
+} elseif (function_exists('{{FUNC}}')) {
+    $_result = {{FUNC}}(...$_args);
+} else {
+    // Last resort: scan declared user-defined classes for a matching method
+    $_result = null;
+    foreach (get_declared_classes() as $_c) {
+        $_r = new ReflectionClass($_c);
+        if ($_r->isUserDefined() && $_r->hasMethod('{{FUNC}}')) {
+            $_obj = $_r->newInstanceWithoutConstructor();
+            $_result = $_obj->{{FUNC}}(...$_args);
+            break;
+        }
+    }
+}
 echo json_encode($_result) . "\n";
 `
 

@@ -153,12 +153,126 @@ func TestOutputEqual_NullVsEmpty(t *testing.T) {
 		{"[] vs null", "null", "[]", true},
 		{"both null", "null", "null", true},
 		{"both []", "[]", "[]", true},
+		// Nested empty-list ↔ null (per-tree / forest-of-lists problems).
+		{"nested null vs []", "[1, [], 2]", "[1, null, 2]", true},
+		{"nested both null", "[[], null, []]", "[null, [], null]", true},
+		// A list of empty trees should still equal "[]".
+		{"empty forest vs flat null", "[]", "null", true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got := OutputEqual(true, tt.actual, tt.expected)
 			if got != tt.want {
 				t.Errorf("OutputEqual(%q, %q) = %v, want %v", tt.actual, tt.expected, got, tt.want)
+			}
+		})
+	}
+}
+
+// PHP "0"-target regression — guards the wrap_compiled / php runner fix
+// where PHP's array_filter dropped lines whose JSON value was the literal
+// string "0", which mangled inputs like "[0,4,3,0]\n0" into a single arg.
+// This is a compare-level smoke test against the canonical Two Sum output.
+func TestOutputEqual_TwoSumZeroTarget(t *testing.T) {
+	// Standard Two Sum format: actual stdout vs DB-stored expected.
+	if !OutputEqual(true, "[0,3]", "[0, 3]") {
+		t.Error("standard JSON whitespace mismatch for [0,3]")
+	}
+	if !OutputEqual(true, "[0,1]", "[0, 1]") {
+		t.Error("standard JSON whitespace mismatch for [0,1]")
+	}
+}
+
+// Regressions from the multi-language verification sweep. Each entry below
+// was observed as a real Accepted output that did not byte-compare equal
+// to the canonical expected value.
+func TestOutputEqual_RealWorldRegressions(t *testing.T) {
+	tests := []struct {
+		name     string
+		actual   string
+		expected string
+		want     bool
+	}{
+		// Trailing newline + indentation drift inside the JSON.
+		{"trailing newline tolerated", "[0,1]\n", "[0, 1]", true},
+		// Java often emits true/false; expected might be 1/0.
+		{"java bool vs int array", "[true,true,false]", "[1, 1, 0]", true},
+		// Python may return float for integer division; expected is int.
+		{"float vs int", "1.0", "1", true},
+		// LeetCode sometimes shows integers in scientific notation.
+		{"scientific integer", "1e6", "1000000", true},
+		// Negative-zero issues from C++ floating output.
+		{"negative zero", "-0.0", "0", true},
+		// Order-independent comparison must still reject content mismatch.
+		{"reject content mismatch", "[1,2,3]", "[1,2,4]", false},
+		// Empty answer corner case.
+		{"empty array tokens", "[]", "[]", true},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := OutputEqual(true, tt.actual, tt.expected)
+			if got != tt.want {
+				t.Errorf("OutputEqual(%q, %q) = %v, want %v",
+					tt.actual, tt.expected, got, tt.want)
+			}
+		})
+	}
+}
+
+// Sentinel-infinity normalization: when the expected answer contains
+// Infinity, large sentinel values (INT_MAX, 1e18) from compiled-language
+// output should be treated as equivalent.
+func TestOutputEqual_SentinelInfinity(t *testing.T) {
+	tests := []struct {
+		name     string
+		actual   string
+		expected string
+		want     bool
+	}{
+		{"INT_MAX vs Infinity", "2147483647", "Infinity", true},
+		{"INT_MIN vs -Infinity", "-2147483648", "-Infinity", true},
+		{"1e18 vs Infinity in array", "[1, 1000000000000000000, 2]", "[1, Infinity, 2]", true},
+		// Plain sentinel without infinity context must still equal itself.
+		{"raw INT_MAX without inf", "2147483647", "2147483647", true},
+		// Standard near-zero.
+		{"near zero", "1e-12", "0", true},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := OutputEqual(true, tt.actual, tt.expected)
+			if got != tt.want {
+				t.Errorf("OutputEqual(%q, %q) = %v, want %v",
+					tt.actual, tt.expected, got, tt.want)
+			}
+		})
+	}
+}
+
+// Token equality on B-group output (raw text, no auto-wrap).
+// This is the codepath used by Go / Rust / Kotlin / Swift / C# / Scala / etc.
+// when judging stdout-style answers.
+func TestOutputEqual_TokenEqualEdgeCases(t *testing.T) {
+	tests := []struct {
+		name     string
+		actual   string
+		expected string
+		want     bool
+	}{
+		{"trailing newline", "0 1\n", "0 1", true},
+		{"multiple spaces", "0    1", "0 1", true},
+		{"tab vs space", "0\t1", "0 1", true},
+		{"mixed whitespace", "  0  1  ", "0 1", true},
+		{"different content", "0 1", "0 2", false},
+		{"different length", "0 1 2", "0 1", false},
+		{"empty vs empty", "", "", true},
+		{"empty vs space", " \n\t ", "", true},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := OutputEqual(false, tt.actual, tt.expected)
+			if got != tt.want {
+				t.Errorf("OutputEqual(false, %q, %q) = %v, want %v",
+					tt.actual, tt.expected, got, tt.want)
 			}
 		})
 	}

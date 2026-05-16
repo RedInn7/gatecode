@@ -26,9 +26,13 @@ import (
 var PoolSize = 8
 
 // poolEntry is a single persistent container in the pool.
+// `alive` is set true when the container is known to be running. It is
+// cleared by CopyToContainer/ExecInContainer when they detect a
+// "No such container" error so the next acquire transparently restarts.
 type poolEntry struct {
-	name string // docker container name
-	mu   sync.Mutex
+	name  string // docker container name
+	mu    sync.Mutex
+	alive bool
 }
 
 // imagePool holds containers for a single Docker image.
@@ -64,6 +68,9 @@ func getPool(image string, memMB int) *imagePool {
 }
 
 // ensureStarted lazily creates all containers in the pool.
+// Each entry tracks whether its container is alive; dead entries are
+// transparently restarted on the next acquire (handles image-was-missing
+// at boot, and crashed-container scenarios).
 func (p *imagePool) ensureStarted() {
 	p.mu.Lock()
 	defer p.mu.Unlock()
@@ -74,10 +81,14 @@ func (p *imagePool) ensureStarted() {
 	p.entries = make([]*poolEntry, PoolSize)
 	for i := 0; i < PoolSize; i++ {
 		name := fmt.Sprintf("gc_pool_%s_%d_%d", sanitizeImageName(p.image), poolSeq.Add(1), i)
-		p.entries[i] = &poolEntry{name: name}
+		entry := &poolEntry{name: name}
 		if err := startContainer(name, p.image, p.memMB); err != nil {
 			log.Printf("[pool] WARNING: failed to start container %s: %v", name, err)
+			entry.alive = false
+		} else {
+			entry.alive = true
 		}
+		p.entries[i] = entry
 		p.sem <- i // mark slot as available
 	}
 	// Brief pause to let Docker fully start all containers
@@ -174,13 +185,21 @@ func (h *containerHandle) Release() {
 
 // AcquireContainer gets a container from the pool for the given image.
 // The caller MUST call handle.Release() when done.
-// Optimized: skips docker inspect health check (saves ~25ms per acquire).
-// Instead, CopyToContainer/ExecInContainer will detect dead containers.
+// If the slot's container is known dead (start failure or earlier crash),
+// it is transparently restarted before being handed out so that a missing
+// image at boot does not poison the pool forever.
 func AcquireContainer(image string, memMB int) *containerHandle {
 	pool := getPool(image, memMB)
 	idx := pool.acquire()
 	entry := pool.entries[idx]
 	entry.mu.Lock()
+	if !entry.alive {
+		if err := restartContainer(entry, image, memMB); err == nil {
+			entry.alive = true
+		} else {
+			log.Printf("[pool] failed to restart container %s: %v", entry.name, err)
+		}
+	}
 	return &containerHandle{pool: pool, idx: idx, entry: entry}
 }
 
@@ -212,14 +231,36 @@ func CopyToContainer(cname, hostDir string) error {
 
 // CopyToContainerFast copies files with ONLY docker cp — no extra exec.
 // The runner script itself handles chmod. Saves ~130ms per judge call.
+//
+// Side effect: if `docker cp` reports "No such container", the pool entry
+// (looked up by name) is marked dead so the next acquirer restarts it.
 func CopyToContainerFast(cname, hostDir string) error {
 	copyCmd := exec.Command("docker", "cp", hostDir+"/.", cname+":/w/")
 	var copyErr bytes.Buffer
 	copyCmd.Stderr = &copyErr
 	if err := copyCmd.Run(); err != nil {
-		return fmt.Errorf("docker cp: %w: %s", err, copyErr.String())
+		msg := copyErr.String()
+		if strings.Contains(msg, "No such container") || strings.Contains(msg, "is not running") {
+			markEntryDead(cname)
+		}
+		return fmt.Errorf("docker cp: %w: %s", err, msg)
 	}
 	return nil
+}
+
+// markEntryDead flips a pool entry's alive flag to false, looked up by
+// container name. Used by Copy/Exec to recycle crashed containers.
+func markEntryDead(cname string) {
+	poolsMu.Lock()
+	defer poolsMu.Unlock()
+	for _, p := range pools {
+		for _, e := range p.entries {
+			if e != nil && e.name == cname {
+				e.alive = false
+				return
+			}
+		}
+	}
 }
 
 // CopyFileToContainer copies a single file from host to a path inside the container.
