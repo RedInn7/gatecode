@@ -1,0 +1,27 @@
+{
+  "pid": 835, "slug": "verifying-an-alien-dictionary",
+  "inferred_constraints": "1 <= words.length <= 100, 1 <= words[i].length <= 20, order.length == 26",
+  "input_format": "line1: words (JSON array); line2: order (raw)",
+  "testcases": [
+    {"input": "[\"hello\",\"leetcode\"]\nhlabcdefgijkmnopqrstuvwxyz", "desc": "Edge: example1"},
+    {"input": "[\"word\",\"world\",\"row\"]\nworldabcefghijkmnpqstuvxyz", "desc": "Edge: example2"},
+    {"input": "[\"apple\",\"app\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Edge: example3 prefix"},
+    {"input": "[\"a\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Edge: single word"},
+    {"input": "[\"a\",\"a\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Edge: identical"},
+    {"input": "[\"a\",\"b\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Edge: normal order"},
+    {"input": "[\"b\",\"a\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Edge: reversed"},
+    {"input": "[\"app\",\"apple\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Edge: shorter first"},
+    {"input": "[\"abc\",\"abd\",\"abe\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: sorted"},
+    {"input": "[\"abc\",\"abd\",\"abe\"]\nzyxwvutsrqponmlkjihgfedcba", "desc": "Standard: reverse order"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: identical sorted"},
+    {"input": "[\"abcdef\",\"abcdef\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Edge: equal long"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: 5 sorted"},
+    {"input": "[\"e\",\"d\",\"c\",\"b\",\"a\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: 5 reverse"},
+    {"input": "[\"hello\",\"hi\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: hello vs hi"},
+    {"input": "[\"kuvp\",\"q\"]\nngxlkthsjuoqcpavbfdermiywz", "desc": "Standard: alien order"},
+    {"input": "[\"aabbcc\",\"aabbc\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: prefix issue"},
+    {"input": "[\"hello\",\"hello\",\"world\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: duplicates ok"},
+    {"input": "[\"aaa\",\"aab\",\"aac\",\"aad\"]\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: 4 progressive"},
+    {"input": "[\"zzz\",\"aaa\"]\nzabcdefghijklmnopqrstuvwxy", "desc": "Special: z first in alien"}
+  ]
+}

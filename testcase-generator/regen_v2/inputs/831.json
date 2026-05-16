@@ -1,0 +1,27 @@
+{
+  "pid": 831, "slug": "range-addition",
+  "inferred_constraints": "1 <= length <= 1e5, 0 <= updates.length <= 1e4, -1000 <= inc <= 1000",
+  "input_format": "line1: length (int); line2: updates (JSON 2D)",
+  "testcases": [
+    {"input": "5\n[[1,3,2],[2,4,3],[0,2,-2]]", "desc": "Edge: example1"},
+    {"input": "10\n[[2,4,6],[5,6,8],[1,9,-4]]", "desc": "Edge: example2"},
+    {"input": "1\n[]", "desc": "Edge: length=1 no updates"},
+    {"input": "1\n[[0,0,5]]", "desc": "Edge: length=1 one update"},
+    {"input": "5\n[]", "desc": "Edge: no updates"},
+    {"input": "5\n[[0,4,1]]", "desc": "Edge: full range"},
+    {"input": "5\n[[0,4,-1000]]", "desc": "Edge: max negative"},
+    {"input": "5\n[[0,4,1000]]", "desc": "Edge: max positive"},
+    {"input": "10\n[[0,9,5],[0,9,5],[0,9,5]]", "desc": "Standard: repeated full"},
+    {"input": "10\n[[0,4,10],[5,9,20]]", "desc": "Standard: 2 halves"},
+    {"input": "10\n[[0,0,1],[1,1,2],[2,2,3],[3,3,4],[4,4,5]]", "desc": "Standard: 5 singles"},
+    {"input": "10\n[[0,9,1],[1,8,1],[2,7,1],[3,6,1],[4,5,1]]", "desc": "Standard: nested"},
+    {"input": "100\n[[0,99,1]]", "desc": "Standard: 100 full"},
+    {"input": "100\n[[0,49,1],[50,99,-1]]", "desc": "Standard: split halves"},
+    {"input": "20\n[[0,5,10],[3,10,20],[8,15,30],[12,19,40]]", "desc": "Standard: overlapping"},
+    {"input": "5\n[[0,0,1],[1,1,1],[2,2,1],[3,3,1],[4,4,1]]", "desc": "Standard: each singleton"},
+    {"input": "1000\n[[0,999,5]]", "desc": "Stress: large length"},
+    {"input": "100\n[[0,9,1],[10,19,2],[20,29,3],[30,39,4],[40,49,5],[50,59,6],[60,69,7],[70,79,8],[80,89,9],[90,99,10]]", "desc": "Stress: 10 segments"},
+    {"input": "10\n[[0,9,-1000],[0,9,1000]]", "desc": "Standard: cancel out"},
+    {"input": "5\n[[0,4,-1],[0,4,-1],[0,4,-1],[0,4,-1],[0,4,-1]]", "desc": "Special: 5x decrement"}
+  ]
+}

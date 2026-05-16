@@ -1,0 +1,27 @@
+{
+  "pid": 830, "slug": "maximum-number-of-removable-characters",
+  "inferred_constraints": "1 <= p.length <= s.length <= 1e5, p is subsequence of s, removable distinct indices",
+  "input_format": "line1: s (raw); line2: p (raw); line3: removable (JSON array)",
+  "testcases": [
+    {"input": "abcacb\nab\n[3,1,0]", "desc": "Edge: example1"},
+    {"input": "abcbddddd\nabcd\n[3,2,1,4,5,6]", "desc": "Edge: example2"},
+    {"input": "abcab\nabc\n[0,1,2,3,4]", "desc": "Edge: example3 zero"},
+    {"input": "a\na\n[]", "desc": "Edge: identical empty removable"},
+    {"input": "ab\na\n[1]", "desc": "Edge: remove b keep a"},
+    {"input": "ab\na\n[0]", "desc": "Edge: remove a first"},
+    {"input": "ab\nb\n[0]", "desc": "Edge: remove a keep b"},
+    {"input": "abc\nb\n[0,2]", "desc": "Edge: remove both ends"},
+    {"input": "aaaa\naa\n[0,1]", "desc": "Standard: duplicates"},
+    {"input": "aaaa\naa\n[0,1,2]", "desc": "Standard: 3 removable"},
+    {"input": "abcdefg\nabcdefg\n[0,1,2]", "desc": "Edge: exact match no remove"},
+    {"input": "abcdefg\nabc\n[6,5,4,3]", "desc": "Standard: remove from end"},
+    {"input": "abcabcabc\nabc\n[0,1,2,3,4,5,6,7,8]", "desc": "Standard: 3x with full removable"},
+    {"input": "hello\nllo\n[0,1]", "desc": "Standard: remove prefix"},
+    {"input": "hello\nhel\n[3,4]", "desc": "Standard: remove suffix"},
+    {"input": "abcdef\nbdf\n[0,2,4]", "desc": "Standard: remove odds"},
+    {"input": "leetcode\nleo\n[1,2,3,4,5,6]", "desc": "Standard: classic"},
+    {"input": "aaaaaaaa\naaaa\n[0,1,2,3,4,5,6,7]", "desc": "Standard: half removable"},
+    {"input": "abcdefghij\nacegi\n[1,3,5,7,9]", "desc": "Standard: alternate remove"},
+    {"input": "qwertyqwerty\nqty\n[0,2,4,6,8,10]", "desc": "Special: pattern remove"}
+  ]
+}

@@ -455,6 +455,16 @@
       "pid": 805,
       "slug": "prefix-and-suffix-search",
       "reason": "Design class WordFilter with f method"
+    },
+    {
+      "pid": 829,
+      "slug": "the-dining-philosophers",
+      "reason": "Multithreaded synchronization problem - not amenable to standard I/O testing"
+    },
+    {
+      "pid": 833,
+      "slug": "friday-purchases-ii",
+      "reason": "SQL/Pandas problem - not a code judge problem"
     }
   ]
 }
