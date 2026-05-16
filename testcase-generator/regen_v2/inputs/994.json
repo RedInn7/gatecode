@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"t\"",
+      "input": "\"rvpkz\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 200 closes"
     },
     {
-      "input": "\"atopbqlihy\"",
+      "input": "\"srqwshcveo\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
