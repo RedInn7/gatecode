@@ -1,0 +1,27 @@
+{
+  "pid": 756, "slug": "reverse-linked-list",
+  "inferred_constraints": "0 <= nodes <= 5000, -5000 <= Node.val <= 5000",
+  "input_format": "line1: head (JSON array, can be empty)",
+  "testcases": [
+    {"input": "[1,2,3,4,5]", "desc": "Edge: example1"},
+    {"input": "[1,2]", "desc": "Edge: example2"},
+    {"input": "[]", "desc": "Edge: example3 empty"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[0]", "desc": "Edge: zero"},
+    {"input": "[5000]", "desc": "Edge: max val"},
+    {"input": "[-5000]", "desc": "Edge: min val"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 10 nodes ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: negative"},
+    {"input": "[5000,-5000,5000,-5000]", "desc": "Standard: alternating extremes"},
+    {"input": "[1,2,3]", "desc": "Standard: 3 nodes"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]", "desc": "Standard: hundreds"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: paired"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100]", "desc": "Stress: 100 nodes"},
+    {"input": "[42,42,42,42,42,42,42,42,42,42]", "desc": "Edge: 10 same"},
+    {"input": "[-1,1,-1,1,-1,1,-1,1]", "desc": "Standard: alternating signs"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29]", "desc": "Special: primes"}
+  ]
+}

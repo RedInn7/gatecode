@@ -1,0 +1,27 @@
+{
+  "pid": 755, "slug": "search-suggestions-system",
+  "inferred_constraints": "1 <= products.length <= 1000, 1 <= products[i].length <= 3000, sum lens <= 2e4, 1 <= searchWord.length <= 1000",
+  "input_format": "line1: products (JSON array); line2: searchWord (raw string)",
+  "testcases": [
+    {"input": "[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"]\nmouse", "desc": "Edge: example1"},
+    {"input": "[\"havana\"]\nhavana", "desc": "Edge: example2"},
+    {"input": "[\"a\"]\na", "desc": "Edge: min single"},
+    {"input": "[\"z\"]\nz", "desc": "Edge: single z"},
+    {"input": "[\"abc\"]\nxyz", "desc": "Edge: no common"},
+    {"input": "[\"apple\",\"banana\",\"cherry\"]\nb", "desc": "Edge: 3 distinct"},
+    {"input": "[\"abc\",\"abd\",\"abe\",\"abf\"]\nab", "desc": "Edge: 4 with common prefix"},
+    {"input": "[\"abcd\",\"abce\",\"abcf\"]\nabcd", "desc": "Standard: exact match"},
+    {"input": "[\"apple\",\"apricot\",\"avocado\",\"banana\",\"blueberry\"]\nap", "desc": "Standard: 2 with prefix"},
+    {"input": "[\"car\",\"card\",\"care\",\"careful\",\"cargo\"]\ncar", "desc": "Standard: 5 with prefix"},
+    {"input": "[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\"]\naaa", "desc": "Standard: nested"},
+    {"input": "[\"prog\",\"programming\",\"programmer\",\"program\"]\nprog", "desc": "Standard: multiple matches"},
+    {"input": "[\"abcdefg\",\"abcdefh\",\"abcdefi\",\"abcdefj\"]\nabcde", "desc": "Standard: deep prefix"},
+    {"input": "[\"z\",\"y\",\"x\",\"w\",\"v\"]\nz", "desc": "Standard: descending sort"},
+    {"input": "[\"app\",\"apple\",\"application\",\"apply\",\"appreciate\"]\napp", "desc": "Standard: app family"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\ne", "desc": "Standard: many single chars"},
+    {"input": "[\"aaaa\",\"aaab\",\"aaac\",\"abcd\"]\naaa", "desc": "Standard: prefix mix"},
+    {"input": "[\"sun\",\"moon\",\"star\",\"planet\",\"galaxy\"]\nmoon", "desc": "Standard: random"},
+    {"input": "[\"abcdef\",\"abcxyz\",\"abxxxx\",\"axxxxx\"]\nabcd", "desc": "Standard: branching"},
+    {"input": "[\"hello\",\"help\",\"helmet\",\"helicopter\",\"helsinki\",\"hen\"]\nhel", "desc": "Special: hel family"}
+  ]
+}
