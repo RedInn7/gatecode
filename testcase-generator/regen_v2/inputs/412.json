@@ -1,0 +1,28 @@
+{
+  "pid": 412,
+  "slug": "text-justification",
+  "inferred_constraints": "1 <= words.length <= 300, 1 <= words[i].length <= 20, 1 <= maxWidth <= 100, words[i].length <= maxWidth",
+  "input_format": "line1: words (JSON string array); line2: maxWidth (int)",
+  "testcases": [
+    {"input": "[\"This\",\"is\",\"an\",\"example\",\"of\",\"text\",\"justification.\"]\n16", "desc": "Edge: example1"},
+    {"input": "[\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"]\n16", "desc": "Standard: example2"},
+    {"input": "[\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]\n20", "desc": "Standard: example3"},
+    {"input": "[\"a\"]\n5", "desc": "Edge: single short word"},
+    {"input": "[\"abcde\"]\n5", "desc": "Edge: single word fills width"},
+    {"input": "[\"a\",\"b\",\"c\"]\n5", "desc": "Edge: 3 single chars width 5"},
+    {"input": "[\"hello\",\"world\"]\n11", "desc": "Edge: 2 words exact fit with 1 space"},
+    {"input": "[\"hello\",\"world\"]\n15", "desc": "Edge: 2 words with extra space"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n10", "desc": "Standard: many single chars"},
+    {"input": "[\"longword\"]\n8", "desc": "Edge: word exactly fills width"},
+    {"input": "[\"this\",\"is\",\"a\",\"test\"]\n8", "desc": "Standard: short test"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\",\"pqr\",\"stu\",\"vwx\",\"yz\"]\n6", "desc": "Standard: 3-char words"},
+    {"input": "[\"foo\",\"bar\",\"baz\"]\n11", "desc": "Standard: all fit one line"},
+    {"input": "[\"foo\",\"bar\"]\n100", "desc": "Edge: very wide width"},
+    {"input": "[\"abcdef\",\"ghijkl\",\"mnopqr\",\"stuvwx\"]\n6", "desc": "Edge: each word fills width"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\"]\n3", "desc": "Edge: words match maxWidth"},
+    {"input": "[\"hello\"]\n10", "desc": "Edge: short word wide width (left justified last line)"},
+    {"input": "[\"a\",\"b\"]\n10", "desc": "Edge: 2 chars wide width"},
+    {"input": "[\"justification\",\"is\",\"important\"]\n14", "desc": "Standard: typical"},
+    {"input": "[\"Listen\",\"to\",\"many\",\"speak\",\"to\",\"few.\"]\n6", "desc": "Standard: short width 6"}
+  ]
+}

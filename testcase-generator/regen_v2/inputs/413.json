@@ -1,0 +1,28 @@
+{
+  "pid": 413,
+  "slug": "trionic-array-i",
+  "inferred_constraints": "3 <= n <= 100, -1000 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[1,3,5,4,2,6]", "desc": "Edge: example1 true"},
+    {"input": "[2,1,3]", "desc": "Edge: example2 false too short"},
+    {"input": "[1,2,3]", "desc": "Edge: n=3 strictly inc only, false"},
+    {"input": "[3,2,1]", "desc": "Edge: n=3 strictly dec, false"},
+    {"input": "[1,3,2]", "desc": "Edge: n=3 up-down, false (need 3 segments)"},
+    {"input": "[2,3,1,2]", "desc": "Edge: n=4 up-down-up but p,q indices need strict"},
+    {"input": "[1,2,3,4]", "desc": "Edge: ascending false"},
+    {"input": "[4,3,2,1]", "desc": "Edge: descending false"},
+    {"input": "[1,4,2,3]", "desc": "Edge: n=4 up-down-up"},
+    {"input": "[1,2,4,3,2,5]", "desc": "Standard: n=6 trionic"},
+    {"input": "[1,5,9,8,7,6,5,10]", "desc": "Standard: longer trionic"},
+    {"input": "[1,2,3,4,5,4,3,2,1,2,3,4,5]", "desc": "Standard: clear 3 segments"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same false (not strict)"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros false"},
+    {"input": "[-1000,1000,-1000]", "desc": "Edge: extreme alternation"},
+    {"input": "[1,2,3,4,3,2,1,2,3,4]", "desc": "Standard: trionic"},
+    {"input": "[5,10,15,20,15,10,5,10,15,20,25]", "desc": "Standard: trionic"},
+    {"input": "[-5,-4,-3,-2,-3,-4,-5,-3,-2,-1]", "desc": "Standard: negatives trionic"},
+    {"input": "[1,5,4,3,2,3,4,5,6]", "desc": "Standard: 5 up,2 down,3 up but p=1; need p>0"},
+    {"input": "[1,2,3,4,5,6,7,6,5,4,3,2,1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: long trionic"}
+  ]
+}

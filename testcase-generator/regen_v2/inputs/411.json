@@ -1,0 +1,28 @@
+{
+  "pid": 411,
+  "slug": "last-substring-in-lexicographical-order",
+  "inferred_constraints": "1 <= s.length <= 4e5, lowercase letters",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "abab", "desc": "Edge: example1"},
+    {"input": "leetcode", "desc": "Edge: example2"},
+    {"input": "a", "desc": "Edge: n=1"},
+    {"input": "z", "desc": "Edge: n=1 max"},
+    {"input": "ab", "desc": "Edge: n=2 ascending"},
+    {"input": "ba", "desc": "Edge: n=2 descending"},
+    {"input": "aa", "desc": "Edge: 2 same"},
+    {"input": "zz", "desc": "Edge: 2 same max"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Edge: full alphabet ascending"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Edge: full alphabet descending"},
+    {"input": "zzzzzzzz", "desc": "Edge: all z"},
+    {"input": "aaaaaaaa", "desc": "Edge: all a"},
+    {"input": "abcabcabcabc", "desc": "Standard: 4 abc"},
+    {"input": "mississippi", "desc": "Standard: classic test"},
+    {"input": "banana", "desc": "Standard: word"},
+    {"input": "tttttttttz", "desc": "Standard: t prefix then z"},
+    {"input": "zaaaaaaaaaaaaaaaaaaaaa", "desc": "Standard: z prefix"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaz", "desc": "Standard: many a then z"},
+    {"input": "abcdefghijklmnop", "desc": "Standard: 16 chars sorted"},
+    {"input": "zazazazazazazazaza", "desc": "Standard: zigzag z and a"}
+  ]
+}
