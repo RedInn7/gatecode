@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"umo\"",
+      "input": "\"wt\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 chars 4 copies of alphabet"
     },
     {
-      "input": "\"bcuifs\"",
+      "input": "\"vmbadu\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
