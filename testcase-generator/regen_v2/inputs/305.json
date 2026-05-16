@@ -1,0 +1,28 @@
+{
+  "pid": 305,
+  "slug": "maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
+  "inferred_constraints": "1 <= nums.length <= 150, 0 <= nums[i] <= 12, -1e5 <= k <= 1e5, 1 <= limit <= 5000",
+  "input_format": "line1: nums (JSON int array); line2: k (int); line3: limit (int)",
+  "testcases": [
+    {"input": "[1,2,3]\n2\n10", "desc": "Edge: example1"},
+    {"input": "[0,2,3]\n-5\n12", "desc": "Edge: example2"},
+    {"input": "[2,2,3,3]\n0\n9", "desc": "Edge: example3"},
+    {"input": "[1]\n1\n1", "desc": "Edge: minimum"},
+    {"input": "[1]\n2\n1", "desc": "Edge: cannot match k"},
+    {"input": "[0]\n0\n1", "desc": "Edge: single zero k=0"},
+    {"input": "[12]\n12\n1", "desc": "Edge: single max"},
+    {"input": "[0,0,0]\n0\n1", "desc": "Edge: all zeros"},
+    {"input": "[12,12,12,12,12]\n0\n5000", "desc": "Edge: alternating sums"},
+    {"input": "[1,2,3,4,5]\n3\n100", "desc": "Standard: 5 distinct"},
+    {"input": "[5,5,5,5,5]\n5\n100", "desc": "Standard: all 5"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n0\n5000", "desc": "Standard: 10 distinct k=0"},
+    {"input": "[10,5,10,5,10]\n5\n5000", "desc": "Standard: alt pattern"},
+    {"input": "[3,7,2,1,5,8,3,2,6,4]\n5\n1000", "desc": "Standard: random small"},
+    {"input": "[12,11,10,9,8,7,6,5,4,3,2,1]\n6\n3000", "desc": "Standard: 12 desc"},
+    {"input": "[0,1,0,1,0,1,0,1,0,1]\n0\n10", "desc": "Standard: binary alt"},
+    {"input": "[12,12,12,12,12,12,12,12,12,12]\n12\n5000", "desc": "Standard: 10 max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6]\n6\n5000", "desc": "Stress: 30 elements"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\n0\n1", "desc": "Stress: 50 zeros"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2]\n12\n5000", "desc": "Stress: 50 elements"}
+  ]
+}

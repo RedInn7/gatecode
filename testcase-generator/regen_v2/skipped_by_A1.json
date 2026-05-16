@@ -19,6 +19,7 @@
     {"pid": 1854, "slug": "the-knights-tour", "reason": "Non-unique output (multiple valid tour orderings); needs SPJ"},
     {"pid": 1856, "slug": "design-circular-deque", "reason": "Design class with stateful operations and method-call sequence"},
     {"pid": 1862, "slug": "my-calendar-ii", "reason": "Design class with stateful book/cancel operations"},
-    {"pid": 1853, "slug": "insert-delete-getrandom-o1-duplicates-allowed", "reason": "Design class with randomized getRandom — non-deterministic output"}
+    {"pid": 1853, "slug": "insert-delete-getrandom-o1-duplicates-allowed", "reason": "Design class with randomized getRandom — non-deterministic output"},
+    {"pid": 1821, "slug": "find-duplicate-file-in-system", "reason": "Returns list of groups where group order and intra-group order are non-deterministic — needs sorted-set SPJ"}
   ]
 }

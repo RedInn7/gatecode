@@ -1,0 +1,28 @@
+{
+  "pid": 307,
+  "slug": "remove-interval",
+  "inferred_constraints": "1 <= intervals.length <= 1e4, -1e9 <= a < b <= 1e9, intervals sorted disjoint",
+  "input_format": "line1: intervals (JSON 2D int); line2: toBeRemoved (JSON int pair)",
+  "testcases": [
+    {"input": "[[0,2],[3,4],[5,7]]\n[1,6]", "desc": "Edge: example1"},
+    {"input": "[[0,5]]\n[2,3]", "desc": "Edge: example2 split"},
+    {"input": "[[-5,-4],[-3,-2],[1,2],[3,5],[8,9]]\n[-1,4]", "desc": "Edge: example3"},
+    {"input": "[[0,5]]\n[0,5]", "desc": "Edge: complete removal"},
+    {"input": "[[0,5]]\n[5,10]", "desc": "Edge: no overlap right"},
+    {"input": "[[0,5]]\n[-5,0]", "desc": "Edge: no overlap left"},
+    {"input": "[[0,5]]\n[10,20]", "desc": "Edge: far no overlap"},
+    {"input": "[[0,10]]\n[3,7]", "desc": "Edge: middle removal"},
+    {"input": "[[1000000000,1000000001]]\n[-1000000000,-999999999]", "desc": "Edge: extreme far"},
+    {"input": "[[-1000000000,1000000000]]\n[0,1]", "desc": "Edge: big interval small remove"},
+    {"input": "[[0,1],[2,3],[4,5]]\n[0,5]", "desc": "Standard: remove all"},
+    {"input": "[[0,1],[2,3],[4,5]]\n[1,4]", "desc": "Standard: remove middle"},
+    {"input": "[[0,2],[4,6],[8,10]]\n[5,9]", "desc": "Standard: partial overlap"},
+    {"input": "[[0,2],[4,6],[8,10]]\n[1,5]", "desc": "Standard: partial different"},
+    {"input": "[[-10,-5],[-3,0],[2,5],[8,12]]\n[-2,10]", "desc": "Standard: span across"},
+    {"input": "[[1,10]]\n[5,5]", "desc": "Standard: point removal"},
+    {"input": "[[0,5],[6,10],[15,20],[25,30]]\n[7,28]", "desc": "Standard: wide removal"},
+    {"input": "[[0,1],[2,3],[4,5],[6,7],[8,9],[10,11],[12,13],[14,15],[16,17],[18,19]]\n[3,16]", "desc": "Stress: 10 intervals"},
+    {"input": "[[0,1],[2,3],[4,5],[6,7],[8,9],[10,11],[12,13],[14,15],[16,17],[18,19],[20,21],[22,23],[24,25],[26,27],[28,29],[30,31],[32,33],[34,35],[36,37],[38,39]]\n[10,30]", "desc": "Stress: 20 intervals"},
+    {"input": "[[-1000000000,-500000000],[-100,-50],[0,100],[500,1000],[1000000000,1000000000]]\n[-1000,1000000000]", "desc": "Stress: extreme positions wide remove"}
+  ]
+}
