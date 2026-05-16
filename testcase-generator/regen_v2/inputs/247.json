@@ -5,8 +5,8 @@
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"bcabc\"",
-      "desc": "Edge: example1"
+      "input": "\"i\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"cbacdcbc\"",
@@ -81,7 +81,7 @@
       "desc": "Stress: reverse then forward"
     },
     {
-      "input": "\"elzawyeuqdzevddj\"",
+      "input": "\"scjaqrhigcqolivs\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

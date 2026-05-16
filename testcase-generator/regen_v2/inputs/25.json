@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"dzx\"",
+      "input": "\"g\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: rotated"
     },
     {
-      "input": "\"wcgkep\"",
+      "input": "\"wfalfd\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

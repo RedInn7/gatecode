@@ -5,8 +5,8 @@
   "input_format": "line1: x (int); line2: y (int)",
   "testcases": [
     {
-      "input": "2\n7",
-      "desc": "Edge: example1 Alice"
+      "input": "2\n5",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "4\n11",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "4\n8",
+      "input": "2\n6",
       "desc": "Edge: all-equal elements"
     },
     {
