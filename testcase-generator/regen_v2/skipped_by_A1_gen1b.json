@@ -29,6 +29,11 @@
       "pid": 1268,
       "slug": "serialize-and-deserialize-bst",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1259,
+      "slug": "add-two-polynomials-represented-as-linked-lists",
+      "reason": "ACM mode problem"
     }
   ]
 }
