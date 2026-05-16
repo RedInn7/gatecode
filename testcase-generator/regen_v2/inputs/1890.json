@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 10^5, edges.length == n-1, 0 <= u,v <= n-1, nums.length == n, 1 <= nums[i] <= 10^5, valid tree",
   "input_format": "line1: n (int)\nline2: edges (JSON 2D int array)\nline3: nums (JSON int array)",
   "testcases": [
-    {"input": "1\n[]\n[1]", "desc": "Edge: n=1 single node value=1 (perfect square)"},
-    {"input": "1\n[]\n[2]", "desc": "Edge: n=1 not perfect square"},
-    {"input": "1\n[]\n[100000]", "desc": "Edge: n=1 max value not perfect"},
-    {"input": "2\n[[0,1]]\n[1,4]", "desc": "Edge: n=2 chain, both perfect"},
-    {"input": "2\n[[0,1]]\n[2,3]", "desc": "Edge: n=2 chain, none perfect"},
-    {"input": "3\n[[0,1],[1,2]]\n[4,9,16]", "desc": "Edge: chain of perfect squares"},
-    {"input": "3\n[[0,1],[0,2]]\n[1,4,9]", "desc": "Edge: star perfect squares"},
-    {"input": "5\n[[0,1],[0,2],[1,3],[1,4]]\n[1,2,3,4,5]", "desc": "Standard: small tree mixed"},
-    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[4,2,9,3,16]", "desc": "Standard: chain mixed perfects"},
-    {"input": "6\n[[0,1],[0,2],[1,3],[2,4],[2,5]]\n[25,4,1,9,16,36]", "desc": "Standard: branching all perfect"},
-    {"input": "7\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]\n[1,4,9,2,3,5,7]", "desc": "Standard: balanced binary tree"},
-    {"input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: long chain"},
-    {"input": "10\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9]]\n[100,1,4,9,16,25,36,49,64,81]", "desc": "Standard: star perfect leaves"},
-    {"input": "15\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[3,8],[4,9],[4,10],[5,11],[5,12],[6,13],[6,14]]\n[1,4,9,16,25,36,49,64,81,100,121,144,169,196,225]", "desc": "Stress: balanced 15-node all perfect"},
-    {"input": "20\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19]]\n[1,2,4,3,9,5,16,7,25,11,36,13,49,17,64,19,81,23,100,29]", "desc": "Stress: 20 chain perfects + primes"},
-    {"input": "20\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19]]\n[4,1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: star root=4 (perfect)"},
-    {"input": "8\n[[0,1],[1,2],[2,3],[0,4],[4,5],[5,6],[6,7]]\n[1,4,9,16,25,36,49,64]", "desc": "Stress: two branches all perfect"},
-    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[1,1,1,1,1]", "desc": "Special: all 1s (perfect square = 1)"},
-    {"input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[2,3,5,7,11]", "desc": "Special: all primes, no perfects"},
-    {"input": "10\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[3,8],[4,9]]\n[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991]", "desc": "Special: max value range"}
+    {
+      "input": "1\n[]\n[1]",
+      "desc": "Edge: n=1 single node value=1 (perfect square)"
+    },
+    {
+      "input": "1\n[]\n[2]",
+      "desc": "Edge: n=1 not perfect square"
+    },
+    {
+      "input": "1\n[]\n[100000]",
+      "desc": "Edge: n=1 max value not perfect"
+    },
+    {
+      "input": "2\n[[0,1]]\n[1,4]",
+      "desc": "Edge: n=2 chain, both perfect"
+    },
+    {
+      "input": "2\n[[0,1]]\n[2,3]",
+      "desc": "Edge: n=2 chain, none perfect"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[4,9,16]",
+      "desc": "Edge: chain of perfect squares"
+    },
+    {
+      "input": "3\n[[0,1],[0,2]]\n[1,4,9]",
+      "desc": "Edge: star perfect squares"
+    },
+    {
+      "input": "5\n[[0,1],[0,2],[1,3],[1,4]]\n[1,2,3,4,5]",
+      "desc": "Standard: small tree mixed"
+    },
+    {
+      "input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[4,2,9,3,16]",
+      "desc": "Standard: chain mixed perfects"
+    },
+    {
+      "input": "6\n[[0,1],[0,2],[1,3],[2,4],[2,5]]\n[25,4,1,9,16,36]",
+      "desc": "Standard: branching all perfect"
+    },
+    {
+      "input": "7\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]\n[1,4,9,2,3,5,7]",
+      "desc": "Standard: balanced binary tree"
+    },
+    {
+      "input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]\n[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: long chain"
+    },
+    {
+      "input": "10\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9]]\n[100,1,4,9,16,25,36,49,64,81]",
+      "desc": "Standard: star perfect leaves"
+    },
+    {
+      "input": "15\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[3,8],[4,9],[4,10],[5,11],[5,12],[6,13],[6,14]]\n[1,4,9,16,25,36,49,64,81,100,121,144,169,196,225]",
+      "desc": "Stress: balanced 15-node all perfect"
+    },
+    {
+      "input": "20\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19]]\n[1,2,4,3,9,5,16,7,25,11,36,13,49,17,64,19,81,23,100,29]",
+      "desc": "Stress: 20 chain perfects + primes"
+    },
+    {
+      "input": "20\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19]]\n[4,1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
+      "desc": "Stress: star root=4 (perfect)"
+    },
+    {
+      "input": "8\n[[0,1],[1,2],[2,3],[0,4],[4,5],[5,6],[6,7]]\n[1,4,9,16,25,36,49,64]",
+      "desc": "Stress: two branches all perfect"
+    },
+    {
+      "input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[1,1,1,1,1]",
+      "desc": "Special: all 1s (perfect square = 1)"
+    },
+    {
+      "input": "5\n[[0,1],[1,2],[2,3],[3,4]]\n[2,3,5,7,11]",
+      "desc": "Special: all primes, no perfects"
+    },
+    {
+      "input": "10\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[3,8],[4,9]]\n[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991]",
+      "desc": "Special: max value range"
+    }
   ]
 }
