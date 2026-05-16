@@ -869,3 +869,8 @@ Audited at: 2026-05-16T15:37:58.596647
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=25.0)
 Audited at: 2026-05-16T15:37:58.612436
+
+## PID 338 (the-number-of-weak-characters-in-the-game)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:38:00.847222
