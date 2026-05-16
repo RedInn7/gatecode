@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^5, lowercase and spaces",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"too hot\"", "desc": "Standard example"},
-    {"input": "\"aa\"", "desc": "Edge same"},
-    {"input": "\"a\"", "desc": "Edge n=1"},
-    {"input": "\"a b\"", "desc": "Edge 2 single chars"},
-    {"input": "\"abc def\"", "desc": "Standard"},
-    {"input": "\"hello world\"", "desc": "Standard"},
-    {"input": "\"abc abc abc\"", "desc": "Standard same words"},
-    {"input": "\"a a a a a\"", "desc": "Edge"},
-    {"input": "\"banana\"", "desc": "Standard"},
-    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnop\"", "desc": "Edge all distinct"},
-    {"input": "\"aaaa bbbb cccc\"", "desc": "Standard"},
-    {"input": "\"hello hello hello\"", "desc": "Standard"},
-    {"input": "\"abcd dcba\"", "desc": "Standard anagram pair"},
-    {"input": "\"thequick brownfox jumpsover thelazydog\"", "desc": "Standard"},
-    {"input": "\"aabbcc ddeeff\"", "desc": "Standard"},
-    {"input": "\"a aa aaa aaaa\"", "desc": "Standard inc"},
-    {"input": "\"abcd efgh ijkl mnop\"", "desc": "Standard distinct words"},
-    {"input": "\"mississippi\"", "desc": "Standard"},
-    {"input": "\"the quick brown fox jumps over the lazy dog\"", "desc": "Standard pangram"}
+    {
+      "input": "\"too hot\"",
+      "desc": "Standard example"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge same"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge n=1"
+    },
+    {
+      "input": "\"a b\"",
+      "desc": "Edge 2 single chars"
+    },
+    {
+      "input": "\"abc def\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"hello world\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abc abc abc\"",
+      "desc": "Standard same words"
+    },
+    {
+      "input": "\"a a a a a\"",
+      "desc": "Edge"
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"thequickbrownfox\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdefghijklmnop\"",
+      "desc": "Edge all distinct"
+    },
+    {
+      "input": "\"aaaa bbbb cccc\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"hello hello hello\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcd dcba\"",
+      "desc": "Standard anagram pair"
+    },
+    {
+      "input": "\"thequick brownfox jumpsover thelazydog\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aabbcc ddeeff\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"a aa aaa aaaa\"",
+      "desc": "Standard inc"
+    },
+    {
+      "input": "\"abcd efgh ijkl mnop\"",
+      "desc": "Standard distinct words"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"osouzgadnezwqk\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
