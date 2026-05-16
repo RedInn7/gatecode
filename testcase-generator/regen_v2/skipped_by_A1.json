@@ -445,6 +445,16 @@
       "pid": 798,
       "slug": "lowest-common-ancestor-of-a-binary-tree-iii",
       "reason": "Tree node with parent reference — custom Node class with parent pointer not standard serialization"
+    },
+    {
+      "pid": 801,
+      "slug": "snapshot-array",
+      "reason": "Design class SnapshotArray with set/snap/get stateful methods"
+    },
+    {
+      "pid": 805,
+      "slug": "prefix-and-suffix-search",
+      "reason": "Design class WordFilter with f method"
     }
   ]
 }

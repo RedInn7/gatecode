@@ -1,0 +1,27 @@
+{
+  "pid": 812, "slug": "convert-to-base-2",
+  "inferred_constraints": "0 <= n <= 1e9",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "2", "desc": "Edge: example1"},
+    {"input": "3", "desc": "Edge: example2"},
+    {"input": "4", "desc": "Edge: example3"},
+    {"input": "0", "desc": "Edge: zero"},
+    {"input": "1", "desc": "Edge: one"},
+    {"input": "5", "desc": "Standard: 5"},
+    {"input": "6", "desc": "Standard: 6"},
+    {"input": "7", "desc": "Standard: 7"},
+    {"input": "8", "desc": "Standard: 8"},
+    {"input": "10", "desc": "Standard: 10"},
+    {"input": "15", "desc": "Standard: 15"},
+    {"input": "16", "desc": "Standard: 16"},
+    {"input": "100", "desc": "Standard: 100"},
+    {"input": "1000", "desc": "Standard: 1000"},
+    {"input": "1000000", "desc": "Standard: 1M"},
+    {"input": "1000000000", "desc": "Edge: max 1e9"},
+    {"input": "999999999", "desc": "Edge: near max"},
+    {"input": "536870912", "desc": "Standard: 2^29"},
+    {"input": "65536", "desc": "Standard: 2^16"},
+    {"input": "12345", "desc": "Special: 12345"}
+  ]
+}

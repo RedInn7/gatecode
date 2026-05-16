@@ -1,0 +1,27 @@
+{
+  "pid": 810, "slug": "count-different-palindromic-subsequences",
+  "inferred_constraints": "1 <= s.length <= 1000, chars in {a,b,c,d}",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "bccb", "desc": "Edge: example1"},
+    {"input": "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba", "desc": "Edge: example2"},
+    {"input": "a", "desc": "Edge: single a"},
+    {"input": "b", "desc": "Edge: single b"},
+    {"input": "ab", "desc": "Edge: ab"},
+    {"input": "aa", "desc": "Edge: aa"},
+    {"input": "abc", "desc": "Edge: abc"},
+    {"input": "abcd", "desc": "Edge: 4 distinct"},
+    {"input": "aaaa", "desc": "Edge: 4 same"},
+    {"input": "abba", "desc": "Edge: simple palindrome"},
+    {"input": "abcba", "desc": "Edge: 5-palindrome"},
+    {"input": "abcabc", "desc": "Standard: 6 repeated"},
+    {"input": "aabb", "desc": "Standard: 4 paired"},
+    {"input": "abcdabcd", "desc": "Standard: 8 cycled"},
+    {"input": "aaaaaaaaaa", "desc": "Standard: 10 a"},
+    {"input": "abcabcabcabc", "desc": "Standard: 12 cycled"},
+    {"input": "aabcdcaba", "desc": "Standard: mixed"},
+    {"input": "abcdabcd", "desc": "Standard: 8"},
+    {"input": "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "desc": "Stress: 100 d"},
+    {"input": "abcddcbaabcddcbaabcddcbaabcddcba", "desc": "Special: palindrome blocks"}
+  ]
+}

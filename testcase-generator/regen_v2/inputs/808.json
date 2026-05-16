@@ -1,0 +1,27 @@
+{
+  "pid": 808, "slug": "minimum-number-of-pushes-to-type-word-ii",
+  "inferred_constraints": "1 <= word.length <= 1e5, lowercase",
+  "input_format": "line1: word (raw)",
+  "testcases": [
+    {"input": "abcde", "desc": "Edge: example1"},
+    {"input": "xyzxyzxyzxyz", "desc": "Edge: example2"},
+    {"input": "aabbccddeeffgghhiiiiii", "desc": "Edge: example3"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "aa", "desc": "Edge: pair"},
+    {"input": "aaa", "desc": "Edge: triple"},
+    {"input": "ab", "desc": "Edge: 2 distinct"},
+    {"input": "abc", "desc": "Standard: 3 distinct"},
+    {"input": "abcdefgh", "desc": "Standard: 8 distinct one per key"},
+    {"input": "abcdefghi", "desc": "Standard: 9 distinct"},
+    {"input": "abcdefghij", "desc": "Standard: 10 distinct needs 2 push"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: 26 distinct"},
+    {"input": "aaaaabbbbbcccccddddd", "desc": "Standard: 5 groups of 5"},
+    {"input": "thequickbrownfoxjumpsoverthelazydog", "desc": "Standard: pangram"},
+    {"input": "leetcode", "desc": "Standard: leetcode"},
+    {"input": "programming", "desc": "Standard: programming"},
+    {"input": "aaaaaaaaaaaaaaaaaaaa", "desc": "Edge: 20 same"},
+    {"input": "abcdefghijabcdefghij", "desc": "Standard: 20 cycled"},
+    {"input": "zzzzzzzzzzzzzzzzzzzz", "desc": "Edge: 20 z"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Special: 52 cycled"}
+  ]
+}

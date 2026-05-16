@@ -1,0 +1,27 @@
+{
+  "pid": 806, "slug": "unique-substrings-in-wraparound-string",
+  "inferred_constraints": "1 <= s.length <= 1e5, lowercase",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "a", "desc": "Edge: example1"},
+    {"input": "cac", "desc": "Edge: example2"},
+    {"input": "zab", "desc": "Edge: example3 wraparound"},
+    {"input": "z", "desc": "Edge: single z"},
+    {"input": "ab", "desc": "Edge: 2 consecutive"},
+    {"input": "ba", "desc": "Edge: not consecutive"},
+    {"input": "za", "desc": "Edge: wraparound z-a"},
+    {"input": "abc", "desc": "Standard: 3 consecutive"},
+    {"input": "abcd", "desc": "Standard: 4 consecutive"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: full alphabet"},
+    {"input": "zabcdefghijklmnopqrstuvwxy", "desc": "Standard: shifted alphabet"},
+    {"input": "aaa", "desc": "Edge: 3 same"},
+    {"input": "aabbcc", "desc": "Standard: not consecutive"},
+    {"input": "abcdabcd", "desc": "Standard: repeated"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Standard: descending no consecutive"},
+    {"input": "abababab", "desc": "Standard: alternating"},
+    {"input": "abcdefghij", "desc": "Standard: 10 consecutive"},
+    {"input": "yzabc", "desc": "Standard: wrap with 5"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Standard: double alphabet"},
+    {"input": "klmnop", "desc": "Special: middle run"}
+  ]
+}

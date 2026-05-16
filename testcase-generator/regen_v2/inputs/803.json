@@ -1,0 +1,27 @@
+{
+  "pid": 803, "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+  "inferred_constraints": "1 <= s.length <= 500, lowercase",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "zzazz", "desc": "Edge: example1 already"},
+    {"input": "mbadm", "desc": "Edge: example2"},
+    {"input": "leetcode", "desc": "Edge: example3"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "ab", "desc": "Edge: 2 diff"},
+    {"input": "aa", "desc": "Edge: 2 same"},
+    {"input": "abc", "desc": "Edge: 3 distinct"},
+    {"input": "aba", "desc": "Edge: palindrome 3"},
+    {"input": "abcd", "desc": "Standard: 4 distinct"},
+    {"input": "abcba", "desc": "Edge: 5 palindrome"},
+    {"input": "abcabcabc", "desc": "Standard: 3x repeat"},
+    {"input": "race", "desc": "Standard: short"},
+    {"input": "google", "desc": "Standard: common"},
+    {"input": "abcdefghijklmnop", "desc": "Standard: 16 distinct"},
+    {"input": "aabbccddeeffgghhiijj", "desc": "Standard: 20 pairs"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaa", "desc": "Standard: 21 same"},
+    {"input": "abcdefedcba", "desc": "Edge: 11 palindrome"},
+    {"input": "abacaba", "desc": "Edge: palindrome 7"},
+    {"input": "qwertyuiopasdfghjklzxcvbnm", "desc": "Standard: 26 keyboard"},
+    {"input": "babaccbabacbbabacccbabbabcbabacb", "desc": "Special: long mixed"}
+  ]
+}

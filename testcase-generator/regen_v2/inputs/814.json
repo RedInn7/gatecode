@@ -1,0 +1,27 @@
+{
+  "pid": 814, "slug": "replace-non-coprime-numbers-in-array",
+  "inferred_constraints": "1 <= nums.length <= 1e5, 1 <= nums[i] <= 1e5, final values <= 1e8",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[6,4,3,2,7,6,2]", "desc": "Edge: example1"},
+    {"input": "[2,2,1,1,3,3,3]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[2]", "desc": "Edge: n=1 even"},
+    {"input": "[100000]", "desc": "Edge: max single"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all 1 coprime"},
+    {"input": "[2,3,5,7,11]", "desc": "Edge: pairwise coprime primes"},
+    {"input": "[2,4,8,16,32]", "desc": "Standard: all powers of 2"},
+    {"input": "[6,10,15]", "desc": "Standard: GCD via cascade"},
+    {"input": "[4,6,9,15]", "desc": "Standard: cascading LCM"},
+    {"input": "[2,3,2,3,2,3]", "desc": "Standard: alternating coprime"},
+    {"input": "[6,9,15,21,35]", "desc": "Standard: chain non-coprime"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10"},
+    {"input": "[12,24,36,48,60]", "desc": "Standard: multiples of 12"},
+    {"input": "[7,14,21,28,35,42]", "desc": "Standard: multiples of 7"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: hundreds"},
+    {"input": "[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: 2-20"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: 30 ones"},
+    {"input": "[8,4,2,1,2,4,8]", "desc": "Standard: symmetric powers"},
+    {"input": "[2,4,6,8,10,12,14,16,18,20]", "desc": "Special: all even cascade"}
+  ]
+}

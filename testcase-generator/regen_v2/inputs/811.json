@@ -1,0 +1,27 @@
+{
+  "pid": 811, "slug": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
+  "inferred_constraints": "1 <= favoriteCompanies.length <= 100, 1 <= favoriteCompanies[i].length <= 500, 1 <= name.length <= 20, lowercase",
+  "input_format": "line1: favoriteCompanies (JSON 2D of strings)",
+  "testcases": [
+    {"input": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]", "desc": "Edge: example1"},
+    {"input": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]", "desc": "Edge: example2"},
+    {"input": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]", "desc": "Edge: example3 all distinct"},
+    {"input": "[[\"a\"]]", "desc": "Edge: single person"},
+    {"input": "[[\"a\"],[\"b\"]]", "desc": "Edge: 2 distinct"},
+    {"input": "[[\"a\",\"b\"],[\"a\"]]", "desc": "Edge: 1 subset"},
+    {"input": "[[\"a\"],[\"a\",\"b\"]]", "desc": "Edge: 0 subset"},
+    {"input": "[[\"a\",\"b\",\"c\"],[\"b\",\"c\"],[\"a\",\"c\"],[\"a\",\"b\"]]", "desc": "Standard: nested subsets"},
+    {"input": "[[\"x\",\"y\"],[\"y\",\"z\"],[\"x\",\"z\"]]", "desc": "Standard: no subsets"},
+    {"input": "[[\"apple\",\"banana\",\"cherry\"],[\"apple\"],[\"banana\"],[\"cherry\"]]", "desc": "Standard: hub and leaves"},
+    {"input": "[[\"a\",\"b\"],[\"c\",\"d\"],[\"a\",\"b\"]]", "desc": "Standard: duplicates but distinct entries"},
+    {"input": "[[\"a\",\"b\",\"c\",\"d\",\"e\"],[\"a\",\"b\",\"c\"],[\"a\",\"b\"],[\"a\"]]", "desc": "Standard: chain subsets"},
+    {"input": "[[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]]", "desc": "Edge: single large"},
+    {"input": "[[\"alpha\",\"beta\"],[\"gamma\",\"delta\"],[\"epsilon\"]]", "desc": "Standard: 3 disjoint"},
+    {"input": "[[\"google\",\"facebook\",\"amazon\",\"apple\"],[\"google\",\"facebook\",\"amazon\"],[\"google\",\"facebook\"],[\"google\"],[\"apple\"]]", "desc": "Standard: GAFA chain"},
+    {"input": "[[\"x\"],[\"x\"]]", "desc": "Edge: same single (but distinct entries assumed)"},
+    {"input": "[[\"a\",\"b\"],[\"b\",\"a\"]]", "desc": "Edge: same set different order"},
+    {"input": "[[\"apple\",\"banana\"],[\"apple\",\"banana\",\"cherry\"],[\"banana\",\"cherry\",\"date\"]]", "desc": "Standard: 3 with overlaps"},
+    {"input": "[[\"x\",\"y\",\"z\"],[\"a\",\"b\"],[\"x\"],[\"y\"],[\"z\"]]", "desc": "Standard: many subsets"},
+    {"input": "[[\"a\",\"b\",\"c\"],[\"a\",\"b\",\"d\"],[\"a\",\"c\",\"d\"],[\"b\",\"c\",\"d\"]]", "desc": "Special: all 3-subsets of {abcd}"}
+  ]
+}

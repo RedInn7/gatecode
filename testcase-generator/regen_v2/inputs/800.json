@@ -1,0 +1,27 @@
+{
+  "pid": 800, "slug": "append-characters-to-string-to-make-subsequence",
+  "inferred_constraints": "1 <= s.length, t.length <= 1e5, lowercase",
+  "input_format": "line1: s (raw); line2: t (raw)",
+  "testcases": [
+    {"input": "coaching\ncoding", "desc": "Edge: example1"},
+    {"input": "abcde\na", "desc": "Edge: example2"},
+    {"input": "z\nabcde", "desc": "Edge: example3 all append"},
+    {"input": "a\na", "desc": "Edge: identical"},
+    {"input": "a\nb", "desc": "Edge: single different"},
+    {"input": "ab\nba", "desc": "Edge: reversed"},
+    {"input": "abc\nabc", "desc": "Edge: identical 3"},
+    {"input": "abc\ncba", "desc": "Edge: 3 reversed"},
+    {"input": "abcdefghij\naceg", "desc": "Standard: subsequence"},
+    {"input": "abcdefghij\nxyz", "desc": "Standard: no chars match"},
+    {"input": "hello world\nworld", "desc": "Standard: contains"},
+    {"input": "aaa\naa", "desc": "Standard: duplicates"},
+    {"input": "abababab\nabab", "desc": "Standard: alternating"},
+    {"input": "xyzxyzxyz\nzyx", "desc": "Standard: extract reverse"},
+    {"input": "leetcode\nlecode", "desc": "Standard: deleted middle"},
+    {"input": "programming\npm", "desc": "Standard: skips"},
+    {"input": "abc\nabcde", "desc": "Standard: need to append"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaa\nbbbbbb", "desc": "Standard: all b need append"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz", "desc": "Standard: full alphabet match"},
+    {"input": "zzzzzzzzzz\nabcde", "desc": "Special: none match"}
+  ]
+}
