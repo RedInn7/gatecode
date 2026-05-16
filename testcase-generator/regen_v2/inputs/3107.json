@@ -1,0 +1,76 @@
+{
+  "pid": 3107,
+  "slug": "minimum-cost-to-reach-every-position",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "799713",
+      "desc": "Standard: n=799713"
+    },
+    {
+      "input": "57531",
+      "desc": "Standard: n=57531"
+    },
+    {
+      "input": "29496",
+      "desc": "Standard: n=29496"
+    },
+    {
+      "input": "429294",
+      "desc": "Standard: n=429294"
+    },
+    {
+      "input": "689416",
+      "desc": "Standard: n=689416"
+    },
+    {
+      "input": "639114",
+      "desc": "Standard: n=639114"
+    },
+    {
+      "input": "355128",
+      "desc": "Standard: n=355128"
+    },
+    {
+      "input": "94092",
+      "desc": "Standard: n=94092"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

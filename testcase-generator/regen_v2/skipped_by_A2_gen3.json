@@ -159,6 +159,21 @@
       "pid": 3129,
       "slug": "remove-nodes-from-linked-list",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3111,
+      "slug": "minimize-the-maximum-of-two-arrays",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3109,
+      "slug": "immutability-helper",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3105,
+      "slug": "sum-of-consecutive-subarrays",
+      "reason": "ACM mode problem"
     }
   ]
 }
