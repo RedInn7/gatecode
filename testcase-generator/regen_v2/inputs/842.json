@@ -1,27 +1,88 @@
 {
-  "pid": 842, "slug": "construct-k-palindrome-strings",
+  "pid": 842,
+  "slug": "construct-k-palindrome-strings",
   "inferred_constraints": "1 <= s.length <= 1e5, lowercase, 1 <= k <= 1e5",
   "input_format": "line1: s (raw); line2: k (int)",
   "testcases": [
-    {"input": "annabelle\n2", "desc": "Edge: example1 true"},
-    {"input": "leetcode\n3", "desc": "Edge: example2 false"},
-    {"input": "true\n4", "desc": "Edge: example3 each separate"},
-    {"input": "a\n1", "desc": "Edge: single char k=1"},
-    {"input": "a\n2", "desc": "Edge: k > length false"},
-    {"input": "ab\n2", "desc": "Edge: 2 chars 2 strings"},
-    {"input": "aa\n1", "desc": "Edge: 2 same k=1"},
-    {"input": "ab\n1", "desc": "Edge: 2 different k=1 false"},
-    {"input": "aabb\n2", "desc": "Standard: 2 palindromes"},
-    {"input": "abcabc\n3", "desc": "Standard: 3 pairs"},
-    {"input": "aaaa\n2", "desc": "Standard: 4 same to 2"},
-    {"input": "aabbcc\n3", "desc": "Standard: 3 pairs to 3"},
-    {"input": "abcabc\n2", "desc": "Standard: false 3 distinct"},
-    {"input": "aaaa\n4", "desc": "Standard: each separate"},
-    {"input": "abcdef\n6", "desc": "Standard: 6 distinct each"},
-    {"input": "abcdef\n3", "desc": "Standard: 6 distinct 3 false"},
-    {"input": "aaaaaaaaaaaaaaaaaaaa\n5", "desc": "Standard: 20 same 5"},
-    {"input": "abcabcabcabcabcabcabcabcabcabc\n3", "desc": "Standard: 30 chars 3"},
-    {"input": "aabbccdd\n4", "desc": "Standard: 8 pairs to 4"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\n13", "desc": "Special: alphabet to 13"}
+    {
+      "input": "annabelle\n2",
+      "desc": "Edge: example1 true"
+    },
+    {
+      "input": "leetcode\n3",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "\"iufsyjm\"\n1",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"wtzua\"\n1",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"rwax\"\n4",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "ab\n2",
+      "desc": "Edge: 2 chars 2 strings"
+    },
+    {
+      "input": "aa\n1",
+      "desc": "Edge: 2 same k=1"
+    },
+    {
+      "input": "ab\n1",
+      "desc": "Edge: 2 different k=1 false"
+    },
+    {
+      "input": "aabb\n2",
+      "desc": "Standard: 2 palindromes"
+    },
+    {
+      "input": "abcabc\n3",
+      "desc": "Standard: 3 pairs"
+    },
+    {
+      "input": "aaaa\n2",
+      "desc": "Standard: 4 same to 2"
+    },
+    {
+      "input": "aabbcc\n3",
+      "desc": "Standard: 3 pairs to 3"
+    },
+    {
+      "input": "abcabc\n2",
+      "desc": "Standard: false 3 distinct"
+    },
+    {
+      "input": "aaaa\n4",
+      "desc": "Standard: each separate"
+    },
+    {
+      "input": "abcdef\n6",
+      "desc": "Standard: 6 distinct each"
+    },
+    {
+      "input": "abcdef\n3",
+      "desc": "Standard: 6 distinct 3 false"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaa\n5",
+      "desc": "Standard: 20 same 5"
+    },
+    {
+      "input": "abcabcabcabcabcabcabcabcabcabc\n3",
+      "desc": "Standard: 30 chars 3"
+    },
+    {
+      "input": "aabbccdd\n4",
+      "desc": "Standard: 8 pairs to 4"
+    },
+    {
+      "input": "\"ztlsoctrrddazarfzx\"\n4",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

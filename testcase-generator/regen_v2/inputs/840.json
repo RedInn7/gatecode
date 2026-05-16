@@ -1,27 +1,88 @@
 {
-  "pid": 840, "slug": "reverse-words-in-a-string",
+  "pid": 840,
+  "slug": "reverse-words-in-a-string",
   "inferred_constraints": "1 <= s.length <= 1e4, letters/digits/spaces, at least one word",
   "input_format": "line1: s (raw)",
   "testcases": [
-    {"input": "the sky is blue", "desc": "Edge: example1"},
-    {"input": "  hello world  ", "desc": "Edge: example2 spaces"},
-    {"input": "a good   example", "desc": "Edge: example3 multi spaces"},
-    {"input": "a", "desc": "Edge: single char"},
-    {"input": "hello", "desc": "Edge: single word"},
-    {"input": " hello", "desc": "Edge: leading space"},
-    {"input": "hello ", "desc": "Edge: trailing space"},
-    {"input": "ab cd", "desc": "Edge: 2 words"},
-    {"input": "one two three four five", "desc": "Standard: 5 words"},
-    {"input": "  the   quick   brown  fox  ", "desc": "Standard: multi spaces"},
-    {"input": "hello world hello world hello world", "desc": "Standard: repeated"},
-    {"input": "Mr Smith", "desc": "Standard: mixed case"},
-    {"input": "123 456 789", "desc": "Standard: digits"},
-    {"input": "abc 123 def 456", "desc": "Standard: mixed"},
-    {"input": "                a", "desc": "Edge: many leading spaces"},
-    {"input": "a                ", "desc": "Edge: many trailing"},
-    {"input": "  the  sky  is  blue  ", "desc": "Standard: many spaces between"},
-    {"input": "ABCDEFGH IJKLMNOP QRSTUVWX YZ", "desc": "Standard: uppercase"},
-    {"input": "The Quick Brown Fox Jumps Over The Lazy Dog", "desc": "Standard: pangram"},
-    {"input": "      x      ", "desc": "Special: surrounded by spaces"}
+    {
+      "input": "the sky is blue",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "  hello world  ",
+      "desc": "Edge: example2 spaces"
+    },
+    {
+      "input": "\"iscciolak\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"cp\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"sjgudewbldms\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": " hello",
+      "desc": "Edge: leading space"
+    },
+    {
+      "input": "hello ",
+      "desc": "Edge: trailing space"
+    },
+    {
+      "input": "ab cd",
+      "desc": "Edge: 2 words"
+    },
+    {
+      "input": "one two three four five",
+      "desc": "Standard: 5 words"
+    },
+    {
+      "input": "  the   quick   brown  fox  ",
+      "desc": "Standard: multi spaces"
+    },
+    {
+      "input": "hello world hello world hello world",
+      "desc": "Standard: repeated"
+    },
+    {
+      "input": "Mr Smith",
+      "desc": "Standard: mixed case"
+    },
+    {
+      "input": "123 456 789",
+      "desc": "Standard: digits"
+    },
+    {
+      "input": "abc 123 def 456",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "                a",
+      "desc": "Edge: many leading spaces"
+    },
+    {
+      "input": "a                ",
+      "desc": "Edge: many trailing"
+    },
+    {
+      "input": "  the  sky  is  blue  ",
+      "desc": "Standard: many spaces between"
+    },
+    {
+      "input": "ABCDEFGH IJKLMNOP QRSTUVWX YZ",
+      "desc": "Standard: uppercase"
+    },
+    {
+      "input": "The Quick Brown Fox Jumps Over The Lazy Dog",
+      "desc": "Standard: pangram"
+    },
+    {
+      "input": "\"twbxipfiruhmiitulazwdoqklicnrdbn\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
