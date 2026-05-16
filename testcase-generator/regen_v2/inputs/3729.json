@@ -1,0 +1,28 @@
+{
+  "pid": 3729,
+  "slug": "maximum-strength-of-k-disjoint-subarrays",
+  "inferred_constraints": "1 <= nums.length <= 10^4, -10^9 <= nums[i] <= 10^9, 1 <= k <= nums.length, k is odd",
+  "input_format": "line1: nums (JSON); line2: k (int)",
+  "testcases": [
+    {"input": "[1,2,3,-1,2]\n3", "desc": "Example 1"},
+    {"input": "[12,-2,-2,-2,-2]\n5", "desc": "Example 2"},
+    {"input": "[-1,-2,-3]\n1", "desc": "Edge: all neg k=1"},
+    {"input": "[1]\n1", "desc": "Edge: single"},
+    {"input": "[1,2]\n1", "desc": "Edge"},
+    {"input": "[1,2,3]\n1", "desc": "Edge"},
+    {"input": "[1,2,3]\n3", "desc": "Edge"},
+    {"input": "[10]\n1", "desc": "Edge: single big"},
+    {"input": "[1,1,1,1,1]\n3", "desc": "Standard all ones"},
+    {"input": "[10,-1,10,-1,10]\n3", "desc": "Standard"},
+    {"input": "[5,-3,7,-2,9]\n3", "desc": "Standard"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Standard ascending"},
+    {"input": "[5,4,3,2,1]\n3", "desc": "Standard descending"},
+    {"input": "[1000000000,-1000000000,1000000000]\n3", "desc": "Edge: extreme"},
+    {"input": "[10,20,-30,40,-50,60,70]\n3", "desc": "Standard"},
+    {"input": "[1,-2,3,-4,5,-6,7,-8,9,-10]\n5", "desc": "Standard alternating"},
+    {"input": "[100,-100,100,-100,100,-100,100,-100,100,-100,100]\n5", "desc": "Standard 11 alternating"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n5", "desc": "Standard 15 elements"},
+    {"input": "[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]\n1", "desc": "Standard all neg"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n3", "desc": "Standard descending"}
+  ]
+}

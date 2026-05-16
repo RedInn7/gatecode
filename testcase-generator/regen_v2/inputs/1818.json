@@ -1,0 +1,28 @@
+{
+  "pid": 1818,
+  "slug": "smallest-range-covering-elements-from-k-lists",
+  "inferred_constraints": "nums.length == k, 1 <= k <= 3500, 1 <= nums[i].length <= 50, -10^5 <= nums[i][j] <= 10^5, sorted non-decreasing",
+  "input_format": "line1: nums (JSON 2D int array)",
+  "testcases": [
+    {"input": "[[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]", "desc": "Edge: example1 [20,24]"},
+    {"input": "[[1,2,3],[1,2,3],[1,2,3]]", "desc": "Edge: example2 [1,1]"},
+    {"input": "[[1]]", "desc": "Edge: minimum 1 list 1 element"},
+    {"input": "[[1],[1]]", "desc": "Edge: 2 lists same single"},
+    {"input": "[[-100000]]", "desc": "Edge: min value"},
+    {"input": "[[100000]]", "desc": "Edge: max value"},
+    {"input": "[[1,2],[3,4]]", "desc": "Edge: 2 lists disjoint"},
+    {"input": "[[1,2,3,4,5]]", "desc": "Edge: single list -> [1,1]? actually any single element"},
+    {"input": "[[-100000,100000]]", "desc": "Edge: single list extremes"},
+    {"input": "[[0,1,2],[0,1,2],[0,1,2]]", "desc": "Edge: 3 same lists"},
+    {"input": "[[1,5,9],[2,6,10],[3,7,11],[4,8,12]]", "desc": "Standard: 4 interleaved"},
+    {"input": "[[1,10,100],[2,20,200],[3,30,300]]", "desc": "Standard: 3 spread"},
+    {"input": "[[-10,-5,0,5,10],[-8,-3,2,7,12],[-6,-1,4,9,14]]", "desc": "Standard: 3 with negatives"},
+    {"input": "[[1],[2],[3],[4],[5]]", "desc": "Standard: 5 lists single elements"},
+    {"input": "[[1,2,3],[4,5,6],[7,8,9],[10,11,12]]", "desc": "Standard: 4 lists disjoint ranges"},
+    {"input": "[[1,100],[1,100],[1,100],[1,100],[1,100],[1,100],[1,100],[1,100],[1,100],[1,100]]", "desc": "Stress: 10 same 2-elem lists"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10],[2,4,6,8,10,12,14,16,18,20],[3,6,9,12,15,18,21,24,27,30],[4,8,12,16,20,24,28,32,36,40],[5,10,15,20,25,30,35,40,45,50]]", "desc": "Stress: 5 multiples"},
+    {"input": "[[-100000,-99999,-99998],[99998,99999,100000]]", "desc": "Stress: extreme ranges"},
+    {"input": "[[0,1],[2,3],[4,5],[6,7],[8,9],[10,11]]", "desc": "Special: 6 consecutive pairs"},
+    {"input": "[[50,51,52],[50,51,52],[50,51,52]]", "desc": "Special: 3 identical narrow lists"}
+  ]
+}

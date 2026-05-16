@@ -1,0 +1,28 @@
+{
+  "pid": 1816,
+  "slug": "largest-triangle-area",
+  "inferred_constraints": "3 <= points.length <= 50, -50 <= x,y <= 50, all points unique",
+  "input_format": "line1: points (JSON 2D int array)",
+  "testcases": [
+    {"input": "[[0,0],[0,1],[1,0],[0,2],[2,0]]", "desc": "Edge: example1 -> 2"},
+    {"input": "[[1,0],[0,0],[0,1]]", "desc": "Edge: example2 -> 0.5"},
+    {"input": "[[0,0],[0,1],[1,0]]", "desc": "Edge: minimum 3 right triangle"},
+    {"input": "[[-50,-50],[50,50],[-50,50]]", "desc": "Edge: max corner triangle"},
+    {"input": "[[0,0],[10,0],[0,10]]", "desc": "Edge: simple right triangle area 50"},
+    {"input": "[[0,0],[1,1],[2,2]]", "desc": "Edge: collinear -> 0"},
+    {"input": "[[-1,-1],[1,1],[0,5]]", "desc": "Edge: with negatives"},
+    {"input": "[[0,0],[1,0],[2,0],[0,1]]", "desc": "Edge: 4 pts with collinear subset"},
+    {"input": "[[50,50],[-50,-50],[50,-50],[-50,50]]", "desc": "Edge: 4 corners of square"},
+    {"input": "[[0,0],[10,0],[10,10],[0,10],[5,5]]", "desc": "Standard: square + center"},
+    {"input": "[[0,0],[1,2],[2,3],[3,5],[5,8]]", "desc": "Standard: 5 nearly-collinear"},
+    {"input": "[[0,0],[1,0],[0,1],[1,1]]", "desc": "Standard: unit square"},
+    {"input": "[[0,0],[2,0],[4,0],[0,2],[2,2],[4,2]]", "desc": "Standard: grid 3x2"},
+    {"input": "[[-50,0],[50,0],[0,50],[0,-50]]", "desc": "Standard: diamond corners"},
+    {"input": "[[0,0],[1,0],[2,0],[3,0],[0,1],[0,2],[0,3]]", "desc": "Standard: L-shape"},
+    {"input": "[[10,10],[10,-10],[-10,10],[-10,-10],[5,5],[-5,5],[5,-5],[-5,-5]]", "desc": "Stress: 8 corners + inner"},
+    {"input": "[[-50,-50],[-50,50],[50,50],[50,-50],[0,0],[-25,-25],[-25,25],[25,-25],[25,25],[-50,0],[50,0],[0,-50],[0,50]]", "desc": "Stress: 13 grid points"},
+    {"input": "[[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0],[8,0],[9,0],[10,0],[0,10],[10,10]]", "desc": "Stress: line + 3 corners"},
+    {"input": "[[0,0],[3,0],[0,4],[3,4]]", "desc": "Special: 3-4-5 triangle"},
+    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[1,5],[5,1]]", "desc": "Special: diagonal + corners"}
+  ]
+}

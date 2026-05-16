@@ -1,0 +1,28 @@
+{
+  "pid": 308,
+  "slug": "construct-the-rectangle",
+  "inferred_constraints": "1 <= area <= 1e7",
+  "input_format": "line1: area (int)",
+  "testcases": [
+    {"input": "4", "desc": "Edge: example1"},
+    {"input": "37", "desc": "Edge: example2 prime"},
+    {"input": "122122", "desc": "Edge: example3"},
+    {"input": "1", "desc": "Edge: min area 1"},
+    {"input": "2", "desc": "Edge: prime 2"},
+    {"input": "10000000", "desc": "Edge: max area"},
+    {"input": "9", "desc": "Edge: perfect square 3x3"},
+    {"input": "100", "desc": "Edge: perfect square 10x10"},
+    {"input": "10000", "desc": "Edge: 100x100"},
+    {"input": "999983", "desc": "Edge: large prime"},
+    {"input": "100000", "desc": "Standard"},
+    {"input": "1000000", "desc": "Standard"},
+    {"input": "12345", "desc": "Standard"},
+    {"input": "144", "desc": "Standard: 12x12"},
+    {"input": "256", "desc": "Standard: 16x16"},
+    {"input": "729", "desc": "Standard: 27x27"},
+    {"input": "1024", "desc": "Standard: 32x32"},
+    {"input": "1000003", "desc": "Stress: large prime"},
+    {"input": "9999984", "desc": "Stress: near max"},
+    {"input": "5040", "desc": "Stress: 7! highly composite"}
+  ]
+}

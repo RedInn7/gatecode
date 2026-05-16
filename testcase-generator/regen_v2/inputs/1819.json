@@ -1,0 +1,28 @@
+{
+  "pid": 1819,
+  "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+  "inferred_constraints": "2 <= s.length <= 10^5, lowercase English letters",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "ababbb", "desc": "Edge: example1 -> 9"},
+    {"input": "zaaaxbbby", "desc": "Edge: example2 -> 9"},
+    {"input": "ab", "desc": "Edge: 2 distinct chars"},
+    {"input": "aa", "desc": "Edge: 2 same chars (each pos is 1-palindrome)"},
+    {"input": "aaa", "desc": "Edge: 3 same"},
+    {"input": "aba", "desc": "Edge: small palindrome"},
+    {"input": "abcd", "desc": "Edge: distinct"},
+    {"input": "abcba", "desc": "Edge: 5 palindrome"},
+    {"input": "abacaba", "desc": "Edge: 7 palindrome"},
+    {"input": "aabbcc", "desc": "Standard: 6 with palindromes"},
+    {"input": "abcabcabc", "desc": "Standard: repeating triples"},
+    {"input": "racecaranna", "desc": "Standard: racecar + anna"},
+    {"input": "ababababab", "desc": "Standard: alternating"},
+    {"input": "abcdefghij", "desc": "Standard: distinct"},
+    {"input": "aaaaaaaaaa", "desc": "Standard: all same"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a's"},
+    {"input": "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij", "desc": "Stress: 100 repeating"},
+    {"input": "aabbaaccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaabbccaa", "desc": "Stress: 100 pattern"},
+    {"input": "abacabadabacaba", "desc": "Special: recursive pattern"},
+    {"input": "racecarmadamannalevel", "desc": "Special: several palindromes joined"}
+  ]
+}

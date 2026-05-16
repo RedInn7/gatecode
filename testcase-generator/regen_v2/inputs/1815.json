@@ -1,0 +1,28 @@
+{
+  "pid": 1815,
+  "slug": "rabbits-in-forest",
+  "inferred_constraints": "1 <= answers.length <= 1000, 0 <= answers[i] < 1000",
+  "input_format": "line1: answers (JSON int array)",
+  "testcases": [
+    {"input": "[1,1,2]", "desc": "Edge: example1 -> 5"},
+    {"input": "[10,10,10]", "desc": "Edge: example2 -> 11"},
+    {"input": "[0]", "desc": "Edge: single 0 -> 1"},
+    {"input": "[999]", "desc": "Edge: single max -> 1000"},
+    {"input": "[1]", "desc": "Edge: single answer 1 -> 2"},
+    {"input": "[0,0,0]", "desc": "Edge: all zeros -> 3 unique"},
+    {"input": "[1,1]", "desc": "Edge: pair both same color -> 2"},
+    {"input": "[1,1,1]", "desc": "Edge: 3 with answer 1 -> 4 (one pair + one orphan = 2 colors)"},
+    {"input": "[2,2,2]", "desc": "Edge: 3 with answer 2 -> 3 (triple same color)"},
+    {"input": "[2,2,2,2]", "desc": "Edge: 4 with answer 2 -> 6 (one triple + orphan)"},
+    {"input": "[5,5,5,5,5,5]", "desc": "Standard: 6 with answer 5 -> 6"},
+    {"input": "[0,0,1,1,1]", "desc": "Standard: mix 0s and 1s"},
+    {"input": "[3,3,3,3,3]", "desc": "Standard: 5 with answer 3"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: each unique -> 1+2+3+4+5+5=20"},
+    {"input": "[0,1,2,3,4]", "desc": "Standard: 0 + each different"},
+    {"input": "[100,100,100,100,100,100,100,100,100,100]", "desc": "Stress: 10 with answer 100"},
+    {"input": "[999,999,999,999,999,999,999,999,999,999]", "desc": "Stress: 10 with max"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 30 with answer 1"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Special: 30 zeros all unique"},
+    {"input": "[1,0,2,0,3,1,4,2,5,3]", "desc": "Special: scattered mix"}
+  ]
+}
