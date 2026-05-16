@@ -1,27 +1,88 @@
 {
-  "pid": 730, "slug": "the-number-of-full-rounds-you-have-played",
+  "pid": 730,
+  "slug": "the-number-of-full-rounds-you-have-played",
   "inferred_constraints": "hh:mm format, 00<=hh<=23, 00<=mm<=59, login != logout",
   "input_format": "line1: loginTime (raw); line2: logoutTime (raw)",
   "testcases": [
-    {"input": "09:31\n10:14", "desc": "Edge: example1 one round"},
-    {"input": "21:30\n03:00", "desc": "Edge: example2 cross midnight"},
-    {"input": "00:00\n00:15", "desc": "Edge: exactly one round"},
-    {"input": "00:00\n23:45", "desc": "Edge: nearly all day"},
-    {"input": "00:01\n00:14", "desc": "Edge: no full round"},
-    {"input": "12:00\n12:15", "desc": "Edge: one mid-day round"},
-    {"input": "23:45\n00:00", "desc": "Edge: cross to midnight"},
-    {"input": "23:50\n00:05", "desc": "Edge: cross no round"},
-    {"input": "00:00\n23:59", "desc": "Edge: full day -1 min"},
-    {"input": "12:00\n14:00", "desc": "Standard: 2 hours"},
-    {"input": "09:00\n09:30", "desc": "Standard: 30 mins 2 rounds"},
-    {"input": "10:00\n11:00", "desc": "Standard: 4 rounds"},
-    {"input": "08:15\n09:45", "desc": "Standard: aligned start"},
-    {"input": "08:30\n09:14", "desc": "Standard: 2 rounds 8:30-9:00"},
-    {"input": "12:00\n00:00", "desc": "Standard: 12 hours half day"},
-    {"input": "00:00\n12:00", "desc": "Standard: first 12 hours"},
-    {"input": "15:30\n15:45", "desc": "Standard: 15 min one round"},
-    {"input": "15:31\n15:44", "desc": "Standard: 13 mins zero"},
-    {"input": "00:00\n00:01", "desc": "Edge: 1 min"},
-    {"input": "23:00\n01:00", "desc": "Special: 2 hours wrap"}
+    {
+      "input": "\"s\"\n\"w\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "21:30\n03:00",
+      "desc": "Edge: example2 cross midnight"
+    },
+    {
+      "input": "\"p\"\n\"grb\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"ncu\"\n\"dxlqe\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"g\"\n\"sy\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "12:00\n12:15",
+      "desc": "Edge: one mid-day round"
+    },
+    {
+      "input": "23:45\n00:00",
+      "desc": "Edge: cross to midnight"
+    },
+    {
+      "input": "23:50\n00:05",
+      "desc": "Edge: cross no round"
+    },
+    {
+      "input": "00:00\n23:59",
+      "desc": "Edge: full day -1 min"
+    },
+    {
+      "input": "12:00\n14:00",
+      "desc": "Standard: 2 hours"
+    },
+    {
+      "input": "09:00\n09:30",
+      "desc": "Standard: 30 mins 2 rounds"
+    },
+    {
+      "input": "10:00\n11:00",
+      "desc": "Standard: 4 rounds"
+    },
+    {
+      "input": "08:15\n09:45",
+      "desc": "Standard: aligned start"
+    },
+    {
+      "input": "08:30\n09:14",
+      "desc": "Standard: 2 rounds 8:30-9:00"
+    },
+    {
+      "input": "12:00\n00:00",
+      "desc": "Standard: 12 hours half day"
+    },
+    {
+      "input": "00:00\n12:00",
+      "desc": "Standard: first 12 hours"
+    },
+    {
+      "input": "15:30\n15:45",
+      "desc": "Standard: 15 min one round"
+    },
+    {
+      "input": "15:31\n15:44",
+      "desc": "Standard: 13 mins zero"
+    },
+    {
+      "input": "00:00\n00:01",
+      "desc": "Edge: 1 min"
+    },
+    {
+      "input": "23:00\n01:00",
+      "desc": "Special: 2 hours wrap"
+    }
   ]
 }

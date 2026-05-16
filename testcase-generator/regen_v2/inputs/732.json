@@ -1,27 +1,88 @@
 {
-  "pid": 732, "slug": "check-if-it-is-a-straight-line",
+  "pid": 732,
+  "slug": "check-if-it-is-a-straight-line",
   "inferred_constraints": "2 <= coordinates.length <= 1000, -1e4 <= xi,yi <= 1e4, no duplicates",
   "input_format": "line1: coordinates (JSON 2D)",
   "testcases": [
-    {"input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]", "desc": "Edge: example1 true diag"},
-    {"input": "[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]", "desc": "Edge: example2 false"},
-    {"input": "[[0,0],[1,1]]", "desc": "Edge: 2 points true"},
-    {"input": "[[0,0],[10000,10000]]", "desc": "Edge: 2 points extreme"},
-    {"input": "[[0,0],[-10000,-10000]]", "desc": "Edge: negative extreme"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Edge: y=x line"},
-    {"input": "[[0,0],[0,1],[0,2],[0,3]]", "desc": "Edge: vertical line"},
-    {"input": "[[0,0],[1,0],[2,0],[3,0]]", "desc": "Edge: horizontal line"},
-    {"input": "[[0,0],[1,2],[2,4],[3,6]]", "desc": "Standard: slope 2"},
-    {"input": "[[0,0],[2,1],[4,2],[6,3]]", "desc": "Standard: slope 1/2"},
-    {"input": "[[-5,-5],[0,0],[5,5]]", "desc": "Standard: cross origin"},
-    {"input": "[[1,1],[2,2],[3,3],[4,5]]", "desc": "Standard: not straight"},
-    {"input": "[[0,0],[1,1],[2,1]]", "desc": "Standard: bent"},
-    {"input": "[[10000,10000],[5000,5000],[0,0],[-5000,-5000],[-10000,-10000]]", "desc": "Standard: 5 collinear"},
-    {"input": "[[10000,-10000],[0,0],[-10000,10000]]", "desc": "Standard: negative slope line"},
-    {"input": "[[100,100],[200,300],[300,500]]", "desc": "Standard: slope 2 line"},
-    {"input": "[[0,0],[3,7],[6,14],[9,21]]", "desc": "Standard: slope 7/3"},
-    {"input": "[[5,1],[5,2],[5,3],[5,4],[5,5]]", "desc": "Standard: 5 vertical"},
-    {"input": "[[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,7]]", "desc": "Standard: 6 collinear + 1 off"},
-    {"input": "[[1,2],[2,3]]", "desc": "Special: 2 points always true"}
+    {
+      "input": "[[-159,620],[-796,515],[283,148],[-59,852],[-447,573],[122,-265]]",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "[[-367,-64],[472,276],[-773,-795],[279,-96],[232,-65],[-967,363]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[-358,-614],[990,513],[-780,26],[913,379],[-78,-918],[-400,230]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[831,-598],[-94,367],[388,783],[58,963],[169,-602],[-989,984]]",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "desc": "Edge: y=x line"
+    },
+    {
+      "input": "[[0,0],[0,1],[0,2],[0,3]]",
+      "desc": "Edge: vertical line"
+    },
+    {
+      "input": "[[0,0],[1,0],[2,0],[3,0]]",
+      "desc": "Edge: horizontal line"
+    },
+    {
+      "input": "[[0,0],[1,2],[2,4],[3,6]]",
+      "desc": "Standard: slope 2"
+    },
+    {
+      "input": "[[0,0],[2,1],[4,2],[6,3]]",
+      "desc": "Standard: slope 1/2"
+    },
+    {
+      "input": "[[-5,-5],[0,0],[5,5]]",
+      "desc": "Standard: cross origin"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,5]]",
+      "desc": "Standard: not straight"
+    },
+    {
+      "input": "[[0,0],[1,1],[2,1]]",
+      "desc": "Standard: bent"
+    },
+    {
+      "input": "[[10000,10000],[5000,5000],[0,0],[-5000,-5000],[-10000,-10000]]",
+      "desc": "Standard: 5 collinear"
+    },
+    {
+      "input": "[[10000,-10000],[0,0],[-10000,10000]]",
+      "desc": "Standard: negative slope line"
+    },
+    {
+      "input": "[[100,100],[200,300],[300,500]]",
+      "desc": "Standard: slope 2 line"
+    },
+    {
+      "input": "[[0,0],[3,7],[6,14],[9,21]]",
+      "desc": "Standard: slope 7/3"
+    },
+    {
+      "input": "[[5,1],[5,2],[5,3],[5,4],[5,5]]",
+      "desc": "Standard: 5 vertical"
+    },
+    {
+      "input": "[[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,7]]",
+      "desc": "Standard: 6 collinear + 1 off"
+    },
+    {
+      "input": "[[273,-88,-986,594],[-887,-906,110,-890],[-239,-225,673,226],[326,-760,-988,293],[674,607,-697,574],[-537,-175,674,309],[709,-875,553,-185],[513,-404,-291,-996],[994,867,619,-503],[752,-239,-964,757],[-507,893,27,44],[538,-430,-339,622]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
