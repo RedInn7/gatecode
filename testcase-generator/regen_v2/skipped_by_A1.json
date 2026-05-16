@@ -465,6 +465,11 @@
       "pid": 833,
       "slug": "friday-purchases-ii",
       "reason": "SQL/Pandas problem - not a code judge problem"
+    },
+    {
+      "pid": 851,
+      "slug": "design-linked-list",
+      "reason": "Design class MyLinkedList with stateful get/addAtHead/addAtTail/etc"
     }
   ]
 }

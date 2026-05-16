@@ -1,0 +1,27 @@
+{
+  "pid": 861, "slug": "merge-two-2d-arrays-by-summing-values",
+  "inferred_constraints": "1 <= nums.length <= 200, 1 <= id, val <= 1000, sorted unique ids",
+  "input_format": "line1: nums1 (JSON 2D); line2: nums2 (JSON 2D)",
+  "testcases": [
+    {"input": "[[1,2],[2,3],[4,5]]\n[[1,4],[3,2],[4,1]]", "desc": "Edge: example1"},
+    {"input": "[[2,4],[3,6],[5,5]]\n[[1,3],[4,3]]", "desc": "Edge: example2"},
+    {"input": "[[1,1]]\n[[1,1]]", "desc": "Edge: same single"},
+    {"input": "[[1,1]]\n[[2,2]]", "desc": "Edge: distinct ids"},
+    {"input": "[[1,1],[2,2]]\n[[3,3]]", "desc": "Edge: 2 vs 1 disjoint"},
+    {"input": "[[1,1000]]\n[[1,1000]]", "desc": "Edge: max same id"},
+    {"input": "[[1000,1000]]\n[[1000,1000]]", "desc": "Edge: max id"},
+    {"input": "[[1,1],[2,2],[3,3]]\n[[1,1],[2,2],[3,3]]", "desc": "Standard: identical"},
+    {"input": "[[1,1],[2,2],[3,3]]\n[[4,4],[5,5],[6,6]]", "desc": "Standard: disjoint"},
+    {"input": "[[1,1],[3,3],[5,5]]\n[[2,2],[4,4],[6,6]]", "desc": "Standard: interleaved"},
+    {"input": "[[1,500],[2,500]]\n[[1,500],[2,500]]", "desc": "Standard: same ids"},
+    {"input": "[[1,1]]\n[[1,2],[2,3],[3,4]]", "desc": "Standard: 1 vs 3"},
+    {"input": "[[1,2],[2,3],[3,4]]\n[[1,1]]", "desc": "Standard: 3 vs 1"},
+    {"input": "[[5,5]]\n[[5,5]]", "desc": "Edge: same id same val"},
+    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]\n[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Standard: 5+5 same"},
+    {"input": "[[100,100],[200,200],[300,300]]\n[[150,150],[250,250],[350,350]]", "desc": "Standard: interleaved hundreds"},
+    {"input": "[[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1],[10,1]]\n[[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1],[10,1]]", "desc": "Standard: 10 each all same"},
+    {"input": "[[1,1000]]\n[[2,1000]]", "desc": "Edge: max value distinct ids"},
+    {"input": "[[1,1],[1000,1000]]\n[[500,500]]", "desc": "Standard: spread"},
+    {"input": "[[1,1],[2,2]]\n[[2,3],[3,4]]", "desc": "Special: partial overlap"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 869, "slug": "number-of-different-integers-in-a-string",
+  "inferred_constraints": "1 <= word.length <= 1000, digits + lowercase letters",
+  "input_format": "line1: word (raw)",
+  "testcases": [
+    {"input": "a123bc34d8ef34", "desc": "Edge: example1"},
+    {"input": "leet1234code234", "desc": "Edge: example2"},
+    {"input": "a1b01c001", "desc": "Edge: example3 leading zeros"},
+    {"input": "a", "desc": "Edge: no digits"},
+    {"input": "1", "desc": "Edge: single digit"},
+    {"input": "12345", "desc": "Edge: all digits"},
+    {"input": "abc", "desc": "Edge: all letters"},
+    {"input": "1a2", "desc": "Edge: split by letter"},
+    {"input": "1a1a1", "desc": "Edge: same number 3 times"},
+    {"input": "1a2a3", "desc": "Standard: 3 distinct"},
+    {"input": "001a002a003", "desc": "Standard: leading zeros distinct"},
+    {"input": "1000000000a1000000000", "desc": "Edge: large numbers"},
+    {"input": "abc123def456ghi789", "desc": "Standard: 3 numbers"},
+    {"input": "1a2b3c4d5e6f7g8h9i10", "desc": "Standard: 10 numbers"},
+    {"input": "abcabc123abcabc", "desc": "Standard: single number"},
+    {"input": "0a0a0", "desc": "Edge: zeros"},
+    {"input": "0a00a000", "desc": "Edge: zero variants"},
+    {"input": "abcdefghij", "desc": "Edge: all letters no digit"},
+    {"input": "1234567890abcdefghij", "desc": "Standard: digits then letters"},
+    {"input": "1a2a3a4a5a6a7a8a9a10a11a12a13a14a15", "desc": "Special: many numbers"}
+  ]
+}

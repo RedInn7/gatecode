@@ -1,0 +1,27 @@
+{
+  "pid": 868, "slug": "find-time-required-to-eliminate-bacterial-strains",
+  "inferred_constraints": "2 <= timeReq.length <= 1e5, 1 <= timeReq[i] <= 1e9, 1 <= splitTime <= 1e9",
+  "input_format": "line1: timeReq (JSON array); line2: splitTime (int)",
+  "testcases": [
+    {"input": "[10,4,5]\n2", "desc": "Edge: example1"},
+    {"input": "[10,4]\n5", "desc": "Edge: example2"},
+    {"input": "[1,1]\n1", "desc": "Edge: min"},
+    {"input": "[1000000000,1000000000]\n1", "desc": "Edge: max times"},
+    {"input": "[1,1]\n1000000000", "desc": "Edge: max split"},
+    {"input": "[1000000000,1000000000,1000000000]\n1000000000", "desc": "Edge: all max"},
+    {"input": "[1,2]\n1", "desc": "Edge: 2 distinct"},
+    {"input": "[5,5,5,5]\n1", "desc": "Edge: 4 same"},
+    {"input": "[1,2,3,4,5]\n1", "desc": "Standard: 1-5"},
+    {"input": "[10,20,30,40,50]\n2", "desc": "Standard: 10s"},
+    {"input": "[100,1,1,1,1,1]\n1", "desc": "Standard: one big"},
+    {"input": "[1,1,1,1,100]\n1", "desc": "Standard: one big at end"},
+    {"input": "[7,7,7,7,7,7,7,7]\n3", "desc": "Standard: 8 same"},
+    {"input": "[1000000,500000,250000,125000]\n100", "desc": "Standard: doubling desc"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]\n2", "desc": "Standard: powers"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000,1000000000]\n500000000", "desc": "Edge: max scale"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1", "desc": "Standard: 20 ones"},
+    {"input": "[5,3,8,2,9,1,7]\n2", "desc": "Standard: 7 mixed"},
+    {"input": "[100,100,100]\n50", "desc": "Standard: 3 same big split"},
+    {"input": "[3,5,8]\n2", "desc": "Special: fibonacci-like"}
+  ]
+}

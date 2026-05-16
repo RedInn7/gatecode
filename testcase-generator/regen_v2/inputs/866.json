@@ -1,0 +1,27 @@
+{
+  "pid": 866, "slug": "reverse-linked-list-ii",
+  "inferred_constraints": "1 <= n <= 500, -500 <= Node.val <= 500, 1 <= left <= right <= n",
+  "input_format": "line1: head (JSON array); line2: left (int); line3: right (int)",
+  "testcases": [
+    {"input": "[1,2,3,4,5]\n2\n4", "desc": "Edge: example1"},
+    {"input": "[5]\n1\n1", "desc": "Edge: example2 single"},
+    {"input": "[1,2]\n1\n2", "desc": "Edge: reverse full 2"},
+    {"input": "[1,2]\n1\n1", "desc": "Edge: no change"},
+    {"input": "[1,2,3]\n1\n3", "desc": "Edge: reverse full 3"},
+    {"input": "[1,2,3]\n2\n2", "desc": "Edge: single in middle"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1\n10", "desc": "Standard: reverse full"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1\n5", "desc": "Standard: reverse first half"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n6\n10", "desc": "Standard: reverse second half"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3\n7", "desc": "Standard: reverse middle"},
+    {"input": "[500,-500,500,-500]\n1\n4", "desc": "Edge: extreme values"},
+    {"input": "[1,1,1,1,1]\n2\n4", "desc": "Edge: all same"},
+    {"input": "[5,4,3,2,1]\n1\n5", "desc": "Standard: reverse to sorted"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n2\n9", "desc": "Standard: trim ends"},
+    {"input": "[-1,-2,-3,-4,-5]\n2\n4", "desc": "Standard: negatives"},
+    {"input": "[100,200,300,400,500]\n1\n3", "desc": "Standard: prefix"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n5\n15", "desc": "Standard: n=20 middle"},
+    {"input": "[0,0,0,0,0]\n1\n5", "desc": "Edge: all zero"},
+    {"input": "[1]\n1\n1", "desc": "Edge: single node"},
+    {"input": "[3,5]\n1\n2", "desc": "Special: swap 2"}
+  ]
+}

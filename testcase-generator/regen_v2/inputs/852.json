@@ -1,0 +1,27 @@
+{
+  "pid": 852, "slug": "smallest-divisible-digit-product-i",
+  "inferred_constraints": "1 <= n <= 100, 1 <= t <= 10",
+  "input_format": "line1: n (int); line2: t (int)",
+  "testcases": [
+    {"input": "10\n2", "desc": "Edge: example1"},
+    {"input": "15\n3", "desc": "Edge: example2"},
+    {"input": "1\n1", "desc": "Edge: min"},
+    {"input": "1\n10", "desc": "Edge: 1 t=10"},
+    {"input": "100\n10", "desc": "Edge: max n max t"},
+    {"input": "9\n9", "desc": "Standard: 9/9"},
+    {"input": "1\n2", "desc": "Standard: 1/2"},
+    {"input": "5\n5", "desc": "Standard: 5/5"},
+    {"input": "20\n7", "desc": "Standard: 20/7"},
+    {"input": "11\n2", "desc": "Standard: 11/2"},
+    {"input": "23\n5", "desc": "Standard: 23/5"},
+    {"input": "50\n10", "desc": "Standard: 50/10"},
+    {"input": "99\n9", "desc": "Standard: 99/9"},
+    {"input": "100\n1", "desc": "Standard: 100/1 always"},
+    {"input": "50\n1", "desc": "Standard: 50/1"},
+    {"input": "10\n10", "desc": "Edge: 10/10"},
+    {"input": "11\n1", "desc": "Edge: 11/1"},
+    {"input": "37\n3", "desc": "Standard: 37/3"},
+    {"input": "77\n7", "desc": "Standard: 77/7"},
+    {"input": "55\n10", "desc": "Special: needs 0 digit"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 862, "slug": "shortest-uncommon-substring-in-an-array",
+  "inferred_constraints": "2 <= n <= 100, 1 <= arr[i].length <= 20, lowercase",
+  "input_format": "line1: arr (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"cab\",\"ad\",\"bad\",\"c\"]", "desc": "Edge: example1"},
+    {"input": "[\"abc\",\"bcd\",\"abcd\"]", "desc": "Edge: example2"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 single distinct"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: 2 identical"},
+    {"input": "[\"abc\",\"xyz\"]", "desc": "Edge: disjoint"},
+    {"input": "[\"abc\",\"abc\"]", "desc": "Edge: identical pair"},
+    {"input": "[\"ab\",\"cd\",\"ef\"]", "desc": "Standard: 3 disjoint"},
+    {"input": "[\"hello\",\"world\"]", "desc": "Standard: 2 words"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: 5 single"},
+    {"input": "[\"aaa\",\"aab\",\"abb\",\"bbb\"]", "desc": "Standard: progressive"},
+    {"input": "[\"apple\",\"app\",\"ap\",\"a\"]", "desc": "Standard: nested"},
+    {"input": "[\"abc\",\"abd\",\"abe\"]", "desc": "Standard: common prefix"},
+    {"input": "[\"xyz\",\"yzz\",\"zxy\"]", "desc": "Standard: similar"},
+    {"input": "[\"abc\",\"def\",\"abcdef\"]", "desc": "Standard: third contains both"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\"]", "desc": "Standard: chain"},
+    {"input": "[\"abcdefghij\",\"jihgfedcba\"]", "desc": "Standard: 10 char pair"},
+    {"input": "[\"hi\",\"hello\",\"hey\",\"howdy\"]", "desc": "Standard: greetings"},
+    {"input": "[\"aaaa\",\"bbbb\",\"cccc\",\"dddd\"]", "desc": "Standard: blocks"},
+    {"input": "[\"abc\",\"abc\",\"abc\",\"def\"]", "desc": "Standard: triplicate"},
+    {"input": "[\"aaaaaaaaaaaaaaaaaaaa\",\"bbbbbbbbbbbbbbbbbbbb\"]", "desc": "Special: 20 chars"}
+  ]
+}
