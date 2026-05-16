@@ -71,6 +71,18 @@
     {
       "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
       "desc": "Killer: all same char max"
+    },
+    {
+      "input": "\"aogbobbood\"\n\"enhi\"",
+      "desc": "Generated: stress at position 17"
+    },
+    {
+      "input": "\"ijgoizmikd\"\n\"zeam\"",
+      "desc": "Generated: stress at position 18"
+    },
+    {
+      "input": "\"klxmdbohkx\"\n\"glmr\"",
+      "desc": "Generated: stress at position 19"
     }
   ]
 }
