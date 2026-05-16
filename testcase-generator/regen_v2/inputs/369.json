@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= n, grid is 2^n x 2^n, n typically small (<=10) due to grid size",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "0", "desc": "Edge: example1 n=0 grid 1x1"},
-    {"input": "1", "desc": "Edge: example2 n=1 grid 2x2"},
-    {"input": "2", "desc": "Edge: example3 n=2 grid 4x4"},
-    {"input": "3", "desc": "Standard: n=3 grid 8x8"},
-    {"input": "4", "desc": "Standard: n=4 grid 16x16"},
-    {"input": "5", "desc": "Standard: n=5 grid 32x32"},
-    {"input": "6", "desc": "Standard: n=6 grid 64x64"},
-    {"input": "7", "desc": "Standard: n=7 grid 128x128"},
-    {"input": "8", "desc": "Stress: n=8 grid 256x256"},
-    {"input": "9", "desc": "Stress: n=9 grid 512x512"},
-    {"input": "10", "desc": "Stress: n=10 grid 1024x1024"},
-    {"input": "0", "desc": "Edge: n=0 repeat"},
-    {"input": "1", "desc": "Edge: n=1 repeat"},
-    {"input": "2", "desc": "Edge: n=2 repeat"},
-    {"input": "3", "desc": "Edge: n=3 repeat"},
-    {"input": "4", "desc": "Standard: n=4 repeat"},
-    {"input": "5", "desc": "Standard: n=5 repeat"},
-    {"input": "6", "desc": "Standard: n=6 repeat"},
-    {"input": "7", "desc": "Standard: n=7 repeat"},
-    {"input": "8", "desc": "Stress: n=8 repeat"}
+    {
+      "input": "0",
+      "desc": "Edge: example1 n=0 grid 1x1"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: example2 n=1 grid 2x2"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: n=5 grid 32x32"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6 grid 64x64"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: n=7 grid 128x128"
+    },
+    {
+      "input": "8",
+      "desc": "Stress: n=8 grid 256x256"
+    },
+    {
+      "input": "9",
+      "desc": "Stress: n=9 grid 512x512"
+    },
+    {
+      "input": "10",
+      "desc": "Stress: n=10 grid 1024x1024"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0 repeat"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1 repeat"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2 repeat"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: n=3 repeat"
+    },
+    {
+      "input": "4",
+      "desc": "Standard: n=4 repeat"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: n=5 repeat"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6 repeat"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: n=7 repeat"
+    },
+    {
+      "input": "8",
+      "desc": "Stress: n=8 repeat"
+    }
   ]
 }

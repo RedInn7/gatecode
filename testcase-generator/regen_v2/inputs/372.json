@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n, m < 1e4, n and m same digit count, n must never be prime",
   "input_format": "line1: n (int); line2: m (int)",
   "testcases": [
-    {"input": "10\n12", "desc": "Edge: example1"},
-    {"input": "4\n8", "desc": "Edge: example2 impossible"},
-    {"input": "6\n2", "desc": "Edge: example3 m is prime, impossible"},
-    {"input": "1\n1", "desc": "Edge: smallest equal"},
-    {"input": "9\n9", "desc": "Edge: single digit equal not prime"},
-    {"input": "10\n10", "desc": "Edge: same values 2-digit"},
-    {"input": "9999\n9999", "desc": "Edge: max same values"},
-    {"input": "10\n99", "desc": "Standard: 2-digit, common composites"},
-    {"input": "100\n999", "desc": "Standard: 3-digit min to max"},
-    {"input": "1000\n9999", "desc": "Standard: 4-digit range"},
-    {"input": "12\n21", "desc": "Standard: digit swap"},
-    {"input": "10\n20", "desc": "Standard: 2-digit single op"},
-    {"input": "99\n10", "desc": "Standard: 2-digit reverse direction"},
-    {"input": "8\n4", "desc": "Edge: single digit composite"},
-    {"input": "9\n4", "desc": "Edge: single digit"},
-    {"input": "100\n101", "desc": "Edge: 100->101 (101 is prime)"},
-    {"input": "100\n110", "desc": "Standard: 3-digit"},
-    {"input": "1000\n1001", "desc": "Standard: 4-digit"},
-    {"input": "9999\n1000", "desc": "Stress: 4-digit max to min"},
-    {"input": "8888\n4444", "desc": "Standard: 4-digit half"}
+    {
+      "input": "10\n12",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "4\n8",
+      "desc": "Edge: example2 impossible"
+    },
+    {
+      "input": "4\n4",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "7\n1",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "4\n4",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "10\n10",
+      "desc": "Edge: same values 2-digit"
+    },
+    {
+      "input": "9999\n9999",
+      "desc": "Edge: max same values"
+    },
+    {
+      "input": "10\n99",
+      "desc": "Standard: 2-digit, common composites"
+    },
+    {
+      "input": "100\n999",
+      "desc": "Standard: 3-digit min to max"
+    },
+    {
+      "input": "1000\n9999",
+      "desc": "Standard: 4-digit range"
+    },
+    {
+      "input": "12\n21",
+      "desc": "Standard: digit swap"
+    },
+    {
+      "input": "10\n20",
+      "desc": "Standard: 2-digit single op"
+    },
+    {
+      "input": "99\n10",
+      "desc": "Standard: 2-digit reverse direction"
+    },
+    {
+      "input": "8\n4",
+      "desc": "Edge: single digit composite"
+    },
+    {
+      "input": "9\n4",
+      "desc": "Edge: single digit"
+    },
+    {
+      "input": "100\n101",
+      "desc": "Edge: 100->101 (101 is prime)"
+    },
+    {
+      "input": "100\n110",
+      "desc": "Standard: 3-digit"
+    },
+    {
+      "input": "1000\n1001",
+      "desc": "Standard: 4-digit"
+    },
+    {
+      "input": "9999\n1000",
+      "desc": "Stress: 4-digit max to min"
+    },
+    {
+      "input": "8888\n4444",
+      "desc": "Standard: 4-digit half"
+    }
   ]
 }

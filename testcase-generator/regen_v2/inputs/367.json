@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 5e4, s.length == t.length, lowercase letters",
   "input_format": "line1: s (raw string); line2: t (raw string)",
   "testcases": [
-    {"input": "bab\naba", "desc": "Edge: example1"},
-    {"input": "leetcode\npractice", "desc": "Edge: example2"},
-    {"input": "anagram\nmangaar", "desc": "Edge: example3 already anagram"},
-    {"input": "a\na", "desc": "Edge: n=1 identical"},
-    {"input": "a\nb", "desc": "Edge: n=1 different"},
-    {"input": "ab\nba", "desc": "Edge: n=2 already anagram"},
-    {"input": "ab\nab", "desc": "Edge: n=2 identical"},
-    {"input": "aa\nbb", "desc": "Edge: n=2 all different"},
-    {"input": "abc\ncba", "desc": "Edge: full reverse anagram"},
-    {"input": "abc\ndef", "desc": "Edge: full disjoint"},
-    {"input": "aaaa\nbbbb", "desc": "Edge: all same disjoint"},
-    {"input": "aaaa\naaaa", "desc": "Edge: all same identical"},
-    {"input": "abcdef\nfedcba", "desc": "Standard: full reverse anagram"},
-    {"input": "abcdef\nghijkl", "desc": "Standard: disjoint sets"},
-    {"input": "leetcodeleetcode\ncodeforcescodefo", "desc": "Standard: longer strings partial overlap"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\nzyxwvutsrqponmlkjihgfedcba", "desc": "Standard: full alphabet reversed"},
-    {"input": "aabbccddeeff\nzzyyxxwwvvuu", "desc": "Standard: distinct doubled"},
-    {"input": "abcabcabcabcabcabc\ncbacbacbacbacbacba", "desc": "Standard: repeating pattern"},
-    {"input": "qwertyuiopasdfghjklzxcvbnm\nqwertyuiopasdfghjklzxcvbnm", "desc": "Edge: identical 26 chars"},
-    {"input": "aaaabbbbccccddddeeeeffffgggghhhh\nzzzzyyyyxxxxwwwwvvvvuuuuttttssss", "desc": "Stress: long strings disjoint"}
+    {
+      "input": "bab\naba",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "leetcode\npractice",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"shqq\"\n\"mqr\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"elagbi\"\n\"bpeubct\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "a\nb",
+      "desc": "Edge: n=1 different"
+    },
+    {
+      "input": "ab\nba",
+      "desc": "Edge: n=2 already anagram"
+    },
+    {
+      "input": "ab\nab",
+      "desc": "Edge: n=2 identical"
+    },
+    {
+      "input": "aa\nbb",
+      "desc": "Edge: n=2 all different"
+    },
+    {
+      "input": "abc\ncba",
+      "desc": "Edge: full reverse anagram"
+    },
+    {
+      "input": "abc\ndef",
+      "desc": "Edge: full disjoint"
+    },
+    {
+      "input": "aaaa\nbbbb",
+      "desc": "Edge: all same disjoint"
+    },
+    {
+      "input": "aaaa\naaaa",
+      "desc": "Edge: all same identical"
+    },
+    {
+      "input": "abcdef\nfedcba",
+      "desc": "Standard: full reverse anagram"
+    },
+    {
+      "input": "abcdef\nghijkl",
+      "desc": "Standard: disjoint sets"
+    },
+    {
+      "input": "leetcodeleetcode\ncodeforcescodefo",
+      "desc": "Standard: longer strings partial overlap"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\nzyxwvutsrqponmlkjihgfedcba",
+      "desc": "Standard: full alphabet reversed"
+    },
+    {
+      "input": "aabbccddeeff\nzzyyxxwwvvuu",
+      "desc": "Standard: distinct doubled"
+    },
+    {
+      "input": "abcabcabcabcabcabc\ncbacbacbacbacbacba",
+      "desc": "Standard: repeating pattern"
+    },
+    {
+      "input": "qwertyuiopasdfghjklzxcvbnm\nqwertyuiopasdfghjklzxcvbnm",
+      "desc": "Edge: identical 26 chars"
+    },
+    {
+      "input": "\"rdwkjpzemephjuvl\"\n\"vjgvjmnrdsnrakeu\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

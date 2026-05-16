@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, s of 'U','D','L','R', 1 <= k <= s.length",
   "input_format": "line1: s (raw string); line2: k (int)",
   "testcases": [
-    {"input": "LUL\n1", "desc": "Edge: example1"},
-    {"input": "UDLR\n4", "desc": "Edge: example2 remove all"},
-    {"input": "UU\n1", "desc": "Edge: example3"},
-    {"input": "U\n1", "desc": "Edge: n=1 k=1 (remove entire)"},
-    {"input": "D\n1", "desc": "Edge: n=1 D"},
-    {"input": "L\n1", "desc": "Edge: n=1 L"},
-    {"input": "R\n1", "desc": "Edge: n=1 R"},
-    {"input": "UD\n1", "desc": "Edge: n=2 cancel pair"},
-    {"input": "LR\n1", "desc": "Edge: n=2 LR cancel"},
-    {"input": "UUUU\n2", "desc": "Edge: all same chars"},
-    {"input": "UDUDUD\n2", "desc": "Standard: UD pairs k=2"},
-    {"input": "LRLRLR\n2", "desc": "Standard: LR pairs k=2"},
-    {"input": "URDLURDL\n4", "desc": "Standard: 2 cycles k=4"},
-    {"input": "UUUUDDDD\n4", "desc": "Standard: 4U 4D remove half"},
-    {"input": "LLLLRRRR\n4", "desc": "Standard: 4L 4R remove half"},
-    {"input": "ULDR\n2", "desc": "Edge: 4 distinct chars k=2"},
-    {"input": "UUUUUUUUUU\n5", "desc": "Standard: 10 Us remove 5"},
-    {"input": "UDLRUDLR\n3", "desc": "Standard: pattern k=3"},
-    {"input": "UDLRUDLRUDLR\n6", "desc": "Standard: 3 cycles k=6"},
-    {"input": "RRRRLLLLUUUUDDDD\n8", "desc": "Stress: blocks k=8"}
+    {
+      "input": "LUL\n1",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "UDLR\n4",
+      "desc": "Edge: example2 remove all"
+    },
+    {
+      "input": "\"q\"\n1",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"eyl\"\n2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "D\n1",
+      "desc": "Edge: n=1 D"
+    },
+    {
+      "input": "L\n1",
+      "desc": "Edge: n=1 L"
+    },
+    {
+      "input": "R\n1",
+      "desc": "Edge: n=1 R"
+    },
+    {
+      "input": "UD\n1",
+      "desc": "Edge: n=2 cancel pair"
+    },
+    {
+      "input": "LR\n1",
+      "desc": "Edge: n=2 LR cancel"
+    },
+    {
+      "input": "UUUU\n2",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "UDUDUD\n2",
+      "desc": "Standard: UD pairs k=2"
+    },
+    {
+      "input": "LRLRLR\n2",
+      "desc": "Standard: LR pairs k=2"
+    },
+    {
+      "input": "URDLURDL\n4",
+      "desc": "Standard: 2 cycles k=4"
+    },
+    {
+      "input": "UUUUDDDD\n4",
+      "desc": "Standard: 4U 4D remove half"
+    },
+    {
+      "input": "LLLLRRRR\n4",
+      "desc": "Standard: 4L 4R remove half"
+    },
+    {
+      "input": "ULDR\n2",
+      "desc": "Edge: 4 distinct chars k=2"
+    },
+    {
+      "input": "UUUUUUUUUU\n5",
+      "desc": "Standard: 10 Us remove 5"
+    },
+    {
+      "input": "UDLRUDLR\n3",
+      "desc": "Standard: pattern k=3"
+    },
+    {
+      "input": "UDLRUDLRUDLR\n6",
+      "desc": "Standard: 3 cycles k=6"
+    },
+    {
+      "input": "\"cqmhxadj\"\n4",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

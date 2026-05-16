@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1000",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "3", "desc": "Edge: example1"},
-    {"input": "7", "desc": "Edge: example2"},
-    {"input": "1", "desc": "Edge: n=1 minimum"},
-    {"input": "2", "desc": "Edge: n=2"},
-    {"input": "4", "desc": "Standard: n=4"},
-    {"input": "5", "desc": "Standard: n=5"},
-    {"input": "10", "desc": "Standard: n=10"},
-    {"input": "20", "desc": "Standard: n=20"},
-    {"input": "50", "desc": "Standard: n=50"},
-    {"input": "100", "desc": "Standard: n=100"},
-    {"input": "500", "desc": "Standard: n=500"},
-    {"input": "999", "desc": "Stress: near max"},
-    {"input": "1000", "desc": "Stress: max n"},
-    {"input": "8", "desc": "Standard: n=8"},
-    {"input": "16", "desc": "Standard: n=16"},
-    {"input": "32", "desc": "Standard: n=32"},
-    {"input": "64", "desc": "Standard: n=64"},
-    {"input": "128", "desc": "Standard: n=128"},
-    {"input": "256", "desc": "Standard: n=256"},
-    {"input": "777", "desc": "Standard: random mid"}
+    {
+      "input": "3",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "7",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "7",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: n=5"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10"
+    },
+    {
+      "input": "20",
+      "desc": "Standard: n=20"
+    },
+    {
+      "input": "50",
+      "desc": "Standard: n=50"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: n=100"
+    },
+    {
+      "input": "500",
+      "desc": "Standard: n=500"
+    },
+    {
+      "input": "999",
+      "desc": "Stress: near max"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: max n"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: n=8"
+    },
+    {
+      "input": "16",
+      "desc": "Standard: n=16"
+    },
+    {
+      "input": "32",
+      "desc": "Standard: n=32"
+    },
+    {
+      "input": "64",
+      "desc": "Standard: n=64"
+    },
+    {
+      "input": "128",
+      "desc": "Standard: n=128"
+    },
+    {
+      "input": "256",
+      "desc": "Standard: n=256"
+    },
+    {
+      "input": "7",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

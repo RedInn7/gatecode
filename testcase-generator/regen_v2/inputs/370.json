@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= students.length == sandwiches.length <= 100, values in {0, 1}",
   "input_format": "line1: students (JSON int array); line2: sandwiches (JSON int array)",
   "testcases": [
-    {"input": "[1,1,0,0]\n[0,1,0,1]", "desc": "Edge: example1 all 0"},
-    {"input": "[1,1,1,0,0,1]\n[1,0,0,0,1,1]", "desc": "Edge: example2 some stuck"},
-    {"input": "[0]\n[0]", "desc": "Edge: n=1 match"},
-    {"input": "[0]\n[1]", "desc": "Edge: n=1 mismatch, 1 unable"},
-    {"input": "[1]\n[0]", "desc": "Edge: n=1 mismatch reverse"},
-    {"input": "[1]\n[1]", "desc": "Edge: n=1 match 1s"},
-    {"input": "[0,1]\n[0,1]", "desc": "Edge: n=2 simple match"},
-    {"input": "[1,0]\n[1,0]", "desc": "Edge: n=2 sequential"},
-    {"input": "[0,0,0,0]\n[1,1,1,1]", "desc": "Edge: complete mismatch all 0 vs all 1"},
-    {"input": "[1,1,1,1]\n[0,0,0,0]", "desc": "Edge: complete mismatch all 1 vs all 0"},
-    {"input": "[1,0,1,0,1,0]\n[1,0,1,0,1,0]", "desc": "Standard: alternating matched"},
-    {"input": "[0,1,0,1,0,1]\n[1,0,1,0,1,0]", "desc": "Standard: alternating off-by-one"},
-    {"input": "[0,0,0,0,0,1]\n[1,0,0,0,0,0]", "desc": "Standard: single 1 at end vs front"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[0,0,0,0,0,0,0,0,0,0]", "desc": "Standard: 10 each disjoint"},
-    {"input": "[0,1,0,1,0,1,0,1]\n[0,0,0,0,1,1,1,1]", "desc": "Standard: balanced"},
-    {"input": "[1,1,0,0,1,1,0,0]\n[0,0,1,1,0,0,1,1]", "desc": "Standard: block alternating"},
-    {"input": "[1,0,0,0,1,1,1,0]\n[0,1,0,0,1,0,1,1]", "desc": "Standard: mixed pattern"},
-    {"input": "[0,1]\n[1,0]", "desc": "Edge: n=2 stuck (Q[0]=0, S[0]=1, Q[1]=1 same)"},
-    {"input": "[0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1]\n[0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1]", "desc": "Stress: n=20 matching blocks"},
-    {"input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]\n[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]", "desc": "Stress: n=50 alternating opposite"}
+    {
+      "input": "[1,1,0,0]\n[0,1,0,1]",
+      "desc": "Edge: example1 all 0"
+    },
+    {
+      "input": "[1,1,1,0,0,1]\n[1,0,0,0,1,1]",
+      "desc": "Edge: example2 some stuck"
+    },
+    {
+      "input": "[0]\n[0]",
+      "desc": "Edge: n=1 match"
+    },
+    {
+      "input": "[0]\n[1]",
+      "desc": "Edge: n=1 mismatch, 1 unable"
+    },
+    {
+      "input": "[1]\n[0]",
+      "desc": "Edge: n=1 mismatch reverse"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: n=1 match 1s"
+    },
+    {
+      "input": "[0,1]\n[0,1]",
+      "desc": "Edge: n=2 simple match"
+    },
+    {
+      "input": "[1,0]\n[1,0]",
+      "desc": "Edge: n=2 sequential"
+    },
+    {
+      "input": "[0,0,0,0]\n[1,1,1,1]",
+      "desc": "Edge: complete mismatch all 0 vs all 1"
+    },
+    {
+      "input": "[1,1,1,1]\n[0,0,0,0]",
+      "desc": "Edge: complete mismatch all 1 vs all 0"
+    },
+    {
+      "input": "[1,0,1,0,1,0]\n[1,0,1,0,1,0]",
+      "desc": "Standard: alternating matched"
+    },
+    {
+      "input": "[0,1,0,1,0,1]\n[1,0,1,0,1,0]",
+      "desc": "Standard: alternating off-by-one"
+    },
+    {
+      "input": "[846,935,-363,285,-394,550,163,-881,523,782,971,-295,-386,134,429,-693]\n[-659,-228,740,92,-907,965,69,498,519,-904,534,647,-129,-956,-141,507]",
+      "desc": "Regenerated: diverse at position 12"
+    },
+    {
+      "input": "[-138,-506,-745,-33,470,-890,36,951,-269,-641,-195,-555,-237,-676,-343,619,266,-743,853,540,-498,219,817,573,885,100,-828,405,-369]\n[665,813,-172,77,-46,4,-630,-751,-454,460,64,-31,329,-861,-300,-321,29,-104,391,690,171,249,83,-729,-59,-990,7,941,-906]",
+      "desc": "Regenerated: diverse at position 13"
+    },
+    {
+      "input": "[0,1,0,1,0,1,0,1]\n[0,0,0,0,1,1,1,1]",
+      "desc": "Standard: balanced"
+    },
+    {
+      "input": "[1,1,0,0,1,1,0,0]\n[0,0,1,1,0,0,1,1]",
+      "desc": "Standard: block alternating"
+    },
+    {
+      "input": "[1,0,0,0,1,1,1,0]\n[0,1,0,0,1,0,1,1]",
+      "desc": "Standard: mixed pattern"
+    },
+    {
+      "input": "[0,1]\n[1,0]",
+      "desc": "Edge: n=2 stuck (Q[0]=0, S[0]=1, Q[1]=1 same)"
+    },
+    {
+      "input": "[0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1]\n[0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1]",
+      "desc": "Stress: n=20 matching blocks"
+    },
+    {
+      "input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]\n[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]",
+      "desc": "Stress: n=50 alternating opposite"
+    }
   ]
 }
