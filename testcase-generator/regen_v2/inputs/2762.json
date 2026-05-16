@@ -1,0 +1,28 @@
+{
+  "pid": 2762,
+  "slug": "number-of-substrings-containing-all-three-characters",
+  "inferred_constraints": "3 <= s.length <= 5*10^4, s consists of 'a', 'b', 'c'",
+  "input_format": "single line: s",
+  "testcases": [
+    {"input": "abcabc", "desc": "Edge: example1"},
+    {"input": "aaacb", "desc": "Edge: example2"},
+    {"input": "abc", "desc": "Edge: example3"},
+    {"input": "aaa", "desc": "Edge: no abc"},
+    {"input": "abcc", "desc": "Edge: only abc with extra c"},
+    {"input": "aabbcc", "desc": "Edge: groups"},
+    {"input": "ccbabc", "desc": "Edge: scrambled"},
+    {"input": "cba", "desc": "Edge: reverse"},
+    {"input": "abccba", "desc": "Edge: palindrome"},
+    {"input": "abcabcabc", "desc": "Standard: 3 cycles"},
+    {"input": "aaabbbccc", "desc": "Standard: 3 each"},
+    {"input": "aaaa", "desc": "Standard: all a"},
+    {"input": "bbbb", "desc": "Standard: all b"},
+    {"input": "cccc", "desc": "Standard: all c"},
+    {"input": "abacbc", "desc": "Standard: alt mixed"},
+    {"input": "aabbccaabbcc", "desc": "Standard: 12 char repeat"},
+    {"input": "cabcabcabc", "desc": "Standard: starts c"},
+    {"input": "abccccccba", "desc": "Standard: nested"},
+    {"input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc", "desc": "Stress: 100 char repeat"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc", "desc": "Killer: 97 a then bc"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2755,
+  "slug": "break-a-palindrome",
+  "inferred_constraints": "1 <= palindrome.length <= 1000, palindrome is a palindrome of lowercase letters",
+  "input_format": "single line: palindrome",
+  "testcases": [
+    {"input": "abccba", "desc": "Edge: example1"},
+    {"input": "a", "desc": "Edge: example2 single char"},
+    {"input": "aa", "desc": "Edge: 2 same"},
+    {"input": "aba", "desc": "Edge: 3 char a"},
+    {"input": "aaa", "desc": "Edge: 3 same"},
+    {"input": "zzz", "desc": "Edge: 3 z"},
+    {"input": "zz", "desc": "Edge: 2 z"},
+    {"input": "z", "desc": "Edge: single z"},
+    {"input": "abba", "desc": "Edge: 4 char"},
+    {"input": "zzzz", "desc": "Standard: 4 z"},
+    {"input": "racecar", "desc": "Standard: 7 char"},
+    {"input": "level", "desc": "Standard: 5 char"},
+    {"input": "deified", "desc": "Standard: 7 chars"},
+    {"input": "aaabaaa", "desc": "Standard: 7 mostly same"},
+    {"input": "aaaaa", "desc": "Standard: 5 same"},
+    {"input": "ababa", "desc": "Standard: 5 alt"},
+    {"input": "abcba", "desc": "Standard: 5 char"},
+    {"input": "zzzzzzzzzz", "desc": "Standard: 10 z"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a"},
+    {"input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", "desc": "Killer: 100 z"}
+  ]
+}

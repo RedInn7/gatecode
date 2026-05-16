@@ -1,0 +1,28 @@
+{
+  "pid": 2761,
+  "slug": "binary-watch",
+  "inferred_constraints": "0 <= turnedOn <= 10",
+  "input_format": "single line: turnedOn (int)",
+  "testcases": [
+    {"input": "1", "desc": "Edge: example1"},
+    {"input": "9", "desc": "Edge: example2 empty"},
+    {"input": "0", "desc": "Edge: zero"},
+    {"input": "2", "desc": "Standard: 2 LEDs"},
+    {"input": "3", "desc": "Standard: 3 LEDs"},
+    {"input": "4", "desc": "Standard: 4 LEDs"},
+    {"input": "5", "desc": "Standard: 5 LEDs"},
+    {"input": "6", "desc": "Standard: 6 LEDs"},
+    {"input": "7", "desc": "Standard: 7 LEDs"},
+    {"input": "8", "desc": "Standard: 8 LEDs"},
+    {"input": "10", "desc": "Standard: 10 LEDs"},
+    {"input": "1", "desc": "Standard: dup"},
+    {"input": "2", "desc": "Standard: dup"},
+    {"input": "3", "desc": "Standard: dup"},
+    {"input": "4", "desc": "Standard: dup"},
+    {"input": "5", "desc": "Standard: dup"},
+    {"input": "0", "desc": "Standard: dup"},
+    {"input": "9", "desc": "Standard: dup"},
+    {"input": "10", "desc": "Stress: max"},
+    {"input": "8", "desc": "Killer: 8 LEDs"}
+  ]
+}

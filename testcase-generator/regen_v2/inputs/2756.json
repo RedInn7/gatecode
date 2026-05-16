@@ -1,0 +1,28 @@
+{
+  "pid": 2756,
+  "slug": "find-original-array-from-doubled-array",
+  "inferred_constraints": "1 <= changed.length <= 10^5, 0 <= changed[i] <= 10^5",
+  "input_format": "single line: changed (JSON array)",
+  "testcases": [
+    {"input": "[1,3,4,2,6,8]", "desc": "Edge: example1"},
+    {"input": "[6,3,0,1]", "desc": "Edge: example2 invalid"},
+    {"input": "[1]", "desc": "Edge: example3 odd length invalid"},
+    {"input": "[0,0]", "desc": "Edge: two zeros"},
+    {"input": "[0,0,0,0]", "desc": "Edge: 4 zeros"},
+    {"input": "[1,2]", "desc": "Edge: smallest valid"},
+    {"input": "[2,4]", "desc": "Edge: 2 4"},
+    {"input": "[2,1]", "desc": "Edge: reverse valid"},
+    {"input": "[1,1]", "desc": "Edge: invalid"},
+    {"input": "[1,2,3,6]", "desc": "Standard: not paired"},
+    {"input": "[1,2,2,4]", "desc": "Standard: valid"},
+    {"input": "[1,3,5,6,2,10]", "desc": "Standard: 6 elements"},
+    {"input": "[10,5,20,40,100,80,50,200,25,160]", "desc": "Standard: tricky"},
+    {"input": "[2,4,8,16,32,64]", "desc": "Standard: chain"},
+    {"input": "[1,2,3,4,5,6,7,8]", "desc": "Standard: invalid"},
+    {"input": "[1,2,2,4,4,8]", "desc": "Standard: chain pairs"},
+    {"input": "[0,0,0,0,0,0]", "desc": "Standard: 6 zeros"},
+    {"input": "[100000,50000]", "desc": "Standard: max values"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Stress: 100 alt"},
+    {"input": "[50000,100000,50000,100000,50000,100000,50000,100000,50000,100000]", "desc": "Killer: max pairs"}
+  ]
+}
