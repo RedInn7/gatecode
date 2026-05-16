@@ -1,0 +1,28 @@
+{
+  "pid": 2017,
+  "slug": "escape-a-large-maze",
+  "inferred_constraints": "0 <= blocked.length <= 200, 0 <= x, y < 10^6, source != target",
+  "input_format": "line1: blocked (JSON 2D); line2: source (JSON); line3: target (JSON)",
+  "testcases": [
+    {"input": "[[0,1],[1,0]]\n[0,0]\n[0,2]", "desc": "Standard: example 1 false"},
+    {"input": "[]\n[0,0]\n[999999,999999]", "desc": "Standard: example 2 unblocked"},
+    {"input": "[]\n[0,0]\n[0,1]", "desc": "Edge: empty blocks adjacent"},
+    {"input": "[]\n[0,0]\n[1,0]", "desc": "Edge: empty adjacent"},
+    {"input": "[[1,0]]\n[0,0]\n[2,0]", "desc": "Standard: single block detour"},
+    {"input": "[[1,0],[0,1]]\n[0,0]\n[1,1]", "desc": "Standard: 2 blocks corner"},
+    {"input": "[[1,0],[0,1],[1,1]]\n[0,0]\n[2,2]", "desc": "Standard: 3 blocks"},
+    {"input": "[]\n[0,0]\n[500000,500000]", "desc": "Standard: long path no blocks"},
+    {"input": "[[2,0],[1,1],[0,2]]\n[0,0]\n[3,3]", "desc": "Standard: diagonal blocks"},
+    {"input": "[]\n[999998,999998]\n[999999,999999]", "desc": "Edge: near corner"},
+    {"input": "[[5,5]]\n[0,0]\n[10,10]", "desc": "Standard: 1 block irrelevant"},
+    {"input": "[[1,0],[0,1],[2,1],[1,2]]\n[0,0]\n[5,5]", "desc": "Standard: 4 blocks around source"},
+    {"input": "[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]\n[0,0]\n[10,10]", "desc": "Standard: diagonal blocks chain"},
+    {"input": "[[0,1],[1,0],[1,1]]\n[0,0]\n[0,2]", "desc": "Edge: enclosed source"},
+    {"input": "[[0,1],[1,1],[1,0]]\n[0,0]\n[999999,999999]", "desc": "Edge: source fully enclosed"},
+    {"input": "[[500,500],[500,501],[501,500]]\n[0,0]\n[999999,999999]", "desc": "Standard: target reachable"},
+    {"input": "[[0,2],[1,1],[2,0]]\n[0,0]\n[1,0]", "desc": "Standard: small case"},
+    {"input": "[[10,9],[9,10],[10,11],[11,10]]\n[10,10]\n[10,10]", "desc": "Edge: src=target if allowed (else change)"},
+    {"input": "[]\n[5,5]\n[6,6]", "desc": "Edge: adjacent diagonal no blocks"},
+    {"input": "[[999998,999998],[999998,999999],[999999,999998]]\n[0,0]\n[999999,999999]", "desc": "Edge: corner enclosed target"}
+  ]
+}

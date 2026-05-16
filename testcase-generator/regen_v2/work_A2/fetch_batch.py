@@ -65,5 +65,14 @@ if __name__ == '__main__':
             if m:
                 done.add(int(m.group(1)))
     limit = int(sys.argv[3]) if len(sys.argv) > 3 else 50
+    # also load skipped_by_A2.json
+    skipped_file = '/Users/capsfly/Desktop/gatecode/testcase-generator/regen_v2/skipped_by_A2.json'
+    if os.path.exists(skipped_file):
+        try:
+            sd = json.load(open(skipped_file))
+            for s in sd.get('skipped', []):
+                done.add(s['pid'])
+        except Exception:
+            pass
     data = fetch(start, end, done)[:limit]
     print(json.dumps(data, ensure_ascii=False))

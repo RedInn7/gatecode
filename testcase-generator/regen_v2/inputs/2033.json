@@ -1,0 +1,28 @@
+{
+  "pid": 2033,
+  "slug": "earliest-finish-time-for-land-and-water-rides-i",
+  "inferred_constraints": "1 <= landStartTime, landDuration <= 1000 each, same for water",
+  "input_format": "line1: landStartTime; line2: landDuration; line3: waterStartTime; line4: waterDuration (each JSON array)",
+  "testcases": [
+    {"input": "[2,8]\n[4,1]\n[6]\n[3]", "desc": "Standard: example 1"},
+    {"input": "[5]\n[3]\n[7]\n[2]", "desc": "Standard: simple"},
+    {"input": "[0]\n[0]\n[0]\n[0]", "desc": "Edge: all zero"},
+    {"input": "[1]\n[1]\n[1]\n[1]", "desc": "Edge: smallest"},
+    {"input": "[1000]\n[1000]\n[1000]\n[1000]", "desc": "Edge: max"},
+    {"input": "[10,20]\n[5,3]\n[5]\n[10]", "desc": "Standard: 2 land 1 water"},
+    {"input": "[5]\n[10]\n[10,15]\n[3,2]", "desc": "Standard"},
+    {"input": "[100]\n[50]\n[1]\n[10]", "desc": "Standard: water early"},
+    {"input": "[1]\n[10]\n[100]\n[50]", "desc": "Standard: land early"},
+    {"input": "[1,2,3,4,5]\n[1,1,1,1,1]\n[2,3,4,5,6]\n[1,1,1,1,1]", "desc": "Standard: multiple options"},
+    {"input": "[10]\n[5]\n[20]\n[5]", "desc": "Standard: water blocks after land"},
+    {"input": "[20]\n[5]\n[10]\n[5]", "desc": "Standard: water first"},
+    {"input": "[5,10,15]\n[3,2,1]\n[7,12,20]\n[5,3,2]", "desc": "Standard: pick best pair"},
+    {"input": "[1]\n[1000]\n[1]\n[1000]", "desc": "Edge: equal long durations"},
+    {"input": "[100,200,300]\n[10,20,30]\n[150,250,350]\n[15,25,35]", "desc": "Standard"},
+    {"input": "[500,600,700]\n[100,100,100]\n[800]\n[100]", "desc": "Standard"},
+    {"input": "[1,1,1]\n[1,1,1]\n[1,1,1]\n[1,1,1]", "desc": "Edge: all same"},
+    {"input": "[10]\n[5]\n[5,15]\n[3,2]", "desc": "Standard"},
+    {"input": "[50,100,150]\n[10,20,30]\n[60,110,160]\n[10,20,30]", "desc": "Standard"},
+    {"input": "[1000,999,998]\n[1,1,1]\n[1,2,3]\n[1,1,1]", "desc": "Standard"}
+  ]
+}

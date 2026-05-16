@@ -1,0 +1,28 @@
+{
+  "pid": 2020,
+  "slug": "find-the-middle-index-in-array",
+  "inferred_constraints": "1 <= nums.length <= 100, -1000 <= nums[i] <= 1000",
+  "input_format": "single line: nums (JSON)",
+  "testcases": [
+    {"input": "[2,3,-1,8,4]", "desc": "Standard: example 1"},
+    {"input": "[1,-1,4]", "desc": "Standard: example 2"},
+    {"input": "[2,5]", "desc": "Standard: example 3 -1"},
+    {"input": "[1]", "desc": "Edge: n=1 (idx 0 with 0=0)"},
+    {"input": "[0]", "desc": "Edge: n=1 zero"},
+    {"input": "[1000]", "desc": "Edge: n=1 max"},
+    {"input": "[-1000]", "desc": "Edge: n=1 min"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros (idx 0)"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all ones"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[1,-1,1,-1,1]", "desc": "Standard: alternating"},
+    {"input": "[10,-10,5,-5]", "desc": "Standard"},
+    {"input": "[3,3]", "desc": "Edge: n=2 same"},
+    {"input": "[0,1,2,3,4]", "desc": "Standard: starts with 0"},
+    {"input": "[100,200,300,200,100]", "desc": "Standard: palindrome shape"},
+    {"input": "[5,2,5,3,5,3,5,2]", "desc": "Standard"},
+    {"input": "[2,1,-1]", "desc": "Edge: small"},
+    {"input": "[-1000,-1000,-1000,1000,1000,1000]", "desc": "Standard: split"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 elements"}
+  ]
+}

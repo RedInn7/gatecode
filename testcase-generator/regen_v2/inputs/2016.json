@@ -1,0 +1,28 @@
+{
+  "pid": 2016,
+  "slug": "check-if-two-string-arrays-are-equivalent",
+  "inferred_constraints": "1 <= word.length <= 1000, 1 <= word[i].length <= 1000, sum <= 1000, lowercase",
+  "input_format": "line1: word1 (JSON); line2: word2 (JSON)",
+  "testcases": [
+    {"input": "[\"ab\",\"c\"]\n[\"a\",\"bc\"]", "desc": "Standard: example 1"},
+    {"input": "[\"a\",\"cb\"]\n[\"ab\",\"c\"]", "desc": "Standard: example 2"},
+    {"input": "[\"abc\",\"d\",\"defg\"]\n[\"abcddefg\"]", "desc": "Standard: example 3"},
+    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: identical"},
+    {"input": "[\"a\"]\n[\"b\"]", "desc": "Edge: different single"},
+    {"input": "[\"\"]\n[\"\"]", "desc": "Edge: empty strings (if allowed)"},
+    {"input": "[\"hello\"]\n[\"hello\"]", "desc": "Standard: identical word"},
+    {"input": "[\"hello\"]\n[\"world\"]", "desc": "Standard: different"},
+    {"input": "[\"abcdef\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\"]", "desc": "Standard: split chars"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"abc\"]", "desc": "Standard: 3 to 1"},
+    {"input": "[\"abc\"]\n[\"abd\"]", "desc": "Edge: 1-char diff"},
+    {"input": "[\"abcd\"]\n[\"abc\"]", "desc": "Edge: different length"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\"]\n[\"abcdefghijkl\"]", "desc": "Standard: 4 to 1"},
+    {"input": "[\"aaa\"]\n[\"aaa\"]", "desc": "Standard: same repeated"},
+    {"input": "[\"aaa\"]\n[\"a\",\"a\",\"a\"]", "desc": "Standard: same chars different split"},
+    {"input": "[\"x\",\"y\",\"z\"]\n[\"x\",\"y\",\"z\"]", "desc": "Standard: identical arrays"},
+    {"input": "[\"hello\",\"world\"]\n[\"helloworld\"]", "desc": "Standard"},
+    {"input": "[\"helloworld\"]\n[\"hello\",\"world\"]", "desc": "Standard: reversed"},
+    {"input": "[\"a\",\"\"]\n[\"a\"]", "desc": "Edge: empty in array"},
+    {"input": "[\"qwertyuiop\",\"asdfghjkl\",\"zxcvbnm\"]\n[\"qwertyuiopasdfghjklzxcvbnm\"]", "desc": "Standard: long"}
+  ]
+}

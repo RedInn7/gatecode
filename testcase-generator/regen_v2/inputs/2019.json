@@ -1,0 +1,28 @@
+{
+  "pid": 2019,
+  "slug": "meeting-scheduler",
+  "inferred_constraints": "1 <= slots1.length, slots2.length <= 10^4, slots[i].length == 2, 0 <= start < end <= 10^9, 0 <= duration <= 10^6",
+  "input_format": "line1: slots1 (JSON 2D); line2: slots2 (JSON 2D); line3: duration (int)",
+  "testcases": [
+    {"input": "[[10,50],[60,120],[140,210]]\n[[0,15],[60,70]]\n8", "desc": "Standard: example 1"},
+    {"input": "[[10,50],[60,120],[140,210]]\n[[0,15],[60,70]]\n12", "desc": "Standard: example 2 no slot"},
+    {"input": "[[0,100]]\n[[0,100]]\n50", "desc": "Edge: simple overlap"},
+    {"input": "[[0,5]]\n[[0,5]]\n5", "desc": "Edge: exact duration"},
+    {"input": "[[0,5]]\n[[0,5]]\n6", "desc": "Edge: too long"},
+    {"input": "[[0,10]]\n[[20,30]]\n5", "desc": "Edge: no overlap"},
+    {"input": "[[0,1000000000]]\n[[500000000,1000000000]]\n1000000", "desc": "Edge: large times"},
+    {"input": "[[0,10],[20,30]]\n[[5,15],[25,35]]\n5", "desc": "Standard: 2 slots each"},
+    {"input": "[[0,10],[20,30],[40,50]]\n[[5,25],[35,45]]\n5", "desc": "Standard"},
+    {"input": "[[0,10]]\n[[5,8]]\n3", "desc": "Edge: nested slot"},
+    {"input": "[[0,10],[20,30],[40,50]]\n[[0,5],[15,25],[45,55]]\n5", "desc": "Standard"},
+    {"input": "[[100,150],[200,250]]\n[[100,200]]\n50", "desc": "Standard"},
+    {"input": "[[1,5],[6,10],[11,15]]\n[[0,20]]\n3", "desc": "Standard: many short slots"},
+    {"input": "[[0,2],[3,5],[6,8]]\n[[1,7]]\n2", "desc": "Standard: pick best overlap"},
+    {"input": "[[10,20]]\n[[15,25]]\n5", "desc": "Edge: 5-min overlap exactly"},
+    {"input": "[[10,20]]\n[[15,25]]\n6", "desc": "Edge: too long"},
+    {"input": "[[0,30]]\n[[10,20]]\n10", "desc": "Edge: contained slot"},
+    {"input": "[[0,5],[10,15],[20,25]]\n[[5,10],[15,20]]\n1", "desc": "Standard: touching"},
+    {"input": "[[1,10],[20,30],[40,50],[60,70]]\n[[5,15],[25,35],[45,55],[65,75]]\n5", "desc": "Standard: multiple slots"},
+    {"input": "[[100,200]]\n[[150,250]]\n0", "desc": "Edge: zero duration"}
+  ]
+}
