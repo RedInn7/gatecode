@@ -1,0 +1,27 @@
+{
+  "pid": 723, "slug": "maximum-product-of-splitted-binary-tree",
+  "inferred_constraints": "2 <= nodes <= 5e4, 1 <= Node.val <= 1e4, mod 1e9+7",
+  "input_format": "line1: root (JSON tree with null)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,6]", "desc": "Edge: example1"},
+    {"input": "[1,null,2,3,4,null,null,5,6]", "desc": "Edge: example2"},
+    {"input": "[1,2]", "desc": "Edge: min n=2"},
+    {"input": "[10,5]", "desc": "Edge: n=2 different"},
+    {"input": "[1,1,1]", "desc": "Edge: n=3 all same"},
+    {"input": "[5,5,5,5,5,5,5]", "desc": "Edge: all same 7"},
+    {"input": "[10000,10000,10000]", "desc": "Edge: max values 3"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full 7"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: full 15"},
+    {"input": "[10,5,15,3,7,12,20]", "desc": "Standard: BST"},
+    {"input": "[100,1,1,1,1,1,1]", "desc": "Standard: heavy root"},
+    {"input": "[1,1,1,1,1,1,100]", "desc": "Standard: heavy leaf"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right skewed"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left skewed"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000]", "desc": "Edge: all max 7"},
+    {"input": "[1,2,3,null,null,4,5,null,null,6,7]", "desc": "Standard: scattered nulls"},
+    {"input": "[5,4,8,11,null,13,4,7,2,null,null,5,1]", "desc": "Standard: classic mixed"},
+    {"input": "[100,50,50,25,25,25,25]", "desc": "Standard: balanced binary"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]", "desc": "Stress: 15 max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Special: unbalanced n=10"}
+  ]
+}

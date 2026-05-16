@@ -1,0 +1,27 @@
+{
+  "pid": 696, "slug": "shortest-path-visiting-all-nodes",
+  "inferred_constraints": "1 <= n <= 12, undirected connected graph, adjacency list format",
+  "input_format": "line1: graph (JSON array of arrays)",
+  "testcases": [
+    {"input": "[[1,2,3],[0],[0],[0]]", "desc": "Edge: example1 star"},
+    {"input": "[[1],[0,2,4],[1,3,4],[2],[1,2]]", "desc": "Edge: example2"},
+    {"input": "[[]]", "desc": "Edge: n=1 single node"},
+    {"input": "[[1],[0]]", "desc": "Edge: n=2 two nodes"},
+    {"input": "[[1,2],[0,2],[0,1]]", "desc": "Edge: triangle K3"},
+    {"input": "[[1],[0,2],[1,3],[2]]", "desc": "Edge: path n=4"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10,11],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0]]", "desc": "Stress: n=12 star"},
+    {"input": "[[1],[0,2],[1,3],[2,4],[3,5],[4,6],[5,7],[6,8],[7,9],[8,10],[9,11],[10]]", "desc": "Stress: n=12 path"},
+    {"input": "[[1,2,3],[0,2,3],[0,1,3],[0,1,2]]", "desc": "Standard: K4 complete"},
+    {"input": "[[1,2],[0],[0,3],[2]]", "desc": "Standard: small tree"},
+    {"input": "[[1],[0,2,3],[1],[1,4],[3]]", "desc": "Standard: tree shape"},
+    {"input": "[[1,3],[0,2],[1,3],[0,2]]", "desc": "Standard: cycle 4"},
+    {"input": "[[1,2,3,4],[0,2],[0,1,3],[0,2,4],[0,3]]", "desc": "Standard: hub"},
+    {"input": "[[1],[0,2],[1,3,4],[2],[2,5],[4]]", "desc": "Standard: small forked"},
+    {"input": "[[1,2],[0,3,4],[0,5,6],[1],[1],[2],[2]]", "desc": "Standard: binary tree shape"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10,11],[0,2],[1,0],[0],[0],[0],[0],[0],[0],[0],[0],[0]]", "desc": "Stress: n=12 star+extra"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10,11],[0,2,3,4,5,6,7,8,9,10,11],[0,1],[0,1],[0,1],[0,1],[0,1],[0,1],[0,1],[0,1],[0,1],[0,1]]", "desc": "Stress: dense n=12"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10,11],[0,2,3,4,5,6,7,8,9,10,11],[0,1,3,4,5,6,7,8,9,10,11],[0,1,2,4,5,6,7,8,9,10,11],[0,1,2,3,5,6,7,8,9,10,11],[0,1,2,3,4,6,7,8,9,10,11],[0,1,2,3,4,5,7,8,9,10,11],[0,1,2,3,4,5,6,8,9,10,11],[0,1,2,3,4,5,6,7,9,10,11],[0,1,2,3,4,5,6,7,8,10,11],[0,1,2,3,4,5,6,7,8,9,11],[0,1,2,3,4,5,6,7,8,9,10]]", "desc": "Stress: K12 complete graph"},
+    {"input": "[[1,3],[0,2],[1],[0,4],[3,5],[4]]", "desc": "Standard: tree-like n=6"},
+    {"input": "[[1],[0,2],[1,3,5],[2,4],[3],[2]]", "desc": "Special: branching path"}
+  ]
+}

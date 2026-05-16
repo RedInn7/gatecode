@@ -1,0 +1,27 @@
+{
+  "pid": 697, "slug": "mirror-distance-of-an-integer",
+  "inferred_constraints": "1 <= n <= 1e9",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "25", "desc": "Edge: example1"},
+    {"input": "10", "desc": "Edge: example2 trailing zero"},
+    {"input": "7", "desc": "Edge: example3 single digit"},
+    {"input": "1", "desc": "Edge: min n=1"},
+    {"input": "9", "desc": "Edge: single digit max"},
+    {"input": "11", "desc": "Edge: palindrome 2-digit"},
+    {"input": "100", "desc": "Edge: trailing zeros"},
+    {"input": "1000000000", "desc": "Edge: max value 1e9"},
+    {"input": "999999999", "desc": "Edge: 9-digit all 9s"},
+    {"input": "123456789", "desc": "Standard: 9-digit ascending"},
+    {"input": "987654321", "desc": "Standard: 9-digit descending"},
+    {"input": "12321", "desc": "Standard: 5-digit palindrome"},
+    {"input": "50", "desc": "Standard: small with zero"},
+    {"input": "21", "desc": "Standard: 12 reversed"},
+    {"input": "100000", "desc": "Standard: power of 10"},
+    {"input": "12345", "desc": "Standard: 5-digit ascending"},
+    {"input": "54321", "desc": "Standard: 5-digit descending"},
+    {"input": "1234321", "desc": "Standard: 7-digit palindrome"},
+    {"input": "987654320", "desc": "Stress: near max descending with trailing zero"},
+    {"input": "199999999", "desc": "Stress: near max one extra"}
+  ]
+}

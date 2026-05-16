@@ -1,0 +1,27 @@
+{
+  "pid": 716, "slug": "robot-return-to-origin",
+  "inferred_constraints": "1 <= moves.length <= 2e4, chars in {U,D,L,R}",
+  "input_format": "line1: moves (raw string)",
+  "testcases": [
+    {"input": "UD", "desc": "Edge: example1 true"},
+    {"input": "LL", "desc": "Edge: example2 false"},
+    {"input": "U", "desc": "Edge: single move false"},
+    {"input": "UDLR", "desc": "Edge: all four"},
+    {"input": "RL", "desc": "Edge: 2-char true"},
+    {"input": "UU", "desc": "Edge: 2-char same"},
+    {"input": "UDUDUD", "desc": "Standard: alternating UD"},
+    {"input": "LRLRLR", "desc": "Standard: alternating LR"},
+    {"input": "URDL", "desc": "Standard: cycle clockwise"},
+    {"input": "RRRRLLLL", "desc": "Standard: 4R 4L"},
+    {"input": "UUDDLLRR", "desc": "Standard: 2 each"},
+    {"input": "UUUDDD", "desc": "Standard: U=D"},
+    {"input": "LLLLRRRR", "desc": "Standard: 4L 4R"},
+    {"input": "UDLRLRLRLRLRLRLRLR", "desc": "Standard: extended"},
+    {"input": "UUUUUUUUUU", "desc": "Edge: all U"},
+    {"input": "UUDDLLRRUUDDLLRR", "desc": "Standard: repeated pattern"},
+    {"input": "RULDRULDRULDRULDRULD", "desc": "Standard: square 5 loops"},
+    {"input": "UDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLRUDLR", "desc": "Stress: long UDLR"},
+    {"input": "UULDR", "desc": "Standard: missing one"},
+    {"input": "UDRLUUDD", "desc": "Special: more U than D mid"}
+  ]
+}

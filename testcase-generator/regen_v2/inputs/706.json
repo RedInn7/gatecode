@@ -1,0 +1,27 @@
+{
+  "pid": 706, "slug": "valid-palindrome-ii",
+  "inferred_constraints": "1 <= s.length <= 1e5, lowercase letters",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "aba", "desc": "Edge: example1 already palindrome"},
+    {"input": "abca", "desc": "Edge: example2 delete c"},
+    {"input": "abc", "desc": "Edge: example3 false"},
+    {"input": "a", "desc": "Edge: n=1"},
+    {"input": "ab", "desc": "Edge: n=2 different"},
+    {"input": "aa", "desc": "Edge: n=2 same"},
+    {"input": "racecar", "desc": "Edge: palindrome"},
+    {"input": "abcba", "desc": "Edge: 5-char palindrome"},
+    {"input": "deeee", "desc": "Edge: delete first"},
+    {"input": "eeeed", "desc": "Edge: delete last"},
+    {"input": "abcdef", "desc": "Standard: no palindrome possible"},
+    {"input": "abcdba", "desc": "Standard: delete c"},
+    {"input": "tebbem", "desc": "Standard: false case"},
+    {"input": "ebcbbececabbacecbbcbe", "desc": "Standard: long palindrome candidate"},
+    {"input": "aaaaaaaaa", "desc": "Standard: all same"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: alphabet"},
+    {"input": "abcdedcba", "desc": "Standard: 9-char palindrome"},
+    {"input": "abccba", "desc": "Standard: even palindrome"},
+    {"input": "aabaa", "desc": "Standard: palindrome with double"},
+    {"input": "lcuppupcul", "desc": "Special: false complex"}
+  ]
+}

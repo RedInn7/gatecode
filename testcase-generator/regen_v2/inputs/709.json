@@ -1,0 +1,27 @@
+{
+  "pid": 709, "slug": "maximum-average-subtree",
+  "inferred_constraints": "1 <= nodes <= 1e4, 0 <= Node.val <= 1e5; float precision 1e-5",
+  "input_format": "line1: root (JSON tree with null)",
+  "testcases": [
+    {"input": "[5,6,1]", "desc": "Edge: example1"},
+    {"input": "[0,null,1]", "desc": "Edge: example2 right only"},
+    {"input": "[1]", "desc": "Edge: single node"},
+    {"input": "[0]", "desc": "Edge: single zero"},
+    {"input": "[100000]", "desc": "Edge: max value"},
+    {"input": "[1,2]", "desc": "Edge: two nodes"},
+    {"input": "[1,null,2]", "desc": "Edge: right child only"},
+    {"input": "[100,50,150]", "desc": "Standard: balanced"},
+    {"input": "[1,1,1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[0,0,0,0,0,0,0]", "desc": "Edge: all zero"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full BT 7 nodes"},
+    {"input": "[10,5,15,3,7,12,20]", "desc": "Standard: BST"},
+    {"input": "[1,2,3,null,null,4,5]", "desc": "Standard: with nulls"},
+    {"input": "[100,1,1,1,1,1,1]", "desc": "Standard: high root"},
+    {"input": "[1,1,1,1,1,1,100]", "desc": "Standard: high leaf"},
+    {"input": "[50000,25000,75000,12500,37500,62500,87500]", "desc": "Standard: large values"},
+    {"input": "[5,4,8,11,null,13,4,7,2,null,null,5,1]", "desc": "Standard: skewed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: full BT 15"},
+    {"input": "[100000,100000,100000,100000,100000,100000,100000]", "desc": "Stress: all max"},
+    {"input": "[3,9,20,null,null,15,7]", "desc": "Special: classic LC tree"}
+  ]
+}

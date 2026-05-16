@@ -1,0 +1,27 @@
+{
+  "pid": 708, "slug": "rank-teams-by-votes",
+  "inferred_constraints": "1 <= votes.length <= 1000, 1 <= votes[i].length <= 26, all chars unique per vote, uppercase",
+  "input_format": "line1: votes (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"ABC\",\"ACB\",\"ABC\",\"ACB\",\"ACB\"]", "desc": "Edge: example1"},
+    {"input": "[\"WXYZ\",\"XYZW\"]", "desc": "Edge: example2"},
+    {"input": "[\"ZMNAGUEDSJYLBOPHRQICWFXTVK\"]", "desc": "Edge: example3 single voter"},
+    {"input": "[\"A\"]", "desc": "Edge: single team single vote"},
+    {"input": "[\"A\",\"A\",\"A\"]", "desc": "Edge: same vote repeated"},
+    {"input": "[\"AB\",\"BA\"]", "desc": "Edge: tie alphabetical"},
+    {"input": "[\"AB\",\"AB\",\"BA\"]", "desc": "Edge: 2 vs 1"},
+    {"input": "[\"ABC\",\"ABC\",\"ABC\"]", "desc": "Edge: all same"},
+    {"input": "[\"CBA\",\"CBA\",\"CBA\"]", "desc": "Edge: all same reverse"},
+    {"input": "[\"ABCDEF\",\"FEDCBA\"]", "desc": "Standard: opposite"},
+    {"input": "[\"ABCDE\",\"BCDEA\",\"CDEAB\",\"DEABC\",\"EABCD\"]", "desc": "Standard: rotating"},
+    {"input": "[\"ZYX\",\"YXZ\",\"XZY\"]", "desc": "Standard: tied first position"},
+    {"input": "[\"ABCDEFGHIJ\",\"JIHGFEDCBA\",\"ABCDEFGHIJ\",\"JIHGFEDCBA\",\"ABCDEFGHIJ\"]", "desc": "Standard: 10 teams"},
+    {"input": "[\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"]", "desc": "Edge: full alphabet single voter"},
+    {"input": "[\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\",\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\",\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"]", "desc": "Edge: 26 teams unanimous"},
+    {"input": "[\"AB\",\"BA\",\"AB\",\"BA\",\"AB\",\"BA\",\"AB\",\"BA\",\"AB\",\"BA\"]", "desc": "Standard: even tie alpha"},
+    {"input": "[\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\",\"ZYXWVUTSRQPONMLKJIHGFEDCBA\"]", "desc": "Standard: 26 reverse pair"},
+    {"input": "[\"AB\",\"AB\",\"AB\",\"BA\",\"BA\"]", "desc": "Standard: clear winner"},
+    {"input": "[\"WLB\",\"LBW\",\"BWL\"]", "desc": "Standard: complete cycle"},
+    {"input": "[\"ABC\",\"ABC\",\"ABC\",\"BAC\",\"BAC\",\"BAC\",\"CAB\",\"CAB\",\"CAB\"]", "desc": "Special: 3-way tie first pos"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 705, "slug": "wildcard-matching",
+  "inferred_constraints": "0 <= s.length, p.length <= 2000, lowercase letters + ? *",
+  "input_format": "line1: s (raw string); line2: p (raw string)",
+  "testcases": [
+    {"input": "aa\na", "desc": "Edge: example1 false"},
+    {"input": "aa\n*", "desc": "Edge: example2 true"},
+    {"input": "cb\n?a", "desc": "Edge: example3 false"},
+    {"input": "\n", "desc": "Edge: both empty true"},
+    {"input": "\n*", "desc": "Edge: empty s star p"},
+    {"input": "a\n", "desc": "Edge: empty p non-empty s"},
+    {"input": "abc\n***", "desc": "Edge: multiple stars"},
+    {"input": "abc\n?*?", "desc": "Edge: alternating wildcards"},
+    {"input": "abcdef\nabcdef", "desc": "Edge: exact match"},
+    {"input": "abc\nabcd", "desc": "Edge: pattern longer no wildcard false"},
+    {"input": "adceb\n*a*b", "desc": "Standard: classic wildcard"},
+    {"input": "acdcb\na*c?b", "desc": "Standard: complex"},
+    {"input": "mississippi\nm*?*p*p*", "desc": "Standard: long with many wildcards"},
+    {"input": "aaaa\na*a", "desc": "Standard: star in middle"},
+    {"input": "abcd\n*a*b*c*d*", "desc": "Standard: stars everywhere"},
+    {"input": "leetcode\nl*tc?de", "desc": "Standard: realistic"},
+    {"input": "abcabczzzde\n*abc???de*", "desc": "Standard: question marks"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\na*a*a*a*a*a*a*a*a*a*a*a*a*a*a*a*", "desc": "Stress: pathological backtracking"},
+    {"input": "abcaaabbbcccdef\n*c*", "desc": "Standard: contains c"},
+    {"input": "abefcdgiescdfimde\nab*cd?i*de", "desc": "Special: nested wildcards"}
+  ]
+}

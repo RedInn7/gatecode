@@ -365,6 +365,56 @@
       "pid": 658,
       "slug": "permutations-ii",
       "reason": "Permutations list with any order \u2014 non-deterministic, may break sorted comparison on nested arrays"
+    },
+    {
+      "pid": 690,
+      "slug": "random-pick-with-weight",
+      "reason": "Design class with randomized pickIndex \u2014 non-deterministic"
+    },
+    {
+      "pid": 693,
+      "slug": "iterator-for-combination",
+      "reason": "Iterator design class with next/hasNext stateful methods"
+    },
+    {
+      "pid": 694,
+      "slug": "zigzag-iterator",
+      "reason": "Iterator design class with next/hasNext stateful methods"
+    },
+    {
+      "pid": 710,
+      "slug": "first-unique-number",
+      "reason": "Design class FirstUnique with stateful showFirstUnique/add"
+    },
+    {
+      "pid": 717,
+      "slug": "design-skiplist",
+      "reason": "Skiplist design class with add/erase/search"
+    },
+    {
+      "pid": 638,
+      "slug": "design-ride-sharing-system",
+      "reason": "Design class with stateful addRider/addDriver/matchDriverWithRider/cancelRider operations"
+    },
+    {
+      "pid": 643,
+      "slug": "erect-the-fence",
+      "reason": "Returns hull points in any order — non-unique, needs sorted comparison or SPJ"
+    },
+    {
+      "pid": 654,
+      "slug": "two-sum-iii-data-structure-design",
+      "reason": "Design class TwoSum with add/find stateful methods"
+    },
+    {
+      "pid": 698,
+      "slug": "longest-increasing-subsequence-ii",
+      "reason": "ACM mode problem with custom stdin/stdout I/O"
+    },
+    {
+      "pid": 703,
+      "slug": "reformat-the-string",
+      "reason": "Returns any valid alphanumeric permutation — non-unique output, needs SPJ"
     }
   ]
 }

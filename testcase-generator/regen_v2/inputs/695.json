@@ -1,0 +1,27 @@
+{
+  "pid": 695, "slug": "smallest-index-with-equal-value",
+  "inferred_constraints": "1 <= nums.length <= 100, 0 <= nums[i] <= 9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[0,1,2]", "desc": "Edge: example1 first index"},
+    {"input": "[4,3,2,1]", "desc": "Edge: example2 index 2"},
+    {"input": "[1,2,3,4,5,6,7,8,9,0]", "desc": "Edge: example3 none"},
+    {"input": "[0]", "desc": "Edge: n=1 match at 0"},
+    {"input": "[9]", "desc": "Edge: n=1 no match"},
+    {"input": "[5,1]", "desc": "Edge: n=2 second matches"},
+    {"input": "[9,9,9,9,9,9,9,9,9,9]", "desc": "Edge: all 9"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]", "desc": "Edge: all 0 first matches"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: all 1 second matches"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2]", "desc": "Edge: all 2 third matches"},
+    {"input": "[5,4,3,2,1,0]", "desc": "Standard: descending no match"},
+    {"input": "[5,5,5,5,5,5]", "desc": "Standard: all same val=5 index 5"},
+    {"input": "[1,2,3,4,5,6,7,8,9,0,1,2,3]", "desc": "Standard: cycle 10+"},
+    {"input": "[3,5,1,7,9,2,8,4,6,0]", "desc": "Standard: random no match"},
+    {"input": "[9,8,7,6,5,4,3,2,1,0]", "desc": "Standard: reverse no match"},
+    {"input": "[0,2,4,6,8,1,3,5,7,9,0]", "desc": "Standard: 11 elements wraps"},
+    {"input": "[1,0,3,2,5,4,7,6,9,8]", "desc": "Standard: pairwise swap no match"},
+    {"input": "[5,5,2,5,5,5,5,5,5,5,1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]", "desc": "Stress: n=100 match at index 2"},
+    {"input": "[1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1]", "desc": "Stress: n=100 cycle no match"},
+    {"input": "[9,8,7,6,5,4,3,3,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0]", "desc": "Stress: n=100 match at idx 7"}
+  ]
+}
