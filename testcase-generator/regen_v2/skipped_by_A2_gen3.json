@@ -204,6 +204,21 @@
       "pid": 3056,
       "slug": "insert-delete-getrandom-o1",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3039,
+      "slug": "interval-cancellation",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3037,
+      "slug": "web-crawler-multithreaded",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3035,
+      "slug": "count-the-number-of-k-big-indices",
+      "reason": "ACM mode problem"
     }
   ]
 }
