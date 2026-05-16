@@ -5,8 +5,8 @@
   "input_format": "line1: corridor (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"SSPPSPS\"",
-      "desc": "Edge: example1"
+      "input": "\"c\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"PPSPSP\"",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"vfmw\"",
+      "input": "\"dudq\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 26 seats 24 plants alt"
     },
     {
-      "input": "\"aurfujjivxlzkv\"",
+      "input": "\"ifiabkcqxpjqbb\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
