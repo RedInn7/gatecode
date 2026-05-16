@@ -5,8 +5,8 @@
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"leetcode\"",
-      "desc": "Edge: 'ee' is palindrome, in both"
+      "input": "\"m\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"abcba\"",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"z\"",
+      "input": "\"dllmm\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 a's"
     },
     {
-      "input": "\"vezvzfutukdsuhho\"",
+      "input": "\"nyxfkxxasrwwnkqq\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

@@ -5,8 +5,8 @@
   "input_format": "line1: word1 (string in JSON quotes); line2: word2 (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"abc\"\n\"pqr\"",
-      "desc": "Edge: example1 same length"
+      "input": "\"g\"\n\"a\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"ab\"\n\"pqrs\"",
