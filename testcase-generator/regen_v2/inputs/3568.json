@@ -1,0 +1,76 @@
+{
+  "pid": 3568,
+  "slug": "longest-common-suffix-queries",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "229070",
+      "desc": "Standard: n=229070"
+    },
+    {
+      "input": "770818",
+      "desc": "Standard: n=770818"
+    },
+    {
+      "input": "924672",
+      "desc": "Standard: n=924672"
+    },
+    {
+      "input": "471546",
+      "desc": "Standard: n=471546"
+    },
+    {
+      "input": "532789",
+      "desc": "Standard: n=532789"
+    },
+    {
+      "input": "601955",
+      "desc": "Standard: n=601955"
+    },
+    {
+      "input": "263210",
+      "desc": "Standard: n=263210"
+    },
+    {
+      "input": "420705",
+      "desc": "Standard: n=420705"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

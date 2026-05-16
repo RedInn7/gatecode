@@ -1,0 +1,76 @@
+{
+  "pid": 3558,
+  "slug": "maximum-number-of-words-you-can-type",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"\n\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"f\"\n\"e\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"jj\"\n\"t\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"\n\"b\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"edbaa\"\n\"bddb\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"goljzyoxnrgxicudf\"\n\"jpvotowndx\"",
+      "desc": "Standard: len=17"
+    },
+    {
+      "input": "\"fvguzggpwyjtncugfevuoeas\"\n\"ehanrhsaxqcflcdzeqla\"",
+      "desc": "Standard: len=24"
+    },
+    {
+      "input": "\"wsrehogebqrimnugzcepeuzljfzmaxsdblsosljah\"\n\"bhwnhrvcyapnuvthrsh\"",
+      "desc": "Standard: len=41"
+    },
+    {
+      "input": "\"fhfjsrodgdestycaabahvtibndufmnyawpwvmiriirp\"\n\"plvgmynrqexrn\"",
+      "desc": "Standard: len=43"
+    },
+    {
+      "input": "\"jeiemwxigpactykmpcmxmuzrw\"\n\"yxssgmhxyfjxhyfdmztg\"",
+      "desc": "Standard: len=25"
+    },
+    {
+      "input": "\"uktbugdmtdlplrolcqhcbggmwkjzcsmi\"\n\"xpjbyje\"",
+      "desc": "Standard: len=32"
+    },
+    {
+      "input": "\"mvojqhbutvhkyxqkeadv\"\n\"vnpfslbwyxlpec\"",
+      "desc": "Standard: len=20"
+    },
+    {
+      "input": "\"nofpwpbxhrwkvipoktpnjtntzbadhbfeehkqixuwuueceg\"\n\"x\"",
+      "desc": "Standard: len=46"
+    },
+    {
+      "input": "\"goaiicbqikcmafydwidvqsmrbzejtyqfxkgqwqoynglhcluicewuqtykomilgoaoxukqvsxmonboodjpcfrrpqkpxclwywrsmkwlbqbjiikgihaszyompeszjkzlcrefqqtfqbmkzvrtlqjdxurgdqewwqkcwjksbepsixisafejpcoxfpfuoecuazpawiowhaapfnmraiypltveygawvlanirgsblqyvdvrdvipclvmerlcudfflfpzahyqcshpmvxmahbusodroelboqrtgechlzcpecghtfpenshgfwjsmqpqwbkrpriwzbqwsrsywyqncakalvyddwyrshqxqhdqfcqjdnzaufudcyybnlnxqwrkmenneflrcyejadazeysisgbnfihzlwlsfvccxevcjhwfhplyntxjguryqgnmxjtsokgsgbqycmmxiqidvlzhosuzbvknjbnmkfkgtmlixtpoajoadfchkvabhdzplqxjpxtf\"\n\"liysgdhvnnorqjqhdepdrzemttfktvvdxukuiffivrigchvtucgtgjpiheexloifimyyzjlplwpbedfkopirlubiujbnvezxkfowe\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"eqjvphmcuxtyrzpnwrthobjvwambqwohucdagqyemttlzjryradlfplfwnyzdvbbjzpguvhbmlqqlnkbqwxsnafomjumjoeseextdtzfkmjrgwjufrbxdavgsbomnlacsjgzmligltqzdezqkoitmodcxenqkydqdlixydsjighbktujgnwwplwkrxgcolgpgjmxfxslsjnzssrpbyxpbsbqfcytxnyjjyrasvjxbbvszfxdhfrdyzighirrmqezfakwxypoykbegzdqwhztxywqorulcdgpziqpgthyedaxabjvaerlnhllkisgsztunorymqhzukkhruvxqaktkjufrgdsfrlrujpwetvwkoyqjzrfnrdlkgoqcirphcftohpmvnpnkvninagmunrnvyhjxvdehekqzkuqiodyuhpzbuoghvfvmjqksfdhfnqekzjpsipommqohuklnjqnhavxdxxtdgcwuyixppxmcaytuebqvsnlgalfnrnwefwghmcvvdaxejjjeoiitnpffusfapgrdqyszpqgwjzcqpkreqvuqnvuwwfmkugfmggnnoehtixeucfmczxetaonwdrqutglegdipmbakfymcvhlqsnzjkyxnquqsnmsvdqdnhxzzyuhixytgwxcempxfwxqzdlfogilikmrvevbcfhjpmxdspzqtooyxnauzkakcizvmkjzihpfjshebvtycfxvlkktgcoqqrzsfdchfberuwvjmpreiwcwdbxrtxmgragjokpacoyhvwuseurvndjrbghcyhsmrzitxyskfufurlcnctiubceuhxaaeggdicxtfcrhkkhwcdkgjzlbcmtiecegzerkmtoednxiwkzuhfvzgmsvfawgejxfgowkimdvoettwhikhlkbewhyggbrhdsmltniqsymxzfksemobgxnkinnwlsblgqzkwjrqwyeoadcskwcbyppahdrzlhvkimzxwbtrqxgndio\"\n\"dpgkareqbfmpzimhdobizpsfypcnknjnyatcyfuxflryutnkcohqsbecslifbyopsinggejswhvhwxqxbnrahgroturnvalvvxmnznjbqzwpqlpfntrdwxaqvbvhhfbkaozaukvazwstvrowotnrmxckpvdlwcrydnsgfzykmltkjtupguxumedohgtagnazwutcovaewhwwohhomequfwzlecuykgydiknjgwsdtbumpxubggwywywgvofsptekijdngwgiomvniicguuanzoghbalqdfsydheqhkondcvdvmzkdqhimfuwrxphpsgznxjxmgazypaxkpoqcqbbpqhqlvcxlqyxlcnrrztlukmoohwpwffcrpjpxwxgprqvypwbyeherwgzyzhzdwhhqxkxvxiladupijabztsfcfuvikkzlsppcdqdvegkqyjimhzotjixbepyqndefwcxflubfruodcrnirtamojjyiuucoidnlcermhkicooxhlxmuqwyudjobaqkylzexvnjiifufmmgrkpkdytojxsevezjcsgzsmvoltzemjkpjhpndmvqnxatvnmavflxekptjeizosujcyhqvvsqonkaldoeazjmodugjwkmouzbftwoigroemhykosntbikgjxrcqmviggxtifndskwhhlgljzthvwlbvgytrabhsxctxmjpnomjvsfphwhrkpntrcjtnbmafvbxrpnnmgxydnraiagkooehkxfehbwoalhgxstzowbhyquynohfocqdhkoftrlkwauhkeqqaxokzpwnwbbcpsiukhomfuzaljuuyaeweghpalilgvqcqqudirmoghxclnfpkhizyhwjtuloqvcfylrvyr\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"\n\"abcde\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}
