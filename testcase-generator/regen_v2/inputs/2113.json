@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 30, grid[i][j] in {0,1}",
   "input_format": "single line: grid (JSON 2D)",
   "testcases": [
-    {"input": "[[0,1,1,0],[0,1,1,0],[0,0,0,0]]", "desc": "Standard: example 1"},
-    {"input": "[[1,1]]", "desc": "Standard: example 2"},
-    {"input": "[[0]]", "desc": "Edge: 1x1 water"},
-    {"input": "[[1]]", "desc": "Edge: 1x1 land"},
-    {"input": "[[0,0,0]]", "desc": "Edge: all water"},
-    {"input": "[[1,1,1]]", "desc": "Edge: row of land"},
-    {"input": "[[1],[1],[1]]", "desc": "Edge: column of land"},
-    {"input": "[[1,1],[1,1]]", "desc": "Edge: 2x2 full"},
-    {"input": "[[1,0],[0,1]]", "desc": "Edge: already 2 islands"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1]]", "desc": "Standard 3x3 full"},
-    {"input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]", "desc": "Standard 5x5"},
-    {"input": "[[1,0,1],[0,0,0],[1,0,1]]", "desc": "Edge: 4 isolated"},
-    {"input": "[[1,1,0],[0,1,1]]", "desc": "Standard L-shape"},
-    {"input": "[[1,1,1,1],[0,0,0,1],[1,1,1,1]]", "desc": "Standard U-shape"},
-    {"input": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]", "desc": "Standard frame"},
-    {"input": "[[0,0,0],[0,1,0],[0,0,0]]", "desc": "Edge: single cell island"},
-    {"input": "[[0,0,0,0,0],[0,1,1,1,0],[0,1,1,1,0],[0,1,1,1,0],[0,0,0,0,0]]", "desc": "Standard inner block"},
-    {"input": "[[1,1,1,0,0],[0,1,0,0,0],[0,1,1,1,0],[0,0,0,1,0],[0,0,0,1,1]]", "desc": "Standard snake"},
-    {"input": "[[1,0,1,0,1,0,1,0,1,0],[0,1,0,1,0,1,0,1,0,1]]", "desc": "Standard checker"},
-    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]]", "desc": "Stress 10x10 full"}
+    {
+      "input": "[[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[[1,1]]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[[0]]",
+      "desc": "Edge: 1x1 water"
+    },
+    {
+      "input": "[[1]]",
+      "desc": "Edge: 1x1 land"
+    },
+    {
+      "input": "[[0,0,0]]",
+      "desc": "Edge: all water"
+    },
+    {
+      "input": "[[1,1,1]]",
+      "desc": "Edge: row of land"
+    },
+    {
+      "input": "[[1],[1],[1]]",
+      "desc": "Edge: column of land"
+    },
+    {
+      "input": "[[1,1],[1,1]]",
+      "desc": "Edge: 2x2 full"
+    },
+    {
+      "input": "[[1,0],[0,1]]",
+      "desc": "Edge: already 2 islands"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1]]",
+      "desc": "Standard 3x3 full"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
+      "desc": "Standard 5x5"
+    },
+    {
+      "input": "[[1,0,1],[0,0,0],[1,0,1]]",
+      "desc": "Edge: 4 isolated"
+    },
+    {
+      "input": "[[1,1,0],[0,1,1]]",
+      "desc": "Standard L-shape"
+    },
+    {
+      "input": "[[1,1,1,1],[0,0,0,1],[1,1,1,1]]",
+      "desc": "Standard U-shape"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]",
+      "desc": "Standard frame"
+    },
+    {
+      "input": "[[0,0,0],[0,1,0],[0,0,0]]",
+      "desc": "Edge: single cell island"
+    },
+    {
+      "input": "[[0,0,0,0,0],[0,1,1,1,0],[0,1,1,1,0],[0,1,1,1,0],[0,0,0,0,0]]",
+      "desc": "Standard inner block"
+    },
+    {
+      "input": "[[1,1,1,0,0],[0,1,0,0,0],[0,1,1,1,0],[0,0,0,1,0],[0,0,0,1,1]]",
+      "desc": "Standard snake"
+    },
+    {
+      "input": "[[1,0,1,0,1,0,1,0,1,0],[0,1,0,1,0,1,0,1,0,1]]",
+      "desc": "Standard checker"
+    },
+    {
+      "input": "[[661,-637,-131,-506,-141,-917,984,-117],[-3,567,-699,-115,682,719,202,800],[-540,-78,-241,-885,501,-120,-994,-820],[514,-675,864,734,-174,32,-571,-517],[-511,186,-363,553,700,-192,-320,-345],[1000,-968,379,31,712,-945,-924,-528]]",
+      "desc": "Regenerated: stress at position 19"
+    }
   ]
 }

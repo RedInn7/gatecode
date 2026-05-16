@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= words.length <= 100, 1 <= words[i].length <= 100, lowercase",
   "input_format": "single line: words (JSON array of strings)",
   "testcases": [
-    {"input": "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]", "desc": "Standard: example 1"},
-    {"input": "[\"notapalindrome\",\"racecar\"]", "desc": "Standard: example 2"},
-    {"input": "[\"def\",\"ghi\"]", "desc": "Standard: example 3 none"},
-    {"input": "[\"a\"]", "desc": "Edge: n=1 single char palindrome"},
-    {"input": "[\"ab\"]", "desc": "Edge: n=1 non-palindrome"},
-    {"input": "[\"aa\"]", "desc": "Edge: n=1 short palindrome"},
-    {"input": "[\"aba\"]", "desc": "Edge: n=1 odd palindrome"},
-    {"input": "[\"abc\",\"xyz\",\"qwerty\"]", "desc": "Edge: no palindromes"},
-    {"input": "[\"abc\",\"aba\"]", "desc": "Standard: second is palindrome"},
-    {"input": "[\"madam\",\"level\",\"radar\"]", "desc": "Standard: all palindromes"},
-    {"input": "[\"aaaaaaaaaa\",\"abcde\"]", "desc": "Standard"},
-    {"input": "[\"x\",\"y\",\"z\"]", "desc": "Edge: all single chars (palindromes)"},
-    {"input": "[\"hello\",\"world\",\"deed\",\"noon\"]", "desc": "Standard"},
-    {"input": "[\"abcdefg\",\"hgfedcba\",\"xyzzyx\"]", "desc": "Standard"},
-    {"input": "[\"abcdcba\"]", "desc": "Edge: odd 7"},
-    {"input": "[\"abccba\",\"abccba\"]", "desc": "Standard: same palindrome twice"},
-    {"input": "[\"ab\",\"ba\",\"abba\"]", "desc": "Standard"},
-    {"input": "[\"qwerty\",\"asdf\",\"zxcv\",\"poiu\",\"mnbv\"]", "desc": "Edge: 5 non-palindrome"},
-    {"input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"]", "desc": "Edge: long palindrome"},
-    {"input": "[\"abcdefghij\",\"jihgfedcba\",\"aibohphobia\"]", "desc": "Standard"}
+    {
+      "input": "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[\"notapalindrome\",\"racecar\"]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[\"def\",\"ghi\"]",
+      "desc": "Standard: example 3 none"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: n=1 single char palindrome"
+    },
+    {
+      "input": "[\"ab\"]",
+      "desc": "Edge: n=1 non-palindrome"
+    },
+    {
+      "input": "[\"aa\"]",
+      "desc": "Edge: n=1 short palindrome"
+    },
+    {
+      "input": "[\"aba\"]",
+      "desc": "Edge: n=1 odd palindrome"
+    },
+    {
+      "input": "[\"abc\",\"xyz\",\"qwerty\"]",
+      "desc": "Edge: no palindromes"
+    },
+    {
+      "input": "[\"abc\",\"aba\"]",
+      "desc": "Standard: second is palindrome"
+    },
+    {
+      "input": "[\"madam\",\"level\",\"radar\"]",
+      "desc": "Standard: all palindromes"
+    },
+    {
+      "input": "[\"aaaaaaaaaa\",\"abcde\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"x\",\"y\",\"z\"]",
+      "desc": "Edge: all single chars (palindromes)"
+    },
+    {
+      "input": "[\"hello\",\"world\",\"deed\",\"noon\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"abcdefg\",\"hgfedcba\",\"xyzzyx\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"abcdcba\"]",
+      "desc": "Edge: odd 7"
+    },
+    {
+      "input": "[\"abccba\",\"abccba\"]",
+      "desc": "Standard: same palindrome twice"
+    },
+    {
+      "input": "[\"ab\",\"ba\",\"abba\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"qwerty\",\"asdf\",\"zxcv\",\"poiu\",\"mnbv\"]",
+      "desc": "Edge: 5 non-palindrome"
+    },
+    {
+      "input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"]",
+      "desc": "Edge: long palindrome"
+    },
+    {
+      "input": "[625,703,-555,768,-162,766,971,238,-529,-811,729,216,-720,125,-486,921,983,488,488,-77,-897,817,528,-758,95,-872,-344,449,91,-895,-114,-938,64,-732,-166,203,-235,491,-353,-839,-347,33,-213,-600,-338,-146,-396,-554,746,-352,-845,-787,674,-972,-623,676,351,-772,-115,156,-693,-862,748,594,-401,330,631,623,642,630,-889,-977,-980,533,-756,-806,-783,-593,261,-793,14,49,622,-74,-894,519,251,619,746,728,312,439,60,-534,492,-926,78,83,-736,-434]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

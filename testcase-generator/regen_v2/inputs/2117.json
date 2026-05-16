@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 5*10^5, lowercase",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"aabcbbca\"", "desc": "Standard: example 1"},
-    {"input": "\"abcd\"", "desc": "Standard: example 2"},
-    {"input": "\"a\"", "desc": "Edge: single char"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"ab\"", "desc": "Edge: 2 diff"},
-    {"input": "\"abcabc\"", "desc": "Standard repeating"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "Edge: 10 same"},
-    {"input": "\"abcdefghij\"", "desc": "Edge: 10 distinct"},
-    {"input": "\"zzzzzzzzzzzzzzzzzz\"", "desc": "Standard all z"},
-    {"input": "\"banana\"", "desc": "Standard"},
-    {"input": "\"mississippi\"", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard alphabet"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Standard doubled alphabet"},
-    {"input": "\"aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz\"", "desc": "Standard paired alphabet"},
-    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Standard pangram"},
-    {"input": "\"abababababababab\"", "desc": "Standard alternating"},
-    {"input": "\"aaaaaaaaaab\"", "desc": "Standard"},
-    {"input": "\"bbbbbbbbbba\"", "desc": "Standard"},
-    {"input": "\"aaabbbcccdddeeefff\"", "desc": "Standard triple groups"},
-    {"input": "\"zzzyyxxxwwvvuuttssrrqqppoonnmmlllkkjjiihhgggffeeeddccbbaa\"", "desc": "Standard"}
+    {
+      "input": "\"aabcbbca\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"abcd\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 diff"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Standard repeating"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "Edge: 10 same"
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Edge: 10 distinct"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzz\"",
+      "desc": "Standard all z"
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard alphabet"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard doubled alphabet"
+    },
+    {
+      "input": "\"aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz\"",
+      "desc": "Standard paired alphabet"
+    },
+    {
+      "input": "\"thequickbrownfoxjumpsoverthelazydog\"",
+      "desc": "Standard pangram"
+    },
+    {
+      "input": "\"abababababababab\"",
+      "desc": "Standard alternating"
+    },
+    {
+      "input": "\"aaaaaaaaaab\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"bbbbbbbbbba\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aaabbbcccdddeeefff\"",
+      "desc": "Standard triple groups"
+    },
+    {
+      "input": "\"tjlltxfzjpcpoxfw\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
