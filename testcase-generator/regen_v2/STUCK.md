@@ -756,3 +756,10 @@ Audited at: 2026-05-16T15:37:27.305573
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:37:27.327420
+
+## PID 298 (string-compression-ii)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=100.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:29.502616

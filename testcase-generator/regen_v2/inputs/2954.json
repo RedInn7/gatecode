@@ -81,7 +81,7 @@
       "desc": "Stress: n=20 star"
     },
     {
-      "input": "[[-231,358,602,341],[-842,898,-76,-771]]",
+      "input": "[[-5,-988,994,656],[-505,-690,498,-424]]",
       "desc": "Stress: large n near max boundary"
     }
   ]
