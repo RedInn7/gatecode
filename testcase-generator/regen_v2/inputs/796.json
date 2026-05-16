@@ -1,0 +1,27 @@
+{
+  "pid": 796, "slug": "count-cells-in-overlapping-horizontal-and-vertical-substrings",
+  "inferred_constraints": "1 <= m, n <= 1000, m*n <= 1e5, 1 <= pattern.length <= m*n, lowercase",
+  "input_format": "line1: grid (JSON 2D of strings); line2: pattern (raw)",
+  "testcases": [
+    {"input": "[[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]]\nabaca", "desc": "Edge: example1"},
+    {"input": "[[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]]\naba", "desc": "Edge: example2"},
+    {"input": "[[\"a\"]]\na", "desc": "Edge: example3 1x1"},
+    {"input": "[[\"a\",\"b\"]]\nab", "desc": "Edge: 1x2 match"},
+    {"input": "[[\"a\"],[\"b\"]]\nab", "desc": "Edge: 2x1 match"},
+    {"input": "[[\"a\",\"b\"],[\"c\",\"d\"]]\nabcd", "desc": "Edge: 2x2"},
+    {"input": "[[\"a\",\"a\",\"a\"],[\"a\",\"a\",\"a\"],[\"a\",\"a\",\"a\"]]\naa", "desc": "Standard: 3x3 all a"},
+    {"input": "[[\"a\",\"b\",\"c\"],[\"d\",\"e\",\"f\"],[\"g\",\"h\",\"i\"]]\nabc", "desc": "Standard: 3x3 distinct"},
+    {"input": "[[\"a\",\"b\",\"a\",\"b\"],[\"b\",\"a\",\"b\",\"a\"]]\nab", "desc": "Standard: alternating 2x4"},
+    {"input": "[[\"x\",\"x\",\"x\",\"x\",\"x\"]]\nxx", "desc": "Standard: 1x5 same"},
+    {"input": "[[\"a\",\"b\",\"a\"],[\"b\",\"a\",\"b\"],[\"a\",\"b\",\"a\"]]\nab", "desc": "Standard: checkerboard"},
+    {"input": "[[\"h\",\"e\",\"l\",\"l\",\"o\"]]\nhello", "desc": "Standard: 1x5 word"},
+    {"input": "[[\"a\",\"b\",\"c\"],[\"a\",\"b\",\"c\"],[\"a\",\"b\",\"c\"]]\nabc", "desc": "Standard: 3 rows same"},
+    {"input": "[[\"a\",\"a\"],[\"a\",\"a\"]]\naaa", "desc": "Standard: 2x2 a3"},
+    {"input": "[[\"z\"]]\nz", "desc": "Edge: single z"},
+    {"input": "[[\"x\",\"y\"],[\"y\",\"x\"]]\nxy", "desc": "Standard: 2x2 swap"},
+    {"input": "[[\"a\",\"b\",\"a\",\"b\",\"a\"],[\"b\",\"a\",\"b\",\"a\",\"b\"],[\"a\",\"b\",\"a\",\"b\",\"a\"],[\"b\",\"a\",\"b\",\"a\",\"b\"]]\nab", "desc": "Standard: 4x5 checker"},
+    {"input": "[[\"a\"],[\"b\"],[\"c\"],[\"d\"]]\nabcd", "desc": "Standard: 4x1 column"},
+    {"input": "[[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]]\nabc", "desc": "Standard: 1x10 prefix"},
+    {"input": "[[\"a\",\"b\",\"a\"],[\"b\",\"a\",\"b\"]]\naba", "desc": "Special: 2x3 mini palindrome"}
+  ]
+}

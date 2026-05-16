@@ -1,0 +1,27 @@
+{
+  "pid": 797, "slug": "maximum-subarray",
+  "inferred_constraints": "1 <= nums.length <= 1e5, -1e4 <= nums[i] <= 1e4",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[-2,1,-3,4,-1,2,1,-5,4]", "desc": "Edge: example1"},
+    {"input": "[1]", "desc": "Edge: example2"},
+    {"input": "[5,4,-1,7,8]", "desc": "Edge: example3"},
+    {"input": "[-1]", "desc": "Edge: single negative"},
+    {"input": "[0]", "desc": "Edge: single zero"},
+    {"input": "[10000]", "desc": "Edge: single max"},
+    {"input": "[-10000]", "desc": "Edge: single min"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: all positive"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Edge: all negative"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zero"},
+    {"input": "[1,-1,1,-1,1,-1]", "desc": "Standard: alternating"},
+    {"input": "[10,-10,10,-10,10]", "desc": "Standard: high amplitude"},
+    {"input": "[-3,1,3,-1,2,-4,2]", "desc": "Standard: mixed"},
+    {"input": "[3,-5,4,-3,4,-2,4]", "desc": "Standard: mixed positive heavy"},
+    {"input": "[10000,-1,10000]", "desc": "Standard: 2 peaks"},
+    {"input": "[10000,10000,10000,10000,10000]", "desc": "Edge: all max"},
+    {"input": "[-10000,-10000,-10000,-10000,-10000]", "desc": "Edge: all min"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: n=100 all 1"},
+    {"input": "[10000,-9999,10000,-9999,10000,-9999,10000,-9999,10000,-9999]", "desc": "Stress: extreme alternating"},
+    {"input": "[2,3,-2,4,-1,2,1,-5,4,1]", "desc": "Special: complex"}
+  ]
+}

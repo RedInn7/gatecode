@@ -1,0 +1,27 @@
+{
+  "pid": 791, "slug": "score-of-a-string",
+  "inferred_constraints": "2 <= s.length <= 100, lowercase",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "hello", "desc": "Edge: example1"},
+    {"input": "zaz", "desc": "Edge: example2"},
+    {"input": "ab", "desc": "Edge: 2 chars"},
+    {"input": "aa", "desc": "Edge: same"},
+    {"input": "az", "desc": "Edge: max diff"},
+    {"input": "za", "desc": "Edge: max diff reverse"},
+    {"input": "aaa", "desc": "Edge: 3 same"},
+    {"input": "zzz", "desc": "Edge: 3 z"},
+    {"input": "abcdef", "desc": "Standard: ascending"},
+    {"input": "fedcba", "desc": "Standard: descending"},
+    {"input": "leetcode", "desc": "Standard: classic"},
+    {"input": "programming", "desc": "Standard: word"},
+    {"input": "abababababab", "desc": "Standard: alternating"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: full alphabet"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Standard: reverse alphabet"},
+    {"input": "azazazazazaz", "desc": "Standard: max zigzag"},
+    {"input": "thequickbrownfoxjumpsoverthelazydog", "desc": "Standard: pangram"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 same"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu", "desc": "Stress: 100 cycled alphabet"},
+    {"input": "azbycxdwevfugthsirjqkplomonon", "desc": "Special: zigzag complex"}
+  ]
+}

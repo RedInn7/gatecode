@@ -1,0 +1,27 @@
+{
+  "pid": 790, "slug": "reach-a-number",
+  "inferred_constraints": "-1e9 <= target <= 1e9, target != 0",
+  "input_format": "line1: target (int)",
+  "testcases": [
+    {"input": "2", "desc": "Edge: example1"},
+    {"input": "3", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: target=1"},
+    {"input": "-1", "desc": "Edge: target=-1"},
+    {"input": "-2", "desc": "Edge: target=-2"},
+    {"input": "-3", "desc": "Edge: target=-3"},
+    {"input": "10", "desc": "Standard: 10"},
+    {"input": "100", "desc": "Standard: 100"},
+    {"input": "1000", "desc": "Standard: 1000"},
+    {"input": "-1000", "desc": "Standard: -1000"},
+    {"input": "1000000000", "desc": "Edge: max"},
+    {"input": "-1000000000", "desc": "Edge: min"},
+    {"input": "5", "desc": "Standard: 5"},
+    {"input": "7", "desc": "Standard: 7"},
+    {"input": "15", "desc": "Standard: triangular T5"},
+    {"input": "21", "desc": "Standard: T6"},
+    {"input": "10000", "desc": "Standard: 10000"},
+    {"input": "999999999", "desc": "Stress: near max"},
+    {"input": "-999999999", "desc": "Stress: near min"},
+    {"input": "6", "desc": "Special: T3"}
+  ]
+}

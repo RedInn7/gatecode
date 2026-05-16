@@ -440,6 +440,11 @@
       "pid": 783,
       "slug": "find-indices-with-index-and-value-difference-i",
       "reason": "Returns any valid [i, j] pair — non-unique output, needs SPJ"
+    },
+    {
+      "pid": 798,
+      "slug": "lowest-common-ancestor-of-a-binary-tree-iii",
+      "reason": "Tree node with parent reference — custom Node class with parent pointer not standard serialization"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "pid": 799, "slug": "delete-columns-to-make-sorted-ii",
+  "inferred_constraints": "1 <= n <= 100, 1 <= strs[i].length <= 100, lowercase",
+  "input_format": "line1: strs (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"ca\",\"bb\",\"ac\"]", "desc": "Edge: example1"},
+    {"input": "[\"xc\",\"yb\",\"za\"]", "desc": "Edge: example2 already sorted"},
+    {"input": "[\"zyx\",\"wvu\",\"tsr\"]", "desc": "Edge: example3 delete all"},
+    {"input": "[\"a\"]", "desc": "Edge: single string"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: identical pair"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: sorted pair"},
+    {"input": "[\"b\",\"a\"]", "desc": "Edge: reverse pair"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Edge: all same"},
+    {"input": "[\"abc\",\"abd\",\"abe\"]", "desc": "Standard: 3 sorted"},
+    {"input": "[\"abe\",\"abd\",\"abc\"]", "desc": "Standard: reverse 3"},
+    {"input": "[\"abc\",\"bcd\",\"def\"]", "desc": "Standard: shifted"},
+    {"input": "[\"aaaa\",\"aaab\",\"aaac\"]", "desc": "Standard: prefix common"},
+    {"input": "[\"zzzz\",\"yyyy\",\"xxxx\"]", "desc": "Standard: descending"},
+    {"input": "[\"abc\",\"bcd\",\"cde\",\"def\"]", "desc": "Standard: 4 sliding"},
+    {"input": "[\"ababab\",\"bababa\",\"ababab\"]", "desc": "Standard: alternating"},
+    {"input": "[\"abcdefg\",\"abcdefg\",\"abcdefg\"]", "desc": "Standard: identical long"},
+    {"input": "[\"hello\",\"world\",\"hello\"]", "desc": "Standard: mixed"},
+    {"input": "[\"aabb\",\"abba\",\"baba\",\"bbaa\"]", "desc": "Standard: permutations"},
+    {"input": "[\"zzzzz\",\"aaaaa\"]", "desc": "Standard: extreme reverse"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Special: 26 sorted"}
+  ]
+}
