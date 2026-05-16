@@ -475,6 +475,21 @@
       "pid": 882,
       "slug": "stream-of-characters",
       "reason": "Design class StreamChecker with stateful query method"
+    },
+    {
+      "pid": 910,
+      "slug": "design-order-management-system",
+      "reason": "Design class with stateful operations"
+    },
+    {
+      "pid": 921,
+      "slug": "longest-unequal-adjacent-groups-subsequence-i",
+      "reason": "Returns any valid longest subsequence — non-unique"
+    },
+    {
+      "pid": 924,
+      "slug": "queens-that-can-attack-the-king",
+      "reason": "Returns coordinates in any order — non-unique"
     }
   ]
 }

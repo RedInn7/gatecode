@@ -1,0 +1,27 @@
+{
+  "pid": 927, "slug": "distribute-repeating-integers",
+  "inferred_constraints": "1 <= nums.length <= 50, 1 <= quantity.length <= 10",
+  "input_format": "line1: nums (JSON array); line2: quantity (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,4]\n[2]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,3]\n[2]", "desc": "Edge: example2 yes"},
+    {"input": "[1,1,2,2]\n[2,2]", "desc": "Edge: example3"},
+    {"input": "[1]\n[1]", "desc": "Edge: min"},
+    {"input": "[1,1]\n[2]", "desc": "Edge: exact match"},
+    {"input": "[1,2]\n[2]", "desc": "Edge: cannot distribute"},
+    {"input": "[1,1,1,1,1]\n[1,1,1]", "desc": "Standard: easy"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,1,1,1,1]", "desc": "Standard: 10 distinct 5 customers"},
+    {"input": "[1,1,1,2,2,3,3,3,3]\n[2,2,3]", "desc": "Standard"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]\n[5,5]", "desc": "Edge: all same"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]\n[2,2,2,2,2]", "desc": "Standard: pairs to 5"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[10]", "desc": "Edge: all to one"},
+    {"input": "[1,2,3,4,5]\n[5]", "desc": "Edge: 5 distinct cannot single"},
+    {"input": "[1]\n[2]", "desc": "Edge: impossible"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[3,3,3,3,3]", "desc": "Standard"},
+    {"input": "[1,2,3,4,5,5,5,5,5,5,5,5,5,5,5]\n[10]", "desc": "Standard: one bulk"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10]\n[2,2,2,2,2,2,2,2,2,2]", "desc": "Standard: 10 customers"},
+    {"input": "[7,7,7,7,7,7]\n[3,3]", "desc": "Edge: same value 3+3"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]\n[1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 distinct"},
+    {"input": "[1,1,1,1,2,2,2,2,3,3,3,3]\n[4,4,4]", "desc": "Special: 3 groups of 4"}
+  ]
+}

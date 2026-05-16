@@ -1,0 +1,27 @@
+{
+  "pid": 920, "slug": "count-artifacts-that-can-be-extracted",
+  "inferred_constraints": "n, artifacts (rectangles), dig array",
+  "input_format": "line1: n (int); line2: artifacts (JSON 2D); line3: dig (JSON 2D)",
+  "testcases": [
+    {"input": "2\n[[0,0,0,0],[0,1,1,1]]\n[[0,0],[0,1]]", "desc": "Edge: example1"},
+    {"input": "2\n[[0,0,0,0],[0,1,1,1]]\n[[0,0],[0,1],[1,1]]", "desc": "Edge: example2"},
+    {"input": "1\n[[0,0,0,0]]\n[[0,0]]", "desc": "Edge: 1 artifact 1 cell"},
+    {"input": "1\n[[0,0,1,1]]\n[[0,0],[0,1],[1,0],[1,1]]", "desc": "Edge: 1 2x2 artifact"},
+    {"input": "2\n[[0,0,0,0],[1,1,1,1]]\n[[0,0]]", "desc": "Edge: 2 artifacts dig 1"},
+    {"input": "3\n[[0,0,0,0],[0,1,0,1],[0,2,0,2]]\n[[0,0],[0,1],[0,2]]", "desc": "Standard: row of artifacts"},
+    {"input": "2\n[[0,0,1,1],[2,2,3,3]]\n[[0,0],[0,1],[1,0],[1,1],[2,2],[2,3],[3,2],[3,3]]", "desc": "Standard: 2 squares dig all"},
+    {"input": "5\n[[0,0,0,0],[1,1,1,1],[2,2,2,2],[3,3,3,3],[4,4,4,4]]\n[[0,0],[1,1],[2,2],[3,3],[4,4]]", "desc": "Standard: diagonal"},
+    {"input": "1\n[[0,0,2,2]]\n[[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]", "desc": "Standard: 3x3 dig all"},
+    {"input": "3\n[[0,0,1,1],[2,2,3,3],[4,4,5,5]]\n[[0,0],[0,1],[1,0],[1,1]]", "desc": "Standard: 3 squares dig 1"},
+    {"input": "4\n[[0,0,0,0],[0,1,0,1],[0,2,0,2],[0,3,0,3]]\n[[0,0],[0,1],[0,2],[0,3]]", "desc": "Standard: 4 cells dig 4"},
+    {"input": "2\n[[0,0,1,1],[2,0,3,1]]\n[[0,0],[1,0]]", "desc": "Standard: partial extraction"},
+    {"input": "1\n[[0,0,0,1]]\n[[0,0],[0,1]]", "desc": "Edge: 1x2 artifact"},
+    {"input": "5\n[[0,0,0,1],[1,0,1,1],[2,0,2,1],[3,0,3,1],[4,0,4,1]]\n[[0,0],[0,1],[1,0],[1,1],[2,0],[2,1]]", "desc": "Standard: rectangles"},
+    {"input": "3\n[[0,0,4,4],[0,5,4,9],[5,0,9,4]]\n[[0,0]]", "desc": "Standard: only one dig"},
+    {"input": "1\n[[0,0,9,9]]\n[[0,0]]", "desc": "Edge: 1 huge artifact 1 dig"},
+    {"input": "2\n[[0,0,0,0],[1,1,1,1]]\n[[0,0],[1,1]]", "desc": "Standard: 2 cells dig 2"},
+    {"input": "3\n[[0,0,2,2],[3,3,5,5],[6,6,8,8]]\n[[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2],[3,3],[3,4],[3,5],[4,3],[4,4],[4,5],[5,3],[5,4],[5,5]]", "desc": "Standard: 3 squares 2 dug fully"},
+    {"input": "5\n[[0,0,0,0],[0,1,0,1],[0,2,0,2],[0,3,0,3],[0,4,0,4]]\n[[0,0],[0,2],[0,4]]", "desc": "Standard: alternate dig"},
+    {"input": "1\n[[0,0,0,4]]\n[[0,0],[0,1],[0,2],[0,3],[0,4]]", "desc": "Special: 1x5 row dig all"}
+  ]
+}
