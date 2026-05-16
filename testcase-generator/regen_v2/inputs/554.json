@@ -4,25 +4,85 @@
   "inferred_constraints": "Number of nodes in [1, 1e4]; -1e5 <= Node.val <= 1e5; all values unique; given node value exists in tree",
   "input_format": "line1: tree (JSON array level-order with nulls); line2: node_val (int) — the value of the node to find successor of",
   "testcases": [
-    {"input": "[2,1,3]\n1", "desc": "Edge: example1 simple BST"},
-    {"input": "[5,3,6,2,4,null,null,1]\n6", "desc": "Edge: example2 no successor (max)"},
-    {"input": "[1]\n1", "desc": "Edge: single node, no successor"},
-    {"input": "[2,1]\n1", "desc": "Edge: two nodes left child"},
-    {"input": "[1,null,2]\n1", "desc": "Edge: right-only child"},
-    {"input": "[1,null,2]\n2", "desc": "Edge: max value no successor"},
-    {"input": "[100000,-100000,99999]\n-100000", "desc": "Edge: extreme negative value"},
-    {"input": "[5,3,8,1,4,7,9]\n4", "desc": "Standard: leaf with parent-uncle path"},
-    {"input": "[5,3,8,1,4,7,9]\n5", "desc": "Standard: root successor in right subtree"},
-    {"input": "[5,3,8,1,4,7,9]\n8", "desc": "Standard: right child with right-only chain"},
-    {"input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n8", "desc": "Standard: deep leaf"},
-    {"input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n4", "desc": "Standard: leaf with successor at grandparent"},
-    {"input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n10", "desc": "Standard: root successor"},
-    {"input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n7", "desc": "Standard: subtree root"},
-    {"input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n25", "desc": "Standard: max no successor"},
-    {"input": "[50,25,75,10,40,60,80,5,15,30,45,55,65,77,90]\n45", "desc": "Standard: leaf with deep ancestor successor"},
-    {"input": "[1,null,2,null,3,null,4,null,5]\n3", "desc": "Stress: right-skew chain mid"},
-    {"input": "[5,4,null,3,null,2,null,1]\n3", "desc": "Stress: left-skew chain mid"},
-    {"input": "[8,3,10,1,6,null,14,null,null,4,7,null,null,13]\n6", "desc": "Stress: complex BST"},
-    {"input": "[100,50,150,25,75,125,175,12,37,62,87,112,137,162,187]\n75", "desc": "Special: balanced tree internal node successor"}
+    {
+      "input": "[2,1,3]\n1",
+      "desc": "Edge: example1 simple BST"
+    },
+    {
+      "input": "[5,3,6,2,4,null,null,1]\n6",
+      "desc": "Edge: example2 no successor (max)"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge: single node, no successor"
+    },
+    {
+      "input": "[2,1]\n1",
+      "desc": "Edge: two nodes left child"
+    },
+    {
+      "input": "[-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715,-715]\n2",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "[1,null,2]\n2",
+      "desc": "Edge: max value no successor"
+    },
+    {
+      "input": "[100000,-100000,99999]\n-100000",
+      "desc": "Edge: extreme negative value"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n4",
+      "desc": "Standard: leaf with parent-uncle path"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n5",
+      "desc": "Standard: root successor in right subtree"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n8",
+      "desc": "Standard: right child with right-only chain"
+    },
+    {
+      "input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n8",
+      "desc": "Standard: deep leaf"
+    },
+    {
+      "input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n4",
+      "desc": "Standard: leaf with successor at grandparent"
+    },
+    {
+      "input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n10",
+      "desc": "Standard: root successor"
+    },
+    {
+      "input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n7",
+      "desc": "Standard: subtree root"
+    },
+    {
+      "input": "[10,5,15,3,7,12,20,1,4,6,8,11,13,18,25]\n25",
+      "desc": "Standard: max no successor"
+    },
+    {
+      "input": "[50,25,75,10,40,60,80,5,15,30,45,55,65,77,90]\n45",
+      "desc": "Standard: leaf with deep ancestor successor"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]\n3",
+      "desc": "Stress: right-skew chain mid"
+    },
+    {
+      "input": "[5,4,null,3,null,2,null,1]\n3",
+      "desc": "Stress: left-skew chain mid"
+    },
+    {
+      "input": "[8,3,10,1,6,null,14,null,null,4,7,null,null,13]\n6",
+      "desc": "Stress: complex BST"
+    },
+    {
+      "input": "[100,50,150,25,75,125,175,12,37,62,87,112,137,162,187]\n75",
+      "desc": "Special: balanced tree internal node successor"
+    }
   ]
 }

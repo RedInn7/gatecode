@@ -4,25 +4,85 @@
   "inferred_constraints": "transactions.length <= 1000; format 'name,time,amount,city'; name,city lowercase 1-10 chars; time in [0,1000]; amount in [0,2000]",
   "input_format": "line1: transactions (JSON array of strings)",
   "testcases": [
-    {"input": "[\"alice,20,800,mtv\",\"alice,50,100,beijing\"]", "desc": "Edge: example1 both invalid due to 60min different city"},
-    {"input": "[\"alice,20,800,mtv\",\"alice,50,1200,mtv\"]", "desc": "Edge: example2 only amount>1000"},
-    {"input": "[\"alice,20,800,mtv\",\"bob,50,1200,mtv\"]", "desc": "Edge: example3 different names"},
-    {"input": "[\"a,0,0,b\"]", "desc": "Edge: single transaction min values"},
-    {"input": "[\"a,1000,2000,b\"]", "desc": "Edge: single transaction max values"},
-    {"input": "[\"alice,5,1001,nyc\"]", "desc": "Edge: just above $1000"},
-    {"input": "[\"alice,5,1000,nyc\"]", "desc": "Edge: exactly $1000 (valid)"},
-    {"input": "[\"alice,10,500,nyc\",\"alice,71,500,la\"]", "desc": "Standard: 61min apart different cities (valid)"},
-    {"input": "[\"alice,10,500,nyc\",\"alice,70,500,la\"]", "desc": "Standard: 60min apart different cities (invalid)"},
-    {"input": "[\"alice,10,500,nyc\",\"alice,20,500,nyc\",\"alice,30,500,nyc\"]", "desc": "Standard: same city same name all valid"},
-    {"input": "[\"alice,0,100,a\",\"alice,60,100,b\",\"alice,120,100,c\"]", "desc": "Standard: 3 cities chain"},
-    {"input": "[\"bob,50,1200,nyc\",\"alice,100,2000,la\",\"bob,150,500,la\"]", "desc": "Standard: mixed amounts and cities"},
-    {"input": "[\"a,1,1,a\",\"a,2,2,b\",\"a,3,3,c\",\"a,4,4,d\"]", "desc": "Standard: all within 60min different cities"},
-    {"input": "[\"alice,20,800,mtv\",\"alice,20,800,mtv\"]", "desc": "Standard: duplicate transactions"},
-    {"input": "[\"x,500,500,city1\",\"x,500,500,city2\"]", "desc": "Standard: same time different city"},
-    {"input": "[\"alice,10,2000,nyc\",\"alice,11,2000,la\",\"alice,12,2000,sf\"]", "desc": "Standard: all over 1000 and different cities"},
-    {"input": "[\"alice,5,500,nyc\",\"bob,5,500,nyc\",\"carol,5,500,nyc\",\"dave,5,500,nyc\",\"eve,5,500,nyc\"]", "desc": "Stress: many distinct names same time/city"},
-    {"input": "[\"alice,0,100,a\",\"alice,1,100,b\",\"alice,2,100,c\",\"alice,3,100,d\",\"alice,4,100,e\",\"alice,5,100,f\",\"alice,6,100,g\",\"alice,7,100,h\",\"alice,8,100,i\",\"alice,9,100,j\"]", "desc": "Stress: 10 transactions different cities chain"},
-    {"input": "[\"alice,100,1500,nyc\",\"alice,160,500,la\",\"alice,161,500,la\",\"bob,100,500,nyc\",\"bob,200,500,nyc\"]", "desc": "Stress: mixed scenarios"},
-    {"input": "[\"alice,1000,1001,nyc\",\"alice,1000,1001,nyc\",\"alice,1000,1001,nyc\"]", "desc": "Special: all same identical over-limit (all invalid by amount)"}
+    {
+      "input": "[\"alice,20,800,mtv\",\"alice,50,100,beijing\"]",
+      "desc": "Edge: example1 both invalid due to 60min different city"
+    },
+    {
+      "input": "[\"alice,20,800,mtv\",\"alice,50,1200,mtv\"]",
+      "desc": "Edge: example2 only amount>1000"
+    },
+    {
+      "input": "[-954,-950,-937,-918,-909,-882,-743,-724,-712,-711,-676,-642,-638,-543,-498,-475,-460,-400,-386,-343,-291,-274,-212,-205,-168,-155,-130,-129,-123,-41,-32,-13,57,99,119,175,184,232,240,247,324,336,360,377,394,410,441,468,485,491,530,565,573,582,622,635,661,686,690,721,818,855,857,859,866,889,909,910,937,938,967,986]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[590,390,347,82,37,-97,-268,-279]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[\"a,1000,2000,b\"]",
+      "desc": "Edge: single transaction max values"
+    },
+    {
+      "input": "[\"alice,5,1001,nyc\"]",
+      "desc": "Edge: just above $1000"
+    },
+    {
+      "input": "[\"alice,5,1000,nyc\"]",
+      "desc": "Edge: exactly $1000 (valid)"
+    },
+    {
+      "input": "[\"alice,10,500,nyc\",\"alice,71,500,la\"]",
+      "desc": "Standard: 61min apart different cities (valid)"
+    },
+    {
+      "input": "[\"alice,10,500,nyc\",\"alice,70,500,la\"]",
+      "desc": "Standard: 60min apart different cities (invalid)"
+    },
+    {
+      "input": "[\"alice,10,500,nyc\",\"alice,20,500,nyc\",\"alice,30,500,nyc\"]",
+      "desc": "Standard: same city same name all valid"
+    },
+    {
+      "input": "[\"alice,0,100,a\",\"alice,60,100,b\",\"alice,120,100,c\"]",
+      "desc": "Standard: 3 cities chain"
+    },
+    {
+      "input": "[\"bob,50,1200,nyc\",\"alice,100,2000,la\",\"bob,150,500,la\"]",
+      "desc": "Standard: mixed amounts and cities"
+    },
+    {
+      "input": "[\"a,1,1,a\",\"a,2,2,b\",\"a,3,3,c\",\"a,4,4,d\"]",
+      "desc": "Standard: all within 60min different cities"
+    },
+    {
+      "input": "[\"alice,20,800,mtv\",\"alice,20,800,mtv\"]",
+      "desc": "Standard: duplicate transactions"
+    },
+    {
+      "input": "[\"x,500,500,city1\",\"x,500,500,city2\"]",
+      "desc": "Standard: same time different city"
+    },
+    {
+      "input": "[\"alice,10,2000,nyc\",\"alice,11,2000,la\",\"alice,12,2000,sf\"]",
+      "desc": "Standard: all over 1000 and different cities"
+    },
+    {
+      "input": "[\"alice,5,500,nyc\",\"bob,5,500,nyc\",\"carol,5,500,nyc\",\"dave,5,500,nyc\",\"eve,5,500,nyc\"]",
+      "desc": "Stress: many distinct names same time/city"
+    },
+    {
+      "input": "[\"alice,0,100,a\",\"alice,1,100,b\",\"alice,2,100,c\",\"alice,3,100,d\",\"alice,4,100,e\",\"alice,5,100,f\",\"alice,6,100,g\",\"alice,7,100,h\",\"alice,8,100,i\",\"alice,9,100,j\"]",
+      "desc": "Stress: 10 transactions different cities chain"
+    },
+    {
+      "input": "[\"alice,100,1500,nyc\",\"alice,160,500,la\",\"alice,161,500,la\",\"bob,100,500,nyc\",\"bob,200,500,nyc\"]",
+      "desc": "Stress: mixed scenarios"
+    },
+    {
+      "input": "[\"alice,1000,1001,nyc\",\"alice,1000,1001,nyc\",\"alice,1000,1001,nyc\"]",
+      "desc": "Special: all same identical over-limit (all invalid by amount)"
+    }
   ]
 }
