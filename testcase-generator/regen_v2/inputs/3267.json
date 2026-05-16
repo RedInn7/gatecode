@@ -1,0 +1,76 @@
+{
+  "pid": 3267,
+  "slug": "group-anagrams",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "736476",
+      "desc": "Standard: n=736476"
+    },
+    {
+      "input": "854884",
+      "desc": "Standard: n=854884"
+    },
+    {
+      "input": "472871",
+      "desc": "Standard: n=472871"
+    },
+    {
+      "input": "552151",
+      "desc": "Standard: n=552151"
+    },
+    {
+      "input": "535298",
+      "desc": "Standard: n=535298"
+    },
+    {
+      "input": "365452",
+      "desc": "Standard: n=365452"
+    },
+    {
+      "input": "643612",
+      "desc": "Standard: n=643612"
+    },
+    {
+      "input": "849034",
+      "desc": "Standard: n=849034"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

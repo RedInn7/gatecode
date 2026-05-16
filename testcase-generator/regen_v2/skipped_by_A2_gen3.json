@@ -124,6 +124,11 @@
       "pid": 3286,
       "slug": "kth-largest-sum-in-a-binary-tree",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3259,
+      "slug": "all-oone-data-structure",
+      "reason": "ACM mode problem"
     }
   ]
 }

@@ -1,0 +1,76 @@
+{
+  "pid": 3255,
+  "slug": "find-the-longest-substring-containing-vowels-in-even-counts",
+  "inferred_constraints": "0 <= s.length <= 5",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"ln\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"aedca\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"yiztj\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"gojqi\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"rtbio\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"qfkgj\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"crpqy\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"fjksu\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"zkaji\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"wmsnb\"",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"pwhoz\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"natxt\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

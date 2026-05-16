@@ -1,0 +1,76 @@
+{
+  "pid": 3258,
+  "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
+  "inferred_constraints": "0 <= s.length <= 5",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"q\"\n1",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"nb\"\n1",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"bacce\"\n4",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"xvmtd\"\n4",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"siess\"\n3",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"rufjj\"\n4",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"znmzn\"\n3",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"bdafg\"\n4",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"bnedl\"\n4",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"txrgw\"\n3",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"lvhlm\"\n3",
+      "desc": "Standard: len=5"
+    },
+    {
+      "input": "\"nvvya\"\n1",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"nozbg\"\n4",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}
