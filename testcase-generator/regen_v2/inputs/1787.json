@@ -1,0 +1,88 @@
+{
+  "pid": 1787,
+  "slug": "three-equal-parts",
+  "inferred_constraints": "3<=arr.length<=30000, arr[i] in {0,1}",
+  "input_format": "line1: arr",
+  "testcases": [
+    {
+      "input": "[1,0,1,0,1]",
+      "desc": "Standard: example1"
+    },
+    {
+      "input": "[1,1,0,1,1]",
+      "desc": "Standard: impossible"
+    },
+    {
+      "input": "[1,1,0,0,1]",
+      "desc": "Standard: example3"
+    },
+    {
+      "input": "[0,0,0]",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "[1,1,1]",
+      "desc": "Edge: all ones"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0,0]",
+      "desc": "Edge: 9 zeros"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "[1,0,0,0,0,0]",
+      "desc": "Standard: one 1 impossible 3-way"
+    },
+    {
+      "input": "[1,0,1,0,1,0,1,0,1]",
+      "desc": "Standard: alternating 9"
+    },
+    {
+      "input": "[1,1,0,0,1,1,0,0,1,1,0,0]",
+      "desc": "Standard: repeating 12"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1]",
+      "desc": "Stress: long with pattern"
+    },
+    {
+      "input": "[1,1,1,0,0,0,1,1,1,0,0,0,1,1,1]",
+      "desc": "Stress: blocks"
+    },
+    {
+      "input": "[0,0,1,0,0,1,0,0,1]",
+      "desc": "Standard: zero-padded equal"
+    },
+    {
+      "input": "[1,0,0,1,0,0,1,0,0]",
+      "desc": "Standard: trailing zeros"
+    },
+    {
+      "input": "[730,-737,-862,389,18,142,472,928,662,-230,314,-74,3,611,-307,495,685,-232,795,535,-178,-97,-415,-363,-939,730,-62,-223,-814,735,-888,-171,-8,160,-235,248,-465,855,-371,518,-3,436,-663,-844,-540,-682,-860,-277,572]",
+      "desc": "Regenerated: standard at position 14"
+    },
+    {
+      "input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]",
+      "desc": "Stress: alternating 30"
+    },
+    {
+      "input": "[0,1,1,0,1,1,0,1,1]",
+      "desc": "Standard: 3 equal parts"
+    },
+    {
+      "input": "[1,1,1,1,1,1]",
+      "desc": "Standard: 6 ones split 2+2+2"
+    },
+    {
+      "input": "[1,0,1,1,0,1,1,0,1]",
+      "desc": "Standard: 10x pattern"
+    },
+    {
+      "input": "[0,1,0,0,1,0,0,1,0]",
+      "desc": "Standard: zero-wrapped ones"
+    }
+  ]
+}

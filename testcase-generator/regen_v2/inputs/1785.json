@@ -1,0 +1,88 @@
+{
+  "pid": 1785,
+  "slug": "largest-palindrome-product",
+  "inferred_constraints": "1<=n<=8",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "n=1"
+    },
+    {
+      "input": "2",
+      "desc": "n=2"
+    },
+    {
+      "input": "3",
+      "desc": "n=3"
+    },
+    {
+      "input": "4",
+      "desc": "n=4"
+    },
+    {
+      "input": "5",
+      "desc": "n=5"
+    },
+    {
+      "input": "6",
+      "desc": "n=6"
+    },
+    {
+      "input": "7",
+      "desc": "n=7"
+    },
+    {
+      "input": "8",
+      "desc": "n=8"
+    },
+    {
+      "input": "1",
+      "desc": "n=1"
+    },
+    {
+      "input": "2",
+      "desc": "n=2"
+    },
+    {
+      "input": "3",
+      "desc": "n=3"
+    },
+    {
+      "input": "4",
+      "desc": "n=4"
+    },
+    {
+      "input": "5",
+      "desc": "n=5"
+    },
+    {
+      "input": "6",
+      "desc": "n=6"
+    },
+    {
+      "input": "7",
+      "desc": "n=7"
+    },
+    {
+      "input": "8",
+      "desc": "n=8"
+    },
+    {
+      "input": "2",
+      "desc": "n=2"
+    },
+    {
+      "input": "4",
+      "desc": "n=4"
+    },
+    {
+      "input": "6",
+      "desc": "n=6"
+    },
+    {
+      "input": "5",
+      "desc": "Stress: large n near max boundary"
+    }
+  ]
+}
