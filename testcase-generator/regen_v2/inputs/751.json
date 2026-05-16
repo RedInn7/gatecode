@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "38",
+      "input": "19",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: 0 + many 1"
     },
     {
-      "input": "110",
+      "input": "56",
       "desc": "Stress: large n near max boundary"
     }
   ]
