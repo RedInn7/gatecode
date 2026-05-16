@@ -1,0 +1,76 @@
+{
+  "pid": 3341,
+  "slug": "redundant-connection-ii",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "927059",
+      "desc": "Standard: n=927059"
+    },
+    {
+      "input": "767944",
+      "desc": "Standard: n=767944"
+    },
+    {
+      "input": "248107",
+      "desc": "Standard: n=248107"
+    },
+    {
+      "input": "138381",
+      "desc": "Standard: n=138381"
+    },
+    {
+      "input": "804041",
+      "desc": "Standard: n=804041"
+    },
+    {
+      "input": "556586",
+      "desc": "Standard: n=556586"
+    },
+    {
+      "input": "147860",
+      "desc": "Standard: n=147860"
+    },
+    {
+      "input": "46179",
+      "desc": "Standard: n=46179"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

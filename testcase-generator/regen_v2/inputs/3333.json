@@ -1,0 +1,76 @@
+{
+  "pid": 3333,
+  "slug": "three-divisors",
+  "inferred_constraints": "0 <= n <= 10000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "10000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "9999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "7716",
+      "desc": "Standard: n=7716"
+    },
+    {
+      "input": "4801",
+      "desc": "Standard: n=4801"
+    },
+    {
+      "input": "1456",
+      "desc": "Standard: n=1456"
+    },
+    {
+      "input": "6600",
+      "desc": "Standard: n=6600"
+    },
+    {
+      "input": "5056",
+      "desc": "Standard: n=5056"
+    },
+    {
+      "input": "2742",
+      "desc": "Standard: n=2742"
+    },
+    {
+      "input": "7990",
+      "desc": "Standard: n=7990"
+    },
+    {
+      "input": "2416",
+      "desc": "Standard: n=2416"
+    },
+    {
+      "input": "10000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "10000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "10000",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "10000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
