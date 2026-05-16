@@ -5,8 +5,8 @@
   "input_format": "single line: s (raw string)",
   "testcases": [
     {
-      "input": "adefaddaccc",
-      "desc": "Edge: example1"
+      "input": "\"d\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "abbaccd",
@@ -81,7 +81,7 @@
       "desc": "Standard: paired"
     },
     {
-      "input": "\"gxbtxepryzkfufcnfglknn\"",
+      "input": "\"gqztcywkoqnqzssfhmnure\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

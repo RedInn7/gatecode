@@ -5,8 +5,8 @@
   "input_format": "line1: expression (raw)",
   "testcases": [
     {
-      "input": "247+38",
-      "desc": "Edge: example1"
+      "input": "\"t\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "12+34",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"iuaaf\"",
+      "input": "\"s\"",
       "desc": "Edge: all-equal elements"
     },
     {
