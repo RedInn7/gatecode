@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= num <= 1e5",
   "input_format": "line1: num (int)",
   "testcases": [
-    {"input": "443", "desc": "Edge: example1"},
-    {"input": "63", "desc": "Edge: example2"},
-    {"input": "181", "desc": "Edge: example3"},
-    {"input": "0", "desc": "Edge: num=0 (0+0=0)"},
-    {"input": "1", "desc": "Edge: num=1 (0+1? no. 1 has reverse 1; 1+1!=1)"},
-    {"input": "2", "desc": "Edge: num=2 (1+1=2)"},
-    {"input": "10", "desc": "Edge: num=10"},
-    {"input": "11", "desc": "Edge: num=11 (10+01=11)"},
-    {"input": "22", "desc": "Edge: num=22 (11+11=22)"},
-    {"input": "100", "desc": "Edge: num=100"},
-    {"input": "99", "desc": "Edge: 2-digit palindrome"},
-    {"input": "100000", "desc": "Edge: max value"},
-    {"input": "99999", "desc": "Edge: 5-digit max"},
-    {"input": "1000", "desc": "Edge: power of 10"},
-    {"input": "12321", "desc": "Standard: palindrome"},
-    {"input": "12345", "desc": "Standard: sequential"},
-    {"input": "54321", "desc": "Standard: reversed sequential"},
-    {"input": "9999", "desc": "Edge: all 9s"},
-    {"input": "5005", "desc": "Edge: palindrome"},
-    {"input": "1234", "desc": "Standard: 1234 (1100+0011=1111? no. Need k+rev(k)=1234)"}
+    {
+      "input": "0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "63",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "195",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "49",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "312",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: num=2 (1+1=2)"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: num=10"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: num=11 (10+01=11)"
+    },
+    {
+      "input": "22",
+      "desc": "Edge: num=22 (11+11=22)"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: num=100"
+    },
+    {
+      "input": "99",
+      "desc": "Edge: 2-digit palindrome"
+    },
+    {
+      "input": "100000",
+      "desc": "Edge: max value"
+    },
+    {
+      "input": "99999",
+      "desc": "Edge: 5-digit max"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: power of 10"
+    },
+    {
+      "input": "12321",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "12345",
+      "desc": "Standard: sequential"
+    },
+    {
+      "input": "54321",
+      "desc": "Standard: reversed sequential"
+    },
+    {
+      "input": "9999",
+      "desc": "Edge: all 9s"
+    },
+    {
+      "input": "5005",
+      "desc": "Edge: palindrome"
+    },
+    {
+      "input": "1234",
+      "desc": "Standard: 1234 (1100+0011=1111? no. Need k+rev(k)=1234)"
+    }
   ]
 }
