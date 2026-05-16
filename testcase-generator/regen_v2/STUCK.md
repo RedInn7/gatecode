@@ -692,3 +692,23 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:16.180375
+
+## PID 275 (xor-operation-in-an-array)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=1000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:18.436469
+
+## PID 277 (minimum-number-of-keypresses)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:18.457578
+
+## PID 278 (lexicographically-smallest-generated-string)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=500)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:18.466539
