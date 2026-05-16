@@ -1,0 +1,28 @@
+{
+  "pid": 1018,
+  "slug": "kth-smallest-product-of-two-sorted-arrays",
+  "inferred_constraints": "1 <= n,m <= 5e4, -1e5 <= nums[i] <= 1e5, 1 <= k <= n*m",
+  "input_format": "line1: nums1 (JSON sorted); line2: nums2 (JSON sorted); line3: k (int)",
+  "testcases": [
+    {"input": "[2,5]\n[3,4]\n2", "desc": "Edge: example1 -> 8"},
+    {"input": "[-4,-2,0,3]\n[2,4]\n6", "desc": "Edge: example2 -> 0"},
+    {"input": "[-2,-1,0,1,2]\n[-3,-1,2,4,5]\n3", "desc": "Edge: example3 -> -6"},
+    {"input": "[1]\n[1]\n1", "desc": "Edge: minimal"},
+    {"input": "[0]\n[0]\n1", "desc": "Edge: zero pair"},
+    {"input": "[-100000]\n[100000]\n1", "desc": "Edge: max neg result"},
+    {"input": "[100000]\n[100000]\n1", "desc": "Edge: max pos"},
+    {"input": "[-1,0,1]\n[-1,0,1]\n5", "desc": "Standard: symmetric mid"},
+    {"input": "[1,2,3]\n[1,2,3]\n5", "desc": "Standard: pos squares"},
+    {"input": "[-3,-2,-1]\n[-3,-2,-1]\n3", "desc": "Standard: all neg"},
+    {"input": "[1,2,3,4,5]\n[6,7,8,9,10]\n12", "desc": "Standard: disjoint pos"},
+    {"input": "[0,0,0]\n[0,0,0]\n5", "desc": "Standard: all zero"},
+    {"input": "[-5,-3,0,3,5]\n[-2,2]\n4", "desc": "Standard: mixed signs"},
+    {"input": "[1,1,2,3,5,8]\n[1,1,2,3,5,8]\n18", "desc": "Standard: fib pairs"},
+    {"input": "[-10,-5,0,5,10]\n[-10,-5,0,5,10]\n13", "desc": "Standard: symmetric"},
+    {"input": "[-1000,-500,500,1000]\n[-100,-50,50,100]\n8", "desc": "Standard: 4x4 mid"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3,4,5,6,7,8,9,10]\n50", "desc": "Standard: 10x10 mid"},
+    {"input": "[-50,-25,0,25,50]\n[-100,-50,0,50,100]\n12", "desc": "Standard: bigger ranges"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n200", "desc": "Stress: 20x20 mid"},
+    {"input": "[-100000,-50000,0,50000,100000]\n[-100000,-50000,0,50000,100000]\n13", "desc": "Killer: extreme range mid"}
+  ]
+}

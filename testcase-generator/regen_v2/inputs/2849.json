@@ -1,0 +1,28 @@
+{
+  "pid": 2849,
+  "slug": "count-the-number-of-houses-at-a-certain-distance-i",
+  "inferred_constraints": "2 <= n <= 100, 1 <= x, y <= n",
+  "input_format": "line1: n (int); line2: x (int); line3: y (int)",
+  "testcases": [
+    {"input": "3\n1\n3", "desc": "Edge: example1"},
+    {"input": "5\n2\n4", "desc": "Edge: example2"},
+    {"input": "4\n1\n1", "desc": "Edge: x==y same node"},
+    {"input": "2\n1\n2", "desc": "Edge: minimum n"},
+    {"input": "3\n1\n2", "desc": "Edge: x,y adjacent"},
+    {"input": "3\n2\n3", "desc": "Edge: end adjacent"},
+    {"input": "4\n1\n4", "desc": "Edge: end to end"},
+    {"input": "5\n3\n3", "desc": "Edge: x=y middle"},
+    {"input": "5\n1\n5", "desc": "Standard: ends"},
+    {"input": "6\n2\n5", "desc": "Standard: middle pair"},
+    {"input": "10\n3\n7", "desc": "Standard: 10 nodes"},
+    {"input": "10\n1\n10", "desc": "Standard: 10 ends"},
+    {"input": "15\n5\n10", "desc": "Standard: 15 nodes"},
+    {"input": "20\n1\n20", "desc": "Standard: 20 ends"},
+    {"input": "30\n5\n25", "desc": "Standard: 30 nodes"},
+    {"input": "50\n10\n40", "desc": "Standard: 50 nodes"},
+    {"input": "75\n1\n75", "desc": "Standard: 75 ends"},
+    {"input": "100\n50\n50", "desc": "Standard: 100 same node"},
+    {"input": "100\n1\n100", "desc": "Stress: max ends"},
+    {"input": "100\n2\n99", "desc": "Killer: max near ends"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2864,
+  "slug": "keyboard-row",
+  "inferred_constraints": "1 <= words.length <= 20, 1 <= words[i].length <= 100, words[i] English letters case-insensitive",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"Hello\",\"Alaska\",\"Dad\",\"Peace\"]", "desc": "Edge: example1"},
+    {"input": "[\"omk\"]", "desc": "Edge: example2"},
+    {"input": "[\"adsdf\",\"sfd\"]", "desc": "Edge: example3"},
+    {"input": "[\"a\"]", "desc": "Edge: single char"},
+    {"input": "[\"q\"]", "desc": "Edge: row 1 char"},
+    {"input": "[\"z\"]", "desc": "Edge: row 3 char"},
+    {"input": "[\"\"]", "desc": "Edge: empty string"},
+    {"input": "[\"qwerty\",\"asdf\",\"zxcv\"]", "desc": "Edge: one per row"},
+    {"input": "[\"QWERTYUIOP\",\"ASDFGHJKL\",\"ZXCVBNM\"]", "desc": "Standard: full rows uppercase"},
+    {"input": "[\"qwertyuiop\",\"asdfghjkl\",\"zxcvbnm\"]", "desc": "Standard: full rows lowercase"},
+    {"input": "[\"qaz\"]", "desc": "Standard: spans 3 rows"},
+    {"input": "[\"qwa\",\"qaw\",\"qq\",\"ww\",\"aa\",\"zz\"]", "desc": "Standard: mixed valid invalid"},
+    {"input": "[\"Hello\",\"World\",\"Foo\",\"Bar\",\"Baz\"]", "desc": "Standard: 5 words"},
+    {"input": "[\"Mom\",\"Dad\",\"Cat\",\"Bat\",\"Hat\"]", "desc": "Standard: short words"},
+    {"input": "[\"typewriter\",\"flask\",\"ZxcvBN\"]", "desc": "Standard: classic"},
+    {"input": "[\"ABCDEFGHIJK\"]", "desc": "Standard: long single all rows"},
+    {"input": "[\"asdf\",\"jklm\",\"qwop\"]", "desc": "Standard: mixed rows"},
+    {"input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"]", "desc": "Standard: long single row"},
+    {"input": "[\"qwertyuiop\",\"asdfghjkl\",\"zxcvbnm\",\"qaz\",\"wsx\",\"edc\",\"rfv\",\"tgb\",\"yhn\",\"ujm\",\"ik\",\"ol\",\"p\",\"qq\",\"ww\",\"ee\",\"rr\",\"tt\",\"yy\",\"uu\"]", "desc": "Stress: 20 words"},
+    {"input": "[\"qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop\"]", "desc": "Killer: 100 char row 1"}
+  ]
+}

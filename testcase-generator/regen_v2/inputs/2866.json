@@ -1,0 +1,28 @@
+{
+  "pid": 2866,
+  "slug": "minimum-one-bit-operations-to-make-integers-zero",
+  "inferred_constraints": "0 <= n <= 10^9",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "3", "desc": "Edge: example1"},
+    {"input": "6", "desc": "Edge: example2"},
+    {"input": "0", "desc": "Edge: zero"},
+    {"input": "1", "desc": "Edge: n=1"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "4", "desc": "Edge: n=4 power of 2"},
+    {"input": "5", "desc": "Edge: n=5"},
+    {"input": "7", "desc": "Edge: n=7"},
+    {"input": "8", "desc": "Standard: n=8 power"},
+    {"input": "15", "desc": "Standard: all ones 4 bits"},
+    {"input": "16", "desc": "Standard: n=16 power"},
+    {"input": "31", "desc": "Standard: 5 bit all ones"},
+    {"input": "32", "desc": "Standard: power 32"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "256", "desc": "Standard: n=256"},
+    {"input": "1024", "desc": "Standard: n=1024"},
+    {"input": "65535", "desc": "Standard: 16 ones"},
+    {"input": "1000000", "desc": "Standard: 10^6"},
+    {"input": "999999999", "desc": "Stress: large"},
+    {"input": "1000000000", "desc": "Killer: max"}
+  ]
+}

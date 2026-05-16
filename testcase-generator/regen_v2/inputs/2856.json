@@ -1,0 +1,28 @@
+{
+  "pid": 2856,
+  "slug": "maximize-number-of-nice-divisors",
+  "inferred_constraints": "1 <= primeFactors <= 10^9",
+  "input_format": "single line: primeFactors (int)",
+  "testcases": [
+    {"input": "5", "desc": "Edge: example1"},
+    {"input": "8", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: min"},
+    {"input": "2", "desc": "Edge: small"},
+    {"input": "3", "desc": "Edge: 3 itself"},
+    {"input": "4", "desc": "Edge: 4=2+2"},
+    {"input": "6", "desc": "Edge: 6=3+3"},
+    {"input": "7", "desc": "Edge: 7=3+2+2"},
+    {"input": "9", "desc": "Standard: 9=3+3+3"},
+    {"input": "10", "desc": "Standard: 10=3+3+2+2"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "1000", "desc": "Standard: n=1000"},
+    {"input": "10000", "desc": "Standard: n=10000"},
+    {"input": "100000", "desc": "Standard: n=10^5"},
+    {"input": "1000000", "desc": "Standard: n=10^6"},
+    {"input": "10000000", "desc": "Standard: n=10^7"},
+    {"input": "100000000", "desc": "Standard: n=10^8"},
+    {"input": "999999998", "desc": "Standard: near max"},
+    {"input": "999999999", "desc": "Stress: very large"},
+    {"input": "1000000000", "desc": "Killer: max"}
+  ]
+}

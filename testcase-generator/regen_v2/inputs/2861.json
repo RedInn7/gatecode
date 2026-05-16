@@ -1,0 +1,28 @@
+{
+  "pid": 2861,
+  "slug": "number-of-distinct-substrings-in-a-string",
+  "inferred_constraints": "1 <= s.length <= 500, lowercase English",
+  "input_format": "single line: s (raw string)",
+  "testcases": [
+    {"input": "aabbaba", "desc": "Edge: example1"},
+    {"input": "abcdefg", "desc": "Edge: example2 all distinct"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "aa", "desc": "Edge: 2 same"},
+    {"input": "ab", "desc": "Edge: 2 diff"},
+    {"input": "aaa", "desc": "Edge: 3 same"},
+    {"input": "abc", "desc": "Edge: 3 distinct"},
+    {"input": "aaaa", "desc": "Edge: 4 same"},
+    {"input": "abab", "desc": "Standard: alternating"},
+    {"input": "abcabc", "desc": "Standard: repeating"},
+    {"input": "mississippi", "desc": "Standard: real word"},
+    {"input": "banana", "desc": "Standard: banana"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: alphabet"},
+    {"input": "aaaaaaaaaa", "desc": "Standard: 10 same"},
+    {"input": "abcdefghij", "desc": "Standard: 10 distinct"},
+    {"input": "racecar", "desc": "Standard: palin"},
+    {"input": "ababababab", "desc": "Standard: 10 alt"},
+    {"input": "aaaaabbbbb", "desc": "Standard: blocks"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklm", "desc": "Stress: 500 chars 18 alphabet repeats + 13"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Killer: 500 same char"}
+  ]
+}

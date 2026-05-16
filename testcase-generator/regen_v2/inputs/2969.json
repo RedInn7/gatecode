@@ -1,0 +1,28 @@
+{
+  "pid": 2969,
+  "slug": "remove-k-digits",
+  "inferred_constraints": "1 <= k <= num.length <= 10^5; num is non-negative integer string",
+  "input_format": "line1: num (JSON string); line2: k",
+  "testcases": [
+    {"input": "\"1432219\"\n3", "desc": "Edge: example1"},
+    {"input": "\"10200\"\n1", "desc": "Edge: example2"},
+    {"input": "\"10\"\n2", "desc": "Edge: example3 all removed"},
+    {"input": "\"1\"\n1", "desc": "Edge: single digit removed"},
+    {"input": "\"9\"\n1", "desc": "Edge: 9 removed"},
+    {"input": "\"100\"\n1", "desc": "Edge: 3 digit remove 1"},
+    {"input": "\"100\"\n2", "desc": "Edge: 3 digit remove 2"},
+    {"input": "\"100\"\n3", "desc": "Edge: all"},
+    {"input": "\"00000\"\n4", "desc": "Edge: all zeros"},
+    {"input": "\"123456\"\n2", "desc": "Standard: ascending"},
+    {"input": "\"654321\"\n2", "desc": "Standard: descending"},
+    {"input": "\"112112\"\n3", "desc": "Standard: repetitions"},
+    {"input": "\"9876543210\"\n5", "desc": "Standard: desc remove half"},
+    {"input": "\"1234567890\"\n5", "desc": "Standard: asc remove half"},
+    {"input": "\"112233445566\"\n6", "desc": "Standard: paired remove half"},
+    {"input": "\"5000010005\"\n4", "desc": "Standard: with zeros"},
+    {"input": "\"99999999999999999999\"\n10", "desc": "Stress: 20 nines remove 10"},
+    {"input": "\"12345678901234567890\"\n10", "desc": "Stress: 20 digits remove 10"},
+    {"input": "\"10000000000000000000\"\n5", "desc": "Stress: 20 with leading 1"},
+    {"input": "\"1234567890987654321\"\n10", "desc": "Killer: palindrome-like 19 digits"}
+  ]
+}

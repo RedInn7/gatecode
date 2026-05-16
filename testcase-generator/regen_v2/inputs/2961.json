@@ -1,0 +1,28 @@
+{
+  "pid": 2961,
+  "slug": "add-two-integers",
+  "inferred_constraints": "-100 <= num1, num2 <= 100",
+  "input_format": "line1: num1; line2: num2",
+  "testcases": [
+    {"input": "12\n5", "desc": "Edge: example1"},
+    {"input": "-10\n4", "desc": "Edge: example2"},
+    {"input": "0\n0", "desc": "Edge: zeros"},
+    {"input": "100\n100", "desc": "Edge: both max"},
+    {"input": "-100\n-100", "desc": "Edge: both min"},
+    {"input": "100\n-100", "desc": "Edge: cancel"},
+    {"input": "-100\n100", "desc": "Edge: cancel reversed"},
+    {"input": "1\n-1", "desc": "Edge: small cancel"},
+    {"input": "0\n100", "desc": "Standard: zero plus max"},
+    {"input": "0\n-100", "desc": "Standard: zero plus min"},
+    {"input": "50\n50", "desc": "Standard: equal pos"},
+    {"input": "-50\n-50", "desc": "Standard: equal neg"},
+    {"input": "1\n1", "desc": "Standard: smallest pos pair"},
+    {"input": "-1\n-1", "desc": "Standard: smallest neg pair"},
+    {"input": "77\n23", "desc": "Standard: pair to 100"},
+    {"input": "-77\n23", "desc": "Standard: mixed"},
+    {"input": "99\n1", "desc": "Stress: near max"},
+    {"input": "-99\n-1", "desc": "Stress: near min"},
+    {"input": "50\n-50", "desc": "Stress: balanced cancel"},
+    {"input": "1\n0", "desc": "Killer: 1+0"}
+  ]
+}

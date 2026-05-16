@@ -1,0 +1,28 @@
+{
+  "pid": 2976,
+  "slug": "find-the-integer-added-to-array-i",
+  "inferred_constraints": "1 <= nums1.length == nums2.length <= 100; 0 <= nums1[i], nums2[i] <= 1000",
+  "input_format": "line1: nums1 (JSON array); line2: nums2 (JSON array)",
+  "testcases": [
+    {"input": "[2,6,4]\n[9,7,5]", "desc": "Edge: example1"},
+    {"input": "[10]\n[5]", "desc": "Edge: example2"},
+    {"input": "[1,1,1,1]\n[1,1,1,1]", "desc": "Edge: example3 x=0"},
+    {"input": "[0]\n[0]", "desc": "Edge: zeros"},
+    {"input": "[0]\n[1000]", "desc": "Edge: max shift"},
+    {"input": "[1000]\n[0]", "desc": "Edge: max negative shift"},
+    {"input": "[5]\n[3]", "desc": "Edge: small negative"},
+    {"input": "[1,2,3]\n[4,5,6]", "desc": "Standard: 3 elements +3"},
+    {"input": "[5,5,5]\n[10,10,10]", "desc": "Standard: all same"},
+    {"input": "[1,2,3,4,5]\n[6,7,8,9,10]", "desc": "Standard: 5 elements"},
+    {"input": "[10,20,30]\n[5,15,25]", "desc": "Standard: -5"},
+    {"input": "[100,200,300]\n[150,250,350]", "desc": "Standard: +50"},
+    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Standard: same set diff order"},
+    {"input": "[7,7,7,7,7,7]\n[3,3,3,3,3,3]", "desc": "Standard: -4 all same"},
+    {"input": "[1,3,5,7,9]\n[2,4,6,8,10]", "desc": "Standard: odd to even"},
+    {"input": "[50,40,30,20,10]\n[60,50,40,30,20]", "desc": "Standard: +10 desc"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0]\n[1000,1000,1000,1000,1000,1000,1000,1000,1000,1000]", "desc": "Stress: zero to max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120]", "desc": "Stress: 20 +100"},
+    {"input": "[500,500,500,500,500,500,500,500,500,500]\n[0,0,0,0,0,0,0,0,0,0]", "desc": "Stress: -500"},
+    {"input": "[1,2]\n[2,1]", "desc": "Killer: same set diff order x=0"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2845,
+  "slug": "largest-merge-of-two-strings",
+  "inferred_constraints": "1 <= word1.length, word2.length <= 3000, lowercase English",
+  "input_format": "line1: word1 (raw); line2: word2 (raw)",
+  "testcases": [
+    {"input": "cabaa\nbcaaa", "desc": "Edge: example1"},
+    {"input": "abcabc\nabdcaba", "desc": "Edge: example2"},
+    {"input": "a\na", "desc": "Edge: single same"},
+    {"input": "a\nb", "desc": "Edge: single diff"},
+    {"input": "z\na", "desc": "Edge: extreme z vs a"},
+    {"input": "ab\nba", "desc": "Edge: reverse"},
+    {"input": "aaa\nbbb", "desc": "Edge: all same diff"},
+    {"input": "abc\ndef", "desc": "Edge: distinct"},
+    {"input": "abcdefg\nxyz", "desc": "Standard: long vs short"},
+    {"input": "xyz\nabcdefg", "desc": "Standard: short vs long"},
+    {"input": "abab\nabab", "desc": "Standard: same"},
+    {"input": "aaaa\naaab", "desc": "Standard: tiebreaker tail"},
+    {"input": "zzzzz\naaaaa", "desc": "Standard: full z vs a"},
+    {"input": "abcde\nedcba", "desc": "Standard: reverse"},
+    {"input": "hello\nworld", "desc": "Standard: words"},
+    {"input": "abc\nabc", "desc": "Standard: same equal"},
+    {"input": "z\nzzzzz", "desc": "Standard: single z vs many z"},
+    {"input": "abacabad\nbabac", "desc": "Standard: ties cascade"},
+    {"input": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 z vs 100 a"},
+    {"input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc\nbcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabca", "desc": "Killer: long similar tie-breaking"}
+  ]
+}
