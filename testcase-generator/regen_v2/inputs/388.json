@@ -1,0 +1,28 @@
+{
+  "pid": 388,
+  "slug": "longest-ideal-subsequence",
+  "inferred_constraints": "1 <= s.length <= 1e5, 0 <= k <= 25, lowercase letters",
+  "input_format": "line1: s (raw string); line2: k (int)",
+  "testcases": [
+    {"input": "acfgbd\n2", "desc": "Edge: example1"},
+    {"input": "abcd\n3", "desc": "Edge: example2"},
+    {"input": "a\n0", "desc": "Edge: n=1 k=0"},
+    {"input": "a\n25", "desc": "Edge: n=1 k=25"},
+    {"input": "ab\n0", "desc": "Edge: k=0 strict equal only"},
+    {"input": "aa\n0", "desc": "Edge: k=0 all same"},
+    {"input": "az\n25", "desc": "Edge: k=25 max diff"},
+    {"input": "az\n24", "desc": "Edge: k=24 just under max diff"},
+    {"input": "aaaaaaaa\n0", "desc": "Edge: all same"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n1", "desc": "Standard: full alphabet k=1"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n0", "desc": "Edge: full alphabet k=0"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n25", "desc": "Edge: full alphabet k=25"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba\n1", "desc": "Standard: reversed alphabet k=1"},
+    {"input": "abab\n1", "desc": "Standard: alternating k=1"},
+    {"input": "abab\n0", "desc": "Standard: alternating k=0"},
+    {"input": "aaabbbcccdddeeeeefffggg\n2", "desc": "Standard: clustered letters"},
+    {"input": "leetcode\n3", "desc": "Standard: typical word"},
+    {"input": "programming\n5", "desc": "Standard: typical word"},
+    {"input": "mississippi\n2", "desc": "Standard: repeating chars"},
+    {"input": "azazazazazazazazazaz\n25", "desc": "Stress: max diff alternating k=25"}
+  ]
+}

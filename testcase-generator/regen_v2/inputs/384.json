@@ -1,0 +1,28 @@
+{
+  "pid": 384,
+  "slug": "number-of-people-aware-of-a-secret",
+  "inferred_constraints": "1 <= n <= 1000, 1 <= delay < forget <= n",
+  "input_format": "line1: n (int); line2: delay (int); line3: forget (int)",
+  "testcases": [
+    {"input": "6\n2\n4", "desc": "Edge: example1"},
+    {"input": "4\n1\n3", "desc": "Edge: example2"},
+    {"input": "5\n2\n4", "desc": "Edge: n=5 small range"},
+    {"input": "2\n1\n2", "desc": "Edge: n=2 delay=1 forget=2"},
+    {"input": "10\n2\n3", "desc": "Standard: small delay short forget"},
+    {"input": "10\n3\n7", "desc": "Standard: medium gaps"},
+    {"input": "20\n2\n5", "desc": "Standard: n=20"},
+    {"input": "100\n5\n10", "desc": "Standard: n=100"},
+    {"input": "100\n1\n100", "desc": "Edge: max forget min delay"},
+    {"input": "100\n50\n100", "desc": "Edge: late share late forget"},
+    {"input": "1000\n2\n4", "desc": "Stress: n=1000 small gaps"},
+    {"input": "1000\n10\n50", "desc": "Stress: n=1000 medium"},
+    {"input": "1000\n1\n1000", "desc": "Stress: n=1000 max range"},
+    {"input": "1000\n500\n1000", "desc": "Stress: late share full forget"},
+    {"input": "50\n1\n2", "desc": "Standard: n=50 very short"},
+    {"input": "365\n7\n30", "desc": "Standard: year-like"},
+    {"input": "500\n5\n50", "desc": "Standard: n=500"},
+    {"input": "1\n1\n2", "desc": "Edge: smallest valid (delay=1 forget=2 but n=1)"},
+    {"input": "7\n3\n5", "desc": "Edge: n=7 typical"},
+    {"input": "3\n1\n2", "desc": "Edge: smallest meaningful"}
+  ]
+}
