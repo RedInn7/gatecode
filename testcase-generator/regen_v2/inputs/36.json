@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums.length <= 100, -100 <= nums[i] <= 100",
   "input_format": "single line: nums (JSON array)",
   "testcases": [
-    {"input": "[3,-2,1,1]", "desc": "Edge: example1"},
-    {"input": "[-1,4,-1]", "desc": "Edge: example2"},
-    {"input": "[0]", "desc": "Edge: n=1, zero"},
-    {"input": "[5]", "desc": "Edge: n=1, positive (wraps to self)"},
-    {"input": "[-5]", "desc": "Edge: n=1, negative wraps to self"},
-    {"input": "[1,1]", "desc": "Edge: n=2 small positives"},
-    {"input": "[-1,-1]", "desc": "Edge: n=2 small negatives"},
-    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
-    {"input": "[100,100,100,100]", "desc": "Edge: all max"},
-    {"input": "[-100,-100,-100,-100]", "desc": "Edge: all min"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending"},
-    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: descending negative"},
-    {"input": "[1,-1,2,-2,3,-3]", "desc": "Standard: alternating sign"},
-    {"input": "[100,-100,50,-50,25,-25]", "desc": "Standard: extreme alternating"},
-    {"input": "[10,20,30,40,50,60,70,80,90,100]", "desc": "Standard: linear"},
-    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]", "desc": "Standard: 20 ascending"},
-    {"input": "[-100,0,100]", "desc": "Standard: extremes with zero"},
-    {"input": "[7,-3,2,8,-5,4,1,-9,6,3]", "desc": "Standard: random mix"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: all same +1, cycle"},
-    {"input": "[100,-100,100,-100,100,-100,100,-100,100,-100,100,-100,100,-100,100,-100,100,-100,100,-100]", "desc": "Stress: n=20 alt extremes"}
+    {
+      "input": "[3,-2,1,1]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[-1,4,-1]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: n=1, zero"
+    },
+    {
+      "input": "[5]",
+      "desc": "Edge: n=1, positive (wraps to self)"
+    },
+    {
+      "input": "[-5]",
+      "desc": "Edge: n=1, negative wraps to self"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: n=2 small positives"
+    },
+    {
+      "input": "[-1,-1]",
+      "desc": "Edge: n=2 small negatives"
+    },
+    {
+      "input": "[0,0,0,0,0]",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "[100,100,100,100]",
+      "desc": "Edge: all max"
+    },
+    {
+      "input": "[-100,-100,-100,-100]",
+      "desc": "Edge: all min"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: ascending"
+    },
+    {
+      "input": "[-1,-2,-3,-4,-5]",
+      "desc": "Standard: descending negative"
+    },
+    {
+      "input": "[1,-1,2,-2,3,-3]",
+      "desc": "Standard: alternating sign"
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]",
+      "desc": "Standard: extreme alternating"
+    },
+    {
+      "input": "[10,20,30,40,50,60,70,80,90,100]",
+      "desc": "Standard: linear"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]",
+      "desc": "Standard: 20 ascending"
+    },
+    {
+      "input": "[-100,0,100]",
+      "desc": "Standard: extremes with zero"
+    },
+    {
+      "input": "[7,-3,2,8,-5,4,1,-9,6,3]",
+      "desc": "Standard: random mix"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "desc": "Edge: all same +1, cycle"
+    },
+    {
+      "input": "[-62,37,10,35,32,-73,44,-68,37,-53,-77,5,48,30,-68,-55,43,6,-1,-53,-98,-60,-36,-61,-62,90,47,-14,-29,6,-34,-1,33,-68,-48,-90,-10,56,-28,-42,18,-51,-90,-79,-65,-57,-9,37,-70,4,68,57,7,-5,-58,-59,53,34,31,88,-38,5,-15,92,49,3,-65,90,27,-52,10,-80,-92,-6,21,9,28,-68,53,70,-66,-29,20,-12,85,-99,0,28,-83,-15,-48,84,64,-91,-5,52,3,67,-67,69]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
