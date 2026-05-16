@@ -5,8 +5,8 @@
   "input_format": "line1: num (raw string of digits); line2: k (int)",
   "testcases": [
     {
-      "input": "5489355142\n4",
-      "desc": "Edge: example1"
+      "input": "21\n1",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "11112\n4",
