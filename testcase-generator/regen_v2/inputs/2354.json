@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n = nums.length <= 10^5; -10^9 <= nums[i] <= 10^9",
   "input_format": "single line: nums (JSON array)",
   "testcases": [
-    {"input": "[1,-2,3,4]", "desc": "Standard example 1"},
-    {"input": "[1,-1,1,-1]", "desc": "Standard example 2"},
-    {"input": "[0]", "desc": "Standard example 3 single zero"},
-    {"input": "[1]", "desc": "Edge: n=1 positive"},
-    {"input": "[-1]", "desc": "Edge: n=1 negative"},
-    {"input": "[1000000000]", "desc": "Edge: max positive"},
-    {"input": "[-1000000000]", "desc": "Edge: max negative"},
-    {"input": "[1,2]", "desc": "Edge: 2 positive"},
-    {"input": "[-1,-2]", "desc": "Edge: 2 negative"},
-    {"input": "[1,-1]", "desc": "Edge: pos+neg"},
-    {"input": "[-1,1]", "desc": "Edge: neg+pos"},
-    {"input": "[1,1,1,1,1]", "desc": "All ones"},
-    {"input": "[-1,-1,-1,-1,-1]", "desc": "All neg"},
-    {"input": "[1,-2,3,-4,5,-6,7,-8,9,-10]", "desc": "Alternating signs"},
-    {"input": "[-1,2,-3,4,-5,6,-7,8,-9,10]", "desc": "Alternating start neg"},
-    {"input": "[1000000000,-1000000000,1000000000,-1000000000]", "desc": "Extremes alt"},
-    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "All same positive"},
-    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Desc"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Asc"},
-    {"input": "[3,-1,4,-1,5,-9,2,-6,5,-3,5,-8,9,-7,9,-3,2,-3,8,-4]", "desc": "20 mixed"}
+    {
+      "input": "[1,-2,3,4]",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "[1,-1,1,-1]",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "[0]",
+      "desc": "Standard example 3 single zero"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1 positive"
+    },
+    {
+      "input": "[-1]",
+      "desc": "Edge: n=1 negative"
+    },
+    {
+      "input": "[1000000000]",
+      "desc": "Edge: max positive"
+    },
+    {
+      "input": "[-1000000000]",
+      "desc": "Edge: max negative"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: 2 positive"
+    },
+    {
+      "input": "[-1,-2]",
+      "desc": "Edge: 2 negative"
+    },
+    {
+      "input": "[1,-1]",
+      "desc": "Edge: pos+neg"
+    },
+    {
+      "input": "[-1,1]",
+      "desc": "Edge: neg+pos"
+    },
+    {
+      "input": "[1,1,1,1,1]",
+      "desc": "All ones"
+    },
+    {
+      "input": "[-1,-1,-1,-1,-1]",
+      "desc": "All neg"
+    },
+    {
+      "input": "[1,-2,3,-4,5,-6,7,-8,9,-10]",
+      "desc": "Alternating signs"
+    },
+    {
+      "input": "[-1,2,-3,4,-5,6,-7,8,-9,10]",
+      "desc": "Alternating start neg"
+    },
+    {
+      "input": "[1000000000,-1000000000,1000000000,-1000000000]",
+      "desc": "Extremes alt"
+    },
+    {
+      "input": "[111505329,335946044,-811918058,-691601557,-534861548,976504865,-15733453,-681613871,-475679582,770417676,943983900,-628122062,623641630,730290398,52401942,-556829608,-792571063,859504026,23577831,259931995,252797850,39631472,-81685240,516609861,-591336347,451455267,99531946,-409292345,996832677,274203161,471358694,-52935053,-891068425,601816720,-821523346,-590749855,-113216259,184220793,-91661194,340913447,-811748265,280083628,665424982,-158097276,-214959284,388131371,-256375970,-957785123,843437609,-631386244,902544081,289980824,550293878,-224188122,759435285,-12397272,112082116]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]",
+      "desc": "Desc"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Asc"
+    },
+    {
+      "input": "[3,-1,4,-1,5,-9,2,-6,5,-3,5,-8,9,-7,9,-3,2,-3,8,-4]",
+      "desc": "20 mixed"
+    }
   ]
 }
