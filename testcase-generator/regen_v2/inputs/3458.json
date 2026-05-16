@@ -1,0 +1,76 @@
+{
+  "pid": 3458,
+  "slug": "where-will-the-ball-fall",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "402330",
+      "desc": "Standard: n=402330"
+    },
+    {
+      "input": "318161",
+      "desc": "Standard: n=318161"
+    },
+    {
+      "input": "268190",
+      "desc": "Standard: n=268190"
+    },
+    {
+      "input": "637499",
+      "desc": "Standard: n=637499"
+    },
+    {
+      "input": "655760",
+      "desc": "Standard: n=655760"
+    },
+    {
+      "input": "899959",
+      "desc": "Standard: n=899959"
+    },
+    {
+      "input": "535418",
+      "desc": "Standard: n=535418"
+    },
+    {
+      "input": "782828",
+      "desc": "Standard: n=782828"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

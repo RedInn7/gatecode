@@ -1,0 +1,76 @@
+{
+  "pid": 3469,
+  "slug": "operations-on-tree",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "384695",
+      "desc": "Standard: n=384695"
+    },
+    {
+      "input": "928637",
+      "desc": "Standard: n=928637"
+    },
+    {
+      "input": "716414",
+      "desc": "Standard: n=716414"
+    },
+    {
+      "input": "741672",
+      "desc": "Standard: n=741672"
+    },
+    {
+      "input": "454397",
+      "desc": "Standard: n=454397"
+    },
+    {
+      "input": "345511",
+      "desc": "Standard: n=345511"
+    },
+    {
+      "input": "651858",
+      "desc": "Standard: n=651858"
+    },
+    {
+      "input": "254480",
+      "desc": "Standard: n=254480"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

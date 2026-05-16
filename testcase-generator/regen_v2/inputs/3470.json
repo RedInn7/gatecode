@@ -1,0 +1,76 @@
+{
+  "pid": 3470,
+  "slug": "find-all-numbers-disappeared-in-an-array",
+  "inferred_constraints": "0 <= n <= 100000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "100000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "99999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "23902",
+      "desc": "Standard: n=23902"
+    },
+    {
+      "input": "76793",
+      "desc": "Standard: n=76793"
+    },
+    {
+      "input": "71595",
+      "desc": "Standard: n=71595"
+    },
+    {
+      "input": "13030",
+      "desc": "Standard: n=13030"
+    },
+    {
+      "input": "53591",
+      "desc": "Standard: n=53591"
+    },
+    {
+      "input": "4439",
+      "desc": "Standard: n=4439"
+    },
+    {
+      "input": "8741",
+      "desc": "Standard: n=8741"
+    },
+    {
+      "input": "27775",
+      "desc": "Standard: n=27775"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "100000",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "100000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

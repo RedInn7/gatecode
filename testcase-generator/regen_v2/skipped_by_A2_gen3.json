@@ -49,6 +49,16 @@
       "pid": 3490,
       "slug": "find-array-given-subset-sums",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3475,
+      "slug": "maximum-area-rectangle-with-point-constraints-i",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3457,
+      "slug": "intersection-of-two-linked-lists",
+      "reason": "ACM mode problem"
     }
   ]
 }
