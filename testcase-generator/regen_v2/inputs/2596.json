@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 1000, matrix[i][j] is '.', '#', or uppercase letter, matrix[0][0] != '#' and matrix[m-1][n-1] != '#'",
   "input_format": "single line: matrix (JSON array of strings)",
   "testcases": [
-    {"input": "[\".A..\",\"A##.\",\"...A\"]", "desc": "Edge: example1 portal A"},
-    {"input": "[\".#\",\"#.\"]", "desc": "Edge: blocked path -1"},
-    {"input": "[\".\"]", "desc": "Edge: 1x1 empty"},
-    {"input": "[\"..\"]", "desc": "Edge: 1x2 row"},
-    {"input": "[\".\",\".\"]", "desc": "Edge: 2x1 col"},
-    {"input": "[\".A\",\"A.\"]", "desc": "Edge: 2x2 portal corners"},
-    {"input": "[\"..\",\"..\"]", "desc": "Edge: 2x2 no obstacle"},
-    {"input": "[\".A\",\".A\"]", "desc": "Edge: 2x2 portals same col"},
-    {"input": "[\".#.\",\"...\",\".#.\"]", "desc": "Edge: 3x3 obstacles"},
-    {"input": "[\".AB\",\"###\",\"AB.\"]", "desc": "Standard: two portals teleport"},
-    {"input": "[\"....\",\"....\",\"....\",\"....\"]", "desc": "Standard: 4x4 empty"},
-    {"input": "[\".####\",\".####\",\".####\",\".####\",\".....\"]", "desc": "Standard: long path"},
-    {"input": "[\".A.\",\"###\",\"A.A\",\"###\",\"A..\"]", "desc": "Standard: chain portals"},
-    {"input": "[\"...A\",\"....\",\"A...\"]", "desc": "Standard: corner portals"},
-    {"input": "[\".....\",\".###.\",\".#.#.\",\".###.\",\".....\"]", "desc": "Standard: maze"},
-    {"input": "[\".ABCD\",\"#####\",\"DCBA.\"]", "desc": "Standard: many portals"},
-    {"input": "[\".A.B.\",\"#####\",\"A.B..\"]", "desc": "Standard: 2 portal types"},
-    {"input": "[\".....\",\"#####\",\".....\"]", "desc": "Standard: no portal middle wall"},
-    {"input": "[\".#########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#........#\",\".........#\"]", "desc": "Stress: long maze"},
-    {"input": "[\".AAAAAAAAAA\",\"###########\",\"AAAAAAAAAA.\"]", "desc": "Killer: many A portals"}
+    {
+      "input": "[\".A..\",\"A##.\",\"...A\"]",
+      "desc": "Edge: example1 portal A"
+    },
+    {
+      "input": "[\".#\",\"#.\"]",
+      "desc": "Edge: blocked path -1"
+    },
+    {
+      "input": "[\".\"]",
+      "desc": "Edge: 1x1 empty"
+    },
+    {
+      "input": "[\"..\"]",
+      "desc": "Edge: 1x2 row"
+    },
+    {
+      "input": "[\".\",\".\"]",
+      "desc": "Edge: 2x1 col"
+    },
+    {
+      "input": "[\".A\",\"A.\"]",
+      "desc": "Edge: 2x2 portal corners"
+    },
+    {
+      "input": "[\"..\",\"..\"]",
+      "desc": "Edge: 2x2 no obstacle"
+    },
+    {
+      "input": "[\".A\",\".A\"]",
+      "desc": "Edge: 2x2 portals same col"
+    },
+    {
+      "input": "[\".#.\",\"...\",\".#.\"]",
+      "desc": "Edge: 3x3 obstacles"
+    },
+    {
+      "input": "[\".AB\",\"###\",\"AB.\"]",
+      "desc": "Standard: two portals teleport"
+    },
+    {
+      "input": "[\"....\",\"....\",\"....\",\"....\"]",
+      "desc": "Standard: 4x4 empty"
+    },
+    {
+      "input": "[\".####\",\".####\",\".####\",\".####\",\".....\"]",
+      "desc": "Standard: long path"
+    },
+    {
+      "input": "[\".A.\",\"###\",\"A.A\",\"###\",\"A..\"]",
+      "desc": "Standard: chain portals"
+    },
+    {
+      "input": "[\"...A\",\"....\",\"A...\"]",
+      "desc": "Standard: corner portals"
+    },
+    {
+      "input": "[\".....\",\".###.\",\".#.#.\",\".###.\",\".....\"]",
+      "desc": "Standard: maze"
+    },
+    {
+      "input": "[\".ABCD\",\"#####\",\"DCBA.\"]",
+      "desc": "Standard: many portals"
+    },
+    {
+      "input": "[\".A.B.\",\"#####\",\"A.B..\"]",
+      "desc": "Standard: 2 portal types"
+    },
+    {
+      "input": "[\".....\",\"#####\",\".....\"]",
+      "desc": "Standard: no portal middle wall"
+    },
+    {
+      "input": "[\".#########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#.........\",\"..########\",\"#........#\",\".........#\"]",
+      "desc": "Stress: long maze"
+    },
+    {
+      "input": "[\".AAAAAAAAAA\",\"###########\",\"AAAAAAAAAA.\"]",
+      "desc": "Killer: many A portals"
+    }
   ]
 }
