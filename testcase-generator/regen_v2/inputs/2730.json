@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= balls.length <= 8, 1 <= balls[i] <= 6, sum(balls) is even",
   "input_format": "single line: balls (JSON array)",
   "testcases": [
-    {"input": "[1,1]", "desc": "Edge: example1"},
-    {"input": "[2,1,1]", "desc": "Edge: example2"},
-    {"input": "[1,2,1,2]", "desc": "Edge: example3"},
-    {"input": "[2,2]", "desc": "Edge: 2 colors 2 each"},
-    {"input": "[3,1]", "desc": "Edge: 4 balls"},
-    {"input": "[6,6]", "desc": "Edge: max 2 colors"},
-    {"input": "[1,1,1,1]", "desc": "Edge: 4 colors 1 each"},
-    {"input": "[2,2,2,2]", "desc": "Edge: 4 colors 2 each"},
-    {"input": "[3,3]", "desc": "Edge: 3 each"},
-    {"input": "[1,1,2,2]", "desc": "Standard: 4 mixed"},
-    {"input": "[1,1,1,1,1,1]", "desc": "Standard: 6 colors 1 each"},
-    {"input": "[6,6,6,6]", "desc": "Standard: max 4 colors"},
-    {"input": "[2,2,2,2,2,2]", "desc": "Standard: 6 colors 2 each"},
-    {"input": "[3,3,3,3]", "desc": "Standard: 4 colors 3 each"},
-    {"input": "[5,3]", "desc": "Standard: uneven 8"},
-    {"input": "[4,2,2]", "desc": "Standard: 3 colors"},
-    {"input": "[1,2,3,4]", "desc": "Standard: 4 different counts"},
-    {"input": "[6,6,6,6,6,6,6,6]", "desc": "Standard: max all"},
-    {"input": "[1,1,1,1,1,1,1,1]", "desc": "Stress: 8 colors 1 each"},
-    {"input": "[6,5,4,3,2,1]", "desc": "Killer: pyramid"}
+    {
+      "input": "[1,1]",
+      "desc": "Edge: example1",
+      "output": "1.0"
+    },
+    {
+      "input": "[2,1,1]",
+      "desc": "Edge: example2",
+      "output": "0.6666666666666666"
+    },
+    {
+      "input": "[1,2,1,2]",
+      "desc": "Edge: example3",
+      "output": "0.6"
+    },
+    {
+      "input": "[2,2]",
+      "desc": "Edge: 2 colors 2 each",
+      "output": "1.0"
+    },
+    {
+      "input": "[3,1]",
+      "desc": "Edge: 4 balls",
+      "output": "0.0"
+    },
+    {
+      "input": "[6,6]",
+      "desc": "Edge: max 2 colors",
+      "output": "1.0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "desc": "Edge: 4 colors 1 each",
+      "output": "1.0"
+    },
+    {
+      "input": "[2,2,2,2]",
+      "desc": "Edge: 4 colors 2 each",
+      "output": "1.0"
+    },
+    {
+      "input": "[3,3]",
+      "desc": "Edge: 3 each",
+      "output": "1.0"
+    },
+    {
+      "input": "[1,1,2,2]",
+      "desc": "Standard: 4 mixed",
+      "output": "0.6"
+    },
+    {
+      "input": "[1,1,1,1,1,1]",
+      "desc": "Standard: 6 colors 1 each",
+      "output": "1.0"
+    },
+    {
+      "input": "[6,6,6,6]",
+      "desc": "Standard: max 4 colors",
+      "output": "0.9532719266196181"
+    },
+    {
+      "input": "[2,2,2,2,2,2]",
+      "desc": "Standard: 6 colors 2 each",
+      "output": "1.0"
+    },
+    {
+      "input": "[3,3,3,3]",
+      "desc": "Standard: 4 colors 3 each",
+      "output": "0.7662337662337663"
+    },
+    {
+      "input": "[5,3]",
+      "desc": "Standard: uneven 8",
+      "output": "0.8571428571428571"
+    },
+    {
+      "input": "[4,2,2]",
+      "desc": "Standard: 3 colors",
+      "output": "0.5142857142857142"
+    },
+    {
+      "input": "[1,2,3,4]",
+      "desc": "Standard: 4 different counts",
+      "output": "0.30952380952380953"
+    },
+    {
+      "input": "[6,6,6,6,6,6,6,6]",
+      "desc": "Standard: max all",
+      "output": "0.8557108876701283"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1]",
+      "desc": "Stress: 8 colors 1 each",
+      "output": "1.0"
+    },
+    {
+      "input": "[6,5,4,3,2,1]",
+      "desc": "Killer: pyramid",
+      "output": "0.5375089306977852"
+    }
   ]
 }

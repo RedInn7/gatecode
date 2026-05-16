@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= number of nodes <= 1000, 0 <= Node.val <= 9, depth <= 10",
   "input_format": "single line: root (JSON array, level-order with nulls)",
   "testcases": [
-    {"input": "[1,2,3]", "desc": "Edge: example1"},
-    {"input": "[4,9,0,5,1]", "desc": "Edge: example2"},
-    {"input": "[1]", "desc": "Edge: single node"},
-    {"input": "[0]", "desc": "Edge: zero"},
-    {"input": "[9]", "desc": "Edge: max single"},
-    {"input": "[1,2]", "desc": "Edge: left child"},
-    {"input": "[1,null,2]", "desc": "Edge: right child"},
-    {"input": "[1,2,3,4,5,6,7]", "desc": "Edge: complete 3 levels"},
-    {"input": "[9,9,9,9,9,9,9]", "desc": "Edge: all 9s"},
-    {"input": "[0,0,0]", "desc": "Standard: all zeros"},
-    {"input": "[1,2,3,4,null,null,5]", "desc": "Standard: gap"},
-    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right skew"},
-    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left skew"},
-    {"input": "[5,3,8,1,4,7,9]", "desc": "Standard: BST-like"},
-    {"input": "[1,2,3,4,5,6,7,8,9]", "desc": "Standard: complete 4 levels"},
-    {"input": "[1,0,9,8,7,6,5,4,3,2]", "desc": "Standard: random digits"},
-    {"input": "[9,9,9]", "desc": "Standard: 9+9 paths"},
-    {"input": "[1,2,3,4,5,6,7,8,9,0,1,2,3,4,5]", "desc": "Standard: 15 nodes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1]", "desc": "Stress: 31 nodes 5 levels"},
-    {"input": "[9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]", "desc": "Killer: 31 nines"}
+    {
+      "input": "[1,2,3]",
+      "desc": "Edge: example1",
+      "output": "25"
+    },
+    {
+      "input": "[4,9,0,5,1]",
+      "desc": "Edge: example2",
+      "output": "1026"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single node",
+      "output": "1"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: zero",
+      "output": "0"
+    },
+    {
+      "input": "[9]",
+      "desc": "Edge: max single",
+      "output": "9"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: left child",
+      "output": "12"
+    },
+    {
+      "input": "[1,null,2]",
+      "desc": "Edge: right child",
+      "output": "12"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "desc": "Edge: complete 3 levels",
+      "output": "522"
+    },
+    {
+      "input": "[9,9,9,9,9,9,9]",
+      "desc": "Edge: all 9s",
+      "output": "3996"
+    },
+    {
+      "input": "[0,0,0]",
+      "desc": "Standard: all zeros",
+      "output": "0"
+    },
+    {
+      "input": "[1,2,3,4,null,null,5]",
+      "desc": "Standard: gap",
+      "output": "259"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]",
+      "desc": "Standard: right skew",
+      "output": "12345"
+    },
+    {
+      "input": "[1,2,null,3,null,4,null,5]",
+      "desc": "Standard: left skew",
+      "output": "12345"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]",
+      "desc": "Standard: BST-like",
+      "output": "2241"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9]",
+      "desc": "Standard: complete 4 levels",
+      "output": "2895"
+    },
+    {
+      "input": "[1,0,9,8,7,6,5,4,3,2]",
+      "desc": "Standard: random digits",
+      "output": "3630"
+    },
+    {
+      "input": "[9,9,9]",
+      "desc": "Standard: 9+9 paths",
+      "output": "198"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,0,1,2,3,4,5]",
+      "desc": "Standard: 15 nodes",
+      "output": "10472"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1]",
+      "desc": "Stress: 31 nodes 5 levels",
+      "output": "209516"
+    },
+    {
+      "input": "[9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]",
+      "desc": "Killer: 31 nines",
+      "output": "1599984"
+    }
   ]
 }

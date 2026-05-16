@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[2,1,1,2,1,2,2]\n4\n3",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "[2,2,2,3,2,2,2]"
     },
     {
       "input": "[1,2,3,4]\n2\n2",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "[2,3,3,4]"
     },
     {
       "input": "[3,1,3]\n5\n1",
-      "desc": "Edge: example3"
+      "desc": "Edge: example3",
+      "output": "[4,4,4]"
     },
     {
       "input": "[5]\n3\n0",
-      "desc": "Edge: single cell"
+      "desc": "Edge: single cell",
+      "output": "[8]"
     },
     {
       "input": "[1,1]\n1\n0",
-      "desc": "Edge: 2 cells"
+      "desc": "Edge: 2 cells",
+      "output": "[2,1]"
     },
     {
       "input": "[5,5,5]\n3\n1",
-      "desc": "Edge: flat"
+      "desc": "Edge: flat",
+      "output": "[6,6,6]"
     },
     {
       "input": "[5,4,3,2,1]\n3\n2",
-      "desc": "Edge: desc"
+      "desc": "Edge: desc",
+      "output": "[5,4,3,3,3]"
     },
     {
       "input": "[1,2,3,4,5]\n3\n2",
-      "desc": "Edge: asc"
+      "desc": "Edge: asc",
+      "output": "[3,3,3,4,5]"
     },
     {
       "input": "[3,1,2,1,3]\n5\n2",
-      "desc": "Edge: valley"
+      "desc": "Edge: valley",
+      "output": "[3,3,3,3,3]"
     },
     {
       "input": "[1,3,2,3,1]\n4\n0",
-      "desc": "Standard: mountains"
+      "desc": "Standard: mountains",
+      "output": "[3,3,3,3,2]"
     },
     {
       "input": "[0,0,0,0,0]\n5\n2",
-      "desc": "Standard: flat zeros"
+      "desc": "Standard: flat zeros",
+      "output": "[1,1,1,1,1]"
     },
     {
       "input": "[1,3,1,3,1,3,1]\n10\n3",
-      "desc": "Standard: alt"
+      "desc": "Standard: alt",
+      "output": "[3,3,4,4,3,3,3]"
     },
     {
       "input": "[5,2,4,2,5]\n10\n2",
-      "desc": "Standard: u shape"
+      "desc": "Standard: u shape",
+      "output": "[6,6,6,5,5]"
     },
     {
       "input": "[664,233,574,626,936,384,475,998,691,309,799,821,935,770,183,363,542,669,979,736,322,142,46,696,381,696,398,174,751,512,467,732,898,98,38,546,216,842,989,537,599,407,106,915,641,990,758,344,730,424,750,980,795,250,195,841,579,335,221,575,924,865,936,469,667,871,794,190,289,593,173,574,358,726,63,225,230,924,493,479,226,633,767,526,780,111,333,235,950]\n2\n2",
-      "desc": "Regenerated: diverse at position 13"
+      "desc": "Regenerated: diverse at position 13",
+      "output": "[664,235,574,626,936,384,475,998,691,309,799,821,935,770,183,363,542,669,979,736,322,142,46,696,381,696,398,174,751,512,467,732,898,98,38,546,216,842,989,537,599,407,106,915,641,990,758,344,730,424,750,980,795,250,195,841,579,335,221,575,924,865,936,469,667,871,794,190,289,593,173,574,358,726,63,225,230,924,493,479,226,633,767,526,780,111,333,235,950]"
     },
     {
       "input": "[10,5,2,3,5,10]\n20\n3",
-      "desc": "Standard: bigger valley"
+      "desc": "Standard: bigger valley",
+      "output": "[10,9,9,9,8,10]"
     },
     {
       "input": "[0,1,0,2,1,0,1,3,2,1,2,1]\n15\n5",
-      "desc": "Standard: trapping"
+      "desc": "Standard: trapping",
+      "output": "[3,3,3,3,3,3,2,3,2,1,2,1]"
     },
     {
       "input": "[1000,0,1000]\n100\n1",
-      "desc": "Standard: deep"
+      "desc": "Standard: deep",
+      "output": "[1000,100,1000]"
     },
     {
       "input": "[5,4,3,2,1,0,1,2,3,4,5]\n20\n5",
-      "desc": "Standard: V shape"
+      "desc": "Standard: V shape",
+      "output": "[5,4,5,5,5,5,4,4,4,4,5]"
     },
     {
       "input": "[100,50,30,10,5,1,5,10,30,50,100,50,30,10,5,1,5,10,30,50,100]\n100\n10",
-      "desc": "Stress: mountains"
+      "desc": "Stress: mountains",
+      "output": "[100,50,30,26,26,26,26,27,30,50,100,50,30,10,5,1,5,10,30,50,100]"
     },
     {
       "input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\n2000\n25",
-      "desc": "Killer: max volume flat"
+      "desc": "Killer: max volume flat",
+      "output": "[40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40]"
     }
   ]
 }

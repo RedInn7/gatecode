@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= k <= nums.length <= 10^5, 1 <= nums[i] <= 10^5",
   "input_format": "line1: nums (JSON array); line2: k (int)",
   "testcases": [
-    {"input": "[1,5,4,2,9,9,9]\n3", "desc": "Edge: example1"},
-    {"input": "[4,4,4]\n3", "desc": "Edge: example2"},
-    {"input": "[1]\n1", "desc": "Edge: minimum"},
-    {"input": "[1,2]\n1", "desc": "Edge: k=1"},
-    {"input": "[1,2]\n2", "desc": "Edge: k=n"},
-    {"input": "[1,1]\n2", "desc": "Edge: dup k=n"},
-    {"input": "[100000]\n1", "desc": "Edge: max value"},
-    {"input": "[1,2,3,4,5]\n3", "desc": "Edge: distinct"},
-    {"input": "[1,1,1,1,1]\n2", "desc": "Edge: all same"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: 10 inc k=5"},
-    {"input": "[10,9,8,7,6,5,4,3,2,1]\n5", "desc": "Standard: 10 desc"},
-    {"input": "[5,5,5,5,5,5,5,5,5,5]\n3", "desc": "Standard: all same"},
-    {"input": "[1,2,3,4,5,1,2,3,4,5]\n5", "desc": "Standard: 2 cycles"},
-    {"input": "[1,2,3,1,2,3,1,2,3]\n3", "desc": "Standard: 3 cycle"},
-    {"input": "[100,1,2,3,4,5,100,1,2,3]\n5", "desc": "Standard: max in window"},
-    {"input": "[1,5,2,4,3,5,2,4,1,5]\n3", "desc": "Standard: random"},
-    {"input": "[100000,99999,99998,99997,99996]\n3", "desc": "Standard: max values"},
-    {"input": "[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]\n4", "desc": "Standard: 4 cycles"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]\n10", "desc": "Stress: 50 inc k=10"},
-    {"input": "[100000,100000,100000,100000,100000,100000,100000,100000,100000,100000]\n5", "desc": "Killer: all max same"}
+    {
+      "input": "[1,5,4,2,9,9,9]\n3",
+      "desc": "Edge: example1",
+      "output": "15"
+    },
+    {
+      "input": "[4,4,4]\n3",
+      "desc": "Edge: example2",
+      "output": "0"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge: minimum",
+      "output": "1"
+    },
+    {
+      "input": "[1,2]\n1",
+      "desc": "Edge: k=1",
+      "output": "2"
+    },
+    {
+      "input": "[1,2]\n2",
+      "desc": "Edge: k=n",
+      "output": "3"
+    },
+    {
+      "input": "[1,1]\n2",
+      "desc": "Edge: dup k=n",
+      "output": "0"
+    },
+    {
+      "input": "[100000]\n1",
+      "desc": "Edge: max value",
+      "output": "100000"
+    },
+    {
+      "input": "[1,2,3,4,5]\n3",
+      "desc": "Edge: distinct",
+      "output": "12"
+    },
+    {
+      "input": "[1,1,1,1,1]\n2",
+      "desc": "Edge: all same",
+      "output": "0"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n5",
+      "desc": "Standard: 10 inc k=5",
+      "output": "40"
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "desc": "Standard: 10 desc",
+      "output": "40"
+    },
+    {
+      "input": "[5,5,5,5,5,5,5,5,5,5]\n3",
+      "desc": "Standard: all same",
+      "output": "0"
+    },
+    {
+      "input": "[1,2,3,4,5,1,2,3,4,5]\n5",
+      "desc": "Standard: 2 cycles",
+      "output": "15"
+    },
+    {
+      "input": "[1,2,3,1,2,3,1,2,3]\n3",
+      "desc": "Standard: 3 cycle",
+      "output": "6"
+    },
+    {
+      "input": "[100,1,2,3,4,5,100,1,2,3]\n5",
+      "desc": "Standard: max in window",
+      "output": "114"
+    },
+    {
+      "input": "[1,5,2,4,3,5,2,4,1,5]\n3",
+      "desc": "Standard: random",
+      "output": "12"
+    },
+    {
+      "input": "[100000,99999,99998,99997,99996]\n3",
+      "desc": "Standard: max values",
+      "output": "299997"
+    },
+    {
+      "input": "[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]\n4",
+      "desc": "Standard: 4 cycles",
+      "output": "14"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]\n10",
+      "desc": "Stress: 50 inc k=10",
+      "output": "455"
+    },
+    {
+      "input": "[100000,100000,100000,100000,100000,100000,100000,100000,100000,100000]\n5",
+      "desc": "Killer: all max same",
+      "output": "0"
+    }
   ]
 }

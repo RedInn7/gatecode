@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 10, 1 <= k <= 100",
   "input_format": "line1: n (int); line2: k (int)",
   "testcases": [
-    {"input": "1\n3", "desc": "Edge: example1"},
-    {"input": "1\n4", "desc": "Edge: example2"},
-    {"input": "3\n9", "desc": "Edge: example3"},
-    {"input": "1\n1", "desc": "Edge: n=1 k=1"},
-    {"input": "1\n2", "desc": "Edge: n=1 k=2"},
-    {"input": "2\n1", "desc": "Edge: n=2 k=1"},
-    {"input": "2\n6", "desc": "Edge: n=2 k=6 max"},
-    {"input": "3\n1", "desc": "Edge: n=3 k=1"},
-    {"input": "3\n12", "desc": "Edge: n=3 max"},
-    {"input": "4\n10", "desc": "Standard: n=4"},
-    {"input": "5\n20", "desc": "Standard: n=5"},
-    {"input": "6\n30", "desc": "Standard: n=6"},
-    {"input": "7\n50", "desc": "Standard: n=7"},
-    {"input": "8\n50", "desc": "Standard: n=8"},
-    {"input": "9\n100", "desc": "Standard: n=9 k=100"},
-    {"input": "10\n100", "desc": "Standard: n=10 k=100"},
-    {"input": "10\n1", "desc": "Standard: n=10 k=1"},
-    {"input": "5\n1", "desc": "Standard: n=5 k=1"},
-    {"input": "10\n50", "desc": "Stress: n=10 k=50"},
-    {"input": "10\n100", "desc": "Killer: n=10 k=100"}
+    {
+      "input": "1\n3",
+      "desc": "Edge: example1",
+      "output": "\"c\""
+    },
+    {
+      "input": "1\n4",
+      "desc": "Edge: example2",
+      "output": "\"\""
+    },
+    {
+      "input": "3\n9",
+      "desc": "Edge: example3",
+      "output": "\"cab\""
+    },
+    {
+      "input": "1\n1",
+      "desc": "Edge: n=1 k=1",
+      "output": "\"a\""
+    },
+    {
+      "input": "1\n2",
+      "desc": "Edge: n=1 k=2",
+      "output": "\"b\""
+    },
+    {
+      "input": "2\n1",
+      "desc": "Edge: n=2 k=1",
+      "output": "\"ab\""
+    },
+    {
+      "input": "2\n6",
+      "desc": "Edge: n=2 k=6 max",
+      "output": "\"cb\""
+    },
+    {
+      "input": "3\n1",
+      "desc": "Edge: n=3 k=1",
+      "output": "\"aba\""
+    },
+    {
+      "input": "3\n12",
+      "desc": "Edge: n=3 max",
+      "output": "\"cbc\""
+    },
+    {
+      "input": "4\n10",
+      "desc": "Standard: n=4",
+      "output": "\"babc\""
+    },
+    {
+      "input": "5\n20",
+      "desc": "Standard: n=5",
+      "output": "\"babcb\""
+    },
+    {
+      "input": "6\n30",
+      "desc": "Standard: n=6",
+      "output": "\"acbcac\""
+    },
+    {
+      "input": "7\n50",
+      "desc": "Standard: n=7",
+      "output": "\"acbabac\""
+    },
+    {
+      "input": "8\n50",
+      "desc": "Standard: n=8",
+      "output": "\"abcbabac\""
+    },
+    {
+      "input": "9\n100",
+      "desc": "Standard: n=9 k=100",
+      "output": "\"abcbabacb\""
+    },
+    {
+      "input": "10\n100",
+      "desc": "Standard: n=10 k=100",
+      "output": "\"abacbabacb\""
+    },
+    {
+      "input": "10\n1",
+      "desc": "Standard: n=10 k=1",
+      "output": "\"ababababab\""
+    },
+    {
+      "input": "5\n1",
+      "desc": "Standard: n=5 k=1",
+      "output": "\"ababa\""
+    },
+    {
+      "input": "10\n50",
+      "desc": "Stress: n=10 k=50",
+      "output": "\"ababcbabac\""
+    },
+    {
+      "input": "10\n100",
+      "desc": "Killer: n=10 k=100",
+      "output": "\"abacbabacb\""
+    }
   ]
 }
