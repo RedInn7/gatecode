@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= word.length <= 50, lowercase + uppercase letters",
   "input_format": "line1: word (raw string)",
   "testcases": [
-    {"input": "aaAbcBC", "desc": "Edge: example1"},
-    {"input": "abc", "desc": "Edge: example2 no upper"},
-    {"input": "abBCab", "desc": "Edge: example3"},
-    {"input": "a", "desc": "Edge: n=1 lower"},
-    {"input": "A", "desc": "Edge: n=1 upper"},
-    {"input": "aA", "desc": "Edge: minimum special"},
-    {"input": "abAB", "desc": "Edge: 2 special"},
-    {"input": "ABCabc", "desc": "Edge: 3 special"},
-    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Edge: all lower"},
-    {"input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "desc": "Edge: all upper"},
-    {"input": "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ", "desc": "Edge: max length all special"},
-    {"input": "abcABC", "desc": "Standard: 3 distinct chars special"},
-    {"input": "AaAaAaAaAa", "desc": "Edge: only A special"},
-    {"input": "abcdefABCDEF", "desc": "Standard: 6 special"},
-    {"input": "AAAAAaaaaa", "desc": "Edge: 1 special"},
-    {"input": "AbCdEfGh", "desc": "Edge: alternating no special"},
-    {"input": "AaBbCcDdEeFfGgHhIiJjKk", "desc": "Standard: pairs"},
-    {"input": "xxxxxYYYYYzzzzzWWWWW", "desc": "Standard: 2 special (x not, but y? no upper Y exists; x lower only)"},
-    {"input": "HelloWorld", "desc": "Standard: H,W upper only; l,o lower; no special"},
-    {"input": "PYthON", "desc": "Edge: short word mixed case"}
+    {
+      "input": "aaAbcBC",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: example2 no upper"
+    },
+    {
+      "input": "\"ugn\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"yhco\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"u\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "aA",
+      "desc": "Edge: minimum special"
+    },
+    {
+      "input": "abAB",
+      "desc": "Edge: 2 special"
+    },
+    {
+      "input": "ABCabc",
+      "desc": "Edge: 3 special"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "desc": "Edge: all lower"
+    },
+    {
+      "input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "desc": "Edge: all upper"
+    },
+    {
+      "input": "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ",
+      "desc": "Edge: max length all special"
+    },
+    {
+      "input": "abcABC",
+      "desc": "Standard: 3 distinct chars special"
+    },
+    {
+      "input": "AaAaAaAaAa",
+      "desc": "Edge: only A special"
+    },
+    {
+      "input": "abcdefABCDEF",
+      "desc": "Standard: 6 special"
+    },
+    {
+      "input": "AAAAAaaaaa",
+      "desc": "Edge: 1 special"
+    },
+    {
+      "input": "AbCdEfGh",
+      "desc": "Edge: alternating no special"
+    },
+    {
+      "input": "AaBbCcDdEeFfGgHhIiJjKk",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "xxxxxYYYYYzzzzzWWWWW",
+      "desc": "Standard: 2 special (x not, but y? no upper Y exists; x lower only)"
+    },
+    {
+      "input": "HelloWorld",
+      "desc": "Standard: H,W upper only; l,o lower; no special"
+    },
+    {
+      "input": "\"jbhjsxxhsstgjz\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
