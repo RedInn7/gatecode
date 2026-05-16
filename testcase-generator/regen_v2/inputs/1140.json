@@ -1,0 +1,88 @@
+{
+  "pid": 1140,
+  "slug": "special-binary-string",
+  "inferred_constraints": "0 <= s.length <= 50",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"2\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"s5\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"deada\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"yrkkry\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"so7ycltvryft16\"",
+      "desc": "Standard: len=14"
+    },
+    {
+      "input": "\"crf94bk69338mfba95pko1\"",
+      "desc": "Standard: len=22"
+    },
+    {
+      "input": "\"nkejt0qd\"",
+      "desc": "Standard: len=8"
+    },
+    {
+      "input": "\"tx620l8rmyvorq7vx793557myo1gsed25bb1m\"",
+      "desc": "Standard: len=37"
+    },
+    {
+      "input": "\"hcw8i0fgf6o3ft4a0m6sf6bmyo4gkjlh5cwvj1\"",
+      "desc": "Standard: len=38"
+    },
+    {
+      "input": "\"ox2c1gm9rfcddd5hs5xryji8q6yj2qouasmm\"",
+      "desc": "Standard: len=36"
+    },
+    {
+      "input": "\"3cgowvkwza1bbp3vre127ipyig48wez9d\"",
+      "desc": "Standard: len=33"
+    },
+    {
+      "input": "\"p5nci4acwrzq41xzh7m232pgv4lit7z7tfw\"",
+      "desc": "Standard: len=35"
+    },
+    {
+      "input": "\"t4nmaa1mugexxdqbp0434qotk7jy523j00f2d6k9eltlgrzsat\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"363t64rm7qjap1q16r89fdz5cj640aijcdlwnl1c6r5w5z0vs4\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"18u3i706t1fnzhr7iolxfabxgw0q3rsmzzyjqxcmff6wfxbg2v\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"hafsn4aezdu82vuweoikzpbw39s3prjx6b2rwxctdjo0naidho\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}

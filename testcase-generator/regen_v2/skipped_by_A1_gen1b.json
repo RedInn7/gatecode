@@ -79,6 +79,16 @@
       "pid": 1145,
       "slug": "change-the-root-of-a-binary-tree",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1135,
+      "slug": "maximum-profit-from-trading-stocks-with-discounts",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1132,
+      "slug": "find-the-original-typed-string-i",
+      "reason": "ACM mode problem"
     }
   ]
 }
