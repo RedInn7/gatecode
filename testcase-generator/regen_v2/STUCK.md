@@ -661,3 +661,20 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=10000.0)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:11.862479
+
+## PID 268 (find-nth-smallest-integer-with-k-one-bits)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=1125899906842624.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:14.035687
+
+## PID 269 (maximum-good-subarray-sum)
+Stuck after 3 regeneration attempts. Final issues:
+- Array length=1 < min=2 (constraint: 2 <= len <= 100000.0)
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:14.054403
+
+## PID 270 (isomorphic-strings)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=50000.0)
+Audited at: 2026-05-16T15:37:14.054986
