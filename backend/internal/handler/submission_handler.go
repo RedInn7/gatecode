@@ -37,11 +37,7 @@ func (h *SubmissionHandler) RunCode(c *gin.Context) {
 
 	result, err := h.judgeSvc.RunCode(slug, req.Language, req.Code)
 	if err != nil {
-		status := http.StatusInternalServerError
-		if strings.Contains(err.Error(), "currently unavailable") {
-			status = http.StatusForbidden
-		}
-		c.JSON(status, gin.H{"error": err.Error()})
+		c.JSON(judgeErrorStatus(err), gin.H{"error": err.Error()})
 		return
 	}
 
@@ -68,13 +64,29 @@ func (h *SubmissionHandler) JudgeCode(c *gin.Context) {
 
 	result, err := h.judgeSvc.JudgeCode(slug, req.Language, req.Code, req.RunAll)
 	if err != nil {
-		status := http.StatusInternalServerError
-		if strings.Contains(err.Error(), "currently unavailable") {
-			status = http.StatusForbidden
-		}
-		c.JSON(status, gin.H{"error": err.Error()})
+		c.JSON(judgeErrorStatus(err), gin.H{"error": err.Error()})
 		return
 	}
 
 	c.JSON(http.StatusOK, result)
+}
+
+// judgeErrorStatus maps a service-layer judge/run error to an HTTP status.
+// The service layer returns plain fmt.Errorf strings, so we substring-match;
+// once the service is refactored to typed sentinel errors this should switch
+// to errors.Is.
+func judgeErrorStatus(err error) int {
+	msg := err.Error()
+	switch {
+	case strings.Contains(msg, "problem not found"),
+		strings.Contains(msg, "record not found"):
+		return http.StatusNotFound
+	case strings.Contains(msg, "currently unavailable"):
+		return http.StatusForbidden
+	case strings.Contains(msg, "no test cases"),
+		strings.Contains(msg, "failed to parse test cases"):
+		return http.StatusUnprocessableEntity
+	default:
+		return http.StatusInternalServerError
+	}
 }

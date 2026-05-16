@@ -1,13 +1,15 @@
 package main
 
 import (
+	"net/http"
+	"os"
+
 	api "github.com/RedInn7/gatecode/backend/internal/handler"
 	"github.com/RedInn7/gatecode/backend/internal/model"
 	"github.com/RedInn7/gatecode/backend/internal/repository"
 	"github.com/RedInn7/gatecode/backend/internal/service"
 	"github.com/RedInn7/gatecode/backend/pkg/database"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 func corsMiddleware() gin.HandlerFunc {
@@ -50,5 +52,10 @@ func main() {
 		v1.POST("/problems/:slug/judge", submissionHandler.JudgeCode)
 	}
 
-	r.Run(":8081")
+	// Port can be overridden via the PORT env var (used by QA harness / CI).
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8081"
+	}
+	r.Run(":" + port)
 }

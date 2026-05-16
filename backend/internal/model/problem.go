@@ -2,21 +2,24 @@ package model
 
 import "encoding/json"
 
+// Problem mirrors the `problems` table. GORM tags pin the exact column
+// type so AutoMigrate is a no-op against the production schema instead of
+// silently widening types (e.g. enum → longtext) or dropping NOT NULL.
 type Problem struct {
 	ID                 uint64          `gorm:"primaryKey;autoIncrement" json:"id"`
-	FrontendQuestionID int             `gorm:"column:frontend_question_id;uniqueIndex" json:"frontend_question_id"`
-	Title              string          `gorm:"column:title" json:"title"`
-	Slug               string          `gorm:"column:slug;uniqueIndex" json:"slug"`
-	Difficulty         string          `gorm:"column:difficulty" json:"difficulty"`
-	Content            string          `gorm:"column:content" json:"content"`
+	FrontendQuestionID int             `gorm:"column:frontend_question_id;type:bigint;uniqueIndex" json:"frontend_question_id"`
+	Title              string          `gorm:"column:title;type:longtext" json:"title"`
+	Slug               string          `gorm:"column:slug;type:varchar(200);not null;uniqueIndex" json:"slug"`
+	Difficulty         string          `gorm:"column:difficulty;type:enum('Easy','Medium','Hard');not null" json:"difficulty"`
+	Content            string          `gorm:"column:content;type:text" json:"content"`
 	TemplateCode       json.RawMessage `gorm:"column:template_code;type:json" json:"template_code"`
-	IsVipOnly          bool            `gorm:"column:is_vip_only" json:"is_vip_only"`
-	IsACMMode          bool            `gorm:"column:is_acm_mode" json:"is_acm_mode"`
+	IsVipOnly          bool            `gorm:"column:is_vip_only;type:tinyint(1);default:0" json:"is_vip_only"`
+	IsACMMode          bool            `gorm:"column:is_acm_mode;type:tinyint(1);default:0" json:"is_acm_mode"`
 	TestCases          json.RawMessage `gorm:"column:test_cases;type:json" json:"test_cases"`
-	TimeLimitMs        int             `gorm:"column:time_limit_ms;default:0" json:"time_limit_ms"`
-	MemoryLimitMB      int             `gorm:"column:memory_limit_mb;default:0" json:"memory_limit_mb"`
-	IsSpj              bool            `gorm:"column:is_spj;default:false" json:"is_spj"`
-	JudgeEnabled       bool            `gorm:"column:judge_enabled;default:true" json:"judge_enabled"`
+	TimeLimitMs        int             `gorm:"column:time_limit_ms;type:int;not null;default:0" json:"time_limit_ms"`
+	MemoryLimitMB      int             `gorm:"column:memory_limit_mb;type:int;not null;default:0" json:"memory_limit_mb"`
+	IsSpj              bool            `gorm:"column:is_spj;type:tinyint(1);default:0" json:"is_spj"`
+	JudgeEnabled       bool            `gorm:"column:judge_enabled;type:tinyint(1);default:1" json:"judge_enabled"`
 	Solutions          json.RawMessage `gorm:"column:solutions;type:json" json:"solutions"`
 	Editorial          *string         `gorm:"column:editorial;type:mediumtext" json:"editorial"`
 }
