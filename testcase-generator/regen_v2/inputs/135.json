@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"hlfgiexcok\"",
+      "input": "\"svvvap\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: single long alternating-case word"
     },
     {
-      "input": "\"ggdflgzuktymzhpgwpzpeecmtjliwtzxydeirlbxbzgglywhxiuzxmrqrkum\"",
+      "input": "\"fairjbezzynyusjuxttunnnuhwhlxopfiqxollcbqosizjrpzlsfneulogyy\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
