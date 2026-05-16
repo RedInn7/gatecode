@@ -204,6 +204,26 @@
       "pid": 2404,
       "slug": "design-an-atm-machine",
       "reason": "design class ATM with deposit/withdraw method-call sequence; stateful"
+    },
+    {
+      "pid": 2407,
+      "slug": "create-object-from-two-arrays",
+      "reason": "JavaScript-only object construction from arrays"
+    },
+    {
+      "pid": 2423,
+      "slug": "function-composition",
+      "reason": "JavaScript-only function composition takes function array"
+    },
+    {
+      "pid": 2428,
+      "slug": "print-zero-even-odd",
+      "reason": "multithreaded synchronization problem (3 threads zero/even/odd)"
+    },
+    {
+      "pid": 2446,
+      "slug": "design-circular-queue",
+      "reason": "design class MyCircularQueue with stateful enQueue/deQueue/Front/Rear method-call sequence"
     }
   ]
 }

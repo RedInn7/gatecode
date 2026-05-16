@@ -1,0 +1,28 @@
+{
+  "pid": 2415,
+  "slug": "height-of-special-binary-tree",
+  "inferred_constraints": "1 <= n <= 10^5; nodes numbered 1 to n; leaves form circular list as described",
+  "input_format": "single line: root (JSON level-order array with null)",
+  "testcases": [
+    {"input": "[1,2,3,null,null,4,5]", "desc": "Standard example 1"},
+    {"input": "[1]", "desc": "Edge: single node"},
+    {"input": "[1,2]", "desc": "Edge: root with left leaf"},
+    {"input": "[1,null,2]", "desc": "Edge: root with right leaf"},
+    {"input": "[1,2,3]", "desc": "Edge: balanced 3"},
+    {"input": "[5,3,7,2,4,6,8]", "desc": "BST-like 7"},
+    {"input": "[10,5,15]", "desc": "Small"},
+    {"input": "[10,5,15,3,7,12,20]", "desc": "Balanced 7"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard balanced"},
+    {"input": "[1,2,3,4,5,null,null,8,9]", "desc": "Deeper left"},
+    {"input": "[10,8,12,5,9,null,null,3,6]", "desc": "Mixed"},
+    {"input": "[1,2,3,4,null,null,5,null,6]", "desc": "Asymmetric depths"},
+    {"input": "[20,10,30,5,15,25,35,1,7,12,17,22,27,32,40]", "desc": "BST 15"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Full 15"},
+    {"input": "[100,50,150,25,75,125,175,12,37,62,87,112,137,162,187]", "desc": "Full 15 mid"},
+    {"input": "[5,3,8,1,4,7,9,null,2,null,null,6]", "desc": "Mixed positions"},
+    {"input": "[7,3,9]", "desc": "Small 3 with cycle"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "10 nodes"},
+    {"input": "[15,7,23,3,11,19,27,1,5,9,13,17,21,25,29]", "desc": "BST 15"},
+    {"input": "[50,25,75,10,40,60,90,5,15,30,45,55,65,85,95,1,7,12,18,22,28,33,42,47,52,57,62,67,82,87,92,97]", "desc": "32 nodes"}
+  ]
+}

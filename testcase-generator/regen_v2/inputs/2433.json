@@ -1,0 +1,28 @@
+{
+  "pid": 2433,
+  "slug": "minimum-flips-in-binary-tree-to-get-result",
+  "inferred_constraints": "1 <= n <= 10^5; leaf nodes 0/1; non-leaf 2/3/4/5; result is boolean",
+  "input_format": "line1: root (JSON level-order array with null); line2: result (true/false)",
+  "testcases": [
+    {"input": "[3,5,4,2,null,1,1,1,0]\ntrue", "desc": "Standard example 1"},
+    {"input": "[0]\nfalse", "desc": "Standard example 2 - 0 false trivial"},
+    {"input": "[1]\ntrue", "desc": "Edge: leaf 1, want true (0 flips)"},
+    {"input": "[0]\ntrue", "desc": "Edge: leaf 0, want true (1 flip)"},
+    {"input": "[1]\nfalse", "desc": "Edge: leaf 1, want false (1 flip)"},
+    {"input": "[2,0,1]\ntrue", "desc": "OR of 0,1"},
+    {"input": "[2,0,0]\ntrue", "desc": "OR of 0,0 wants true (1 flip)"},
+    {"input": "[3,0,1]\ntrue", "desc": "AND of 0,1 wants true"},
+    {"input": "[3,1,1]\ntrue", "desc": "AND of 1,1 wants true (0)"},
+    {"input": "[4,0,1]\ntrue", "desc": "XOR of 0,1 wants true"},
+    {"input": "[4,1,1]\ntrue", "desc": "XOR of 1,1 wants true"},
+    {"input": "[5,1]\ntrue", "desc": "NOT of 1 wants true"},
+    {"input": "[5,0]\ntrue", "desc": "NOT of 0 wants true"},
+    {"input": "[2,3,4,0,1,1,0]\ntrue", "desc": "Mixed tree"},
+    {"input": "[3,2,2,0,1,1,0]\nfalse", "desc": "Complex AND of 2 ORs"},
+    {"input": "[2,3,4,0,0,1,1]\nfalse", "desc": "Multiple options"},
+    {"input": "[5,4,null,0,1]\ntrue", "desc": "NOT of XOR"},
+    {"input": "[3,5,5,1,null,0]\ntrue", "desc": "AND of NOTs"},
+    {"input": "[2,1,1]\ntrue", "desc": "OR of 1,1"},
+    {"input": "[4,2,3,0,1,1,0]\ntrue", "desc": "XOR of OR,AND"}
+  ]
+}

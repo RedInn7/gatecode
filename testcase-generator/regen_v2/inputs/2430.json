@@ -1,0 +1,28 @@
+{
+  "pid": 2430,
+  "slug": "split-array-into-fibonacci-sequence",
+  "inferred_constraints": "1 <= num.length <= 200; num consists of digits; each piece fits in 32-bit signed integer",
+  "input_format": "single line: num (quoted string)",
+  "testcases": [
+    {"input": "\"1101111\"", "desc": "Standard example 1"},
+    {"input": "\"112358130\"", "desc": "Standard example 2 (impossible)"},
+    {"input": "\"0123\"", "desc": "Standard example 3 leading zero"},
+    {"input": "\"123\"", "desc": "Edge: min length"},
+    {"input": "\"112358\"", "desc": "1,1,2,3,5,8 Fibonacci"},
+    {"input": "\"11235\"", "desc": "1,1,2,3,5"},
+    {"input": "\"000\"", "desc": "Multiple zeros"},
+    {"input": "\"0000\"", "desc": "4 zeros"},
+    {"input": "\"11\"", "desc": "Too short"},
+    {"input": "\"1011\"", "desc": "1,0,1,1"},
+    {"input": "\"23459\"", "desc": "2,3,4 - no fib"},
+    {"input": "\"199100\"", "desc": "Has leading zero issue (99100? no)"},
+    {"input": "\"01122\"", "desc": "Leading 0 invalid"},
+    {"input": "\"112358132134\"", "desc": "Fib 1..34"},
+    {"input": "\"100100200\"", "desc": "100,100,200"},
+    {"input": "\"539834657215398346785398346991079669377161950407626991734534318677529701785098211336528511\"", "desc": "Long Fib-like"},
+    {"input": "\"214748364721474836472147483647\"", "desc": "Numbers near INT_MAX repeated"},
+    {"input": "\"50505\"", "desc": "5,0,5,0,5"},
+    {"input": "\"11235813213455\"", "desc": "Fibonacci 1-55"},
+    {"input": "\"01\"", "desc": "Too short with leading 0"}
+  ]
+}

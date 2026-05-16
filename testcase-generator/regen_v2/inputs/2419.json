@@ -1,0 +1,28 @@
+{
+  "pid": 2419,
+  "slug": "decode-ways-ii",
+  "inferred_constraints": "1 <= s.length <= 10^5; s consists of digits and '*'",
+  "input_format": "single line: s (quoted string)",
+  "testcases": [
+    {"input": "\"*\"", "desc": "Standard example 1"},
+    {"input": "\"1*\"", "desc": "Standard example 2"},
+    {"input": "\"2*\"", "desc": "Standard example 3"},
+    {"input": "\"1\"", "desc": "Edge: single digit"},
+    {"input": "\"0\"", "desc": "Edge: invalid 0"},
+    {"input": "\"10\"", "desc": "Edge: 10"},
+    {"input": "\"26\"", "desc": "Edge: 26"},
+    {"input": "\"27\"", "desc": "Edge: 27 (only as 2,7)"},
+    {"input": "\"**\"", "desc": "Two stars"},
+    {"input": "\"***\"", "desc": "Three stars"},
+    {"input": "\"1*1\"", "desc": "Star in middle"},
+    {"input": "\"123\"", "desc": "Standard 3 digits"},
+    {"input": "\"100\"", "desc": "With 100"},
+    {"input": "\"11106\"", "desc": "Standard example mapping"},
+    {"input": "\"11*11\"", "desc": "Star middle"},
+    {"input": "\"*1*2*\"", "desc": "Alternating"},
+    {"input": "\"1234567890\"", "desc": "10 digits no star"},
+    {"input": "\"**********\"", "desc": "10 stars"},
+    {"input": "\"06\"", "desc": "Edge: leading zero"},
+    {"input": "\"1*1*1*1*1*1*1*1*1*1*\"", "desc": "20 alt digit-star"}
+  ]
+}

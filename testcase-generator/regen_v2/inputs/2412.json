@@ -1,0 +1,28 @@
+{
+  "pid": 2412,
+  "slug": "maximum-number-of-subsequences-after-one-inserting",
+  "inferred_constraints": "1 <= s.length <= 10^5; s consists of uppercase English letters",
+  "input_format": "single line: s (quoted string)",
+  "testcases": [
+    {"input": "\"LMCT\"", "desc": "Standard example 1"},
+    {"input": "\"LCCT\"", "desc": "Standard example 2"},
+    {"input": "\"L\"", "desc": "Standard example 3"},
+    {"input": "\"LCT\"", "desc": "Edge: exact"},
+    {"input": "\"CT\"", "desc": "Edge: missing L"},
+    {"input": "\"LC\"", "desc": "Edge: missing T"},
+    {"input": "\"LT\"", "desc": "Edge: missing C"},
+    {"input": "\"LLLCCCTTT\"", "desc": "Many of each"},
+    {"input": "\"TCLT\"", "desc": "Wrong order plus T"},
+    {"input": "\"LLLCCCTTTLLLCCCTTT\"", "desc": "Double pattern"},
+    {"input": "\"AAAAA\"", "desc": "All non-LCT"},
+    {"input": "\"LCTLCTLCT\"", "desc": "Repeat LCT"},
+    {"input": "\"TCLT\"", "desc": "Inverse order with T"},
+    {"input": "\"LLLLLLLLLLCCCCCCCCCCTTTTTTTTTT\"", "desc": "10 of each"},
+    {"input": "\"LCLCTCLCTC\"", "desc": "Mixed"},
+    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Alphabet"},
+    {"input": "\"LCTABCDEF\"", "desc": "LCT + others"},
+    {"input": "\"XLCTY\"", "desc": "Surrounded by other"},
+    {"input": "\"LLLCCCTTTABCDEF\"", "desc": "Plus other chars"},
+    {"input": "\"LLLLLLLLLLLLLLLLLLLLCCCCCCCCCCCCCCCCCCCCTTTTTTTTTTTTTTTTTTTT\"", "desc": "20 each"}
+  ]
+}

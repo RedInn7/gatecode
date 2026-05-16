@@ -1,0 +1,28 @@
+{
+  "pid": 2438,
+  "slug": "count-of-substrings-containing-every-vowel-and-k-consonants-ii",
+  "inferred_constraints": "5 <= word.length <= 2*10^5; lowercase letters; 0 <= k <= word.length - 5",
+  "input_format": "line1: word (quoted string); line2: k",
+  "testcases": [
+    {"input": "\"aeioqq\"\n1", "desc": "Standard example 1"},
+    {"input": "\"aeiou\"\n0", "desc": "Standard example 2"},
+    {"input": "\"ieaouqqieaouqq\"\n1", "desc": "Standard example 3"},
+    {"input": "\"aeioua\"\n0", "desc": "Edge: extra vowel"},
+    {"input": "\"aaaaa\"\n0", "desc": "Edge: not all vowels (no e,i,o,u)"},
+    {"input": "\"aeiou\"\n0", "desc": "Exact vowels"},
+    {"input": "\"aeioub\"\n1", "desc": "Vowels + 1 consonant"},
+    {"input": "\"bcdfg\"\n5", "desc": "All consonants - no vowel set"},
+    {"input": "\"uoiea\"\n0", "desc": "Reverse vowels"},
+    {"input": "\"aeiouaeiouaeiou\"\n0", "desc": "Multiple full vowel sets"},
+    {"input": "\"aeioubcdef\"\n5", "desc": "Vowels + 5 cons"},
+    {"input": "\"bcdefaeiou\"\n5", "desc": "Cons then vowels"},
+    {"input": "\"abcdefghij\"\n5", "desc": "Mixed 10"},
+    {"input": "\"aeiouaeiou\"\n0", "desc": "Two vowel groups"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n21", "desc": "All letters"},
+    {"input": "\"aeioubcdfghjklmnpqrstvwxyz\"\n21", "desc": "Vowels then cons"},
+    {"input": "\"aabcdeiou\"\n4", "desc": "Vowels with some cons"},
+    {"input": "\"aaaaabbbbb\"\n0", "desc": "No e,i,o,u"},
+    {"input": "\"aeiouaeiouaeiouaeiouaeiouaeiou\"\n0", "desc": "30 of aeiou"},
+    {"input": "\"qqqaeiouqqqaeiouqqqaeiou\"\n3", "desc": "Pattern with 3 q's"}
+  ]
+}

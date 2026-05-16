@@ -1,0 +1,28 @@
+{
+  "pid": 2409,
+  "slug": "minimum-deletions-to-make-character-frequencies-unique",
+  "inferred_constraints": "1 <= s.length <= 10^5; lowercase letters",
+  "input_format": "single line: s (quoted string)",
+  "testcases": [
+    {"input": "\"aab\"", "desc": "Standard example 1"},
+    {"input": "\"aaabbbcc\"", "desc": "Standard example 2"},
+    {"input": "\"ceabaacb\"", "desc": "Standard example 3"},
+    {"input": "\"a\"", "desc": "Edge: n=1"},
+    {"input": "\"aa\"", "desc": "Edge: 2 same"},
+    {"input": "\"ab\"", "desc": "Edge: 2 distinct (both freq 1, must delete one)"},
+    {"input": "\"aaa\"", "desc": "All same"},
+    {"input": "\"abcdef\"", "desc": "6 distinct freq 1 each"},
+    {"input": "\"aabbcc\"", "desc": "3 pairs"},
+    {"input": "\"aabbcccdd\"", "desc": "Mixed freqs"},
+    {"input": "\"aaabbbccc\"", "desc": "Three triples"},
+    {"input": "\"abcabcabc\"", "desc": "3x 3 chars"},
+    {"input": "\"aaaaaaaaaa\"", "desc": "10 a's"},
+    {"input": "\"abcdefghij\"", "desc": "10 distinct"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "All 26 distinct"},
+    {"input": "\"aaaabbbbccccdddd\"", "desc": "4 fours"},
+    {"input": "\"aabbccddeeffgghhiijjkkllmmnnoopp\"", "desc": "16 pairs"},
+    {"input": "\"abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc\"", "desc": "48 chars 3 groups equal"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "50 a's"},
+    {"input": "\"abacadaeafagahaiajakalamanaopqrstuvwxyz\"", "desc": "Mixed pattern"}
+  ]
+}
