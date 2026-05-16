@@ -2,14 +2,14 @@
   "pid": 604,
   "slug": "find-nearest-right-node-in-binary-tree",
   "inferred_constraints": "Number of nodes in [1, 1e5]; 1 <= Node.val <= 1e5; values distinct; u exists in tree",
-  "input_format": "line1: root (JSON array level-order with nulls); line2: u (int) — the value of the target node",
+  "input_format": "line1: root (JSON array level-order with nulls); line2: u (int) \u2014 the value of the target node",
   "testcases": [
     {
-      "input": "[1,2,3,null,4,5,6]\n4",
+      "input": "[1, 2, 3, null, 4, 5, 6]\n4",
       "desc": "Edge: example1"
     },
     {
-      "input": "[3,null,4,2]\n2",
+      "input": "[3, null, 4, 2]\n2",
       "desc": "Edge: example2 rightmost null"
     },
     {
@@ -17,71 +17,71 @@
       "desc": "Edge: single node"
     },
     {
-      "input": "[974,944,920,916,889,869,835,773,739,706,688,684,649,646,493,451,402,396,390,373,352,301,292,277,244,240,206,178,132,120,112,101,83,63,62,50,41,-11,-92,-101,-102,-108,-116,-131,-164,-171,-175,-180,-199,-208,-236,-264,-314,-428,-429,-506,-525,-559,-572,-592,-618,-632,-650,-652,-670,-675,-705,-709,-733,-769,-801,-825,-826,-839,-842,-849,-881,-893,-898,-989]\n1",
+      "input": "[974, 944, 920, 916, 889, 869, 835, 773, 739, 706, 688, 684, 649, 646, 493, 451, 402, 396, 390, 373, 352, 301, 292, 277, 244, 240, 206, 178, 132, 120, 112, 101, 83, 63, 62, 50, 41, 22005, 94898, 21896, 5769, 54485, 67175, 14115, 42880, 42295, 73670, 82155, 24845, 81878, 27148, 71003, 51782, 56084, 15835, 30463, 28021, 13879, 46738, 42385, 22757, 1966, 52710, 85721, 41451, 1571, 51012, 27888, 60133, 28849, 8653, 86241, 36498, 85190, 81778, 48363, 5760, 8826, 28648, 53884]\n974",
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "[-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508,-508]\n2",
+      "input": "[39523, 78495, 65481, 13345, 93393, 70279, 74607, 22474, 33023, 12419, 78626, 42514, 82690, 91268, 50931, 88854, 90928, 17424, 43523, 22981, 83278, 99840, 90129, 41677, 87343]\n39523",
       "desc": "Edge: all-equal elements"
     },
     {
-      "input": "[1,2,3]\n3",
+      "input": "[1, 2, 3]\n3",
       "desc": "Edge: rightmost"
     },
     {
-      "input": "[1,2,3]\n1",
+      "input": "[1, 2, 3]\n1",
       "desc": "Edge: root rightmost"
     },
     {
-      "input": "[5,3,7,1,4,6,8]\n3",
+      "input": "[5, 3, 7, 1, 4, 6, 8]\n3",
       "desc": "Standard: BST root left"
     },
     {
-      "input": "[5,3,7,1,4,6,8]\n1",
+      "input": "[5, 3, 7, 1, 4, 6, 8]\n1",
       "desc": "Standard: deep level"
     },
     {
-      "input": "[5,3,7,1,4,6,8]\n4",
+      "input": "[5, 3, 7, 1, 4, 6, 8]\n4",
       "desc": "Standard: middle child"
     },
     {
-      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n4",
+      "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\n4",
       "desc": "Standard: depth 3 perfect"
     },
     {
-      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n15",
+      "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\n15",
       "desc": "Standard: rightmost"
     },
     {
-      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n8",
+      "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\n8",
       "desc": "Standard: deepest leftmost"
     },
     {
-      "input": "[1,2,3,null,4,null,5,6]\n4",
+      "input": "[1, 2, 3, null, 4, null, 5, 6]\n4",
       "desc": "Standard: sparse tree"
     },
     {
-      "input": "[10,5,15,3,7,12,18,1,4,6,8,11,13,17,20]\n6",
+      "input": "[10, 5, 15, 3, 7, 12, 18, 1, 4, 6, 8, 11, 13, 17, 20]\n6",
       "desc": "Standard: BST with values"
     },
     {
-      "input": "[10,5,15,3,7,12,18,1,4,6,8,11,13,17,20]\n13",
+      "input": "[10, 5, 15, 3, 7, 12, 18, 1, 4, 6, 8, 11, 13, 17, 20]\n13",
       "desc": "Standard: BST deeper"
     },
     {
-      "input": "[1,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9,null,10]\n5",
+      "input": "[1, 2, null, 3, null, 4, null, 5, null, 6, null, 7, null, 8, null, 9, null, 10]\n5",
       "desc": "Stress: left-skewed"
     },
     {
-      "input": "[1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9,null,10]\n5",
+      "input": "[1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7, null, 8, null, 9, null, 10]\n5",
       "desc": "Stress: right-skewed"
     },
     {
-      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]\n22",
+      "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]\n22",
       "desc": "Stress: depth 4 perfect"
     },
     {
-      "input": "[100,1,99999]\n1",
+      "input": "[100, 1, 99999]\n1",
       "desc": "Special: extreme values killer"
     }
   ]

@@ -5,15 +5,15 @@
   "input_format": "line1: root (JSON tree array); line2: val (int)",
   "testcases": [
     {
-      "input": "[4,1,3,null,null,2]\n5",
+      "input": "[4, 1, 3, null, null, 2]\n5",
       "desc": "Edge: example1"
     },
     {
-      "input": "[5,2,4,null,1]\n3",
+      "input": "[5, 2, 4, null, 1]\n3",
       "desc": "Edge: example2"
     },
     {
-      "input": "[-995,-947,-897,-876,-850,-758,-737,-670,-573,-475,-472,-430,-401,-388,-344,-218,-125,-124,-33,-16,-1,26,220,241,287,364,483,567,726,828,853,903,926,957,963,984]\n1",
+      "input": "[73, 92, 41, 28, 84, 64, 51, 83, 59, 19, 34, 18, 32, 96, 72, 69, 88, 30, 75, 55, 85, 26, 52, 47, 29, 94, 66, 8, 12, 97, 7, 15, 20, 81, 21, 68]\n1",
       "desc": "Regenerated: monotone_inc at position 2"
     },
     {
@@ -21,7 +21,7 @@
       "desc": "Edge: single node, larger val"
     },
     {
-      "input": "[21,21,21,21,21,21,21,21,21,21,21]\n5",
+      "input": "[21, 74, 99, 50, 88, 26, 96, 37, 7, 58, 8]\n5",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -33,55 +33,55 @@
       "desc": "Edge: tiny root max val"
     },
     {
-      "input": "[10,5,null]\n7",
+      "input": "[10, 5, null]\n7",
       "desc": "Edge: 2-node tree val between"
     },
     {
-      "input": "[10,null,5]\n7",
+      "input": "[10, null, 5]\n7",
       "desc": "Edge: root with right child"
     },
     {
-      "input": "[10,5,8]\n6",
+      "input": "[10, 5, 8]\n6",
       "desc": "Standard: 3-node balanced"
     },
     {
-      "input": "[10,5,8]\n9",
+      "input": "[10, 5, 8]\n9",
       "desc": "Standard: 3-node val between root and right"
     },
     {
-      "input": "[10,5,8]\n4",
+      "input": "[10, 5, 8]\n4",
       "desc": "Standard: append small leaf"
     },
     {
-      "input": "[15,10,12,5,null,11,null]\n20",
+      "input": "[15, 10, 12, 5, null, 11, null]\n20",
       "desc": "Standard: val becomes new root"
     },
     {
-      "input": "[15,10,12,5,null,11,null]\n13",
+      "input": "[15, 10, 12, 5, null, 11, null]\n13",
       "desc": "Standard: val between"
     },
     {
-      "input": "[50,30,40,10,null,35,null,5,null]\n45",
+      "input": "[50, 30, 40, 10, null, 35, null, 5, null]\n45",
       "desc": "Standard: deeper tree val between"
     },
     {
-      "input": "[50,30,40,10,null,35,null,5,null]\n3",
+      "input": "[50, 30, 40, 10, null, 35, null, 5, null]\n3",
       "desc": "Standard: val smallest, becomes rightmost leaf"
     },
     {
-      "input": "[100,99,98,97,96,95,94,93,92,91]\n50",
+      "input": "[100, 99, 98, 97, 96, 95, 94, 93, 92, 91]\n50",
       "desc": "Standard: descending list val smaller"
     },
     {
-      "input": "[80,70,90,60,75,85,95]\n100",
+      "input": "[80, 70, 90, 60, 75, 85, 95]\n100",
       "desc": "Standard: val 100 becomes new root"
     },
     {
-      "input": "[100,99,98,97,96,95,94,93,92,91]\n90",
+      "input": "[100, 99, 98, 97, 96, 95, 94, 93, 92, 91]\n90",
       "desc": "Stress: val below all"
     },
     {
-      "input": "[50,25,75,10,30,60,90,5,15,28,40,55,65,80,95]\n45",
+      "input": "[50, 25, 75, 10, 30, 60, 90, 5, 15, 28, 40, 55, 65, 80, 95]\n45",
       "desc": "Stress: 15-node BST val between"
     }
   ]
