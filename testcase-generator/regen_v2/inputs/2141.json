@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums.length <= 10^5, 0 <= nums[i] <= 10^9",
   "input_format": "single line: nums (JSON array)",
   "testcases": [
-    {"input": "[1,2,3]", "desc": "Standard: example 1"},
-    {"input": "[7,4,6]", "desc": "Standard: example 2"},
-    {"input": "[1]", "desc": "Edge: n=1"},
-    {"input": "[0]", "desc": "Edge: zero"},
-    {"input": "[0,0,0]", "desc": "Edge: all zeros"},
-    {"input": "[1000000000]", "desc": "Edge: max single"},
-    {"input": "[1,1,1,1,1]", "desc": "Edge: all ones"},
-    {"input": "[2,2,2,2,2]", "desc": "Edge: all twos"},
-    {"input": "[1,2]", "desc": "Edge: pair"},
-    {"input": "[1,2,4,8,16]", "desc": "Standard powers"},
-    {"input": "[3,5,7,9,11]", "desc": "Standard"},
-    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Standard 10 disjoint bits"},
-    {"input": "[1000000000,1000000000,1000000000]", "desc": "Edge: max repeated"},
-    {"input": "[7,7,7,7,7,7,7,7,7,7]", "desc": "Standard same"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard 10"},
-    {"input": "[15,7,3,1]", "desc": "Standard subset bits"},
-    {"input": "[0,1,2,3,4,5]", "desc": "Standard with zero"},
-    {"input": "[100,200,300,400,500]", "desc": "Standard"},
-    {"input": "[1,3,5,7,9,11,13,15,17,19]", "desc": "Standard odds"},
-    {"input": "[2,4,6,8,10,12,14,16,18,20]", "desc": "Standard evens"}
+    {
+      "input": "[1,2,3]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[7,4,6]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: zero"
+    },
+    {
+      "input": "[0,0,0]",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "[1000000000]",
+      "desc": "Edge: max single"
+    },
+    {
+      "input": "[1,1,1,1,1]",
+      "desc": "Edge: all ones"
+    },
+    {
+      "input": "[2,2,2,2,2]",
+      "desc": "Edge: all twos"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: pair"
+    },
+    {
+      "input": "[1,2,4,8,16]",
+      "desc": "Standard powers"
+    },
+    {
+      "input": "[3,5,7,9,11]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64,128,256,512]",
+      "desc": "Standard 10 disjoint bits"
+    },
+    {
+      "input": "[1000000000,1000000000,1000000000]",
+      "desc": "Edge: max repeated"
+    },
+    {
+      "input": "[721858086,232420175,26740875,89537183,750600226,185100611,766361088,324043407,704481952,989569959,583522280,977630165,592998900,958119143,957479143,702376315,293853998,429927559,94773315,553091394,406336818,36014911,259841836,388207564,733384705,476771794,851498179,505304736,640158492,938253441,739455415,509459262,705061420,572649422,479148137,66950587,950702573,274255901,537444135,398464730,424065185,513174405,773313026,553662104,623414124,955358415]",
+      "desc": "Regenerated: diverse at position 13"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard 10"
+    },
+    {
+      "input": "[15,7,3,1]",
+      "desc": "Standard subset bits"
+    },
+    {
+      "input": "[0,1,2,3,4,5]",
+      "desc": "Standard with zero"
+    },
+    {
+      "input": "[100,200,300,400,500]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[1,3,5,7,9,11,13,15,17,19]",
+      "desc": "Standard odds"
+    },
+    {
+      "input": "[2,4,6,8,10,12,14,16,18,20]",
+      "desc": "Standard evens"
+    }
   ]
 }

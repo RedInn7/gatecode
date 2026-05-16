@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length, p.length <= 50, lowercase, p has exactly one *",
   "input_format": "line1: s (quoted); line2: p (quoted)",
   "testcases": [
-    {"input": "\"leetcode\"\n\"ee*e\"", "desc": "Standard: example 1"},
-    {"input": "\"car\"\n\"c*v\"", "desc": "Standard: example 2 false"},
-    {"input": "\"luck\"\n\"u*\"", "desc": "Standard: example 3"},
-    {"input": "\"a\"\n\"*\"", "desc": "Edge: * alone matches all"},
-    {"input": "\"abc\"\n\"*\"", "desc": "Edge: empty before/after"},
-    {"input": "\"abc\"\n\"a*\"", "desc": "Edge: only prefix"},
-    {"input": "\"abc\"\n\"*c\"", "desc": "Edge: only suffix"},
-    {"input": "\"abc\"\n\"a*c\"", "desc": "Edge: surround"},
-    {"input": "\"abc\"\n\"b*\"", "desc": "Standard"},
-    {"input": "\"abc\"\n\"d*\"", "desc": "Edge: prefix not in"},
-    {"input": "\"abc\"\n\"*d\"", "desc": "Edge: suffix not in"},
-    {"input": "\"abcdefghijklmnop\"\n\"a*p\"", "desc": "Standard"},
-    {"input": "\"hello\"\n\"h*o\"", "desc": "Standard"},
-    {"input": "\"hello\"\n\"l*l\"", "desc": "Standard"},
-    {"input": "\"banana\"\n\"b*a\"", "desc": "Standard"},
-    {"input": "\"mississippi\"\n\"mis*ipp\"", "desc": "Standard"},
-    {"input": "\"abcabcabc\"\n\"abc*abc\"", "desc": "Standard"},
-    {"input": "\"aaaaaaaaaaaaaa\"\n\"a*a\"", "desc": "Edge: same chars"},
-    {"input": "\"x\"\n\"x*\"", "desc": "Edge: 1 char"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"k*m\"", "desc": "Standard alphabet"}
+    {
+      "input": "\"leetcode\"\n\"ee*e\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"car\"\n\"c*v\"",
+      "desc": "Standard: example 2 false"
+    },
+    {
+      "input": "\"luck\"\n\"u*\"",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "\"a\"\n\"*\"",
+      "desc": "Edge: * alone matches all"
+    },
+    {
+      "input": "\"abc\"\n\"*\"",
+      "desc": "Edge: empty before/after"
+    },
+    {
+      "input": "\"abc\"\n\"a*\"",
+      "desc": "Edge: only prefix"
+    },
+    {
+      "input": "\"abc\"\n\"*c\"",
+      "desc": "Edge: only suffix"
+    },
+    {
+      "input": "\"abc\"\n\"a*c\"",
+      "desc": "Edge: surround"
+    },
+    {
+      "input": "\"abc\"\n\"b*\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abc\"\n\"d*\"",
+      "desc": "Edge: prefix not in"
+    },
+    {
+      "input": "\"abc\"\n\"*d\"",
+      "desc": "Edge: suffix not in"
+    },
+    {
+      "input": "\"abcdefghijklmnop\"\n\"a*p\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"hello\"\n\"h*o\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"hello\"\n\"l*l\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"banana\"\n\"b*a\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"mississippi\"\n\"mis*ipp\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcabcabc\"\n\"abc*abc\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaa\"\n\"a*a\"",
+      "desc": "Edge: same chars"
+    },
+    {
+      "input": "\"x\"\n\"x*\"",
+      "desc": "Edge: 1 char"
+    },
+    {
+      "input": "\"qnpxssclrurwtpqe\"\n\"ncqapzyf\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

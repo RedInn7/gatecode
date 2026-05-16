@@ -4,25 +4,85 @@
   "inferred_constraints": "queryIP consists of digits, lowercase/uppercase letters, dots, colons",
   "input_format": "single line: queryIP (quoted)",
   "testcases": [
-    {"input": "\"172.16.254.1\"", "desc": "Standard: valid IPv4"},
-    {"input": "\"2001:0db8:85a3:0:0:8A2E:0370:7334\"", "desc": "Standard: valid IPv6"},
-    {"input": "\"256.256.256.256\"", "desc": "Edge: out of range IPv4"},
-    {"input": "\"192.168.1.1\"", "desc": "Standard: common IPv4"},
-    {"input": "\"0.0.0.0\"", "desc": "Edge: all zeros IPv4"},
-    {"input": "\"255.255.255.255\"", "desc": "Edge: max IPv4"},
-    {"input": "\"192.168.01.1\"", "desc": "Edge: leading zero invalid"},
-    {"input": "\"192.168.1.00\"", "desc": "Edge: trailing leading zero"},
-    {"input": "\"192.168.1\"", "desc": "Edge: only 3 parts"},
-    {"input": "\"192.168.1.1.5\"", "desc": "Edge: 5 parts"},
-    {"input": "\"2001:db8:85a3::8A2E:0370:7334\"", "desc": "Edge: :: shorthand invalid"},
-    {"input": "\"2001:0db8:85a3:0:0:8A2E:0370:73345\"", "desc": "Edge: group too long"},
-    {"input": "\"02001:0db8:85a3:0:0:8A2E:0370:7334\"", "desc": "Edge: leading 0s ok in IPv6 but group too long"},
-    {"input": "\"1e1.4.5.6\"", "desc": "Edge: letters in IPv4 -> Neither (looks IPv6-like but only 4 dotted)"},
-    {"input": "\"192.168@1.1\"", "desc": "Edge: invalid char"},
-    {"input": "\"0:0:0:0:0:0:0:0\"", "desc": "Edge: all zeros IPv6"},
-    {"input": "\"FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF\"", "desc": "Edge: max IPv6"},
-    {"input": "\"1.2.3\"", "desc": "Edge: too short"},
-    {"input": "\"1.0.1.\"", "desc": "Edge: trailing dot"},
-    {"input": "\"1.1.1.01\"", "desc": "Edge: leading 0"}
+    {
+      "input": "\"x\"",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "\"2001:0db8:85a3:0:0:8A2E:0370:7334\"",
+      "desc": "Standard: valid IPv6"
+    },
+    {
+      "input": "\"256.256.256.256\"",
+      "desc": "Edge: out of range IPv4"
+    },
+    {
+      "input": "\"192.168.1.1\"",
+      "desc": "Standard: common IPv4"
+    },
+    {
+      "input": "\"0.0.0.0\"",
+      "desc": "Edge: all zeros IPv4"
+    },
+    {
+      "input": "\"255.255.255.255\"",
+      "desc": "Edge: max IPv4"
+    },
+    {
+      "input": "\"192.168.01.1\"",
+      "desc": "Edge: leading zero invalid"
+    },
+    {
+      "input": "\"192.168.1.00\"",
+      "desc": "Edge: trailing leading zero"
+    },
+    {
+      "input": "\"192.168.1\"",
+      "desc": "Edge: only 3 parts"
+    },
+    {
+      "input": "\"192.168.1.1.5\"",
+      "desc": "Edge: 5 parts"
+    },
+    {
+      "input": "\"2001:db8:85a3::8A2E:0370:7334\"",
+      "desc": "Edge: :: shorthand invalid"
+    },
+    {
+      "input": "\"2001:0db8:85a3:0:0:8A2E:0370:73345\"",
+      "desc": "Edge: group too long"
+    },
+    {
+      "input": "\"02001:0db8:85a3:0:0:8A2E:0370:7334\"",
+      "desc": "Edge: leading 0s ok in IPv6 but group too long"
+    },
+    {
+      "input": "\"1e1.4.5.6\"",
+      "desc": "Edge: letters in IPv4 -> Neither (looks IPv6-like but only 4 dotted)"
+    },
+    {
+      "input": "\"192.168@1.1\"",
+      "desc": "Edge: invalid char"
+    },
+    {
+      "input": "\"0:0:0:0:0:0:0:0\"",
+      "desc": "Edge: all zeros IPv6"
+    },
+    {
+      "input": "\"FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF\"",
+      "desc": "Edge: max IPv6"
+    },
+    {
+      "input": "\"1.2.3\"",
+      "desc": "Edge: too short"
+    },
+    {
+      "input": "\"1.0.1.\"",
+      "desc": "Edge: trailing dot"
+    },
+    {
+      "input": "\"1.1.1.01\"",
+      "desc": "Edge: leading 0"
+    }
   ]
 }
