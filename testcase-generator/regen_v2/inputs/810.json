@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw)",
   "testcases": [
     {
-      "input": "bccb",
-      "desc": "Edge: example1"
+      "input": "\"k\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"tmhz\"",
+      "input": "\"iuwtcpbzivocechbfvtc\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 d"
     },
     {
-      "input": "\"tuzytuzepxlivvlxflavecmjnwcghfvxfmhzarpdsfamoxtoeoalcfrpxrookwzhgushypxkmatqarsaiazwkwiokquqifkpghhlhkvpgvcgahsycbbbzwocdgtcpyvn\"",
+      "input": "\"wcfbqwixtcxhmlypfpgpmhzvrgvkyyimdtxzsszbnpbnujleovunazzfpqpzzvewactjjffothdysalhxmvepwzcohwbdualobsatfyaqyowuqvsltfpiwmrfxpwbhmq\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
