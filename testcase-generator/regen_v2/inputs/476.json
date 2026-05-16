@@ -1,0 +1,28 @@
+{
+  "pid": 476,
+  "slug": "maximize-score-of-numbers-in-ranges",
+  "inferred_constraints": "2 <= start.length <= 1e5, 0 <= start[i] <= 1e9, 0 <= d <= 1e9",
+  "input_format": "line1: start (JSON int array); line2: d (int)",
+  "testcases": [
+    {"input": "[6,0,3]\n2", "desc": "Edge: example1"},
+    {"input": "[2,6,13,13]\n5", "desc": "Edge: example2"},
+    {"input": "[1,2]\n1", "desc": "Edge: n=2 minimum"},
+    {"input": "[0,0]\n0", "desc": "Edge: zero d zero start"},
+    {"input": "[0,1000000000]\n0", "desc": "Edge: extreme range d=0"},
+    {"input": "[0,1000000000]\n1000000000", "desc": "Edge: extreme range max d"},
+    {"input": "[1,2,3,4,5]\n10", "desc": "Standard: small starts large d"},
+    {"input": "[10,20,30,40,50]\n5", "desc": "Standard: increasing"},
+    {"input": "[1,1,1,1,1]\n100", "desc": "Edge: all same start"},
+    {"input": "[1000000000,1000000000,1000000000]\n0", "desc": "Edge: all same max d=0"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]\n1", "desc": "Standard: 0..9 d=1"},
+    {"input": "[100,200,300,400,500]\n50", "desc": "Standard: hundreds"},
+    {"input": "[5,5,5,5,5]\n0", "desc": "Edge: same start d=0 score=0"},
+    {"input": "[1,100,200,300,400]\n50", "desc": "Standard: 1 then ascending"},
+    {"input": "[0,5,10,15,20]\n3", "desc": "Standard: AP d=3"},
+    {"input": "[1,3,5,7,9,11,13,15,17,19]\n2", "desc": "Standard: odd AP"},
+    {"input": "[0,1000000000,500000000]\n100000000", "desc": "Standard: spread"},
+    {"input": "[10,30,50,70,90,110]\n20", "desc": "Standard: AP 20"},
+    {"input": "[1,2,4,8,16,32]\n5", "desc": "Standard: powers of 2"},
+    {"input": "[0,10,20,30,40,50,60,70,80,90]\n10", "desc": "Stress: 10 elements AP"}
+  ]
+}

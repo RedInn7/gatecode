@@ -1,0 +1,28 @@
+{
+  "pid": 478,
+  "slug": "find-first-and-last-position-of-element-in-sorted-array",
+  "inferred_constraints": "0 <= nums.length <= 1e5, -1e9 <= nums[i], target <= 1e9, non-decreasing",
+  "input_format": "line1: nums (JSON int array); line2: target (int)",
+  "testcases": [
+    {"input": "[5,7,7,8,8,10]\n8", "desc": "Edge: example1"},
+    {"input": "[5,7,7,8,8,10]\n6", "desc": "Edge: example2 not found"},
+    {"input": "[]\n0", "desc": "Edge: example3 empty"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 found"},
+    {"input": "[1]\n2", "desc": "Edge: n=1 not found"},
+    {"input": "[1,1]\n1", "desc": "Edge: n=2 both target"},
+    {"input": "[1,2]\n1", "desc": "Edge: n=2 found first"},
+    {"input": "[1,2]\n2", "desc": "Edge: n=2 found last"},
+    {"input": "[1,1,1,1,1]\n1", "desc": "Edge: all target"},
+    {"input": "[1,1,1,1,1]\n2", "desc": "Edge: all not target"},
+    {"input": "[1000000000]\n1000000000", "desc": "Edge: max value"},
+    {"input": "[-1000000000,1000000000]\n0", "desc": "Edge: extremes target between"},
+    {"input": "[1,2,3,4,5]\n3", "desc": "Standard: distinct found middle"},
+    {"input": "[1,2,3,3,3,4,5]\n3", "desc": "Standard: range of 3s"},
+    {"input": "[1,2,3,3,3,3,3,3,3,4,5]\n3", "desc": "Standard: large range of 3s"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: 1..10"},
+    {"input": "[-5,-3,-1,1,3,5]\n-1", "desc": "Standard: with negatives"},
+    {"input": "[0,0,0,0,0]\n0", "desc": "Edge: all zeros"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n11", "desc": "Edge: target > all"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n0", "desc": "Edge: target < all"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 470,
+  "slug": "minesweeper",
+  "inferred_constraints": "1 <= m, n <= 50, board[i][j] in {'M','E','B','1'..'8','X'}, click is valid M or E",
+  "input_format": "line1: board (JSON 2D string array); line2: click (JSON int array [r,c])",
+  "testcases": [
+    {"input": "[[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"M\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"]]\n[3,0]", "desc": "Edge: example1"},
+    {"input": "[[\"B\",\"1\",\"E\",\"1\",\"B\"],[\"B\",\"1\",\"M\",\"1\",\"B\"],[\"B\",\"1\",\"1\",\"1\",\"B\"],[\"B\",\"B\",\"B\",\"B\",\"B\"]]\n[1,2]", "desc": "Edge: example2 click on mine"},
+    {"input": "[[\"E\"]]\n[0,0]", "desc": "Edge: 1x1 empty"},
+    {"input": "[[\"M\"]]\n[0,0]", "desc": "Edge: 1x1 mine"},
+    {"input": "[[\"E\",\"E\"],[\"E\",\"E\"]]\n[0,0]", "desc": "Edge: 2x2 all empty"},
+    {"input": "[[\"M\",\"E\"],[\"E\",\"E\"]]\n[1,1]", "desc": "Edge: 2x2 one mine, click corner"},
+    {"input": "[[\"M\",\"E\"],[\"E\",\"E\"]]\n[0,0]", "desc": "Edge: 2x2 click on mine"},
+    {"input": "[[\"E\",\"M\",\"E\"],[\"E\",\"E\",\"E\"],[\"E\",\"M\",\"E\"]]\n[1,1]", "desc": "Standard: 3x3 mines flanking"},
+    {"input": "[[\"E\",\"E\",\"E\"],[\"E\",\"M\",\"E\"],[\"E\",\"E\",\"E\"]]\n[0,0]", "desc": "Standard: center mine reveal corner"},
+    {"input": "[[\"M\",\"M\",\"M\"],[\"M\",\"E\",\"M\"],[\"M\",\"M\",\"M\"]]\n[1,1]", "desc": "Edge: surrounded by mines"},
+    {"input": "[[\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\"]]\n[0,0]", "desc": "Standard: 4x4 all empty"},
+    {"input": "[[\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\"],[\"E\",\"E\",\"M\"]]\n[0,0]", "desc": "Standard: 3x3 mine corner"},
+    {"input": "[[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"M\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"]]\n[0,0]", "desc": "Standard: 5x5 center mine"},
+    {"input": "[[\"E\",\"M\",\"M\"],[\"M\",\"E\",\"M\"],[\"M\",\"M\",\"E\"]]\n[0,0]", "desc": "Standard: diagonal empty"},
+    {"input": "[[\"E\",\"E\",\"E\",\"E\",\"E\"]]\n[0,2]", "desc": "Edge: 1x5 click middle"},
+    {"input": "[[\"E\"],[\"E\"],[\"E\"],[\"E\"],[\"E\"]]\n[2,0]", "desc": "Edge: 5x1 click middle"},
+    {"input": "[[\"E\",\"E\",\"E\",\"E\",\"E\",\"E\",\"E\",\"E\"]]\n[0,4]", "desc": "Standard: 1x8"},
+    {"input": "[[\"M\",\"E\",\"E\",\"E\",\"M\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\",\"E\"],[\"M\",\"E\",\"E\",\"E\",\"M\"]]\n[2,2]", "desc": "Standard: 5x5 mines at corners"},
+    {"input": "[[\"E\",\"E\",\"M\",\"E\"],[\"E\",\"E\",\"E\",\"E\"],[\"M\",\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\",\"E\"]]\n[0,0]", "desc": "Standard: 4x4 scattered"},
+    {"input": "[[\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\"],[\"E\",\"E\",\"E\"]]\n[1,1]", "desc": "Standard: 3x3 all empty click center"}
+  ]
+}
