@@ -1,0 +1,27 @@
+{
+  "pid": 744, "slug": "closest-divisors",
+  "inferred_constraints": "1 <= num <= 1e9",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "8", "desc": "Edge: example1"},
+    {"input": "123", "desc": "Edge: example2"},
+    {"input": "999", "desc": "Edge: example3"},
+    {"input": "1", "desc": "Edge: min num"},
+    {"input": "2", "desc": "Edge: small num"},
+    {"input": "3", "desc": "Edge: small num"},
+    {"input": "1000000000", "desc": "Edge: max num"},
+    {"input": "999999999", "desc": "Edge: near max"},
+    {"input": "100", "desc": "Standard: 100"},
+    {"input": "10000", "desc": "Standard: 10k"},
+    {"input": "1000000", "desc": "Standard: 1M"},
+    {"input": "10", "desc": "Standard: 10"},
+    {"input": "50", "desc": "Standard: 50"},
+    {"input": "97", "desc": "Standard: prime"},
+    {"input": "143", "desc": "Standard: 11*13"},
+    {"input": "144", "desc": "Standard: 12^2"},
+    {"input": "10001", "desc": "Standard: prime-ish"},
+    {"input": "99999999", "desc": "Standard: large"},
+    {"input": "500000003", "desc": "Stress: prime large"},
+    {"input": "987654321", "desc": "Special: large composite"}
+  ]
+}

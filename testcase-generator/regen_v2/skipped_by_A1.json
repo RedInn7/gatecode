@@ -415,6 +415,16 @@
       "pid": 703,
       "slug": "reformat-the-string",
       "reason": "Returns any valid alphanumeric permutation — non-unique output, needs SPJ"
+    },
+    {
+      "pid": 735,
+      "slug": "find-valid-matrix-given-row-and-column-sums",
+      "reason": "Returns any valid matrix — non-unique output, needs SPJ"
+    },
+    {
+      "pid": 737,
+      "slug": "matrix-cells-in-distance-order",
+      "reason": "Returns cells in any order satisfying distance condition — non-unique"
     }
   ]
 }

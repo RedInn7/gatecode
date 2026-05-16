@@ -1,0 +1,27 @@
+{
+  "pid": 724, "slug": "maximum-coin-collection",
+  "inferred_constraints": "1 <= lane1.length == lane2.length <= 1e5, -1e9 <= lane[i] <= 1e9, start in lane1, at most 2 switches",
+  "input_format": "line1: lane1 (JSON array); line2: lane2 (JSON array)",
+  "testcases": [
+    {"input": "[1,-2,-10,3]\n[-5,10,0,1]", "desc": "Edge: example1"},
+    {"input": "[1,-1,-1,-1]\n[0,3,4,-5]", "desc": "Edge: example2"},
+    {"input": "[-5,-4,-3]\n[-1,2,3]", "desc": "Edge: example3"},
+    {"input": "[-3,-3,-3]\n[9,-2,4]", "desc": "Edge: example4"},
+    {"input": "[-10]\n[-2]", "desc": "Edge: example5 single mile"},
+    {"input": "[1]\n[2]", "desc": "Edge: single mile pos"},
+    {"input": "[10]\n[5]", "desc": "Edge: stay lane1"},
+    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Standard: opposing"},
+    {"input": "[10,10,10,10]\n[1,1,1,1]", "desc": "Standard: lane1 dominant"},
+    {"input": "[1,1,1,1]\n[10,10,10,10]", "desc": "Standard: lane2 dominant"},
+    {"input": "[1000000000,1000000000]\n[-1000000000,-1000000000]", "desc": "Edge: extreme positives"},
+    {"input": "[-1000000000,-1000000000]\n[1000000000,1000000000]", "desc": "Edge: extreme switch worth"},
+    {"input": "[5,-5,5,-5,5]\n[-5,5,-5,5,-5]", "desc": "Standard: alternating"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: n=10"},
+    {"input": "[-1,-2,-3,-4,-5]\n[-5,-4,-3,-2,-1]", "desc": "Standard: all negative"},
+    {"input": "[0,0,0,0,0]\n[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[100,-100,100,-100]\n[-100,100,-100,100]", "desc": "Standard: contrasting"},
+    {"input": "[100,200,-1000,400,500]\n[-100,-200,1000,-400,-500]", "desc": "Standard: trough switch"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Stress: n=50 uniform"},
+    {"input": "[1000000000,-1000000000,1000000000]\n[-1000000000,1000000000,-1000000000]", "desc": "Special: alternating extreme"}
+  ]
+}

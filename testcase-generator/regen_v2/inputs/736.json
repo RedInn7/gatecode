@@ -1,0 +1,27 @@
+{
+  "pid": 736, "slug": "add-digits",
+  "inferred_constraints": "0 <= num <= 2^31-1",
+  "input_format": "line1: num (int)",
+  "testcases": [
+    {"input": "38", "desc": "Edge: example1"},
+    {"input": "0", "desc": "Edge: example2 zero"},
+    {"input": "1", "desc": "Edge: single 1"},
+    {"input": "9", "desc": "Edge: single 9"},
+    {"input": "10", "desc": "Edge: 10"},
+    {"input": "11", "desc": "Edge: 11"},
+    {"input": "99", "desc": "Edge: two 9s"},
+    {"input": "100", "desc": "Edge: 100"},
+    {"input": "999", "desc": "Edge: three 9s"},
+    {"input": "999999999", "desc": "Edge: nine 9s"},
+    {"input": "2147483647", "desc": "Edge: INT_MAX"},
+    {"input": "1234567890", "desc": "Standard: ten digits ascending"},
+    {"input": "12345", "desc": "Standard: small ascending"},
+    {"input": "987654321", "desc": "Standard: descending"},
+    {"input": "111111111", "desc": "Standard: all 1s"},
+    {"input": "100000000", "desc": "Standard: 10^8"},
+    {"input": "55555", "desc": "Standard: all 5s"},
+    {"input": "1000000007", "desc": "Standard: prime-ish"},
+    {"input": "2000000000", "desc": "Stress: 2 billion"},
+    {"input": "123456789", "desc": "Special: 1-9 ascending"}
+  ]
+}
