@@ -285,6 +285,31 @@
       "pid": 382,
       "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
       "reason": "Returns a TreeNode reference in cloned tree - requires special judge to compare identity/value path; not directly judgeable via output JSON serialization"
+    },
+    {
+      "pid": 385,
+      "slug": "design-a-number-container-system",
+      "reason": "Design class with stateful change/find operations"
+    },
+    {
+      "pid": 389,
+      "slug": "guess-the-number-using-bitwise-questions-i",
+      "reason": "Interactive API problem (commonSetBits)"
+    },
+    {
+      "pid": 395,
+      "slug": "find-a-peak-element-ii",
+      "reason": "Returns any peak element — non-unique output"
+    },
+    {
+      "pid": 396,
+      "slug": "unique-binary-search-trees-ii",
+      "reason": "Returns list of all BSTs - order non-unique; needs sorted comparison or SPJ"
+    },
+    {
+      "pid": 397,
+      "slug": "read-n-characters-given-read4",
+      "reason": "Interactive API problem (read4)"
     }
   ]
 }

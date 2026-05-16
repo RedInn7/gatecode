@@ -1,0 +1,28 @@
+{
+  "pid": 399,
+  "slug": "maximum-binary-tree",
+  "inferred_constraints": "1 <= nums.length <= 1000, 0 <= nums[i] <= 1000, all unique",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[3,2,1,6,0,5]", "desc": "Edge: example1"},
+    {"input": "[3,2,1]", "desc": "Edge: example2 descending"},
+    {"input": "[0]", "desc": "Edge: n=1 zero"},
+    {"input": "[1000]", "desc": "Edge: n=1 max"},
+    {"input": "[1,2]", "desc": "Edge: n=2 ascending"},
+    {"input": "[2,1]", "desc": "Edge: n=2 descending"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending right-skew"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending left-skew"},
+    {"input": "[3,1,2]", "desc": "Standard: peak first"},
+    {"input": "[1,3,2]", "desc": "Standard: peak middle"},
+    {"input": "[2,1,3]", "desc": "Standard: peak last"},
+    {"input": "[5,1,3,2,4]", "desc": "Standard: 5 elements"},
+    {"input": "[10,5,15,3,7,12,18]", "desc": "Standard: BST-like ordering"},
+    {"input": "[1,5,2,4,3]", "desc": "Standard: peak idx 1"},
+    {"input": "[3,4,1,5,2,7,6,9,8]", "desc": "Standard: 9 elements"},
+    {"input": "[100,90,80,70,60,50,40,30,20,10]", "desc": "Standard: descending decade"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending decade"},
+    {"input": "[5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]", "desc": "Stress: n=20 ascending"},
+    {"input": "[50,30,80,10,40,60,90,20,35,45,55,70,85,95,5]", "desc": "Standard: random distribution"},
+    {"input": "[1000,500,750,250,875,125,937]", "desc": "Standard: 7 wide-spread"}
+  ]
+}
