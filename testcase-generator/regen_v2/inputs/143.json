@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= number.length <= 100, digits + '-' + ' ', at least 2 digits",
   "input_format": "line1: number (string in JSON quotes)",
   "testcases": [
-    {"input": "\"1-23-45 6\"", "desc": "Edge: example1"},
-    {"input": "\"123 4-567\"", "desc": "Edge: example2"},
-    {"input": "\"123 4-5678\"", "desc": "Edge: example3"},
-    {"input": "\"12\"", "desc": "Edge: minimum 2 digits"},
-    {"input": "\"1 2\"", "desc": "Edge: 2 digits with space"},
-    {"input": "\"1-2\"", "desc": "Edge: 2 digits with dash"},
-    {"input": "\"123\"", "desc": "Edge: 3 digits"},
-    {"input": "\"1234\"", "desc": "Edge: 4 digits -> '12-34'"},
-    {"input": "\"12345\"", "desc": "Edge: 5 digits -> '123-45'"},
-    {"input": "\"123456\"", "desc": "Standard: 6 digits -> '123-456'"},
-    {"input": "\"1234567\"", "desc": "Standard: 7 digits -> '123-45-67'"},
-    {"input": "\"12345678\"", "desc": "Standard: 8 digits -> '123-456-78'"},
-    {"input": "\"123456789\"", "desc": "Standard: 9 digits -> '123-456-789'"},
-    {"input": "\"1234567890\"", "desc": "Standard: 10 digits -> '123-456-78-90'"},
-    {"input": "\"12345 67-89\"", "desc": "Standard: mixed separators"},
-    {"input": "\"--- - 12 3-45-6\"", "desc": "Standard: many separators"},
-    {"input": "\"      1-2-3-4-5-6-7-8\"", "desc": "Standard: leading spaces"},
-    {"input": "\"9-8 7-6 5-4 3-2 1-0\"", "desc": "Standard: alternating"},
-    {"input": "\"1-2-3-4-5-6-7-8-9-0-1-2-3-4-5-6-7-8-9-0-1-2-3-4-5-6-7-8-9-0-1-2-3-4-5\"", "desc": "Stress: 35 digits with all dashes"},
-    {"input": "\"        1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0       \"", "desc": "Stress: 40 digits separated by spaces"}
+    {
+      "input": "\"1-23-45 6\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"123 4-567\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"zwkgptk\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"n\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"g\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"1-2\"",
+      "desc": "Edge: 2 digits with dash"
+    },
+    {
+      "input": "\"123\"",
+      "desc": "Edge: 3 digits"
+    },
+    {
+      "input": "\"1234\"",
+      "desc": "Edge: 4 digits -> '12-34'"
+    },
+    {
+      "input": "\"12345\"",
+      "desc": "Edge: 5 digits -> '123-45'"
+    },
+    {
+      "input": "\"123456\"",
+      "desc": "Standard: 6 digits -> '123-456'"
+    },
+    {
+      "input": "\"1234567\"",
+      "desc": "Standard: 7 digits -> '123-45-67'"
+    },
+    {
+      "input": "\"12345678\"",
+      "desc": "Standard: 8 digits -> '123-456-78'"
+    },
+    {
+      "input": "\"123456789\"",
+      "desc": "Standard: 9 digits -> '123-456-789'"
+    },
+    {
+      "input": "\"1234567890\"",
+      "desc": "Standard: 10 digits -> '123-456-78-90'"
+    },
+    {
+      "input": "\"12345 67-89\"",
+      "desc": "Standard: mixed separators"
+    },
+    {
+      "input": "\"--- - 12 3-45-6\"",
+      "desc": "Standard: many separators"
+    },
+    {
+      "input": "\"      1-2-3-4-5-6-7-8\"",
+      "desc": "Standard: leading spaces"
+    },
+    {
+      "input": "\"9-8 7-6 5-4 3-2 1-0\"",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "\"1-2-3-4-5-6-7-8-9-0-1-2-3-4-5-6-7-8-9-0-1-2-3-4-5-6-7-8-9-0-1-2-3-4-5\"",
+      "desc": "Stress: 35 digits with all dashes"
+    },
+    {
+      "input": "\"ufunfmvbzzbhhnlsmmom\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
