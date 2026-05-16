@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= path.length <= 10^4, path[i] in {N,S,E,W}",
   "input_format": "single line: path (quoted)",
   "testcases": [
-    {"input": "\"NES\"", "desc": "Standard: example 1"},
-    {"input": "\"NESWW\"", "desc": "Standard: example 2"},
-    {"input": "\"N\"", "desc": "Edge: single N"},
-    {"input": "\"NS\"", "desc": "Edge: return to origin"},
-    {"input": "\"EW\"", "desc": "Edge: return to origin EW"},
-    {"input": "\"NN\"", "desc": "Edge: no cross"},
-    {"input": "\"NSEW\"", "desc": "Standard 4 dirs"},
-    {"input": "\"NSEWNSEW\"", "desc": "Standard repeated"},
-    {"input": "\"NNNNN\"", "desc": "Edge: straight line"},
-    {"input": "\"NESW\"", "desc": "Edge: square crosses"},
-    {"input": "\"NNNNSSSS\"", "desc": "Standard"},
-    {"input": "\"NEEESSSWWWNN\"", "desc": "Standard"},
-    {"input": "\"NWSE\"", "desc": "Standard"},
-    {"input": "\"WWWWNNNNEEESSSS\"", "desc": "Standard"},
-    {"input": "\"NESWNESW\"", "desc": "Standard"},
-    {"input": "\"EEEE\"", "desc": "Edge: only E"},
-    {"input": "\"NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN\"", "desc": "Edge: 100 N"},
-    {"input": "\"NESNESNESNESNESNES\"", "desc": "Standard"},
-    {"input": "\"WNNSEEWWSE\"", "desc": "Standard"},
-    {"input": "\"NESEWNES\"", "desc": "Standard"}
+    {
+      "input": "\"NES\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"NESWW\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"N\"",
+      "desc": "Edge: single N"
+    },
+    {
+      "input": "\"NS\"",
+      "desc": "Edge: return to origin"
+    },
+    {
+      "input": "\"EW\"",
+      "desc": "Edge: return to origin EW"
+    },
+    {
+      "input": "\"NN\"",
+      "desc": "Edge: no cross"
+    },
+    {
+      "input": "\"NSEW\"",
+      "desc": "Standard 4 dirs"
+    },
+    {
+      "input": "\"NSEWNSEW\"",
+      "desc": "Standard repeated"
+    },
+    {
+      "input": "\"NNNNN\"",
+      "desc": "Edge: straight line"
+    },
+    {
+      "input": "\"NESW\"",
+      "desc": "Edge: square crosses"
+    },
+    {
+      "input": "\"NNNNSSSS\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"NEEESSSWWWNN\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"NWSE\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"WWWWNNNNEEESSSS\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"NESWNESW\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"EEEE\"",
+      "desc": "Edge: only E"
+    },
+    {
+      "input": "\"NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN\"",
+      "desc": "Edge: 100 N"
+    },
+    {
+      "input": "\"NESNESNESNESNESNES\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"WNNSEEWWSE\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"xxdosvcnli\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

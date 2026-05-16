@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= sentence.length <= 1000, lowercase",
   "input_format": "single line: sentence (quoted)",
   "testcases": [
-    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Standard: example 1"},
-    {"input": "\"leetcode\"", "desc": "Standard: example 2"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: alphabet exact"},
-    {"input": "\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Edge: alphabet reverse"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabc\"", "desc": "Edge: alphabet plus extra"},
-    {"input": "\"abcdefghijklmnopqrstuvwxy\"", "desc": "Edge: missing z"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "Edge: only a"},
-    {"input": "\"thequickbrownfoxjumpsoverthelazydogab\"", "desc": "Standard pangram extended"},
-    {"input": "\"abc\"", "desc": "Edge: 3 chars only"},
-    {"input": "\"packmyboxwithfivedozenliquorjugs\"", "desc": "Standard pangram"},
-    {"input": "\"thefivepackingboxwasshippedfromthejugjetportforanailingmen\"", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxz\"", "desc": "Edge: missing y"},
-    {"input": "\"thequickbrownfoxjumps\"", "desc": "Edge: not pangram"},
-    {"input": "\"sphinxofblackquartzjudgemyvow\"", "desc": "Standard pangram"},
-    {"input": "\"howvexinglyquickdaftzebrasjump\"", "desc": "Standard pangram"},
-    {"input": "\"jackdawslovemybigsphinxofquartz\"", "desc": "Standard pangram"},
-    {"input": "\"quickbrownfox\"", "desc": "Edge: short non-pangram"},
-    {"input": "\"qwertyuiopasdfghjklzxcvbnm\"", "desc": "Edge: keyboard order"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzaabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz\"", "desc": "Standard repeated alphabet"}
+    {
+      "input": "\"thequickbrownfoxjumpsoverthelazydog\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"leetcode\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Edge: alphabet exact"
+    },
+    {
+      "input": "\"zyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Edge: alphabet reverse"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabc\"",
+      "desc": "Edge: alphabet plus extra"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxy\"",
+      "desc": "Edge: missing z"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "Edge: only a"
+    },
+    {
+      "input": "\"thequickbrownfoxjumpsoverthelazydogab\"",
+      "desc": "Standard pangram extended"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: 3 chars only"
+    },
+    {
+      "input": "\"packmyboxwithfivedozenliquorjugs\"",
+      "desc": "Standard pangram"
+    },
+    {
+      "input": "\"thefivepackingboxwasshippedfromthejugjetportforanailingmen\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxz\"",
+      "desc": "Edge: missing y"
+    },
+    {
+      "input": "\"thequickbrownfoxjumps\"",
+      "desc": "Edge: not pangram"
+    },
+    {
+      "input": "\"sphinxofblackquartzjudgemyvow\"",
+      "desc": "Standard pangram"
+    },
+    {
+      "input": "\"howvexinglyquickdaftzebrasjump\"",
+      "desc": "Standard pangram"
+    },
+    {
+      "input": "\"jackdawslovemybigsphinxofquartz\"",
+      "desc": "Standard pangram"
+    },
+    {
+      "input": "\"quickbrownfox\"",
+      "desc": "Edge: short non-pangram"
+    },
+    {
+      "input": "\"qwertyuiopasdfghjklzxcvbnm\"",
+      "desc": "Edge: keyboard order"
+    },
+    {
+      "input": "\"yqrvtmjtqlzzcucomvevuzemqbiiydzpcftxcwmmlkdzsadbbwgfpcvhlzgjhlrwnpzykh\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
