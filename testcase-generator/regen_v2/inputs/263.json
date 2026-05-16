@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, uppercase",
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
-    {"input": "\"ABC\"", "desc": "Edge: example1"},
-    {"input": "\"ABA\"", "desc": "Edge: example2"},
-    {"input": "\"LEETCODE\"", "desc": "Edge: example3"},
-    {"input": "\"A\"", "desc": "Edge: n=1"},
-    {"input": "\"Z\"", "desc": "Edge: n=1 Z"},
-    {"input": "\"AA\"", "desc": "Edge: 2 same"},
-    {"input": "\"AB\"", "desc": "Edge: 2 distinct"},
-    {"input": "\"AAA\"", "desc": "Edge: 3 same"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Edge: full alphabet"},
-    {"input": "\"AAAA\"", "desc": "Edge: all same"},
-    {"input": "\"ABCABC\"", "desc": "Standard: repeating"},
-    {"input": "\"ABABAB\"", "desc": "Standard: alternating"},
-    {"input": "\"AABBCC\"", "desc": "Standard: blocks"},
-    {"input": "\"BANANA\"", "desc": "Standard: word"},
-    {"input": "\"HELLO\"", "desc": "Standard: word2"},
-    {"input": "\"ABCDEFGHIJKLMNOP\"", "desc": "Standard: 16 distinct"},
-    {"input": "\"AABBCCDDEEFFGGHH\"", "desc": "Standard: pairs"},
-    {"input": "\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"", "desc": "Stress: 50 A's"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\"", "desc": "Stress: 2 alphabets"},
-    {"input": "\"AABBAABBAABBAABBAABBAABBAABBAABBAABBAABBAABBAABBAABB\"", "desc": "Stress: 13x AABB"}
+    {
+      "input": "\"ABC\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"ABA\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"oly\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"zrx\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"Z\"",
+      "desc": "Edge: n=1 Z"
+    },
+    {
+      "input": "\"AA\"",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "\"AB\"",
+      "desc": "Edge: 2 distinct"
+    },
+    {
+      "input": "\"AAA\"",
+      "desc": "Edge: 3 same"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
+      "desc": "Edge: full alphabet"
+    },
+    {
+      "input": "\"AAAA\"",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "\"ABCABC\"",
+      "desc": "Standard: repeating"
+    },
+    {
+      "input": "\"ABABAB\"",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "\"AABBCC\"",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "\"BANANA\"",
+      "desc": "Standard: word"
+    },
+    {
+      "input": "\"HELLO\"",
+      "desc": "Standard: word2"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOP\"",
+      "desc": "Standard: 16 distinct"
+    },
+    {
+      "input": "\"AABBCCDDEEFFGGHH\"",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"",
+      "desc": "Stress: 50 A's"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
+      "desc": "Stress: 2 alphabets"
+    },
+    {
+      "input": "\"dzzhovchzjoxcrfq\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

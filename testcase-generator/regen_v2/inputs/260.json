@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 2000, lowercase, convertible to palindrome",
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
-    {"input": "\"aabb\"", "desc": "Edge: example1"},
-    {"input": "\"letelt\"", "desc": "Edge: example2"},
-    {"input": "\"a\"", "desc": "Edge: n=1 already palindrome"},
-    {"input": "\"aa\"", "desc": "Edge: n=2 already pal"},
-    {"input": "\"ab\"", "desc": "Edge: n=2 not pal but 1+1 each = need same chars"},
-    {"input": "\"aba\"", "desc": "Edge: already pal"},
-    {"input": "\"abc\"", "desc": "Edge: not convertible — but problem guarantees convertible"},
-    {"input": "\"abba\"", "desc": "Edge: already pal"},
-    {"input": "\"abab\"", "desc": "Edge: swap to get aabb/abba 1 move"},
-    {"input": "\"baba\"", "desc": "Edge: similar"},
-    {"input": "\"aabbcc\"", "desc": "Standard: needs rearrangement"},
-    {"input": "\"abcba\"", "desc": "Standard: already pal odd"},
-    {"input": "\"abcab\"", "desc": "Standard: not pal yet"},
-    {"input": "\"abcabc\"", "desc": "Standard: each char twice"},
-    {"input": "\"abcdcba\"", "desc": "Standard: palindrome length 7"},
-    {"input": "\"abcdba\"", "desc": "Standard: 6 chars"},
-    {"input": "\"zzzaaa\"", "desc": "Standard: z's and a's"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba\"", "desc": "Stress: 52 char mirror already pal"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 50 a's already pal"},
-    {"input": "\"aabbbcccddddeeeeeffffffggggggghhhhhhhhhiiiiiiiiii\"", "desc": "Stress: progressive frequencies"}
+    {
+      "input": "\"aabb\"",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"letelt\"",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"qmum\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"hub\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"ehgdb\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"aba\"",
+      "desc": "Edge: already pal"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: not convertible — but problem guarantees convertible"
+    },
+    {
+      "input": "\"abba\"",
+      "desc": "Edge: already pal"
+    },
+    {
+      "input": "\"abab\"",
+      "desc": "Edge: swap to get aabb/abba 1 move"
+    },
+    {
+      "input": "\"baba\"",
+      "desc": "Edge: similar"
+    },
+    {
+      "input": "\"aabbcc\"",
+      "desc": "Standard: needs rearrangement"
+    },
+    {
+      "input": "\"abcba\"",
+      "desc": "Standard: already pal odd"
+    },
+    {
+      "input": "\"abcab\"",
+      "desc": "Standard: not pal yet"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Standard: each char twice"
+    },
+    {
+      "input": "\"abcdcba\"",
+      "desc": "Standard: palindrome length 7"
+    },
+    {
+      "input": "\"abcdba\"",
+      "desc": "Standard: 6 chars"
+    },
+    {
+      "input": "\"zzzaaa\"",
+      "desc": "Standard: z's and a's"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Stress: 52 char mirror already pal"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "Stress: 50 a's already pal"
+    },
+    {
+      "input": "\"xesgncjdnaxp\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
