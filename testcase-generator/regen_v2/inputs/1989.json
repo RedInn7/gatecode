@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= num.length <= 80, num consists of digits 0-9",
   "input_format": "single line: num (JSON string)",
   "testcases": [
-    {"input": "\"123\"", "desc": "Standard: example 1"},
-    {"input": "\"112\"", "desc": "Standard: example 2"},
-    {"input": "\"12345\"", "desc": "Standard: example 3"},
-    {"input": "\"00\"", "desc": "Edge: n=2 all zero"},
-    {"input": "\"11\"", "desc": "Edge: n=2 same"},
-    {"input": "\"12\"", "desc": "Edge: n=2 different unbalanced"},
-    {"input": "\"99\"", "desc": "Edge: n=2 max"},
-    {"input": "\"99999999\"", "desc": "Standard: all same"},
-    {"input": "\"1010\"", "desc": "Standard: balanced 10's"},
-    {"input": "\"1234\"", "desc": "Standard: 4 distinct"},
-    {"input": "\"123321\"", "desc": "Standard: palindrome"},
-    {"input": "\"112233\"", "desc": "Standard: pairs"},
-    {"input": "\"00000000\"", "desc": "Edge: all zeros"},
-    {"input": "\"12121212\"", "desc": "Standard: alternating"},
-    {"input": "\"9876543210\"", "desc": "Standard: descending"},
-    {"input": "\"0123456789\"", "desc": "Standard: ascending"},
-    {"input": "\"11223344556677889900\"", "desc": "Standard: 20 digits paired"},
-    {"input": "\"1\"", "desc": "Edge: n=1 (but min is 2)"},
-    {"input": "\"99999999999999999999\"", "desc": "Standard: 20 nines"},
-    {"input": "\"01234567890123456789012345678901234567890123456789012345678901234567890123456789\"", "desc": "Stress: 80 chars"}
+    {
+      "input": "\"123\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"112\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"12345\"",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "\"00\"",
+      "desc": "Edge: n=2 all zero"
+    },
+    {
+      "input": "\"11\"",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "\"12\"",
+      "desc": "Edge: n=2 different unbalanced"
+    },
+    {
+      "input": "\"99\"",
+      "desc": "Edge: n=2 max"
+    },
+    {
+      "input": "\"99999999\"",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "\"1010\"",
+      "desc": "Standard: balanced 10's"
+    },
+    {
+      "input": "\"1234\"",
+      "desc": "Standard: 4 distinct"
+    },
+    {
+      "input": "\"123321\"",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "\"112233\"",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "\"00000000\"",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "\"12121212\"",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "\"9876543210\"",
+      "desc": "Standard: descending"
+    },
+    {
+      "input": "\"0123456789\"",
+      "desc": "Standard: ascending"
+    },
+    {
+      "input": "\"11223344556677889900\"",
+      "desc": "Standard: 20 digits paired"
+    },
+    {
+      "input": "\"1\"",
+      "desc": "Edge: n=1 (but min is 2)"
+    },
+    {
+      "input": "\"99999999999999999999\"",
+      "desc": "Standard: 20 nines"
+    },
+    {
+      "input": "\"01234567890123456789012345678901234567890123456789012345678901234567890123456789\"",
+      "desc": "Stress: 80 chars"
+    }
   ]
 }

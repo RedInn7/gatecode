@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= stamp.length <= target.length <= 1000, lowercase English",
   "input_format": "line1: stamp (JSON string); line2: target (JSON string)",
   "testcases": [
-    {"input": "\"abc\"\n\"ababc\"", "desc": "Standard: example 1"},
-    {"input": "\"abca\"\n\"aabcaca\"", "desc": "Standard: example 2"},
-    {"input": "\"a\"\n\"a\"", "desc": "Edge: minimum"},
-    {"input": "\"a\"\n\"aaaaa\"", "desc": "Edge: single char repeated"},
-    {"input": "\"ab\"\n\"ab\"", "desc": "Edge: exact match"},
-    {"input": "\"ab\"\n\"abab\"", "desc": "Standard: 2 stamps"},
-    {"input": "\"abc\"\n\"abcabc\"", "desc": "Standard: 2 stamps adjacent"},
-    {"input": "\"abc\"\n\"abc\"", "desc": "Edge: single stamp"},
-    {"input": "\"abc\"\n\"xyz\"", "desc": "Edge: impossible"},
-    {"input": "\"abc\"\n\"abcabcabc\"", "desc": "Standard: 3 stamps"},
-    {"input": "\"abcd\"\n\"abcdabcd\"", "desc": "Standard"},
-    {"input": "\"ab\"\n\"aabb\"", "desc": "Standard"},
-    {"input": "\"abc\"\n\"aabcaabcaabc\"", "desc": "Standard: overlap stamps"},
-    {"input": "\"aa\"\n\"aaaa\"", "desc": "Standard: same chars"},
-    {"input": "\"abca\"\n\"abcaabcaabcaabca\"", "desc": "Standard: repeated stamp"},
-    {"input": "\"abc\"\n\"aaaaa\"", "desc": "Edge: impossible mismatch"},
-    {"input": "\"abc\"\n\"abcbabc\"", "desc": "Standard: overlap stamps"},
-    {"input": "\"hello\"\n\"hellohello\"", "desc": "Standard: longer stamp"},
-    {"input": "\"abc\"\n\"cab\"", "desc": "Edge: impossible only stamp endings"},
-    {"input": "\"abc\"\n\"ababababc\"", "desc": "Standard: alternating overlap"}
+    {
+      "input": "\"abc\"\n\"ababc\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"abca\"\n\"aabcaca\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "desc": "Edge: minimum"
+    },
+    {
+      "input": "\"a\"\n\"aaaaa\"",
+      "desc": "Edge: single char repeated"
+    },
+    {
+      "input": "\"ab\"\n\"ab\"",
+      "desc": "Edge: exact match"
+    },
+    {
+      "input": "\"ab\"\n\"abab\"",
+      "desc": "Standard: 2 stamps"
+    },
+    {
+      "input": "\"abc\"\n\"abcabc\"",
+      "desc": "Standard: 2 stamps adjacent"
+    },
+    {
+      "input": "\"abc\"\n\"abc\"",
+      "desc": "Edge: single stamp"
+    },
+    {
+      "input": "\"abc\"\n\"xyz\"",
+      "desc": "Edge: impossible"
+    },
+    {
+      "input": "\"abc\"\n\"abcabcabc\"",
+      "desc": "Standard: 3 stamps"
+    },
+    {
+      "input": "\"abcd\"\n\"abcdabcd\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"ab\"\n\"aabb\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abc\"\n\"aabcaabcaabc\"",
+      "desc": "Standard: overlap stamps"
+    },
+    {
+      "input": "\"aa\"\n\"aaaa\"",
+      "desc": "Standard: same chars"
+    },
+    {
+      "input": "\"abca\"\n\"abcaabcaabcaabca\"",
+      "desc": "Standard: repeated stamp"
+    },
+    {
+      "input": "\"abc\"\n\"aaaaa\"",
+      "desc": "Edge: impossible mismatch"
+    },
+    {
+      "input": "\"abc\"\n\"abcbabc\"",
+      "desc": "Standard: overlap stamps"
+    },
+    {
+      "input": "\"hello\"\n\"hellohello\"",
+      "desc": "Standard: longer stamp"
+    },
+    {
+      "input": "\"abc\"\n\"cab\"",
+      "desc": "Edge: impossible only stamp endings"
+    },
+    {
+      "input": "\"tuproiuv\"\n\"dneqvrcxgzbbjv\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
