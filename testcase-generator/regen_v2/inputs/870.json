@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "375\n3899\n3\n33\n9",
+      "input": "555\n6645\n9\n11\n47",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: swap pattern"
     },
     {
-      "input": "1010\n10111\n10\n100\n100",
+      "input": "1000\n10111\n10\n100\n100",
       "desc": "Stress: large n near max boundary"
     }
   ]

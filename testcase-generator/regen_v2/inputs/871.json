@@ -5,8 +5,8 @@
   "input_format": "line1: word (raw)",
   "testcases": [
     {
-      "input": "aba",
-      "desc": "Edge: example1"
+      "input": "\"t\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "aabb",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"usa\"",
+      "input": "\"orm\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 a"
     },
     {
-      "input": "\"bxhzudha\"",
+      "input": "\"dkmcguat\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
