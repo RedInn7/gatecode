@@ -5,8 +5,8 @@
   "input_format": "line1: binary (raw string)",
   "testcases": [
     {
-      "input": "000110",
-      "desc": "Edge: example1"
+      "input": "1",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "01",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "103",
+      "input": "38",
       "desc": "Edge: all-equal elements"
     },
     {
