@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= |s| <= 1e5, binary",
   "input_format": "line1: s (raw)",
   "testcases": [
-    {"input": "00110011", "desc": "Edge: example1 -> 6"},
-    {"input": "10101", "desc": "Edge: example2 -> 4"},
-    {"input": "0", "desc": "Edge: single zero"},
-    {"input": "1", "desc": "Edge: single one"},
-    {"input": "00", "desc": "Edge: 00"},
-    {"input": "01", "desc": "Edge: 01 -> 1"},
-    {"input": "10", "desc": "Edge: 10 -> 1"},
-    {"input": "11", "desc": "Edge: 11"},
-    {"input": "00001111", "desc": "Standard: 4 zeros 4 ones"},
-    {"input": "11110000", "desc": "Standard: 4 ones 4 zeros"},
-    {"input": "01010101", "desc": "Standard: alternating 8"},
-    {"input": "11100011", "desc": "Standard: 3 ones 3 zeros 2 ones"},
-    {"input": "00111000", "desc": "Standard: 2-3-3 pattern"},
-    {"input": "1111111100000000", "desc": "Standard: 8-8 even"},
-    {"input": "1000000001", "desc": "Standard: 1-8-1"},
-    {"input": "001100110011", "desc": "Standard: 4 copies of 0011"},
-    {"input": "0000000000", "desc": "Edge: all zeros"},
-    {"input": "1111111111", "desc": "Edge: all ones"},
-    {"input": "01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101", "desc": "Stress: 100 alt"},
-    {"input": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "desc": "Killer: 100 ones + 110 zeros"}
+    {
+      "input": "00110011",
+      "desc": "Edge: example1 -> 6"
+    },
+    {
+      "input": "10101",
+      "desc": "Edge: example2 -> 4"
+    },
+    {
+      "input": "62998",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "59261",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "00",
+      "desc": "Edge: 00"
+    },
+    {
+      "input": "01",
+      "desc": "Edge: 01 -> 1"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: 10 -> 1"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: 11"
+    },
+    {
+      "input": "00001111",
+      "desc": "Standard: 4 zeros 4 ones"
+    },
+    {
+      "input": "11110000",
+      "desc": "Standard: 4 ones 4 zeros"
+    },
+    {
+      "input": "01010101",
+      "desc": "Standard: alternating 8"
+    },
+    {
+      "input": "11100011",
+      "desc": "Standard: 3 ones 3 zeros 2 ones"
+    },
+    {
+      "input": "00111000",
+      "desc": "Standard: 2-3-3 pattern"
+    },
+    {
+      "input": "1111111100000000",
+      "desc": "Standard: 8-8 even"
+    },
+    {
+      "input": "1000000001",
+      "desc": "Standard: 1-8-1"
+    },
+    {
+      "input": "001100110011",
+      "desc": "Standard: 4 copies of 0011"
+    },
+    {
+      "input": "0000000000",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "1111111111",
+      "desc": "Edge: all ones"
+    },
+    {
+      "input": "01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101",
+      "desc": "Stress: 100 alt"
+    },
+    {
+      "input": "110011",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

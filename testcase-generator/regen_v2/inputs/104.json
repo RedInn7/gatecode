@@ -5,8 +5,8 @@
   "input_format": "single line: s (raw string)",
   "testcases": [
     {
-      "input": "abc",
-      "desc": "Edge: example1 no digits"
+      "input": "\"g\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "cb34",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"m\"",
+      "input": "\"yac\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Edge: letter zero"
     },
     {
-      "input": "\"zehafnru\"",
+      "input": "\"dttvkfnd\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
