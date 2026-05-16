@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"oi\"",
+      "input": "\"gt\"",
       "desc": "Edge: all-equal elements"
     },
     {
