@@ -1,0 +1,28 @@
+{
+  "pid": 591,
+  "slug": "detonate-the-maximum-bombs",
+  "inferred_constraints": "1 <= bombs.length <= 100; bombs[i].length == 3; 1 <= x_i, y_i, r_i <= 1e5",
+  "input_format": "line1: bombs (JSON 2D array)",
+  "testcases": [
+    {"input": "[[2,1,3],[6,1,4]]", "desc": "Edge: example1"},
+    {"input": "[[1,1,1]]", "desc": "Edge: single bomb"},
+    {"input": "[[1,1,1],[2,2,1]]", "desc": "Edge: just barely not reaching"},
+    {"input": "[[100000,100000,100000]]", "desc": "Edge: max values single"},
+    {"input": "[[1,1,1],[1,1,1]]", "desc": "Edge: two bombs same pos"},
+    {"input": "[[1,1,100000],[100000,100000,100000]]", "desc": "Edge: huge radii overlap"},
+    {"input": "[[1,2,3],[2,3,1],[3,4,2],[4,5,3],[1,1,5]]", "desc": "Standard: 5 bombs cluster"},
+    {"input": "[[1,1,5],[10,10,5],[20,20,5]]", "desc": "Standard: spread apart no chain"},
+    {"input": "[[1,1,5],[5,5,5],[10,10,5]]", "desc": "Standard: 3 chain"},
+    {"input": "[[1,1,1],[2,2,1],[3,3,1],[4,4,1],[5,5,1]]", "desc": "Standard: chain with small radius"},
+    {"input": "[[0,0,1000],[10,10,1],[20,20,1]]", "desc": "Standard: one big triggers all"},
+    {"input": "[[5,5,5],[10,5,5],[15,5,5],[20,5,5],[25,5,5]]", "desc": "Standard: horizontal chain"},
+    {"input": "[[1,1,1],[10,10,1],[1,10,1],[10,1,1]]", "desc": "Standard: square corners isolated"},
+    {"input": "[[1,1,2],[2,2,2],[1,2,2],[2,1,2]]", "desc": "Standard: 4 overlapping"},
+    {"input": "[[100,100,50],[150,100,50],[200,100,50]]", "desc": "Standard: 3 inline"},
+    {"input": "[[1,1,1],[100,100,1],[50,50,200]]", "desc": "Standard: bridge bomb"},
+    {"input": "[[1,1,1],[2,2,1],[3,3,1],[4,4,1],[5,5,1],[6,6,1],[7,7,1],[8,8,1],[9,9,1],[10,10,1]]", "desc": "Stress: 10 chain"},
+    {"input": "[[100000,100000,1],[100000,100000,1],[100000,100000,1],[100000,100000,1],[100000,100000,1]]", "desc": "Stress: identical positions"},
+    {"input": "[[1,1,1],[3,1,1],[5,1,1],[7,1,1],[9,1,1],[11,1,1],[13,1,1],[15,1,1]]", "desc": "Stress: 8 just-barely-not-touching"},
+    {"input": "[[1,2,3],[1,4,3],[1,6,3],[1,8,3],[1,10,3]]", "desc": "Special: vertical chain killer"}
+  ]
+}

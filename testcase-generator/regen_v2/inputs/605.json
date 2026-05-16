@@ -1,0 +1,28 @@
+{
+  "pid": 605,
+  "slug": "convert-bst-to-greater-tree",
+  "inferred_constraints": "Number of nodes in [0, 1e4]; -1e4 <= Node.val <= 1e4; values unique; tree is BST",
+  "input_format": "line1: root (JSON array level-order with nulls)",
+  "testcases": [
+    {"input": "[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]", "desc": "Edge: example1"},
+    {"input": "[0,null,1]", "desc": "Edge: example2"},
+    {"input": "[]", "desc": "Edge: empty tree"},
+    {"input": "[5]", "desc": "Edge: single node"},
+    {"input": "[-10000]", "desc": "Edge: single min"},
+    {"input": "[10000]", "desc": "Edge: single max"},
+    {"input": "[0]", "desc": "Edge: zero node"},
+    {"input": "[1,null,2]", "desc": "Edge: right-only"},
+    {"input": "[2,1]", "desc": "Edge: left child"},
+    {"input": "[5,3,7]", "desc": "Standard: small BST"},
+    {"input": "[10,5,15,3,7,12,18]", "desc": "Standard: balanced BST"},
+    {"input": "[0,-5,5,-10,-3,3,10]", "desc": "Standard: with negatives"},
+    {"input": "[50,25,75,12,37,62,87]", "desc": "Standard: spread values"},
+    {"input": "[100,50,150,25,75,125,175,12,37,62,87,112,137,162,187]", "desc": "Standard: depth 4"},
+    {"input": "[-5,-10,-1,-15,-7,-3,2]", "desc": "Standard: all small negatives + one positive"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right skew"},
+    {"input": "[5,4,null,3,null,2,null,1]", "desc": "Stress: left skew"},
+    {"input": "[10000,5000,null,2500,null,1250,null,625,null,312,null,156,null,78,null,39]", "desc": "Stress: deep left skew large"},
+    {"input": "[0,-10000,10000,-5000,-1,1,5000,-7500,-2500,null,null,null,null,2500,7500]", "desc": "Stress: extreme values balanced"},
+    {"input": "[8,3,10,1,6,null,14,null,null,4,7,null,null,13]", "desc": "Special: irregular BST killer"}
+  ]
+}

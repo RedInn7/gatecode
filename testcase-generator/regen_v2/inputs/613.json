@@ -1,0 +1,28 @@
+{
+  "pid": 613,
+  "slug": "minimum-string-length-after-balanced-removals",
+  "inferred_constraints": "1 <= s.length <= 1e5; s consists only of 'a' and 'b'",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {"input": "aabbab", "desc": "Edge: example1 reducible to 0"},
+    {"input": "aaaa", "desc": "Edge: example2 no removal"},
+    {"input": "a", "desc": "Edge: minimum single"},
+    {"input": "b", "desc": "Edge: minimum single b"},
+    {"input": "ab", "desc": "Edge: minimum pair"},
+    {"input": "ba", "desc": "Edge: reverse pair"},
+    {"input": "aa", "desc": "Edge: all a"},
+    {"input": "bb", "desc": "Edge: all b"},
+    {"input": "abab", "desc": "Standard: alternating"},
+    {"input": "aabb", "desc": "Standard: separated"},
+    {"input": "bbaa", "desc": "Standard: reverse separated"},
+    {"input": "aaabbb", "desc": "Standard: equal counts"},
+    {"input": "aaaabbb", "desc": "Standard: more a"},
+    {"input": "aaabbbb", "desc": "Standard: more b"},
+    {"input": "ababab", "desc": "Standard: alternating 6"},
+    {"input": "aabbaa", "desc": "Standard: 4a 2b"},
+    {"input": "aaaaaaaaaabbbbbbbbbb", "desc": "Stress: 10+10"},
+    {"input": "abababababababababab", "desc": "Stress: 20 alternating"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 50 a's"},
+    {"input": "aaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbb", "desc": "Special: 20a 25b killer"}
+  ]
+}

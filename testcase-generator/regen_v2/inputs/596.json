@@ -1,0 +1,28 @@
+{
+  "pid": 596,
+  "slug": "count-ways-to-choose-coprime-integers-from-rows",
+  "inferred_constraints": "1 <= m, n <= 1e5; m*n <= 1e5; 1 <= mat[i][j] <= 30",
+  "input_format": "line1: mat (JSON 2D array)",
+  "testcases": [
+    {"input": "[[1,2],[3,4]]", "desc": "Edge: example1"},
+    {"input": "[[1]]", "desc": "Edge: single cell coprime with empty set?"},
+    {"input": "[[2]]", "desc": "Edge: gcd=2 not coprime"},
+    {"input": "[[1],[1]]", "desc": "Edge: gcd=1"},
+    {"input": "[[2],[3]]", "desc": "Edge: coprime"},
+    {"input": "[[2],[4]]", "desc": "Edge: not coprime"},
+    {"input": "[[1,2,3],[1,2,3]]", "desc": "Standard: 2x3 all coprime with 1"},
+    {"input": "[[2,4,6],[3,6,9]]", "desc": "Standard: mixed coprime"},
+    {"input": "[[5,10,15],[3,6,9]]", "desc": "Standard: 5 and 3 coprime"},
+    {"input": "[[1,2],[3,4],[5,6]]", "desc": "Standard: 3 rows"},
+    {"input": "[[2,3],[5,7],[11,13]]", "desc": "Standard: all primes"},
+    {"input": "[[1,1,1],[1,1,1],[1,1,1]]", "desc": "Standard: all 1s every choice works"},
+    {"input": "[[2,2,2],[3,3,3],[5,5,5]]", "desc": "Standard: same per row coprime"},
+    {"input": "[[6,10,15],[14,21,35],[22,33,55]]", "desc": "Standard: pairwise composites"},
+    {"input": "[[2,4,6,8,10],[3,9,15,21,27]]", "desc": "Standard: 2-mult vs 3-mult"},
+    {"input": "[[1,30],[1,30]]", "desc": "Standard: extremes"},
+    {"input": "[[2,3,5,7,11,13,17,19,23,29],[2,3,5,7,11,13,17,19,23,29]]", "desc": "Stress: 2x10 primes"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10],[1,2,3,4,5,6,7,8,9,10],[1,2,3,4,5,6,7,8,9,10]]", "desc": "Stress: 3x10 sequential"},
+    {"input": "[[30,30,30,30,30],[30,30,30,30,30]]", "desc": "Stress: all 30s never coprime"},
+    {"input": "[[2,3,5,7],[2,3,5,7],[2,3,5,7],[2,3,5,7],[2,3,5,7]]", "desc": "Special: 5 rows of primes killer"}
+  ]
+}

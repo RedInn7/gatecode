@@ -1,0 +1,28 @@
+{
+  "pid": 610,
+  "slug": "sort-features-by-popularity",
+  "inferred_constraints": "1 <= features.length <= 1e4; features[i] lowercase 1-10 chars distinct; 1 <= responses.length <= 100; responses[i] space-separated words",
+  "input_format": "line1: features (JSON array); line2: responses (JSON array)",
+  "testcases": [
+    {"input": "[\"cooler\",\"lock\",\"touch\"]\n[\"i like cooler cooler\",\"lock touch cool\",\"locker like touch\"]", "desc": "Edge: example1"},
+    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: single feature single response"},
+    {"input": "[\"a\",\"b\"]\n[\"a b\"]", "desc": "Edge: both equally popular"},
+    {"input": "[\"a\",\"b\"]\n[\"a\"]", "desc": "Edge: only one mentioned"},
+    {"input": "[\"a\"]\n[\"b c d\"]", "desc": "Edge: feature not in responses"},
+    {"input": "[\"x\",\"y\",\"z\"]\n[\"x x x\"]", "desc": "Edge: repeats only count once"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"a b c\",\"a b c\",\"a b c\"]", "desc": "Standard: tie all 3"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"a\",\"a b\",\"a b c\"]", "desc": "Standard: a > b > c"},
+    {"input": "[\"feature1\",\"feature2\"]\n[\"feature1 feature2\",\"feature1\"]", "desc": "Standard: f1 more popular"},
+    {"input": "[\"apple\",\"banana\",\"cherry\"]\n[\"apple banana cherry\",\"apple cherry\",\"apple\"]", "desc": "Standard: descending popularity"},
+    {"input": "[\"cool\",\"warm\",\"hot\"]\n[\"cool weather\",\"warm and cool\",\"hot stuff\"]", "desc": "Standard: mixed"},
+    {"input": "[\"one\",\"two\",\"three\",\"four\"]\n[\"one two three four one two\",\"three four\",\"one\"]", "desc": "Standard: each different"},
+    {"input": "[\"x\",\"y\"]\n[\"x x x x x\",\"x x x x\",\"x\"]", "desc": "Standard: x mentioned in many but y not"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\"]\n[\"a b\",\"c d\"]", "desc": "Standard: pair tied"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]\n[\"abc def\",\"def ghi\",\"abc ghi\"]", "desc": "Standard: all popularity 2"},
+    {"input": "[\"i\",\"like\",\"this\"]\n[\"i like this\",\"i like\",\"i\"]", "desc": "Standard: i wins"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n[\"a b c d e f g h i j\",\"a b c d e\",\"a b\",\"a\"]", "desc": "Stress: 10 features"},
+    {"input": "[\"alpha\",\"beta\",\"gamma\",\"delta\",\"epsilon\"]\n[\"alpha beta gamma delta epsilon\",\"alpha beta gamma delta\",\"alpha beta gamma\",\"alpha beta\",\"alpha\"]", "desc": "Stress: cascading"},
+    {"input": "[\"a\"]\n[\"a a a a a a a a a a a a a a a a a a a a\"]", "desc": "Stress: many same word"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[\"d e f\",\"g h i\"]", "desc": "Special: no feature mentioned killer"}
+  ]
+}

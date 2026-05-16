@@ -1,0 +1,28 @@
+{
+  "pid": 590,
+  "slug": "count-submatrices-with-all-ones",
+  "inferred_constraints": "1 <= m, n <= 150; mat[i][j] is 0 or 1",
+  "input_format": "line1: mat (JSON 2D array)",
+  "testcases": [
+    {"input": "[[1,0,1],[1,1,0],[1,1,0]]", "desc": "Edge: example1"},
+    {"input": "[[0,1,1,0],[0,1,1,1],[1,1,1,0]]", "desc": "Edge: example2"},
+    {"input": "[[0]]", "desc": "Edge: 1x1 zero"},
+    {"input": "[[1]]", "desc": "Edge: 1x1 one"},
+    {"input": "[[1,1,1]]", "desc": "Edge: 1xN all ones"},
+    {"input": "[[1],[1],[1]]", "desc": "Edge: Nx1 all ones"},
+    {"input": "[[0,0,0],[0,0,0],[0,0,0]]", "desc": "Edge: all zeros"},
+    {"input": "[[1,1],[1,1]]", "desc": "Edge: 2x2 all ones"},
+    {"input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]", "desc": "Standard: 3x5 all ones"},
+    {"input": "[[1,0,1,0],[0,1,0,1],[1,0,1,0]]", "desc": "Standard: checkerboard"},
+    {"input": "[[1,1,0],[1,1,0],[0,0,0]]", "desc": "Standard: corner block"},
+    {"input": "[[1,1,1,1],[1,0,1,1],[1,1,1,1]]", "desc": "Standard: one zero blocker"},
+    {"input": "[[1,0,1,0,1],[1,1,1,1,1],[1,0,1,0,1]]", "desc": "Standard: mixed"},
+    {"input": "[[0,0,1,1],[0,1,1,1],[1,1,1,1]]", "desc": "Standard: triangular ones"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1]]", "desc": "Standard: long row of ones"},
+    {"input": "[[1,1,1],[0,0,0],[1,1,1]]", "desc": "Standard: separated rows"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]]", "desc": "Stress: 10x10 all ones"},
+    {"input": "[[1,0,1,0,1,0,1,0,1,0],[0,1,0,1,0,1,0,1,0,1],[1,0,1,0,1,0,1,0,1,0],[0,1,0,1,0,1,0,1,0,1],[1,0,1,0,1,0,1,0,1,0]]", "desc": "Stress: 5x10 checkerboard"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]]", "desc": "Stress: 1x20 ones"},
+    {"input": "[[1,1,1,0,1,1,1],[1,1,1,1,1,1,1],[1,1,1,0,1,1,1]]", "desc": "Special: split by zeros killer"}
+  ]
+}

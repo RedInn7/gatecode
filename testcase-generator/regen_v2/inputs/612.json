@@ -1,0 +1,28 @@
+{
+  "pid": 612,
+  "slug": "maximum-number-of-operations-with-the-same-score-i",
+  "inferred_constraints": "2 <= nums.length <= 100; 1 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[3,2,1,4,5]", "desc": "Edge: example1"},
+    {"input": "[1,5,3,3,4,1,3,2,2,3]", "desc": "Edge: example2"},
+    {"input": "[1,1]", "desc": "Edge: minimum pair"},
+    {"input": "[1,2]", "desc": "Edge: n=2 different"},
+    {"input": "[1000,1000]", "desc": "Edge: max same"},
+    {"input": "[1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[2,2,2,2,2,2]", "desc": "Edge: all same n=6"},
+    {"input": "[1,1,2,2,3,3]", "desc": "Standard: tie ends"},
+    {"input": "[5,5,5,5,1,1]", "desc": "Standard: 5+5=10, 5+5=10, 1+1=2 -> stop at 2"},
+    {"input": "[3,3,3,3,3,3]", "desc": "Standard: triples"},
+    {"input": "[1,2,3,4,5,6]", "desc": "Standard: ascending"},
+    {"input": "[10,5,15,3,12,3]", "desc": "Standard: 10+5=15, 15+3=18 stop"},
+    {"input": "[100,200,300,100,200,300]", "desc": "Standard: pattern"},
+    {"input": "[1,9,5,5,4,6,2,8]", "desc": "Standard: all sum=10"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending 10"},
+    {"input": "[10,10,10,10,10,10,10,10]", "desc": "Standard: all 10s"},
+    {"input": "[500,500,250,750,300,700,400,600]", "desc": "Stress: all sum 1000"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 20 ones"},
+    {"input": "[1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000]", "desc": "Stress: 20 max"},
+    {"input": "[5,5,5,5,5,5,4,6,3,7]", "desc": "Special: sum=10 mixed killer"}
+  ]
+}

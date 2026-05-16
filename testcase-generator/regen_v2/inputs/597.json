@@ -1,0 +1,28 @@
+{
+  "pid": 597,
+  "slug": "minimum-amount-of-time-to-collect-garbage",
+  "inferred_constraints": "2 <= garbage.length <= 1e5; garbage[i] consists of 'M','P','G'; 1 <= garbage[i].length <= 10; travel.length == garbage.length - 1; 1 <= travel[i] <= 100",
+  "input_format": "line1: garbage (JSON array of strings); line2: travel (JSON array)",
+  "testcases": [
+    {"input": "[\"G\",\"P\",\"GP\",\"GG\"]\n[2,4,3]", "desc": "Edge: example1"},
+    {"input": "[\"MMM\",\"PGM\",\"GP\"]\n[3,10]", "desc": "Edge: example2"},
+    {"input": "[\"\",\"\"]\n[1]", "desc": "Edge: minimum, no garbage"},
+    {"input": "[\"M\",\"\"]\n[5]", "desc": "Edge: garbage only at house 0"},
+    {"input": "[\"\",\"M\"]\n[5]", "desc": "Edge: garbage at house 1 only"},
+    {"input": "[\"G\",\"P\",\"M\"]\n[1,1]", "desc": "Edge: 3 trucks need all houses"},
+    {"input": "[\"GPM\",\"GPM\",\"GPM\"]\n[1,1]", "desc": "Edge: all 3 types every house"},
+    {"input": "[\"MMM\",\"MMM\"]\n[5]", "desc": "Edge: only M"},
+    {"input": "[\"GP\",\"GP\",\"GP\",\"GP\"]\n[1,2,3]", "desc": "Standard: same garbage 4 houses"},
+    {"input": "[\"G\",\"\",\"G\",\"\",\"G\"]\n[1,2,3,4]", "desc": "Standard: alternating G"},
+    {"input": "[\"M\",\"P\",\"G\",\"MPG\",\"MPG\"]\n[1,1,1,1]", "desc": "Standard: mixed"},
+    {"input": "[\"GMPGMP\",\"GMP\",\"GP\",\"P\",\"\"]\n[1,1,1,1]", "desc": "Standard: decreasing"},
+    {"input": "[\"\",\"\",\"\",\"\",\"M\"]\n[10,10,10,10]", "desc": "Standard: trip cost dominates"},
+    {"input": "[\"M\",\"M\",\"M\",\"M\",\"M\"]\n[1,1,1,1]", "desc": "Standard: 5 M houses"},
+    {"input": "[\"MPG\"]\n[]", "desc": "Standard: single house all types"},
+    {"input": "[\"P\",\"G\",\"M\",\"P\",\"G\",\"M\"]\n[1,2,3,4,5]", "desc": "Standard: round-robin"},
+    {"input": "[\"MMMMM\",\"PPPPP\",\"GGGGG\",\"MMMMM\",\"PPPPP\",\"GGGGG\",\"MMMMM\",\"PPPPP\",\"GGGGG\",\"MMMMM\"]\n[10,10,10,10,10,10,10,10,10]", "desc": "Stress: 10 houses"},
+    {"input": "[\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\",\"MPG\"]\n[100,100,100,100,100,100,100,100,100,100,100,100,100,100]", "desc": "Stress: 15 mixed max travel"},
+    {"input": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"GGGGGGGGGG\"]\n[100,100,100,100,100,100,100,100,100,100,100,100,100,100]", "desc": "Stress: garbage only at end"},
+    {"input": "[\"G\",\"GP\",\"GPM\",\"GPMG\",\"GPMGP\"]\n[5,5,5,5]", "desc": "Special: increasing garbage size"}
+  ]
+}

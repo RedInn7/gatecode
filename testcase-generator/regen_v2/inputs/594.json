@@ -1,0 +1,28 @@
+{
+  "pid": 594,
+  "slug": "create-maximum-number",
+  "inferred_constraints": "1 <= m, n <= 500; 0 <= nums1[i], nums2[i] <= 9; 1 <= k <= m+n",
+  "input_format": "line1: nums1 (JSON array); line2: nums2 (JSON array); line3: k (int)",
+  "testcases": [
+    {"input": "[3,4,6,5]\n[9,1,2,5,8,3]\n5", "desc": "Edge: example1"},
+    {"input": "[6,7]\n[6,0,4]\n5", "desc": "Edge: example2 use all"},
+    {"input": "[3,9]\n[8,9]\n3", "desc": "Edge: example3"},
+    {"input": "[1]\n[1]\n1", "desc": "Edge: minimum"},
+    {"input": "[1]\n[1]\n2", "desc": "Edge: take both"},
+    {"input": "[9]\n[1]\n1", "desc": "Edge: pick max digit"},
+    {"input": "[1,9]\n[9,1]\n2", "desc": "Edge: order matters"},
+    {"input": "[0]\n[0]\n1", "desc": "Edge: zero pick"},
+    {"input": "[0,0,0]\n[0,0,0]\n3", "desc": "Edge: all zeros"},
+    {"input": "[5,5,5,5]\n[5,5,5,5]\n4", "desc": "Standard: identical"},
+    {"input": "[1,2,3,4,5]\n[6,7,8,9,0]\n5", "desc": "Standard: prefer higher"},
+    {"input": "[9,8,7]\n[1,2,3]\n3", "desc": "Standard: pick from one"},
+    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]\n5", "desc": "Standard: mirror"},
+    {"input": "[3,4,5]\n[9,8,7]\n4", "desc": "Standard: balanced"},
+    {"input": "[1,1,1,1,1]\n[9,9,9,9,9]\n5", "desc": "Standard: clearly second better"},
+    {"input": "[9,9,9,1,2]\n[1,2,3,9,9,9]\n6", "desc": "Standard: balance"},
+    {"input": "[9,8,7,6,5,4,3,2,1,0]\n[0,1,2,3,4,5,6,7,8,9]\n10", "desc": "Stress: 20 mixed pick 10"},
+    {"input": "[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]\n[9,8,7,6,5,4,3,2,1,9,8,7,6,5,4,3,2,1,9,8,7,6,5,4,3,2,1]\n10", "desc": "Stress: 27+27 pick 10"},
+    {"input": "[9,9,9,9,9]\n[9,9,9,9,9]\n10", "desc": "Stress: all 9s pick all"},
+    {"input": "[0,0,0,0,0]\n[0,0,0,0,0,1]\n5", "desc": "Special: best is grab the 1"}
+  ]
+}

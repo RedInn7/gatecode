@@ -1,0 +1,28 @@
+{
+  "pid": 607,
+  "slug": "two-sum-less-than-k",
+  "inferred_constraints": "1 <= nums.length <= 100; 1 <= nums[i] <= 1000; 1 <= k <= 2000",
+  "input_format": "line1: nums (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[34,23,1,24,75,33,54,8]\n60", "desc": "Edge: example1"},
+    {"input": "[10,20,30]\n15", "desc": "Edge: example2 no pair"},
+    {"input": "[1,1]\n2", "desc": "Edge: smallest possible pair"},
+    {"input": "[1,1]\n3", "desc": "Edge: pair below k"},
+    {"input": "[1000]\n2000", "desc": "Edge: n=1 no pair"},
+    {"input": "[1000,1000]\n2000", "desc": "Edge: pair equals k"},
+    {"input": "[1,2]\n3", "desc": "Edge: pair=k=3 not<k"},
+    {"input": "[1,2]\n4", "desc": "Edge: pair<k"},
+    {"input": "[5,5,5,5]\n11", "desc": "Standard: all same"},
+    {"input": "[1,2,3,4,5]\n7", "desc": "Standard: best=2+4=6"},
+    {"input": "[10,30,50,70,90]\n100", "desc": "Standard: spread"},
+    {"input": "[500,500,500]\n1000", "desc": "Standard: pair=k"},
+    {"input": "[1,1000,500,200,100]\n1500", "desc": "Standard: best=1000+500=1500"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n15", "desc": "Standard: best=10+4=14"},
+    {"input": "[100,200,300,400,500]\n800", "desc": "Standard: increasing"},
+    {"input": "[2,4,6,8,10]\n12", "desc": "Standard: even"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n3", "desc": "Stress: many ones"},
+    {"input": "[1000,999,998,997,996,995,994,993,992,991,990,989,988,987,986,985,984,983,982,981]\n2000", "desc": "Stress: 20 large"},
+    {"input": "[500,499,498,497,496,495,494,493,492,491]\n1000", "desc": "Stress: just below k"},
+    {"input": "[100]\n200", "desc": "Special: single element no pair killer"}
+  ]
+}

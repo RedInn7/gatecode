@@ -1,0 +1,28 @@
+{
+  "pid": 589,
+  "slug": "queries-on-a-permutation-with-key",
+  "inferred_constraints": "1 <= m <= 1e3; 1 <= queries.length <= m; 1 <= queries[i] <= m",
+  "input_format": "line1: queries (JSON array); line2: m (int)",
+  "testcases": [
+    {"input": "[3,1,2,1]\n5", "desc": "Edge: example1"},
+    {"input": "[1]\n1", "desc": "Edge: minimum"},
+    {"input": "[1,2,3,4,5]\n5", "desc": "Edge: sequential m=5"},
+    {"input": "[5,4,3,2,1]\n5", "desc": "Edge: reverse query"},
+    {"input": "[1,1,1,1,1]\n5", "desc": "Edge: repeated same"},
+    {"input": "[2,2]\n3", "desc": "Edge: repeated mid"},
+    {"input": "[3]\n3", "desc": "Edge: query equals m"},
+    {"input": "[2,1,2,1]\n3", "desc": "Standard: oscillating"},
+    {"input": "[4,1,2,3,4]\n4", "desc": "Standard: query m repeated"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n10", "desc": "Standard: 10 sequential"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n10", "desc": "Standard: 10 descending"},
+    {"input": "[5,5,5,5,5]\n10", "desc": "Standard: repeated single"},
+    {"input": "[7,3,5,7,3]\n10", "desc": "Standard: small subset"},
+    {"input": "[1,10,5,3,7,2,9,4,8,6]\n10", "desc": "Standard: shuffled"},
+    {"input": "[100,50,25,12,6,3,1]\n100", "desc": "Standard: powers of 2"},
+    {"input": "[100,100,99,98,97]\n100", "desc": "Standard: high values"},
+    {"input": "[1000,999,998,997,996,995,994,993,992,991]\n1000", "desc": "Stress: m=1000"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]\n25", "desc": "Stress: m=25"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1000", "desc": "Stress: 20 same query large m"},
+    {"input": "[3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7,1,6,9,3,9,9,3,7,5,1]\n10", "desc": "Special: pi digits killer (drop the 0)"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 593,
+  "slug": "vowel-spellchecker",
+  "inferred_constraints": "1 <= wordlist.length, queries.length <= 5000; 1 <= wordlist[i].length, queries[i].length <= 7; words contain English letters",
+  "input_format": "line1: wordlist (JSON array of strings); line2: queries (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]", "desc": "Edge: example1"},
+    {"input": "[\"yellow\"]\n[\"YellOw\"]", "desc": "Edge: capitalization fix"},
+    {"input": "[\"yellow\"]\n[\"yellow\"]", "desc": "Edge: exact match"},
+    {"input": "[\"yellow\"]\n[\"yollow\"]", "desc": "Edge: vowel fix"},
+    {"input": "[\"yellow\"]\n[\"yllw\"]", "desc": "Edge: no match (consonant only)"},
+    {"input": "[\"a\"]\n[\"a\"]", "desc": "Edge: single char"},
+    {"input": "[\"a\"]\n[\"e\"]", "desc": "Edge: single vowel fix"},
+    {"input": "[\"abc\"]\n[\"xyz\"]", "desc": "Edge: no match"},
+    {"input": "[\"Yellow\"]\n[\"yellow\"]", "desc": "Standard: case fix"},
+    {"input": "[\"YellOw\"]\n[\"yeellow\"]", "desc": "Standard: too many letters no match"},
+    {"input": "[\"hello\",\"world\"]\n[\"HELLO\",\"WORLD\"]", "desc": "Standard: case fix multi"},
+    {"input": "[\"aaa\",\"AAA\"]\n[\"aaa\",\"AAA\",\"aAa\"]", "desc": "Standard: ambiguous"},
+    {"input": "[\"cat\",\"dog\",\"fish\"]\n[\"CAT\",\"Dog\",\"FISH\"]", "desc": "Standard: triple case fix"},
+    {"input": "[\"Apple\"]\n[\"apple\",\"APPLE\",\"ApPlE\"]", "desc": "Standard: all case variations"},
+    {"input": "[\"hare\",\"Hare\"]\n[\"hAre\",\"hARE\"]", "desc": "Standard: case priority"},
+    {"input": "[\"keti\"]\n[\"keto\",\"kete\",\"keta\",\"ketu\"]", "desc": "Standard: vowel variants"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]\n[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]", "desc": "Stress: 10 singletons"},
+    {"input": "[\"abcdef\",\"ABCDEF\",\"AbCdEf\"]\n[\"abcdef\",\"ABCDEF\",\"AbCdEf\",\"abcdEF\",\"ABCDef\"]", "desc": "Stress: case mixing"},
+    {"input": "[\"hello\",\"hallo\",\"hullo\",\"hillo\",\"hollo\"]\n[\"hello\",\"hallo\",\"hxllo\",\"hxllo\",\"hyllo\"]", "desc": "Stress: vowel options"},
+    {"input": "[\"abc\"]\n[\"abc\",\"ABC\",\"Abc\",\"abC\",\"axc\",\"axxc\"]", "desc": "Special: priority resolution killer"}
+  ]
+}

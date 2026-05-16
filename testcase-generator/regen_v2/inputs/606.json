@@ -1,0 +1,28 @@
+{
+  "pid": 606,
+  "slug": "next-greater-element-ii",
+  "inferred_constraints": "1 <= nums.length <= 1e4; -1e9 <= nums[i] <= 1e9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,1]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,3]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single element"},
+    {"input": "[5,5,5]", "desc": "Edge: all same"},
+    {"input": "[1000000000]", "desc": "Edge: max single"},
+    {"input": "[-1000000000]", "desc": "Edge: min single"},
+    {"input": "[1,2]", "desc": "Edge: n=2"},
+    {"input": "[2,1]", "desc": "Edge: n=2 descending"},
+    {"input": "[1,1,1,1]", "desc": "Standard: all same multiple"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[1,3,2,4,3]", "desc": "Standard: mixed"},
+    {"input": "[5,4,3,2,1,6]", "desc": "Standard: ends with max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 10 ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: 10 descending"},
+    {"input": "[5,5,5,1,1,1,5,5,5]", "desc": "Standard: pattern"},
+    {"input": "[1000000000,-1000000000,1000000000,-1000000000]", "desc": "Stress: extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 20 same"},
+    {"input": "[5,4,3,2,1,5,4,3,2,1]", "desc": "Special: repeated pattern killer"}
+  ]
+}
