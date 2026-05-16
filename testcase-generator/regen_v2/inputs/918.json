@@ -1,27 +1,88 @@
 {
-  "pid": 918, "slug": "next-greater-element-iii",
+  "pid": 918,
+  "slug": "next-greater-element-iii",
   "inferred_constraints": "1 <= n <= 2^31-1",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "12", "desc": "Edge: example1"},
-    {"input": "21", "desc": "Edge: example2 -1"},
-    {"input": "1", "desc": "Edge: single digit"},
-    {"input": "9", "desc": "Edge: 9"},
-    {"input": "10", "desc": "Standard: 10"},
-    {"input": "11", "desc": "Standard: 11 -1"},
-    {"input": "99", "desc": "Standard: 99 -1"},
-    {"input": "100", "desc": "Standard: 100 -1"},
-    {"input": "111", "desc": "Standard: 111 -1"},
-    {"input": "123", "desc": "Standard: 123"},
-    {"input": "321", "desc": "Standard: 321 -1"},
-    {"input": "1234567890", "desc": "Standard: 10 digits"},
-    {"input": "987654321", "desc": "Standard: desc -1"},
-    {"input": "2147483486", "desc": "Edge: near INT_MAX"},
-    {"input": "2147483647", "desc": "Edge: INT_MAX -1"},
-    {"input": "1999999999", "desc": "Edge: large"},
-    {"input": "121", "desc": "Standard: 121"},
-    {"input": "534976", "desc": "Standard: classic"},
-    {"input": "2147",  "desc": "Standard: 2147"},
-    {"input": "12345", "desc": "Special: ascending"}
+    {
+      "input": "12",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "21",
+      "desc": "Edge: example2 -1"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "11",
+      "desc": "Standard: 11 -1"
+    },
+    {
+      "input": "99",
+      "desc": "Standard: 99 -1"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: 100 -1"
+    },
+    {
+      "input": "111",
+      "desc": "Standard: 111 -1"
+    },
+    {
+      "input": "123",
+      "desc": "Standard: 123"
+    },
+    {
+      "input": "321",
+      "desc": "Standard: 321 -1"
+    },
+    {
+      "input": "1234567890",
+      "desc": "Standard: 10 digits"
+    },
+    {
+      "input": "987654321",
+      "desc": "Standard: desc -1"
+    },
+    {
+      "input": "2147483486",
+      "desc": "Edge: near INT_MAX"
+    },
+    {
+      "input": "2147483647",
+      "desc": "Edge: INT_MAX -1"
+    },
+    {
+      "input": "1999999999",
+      "desc": "Edge: large"
+    },
+    {
+      "input": "121",
+      "desc": "Standard: 121"
+    },
+    {
+      "input": "534976",
+      "desc": "Standard: classic"
+    },
+    {
+      "input": "2147",
+      "desc": "Standard: 2147"
+    },
+    {
+      "input": "21",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
