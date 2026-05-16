@@ -1,0 +1,27 @@
+{
+  "pid": 782, "slug": "number-of-strings-that-appear-as-substrings-in-word",
+  "inferred_constraints": "1 <= patterns.length <= 100, 1 <= patterns[i].length <= 100, 1 <= word.length <= 100",
+  "input_format": "line1: patterns (JSON array); line2: word (raw)",
+  "testcases": [
+    {"input": "[\"a\",\"abc\",\"bc\",\"d\"]\nabc", "desc": "Edge: example1"},
+    {"input": "[\"a\",\"b\",\"c\"]\naaaaabbbbb", "desc": "Edge: example2"},
+    {"input": "[\"a\",\"a\",\"a\"]\nab", "desc": "Edge: example3 dups"},
+    {"input": "[\"a\"]\na", "desc": "Edge: single match"},
+    {"input": "[\"a\"]\nb", "desc": "Edge: no match"},
+    {"input": "[\"ab\"]\nba", "desc": "Edge: not substring"},
+    {"input": "[\"\"]\nword", "desc": "Edge: empty pattern"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]\nabcdefghi", "desc": "Standard: 3 all match"},
+    {"input": "[\"xyz\",\"abc\"]\nxyzabc", "desc": "Standard: both at edges"},
+    {"input": "[\"hello\"]\nhelloworld", "desc": "Standard: prefix"},
+    {"input": "[\"world\"]\nhelloworld", "desc": "Standard: suffix"},
+    {"input": "[\"low\",\"orl\"]\nhelloworld", "desc": "Standard: middle"},
+    {"input": "[\"aa\",\"aaa\",\"aaaa\"]\naaaaa", "desc": "Standard: overlapping"},
+    {"input": "[\"abc\",\"bcd\",\"cde\"]\nabcde", "desc": "Standard: sliding"},
+    {"input": "[\"z\",\"y\",\"x\"]\nabc", "desc": "Standard: none match"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]\naaaa", "desc": "Standard: 5 same pattern"},
+    {"input": "[\"abcde\",\"abcdef\",\"abc\"]\nabcdefg", "desc": "Standard: 3 nested"},
+    {"input": "[\"q\",\"w\",\"e\",\"r\",\"t\",\"y\"]\nqwerty", "desc": "Standard: each char"},
+    {"input": "[\"abcdefghij\"]\nabcdefghij", "desc": "Standard: exact word"},
+    {"input": "[\"aaa\",\"bbb\",\"ccc\",\"abc\"]\naabcbcabbbcc", "desc": "Special: scattered"}
+  ]
+}

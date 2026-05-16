@@ -1,0 +1,27 @@
+{
+  "pid": 786, "slug": "maximum-xor-after-operations",
+  "inferred_constraints": "1 <= nums.length <= 1e5, 0 <= nums[i] <= 1e8",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[3,2,4,6]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,9,2]", "desc": "Edge: example2"},
+    {"input": "[0]", "desc": "Edge: n=1 zero"},
+    {"input": "[1]", "desc": "Edge: n=1 one"},
+    {"input": "[100000000]", "desc": "Edge: n=1 max"},
+    {"input": "[0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,1,1]", "desc": "Edge: all 1"},
+    {"input": "[100000000,100000000]", "desc": "Edge: 2 max"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Standard: powers of 2"},
+    {"input": "[1,3,7,15,31,63,127,255]", "desc": "Standard: 2^n-1"},
+    {"input": "[7,7,7,7,7]", "desc": "Standard: all 7"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[100000000,99999999,99999998]", "desc": "Edge: near max"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]", "desc": "Stress: 50 same"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192]", "desc": "Standard: 14 powers"},
+    {"input": "[3,3,3,3,3,3,3,3,3,3]", "desc": "Standard: all 3"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: n=20"},
+    {"input": "[12345678,87654321,11111111,99999999]", "desc": "Standard: random large"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Special: 0-15"}
+  ]
+}

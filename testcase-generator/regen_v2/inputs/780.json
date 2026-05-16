@@ -1,0 +1,27 @@
+{
+  "pid": 780, "slug": "string-transforms-into-another-string",
+  "inferred_constraints": "1 <= str1.length == str2.length <= 1e4, lowercase",
+  "input_format": "line1: str1 (raw); line2: str2 (raw)",
+  "testcases": [
+    {"input": "aabcc\nccdee", "desc": "Edge: example1 true"},
+    {"input": "leetcode\ncodeleet", "desc": "Edge: example2 false"},
+    {"input": "a\nb", "desc": "Edge: single char different"},
+    {"input": "a\na", "desc": "Edge: identical"},
+    {"input": "ab\nba", "desc": "Edge: swap pair"},
+    {"input": "aa\nbb", "desc": "Edge: same -> same"},
+    {"input": "abc\nabc", "desc": "Edge: identical 3"},
+    {"input": "abc\ncba", "desc": "Edge: reverse"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nbcdefghijklmnopqrstuvwxyza", "desc": "Edge: full cycle (false)"},
+    {"input": "ab\ncd", "desc": "Standard: 2-char distinct"},
+    {"input": "xyz\nzyx", "desc": "Standard: 3-char swap"},
+    {"input": "aabb\nbbaa", "desc": "Standard: 2-2 swap"},
+    {"input": "abcde\nedcba", "desc": "Standard: reverse 5"},
+    {"input": "hello\nworld", "desc": "Standard: real words"},
+    {"input": "aaaa\nbbbb", "desc": "Standard: all same to all same"},
+    {"input": "aabcc\nbbcaa", "desc": "Standard: cycle"},
+    {"input": "abcdefghij\njihgfedcba", "desc": "Standard: 10 reverse"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nzyxwvutsrqponmlkjihgfedcba", "desc": "Standard: 26 reverse"},
+    {"input": "ab\naa", "desc": "Edge: collapse"},
+    {"input": "aa\nab", "desc": "Special: expand from 1"}
+  ]
+}

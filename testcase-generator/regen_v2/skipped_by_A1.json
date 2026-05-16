@@ -435,6 +435,11 @@
       "pid": 762,
       "slug": "minimum-height-trees",
       "reason": "Returns list of root labels in any order — non-unique, needs sorted comparison"
+    },
+    {
+      "pid": 783,
+      "slug": "find-indices-with-index-and-value-difference-i",
+      "reason": "Returns any valid [i, j] pair — non-unique output, needs SPJ"
     }
   ]
 }
