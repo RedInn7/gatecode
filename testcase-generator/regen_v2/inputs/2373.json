@@ -1,0 +1,28 @@
+{
+  "pid": 2373,
+  "slug": "maximum-number-of-occurrences-of-a-substring",
+  "inferred_constraints": "1 <= s.length <= 10^5; 1 <= maxLetters <= 26; 1 <= minSize <= maxSize <= min(26, s.length); lowercase letters",
+  "input_format": "line1: s (quoted string); line2: maxLetters; line3: minSize; line4: maxSize",
+  "testcases": [
+    {"input": "\"aababcaab\"\n2\n3\n4", "desc": "Standard example 1"},
+    {"input": "\"aaaa\"\n1\n3\n3", "desc": "Standard example 2"},
+    {"input": "\"a\"\n1\n1\n1", "desc": "Edge: minimal"},
+    {"input": "\"abcdef\"\n1\n2\n3", "desc": "Edge: no qualified substring (no 2+ repeat)"},
+    {"input": "\"aaaaa\"\n1\n2\n2", "desc": "5 a's window 2"},
+    {"input": "\"ababab\"\n2\n2\n2", "desc": "Bigram"},
+    {"input": "\"abcabc\"\n3\n3\n3", "desc": "Trigram"},
+    {"input": "\"aabbcc\"\n2\n2\n3", "desc": "Block pairs"},
+    {"input": "\"zzzzzzzzzz\"\n1\n5\n5", "desc": "All same fixed size"},
+    {"input": "\"abababababababab\"\n2\n2\n4", "desc": "Long alternating"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n26\n1\n26", "desc": "All distinct"},
+    {"input": "\"aaaabbbbcccc\"\n3\n2\n4", "desc": "Block 4"},
+    {"input": "\"hellohello\"\n4\n5\n5", "desc": "Word repeat"},
+    {"input": "\"abcdefghabcdefgh\"\n8\n8\n8", "desc": "Repeated unique"},
+    {"input": "\"aaabbbcccaaabbbccc\"\n3\n3\n6", "desc": "Two blocks"},
+    {"input": "\"xyxyxyxyxyxyxy\"\n2\n2\n2", "desc": "Alternating xy"},
+    {"input": "\"abc\"\n3\n3\n3", "desc": "Edge: exact match once"},
+    {"input": "\"aaaa\"\n1\n1\n1", "desc": "All same min 1"},
+    {"input": "\"abcabcabcabc\"\n3\n3\n3", "desc": "Repeat 3-chars"},
+    {"input": "\"aabbccddeeffgghhiijjkkllmmnnoopp\"\n2\n2\n4", "desc": "Long mixed"}
+  ]
+}

@@ -179,6 +179,31 @@
       "pid": 2360,
       "slug": "number-of-equal-numbers-blocks",
       "reason": "interactive BigArray API (at, size) - cannot test via standard I/O"
+    },
+    {
+      "pid": 2390,
+      "slug": "memoize",
+      "reason": "JavaScript-only memoize takes a function arg; no C++/Python signatures"
+    },
+    {
+      "pid": 2393,
+      "slug": "design-log-storage-system",
+      "reason": "design class with put/retrieve method-call sequence; stateful operations"
+    },
+    {
+      "pid": 2398,
+      "slug": "smallest-number-in-infinite-set",
+      "reason": "design class with method-call sequence (popSmallest, addBack); stateful"
+    },
+    {
+      "pid": 2401,
+      "slug": "allow-one-function-call",
+      "reason": "JavaScript-only once-wrapper takes a function arg"
+    },
+    {
+      "pid": 2404,
+      "slug": "design-an-atm-machine",
+      "reason": "design class ATM with deposit/withdraw method-call sequence; stateful"
     }
   ]
 }

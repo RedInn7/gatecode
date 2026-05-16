@@ -1,0 +1,28 @@
+{
+  "pid": 2388,
+  "slug": "shortest-distance-to-a-character",
+  "inferred_constraints": "1 <= s.length <= 10^4; s and c are lowercase letters; c occurs at least once in s",
+  "input_format": "line1: s (quoted string); line2: c (quoted string)",
+  "testcases": [
+    {"input": "\"loveleetcode\"\n\"e\"", "desc": "Standard example 1"},
+    {"input": "\"aaab\"\n\"b\"", "desc": "Standard example 2"},
+    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 matches"},
+    {"input": "\"ab\"\n\"a\"", "desc": "Edge: a at start"},
+    {"input": "\"ab\"\n\"b\"", "desc": "Edge: b at end"},
+    {"input": "\"aaaa\"\n\"a\"", "desc": "All same"},
+    {"input": "\"abab\"\n\"a\"", "desc": "Alternating a"},
+    {"input": "\"abcdef\"\n\"a\"", "desc": "Distinct first"},
+    {"input": "\"abcdef\"\n\"f\"", "desc": "Distinct last"},
+    {"input": "\"abcdef\"\n\"c\"", "desc": "Distinct mid"},
+    {"input": "\"aaaaaaabbb\"\n\"b\"", "desc": "b at end of block"},
+    {"input": "\"bbbaaaaaaa\"\n\"b\"", "desc": "b at front"},
+    {"input": "\"acbacbacbacb\"\n\"b\"", "desc": "Repeating pattern"},
+    {"input": "\"abcdeabcdeabcde\"\n\"e\"", "desc": "Period 5"},
+    {"input": "\"zzzzzzzzzz\"\n\"z\"", "desc": "All z"},
+    {"input": "\"ababababab\"\n\"a\"", "desc": "Alt 10"},
+    {"input": "\"aaaaaaaaaabbbbbbbbbb\"\n\"b\"", "desc": "Block 10-10"},
+    {"input": "\"helloworld\"\n\"o\"", "desc": "Two o's"},
+    {"input": "\"programmingiscool\"\n\"i\"", "desc": "Words"},
+    {"input": "\"abcabcabcabcabcabcabcabcabcabc\"\n\"a\"", "desc": "30 chars"}
+  ]
+}
