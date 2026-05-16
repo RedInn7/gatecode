@@ -1,0 +1,27 @@
+{
+  "pid": 880, "slug": "maximum-enemy-forts-that-can-be-captured",
+  "inferred_constraints": "guess: forts array {-1, 0, 1}, find max captures",
+  "input_format": "line1: forts (JSON array)",
+  "testcases": [
+    {"input": "[1,0,0,-1,0,0,0,0,1]", "desc": "Edge: example1"},
+    {"input": "[0,0,1,-1]", "desc": "Edge: example2"},
+    {"input": "[1,-1]", "desc": "Edge: adjacent"},
+    {"input": "[-1,1]", "desc": "Edge: adjacent reverse"},
+    {"input": "[1,0,-1]", "desc": "Edge: 1 capture"},
+    {"input": "[-1,0,1]", "desc": "Edge: 1 capture reverse"},
+    {"input": "[1,0,0,0,-1]", "desc": "Standard: 3 captures"},
+    {"input": "[1,0,0,0,0,-1]", "desc": "Standard: 4 captures"},
+    {"input": "[1,1,1,1]", "desc": "Edge: no enemy"},
+    {"input": "[-1,-1,-1,-1]", "desc": "Edge: no your"},
+    {"input": "[0,0,0,0]", "desc": "Edge: all empty"},
+    {"input": "[1]", "desc": "Edge: single your fort"},
+    {"input": "[1,0,0,-1,0,0,1,0,-1]", "desc": "Standard: 2 captures"},
+    {"input": "[-1,0,0,0,0,0,0,0,0,1]", "desc": "Standard: big capture"},
+    {"input": "[1,0,1,0,-1,0,1,0,-1,0,1]", "desc": "Standard: mixed"},
+    {"input": "[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1]", "desc": "Standard: long capture"},
+    {"input": "[0,1,0,-1,0]", "desc": "Standard: short"},
+    {"input": "[1,-1,1,-1,1,-1]", "desc": "Edge: alternating adjacent"},
+    {"input": "[0,0,0,1,0,0,0,-1,0,0,0]", "desc": "Standard: 3 captures middle"},
+    {"input": "[1,0,0,1,0,-1,0,0,1,0,0,0,-1]", "desc": "Special: complex"}
+  ]
+}

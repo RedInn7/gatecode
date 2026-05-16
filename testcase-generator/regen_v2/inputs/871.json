@@ -1,0 +1,27 @@
+{
+  "pid": 871, "slug": "number-of-wonderful-substrings",
+  "inferred_constraints": "1 <= word.length <= 1e5, chars in [a-j]",
+  "input_format": "line1: word (raw)",
+  "testcases": [
+    {"input": "aba", "desc": "Edge: example1"},
+    {"input": "aabb", "desc": "Edge: example2"},
+    {"input": "he", "desc": "Edge: example3"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "j", "desc": "Edge: single j"},
+    {"input": "aa", "desc": "Edge: 2 same"},
+    {"input": "ab", "desc": "Edge: 2 distinct"},
+    {"input": "aaaa", "desc": "Edge: 4 same"},
+    {"input": "abcdefghij", "desc": "Edge: 10 distinct"},
+    {"input": "aaaaaaaaaa", "desc": "Standard: 10 a"},
+    {"input": "ababababab", "desc": "Standard: alternating"},
+    {"input": "abcabcabc", "desc": "Standard: 3-cycle"},
+    {"input": "abcdefghijabcdefghij", "desc": "Standard: 20 alphabet"},
+    {"input": "ccjjc", "desc": "Standard: wonderful"},
+    {"input": "abab", "desc": "Standard: wonderful 4"},
+    {"input": "aabbcc", "desc": "Standard: pairs"},
+    {"input": "aabbccddee", "desc": "Standard: 10 paired"},
+    {"input": "abcdef", "desc": "Standard: 6 distinct"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a"},
+    {"input": "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij", "desc": "Special: 50 cycled"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 883, "slug": "index-pairs-of-a-string",
+  "inferred_constraints": "text + words array, return [start,end] indices sorted",
+  "input_format": "line1: text (raw); line2: words (JSON array)",
+  "testcases": [
+    {"input": "thestoryofleetcodeandme\n[\"story\",\"fleet\",\"leetcode\"]", "desc": "Edge: example1"},
+    {"input": "ababa\n[\"aba\",\"ab\"]", "desc": "Edge: example2"},
+    {"input": "abc\n[\"a\",\"b\",\"c\"]", "desc": "Standard: single chars"},
+    {"input": "abc\n[\"abc\"]", "desc": "Edge: exact match"},
+    {"input": "abc\n[\"xyz\"]", "desc": "Edge: no match"},
+    {"input": "aaaa\n[\"a\",\"aa\",\"aaa\"]", "desc": "Standard: overlapping"},
+    {"input": "hello world\n[\"hello\",\"world\"]", "desc": "Standard: 2 words"},
+    {"input": "leetcode\n[\"leet\",\"code\",\"leetcode\"]", "desc": "Standard: 3 patterns"},
+    {"input": "abcdefghij\n[\"a\",\"j\"]", "desc": "Standard: ends"},
+    {"input": "ababcdcd\n[\"ab\",\"cd\"]", "desc": "Standard: pair occurrences"},
+    {"input": "racecar\n[\"r\",\"car\",\"race\"]", "desc": "Standard: 3 chars"},
+    {"input": "xxxxxxx\n[\"x\",\"xx\",\"xxx\"]", "desc": "Edge: many overlaps"},
+    {"input": "programming\n[\"prog\",\"ram\",\"ming\"]", "desc": "Standard: 3 substrings"},
+    {"input": "aabbccddeeff\n[\"a\",\"bb\",\"dd\"]", "desc": "Standard: groups"},
+    {"input": "abcabc\n[\"abc\"]", "desc": "Standard: 2 occurrences"},
+    {"input": "test\n[\"test\",\"tes\",\"st\",\"t\",\"e\",\"s\"]", "desc": "Standard: many sub"},
+    {"input": "z\n[\"z\"]", "desc": "Edge: single char both"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n[\"abc\",\"xyz\"]", "desc": "Standard: edges"},
+    {"input": "mississippi\n[\"is\",\"si\",\"pi\"]", "desc": "Standard: multiple"},
+    {"input": "thequickbrownfox\n[\"the\",\"quick\",\"fox\"]", "desc": "Special: classic"}
+  ]
+}

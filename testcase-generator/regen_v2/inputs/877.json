@@ -1,0 +1,27 @@
+{
+  "pid": 877, "slug": "minimum-limit-of-balls-in-a-bag",
+  "inferred_constraints": "1 <= nums.length <= 1e5, 1 <= maxOperations, nums[i] <= 1e9",
+  "input_format": "line1: nums (JSON array); line2: maxOperations (int)",
+  "testcases": [
+    {"input": "[9]\n2", "desc": "Edge: single bag"},
+    {"input": "[2,4,8,2]\n4", "desc": "Edge: classic"},
+    {"input": "[7,17]\n2", "desc": "Edge: small"},
+    {"input": "[1]\n1", "desc": "Edge: min"},
+    {"input": "[1000000000]\n1", "desc": "Edge: max single"},
+    {"input": "[1000000000]\n1000000000", "desc": "Edge: max ops"},
+    {"input": "[2]\n1", "desc": "Edge: 2 with 1 op"},
+    {"input": "[2,2,2,2,2]\n5", "desc": "Edge: all same"},
+    {"input": "[10,20,30,40,50]\n10", "desc": "Standard: ascending"},
+    {"input": "[100,100,100,100]\n10", "desc": "Standard: all 100"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: 1-10"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]\n10", "desc": "Standard: 10 fives"},
+    {"input": "[1000000000,1,1,1,1]\n5", "desc": "Standard: one huge"},
+    {"input": "[100,100,100]\n3", "desc": "Standard: 3 same"},
+    {"input": "[3,5,8,11]\n3", "desc": "Standard: increasing"},
+    {"input": "[10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]\n20", "desc": "Standard: 20 tens"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n5", "desc": "Standard: all ones"},
+    {"input": "[7,17]\n0", "desc": "Standard: no ops"},
+    {"input": "[1000000000,1000000000]\n1", "desc": "Edge: 2 max with 1 op"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n50", "desc": "Special: hundreds"}
+  ]
+}

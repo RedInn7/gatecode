@@ -1,0 +1,27 @@
+{
+  "pid": 872, "slug": "determine-color-of-a-chessboard-square",
+  "inferred_constraints": "coordinates a1-h8 chess format",
+  "input_format": "line1: coordinates (raw string e.g. a1)",
+  "testcases": [
+    {"input": "a1", "desc": "Edge: a1"},
+    {"input": "h3", "desc": "Edge: standard"},
+    {"input": "c7", "desc": "Edge: standard"},
+    {"input": "a8", "desc": "Edge: top-left"},
+    {"input": "h1", "desc": "Edge: bottom-right"},
+    {"input": "h8", "desc": "Edge: top-right"},
+    {"input": "a2", "desc": "Edge: a2"},
+    {"input": "b1", "desc": "Edge: b1"},
+    {"input": "d4", "desc": "Standard: center"},
+    {"input": "e5", "desc": "Standard: center"},
+    {"input": "f6", "desc": "Standard: diag"},
+    {"input": "g7", "desc": "Standard: diag"},
+    {"input": "b2", "desc": "Standard: b2"},
+    {"input": "c3", "desc": "Standard: c3"},
+    {"input": "d8", "desc": "Standard: d8"},
+    {"input": "e1", "desc": "Standard: e1"},
+    {"input": "f4", "desc": "Standard: f4"},
+    {"input": "g3", "desc": "Standard: g3"},
+    {"input": "h5", "desc": "Standard: h5"},
+    {"input": "a4", "desc": "Special: a4"}
+  ]
+}

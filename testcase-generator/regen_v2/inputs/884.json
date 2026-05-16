@@ -1,0 +1,27 @@
+{
+  "pid": 884, "slug": "maximize-area-of-square-hole-in-grid",
+  "inferred_constraints": "n, m, hBars, vBars (1-indexed bar arrays)",
+  "input_format": "line1: n (int); line2: m (int); line3: hBars (JSON array); line4: vBars (JSON array)",
+  "testcases": [
+    {"input": "2\n2\n[2,3]\n[2,3]", "desc": "Edge: example1"},
+    {"input": "1\n1\n[2]\n[2]", "desc": "Edge: 1x1"},
+    {"input": "1\n1\n[]\n[]", "desc": "Edge: no bars (constraint may not allow)"},
+    {"input": "2\n2\n[2,3]\n[2]", "desc": "Edge: only h bars"},
+    {"input": "2\n2\n[3]\n[2,3]", "desc": "Edge: only v bars"},
+    {"input": "5\n5\n[2,3,4,5,6]\n[2,3,4,5,6]", "desc": "Standard: all consecutive"},
+    {"input": "5\n5\n[2]\n[2]", "desc": "Edge: single hole"},
+    {"input": "10\n10\n[2,3,4,5,6,7,8,9,10,11]\n[2,3,4,5,6,7,8,9,10,11]", "desc": "Standard: full"},
+    {"input": "5\n5\n[2,4,6]\n[3,5,7]", "desc": "Standard: scattered"},
+    {"input": "3\n3\n[2,3,4]\n[2,3,4]", "desc": "Standard: 3x3"},
+    {"input": "4\n4\n[2,3,4,5]\n[2,3,4,5]", "desc": "Standard: 4x4"},
+    {"input": "100\n100\n[2,3,4,5,6,7,8,9,10]\n[2,3,4,5,6,7,8,9,10]", "desc": "Standard: 9 consec in 100x100"},
+    {"input": "5\n5\n[2,3]\n[2,3,4,5,6]", "desc": "Standard: h short"},
+    {"input": "10\n10\n[2,3,4,5,6,7,8,9,10]\n[2]", "desc": "Standard: v=1"},
+    {"input": "10\n10\n[2]\n[2,3,4,5,6,7,8,9,10]", "desc": "Standard: h=1"},
+    {"input": "8\n8\n[3,4,5,6,7]\n[3,4,5,6,7]", "desc": "Standard: 5 consec in 8x8"},
+    {"input": "5\n5\n[3]\n[3]", "desc": "Edge: single mid bar"},
+    {"input": "7\n7\n[2,3,4,5,6,7,8]\n[2,3,4,5,6,7,8]", "desc": "Standard: 7 consec"},
+    {"input": "5\n5\n[2,5]\n[2,5]", "desc": "Standard: non-consecutive"},
+    {"input": "3\n3\n[2,3,4]\n[2,4]", "desc": "Special: gap"}
+  ]
+}

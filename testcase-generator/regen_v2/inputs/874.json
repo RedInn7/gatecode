@@ -1,0 +1,27 @@
+{
+  "pid": 874, "slug": "first-element-with-unique-frequency",
+  "inferred_constraints": "guess from slug: nums array, find first elem with unique freq",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,1,2,2,3]", "desc": "Edge: 3 has freq 1 unique"},
+    {"input": "[1,1,2,2]", "desc": "Edge: -1 no unique"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: all freq 1 not unique"},
+    {"input": "[1,1,2,3,3]", "desc": "Edge: 2 unique"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[1,2,2,3,3,3,4,4,4,4]", "desc": "Standard: 1,2,3,4 all unique"},
+    {"input": "[1,2,1,2,3]", "desc": "Standard: 3 unique"},
+    {"input": "[1,1,1,2,2,2]", "desc": "Standard: both freq 3"},
+    {"input": "[1,1,2,2,3,3,4]", "desc": "Standard: 4 unique"},
+    {"input": "[2,1,2,1,3,1,3]", "desc": "Standard: order matters"},
+    {"input": "[5,5,5,4,4,3,3,2,1]", "desc": "Standard: 2 unique then 1"},
+    {"input": "[100,100,200,200,300]", "desc": "Standard: large 300"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]", "desc": "Edge: pair tied"},
+    {"input": "[1,2,3,4,5,5,4,3,2,1]", "desc": "Standard: all pairs"},
+    {"input": "[7,7,8,8,9]", "desc": "Standard: 9 unique"},
+    {"input": "[10,10,10,20,20,30]", "desc": "Standard: 30 freq 1 unique"},
+    {"input": "[1,1,1,2,2,3]", "desc": "Standard: 3 unique"},
+    {"input": "[42]", "desc": "Special: single 42"}
+  ]
+}

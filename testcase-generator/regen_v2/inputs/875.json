@@ -1,0 +1,27 @@
+{
+  "pid": 875, "slug": "vertical-order-traversal-of-a-binary-tree",
+  "inferred_constraints": "1 <= nodes <= 1000, 0 <= Node.val <= 1000",
+  "input_format": "line1: root (JSON tree with null)",
+  "testcases": [
+    {"input": "[3,9,20,null,null,15,7]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Edge: full BT 7"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[1,2]", "desc": "Edge: 2 left"},
+    {"input": "[1,null,2]", "desc": "Edge: right only"},
+    {"input": "[1,2,3,4,6,5,7]", "desc": "Edge: same col diff vals"},
+    {"input": "[3,1,4,0,2,2]", "desc": "Standard: 0-4 mixed"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: 15 nodes"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1000,500,1500,250,750,1250,1750]", "desc": "Standard: BST"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right skew"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left skew"},
+    {"input": "[5,4,8,11,null,13,4,7,2,null,null,5,1]", "desc": "Standard: classic"},
+    {"input": "[3,9,8,4,0,1,7]", "desc": "Standard: BT 7 distinct"},
+    {"input": "[3,9,8,4,0,1,7,null,null,null,2,5]", "desc": "Standard: BT with nulls"},
+    {"input": "[1,2,3,4,5,6,7,null,null,null,null,null,null,null,8]", "desc": "Standard: deep right corner"},
+    {"input": "[10,5,15,3,7,12,18,1,4,6,8,11,13,16,19]", "desc": "Standard: BST 15"},
+    {"input": "[1,2,3,null,null,4,5,null,null,6,7]", "desc": "Standard: scattered"},
+    {"input": "[1,1,1,1,1,1,1]", "desc": "Edge: all ones"},
+    {"input": "[1000,1000,1000]", "desc": "Special: max vals"}
+  ]
+}

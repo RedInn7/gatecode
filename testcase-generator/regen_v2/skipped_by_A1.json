@@ -470,6 +470,11 @@
       "pid": 851,
       "slug": "design-linked-list",
       "reason": "Design class MyLinkedList with stateful get/addAtHead/addAtTail/etc"
+    },
+    {
+      "pid": 882,
+      "slug": "stream-of-characters",
+      "reason": "Design class StreamChecker with stateful query method"
     }
   ]
 }

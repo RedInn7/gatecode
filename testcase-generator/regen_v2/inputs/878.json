@@ -1,0 +1,27 @@
+{
+  "pid": 878, "slug": "minimum-positive-sum-subarray",
+  "inferred_constraints": "guess: 1 <= nums.length <= 100, nums in some range, l,r bounds",
+  "input_format": "line1: nums (JSON array); line2: l (int); line3: r (int)",
+  "testcases": [
+    {"input": "[3,-2,1,4]\n2\n3", "desc": "Edge: example"},
+    {"input": "[-2,2,-3,1]\n2\n3", "desc": "Edge: example2"},
+    {"input": "[1,2,3]\n1\n3", "desc": "Edge: all positive"},
+    {"input": "[1]\n1\n1", "desc": "Edge: single"},
+    {"input": "[-1]\n1\n1", "desc": "Edge: single negative -1"},
+    {"input": "[0]\n1\n1", "desc": "Edge: zero"},
+    {"input": "[1,2,3,4,5]\n2\n4", "desc": "Standard: range 2-4"},
+    {"input": "[-1,-2,-3,-4]\n1\n4", "desc": "Edge: all negative"},
+    {"input": "[0,0,0,0]\n1\n3", "desc": "Edge: all zero"},
+    {"input": "[1,-1,1,-1,1]\n1\n5", "desc": "Standard: alternating"},
+    {"input": "[10,-5,3,7,-2]\n2\n4", "desc": "Standard: mixed"},
+    {"input": "[100,-100,50,-50]\n1\n4", "desc": "Standard: 4 elements"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3\n5", "desc": "Standard: 1-10"},
+    {"input": "[5,5,5,5,5]\n1\n3", "desc": "Standard: all 5"},
+    {"input": "[-10,5,-3,8,-2,4]\n2\n4", "desc": "Standard: mixed 6"},
+    {"input": "[100,200,300,400,500]\n1\n5", "desc": "Standard: hundreds"},
+    {"input": "[-5,-4,-3,-2,-1]\n1\n5", "desc": "Standard: all neg desc"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n5\n10", "desc": "Standard: 10 ones"},
+    {"input": "[1,-10,2,-10,3]\n1\n5", "desc": "Standard: small + bursts"},
+    {"input": "[-100,100,-100,100,-100]\n3\n5", "desc": "Special: alternating extreme"}
+  ]
+}
