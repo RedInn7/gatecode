@@ -1,0 +1,28 @@
+{
+  "pid": 2551,
+  "slug": "max-pair-sum-in-an-array",
+  "inferred_constraints": "2 <= nums.length <= 100, 1 <= nums[i] <= 10^4",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[112,131,411]", "desc": "Edge: example1 no pair"},
+    {"input": "[2536,1613,3366,162]", "desc": "Edge: example2"},
+    {"input": "[51,71,17,24,42]", "desc": "Edge: example3"},
+    {"input": "[1,2]", "desc": "Edge: n=2 no pair"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same"},
+    {"input": "[9999,9999]", "desc": "Edge: max same"},
+    {"input": "[1,10]", "desc": "Edge: 1 max digit same"},
+    {"input": "[1,10,100,1000]", "desc": "Edge: all max digit 1"},
+    {"input": "[123,321,213,312]", "desc": "Standard: same digits"},
+    {"input": "[55,66,77,88,99]", "desc": "Standard: distinct max digits"},
+    {"input": "[11,22,33,44,55,66,77,88,99]", "desc": "Standard: repdigits all distinct"},
+    {"input": "[19,28,37,46,55,64,73,82,91]", "desc": "Standard: all max digit 9"},
+    {"input": "[1,11,111,1111]", "desc": "Standard: all 1s"},
+    {"input": "[99,98,97,96,95]", "desc": "Standard: all max digit 9"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: max digit 1..5"},
+    {"input": "[9,99,999,9999]", "desc": "Standard: powers of 9"},
+    {"input": "[10000,9999,5555]", "desc": "Standard: max digit 1 vs 9"},
+    {"input": "[1234,4321,5678,8765]", "desc": "Standard: max 4,8"},
+    {"input": "[9999,9998,9997,9996,9995,9994,9993,9992,9991]", "desc": "Stress: near max"},
+    {"input": "[1000,2000,3000,4000,5000,6000,7000,8000,9000,1000,2000,3000,4000,5000,6000,7000,8000,9000]", "desc": "Killer: paired max digits"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2567,
+  "slug": "partition-array-into-k-distinct-groups",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= nums[i] <= 10^5, 1 <= k <= nums.length",
+  "input_format": "line1: nums (JSON array); line2: k (int)",
+  "testcases": [
+    {"input": "[1,2,3,4]\n2", "desc": "Edge: example1 true"},
+    {"input": "[3,5,2,2]\n2", "desc": "Edge: example2 true"},
+    {"input": "[3,5,2,2]\n3", "desc": "Edge: example3 false"},
+    {"input": "[1]\n1", "desc": "Edge: n=1 k=1"},
+    {"input": "[1,2]\n2", "desc": "Edge: n=2 k=2"},
+    {"input": "[1,2]\n1", "desc": "Edge: n=2 k=1"},
+    {"input": "[1,1]\n1", "desc": "Edge: 2 same k=1"},
+    {"input": "[1,1]\n2", "desc": "Edge: 2 same k=2 false"},
+    {"input": "[1,2,3]\n3", "desc": "Edge: distinct k=n"},
+    {"input": "[1,1,1]\n1", "desc": "Edge: 3 same k=1"},
+    {"input": "[1,1,1]\n3", "desc": "Edge: 3 same k=3 false"},
+    {"input": "[1,2,3,4,5,6]\n3", "desc": "Standard: distinct k=3"},
+    {"input": "[1,1,2,2,3,3]\n3", "desc": "Standard: paired k=3"},
+    {"input": "[1,1,2,2,3,3]\n2", "desc": "Standard: paired k=2 false"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Standard: distinct 10 k=5"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n2", "desc": "Standard: distinct 10 k=2"},
+    {"input": "[1,1,1,1,1,1,2,2,2,2]\n5", "desc": "Standard: high count one false"},
+    {"input": "[1,2,1,2,1,2,1,2]\n4", "desc": "Standard: paired 8 k=4"},
+    {"input": "[1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9]\n10", "desc": "Stress: 4 ones rest paired"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n1", "desc": "Killer: 20 ones k=1"}
+  ]
+}

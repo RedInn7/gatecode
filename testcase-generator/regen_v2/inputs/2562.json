@@ -1,0 +1,28 @@
+{
+  "pid": 2562,
+  "slug": "print-binary-tree",
+  "inferred_constraints": "1 <= nodes <= 2^10, -99 <= Node.val <= 99, height <= 10",
+  "input_format": "line1: root (JSON tree array)",
+  "testcases": [
+    {"input": "[1,2]", "desc": "Edge: minimal example"},
+    {"input": "[1,2,3,null,4]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single node"},
+    {"input": "[1,2,3]", "desc": "Edge: balanced 3"},
+    {"input": "[1,null,2]", "desc": "Edge: right child only"},
+    {"input": "[1,2,null]", "desc": "Edge: left child only"},
+    {"input": "[0]", "desc": "Edge: single zero"},
+    {"input": "[-99]", "desc": "Edge: min val"},
+    {"input": "[99]", "desc": "Edge: max val"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full 7-tree"},
+    {"input": "[1,2,3,4,5,null,7]", "desc": "Standard: partial 7"},
+    {"input": "[1,null,2,null,3]", "desc": "Standard: right skew 3"},
+    {"input": "[3,null,2,null,1]", "desc": "Standard: left skew 3"},
+    {"input": "[5,3,8,1,4,7,9]", "desc": "Standard: BST"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: full 15-tree"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left skew deep"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right skew 5"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: all negatives"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]", "desc": "Stress: 31 nodes height 4"},
+    {"input": "[50,25,75,12,37,62,87,6,18,31,44,56,68,81,93]", "desc": "Killer: full BST h=3"}
+  ]
+}

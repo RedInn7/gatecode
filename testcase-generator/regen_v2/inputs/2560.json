@@ -1,0 +1,28 @@
+{
+  "pid": 2560,
+  "slug": "compute-decimal-representation",
+  "inferred_constraints": "1 <= n <= 10^9",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {"input": "537", "desc": "Edge: example1"},
+    {"input": "102", "desc": "Edge: example2"},
+    {"input": "6", "desc": "Edge: example3 single digit"},
+    {"input": "1", "desc": "Edge: minimum"},
+    {"input": "9", "desc": "Edge: max single"},
+    {"input": "10", "desc": "Edge: smallest 2-digit"},
+    {"input": "100", "desc": "Edge: smallest 3-digit"},
+    {"input": "1000000000", "desc": "Edge: max value"},
+    {"input": "999999999", "desc": "Edge: all 9s"},
+    {"input": "111111111", "desc": "Edge: all 1s"},
+    {"input": "1000", "desc": "Standard: power of 10"},
+    {"input": "5000", "desc": "Standard: single component"},
+    {"input": "12345", "desc": "Standard: 5 digits"},
+    {"input": "98765", "desc": "Standard: descending"},
+    {"input": "10101", "desc": "Standard: alternating"},
+    {"input": "50000", "desc": "Standard: round 5"},
+    {"input": "234", "desc": "Standard: 3 distinct"},
+    {"input": "808", "desc": "Standard: middle zero"},
+    {"input": "123456789", "desc": "Stress: monotonic 9 digits"},
+    {"input": "987654321", "desc": "Killer: descending 9 digits"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2559,
+  "slug": "find-beautiful-indices-in-the-given-array-ii",
+  "inferred_constraints": "1 <= k <= s.length <= 5*10^5, 1 <= a.length, b.length <= 5*10^5, s,a,b lowercase letters",
+  "input_format": "line1: s (JSON string); line2: a (JSON string); line3: b (JSON string); line4: k (int)",
+  "testcases": [
+    {"input": "\"isawsquirrelnearmysquirrelhouseohmy\"\n\"my\"\n\"squirrel\"\n15", "desc": "Edge: example1"},
+    {"input": "\"abcd\"\n\"a\"\n\"a\"\n4", "desc": "Edge: example2"},
+    {"input": "\"a\"\n\"a\"\n\"a\"\n0", "desc": "Edge: minimum"},
+    {"input": "\"ab\"\n\"a\"\n\"b\"\n0", "desc": "Edge: k=0 adjacent"},
+    {"input": "\"ab\"\n\"a\"\n\"b\"\n1", "desc": "Edge: k=1 adjacent"},
+    {"input": "\"aaaa\"\n\"a\"\n\"a\"\n1", "desc": "Edge: many a's"},
+    {"input": "\"abcabc\"\n\"abc\"\n\"abc\"\n3", "desc": "Edge: repeating"},
+    {"input": "\"xyz\"\n\"a\"\n\"b\"\n1", "desc": "Edge: no match"},
+    {"input": "\"hello\"\n\"hi\"\n\"hi\"\n5", "desc": "Edge: no match for either"},
+    {"input": "\"banana\"\n\"an\"\n\"na\"\n2", "desc": "Standard: overlapping"},
+    {"input": "\"mississippi\"\n\"iss\"\n\"ssi\"\n1", "desc": "Standard: classic overlap"},
+    {"input": "\"abababab\"\n\"ab\"\n\"ba\"\n1", "desc": "Standard: alternating"},
+    {"input": "\"abcdefghij\"\n\"cd\"\n\"gh\"\n5", "desc": "Standard: spaced"},
+    {"input": "\"abcabcabc\"\n\"a\"\n\"c\"\n2", "desc": "Standard: distant patterns"},
+    {"input": "\"aaabbbaaabbb\"\n\"aaa\"\n\"bbb\"\n3", "desc": "Standard: blocks"},
+    {"input": "\"theabcdefxyz\"\n\"abc\"\n\"xyz\"\n9", "desc": "Standard: end and start"},
+    {"input": "\"oneapple\"\n\"apple\"\n\"one\"\n3", "desc": "Standard: words"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"a\"\n\"z\"\n25", "desc": "Standard: full alphabet"},
+    {"input": "\"abcabcabcabcabcabcabcabcabcabc\"\n\"abc\"\n\"cab\"\n2", "desc": "Stress: 10 cycles"},
+    {"input": "\"aaaaaaaaaabbbbbbbbbb\"\n\"a\"\n\"b\"\n10", "desc": "Killer: 10 a then 10 b"}
+  ]
+}

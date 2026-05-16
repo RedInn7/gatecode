@@ -1,0 +1,28 @@
+{
+  "pid": 2545,
+  "slug": "split-a-string-in-balanced-strings",
+  "inferred_constraints": "2 <= s.length <= 1000, s consists only of 'L' and 'R', s is balanced",
+  "input_format": "line1: s (JSON string)",
+  "testcases": [
+    {"input": "\"RLRRLLRLRL\"", "desc": "Edge: example1"},
+    {"input": "\"RLRRRLLRLL\"", "desc": "Edge: example2"},
+    {"input": "\"LLLLRRRR\"", "desc": "Edge: example3"},
+    {"input": "\"RL\"", "desc": "Edge: minimal 2 chars"},
+    {"input": "\"LR\"", "desc": "Edge: LR variant"},
+    {"input": "\"RLRL\"", "desc": "Edge: 2 splits"},
+    {"input": "\"LRLR\"", "desc": "Edge: 2 splits"},
+    {"input": "\"RRLL\"", "desc": "Edge: block split"},
+    {"input": "\"LLRR\"", "desc": "Edge: block opposite"},
+    {"input": "\"RLRLRLRL\"", "desc": "Standard: 4 splits"},
+    {"input": "\"LRLRLRLR\"", "desc": "Standard: 4 splits L"},
+    {"input": "\"RRLLLLRR\"", "desc": "Standard: nested"},
+    {"input": "\"LLRRLLRR\"", "desc": "Standard: 2 blocks"},
+    {"input": "\"RRRLLRLL\"", "desc": "Standard: greedy 2"},
+    {"input": "\"LRRRRRLLLLL\"", "desc": "Standard: unbalanced parts"},
+    {"input": "\"RRRRLLLL\"", "desc": "Standard: 4+4"},
+    {"input": "\"RLRLRLRLRLRLRLRLRLRL\"", "desc": "Standard: 10 splits"},
+    {"input": "\"RRLRRLRLRLRLRRLLLLLLLL\"", "desc": "Standard: long mix"},
+    {"input": "\"RRRRRRRRRRLLLLLLLLLL\"", "desc": "Stress: 10R then 10L"},
+    {"input": "\"RLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRLRL\"", "desc": "Killer: max alternating"}
+  ]
+}

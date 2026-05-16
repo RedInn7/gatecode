@@ -1,0 +1,28 @@
+{
+  "pid": 2548,
+  "slug": "equal-row-and-column-pairs",
+  "inferred_constraints": "n == grid.length == grid[i].length, 1 <= n <= 200, 1 <= grid[i][j] <= 10^5",
+  "input_format": "line1: grid (JSON 2D array)",
+  "testcases": [
+    {"input": "[[3,2,1],[1,7,6],[2,7,7]]", "desc": "Edge: example1"},
+    {"input": "[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]", "desc": "Edge: example2"},
+    {"input": "[[1]]", "desc": "Edge: 1x1"},
+    {"input": "[[1,2],[2,1]]", "desc": "Edge: 2x2 symmetric"},
+    {"input": "[[1,2],[3,4]]", "desc": "Edge: 2x2 no match"},
+    {"input": "[[1,1],[1,1]]", "desc": "Edge: 2x2 all same"},
+    {"input": "[[5,5,5],[5,5,5],[5,5,5]]", "desc": "Edge: 3x3 all same"},
+    {"input": "[[1,2,3],[2,3,4],[3,4,5]]", "desc": "Standard: symmetric matrix"},
+    {"input": "[[1,2,3],[4,5,6],[7,8,9]]", "desc": "Standard: no match"},
+    {"input": "[[1,2,3,4],[2,3,4,5],[3,4,5,6],[4,5,6,7]]", "desc": "Standard: 4x4 symmetric"},
+    {"input": "[[1,0,0],[0,1,0],[0,0,1]]", "desc": "Standard: identity"},
+    {"input": "[[1,2],[1,2]]", "desc": "Standard: 2 identical rows"},
+    {"input": "[[2,1,2],[1,1,1],[2,1,2]]", "desc": "Standard: 3x3 sym mix"},
+    {"input": "[[100,200,300],[100,200,300],[100,200,300]]", "desc": "Standard: 3 identical rows"},
+    {"input": "[[1,2,3,4,5],[2,1,5,4,3],[3,5,1,2,4],[4,4,2,1,5],[5,3,4,5,1]]", "desc": "Standard: 5x5"},
+    {"input": "[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]", "desc": "Standard: identity 4"},
+    {"input": "[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]", "desc": "Standard: all rows same"},
+    {"input": "[[7,7,7,7],[7,7,7,7],[7,7,7,7],[7,7,7,7]]", "desc": "Standard: 4x4 all same"},
+    {"input": "[[100000,99999,99998],[100000,99999,99998],[100000,99999,99998]]", "desc": "Stress: max values"},
+    {"input": "[[1,2,3,4,5,6,7,8,9,10],[2,1,4,3,6,5,8,7,10,9],[3,4,1,2,7,8,5,6,9,10],[4,3,2,1,8,7,6,5,10,9],[5,6,7,8,1,2,3,4,9,10],[6,5,8,7,2,1,4,3,10,9],[7,8,5,6,3,4,1,2,9,10],[8,7,6,5,4,3,2,1,10,9],[9,10,9,10,9,10,9,10,1,2],[10,9,10,9,10,9,10,9,2,1]]", "desc": "Killer: 10x10 random"}
+  ]
+}

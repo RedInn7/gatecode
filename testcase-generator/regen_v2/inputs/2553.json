@@ -1,0 +1,28 @@
+{
+  "pid": 2553,
+  "slug": "binary-tree-postorder-traversal",
+  "inferred_constraints": "0 <= nodes <= 100, -100 <= Node.val <= 100",
+  "input_format": "line1: root (JSON tree array, null for missing)",
+  "testcases": [
+    {"input": "[1,null,2,3]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,5,null,8,null,null,6,7,9]", "desc": "Edge: example2 nested"},
+    {"input": "[]", "desc": "Edge: empty"},
+    {"input": "[1]", "desc": "Edge: single node"},
+    {"input": "[1,2]", "desc": "Edge: 2 nodes left"},
+    {"input": "[1,null,2]", "desc": "Edge: 2 nodes right"},
+    {"input": "[1,2,3]", "desc": "Edge: 3 nodes balanced"},
+    {"input": "[0]", "desc": "Edge: zero val"},
+    {"input": "[-100]", "desc": "Edge: min val"},
+    {"input": "[100]", "desc": "Edge: max val"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full 7-tree"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: full 15-tree"},
+    {"input": "[1,null,2,null,3,null,4]", "desc": "Standard: right skew"},
+    {"input": "[4,3,null,2,null,1]", "desc": "Standard: left skew"},
+    {"input": "[5,3,8,1,4,7,9]", "desc": "Standard: BST"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left skew deep"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: all negatives"},
+    {"input": "[0,-1,1,-2,2,-3,3]", "desc": "Standard: signed mix"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]", "desc": "Stress: 31 nodes"},
+    {"input": "[50,25,75,12,37,62,87,6,18,31,44,56,68,81,93]", "desc": "Killer: full BST"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2547,
+  "slug": "find-the-original-typed-string-ii",
+  "inferred_constraints": "1 <= word.length <= 5*10^5, word lowercase letters, 1 <= k <= 2000",
+  "input_format": "line1: word (JSON string); line2: k (int)",
+  "testcases": [
+    {"input": "\"aabbccdd\"\n7", "desc": "Edge: example1"},
+    {"input": "\"aabbccdd\"\n8", "desc": "Edge: example2"},
+    {"input": "\"aaabbb\"\n3", "desc": "Edge: example3"},
+    {"input": "\"a\"\n1", "desc": "Edge: minimum"},
+    {"input": "\"ab\"\n1", "desc": "Edge: 2-char k=1"},
+    {"input": "\"ab\"\n2", "desc": "Edge: 2-char k=2"},
+    {"input": "\"abcdefghij\"\n5", "desc": "Edge: all distinct"},
+    {"input": "\"aa\"\n1", "desc": "Edge: 2 same k=1"},
+    {"input": "\"aaa\"\n1", "desc": "Edge: 3 same k=1"},
+    {"input": "\"aaa\"\n3", "desc": "Edge: 3 same k=3"},
+    {"input": "\"aaaaaaaaaa\"\n5", "desc": "Standard: 10 same k=5"},
+    {"input": "\"aabbcc\"\n3", "desc": "Standard: 3 pairs k=3"},
+    {"input": "\"aabbccddee\"\n4", "desc": "Standard: 5 pairs"},
+    {"input": "\"aaabbbccc\"\n5", "desc": "Standard: 3 triples"},
+    {"input": "\"abc\"\n2", "desc": "Standard: distinct k<len"},
+    {"input": "\"aaabbb\"\n2", "desc": "Standard: 2 triples k=2"},
+    {"input": "\"aaabbbcccddd\"\n6", "desc": "Standard: 4 triples"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n10", "desc": "Standard: full alphabet"},
+    {"input": "\"aaaaaaaaaabbbbbbbbbb\"\n5", "desc": "Stress: 10+10 same"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n10", "desc": "Killer: 50 same k=10"}
+  ]
+}

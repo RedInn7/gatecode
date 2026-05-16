@@ -1,0 +1,28 @@
+{
+  "pid": 2546,
+  "slug": "frog-position-after-t-seconds",
+  "inferred_constraints": "1 <= n <= 100, edges.length == n-1, 1 <= t <= 50, 1 <= target <= n",
+  "input_format": "line1: n (int); line2: edges (JSON 2D array); line3: t (int); line4: target (int)",
+  "testcases": [
+    {"input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n2\n4", "desc": "Edge: example1"},
+    {"input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n1\n7", "desc": "Edge: example2"},
+    {"input": "1\n[]\n1\n1", "desc": "Edge: n=1 root"},
+    {"input": "1\n[]\n50\n1", "desc": "Edge: n=1 long time"},
+    {"input": "2\n[[1,2]]\n1\n2", "desc": "Edge: n=2 simple"},
+    {"input": "2\n[[1,2]]\n1\n1", "desc": "Edge: n=2 frog moves away"},
+    {"input": "3\n[[1,2],[1,3]]\n1\n2", "desc": "Edge: n=3 fork"},
+    {"input": "3\n[[1,2],[1,3]]\n1\n3", "desc": "Edge: n=3 fork to 3"},
+    {"input": "4\n[[1,2],[2,3],[3,4]]\n3\n4", "desc": "Standard: linear chain"},
+    {"input": "5\n[[1,2],[1,3],[1,4],[1,5]]\n1\n3", "desc": "Standard: star n=5"},
+    {"input": "5\n[[1,2],[2,3],[3,4],[4,5]]\n4\n5", "desc": "Standard: line to end"},
+    {"input": "6\n[[1,2],[1,3],[2,4],[2,5],[3,6]]\n2\n4", "desc": "Standard: binary tree"},
+    {"input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n50\n4", "desc": "Standard: stuck at leaf"},
+    {"input": "5\n[[1,2],[1,3],[1,4],[1,5]]\n2\n3", "desc": "Standard: star stuck"},
+    {"input": "10\n[[1,2],[1,3],[2,4],[2,5],[3,6],[3,7],[4,8],[4,9],[5,10]]\n3\n8", "desc": "Standard: deeper tree"},
+    {"input": "8\n[[1,2],[1,3],[2,4],[2,5],[3,6],[3,7],[7,8]]\n3\n8", "desc": "Standard: longer path"},
+    {"input": "6\n[[2,1],[3,2],[4,1],[5,1],[6,4]]\n2\n3", "desc": "Standard: edges unordered"},
+    {"input": "10\n[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10]]\n1\n5", "desc": "Standard: large star"},
+    {"input": "20\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20]]\n19\n20", "desc": "Stress: linear 20"},
+    {"input": "10\n[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10]]\n50\n7", "desc": "Killer: time past leaves"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2565,
+  "slug": "distribute-elements-into-two-arrays-ii",
+  "inferred_constraints": "3 <= n <= 10^5, 1 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,1,3,3]", "desc": "Edge: example1"},
+    {"input": "[5,14,3,1,2]", "desc": "Edge: example2"},
+    {"input": "[3,3,3,3]", "desc": "Edge: all same"},
+    {"input": "[1,2,3]", "desc": "Edge: minimum n=3"},
+    {"input": "[3,2,1]", "desc": "Edge: descending n=3"},
+    {"input": "[1,1,1]", "desc": "Edge: all same n=3"},
+    {"input": "[1000000000,1,2]", "desc": "Edge: extreme spread"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending 10"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending 10"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "Standard: all same 10"},
+    {"input": "[5,3,8,1,9,2,7,4,6,10]", "desc": "Standard: random"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard: alternating"},
+    {"input": "[100,200,100,200,100,200]", "desc": "Standard: alternating big"},
+    {"input": "[1,1000000000,2,999999999,3]", "desc": "Standard: extreme alternating"},
+    {"input": "[10,20,30,40,50,40,30,20,10]", "desc": "Standard: pyramid"},
+    {"input": "[1,2,3,4,5,4,3,2,1]", "desc": "Standard: palindrome"},
+    {"input": "[7,7,8,8,9,9,10,10]", "desc": "Standard: paired"},
+    {"input": "[1,1000,2,999,3,998,4,997,5,996]", "desc": "Standard: zigzag extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: ascending 20"},
+    {"input": "[20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]", "desc": "Killer: descending 20"}
+  ]
+}

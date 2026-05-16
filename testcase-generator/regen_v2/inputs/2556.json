@@ -1,0 +1,28 @@
+{
+  "pid": 2556,
+  "slug": "sort-threats-by-severity-and-exploitability",
+  "inferred_constraints": "1 <= threats.length <= 10^5, threats[i].length == 3, 1 <= ID_i <= 10^9, 0 <= sev_i, exp_i <= 10",
+  "input_format": "line1: threats (JSON 2D array)",
+  "testcases": [
+    {"input": "[[101,2,3],[102,3,2],[103,3,3]]", "desc": "Edge: example1"},
+    {"input": "[[1,0,0]]", "desc": "Edge: single threat"},
+    {"input": "[[1,10,10]]", "desc": "Edge: max sev exp"},
+    {"input": "[[1,0,0],[2,0,0]]", "desc": "Edge: 2 same score"},
+    {"input": "[[1,5,5],[2,5,5],[3,5,5]]", "desc": "Edge: 3 same score sort by ID"},
+    {"input": "[[1000000000,10,10]]", "desc": "Edge: max ID"},
+    {"input": "[[1,0,0],[2,10,10]]", "desc": "Standard: extreme scores"},
+    {"input": "[[1,1,2],[2,2,1]]", "desc": "Standard: tie scores"},
+    {"input": "[[1,3,5],[2,4,2],[3,2,4]]", "desc": "Standard: distinct"},
+    {"input": "[[5,1,1],[4,2,2],[3,3,3],[2,4,4],[1,5,5]]", "desc": "Standard: ID inverse to score"},
+    {"input": "[[1,2,3],[2,3,2],[3,4,1],[4,5,0],[5,1,5]]", "desc": "Standard: 5 distinct"},
+    {"input": "[[10,5,5],[20,5,5],[30,5,5],[40,5,5],[50,5,5]]", "desc": "Standard: all tied"},
+    {"input": "[[100,3,4],[200,4,3],[300,2,6]]", "desc": "Standard: 3 score=10"},
+    {"input": "[[1,10,10],[2,10,9],[3,10,8],[4,10,7]]", "desc": "Standard: descending exp"},
+    {"input": "[[1,0,1],[2,0,2],[3,0,3],[4,0,4]]", "desc": "Standard: sev=0 by exp"},
+    {"input": "[[1,1,0],[2,2,0],[3,3,0],[4,4,0],[5,5,0]]", "desc": "Standard: exp=0 by sev"},
+    {"input": "[[999999999,10,10],[999999998,10,10],[1,10,10]]", "desc": "Standard: large IDs tied"},
+    {"input": "[[1,1,1],[2,2,2],[3,3,3],[4,4,4],[5,5,5],[6,6,6],[7,7,7],[8,8,8],[9,9,9],[10,10,10]]", "desc": "Stress: monotonic"},
+    {"input": "[[1,10,0],[2,9,2],[3,8,4],[4,7,6],[5,6,8],[6,5,10]]", "desc": "Stress: all score=20"},
+    {"input": "[[100,5,5],[99,5,5],[98,5,5],[97,5,5],[96,5,5],[95,5,5],[94,5,5],[93,5,5],[92,5,5],[91,5,5]]", "desc": "Killer: all tied desc IDs"}
+  ]
+}
