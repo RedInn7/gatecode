@@ -1,27 +1,88 @@
 {
-  "pid": 108, "slug": "calculate-digit-sum-of-a-string",
+  "pid": 108,
+  "slug": "calculate-digit-sum-of-a-string",
   "inferred_constraints": "1 <= s.length <= 100, 2 <= k <= 100, digits only",
   "input_format": "line1: s (raw string); line2: k (int)",
   "testcases": [
-    {"input": "11111222223\n3", "desc": "Edge: example1"},
-    {"input": "00000000\n3", "desc": "Edge: example2 all zeros"},
-    {"input": "1\n2", "desc": "Edge: length < k"},
-    {"input": "12\n2", "desc": "Edge: length == k"},
-    {"input": "123\n2", "desc": "Edge: length > k, one round"},
-    {"input": "999\n2", "desc": "Edge: maximum digits"},
-    {"input": "000\n2", "desc": "Edge: all zeros"},
-    {"input": "9999\n2", "desc": "Edge: 18,18 -> '99'? Actually sum 9+9=18, so '1818'"},
-    {"input": "12345\n3", "desc": "Standard: medium"},
-    {"input": "99999\n5", "desc": "Edge: max single round"},
-    {"input": "1234567890\n2", "desc": "Standard: 10 digits, many rounds"},
-    {"input": "1234567890\n5", "desc": "Standard: 10 digits k=5"},
-    {"input": "9999999999\n3", "desc": "Standard: 10 nines"},
-    {"input": "0000000000\n2", "desc": "Standard: 10 zeros"},
-    {"input": "1234567890123456789012345678901234567890\n10", "desc": "Standard: 40 digits"},
-    {"input": "5555555555\n3", "desc": "Standard: 10 fives"},
-    {"input": "9876543210\n4", "desc": "Standard: descending"},
-    {"input": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n5", "desc": "Stress: 100 nines"},
-    {"input": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n3", "desc": "Stress: 100 ones"},
-    {"input": "1234567890\n100", "desc": "Edge: k > length"}
+    {
+      "input": "11111222223\n3",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "00000000\n3",
+      "desc": "Edge: example2 all zeros"
+    },
+    {
+      "input": "3956346213\n2",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "918216726\n3",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "123\n2",
+      "desc": "Edge: length > k, one round"
+    },
+    {
+      "input": "999\n2",
+      "desc": "Edge: maximum digits"
+    },
+    {
+      "input": "000\n2",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "9999\n2",
+      "desc": "Edge: 18,18 -> '99'? Actually sum 9+9=18, so '1818'"
+    },
+    {
+      "input": "12345\n3",
+      "desc": "Standard: medium"
+    },
+    {
+      "input": "99999\n5",
+      "desc": "Edge: max single round"
+    },
+    {
+      "input": "1234567890\n2",
+      "desc": "Standard: 10 digits, many rounds"
+    },
+    {
+      "input": "1234567890\n5",
+      "desc": "Standard: 10 digits k=5"
+    },
+    {
+      "input": "9999999999\n3",
+      "desc": "Standard: 10 nines"
+    },
+    {
+      "input": "0000000000\n2",
+      "desc": "Standard: 10 zeros"
+    },
+    {
+      "input": "1234567890123456789012345678901234567890\n10",
+      "desc": "Standard: 40 digits"
+    },
+    {
+      "input": "5555555555\n3",
+      "desc": "Standard: 10 fives"
+    },
+    {
+      "input": "9876543210\n4",
+      "desc": "Standard: descending"
+    },
+    {
+      "input": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n5",
+      "desc": "Stress: 100 nines"
+    },
+    {
+      "input": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n3",
+      "desc": "Stress: 100 ones"
+    },
+    {
+      "input": "11111222223\n3",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
