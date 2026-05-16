@@ -906,3 +906,27 @@ Audited at: 2026-05-16T15:38:05.057329
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=200000.0)
 Audited at: 2026-05-16T15:38:07.185748
+
+## PID 348 (course-schedule-iv)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=10000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:09.629802
+
+## PID 35 (count-beautiful-substrings-i)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=1000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:09.631982
+
+## PID 350 (alice-and-bob-playing-flower-game)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:09.632351
+
+## PID 353 (remove-colored-pieces-if-both-neighbors-are-the-same-color)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=100000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:09.645251
