@@ -1,0 +1,27 @@
+{
+  "pid": 894, "slug": "process-string-with-special-operations-i",
+  "inferred_constraints": "string with lowercase + */#/% special chars",
+  "input_format": "line1: s (raw)",
+  "testcases": [
+    {"input": "a#b%*", "desc": "Edge: example mix"},
+    {"input": "z*#%", "desc": "Edge: mixed ops"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": "", "desc": "Edge: empty"},
+    {"input": "abc", "desc": "Edge: 3 chars"},
+    {"input": "ab*", "desc": "Edge: remove last"},
+    {"input": "ab#", "desc": "Edge: duplicate ab"},
+    {"input": "ab%", "desc": "Edge: reverse ab"},
+    {"input": "abc#", "desc": "Standard: duplicate abc"},
+    {"input": "abc%", "desc": "Standard: reverse abc"},
+    {"input": "abc*", "desc": "Standard: remove c"},
+    {"input": "a#%", "desc": "Standard: dup then reverse"},
+    {"input": "abc##", "desc": "Standard: double dup"},
+    {"input": "abc%%", "desc": "Standard: double reverse no-op"},
+    {"input": "hello", "desc": "Standard: word"},
+    {"input": "hello#world", "desc": "Standard: word with dup mid"},
+    {"input": "ab%cd%ef", "desc": "Standard: reverse pieces"},
+    {"input": "***abc", "desc": "Edge: stars on empty"},
+    {"input": "abcdef%*#", "desc": "Standard: complex"},
+    {"input": "a#%#%", "desc": "Special: alternating ops"}
+  ]
+}

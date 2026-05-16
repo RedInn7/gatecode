@@ -1,0 +1,27 @@
+{
+  "pid": 903, "slug": "removing-minimum-and-maximum-from-array",
+  "inferred_constraints": "2 <= nums.length <= 1e5",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,10,7,5,4,1,8,6]", "desc": "Edge: example1"},
+    {"input": "[0,-4,19,1,8,-2,-3,5]", "desc": "Edge: example2"},
+    {"input": "[101]", "desc": "Edge: n=1 (min=max)"},
+    {"input": "[1,2]", "desc": "Edge: 2 elements"},
+    {"input": "[2,1]", "desc": "Edge: 2 reversed"},
+    {"input": "[1,1]", "desc": "Edge: same"},
+    {"input": "[1,2,3]", "desc": "Edge: 3 sorted"},
+    {"input": "[3,2,1]", "desc": "Edge: 3 reversed"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: 1-5"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: reverse"},
+    {"input": "[3,1,2,5,4]", "desc": "Standard: random"},
+    {"input": "[-1000000000,1000000000]", "desc": "Edge: extremes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: 10 desc"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[-1,0,1,-2,2,-3,3]", "desc": "Standard: spread"},
+    {"input": "[1,1,1,1,2]", "desc": "Standard: only one max"},
+    {"input": "[2,1,1,1,1]", "desc": "Standard: only one max at start"},
+    {"input": "[1,5,1,5,1,5,1,5,1,5]", "desc": "Standard: alternating"},
+    {"input": "[1,2,3,4,5,4,3,2,1,2,3,4,5,4,3,2,1]", "desc": "Special: zigzag"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pid": 900, "slug": "find-greatest-common-divisor-of-array",
+  "inferred_constraints": "2 <= nums.length <= 1000, 1 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[2,5,6,9,10]", "desc": "Edge: example1"},
+    {"input": "[7,5,6,8,3]", "desc": "Edge: example2"},
+    {"input": "[3,3]", "desc": "Edge: same"},
+    {"input": "[1,1000]", "desc": "Edge: extremes"},
+    {"input": "[1,1]", "desc": "Edge: min"},
+    {"input": "[1000,1000]", "desc": "Edge: max"},
+    {"input": "[2,4,6,8,10]", "desc": "Standard: evens"},
+    {"input": "[1,3,5,7,9]", "desc": "Standard: odds"},
+    {"input": "[12,24,36,48,60]", "desc": "Standard: multiples of 12"},
+    {"input": "[7,14,21,28,35]", "desc": "Standard: multiples of 7"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: hundreds"},
+    {"input": "[6,9,12,15,18,21,24,27,30]", "desc": "Standard: multiples of 3"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29]", "desc": "Standard: 10 primes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10 min=1"},
+    {"input": "[1000,999,998,997,996]", "desc": "Standard: near max"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2]", "desc": "Edge: all 2"},
+    {"input": "[1000,1000,1000,1000,1000]", "desc": "Edge: all max"},
+    {"input": "[8,16,32,64,128,256,512,1000]", "desc": "Standard: powers + 1000"},
+    {"input": "[3,7,11,13]", "desc": "Standard: 4 primes"},
+    {"input": "[100,50,25,75,125,250,500]", "desc": "Special: 25 base"}
+  ]
+}

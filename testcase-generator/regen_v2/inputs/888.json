@@ -1,0 +1,27 @@
+{
+  "pid": 888, "slug": "first-missing-positive",
+  "inferred_constraints": "1 <= nums.length <= 1e5, -2^31 <= nums[i] <= 2^31-1",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,0]", "desc": "Edge: example1"},
+    {"input": "[3,4,-1,1]", "desc": "Edge: example2"},
+    {"input": "[7,8,9,11,12]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: only 1"},
+    {"input": "[2]", "desc": "Edge: only 2"},
+    {"input": "[0]", "desc": "Edge: only 0"},
+    {"input": "[-1]", "desc": "Edge: only negative"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: 1-5 sorted"},
+    {"input": "[5,4,3,2,1]", "desc": "Edge: reverse"},
+    {"input": "[1,1,1,1]", "desc": "Edge: duplicates"},
+    {"input": "[2147483647]", "desc": "Edge: INT_MAX"},
+    {"input": "[-2147483648]", "desc": "Edge: INT_MIN"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: 10 desc"},
+    {"input": "[100,200,300]", "desc": "Standard: large no 1"},
+    {"input": "[1,1000000,2,3]", "desc": "Standard: missing 4"},
+    {"input": "[-1,-2,-3,-4]", "desc": "Edge: all negative"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: 20 sorted"},
+    {"input": "[0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Special: pairs"}
+  ]
+}
