@@ -1,27 +1,88 @@
 {
-  "pid": 752, "slug": "minimum-non-zero-product-of-the-array-elements",
+  "pid": 752,
+  "slug": "minimum-non-zero-product-of-the-array-elements",
   "inferred_constraints": "1 <= p <= 60",
   "input_format": "line1: p (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: example1 p=1"},
-    {"input": "2", "desc": "Edge: example2 p=2"},
-    {"input": "3", "desc": "Edge: example3 p=3"},
-    {"input": "4", "desc": "Standard: p=4"},
-    {"input": "5", "desc": "Standard: p=5"},
-    {"input": "6", "desc": "Standard: p=6"},
-    {"input": "10", "desc": "Standard: p=10"},
-    {"input": "15", "desc": "Standard: p=15"},
-    {"input": "20", "desc": "Standard: p=20"},
-    {"input": "25", "desc": "Standard: p=25"},
-    {"input": "30", "desc": "Standard: p=30"},
-    {"input": "40", "desc": "Standard: p=40"},
-    {"input": "50", "desc": "Standard: p=50"},
-    {"input": "55", "desc": "Stress: p=55"},
-    {"input": "58", "desc": "Stress: p=58"},
-    {"input": "59", "desc": "Stress: p=59"},
-    {"input": "60", "desc": "Stress: max p=60"},
-    {"input": "7", "desc": "Standard: p=7"},
-    {"input": "8", "desc": "Standard: p=8"},
-    {"input": "12", "desc": "Standard: p=12"}
+    {
+      "input": "1",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: example2 p=2"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: p=6"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: p=10"
+    },
+    {
+      "input": "15",
+      "desc": "Standard: p=15"
+    },
+    {
+      "input": "20",
+      "desc": "Standard: p=20"
+    },
+    {
+      "input": "25",
+      "desc": "Standard: p=25"
+    },
+    {
+      "input": "30",
+      "desc": "Standard: p=30"
+    },
+    {
+      "input": "40",
+      "desc": "Standard: p=40"
+    },
+    {
+      "input": "50",
+      "desc": "Standard: p=50"
+    },
+    {
+      "input": "55",
+      "desc": "Stress: p=55"
+    },
+    {
+      "input": "58",
+      "desc": "Stress: p=58"
+    },
+    {
+      "input": "59",
+      "desc": "Stress: p=59"
+    },
+    {
+      "input": "60",
+      "desc": "Stress: max p=60"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: p=7"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: p=8"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: p=12"
+    }
   ]
 }

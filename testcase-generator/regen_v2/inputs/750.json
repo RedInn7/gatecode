@@ -1,27 +1,88 @@
 {
-  "pid": 750, "slug": "water-and-jug-problem",
+  "pid": 750,
+  "slug": "water-and-jug-problem",
   "inferred_constraints": "1 <= x, y, target <= 1000",
   "input_format": "line1: x (int); line2: y (int); line3: target (int)",
   "testcases": [
-    {"input": "3\n5\n4", "desc": "Edge: example1 Die Hard"},
-    {"input": "2\n6\n5", "desc": "Edge: example2 false"},
-    {"input": "1\n2\n3", "desc": "Edge: example3 fill both"},
-    {"input": "1\n1\n1", "desc": "Edge: all 1"},
-    {"input": "1\n1\n2", "desc": "Edge: fill both 1+1"},
-    {"input": "1\n1\n3", "desc": "Edge: too much"},
-    {"input": "1000\n1000\n1000", "desc": "Edge: max same"},
-    {"input": "1000\n1000\n2000", "desc": "Edge: fill both max"},
-    {"input": "1\n1000\n500", "desc": "Standard: huge vs tiny"},
-    {"input": "1\n1000\n1001", "desc": "Standard: huge sum"},
-    {"input": "7\n11\n6", "desc": "Standard: coprime"},
-    {"input": "4\n6\n8", "desc": "Standard: gcd=2 multiples"},
-    {"input": "4\n6\n5", "desc": "Standard: gcd=2 odd target"},
-    {"input": "8\n12\n4", "desc": "Standard: gcd=4"},
-    {"input": "100\n150\n50", "desc": "Standard: gcd 50"},
-    {"input": "9\n7\n5", "desc": "Standard: coprime"},
-    {"input": "997\n991\n8", "desc": "Standard: primes"},
-    {"input": "500\n500\n1000", "desc": "Standard: both filled"},
-    {"input": "3\n6\n9", "desc": "Edge: target = sum"},
-    {"input": "5\n5\n10", "desc": "Special: total sum"}
+    {
+      "input": "1\n1\n1",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "2\n6\n5",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "3\n5\n4",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "1\n1\n1",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "3\n4\n3",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "1\n1\n3",
+      "desc": "Edge: too much"
+    },
+    {
+      "input": "1000\n1000\n1000",
+      "desc": "Edge: max same"
+    },
+    {
+      "input": "1000\n1000\n2000",
+      "desc": "Edge: fill both max"
+    },
+    {
+      "input": "1\n1000\n500",
+      "desc": "Standard: huge vs tiny"
+    },
+    {
+      "input": "1\n1000\n1001",
+      "desc": "Standard: huge sum"
+    },
+    {
+      "input": "7\n11\n6",
+      "desc": "Standard: coprime"
+    },
+    {
+      "input": "4\n6\n8",
+      "desc": "Standard: gcd=2 multiples"
+    },
+    {
+      "input": "4\n6\n5",
+      "desc": "Standard: gcd=2 odd target"
+    },
+    {
+      "input": "8\n12\n4",
+      "desc": "Standard: gcd=4"
+    },
+    {
+      "input": "100\n150\n50",
+      "desc": "Standard: gcd 50"
+    },
+    {
+      "input": "9\n7\n5",
+      "desc": "Standard: coprime"
+    },
+    {
+      "input": "997\n991\n8",
+      "desc": "Standard: primes"
+    },
+    {
+      "input": "500\n500\n1000",
+      "desc": "Standard: both filled"
+    },
+    {
+      "input": "3\n6\n9",
+      "desc": "Edge: target = sum"
+    },
+    {
+      "input": "5\n5\n10",
+      "desc": "Special: total sum"
+    }
   ]
 }

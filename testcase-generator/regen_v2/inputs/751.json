@@ -1,27 +1,88 @@
 {
-  "pid": 751, "slug": "maximum-binary-string-after-change",
+  "pid": 751,
+  "slug": "maximum-binary-string-after-change",
   "inferred_constraints": "1 <= binary.length <= 1e5, binary chars only",
   "input_format": "line1: binary (raw string)",
   "testcases": [
-    {"input": "000110", "desc": "Edge: example1"},
-    {"input": "01", "desc": "Edge: example2"},
-    {"input": "0", "desc": "Edge: single 0"},
-    {"input": "1", "desc": "Edge: single 1"},
-    {"input": "00", "desc": "Edge: 00 -> 10"},
-    {"input": "11", "desc": "Edge: already max"},
-    {"input": "10", "desc": "Edge: cannot change"},
-    {"input": "000", "desc": "Edge: 000"},
-    {"input": "111", "desc": "Edge: all 1"},
-    {"input": "0000", "desc": "Edge: all 0"},
-    {"input": "1111", "desc": "Edge: all 1"},
-    {"input": "10101", "desc": "Standard: alternating"},
-    {"input": "01010", "desc": "Standard: alternating reverse"},
-    {"input": "11110000", "desc": "Standard: half-half"},
-    {"input": "00001111", "desc": "Standard: zero then one"},
-    {"input": "1100110011", "desc": "Standard: pattern"},
-    {"input": "1010101010101010101010", "desc": "Standard: long alternating"},
-    {"input": "111111111111111111110", "desc": "Standard: many 1s + 0"},
-    {"input": "0111111111111111111111", "desc": "Standard: 0 + many 1"},
-    {"input": "00000000001111111111", "desc": "Special: ten 0s ten 1s"}
+    {
+      "input": "000110",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "01",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "56",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "47",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "103",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: already max"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: cannot change"
+    },
+    {
+      "input": "000",
+      "desc": "Edge: 000"
+    },
+    {
+      "input": "111",
+      "desc": "Edge: all 1"
+    },
+    {
+      "input": "0000",
+      "desc": "Edge: all 0"
+    },
+    {
+      "input": "1111",
+      "desc": "Edge: all 1"
+    },
+    {
+      "input": "10101",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "01010",
+      "desc": "Standard: alternating reverse"
+    },
+    {
+      "input": "11110000",
+      "desc": "Standard: half-half"
+    },
+    {
+      "input": "00001111",
+      "desc": "Standard: zero then one"
+    },
+    {
+      "input": "1100110011",
+      "desc": "Standard: pattern"
+    },
+    {
+      "input": "1010101010101010101010",
+      "desc": "Standard: long alternating"
+    },
+    {
+      "input": "111111111111111111110",
+      "desc": "Standard: many 1s + 0"
+    },
+    {
+      "input": "0111111111111111111111",
+      "desc": "Standard: 0 + many 1"
+    },
+    {
+      "input": "110",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

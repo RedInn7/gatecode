@@ -1,27 +1,88 @@
 {
-  "pid": 760, "slug": "lowest-common-ancestor-of-a-binary-tree-iv",
+  "pid": 760,
+  "slug": "lowest-common-ancestor-of-a-binary-tree-iv",
   "inferred_constraints": "1 <= nodes <= 1e4, -1e9 <= Node.val <= 1e9, unique vals, all nodes[i] in tree, distinct",
   "input_format": "line1: root (JSON tree with null); line2: nodes (JSON array of vals)",
   "testcases": [
-    {"input": "[3,5,1,6,2,0,8,null,null,7,4]\n[4,7]", "desc": "Edge: example1"},
-    {"input": "[3,5,1,6,2,0,8,null,null,7,4]\n[1]", "desc": "Edge: example2 single"},
-    {"input": "[3,5,1,6,2,0,8,null,null,7,4]\n[7,6,2,4]", "desc": "Edge: example3 many"},
-    {"input": "[1]\n[1]", "desc": "Edge: single node tree"},
-    {"input": "[1,2]\n[1,2]", "desc": "Edge: 2 nodes both"},
-    {"input": "[1,2]\n[2]", "desc": "Edge: child only"},
-    {"input": "[1,2,3]\n[2,3]", "desc": "Edge: siblings"},
-    {"input": "[1,2,3]\n[1,2,3]", "desc": "Edge: all 3 nodes"},
-    {"input": "[1,2,3,4,5,6,7]\n[4,7]", "desc": "Standard: BT 7 distinct subtrees"},
-    {"input": "[1,2,3,4,5,6,7]\n[4,5]", "desc": "Standard: same parent"},
-    {"input": "[1,2,3,4,5,6,7]\n[4,5,6,7]", "desc": "Standard: all leaves"},
-    {"input": "[3,5,1,6,2,0,8,null,null,7,4]\n[3]", "desc": "Standard: just root"},
-    {"input": "[10,5,15,3,7,12,18]\n[3,7]", "desc": "Standard: BST left subtree"},
-    {"input": "[10,5,15,3,7,12,18]\n[3,18]", "desc": "Standard: BST far apart"},
-    {"input": "[1,2,null,3,null,4,null,5]\n[3,5]", "desc": "Standard: left skewed"},
-    {"input": "[1,null,2,null,3,null,4,null,5]\n[1,5]", "desc": "Standard: right skewed"},
-    {"input": "[5,4,6,3,null,null,7,2,null,null,8]\n[2,8]", "desc": "Standard: zigzag"},
-    {"input": "[100,50,150,25,75,125,175]\n[25,75,125]", "desc": "Standard: 3 nodes spread"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n[8,15]", "desc": "Standard: full BT 15"},
-    {"input": "[3,5,1,6,2,0,8,null,null,7,4]\n[6,7]", "desc": "Special: left subtree pair"}
+    {
+      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n[4,7]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n[1]",
+      "desc": "Edge: example2 single"
+    },
+    {
+      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n[7,6,2,4]",
+      "desc": "Edge: example3 many"
+    },
+    {
+      "input": "[994,969,897,874,829,818,781,752,720,683,649,647,644,642,612,560,535,529,519,459,455,442,440,403,392,374,354,338,257,236,212,192,185,180,176,157,140,120,110,58,57,42,38,0,-11,-68,-72,-134,-142,-213,-226,-265,-276,-277,-307,-387,-388,-437,-455,-472,-614,-651,-668,-683,-741,-746,-819,-838,-866,-871,-931,-955,-976,-983,-986]\n[990,956,912,889,883,882,880,861,765,755,733,729,711,636,551,546,535,530,499,483,428,423,421,408,358,333,324,321,319,235,226,105,85,77,58,12,6,-25,-47,-75,-107,-131,-167,-194,-218,-251,-267,-270,-297,-352,-425,-461,-497,-518,-551,-567,-580,-591,-686,-687,-714,-723,-725,-729,-747,-754,-777,-780,-790,-844,-870,-874,-925,-947,-963]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717,717]\n[639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639,639]",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "[1,2]\n[2]",
+      "desc": "Edge: child only"
+    },
+    {
+      "input": "[1,2,3]\n[2,3]",
+      "desc": "Edge: siblings"
+    },
+    {
+      "input": "[1,2,3]\n[1,2,3]",
+      "desc": "Edge: all 3 nodes"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n[4,7]",
+      "desc": "Standard: BT 7 distinct subtrees"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n[4,5]",
+      "desc": "Standard: same parent"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n[4,5,6,7]",
+      "desc": "Standard: all leaves"
+    },
+    {
+      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n[3]",
+      "desc": "Standard: just root"
+    },
+    {
+      "input": "[10,5,15,3,7,12,18]\n[3,7]",
+      "desc": "Standard: BST left subtree"
+    },
+    {
+      "input": "[10,5,15,3,7,12,18]\n[3,18]",
+      "desc": "Standard: BST far apart"
+    },
+    {
+      "input": "[1,2,null,3,null,4,null,5]\n[3,5]",
+      "desc": "Standard: left skewed"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]\n[1,5]",
+      "desc": "Standard: right skewed"
+    },
+    {
+      "input": "[5,4,6,3,null,null,7,2,null,null,8]\n[2,8]",
+      "desc": "Standard: zigzag"
+    },
+    {
+      "input": "[100,50,150,25,75,125,175]\n[25,75,125]",
+      "desc": "Standard: 3 nodes spread"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n[8,15]",
+      "desc": "Standard: full BT 15"
+    },
+    {
+      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n[6,7]",
+      "desc": "Special: left subtree pair"
+    }
   ]
 }
