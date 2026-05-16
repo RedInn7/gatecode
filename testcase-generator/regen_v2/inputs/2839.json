@@ -1,0 +1,28 @@
+{
+  "pid": 2839,
+  "slug": "count-nodes-that-are-great-enough",
+  "inferred_constraints": "1 <= number of nodes <= 10^4, 1 <= Node.val <= 10^4, 1 <= k <= 10",
+  "input_format": "line1: root (JSON array, level-order with nulls); line2: k (int)",
+  "testcases": [
+    {"input": "[7,6,5,4,3,2,1]\n2", "desc": "Edge: example1"},
+    {"input": "[1,2,3]\n1", "desc": "Edge: example2"},
+    {"input": "[3,2,2]\n2", "desc": "Edge: example3"},
+    {"input": "[1]\n1", "desc": "Edge: single node"},
+    {"input": "[5,3]\n1", "desc": "Edge: 2 nodes"},
+    {"input": "[5,3,8]\n1", "desc": "Edge: 3 nodes BST"},
+    {"input": "[1,2,3]\n3", "desc": "Edge: k=3 small tree"},
+    {"input": "[10,5,15,3,7,12,20]\n2", "desc": "Standard: BST 7 nodes"},
+    {"input": "[10,5,15,3,7,12,20]\n3", "desc": "Standard: BST k=3"},
+    {"input": "[1,2,3,4,5,6,7]\n2", "desc": "Standard: 7 nodes asc"},
+    {"input": "[7,6,5,4,3,2,1]\n3", "desc": "Standard: 7 nodes desc k=3"},
+    {"input": "[5,5,5,5,5,5,5]\n2", "desc": "Standard: all equal"},
+    {"input": "[100,50,150,25,75,125,175,10,30,60,80,110,130,160,180]\n5", "desc": "Standard: 15 nodes BST k=5"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n3", "desc": "Standard: full 15"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n2", "desc": "Standard: 10 desc"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n4", "desc": "Standard: 20 asc"},
+    {"input": "[100,80,90,70,60,50,40,30,20,10]\n2", "desc": "Standard: mixed BST-like"},
+    {"input": "[10000,5000,7500,2500,3750,6250,8750]\n3", "desc": "Standard: large values"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]\n5", "desc": "Stress: full 31"},
+    {"input": "[5000,4000,6000,3000,4500,5500,7000,2000,3500,4200,4700,5200,5700,6500,7500]\n10", "desc": "Killer: 15 nodes k=10 max"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2841,
+  "slug": "gcd-of-odd-and-even-sums",
+  "inferred_constraints": "1 <= n <= 1000",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "4", "desc": "Edge: example1"},
+    {"input": "5", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: minimum"},
+    {"input": "2", "desc": "Edge: n=2"},
+    {"input": "3", "desc": "Edge: n=3"},
+    {"input": "6", "desc": "Edge: n=6"},
+    {"input": "7", "desc": "Edge: n=7"},
+    {"input": "8", "desc": "Edge: n=8"},
+    {"input": "9", "desc": "Standard: n=9"},
+    {"input": "10", "desc": "Standard: n=10"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "50", "desc": "Standard: n=50"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "200", "desc": "Standard: n=200"},
+    {"input": "300", "desc": "Standard: n=300"},
+    {"input": "500", "desc": "Standard: n=500"},
+    {"input": "750", "desc": "Standard: n=750"},
+    {"input": "999", "desc": "Standard: near max"},
+    {"input": "1000", "desc": "Stress: max"},
+    {"input": "777", "desc": "Killer: random large"}
+  ]
+}

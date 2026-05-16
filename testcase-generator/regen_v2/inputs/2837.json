@@ -1,0 +1,28 @@
+{
+  "pid": 2837,
+  "slug": "alternating-digit-sum",
+  "inferred_constraints": "1 <= n <= 10^9",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "521", "desc": "Edge: example1"},
+    {"input": "111", "desc": "Edge: example2"},
+    {"input": "886996", "desc": "Edge: example3"},
+    {"input": "1", "desc": "Edge: single digit"},
+    {"input": "9", "desc": "Edge: single 9"},
+    {"input": "10", "desc": "Edge: 10"},
+    {"input": "99", "desc": "Edge: 99"},
+    {"input": "100", "desc": "Edge: 100"},
+    {"input": "123", "desc": "Standard: 3 distinct"},
+    {"input": "999", "desc": "Standard: 3 nines"},
+    {"input": "1234", "desc": "Standard: ascending"},
+    {"input": "4321", "desc": "Standard: descending"},
+    {"input": "12345", "desc": "Standard: 5 ascending"},
+    {"input": "98765", "desc": "Standard: 5 descending"},
+    {"input": "1010101", "desc": "Standard: alternating"},
+    {"input": "10000000", "desc": "Standard: 1 + 7 zeros"},
+    {"input": "987654321", "desc": "Standard: 9 descending"},
+    {"input": "123456789", "desc": "Standard: 9 ascending"},
+    {"input": "999999999", "desc": "Stress: 9 nines"},
+    {"input": "1000000000", "desc": "Killer: max"}
+  ]
+}

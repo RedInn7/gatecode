@@ -1,0 +1,28 @@
+{
+  "pid": 2840,
+  "slug": "add-bold-tag-in-string",
+  "inferred_constraints": "1 <= s.length <= 1000, 0 <= words.length <= 100, 1 <= words[i].length <= 1000, s and words[i] consist of English letters and digits",
+  "input_format": "line1: s (raw); line2: words (JSON array of strings)",
+  "testcases": [
+    {"input": "abcxyz123\n[\"abc\",\"123\"]", "desc": "Edge: example1"},
+    {"input": "aaabbb\n[\"aa\",\"b\"]", "desc": "Edge: example2"},
+    {"input": "a\n[]", "desc": "Edge: empty words"},
+    {"input": "a\n[\"a\"]", "desc": "Edge: single match"},
+    {"input": "a\n[\"b\"]", "desc": "Edge: no match"},
+    {"input": "abc\n[\"a\",\"b\",\"c\"]", "desc": "Edge: each char"},
+    {"input": "abc\n[\"abc\"]", "desc": "Edge: full match"},
+    {"input": "abcabc\n[\"abc\"]", "desc": "Edge: 2 matches"},
+    {"input": "abcabc\n[\"a\",\"c\"]", "desc": "Standard: 2 words split"},
+    {"input": "leetcode\n[\"leet\",\"code\"]", "desc": "Standard: 2 adjacent"},
+    {"input": "hellohello\n[\"hello\",\"hl\"]", "desc": "Standard: 2 matches one fake"},
+    {"input": "abcdefghijklmnop\n[\"abc\",\"def\",\"hij\"]", "desc": "Standard: 3 segments"},
+    {"input": "aaabbbcccaaabbb\n[\"a\",\"b\",\"c\"]", "desc": "Standard: full bold"},
+    {"input": "the quick brown fox jumps\n[\"quick\",\"jumps\"]", "desc": "Standard: with spaces"},
+    {"input": "abcabcabc\n[\"abc\",\"bca\"]", "desc": "Standard: overlap"},
+    {"input": "12345\n[\"1\",\"3\",\"5\"]", "desc": "Standard: digits"},
+    {"input": "aaaaaaaaaa\n[\"aaa\"]", "desc": "Standard: overlapping triples"},
+    {"input": "computerprogramming\n[\"computer\",\"programming\",\"ing\"]", "desc": "Standard: overlapping"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n[\"abc\",\"xyz\",\"mno\"]", "desc": "Stress: 4x alphabet"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n[\"a\",\"aa\",\"aaa\",\"aaaa\",\"aaaaa\",\"aaaaaa\",\"aaaaaaa\",\"aaaaaaaa\",\"aaaaaaaaa\",\"aaaaaaaaaa\"]", "desc": "Killer: all a's with all prefixes"}
+  ]
+}

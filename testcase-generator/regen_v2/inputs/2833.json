@@ -1,0 +1,28 @@
+{
+  "pid": 2833,
+  "slug": "rearrange-spaces-between-words",
+  "inferred_constraints": "1 <= text.length <= 100, text has at least one word, lowercase letters and spaces only",
+  "input_format": "single line: text (raw string)",
+  "testcases": [
+    {"input": "  this   is  a sentence ", "desc": "Edge: example1"},
+    {"input": " practice   makes   perfect", "desc": "Edge: example2"},
+    {"input": "hello   world", "desc": "Edge: example3 2 words"},
+    {"input": "a", "desc": "Edge: single char"},
+    {"input": " a", "desc": "Edge: single word leading space"},
+    {"input": "a ", "desc": "Edge: single word trailing"},
+    {"input": "  a  ", "desc": "Edge: single word both"},
+    {"input": "a b", "desc": "Edge: 2 single chars 1 space"},
+    {"input": "a  b", "desc": "Edge: 2 single chars 2 spaces"},
+    {"input": "ab cd", "desc": "Standard: 2 words 1 space"},
+    {"input": "a b c d", "desc": "Standard: 4 words 3 spaces"},
+    {"input": "a b c", "desc": "Standard: 3 words 2 spaces"},
+    {"input": "hello world foo bar", "desc": "Standard: 4 words"},
+    {"input": " hello  world  foo  bar ", "desc": "Standard: mixed"},
+    {"input": "         single", "desc": "Standard: single word many leading"},
+    {"input": "single         ", "desc": "Standard: single word many trailing"},
+    {"input": "a       b       c       d", "desc": "Standard: 4 words 21 spaces"},
+    {"input": "x y z w v u t s r q p o n m l k j i h g f e d c b a", "desc": "Standard: many single char words"},
+    {"input": "                                                                                                  a", "desc": "Stress: 98 spaces 1 char"},
+    {"input": "a                                                                                                  b", "desc": "Killer: 2 words 98 spaces between"}
+  ]
+}

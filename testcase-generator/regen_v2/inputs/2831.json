@@ -1,0 +1,28 @@
+{
+  "pid": 2831,
+  "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-i",
+  "inferred_constraints": "3 <= nums.length <= 10^5, nums[i] in {0,1}",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[0,1,1,1,0,0]", "desc": "Edge: example1"},
+    {"input": "[0,1,1,1]", "desc": "Edge: example2 impossible"},
+    {"input": "[1,1,1]", "desc": "Edge: min 3 ones"},
+    {"input": "[0,0,0]", "desc": "Edge: 3 zeros"},
+    {"input": "[1,1,0]", "desc": "Edge: 3 -1 impossible"},
+    {"input": "[0,1,1]", "desc": "Edge: 3 impossible"},
+    {"input": "[1,0,1]", "desc": "Edge: 3 impossible"},
+    {"input": "[1,1,1,1]", "desc": "Edge: 4 ones"},
+    {"input": "[0,0,0,0]", "desc": "Standard: 4 zeros need 2"},
+    {"input": "[0,1,0,1]", "desc": "Standard: 4 alternating"},
+    {"input": "[1,0,1,0,1]", "desc": "Standard: 5 alternating"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: 5 ones"},
+    {"input": "[0,0,0,0,0]", "desc": "Standard: 5 zeros impossible"},
+    {"input": "[0,0,0,1,1,1,0,0,0]", "desc": "Standard: 9 middle"},
+    {"input": "[1,1,1,0,0,0,1,1,1]", "desc": "Standard: 9 outer"},
+    {"input": "[1,0,0,0,0,0,1]", "desc": "Standard: 7 elements"},
+    {"input": "[0,1,1,0,1,1,0]", "desc": "Standard: 7 elements"},
+    {"input": "[1,1,1,0,1,1,1,0,1,1,1]", "desc": "Standard: 11 elements"},
+    {"input": "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]", "desc": "Stress: 50 zeros"},
+    {"input": "[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]", "desc": "Killer: 100 alternating"}
+  ]
+}

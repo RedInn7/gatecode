@@ -1,0 +1,28 @@
+{
+  "pid": 2835,
+  "slug": "largest-number-after-digit-swaps-by-parity",
+  "inferred_constraints": "1 <= num <= 10^9",
+  "input_format": "single line: num (int)",
+  "testcases": [
+    {"input": "1234", "desc": "Edge: example1"},
+    {"input": "65875", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: single digit"},
+    {"input": "5", "desc": "Edge: single odd"},
+    {"input": "9", "desc": "Edge: single 9"},
+    {"input": "10", "desc": "Edge: 10"},
+    {"input": "11", "desc": "Edge: 11 same parity"},
+    {"input": "22", "desc": "Edge: 22 even"},
+    {"input": "13", "desc": "Edge: 13 all odd"},
+    {"input": "24", "desc": "Standard: 24 even"},
+    {"input": "123", "desc": "Standard: 3 digits"},
+    {"input": "321", "desc": "Standard: reverse"},
+    {"input": "111", "desc": "Standard: all 1s"},
+    {"input": "246", "desc": "Standard: all even"},
+    {"input": "13579", "desc": "Standard: all odd"},
+    {"input": "9876543210", "desc": "Standard: 10 digits"},
+    {"input": "123456789", "desc": "Standard: 9 ascending"},
+    {"input": "987654321", "desc": "Standard: 9 descending"},
+    {"input": "999999999", "desc": "Stress: 9 nines"},
+    {"input": "1000000000", "desc": "Killer: max with zeros"}
+  ]
+}

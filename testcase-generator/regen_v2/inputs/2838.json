@@ -1,0 +1,28 @@
+{
+  "pid": 2838,
+  "slug": "walking-robot-simulation",
+  "inferred_constraints": "1 <= commands.length <= 10^4, commands[i] in {-2,-1, 1..9}, 0 <= obstacles.length <= 10^4, -3*10^4 <= obstacle[i][0], obstacle[i][1] <= 3*10^4",
+  "input_format": "line1: commands (JSON array); line2: obstacles (JSON 2D array)",
+  "testcases": [
+    {"input": "[4,-1,3]\n[]", "desc": "Edge: example1"},
+    {"input": "[4,-1,4,-2,4]\n[[2,4]]", "desc": "Edge: example2"},
+    {"input": "[6,-1,-1,6]\n[]", "desc": "Edge: example3"},
+    {"input": "[1]\n[]", "desc": "Edge: single move"},
+    {"input": "[-1]\n[]", "desc": "Edge: only turn"},
+    {"input": "[9]\n[]", "desc": "Edge: max single move"},
+    {"input": "[1,1,1,1,1,1,1,1,1]\n[]", "desc": "Edge: 9 ones"},
+    {"input": "[9,9,9,9]\n[]", "desc": "Standard: 4 long moves"},
+    {"input": "[5,-1,5,-1,5,-1,5,-1]\n[]", "desc": "Standard: square"},
+    {"input": "[5,-2,5,-2,5,-2,5]\n[]", "desc": "Standard: square left turn"},
+    {"input": "[9,-1,9,-1,9,-1,9]\n[[0,0]]", "desc": "Standard: with obstacle at origin"},
+    {"input": "[9,9,-1,9,-1,9,-1,9]\n[[1,5],[5,0],[0,7]]", "desc": "Standard: multi obstacles"},
+    {"input": "[1,2,3,4,5,6,7,8,9]\n[]", "desc": "Standard: ascending moves"},
+    {"input": "[-1,-1,-1,-1]\n[]", "desc": "Standard: 4 right turns"},
+    {"input": "[-2,-2,-2,-2]\n[]", "desc": "Standard: 4 left turns"},
+    {"input": "[5,-1,5,-2,5,-1,5]\n[]", "desc": "Standard: zigzag"},
+    {"input": "[9,9,9,-1,9,9]\n[[8,0],[15,0],[20,5]]", "desc": "Standard: blocked"},
+    {"input": "[3,3,3,-1,3,3,3,-1,3,3,3,-1,3,3,3]\n[]", "desc": "Standard: spiral"},
+    {"input": "[9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]\n[]", "desc": "Stress: 50 max moves all forward"},
+    {"input": "[5,-1,5,-1,5,-1,5,-1,5,-1,5,-1,5,-1,5,-1,5,-1,5,-1]\n[[1,0],[2,0],[3,0],[4,0],[5,0],[0,1],[0,2],[0,3],[0,4],[0,5],[-1,0],[-2,0],[-3,0],[-4,0],[-5,0],[0,-1],[0,-2],[0,-3],[0,-4],[0,-5]]", "desc": "Killer: spiral with 20 obstacles"}
+  ]
+}

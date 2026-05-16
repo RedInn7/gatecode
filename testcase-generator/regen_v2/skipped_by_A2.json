@@ -399,6 +399,41 @@
       "pid": 2800,
       "slug": "find-median-from-data-stream",
       "reason": "design class MedianFinder with stateful method calls"
+    },
+    {
+      "pid": 2814,
+      "slug": "design-neighbor-sum-service",
+      "reason": "design class NeighborSum with stateful method calls"
+    },
+    {
+      "pid": 2819,
+      "slug": "tweet-counts-per-frequency",
+      "reason": "design class TweetCounts with stateful method calls"
+    },
+    {
+      "pid": 2821,
+      "slug": "clone-n-ary-tree",
+      "reason": "N-ary tree with special serialization format not amenable to standard wrap"
+    },
+    {
+      "pid": 2823,
+      "slug": "range-module",
+      "reason": "design class RangeModule with stateful add/query/remove sequence"
+    },
+    {
+      "pid": 2828,
+      "slug": "json-deep-equal",
+      "reason": "JavaScript-only problem - takes JS-style values"
+    },
+    {
+      "pid": 2829,
+      "slug": "time-based-key-value-store",
+      "reason": "design class TimeMap with stateful set/get sequence"
+    },
+    {
+      "pid": 2842,
+      "slug": "check-if-two-expression-trees-are-equivalent",
+      "reason": "special TreeNode with char val (operator/operand) - non-standard tree wrap"
     }
   ]
 }

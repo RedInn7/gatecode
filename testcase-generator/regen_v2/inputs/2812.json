@@ -1,0 +1,28 @@
+{
+  "pid": 2812,
+  "slug": "max-difference-you-can-get-from-changing-an-integer",
+  "inferred_constraints": "1 <= num <= 10^8, after change no leading zero, must not be 0",
+  "input_format": "single line: num (int)",
+  "testcases": [
+    {"input": "555", "desc": "Edge: example1"},
+    {"input": "9", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: min"},
+    {"input": "10", "desc": "Edge: with zero"},
+    {"input": "11", "desc": "Edge: 2 same digits"},
+    {"input": "99", "desc": "Edge: two 9s"},
+    {"input": "100", "desc": "Edge: 1+zeros"},
+    {"input": "111", "desc": "Edge: all 1s"},
+    {"input": "123", "desc": "Standard: increasing"},
+    {"input": "321", "desc": "Standard: decreasing"},
+    {"input": "1101057", "desc": "Standard: random"},
+    {"input": "9999", "desc": "Standard: all 9s"},
+    {"input": "1000", "desc": "Standard: 1 + zeros"},
+    {"input": "12345", "desc": "Standard: ascending"},
+    {"input": "98765", "desc": "Standard: descending"},
+    {"input": "55555", "desc": "Standard: all 5s"},
+    {"input": "10000000", "desc": "Standard: 1 + 7 zeros"},
+    {"input": "11111111", "desc": "Standard: 8 ones"},
+    {"input": "99999999", "desc": "Stress: 8 nines"},
+    {"input": "100000000", "desc": "Killer: max value"}
+  ]
+}

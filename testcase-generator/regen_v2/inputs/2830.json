@@ -1,0 +1,28 @@
+{
+  "pid": 2830,
+  "slug": "max-consecutive-ones",
+  "inferred_constraints": "1 <= nums.length <= 10^5, nums[i] in {0,1}",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,1,0,1,1,1]", "desc": "Edge: example1"},
+    {"input": "[1,0,1,1,0,1]", "desc": "Edge: example2"},
+    {"input": "[0]", "desc": "Edge: single 0"},
+    {"input": "[1]", "desc": "Edge: single 1"},
+    {"input": "[0,0,0,0]", "desc": "Edge: all 0s"},
+    {"input": "[1,1,1,1]", "desc": "Edge: all 1s"},
+    {"input": "[1,0]", "desc": "Edge: 2 different"},
+    {"input": "[0,1]", "desc": "Edge: 2 different other"},
+    {"input": "[1,1,0,0,1,1,1,1,0,1]", "desc": "Standard: mixed"},
+    {"input": "[0,0,1,1,0,1,1,1,0,0,1,1,1,1,1]", "desc": "Standard: 15 mixed"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: all 1s 10"},
+    {"input": "[0,1,0,1,0,1,0,1]", "desc": "Standard: alternating"},
+    {"input": "[1,1,1,0,1,1,1,0,1,1,1]", "desc": "Standard: 3-1-3-1-3 pattern"},
+    {"input": "[0,0,0,1,1,1,1,1,1,0,0]", "desc": "Standard: middle"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,0,1]", "desc": "Standard: long block then 0 then 1"},
+    {"input": "[0,1,1,1,1,1,1,1,1,1,1,0]", "desc": "Standard: 1s sandwiched"},
+    {"input": "[1,0,0,0,0,0,0,0,0,0,1]", "desc": "Standard: 1s at ends"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 50 ones"},
+    {"input": "[1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0]", "desc": "Stress: increasing blocks"},
+    {"input": "[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]", "desc": "Killer: 100 alternating"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 2836,
+  "slug": "find-the-derangement-of-an-array",
+  "inferred_constraints": "1 <= n <= 10^6",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "3", "desc": "Edge: example1"},
+    {"input": "2", "desc": "Edge: example2"},
+    {"input": "1", "desc": "Edge: n=1 zero"},
+    {"input": "4", "desc": "Edge: D4=9"},
+    {"input": "5", "desc": "Edge: D5=44"},
+    {"input": "6", "desc": "Edge: D6=265"},
+    {"input": "10", "desc": "Standard: D10"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "50", "desc": "Standard: n=50"},
+    {"input": "100", "desc": "Standard: n=100"},
+    {"input": "200", "desc": "Standard: n=200"},
+    {"input": "500", "desc": "Standard: n=500"},
+    {"input": "1000", "desc": "Standard: n=1000"},
+    {"input": "5000", "desc": "Standard: n=5000"},
+    {"input": "10000", "desc": "Standard: n=10000"},
+    {"input": "50000", "desc": "Standard: n=50000"},
+    {"input": "100000", "desc": "Standard: n=10^5"},
+    {"input": "500000", "desc": "Standard: n=5*10^5"},
+    {"input": "999999", "desc": "Stress: near max"},
+    {"input": "1000000", "desc": "Killer: max n=10^6"}
+  ]
+}
