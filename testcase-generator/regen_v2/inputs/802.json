@@ -1,27 +1,88 @@
 {
-  "pid": 802, "slug": "sum-of-beautiful-subsequences",
+  "pid": 802,
+  "slug": "sum-of-beautiful-subsequences",
   "inferred_constraints": "1 <= n <= 1e4, 1 <= nums[i] <= 7e4, mod 1e9+7",
   "input_format": "line1: nums (JSON array)",
   "testcases": [
-    {"input": "[1,2,3]", "desc": "Edge: example1"},
-    {"input": "[4,6]", "desc": "Edge: example2"},
-    {"input": "[1]", "desc": "Edge: n=1"},
-    {"input": "[70000]", "desc": "Edge: max value"},
-    {"input": "[1,1]", "desc": "Edge: duplicates (not strictly inc)"},
-    {"input": "[2,4]", "desc": "Edge: 2 elements GCD"},
-    {"input": "[3,6,12]", "desc": "Standard: increasing multiples"},
-    {"input": "[5,10,15,20]", "desc": "Standard: 4 multiples"},
-    {"input": "[1,2,3,4,5]", "desc": "Standard: 5 small"},
-    {"input": "[2,3,5,7,11]", "desc": "Standard: primes"},
-    {"input": "[7,14,21,28,35]", "desc": "Standard: 7 multiples"},
-    {"input": "[1,2,4,8,16,32,64,128]", "desc": "Standard: powers of 2"},
-    {"input": "[3,5,7,11,13,17,19,23,29,31]", "desc": "Standard: 10 odd primes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1-10"},
-    {"input": "[100,200,300,400,500]", "desc": "Standard: hundreds"},
-    {"input": "[70000,70000,70000]", "desc": "Edge: same max"},
-    {"input": "[1,1,1,1,1]", "desc": "Edge: all 1 no strictly inc"},
-    {"input": "[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]", "desc": "Standard: 20 primes"},
-    {"input": "[1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536]", "desc": "Stress: 17 powers"},
-    {"input": "[6,10,15,21,35,77,143]", "desc": "Special: prime products"}
+    {
+      "input": "[1,2,3]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[4,6]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "[70000]",
+      "desc": "Edge: max value"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: duplicates (not strictly inc)"
+    },
+    {
+      "input": "[2,4]",
+      "desc": "Edge: 2 elements GCD"
+    },
+    {
+      "input": "[3,6,12]",
+      "desc": "Standard: increasing multiples"
+    },
+    {
+      "input": "[5,10,15,20]",
+      "desc": "Standard: 4 multiples"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Standard: 5 small"
+    },
+    {
+      "input": "[2,3,5,7,11]",
+      "desc": "Standard: primes"
+    },
+    {
+      "input": "[7,14,21,28,35]",
+      "desc": "Standard: 7 multiples"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64,128]",
+      "desc": "Standard: powers of 2"
+    },
+    {
+      "input": "[3,5,7,11,13,17,19,23,29,31]",
+      "desc": "Standard: 10 odd primes"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: 1-10"
+    },
+    {
+      "input": "[100,200,300,400,500]",
+      "desc": "Standard: hundreds"
+    },
+    {
+      "input": "[70000,70000,70000]",
+      "desc": "Edge: same max"
+    },
+    {
+      "input": "[8200,67026,67242,18202,14650,59380,5076,20311,57219,38628,37565]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]",
+      "desc": "Standard: 20 primes"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536]",
+      "desc": "Stress: 17 powers"
+    },
+    {
+      "input": "[6,10,15,21,35,77,143]",
+      "desc": "Special: prime products"
+    }
   ]
 }

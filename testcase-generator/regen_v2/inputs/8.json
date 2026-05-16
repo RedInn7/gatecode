@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1e5",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: n=1, minimum"},
-    {"input": "2", "desc": "Edge: small n=2"},
-    {"input": "3", "desc": "Edge: example2 n=3"},
-    {"input": "12", "desc": "Standard: example3 n=12"},
-    {"input": "4", "desc": "Standard: power of 2 boundary"},
-    {"input": "5", "desc": "Standard: small n=5"},
-    {"input": "10", "desc": "Standard: n=10"},
-    {"input": "16", "desc": "Edge: power of 2"},
-    {"input": "17", "desc": "Standard: just past power of 2"},
-    {"input": "100", "desc": "Standard: medium n=100"},
-    {"input": "1000", "desc": "Standard: n=1000"},
-    {"input": "1024", "desc": "Edge: 2^10"},
-    {"input": "32767", "desc": "Standard: 2^15-1"},
-    {"input": "32768", "desc": "Edge: 2^15"},
-    {"input": "65535", "desc": "Edge: 2^16-1"},
-    {"input": "65536", "desc": "Edge: 2^16"},
-    {"input": "99999", "desc": "Standard: near max"},
-    {"input": "99998", "desc": "Standard: near max"},
-    {"input": "100000", "desc": "Stress: max n=1e5"},
-    {"input": "50000", "desc": "Standard: half max"}
+    {
+      "input": "1",
+      "desc": "Edge: n=1, minimum"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: small n=2"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: small n=5"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10"
+    },
+    {
+      "input": "16",
+      "desc": "Edge: power of 2"
+    },
+    {
+      "input": "17",
+      "desc": "Standard: just past power of 2"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: medium n=100"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard: n=1000"
+    },
+    {
+      "input": "1024",
+      "desc": "Edge: 2^10"
+    },
+    {
+      "input": "32767",
+      "desc": "Standard: 2^15-1"
+    },
+    {
+      "input": "32768",
+      "desc": "Edge: 2^15"
+    },
+    {
+      "input": "65535",
+      "desc": "Edge: 2^16-1"
+    },
+    {
+      "input": "65536",
+      "desc": "Edge: 2^16"
+    },
+    {
+      "input": "99999",
+      "desc": "Standard: near max"
+    },
+    {
+      "input": "99998",
+      "desc": "Standard: near max"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: max n=1e5"
+    },
+    {
+      "input": "12",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
