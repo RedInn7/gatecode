@@ -1,0 +1,28 @@
+{
+  "pid": 2523,
+  "slug": "top-k-frequent-words",
+  "inferred_constraints": "1 <= words.length <= 500, 1 <= words[i].length <= 10, lowercase, k in [1, unique words]",
+  "input_format": "line1: words (JSON array of strings); line2: k (int)",
+  "testcases": [
+    {"input": "[\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"]\n2", "desc": "Edge: example1"},
+    {"input": "[\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"]\n4", "desc": "Edge: example2"},
+    {"input": "[\"a\"]\n1", "desc": "Edge: single word"},
+    {"input": "[\"a\",\"a\",\"a\"]\n1", "desc": "Edge: all same"},
+    {"input": "[\"a\",\"b\"]\n1", "desc": "Edge: alphabetical tiebreak"},
+    {"input": "[\"b\",\"a\"]\n1", "desc": "Edge: same freq, return a"},
+    {"input": "[\"a\",\"b\"]\n2", "desc": "Edge: k=n"},
+    {"input": "[\"z\",\"a\"]\n2", "desc": "Edge: sort by freq then lex"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]\n3", "desc": "Standard: all distinct"},
+    {"input": "[\"hello\",\"world\",\"hello\",\"world\",\"hello\"]\n2", "desc": "Standard: 3 vs 2"},
+    {"input": "[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\",\"d\",\"d\"]\n4", "desc": "Standard: all freq 2"},
+    {"input": "[\"x\",\"y\",\"z\",\"x\",\"y\",\"x\"]\n3", "desc": "Standard: tier mix"},
+    {"input": "[\"apple\",\"banana\",\"cherry\",\"apple\",\"cherry\",\"apple\"]\n2", "desc": "Standard: fruits"},
+    {"input": "[\"aaaa\",\"bbbb\",\"cccc\",\"aaaa\",\"bbbb\",\"aaaa\"]\n3", "desc": "Standard: 3 freq"},
+    {"input": "[\"abc\",\"abd\",\"abe\",\"abc\",\"abd\",\"abc\"]\n2", "desc": "Standard: prefix shared"},
+    {"input": "[\"zoo\",\"animal\",\"zoo\",\"farm\",\"farm\",\"zoo\"]\n2", "desc": "Standard: 3 vs 2"},
+    {"input": "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\",\"seven\",\"eight\",\"nine\",\"ten\"]\n5", "desc": "Standard: all unique"},
+    {"input": "[\"aa\",\"aaa\",\"aaaa\",\"a\",\"aa\",\"a\"]\n4", "desc": "Standard: ascending lengths"},
+    {"input": "[\"aa\",\"bb\",\"cc\",\"dd\",\"ee\",\"ff\",\"gg\",\"hh\",\"ii\",\"jj\",\"kk\",\"ll\",\"mm\",\"nn\",\"oo\",\"pp\",\"qq\",\"rr\",\"ss\",\"tt\"]\n20", "desc": "Stress: 20 unique"},
+    {"input": "[\"the\",\"the\",\"the\",\"the\",\"the\",\"a\",\"a\",\"a\",\"a\",\"is\",\"is\",\"is\",\"day\",\"day\",\"sunny\"]\n5", "desc": "Killer: tiered freq"}
+  ]
+}

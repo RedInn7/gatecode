@@ -1,0 +1,28 @@
+{
+  "pid": 2527,
+  "slug": "closest-dessert-cost",
+  "inferred_constraints": "n == baseCosts.length, m == toppingCosts.length, 1 <= n, m <= 10, 1 <= baseCosts[i], toppingCosts[i] <= 10^4, 1 <= target <= 10^4",
+  "input_format": "line1: baseCosts (JSON array); line2: toppingCosts (JSON array); line3: target (int)",
+  "testcases": [
+    {"input": "[1,7]\n[3,4]\n10", "desc": "Edge: example1"},
+    {"input": "[2,3]\n[4,5,100]\n18", "desc": "Edge: example2"},
+    {"input": "[3,10]\n[2,5]\n9", "desc": "Edge: example3"},
+    {"input": "[10]\n[1]\n1", "desc": "Edge: minimal"},
+    {"input": "[10000]\n[10000]\n10000", "desc": "Edge: max values"},
+    {"input": "[1]\n[1]\n1", "desc": "Edge: exact base"},
+    {"input": "[100]\n[10]\n100", "desc": "Edge: base hits target"},
+    {"input": "[100]\n[10]\n50", "desc": "Edge: base over target"},
+    {"input": "[1,2,3,4,5]\n[1,1,1]\n5", "desc": "Standard: 5 bases"},
+    {"input": "[10,20,30]\n[1,2,3,4,5]\n15", "desc": "Standard: many toppings"},
+    {"input": "[5,15]\n[2,4,6,8]\n20", "desc": "Standard: pick combo"},
+    {"input": "[5]\n[1,2,3,4,5,6,7,8,9,10]\n50", "desc": "Standard: many tops"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1]\n50", "desc": "Standard: many bases"},
+    {"input": "[100,200,300]\n[10,20,30]\n250", "desc": "Standard: spread targets"},
+    {"input": "[1,1,1]\n[1,1,1]\n7", "desc": "Standard: all same"},
+    {"input": "[5000,5001]\n[2500,2500]\n10000", "desc": "Standard: target exactly"},
+    {"input": "[1,10,100,1000,10000]\n[1,10,100,1000,10000]\n5000", "desc": "Standard: exponential"},
+    {"input": "[2,3,5,7,11,13,17,19,23,29]\n[2,3,5,7,11,13,17,19,23,29]\n100", "desc": "Stress: primes"},
+    {"input": "[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]\n[1,2,3,4,5,6,7,8,9,10]\n9999", "desc": "Stress: max bases"},
+    {"input": "[1,10000]\n[5000,5000,5000,5000,5000,5000,5000,5000,5000,5000]\n5000", "desc": "Killer: bimodal extremes"}
+  ]
+}

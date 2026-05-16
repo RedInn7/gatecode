@@ -1,0 +1,28 @@
+{
+  "pid": 2528,
+  "slug": "minimum-unique-word-abbreviation",
+  "inferred_constraints": "target.length == m, 1 <= dictionary.length <= 200, 1 <= m <= 21, 1 <= dict[i].length <= 100, lowercase",
+  "input_format": "line1: target (JSON string); line2: dictionary (JSON array of strings)",
+  "testcases": [
+    {"input": "\"apple\"\n[\"blade\"]", "desc": "Edge: example1"},
+    {"input": "\"apple\"\n[\"plain\",\"amber\",\"blade\"]", "desc": "Edge: example2"},
+    {"input": "\"a\"\n[]", "desc": "Edge: empty dict"},
+    {"input": "\"a\"\n[\"b\",\"c\"]", "desc": "Edge: target single char"},
+    {"input": "\"abc\"\n[]", "desc": "Edge: short target empty dict"},
+    {"input": "\"abc\"\n[\"abd\"]", "desc": "Edge: similar dict word"},
+    {"input": "\"abcd\"\n[\"abce\"]", "desc": "Standard: last char diff"},
+    {"input": "\"hello\"\n[\"world\"]", "desc": "Standard: diff word"},
+    {"input": "\"hello\"\n[\"hallo\",\"hi\"]", "desc": "Standard: similar"},
+    {"input": "\"target\"\n[\"target\"]", "desc": "Edge: same as target diff length"},
+    {"input": "\"abcdef\"\n[\"abcxyz\",\"xyzdef\"]", "desc": "Standard: partial matches"},
+    {"input": "\"long\"\n[\"long\",\"sing\",\"ling\"]", "desc": "Standard: rhyming"},
+    {"input": "\"word\"\n[\"ward\",\"word\",\"work\"]", "desc": "Standard: with same"},
+    {"input": "\"sample\"\n[\"simple\",\"sampling\",\"sampled\"]", "desc": "Standard: similar substring"},
+    {"input": "\"abcdefg\"\n[\"abcdefh\",\"abcdefi\"]", "desc": "Standard: last char varies"},
+    {"input": "\"abc\"\n[\"aaa\",\"bbb\",\"ccc\"]", "desc": "Standard: all 3-char"},
+    {"input": "\"xyzw\"\n[\"abcd\"]", "desc": "Standard: completely diff"},
+    {"input": "\"internationalization\"\n[\"hello\"]", "desc": "Standard: long word easy"},
+    {"input": "\"computing\"\n[\"computers\",\"computer\",\"computes\"]", "desc": "Stress: similar long"},
+    {"input": "\"abcdef\"\n[\"abcdef\",\"abcdeg\",\"abcdeh\",\"abcdei\",\"abcdej\"]", "desc": "Killer: many similar"}
+  ]
+}

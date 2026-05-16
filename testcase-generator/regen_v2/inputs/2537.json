@@ -1,0 +1,28 @@
+{
+  "pid": 2537,
+  "slug": "range-addition-ii",
+  "inferred_constraints": "1 <= m, n <= 4*10^4, 0 <= ops.length <= 10^4, 1 <= a_i <= m, 1 <= b_i <= n",
+  "input_format": "line1: m (int); line2: n (int); line3: ops (JSON 2D array)",
+  "testcases": [
+    {"input": "3\n3\n[[2,2],[3,3]]", "desc": "Edge: example1"},
+    {"input": "3\n3\n[[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]]", "desc": "Edge: example2"},
+    {"input": "3\n3\n[]", "desc": "Edge: example3 empty ops"},
+    {"input": "1\n1\n[]", "desc": "Edge: 1x1 no ops"},
+    {"input": "1\n1\n[[1,1]]", "desc": "Edge: 1x1 single op"},
+    {"input": "40000\n40000\n[]", "desc": "Edge: max no ops"},
+    {"input": "1\n40000\n[[1,1]]", "desc": "Edge: 1 row min op"},
+    {"input": "40000\n1\n[[40000,1]]", "desc": "Edge: 1 col op covers all"},
+    {"input": "5\n5\n[[1,1]]", "desc": "Standard: single cell"},
+    {"input": "5\n5\n[[5,5]]", "desc": "Standard: full coverage"},
+    {"input": "10\n10\n[[5,5],[3,3]]", "desc": "Standard: nested"},
+    {"input": "10\n10\n[[5,5],[3,7]]", "desc": "Standard: mixed overlap"},
+    {"input": "5\n5\n[[3,3],[3,3],[3,3]]", "desc": "Standard: repeated"},
+    {"input": "100\n100\n[[50,60],[60,50],[40,40]]", "desc": "Standard: 3 distinct"},
+    {"input": "10\n10\n[[1,10],[10,1]]", "desc": "Standard: orthogonal"},
+    {"input": "10\n10\n[[5,5],[5,5],[5,5],[5,5],[5,5]]", "desc": "Standard: 5 identical"},
+    {"input": "20\n20\n[[10,10],[15,15],[5,5]]", "desc": "Standard: nested 3"},
+    {"input": "1000\n1000\n[[500,500],[300,400],[100,200],[700,800]]", "desc": "Stress: 4 ops"},
+    {"input": "40000\n40000\n[[1,1]]", "desc": "Stress: large m,n single cell"},
+    {"input": "30000\n30000\n[[100,200],[200,100],[150,150]]", "desc": "Killer: nondegenerate intersect"}
+  ]
+}

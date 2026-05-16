@@ -1,0 +1,28 @@
+{
+  "pid": 2535,
+  "slug": "sum-of-digits-in-base-k",
+  "inferred_constraints": "1 <= n <= 100, 2 <= k <= 10",
+  "input_format": "line1: n (int); line2: k (int)",
+  "testcases": [
+    {"input": "34\n6", "desc": "Edge: example1"},
+    {"input": "10\n10", "desc": "Edge: example2"},
+    {"input": "1\n2", "desc": "Edge: minimum n"},
+    {"input": "1\n10", "desc": "Edge: n=1 k=10"},
+    {"input": "100\n10", "desc": "Edge: max n base 10"},
+    {"input": "100\n2", "desc": "Edge: max n base 2"},
+    {"input": "100\n3", "desc": "Edge: max n base 3"},
+    {"input": "100\n9", "desc": "Standard: max n base 9"},
+    {"input": "2\n2", "desc": "Standard: 2 in base 2"},
+    {"input": "7\n2", "desc": "Standard: 7 in base 2"},
+    {"input": "15\n2", "desc": "Standard: 15 in base 2 = 1111"},
+    {"input": "8\n8", "desc": "Standard: 8 in base 8 = 10"},
+    {"input": "27\n3", "desc": "Standard: 27 in base 3 = 1000"},
+    {"input": "50\n5", "desc": "Standard: 50 in base 5"},
+    {"input": "63\n2", "desc": "Standard: 63 in base 2 = 111111"},
+    {"input": "99\n9", "desc": "Standard: 99 in base 9"},
+    {"input": "81\n3", "desc": "Standard: 81 in base 3 = 10000"},
+    {"input": "75\n4", "desc": "Standard: 75 in base 4"},
+    {"input": "100\n7", "desc": "Standard: 100 in base 7"},
+    {"input": "97\n2", "desc": "Killer: 97 in base 2"}
+  ]
+}

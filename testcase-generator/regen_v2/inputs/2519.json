@@ -1,0 +1,28 @@
+{
+  "pid": 2519,
+  "slug": "least-operators-to-express-number",
+  "inferred_constraints": "2 <= x <= 100, 1 <= target <= 2*10^8",
+  "input_format": "line1: x (int); line2: target (int)",
+  "testcases": [
+    {"input": "3\n19", "desc": "Edge: example1 small"},
+    {"input": "5\n501", "desc": "Edge: example2"},
+    {"input": "100\n100000000", "desc": "Edge: example3 large"},
+    {"input": "2\n1", "desc": "Edge: x=2 target=1"},
+    {"input": "2\n2", "desc": "Edge: target=x"},
+    {"input": "100\n1", "desc": "Edge: huge x small target"},
+    {"input": "3\n1", "desc": "Edge: simple x/x"},
+    {"input": "3\n3", "desc": "Edge: target=x"},
+    {"input": "3\n9", "desc": "Standard: x*x"},
+    {"input": "3\n27", "desc": "Standard: x^3"},
+    {"input": "5\n5", "desc": "Standard: target=x"},
+    {"input": "5\n25", "desc": "Standard: x^2"},
+    {"input": "7\n49", "desc": "Standard: 7^2"},
+    {"input": "10\n100", "desc": "Standard: 10^2"},
+    {"input": "10\n1000", "desc": "Standard: 10^3"},
+    {"input": "4\n100", "desc": "Standard: 4 to 100"},
+    {"input": "6\n123", "desc": "Standard: random"},
+    {"input": "2\n123456", "desc": "Stress: x=2 large target"},
+    {"input": "100\n199999999", "desc": "Stress: near max target"},
+    {"input": "2\n200000000", "desc": "Killer: x=2 max target"}
+  ]
+}

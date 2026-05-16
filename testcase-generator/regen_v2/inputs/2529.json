@@ -1,0 +1,28 @@
+{
+  "pid": 2529,
+  "slug": "132-pattern",
+  "inferred_constraints": "n == nums.length, 1 <= n <= 2*10^5, -10^9 <= nums[i] <= 10^9",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,4]", "desc": "Edge: example1 false"},
+    {"input": "[3,1,4,2]", "desc": "Edge: example2 true"},
+    {"input": "[-1,3,2,0]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,2]", "desc": "Edge: n=2"},
+    {"input": "[1,2,3]", "desc": "Edge: monotonic increasing"},
+    {"input": "[3,2,1]", "desc": "Edge: monotonic decreasing"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[-1000000000,1000000000,0]", "desc": "Edge: extremes"},
+    {"input": "[1,3,2]", "desc": "Edge: exact 132"},
+    {"input": "[2,1,3]", "desc": "Standard: no 132"},
+    {"input": "[1,4,0,-1,-2,-3,-1,-2]", "desc": "Standard: with negatives"},
+    {"input": "[-1,3,2,0]", "desc": "Standard: confirms example3"},
+    {"input": "[1,2,4,3]", "desc": "Standard: 1,4,3 yes"},
+    {"input": "[3,5,0,3,4]", "desc": "Standard: random small"},
+    {"input": "[1,0,1,-4,-3]", "desc": "Standard: negatives mix"},
+    {"input": "[5,4,3,2,1,6]", "desc": "Standard: descending end up"},
+    {"input": "[0,0,1,1,2,2,3,3]", "desc": "Standard: paired ascending"},
+    {"input": "[1000000000,999999999,999999998,1,2,3]", "desc": "Stress: large then small"},
+    {"input": "[1,3,2,4,5,1,3,2,4,5,1,3,2,4,5,1,3,2,4,5]", "desc": "Killer: repeating pattern"}
+  ]
+}

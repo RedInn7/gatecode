@@ -1,0 +1,28 @@
+{
+  "pid": 2544,
+  "slug": "longest-univalue-path",
+  "inferred_constraints": "0 <= nodes <= 10^4, -1000 <= Node.val <= 1000, depth <= 1000",
+  "input_format": "line1: root (JSON tree, null for missing)",
+  "testcases": [
+    {"input": "[5,4,5,1,1,null,5]", "desc": "Edge: example1"},
+    {"input": "[1,4,5,4,4,null,5]", "desc": "Edge: example2"},
+    {"input": "[]", "desc": "Edge: empty"},
+    {"input": "[1]", "desc": "Edge: single node"},
+    {"input": "[1,1]", "desc": "Edge: 2 same nodes"},
+    {"input": "[1,2]", "desc": "Edge: 2 diff nodes"},
+    {"input": "[1,1,1]", "desc": "Edge: 3 all same"},
+    {"input": "[1,1,1,1,1,1,1]", "desc": "Standard: full 7-tree same"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full distinct"},
+    {"input": "[5,5,5,5,5,null,5]", "desc": "Standard: skewed same"},
+    {"input": "[0,0,0,0,0]", "desc": "Standard: all zeros"},
+    {"input": "[-1,-1,-1,-1,-1]", "desc": "Standard: all neg"},
+    {"input": "[1000,1000,1000]", "desc": "Edge: max val"},
+    {"input": "[-1000,-1000,-1000]", "desc": "Edge: min val"},
+    {"input": "[1,1,2,1,null,2,2]", "desc": "Standard: zigzag"},
+    {"input": "[2,2,2,5,2]", "desc": "Standard: 4-tree mostly 2"},
+    {"input": "[1,2,3,4,4,4,4]", "desc": "Standard: leaf level same"},
+    {"input": "[1,1,1,2,2,3,3]", "desc": "Standard: root path same"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 15 same"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]", "desc": "Killer: 31 all same"}
+  ]
+}

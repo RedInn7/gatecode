@@ -239,6 +239,16 @@
       "pid": 2516,
       "slug": "design-video-sharing-platform",
       "reason": "design class with stateful upload/remove/watch/like/dislike/getLikesAndDislikes/getViews methods"
+    },
+    {
+      "pid": 2533,
+      "slug": "dinner-plate-stacks",
+      "reason": "design class DinnerPlates with stateful push/pop/popAtStack"
+    },
+    {
+      "pid": 2542,
+      "slug": "design-twitter",
+      "reason": "design class Twitter with stateful postTweet/follow/unfollow/getNewsFeed"
     }
   ]
 }

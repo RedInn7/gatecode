@@ -1,0 +1,28 @@
+{
+  "pid": 2520,
+  "slug": "perfect-rectangle",
+  "inferred_constraints": "1 <= rectangles.length <= 2*10^4, rectangles[i].length == 4, -10^5 <= x_i < a_i <= 10^5, -10^5 <= y_i < b_i <= 10^5",
+  "input_format": "line1: rectangles (JSON 2D array)",
+  "testcases": [
+    {"input": "[[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]", "desc": "Edge: example1 true"},
+    {"input": "[[1,1,2,3],[1,3,2,4],[3,1,4,2],[3,2,4,4]]", "desc": "Edge: example2 gap"},
+    {"input": "[[1,1,3,3],[3,1,4,2],[1,3,2,4],[2,2,4,4]]", "desc": "Edge: example3 overlap"},
+    {"input": "[[0,0,1,1]]", "desc": "Edge: single unit"},
+    {"input": "[[0,0,1,1],[1,0,2,1]]", "desc": "Edge: 2 side by side"},
+    {"input": "[[0,0,1,1],[0,1,1,2]]", "desc": "Edge: 2 stacked"},
+    {"input": "[[0,0,2,2]]", "desc": "Edge: single 2x2"},
+    {"input": "[[0,0,1,1],[2,2,3,3]]", "desc": "Edge: 2 disjoint"},
+    {"input": "[[0,0,1,1],[1,1,2,2]]", "desc": "Edge: diagonal disjoint"},
+    {"input": "[[-1,-1,0,0],[0,0,1,1]]", "desc": "Edge: negative coords"},
+    {"input": "[[0,0,4,4],[0,0,2,2]]", "desc": "Standard: overlap inside"},
+    {"input": "[[0,0,3,3],[0,0,3,3]]", "desc": "Edge: duplicate"},
+    {"input": "[[0,0,1,1],[1,0,2,1],[0,1,1,2],[1,1,2,2]]", "desc": "Standard: 2x2 grid"},
+    {"input": "[[0,0,1,1],[1,0,2,1],[0,1,1,2]]", "desc": "Standard: L-shape false"},
+    {"input": "[[0,0,2,2],[2,0,4,2],[0,2,4,4]]", "desc": "Standard: 2+2 rows"},
+    {"input": "[[0,0,3,1],[0,1,1,3],[1,1,3,3]]", "desc": "Standard: 3 pieces full"},
+    {"input": "[[1,1,3,3],[1,3,3,5],[3,1,5,3],[3,3,5,5]]", "desc": "Standard: 4 unit"},
+    {"input": "[[0,0,1,1],[0,0,1,1]]", "desc": "Edge: 2 identical overlap"},
+    {"input": "[[-100000,-100000,100000,100000]]", "desc": "Stress: extreme bounds"},
+    {"input": "[[0,0,10,10],[5,5,15,15]]", "desc": "Killer: 2 overlapping"}
+  ]
+}

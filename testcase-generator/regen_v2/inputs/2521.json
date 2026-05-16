@@ -1,0 +1,28 @@
+{
+  "pid": 2521,
+  "slug": "word-squares",
+  "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 4, all same length, lowercase",
+  "input_format": "line1: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"area\",\"lead\",\"wall\",\"lady\",\"ball\"]", "desc": "Edge: example1"},
+    {"input": "[\"abat\",\"baba\",\"atan\",\"atal\"]", "desc": "Edge: example2"},
+    {"input": "[\"a\"]", "desc": "Edge: single 1-char"},
+    {"input": "[\"a\",\"b\",\"c\"]", "desc": "Edge: 1-char words"},
+    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: 2-char palindrome pair"},
+    {"input": "[\"aa\",\"ab\"]", "desc": "Edge: 2-char no square"},
+    {"input": "[\"aa\"]", "desc": "Edge: 2-char only same"},
+    {"input": "[\"abc\",\"bca\",\"cab\"]", "desc": "Edge: 3-char no square"},
+    {"input": "[\"aaa\",\"aab\"]", "desc": "Edge: 3-char limited"},
+    {"input": "[\"abcd\",\"bnrt\",\"crmy\",\"dtye\"]", "desc": "Standard: 4-char"},
+    {"input": "[\"ball\",\"area\",\"lead\",\"lady\"]", "desc": "Standard: square exact"},
+    {"input": "[\"abca\",\"baba\",\"abab\",\"baba\"]", "desc": "Standard: limited 4-char"},
+    {"input": "[\"abc\",\"abd\",\"abe\",\"abf\"]", "desc": "Standard: shared prefix"},
+    {"input": "[\"a\",\"b\"]", "desc": "Standard: 2 single chars"},
+    {"input": "[\"abc\",\"bca\",\"cab\",\"bcd\",\"cde\"]", "desc": "Standard: 3-char various"},
+    {"input": "[\"area\",\"lead\",\"wall\",\"lady\",\"ball\",\"area\"]", "desc": "Standard: duplicates"},
+    {"input": "[\"abat\",\"baba\",\"atan\",\"atal\",\"baba\"]", "desc": "Standard: with duplicate"},
+    {"input": "[\"abcd\"]", "desc": "Standard: single 4-char"},
+    {"input": "[\"aaaa\",\"abab\",\"abba\",\"baab\"]", "desc": "Standard: palindromic words"},
+    {"input": "[\"abcd\",\"bcda\",\"cdab\",\"dabc\"]", "desc": "Killer: cyclic shifts"}
+  ]
+}
