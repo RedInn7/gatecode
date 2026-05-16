@@ -1,0 +1,28 @@
+{
+  "pid": 3730,
+  "slug": "find-players-with-zero-or-one-losses",
+  "inferred_constraints": "1 <= matches.length <= 10^5, matches[i].length == 2, 1 <= winner, loser <= 10^5",
+  "input_format": "line1: matches (JSON 2D int)",
+  "testcases": [
+    {"input": "[[1,3],[2,3],[3,6],[5,6],[5,7],[4,5],[4,8],[4,9],[10,4],[10,9]]", "desc": "Example 1"},
+    {"input": "[[2,3],[1,3],[5,4],[6,4]]", "desc": "Example 2"},
+    {"input": "[[1,2]]", "desc": "Edge: single match"},
+    {"input": "[[1,2],[2,1]]", "desc": "Edge: each loses once"},
+    {"input": "[[1,2],[3,4]]", "desc": "Edge: 2 disjoint"},
+    {"input": "[[1,2],[1,3],[1,4]]", "desc": "Standard 1 wins all"},
+    {"input": "[[2,1],[3,1],[4,1]]", "desc": "Standard 1 loses all"},
+    {"input": "[[1,2],[2,3],[3,4]]", "desc": "Standard chain"},
+    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]", "desc": "Standard 5 disjoint"},
+    {"input": "[[100,50],[50,100]]", "desc": "Edge: mutual loss"},
+    {"input": "[[100000,1],[1,2]]", "desc": "Edge: max values"},
+    {"input": "[[1,2],[2,1],[3,1],[1,4]]", "desc": "Standard"},
+    {"input": "[[5,1],[5,2],[5,3],[5,4],[1,6],[2,6],[3,6],[4,6]]", "desc": "Standard 2 winners"},
+    {"input": "[[1,2],[1,3],[2,3],[1,4],[2,4],[3,4]]", "desc": "Standard"},
+    {"input": "[[100,200],[200,300],[300,400],[400,500]]", "desc": "Standard chain"},
+    {"input": "[[1,2],[3,2],[4,2],[5,2],[6,2]]", "desc": "Standard 1 loses lots"},
+    {"input": "[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11]]", "desc": "Standard 1 wins 10"},
+    {"input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,1]]", "desc": "Standard cycle"},
+    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[2,3],[4,5],[6,7],[8,9],[10,1]]", "desc": "Standard"},
+    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[11,12],[13,14],[15,16],[17,18],[19,20]]", "desc": "Stress 10 disjoint"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 3738,
+  "slug": "mirror-reflection",
+  "inferred_constraints": "1 <= q < p <= 1000",
+  "input_format": "line1: p (int); line2: q (int)",
+  "testcases": [
+    {"input": "2\n1", "desc": "Example 1"},
+    {"input": "3\n1", "desc": "Example 2"},
+    {"input": "2\n0", "desc": "Edge: q=0 (corner if allowed)"},
+    {"input": "1000\n999", "desc": "Edge: max p, near max q"},
+    {"input": "1000\n1", "desc": "Edge: max p, min q"},
+    {"input": "4\n3", "desc": "Standard"},
+    {"input": "6\n4", "desc": "Standard"},
+    {"input": "10\n3", "desc": "Standard"},
+    {"input": "15\n5", "desc": "Standard"},
+    {"input": "30\n7", "desc": "Standard"},
+    {"input": "100\n50", "desc": "Standard"},
+    {"input": "100\n30", "desc": "Standard"},
+    {"input": "1000\n500", "desc": "Standard"},
+    {"input": "1000\n333", "desc": "Standard"},
+    {"input": "999\n333", "desc": "Standard"},
+    {"input": "997\n313", "desc": "Standard primes"},
+    {"input": "1000\n1", "desc": "Edge minimum q"},
+    {"input": "2\n1", "desc": "Edge"},
+    {"input": "777\n333", "desc": "Standard"},
+    {"input": "1000\n997", "desc": "Standard"}
+  ]
+}

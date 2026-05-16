@@ -1,0 +1,28 @@
+{
+  "pid": 1827,
+  "slug": "stable-subarrays-with-equal-boundary-and-interior-sum",
+  "inferred_constraints": "3 <= capacity.length <= 10^5, -10^9 <= capacity[i] <= 10^9",
+  "input_format": "line1: capacity (JSON int array)",
+  "testcases": [
+    {"input": "[1,2,3,1,4]", "desc": "Edge: small mixed"},
+    {"input": "[1,1,2,1,1]", "desc": "Edge: symmetric small"},
+    {"input": "[0,0,0]", "desc": "Edge: min size all zeros"},
+    {"input": "[1,2,3]", "desc": "Edge: min size sum check"},
+    {"input": "[1000000000,1000000000,1000000000]", "desc": "Edge: max values 3"},
+    {"input": "[-1000000000,-1000000000,-1000000000]", "desc": "Edge: min values 3"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[1,0,1]", "desc": "Edge: 1,0,1 boundaries sum=2 interior=0 — not equal"},
+    {"input": "[2,0,2]", "desc": "Edge: 2,0,2 — boundaries=4 interior=0 -> no"},
+    {"input": "[1,2,1]", "desc": "Edge: 1,2,1 -> boundary sum=2 interior=2 -> yes"},
+    {"input": "[5,10,5]", "desc": "Standard: boundaries=10 interior=10 yes"},
+    {"input": "[1,1,1,1,1]", "desc": "Standard: all ones n=5"},
+    {"input": "[1,2,3,2,1]", "desc": "Standard: palindrome"},
+    {"input": "[0,5,3,4,0]", "desc": "Standard: boundaries=0 interior=12 -> no"},
+    {"input": "[-1,2,2,-3,0]", "desc": "Standard: mixed signs"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Stress: 10 asc"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000]", "desc": "Stress: 20 max"},
+    {"input": "[-1000000000,1000000000,-1000000000,1000000000,-1000000000,1000000000,-1000000000,1000000000,-1000000000,1000000000]", "desc": "Stress: alt extremes"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]", "desc": "Special: 30 fives"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2]", "desc": "Special: alternating"}
+  ]
+}

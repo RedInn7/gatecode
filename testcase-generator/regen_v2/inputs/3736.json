@@ -1,0 +1,28 @@
+{
+  "pid": 3736,
+  "slug": "find-score-of-an-array-after-marking-all-elements",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= nums[i] <= 10^6",
+  "input_format": "line1: nums (JSON)",
+  "testcases": [
+    {"input": "[2,1,3,4,5,2]", "desc": "Example 1"},
+    {"input": "[2,3,5,1,3,2]", "desc": "Example 2"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[5,5]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]", "desc": "Edge: 2 diff"},
+    {"input": "[2,1]", "desc": "Edge: 2 reverse"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard descending"},
+    {"input": "[1,3,5,7,9]", "desc": "Standard odd"},
+    {"input": "[2,4,6,8,10]", "desc": "Standard even"},
+    {"input": "[10,1,10,1,10]", "desc": "Standard alternating"},
+    {"input": "[3,1,4,1,5,9,2,6,5,3,5,8]", "desc": "Standard random"},
+    {"input": "[1000000,1000000,1000000]", "desc": "Edge: 3 max"},
+    {"input": "[1,1000000,1,1000000,1]", "desc": "Standard alternating extreme"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard 15 ascending"},
+    {"input": "[15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]", "desc": "Standard 15 descending"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "Standard 10 same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress 20"},
+    {"input": "[100,50,75,25,125,200,150,300,250,400,350]", "desc": "Stress 11 varied"}
+  ]
+}

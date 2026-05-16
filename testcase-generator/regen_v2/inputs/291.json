@@ -1,0 +1,28 @@
+{
+  "pid": 291,
+  "slug": "total-characters-in-string-after-transformations-ii",
+  "inferred_constraints": "1 <= s.length <= 1e5, lowercase, 1 <= t <= 1e9, nums.length == 26, 1 <= nums[i] <= 25",
+  "input_format": "line1: s (string in JSON quotes); line2: t (int); line3: nums (JSON int array of 26 values)",
+  "testcases": [
+    {"input": "\"abcyy\"\n2\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]", "desc": "Edge: example1"},
+    {"input": "\"azbk\"\n1\n[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Edge: example2"},
+    {"input": "\"a\"\n1\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: minimal"},
+    {"input": "\"abc\"\n1\n[2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: 3 chars 1 step nums varied"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n1\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: full alphabet 1 step"},
+    {"input": "\"z\"\n1\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,25]", "desc": "Edge: z with max nums[25]"},
+    {"input": "\"z\"\n1\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: z with min nums"},
+    {"input": "\"a\"\n1000000000\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: max t"},
+    {"input": "\"aaaaa\"\n1\n[2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: 5 a's nums[0]=2"},
+    {"input": "\"a\"\n1\n[25,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: a max shift"},
+    {"input": "\"abc\"\n3\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 3 chars 3 steps"},
+    {"input": "\"hello\"\n5\n[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1]", "desc": "Standard: word + varied nums"},
+    {"input": "\"abcdef\"\n10\n[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Standard: 6 chars 10 steps"},
+    {"input": "\"thequickbrownfox\"\n5\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: pangram start"},
+    {"input": "\"zzzzz\"\n1\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,25]", "desc": "Standard: 5 z's max wrap"},
+    {"input": "\"aaaa\"\n100\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 4 a's 100 steps"},
+    {"input": "\"abc\"\n1000000\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 3 chars 1M steps"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n1000000000\n[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,1]", "desc": "Stress: max t with varied nums"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"\n100\n[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Stress: 78 chars 100 steps"},
+    {"input": "\"a\"\n1000000000\n[25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25]", "desc": "Stress: a max nums max t"}
+  ]
+}

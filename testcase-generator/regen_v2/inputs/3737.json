@@ -1,0 +1,28 @@
+{
+  "pid": 3737,
+  "slug": "minimum-absolute-difference-in-bst",
+  "inferred_constraints": "tree size [2, 10^4], 0 <= Node.val <= 10^5, BST",
+  "input_format": "line1: root (JSON array, leetcode level-order with nulls)",
+  "testcases": [
+    {"input": "[4,2,6,1,3]", "desc": "Example 1"},
+    {"input": "[1,0,48,null,null,12,49]", "desc": "Example 2"},
+    {"input": "[0,null,1]", "desc": "Edge: 2 nodes"},
+    {"input": "[1,0]", "desc": "Edge: 2 nodes left"},
+    {"input": "[100,50,200]", "desc": "Edge: 3 nodes"},
+    {"input": "[5,3,7,1,4,6,8]", "desc": "Standard complete"},
+    {"input": "[10,5,15,3,7,12,18,1,4,6,8,11,13,17,19]", "desc": "Standard 15 nodes"},
+    {"input": "[2,1]", "desc": "Standard 2 small diff"},
+    {"input": "[100,1]", "desc": "Standard 2 large diff"},
+    {"input": "[3,2,4,1]", "desc": "Standard"},
+    {"input": "[50,25,75,10,30,60,80,5,15,28,40,55,65,77,85]", "desc": "Standard 15 BST"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard right-skewed"},
+    {"input": "[5,4,null,3,null,2,null,1]", "desc": "Standard left-skewed"},
+    {"input": "[100000,99999,100000]", "desc": "Edge max values"},
+    {"input": "[1,0,2]", "desc": "Standard min spaced"},
+    {"input": "[100,50,150,25,75,125,175,10,40,60,90,110,140,160,190]", "desc": "Standard 15 BST"},
+    {"input": "[20,10,30,5,15,25,35,1,7,12,17,22,27,32,37]", "desc": "Standard 15 BST"},
+    {"input": "[1000,500,1500,250,750,1250,1750]", "desc": "Standard"},
+    {"input": "[0,null,100000]", "desc": "Edge: 0 and max"},
+    {"input": "[50,25,75]", "desc": "Standard 3 spread"}
+  ]
+}

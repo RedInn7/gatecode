@@ -1,0 +1,28 @@
+{
+  "pid": 3732,
+  "slug": "rearrange-characters-to-make-target-string",
+  "inferred_constraints": "1 <= s.length, target.length <= 100, lowercase letters",
+  "input_format": "line1: s (string, raw); line2: target (string, raw)",
+  "testcases": [
+    {"input": "ilovecodingonleetcode\ncode", "desc": "Example 1"},
+    {"input": "abcba\nabc", "desc": "Example 2"},
+    {"input": "abbaccaddaeea\naaaaa", "desc": "Example 3"},
+    {"input": "a\na", "desc": "Edge: 1 char same"},
+    {"input": "a\nb", "desc": "Edge: 1 char diff"},
+    {"input": "ab\nab", "desc": "Edge: 2 chars same"},
+    {"input": "ab\nba", "desc": "Edge: 2 chars reverse"},
+    {"input": "ab\nabc", "desc": "Edge: target longer"},
+    {"input": "aaaa\nab", "desc": "Edge: no b at all"},
+    {"input": "aabb\nab", "desc": "Standard 2 copies"},
+    {"input": "aaaabbbbcccc\nabc", "desc": "Standard 4 copies"},
+    {"input": "abcdefghij\nabc", "desc": "Standard 1 copy"},
+    {"input": "abcabcabcabc\nabc", "desc": "Standard 4 copies"},
+    {"input": "zzzzzzzzzz\naa", "desc": "Standard 0 copies"},
+    {"input": "zzzzzzzzzz\nzz", "desc": "Standard"},
+    {"input": "abcdefabcdefabcdefabcdef\nabc", "desc": "Standard"},
+    {"input": "aaaaaaaaaa\na", "desc": "Standard 10 copies of 'a'"},
+    {"input": "aabbccdd\nabcd", "desc": "Standard 2 copies"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nabcdef", "desc": "Standard"},
+    {"input": "aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeeeffffffffffgggggggggghhhhhhhhhhiiiiiiiiiijjjjjjjjjj\nabc", "desc": "Stress 100 chars"}
+  ]
+}

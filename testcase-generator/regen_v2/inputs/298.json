@@ -1,0 +1,28 @@
+{
+  "pid": 298,
+  "slug": "string-compression-ii",
+  "inferred_constraints": "1 <= s.length <= 100, 0 <= k <= s.length, lowercase",
+  "input_format": "line1: s (string in JSON quotes); line2: k (int)",
+  "testcases": [
+    {"input": "\"aaabcccd\"\n2", "desc": "Edge: example1"},
+    {"input": "\"aabbaa\"\n2", "desc": "Edge: example2"},
+    {"input": "\"aaaaaaaaaaa\"\n0", "desc": "Edge: example3 all same"},
+    {"input": "\"a\"\n0", "desc": "Edge: minimum"},
+    {"input": "\"a\"\n1", "desc": "Edge: delete only char"},
+    {"input": "\"aa\"\n0", "desc": "Edge: 2 same"},
+    {"input": "\"ab\"\n0", "desc": "Edge: 2 distinct"},
+    {"input": "\"ab\"\n1", "desc": "Edge: delete one"},
+    {"input": "\"abc\"\n0", "desc": "Edge: 3 distinct"},
+    {"input": "\"aaaa\"\n0", "desc": "Edge: 4 same"},
+    {"input": "\"abcdefg\"\n0", "desc": "Standard: all distinct"},
+    {"input": "\"aaabbbccc\"\n3", "desc": "Standard: groups"},
+    {"input": "\"aaaaabbbbbccccc\"\n5", "desc": "Standard: 5 of each"},
+    {"input": "\"abababab\"\n4", "desc": "Standard: alternating"},
+    {"input": "\"aaaabbbbcccc\"\n4", "desc": "Standard: 4-blocks"},
+    {"input": "\"abcabcabcabc\"\n6", "desc": "Standard: cyclic"},
+    {"input": "\"aaabbbcccddd\"\n6", "desc": "Standard: 4 groups of 3"},
+    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n50", "desc": "Stress: 100 a's k=50"},
+    {"input": "\"aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz\"\n26", "desc": "Stress: alphabet pairs k=26"},
+    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghij\"\n40", "desc": "Stress: 90 chars k=40"}
+  ]
+}

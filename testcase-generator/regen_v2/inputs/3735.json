@@ -1,0 +1,28 @@
+{
+  "pid": 3735,
+  "slug": "partition-array-into-three-parts-with-equal-sum",
+  "inferred_constraints": "3 <= arr.length <= 5*10^4, -10^4 <= arr[i] <= 10^4",
+  "input_format": "line1: arr (JSON)",
+  "testcases": [
+    {"input": "[0,2,1,-6,6,-7,9,1,2,0,1]", "desc": "Example 1: true"},
+    {"input": "[0,2,1,-6,6,7,9,-1,2,0,1]", "desc": "Example 2: false"},
+    {"input": "[3,3,6,5,-2,2,5,1,-9,4]", "desc": "Example 3: true"},
+    {"input": "[1,1,1]", "desc": "Edge: 3 same"},
+    {"input": "[1,2,3]", "desc": "Edge: 3 diff false"},
+    {"input": "[0,0,0]", "desc": "Edge: 3 zeros"},
+    {"input": "[1,1,1,1]", "desc": "Edge: 4 same? false sum=4"},
+    {"input": "[3,3,3,0]", "desc": "Standard"},
+    {"input": "[10,-10,10,-10,10,-10]", "desc": "Standard balanced"},
+    {"input": "[1,-1,1,-1,1,-1]", "desc": "Standard zero parts"},
+    {"input": "[0,0,0,0,0,0]", "desc": "Edge: all zeros"},
+    {"input": "[100,200,300,300,200,100,300,300]", "desc": "Standard"},
+    {"input": "[5,5,5,5,5,5,5,5,5]", "desc": "Standard 9 same"},
+    {"input": "[6,1,1,2,3,4]", "desc": "Standard"},
+    {"input": "[18,12,-18,18,-19,-1,10,10]", "desc": "Standard"},
+    {"input": "[1,-1,1,-1,1,-1,1,-1,1,-1]", "desc": "Standard 10 alternating zero"},
+    {"input": "[-1,-1,-1,3]", "desc": "Edge: negative mixed"},
+    {"input": "[1,2,1,4,5,1,7,2,1]", "desc": "Standard"},
+    {"input": "[10000,-10000,10000,-10000,10000,-10000]", "desc": "Stress max abs"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress 30 ones"}
+  ]
+}

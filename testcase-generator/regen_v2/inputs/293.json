@@ -1,0 +1,28 @@
+{
+  "pid": 293,
+  "slug": "maximum-subarray-sum-with-one-deletion",
+  "inferred_constraints": "1 <= arr.length <= 1e5, -1e4 <= arr[i] <= 1e4",
+  "input_format": "line1: arr (JSON int array)",
+  "testcases": [
+    {"input": "[1,-2,0,3]", "desc": "Edge: example1"},
+    {"input": "[1,-2,-2,3]", "desc": "Edge: example2"},
+    {"input": "[-1,-1,-1,-1]", "desc": "Edge: example3 all negative"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[-1]", "desc": "Edge: n=1 negative"},
+    {"input": "[10000]", "desc": "Edge: n=1 max"},
+    {"input": "[-10000]", "desc": "Edge: n=1 min"},
+    {"input": "[1,2]", "desc": "Edge: n=2 positive"},
+    {"input": "[-1,-2]", "desc": "Edge: n=2 negative"},
+    {"input": "[1,-2]", "desc": "Edge: n=2 mixed"},
+    {"input": "[10000,-1,10000]", "desc": "Standard: max with delete middle"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: all negative"},
+    {"input": "[1,-1,1,-1,1,-1,1,-1]", "desc": "Standard: alternating"},
+    {"input": "[-5,-10000,5,-10000,5,-10000,5,-10000,5]", "desc": "Standard: spikes negative"},
+    {"input": "[10000,10000,10000,10000,10000]", "desc": "Standard: all max"},
+    {"input": "[1,2,-100,3,4,5,-100,6,7,8]", "desc": "Standard: with negative spikes"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 ascending"},
+    {"input": "[-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000,-10000,10000]", "desc": "Stress: extreme alt"}
+  ]
+}

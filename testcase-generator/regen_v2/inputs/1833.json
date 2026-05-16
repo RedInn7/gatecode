@@ -1,0 +1,28 @@
+{
+  "pid": 1833,
+  "slug": "corporate-flight-bookings",
+  "inferred_constraints": "1 <= n <= 2*10^4, 1 <= bookings.length <= 2*10^4, bookings[i].length==3, 1 <= first <= last <= n, 1 <= seats <= 10^4",
+  "input_format": "line1: bookings (JSON 2D int array)\nline2: n (int)",
+  "testcases": [
+    {"input": "[[1,2,10],[2,3,20],[2,5,25]]\n5", "desc": "Edge: example1"},
+    {"input": "[[1,2,10],[2,2,15]]\n2", "desc": "Edge: example2"},
+    {"input": "[[1,1,1]]\n1", "desc": "Edge: minimum"},
+    {"input": "[[1,1,10000]]\n1", "desc": "Edge: max seats single"},
+    {"input": "[[1,2,1],[1,2,1]]\n2", "desc": "Edge: 2 same booking"},
+    {"input": "[[2,3,5]]\n5", "desc": "Edge: subset booking"},
+    {"input": "[[1,5,1]]\n5", "desc": "Edge: full range"},
+    {"input": "[[1,1,5],[2,2,3],[3,3,4],[4,4,2],[5,5,1]]\n5", "desc": "Edge: individual bookings"},
+    {"input": "[[1,3,10],[2,4,5],[3,5,8]]\n5", "desc": "Standard: overlapping"},
+    {"input": "[[1,10,5],[2,9,3],[3,8,2]]\n10", "desc": "Standard: nested"},
+    {"input": "[[1,1,1],[2,2,2],[3,3,3],[4,4,4],[5,5,5]]\n5", "desc": "Standard: increasing each flight"},
+    {"input": "[[1,5,10000],[1,5,10000]]\n5", "desc": "Standard: high seats whole range"},
+    {"input": "[[1,2,3],[3,4,5],[5,6,7],[7,8,9],[9,10,11]]\n10", "desc": "Standard: chained"},
+    {"input": "[[5,10,5],[1,5,3],[1,3,7]]\n10", "desc": "Standard: scattered"},
+    {"input": "[[1,10000,1]]\n10000", "desc": "Standard: max n single booking"},
+    {"input": "[[1,10000,10000]]\n10000", "desc": "Stress: max all"},
+    {"input": "[[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]]\n1", "desc": "Stress: 20 same booking on flight 1"},
+    {"input": "[[1,5,1],[2,6,2],[3,7,3],[4,8,4],[5,9,5],[6,10,6]]\n10", "desc": "Stress: cascading"},
+    {"input": "[[1,2,5000],[2,3,5000],[3,4,5000]]\n4", "desc": "Special: overlapping high seats"},
+    {"input": "[[1,1,1],[2,2,2],[3,3,3]]\n3", "desc": "Special: per-flight increment"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 287,
+  "slug": "construct-target-array-with-multiple-sums",
+  "inferred_constraints": "1 <= n <= 5e4, 1 <= target[i] <= 1e9",
+  "input_format": "line1: target (JSON int array)",
+  "testcases": [
+    {"input": "[9,3,5]", "desc": "Edge: example1"},
+    {"input": "[1,1,1,2]", "desc": "Edge: example2 false"},
+    {"input": "[8,5]", "desc": "Edge: example3"},
+    {"input": "[1]", "desc": "Edge: n=1 [1] -> true"},
+    {"input": "[2]", "desc": "Edge: n=1 [2] -> false"},
+    {"input": "[1000000000]", "desc": "Edge: n=1 max"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same"},
+    {"input": "[1,2]", "desc": "Edge: [1,2] true"},
+    {"input": "[2,1]", "desc": "Edge: [2,1] true"},
+    {"input": "[1,1,1]", "desc": "Edge: all ones"},
+    {"input": "[1,2,3]", "desc": "Standard"},
+    {"input": "[1,3,5,7,9]", "desc": "Standard: odds"},
+    {"input": "[2,4,6,8,10]", "desc": "Standard: evens"},
+    {"input": "[5,5,5]", "desc": "Standard: all same"},
+    {"input": "[1,1000000000]", "desc": "Standard: extreme spread"},
+    {"input": "[1000000000,1]", "desc": "Standard: reversed"},
+    {"input": "[3,9,3]", "desc": "Standard"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 10 ones"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Stress: powers of 2"},
+    {"input": "[1000000000,999999999,1,2,3]", "desc": "Stress: large + small"}
+  ]
+}
