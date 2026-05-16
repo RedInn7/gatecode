@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 100; s lowercase; 1 <= shift.length <= 100; shift[i][0] in {0,1}; 0 <= shift[i][1] <= 100",
   "input_format": "line1: s (string); line2: shift (JSON 2D)",
   "testcases": [
-    {"input": "abc\n[[0,1],[1,2]]", "desc": "Edge: example1"},
-    {"input": "abcdefg\n[[1,1],[1,1],[0,2],[1,3]]", "desc": "Edge: example2"},
-    {"input": "a\n[[0,0]]", "desc": "Edge: zero shift"},
-    {"input": "a\n[[0,1]]", "desc": "Edge: single char left shift"},
-    {"input": "a\n[[1,1]]", "desc": "Edge: single char right shift"},
-    {"input": "abc\n[[0,0]]", "desc": "Edge: zero shift no change"},
-    {"input": "abc\n[[0,3]]", "desc": "Edge: full rotation left"},
-    {"input": "abc\n[[1,3]]", "desc": "Edge: full rotation right"},
-    {"input": "abcdef\n[[0,2]]", "desc": "Standard: left 2"},
-    {"input": "abcdef\n[[1,2]]", "desc": "Standard: right 2"},
-    {"input": "hello\n[[0,1],[1,1]]", "desc": "Standard: cancel"},
-    {"input": "abcdef\n[[0,1],[0,1],[0,1]]", "desc": "Standard: 3 left"},
-    {"input": "abcdef\n[[1,1],[1,1],[1,1]]", "desc": "Standard: 3 right"},
-    {"input": "aaaaaa\n[[0,3],[1,2]]", "desc": "Standard: all same chars"},
-    {"input": "abcdefghij\n[[0,5]]", "desc": "Standard: half rotation"},
-    {"input": "abcdefghij\n[[0,3],[1,8],[0,2]]", "desc": "Standard: net result"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\n[[0,13]]", "desc": "Stress: half alphabet"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\n[[1,100],[0,100],[1,100],[0,100]]", "desc": "Stress: cancel huge shifts"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\n[[0,50],[1,25]]", "desc": "Stress: 100 char shifts"},
-    {"input": "xyz\n[[0,100],[1,100]]", "desc": "Special: large shifts on small string killer"}
+    {
+      "input": "abc\n[[0,1],[1,2]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "abcdefg\n[[1,1],[1,1],[0,2],[1,3]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"tzncok\"\n[[-832,935],[144,-358]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"xzhjin\"\n[[-248,-674],[241,906]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "a\n[[1,1]]",
+      "desc": "Edge: single char right shift"
+    },
+    {
+      "input": "abc\n[[0,0]]",
+      "desc": "Edge: zero shift no change"
+    },
+    {
+      "input": "abc\n[[0,3]]",
+      "desc": "Edge: full rotation left"
+    },
+    {
+      "input": "abc\n[[1,3]]",
+      "desc": "Edge: full rotation right"
+    },
+    {
+      "input": "abcdef\n[[0,2]]",
+      "desc": "Standard: left 2"
+    },
+    {
+      "input": "abcdef\n[[1,2]]",
+      "desc": "Standard: right 2"
+    },
+    {
+      "input": "hello\n[[0,1],[1,1]]",
+      "desc": "Standard: cancel"
+    },
+    {
+      "input": "abcdef\n[[0,1],[0,1],[0,1]]",
+      "desc": "Standard: 3 left"
+    },
+    {
+      "input": "abcdef\n[[1,1],[1,1],[1,1]]",
+      "desc": "Standard: 3 right"
+    },
+    {
+      "input": "aaaaaa\n[[0,3],[1,2]]",
+      "desc": "Standard: all same chars"
+    },
+    {
+      "input": "abcdefghij\n[[0,5]]",
+      "desc": "Standard: half rotation"
+    },
+    {
+      "input": "abcdefghij\n[[0,3],[1,8],[0,2]]",
+      "desc": "Standard: net result"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\n[[0,13]]",
+      "desc": "Stress: half alphabet"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\n[[1,100],[0,100],[1,100],[0,100]]",
+      "desc": "Stress: cancel huge shifts"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\n[[0,50],[1,25]]",
+      "desc": "Stress: 100 char shifts"
+    },
+    {
+      "input": "\"khcgrxdjivwrmz\"\n[[-55,-371,122,836],[-571,-465,909,895],[-196,-304,-810,-414],[278,954,-155,-966]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

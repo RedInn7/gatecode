@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= nums.length <= 50; -1000 <= nums[i] <= 1000",
   "input_format": "line1: nums (JSON array)",
   "testcases": [
-    {"input": "[5,2,3,1]", "desc": "Edge: example1"},
-    {"input": "[1,2,2]", "desc": "Edge: example2 already sorted"},
-    {"input": "[1,1]", "desc": "Edge: minimum sorted"},
-    {"input": "[2,1]", "desc": "Edge: minimum unsorted"},
-    {"input": "[1000,1000]", "desc": "Edge: max same"},
-    {"input": "[-1000,-1000]", "desc": "Edge: min same"},
-    {"input": "[1000,-1000]", "desc": "Edge: extreme swap"},
-    {"input": "[1,1,1,1]", "desc": "Edge: all same"},
-    {"input": "[1,2,3,4,5]", "desc": "Standard: sorted"},
-    {"input": "[5,4,3,2,1]", "desc": "Standard: reverse"},
-    {"input": "[3,1,4,1,5]", "desc": "Standard: random"},
-    {"input": "[2,2,1,3,3]", "desc": "Standard: needs ops"},
-    {"input": "[-5,-3,-1,1,3,5]", "desc": "Standard: negatives sorted"},
-    {"input": "[5,-5,5,-5,5]", "desc": "Standard: alternating"},
-    {"input": "[10,5,15,3,12]", "desc": "Standard: mixed"},
-    {"input": "[1,5,3,2,4]", "desc": "Standard: needs work"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,9,8,7,6,5,4,3,2,1]", "desc": "Stress: palindrome 19"},
-    {"input": "[1000,999,998,997,996,995,994,993,992,991,990,989,988,987,986]", "desc": "Stress: 15 descending"},
-    {"input": "[-1000,1000,-1000,1000,-1000,1000,-1000,1000,-1000,1000]", "desc": "Stress: extreme alternating"},
-    {"input": "[50,49,48,47,46,45,44,43,42,41]", "desc": "Special: 10 descending killer"}
+    {
+      "input": "[5,2,3,1]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[1,2,2]",
+      "desc": "Edge: example2 already sorted"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: minimum sorted"
+    },
+    {
+      "input": "[2,1]",
+      "desc": "Edge: minimum unsorted"
+    },
+    {
+      "input": "[1000,1000]",
+      "desc": "Edge: max same"
+    },
+    {
+      "input": "[-1000,-1000]",
+      "desc": "Edge: min same"
+    },
+    {
+      "input": "[1000,-1000]",
+      "desc": "Edge: extreme swap"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Standard: sorted"
+    },
+    {
+      "input": "[5,4,3,2,1]",
+      "desc": "Standard: reverse"
+    },
+    {
+      "input": "[3,1,4,1,5]",
+      "desc": "Standard: random"
+    },
+    {
+      "input": "[2,2,1,3,3]",
+      "desc": "Standard: needs ops"
+    },
+    {
+      "input": "[-5,-3,-1,1,3,5]",
+      "desc": "Standard: negatives sorted"
+    },
+    {
+      "input": "[5,-5,5,-5,5]",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[10,5,15,3,12]",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "[1,5,3,2,4]",
+      "desc": "Standard: needs work"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,9,8,7,6,5,4,3,2,1]",
+      "desc": "Stress: palindrome 19"
+    },
+    {
+      "input": "[1000,999,998,997,996,995,994,993,992,991,990,989,988,987,986]",
+      "desc": "Stress: 15 descending"
+    },
+    {
+      "input": "[-1000,1000,-1000,1000,-1000,1000,-1000,1000,-1000,1000]",
+      "desc": "Stress: extreme alternating"
+    },
+    {
+      "input": "[35,-460,-234,-323,-665,208,619,-919,263,132,-224,640,711,893,-652,275,138,-64,681,-404,-779,500,361,-685,-667,-480,355,-882,702,973,-242,538,-686,992,-878,-358,-177,-355,-39,-29,-343,332,547,6,677,-573,878,603,-539,-312]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
