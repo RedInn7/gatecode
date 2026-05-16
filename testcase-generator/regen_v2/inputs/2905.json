@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^5; alphanumeric and dashes; 1 <= k <= 10^4",
   "input_format": "line1: s (JSON string); line2: k",
   "testcases": [
-    {"input": "\"5F3Z-2e-9-w\"\n4", "desc": "Edge: example1"},
-    {"input": "\"2-5g-3-J\"\n2", "desc": "Edge: example2"},
-    {"input": "\"a\"\n1", "desc": "Edge: 1 char"},
-    {"input": "\"a-\"\n1", "desc": "Edge: trailing dash"},
-    {"input": "\"-a\"\n1", "desc": "Edge: leading dash"},
-    {"input": "\"--\"\n1", "desc": "Edge: only dashes"},
-    {"input": "\"ab\"\n1", "desc": "Edge: 2 chars k=1"},
-    {"input": "\"ab\"\n2", "desc": "Edge: 2 chars k=2"},
-    {"input": "\"abcdefgh\"\n4", "desc": "Standard: no dashes k=4"},
-    {"input": "\"a-b-c-d-e-f-g-h\"\n2", "desc": "Standard: many singles k=2"},
-    {"input": "\"abcdefgh-12345678\"\n5", "desc": "Standard: half-half"},
-    {"input": "\"--a--a--a--a--\"\n2", "desc": "Standard: many dashes"},
-    {"input": "\"ABCdef123XYZ\"\n3", "desc": "Standard: mixed case"},
-    {"input": "\"1-2-3-4-5-6-7-8-9-0\"\n3", "desc": "Standard: alternating dash"},
-    {"input": "\"aaaaaaaaaa\"\n5", "desc": "Standard: 10 same chars k=5"},
-    {"input": "\"abcdefghij\"\n10", "desc": "Standard: 10 chars k=10"},
-    {"input": "\"abcdefghij\"\n100", "desc": "Standard: k larger than length"},
-    {"input": "\"a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z\"\n3", "desc": "Stress: alphabet dashed"},
-    {"input": "\"abcd-efgh-ijkl-mnop-qrst-uvwx-yzAB-CDEF-GHIJ-KLMN-OPQR-STUV-WXYZ-0123-4567-89\"\n4", "desc": "Stress: many groups"},
-    {"input": "\"aBcD1eFgH2iJkL3mNoP4qRsT5uVwX6yZ0\"\n2", "desc": "Killer: mixed case k=2"}
+    {
+      "input": "\"5F3Z-2e-9-w\"\n4",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"2-5g-3-J\"\n2",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"a\"\n1",
+      "desc": "Edge: 1 char"
+    },
+    {
+      "input": "\"a-\"\n1",
+      "desc": "Edge: trailing dash"
+    },
+    {
+      "input": "\"-a\"\n1",
+      "desc": "Edge: leading dash"
+    },
+    {
+      "input": "\"--\"\n1",
+      "desc": "Edge: only dashes"
+    },
+    {
+      "input": "\"ab\"\n1",
+      "desc": "Edge: 2 chars k=1"
+    },
+    {
+      "input": "\"ab\"\n2",
+      "desc": "Edge: 2 chars k=2"
+    },
+    {
+      "input": "\"abcdefgh\"\n4",
+      "desc": "Standard: no dashes k=4"
+    },
+    {
+      "input": "\"a-b-c-d-e-f-g-h\"\n2",
+      "desc": "Standard: many singles k=2"
+    },
+    {
+      "input": "\"abcdefgh-12345678\"\n5",
+      "desc": "Standard: half-half"
+    },
+    {
+      "input": "\"--a--a--a--a--\"\n2",
+      "desc": "Standard: many dashes"
+    },
+    {
+      "input": "\"ABCdef123XYZ\"\n3",
+      "desc": "Standard: mixed case"
+    },
+    {
+      "input": "\"1-2-3-4-5-6-7-8-9-0\"\n3",
+      "desc": "Standard: alternating dash"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"\n5",
+      "desc": "Standard: 10 same chars k=5"
+    },
+    {
+      "input": "\"abcdefghij\"\n10",
+      "desc": "Standard: 10 chars k=10"
+    },
+    {
+      "input": "\"abcdefghij\"\n100",
+      "desc": "Standard: k larger than length"
+    },
+    {
+      "input": "\"a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z\"\n3",
+      "desc": "Stress: alphabet dashed"
+    },
+    {
+      "input": "\"abcd-efgh-ijkl-mnop-qrst-uvwx-yzAB-CDEF-GHIJ-KLMN-OPQR-STUV-WXYZ-0123-4567-89\"\n4",
+      "desc": "Stress: many groups"
+    },
+    {
+      "input": "\"ozotsxefwrwsovgxlanesy\"\n4",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

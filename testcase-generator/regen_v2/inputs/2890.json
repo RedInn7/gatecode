@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= paragraph.length <= 1000; punctuation in !?',;.; 0 <= banned.length <= 100; banned[i] lowercase",
   "input_format": "line1: paragraph (JSON string); line2: banned (JSON array of strings)",
   "testcases": [
-    {"input": "\"Bob hit a ball, the hit BALL flew far after it was hit.\"\n[\"hit\"]", "desc": "Edge: example1"},
-    {"input": "\"a.\"\n[]", "desc": "Edge: example2"},
-    {"input": "\"a\"\n[]", "desc": "Edge: single word no punct"},
-    {"input": "\"a a a\"\n[]", "desc": "Edge: all same"},
-    {"input": "\"a b\"\n[\"a\"]", "desc": "Edge: pick other"},
-    {"input": "\"A B C D\"\n[]", "desc": "Edge: all uppercase distinct, last word wins ties (but unique by guarantee — only first)"},
-    {"input": "\"the cat sat on the mat\"\n[]", "desc": "Edge: small natural"},
-    {"input": "\"a, a. a! a? a' a; a:\"\n[]", "desc": "Standard: punct variety"},
-    {"input": "\"Hello, hello, HELLO, world.\"\n[\"world\"]", "desc": "Standard: case mixing"},
-    {"input": "\"one two three two one one\"\n[]", "desc": "Standard: count winner"},
-    {"input": "\"Cat dog cat dog cat!\"\n[\"dog\"]", "desc": "Standard: cat wins"},
-    {"input": "\"X Y X Y X Z\"\n[\"y\"]", "desc": "Standard: pick X"},
-    {"input": "\"abc def abc def abc ghi\"\n[\"def\"]", "desc": "Standard: 3-2-1 banned mid"},
-    {"input": "\"red blue red red green blue red\"\n[\"blue\"]", "desc": "Standard: red dominates"},
-    {"input": "\"alpha beta gamma alpha beta alpha\"\n[\"beta\"]", "desc": "Standard: ban 2nd most"},
-    {"input": "\"The quick brown fox jumps over the lazy dog. The fox is quick.\"\n[\"the\"]", "desc": "Standard: pangram"},
-    {"input": "\"a a a a a b b b b c c c\"\n[\"a\"]", "desc": "Stress: ban top"},
-    {"input": "\"word word word word word word word word word word other\"\n[\"word\"]", "desc": "Stress: ban dominant"},
-    {"input": "\"abc, abc; abc! abc? abc' abc.\"\n[]", "desc": "Stress: all punct types"},
-    {"input": "\"Bob Bob Bob bob bob bob bob alice\"\n[]", "desc": "Killer: case-insensitive Bob dominates"}
+    {
+      "input": "\"Bob hit a ball, the hit BALL flew far after it was hit.\"\n[\"hit\"]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"a.\"\n[]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"a\"\n[]",
+      "desc": "Edge: single word no punct"
+    },
+    {
+      "input": "\"a a a\"\n[]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "\"a b\"\n[\"a\"]",
+      "desc": "Edge: pick other"
+    },
+    {
+      "input": "\"A B C D\"\n[]",
+      "desc": "Edge: all uppercase distinct, last word wins ties (but unique by guarantee — only first)"
+    },
+    {
+      "input": "\"the cat sat on the mat\"\n[]",
+      "desc": "Edge: small natural"
+    },
+    {
+      "input": "\"a, a. a! a? a' a; a:\"\n[]",
+      "desc": "Standard: punct variety"
+    },
+    {
+      "input": "\"Hello, hello, HELLO, world.\"\n[\"world\"]",
+      "desc": "Standard: case mixing"
+    },
+    {
+      "input": "\"one two three two one one\"\n[]",
+      "desc": "Standard: count winner"
+    },
+    {
+      "input": "\"Cat dog cat dog cat!\"\n[\"dog\"]",
+      "desc": "Standard: cat wins"
+    },
+    {
+      "input": "\"X Y X Y X Z\"\n[\"y\"]",
+      "desc": "Standard: pick X"
+    },
+    {
+      "input": "\"abc def abc def abc ghi\"\n[\"def\"]",
+      "desc": "Standard: 3-2-1 banned mid"
+    },
+    {
+      "input": "\"red blue red red green blue red\"\n[\"blue\"]",
+      "desc": "Standard: red dominates"
+    },
+    {
+      "input": "\"alpha beta gamma alpha beta alpha\"\n[\"beta\"]",
+      "desc": "Standard: ban 2nd most"
+    },
+    {
+      "input": "\"The quick brown fox jumps over the lazy dog. The fox is quick.\"\n[\"the\"]",
+      "desc": "Standard: pangram"
+    },
+    {
+      "input": "\"a a a a a b b b b c c c\"\n[\"a\"]",
+      "desc": "Stress: ban top"
+    },
+    {
+      "input": "\"word word word word word word word word word word other\"\n[\"word\"]",
+      "desc": "Stress: ban dominant"
+    },
+    {
+      "input": "\"abc, abc; abc! abc? abc' abc.\"\n[]",
+      "desc": "Stress: all punct types"
+    },
+    {
+      "input": "\"ucbkozkgdymwudxguocjqdztvgnsevgjbwhuohmqcxynnnlkjutxtzfciiakqvvqnynnwodlkntsumknerdgmlxyencpqenbdabtrykpxcegam\"\n[392,772,154,-517,-849,70,162,-757,302,879,826,176,-169,-669,-100,-971,351,736,-242,238,974,-960,16,200,-442,844,-171,-345,139,282,877,3,-433,744,744,383,524,259,-717,822,-506,-489,-424,-945,-133,-74,21,-866,-725,932,992,-871,850,-49,782,958,-727,-113,-833,540,79,-299,-811,-128,-839,-880,-979,232,132,957,667,-843,494,206,255,-578,219,-981,-897,-724,116,-18,604,550,-651,443,433,419,703,-203,429,889,-59,-463,565,-829,330,-402,241,-313]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

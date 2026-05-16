@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= numbers.length <= 50; 1 <= numbers[i].length <= 50; digits only",
   "input_format": "single line: numbers (JSON array of strings)",
   "testcases": [
-    {"input": "[\"1\",\"2\",\"4\",\"3\"]", "desc": "Edge: example1 distinct singles"},
-    {"input": "[\"001\",\"007\",\"15\",\"00153\"]", "desc": "Edge: example2 has prefix"},
-    {"input": "[\"1\",\"2\"]", "desc": "Edge: minimal n=2"},
-    {"input": "[\"1\",\"1\"]", "desc": "Edge: duplicates (each is prefix of other)"},
-    {"input": "[\"1\",\"12\"]", "desc": "Edge: short is prefix"},
-    {"input": "[\"12\",\"1\"]", "desc": "Edge: reversed order"},
-    {"input": "[\"123\",\"456\"]", "desc": "Edge: equal length distinct"},
-    {"input": "[\"0\",\"00\",\"000\"]", "desc": "Standard: chain of zeros"},
-    {"input": "[\"9876543210\",\"123\",\"456\"]", "desc": "Standard: no prefix overlap"},
-    {"input": "[\"100\",\"200\",\"300\",\"400\"]", "desc": "Standard: distinct same-len"},
-    {"input": "[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"]", "desc": "Standard: all single digits"},
-    {"input": "[\"10\",\"11\",\"12\",\"100\"]", "desc": "Standard: 10 is prefix of 100"},
-    {"input": "[\"5555555555\",\"4444444444\",\"3333333333\"]", "desc": "Standard: repeating digits"},
-    {"input": "[\"123\",\"124\",\"125\",\"126\"]", "desc": "Standard: same prefix diff last"},
-    {"input": "[\"1\",\"23\",\"456\",\"7890\"]", "desc": "Standard: increasing length"},
-    {"input": "[\"99999\",\"9\",\"99\"]", "desc": "Standard: 9 prefix chain"},
-    {"input": "[\"12345\",\"67890\",\"00000\",\"11111\",\"22222\",\"33333\",\"44444\",\"55555\",\"66666\",\"77777\"]", "desc": "Stress: 10 distinct same-len"},
-    {"input": "[\"1\",\"12\",\"123\",\"1234\",\"12345\",\"123456\",\"1234567\",\"12345678\",\"123456789\",\"1234567890\"]", "desc": "Stress: chain of prefixes"},
-    {"input": "[\"12345678901234567890123456789012345678901234567890\",\"1234567890123456789012345678901234567890123456789\"]", "desc": "Stress: max length pair"},
-    {"input": "[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"00\",\"11\",\"22\",\"33\"]", "desc": "Killer: many short with prefixes"}
+    {
+      "input": "[\"1\",\"2\",\"4\",\"3\"]",
+      "desc": "Edge: example1 distinct singles"
+    },
+    {
+      "input": "[\"001\",\"007\",\"15\",\"00153\"]",
+      "desc": "Edge: example2 has prefix"
+    },
+    {
+      "input": "[\"1\",\"2\"]",
+      "desc": "Edge: minimal n=2"
+    },
+    {
+      "input": "[\"1\",\"1\"]",
+      "desc": "Edge: duplicates (each is prefix of other)"
+    },
+    {
+      "input": "[\"1\",\"12\"]",
+      "desc": "Edge: short is prefix"
+    },
+    {
+      "input": "[\"12\",\"1\"]",
+      "desc": "Edge: reversed order"
+    },
+    {
+      "input": "[\"123\",\"456\"]",
+      "desc": "Edge: equal length distinct"
+    },
+    {
+      "input": "[\"0\",\"00\",\"000\"]",
+      "desc": "Standard: chain of zeros"
+    },
+    {
+      "input": "[\"9876543210\",\"123\",\"456\"]",
+      "desc": "Standard: no prefix overlap"
+    },
+    {
+      "input": "[\"100\",\"200\",\"300\",\"400\"]",
+      "desc": "Standard: distinct same-len"
+    },
+    {
+      "input": "[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"]",
+      "desc": "Standard: all single digits"
+    },
+    {
+      "input": "[\"10\",\"11\",\"12\",\"100\"]",
+      "desc": "Standard: 10 is prefix of 100"
+    },
+    {
+      "input": "[\"5555555555\",\"4444444444\",\"3333333333\"]",
+      "desc": "Standard: repeating digits"
+    },
+    {
+      "input": "[\"123\",\"124\",\"125\",\"126\"]",
+      "desc": "Standard: same prefix diff last"
+    },
+    {
+      "input": "[\"1\",\"23\",\"456\",\"7890\"]",
+      "desc": "Standard: increasing length"
+    },
+    {
+      "input": "[\"99999\",\"9\",\"99\"]",
+      "desc": "Standard: 9 prefix chain"
+    },
+    {
+      "input": "[\"12345\",\"67890\",\"00000\",\"11111\",\"22222\",\"33333\",\"44444\",\"55555\",\"66666\",\"77777\"]",
+      "desc": "Stress: 10 distinct same-len"
+    },
+    {
+      "input": "[\"1\",\"12\",\"123\",\"1234\",\"12345\",\"123456\",\"1234567\",\"12345678\",\"123456789\",\"1234567890\"]",
+      "desc": "Stress: chain of prefixes"
+    },
+    {
+      "input": "[\"12345678901234567890123456789012345678901234567890\",\"1234567890123456789012345678901234567890123456789\"]",
+      "desc": "Stress: max length pair"
+    },
+    {
+      "input": "[922,793,-149,-955,766,145,-933,-798,405,973,-732,573,-477,-489,-525,913,957,62,-953,-241,-183,0,-697,348,-668,-260,1000,571,-919,-560,-317,503,-598,201,-33,176,-103,785,-996,872,-160,49,-43,-919,-847,-249,565,300,-12,567]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
