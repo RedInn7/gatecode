@@ -1,0 +1,27 @@
+{
+  "pid": 768, "slug": "minimum-time-to-complete-all-deliveries",
+  "inferred_constraints": "1 <= d[i] <= 1e9, 2 <= r[i] <= 3e4",
+  "input_format": "line1: d (JSON array len 2); line2: r (JSON array len 2)",
+  "testcases": [
+    {"input": "[3,1]\n[2,3]", "desc": "Edge: example1"},
+    {"input": "[1,3]\n[2,2]", "desc": "Edge: example2"},
+    {"input": "[2,1]\n[3,4]", "desc": "Edge: example3"},
+    {"input": "[1,1]\n[2,2]", "desc": "Edge: min deliveries"},
+    {"input": "[1,1]\n[3,3]", "desc": "Edge: same recharge"},
+    {"input": "[1,1]\n[2,3]", "desc": "Edge: different recharge"},
+    {"input": "[100,100]\n[2,3]", "desc": "Standard: medium"},
+    {"input": "[1000,1000]\n[10,15]", "desc": "Standard: large"},
+    {"input": "[10,1]\n[2,30000]", "desc": "Standard: extreme recharge mismatch"},
+    {"input": "[1000000000,1]\n[2,30000]", "desc": "Edge: max deliveries"},
+    {"input": "[1,1000000000]\n[30000,2]", "desc": "Edge: max d second"},
+    {"input": "[1000000000,1000000000]\n[2,3]", "desc": "Stress: max both"},
+    {"input": "[1,1]\n[30000,30000]", "desc": "Edge: max recharge same"},
+    {"input": "[5,5]\n[2,2]", "desc": "Standard: symmetric"},
+    {"input": "[10,5]\n[3,4]", "desc": "Standard: asymmetric"},
+    {"input": "[100,50]\n[5,10]", "desc": "Standard: medium asymmetric"},
+    {"input": "[50,50]\n[3,7]", "desc": "Standard: prime recharges"},
+    {"input": "[200,300]\n[4,6]", "desc": "Standard: lcm-related"},
+    {"input": "[1,1]\n[3,3]", "desc": "Edge: classic"},
+    {"input": "[7,3]\n[5,8]", "desc": "Special: random"}
+  ]
+}

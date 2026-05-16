@@ -1,0 +1,27 @@
+{
+  "pid": 774, "slug": "alternating-groups-i",
+  "inferred_constraints": "3 <= colors.length <= 100, 0 <= colors[i] <= 1",
+  "input_format": "line1: colors (JSON array)",
+  "testcases": [
+    {"input": "[1,1,1]", "desc": "Edge: example1"},
+    {"input": "[0,1,0,0,1]", "desc": "Edge: example2"},
+    {"input": "[0,1,0]", "desc": "Edge: n=3 alternating"},
+    {"input": "[1,0,1]", "desc": "Edge: n=3 alternating start 1"},
+    {"input": "[0,0,0]", "desc": "Edge: n=3 all zero"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all 1"},
+    {"input": "[0,0,0,0,0,0,0,0]", "desc": "Edge: all 0"},
+    {"input": "[0,1,0,1,0,1]", "desc": "Edge: even alternating"},
+    {"input": "[0,1,0,1,0,1,0,1,0,1]", "desc": "Edge: 10 alternating"},
+    {"input": "[1,0,1,0,1,0,1,0,1,0]", "desc": "Edge: 10 starting 1"},
+    {"input": "[0,1,0,0,1,0,1,0,1,1]", "desc": "Standard: mixed"},
+    {"input": "[1,1,0,1,1,0,1,1,0]", "desc": "Standard: pattern"},
+    {"input": "[0,0,1,1,0,0,1,1]", "desc": "Standard: paired"},
+    {"input": "[1,0,0,1,0,1]", "desc": "Standard: 6 mixed"},
+    {"input": "[0,1,1,0,1,1,0,1,1]", "desc": "Standard: triple pattern"},
+    {"input": "[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]", "desc": "Stress: 50 alternating"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 100 all 1"},
+    {"input": "[0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0]", "desc": "Standard: pair pattern"},
+    {"input": "[0,1,0,1,0,1,1]", "desc": "Standard: 7 with break"},
+    {"input": "[1,0,1,1,0,1,0,1,1,0]", "desc": "Special: irregular"}
+  ]
+}

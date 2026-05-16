@@ -1,0 +1,27 @@
+{
+  "pid": 770, "slug": "concatenation-of-array",
+  "inferred_constraints": "1 <= n <= 1000, 1 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,1]", "desc": "Edge: example1"},
+    {"input": "[1,3,2,1]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1000]", "desc": "Edge: n=1 max"},
+    {"input": "[1,2]", "desc": "Edge: n=2"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1000,1000,1000]", "desc": "Edge: max values"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 10 ascending"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: descending"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "Standard: all 5"},
+    {"input": "[1,1000,1,1000,1,1000]", "desc": "Standard: alternating extremes"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: hundreds"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: n=20"},
+    {"input": "[500,500,500,500,500,500,500,500,500,500]", "desc": "Standard: all 500"},
+    {"input": "[1,500,1000,500,1]", "desc": "Standard: pyramid"},
+    {"input": "[1000,1,1000,1,1000,1,1000,1,1000,1]", "desc": "Standard: zigzag"},
+    {"input": "[7,11,13,17,19,23,29,31,37,41]", "desc": "Standard: primes"},
+    {"input": "[1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7,8,8,8,9,9,9,10,10,10]", "desc": "Standard: grouped"},
+    {"input": "[42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42]", "desc": "Stress: 50 same"},
+    {"input": "[3,14,159,265,358,979,323,846,264,338]", "desc": "Special: random"}
+  ]
+}

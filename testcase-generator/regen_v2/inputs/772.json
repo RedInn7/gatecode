@@ -1,0 +1,27 @@
+{
+  "pid": 772, "slug": "find-the-most-common-response",
+  "inferred_constraints": "1 <= responses.length <= 1000, 1 <= responses[i].length <= 1000, 1 <= responses[i][j].length <= 10, lowercase",
+  "input_format": "line1: responses (JSON 2D of strings)",
+  "testcases": [
+    {"input": "[[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]", "desc": "Edge: example1"},
+    {"input": "[[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]", "desc": "Edge: example2 tie"},
+    {"input": "[[\"a\"]]", "desc": "Edge: single response"},
+    {"input": "[[\"a\",\"b\"]]", "desc": "Edge: 2 items"},
+    {"input": "[[\"a\",\"a\",\"a\"]]", "desc": "Edge: all duplicates"},
+    {"input": "[[\"a\"],[\"a\"],[\"a\"]]", "desc": "Edge: 3 days same"},
+    {"input": "[[\"abc\",\"def\"],[\"def\",\"ghi\"],[\"abc\",\"ghi\"]]", "desc": "Standard: 3-way tie"},
+    {"input": "[[\"yes\",\"no\"],[\"yes\",\"no\"],[\"yes\",\"no\"]]", "desc": "Standard: tie yes/no"},
+    {"input": "[[\"x\"],[\"y\"],[\"z\"],[\"a\"]]", "desc": "Standard: all distinct"},
+    {"input": "[[\"hello\",\"world\"],[\"hello\",\"world\"],[\"hello\"],[\"world\"]]", "desc": "Standard: tied"},
+    {"input": "[[\"foo\",\"foo\",\"bar\"],[\"baz\"],[\"foo\",\"bar\"],[\"bar\"]]", "desc": "Standard: dedupe matters"},
+    {"input": "[[\"apple\"],[\"banana\"],[\"cherry\"],[\"date\"],[\"apple\"],[\"banana\"]]", "desc": "Standard: 2-way"},
+    {"input": "[[\"a\",\"b\",\"c\",\"d\",\"e\"],[\"f\",\"g\",\"h\",\"i\",\"j\"],[\"k\",\"l\",\"m\",\"n\",\"o\"]]", "desc": "Standard: all distinct lex"},
+    {"input": "[[\"z\",\"y\"],[\"y\",\"x\"],[\"x\",\"z\"]]", "desc": "Standard: 3-way tie lex"},
+    {"input": "[[\"abc\",\"abc\",\"abc\"]]", "desc": "Edge: dedupe to 1"},
+    {"input": "[[\"a\"],[\"b\"],[\"c\"]]", "desc": "Edge: all single different"},
+    {"input": "[[\"ten\",\"twenty\",\"thirty\"],[\"ten\",\"twenty\"],[\"twenty\",\"thirty\"],[\"thirty\",\"ten\"]]", "desc": "Standard: 3-way 3 each"},
+    {"input": "[[\"a\",\"aa\",\"aaa\"],[\"aa\",\"aaa\"],[\"aaa\",\"a\"]]", "desc": "Standard: similar strings"},
+    {"input": "[[\"banana\",\"apple\"],[\"apple\",\"cherry\"],[\"cherry\",\"banana\"]]", "desc": "Standard: 3-way fruit"},
+    {"input": "[[\"x\",\"y\",\"x\",\"y\"],[\"a\",\"b\",\"a\",\"b\"],[\"y\",\"a\"]]", "desc": "Special: dedupe critical"}
+  ]
+}
