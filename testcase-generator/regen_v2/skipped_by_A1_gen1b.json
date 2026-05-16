@@ -89,6 +89,11 @@
       "pid": 1132,
       "slug": "find-the-original-typed-string-i",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1100,
+      "slug": "design-front-middle-back-queue",
+      "reason": "ACM mode problem"
     }
   ]
 }
