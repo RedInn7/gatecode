@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= tasks.length <= 10^5, 1 <= enqueueTime, processingTime <= 10^9",
   "input_format": "line1: tasks (JSON 2D int [[enqueueTime, processingTime]])",
   "testcases": [
-    {"input": "[[1,2],[2,4],[3,2],[4,1]]", "desc": "Example 1"},
-    {"input": "[[7,10],[7,12],[7,5],[7,4],[7,2]]", "desc": "Example 2"},
-    {"input": "[[1,1]]", "desc": "Edge: single"},
-    {"input": "[[1,1],[2,1]]", "desc": "Edge: 2 sequential"},
-    {"input": "[[1,5],[2,1]]", "desc": "Edge: 2 with wait"},
-    {"input": "[[100,1]]", "desc": "Edge: idle time"},
-    {"input": "[[1,1],[1,1],[1,1]]", "desc": "Edge: all same arrival processing"},
-    {"input": "[[1,5],[1,3],[1,4],[1,2],[1,1]]", "desc": "Standard same arrival diff proc"},
-    {"input": "[[1,3],[2,3],[3,3],[4,3]]", "desc": "Standard all same proc"},
-    {"input": "[[1,10],[2,1],[3,1],[4,1]]", "desc": "Standard blocking"},
-    {"input": "[[5,2],[1,1],[3,3],[2,4]]", "desc": "Standard unsorted"},
-    {"input": "[[1,1000000000],[2,1]]", "desc": "Stress one huge"},
-    {"input": "[[1,5],[1,5],[1,5],[1,5],[1,5]]", "desc": "Standard all same"},
-    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]", "desc": "Standard disjoint"},
-    {"input": "[[1,3],[1,2],[1,1],[5,4],[5,2],[5,1]]", "desc": "Standard two groups"},
-    {"input": "[[19,13],[16,9],[21,10],[32,25],[37,4],[49,24],[2,15],[38,41],[37,34],[33,6],[45,4],[18,18],[46,39],[12,24]]", "desc": "Standard 14 random"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]", "desc": "Standard 10 incremental"},
-    {"input": "[[10,1],[9,2],[8,3],[7,4],[6,5],[5,6],[4,7],[3,8],[2,9],[1,10]]", "desc": "Standard reverse"},
-    {"input": "[[1,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11],[1,12],[1,13],[1,14],[1,15],[1,16],[1,17],[1,18],[1,19],[1,20]]", "desc": "Stress 20 same arrival"},
-    {"input": "[[1,1000000000],[1,999999999],[1,999999998],[1,999999997],[1,999999996]]", "desc": "Stress max processing"}
+    {
+      "input": "[[1,2],[2,4],[3,2],[4,1]]",
+      "desc": "Example 1"
+    },
+    {
+      "input": "[[7,10],[7,12],[7,5],[7,4],[7,2]]",
+      "desc": "Example 2"
+    },
+    {
+      "input": "[[1,1]]",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "[[1,1],[2,1]]",
+      "desc": "Edge: 2 sequential"
+    },
+    {
+      "input": "[[1,5],[2,1]]",
+      "desc": "Edge: 2 with wait"
+    },
+    {
+      "input": "[[100,1]]",
+      "desc": "Edge: idle time"
+    },
+    {
+      "input": "[[1,1],[1,1],[1,1]]",
+      "desc": "Edge: all same arrival processing"
+    },
+    {
+      "input": "[[1,5],[1,3],[1,4],[1,2],[1,1]]",
+      "desc": "Standard same arrival diff proc"
+    },
+    {
+      "input": "[[1,3],[2,3],[3,3],[4,3]]",
+      "desc": "Standard all same proc"
+    },
+    {
+      "input": "[[1,10],[2,1],[3,1],[4,1]]",
+      "desc": "Standard blocking"
+    },
+    {
+      "input": "[[5,2],[1,1],[3,3],[2,4]]",
+      "desc": "Standard unsorted"
+    },
+    {
+      "input": "[[1,1000000000],[2,1]]",
+      "desc": "Stress one huge"
+    },
+    {
+      "input": "[[1,5],[1,5],[1,5],[1,5],[1,5]]",
+      "desc": "Standard all same"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]",
+      "desc": "Standard disjoint"
+    },
+    {
+      "input": "[[1,3],[1,2],[1,1],[5,4],[5,2],[5,1]]",
+      "desc": "Standard two groups"
+    },
+    {
+      "input": "[[19,13],[16,9],[21,10],[32,25],[37,4],[49,24],[2,15],[38,41],[37,34],[33,6],[45,4],[18,18],[46,39],[12,24]]",
+      "desc": "Standard 14 random"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]",
+      "desc": "Standard 10 incremental"
+    },
+    {
+      "input": "[[10,1],[9,2],[8,3],[7,4],[6,5],[5,6],[4,7],[3,8],[2,9],[1,10]]",
+      "desc": "Standard reverse"
+    },
+    {
+      "input": "[[1,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11],[1,12],[1,13],[1,14],[1,15],[1,16],[1,17],[1,18],[1,19],[1,20]]",
+      "desc": "Stress 20 same arrival"
+    },
+    {
+      "input": "[[-331,-170,390,-275],[-498,511,628,211],[469,924,-232,248],[-224,885,-907,574],[-280,-760,610,-611],[996,212,632,-806],[-20,969,916,620],[-334,533,601,-953]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
