@@ -1,0 +1,88 @@
+{
+  "pid": 679,
+  "slug": "verify-preorder-serialization-of-a-binary-tree",
+  "inferred_constraints": "1 <= preorder.length <= 1e4; preorder consists of comma-separated values: integers or '#'",
+  "input_format": "line1: preorder (string)",
+  "testcases": [
+    {
+      "input": "9,3,4,#,#,1,#,#,2,#,6,#,#",
+      "desc": "Edge: example1 valid"
+    },
+    {
+      "input": "1,#",
+      "desc": "Edge: example2 invalid"
+    },
+    {
+      "input": "\"lkrhowwgrx\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"kppddgwl\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"weickergoo\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: just a value invalid"
+    },
+    {
+      "input": "1,2,3",
+      "desc": "Edge: 3 values no nulls invalid"
+    },
+    {
+      "input": "1,2,#,#,#",
+      "desc": "Edge: valid 1-2"
+    },
+    {
+      "input": "1,2,3,#,#,#,#",
+      "desc": "Standard: valid 1-2-3 chain"
+    },
+    {
+      "input": "1,2,#,#,3,#,#",
+      "desc": "Standard: valid 1 with 2 children"
+    },
+    {
+      "input": "1,#,2,#,3,#,#",
+      "desc": "Standard: right skew"
+    },
+    {
+      "input": "1,2,#,3,#,#,4,#,5,#,#",
+      "desc": "Standard: balanced subtree"
+    },
+    {
+      "input": "5,3,2,#,#,4,#,#,7,6,#,#,8,#,#",
+      "desc": "Standard: BST-like"
+    },
+    {
+      "input": "1,2,3,#,#,4,#,#,5,#,6,#,#",
+      "desc": "Standard: complex valid"
+    },
+    {
+      "input": "1,2,#,3,#,#",
+      "desc": "Standard: 3-node left chain"
+    },
+    {
+      "input": "1,#,#,1",
+      "desc": "Standard: extra after complete invalid"
+    },
+    {
+      "input": "9,3,4,#,#,1,#,#,2,#,6,#,#,#",
+      "desc": "Stress: extra value invalid"
+    },
+    {
+      "input": "1,2,3,4,5,6,7,8,9,#,#,#,#,#,#,#,#,#,#",
+      "desc": "Stress: chain valid? probably invalid"
+    },
+    {
+      "input": "1,2,3,4,5,6,7,#,#,#,#,#,#,#,#",
+      "desc": "Stress: 7-node valid"
+    },
+    {
+      "input": "\"kygxmvtqztoyowfnlfggkcldfuhehywhcslvpabzrkcaasgqkv\"",
+      "desc": "Stress: large n near max boundary"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 683,
+  "slug": "replace-question-marks-in-string-to-minimize-its-value",
+  "inferred_constraints": "1 <= s.length <= 1e5; s consists of lowercase English letters and '?'",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "???",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "a?a?",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"etj\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"kgi\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"jct\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "a?",
+      "desc": "Edge: letter+?"
+    },
+    {
+      "input": "?a",
+      "desc": "Edge: ?+letter"
+    },
+    {
+      "input": "aa",
+      "desc": "Edge: same pair no ?"
+    },
+    {
+      "input": "????",
+      "desc": "Standard: 4 ?s"
+    },
+    {
+      "input": "abc",
+      "desc": "Standard: distinct letters no ?"
+    },
+    {
+      "input": "aaa",
+      "desc": "Standard: 3 same"
+    },
+    {
+      "input": "ab?c",
+      "desc": "Standard: ? in middle"
+    },
+    {
+      "input": "?a?b?c",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "abcde?fg",
+      "desc": "Standard: one ? among letters"
+    },
+    {
+      "input": "aabbcc??",
+      "desc": "Standard: pairs + ?s"
+    },
+    {
+      "input": "??????????",
+      "desc": "Standard: 10 ?s"
+    },
+    {
+      "input": "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij",
+      "desc": "Stress: 50 chars no ?"
+    },
+    {
+      "input": "??????????????????????????????????????????????????",
+      "desc": "Stress: 50 ?s"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "desc": "Stress: 50 a's"
+    },
+    {
+      "input": "\"cdoimltw\"",
+      "desc": "Stress: large n near max boundary"
+    }
+  ]
+}

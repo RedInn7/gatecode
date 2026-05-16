@@ -1,0 +1,88 @@
+{
+  "pid": 676,
+  "slug": "next-palindrome-using-same-digits",
+  "inferred_constraints": "1 <= num.length <= 1e5; num is a valid palindrome consisting of digits 0-9",
+  "input_format": "line1: num (string)",
+  "testcases": [
+    {
+      "input": "1221",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "32123",
+      "desc": "Edge: example2 no larger"
+    },
+    {
+      "input": "26804231",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "36995523",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: max single"
+    },
+    {
+      "input": "99",
+      "desc": "Edge: pair max"
+    },
+    {
+      "input": "121",
+      "desc": "Edge: odd-length small"
+    },
+    {
+      "input": "11211",
+      "desc": "Standard: odd"
+    },
+    {
+      "input": "1234321",
+      "desc": "Standard: 7-digit palindrome"
+    },
+    {
+      "input": "12321",
+      "desc": "Standard: 5-digit"
+    },
+    {
+      "input": "123321",
+      "desc": "Standard: even 6-digit"
+    },
+    {
+      "input": "10001",
+      "desc": "Standard: with zeros"
+    },
+    {
+      "input": "12345654321",
+      "desc": "Standard: 11-digit"
+    },
+    {
+      "input": "987656789",
+      "desc": "Standard: 9-digit"
+    },
+    {
+      "input": "111111",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "12345678987654321",
+      "desc": "Stress: 17 digit palindrome"
+    },
+    {
+      "input": "1234567890987654321",
+      "desc": "Stress: 19 digit with 0"
+    },
+    {
+      "input": "9999999999999999999",
+      "desc": "Stress: 19 nines"
+    },
+    {
+      "input": "45544554",
+      "desc": "Stress: large n near max boundary"
+    }
+  ]
+}
