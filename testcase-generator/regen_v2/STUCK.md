@@ -745,3 +745,14 @@ Audited at: 2026-05-16T15:37:25.149481
 Stuck after 3 regeneration attempts. Final issues:
 - No testcase with n=0 or n=1 (single element / empty array / single-node tree)
 Audited at: 2026-05-16T15:37:25.155481
+
+## PID 291 (total-characters-in-string-after-transformations-ii)
+Stuck after 3 regeneration attempts. Final issues:
+- Array has 100% uniform values (11), >80% threshold
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:27.305573
+
+## PID 293 (maximum-subarray-sum-with-one-deletion)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:27.327420
