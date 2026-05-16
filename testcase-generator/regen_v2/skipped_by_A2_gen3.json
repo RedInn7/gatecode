@@ -4,6 +4,11 @@
       "pid": 3636,
       "slug": "find-the-xor-of-numbers-which-appear-twice",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3575,
+      "slug": "design-file-system",
+      "reason": "ACM mode problem"
     }
   ]
 }
