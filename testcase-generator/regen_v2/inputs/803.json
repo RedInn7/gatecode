@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw)",
   "testcases": [
     {
-      "input": "zzazz",
-      "desc": "Edge: example1 already"
+      "input": "\"x\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "mbadm",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"rup\"",
+      "input": "\"ywh\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: 26 keyboard"
     },
     {
-      "input": "\"mvksmasimbnakplf\"",
+      "input": "\"eivcosvswd\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

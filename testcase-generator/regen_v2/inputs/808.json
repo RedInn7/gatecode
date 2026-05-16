@@ -5,8 +5,8 @@
   "input_format": "line1: word (raw)",
   "testcases": [
     {
-      "input": "abcde",
-      "desc": "Edge: example1"
+      "input": "\"c\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "xyzxyzxyzxyz",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"ylkdotalyxnlk\"",
+      "input": "\"vwhosqhqhhdlnyvfm\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Edge: 20 z"
     },
     {
-      "input": "\"meeedrzmkjrgrzdpbdvihaybgakovnplmmmmxaqenalh\"",
+      "input": "\"oervzdutybexqmitjlhsxhrkzkmwbbmjlpdh\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

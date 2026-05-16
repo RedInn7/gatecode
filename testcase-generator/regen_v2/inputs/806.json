@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw)",
   "testcases": [
     {
-      "input": "a",
-      "desc": "Edge: example1"
+      "input": "\"r\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "cac",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"k\"",
+      "input": "\"s\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: double alphabet"
     },
     {
-      "input": "\"sovnth\"",
+      "input": "\"igwbiy\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
