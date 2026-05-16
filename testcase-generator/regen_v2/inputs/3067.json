@@ -1,0 +1,76 @@
+{
+  "pid": 3067,
+  "slug": "maximum-square-area-by-removing-fences-from-a-field",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "951857",
+      "desc": "Standard: n=951857"
+    },
+    {
+      "input": "500218",
+      "desc": "Standard: n=500218"
+    },
+    {
+      "input": "346719",
+      "desc": "Standard: n=346719"
+    },
+    {
+      "input": "328316",
+      "desc": "Standard: n=328316"
+    },
+    {
+      "input": "697670",
+      "desc": "Standard: n=697670"
+    },
+    {
+      "input": "418176",
+      "desc": "Standard: n=418176"
+    },
+    {
+      "input": "433130",
+      "desc": "Standard: n=433130"
+    },
+    {
+      "input": "172938",
+      "desc": "Standard: n=172938"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
