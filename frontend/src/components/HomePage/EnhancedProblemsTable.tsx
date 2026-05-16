@@ -240,7 +240,8 @@ function useGetProblems() {
 			if (isFirst) setLoading(true); else setIsFetchingMore(true);
 
 			const controller = new AbortController();
-			const timer = setTimeout(() => controller.abort(), 2000);
+			// 2s aborted on cold backend / flaky networks and left the table blank.
+			const timer = setTimeout(() => controller.abort(), 15000);
 			try {
 				const res = await fetch(
 					`${backendUrl}/api/v1/problems?page=${pageNum}&limit=${PAGE_LIMIT}`,

@@ -22,25 +22,36 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage, problem }) => {
 	const setAuthModalState = useSetRecoilState(authModalState);
 	const router = useRouter();
 
-	// 拉取当前题目周围的题目列表，用于左右导航（限制数量，避免阻塞）
+	// Fetch the surrounding problem slugs lazily on first nav-arrow click;
+	// eager-fetching 5000 rows on every problem-page mount was hammering the
+	// backend's count() query.
 	const [allProblems, setAllProblems] = useState<BackendProblemListItem[]>([]);
-	useEffect(() => {
-		if (!problemPage) return;
-		const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8081";
-		const controller = new AbortController();
-		fetch(`${backendUrl}/api/v1/problems?page=1&limit=5000`, { signal: controller.signal })
-			.then((r) => r.json())
-			.then((data) => setAllProblems(data.problems || []))
-			.catch(() => {});
-		return () => controller.abort();
-	}, [problemPage]);
+	const [navLoading, setNavLoading] = useState(false);
 
-	const handleProblemChange = (isForward: boolean) => {
+	const handleProblemChange = async (isForward: boolean) => {
 		const currentOrder = problem?.order;
 		if (currentOrder === undefined) return;
 
+		let list = allProblems;
+		if (list.length === 0 && !navLoading) {
+			setNavLoading(true);
+			try {
+				const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8081";
+				const res = await fetch(`${backendUrl}/api/v1/problems?page=1&limit=5000`);
+				if (res.ok) {
+					const data = await res.json();
+					list = data.problems || [];
+					setAllProblems(list);
+				}
+			} catch {
+				// fail silently — nav arrows become no-ops
+			} finally {
+				setNavLoading(false);
+			}
+		}
+
 		const nextOrder = currentOrder + (isForward ? 1 : -1);
-		const next = allProblems.find((p) => p.frontend_question_id === nextOrder);
+		const next = list.find((p) => p.frontend_question_id === nextOrder);
 		if (next) {
 			router.push(`/problems/${next.slug}`);
 		}

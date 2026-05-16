@@ -3,7 +3,7 @@ import AuthModal from "@/components/Modals/AuthModal";
 import Navbar from "@/components/Navbar/Navbar";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/firebase/firebase";
-import { useRecoilValue } from "recoil";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -11,9 +11,19 @@ type AuthPageProps = {};
 
 const AuthPage: React.FC<AuthPageProps> = () => {
 	const authModal = useRecoilValue(authModalState);
+	const setAuthModal = useSetRecoilState(authModalState);
 	const [user, loading, error] = useAuthState(auth);
 	const [pageLoading, setPageLoading] = useState(true);
 	const router = useRouter();
+
+	// A direct visit to /auth (Topbar link, bookmark, refresh) lands here with
+	// authModalState.isOpen=false, which leaves the page as an empty gradient.
+	// Seed isOpen on mount, but return the same `prev` when it's already open
+	// so we don't notify subscribers on every remount.
+	useEffect(() => {
+		setAuthModal((prev) => (prev.isOpen ? prev : { ...prev, isOpen: true }));
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	useEffect(() => {
 		if (user) router.push("/");

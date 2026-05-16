@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Topbar from "@/components/Topbar/Topbar";
@@ -10,9 +10,16 @@ export default function StudyPlanPage() {
 	const slug = router.query.slug as string | undefined;
 	const plan = slug ? STUDY_PLANS[slug] : null;
 
-	const [expandedGroup, setExpandedGroup] = useState<string | null>(
-		plan?.groups[0]?.slug || null
-	);
+	const [expandedGroup, setExpandedGroup] = useState<string | null>(null);
+
+	// router.query is empty on the first SSR pass, so the useState initializer
+	// always evaluates `plan` as null. Sync the first group's slug after the
+	// router hydrates so the top section is auto-expanded as intended.
+	useEffect(() => {
+		if (expandedGroup === null && plan?.groups[0]?.slug) {
+			setExpandedGroup(plan.groups[0].slug);
+		}
+	}, [plan, expandedGroup]);
 
 	if (!slug) return null;
 
