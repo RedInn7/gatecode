@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= n <= 10^5; -10^9 <= Node.val <= 10^9; unique values; p != q; p, q in tree",
   "input_format": "line1: root (JSON level-order array with null); line2: p; line3: q",
   "testcases": [
-    {"input": "[6,2,8,0,4,7,9,null,null,3,5]\n2\n8", "desc": "Standard example 1"},
-    {"input": "[6,2,8,0,4,7,9,null,null,3,5]\n2\n4", "desc": "Standard example 2"},
-    {"input": "[2,1]\n2\n1", "desc": "Standard example 3"},
-    {"input": "[2,1,3]\n1\n3", "desc": "Edge: small balanced"},
-    {"input": "[5,3,8,1,4,7,9]\n1\n9", "desc": "Far apart leaves"},
-    {"input": "[5,3,8,1,4,7,9]\n3\n8", "desc": "Children of root"},
-    {"input": "[5,3,8,1,4,7,9]\n1\n4", "desc": "Same subtree"},
-    {"input": "[10,5,15,3,7,12,20]\n3\n7", "desc": "Left subtree"},
-    {"input": "[10,5,15,3,7,12,20]\n12\n20", "desc": "Right subtree"},
-    {"input": "[100,50,150,25,75,125,175]\n25\n175", "desc": "Distant nodes"},
-    {"input": "[20,10,30,5,15,25,35]\n5\n15", "desc": "Left descendants"},
-    {"input": "[20,10,30,5,15,25,35,1,7,12,17,22,27,32,40]\n1\n40", "desc": "Larger tree extremes"},
-    {"input": "[20,10,30,5,15,25,35,1,7,12,17,22,27,32,40]\n22\n27", "desc": "Right-mid pair"},
-    {"input": "[50,25,75,10,40,60,90,5,15,30,45,55,65,85,95]\n30\n45", "desc": "Internal pair"},
-    {"input": "[1,null,2,null,3,null,4]\n1\n4", "desc": "Right chain"},
-    {"input": "[4,3,null,2,null,1]\n1\n4", "desc": "Left chain"},
-    {"input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n5\n15", "desc": "Cross subtrees"},
-    {"input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n4\n12", "desc": "Direct children"},
-    {"input": "[100,50,200,25,75,150,250]\n25\n250", "desc": "Extremes"},
-    {"input": "[1000000000,500000000,null]\n500000000\n1000000000", "desc": "Big values: root + left child"}
+    {
+      "input": "[6,2,8,0,4,7,9,null,null,3,5]\n2\n8",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "[6,2,8,0,4,7,9,null,null,3,5]\n2\n4",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "[2,1]\n2\n1",
+      "desc": "Standard example 3"
+    },
+    {
+      "input": "[2,1,3]\n1\n3",
+      "desc": "Edge: small balanced"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n1\n9",
+      "desc": "Far apart leaves"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n3\n8",
+      "desc": "Children of root"
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]\n1\n4",
+      "desc": "Same subtree"
+    },
+    {
+      "input": "[10,5,15,3,7,12,20]\n3\n7",
+      "desc": "Left subtree"
+    },
+    {
+      "input": "[10,5,15,3,7,12,20]\n12\n20",
+      "desc": "Right subtree"
+    },
+    {
+      "input": "[100,50,150,25,75,125,175]\n25\n175",
+      "desc": "Distant nodes"
+    },
+    {
+      "input": "[20,10,30,5,15,25,35]\n5\n15",
+      "desc": "Left descendants"
+    },
+    {
+      "input": "[20,10,30,5,15,25,35,1,7,12,17,22,27,32,40]\n1\n40",
+      "desc": "Larger tree extremes"
+    },
+    {
+      "input": "[20,10,30,5,15,25,35,1,7,12,17,22,27,32,40]\n22\n27",
+      "desc": "Right-mid pair"
+    },
+    {
+      "input": "[50,25,75,10,40,60,90,5,15,30,45,55,65,85,95]\n30\n45",
+      "desc": "Internal pair"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4]\n1\n4",
+      "desc": "Right chain"
+    },
+    {
+      "input": "[4,3,null,2,null,1]\n1\n4",
+      "desc": "Left chain"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n5\n15",
+      "desc": "Cross subtrees"
+    },
+    {
+      "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n4\n12",
+      "desc": "Direct children"
+    },
+    {
+      "input": "[100,50,200,25,75,150,250]\n25\n250",
+      "desc": "Extremes"
+    },
+    {
+      "input": "[1000000000,500000000,null]\n500000000\n1000000000",
+      "desc": "Big values: root + left child"
+    }
   ]
 }

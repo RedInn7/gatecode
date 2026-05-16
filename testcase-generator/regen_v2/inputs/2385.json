@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 16; lowercase English letters",
   "input_format": "single line: s (quoted string)",
   "testcases": [
-    {"input": "\"aabb\"", "desc": "Standard example 1"},
-    {"input": "\"abc\"", "desc": "Standard example 2 no perm"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"ab\"", "desc": "Edge: 2 diff impossible"},
-    {"input": "\"aba\"", "desc": "Single perm"},
-    {"input": "\"aabbcc\"", "desc": "Many perms"},
-    {"input": "\"aaaa\"", "desc": "All same"},
-    {"input": "\"abba\"", "desc": "Already palindrome"},
-    {"input": "\"abcba\"", "desc": "5 chars palindrome"},
-    {"input": "\"aabbccdd\"", "desc": "All paired even"},
-    {"input": "\"aabbccd\"", "desc": "Odd middle"},
-    {"input": "\"aaaaaaaaaaaaaaaa\"", "desc": "16 same"},
-    {"input": "\"abcdefgh\"", "desc": "All distinct (impossible)"},
-    {"input": "\"abccba\"", "desc": "Already pal"},
-    {"input": "\"aaaabbbb\"", "desc": "Mirror 4-4"},
-    {"input": "\"aaaaaabbbbbb\"", "desc": "6-6 paired"},
-    {"input": "\"abacaba\"", "desc": "Pattern pal"},
-    {"input": "\"aabbccddeeffgghh\"", "desc": "16 chars all paired"},
-    {"input": "\"aabbccddeeffggh\"", "desc": "Odd 15 with one extra"}
+    {
+      "input": "\"aabb\"",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Standard example 2 no perm"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 diff impossible"
+    },
+    {
+      "input": "\"aba\"",
+      "desc": "Single perm"
+    },
+    {
+      "input": "\"aabbcc\"",
+      "desc": "Many perms"
+    },
+    {
+      "input": "\"aaaa\"",
+      "desc": "All same"
+    },
+    {
+      "input": "\"abba\"",
+      "desc": "Already palindrome"
+    },
+    {
+      "input": "\"abcba\"",
+      "desc": "5 chars palindrome"
+    },
+    {
+      "input": "\"aabbccdd\"",
+      "desc": "All paired even"
+    },
+    {
+      "input": "\"aabbccd\"",
+      "desc": "Odd middle"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaa\"",
+      "desc": "16 same"
+    },
+    {
+      "input": "\"abcdefgh\"",
+      "desc": "All distinct (impossible)"
+    },
+    {
+      "input": "\"abccba\"",
+      "desc": "Already pal"
+    },
+    {
+      "input": "\"aaaabbbb\"",
+      "desc": "Mirror 4-4"
+    },
+    {
+      "input": "\"aaaaaabbbbbb\"",
+      "desc": "6-6 paired"
+    },
+    {
+      "input": "\"abacaba\"",
+      "desc": "Pattern pal"
+    },
+    {
+      "input": "\"aabbccddeeffgghh\"",
+      "desc": "16 chars all paired"
+    },
+    {
+      "input": "\"ceyqxboo\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
