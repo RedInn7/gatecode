@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= message.length <= 1e4, lowercase + spaces, 1 <= limit <= 1e4",
   "input_format": "line1: message (string in JSON quotes); line2: limit (int)",
   "testcases": [
-    {"input": "\"this is really a very awesome message\"\n9", "desc": "Edge: example1"},
-    {"input": "\"short message\"\n15", "desc": "Edge: example2"},
-    {"input": "\"a\"\n5", "desc": "Edge: minimal message"},
-    {"input": "\"ab\"\n5", "desc": "Edge: very short"},
-    {"input": "\"hello world\"\n10", "desc": "Edge: short message limit barely fits"},
-    {"input": "\"abcdef\"\n6", "desc": "Edge: limit equals length"},
-    {"input": "\"a\"\n8", "desc": "Edge: tiny message wide limit"},
-    {"input": "\"ab\"\n8", "desc": "Edge: 2-char message 8-limit"},
-    {"input": "\"abc\"\n8", "desc": "Edge: 3-char 8-limit"},
-    {"input": "\"abcd\"\n8", "desc": "Edge: 4-char 8-limit"},
-    {"input": "\"abcde\"\n8", "desc": "Edge: 5-char 8-limit"},
-    {"input": "\"hello world this is a test message that needs splitting\"\n20", "desc": "Standard: longer with limit 20"},
-    {"input": "\"the quick brown fox jumps over the lazy dog\"\n10", "desc": "Standard: pangram limit 10"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n5", "desc": "Standard: alphabet tight"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n10", "desc": "Standard: alphabet looser"},
-    {"input": "\"this message has many many many many words to split into multiple parts each with a limit suffix attached at the end\"\n15", "desc": "Standard: many words"},
-    {"input": "\"a a a a a a a a a a a a a a a a a a a a\"\n8", "desc": "Standard: many single letters"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"\n50", "desc": "Stress: long single-token message limit 50"},
-    {"input": "\"hello\"\n3", "desc": "Stress: limit too tight may return empty"},
-    {"input": "\"the quick brown fox jumps over the lazy dog and runs around the park near the lake on a sunny morning while birds sing in trees\"\n25", "desc": "Stress: long sentence limit 25"}
+    {
+      "input": "\"this is really a very awesome message\"\n9",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "\"short message\"\n15",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"s\"\n13",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"trdzjraqzje\"\n11",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"rygqmcoiisuw\"\n10",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "\"abcdef\"\n6",
+      "desc": "Edge: limit equals length"
+    },
+    {
+      "input": "\"a\"\n8",
+      "desc": "Edge: tiny message wide limit"
+    },
+    {
+      "input": "\"ab\"\n8",
+      "desc": "Edge: 2-char message 8-limit"
+    },
+    {
+      "input": "\"abc\"\n8",
+      "desc": "Edge: 3-char 8-limit"
+    },
+    {
+      "input": "\"abcd\"\n8",
+      "desc": "Edge: 4-char 8-limit"
+    },
+    {
+      "input": "\"abcde\"\n8",
+      "desc": "Edge: 5-char 8-limit"
+    },
+    {
+      "input": "\"hello world this is a test message that needs splitting\"\n20",
+      "desc": "Standard: longer with limit 20"
+    },
+    {
+      "input": "\"the quick brown fox jumps over the lazy dog\"\n10",
+      "desc": "Standard: pangram limit 10"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n5",
+      "desc": "Standard: alphabet tight"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n10",
+      "desc": "Standard: alphabet looser"
+    },
+    {
+      "input": "\"this message has many many many many words to split into multiple parts each with a limit suffix attached at the end\"\n15",
+      "desc": "Standard: many words"
+    },
+    {
+      "input": "\"a a a a a a a a a a a a a a a a a a a a\"\n8",
+      "desc": "Standard: many single letters"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"\n50",
+      "desc": "Stress: long single-token message limit 50"
+    },
+    {
+      "input": "\"hello\"\n3",
+      "desc": "Stress: limit too tight may return empty"
+    },
+    {
+      "input": "\"hachlifzbmljzubmgoiadpuukoisnqgvbyxedbjxycktygngnqulcwatxzphzqfymhrzvtacng\"\n15",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
