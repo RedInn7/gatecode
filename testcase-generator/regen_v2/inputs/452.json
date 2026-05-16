@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1000",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "50", "desc": "Edge: example1"},
-    {"input": "2", "desc": "Edge: example2"},
-    {"input": "1", "desc": "Edge: n=1"},
-    {"input": "1000", "desc": "Edge: max n=1000"},
-    {"input": "3", "desc": "Edge: n=3 binary 11"},
-    {"input": "4", "desc": "Edge: n=4 binary 100"},
-    {"input": "5", "desc": "Edge: n=5 binary 101"},
-    {"input": "7", "desc": "Edge: n=7 binary 111"},
-    {"input": "8", "desc": "Edge: power of 2"},
-    {"input": "15", "desc": "Edge: 4 ones"},
-    {"input": "16", "desc": "Edge: power of 2"},
-    {"input": "31", "desc": "Edge: 5 ones"},
-    {"input": "32", "desc": "Edge: power of 2"},
-    {"input": "63", "desc": "Edge: 6 ones"},
-    {"input": "64", "desc": "Edge: power of 2"},
-    {"input": "127", "desc": "Edge: 7 ones"},
-    {"input": "128", "desc": "Edge: power of 2"},
-    {"input": "255", "desc": "Edge: 8 ones"},
-    {"input": "512", "desc": "Edge: 2^9"},
-    {"input": "999", "desc": "Edge: near max"}
+    {
+      "input": "50",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "594",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "289",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "952",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: n=4 binary 100"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: n=5 binary 101"
+    },
+    {
+      "input": "7",
+      "desc": "Edge: n=7 binary 111"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: power of 2"
+    },
+    {
+      "input": "15",
+      "desc": "Edge: 4 ones"
+    },
+    {
+      "input": "16",
+      "desc": "Edge: power of 2"
+    },
+    {
+      "input": "31",
+      "desc": "Edge: 5 ones"
+    },
+    {
+      "input": "32",
+      "desc": "Edge: power of 2"
+    },
+    {
+      "input": "63",
+      "desc": "Edge: 6 ones"
+    },
+    {
+      "input": "64",
+      "desc": "Edge: power of 2"
+    },
+    {
+      "input": "127",
+      "desc": "Edge: 7 ones"
+    },
+    {
+      "input": "128",
+      "desc": "Edge: power of 2"
+    },
+    {
+      "input": "255",
+      "desc": "Edge: 8 ones"
+    },
+    {
+      "input": "512",
+      "desc": "Edge: 2^9"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

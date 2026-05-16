@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 1e5, 2 <= k <= 1e4, lowercase letters",
   "input_format": "line1: s (raw string); line2: k (int)",
   "testcases": [
-    {"input": "abcd\n2", "desc": "Edge: example1 no removal"},
-    {"input": "deeedbbcccbdaa\n3", "desc": "Edge: example2"},
-    {"input": "pbbcggttciiippooaais\n2", "desc": "Edge: example3"},
-    {"input": "a\n2", "desc": "Edge: n=1 k=2 nothing to remove"},
-    {"input": "aa\n2", "desc": "Edge: exact match"},
-    {"input": "aaa\n3", "desc": "Edge: exact triple match"},
-    {"input": "aaaa\n2", "desc": "Standard: 4 a, remove 2 pairs"},
-    {"input": "aaaaa\n2", "desc": "Standard: 5 a leaves 1"},
-    {"input": "aaaaaa\n3", "desc": "Edge: 6 a remove 2 triples"},
-    {"input": "abcabc\n2", "desc": "Edge: no consecutive duplicates"},
-    {"input": "aabb\n2", "desc": "Edge: 2 pairs"},
-    {"input": "aabbcc\n2", "desc": "Standard: 3 pairs"},
-    {"input": "aaabbb\n3", "desc": "Standard: 2 triples"},
-    {"input": "aaaabbbbcccc\n4", "desc": "Edge: 3 quadruples"},
-    {"input": "aaabbbccc\n3", "desc": "Standard: 3 triples all removed"},
-    {"input": "abbbbacca\n4", "desc": "Standard: bbbb removed then acca"},
-    {"input": "deeedbbcccbdaa\n3", "desc": "Standard: chain removals"},
-    {"input": "abcdefghij\n2", "desc": "Edge: 10 distinct no removal"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n8", "desc": "Stress: 64 a k=8"},
-    {"input": "abbacabbac\n2", "desc": "Standard: complex chain"}
+    {
+      "input": "abcd\n2",
+      "desc": "Edge: example1 no removal"
+    },
+    {
+      "input": "deeedbbcccbdaa\n3",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"sbahwalptrbecz\"\n3",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"trwhhffeqk\"\n3",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"ollyfibjxubns\"\n3",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "aaa\n3",
+      "desc": "Edge: exact triple match"
+    },
+    {
+      "input": "aaaa\n2",
+      "desc": "Standard: 4 a, remove 2 pairs"
+    },
+    {
+      "input": "aaaaa\n2",
+      "desc": "Standard: 5 a leaves 1"
+    },
+    {
+      "input": "aaaaaa\n3",
+      "desc": "Edge: 6 a remove 2 triples"
+    },
+    {
+      "input": "abcabc\n2",
+      "desc": "Edge: no consecutive duplicates"
+    },
+    {
+      "input": "aabb\n2",
+      "desc": "Edge: 2 pairs"
+    },
+    {
+      "input": "aabbcc\n2",
+      "desc": "Standard: 3 pairs"
+    },
+    {
+      "input": "aaabbb\n3",
+      "desc": "Standard: 2 triples"
+    },
+    {
+      "input": "aaaabbbbcccc\n4",
+      "desc": "Edge: 3 quadruples"
+    },
+    {
+      "input": "aaabbbccc\n3",
+      "desc": "Standard: 3 triples all removed"
+    },
+    {
+      "input": "abbbbacca\n4",
+      "desc": "Standard: bbbb removed then acca"
+    },
+    {
+      "input": "deeedbbcccbdaa\n3",
+      "desc": "Standard: chain removals"
+    },
+    {
+      "input": "abcdefghij\n2",
+      "desc": "Edge: 10 distinct no removal"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n8",
+      "desc": "Stress: 64 a k=8"
+    },
+    {
+      "input": "\"hqwploxhcqtuvadfspibxmydyaalruitzsdfmrhl\"\n3",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
