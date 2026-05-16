@@ -101,3 +101,46 @@ Commits pushed this round:
 - `regen-v2 stage A1-r2: generate inputs for PIDs 273-274 (final batch leftover)`
 - `regen-v2 stage A1-r2: generate inputs for PIDs 302-307 (6 problems)`
 - `regen-v2 stage A1-r2: generate inputs for PIDs 308-315 (5 problems committed here)`
+
+## A1-r4 (接力第 4 轮 — 2026-05-16)
+
+Focused on middle gap [316, 1791]. Started with 6 done out of 1310 candidates.
+Generated 170 new input JSON files this session.
+
+### Final counts
+- Done in middle range [316, 1791]: 194 / 1310 (15%)
+- Skipped (A1+A2 union) in [316,1791]: ~67
+- Remaining in middle range: ~1083
+
+### New skips added (in [316, 1791] range)
+- 317 (longest-happy-string non-unique)
+- 318, 385, 466, 539 (design classes)
+- 328, 482, 510, 609, 619, 721, 758 + others (JS only) — auto-detected
+- 356, 366, 389, 397 (interactive APIs)
+- 382 (TreeNode reference identity)
+- 395 (any-peak non-unique)
+- 396 (BST list)
+- 408 (any optimal split)
+- 439 (any shortest superstring)
+- 455 (BST delete non-unique)
+- 531 (BST construction non-unique)
+- 656 (Bash only — auto detected)
+
+### Commits pushed this round
+- Batches of ~10-12 PIDs each, ~17 commits in [319, 548] range
+- All pushed directly to origin/main with no merge conflicts
+- Range covered: 319, 320, 322-327, 330, 333-338, 340, 341, 343, 344,
+  347, 348, 350-355, 357-365, 367-373, 375-377, 379, 381, 383, 384, 386-388,
+  390-394, 398-407, 409-432, 433-456, 457-468, 469-480, 481-505, 506-548
+
+### Halt reason
+Context budget approaching limit after ~170 new problems in single session.
+Next agent should resume at PID 550+ (skip 549 which is already covered in some range).
+
+### Pickup hint
+Run:
+```bash
+ls testcase-generator/regen_v2/inputs/*.json | xargs -n1 basename | sed 's/.json//' | sort -n > /tmp/done.txt
+mysql -uroot gatecode -e "SELECT id FROM problems WHERE judge_enabled=1 AND id BETWEEN 549 AND 1791 ORDER BY id;" -BN > /tmp/all.txt
+# Filter out done and skipped from /tmp/all.txt
+```
