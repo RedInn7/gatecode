@@ -763,3 +763,14 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100.0)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:29.502616
+
+## PID 3 (minimum-adjacent-swaps-to-reach-the-kth-smallest-number)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=1000.0)
+Audited at: 2026-05-16T15:37:31.799379
+
+## PID 30 (minimum-time-to-reach-destination-in-directed-graph)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:31.799533
