@@ -5,11 +5,11 @@
   "input_format": "line1: s (string in JSON quotes); line2: distance (JSON int array of length 26)",
   "testcases": [
     {
-      "input": "\"y\"\n[0]",
-      "desc": "Edge: n=1 or minimal input"
+      "input": "\"c\"\n[0]",
+      "desc": "Regenerated: edge_min at position 0"
     },
     {
-      "input": "\"x\"\n[0]",
+      "input": "\"n\"\n[0]",
       "desc": "Regenerated: edge_min at position 1"
     },
     {
@@ -21,7 +21,7 @@
       "desc": "Regenerated: monotone_dec at position 3"
     },
     {
-      "input": "\"ilggrfpayu\"\n[50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50]",
+      "input": "\"bouuaijdhj\"\n[20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20]",
       "desc": "Regenerated: all_equal at position 4"
     },
     {
