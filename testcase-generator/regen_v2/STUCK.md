@@ -544,3 +544,63 @@ Stuck after 3 regeneration attempts. Final issues:
 - Array has 100% uniform values (70), >80% threshold
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:36:59.208311
+
+## PID 241 (maximum-number-of-books-you-can-take)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:02.019159
+
+## PID 242 (poor-pigs)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:02.019913
+
+## PID 243 (find-if-digit-game-can-be-won)
+Stuck after 3 regeneration attempts. Final issues:
+- No monotone decreasing sequence testcase
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:02.020317
+
+## PID 245 (count-connected-components-in-lcm-graph)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:02.020584
+
+## PID 247 (smallest-subsequence-of-distinct-characters)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No large-n testcase near max length (array_max_len=1000.0)
+Audited at: 2026-05-16T15:37:02.023760
+
+## PID 248 (number-of-zero-filled-subarrays)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:02.024067
+
+## PID 25 (minimum-additions-to-make-valid-string)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=50.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:02.024352
+
+## PID 250 (lexicographically-smallest-string-after-adjacent-removals)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=250.0)
+Audited at: 2026-05-16T15:37:02.025189
+
+## PID 251 (ipo)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:02.035555
+
+## PID 252 (take-k-of-each-character-from-left-and-right)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:02.061025
+
+## PID 254 (basic-calculator-iii)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=10000)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:02.065671
