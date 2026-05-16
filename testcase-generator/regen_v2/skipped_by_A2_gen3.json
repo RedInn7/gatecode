@@ -79,6 +79,11 @@
       "pid": 3415,
       "slug": "sudoku-solver",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3405,
+      "slug": "guess-the-majority-in-a-hidden-array",
+      "reason": "ACM mode problem"
     }
   ]
 }

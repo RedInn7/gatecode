@@ -1,0 +1,76 @@
+{
+  "pid": 3412,
+  "slug": "k-inverse-pairs-array",
+  "inferred_constraints": "0 <= n <= 1000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "120",
+      "desc": "Standard: n=120"
+    },
+    {
+      "input": "801",
+      "desc": "Standard: n=801"
+    },
+    {
+      "input": "911",
+      "desc": "Standard: n=911"
+    },
+    {
+      "input": "408",
+      "desc": "Standard: n=408"
+    },
+    {
+      "input": "555",
+      "desc": "Standard: n=555"
+    },
+    {
+      "input": "799",
+      "desc": "Standard: n=799"
+    },
+    {
+      "input": "908",
+      "desc": "Standard: n=908"
+    },
+    {
+      "input": "129",
+      "desc": "Standard: n=129"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "1000",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

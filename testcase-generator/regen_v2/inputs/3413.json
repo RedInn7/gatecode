@@ -1,0 +1,76 @@
+{
+  "pid": 3413,
+  "slug": "candy-crush",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "984888",
+      "desc": "Standard: n=984888"
+    },
+    {
+      "input": "564428",
+      "desc": "Standard: n=564428"
+    },
+    {
+      "input": "876339",
+      "desc": "Standard: n=876339"
+    },
+    {
+      "input": "802760",
+      "desc": "Standard: n=802760"
+    },
+    {
+      "input": "676112",
+      "desc": "Standard: n=676112"
+    },
+    {
+      "input": "467150",
+      "desc": "Standard: n=467150"
+    },
+    {
+      "input": "204691",
+      "desc": "Standard: n=204691"
+    },
+    {
+      "input": "341297",
+      "desc": "Standard: n=341297"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
