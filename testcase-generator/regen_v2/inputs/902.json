@@ -1,27 +1,88 @@
 {
-  "pid": 902, "slug": "coordinate-with-maximum-network-quality",
+  "pid": 902,
+  "slug": "coordinate-with-maximum-network-quality",
   "inferred_constraints": "towers[i]=[x,y,q], radius",
   "input_format": "line1: towers (JSON 2D); line2: radius (int)",
   "testcases": [
-    {"input": "[[1,2,5],[2,1,7],[3,1,9]]\n2", "desc": "Edge: example1"},
-    {"input": "[[23,11,21]]\n9", "desc": "Edge: example2"},
-    {"input": "[[1,2,13],[2,1,7],[0,1,9]]\n2", "desc": "Edge: example3"},
-    {"input": "[[1,1,1]]\n1", "desc": "Edge: single tower"},
-    {"input": "[[0,0,100]]\n50", "desc": "Edge: high q"},
-    {"input": "[[1,1,1],[2,2,1],[3,3,1]]\n1", "desc": "Standard: 3 diagonal"},
-    {"input": "[[5,5,10],[5,5,10]]\n5", "desc": "Edge: same coord"},
-    {"input": "[[1,2,5],[2,2,6],[3,2,7]]\n1", "desc": "Standard: 3 row"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1]]\n5", "desc": "Edge: all same"},
-    {"input": "[[5,5,10]]\n0", "desc": "Edge: radius 0"},
-    {"input": "[[1,1,100],[10,10,100]]\n3", "desc": "Standard: far apart"},
-    {"input": "[[0,0,5],[1,0,5],[0,1,5],[1,1,5]]\n2", "desc": "Standard: 4 corners"},
-    {"input": "[[50,50,50],[50,50,50],[50,50,50]]\n10", "desc": "Standard: 3 same"},
-    {"input": "[[1,2,3],[4,5,6],[7,8,9],[10,11,12]]\n5", "desc": "Standard: 4 spread"},
-    {"input": "[[0,0,1],[10,0,2],[20,0,3],[30,0,4]]\n10", "desc": "Standard: 4 line"},
-    {"input": "[[42,0,0]]\n7", "desc": "Edge: q=0"},
-    {"input": "[[20,20,10],[20,20,20],[20,20,30]]\n5", "desc": "Standard: stacked"},
-    {"input": "[[1,1,100],[2,2,50],[3,3,25],[4,4,10]]\n2", "desc": "Standard: cluster"},
-    {"input": "[[0,0,100],[50,50,100]]\n100", "desc": "Edge: large radius"},
-    {"input": "[[1,1,5],[1,2,5],[2,1,5],[2,2,5]]\n1", "desc": "Special: 2x2 square"}
+    {
+      "input": "[[1,2,5],[2,1,7],[3,1,9]]\n2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[23,11,21]]\n9",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[-191,-709,375],[184,-538,-522],[-624,-276,-299]]\n38",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[-549,449,-460],[742,553,165],[-423,612,353]]\n14",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[0,0,100]]\n50",
+      "desc": "Edge: high q"
+    },
+    {
+      "input": "[[1,1,1],[2,2,1],[3,3,1]]\n1",
+      "desc": "Standard: 3 diagonal"
+    },
+    {
+      "input": "[[5,5,10],[5,5,10]]\n5",
+      "desc": "Edge: same coord"
+    },
+    {
+      "input": "[[1,2,5],[2,2,6],[3,2,7]]\n1",
+      "desc": "Standard: 3 row"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1]]\n5",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[[5,5,10]]\n0",
+      "desc": "Edge: radius 0"
+    },
+    {
+      "input": "[[1,1,100],[10,10,100]]\n3",
+      "desc": "Standard: far apart"
+    },
+    {
+      "input": "[[0,0,5],[1,0,5],[0,1,5],[1,1,5]]\n2",
+      "desc": "Standard: 4 corners"
+    },
+    {
+      "input": "[[50,50,50],[50,50,50],[50,50,50]]\n10",
+      "desc": "Standard: 3 same"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9],[10,11,12]]\n5",
+      "desc": "Standard: 4 spread"
+    },
+    {
+      "input": "[[0,0,1],[10,0,2],[20,0,3],[30,0,4]]\n10",
+      "desc": "Standard: 4 line"
+    },
+    {
+      "input": "[[42,0,0]]\n7",
+      "desc": "Edge: q=0"
+    },
+    {
+      "input": "[[20,20,10],[20,20,20],[20,20,30]]\n5",
+      "desc": "Standard: stacked"
+    },
+    {
+      "input": "[[1,1,100],[2,2,50],[3,3,25],[4,4,10]]\n2",
+      "desc": "Standard: cluster"
+    },
+    {
+      "input": "[[0,0,100],[50,50,100]]\n100",
+      "desc": "Edge: large radius"
+    },
+    {
+      "input": "[[547,-663,365,-410,-689,-636],[49,805,-157,159,838,737],[-954,952,757,-32,-875,-268],[-77,-721,-352,-185,-150,685],[-934,386,172,592,-658,167],[741,-176,-512,-962,811,-923]]\n50",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

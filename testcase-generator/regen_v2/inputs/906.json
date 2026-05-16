@@ -1,27 +1,88 @@
 {
-  "pid": 906, "slug": "subsequence-with-the-minimum-score",
+  "pid": 906,
+  "slug": "subsequence-with-the-minimum-score",
   "inferred_constraints": "1 <= s.length, t.length <= 1e5",
   "input_format": "line1: s (raw); line2: t (raw)",
   "testcases": [
-    {"input": "abacaba\nbzaa", "desc": "Edge: example1"},
-    {"input": "cde\nxyz", "desc": "Edge: example2"},
-    {"input": "a\na", "desc": "Edge: identical"},
-    {"input": "a\nb", "desc": "Edge: no match"},
-    {"input": "abc\nabc", "desc": "Edge: t is sub of s"},
-    {"input": "abc\nb", "desc": "Edge: t single char"},
-    {"input": "abcdef\nfedcba", "desc": "Edge: t reversed"},
-    {"input": "aaa\naaaaa", "desc": "Edge: t longer"},
-    {"input": "abcdefghijklmnop\nabc", "desc": "Standard: t prefix"},
-    {"input": "abcdefghijklmnop\nnop", "desc": "Standard: t suffix"},
-    {"input": "abcdefghijklmnop\nmop", "desc": "Standard: t near end"},
-    {"input": "hello\nllo", "desc": "Standard: suffix"},
-    {"input": "hello world\nhw", "desc": "Standard: skip middle"},
-    {"input": "aaaaabbbbb\nab", "desc": "Standard: easy match"},
-    {"input": "aaaaabbbbb\nba", "desc": "Standard: out of order"},
-    {"input": "abcabcabc\nabc", "desc": "Standard: 3 occurrences"},
-    {"input": "xyzabc\nabcxyz", "desc": "Standard: swap"},
-    {"input": "leetcode\ncoding", "desc": "Standard: example1 like"},
-    {"input": "qwerty\nasdf", "desc": "Standard: disjoint"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\nbdfhjlnprtvxz", "desc": "Special: every other"}
+    {
+      "input": "abacaba\nbzaa",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "cde\nxyz",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"loscar\"\n\"zday\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"xl\"\n\"owdz\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "abc\nabc",
+      "desc": "Edge: t is sub of s"
+    },
+    {
+      "input": "abc\nb",
+      "desc": "Edge: t single char"
+    },
+    {
+      "input": "abcdef\nfedcba",
+      "desc": "Edge: t reversed"
+    },
+    {
+      "input": "aaa\naaaaa",
+      "desc": "Edge: t longer"
+    },
+    {
+      "input": "abcdefghijklmnop\nabc",
+      "desc": "Standard: t prefix"
+    },
+    {
+      "input": "abcdefghijklmnop\nnop",
+      "desc": "Standard: t suffix"
+    },
+    {
+      "input": "abcdefghijklmnop\nmop",
+      "desc": "Standard: t near end"
+    },
+    {
+      "input": "hello\nllo",
+      "desc": "Standard: suffix"
+    },
+    {
+      "input": "hello world\nhw",
+      "desc": "Standard: skip middle"
+    },
+    {
+      "input": "aaaaabbbbb\nab",
+      "desc": "Standard: easy match"
+    },
+    {
+      "input": "aaaaabbbbb\nba",
+      "desc": "Standard: out of order"
+    },
+    {
+      "input": "abcabcabc\nabc",
+      "desc": "Standard: 3 occurrences"
+    },
+    {
+      "input": "xyzabc\nabcxyz",
+      "desc": "Standard: swap"
+    },
+    {
+      "input": "leetcode\ncoding",
+      "desc": "Standard: example1 like"
+    },
+    {
+      "input": "qwerty\nasdf",
+      "desc": "Standard: disjoint"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\nbdfhjlnprtvxz",
+      "desc": "Special: every other"
+    }
   ]
 }
