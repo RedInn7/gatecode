@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"ifqewrbhemwh\"",
+      "input": "\"optatxxjk\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 8 long words"
     },
     {
-      "input": "\"srqqiemrhiucczabqkhlzniuiljxtdzxzavodgwvgdcrpftdaiayty\"",
+      "input": "\"hdnbjjbatwfxpgyffwcssyvtdwofhktbgodpgfpmvklanuqafamjpz\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
