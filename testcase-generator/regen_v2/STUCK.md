@@ -678,3 +678,17 @@ Audited at: 2026-05-16T15:37:14.054403
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=50000.0)
 Audited at: 2026-05-16T15:37:14.054986
+
+## PID 273 (maximum-score-of-a-split)
+Stuck after 3 regeneration attempts. Final issues:
+- Array length=1 < min=2 (constraint: 2 <= len <= 100000.0)
+- Array length=1 < min=2 (constraint: 2 <= len <= 100000.0)
+- Array has 100% uniform values (77129362), >80% threshold
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:16.171497
+
+## PID 274 (minimum-rectangles-to-cover-points)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:16.180375
