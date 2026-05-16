@@ -1,0 +1,28 @@
+{
+  "pid": 523,
+  "slug": "increment-submatrices-by-one",
+  "inferred_constraints": "1 <= n <= 500, 1 <= queries.length <= 1e4, 0 <= row1, col1, row2, col2 < n, row1 <= row2, col1 <= col2",
+  "input_format": "line1: n (int); line2: queries (JSON 2D int array)",
+  "testcases": [
+    {"input": "3\n[[1,1,2,2],[0,0,1,1]]", "desc": "Edge: example1"},
+    {"input": "2\n[[0,0,1,1]]", "desc": "Edge: example2 full matrix"},
+    {"input": "1\n[[0,0,0,0]]", "desc": "Edge: 1x1 single cell"},
+    {"input": "5\n[]", "desc": "Edge: no queries"},
+    {"input": "3\n[[0,0,2,2]]", "desc": "Edge: full 3x3"},
+    {"input": "3\n[[1,1,1,1]]", "desc": "Edge: single center cell"},
+    {"input": "4\n[[0,0,0,0],[1,1,1,1],[2,2,2,2],[3,3,3,3]]", "desc": "Standard: 4 diagonal cells"},
+    {"input": "4\n[[0,0,3,3]]", "desc": "Edge: full 4x4"},
+    {"input": "4\n[[0,0,1,1],[2,2,3,3]]", "desc": "Edge: 2 corner quads"},
+    {"input": "5\n[[0,0,4,4],[1,1,3,3],[2,2,2,2]]", "desc": "Standard: nested"},
+    {"input": "5\n[[0,0,0,4],[1,0,1,4],[2,0,2,4],[3,0,3,4],[4,0,4,4]]", "desc": "Standard: each row"},
+    {"input": "5\n[[0,0,4,0],[0,1,4,1],[0,2,4,2],[0,3,4,3],[0,4,4,4]]", "desc": "Standard: each column"},
+    {"input": "3\n[[0,0,2,2],[0,0,2,2],[0,0,2,2]]", "desc": "Standard: same query 3x"},
+    {"input": "10\n[[0,0,9,9]]", "desc": "Standard: 10x10 full"},
+    {"input": "10\n[[5,5,5,5]]", "desc": "Standard: 10x10 center"},
+    {"input": "10\n[[0,0,4,4],[5,5,9,9]]", "desc": "Standard: 10x10 two quads"},
+    {"input": "20\n[[0,0,19,19],[5,5,14,14],[8,8,11,11]]", "desc": "Standard: nested 20x20"},
+    {"input": "3\n[[0,0,0,2],[1,0,1,2],[2,0,2,2]]", "desc": "Standard: each row 3x3"},
+    {"input": "3\n[[0,0,2,0],[0,1,2,1],[0,2,2,2]]", "desc": "Standard: each col 3x3"},
+    {"input": "5\n[[0,0,2,2],[1,1,3,3],[2,2,4,4]]", "desc": "Standard: 3 overlapping squares"}
+  ]
+}

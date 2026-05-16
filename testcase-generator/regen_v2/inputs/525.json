@@ -1,0 +1,28 @@
+{
+  "pid": 525,
+  "slug": "sort-array-by-moving-items-to-empty-space",
+  "inferred_constraints": "n == nums.length, 2 <= n <= 1e5, 0 <= nums[i] < n, distinct",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[4,2,0,3,1]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,0]", "desc": "Edge: example2 already sorted"},
+    {"input": "[1,0]", "desc": "Edge: n=2"},
+    {"input": "[0,1]", "desc": "Edge: n=2 already sorted"},
+    {"input": "[2,1,0]", "desc": "Edge: n=3 reverse"},
+    {"input": "[0,1,2]", "desc": "Edge: n=3 sorted"},
+    {"input": "[1,2,0]", "desc": "Edge: n=3 shift"},
+    {"input": "[2,0,1]", "desc": "Edge: n=3 other shift"},
+    {"input": "[0,2,1]", "desc": "Edge: n=3 swap"},
+    {"input": "[1,0,2]", "desc": "Edge: n=3 swap"},
+    {"input": "[4,3,2,1,0]", "desc": "Standard: reverse n=5"},
+    {"input": "[0,1,2,3,4]", "desc": "Edge: sorted n=5"},
+    {"input": "[5,4,3,2,1,0]", "desc": "Standard: reverse n=6"},
+    {"input": "[1,2,3,4,5,0]", "desc": "Edge: sorted variant"},
+    {"input": "[0,5,4,3,2,1]", "desc": "Standard: 0 at start, rest reverse"},
+    {"input": "[2,5,4,3,0,1]", "desc": "Standard: random n=6"},
+    {"input": "[3,2,1,0,4,5]", "desc": "Standard: partial reverse"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]", "desc": "Edge: sorted n=10"},
+    {"input": "[9,8,7,6,5,4,3,2,1,0]", "desc": "Standard: reverse n=10"},
+    {"input": "[3,4,5,0,1,2,6,7,8,9]", "desc": "Standard: rotated n=10"}
+  ]
+}

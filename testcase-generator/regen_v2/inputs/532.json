@@ -1,0 +1,28 @@
+{
+  "pid": 532,
+  "slug": "number-of-ways-to-form-a-target-string-given-a-dictionary",
+  "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 1000, 1 <= target.length <= 1000, lowercase letters, all words same length",
+  "input_format": "line1: words (JSON string array); line2: target (raw string)",
+  "testcases": [
+    {"input": "[\"acca\",\"bbbb\",\"caca\"]\naba", "desc": "Edge: example1"},
+    {"input": "[\"abba\",\"baab\"]\nbab", "desc": "Edge: example2"},
+    {"input": "[\"a\"]\na", "desc": "Edge: minimal match"},
+    {"input": "[\"a\"]\nb", "desc": "Edge: no match"},
+    {"input": "[\"ab\"]\nab", "desc": "Edge: ordered match"},
+    {"input": "[\"ab\"]\nba", "desc": "Edge: order matters, impossible"},
+    {"input": "[\"aaaa\"]\nab", "desc": "Edge: missing b"},
+    {"input": "[\"aaaa\",\"bbbb\"]\nab", "desc": "Edge: 2 words"},
+    {"input": "[\"aaaa\",\"bbbb\",\"cccc\"]\nabc", "desc": "Standard: 3 words"},
+    {"input": "[\"abc\",\"def\",\"ghi\"]\nadg", "desc": "Standard: pick first from each"},
+    {"input": "[\"abc\",\"abc\",\"abc\"]\nabc", "desc": "Edge: 3 identical, target=abc"},
+    {"input": "[\"aaa\",\"aaa\",\"aaa\"]\naaa", "desc": "Edge: all same"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\"]\nabc", "desc": "Standard: pick 3 from one word"},
+    {"input": "[\"hello\",\"world\"]\nho", "desc": "Standard: small target"},
+    {"input": "[\"abcdef\",\"ghijkl\"]\nadg", "desc": "Standard: spread across"},
+    {"input": "[\"aaaaaa\"]\naaa", "desc": "Standard: subseq of single word"},
+    {"input": "[\"abcdefg\",\"abcdefg\"]\nabcdefg", "desc": "Standard: 2 same words, target=full"},
+    {"input": "[\"abc\",\"def\"]\nabd", "desc": "Standard: cross-word"},
+    {"input": "[\"abcd\",\"efgh\",\"ijkl\",\"mnop\",\"qrst\"]\naem", "desc": "Standard: first letter each"},
+    {"input": "[\"xyz\",\"yzx\",\"zxy\"]\nxyz", "desc": "Standard: all permutations"}
+  ]
+}

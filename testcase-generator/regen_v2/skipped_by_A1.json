@@ -330,6 +330,11 @@
       "pid": 466,
       "slug": "design-task-manager",
       "reason": "Design class with stateful add/edit/rmv/execTop operations"
+    },
+    {
+      "pid": 531,
+      "slug": "convert-sorted-list-to-binary-search-tree",
+      "reason": "Returns balanced BST - \"One possible answer\" - multiple valid trees, non-unique output"
     }
   ]
 }
