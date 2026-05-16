@@ -327,24 +327,31 @@ function useGetCurrentProblem(problemId: string) {
 	const [problemDifficultyClass, setProblemDifficultyClass] = useState<string>("");
 
 	useEffect(() => {
-		// Get problem from DB
+		// Get problem from DB. The Firestore `problems/{id}` doc is optional
+		// metadata (like/dislike counts); the canonical problem comes from the
+		// Go backend, so we swallow permission errors silently for signed-out
+		// users instead of letting them surface as an unhandled runtime overlay.
 		const getCurrentProblem = async () => {
 			setLoading(true);
-			const docRef = doc(firestore, "problems", problemId);
-			const docSnap = await getDoc(docRef);
-			if (docSnap.exists()) {
-				const problem = docSnap.data();
-				setCurrentProblem({ id: docSnap.id, ...problem } as DBProblem);
-				// easy, medium, hard
-				setProblemDifficultyClass(
-					problem.difficulty === "Easy"
-						? "bg-olive text-olive"
-						: problem.difficulty === "Medium"
-						? "bg-dark-yellow text-dark-yellow"
-						: " bg-dark-pink text-dark-pink"
-				);
+			try {
+				const docRef = doc(firestore, "problems", problemId);
+				const docSnap = await getDoc(docRef);
+				if (docSnap.exists()) {
+					const problem = docSnap.data();
+					setCurrentProblem({ id: docSnap.id, ...problem } as DBProblem);
+					setProblemDifficultyClass(
+						problem.difficulty === "Easy"
+							? "bg-olive text-olive"
+							: problem.difficulty === "Medium"
+							? "bg-dark-yellow text-dark-yellow"
+							: " bg-dark-pink text-dark-pink"
+					);
+				}
+			} catch {
+				// Firestore unavailable / permission-denied → fall back silently.
+			} finally {
+				setLoading(false);
 			}
-			setLoading(false);
 		};
 		getCurrentProblem();
 	}, [problemId]);
@@ -358,17 +365,21 @@ function useGetUsersDataOnProblem(problemId: string) {
 
 	useEffect(() => {
 		const getUsersDataOnProblem = async () => {
-			const userRef = doc(firestore, "users", user!.uid);
-			const userSnap = await getDoc(userRef);
-			if (userSnap.exists()) {
-				const data = userSnap.data();
-				const { solvedProblems, likedProblems, dislikedProblems, starredProblems } = data;
-				setData({
-					liked: likedProblems.includes(problemId), // likedProblems["two-sum","jump-game"]
-					disliked: dislikedProblems.includes(problemId),
-					starred: starredProblems.includes(problemId),
-					solved: solvedProblems.includes(problemId),
-				});
+			try {
+				const userRef = doc(firestore, "users", user!.uid);
+				const userSnap = await getDoc(userRef);
+				if (userSnap.exists()) {
+					const data = userSnap.data();
+					const { solvedProblems, likedProblems, dislikedProblems, starredProblems } = data;
+					setData({
+						liked: likedProblems?.includes(problemId) ?? false,
+						disliked: dislikedProblems?.includes(problemId) ?? false,
+						starred: starredProblems?.includes(problemId) ?? false,
+						solved: solvedProblems?.includes(problemId) ?? false,
+					});
+				}
+			} catch {
+				// Firestore permission errors must not surface as an overlay.
 			}
 		};
 

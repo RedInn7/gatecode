@@ -36,3 +36,9 @@ yarn-error.log*
 next-env.d.ts
 CLAUDE.md
 .DS_Store
+
+# playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/tests/e2e/screenshots/
