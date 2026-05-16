@@ -5,8 +5,8 @@
   "input_format": "line1: n (int)",
   "testcases": [
     {
-      "input": "12",
-      "desc": "Edge: example1"
+      "input": "4",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "21",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "4",
+      "input": "20",
       "desc": "Edge: all-equal elements"
     },
     {
