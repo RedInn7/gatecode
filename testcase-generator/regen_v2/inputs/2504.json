@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= nums.length <= 1000, 0 <= nums[i] < nums.length, 1 <= k <= 10^9",
   "input_format": "line1: nums (JSON array); line2: k (int)",
   "testcases": [
-    {"input": "[1,2,1,2,1,3,3]\n2", "desc": "Edge: example1"},
-    {"input": "[1,2,1,2,1]\n2", "desc": "Edge: example2"},
-    {"input": "[1,2,1,2,1]\n5", "desc": "Edge: example3"},
-    {"input": "[0]\n1", "desc": "Edge: n=1"},
-    {"input": "[0]\n1000000000", "desc": "Edge: n=1 huge k"},
-    {"input": "[0,0]\n1", "desc": "Edge: 2 same"},
-    {"input": "[0,1]\n1", "desc": "Edge: 2 distinct"},
-    {"input": "[1,1,1,1,1]\n1", "desc": "Edge: all same"},
-    {"input": "[0,1,2,3,4]\n1", "desc": "Edge: all distinct"},
-    {"input": "[0,0,0,0,0,0,0,0,0,0]\n5", "desc": "Standard: all zeros"},
-    {"input": "[1,2,3,1,2,3]\n3", "desc": "Standard: repeats"},
-    {"input": "[3,1,2,3,4,5,3,1,2]\n2", "desc": "Standard: mixed"},
-    {"input": "[0,1,0,1,0,1,0,1,0,1]\n2", "desc": "Standard: alternating"},
-    {"input": "[5,4,3,2,1,0,5,4,3,2,1,0]\n1", "desc": "Standard: cycles"},
-    {"input": "[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]\n3", "desc": "Standard: 18 elements"},
-    {"input": "[0,1,2,0,1,2,0,1,2,0,1,2]\n2", "desc": "Standard: triple cycle"},
-    {"input": "[0,0,0,1,1,1,2,2,2,3,3,3]\n4", "desc": "Standard: triple blocks"},
-    {"input": "[2,3,4,5,2,3,4,5,2,3,4,5]\n10", "desc": "Standard: medium k"},
-    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]\n100", "desc": "Stress: 20 same large k"},
-    {"input": "[0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9]\n5", "desc": "Killer: 30 elements 3 cycles"}
+    {
+      "input": "[1,2,1,2,1,3,3]\n2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[1,2,1,2,1]\n2",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1,2,1,2,1]\n5",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "[0]\n1",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "[0]\n1000000000",
+      "desc": "Edge: n=1 huge k"
+    },
+    {
+      "input": "[0,0]\n1",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "[0,1]\n1",
+      "desc": "Edge: 2 distinct"
+    },
+    {
+      "input": "[1,1,1,1,1]\n1",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[0,1,2,3,4]\n1",
+      "desc": "Edge: all distinct"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0,0,0]\n5",
+      "desc": "Standard: all zeros"
+    },
+    {
+      "input": "[1,2,3,1,2,3]\n3",
+      "desc": "Standard: repeats"
+    },
+    {
+      "input": "[3,1,2,3,4,5,3,1,2]\n2",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "[0,1,0,1,0,1,0,1,0,1]\n2",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[5,4,3,2,1,0,5,4,3,2,1,0]\n1",
+      "desc": "Standard: cycles"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]\n3",
+      "desc": "Standard: 18 elements"
+    },
+    {
+      "input": "[0,1,2,0,1,2,0,1,2,0,1,2]\n2",
+      "desc": "Standard: triple cycle"
+    },
+    {
+      "input": "[0,0,0,1,1,1,2,2,2,3,3,3]\n4",
+      "desc": "Standard: triple blocks"
+    },
+    {
+      "input": "[2,3,4,5,2,3,4,5,2,3,4,5]\n10",
+      "desc": "Standard: medium k"
+    },
+    {
+      "input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]\n100",
+      "desc": "Stress: 20 same large k"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9]\n5",
+      "desc": "Killer: 30 elements 3 cycles"
+    }
   ]
 }

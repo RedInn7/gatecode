@@ -4,25 +4,85 @@
   "inferred_constraints": "n == nums.length, m == queries.length, 1 <= n, m <= 1000, 1 <= nums[i], queries[i] <= 10^6",
   "input_format": "line1: nums (JSON array); line2: queries (JSON array)",
   "testcases": [
-    {"input": "[4,5,2,1]\n[3,10,21]", "desc": "Edge: example1"},
-    {"input": "[2,3,4,5]\n[1]", "desc": "Edge: example2 empty subseq"},
-    {"input": "[1]\n[0]", "desc": "Edge: n=1 q=0 below min"},
-    {"input": "[1]\n[1]", "desc": "Edge: n=1 q=val"},
-    {"input": "[1]\n[1000000]", "desc": "Edge: n=1 q=max"},
-    {"input": "[1000000]\n[1]", "desc": "Edge: n=1 large val low q"},
-    {"input": "[1,1,1,1,1]\n[0,1,2,3,4,5]", "desc": "Standard: all ones"},
-    {"input": "[1,2,3,4,5]\n[1,2,3,4,5,15,100]", "desc": "Standard: ascending"},
-    {"input": "[5,4,3,2,1]\n[1,5,10,15]", "desc": "Standard: descending"},
-    {"input": "[10,20,30,40,50]\n[10,30,60,100,150]", "desc": "Standard: spaced"},
-    {"input": "[1000000,1000000,1000000]\n[1,1000000,2000000,3000000]", "desc": "Edge: all max"},
-    {"input": "[1,2,4,8,16,32,64]\n[1,3,7,15,31,63,127]", "desc": "Standard: powers of 2"},
-    {"input": "[3,1,4,1,5,9,2,6,5,3]\n[5,10,20,50]", "desc": "Standard: pi digits"},
-    {"input": "[100,100,100,100]\n[99,100,200,300,400,500]", "desc": "Standard: same values"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[10,20,30,40,50,55]", "desc": "Standard: increasing nums and queries"},
-    {"input": "[7,3,11,9,5]\n[3,8,16,24,35]", "desc": "Standard: random ordered"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n[5,10,15,20]", "desc": "Stress: 20 ones"},
-    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n[100,1000,5000,10000,100000]", "desc": "Stress: 10 values"},
-    {"input": "[1,1000000,1,1000000,1,1000000]\n[1,2,3,1000000,1000001,2000000]", "desc": "Killer: bimodal extremes"},
-    {"input": "[999999,999998,999997,999996,999995]\n[999995,1999991,2999986,3999981,4999975]", "desc": "Killer: near-max values"}
+    {
+      "input": "[4,5,2,1]\n[3,10,21]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[2,3,4,5]\n[1]",
+      "desc": "Edge: example2 empty subseq"
+    },
+    {
+      "input": "[1]\n[0]",
+      "desc": "Edge: n=1 q=0 below min"
+    },
+    {
+      "input": "[1]\n[1]",
+      "desc": "Edge: n=1 q=val"
+    },
+    {
+      "input": "[1]\n[1000000]",
+      "desc": "Edge: n=1 q=max"
+    },
+    {
+      "input": "[1000000]\n[1]",
+      "desc": "Edge: n=1 large val low q"
+    },
+    {
+      "input": "[1,1,1,1,1]\n[0,1,2,3,4,5]",
+      "desc": "Standard: all ones"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[1,2,3,4,5,15,100]",
+      "desc": "Standard: ascending"
+    },
+    {
+      "input": "[5,4,3,2,1]\n[1,5,10,15]",
+      "desc": "Standard: descending"
+    },
+    {
+      "input": "[10,20,30,40,50]\n[10,30,60,100,150]",
+      "desc": "Standard: spaced"
+    },
+    {
+      "input": "[1000000,1000000,1000000]\n[1,1000000,2000000,3000000]",
+      "desc": "Edge: all max"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64]\n[1,3,7,15,31,63,127]",
+      "desc": "Standard: powers of 2"
+    },
+    {
+      "input": "[3,1,4,1,5,9,2,6,5,3]\n[5,10,20,50]",
+      "desc": "Standard: pi digits"
+    },
+    {
+      "input": "[100,100,100,100]\n[99,100,200,300,400,500]",
+      "desc": "Standard: same values"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[10,20,30,40,50,55]",
+      "desc": "Standard: increasing nums and queries"
+    },
+    {
+      "input": "[7,3,11,9,5]\n[3,8,16,24,35]",
+      "desc": "Standard: random ordered"
+    },
+    {
+      "input": "[123,-854,-391,799,369,-809,613,-503]\n[-626,-806,892,-696,826,667,-710,-27]",
+      "desc": "Regenerated: diverse at position 16"
+    },
+    {
+      "input": "[100,200,300,400,500,600,700,800,900,1000]\n[100,1000,5000,10000,100000]",
+      "desc": "Stress: 10 values"
+    },
+    {
+      "input": "[1,1000000,1,1000000,1,1000000]\n[1,2,3,1000000,1000001,2000000]",
+      "desc": "Killer: bimodal extremes"
+    },
+    {
+      "input": "[999999,999998,999997,999996,999995]\n[999995,1999991,2999986,3999981,4999975]",
+      "desc": "Killer: near-max values"
+    }
   ]
 }
