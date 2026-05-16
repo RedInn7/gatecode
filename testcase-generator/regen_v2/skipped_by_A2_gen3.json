@@ -239,6 +239,21 @@
       "pid": 3008,
       "slug": "minimum-lines-to-represent-a-line-chart",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 2998,
+      "slug": "minimum-number-of-seconds-to-make-mountain-height-zero",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 2989,
+      "slug": "best-poker-hand",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 2988,
+      "slug": "number-of-beautiful-pairs",
+      "reason": "ACM mode problem"
     }
   ]
 }

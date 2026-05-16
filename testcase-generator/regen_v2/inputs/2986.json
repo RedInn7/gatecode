@@ -1,0 +1,76 @@
+{
+  "pid": 2986,
+  "slug": "find-the-losers-of-the-circular-game",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "692358",
+      "desc": "Standard: n=692358"
+    },
+    {
+      "input": "501531",
+      "desc": "Standard: n=501531"
+    },
+    {
+      "input": "95716",
+      "desc": "Standard: n=95716"
+    },
+    {
+      "input": "8315",
+      "desc": "Standard: n=8315"
+    },
+    {
+      "input": "295182",
+      "desc": "Standard: n=295182"
+    },
+    {
+      "input": "416420",
+      "desc": "Standard: n=416420"
+    },
+    {
+      "input": "178782",
+      "desc": "Standard: n=178782"
+    },
+    {
+      "input": "405912",
+      "desc": "Standard: n=405912"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
