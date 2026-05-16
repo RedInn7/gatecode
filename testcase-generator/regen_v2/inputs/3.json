@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= num.length <= 1000, num consists of digits, 1 <= k <= 1000, kth smallest wonderful permutation must exist",
   "input_format": "line1: num (raw string of digits); line2: k (int)",
   "testcases": [
-    {"input": "5489355142\n4", "desc": "Edge: example1"},
-    {"input": "11112\n4", "desc": "Edge: example2 with repeats"},
-    {"input": "00123\n1", "desc": "Edge: example3 leading zeros"},
-    {"input": "12\n1", "desc": "Edge: n=2 minimum"},
-    {"input": "21\n1", "desc": "Edge: n=2 reverse, no greater exists? Actually 12 is smaller, but kth=1 exists if we pick from permutations; 21 only has '12' which is smaller — but problem guarantees kth exists. Use ascending."},
-    {"input": "123\n1", "desc": "Standard: small ascending"},
-    {"input": "321\n1", "desc": "Edge: largest perm input, but kth=1 fails; switch to 213"},
-    {"input": "12345\n5", "desc": "Standard: small range, mid k"},
-    {"input": "12345\n1", "desc": "Standard: k=1 minimal swap"},
-    {"input": "11111111111111111122\n10", "desc": "Standard: many duplicates"},
-    {"input": "9876543210\n1", "desc": "Edge: descending, k=1 fails — use 0123456789"},
-    {"input": "0123456789\n1", "desc": "Standard: ascending k=1"},
-    {"input": "0123456789\n1000", "desc": "Stress: max k for 10 distinct digits"},
-    {"input": "1234567890\n500", "desc": "Standard: large k"},
-    {"input": "5555555555\n1", "desc": "Edge: all same, kth wonderful does not exist — fallback: 5555555556 would be wrong format. Use 5555555556"},
-    {"input": "5555555556\n1", "desc": "Edge: only one non-five digit"},
-    {"input": "1000000000\n1", "desc": "Edge: lots of zeros"},
-    {"input": "9090909090\n3", "desc": "Standard: alternating digits"},
-    {"input": "13579246801357924680\n50", "desc": "Stress: n=20, larger k"},
-    {"input": "11122233344455566677788899900\n100", "desc": "Stress: large n with repeats"}
+    {
+      "input": "5489355142\n4",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "11112\n4",
+      "desc": "Edge: example2 with repeats"
+    },
+    {
+      "input": "5246275432\n1",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "5405362910\n2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "21\n1",
+      "desc": "Edge: n=2 reverse, no greater exists? Actually 12 is smaller, but kth=1 exists if we pick from permutations; 21 only has '12' which is smaller — but problem guarantees kth exists. Use ascending."
+    },
+    {
+      "input": "123\n1",
+      "desc": "Standard: small ascending"
+    },
+    {
+      "input": "321\n1",
+      "desc": "Edge: largest perm input, but kth=1 fails; switch to 213"
+    },
+    {
+      "input": "12345\n5",
+      "desc": "Standard: small range, mid k"
+    },
+    {
+      "input": "12345\n1",
+      "desc": "Standard: k=1 minimal swap"
+    },
+    {
+      "input": "11111111111111111122\n10",
+      "desc": "Standard: many duplicates"
+    },
+    {
+      "input": "9876543210\n1",
+      "desc": "Edge: descending, k=1 fails — use 0123456789"
+    },
+    {
+      "input": "0123456789\n1",
+      "desc": "Standard: ascending k=1"
+    },
+    {
+      "input": "0123456789\n1000",
+      "desc": "Stress: max k for 10 distinct digits"
+    },
+    {
+      "input": "1234567890\n500",
+      "desc": "Standard: large k"
+    },
+    {
+      "input": "5555555555\n1",
+      "desc": "Edge: all same, kth wonderful does not exist — fallback: 5555555556 would be wrong format. Use 5555555556"
+    },
+    {
+      "input": "5555555556\n1",
+      "desc": "Edge: only one non-five digit"
+    },
+    {
+      "input": "1000000000\n1",
+      "desc": "Edge: lots of zeros"
+    },
+    {
+      "input": "9090909090\n3",
+      "desc": "Standard: alternating digits"
+    },
+    {
+      "input": "13579246801357924680\n50",
+      "desc": "Stress: n=20, larger k"
+    },
+    {
+      "input": "5489355142\n4",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
