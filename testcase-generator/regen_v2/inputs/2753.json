@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^4, 1 <= k <= 10^5, lowercase English letters",
   "input_format": "line1: s; line2: k (int)",
   "testcases": [
-    {"input": "aaabb\n3", "desc": "Edge: example1"},
-    {"input": "ababbc\n2", "desc": "Edge: example2"},
-    {"input": "a\n1", "desc": "Edge: single char k=1"},
-    {"input": "a\n2", "desc": "Edge: not enough"},
-    {"input": "ab\n1", "desc": "Edge: 2 chars k=1"},
-    {"input": "ab\n2", "desc": "Edge: 2 chars k=2 none"},
-    {"input": "aa\n2", "desc": "Edge: 2 same k=2"},
-    {"input": "aaaaa\n3", "desc": "Edge: 5 same"},
-    {"input": "aaaa\n5", "desc": "Edge: not enough k=5"},
-    {"input": "abcdef\n1", "desc": "Standard: distinct k=1"},
-    {"input": "aabbccddee\n2", "desc": "Standard: 5 pairs"},
-    {"input": "aaabbbccc\n3", "desc": "Standard: 3 each"},
-    {"input": "abababab\n2", "desc": "Standard: alt"},
-    {"input": "aabbccaabbcc\n2", "desc": "Standard: more"},
-    {"input": "aaaabbbbcccc\n4", "desc": "Standard: 3 groups of 4"},
-    {"input": "aabcbab\n2", "desc": "Standard: messy"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\n1", "desc": "Standard: full alpha"},
-    {"input": "aaaaaaaaaabbbbbbbbbbcccccccccc\n10", "desc": "Standard: tight bound"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n50", "desc": "Stress: 100 a's k=50"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\n3", "desc": "Killer: 3 alphas k=3"}
+    {
+      "input": "aaabb\n3",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "ababbc\n2",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "a\n1",
+      "desc": "Edge: single char k=1"
+    },
+    {
+      "input": "a\n2",
+      "desc": "Edge: not enough"
+    },
+    {
+      "input": "ab\n1",
+      "desc": "Edge: 2 chars k=1"
+    },
+    {
+      "input": "ab\n2",
+      "desc": "Edge: 2 chars k=2 none"
+    },
+    {
+      "input": "aa\n2",
+      "desc": "Edge: 2 same k=2"
+    },
+    {
+      "input": "aaaaa\n3",
+      "desc": "Edge: 5 same"
+    },
+    {
+      "input": "aaaa\n5",
+      "desc": "Edge: not enough k=5"
+    },
+    {
+      "input": "abcdef\n1",
+      "desc": "Standard: distinct k=1"
+    },
+    {
+      "input": "aabbccddee\n2",
+      "desc": "Standard: 5 pairs"
+    },
+    {
+      "input": "aaabbbccc\n3",
+      "desc": "Standard: 3 each"
+    },
+    {
+      "input": "abababab\n2",
+      "desc": "Standard: alt"
+    },
+    {
+      "input": "aabbccaabbcc\n2",
+      "desc": "Standard: more"
+    },
+    {
+      "input": "aaaabbbbcccc\n4",
+      "desc": "Standard: 3 groups of 4"
+    },
+    {
+      "input": "aabcbab\n2",
+      "desc": "Standard: messy"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\n1",
+      "desc": "Standard: full alpha"
+    },
+    {
+      "input": "aaaaaaaaaabbbbbbbbbbcccccccccc\n10",
+      "desc": "Standard: tight bound"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n50",
+      "desc": "Stress: 100 a's k=50"
+    },
+    {
+      "input": "\"pgleupquodei\"\n3",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
