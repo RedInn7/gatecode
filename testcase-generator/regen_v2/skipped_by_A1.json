@@ -335,6 +335,11 @@
       "pid": 531,
       "slug": "convert-sorted-list-to-binary-search-tree",
       "reason": "Returns balanced BST - \"One possible answer\" - multiple valid trees, non-unique output"
+    },
+    {
+      "pid": 539,
+      "slug": "design-browser-history",
+      "reason": "Design class (BrowserHistory) with visit/back/forward stateful operations"
     }
   ]
 }

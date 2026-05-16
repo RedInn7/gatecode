@@ -1,0 +1,28 @@
+{
+  "pid": 542,
+  "slug": "capacity-to-ship-packages-within-d-days",
+  "inferred_constraints": "1 <= days <= weights.length <= 5e4, 1 <= weights[i] <= 500",
+  "input_format": "line1: weights (JSON int array); line2: days (int)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5", "desc": "Edge: example1"},
+    {"input": "[3,2,2,4,1,4]\n3", "desc": "Edge: example2"},
+    {"input": "[1,2,3,1,1]\n4", "desc": "Edge: example3"},
+    {"input": "[1]\n1", "desc": "Edge: n=1"},
+    {"input": "[500]\n1", "desc": "Edge: max single"},
+    {"input": "[1,1,1,1,1]\n5", "desc": "Edge: all 1s 5 days"},
+    {"input": "[1,1,1,1,1]\n1", "desc": "Edge: all 1s 1 day"},
+    {"input": "[500,500,500]\n3", "desc": "Edge: max each separate"},
+    {"input": "[500,500,500]\n1", "desc": "Edge: max all one day"},
+    {"input": "[1,500,1,500,1]\n2", "desc": "Standard: alternating"},
+    {"input": "[100,100,100,100,100]\n5", "desc": "Standard: same 5"},
+    {"input": "[100,100,100,100,100]\n1", "desc": "Standard: same 1 day"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n10", "desc": "Edge: days=n"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1", "desc": "Edge: 1 day"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n5", "desc": "Standard: 20 elements 5 days"},
+    {"input": "[10,50,100,200,500]\n3", "desc": "Standard: increasing"},
+    {"input": "[500,400,300,200,100]\n3", "desc": "Standard: decreasing"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n2", "desc": "Standard: 10 ones 2 days"},
+    {"input": "[500,500,500,500,500,500,500,500,500,500]\n5", "desc": "Standard: 10 max 5 days"},
+    {"input": "[250,250,250,250,250]\n2", "desc": "Standard: 5 mid 2 days"}
+  ]
+}

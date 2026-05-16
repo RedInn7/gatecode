@@ -1,0 +1,28 @@
+{
+  "pid": 548,
+  "slug": "better-compression-of-string",
+  "inferred_constraints": "1 <= compressed.length <= 1e5, format: char followed by frequency digits",
+  "input_format": "line1: compressed (raw string)",
+  "testcases": [
+    {"input": "a3c9b2c1", "desc": "Edge: example1"},
+    {"input": "a2b3c4d1", "desc": "Edge: example2 sorted"},
+    {"input": "a1", "desc": "Edge: single char freq 1"},
+    {"input": "z9", "desc": "Edge: single max char freq 9"},
+    {"input": "a99999", "desc": "Edge: large freq"},
+    {"input": "a1b1c1d1", "desc": "Edge: 4 distinct freq 1"},
+    {"input": "a5", "desc": "Edge: single"},
+    {"input": "a1a1a1a1a1", "desc": "Edge: all same char freq 1 each"},
+    {"input": "b3a3", "desc": "Edge: out of order"},
+    {"input": "z9a9", "desc": "Edge: max and min letters"},
+    {"input": "a10b20c30", "desc": "Standard: multi-digit"},
+    {"input": "a1b1c1d1e1f1g1h1i1j1", "desc": "Standard: 10 distinct"},
+    {"input": "a5b5a5b5a5", "desc": "Edge: alternating chars"},
+    {"input": "z1a1y2b2x3c3", "desc": "Edge: 6 different chars"},
+    {"input": "a100b200c300", "desc": "Standard: hundreds"},
+    {"input": "a1000b2000c3000", "desc": "Standard: thousands"},
+    {"input": "a1a2a3a4a5", "desc": "Standard: same char multi entries"},
+    {"input": "z11z22z33", "desc": "Edge: same char multiple"},
+    {"input": "z11", "desc": "Edge: 11 zs"},
+    {"input": "a1b1c1d1e1f1g1h1i1j1k1l1m1n1o1p1q1r1s1t1u1v1w1x1y1z1", "desc": "Edge: full alphabet"}
+  ]
+}
