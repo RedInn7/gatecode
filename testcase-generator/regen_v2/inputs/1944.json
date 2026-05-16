@@ -1,0 +1,28 @@
+{
+  "pid": 1944,
+  "slug": "shortest-subarray-to-be-removed-to-make-array-sorted",
+  "inferred_constraints": "1 <= arr.length <= 10^5, 0 <= arr[i] <= 10^9",
+  "input_format": "single line: arr (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,10,4,2,3,5]", "desc": "Standard: example 1"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: example 2 strictly dec"},
+    {"input": "[1,2,3]", "desc": "Standard: example 3 already sorted"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[0]", "desc": "Edge: n=1 zero"},
+    {"input": "[1000000000]", "desc": "Edge: n=1 max"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: all same"},
+    {"input": "[1,1,1,2,2,2,3,3,3]", "desc": "Standard: already sorted with dups"},
+    {"input": "[3,2,1,1,2,3]", "desc": "Standard: dec then inc"},
+    {"input": "[1,2,3,3,2,1]", "desc": "Standard: inc then dec"},
+    {"input": "[5,4,3,2,1,2,3,4,5]", "desc": "Standard: dec then inc symmetric"},
+    {"input": "[1,2,3,4,5,4,5,6,7]", "desc": "Standard: one dip"},
+    {"input": "[1000000000,1,2,3,1000000000]", "desc": "Standard: extreme ends"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: pre-sorted long"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: reverse sorted"},
+    {"input": "[1,1,1,1,2,2,2,2,3,3,3,3]", "desc": "Standard: long sorted with groups"},
+    {"input": "[1,2,3,4,5,1,2,3,4,5]", "desc": "Standard: identical halves"},
+    {"input": "[5,4,3,2,1,2,3,4,5,4,3,2,1]", "desc": "Standard: M shape"},
+    {"input": "[2,2,2,1,1,1,2,2,2]", "desc": "Standard: dips"},
+    {"input": "[6,3,10,11,15,20,13,3,18,12]", "desc": "Standard: random"}
+  ]
+}

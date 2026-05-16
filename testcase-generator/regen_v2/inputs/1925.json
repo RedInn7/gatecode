@@ -1,0 +1,28 @@
+{
+  "pid": 1925,
+  "slug": "matchsticks-to-square",
+  "inferred_constraints": "1 <= matchsticks.length <= 15, 1 <= matchsticks[i] <= 10^8",
+  "input_format": "single line: matchsticks (JSON array of ints)",
+  "testcases": [
+    {"input": "[1,1,2,2,2]", "desc": "Standard: example 1 (true)"},
+    {"input": "[3,3,3,3,4]", "desc": "Standard: example 2 (false)"},
+    {"input": "[1,1,1,1]", "desc": "Edge: minimum n=4 trivial true"},
+    {"input": "[1]", "desc": "Edge: n=1 false (cant form square)"},
+    {"input": "[1,2,3]", "desc": "Edge: n<4 false"},
+    {"input": "[5,5,5,5]", "desc": "Standard: n=4 all equal"},
+    {"input": "[1,2,3,4]", "desc": "Standard: sum 10 not div by 4"},
+    {"input": "[100000000,100000000,100000000,100000000]", "desc": "Edge: max values n=4"},
+    {"input": "[2,2,2,2,4,4,4,4]", "desc": "Standard: even split"},
+    {"input": "[1,1,1,1,2,2,2,2,3,3,3,3]", "desc": "Standard: triples sum"},
+    {"input": "[3,3,3,3,3,3,3,3]", "desc": "Standard: 8 threes, side=6"},
+    {"input": "[1,2,3,4,5,6,7,8]", "desc": "Standard: 1..8 sum=36, side=9"},
+    {"input": "[5,5,5,5,4,4,4,4,3,3,3,3]", "desc": "Standard: 12 sticks"},
+    {"input": "[10,10,10,10,10,10,10,10,10,10,10,10]", "desc": "Standard: 12 equal"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]", "desc": "Edge: n=15 max"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: 15 ones sum=15 not div 4"},
+    {"input": "[4,4,4,4,4,4,4,4,4,4,4,4]", "desc": "Standard: 12 fours, side=12"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: sum=55 not div 4"},
+    {"input": "[2,2,2,2,2,2,2,2,2,2,2,2,2,2]", "desc": "Edge: 14 twos sum=28, side=7"},
+    {"input": "[100000000,1,1,1,1,1,1,1]", "desc": "Edge: dominant stick impossible"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 1916,
+  "slug": "letter-tile-possibilities",
+  "inferred_constraints": "1 <= tiles.length <= 7, uppercase English letters",
+  "input_format": "single line: tiles (JSON string)",
+  "testcases": [
+    {"input": "\"AAB\"", "desc": "Standard: example 1"},
+    {"input": "\"AAABBC\"", "desc": "Standard: example 2"},
+    {"input": "\"V\"", "desc": "Edge: n=1"},
+    {"input": "\"A\"", "desc": "Edge: n=1 alt"},
+    {"input": "\"AA\"", "desc": "Edge: n=2 duplicates"},
+    {"input": "\"AB\"", "desc": "Edge: n=2 distinct"},
+    {"input": "\"AAA\"", "desc": "Edge: all same n=3"},
+    {"input": "\"ABC\"", "desc": "Standard: 3 distinct"},
+    {"input": "\"AAAA\"", "desc": "Edge: all same n=4"},
+    {"input": "\"ABCD\"", "desc": "Standard: 4 distinct"},
+    {"input": "\"AAAAA\"", "desc": "Edge: all same n=5"},
+    {"input": "\"ABCDE\"", "desc": "Standard: 5 distinct"},
+    {"input": "\"AAAAAA\"", "desc": "Edge: all same n=6"},
+    {"input": "\"ABCDEF\"", "desc": "Standard: 6 distinct"},
+    {"input": "\"AAAAAAA\"", "desc": "Edge: all same max n=7"},
+    {"input": "\"ABCDEFG\"", "desc": "Stress: 7 distinct max"},
+    {"input": "\"AABBCC\"", "desc": "Standard: pairs"},
+    {"input": "\"AABBCCD\"", "desc": "Standard: pairs plus extra"},
+    {"input": "\"AAABBB\"", "desc": "Standard: triples"},
+    {"input": "\"XYZXYZ\"", "desc": "Standard: repeat pattern"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 1923,
+  "slug": "short-encoding-of-words",
+  "inferred_constraints": "1 <= words.length <= 2000, 1 <= words[i].length <= 7, lowercase letters",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"time\",\"me\",\"bell\"]", "desc": "Standard: example 1"},
+    {"input": "[\"t\"]", "desc": "Edge: single 1-char word"},
+    {"input": "[\"abcdefg\"]", "desc": "Edge: single max-length word"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: 5 distinct 1-chars"},
+    {"input": "[\"a\",\"a\",\"a\",\"a\"]", "desc": "Edge: all same word"},
+    {"input": "[\"abc\",\"bc\",\"c\"]", "desc": "Standard: nested suffixes"},
+    {"input": "[\"abcd\",\"bcd\",\"cd\",\"d\"]", "desc": "Standard: chain suffix"},
+    {"input": "[\"hello\",\"world\"]", "desc": "Standard: 2 distinct words"},
+    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\"]", "desc": "Standard: 5 distinct"},
+    {"input": "[\"apple\",\"ple\",\"le\",\"e\"]", "desc": "Standard: shared suffix chain"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard: prefix chain (no suffix share)"},
+    {"input": "[\"abcdefg\",\"bcdefg\",\"cdefg\",\"defg\",\"efg\",\"fg\",\"g\"]", "desc": "Standard: all 7-suffix chain"},
+    {"input": "[\"me\",\"time\"]", "desc": "Standard: order shouldn't matter"},
+    {"input": "[\"feipyxx\",\"e\"]", "desc": "Standard: no shared suffix"},
+    {"input": "[\"aa\",\"aa\",\"aa\"]", "desc": "Edge: duplicates 2-char"},
+    {"input": "[\"abcdefg\",\"abcdefg\",\"abcdefg\"]", "desc": "Edge: duplicate max-len"},
+    {"input": "[\"cat\",\"bat\",\"rat\",\"hat\",\"mat\",\"sat\",\"pat\"]", "desc": "Standard: 7 distinct ending in 'at'"},
+    {"input": "[\"abc\",\"abd\",\"abe\",\"abf\",\"abg\"]", "desc": "Standard: same prefix, no suffix share"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Stress: all 26 single letters"},
+    {"input": "[\"world\",\"orld\",\"rld\",\"ld\",\"d\",\"hello\",\"ello\",\"llo\",\"lo\",\"o\"]", "desc": "Standard: two suffix chains"}
+  ]
+}

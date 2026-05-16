@@ -1,0 +1,28 @@
+{
+  "pid": 1921,
+  "slug": "tuple-with-same-product",
+  "inferred_constraints": "1 <= nums.length <= 1000, 1 <= nums[i] <= 10^4, distinct elements",
+  "input_format": "single line: nums (JSON array of distinct ints)",
+  "testcases": [
+    {"input": "[2,3,4,6]", "desc": "Standard: example 1"},
+    {"input": "[1,2,4,5,10]", "desc": "Standard: example 2"},
+    {"input": "[1]", "desc": "Edge: n=1 no tuples"},
+    {"input": "[1,2]", "desc": "Edge: n=2 no tuples"},
+    {"input": "[1,2,3]", "desc": "Edge: n=3 no tuples"},
+    {"input": "[1,2,3,4]", "desc": "Standard: n=4 check 1*4=2*2 no - distinct"},
+    {"input": "[2,3,6,9]", "desc": "Standard: 2*9=3*6=18"},
+    {"input": "[1,2,3,6]", "desc": "Standard: 1*6=2*3=6"},
+    {"input": "[1,2,4,8,16,32]", "desc": "Standard: powers 1*8=2*4, 2*16=4*8, 4*32=8*16"},
+    {"input": "[5,10,15,20]", "desc": "Standard: arithmetic 5*20=10*10 no, just 5*20=100; check no pairs"},
+    {"input": "[10000,9999,9998,9997,9996]", "desc": "Edge: max values"},
+    {"input": "[1,3,5,7,9,11,13]", "desc": "Standard: odd primes mostly"},
+    {"input": "[2,4,6,8,10,12,16,24]", "desc": "Standard: 2*12=4*6=24, 4*24=8*12, 2*24=4*12, 6*8 etc"},
+    {"input": "[1,10,100,1000,10000]", "desc": "Standard: 1*10000=10*1000=100*100, distinct so 1*10000=10*1000"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1..10"},
+    {"input": "[12,15,20,25,30]", "desc": "Standard: 12*25=15*20=300"},
+    {"input": "[2,3,4,5,6,7,8,9,10,12,14,15,16,18,20,21,24,25]", "desc": "Standard: many factor pairs"},
+    {"input": "[2,4,8,16,32,64,128,256,512,1024,2048,4096,8192]", "desc": "Standard: powers of 2"},
+    {"input": "[6,8,9,12,16,18,24,27,32,36,48,54,64,72,81]", "desc": "Standard: many products"},
+    {"input": "[1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]", "desc": "Standard: primes (few products)"}
+  ]
+}

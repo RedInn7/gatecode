@@ -1,0 +1,28 @@
+{
+  "pid": 1934,
+  "slug": "n-th-tribonacci-number",
+  "inferred_constraints": "0 <= n <= 37, answer fits in 32-bit int",
+  "input_format": "single line: n (int)",
+  "testcases": [
+    {"input": "4", "desc": "Standard: example 1"},
+    {"input": "25", "desc": "Standard: example 2"},
+    {"input": "0", "desc": "Edge: n=0 -> 0"},
+    {"input": "1", "desc": "Edge: n=1 -> 1"},
+    {"input": "2", "desc": "Edge: n=2 -> 1"},
+    {"input": "3", "desc": "Edge: n=3 -> 2"},
+    {"input": "5", "desc": "Standard: n=5 -> 7"},
+    {"input": "6", "desc": "Standard"},
+    {"input": "7", "desc": "Standard"},
+    {"input": "10", "desc": "Standard: n=10"},
+    {"input": "15", "desc": "Standard: n=15"},
+    {"input": "20", "desc": "Standard: n=20"},
+    {"input": "30", "desc": "Standard: n=30"},
+    {"input": "35", "desc": "Standard: n=35"},
+    {"input": "36", "desc": "Edge: near max"},
+    {"input": "37", "desc": "Edge: max n"},
+    {"input": "8", "desc": "Standard"},
+    {"input": "12", "desc": "Standard"},
+    {"input": "18", "desc": "Standard"},
+    {"input": "27", "desc": "Standard"}
+  ]
+}

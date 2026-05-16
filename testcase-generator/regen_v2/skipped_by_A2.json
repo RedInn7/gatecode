@@ -1,0 +1,5 @@
+{
+  "skipped": [
+    {"pid": 1952, "slug": "fizz-buzz-multithreaded", "reason": "multithreaded design problem - not amenable to standard input/output testing"}
+  ]
+}

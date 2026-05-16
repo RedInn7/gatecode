@@ -1,0 +1,28 @@
+{
+  "pid": 1957,
+  "slug": "reverse-words-with-same-vowel-count",
+  "inferred_constraints": "1 <= s.length <= 10^5, lowercase letters separated by single spaces",
+  "input_format": "single line: s (JSON string)",
+  "testcases": [
+    {"input": "\"cat and mice\"", "desc": "Standard: example 1"},
+    {"input": "\"book is nice\"", "desc": "Standard: example 2"},
+    {"input": "\"banana healthy\"", "desc": "Standard: example 3"},
+    {"input": "\"a\"", "desc": "Edge: single vowel word"},
+    {"input": "\"b\"", "desc": "Edge: single consonant word"},
+    {"input": "\"a b\"", "desc": "Edge: two 1-char words"},
+    {"input": "\"a c\"", "desc": "Edge: vowel + non-vowel"},
+    {"input": "\"hello world\"", "desc": "Standard: same vowel count 1+1, world->dlrow"},
+    {"input": "\"aeiou xyz\"", "desc": "Standard: many vowels first, no match"},
+    {"input": "\"xyz xyz\"", "desc": "Standard: 0 vowels both"},
+    {"input": "\"apple banana cherry\"", "desc": "Standard: 2 vowels each, all reverse"},
+    {"input": "\"aaa bbb\"", "desc": "Standard: 3v first, 0v second"},
+    {"input": "\"aei aei aei\"", "desc": "Standard: all match all reverse"},
+    {"input": "\"the quick brown fox jumps over lazy dog\"", "desc": "Standard: pangram"},
+    {"input": "\"i\"", "desc": "Edge: single vowel"},
+    {"input": "\"oh oh\"", "desc": "Standard: same word same vowels"},
+    {"input": "\"car bar far jar\"", "desc": "Standard: all 1 vowel"},
+    {"input": "\"strength rhythm\"", "desc": "Standard: low vowel words"},
+    {"input": "\"queue queue queue\"", "desc": "Standard: many vowels"},
+    {"input": "\"a aa aaa aaaa aaaaa\"", "desc": "Standard: varied vowel counts"}
+  ]
+}

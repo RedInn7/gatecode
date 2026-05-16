@@ -1,0 +1,28 @@
+{
+  "pid": 1924,
+  "slug": "path-sum-iv",
+  "inferred_constraints": "1 <= nums.length <= 15, 110 <= nums[i] <= 489, valid binary tree depth < 5, sorted ascending, each node encoded as depth(1)+position(1)+value(1)",
+  "input_format": "single line: nums (JSON array of 3-digit ints)",
+  "testcases": [
+    {"input": "[113,215,221]", "desc": "Standard: example 1"},
+    {"input": "[113,221]", "desc": "Standard: example 2"},
+    {"input": "[115]", "desc": "Edge: single root depth 1"},
+    {"input": "[110]", "desc": "Edge: single root value 0"},
+    {"input": "[119]", "desc": "Edge: single root max value"},
+    {"input": "[111,211,221]", "desc": "Standard: balanced 2-level"},
+    {"input": "[112,212,222]", "desc": "Standard: balanced different values"},
+    {"input": "[113,211]", "desc": "Standard: only left child"},
+    {"input": "[113,221]", "desc": "Standard: only right child"},
+    {"input": "[111,211,311,411]", "desc": "Standard: left chain depth 4"},
+    {"input": "[111,222,348,489]", "desc": "Standard: right chain depth 4"},
+    {"input": "[110,210,220,310,320,330,340]", "desc": "Standard: full depth 3"},
+    {"input": "[111,211,221,311,321,331,341,411,421,431,441,451,461,471,481]", "desc": "Stress: full depth 4 (15 nodes)"},
+    {"input": "[115,219,229]", "desc": "Standard: balanced max values"},
+    {"input": "[111,211,221,311,341]", "desc": "Standard: mixed depth 3 partial"},
+    {"input": "[110,211,311,411]", "desc": "Edge: left-skewed all zeros except branching"},
+    {"input": "[119,219,229,319,329,339,349]", "desc": "Standard: full depth 3 max vals"},
+    {"input": "[113,225,341]", "desc": "Standard: left then deep"},
+    {"input": "[112,213,224]", "desc": "Standard: tiny tree"},
+    {"input": "[111,212,313,414]", "desc": "Standard: right-skewed depth 4"}
+  ]
+}

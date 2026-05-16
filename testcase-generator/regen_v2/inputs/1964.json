@@ -1,0 +1,28 @@
+{
+  "pid": 1964,
+  "slug": "validate-binary-tree-nodes",
+  "inferred_constraints": "1 <= n <= 10^4, -1 <= leftChild[i], rightChild[i] <= n-1",
+  "input_format": "line1: n (int); line2: leftChild (JSON); line3: rightChild (JSON)",
+  "testcases": [
+    {"input": "4\n[1,-1,3,-1]\n[2,-1,-1,-1]", "desc": "Standard: example 1 valid"},
+    {"input": "4\n[1,-1,3,-1]\n[2,3,-1,-1]", "desc": "Standard: example 2 two parents"},
+    {"input": "2\n[1,0]\n[-1,-1]", "desc": "Standard: example 3 cycle"},
+    {"input": "1\n[-1]\n[-1]", "desc": "Edge: n=1 single node valid"},
+    {"input": "2\n[-1,-1]\n[-1,-1]", "desc": "Edge: n=2 disconnected"},
+    {"input": "2\n[1,-1]\n[-1,-1]", "desc": "Edge: n=2 valid simple"},
+    {"input": "3\n[1,-1,-1]\n[2,-1,-1]", "desc": "Standard: 3 nodes valid"},
+    {"input": "3\n[1,2,-1]\n[-1,-1,-1]", "desc": "Standard: chain 0->1->2 valid"},
+    {"input": "3\n[1,0,-1]\n[-1,-1,-1]", "desc": "Standard: cycle 0<->1"},
+    {"input": "3\n[1,-1,1]\n[-1,-1,-1]", "desc": "Standard: 1 has two parents"},
+    {"input": "5\n[1,-1,-1,-1,-1]\n[2,3,4,-1,-1]", "desc": "Standard: complex but node 1 owns several"},
+    {"input": "7\n[1,3,5,-1,-1,-1,-1]\n[2,4,6,-1,-1,-1,-1]", "desc": "Standard: complete bin tree"},
+    {"input": "5\n[1,2,-1,-1,-1]\n[-1,-1,-1,-1,-1]", "desc": "Edge: disconnected (nodes 3,4 isolated)"},
+    {"input": "4\n[1,2,-1,-1]\n[3,-1,-1,-1]", "desc": "Standard: valid 4-node"},
+    {"input": "6\n[1,-1,3,-1,-1,-1]\n[2,-1,-1,-1,-1,-1]", "desc": "Edge: nodes 4,5 unreachable"},
+    {"input": "5\n[1,3,-1,-1,-1]\n[2,4,-1,-1,-1]", "desc": "Standard: full small bin tree"},
+    {"input": "8\n[1,3,-1,5,-1,7,-1,-1]\n[2,4,-1,6,-1,-1,-1,-1]", "desc": "Standard: deeper"},
+    {"input": "4\n[-1,0,1,2]\n[-1,-1,-1,-1]", "desc": "Standard: reversed chain"},
+    {"input": "3\n[-1,-1,-1]\n[-1,-1,-1]", "desc": "Edge: all isolated"},
+    {"input": "5\n[1,2,3,4,-1]\n[-1,-1,-1,-1,-1]", "desc": "Standard: long left chain valid"}
+  ]
+}
