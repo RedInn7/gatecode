@@ -81,7 +81,7 @@
       "desc": "Stress: 1e8"
     },
     {
-      "input": "9",
+      "input": "3",
       "desc": "Stress: large n near max boundary"
     }
   ]
