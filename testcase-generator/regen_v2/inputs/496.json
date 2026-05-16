@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s1.length <= 2e4, 1 <= s2.length <= 100, lowercase letters",
   "input_format": "line1: s1 (raw string); line2: s2 (raw string)",
   "testcases": [
-    {"input": "abcdebdde\nbde", "desc": "Edge: example1"},
-    {"input": "jmeqksfrsdcmsiwvaovztaqenprpvnbstl\nu", "desc": "Edge: example2 not found"},
-    {"input": "a\na", "desc": "Edge: equal single char"},
-    {"input": "a\nb", "desc": "Edge: not found single"},
-    {"input": "ab\na", "desc": "Edge: simple find"},
-    {"input": "abc\nbc", "desc": "Edge: suffix"},
-    {"input": "abc\nac", "desc": "Edge: skip middle"},
-    {"input": "aaaaaa\na", "desc": "Edge: many candidates"},
-    {"input": "aaaaaa\naa", "desc": "Edge: pairs"},
-    {"input": "abcabc\nabc", "desc": "Standard: two windows"},
-    {"input": "hello\nlo", "desc": "Standard: short word"},
-    {"input": "leetcode\ncode", "desc": "Standard: typical"},
-    {"input": "aabbcc\nabc", "desc": "Standard: clusters"},
-    {"input": "ababab\nbab", "desc": "Standard: overlapping"},
-    {"input": "aaaaaaaa\naaaaaa", "desc": "Standard: long uniform"},
-    {"input": "aabaaa\naab", "desc": "Standard: greedy"},
-    {"input": "abcdefghij\nadgj", "desc": "Standard: spread"},
-    {"input": "zzz\na", "desc": "Edge: not found"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaa\nb", "desc": "Edge: not found long"},
-    {"input": "abracadabra\nada", "desc": "Standard: typical"}
+    {
+      "input": "abcdebdde\nbde",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "jmeqksfrsdcmsiwvaovztaqenprpvnbstl\nu",
+      "desc": "Edge: example2 not found"
+    },
+    {
+      "input": "\"oj\"\n\"sgs\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"rdxawmkzdalmhgz\"\n\"kzn\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "ab\na",
+      "desc": "Edge: simple find"
+    },
+    {
+      "input": "abc\nbc",
+      "desc": "Edge: suffix"
+    },
+    {
+      "input": "abc\nac",
+      "desc": "Edge: skip middle"
+    },
+    {
+      "input": "aaaaaa\na",
+      "desc": "Edge: many candidates"
+    },
+    {
+      "input": "aaaaaa\naa",
+      "desc": "Edge: pairs"
+    },
+    {
+      "input": "abcabc\nabc",
+      "desc": "Standard: two windows"
+    },
+    {
+      "input": "hello\nlo",
+      "desc": "Standard: short word"
+    },
+    {
+      "input": "leetcode\ncode",
+      "desc": "Standard: typical"
+    },
+    {
+      "input": "aabbcc\nabc",
+      "desc": "Standard: clusters"
+    },
+    {
+      "input": "ababab\nbab",
+      "desc": "Standard: overlapping"
+    },
+    {
+      "input": "aaaaaaaa\naaaaaa",
+      "desc": "Standard: long uniform"
+    },
+    {
+      "input": "aabaaa\naab",
+      "desc": "Standard: greedy"
+    },
+    {
+      "input": "abcdefghij\nadgj",
+      "desc": "Standard: spread"
+    },
+    {
+      "input": "zzz\na",
+      "desc": "Edge: not found"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaa\nb",
+      "desc": "Edge: not found long"
+    },
+    {
+      "input": "\"axecsordcjkmlijsuaovffybyehkdxthnnacaeychhhyztgckggcvvtvntejkkxvrzjp\"\n\"pxczcy\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
