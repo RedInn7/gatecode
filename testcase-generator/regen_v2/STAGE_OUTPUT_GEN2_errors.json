@@ -364,5 +364,113 @@
     "slug": "number-of-1-bits",
     "fqid": 191,
     "error": "Testcase 1 failed: RE (exit 1): st):\n  File \"/tmp/tmpcmb7fwf1.py\", line 279, in <module>\n    _result = Solution().hammingWeight(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpcmb7fwf1.py\", line 144, in hammingWeight\n    n &= n - 1\n         ~~^~~\nTypeError: unsupported operand type(s) for -: 'str' and 'int'\n"
+  },
+  {
+    "pid": 1308,
+    "slug": "minimize-manhattan-distances",
+    "fqid": 3102,
+    "error": "Testcase 0 failed: RE (exit 1):  \"/tmp/tmpf3u9lbel.py\", line 287, in <module>\n    _result = Solution().minimumDistance(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpf3u9lbel.py\", line 144, in minimumDistance\n    for x, y in points:\n        ^^^^\nValueError: not enough values to unpack (expected 2, got 0)\n"
+  },
+  {
+    "pid": 1317,
+    "slug": "find-the-count-of-monotonic-pairs-ii",
+    "fqid": 3251,
+    "error": "Testcase 0 failed: RE (exit 1): tmp/tmpz0pl_t67.py\", line 286, in <module>\n    _result = Solution().countOfPairs(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpz0pl_t67.py\", line 143, in countOfPairs\n    n, m = len(nums), max(nums)\n                      ^^^^^^^^^\nValueError: max() iterable argument is empty\n"
+  },
+  {
+    "pid": 1305,
+    "slug": "minimum-bit-flips-to-convert-number",
+    "fqid": 2220,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpcofyf88e.py\", line 275, in <module>\n    _result = Solution().minBitFlips(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.minBitFlips() missing 1 required positional argument: 'goal'\n"
+  },
+  {
+    "pid": 1318,
+    "slug": "print-words-vertically",
+    "fqid": 1324,
+    "error": "Testcase 0 failed: RE (exit 1): .py\", line 283, in <module>\n    _result = Solution().printVertically(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpt1pebwi2.py\", line 143, in printVertically\n    n = max(len(w) for w in words)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: max() iterable argument is empty\n"
+  },
+  {
+    "pid": 1319,
+    "slug": "logger-rate-limiter",
+    "fqid": 359,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpmqfz8lej.py\", line 195, in <module>\n    _cls_name = _ops[0]\n                ~~~~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1310,
+    "slug": "minimum-cost-to-convert-string-i",
+    "fqid": 2976,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpb_u3skzw.py\", line 300, in <module>\n    _result = Solution().minimumCost(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.minimumCost() missing 3 required positional arguments: 'original', 'changed', and 'cost'\n"
+  },
+  {
+    "pid": 1306,
+    "slug": "removing-minimum-number-of-magic-beans",
+    "fqid": 2171,
+    "error": "Testcase 0 failed: RE (exit 1): n().minimumRemoval(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp5ej4b8qk.py\", line 144, in minimumRemoval\n    return min(s - x * (n - i) for i, x in enumerate(beans))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: min() iterable argument is empty\n"
+  },
+  {
+    "pid": 1312,
+    "slug": "maximum-repeating-substring",
+    "fqid": 1668,
+    "error": "Testcase 0 failed: RE (exit 1): _result = Solution().maxRepeating(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp2okg3znl.py\", line 142, in maxRepeating\n    for k in range(len(sequence) // len(word), -1, -1):\n                   ~~~~~~~~~~~~~~^^~~~~~~~~~~\nZeroDivisionError: integer division or modulo by zero\n"
+  },
+  {
+    "pid": 1321,
+    "slug": "merge-two-binary-trees",
+    "fqid": 617,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpyaysg13x.py\", line 290, in <module>\n    _result = Solution().mergeTrees(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.mergeTrees() missing 1 required positional argument: 'root2'\n"
+  },
+  {
+    "pid": 1324,
+    "slug": "minimum-replacements-to-sort-the-array",
+    "fqid": 2366,
+    "error": "Testcase 0 failed: RE (exit 1): ll last):\n  File \"/tmp/tmp9lyfgo7t.py\", line 285, in <module>\n    _result = Solution().minimumReplacement(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp9lyfgo7t.py\", line 144, in minimumReplacement\n    mx = nums[-1]\n         ~~~~^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1314,
+    "slug": "number-of-ways-to-select-buildings",
+    "fqid": 2222,
+    "error": "Testcase 1 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpzk57a6bc.py\", line 282, in <module>\n    _result = Solution().numberOfWays(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpzk57a6bc.py\", line 146, in numberOfWays\n    r[x] -= 1\n    ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1322,
+    "slug": "sort-integers-by-the-power-value",
+    "fqid": 1387,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpaqp15syz.py\", line 287, in <module>\n    _result = Solution().getKth(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.getKth() missing 2 required positional arguments: 'hi' and 'k'\n"
+  },
+  {
+    "pid": 1299,
+    "slug": "maximize-points-after-choosing-k-tasks",
+    "fqid": 3767,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpsf7llxbd.py\", line 285, in <module>\n    _result = Solution().maxPoints(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.maxPoints() missing 1 required positional argument: 'k'\n"
+  },
+  {
+    "pid": 1325,
+    "slug": "reconstruct-a-2-row-binary-matrix",
+    "fqid": 1253,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp29ysgxe8.py\", line 292, in <module>\n    _result = Solution().reconstructMatrix(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.reconstructMatrix() missing 2 required positional arguments: 'lower' and 'colsum'\n"
+  },
+  {
+    "pid": 1323,
+    "slug": "apply-operations-to-make-two-strings-equal",
+    "fqid": 2896,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpexj17nyp.py\", line 289, in <module>\n    _result = Solution().minOperations(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.minOperations() missing 1 required positional argument: 'x'\n"
+  },
+  {
+    "pid": 1326,
+    "slug": "maximum-total-sum-with-threshold-constraints",
+    "fqid": 3763,
+    "error": "Testcase 3 failed: RE (exit 1):  = sorted(range(n), key=lambda i: threshold[i])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmppanorw0c.py\", line 143, in <lambda>\n    idx = sorted(range(n), key=lambda i: threshold[i])\n                                         ~~~~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1327,
+    "slug": "number-of-unequal-triplets-in-array",
+    "fqid": 2475,
+    "error": "Testcase 16 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1300,
+    "slug": "ambiguous-coordinates",
+    "fqid": 816,
+    "error": "Testcase 15 failed: TLE (>15s)"
   }
 ]

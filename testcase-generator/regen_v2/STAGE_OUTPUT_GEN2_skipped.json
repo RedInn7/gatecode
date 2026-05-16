@@ -202,5 +202,11 @@
     "slug": "maximize-cyclic-partition-score",
     "fqid": 3743,
     "reason": "No Python3 solution found for fqid=3743"
+  },
+  {
+    "pid": 1328,
+    "slug": "determine-if-a-simple-graph-exists",
+    "fqid": 3656,
+    "reason": "No Python3 solution found for fqid=3656"
   }
 ]
