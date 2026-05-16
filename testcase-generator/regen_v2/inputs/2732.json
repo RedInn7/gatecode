@@ -1,0 +1,28 @@
+{
+  "pid": 2732,
+  "slug": "merge-adjacent-equal-elements",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= nums[i] <= 10^9",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,4,4,5]", "desc": "Edge: example1"},
+    {"input": "[2,2,4,4,2]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single"},
+    {"input": "[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]", "desc": "Edge: 2 different"},
+    {"input": "[1,1,1]", "desc": "Edge: 3 same"},
+    {"input": "[1,1,2,2]", "desc": "Edge: 2 pairs"},
+    {"input": "[1,2,1,2]", "desc": "Edge: alt"},
+    {"input": "[5,5,5,5,5]", "desc": "Edge: 5 same"},
+    {"input": "[1,2,3,4,5]", "desc": "Standard: distinct"},
+    {"input": "[1,1,2,1,1]", "desc": "Standard: pyramid"},
+    {"input": "[1,1,2,3,3,4,4,4]", "desc": "Standard: mixed groups"},
+    {"input": "[2,2,2,2,4,4,4,4]", "desc": "Standard: 2 groups"},
+    {"input": "[1,2,2,3,3,3,4,4,4,4]", "desc": "Standard: pyramid groups"},
+    {"input": "[1,3,3,5,5,9,9]", "desc": "Standard: pairs"},
+    {"input": "[10,10,10,10,10,10,10,10,10,10]", "desc": "Standard: 10 same"},
+    {"input": "[1,1,2,2,4,4,8,8,16,16]", "desc": "Standard: powers"},
+    {"input": "[5,5,10,10,20,20,40,40]", "desc": "Standard: chain double"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 100 ones"},
+    {"input": "[1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000,1000000000]", "desc": "Killer: max same"}
+  ]
+}

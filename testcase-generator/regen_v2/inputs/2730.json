@@ -1,0 +1,28 @@
+{
+  "pid": 2730,
+  "slug": "probability-of-a-two-boxes-having-the-same-number-of-distinct-balls",
+  "inferred_constraints": "1 <= balls.length <= 8, 1 <= balls[i] <= 6, sum(balls) is even",
+  "input_format": "single line: balls (JSON array)",
+  "testcases": [
+    {"input": "[1,1]", "desc": "Edge: example1"},
+    {"input": "[2,1,1]", "desc": "Edge: example2"},
+    {"input": "[1,2,1,2]", "desc": "Edge: example3"},
+    {"input": "[2,2]", "desc": "Edge: 2 colors 2 each"},
+    {"input": "[3,1]", "desc": "Edge: 4 balls"},
+    {"input": "[6,6]", "desc": "Edge: max 2 colors"},
+    {"input": "[1,1,1,1]", "desc": "Edge: 4 colors 1 each"},
+    {"input": "[2,2,2,2]", "desc": "Edge: 4 colors 2 each"},
+    {"input": "[3,3]", "desc": "Edge: 3 each"},
+    {"input": "[1,1,2,2]", "desc": "Standard: 4 mixed"},
+    {"input": "[1,1,1,1,1,1]", "desc": "Standard: 6 colors 1 each"},
+    {"input": "[6,6,6,6]", "desc": "Standard: max 4 colors"},
+    {"input": "[2,2,2,2,2,2]", "desc": "Standard: 6 colors 2 each"},
+    {"input": "[3,3,3,3]", "desc": "Standard: 4 colors 3 each"},
+    {"input": "[5,3]", "desc": "Standard: uneven 8"},
+    {"input": "[4,2,2]", "desc": "Standard: 3 colors"},
+    {"input": "[1,2,3,4]", "desc": "Standard: 4 different counts"},
+    {"input": "[6,6,6,6,6,6,6,6]", "desc": "Standard: max all"},
+    {"input": "[1,1,1,1,1,1,1,1]", "desc": "Stress: 8 colors 1 each"},
+    {"input": "[6,5,4,3,2,1]", "desc": "Killer: pyramid"}
+  ]
+}

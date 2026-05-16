@@ -1,0 +1,28 @@
+{
+  "pid": 2734,
+  "slug": "decode-xored-array",
+  "inferred_constraints": "2 <= n <= 10^4, encoded.length == n-1, 0 <= encoded[i] <= 10^5, 0 <= first <= 10^5",
+  "input_format": "line1: encoded (JSON array); line2: first (int)",
+  "testcases": [
+    {"input": "[1,2,3]\n1", "desc": "Edge: example1"},
+    {"input": "[6,2,7,3]\n4", "desc": "Edge: example2"},
+    {"input": "[0]\n0", "desc": "Edge: 2 zeros"},
+    {"input": "[0]\n1", "desc": "Edge: 2 same"},
+    {"input": "[1]\n0", "desc": "Edge: simple xor"},
+    {"input": "[100000]\n0", "desc": "Edge: max single"},
+    {"input": "[100000]\n100000", "desc": "Edge: both max"},
+    {"input": "[1,1,1]\n0", "desc": "Edge: same encoded"},
+    {"input": "[0,0,0]\n5", "desc": "Edge: all 0 encoded"},
+    {"input": "[1,2,3,4,5]\n0", "desc": "Standard: 1-5 first=0"},
+    {"input": "[5,4,3,2,1]\n10", "desc": "Standard: desc"},
+    {"input": "[100,200,300]\n50", "desc": "Standard: small"},
+    {"input": "[10,20,30,40,50]\n1", "desc": "Standard: medium"},
+    {"input": "[0,1,0,1,0,1]\n5", "desc": "Standard: alt"},
+    {"input": "[2,4,6,8,10]\n100", "desc": "Standard: even encoded"},
+    {"input": "[100000,99999,99998,99997]\n0", "desc": "Standard: near max"},
+    {"input": "[7,7,7,7,7]\n13", "desc": "Standard: same encoded"},
+    {"input": "[12345,67890,11111,22222]\n1", "desc": "Standard: random"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n0", "desc": "Stress: 50 ones"},
+    {"input": "[100000,100000,100000,100000,100000,100000,100000,100000,100000,100000]\n100000", "desc": "Killer: max repeated"}
+  ]
+}

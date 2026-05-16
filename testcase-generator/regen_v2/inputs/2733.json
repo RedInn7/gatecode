@@ -1,0 +1,28 @@
+{
+  "pid": 2733,
+  "slug": "maximum-split-of-positive-even-integers",
+  "inferred_constraints": "1 <= finalSum <= 10^10",
+  "input_format": "single line: finalSum (int)",
+  "testcases": [
+    {"input": "12", "desc": "Edge: example1"},
+    {"input": "7", "desc": "Edge: example2 odd"},
+    {"input": "28", "desc": "Edge: example3"},
+    {"input": "1", "desc": "Edge: odd 1"},
+    {"input": "2", "desc": "Edge: smallest even"},
+    {"input": "3", "desc": "Edge: odd 3"},
+    {"input": "4", "desc": "Edge: 4 = 4"},
+    {"input": "6", "desc": "Edge: 6 = 2+4"},
+    {"input": "8", "desc": "Edge: 8 = 2+6"},
+    {"input": "10", "desc": "Standard: 10 = 4+6 or 2+8"},
+    {"input": "20", "desc": "Standard: 20 = 2+4+6+8"},
+    {"input": "100", "desc": "Standard: 100"},
+    {"input": "1000", "desc": "Standard: 1000"},
+    {"input": "10000", "desc": "Standard: 10K"},
+    {"input": "1000000", "desc": "Standard: 1M"},
+    {"input": "1000000000", "desc": "Standard: 1B"},
+    {"input": "5000000000", "desc": "Standard: 5B"},
+    {"input": "9999999998", "desc": "Standard: even near max"},
+    {"input": "10000000000", "desc": "Stress: max"},
+    {"input": "9999999999", "desc": "Killer: max odd"}
+  ]
+}

@@ -359,6 +359,16 @@
       "pid": 2720,
       "slug": "maximize-items",
       "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2728,
+      "slug": "the-first-day-of-the-maximum-recorded-degree-in-each-city",
+      "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2731,
+      "slug": "range-sum-query-mutable",
+      "reason": "design class NumArray with stateful update/sumRange"
     }
   ]
 }
