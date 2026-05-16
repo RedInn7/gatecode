@@ -1,0 +1,76 @@
+{
+  "pid": 3315,
+  "slug": "number-of-valid-clock-times",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"1\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"3j\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"adbee\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"gb3dkdzido6\"",
+      "desc": "Standard: len=11"
+    },
+    {
+      "input": "\"6mkl96jjxutxoylcfw55\"",
+      "desc": "Standard: len=20"
+    },
+    {
+      "input": "\"r5snlthz4\"",
+      "desc": "Standard: len=9"
+    },
+    {
+      "input": "\"by5ihvlh284eqwaojp0az7uaj\"",
+      "desc": "Standard: len=25"
+    },
+    {
+      "input": "\"89cl1obs56aglgf3vyu\"",
+      "desc": "Standard: len=19"
+    },
+    {
+      "input": "\"4vjnmaw404fmdt7j8kjn4d\"",
+      "desc": "Standard: len=22"
+    },
+    {
+      "input": "\"oyfg8j58orwqvsq68vl7ctl\"",
+      "desc": "Standard: len=23"
+    },
+    {
+      "input": "\"w52mc8oobveppowzqqx83iw39njlg9dle20unocwlwukj\"",
+      "desc": "Standard: len=45"
+    },
+    {
+      "input": "\"u5tt9jizri0ka9jvdgjsme266vjzynehuiif4qj79a1vvzs87hflgscd5h5qt6z6rer9ro6qppw9wjk70z1syapntojn6s062ohvvop5b7nanmlb4rxdbxv8ll82j0lrki2wqpkgq33qeeaoxvkf6p401apgzd7b3qd3bwg71dqjkgvgnw61u3hb6ggbp3wwnbmqxigplxciov52jw90ajng1meiyaot6k767cuhz61j0t33yh0m060j26we87u0pau9tv96mks7awetxxsm2cue9boytdm0i0k35a2t6ipbopeqrtizgn7ovx5usmh6lnfquld61ia53admx6nqa96rk5a2ywmql4cfajh69xutk8atytup871crs31ff08tr7ktoofmsgpaso8gudveh37p192d4ivmk5su97iwbcjh5soowtxtmw2oijsw6nuukqwhlxs2n219elrff3nx8d8vanjlnnzzjhh017p55glikx6qq3f\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"rcs7sptbd4vw9xx0z6l4hhjyso52i77phl5ffn6zf9zx1aqu7fn1c494cz7lr86gdnasfqaemtbsxj3u6oodv4w6vvz0ndhk8agsiy7dyd3poykbn101lm9xxygf2xzfdgpm53mm1zycy5e35329fnjai04j9houm6lssh6bevynlmh1pn4dtp4ffn4p5lqxa739tt8zueqohh6lgpq8shwmefn4ozuw80qsjm2rc4tknqyh34mvi5lkotxa8odbvj4nuczqhchyt73blxvla9zq3f9ju3q6ykrkxby8wbuz60j67j70vlkfc0x3dyg3tljo50w9wjad0j6tn9qkmtqskyixl1rxkdjs85dvlqhg9bxwmvl4gratpkhox8rq38081rtmr6mzt8c78v1pxeekf043dpkg5altb1lh6867am0cbn72augbrpouoi8qcjni2c1yyfjjn4gvc7rmfzkratkj01agzpmhfcj9ks9lzltsrlpkotvs3mud0gb7i601z28gmvl1n5s8mzjsor2944yvzkju6w6l0g41pkzlfojmpjee4nywotq1g4wc00edeu723cwzu9x0vf7xa9p56oxc9khpzi4tc5xkd6r69tegze0xun6tqwvdv2uin1g2z9q8oj3sd9z39qq15b6tvydg5z8579m8hr254rtf4assma2hs6a6mcil06ga8onumrijm82lx7jut5zzzpz0fr2ihs9t5etke6ds5e3mbn0xz2007k7wmenke1wd8dcusi6mpfcxtg8cbu34mh493iwao7iis4q6zh8du9a5v9iu6dxx6t8gt9qcazs80q8qdo8yrpu4wi41qck65jc61rxaddu5h008a6v18wewvt69sdtzvvlcoqh03zfqz0e7j5z1x33i7nh3bkjyrt8mn9531d61d4g2bperrjmlhrzey4mh2deou4eg2qa4s5ewmhc9udrx1y5f2mcfe0h0y4nn6ko3qk4ijiua\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

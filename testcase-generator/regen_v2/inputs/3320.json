@@ -1,0 +1,76 @@
+{
+  "pid": 3320,
+  "slug": "domino-and-tromino-tiling",
+  "inferred_constraints": "0 <= n <= 1000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "217",
+      "desc": "Standard: n=217"
+    },
+    {
+      "input": "586",
+      "desc": "Standard: n=586"
+    },
+    {
+      "input": "770",
+      "desc": "Standard: n=770"
+    },
+    {
+      "input": "888",
+      "desc": "Standard: n=888"
+    },
+    {
+      "input": "815",
+      "desc": "Standard: n=815"
+    },
+    {
+      "input": "946",
+      "desc": "Standard: n=946"
+    },
+    {
+      "input": "248",
+      "desc": "Standard: n=248"
+    },
+    {
+      "input": "788",
+      "desc": "Standard: n=788"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "1000",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

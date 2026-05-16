@@ -109,6 +109,11 @@
       "pid": 3340,
       "slug": "maximize-grid-happiness",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3308,
+      "slug": "k-th-nearest-obstacle-queries",
+      "reason": "ACM mode problem"
     }
   ]
 }

@@ -1,0 +1,76 @@
+{
+  "pid": 3313,
+  "slug": "faulty-keyboard",
+  "inferred_constraints": "0 <= s.length <= 100",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"x\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"xg\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"eaaae\"",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"fkyocssiszewyybfhwercnysfguaqjlvqzczlgjna\"",
+      "desc": "Standard: len=41"
+    },
+    {
+      "input": "\"lqhwiywv\"",
+      "desc": "Standard: len=8"
+    },
+    {
+      "input": "\"pyoygepoznchxnungajgexxldofncqzlxwhypyxtwywdawpue\"",
+      "desc": "Standard: len=49"
+    },
+    {
+      "input": "\"bbwjmhcxzueetfanhtewpboxqfqjvabvhhnexlgbzgkbvcxr\"",
+      "desc": "Standard: len=48"
+    },
+    {
+      "input": "\"kqlrsollssyflxgthynvbmtwfzj\"",
+      "desc": "Standard: len=27"
+    },
+    {
+      "input": "\"yggvdywpgdcydnjhkgfbfkpidwjruzrn\"",
+      "desc": "Standard: len=32"
+    },
+    {
+      "input": "\"eengtedsotdwtrfjgoadewqrhnduueabjbgxe\"",
+      "desc": "Standard: len=37"
+    },
+    {
+      "input": "\"mgxyqyartastvaenfzmnzcixtlxnppkspgverhttx\"",
+      "desc": "Standard: len=41"
+    },
+    {
+      "input": "\"ijegadblxzzksaplhziaoytmufxuxxxqbasxbgpebsgyxbnoxrkiznpvvwudajualbqavbblpnqwjfuwkeeaokgjuxibvujbyayw\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"mqqomlkuotqkeelfhcgizmtuqwlstxkfsgksbnkfjjlztvpkwydfucgqcvznalltmqbjjkcohfaoxbgtopojgorldlaqeogivvab\"",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}
