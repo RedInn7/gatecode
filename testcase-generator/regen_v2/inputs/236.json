@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"iunrrtzs\"\n\"sf\"",
+      "input": "\"m\"\n\"pri\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 16 max + 5 hand pairs"
     },
     {
-      "input": "\"mmakpleyefaizzde\"\n\"nsdqdtzsil\"",
+      "input": "\"qvzifrlcmxjmoklp\"\n\"wznronvmii\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
