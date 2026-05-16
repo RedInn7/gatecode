@@ -244,5 +244,59 @@
     "slug": "burst-balloons",
     "fqid": 312,
     "error": "Testcase 15 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1214,
+    "slug": "minimum-moves-to-reach-target-score",
+    "fqid": 2139,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpsshkz9jy.py\", line 281, in <module>\n    _result = Solution().minMoves(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.minMoves() missing 1 required positional argument: 'maxDoubles'\n"
+  },
+  {
+    "pid": 1227,
+    "slug": "course-schedule-ii",
+    "fqid": 210,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpwu7ve49e.py\", line 289, in <module>\n    _result = Solution().findOrder(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.findOrder() missing 1 required positional argument: 'prerequisites'\n"
+  },
+  {
+    "pid": 1238,
+    "slug": "find-consecutive-integers-from-a-data-stream",
+    "fqid": 2526,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpau4m0w91.py\", line 160, in <module>\n    _vals = _json.loads(_lines[1])\n                        ~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1240,
+    "slug": "check-if-word-equals-summation-of-two-words",
+    "fqid": 1880,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp2hyj8yjk.py\", line 282, in <module>\n    _result = Solution().isSumEqual(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.isSumEqual() missing 1 required positional argument: 'targetWord'\n"
+  },
+  {
+    "pid": 1237,
+    "slug": "time-needed-to-buy-tickets",
+    "fqid": 2073,
+    "error": "Testcase 1 failed: RE (exit 1): in <module>\n    _result = Solution().timeRequiredToBuy(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpbkezeik9.py\", line 144, in timeRequiredToBuy\n    ans += min(x, tickets[k] if i <= k else tickets[k] - 1)\n                  ~~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1242,
+    "slug": "thousand-separator",
+    "fqid": 1556,
+    "error": "Testcase 0 failed: RE (exit 1):  286, in <module>\n    _result = Solution().thousandSeparator(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpv97i8zpy.py\", line 145, in thousandSeparator\n    n, v = divmod(n, 10)\n           ^^^^^^^^^^^^^\nTypeError: unsupported operand type(s) for divmod(): 'str' and 'int'\n"
+  },
+  {
+    "pid": 1249,
+    "slug": "interleaving-string",
+    "fqid": 97,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpaaxj1seg.py\", line 289, in <module>\n    _result = Solution().isInterleave(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Solution.isInterleave() missing 1 required positional argument: 's3'\n"
+  },
+  {
+    "pid": 1253,
+    "slug": "minimum-cost-tree-from-leaf-values",
+    "fqid": 1130,
+    "error": "Testcase 2 failed: RE (exit 1):       ^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpfx5b7mcc.py\", line 149, in dfs\n    s2, mx2 = dfs(k + 1, j)\n              ^^^^^^^^^^^^^\n  File \"/tmp/tmpfx5b7mcc.py\", line 150, in dfs\n    t = s1 + s2 + mx1 * mx2\n                  ~~~~^~~~~\nTypeError: unsupported operand type(s) for *: 'int' and 'NoneType'\n"
+  },
+  {
+    "pid": 1241,
+    "slug": "minimum-changes-to-make-k-semi-palindromes",
+    "fqid": 2911,
+    "error": "Testcase 16 failed: TLE (>15s)"
   }
 ]

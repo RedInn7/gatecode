@@ -184,5 +184,11 @@
     "slug": "find-sorted-submatrices-with-maximum-element-at-most-k",
     "fqid": 3359,
     "reason": "No Python3 solution found for fqid=3359"
+  },
+  {
+    "pid": 1236,
+    "slug": "house-robber-v",
+    "fqid": 3840,
+    "reason": "No Python3 solution found for fqid=3840"
   }
 ]

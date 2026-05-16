@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"\"",
-      "desc": "Edge: empty string"
+      "desc": "Edge: empty string",
+      "output": "0"
     },
     {
       "input": "\"p\"",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "0"
     },
     {
       "input": "\"tr\"",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "1"
     },
     {
       "input": "\"aaaaa\"",
-      "desc": "Edge: all same chars"
+      "desc": "Edge: all same chars",
+      "output": "0"
     },
     {
       "input": "\"cbcac\"",
-      "desc": "Edge: short mixed"
+      "desc": "Edge: short mixed",
+      "output": "4"
     },
     {
       "input": "\"cissic\"",
-      "desc": "Edge: palindrome string"
+      "desc": "Edge: palindrome string",
+      "output": "4"
     },
     {
       "input": "\"cehxznvdog\"",
-      "desc": "Standard: len=10"
+      "desc": "Standard: len=10",
+      "output": "9"
     },
     {
       "input": "\"tqqedmdfvtgubjihbtxevthrmcxhohdhieiizodxaxhlqqrhcm\"",
-      "desc": "Standard: len=50"
+      "desc": "Standard: len=50",
+      "output": "46"
     },
     {
       "input": "\"olwphuqyzyyyhfmexmrhgzsezzj\"",
-      "desc": "Standard: len=27"
+      "desc": "Standard: len=27",
+      "output": "23"
     },
     {
       "input": "\"zlpguvyvtnmhxkhfvqkdt\"",
-      "desc": "Standard: len=21"
+      "desc": "Standard: len=21",
+      "output": "20"
     },
     {
       "input": "\"nynkrbspdqdvukdbvrcxdmcpajxvevvukwnyyj\"",
-      "desc": "Standard: len=38"
+      "desc": "Standard: len=38",
+      "output": "35"
     },
     {
       "input": "\"iilfsoefpmwgiiwhhrebestolywappyebpvtqdw\"",
-      "desc": "Standard: len=39"
+      "desc": "Standard: len=39",
+      "output": "34"
     },
     {
       "input": "\"gxgahrygbdrhbiuzvltlvnfnejapadirxagkcxucy\"",
-      "desc": "Standard: len=41"
+      "desc": "Standard: len=41",
+      "output": "40"
     },
     {
       "input": "\"bjvdwnfinlflwcqkhrdtsfjqsr\"",
-      "desc": "Standard: len=26"
+      "desc": "Standard: len=26",
+      "output": "25"
     },
     {
       "input": "\"vszlwsaveufcjclrjizaugerouazorqoxsdhlstpsjnswyovjnbuuxbmmdwbmveudgvnbddxqqnmpqwoeufgsgvaoevttokzjomz\"",
-      "desc": "Stress: medium length"
+      "desc": "Stress: medium length",
+      "output": "94"
     },
     {
       "input": "\"qsuwlliiegseagufmotokzryabrzxnutblmzfmywnuujlozhygrxdmmrdnphyszrazrmlaqjpkxinexfinfxjnctmyrtrsbfwcdu\"",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "95"
     },
     {
       "input": "\"wzchikslztwbxgwwiyjmmugijleeldjkwvxnjyaohnrgmyaacwkwfhmtnyzmssesmnciywiefprpdtnwysyidhxqeswxueonxykn\"",
-      "desc": "Stress: max length"
+      "desc": "Stress: max length",
+      "output": "94"
     },
     {
       "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
-      "desc": "Killer: all same char repeated"
+      "desc": "Killer: all same char repeated",
+      "output": "0"
     },
     {
       "input": "\"cnwelzxtgsubhonshokevysiigspnheyenlilrbiisaferwbqovncjaxklxscqfohihocawnhrlfvabletbdkabpovsjxjwluiam\"",
-      "desc": "Killer: near-max size"
+      "desc": "Killer: near-max size",
+      "output": "97"
     },
     {
       "input": "\"\"",
-      "desc": "Edge: empty string"
+      "desc": "Edge: empty string",
+      "output": "0"
     }
   ]
 }
