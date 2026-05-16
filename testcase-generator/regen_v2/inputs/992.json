@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw)",
   "testcases": [
     {
-      "input": "00110011",
-      "desc": "Edge: example1 -> 6"
+      "input": "0",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "10101",

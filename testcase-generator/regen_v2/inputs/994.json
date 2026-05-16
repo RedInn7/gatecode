@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw)",
   "testcases": [
     {
-      "input": "(()))",
-      "desc": "Edge: example1 -> 1"
+      "input": "\"c\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "())",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"isf\"",
+      "input": "\"t\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 200 closes"
     },
     {
-      "input": "\"olyujgaeanwa\"",
+      "input": "\"atopbqlihy\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

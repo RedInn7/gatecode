@@ -5,8 +5,8 @@
   "input_format": "line1: s (raw); line2: k (int)",
   "testcases": [
     {
-      "input": "165462\n60",
-      "desc": "Edge: example1 -> 4"
+      "input": "50221\n3",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "238182\n5",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "147580\n3",
+      "input": "153324\n14",
       "desc": "Edge: all-equal elements"
     },
     {
