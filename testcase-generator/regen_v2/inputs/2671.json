@@ -1,0 +1,28 @@
+{
+  "pid": 2671,
+  "slug": "fraction-to-recurring-decimal",
+  "inferred_constraints": "-2^31 <= numerator, denominator <= 2^31-1, denominator != 0",
+  "input_format": "line1: numerator (int); line2: denominator (int)",
+  "testcases": [
+    {"input": "1\n2", "desc": "Edge: example1"},
+    {"input": "2\n1", "desc": "Edge: example2"},
+    {"input": "4\n333", "desc": "Edge: example3 repeating"},
+    {"input": "0\n5", "desc": "Edge: zero"},
+    {"input": "1\n1", "desc": "Edge: 1/1"},
+    {"input": "-1\n2", "desc": "Edge: negative num"},
+    {"input": "1\n-2", "desc": "Edge: negative denom"},
+    {"input": "-1\n-2", "desc": "Edge: both negative"},
+    {"input": "1\n3", "desc": "Edge: 0.(3)"},
+    {"input": "1\n6", "desc": "Standard: 0.1(6)"},
+    {"input": "22\n7", "desc": "Standard: pi approx"},
+    {"input": "1\n7", "desc": "Standard: 0.(142857)"},
+    {"input": "10\n3", "desc": "Standard: 3.(3)"},
+    {"input": "100\n3", "desc": "Standard: 33.(3)"},
+    {"input": "5\n8", "desc": "Standard: terminating"},
+    {"input": "1\n17", "desc": "Standard: long period"},
+    {"input": "-50\n8", "desc": "Standard: neg terminating"},
+    {"input": "7\n12", "desc": "Standard: 0.58(3)"},
+    {"input": "2147483647\n1", "desc": "Stress: MAX_INT"},
+    {"input": "-2147483648\n1", "desc": "Killer: MIN_INT"}
+  ]
+}

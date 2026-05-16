@@ -299,6 +299,16 @@
       "pid": 2657,
       "slug": "popularity-percentage",
       "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2670,
+      "slug": "flatten-nested-list-iterator",
+      "reason": "design class NestedIterator with NestedInteger"
+    },
+    {
+      "pid": 2674,
+      "slug": "design-a-3d-binary-matrix-with-efficient-layer-tracking",
+      "reason": "design class Matrix3D stateful setCell/unsetCell/largestMatrix"
     }
   ]
 }
