@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= word1.length, word2.length <= 500, lowercase",
   "input_format": "line1: word1 (quoted); line2: word2 (quoted)",
   "testcases": [
-    {"input": "\"horse\"\n\"ros\"", "desc": "Standard example 1"},
-    {"input": "\"intention\"\n\"execution\"", "desc": "Standard example 2"},
-    {"input": "\"\"\n\"\"", "desc": "Edge both empty"},
-    {"input": "\"a\"\n\"\"", "desc": "Edge one empty"},
-    {"input": "\"\"\n\"abc\"", "desc": "Edge other empty"},
-    {"input": "\"a\"\n\"a\"", "desc": "Edge same"},
-    {"input": "\"a\"\n\"b\"", "desc": "Edge diff char"},
-    {"input": "\"abc\"\n\"abc\"", "desc": "Standard same"},
-    {"input": "\"abc\"\n\"def\"", "desc": "Standard fully different"},
-    {"input": "\"abcdef\"\n\"fedcba\"", "desc": "Standard reverse"},
-    {"input": "\"hello\"\n\"world\"", "desc": "Standard"},
-    {"input": "\"abcdefghij\"\n\"jihgfedcba\"", "desc": "Standard"},
-    {"input": "\"banana\"\n\"banana\"", "desc": "Standard same"},
-    {"input": "\"banana\"\n\"bananas\"", "desc": "Standard add"},
-    {"input": "\"bananas\"\n\"banana\"", "desc": "Standard remove"},
-    {"input": "\"mississippi\"\n\"mississipi\"", "desc": "Standard 1 diff"},
-    {"input": "\"thequickbrownfox\"\n\"thequickfox\"", "desc": "Standard subset"},
-    {"input": "\"aaaaa\"\n\"bbbbb\"", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard reverse alphabet"},
-    {"input": "\"abc\"\n\"abcabc\"", "desc": "Standard"}
+    {
+      "input": "\"horse\"\n\"ros\"",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "\"intention\"\n\"execution\"",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "desc": "Edge both empty"
+    },
+    {
+      "input": "\"a\"\n\"\"",
+      "desc": "Edge one empty"
+    },
+    {
+      "input": "\"\"\n\"abc\"",
+      "desc": "Edge other empty"
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "desc": "Edge same"
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "desc": "Edge diff char"
+    },
+    {
+      "input": "\"abc\"\n\"abc\"",
+      "desc": "Standard same"
+    },
+    {
+      "input": "\"abc\"\n\"def\"",
+      "desc": "Standard fully different"
+    },
+    {
+      "input": "\"abcdef\"\n\"fedcba\"",
+      "desc": "Standard reverse"
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"jihgfedcba\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"banana\"\n\"banana\"",
+      "desc": "Standard same"
+    },
+    {
+      "input": "\"banana\"\n\"bananas\"",
+      "desc": "Standard add"
+    },
+    {
+      "input": "\"bananas\"\n\"banana\"",
+      "desc": "Standard remove"
+    },
+    {
+      "input": "\"mississippi\"\n\"mississipi\"",
+      "desc": "Standard 1 diff"
+    },
+    {
+      "input": "\"thequickbrownfox\"\n\"thequickfox\"",
+      "desc": "Standard subset"
+    },
+    {
+      "input": "\"aaaaa\"\n\"bbbbb\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Standard reverse alphabet"
+    },
+    {
+      "input": "\"qwpwxltocltwhwvvux\"\n\"zszndifuritxsrvlfn\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

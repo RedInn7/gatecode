@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= strs.length <= 200, 0 <= strs[i].length <= 200, lowercase",
   "input_format": "single line: strs (JSON array)",
   "testcases": [
-    {"input": "[\"flower\",\"flow\",\"flight\"]", "desc": "Standard example 1"},
-    {"input": "[\"dog\",\"racecar\",\"car\"]", "desc": "Standard example 2"},
-    {"input": "[\"a\"]", "desc": "Edge n=1"},
-    {"input": "[\"\"]", "desc": "Edge empty"},
-    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Edge same"},
-    {"input": "[\"a\",\"b\"]", "desc": "Edge no common"},
-    {"input": "[\"\",\"abc\"]", "desc": "Edge one empty"},
-    {"input": "[\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard prefix chain"},
-    {"input": "[\"abcde\",\"abc\",\"abcdef\"]", "desc": "Standard"},
-    {"input": "[\"prefix\",\"prefixxx\",\"prefixx\"]", "desc": "Standard"},
-    {"input": "[\"hello\",\"helloworld\"]", "desc": "Standard"},
-    {"input": "[\"aaa\",\"aaa\",\"aaaa\"]", "desc": "Standard"},
-    {"input": "[\"a\",\"aa\",\"aaa\",\"aaaa\"]", "desc": "Standard chain"},
-    {"input": "[\"z\",\"y\",\"x\"]", "desc": "Edge distinct chars"},
-    {"input": "[\"thequickbrown\",\"thequickbrowner\",\"thequickbrownest\"]", "desc": "Standard"},
-    {"input": "[\"abcdefghij\",\"abcdefghijk\",\"abcdefghijkl\"]", "desc": "Standard long"},
-    {"input": "[\"banana\",\"banner\",\"bandit\"]", "desc": "Standard"},
-    {"input": "[\"prefix\",\"prefix\",\"prefix\",\"prefix\",\"prefix\"]", "desc": "Standard"},
-    {"input": "[\"a\",\"abc\",\"ab\",\"abcd\"]", "desc": "Standard"},
-    {"input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaa\",\"aaaaaaaaaa\"]", "desc": "Standard long a"}
+    {
+      "input": "[\"flower\",\"flow\",\"flight\"]",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "[\"dog\",\"racecar\",\"car\"]",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge n=1"
+    },
+    {
+      "input": "[\"\"]",
+      "desc": "Edge empty"
+    },
+    {
+      "input": "[\"abc\",\"abc\",\"abc\"]",
+      "desc": "Edge same"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "desc": "Edge no common"
+    },
+    {
+      "input": "[\"\",\"abc\"]",
+      "desc": "Edge one empty"
+    },
+    {
+      "input": "[\"abc\",\"abcd\",\"abcde\"]",
+      "desc": "Standard prefix chain"
+    },
+    {
+      "input": "[\"abcde\",\"abc\",\"abcdef\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"prefix\",\"prefixxx\",\"prefixx\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"hello\",\"helloworld\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"aaa\",\"aaa\",\"aaaa\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"a\",\"aa\",\"aaa\",\"aaaa\"]",
+      "desc": "Standard chain"
+    },
+    {
+      "input": "[\"z\",\"y\",\"x\"]",
+      "desc": "Edge distinct chars"
+    },
+    {
+      "input": "[\"thequickbrown\",\"thequickbrowner\",\"thequickbrownest\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"abcdefghij\",\"abcdefghijk\",\"abcdefghijkl\"]",
+      "desc": "Standard long"
+    },
+    {
+      "input": "[\"banana\",\"banner\",\"bandit\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"prefix\",\"prefix\",\"prefix\",\"prefix\",\"prefix\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"a\",\"abc\",\"ab\",\"abcd\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[562,-959,-167,25,422,349,129,-877,-953,-591,-990,-133,-927,420,643,-91,869,304,581,-913,959,-845,207,-862,552,-594,72,906,-44,259,-938,477,421,-132,20,617,-458,966,37,990,-625,-282,302,481,-459,377,-41,36,564,876,644,-16,31,-498,-780,122,265,-927,-212,-985,-307,764,-465,-555,-970,636,916,-287,862,-85,163,-159,881,27,-403,-343,727,704,-940,-712,-681,-716,-897,-346,-858,-572,624,251,302,-168,-497,754,320,441,299,225,-965,815,-343,-845,-190,-687,-500,404,-773,588,578,-910,-123,-563,453,344,436,382,887,479,770,-611,-277,-861,-536,339,-774,-808,-558,175,-209,-507,-323,-108,812,453,992,865,465,122,-637,36,-239,866,-737,524,912,-868,-38,-933,-412,114,149,804,957,-848,-54,790,-628,-684,92,906,-538,-971,612,-983,-440,-113,-511,264,-777,986,595,287,206,-513,-699,-644,-813,579,-826,343,198,688,-859,306,-512,-814,-859,-222,-188,-233,546,606,-291,-282,524,-940,835,-534,683,950,-462,-211]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
