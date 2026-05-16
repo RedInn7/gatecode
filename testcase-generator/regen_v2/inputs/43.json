@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 1e9",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: example1 n=1, 2^0"},
-    {"input": "10", "desc": "Edge: example2 false"},
-    {"input": "16", "desc": "Edge: 2^4 itself"},
-    {"input": "24", "desc": "Edge: reorder to 42? Not power. Reorder to 24/42 — both not power. False"},
-    {"input": "46", "desc": "Edge: reorder to 64=2^6 true"},
-    {"input": "2", "desc": "Edge: 2^1"},
-    {"input": "4", "desc": "Edge: 2^2"},
-    {"input": "8", "desc": "Edge: 2^3"},
-    {"input": "1000000000", "desc": "Edge: max value, 10 digits"},
-    {"input": "536870912", "desc": "Edge: 2^29 itself, in range"},
-    {"input": "12", "desc": "Edge: reorder to 21? Not power"},
-    {"input": "21", "desc": "Edge: reorder to 12 — not power; also 21 itself not. False"},
-    {"input": "128", "desc": "Edge: 2^7"},
-    {"input": "218", "desc": "Edge: reorder to 128 = 2^7 true"},
-    {"input": "63", "desc": "Edge: not power, no reorder is power"},
-    {"input": "61", "desc": "Edge: reorder to 16 = 2^4 true"},
-    {"input": "100", "desc": "Edge: not power"},
-    {"input": "65536", "desc": "Edge: 2^16"},
-    {"input": "65356", "desc": "Edge: reorder to 65536? digits 6,5,3,5,6 vs 6,5,5,3,6 — different. False"},
-    {"input": "8192", "desc": "Edge: 2^13"}
+    {
+      "input": "1",
+      "desc": "Edge: example1 n=1, 2^0"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "20",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "28",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: 2^1"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: 2^2"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: 2^3"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: max value, 10 digits"
+    },
+    {
+      "input": "536870912",
+      "desc": "Edge: 2^29 itself, in range"
+    },
+    {
+      "input": "12",
+      "desc": "Edge: reorder to 21? Not power"
+    },
+    {
+      "input": "21",
+      "desc": "Edge: reorder to 12 — not power; also 21 itself not. False"
+    },
+    {
+      "input": "128",
+      "desc": "Edge: 2^7"
+    },
+    {
+      "input": "218",
+      "desc": "Edge: reorder to 128 = 2^7 true"
+    },
+    {
+      "input": "63",
+      "desc": "Edge: not power, no reorder is power"
+    },
+    {
+      "input": "61",
+      "desc": "Edge: reorder to 16 = 2^4 true"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: not power"
+    },
+    {
+      "input": "65536",
+      "desc": "Edge: 2^16"
+    },
+    {
+      "input": "65356",
+      "desc": "Edge: reorder to 65536? digits 6,5,3,5,6 vs 6,5,5,3,6 — different. False"
+    },
+    {
+      "input": "46",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

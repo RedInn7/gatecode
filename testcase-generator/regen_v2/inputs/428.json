@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= m, n <= 500, 1 <= values[i][j] <= 1e6, values[i] sorted non-increasing",
   "input_format": "line1: values (JSON 2D int array)",
   "testcases": [
-    {"input": "[[8,5,2],[6,4,1],[9,7,3]]", "desc": "Edge: example1"},
-    {"input": "[[10,8,6,4,2],[9,7,5,3,2]]", "desc": "Edge: example2"},
-    {"input": "[[1]]", "desc": "Edge: 1x1"},
-    {"input": "[[1000000]]", "desc": "Edge: 1x1 max"},
-    {"input": "[[5,3,1]]", "desc": "Edge: 1 shop 3 items"},
-    {"input": "[[5],[3],[1]]", "desc": "Edge: 3 shops 1 item"},
-    {"input": "[[1,1],[1,1]]", "desc": "Edge: all same"},
-    {"input": "[[10,1],[10,1]]", "desc": "Standard: small case"},
-    {"input": "[[5,4,3,2,1],[5,4,3,2,1]]", "desc": "Standard: 2 shops same"},
-    {"input": "[[1000000,999999],[999998,999997]]", "desc": "Edge: max values 2x2"},
-    {"input": "[[100,90,80,70,60,50,40,30,20,10],[10,9,8,7,6,5,4,3,2,1]]", "desc": "Standard: 2x10"},
-    {"input": "[[5,4],[5,4],[5,4],[5,4],[5,4]]", "desc": "Standard: 5x2 same shops"},
-    {"input": "[[10,9,8,7,6],[5,4,3,2,1],[15,14,13,12,11]]", "desc": "Standard: 3x5 different shops"},
-    {"input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]", "desc": "Edge: all 1s 3x5"},
-    {"input": "[[1000000,1,1,1,1],[1000000,1,1,1,1]]", "desc": "Standard: high front then low"},
-    {"input": "[[5,4,3,2,1]]", "desc": "Edge: 1 shop 5 items"},
-    {"input": "[[100,80,60,40,20],[90,70,50,30,10]]", "desc": "Standard: 2 shops decreasing"},
-    {"input": "[[10,9],[8,7],[6,5],[4,3],[2,1]]", "desc": "Standard: 5 shops 2 items decreasing"},
-    {"input": "[[1000,500,100,50,10,5,1],[2000,1000,500,200,100,50,10]]", "desc": "Standard: 2 shops varied"},
-    {"input": "[[20,15,10,5],[18,14,9,4],[16,13,8,3],[14,12,7,2]]", "desc": "Standard: 4x4 diagonal pattern"}
+    {
+      "input": "[[8,5,2],[6,4,1],[9,7,3]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[10,8,6,4,2],[9,7,5,3,2]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[-71,603,670],[-923,-608,-945],[945,-211,389]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[1000000]]",
+      "desc": "Edge: 1x1 max"
+    },
+    {
+      "input": "[[5,3,1]]",
+      "desc": "Edge: 1 shop 3 items"
+    },
+    {
+      "input": "[[5],[3],[1]]",
+      "desc": "Edge: 3 shops 1 item"
+    },
+    {
+      "input": "[[1,1],[1,1]]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[[10,1],[10,1]]",
+      "desc": "Standard: small case"
+    },
+    {
+      "input": "[[5,4,3,2,1],[5,4,3,2,1]]",
+      "desc": "Standard: 2 shops same"
+    },
+    {
+      "input": "[[1000000,999999],[999998,999997]]",
+      "desc": "Edge: max values 2x2"
+    },
+    {
+      "input": "[[100,90,80,70,60,50,40,30,20,10],[10,9,8,7,6,5,4,3,2,1]]",
+      "desc": "Standard: 2x10"
+    },
+    {
+      "input": "[[5,4],[5,4],[5,4],[5,4],[5,4]]",
+      "desc": "Standard: 5x2 same shops"
+    },
+    {
+      "input": "[[10,9,8,7,6],[5,4,3,2,1],[15,14,13,12,11]]",
+      "desc": "Standard: 3x5 different shops"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
+      "desc": "Edge: all 1s 3x5"
+    },
+    {
+      "input": "[[1000000,1,1,1,1],[1000000,1,1,1,1]]",
+      "desc": "Standard: high front then low"
+    },
+    {
+      "input": "[[5,4,3,2,1]]",
+      "desc": "Edge: 1 shop 5 items"
+    },
+    {
+      "input": "[[100,80,60,40,20],[90,70,50,30,10]]",
+      "desc": "Standard: 2 shops decreasing"
+    },
+    {
+      "input": "[[10,9],[8,7],[6,5],[4,3],[2,1]]",
+      "desc": "Standard: 5 shops 2 items decreasing"
+    },
+    {
+      "input": "[[1000,500,100,50,10,5,1],[2000,1000,500,200,100,50,10]]",
+      "desc": "Standard: 2 shops varied"
+    },
+    {
+      "input": "[[20,15,10,5],[18,14,9,4],[16,13,8,3],[14,12,7,2]]",
+      "desc": "Standard: 4x4 diagonal pattern"
+    }
   ]
 }

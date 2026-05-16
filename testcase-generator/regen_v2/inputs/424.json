@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= candidates.length <= 30, 2 <= candidates[i] <= 40, all distinct, 1 <= target <= 40, <150 combinations",
   "input_format": "line1: candidates (JSON int array); line2: target (int)",
   "testcases": [
-    {"input": "[2,3,6,7]\n7", "desc": "Edge: example1"},
-    {"input": "[2,3,5]\n8", "desc": "Edge: example2"},
-    {"input": "[2]\n1", "desc": "Edge: example3 impossible"},
-    {"input": "[2]\n2", "desc": "Edge: single candidate target=candidate"},
-    {"input": "[2]\n4", "desc": "Edge: single candidate target=2x"},
-    {"input": "[2]\n6", "desc": "Edge: single candidate target=3x"},
-    {"input": "[2,3]\n6", "desc": "Standard: multiple paths"},
-    {"input": "[2,4,6,8]\n8", "desc": "Standard: multiple ways"},
-    {"input": "[3,5,7]\n15", "desc": "Standard: 3 candidates"},
-    {"input": "[2]\n40", "desc": "Edge: max target single candidate"},
-    {"input": "[40]\n40", "desc": "Edge: candidate=target=40"},
-    {"input": "[2,40]\n40", "desc": "Standard: mix"},
-    {"input": "[2,3,4,5,6,7,8]\n10", "desc": "Standard: 7 candidates target 10"},
-    {"input": "[5,10,15,20]\n30", "desc": "Standard: multiples of 5"},
-    {"input": "[2,3,5,7,11]\n13", "desc": "Standard: small primes"},
-    {"input": "[7,11,13]\n22", "desc": "Standard: prime combinations"},
-    {"input": "[2,3,6,7]\n14", "desc": "Standard: larger target"},
-    {"input": "[2,3,5,7]\n7", "desc": "Standard: exact match available"},
-    {"input": "[11,13,17,19,23]\n40", "desc": "Standard: medium primes"},
-    {"input": "[37,38,39,40]\n40", "desc": "Edge: only one matches"}
+    {
+      "input": "[2,3,6,7]\n7",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[2,3,5]\n8",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[2]\n1",
+      "desc": "Edge: example3 impossible"
+    },
+    {
+      "input": "[40,38,37,35,33,31,30,28,27,25,24,19,18,17,16,15,14,13,9,6,2]\n8",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31]\n7",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "[2]\n6",
+      "desc": "Edge: single candidate target=3x"
+    },
+    {
+      "input": "[2,3]\n6",
+      "desc": "Standard: multiple paths"
+    },
+    {
+      "input": "[2,4,6,8]\n8",
+      "desc": "Standard: multiple ways"
+    },
+    {
+      "input": "[3,5,7]\n15",
+      "desc": "Standard: 3 candidates"
+    },
+    {
+      "input": "[2]\n40",
+      "desc": "Edge: max target single candidate"
+    },
+    {
+      "input": "[40]\n40",
+      "desc": "Edge: candidate=target=40"
+    },
+    {
+      "input": "[2,40]\n40",
+      "desc": "Standard: mix"
+    },
+    {
+      "input": "[2,3,4,5,6,7,8]\n10",
+      "desc": "Standard: 7 candidates target 10"
+    },
+    {
+      "input": "[5,10,15,20]\n30",
+      "desc": "Standard: multiples of 5"
+    },
+    {
+      "input": "[2,3,5,7,11]\n13",
+      "desc": "Standard: small primes"
+    },
+    {
+      "input": "[7,11,13]\n22",
+      "desc": "Standard: prime combinations"
+    },
+    {
+      "input": "[2,3,6,7]\n14",
+      "desc": "Standard: larger target"
+    },
+    {
+      "input": "[2,3,5,7]\n7",
+      "desc": "Standard: exact match available"
+    },
+    {
+      "input": "[11,13,17,19,23]\n40",
+      "desc": "Standard: medium primes"
+    },
+    {
+      "input": "[5,38,10,11,11,4,13,12,26,24,35,36,25,5,19,32,9,21,13,38,23,2,6,14,24,38,7,25,22,24]\n8",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
