@@ -1,0 +1,76 @@
+{
+  "pid": 3530,
+  "slug": "maximum-difference-by-remapping-a-digit",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "546812",
+      "desc": "Standard: n=546812"
+    },
+    {
+      "input": "998681",
+      "desc": "Standard: n=998681"
+    },
+    {
+      "input": "990296",
+      "desc": "Standard: n=990296"
+    },
+    {
+      "input": "10321",
+      "desc": "Standard: n=10321"
+    },
+    {
+      "input": "830246",
+      "desc": "Standard: n=830246"
+    },
+    {
+      "input": "63877",
+      "desc": "Standard: n=63877"
+    },
+    {
+      "input": "904049",
+      "desc": "Standard: n=904049"
+    },
+    {
+      "input": "689947",
+      "desc": "Standard: n=689947"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

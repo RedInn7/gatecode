@@ -24,6 +24,21 @@
       "pid": 3537,
       "slug": "max-stack",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3532,
+      "slug": "maximum-profitable-triplets-with-increasing-prices-ii",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3522,
+      "slug": "find-the-string-with-lcp",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3516,
+      "slug": "decode-the-message",
+      "reason": "ACM mode problem"
     }
   ]
 }
