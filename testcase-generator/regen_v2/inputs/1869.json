@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= coordinates.length <= 50000, 0 <= x,y <= 10^6, 0 <= k <= 100",
   "input_format": "line1: coordinates (JSON 2D int array)\nline2: k (int)",
   "testcases": [
-    {"input": "[[1,2],[4,2],[1,3],[5,2]]\n5", "desc": "Edge: example1"},
-    {"input": "[[1,3],[1,3],[1,3]]\n0", "desc": "Edge: example2 k=0 duplicates"},
-    {"input": "[[0,0],[0,0]]\n0", "desc": "Edge: 2 identical pts k=0"},
-    {"input": "[[0,0],[0,0]]\n1", "desc": "Edge: 2 identical pts k=1"},
-    {"input": "[[0,0],[1,1]]\n0", "desc": "Edge: different pts k=0"},
-    {"input": "[[0,0],[0,1]]\n1", "desc": "Edge: XOR distance=1"},
-    {"input": "[[1000000,1000000],[1000000,1000000]]\n0", "desc": "Edge: max coords identical k=0"},
-    {"input": "[[1000000,0],[0,1000000]]\n0", "desc": "Edge: extremes diagonal"},
-    {"input": "[[3,3],[5,5],[7,7],[9,9]]\n0", "desc": "Edge: all distinct k=0"},
-    {"input": "[[0,0],[0,1],[0,2],[0,3]]\n0", "desc": "Standard: collinear k=0"},
-    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]\n2", "desc": "Standard: small k=2"},
-    {"input": "[[5,5],[5,5],[5,5],[5,5],[5,5]]\n0", "desc": "Standard: 5 identical k=0 -> C(5,2)=10"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]\n1", "desc": "Standard: diagonal k=1"},
-    {"input": "[[0,0],[1,0],[2,0],[3,0],[0,1],[1,1],[2,1],[3,1]]\n3", "desc": "Standard: grid k=3"},
-    {"input": "[[7,3],[1,5],[9,2],[4,8],[6,1]]\n4", "desc": "Standard: random k=4"},
-    {"input": "[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]\n0", "desc": "Stress: 20 origins k=0"},
-    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[11,12],[13,14],[15,16],[17,18],[19,20],[21,22],[23,24],[25,26],[27,28],[29,30],[31,32],[33,34],[35,36],[37,38],[39,40],[41,42],[43,44],[45,46],[47,48],[49,50]]\n5", "desc": "Stress: 25 spaced k=5"},
-    {"input": "[[0,0],[0,1],[1,0],[1,1],[2,0],[2,1],[3,0],[3,1],[4,0],[4,1],[5,0],[5,1],[6,0],[6,1],[7,0],[7,1],[8,0],[8,1],[9,0],[9,1]]\n2", "desc": "Stress: 20 grid k=2"},
-    {"input": "[[1000000,1000000],[1000000,999999],[999999,1000000],[999999,999999]]\n1", "desc": "Special: extreme coords k=1"},
-    {"input": "[[3,5],[5,3],[3,5],[5,3]]\n0", "desc": "Special: two pairs same coords"}
+    {
+      "input": "[[1,2],[4,2],[1,3],[5,2]]\n5",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[1,3],[1,3],[1,3]]\n0",
+      "desc": "Edge: example2 k=0 duplicates"
+    },
+    {
+      "input": "[[0,0],[0,0]]\n0",
+      "desc": "Edge: 2 identical pts k=0"
+    },
+    {
+      "input": "[[0,0],[0,0]]\n1",
+      "desc": "Edge: 2 identical pts k=1"
+    },
+    {
+      "input": "[[0,0],[1,1]]\n0",
+      "desc": "Edge: different pts k=0"
+    },
+    {
+      "input": "[[0,0],[0,1]]\n1",
+      "desc": "Edge: XOR distance=1"
+    },
+    {
+      "input": "[[1000000,1000000],[1000000,1000000]]\n0",
+      "desc": "Edge: max coords identical k=0"
+    },
+    {
+      "input": "[[1000000,0],[0,1000000]]\n0",
+      "desc": "Edge: extremes diagonal"
+    },
+    {
+      "input": "[[3,3],[5,5],[7,7],[9,9]]\n0",
+      "desc": "Edge: all distinct k=0"
+    },
+    {
+      "input": "[[0,0],[0,1],[0,2],[0,3]]\n0",
+      "desc": "Standard: collinear k=0"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]\n2",
+      "desc": "Standard: small k=2"
+    },
+    {
+      "input": "[[5,5],[5,5],[5,5],[5,5],[5,5]]\n0",
+      "desc": "Standard: 5 identical k=0 -> C(5,2)=10"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]\n1",
+      "desc": "Standard: diagonal k=1"
+    },
+    {
+      "input": "[[0,0],[1,0],[2,0],[3,0],[0,1],[1,1],[2,1],[3,1]]\n3",
+      "desc": "Standard: grid k=3"
+    },
+    {
+      "input": "[[7,3],[1,5],[9,2],[4,8],[6,1]]\n4",
+      "desc": "Standard: random k=4"
+    },
+    {
+      "input": "[[482,358],[-647,82],[-717,191],[959,-31]]\n5",
+      "desc": "Regenerated: standard at position 15"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[11,12],[13,14],[15,16],[17,18],[19,20],[21,22],[23,24],[25,26],[27,28],[29,30],[31,32],[33,34],[35,36],[37,38],[39,40],[41,42],[43,44],[45,46],[47,48],[49,50]]\n5",
+      "desc": "Stress: 25 spaced k=5"
+    },
+    {
+      "input": "[[0,0],[0,1],[1,0],[1,1],[2,0],[2,1],[3,0],[3,1],[4,0],[4,1],[5,0],[5,1],[6,0],[6,1],[7,0],[7,1],[8,0],[8,1],[9,0],[9,1]]\n2",
+      "desc": "Stress: 20 grid k=2"
+    },
+    {
+      "input": "[[1000000,1000000],[1000000,999999],[999999,1000000],[999999,999999]]\n1",
+      "desc": "Special: extreme coords k=1"
+    },
+    {
+      "input": "[[3,5],[5,3],[3,5],[5,3]]\n0",
+      "desc": "Special: two pairs same coords"
+    }
   ]
 }
