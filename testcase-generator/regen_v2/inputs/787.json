@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"drbus\"",
+      "input": "\"xie\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: pair end pair"
     },
     {
-      "input": "\"wtxwxomrosoazlfppgbomhdxzquihcwicn\"",
+      "input": "\"pldygzitkatzmaqrulzuytqnuwczemfpfr\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

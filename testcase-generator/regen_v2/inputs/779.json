@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "[[-270,-816,107],[307,568,886]]",
+      "input": "[[-655,970,805],[-972,12,934]]",
       "desc": "Edge: all-equal elements"
     },
     {
