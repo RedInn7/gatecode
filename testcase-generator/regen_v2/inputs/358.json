@@ -1,0 +1,28 @@
+{
+  "pid": 358,
+  "slug": "excel-sheet-column-number",
+  "inferred_constraints": "1 <= columnTitle.length <= 7, uppercase letters, range [\"A\", \"FXSHRXW\"]",
+  "input_format": "line1: columnTitle (raw string uppercase)",
+  "testcases": [
+    {"input": "A", "desc": "Edge: example1"},
+    {"input": "AB", "desc": "Edge: example2"},
+    {"input": "ZY", "desc": "Edge: example3"},
+    {"input": "Z", "desc": "Edge: single max letter"},
+    {"input": "AA", "desc": "Edge: 2-char minimum"},
+    {"input": "AZ", "desc": "Edge: AZ"},
+    {"input": "BA", "desc": "Edge: BA"},
+    {"input": "ZZ", "desc": "Edge: max 2-char"},
+    {"input": "AAA", "desc": "Edge: 3-char min"},
+    {"input": "ZZZ", "desc": "Edge: max 3-char"},
+    {"input": "FXSHRXW", "desc": "Edge: max allowed value"},
+    {"input": "AAAAAAA", "desc": "Edge: 7 As"},
+    {"input": "B", "desc": "Edge: B=2"},
+    {"input": "AAAA", "desc": "Edge: 4 As"},
+    {"input": "ABCDEFG", "desc": "Standard: 7 distinct ascending letters"},
+    {"input": "GFEDCBA", "desc": "Standard: descending"},
+    {"input": "ZAZAZAZ", "desc": "Standard: alternating Z/A"},
+    {"input": "MNOPQRS", "desc": "Standard: middle letters"},
+    {"input": "AZAZAZA", "desc": "Standard: alternating A/Z"},
+    {"input": "FXSHRXV", "desc": "Edge: just below max"}
+  ]
+}

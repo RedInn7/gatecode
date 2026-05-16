@@ -1,0 +1,28 @@
+{
+  "pid": 361,
+  "slug": "merge-in-between-linked-lists",
+  "inferred_constraints": "3 <= list1.length <= 1e4, 1 <= a <= b < list1.length - 1, 1 <= list2.length <= 1e4",
+  "input_format": "line1: list1 (JSON int array); line2: a (int); line3: b (int); line4: list2 (JSON int array)",
+  "testcases": [
+    {"input": "[10,1,13,6,9,5]\n3\n4\n[1000000,1000001,1000002]", "desc": "Edge: example1"},
+    {"input": "[0,1,2,3,4,5,6]\n2\n5\n[1000000,1000001,1000002,1000003,1000004]", "desc": "Edge: example2"},
+    {"input": "[1,2,3,4,5]\n1\n3\n[100]", "desc": "Edge: small lists"},
+    {"input": "[1,2,3,4,5]\n1\n1\n[99,100]", "desc": "Edge: remove single node a==b"},
+    {"input": "[1,2,3,4,5]\n2\n2\n[99]", "desc": "Edge: single remove single insert"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3\n7\n[20,21,22]", "desc": "Standard: mid-range remove"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1\n8\n[100]", "desc": "Standard: remove most"},
+    {"input": "[0,1,2]\n1\n1\n[99,99,99]", "desc": "Edge: minimum list1 length 3"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n5\n5\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: insert 10-node into middle"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n5\n15\n[100,200,300]", "desc": "Standard: bigger list1"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n1\n8\n[100,200,300,400,500,600,700,800,900,1000]", "desc": "Standard: big list2"},
+    {"input": "[100,200,300,400,500,600,700,800,900,1000]\n3\n5\n[1,2,3]", "desc": "Standard: large values"},
+    {"input": "[1,2,3,4,5]\n1\n3\n[99,99,99,99,99,99,99,99,99,99]", "desc": "Standard: insert 10 nodes"},
+    {"input": "[5,10,15,20,25,30,35,40,45,50]\n2\n7\n[100,200,300,400,500]", "desc": "Standard: typical merge"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]\n4\n4\n[99]", "desc": "Standard: single remove single insert"},
+    {"input": "[0,1,2,3,4,5,6,7,8,9]\n1\n8\n[1]", "desc": "Standard: insert single small"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n3\n6\n[2,2,2]", "desc": "Standard: all 1s with 2s inserted"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]\n2\n7\n[0]", "desc": "Standard: descending list1"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n7\n13\n[100,200,300,400,500]", "desc": "Standard: large mid remove"},
+    {"input": "[100000,200000,300000,400000,500000,600000,700000]\n2\n4\n[999999]", "desc": "Edge: big values"}
+  ]
+}
