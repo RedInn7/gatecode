@@ -821,3 +821,8 @@ Audited at: 2026-05-16T15:37:45.037333
 Stuck after 3 regeneration attempts. Final issues:
 - Array length=1 < min=2 (constraint: 2 <= len <= 100.0)
 Audited at: 2026-05-16T15:37:45.041771
+
+## PID 319 (maximum-number-of-non-overlapping-subarrays-with-sum-equals-target)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:47.310111
