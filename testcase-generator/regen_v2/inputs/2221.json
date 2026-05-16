@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= words.length <= 100, 1 <= words[i].length <= 100, lowercase",
   "input_format": "single line: words (JSON array)",
   "testcases": [
-    {"input": "[\"bella\",\"label\",\"roller\"]", "desc": "Standard: example 1"},
-    {"input": "[\"cool\",\"lock\",\"cook\"]", "desc": "Standard: example 2"},
-    {"input": "[\"a\"]", "desc": "Edge: n=1"},
-    {"input": "[\"a\",\"a\"]", "desc": "Edge: 2 same"},
-    {"input": "[\"a\",\"b\"]", "desc": "Edge: no common"},
-    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Edge: all same"},
-    {"input": "[\"aabbcc\",\"abcabc\",\"abccba\"]", "desc": "Standard"},
-    {"input": "[\"hello\",\"world\"]", "desc": "Standard 2 words"},
-    {"input": "[\"banana\",\"anana\",\"nana\"]", "desc": "Standard"},
-    {"input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]", "desc": "Standard all a"},
-    {"input": "[\"abc\",\"def\",\"ghi\"]", "desc": "Standard distinct"},
-    {"input": "[\"aaaa\",\"aaaaa\",\"aaa\"]", "desc": "Standard"},
-    {"input": "[\"thequickbrownfox\",\"jumpsoverthelazydog\"]", "desc": "Standard"},
-    {"input": "[\"abcdefghij\",\"abcdefghij\",\"abcdefghij\"]", "desc": "Edge: identical"},
-    {"input": "[\"abc\",\"abcabc\",\"abcabcabc\"]", "desc": "Standard"},
-    {"input": "[\"aabbcc\",\"abc\",\"aabbcc\"]", "desc": "Standard"},
-    {"input": "[\"xyz\",\"zyx\",\"yzx\"]", "desc": "Standard anagrams"},
-    {"input": "[\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\"]", "desc": "Standard"},
-    {"input": "[\"hello\",\"yellow\",\"belly\",\"jelly\"]", "desc": "Standard"},
-    {"input": "[\"mississippi\",\"missing\",\"mister\",\"misery\"]", "desc": "Standard prefix"}
+    {
+      "input": "[\"bella\",\"label\",\"roller\"]",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "[\"cool\",\"lock\",\"cook\"]",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: n=1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "desc": "Edge: no common"
+    },
+    {
+      "input": "[\"abc\",\"abc\",\"abc\"]",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "[\"aabbcc\",\"abcabc\",\"abccba\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "desc": "Standard 2 words"
+    },
+    {
+      "input": "[\"banana\",\"anana\",\"nana\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "desc": "Standard all a"
+    },
+    {
+      "input": "[\"abc\",\"def\",\"ghi\"]",
+      "desc": "Standard distinct"
+    },
+    {
+      "input": "[\"aaaa\",\"aaaaa\",\"aaa\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"thequickbrownfox\",\"jumpsoverthelazydog\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"abcdefghij\",\"abcdefghij\",\"abcdefghij\"]",
+      "desc": "Edge: identical"
+    },
+    {
+      "input": "[\"abc\",\"abcabc\",\"abcabcabc\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"aabbcc\",\"abc\",\"aabbcc\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"xyz\",\"zyx\",\"yzx\"]",
+      "desc": "Standard anagrams"
+    },
+    {
+      "input": "[\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[\"hello\",\"yellow\",\"belly\",\"jelly\"]",
+      "desc": "Standard"
+    },
+    {
+      "input": "[-420,-187,-192,90,-445,-179,856,224,687,-453,394,-886,-98,-967,-753,-385,795,89,-593,-22,384,129,-577,780,392,-647,-880,839,-824,460,-317,236,-5,983,-449,741,-984,-105,657,468,-445,299,946,-893,-614,304,709,558,63,-784,-640,-844,985,356,-990,719,-528,197,927,427,-558,-461,120,592,-26,-242,-783,525,171,817,304,285,362,139,375,-488,-173,937,147,65,811,519,-66,-740,-237,798,427,-769,442,-202,673,222,874,-950,607,153,856,-349,-490,630]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

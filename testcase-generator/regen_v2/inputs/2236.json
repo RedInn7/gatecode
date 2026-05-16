@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 100, lowercase",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"onefourthree\"", "desc": "Standard: example 1"},
-    {"input": "\"ninexsix\"", "desc": "Standard: example 2"},
-    {"input": "\"one\"", "desc": "Edge: single word"},
-    {"input": "\"zero\"", "desc": "Edge: zero"},
-    {"input": "\"abc\"", "desc": "Edge: no match"},
-    {"input": "\"a\"", "desc": "Edge: single char"},
-    {"input": "\"twothreefourfive\"", "desc": "Standard"},
-    {"input": "\"oneonefourzero\"", "desc": "Standard"},
-    {"input": "\"twoxtwoxtwo\"", "desc": "Standard with skip"},
-    {"input": "\"sixsevenninetenttwo\"", "desc": "Standard"},
-    {"input": "\"eightnineten\"", "desc": "Edge: ten not valid"},
-    {"input": "\"zeroonetwothreefourfivesixseveneightnine\"", "desc": "Edge: all digits"},
-    {"input": "\"xxx\"", "desc": "Edge: no words"},
-    {"input": "\"xy\"", "desc": "Edge: 2 chars no match"},
-    {"input": "\"twentyone\"", "desc": "Edge: 'one' inside"},
-    {"input": "\"nineten\"", "desc": "Standard"},
-    {"input": "\"thirteen\"", "desc": "Edge: no match three"},
-    {"input": "\"sixteen\"", "desc": "Edge: 'six' present"},
-    {"input": "\"oneoneone\"", "desc": "Standard 3 ones"},
-    {"input": "\"hellozeroworldone\"", "desc": "Standard mixed"}
+    {
+      "input": "\"onefourthree\"",
+      "desc": "Standard: example 1"
+    },
+    {
+      "input": "\"ninexsix\"",
+      "desc": "Standard: example 2"
+    },
+    {
+      "input": "\"one\"",
+      "desc": "Edge: single word"
+    },
+    {
+      "input": "\"zero\"",
+      "desc": "Edge: zero"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: no match"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"twothreefourfive\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"oneonefourzero\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"twoxtwoxtwo\"",
+      "desc": "Standard with skip"
+    },
+    {
+      "input": "\"sixsevenninetenttwo\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"eightnineten\"",
+      "desc": "Edge: ten not valid"
+    },
+    {
+      "input": "\"zeroonetwothreefourfivesixseveneightnine\"",
+      "desc": "Edge: all digits"
+    },
+    {
+      "input": "\"xxx\"",
+      "desc": "Edge: no words"
+    },
+    {
+      "input": "\"xy\"",
+      "desc": "Edge: 2 chars no match"
+    },
+    {
+      "input": "\"twentyone\"",
+      "desc": "Edge: 'one' inside"
+    },
+    {
+      "input": "\"nineten\"",
+      "desc": "Standard"
+    },
+    {
+      "input": "\"thirteen\"",
+      "desc": "Edge: no match three"
+    },
+    {
+      "input": "\"sixteen\"",
+      "desc": "Edge: 'six' present"
+    },
+    {
+      "input": "\"oneoneone\"",
+      "desc": "Standard 3 ones"
+    },
+    {
+      "input": "\"bxafjphpkojzdyndlnqzpyvn\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
