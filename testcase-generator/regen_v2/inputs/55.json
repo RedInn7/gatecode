@@ -1,0 +1,28 @@
+{
+  "pid": 55,
+  "slug": "smallest-sufficient-team",
+  "inferred_constraints": "1 <= req_skills.length <= 16, 1 <= people.length <= 60, answer guaranteed exists",
+  "input_format": "line1: req_skills (JSON array); line2: people (JSON 2D array of strings)",
+  "testcases": [
+    {"input": "[\"java\",\"nodejs\",\"reactjs\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]", "desc": "Edge: example1"},
+    {"input": "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]", "desc": "Edge: example2"},
+    {"input": "[\"a\"]\n[[\"a\"]]", "desc": "Edge: 1 skill 1 person"},
+    {"input": "[\"a\",\"b\"]\n[[\"a\",\"b\"]]", "desc": "Edge: 2 skills 1 person"},
+    {"input": "[\"a\",\"b\"]\n[[\"a\"],[\"b\"]]", "desc": "Edge: 2 skills 2 people"},
+    {"input": "[\"a\"]\n[[],[\"a\"],[]]", "desc": "Edge: empty people"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[[\"a\",\"b\",\"c\",\"d\",\"e\"]]", "desc": "Edge: one person has all"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n[[\"a\"],[\"b\"],[\"c\"],[\"d\"],[\"e\"]]", "desc": "Standard: each person 1 skill"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[[\"a\",\"b\"],[\"b\",\"c\"],[\"a\",\"c\"]]", "desc": "Standard: pairwise overlap"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\"]\n[[\"a\",\"b\"],[\"c\",\"d\"],[\"a\",\"d\"],[\"b\",\"c\"]]", "desc": "Standard: 4 skills, 2 needed"},
+    {"input": "[\"java\",\"python\",\"go\",\"rust\"]\n[[\"java\"],[\"python\",\"java\"],[\"go\",\"rust\"],[\"java\",\"go\"]]", "desc": "Standard: small mix"},
+    {"input": "[\"x\"]\n[[\"x\"],[\"x\"],[\"x\"]]", "desc": "Edge: duplicates"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\"]\n[[\"a\",\"b\",\"c\",\"d\"],[\"e\",\"f\",\"g\",\"h\"]]", "desc": "Standard: 8 skills, 2 disjoint people"},
+    {"input": "[\"sk1\",\"sk2\",\"sk3\",\"sk4\",\"sk5\",\"sk6\",\"sk7\",\"sk8\",\"sk9\",\"sk10\"]\n[[\"sk1\",\"sk2\"],[\"sk3\",\"sk4\"],[\"sk5\",\"sk6\"],[\"sk7\",\"sk8\"],[\"sk9\",\"sk10\"]]", "desc": "Standard: 10 skills, 5 needed"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\"]\n[[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\"],[\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\"]]", "desc": "Edge: 16 skills 2 people"},
+    {"input": "[\"a\",\"b\",\"c\"]\n[[\"a\",\"b\",\"c\"],[\"a\"],[\"b\"],[\"c\"]]", "desc": "Standard: redundant single + complete"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\"]\n[[\"a\",\"b\",\"c\",\"d\"],[\"a\",\"b\"],[\"c\",\"d\"],[\"a\",\"c\"],[\"b\",\"d\"]]", "desc": "Standard: many overlapping options"},
+    {"input": "[\"reactjs\",\"java\"]\n[[\"reactjs\"],[\"java\"],[\"reactjs\",\"java\"]]", "desc": "Standard: prefer combined"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\"]\n[[\"a\"],[\"b\"],[\"c\"],[\"d\"],[\"e\"],[\"f\"],[\"a\",\"b\",\"c\"],[\"d\",\"e\",\"f\"]]", "desc": "Standard: singles + triples"},
+    {"input": "[\"javascript\",\"typescript\",\"python\",\"java\",\"go\",\"rust\",\"cpp\",\"ruby\",\"php\",\"swift\"]\n[[\"javascript\",\"typescript\"],[\"python\",\"java\"],[\"go\",\"rust\"],[\"cpp\",\"ruby\"],[\"php\",\"swift\"]]", "desc": "Stress: 10 skills 5 pairs"}
+  ]
+}

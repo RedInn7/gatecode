@@ -1,6 +1,8 @@
 {
   "agent": "A1",
   "skipped": [
-    {"pid": 53, "slug": "differences-between-two-objects", "reason": "JavaScript/TypeScript only — no C++/Python templates, cannot run in cross-lang judge pipeline"}
+    {"pid": 53, "slug": "differences-between-two-objects", "reason": "JavaScript/TypeScript only — no C++/Python templates, cannot run in cross-lang judge pipeline"},
+    {"pid": 71, "slug": "customer-purchasing-behavior-analysis", "reason": "SQL only — Python3 template is NULL, not a code judge problem"},
+    {"pid": 74, "slug": "serialize-and-deserialize-n-ary-tree", "reason": "Codec design class for N-ary tree — output identity makes verification ambiguous (multiple valid serializations); not suitable for standard judge"}
   ]
 }

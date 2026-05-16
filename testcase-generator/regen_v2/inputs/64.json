@@ -1,0 +1,28 @@
+{
+  "pid": 64,
+  "slug": "maximum-sum-circular-subarray",
+  "inferred_constraints": "1 <= n <= 3e4, -3e4 <= nums[i] <= 3e4",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,-2,3,-2]", "desc": "Edge: example1"},
+    {"input": "[5,-3,5]", "desc": "Edge: example2 wrap-around"},
+    {"input": "[-3,-2,-3]", "desc": "Edge: example3 all negative"},
+    {"input": "[1]", "desc": "Edge: n=1 positive"},
+    {"input": "[-1]", "desc": "Edge: n=1 negative"},
+    {"input": "[0]", "desc": "Edge: n=1 zero"},
+    {"input": "[30000]", "desc": "Edge: n=1 max"},
+    {"input": "[-30000]", "desc": "Edge: n=1 min"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same positive"},
+    {"input": "[-1,-1,-1,-1,-1]", "desc": "Edge: all same negative"},
+    {"input": "[1,-1,1,-1,1,-1]", "desc": "Standard: alternating"},
+    {"input": "[3,-1,2,-1]", "desc": "Standard: wrap optimal"},
+    {"input": "[30000,-30000,30000,-30000]", "desc": "Edge: extreme alternating"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: ascending positive"},
+    {"input": "[-1,-2,-3,-4,-5]", "desc": "Standard: descending negative"},
+    {"input": "[10,-3,-4,7,6,5,-4,-1]", "desc": "Standard: mixed"},
+    {"input": "[1,-2,3,-4,5,-6,7,-8,9,-10]", "desc": "Standard: alternating decreasing"},
+    {"input": "[5,5,-100,5,5]", "desc": "Standard: wrap around big gap"},
+    {"input": "[-2,4,-5,4,-5,9,4]", "desc": "Standard: complex pattern"},
+    {"input": "[30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000]", "desc": "Stress: 20 max values"}
+  ]
+}

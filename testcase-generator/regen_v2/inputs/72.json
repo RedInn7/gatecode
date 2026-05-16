@@ -1,0 +1,28 @@
+{
+  "pid": 72,
+  "slug": "display-table-of-food-orders-in-a-restaurant",
+  "inferred_constraints": "1 <= orders.length <= 5e4, names and foods 1-20 chars, table number 1-500",
+  "input_format": "single line: orders (JSON 2D array of [customer, table, food])",
+  "testcases": [
+    {"input": "[[\"David\",\"3\",\"Ceviche\"],[\"Corina\",\"10\",\"Beef Burrito\"],[\"David\",\"3\",\"Fried Chicken\"],[\"Carla\",\"5\",\"Water\"],[\"Carla\",\"5\",\"Ceviche\"],[\"Rous\",\"3\",\"Ceviche\"]]", "desc": "Edge: example1"},
+    {"input": "[[\"James\",\"12\",\"Fried Chicken\"],[\"Ratesh\",\"12\",\"Fried Chicken\"],[\"Amadeus\",\"12\",\"Fried Chicken\"],[\"Adam\",\"1\",\"Canadian Waffles\"],[\"Brianna\",\"1\",\"Canadian Waffles\"]]", "desc": "Edge: example2"},
+    {"input": "[[\"Laura\",\"2\",\"Bean Burrito\"],[\"Jhon\",\"2\",\"Beef Burrito\"],[\"Melissa\",\"2\",\"Soda\"]]", "desc": "Edge: example3"},
+    {"input": "[[\"A\",\"1\",\"X\"]]", "desc": "Edge: single order"},
+    {"input": "[[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"]]", "desc": "Edge: same order twice"},
+    {"input": "[[\"A\",\"500\",\"Z\"]]", "desc": "Edge: max table number"},
+    {"input": "[[\"A\",\"1\",\"X\"],[\"B\",\"500\",\"Y\"]]", "desc": "Edge: extreme tables"},
+    {"input": "[[\"A\",\"1\",\"Apple\"],[\"A\",\"2\",\"Apple\"],[\"A\",\"3\",\"Apple\"]]", "desc": "Standard: 3 tables 1 food"},
+    {"input": "[[\"A\",\"1\",\"Apple\"],[\"A\",\"1\",\"Banana\"],[\"A\",\"1\",\"Cherry\"]]", "desc": "Standard: 3 foods 1 table"},
+    {"input": "[[\"A\",\"1\",\"Pizza\"],[\"B\",\"2\",\"Pizza\"],[\"C\",\"3\",\"Pizza\"],[\"D\",\"4\",\"Pizza\"],[\"E\",\"5\",\"Pizza\"]]", "desc": "Standard: 5 tables 1 food"},
+    {"input": "[[\"X\",\"100\",\"Salad\"],[\"X\",\"200\",\"Salad\"],[\"X\",\"50\",\"Salad\"]]", "desc": "Standard: sort by table number"},
+    {"input": "[[\"X\",\"1\",\"Zebra\"],[\"Y\",\"1\",\"Apple\"],[\"Z\",\"1\",\"Mango\"]]", "desc": "Standard: alpha sort foods"},
+    {"input": "[[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"],[\"A\",\"1\",\"X\"]]", "desc": "Standard: 10 same"},
+    {"input": "[[\"Alice\",\"5\",\"Soup\"],[\"Bob\",\"5\",\"Salad\"],[\"Charlie\",\"3\",\"Soup\"],[\"Dave\",\"3\",\"Steak\"],[\"Eve\",\"1\",\"Salad\"],[\"Frank\",\"1\",\"Steak\"]]", "desc": "Standard: 3 tables 3 foods"},
+    {"input": "[[\"X\",\"7\",\"D\"],[\"Y\",\"7\",\"A\"],[\"Z\",\"7\",\"C\"],[\"W\",\"7\",\"B\"]]", "desc": "Standard: same table, sort foods"},
+    {"input": "[[\"A\",\"1\",\"Item One\"],[\"B\",\"2\",\"Item Two\"],[\"C\",\"3\",\"Item Three\"],[\"D\",\"4\",\"Item Four\"]]", "desc": "Standard: spaced names"},
+    {"input": "[[\"Alice\",\"1\",\"Pasta\"],[\"Bob\",\"1\",\"Pasta\"],[\"Charlie\",\"2\",\"Pasta\"],[\"Dave\",\"2\",\"Pasta\"],[\"Eve\",\"3\",\"Pasta\"],[\"Frank\",\"3\",\"Pasta\"]]", "desc": "Standard: 3 tables paired"},
+    {"input": "[[\"X\",\"500\",\"A\"],[\"X\",\"1\",\"B\"],[\"X\",\"250\",\"C\"],[\"X\",\"100\",\"D\"]]", "desc": "Standard: out-of-order tables"},
+    {"input": "[[\"A\",\"1\",\"Apple\"],[\"B\",\"2\",\"Apple\"],[\"C\",\"3\",\"Apple\"],[\"D\",\"4\",\"Apple\"],[\"E\",\"5\",\"Apple\"],[\"F\",\"6\",\"Apple\"],[\"G\",\"7\",\"Apple\"],[\"H\",\"8\",\"Apple\"],[\"I\",\"9\",\"Apple\"],[\"J\",\"10\",\"Apple\"]]", "desc": "Standard: 10 tables 1 food"},
+    {"input": "[[\"A\",\"1\",\"a\"],[\"B\",\"1\",\"b\"],[\"C\",\"1\",\"c\"],[\"D\",\"1\",\"d\"],[\"E\",\"1\",\"e\"],[\"F\",\"1\",\"f\"],[\"G\",\"1\",\"g\"],[\"H\",\"1\",\"h\"],[\"I\",\"1\",\"i\"],[\"J\",\"1\",\"j\"]]", "desc": "Stress: 10 different foods one table"}
+  ]
+}

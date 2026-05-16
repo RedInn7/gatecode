@@ -1,0 +1,28 @@
+{
+  "pid": 58,
+  "slug": "boundary-of-binary-tree",
+  "inferred_constraints": "1 <= nodes <= 1e4, -1000 <= val <= 1000",
+  "input_format": "single line: root (JSON array, LeetCode level-order with null)",
+  "testcases": [
+    {"input": "[1,null,2,3,4]", "desc": "Edge: example1"},
+    {"input": "[1,2,3,4,5,6,null,null,null,7,8,9,10]", "desc": "Edge: example2"},
+    {"input": "[1]", "desc": "Edge: single root"},
+    {"input": "[1,2]", "desc": "Edge: root + left child"},
+    {"input": "[1,null,2]", "desc": "Edge: root + right child"},
+    {"input": "[1,2,3]", "desc": "Edge: root + both children"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: complete 3-level tree"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "desc": "Standard: complete 4-level"},
+    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Edge: left-skewed"},
+    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Edge: right-skewed"},
+    {"input": "[1,2,3,null,null,4,5]", "desc": "Standard: missing left leaves"},
+    {"input": "[1,2,3,4,null,null,5]", "desc": "Standard: missing middle nodes"},
+    {"input": "[0,-1,-2,-3,-4,-5,-6]", "desc": "Standard: negative values"},
+    {"input": "[1000,-1000,1000,-1000,1000,-1000,1000]", "desc": "Standard: extreme values"},
+    {"input": "[5,4,8,11,null,17,4,7,2,null,null,5,1]", "desc": "Standard: complex tree"},
+    {"input": "[1,2,3,4,5,null,7,8,9,null,11,null,13,null,15]", "desc": "Standard: irregular"},
+    {"input": "[1,2,3,4,null,null,5,6,null,null,7]", "desc": "Standard: outer path"},
+    {"input": "[10,5,15,3,7,12,17,1,4,6,8,11,13,16,18]", "desc": "Standard: BST-like complete"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]", "desc": "Stress: complete 5-level"},
+    {"input": "[1,2,3,4,null,null,5,null,6,null,7,null,8,null,9]", "desc": "Stress: zig-zag"}
+  ]
+}
