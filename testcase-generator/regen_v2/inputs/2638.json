@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= s.length <= 100, s consists of lowercase letters and digits 2-9, s starts with a letter, 1 <= k <= 10^9, k is at most the decoded length",
   "input_format": "line1: s; line2: k (int)",
   "testcases": [
-    {"input": "leet2code3\n10", "desc": "Edge: example1"},
-    {"input": "ha22\n5", "desc": "Edge: example2"},
-    {"input": "a2345678999999999999999\n1", "desc": "Edge: example3 k=1"},
-    {"input": "ab\n1", "desc": "Edge: simple a"},
-    {"input": "ab\n2", "desc": "Edge: simple b"},
-    {"input": "a\n1", "desc": "Edge: single char"},
-    {"input": "ab2\n3", "desc": "Edge: repeated"},
-    {"input": "ab2\n4", "desc": "Edge: end of repeat"},
-    {"input": "abc\n2", "desc": "Edge: 3 chars"},
-    {"input": "abc3\n9", "desc": "Standard: 9 chars"},
-    {"input": "leetcode\n5", "desc": "Standard: no digit"},
-    {"input": "leetcode\n8", "desc": "Standard: last char"},
-    {"input": "y959q969u3hb22odq595\n222280369", "desc": "Standard: complex"},
-    {"input": "vk6u5xhq9v\n554", "desc": "Standard: random"},
-    {"input": "a2b3c4d5e6f7g8h9\n100", "desc": "Standard: many multipliers"},
-    {"input": "ab2c3d4\n10", "desc": "Standard: nested"},
-    {"input": "ab9\n18", "desc": "Standard: large repeat"},
-    {"input": "abc9d9e9\n729", "desc": "Standard: deep nesting"},
-    {"input": "a9b9c9d9e9f9g9h9i9j9\n1000000000", "desc": "Stress: max k"},
-    {"input": "abcdefghij2345678999\n999999999", "desc": "Killer: max k"}
+    {
+      "input": "leet2code3\n10",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "ha22\n5",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "a2345678999999999999999\n1",
+      "desc": "Edge: example3 k=1"
+    },
+    {
+      "input": "ab\n1",
+      "desc": "Edge: simple a"
+    },
+    {
+      "input": "ab\n2",
+      "desc": "Edge: simple b"
+    },
+    {
+      "input": "a\n1",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "ab2\n3",
+      "desc": "Edge: repeated"
+    },
+    {
+      "input": "ab2\n4",
+      "desc": "Edge: end of repeat"
+    },
+    {
+      "input": "abc\n2",
+      "desc": "Edge: 3 chars"
+    },
+    {
+      "input": "abc3\n9",
+      "desc": "Standard: 9 chars"
+    },
+    {
+      "input": "leetcode\n5",
+      "desc": "Standard: no digit"
+    },
+    {
+      "input": "leetcode\n8",
+      "desc": "Standard: last char"
+    },
+    {
+      "input": "y959q969u3hb22odq595\n222280369",
+      "desc": "Standard: complex"
+    },
+    {
+      "input": "vk6u5xhq9v\n554",
+      "desc": "Standard: random"
+    },
+    {
+      "input": "a2b3c4d5e6f7g8h9\n100",
+      "desc": "Standard: many multipliers"
+    },
+    {
+      "input": "ab2c3d4\n10",
+      "desc": "Standard: nested"
+    },
+    {
+      "input": "ab9\n18",
+      "desc": "Standard: large repeat"
+    },
+    {
+      "input": "abc9d9e9\n729",
+      "desc": "Standard: deep nesting"
+    },
+    {
+      "input": "a9b9c9d9e9f9g9h9i9j9\n1000000000",
+      "desc": "Stress: max k"
+    },
+    {
+      "input": "abcdefghij2345678999\n999999999",
+      "desc": "Killer: max k"
+    }
   ]
 }

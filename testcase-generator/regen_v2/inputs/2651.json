@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= cpdomains.length <= 100, 1 <= cpdomains[i].length <= 100, format 'count domain'",
   "input_format": "single line: cpdomains (JSON array of strings)",
   "testcases": [
-    {"input": "[\"9001 discuss.leetcode.com\"]", "desc": "Edge: example1"},
-    {"input": "[\"900 google.mail.com\",\"50 yahoo.com\",\"1 intel.mail.com\",\"5 wiki.org\"]", "desc": "Edge: example2"},
-    {"input": "[\"1 a.b\"]", "desc": "Edge: minimal"},
-    {"input": "[\"1 a.b.c\"]", "desc": "Edge: 3 levels"},
-    {"input": "[\"1 a\"]", "desc": "Edge: single domain"},
-    {"input": "[\"100 com\"]", "desc": "Edge: just TLD"},
-    {"input": "[\"5 a.b\",\"3 a.b\"]", "desc": "Edge: dup domain"},
-    {"input": "[\"5 a.b\",\"3 c.b\"]", "desc": "Edge: share TLD"},
-    {"input": "[\"10 mail.google.com\",\"20 mail.google.com\"]", "desc": "Edge: same full"},
-    {"input": "[\"1 a.b\",\"2 c.b\",\"3 d.b\",\"4 e.b\"]", "desc": "Standard: shared TLD"},
-    {"input": "[\"100 mail.com\",\"200 inbox.com\",\"300 search.com\"]", "desc": "Standard: 3 com"},
-    {"input": "[\"1 a.b.c\",\"2 d.e.f\",\"3 g.h.i\"]", "desc": "Standard: 3 distinct"},
-    {"input": "[\"1 a.b.c.d.e\"]", "desc": "Standard: deep nesting wait max 3 levels per LeetCode but ok"},
-    {"input": "[\"500 cdn.example.com\",\"100 example.com\",\"50 www.example.com\"]", "desc": "Standard: same root"},
-    {"input": "[\"1 a.com\",\"2 b.com\",\"3 c.com\",\"4 d.com\",\"5 e.com\"]", "desc": "Standard: 5 com"},
-    {"input": "[\"10 a.org\",\"20 b.org\",\"30 c.org\",\"40 d.net\",\"50 e.net\"]", "desc": "Standard: 2 TLDs"},
-    {"input": "[\"1 sub1.example.com\",\"2 sub2.example.com\",\"3 sub3.example.com\"]", "desc": "Standard: sub-domains"},
-    {"input": "[\"1000 a.b\",\"2000 a.b\",\"3000 a.b\"]", "desc": "Standard: large counts"},
-    {"input": "[\"1 a.b.c\",\"2 a.b.c\",\"3 a.b.c\",\"4 a.b.c\",\"5 a.b.c\",\"6 a.b.c\",\"7 a.b.c\",\"8 a.b.c\",\"9 a.b.c\",\"10 a.b.c\",\"11 a.b.c\",\"12 a.b.c\",\"13 a.b.c\",\"14 a.b.c\",\"15 a.b.c\",\"16 a.b.c\",\"17 a.b.c\",\"18 a.b.c\",\"19 a.b.c\",\"20 a.b.c\"]", "desc": "Stress: dup same"},
-    {"input": "[\"100 alpha.beta.com\",\"200 gamma.delta.com\",\"300 epsilon.zeta.com\",\"400 eta.theta.com\",\"500 iota.kappa.com\"]", "desc": "Killer: 5 unique"}
+    {
+      "input": "[\"9001 discuss.leetcode.com\"]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[\"900 google.mail.com\",\"50 yahoo.com\",\"1 intel.mail.com\",\"5 wiki.org\"]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[\"1 a.b\"]",
+      "desc": "Edge: minimal"
+    },
+    {
+      "input": "[\"1 a.b.c\"]",
+      "desc": "Edge: 3 levels"
+    },
+    {
+      "input": "[\"1 a\"]",
+      "desc": "Edge: single domain"
+    },
+    {
+      "input": "[\"100 com\"]",
+      "desc": "Edge: just TLD"
+    },
+    {
+      "input": "[\"5 a.b\",\"3 a.b\"]",
+      "desc": "Edge: dup domain"
+    },
+    {
+      "input": "[\"5 a.b\",\"3 c.b\"]",
+      "desc": "Edge: share TLD"
+    },
+    {
+      "input": "[\"10 mail.google.com\",\"20 mail.google.com\"]",
+      "desc": "Edge: same full"
+    },
+    {
+      "input": "[\"1 a.b\",\"2 c.b\",\"3 d.b\",\"4 e.b\"]",
+      "desc": "Standard: shared TLD"
+    },
+    {
+      "input": "[\"100 mail.com\",\"200 inbox.com\",\"300 search.com\"]",
+      "desc": "Standard: 3 com"
+    },
+    {
+      "input": "[\"1 a.b.c\",\"2 d.e.f\",\"3 g.h.i\"]",
+      "desc": "Standard: 3 distinct"
+    },
+    {
+      "input": "[\"1 a.b.c.d.e\"]",
+      "desc": "Standard: deep nesting wait max 3 levels per LeetCode but ok"
+    },
+    {
+      "input": "[\"500 cdn.example.com\",\"100 example.com\",\"50 www.example.com\"]",
+      "desc": "Standard: same root"
+    },
+    {
+      "input": "[\"1 a.com\",\"2 b.com\",\"3 c.com\",\"4 d.com\",\"5 e.com\"]",
+      "desc": "Standard: 5 com"
+    },
+    {
+      "input": "[\"10 a.org\",\"20 b.org\",\"30 c.org\",\"40 d.net\",\"50 e.net\"]",
+      "desc": "Standard: 2 TLDs"
+    },
+    {
+      "input": "[\"1 sub1.example.com\",\"2 sub2.example.com\",\"3 sub3.example.com\"]",
+      "desc": "Standard: sub-domains"
+    },
+    {
+      "input": "[\"1000 a.b\",\"2000 a.b\",\"3000 a.b\"]",
+      "desc": "Standard: large counts"
+    },
+    {
+      "input": "[\"1 a.b.c\",\"2 a.b.c\",\"3 a.b.c\",\"4 a.b.c\",\"5 a.b.c\",\"6 a.b.c\",\"7 a.b.c\",\"8 a.b.c\",\"9 a.b.c\",\"10 a.b.c\",\"11 a.b.c\",\"12 a.b.c\",\"13 a.b.c\",\"14 a.b.c\",\"15 a.b.c\",\"16 a.b.c\",\"17 a.b.c\",\"18 a.b.c\",\"19 a.b.c\",\"20 a.b.c\"]",
+      "desc": "Stress: dup same"
+    },
+    {
+      "input": "[-184,657,-840,-147,-843,-877,753,-389,-920,742,211,583,587,926,-289,53,-343,-699,-188,-192,-327,-106,-873,-64,910,765,-859,777,-822,-672,-217,-199,163,251,-782,620,-355,42,502,501,-687,830,-361,-576,-707,73,-955,-637,71,-295,-956,606,-578,-902,-708,368,-705,112,-11,-693,800,-945,-161,660,-313,-339,8,-28,817,-739,670,-7,-644,720,561,-587,237,469,-318,829,404,-521,-463,298,177,490,-830,542,286,159,-22,-190,677,753,-193,1000,-135,136,310,130]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
