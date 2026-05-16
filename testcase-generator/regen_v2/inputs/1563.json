@@ -1,0 +1,88 @@
+{
+  "pid": 1563,
+  "slug": "armstrong-number",
+  "inferred_constraints": "Parsed from signature: isArmstrong",
+  "input_format": "line1: n (int)",
+  "testcases": [
+    {
+      "input": "-100",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "-1",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "-100",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "-1",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "-1",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "-320",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-982",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-161",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "741",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "14",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "185",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "667",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-545",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-113",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "754",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-599",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "-154",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "526",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "298",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

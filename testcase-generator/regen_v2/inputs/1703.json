@@ -1,0 +1,88 @@
+{
+  "pid": 1703,
+  "slug": "reverse-integer",
+  "inferred_constraints": "Parsed from signature: reverse",
+  "input_format": "line1: x (int)",
+  "testcases": [
+    {
+      "input": "-2147483648",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "522",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-594",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-526",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-975",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "-292",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "-512",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "766",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "659",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "596",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "-472",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "-920",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "-396",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "884",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "53",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "-893",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "pid": 1578,
+  "slug": "pascals-triangle-ii",
+  "inferred_constraints": "Parsed from signature: getRow",
+  "input_format": "line1: rowIndex (int)",
+  "testcases": [
+    {
+      "input": "-2147483648",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "-1",
+      "desc": "Edge: case 2"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Edge: case 3"
+    },
+    {
+      "input": "-2147483648",
+      "desc": "Edge: case 4"
+    },
+    {
+      "input": "2147483647",
+      "desc": "Edge: case 5"
+    },
+    {
+      "input": "-37",
+      "desc": "Standard: case 1"
+    },
+    {
+      "input": "-103",
+      "desc": "Standard: case 2"
+    },
+    {
+      "input": "-299",
+      "desc": "Standard: case 3"
+    },
+    {
+      "input": "-278",
+      "desc": "Standard: case 4"
+    },
+    {
+      "input": "-859",
+      "desc": "Standard: case 5"
+    },
+    {
+      "input": "735",
+      "desc": "Standard: case 6"
+    },
+    {
+      "input": "-284",
+      "desc": "Standard: case 7"
+    },
+    {
+      "input": "-285",
+      "desc": "Standard: case 8"
+    },
+    {
+      "input": "-888",
+      "desc": "Standard: case 9"
+    },
+    {
+      "input": "761",
+      "desc": "Standard: case 10"
+    },
+    {
+      "input": "-383",
+      "desc": "Standard: case 11"
+    },
+    {
+      "input": "787",
+      "desc": "Standard: case 12"
+    },
+    {
+      "input": "929",
+      "desc": "Stress: large case 1"
+    },
+    {
+      "input": "661",
+      "desc": "Stress: large case 2"
+    },
+    {
+      "input": "599",
+      "desc": "Stress: large case 3"
+    }
+  ]
+}
