@@ -1,0 +1,76 @@
+{
+  "pid": 3622,
+  "slug": "find-words-containing-character",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "308721",
+      "desc": "Standard: n=308721"
+    },
+    {
+      "input": "99418",
+      "desc": "Standard: n=99418"
+    },
+    {
+      "input": "165519",
+      "desc": "Standard: n=165519"
+    },
+    {
+      "input": "116405",
+      "desc": "Standard: n=116405"
+    },
+    {
+      "input": "579041",
+      "desc": "Standard: n=579041"
+    },
+    {
+      "input": "498888",
+      "desc": "Standard: n=498888"
+    },
+    {
+      "input": "659639",
+      "desc": "Standard: n=659639"
+    },
+    {
+      "input": "830896",
+      "desc": "Standard: n=830896"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

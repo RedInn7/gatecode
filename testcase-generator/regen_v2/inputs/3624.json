@@ -1,0 +1,80 @@
+{
+  "pid": 3624,
+  "slug": "count-prime-gap-balanced-subarrays",
+  "inferred_constraints": "1 <= n <= 5, 1 <= nums[i] <= 5",
+  "input_format": "line1: nums array (space-separated or JSON); line2: k",
+  "testcases": [
+    {
+      "input": "[]\n1",
+      "desc": "Edge: empty array"
+    },
+    {
+      "input": "[3]\n1",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[5,2]\n2",
+      "desc": "Edge: two elements"
+    },
+    {
+      "input": "[3,3,3,3,3]\n4",
+      "desc": "Edge: all same elements"
+    },
+    {
+      "input": "[1,3,3,3,4,4,5,5]\n3",
+      "desc": "Edge: sorted ascending"
+    },
+    {
+      "input": "[5,5,3,3,3,3,2,2]\n2",
+      "desc": "Edge: sorted descending"
+    },
+    {
+      "input": "[4,1,5,3,4]\n5",
+      "desc": "Standard: random n=5"
+    },
+    {
+      "input": "[1,4,5,1,5]\n3",
+      "desc": "Standard: random n=5"
+    },
+    {
+      "input": "[5,4,2,3,2]\n4",
+      "desc": "Standard: random n=5"
+    },
+    {
+      "input": "[3,5,2,5,2]\n1",
+      "desc": "Standard: random n=5"
+    },
+    {
+      "input": "[5,1,5,1,1]\n4",
+      "desc": "Standard: random n=5"
+    },
+    {
+      "input": "[3,2,3,3,3]\n4",
+      "desc": "Standard: random n=5"
+    },
+    {
+      "input": "[3,5,4,4,1]\n1",
+      "desc": "Standard: random n=5"
+    },
+    {
+      "input": "[3,5,4,3,3]\n1",
+      "desc": "Stress: n=5"
+    },
+    {
+      "input": "[3,2,4,2,2]\n1",
+      "desc": "Stress: large random"
+    },
+    {
+      "input": "[5,3,3,4,4]\n1",
+      "desc": "Stress: max size"
+    },
+    {
+      "input": "[1,5,1,5,1]\n2",
+      "desc": "Killer: boundary values min/max"
+    },
+    {
+      "input": "[3,2,3,4,3]\n2",
+      "desc": "Killer: near-max stress"
+    }
+  ]
+}
