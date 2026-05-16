@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length == t.length <= 1e5, digits 0-9",
   "input_format": "line1: s (raw string); line2: t (raw string)",
   "testcases": [
-    {"input": "84532\n34852", "desc": "Edge: example1"},
-    {"input": "34521\n23415", "desc": "Edge: example2"},
-    {"input": "12345\n12345", "desc": "Edge: equal"},
-    {"input": "12345\n54321", "desc": "Edge: reversed"},
-    {"input": "1\n1", "desc": "Edge: single"},
-    {"input": "12\n21", "desc": "Edge: swap"},
-    {"input": "12\n12", "desc": "Edge: ordered"},
-    {"input": "21\n12", "desc": "Edge: descend to ascending"},
-    {"input": "00000\n00000", "desc": "Edge: all zeros"},
-    {"input": "99999\n99999", "desc": "Edge: all nines"},
-    {"input": "01234\n43210", "desc": "Edge: reverse impossible"},
-    {"input": "43210\n01234", "desc": "Edge: can sort to ascending"},
-    {"input": "12121\n11122", "desc": "Standard: rearrange"},
-    {"input": "11111111111111111111\n11111111111111111111", "desc": "Edge: 20 same"},
-    {"input": "98765\n56789", "desc": "Edge: descending to ascending"},
-    {"input": "13579\n13579", "desc": "Edge: same"},
-    {"input": "12300\n00123", "desc": "Edge: move zeros to front"},
-    {"input": "98765432109876543210\n01234567899876543210", "desc": "Standard: long"},
-    {"input": "55555\n55555", "desc": "Edge: all same"},
-    {"input": "12345678901234567890\n01234567899876543210", "desc": "Standard: long mixed"}
+    {
+      "input": "84532\n34852",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "34521\n23415",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "24116\n45905",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "81072\n22669",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "1\n1",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "12\n21",
+      "desc": "Edge: swap"
+    },
+    {
+      "input": "12\n12",
+      "desc": "Edge: ordered"
+    },
+    {
+      "input": "21\n12",
+      "desc": "Edge: descend to ascending"
+    },
+    {
+      "input": "00000\n00000",
+      "desc": "Edge: all zeros"
+    },
+    {
+      "input": "99999\n99999",
+      "desc": "Edge: all nines"
+    },
+    {
+      "input": "01234\n43210",
+      "desc": "Edge: reverse impossible"
+    },
+    {
+      "input": "43210\n01234",
+      "desc": "Edge: can sort to ascending"
+    },
+    {
+      "input": "12121\n11122",
+      "desc": "Standard: rearrange"
+    },
+    {
+      "input": "11111111111111111111\n11111111111111111111",
+      "desc": "Edge: 20 same"
+    },
+    {
+      "input": "98765\n56789",
+      "desc": "Edge: descending to ascending"
+    },
+    {
+      "input": "13579\n13579",
+      "desc": "Edge: same"
+    },
+    {
+      "input": "12300\n00123",
+      "desc": "Edge: move zeros to front"
+    },
+    {
+      "input": "98765432109876543210\n01234567899876543210",
+      "desc": "Standard: long"
+    },
+    {
+      "input": "55555\n55555",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "84532\n54321",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= expression.length <= 20, digits and +-*",
   "input_format": "line1: expression (raw string)",
   "testcases": [
-    {"input": "2-1-1", "desc": "Edge: example1"},
-    {"input": "2*3-4*5", "desc": "Edge: example2"},
-    {"input": "1", "desc": "Edge: single digit"},
-    {"input": "9", "desc": "Edge: single digit max"},
-    {"input": "10", "desc": "Edge: two digit num"},
-    {"input": "1+1", "desc": "Edge: simple add"},
-    {"input": "1-1", "desc": "Edge: simple subtract"},
-    {"input": "1*1", "desc": "Edge: simple multiply"},
-    {"input": "1+2+3", "desc": "Standard: 3 add"},
-    {"input": "1-2-3", "desc": "Standard: 3 subtract"},
-    {"input": "1*2*3", "desc": "Standard: 3 multiply"},
-    {"input": "1+2*3", "desc": "Standard: mixed"},
-    {"input": "1*2+3", "desc": "Standard: mixed reverse"},
-    {"input": "1-2*3", "desc": "Standard: mixed sub mul"},
-    {"input": "2*3+4*5", "desc": "Standard: 2 multiplications"},
-    {"input": "10-20-30", "desc": "Standard: 2-digit numbers"},
-    {"input": "11*22*33", "desc": "Standard: 2-digit multiply"},
-    {"input": "1+2-3*4+5", "desc": "Standard: longer"},
-    {"input": "2*3*4*5", "desc": "Standard: 4 multiply"},
-    {"input": "9-8-7-6-5", "desc": "Standard: 5 subtractions"}
+    {
+      "input": "2-1-1",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "2*3-4*5",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "7",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "1+1",
+      "desc": "Edge: simple add"
+    },
+    {
+      "input": "1-1",
+      "desc": "Edge: simple subtract"
+    },
+    {
+      "input": "1*1",
+      "desc": "Edge: simple multiply"
+    },
+    {
+      "input": "1+2+3",
+      "desc": "Standard: 3 add"
+    },
+    {
+      "input": "1-2-3",
+      "desc": "Standard: 3 subtract"
+    },
+    {
+      "input": "1*2*3",
+      "desc": "Standard: 3 multiply"
+    },
+    {
+      "input": "1+2*3",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "1*2+3",
+      "desc": "Standard: mixed reverse"
+    },
+    {
+      "input": "1-2*3",
+      "desc": "Standard: mixed sub mul"
+    },
+    {
+      "input": "2*3+4*5",
+      "desc": "Standard: 2 multiplications"
+    },
+    {
+      "input": "10-20-30",
+      "desc": "Standard: 2-digit numbers"
+    },
+    {
+      "input": "11*22*33",
+      "desc": "Standard: 2-digit multiply"
+    },
+    {
+      "input": "1+2-3*4+5",
+      "desc": "Standard: longer"
+    },
+    {
+      "input": "2*3*4*5",
+      "desc": "Standard: 4 multiply"
+    },
+    {
+      "input": "10",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
