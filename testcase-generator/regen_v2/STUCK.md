@@ -884,3 +884,20 @@ Audited at: 2026-05-16T15:38:03.003924
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:38:03.004204
+
+## PID 341 (string-to-integer-atoi)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=200.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:05.023688
+
+## PID 343 (find-permutation)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:05.054448
+
+## PID 344 (minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=30000.0)
+Audited at: 2026-05-16T15:38:05.057329
