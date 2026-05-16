@@ -5,8 +5,8 @@
   "input_format": "line1: str1 (raw); line2: str2 (raw)",
   "testcases": [
     {
-      "input": "aabcc\nccdee",
-      "desc": "Edge: example1 true"
+      "input": "\"p\"\n\"n\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "leetcode\ncodeleet",
