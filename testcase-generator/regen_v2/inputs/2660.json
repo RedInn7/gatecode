@@ -1,0 +1,28 @@
+{
+  "pid": 2660,
+  "slug": "longest-word-with-all-prefixes",
+  "inferred_constraints": "1 <= words.length <= 10^5, 1 <= words[i].length <= 10^5, sum of words.length <= 10^5, lowercase letters",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"k\",\"ki\",\"kir\",\"kira\",\"kiran\"]", "desc": "Edge: example1"},
+    {"input": "[\"a\",\"banana\",\"app\",\"appl\",\"ap\",\"apply\",\"apple\"]", "desc": "Edge: example2"},
+    {"input": "[\"abc\",\"bc\",\"ab\",\"qwe\"]", "desc": "Edge: example3 empty"},
+    {"input": "[\"a\"]", "desc": "Edge: single char"},
+    {"input": "[\"ab\"]", "desc": "Edge: 2 chars no prefix"},
+    {"input": "[\"a\",\"ab\"]", "desc": "Edge: simple chain"},
+    {"input": "[\"ab\",\"a\"]", "desc": "Edge: reverse order"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 single"},
+    {"input": "[\"a\",\"a\"]", "desc": "Edge: duplicate"},
+    {"input": "[\"a\",\"ab\",\"abc\"]", "desc": "Standard: chain"},
+    {"input": "[\"x\",\"xy\",\"xyz\",\"xyzw\"]", "desc": "Standard: long chain"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: 5 singles"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abd\",\"abe\"]", "desc": "Standard: branch"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abce\",\"abcf\"]", "desc": "Standard: 3 branches"},
+    {"input": "[\"a\",\"b\",\"ab\",\"abc\",\"abd\"]", "desc": "Standard: mixed prefix"},
+    {"input": "[\"k\",\"ki\",\"kir\",\"kira\",\"kiran\",\"kirana\"]", "desc": "Standard: long"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\"]", "desc": "Standard: 7 chain"},
+    {"input": "[\"aaa\",\"aa\",\"a\"]", "desc": "Standard: backwards"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\",\"abcdefghijk\",\"abcdefghijkl\",\"abcdefghijklm\",\"abcdefghijklmn\",\"abcdefghijklmno\",\"abcdefghijklmnop\",\"abcdefghijklmnopq\",\"abcdefghijklmnopqr\",\"abcdefghijklmnopqrs\",\"abcdefghijklmnopqrst\",\"abcdefghijklmnopqrstu\",\"abcdefghijklmnopqrstuv\",\"abcdefghijklmnopqrstuvw\",\"abcdefghijklmnopqrstuvwx\",\"abcdefghijklmnopqrstuvwxy\",\"abcdefghijklmnopqrstuvwxyz\"]", "desc": "Stress: 26 chain"},
+    {"input": "[\"a\",\"b\",\"ab\",\"ac\",\"abc\",\"abd\",\"abe\",\"acd\",\"acde\",\"acdef\"]", "desc": "Killer: tie-breaking lex"}
+  ]
+}

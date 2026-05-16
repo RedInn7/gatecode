@@ -289,6 +289,16 @@
       "pid": 2652,
       "slug": "walking-robot-simulation-ii",
       "reason": "design class Robot with stateful move/getPos/getDir"
+    },
+    {
+      "pid": 2655,
+      "slug": "second-degree-follower",
+      "reason": "SQL/Pandas problem"
+    },
+    {
+      "pid": 2657,
+      "slug": "popularity-percentage",
+      "reason": "SQL/Pandas problem"
     }
   ]
 }
