@@ -4,25 +4,85 @@
   "inferred_constraints": "n == nums.length, m == queries.length, 1 <= m, n <= 10^5, 1 <= nums[i] <= 10^5, 0 <= index_i < n, 0 <= k_i <= n-1",
   "input_format": "line1: nums (JSON array); line2: queries (JSON 2D array)",
   "testcases": [
-    {"input": "[1,2,2,1,2,3,1]\n[[1,2],[3,3],[4,2]]", "desc": "Edge: example1"},
-    {"input": "[1,4,2,3]\n[[0,1]]", "desc": "Edge: example2"},
-    {"input": "[5]\n[[0,0]]", "desc": "Edge: single element"},
-    {"input": "[1,1]\n[[0,1]]", "desc": "Edge: 2 elements both"},
-    {"input": "[3,2,1]\n[[0,0],[1,0],[2,0]]", "desc": "Edge: 3 indices no extra"},
-    {"input": "[10,20,30]\n[[2,2]]", "desc": "Edge: mark all via k"},
-    {"input": "[1,2,3,4,5]\n[[0,4]]", "desc": "Edge: mark all"},
-    {"input": "[5,4,3,2,1]\n[[4,0],[3,0],[2,0],[1,0],[0,0]]", "desc": "Edge: reverse mark"},
-    {"input": "[1,2,2,1,2,3,1,2,3,4]\n[[0,2],[1,3],[2,2]]", "desc": "Standard: example-like"},
-    {"input": "[100,99,98,97,96,95]\n[[0,2],[5,1]]", "desc": "Standard: descending"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[[0,3],[5,2],[9,1]]", "desc": "Standard: all same"},
-    {"input": "[5,5,5,5,5]\n[[0,4]]", "desc": "Standard: all equal mark all"},
-    {"input": "[10,1,2,3,4,5,6,7,8,9]\n[[0,5],[1,3]]", "desc": "Standard: mixed"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[5,2],[6,3],[0,0]]", "desc": "Standard: alt positions"},
-    {"input": "[7,7,7,7,1,1,1,1]\n[[0,3]]", "desc": "Standard: ties on val"},
-    {"input": "[1,2,3,4,5,4,3,2,1]\n[[4,2],[0,3]]", "desc": "Standard: palindrome"},
-    {"input": "[100,1,100,1,100,1]\n[[0,2]]", "desc": "Standard: alternating high low"},
-    {"input": "[1]\n[[0,0]]", "desc": "Standard: single query single elem"},
-    {"input": "[5,4,3,2,1,10,20,30,40,50,5,4,3,2,1,10,20,30,40,50]\n[[0,5],[10,5],[5,0],[15,0]]", "desc": "Stress: 20 elements"},
-    {"input": "[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991,99990,99989,99988,99987,99986,99985,99984,99983,99982,99981]\n[[0,5],[10,5],[15,4]]", "desc": "Killer: large values descending"}
+    {
+      "input": "[1,2,2,1,2,3,1]\n[[1,2],[3,3],[4,2]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[1,4,2,3]\n[[0,1]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[5]\n[[0,0]]",
+      "desc": "Edge: single element"
+    },
+    {
+      "input": "[1,1]\n[[0,1]]",
+      "desc": "Edge: 2 elements both"
+    },
+    {
+      "input": "[3,2,1]\n[[0,0],[1,0],[2,0]]",
+      "desc": "Edge: 3 indices no extra"
+    },
+    {
+      "input": "[10,20,30]\n[[2,2]]",
+      "desc": "Edge: mark all via k"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[[0,4]]",
+      "desc": "Edge: mark all"
+    },
+    {
+      "input": "[5,4,3,2,1]\n[[4,0],[3,0],[2,0],[1,0],[0,0]]",
+      "desc": "Edge: reverse mark"
+    },
+    {
+      "input": "[1,2,2,1,2,3,1,2,3,4]\n[[0,2],[1,3],[2,2]]",
+      "desc": "Standard: example-like"
+    },
+    {
+      "input": "[100,99,98,97,96,95]\n[[0,2],[5,1]]",
+      "desc": "Standard: descending"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,1,1,1]\n[[0,3],[5,2],[9,1]]",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "[5,5,5,5,5]\n[[0,4]]",
+      "desc": "Standard: all equal mark all"
+    },
+    {
+      "input": "[10,1,2,3,4,5,6,7,8,9]\n[[0,5],[1,3]]",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[[5,2],[6,3],[0,0]]",
+      "desc": "Standard: alt positions"
+    },
+    {
+      "input": "[7,7,7,7,1,1,1,1]\n[[0,3]]",
+      "desc": "Standard: ties on val"
+    },
+    {
+      "input": "[1,2,3,4,5,4,3,2,1]\n[[4,2],[0,3]]",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "[100,1,100,1,100,1]\n[[0,2]]",
+      "desc": "Standard: alternating high low"
+    },
+    {
+      "input": "[1]\n[[0,0]]",
+      "desc": "Standard: single query single elem"
+    },
+    {
+      "input": "[5,4,3,2,1,10,20,30,40,50,5,4,3,2,1,10,20,30,40,50]\n[[0,5],[10,5],[5,0],[15,0]]",
+      "desc": "Stress: 20 elements"
+    },
+    {
+      "input": "[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991,99990,99989,99988,99987,99986,99985,99984,99983,99982,99981]\n[[0,5],[10,5],[15,4]]",
+      "desc": "Killer: large values descending"
+    }
   ]
 }

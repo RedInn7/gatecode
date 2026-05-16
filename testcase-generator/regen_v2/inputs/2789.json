@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^5, s lowercase English",
   "input_format": "single line: s (raw string)",
   "testcases": [
-    {"input": "aacaba", "desc": "Edge: example1"},
-    {"input": "abcd", "desc": "Edge: example2 all distinct"},
-    {"input": "a", "desc": "Edge: single char no split"},
-    {"input": "aa", "desc": "Edge: 2 same"},
-    {"input": "ab", "desc": "Edge: 2 distinct"},
-    {"input": "aaa", "desc": "Edge: 3 same"},
-    {"input": "aba", "desc": "Edge: 3 palin"},
-    {"input": "abc", "desc": "Edge: 3 distinct"},
-    {"input": "aabb", "desc": "Standard: 4 chars pair"},
-    {"input": "abab", "desc": "Standard: 4 alternating"},
-    {"input": "aabbcc", "desc": "Standard: 3 pairs"},
-    {"input": "abcabc", "desc": "Standard: 3 repeat"},
-    {"input": "aaaabbbb", "desc": "Standard: blocks"},
-    {"input": "abcdefghij", "desc": "Standard: 10 distinct"},
-    {"input": "aaaaaaaaaaa", "desc": "Standard: all same"},
-    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: 26 alphabet"},
-    {"input": "hellohellohello", "desc": "Standard: repeat word"},
-    {"input": "zzzaaaazzzz", "desc": "Standard: blocks z and a"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Stress: 4x alphabet"},
-    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Killer: long single char"}
+    {
+      "input": "aacaba",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "abcd",
+      "desc": "Edge: example2 all distinct"
+    },
+    {
+      "input": "a",
+      "desc": "Edge: single char no split"
+    },
+    {
+      "input": "aa",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: 2 distinct"
+    },
+    {
+      "input": "aaa",
+      "desc": "Edge: 3 same"
+    },
+    {
+      "input": "aba",
+      "desc": "Edge: 3 palin"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: 3 distinct"
+    },
+    {
+      "input": "aabb",
+      "desc": "Standard: 4 chars pair"
+    },
+    {
+      "input": "abab",
+      "desc": "Standard: 4 alternating"
+    },
+    {
+      "input": "aabbcc",
+      "desc": "Standard: 3 pairs"
+    },
+    {
+      "input": "abcabc",
+      "desc": "Standard: 3 repeat"
+    },
+    {
+      "input": "aaaabbbb",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "abcdefghij",
+      "desc": "Standard: 10 distinct"
+    },
+    {
+      "input": "aaaaaaaaaaa",
+      "desc": "Standard: all same"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "desc": "Standard: 26 alphabet"
+    },
+    {
+      "input": "hellohellohello",
+      "desc": "Standard: repeat word"
+    },
+    {
+      "input": "zzzaaaazzzz",
+      "desc": "Standard: blocks z and a"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+      "desc": "Stress: 4x alphabet"
+    },
+    {
+      "input": "\"afdqdmpqratq\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
