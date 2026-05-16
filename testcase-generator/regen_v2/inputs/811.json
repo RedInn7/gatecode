@@ -1,27 +1,88 @@
 {
-  "pid": 811, "slug": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
+  "pid": 811,
+  "slug": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
   "inferred_constraints": "1 <= favoriteCompanies.length <= 100, 1 <= favoriteCompanies[i].length <= 500, 1 <= name.length <= 20, lowercase",
   "input_format": "line1: favoriteCompanies (JSON 2D of strings)",
   "testcases": [
-    {"input": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]", "desc": "Edge: example1"},
-    {"input": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]", "desc": "Edge: example2"},
-    {"input": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]", "desc": "Edge: example3 all distinct"},
-    {"input": "[[\"a\"]]", "desc": "Edge: single person"},
-    {"input": "[[\"a\"],[\"b\"]]", "desc": "Edge: 2 distinct"},
-    {"input": "[[\"a\",\"b\"],[\"a\"]]", "desc": "Edge: 1 subset"},
-    {"input": "[[\"a\"],[\"a\",\"b\"]]", "desc": "Edge: 0 subset"},
-    {"input": "[[\"a\",\"b\",\"c\"],[\"b\",\"c\"],[\"a\",\"c\"],[\"a\",\"b\"]]", "desc": "Standard: nested subsets"},
-    {"input": "[[\"x\",\"y\"],[\"y\",\"z\"],[\"x\",\"z\"]]", "desc": "Standard: no subsets"},
-    {"input": "[[\"apple\",\"banana\",\"cherry\"],[\"apple\"],[\"banana\"],[\"cherry\"]]", "desc": "Standard: hub and leaves"},
-    {"input": "[[\"a\",\"b\"],[\"c\",\"d\"],[\"a\",\"b\"]]", "desc": "Standard: duplicates but distinct entries"},
-    {"input": "[[\"a\",\"b\",\"c\",\"d\",\"e\"],[\"a\",\"b\",\"c\"],[\"a\",\"b\"],[\"a\"]]", "desc": "Standard: chain subsets"},
-    {"input": "[[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]]", "desc": "Edge: single large"},
-    {"input": "[[\"alpha\",\"beta\"],[\"gamma\",\"delta\"],[\"epsilon\"]]", "desc": "Standard: 3 disjoint"},
-    {"input": "[[\"google\",\"facebook\",\"amazon\",\"apple\"],[\"google\",\"facebook\",\"amazon\"],[\"google\",\"facebook\"],[\"google\"],[\"apple\"]]", "desc": "Standard: GAFA chain"},
-    {"input": "[[\"x\"],[\"x\"]]", "desc": "Edge: same single (but distinct entries assumed)"},
-    {"input": "[[\"a\",\"b\"],[\"b\",\"a\"]]", "desc": "Edge: same set different order"},
-    {"input": "[[\"apple\",\"banana\"],[\"apple\",\"banana\",\"cherry\"],[\"banana\",\"cherry\",\"date\"]]", "desc": "Standard: 3 with overlaps"},
-    {"input": "[[\"x\",\"y\",\"z\"],[\"a\",\"b\"],[\"x\"],[\"y\"],[\"z\"]]", "desc": "Standard: many subsets"},
-    {"input": "[[\"a\",\"b\",\"c\"],[\"a\",\"b\",\"d\"],[\"a\",\"c\",\"d\"],[\"b\",\"c\",\"d\"]]", "desc": "Special: all 3-subsets of {abcd}"}
+    {
+      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[556,-78,804],[279,17,575],[-203,-37,-855],[517,-419,545],[-247,-210,-422]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[-555,-243,-877],[748,566,588],[-349,42,-578],[-387,-760,-106],[-545,732,112]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[\"a\"],[\"b\"]]",
+      "desc": "Edge: 2 distinct"
+    },
+    {
+      "input": "[[\"a\",\"b\"],[\"a\"]]",
+      "desc": "Edge: 1 subset"
+    },
+    {
+      "input": "[[\"a\"],[\"a\",\"b\"]]",
+      "desc": "Edge: 0 subset"
+    },
+    {
+      "input": "[[\"a\",\"b\",\"c\"],[\"b\",\"c\"],[\"a\",\"c\"],[\"a\",\"b\"]]",
+      "desc": "Standard: nested subsets"
+    },
+    {
+      "input": "[[\"x\",\"y\"],[\"y\",\"z\"],[\"x\",\"z\"]]",
+      "desc": "Standard: no subsets"
+    },
+    {
+      "input": "[[\"apple\",\"banana\",\"cherry\"],[\"apple\"],[\"banana\"],[\"cherry\"]]",
+      "desc": "Standard: hub and leaves"
+    },
+    {
+      "input": "[[\"a\",\"b\"],[\"c\",\"d\"],[\"a\",\"b\"]]",
+      "desc": "Standard: duplicates but distinct entries"
+    },
+    {
+      "input": "[[\"a\",\"b\",\"c\",\"d\",\"e\"],[\"a\",\"b\",\"c\"],[\"a\",\"b\"],[\"a\"]]",
+      "desc": "Standard: chain subsets"
+    },
+    {
+      "input": "[[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]]",
+      "desc": "Edge: single large"
+    },
+    {
+      "input": "[[\"alpha\",\"beta\"],[\"gamma\",\"delta\"],[\"epsilon\"]]",
+      "desc": "Standard: 3 disjoint"
+    },
+    {
+      "input": "[[\"google\",\"facebook\",\"amazon\",\"apple\"],[\"google\",\"facebook\",\"amazon\"],[\"google\",\"facebook\"],[\"google\"],[\"apple\"]]",
+      "desc": "Standard: GAFA chain"
+    },
+    {
+      "input": "[[\"x\"],[\"x\"]]",
+      "desc": "Edge: same single (but distinct entries assumed)"
+    },
+    {
+      "input": "[[\"a\",\"b\"],[\"b\",\"a\"]]",
+      "desc": "Edge: same set different order"
+    },
+    {
+      "input": "[[\"apple\",\"banana\"],[\"apple\",\"banana\",\"cherry\"],[\"banana\",\"cherry\",\"date\"]]",
+      "desc": "Standard: 3 with overlaps"
+    },
+    {
+      "input": "[[\"x\",\"y\",\"z\"],[\"a\",\"b\"],[\"x\"],[\"y\"],[\"z\"]]",
+      "desc": "Standard: many subsets"
+    },
+    {
+      "input": "[[-511,647,-869,433,635,246],[587,678,117,-700,-919,-4],[17,-613,268,627,683,-831],[-857,396,-27,-806,2,341],[67,-645,471,590,-924,-293],[974,827,-276,-520,-721,888],[631,28,-661,-642,929,-495],[753,-579,365,-536,338,997],[-657,835,-577,942,-737,-467],[-678,-243,-117,-848,61,990]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
