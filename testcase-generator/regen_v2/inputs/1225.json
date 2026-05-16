@@ -1,0 +1,88 @@
+{
+  "pid": 1225,
+  "slug": "number-of-changing-keys",
+  "inferred_constraints": "0 <= s.length <= 100",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"p\"",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"tr\"",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"cbcac\"",
+      "desc": "Edge: short mixed"
+    },
+    {
+      "input": "\"cissic\"",
+      "desc": "Edge: palindrome string"
+    },
+    {
+      "input": "\"cehxznvdog\"",
+      "desc": "Standard: len=10"
+    },
+    {
+      "input": "\"tqqedmdfvtgubjihbtxevthrmcxhohdhieiizodxaxhlqqrhcm\"",
+      "desc": "Standard: len=50"
+    },
+    {
+      "input": "\"olwphuqyzyyyhfmexmrhgzsezzj\"",
+      "desc": "Standard: len=27"
+    },
+    {
+      "input": "\"zlpguvyvtnmhxkhfvqkdt\"",
+      "desc": "Standard: len=21"
+    },
+    {
+      "input": "\"nynkrbspdqdvukdbvrcxdmcpajxvevvukwnyyj\"",
+      "desc": "Standard: len=38"
+    },
+    {
+      "input": "\"iilfsoefpmwgiiwhhrebestolywappyebpvtqdw\"",
+      "desc": "Standard: len=39"
+    },
+    {
+      "input": "\"gxgahrygbdrhbiuzvltlvnfnejapadirxagkcxucy\"",
+      "desc": "Standard: len=41"
+    },
+    {
+      "input": "\"bjvdwnfinlflwcqkhrdtsfjqsr\"",
+      "desc": "Standard: len=26"
+    },
+    {
+      "input": "\"vszlwsaveufcjclrjizaugerouazorqoxsdhlstpsjnswyovjnbuuxbmmdwbmveudgvnbddxqqnmpqwoeufgsgvaoevttokzjomz\"",
+      "desc": "Stress: medium length"
+    },
+    {
+      "input": "\"qsuwlliiegseagufmotokzryabrzxnutblmzfmywnuujlozhygrxdmmrdnphyszrazrmlaqjpkxinexfinfxjnctmyrtrsbfwcdu\"",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"wzchikslztwbxgwwiyjmmugijleeldjkwvxnjyaohnrgmyaacwkwfhmtnyzmssesmnciywiefprpdtnwysyidhxqeswxueonxykn\"",
+      "desc": "Stress: max length"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char repeated"
+    },
+    {
+      "input": "\"cnwelzxtgsubhonshokevysiigspnheyenlilrbiisaferwbqovncjaxklxscqfohihocawnhrlfvabletbdkabpovsjxjwluiam\"",
+      "desc": "Killer: near-max size"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    }
+  ]
+}

@@ -44,6 +44,16 @@
       "pid": 1234,
       "slug": "find-substring-with-given-hash-value",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1228,
+      "slug": "find-root-of-n-ary-tree",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1223,
+      "slug": "count-substrings-with-k-frequency-characters-i",
+      "reason": "ACM mode problem"
     }
   ]
 }
