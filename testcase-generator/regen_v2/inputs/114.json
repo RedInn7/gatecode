@@ -1,27 +1,88 @@
 {
-  "pid": 114, "slug": "select-k-disjoint-special-substrings",
+  "pid": 114,
+  "slug": "select-k-disjoint-special-substrings",
   "inferred_constraints": "2 <= n <= 5e4, 0 <= k <= 26, lowercase",
   "input_format": "line1: s (raw string); line2: k (int)",
   "testcases": [
-    {"input": "abcdbaefab\n2", "desc": "Edge: example1"},
-    {"input": "cdefdc\n3", "desc": "Edge: example2 false"},
-    {"input": "abeabe\n0", "desc": "Edge: example3 k=0"},
-    {"input": "ab\n1", "desc": "Edge: minimum n=2 k=1"},
-    {"input": "aa\n1", "desc": "Edge: same chars"},
-    {"input": "abc\n1", "desc": "Standard: 3 distinct"},
-    {"input": "abc\n2", "desc": "Standard: 3 distinct k=2"},
-    {"input": "abc\n3", "desc": "Standard: 3 distinct k=3 — false since cannot be whole string"},
-    {"input": "abcdef\n5", "desc": "Standard: 6 distinct k=5"},
-    {"input": "aabbccdd\n2", "desc": "Standard: pairs"},
-    {"input": "aabbccdd\n3", "desc": "Standard: pairs k=3"},
-    {"input": "aabbccdd\n4", "desc": "Standard: pairs k=4 - false (whole string)"},
-    {"input": "abcabc\n0", "desc": "Edge: no substring needed"},
-    {"input": "aaaaaaaaaa\n1", "desc": "Edge: all same k=1, can pick 1 a"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\n26", "desc": "Edge: 26 distinct"},
-    {"input": "abcdefghijklmnopqrstuvwxyz\n25", "desc": "Standard: 26 distinct k=25"},
-    {"input": "aabbccddeeffgghhii\n8", "desc": "Standard: 9 pairs k=8"},
-    {"input": "abcdefabcdef\n3", "desc": "Standard: repeating"},
-    {"input": "abc abc abc\n2", "desc": "Note: space not in alphabet; replace"},
-    {"input": "abacabadabaca\n2", "desc": "Stress: complex pattern"}
+    {
+      "input": "abcdbaefab\n2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "cdefdc\n3",
+      "desc": "Edge: example2 false"
+    },
+    {
+      "input": "\"rytgzeae\"\n0",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"bblimvccf\"\n0",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "aa\n1",
+      "desc": "Edge: same chars"
+    },
+    {
+      "input": "abc\n1",
+      "desc": "Standard: 3 distinct"
+    },
+    {
+      "input": "abc\n2",
+      "desc": "Standard: 3 distinct k=2"
+    },
+    {
+      "input": "abc\n3",
+      "desc": "Standard: 3 distinct k=3 — false since cannot be whole string"
+    },
+    {
+      "input": "abcdef\n5",
+      "desc": "Standard: 6 distinct k=5"
+    },
+    {
+      "input": "aabbccdd\n2",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "aabbccdd\n3",
+      "desc": "Standard: pairs k=3"
+    },
+    {
+      "input": "aabbccdd\n4",
+      "desc": "Standard: pairs k=4 - false (whole string)"
+    },
+    {
+      "input": "abcabc\n0",
+      "desc": "Edge: no substring needed"
+    },
+    {
+      "input": "aaaaaaaaaa\n1",
+      "desc": "Edge: all same k=1, can pick 1 a"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\n26",
+      "desc": "Edge: 26 distinct"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\n25",
+      "desc": "Standard: 26 distinct k=25"
+    },
+    {
+      "input": "aabbccddeeffgghhii\n8",
+      "desc": "Standard: 9 pairs k=8"
+    },
+    {
+      "input": "abcdefabcdef\n3",
+      "desc": "Standard: repeating"
+    },
+    {
+      "input": "abc abc abc\n2",
+      "desc": "Note: space not in alphabet; replace"
+    },
+    {
+      "input": "abacabadabaca\n2",
+      "desc": "Stress: complex pattern"
+    }
   ]
 }
