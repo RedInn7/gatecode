@@ -1,0 +1,28 @@
+{
+  "pid": 3675,
+  "slug": "rotate-string",
+  "inferred_constraints": "1 <= s.length, goal.length <= 100, lowercase",
+  "input_format": "line1: s (string, raw); line2: goal (string, raw)",
+  "testcases": [
+    {"input": "abcde\ncdeab", "desc": "Example 1"},
+    {"input": "abcde\nabced", "desc": "Example 2"},
+    {"input": "a\na", "desc": "Edge: same single"},
+    {"input": "a\nb", "desc": "Edge: 1 char diff"},
+    {"input": "ab\nba", "desc": "Edge: 2 chars rotate"},
+    {"input": "ab\nab", "desc": "Edge: 2 chars same"},
+    {"input": "abc\nbca", "desc": "Standard rotate left 1"},
+    {"input": "abc\ncab", "desc": "Standard rotate left 2"},
+    {"input": "abc\nabc", "desc": "Standard same"},
+    {"input": "abcd\ndabc", "desc": "Standard"},
+    {"input": "abcdef\ndefabc", "desc": "Standard"},
+    {"input": "aaa\naaa", "desc": "Standard all same"},
+    {"input": "aaab\naaba", "desc": "Standard"},
+    {"input": "abab\nabab", "desc": "Standard"},
+    {"input": "abab\nbaba", "desc": "Standard"},
+    {"input": "abcdefghij\nghijabcdef", "desc": "Standard"},
+    {"input": "abc\nabcd", "desc": "Edge: different lengths"},
+    {"input": "abcdefghij\nabcdefghij", "desc": "Standard same long"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nklmnopqrstuvwxyzabcdefghij", "desc": "Standard alphabet rotate"},
+    {"input": "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij\njabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghi", "desc": "Stress 100 chars rotate"}
+  ]
+}

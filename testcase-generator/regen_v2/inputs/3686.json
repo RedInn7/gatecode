@@ -1,0 +1,28 @@
+{
+  "pid": 3686,
+  "slug": "design-a-food-rating-system",
+  "inferred_constraints": "1 <= n <= 2*10^4, 1 <= foods[i].length, cuisines[i].length <= 10, 1 <= ratings[i] <= 10^8, at most 2*10^4 calls",
+  "input_format": "Design class. line1: methods (JSON); line2: args (JSON list of lists)",
+  "testcases": [
+    {"input": "[\"FoodRatings\",\"highestRated\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"kimchi\",\"miso\",\"sushi\",\"moussaka\",\"ramen\",\"bulgogi\"],[\"korean\",\"japanese\",\"japanese\",\"greek\",\"japanese\",\"korean\"],[9,12,8,15,14,7]],[\"korean\"],[\"japanese\"],[\"sushi\",16],[\"japanese\"],[\"ramen\",16],[\"japanese\"]]", "desc": "Example 1"},
+    {"input": "[\"FoodRatings\",\"highestRated\"]\n[[[\"a\"],[\"c1\"],[5]],[\"c1\"]]", "desc": "Edge: single food"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"a\"],[\"c1\"],[5]],[\"c1\"],[\"a\",10],[\"c1\"]]", "desc": "Edge: rate change"},
+    {"input": "[\"FoodRatings\",\"highestRated\"]\n[[[\"a\",\"b\"],[\"c1\",\"c1\"],[5,5]],[\"c1\"]]", "desc": "Edge: tie alphabetical"},
+    {"input": "[\"FoodRatings\",\"highestRated\"]\n[[[\"b\",\"a\"],[\"c1\",\"c1\"],[5,5]],[\"c1\"]]", "desc": "Edge: tie reverse order"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"a\",\"b\"],[\"c1\",\"c1\"],[5,10]],[\"c1\"],[\"a\",100],[\"c1\"]]", "desc": "Standard"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"highestRated\"]\n[[[\"a\",\"b\",\"c\"],[\"k\",\"j\",\"k\"],[3,5,3]],[\"k\"],[\"j\"]]", "desc": "Standard 2 cuisines"},
+    {"input": "[\"FoodRatings\",\"changeRating\",\"changeRating\",\"changeRating\",\"highestRated\"]\n[[[\"a\",\"b\",\"c\"],[\"k\",\"k\",\"k\"],[1,2,3]],[\"a\",10],[\"b\",20],[\"c\",30],[\"k\"]]", "desc": "Standard"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"a\",\"b\"],[\"k\",\"k\"],[5,3]],[\"k\"],[\"b\",10],[\"k\"],[\"a\",100],[\"k\"]]", "desc": "Standard alternating"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"highestRated\",\"highestRated\"]\n[[[\"a\",\"b\",\"c\"],[\"x\",\"y\",\"z\"],[1,2,3]],[\"x\"],[\"y\"],[\"z\"]]", "desc": "Standard 3 distinct"},
+    {"input": "[\"FoodRatings\",\"highestRated\"]\n[[[\"apple\",\"banana\",\"cherry\",\"date\",\"elderberry\"],[\"fruit\",\"fruit\",\"fruit\",\"fruit\",\"fruit\"],[5,4,3,2,1]],[\"fruit\"]]", "desc": "Standard 5 same"},
+    {"input": "[\"FoodRatings\",\"changeRating\",\"highestRated\"]\n[[[\"apple\",\"banana\",\"cherry\"],[\"fruit\",\"fruit\",\"fruit\"],[1,1,1]],[\"banana\",100],[\"fruit\"]]", "desc": "Standard"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"x\",\"y\",\"z\"],[\"c\",\"c\",\"c\"],[1,2,3]],[\"c\"],[\"x\",10],[\"c\"],[\"y\",20],[\"c\"],[\"z\",30],[\"c\"]]", "desc": "Standard sequence"},
+    {"input": "[\"FoodRatings\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"highestRated\",\"highestRated\"]\n[[[\"a\",\"b\",\"c\",\"d\",\"e\"],[\"k\",\"k\",\"j\",\"j\",\"l\"],[1,2,3,4,5]],[\"a\",100],[\"b\",50],[\"c\",100],[\"d\",100],[\"e\",1],[\"k\"],[\"j\"]]", "desc": "Standard"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"changeRating\",\"changeRating\",\"changeRating\",\"highestRated\"]\n[[[\"food1\",\"food2\",\"food3\"],[\"c1\",\"c1\",\"c2\"],[10,20,30]],[\"c1\"],[\"food1\",100],[\"food2\",5],[\"food3\",1],[\"c2\"]]", "desc": "Standard"},
+    {"input": "[\"FoodRatings\",\"highestRated\"]\n[[[\"a1\",\"a2\",\"a3\",\"a4\",\"a5\"],[\"c\",\"c\",\"c\",\"c\",\"c\"],[100000000,100000000,100000000,100000000,100000000]],[\"c\"]]", "desc": "Edge: all same max rating"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"z\",\"y\",\"x\",\"w\"],[\"c\",\"c\",\"c\",\"c\"],[1,1,1,1]],[\"c\"],[\"y\",2],[\"c\"]]", "desc": "Standard"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"highestRated\",\"highestRated\",\"highestRated\",\"highestRated\"]\n[[[\"a\",\"b\",\"c\",\"d\",\"e\"],[\"c1\",\"c2\",\"c3\",\"c4\",\"c5\"],[1,2,3,4,5]],[\"c1\"],[\"c2\"],[\"c3\"],[\"c4\"],[\"c5\"]]", "desc": "Standard 5 distinct cuisines"},
+    {"input": "[\"FoodRatings\",\"changeRating\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"a\",\"b\",\"c\"],[\"k\",\"k\",\"k\"],[5,5,5]],[\"a\",10],[\"b\",10],[\"k\"],[\"a\",1],[\"k\"]]", "desc": "Standard tie with changes"},
+    {"input": "[\"FoodRatings\",\"highestRated\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"changeRating\",\"highestRated\"]\n[[[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\"],[\"c\",\"c\",\"c\",\"c\",\"c\",\"c\",\"c\",\"c\",\"c\",\"c\"],[1,2,3,4,5,6,7,8,9,10]],[\"c\"],[\"f1\",100],[\"f2\",100],[\"f3\",100],[\"f4\",100],[\"f5\",100],[\"f6\",100],[\"f7\",100],[\"f8\",100],[\"f9\",100],[\"f10\",100],[\"c\"]]", "desc": "Stress all to same"}
+  ]
+}
