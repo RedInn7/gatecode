@@ -1,0 +1,28 @@
+{
+  "pid": 344,
+  "slug": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+  "inferred_constraints": "1 <= num.length <= 3e4, digits only, no leading zeros, 1 <= k <= 1e9",
+  "input_format": "line1: num (raw string of digits); line2: k (int)",
+  "testcases": [
+    {"input": "4321\n4", "desc": "Edge: example1"},
+    {"input": "100\n1", "desc": "Edge: example2 single swap creates leading zero"},
+    {"input": "36789\n1000", "desc": "Edge: example3 already sorted"},
+    {"input": "1\n1", "desc": "Edge: n=1"},
+    {"input": "9\n1000000000", "desc": "Edge: n=1 max k"},
+    {"input": "12\n0", "desc": "Edge: k=0 no change... wait k>=1; use 1"},
+    {"input": "12\n1", "desc": "Edge: already sorted, k=1"},
+    {"input": "21\n1", "desc": "Edge: single swap sorts"},
+    {"input": "987654321\n0", "desc": "Edge: k=0 (use 1 per constraint)... use 1"},
+    {"input": "987654321\n1", "desc": "Edge: descending, k=1 single swap"},
+    {"input": "987654321\n1000000000", "desc": "Standard: descending unlimited k"},
+    {"input": "1111111111\n5", "desc": "Edge: all same digit"},
+    {"input": "0000000001\n1", "desc": "Edge: invalid (leading zero); use valid"},
+    {"input": "1000000000\n9", "desc": "Edge: single 1 prefix"},
+    {"input": "2718281828\n10", "desc": "Standard: random digits k=10"},
+    {"input": "3141592653\n5", "desc": "Standard: random digits k=5"},
+    {"input": "9876543210\n45", "desc": "Stress: desc digits unlimited (max swaps 45)"},
+    {"input": "5432167890\n10", "desc": "Standard: partial reverse"},
+    {"input": "1234567890\n9", "desc": "Standard: sorted but ends with 0"},
+    {"input": "9999999998\n1", "desc": "Standard: only one swap useful"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 347,
+  "slug": "rearrange-array-elements-by-sign",
+  "inferred_constraints": "2 <= nums.length <= 2e5, even length, equal pos and neg, 1 <= |nums[i]| <= 1e5",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[3,1,-2,-5,2,-4]", "desc": "Edge: example1"},
+    {"input": "[-1,1]", "desc": "Edge: example2 n=2"},
+    {"input": "[1,-1]", "desc": "Edge: already correct order n=2"},
+    {"input": "[1,2,-1,-2]", "desc": "Edge: positives first then negatives"},
+    {"input": "[-1,-2,1,2]", "desc": "Edge: negatives first then positives"},
+    {"input": "[1,-1,2,-2,3,-3]", "desc": "Edge: already alternating correctly"},
+    {"input": "[-1,1,-2,2,-3,3]", "desc": "Edge: alternating wrong start"},
+    {"input": "[100000,-100000]", "desc": "Edge: max values"},
+    {"input": "[100000,-1,99999,-2]", "desc": "Standard: mix high/low pos"},
+    {"input": "[-100000,1,-99999,2]", "desc": "Standard: mix high/low neg"},
+    {"input": "[5,-5,5,-5,5,-5,5,-5,5,-5]", "desc": "Edge: alternating duplicates"},
+    {"input": "[1,2,3,4,5,-1,-2,-3,-4,-5]", "desc": "Standard: 5 pos then 5 neg"},
+    {"input": "[-1,-2,-3,-4,-5,1,2,3,4,5]", "desc": "Standard: 5 neg then 5 pos"},
+    {"input": "[7,-3,8,-2,9,-1,10,-4]", "desc": "Standard: interleaved"},
+    {"input": "[1,-1]", "desc": "Edge: n=2 minimum positive first"},
+    {"input": "[2,4,6,8,-1,-3,-5,-7]", "desc": "Standard: evens pos, odds neg"},
+    {"input": "[100,-100,99,-99,98,-98,97,-97]", "desc": "Standard: descending interleaved"},
+    {"input": "[1,1,1,1,-1,-1,-1,-1]", "desc": "Edge: all same magnitude duplicates"},
+    {"input": "[50000,-50000,40000,-40000,30000,-30000,20000,-20000,10000,-10000]", "desc": "Stress: descending magnitudes alt"},
+    {"input": "[1,-2,3,-4,5,-6,7,-8,9,-10,11,-12]", "desc": "Stress: 12 elements alternating"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 351,
+  "slug": "lexicographically-smallest-string-after-reverse-ii",
+  "inferred_constraints": "1 <= n <= 1e5, lowercase letters, must perform exactly one reverse-prefix or reverse-suffix of length k in [1,n]",
+  "input_format": "line1: s (raw string)",
+  "testcases": [
+    {"input": "dcab", "desc": "Edge: example1"},
+    {"input": "abba", "desc": "Edge: example2"},
+    {"input": "zxy", "desc": "Edge: example3"},
+    {"input": "a", "desc": "Edge: n=1"},
+    {"input": "z", "desc": "Edge: n=1 max char"},
+    {"input": "ab", "desc": "Edge: n=2 already sorted"},
+    {"input": "ba", "desc": "Edge: n=2 reversed"},
+    {"input": "aa", "desc": "Edge: n=2 identical"},
+    {"input": "zzz", "desc": "Edge: all same"},
+    {"input": "aaaa", "desc": "Edge: 4 same"},
+    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Edge: full reverse alphabet n=26"},
+    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Edge: sorted alphabet"},
+    {"input": "zabcde", "desc": "Standard: z at front"},
+    {"input": "abcdez", "desc": "Standard: z at end"},
+    {"input": "cba", "desc": "Standard: n=3 descending"},
+    {"input": "abc", "desc": "Standard: n=3 ascending"},
+    {"input": "ababab", "desc": "Standard: alternating"},
+    {"input": "leetcode", "desc": "Standard: typical word"},
+    {"input": "programming", "desc": "Standard: typical word with double m"},
+    {"input": "mississippi", "desc": "Standard: repeating substring"}
+  ]
+}

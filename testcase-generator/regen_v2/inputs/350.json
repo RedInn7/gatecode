@@ -1,0 +1,28 @@
+{
+  "pid": 350,
+  "slug": "alice-and-bob-playing-flower-game",
+  "inferred_constraints": "1 <= n, m <= 1e5",
+  "input_format": "line1: n (int); line2: m (int)",
+  "testcases": [
+    {"input": "3\n2", "desc": "Edge: example1"},
+    {"input": "1\n1", "desc": "Edge: example2"},
+    {"input": "1\n2", "desc": "Edge: tiny mix"},
+    {"input": "2\n1", "desc": "Edge: tiny mix swapped"},
+    {"input": "2\n2", "desc": "Edge: 2x2"},
+    {"input": "100000\n100000", "desc": "Stress: max both"},
+    {"input": "1\n100000", "desc": "Edge: min n max m"},
+    {"input": "100000\n1", "desc": "Edge: max n min m"},
+    {"input": "10\n10", "desc": "Standard: equal small"},
+    {"input": "10\n11", "desc": "Standard: odd/even sum"},
+    {"input": "5\n7", "desc": "Standard: small primes"},
+    {"input": "99999\n99999", "desc": "Stress: near max equal"},
+    {"input": "50000\n50000", "desc": "Standard: half max equal"},
+    {"input": "1\n3", "desc": "Edge: tiny mismatch"},
+    {"input": "3\n1", "desc": "Edge: tiny mismatch reverse"},
+    {"input": "4\n6", "desc": "Standard: small evens"},
+    {"input": "7\n8", "desc": "Standard: adjacent values"},
+    {"input": "12345\n67890", "desc": "Standard: random values"},
+    {"input": "100000\n99999", "desc": "Stress: max near-max"},
+    {"input": "20\n25", "desc": "Standard: small mix"}
+  ]
+}
