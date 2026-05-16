@@ -1,0 +1,128 @@
+[
+  {
+    "pid": 1819,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 1820,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 1858,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 1859,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 1896,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 1988,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 1989,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2030,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2037,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2046,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2076,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2094,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2159,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2160,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2169,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2174,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2176,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2188,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2219,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2220,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2254,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2274,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2291,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2305,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2374,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2378,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2397,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2414,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2445,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 2452,
+    "reason": "ACM mode"
+  },
+  {
+    "pid": 1036,
+    "slug": "restore-the-array",
+    "fqid": 1416,
+    "reason": "No Python3 solution found for fqid=1416"
+  }
+]

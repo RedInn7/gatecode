@@ -4,25 +4,105 @@
   "inferred_constraints": "0 <= n <= 1e9",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "6", "desc": "Edge: example1 -> true"},
-    {"input": "89", "desc": "Edge: example2 -> true"},
-    {"input": "11", "desc": "Edge: example3 -> false"},
-    {"input": "0", "desc": "Edge: zero -> false"},
-    {"input": "1", "desc": "Edge: 1 -> false"},
-    {"input": "8", "desc": "Edge: 8 -> false"},
-    {"input": "9", "desc": "Edge: 9 -> true (becomes 6)"},
-    {"input": "10", "desc": "Edge: 10 -> false (zero after rotation 01)"},
-    {"input": "16", "desc": "Edge: 16 -> true"},
-    {"input": "100", "desc": "Standard: 100 -> false (becomes 001=1)"},
-    {"input": "1000", "desc": "Standard: 1000 -> false"},
-    {"input": "1968", "desc": "Standard: 1968 -> true"},
-    {"input": "10000", "desc": "Standard: 10000 -> false"},
-    {"input": "23", "desc": "Standard: contains 2 -> false"},
-    {"input": "25", "desc": "Standard: contains 5 -> false"},
-    {"input": "808", "desc": "Standard: palindrome of valid -> false"},
-    {"input": "818", "desc": "Standard: palindrome -> false"},
-    {"input": "1000000000", "desc": "Edge: max value"},
-    {"input": "999999999", "desc": "Standard: all 9 -> true"},
-    {"input": "98", "desc": "Standard: 98 -> false (becomes 86 wait 89)"}
+    {
+      "input": "6",
+      "desc": "Edge: example1 -> true",
+      "output": "true"
+    },
+    {
+      "input": "89",
+      "desc": "Edge: example2 -> true",
+      "output": "true"
+    },
+    {
+      "input": "11",
+      "desc": "Edge: example3 -> false",
+      "output": "false"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: zero -> false",
+      "output": "false"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: 1 -> false",
+      "output": "false"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: 8 -> false",
+      "output": "false"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: 9 -> true (becomes 6)",
+      "output": "true"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: 10 -> false (zero after rotation 01)",
+      "output": "true"
+    },
+    {
+      "input": "16",
+      "desc": "Edge: 16 -> true",
+      "output": "true"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: 100 -> false (becomes 001=1)",
+      "output": "true"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard: 1000 -> false",
+      "output": "true"
+    },
+    {
+      "input": "1968",
+      "desc": "Standard: 1968 -> true",
+      "output": "true"
+    },
+    {
+      "input": "10000",
+      "desc": "Standard: 10000 -> false",
+      "output": "true"
+    },
+    {
+      "input": "23",
+      "desc": "Standard: contains 2 -> false",
+      "output": "false"
+    },
+    {
+      "input": "25",
+      "desc": "Standard: contains 5 -> false",
+      "output": "false"
+    },
+    {
+      "input": "808",
+      "desc": "Standard: palindrome of valid -> false",
+      "output": "false"
+    },
+    {
+      "input": "818",
+      "desc": "Standard: palindrome -> false",
+      "output": "false"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: max value",
+      "output": "true"
+    },
+    {
+      "input": "999999999",
+      "desc": "Standard: all 9 -> true",
+      "output": "true"
+    },
+    {
+      "input": "98",
+      "desc": "Standard: 98 -> false (becomes 86 wait 89)",
+      "output": "true"
+    }
   ]
 }

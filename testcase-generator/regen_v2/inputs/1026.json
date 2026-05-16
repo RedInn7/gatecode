@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= |special| <= 1e5, 1 <= bottom <= special[i] <= top <= 1e9, unique",
   "input_format": "line1: bottom (int); line2: top (int); line3: special (JSON array)",
   "testcases": [
-    {"input": "2\n9\n[4,6]", "desc": "Edge: example1 -> 3"},
-    {"input": "6\n8\n[7,6,8]", "desc": "Edge: example2 -> 0"},
-    {"input": "1\n10\n[1]", "desc": "Edge: only bottom"},
-    {"input": "1\n10\n[10]", "desc": "Edge: only top"},
-    {"input": "1\n10\n[5]", "desc": "Edge: middle"},
-    {"input": "1\n1\n[1]", "desc": "Edge: bottom == top == special"},
-    {"input": "1\n1000000000\n[500000000]", "desc": "Edge: huge range"},
-    {"input": "1\n100\n[50]", "desc": "Standard: middle 100 floors"},
-    {"input": "1\n10\n[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: all special"},
-    {"input": "1\n20\n[5,10,15,20]", "desc": "Standard: 4 specials"},
-    {"input": "1\n100\n[10,20,30,40,50,60,70,80,90,100]", "desc": "Standard: spaced 10"},
-    {"input": "10\n100\n[20,40,60,80]", "desc": "Standard: even gaps"},
-    {"input": "1\n50\n[25,26,27,28]", "desc": "Standard: cluster"},
-    {"input": "1\n1000\n[1,500,1000]", "desc": "Standard: 3 specials"},
-    {"input": "5\n95\n[5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95]", "desc": "Standard: every 5"},
-    {"input": "1\n10000\n[1000,2000,3000,4000,5000,6000,7000,8000,9000]", "desc": "Standard: every 1000"},
-    {"input": "1\n100\n[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]", "desc": "Stress: 50 evens"},
-    {"input": "1\n1000000000\n[1000000000]", "desc": "Stress: huge top single"},
-    {"input": "100\n999999999\n[500000000,600000000,700000000,800000000,900000000]", "desc": "Stress: huge range 5 spec"},
-    {"input": "1\n1000000000\n[100,200,300,400,500,600,700,800,900,1000]", "desc": "Killer: 10 spec near bottom huge top"}
+    {
+      "input": "2\n9\n[4,6]",
+      "desc": "Edge: example1 -> 3",
+      "output": "3"
+    },
+    {
+      "input": "6\n8\n[7,6,8]",
+      "desc": "Edge: example2 -> 0",
+      "output": "0"
+    },
+    {
+      "input": "1\n10\n[1]",
+      "desc": "Edge: only bottom",
+      "output": "9"
+    },
+    {
+      "input": "1\n10\n[10]",
+      "desc": "Edge: only top",
+      "output": "9"
+    },
+    {
+      "input": "1\n10\n[5]",
+      "desc": "Edge: middle",
+      "output": "5"
+    },
+    {
+      "input": "1\n1\n[1]",
+      "desc": "Edge: bottom == top == special",
+      "output": "0"
+    },
+    {
+      "input": "1\n1000000000\n[500000000]",
+      "desc": "Edge: huge range",
+      "output": "500000000"
+    },
+    {
+      "input": "1\n100\n[50]",
+      "desc": "Standard: middle 100 floors",
+      "output": "50"
+    },
+    {
+      "input": "1\n10\n[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: all special",
+      "output": "0"
+    },
+    {
+      "input": "1\n20\n[5,10,15,20]",
+      "desc": "Standard: 4 specials",
+      "output": "4"
+    },
+    {
+      "input": "1\n100\n[10,20,30,40,50,60,70,80,90,100]",
+      "desc": "Standard: spaced 10",
+      "output": "9"
+    },
+    {
+      "input": "10\n100\n[20,40,60,80]",
+      "desc": "Standard: even gaps",
+      "output": "20"
+    },
+    {
+      "input": "1\n50\n[25,26,27,28]",
+      "desc": "Standard: cluster",
+      "output": "24"
+    },
+    {
+      "input": "1\n1000\n[1,500,1000]",
+      "desc": "Standard: 3 specials",
+      "output": "499"
+    },
+    {
+      "input": "5\n95\n[5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95]",
+      "desc": "Standard: every 5",
+      "output": "4"
+    },
+    {
+      "input": "1\n10000\n[1000,2000,3000,4000,5000,6000,7000,8000,9000]",
+      "desc": "Standard: every 1000",
+      "output": "1000"
+    },
+    {
+      "input": "1\n100\n[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]",
+      "desc": "Stress: 50 evens",
+      "output": "1"
+    },
+    {
+      "input": "1\n1000000000\n[1000000000]",
+      "desc": "Stress: huge top single",
+      "output": "999999999"
+    },
+    {
+      "input": "100\n999999999\n[500000000,600000000,700000000,800000000,900000000]",
+      "desc": "Stress: huge range 5 spec",
+      "output": "499999900"
+    },
+    {
+      "input": "1\n1000000000\n[100,200,300,400,500,600,700,800,900,1000]",
+      "desc": "Killer: 10 spec near bottom huge top",
+      "output": "999999000"
+    }
   ]
 }

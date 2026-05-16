@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[-1000]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "false"
     },
     {
       "input": "[3,1,7,11]",
-      "desc": "Edge: example2 -> false"
+      "desc": "Edge: example2 -> false",
+      "output": "false"
     },
     {
       "input": "[0,0]",
-      "desc": "Edge: two zeros 0 == 2*0 -> true"
+      "desc": "Edge: two zeros 0 == 2*0 -> true",
+      "output": "true"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge: two ones -> false"
+      "desc": "Edge: two ones -> false",
+      "output": "false"
     },
     {
       "input": "[-1000,1000]",
-      "desc": "Edge: extreme"
+      "desc": "Edge: extreme",
+      "output": "false"
     },
     {
       "input": "[0,1]",
-      "desc": "Edge: 0 1 -> false"
+      "desc": "Edge: 0 1 -> false",
+      "output": "false"
     },
     {
       "input": "[2,4]",
-      "desc": "Edge: 4 = 2*2"
+      "desc": "Edge: 4 = 2*2",
+      "output": "true"
     },
     {
       "input": "[-2,4]",
-      "desc": "Edge: 4 != 2*-2 false"
+      "desc": "Edge: 4 != 2*-2 false",
+      "output": "false"
     },
     {
       "input": "[-2,-4]",
-      "desc": "Edge: -4 = 2*-2 true"
+      "desc": "Edge: -4 = 2*-2 true",
+      "output": "true"
     },
     {
       "input": "[1,2,4,8]",
-      "desc": "Standard: chain"
+      "desc": "Standard: chain",
+      "output": "true"
     },
     {
       "input": "[1,3,5,7,9]",
-      "desc": "Standard: odds"
+      "desc": "Standard: odds",
+      "output": "false"
     },
     {
       "input": "[5,10,15,20]",
-      "desc": "Standard: 10=2*5"
+      "desc": "Standard: 10=2*5",
+      "output": "true"
     },
     {
       "input": "[1000,500,250,125]",
-      "desc": "Standard: halving"
+      "desc": "Standard: halving",
+      "output": "true"
     },
     {
       "input": "[100,-200,-400,400]",
-      "desc": "Standard: -400=2*-200"
+      "desc": "Standard: -400=2*-200",
+      "output": "true"
     },
     {
       "input": "[7,1,14,11]",
-      "desc": "Standard: 14=2*7"
+      "desc": "Standard: 14=2*7",
+      "output": "true"
     },
     {
       "input": "[0,2,-1,3]",
-      "desc": "Standard: no zero pair"
+      "desc": "Standard: no zero pair",
+      "output": "false"
     },
     {
       "input": "[3,1,4,1,5,9,2,6,5,3,5]",
-      "desc": "Standard: random no match"
+      "desc": "Standard: random no match",
+      "output": "true"
     },
     {
       "input": "[2,4,8,16,32,64,128,256,512,1000]",
-      "desc": "Standard: powers"
+      "desc": "Standard: powers",
+      "output": "true"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
-      "desc": "Standard: 1-20 has 4=2*2 etc"
+      "desc": "Standard: 1-20 has 4=2*2 etc",
+      "output": "true"
     },
     {
       "input": "[-1000,-999,-998,-997,-996,-995,-994,-993,-992,-991,-500,-499,-498,-497,-496,-495,-494,-493,-492,-491]",
-      "desc": "Killer: negatives -500=2*-250 wait no"
+      "desc": "Killer: negatives -500=2*-250 wait no",
+      "output": "true"
     }
   ]
 }
