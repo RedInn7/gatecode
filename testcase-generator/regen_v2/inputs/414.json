@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n == s.length <= 1000, s in {'F','W','E'}",
   "input_format": "line1: s (raw string)",
   "testcases": [
-    {"input": "F", "desc": "Edge: n=1 single F"},
-    {"input": "W", "desc": "Edge: n=1 single W"},
-    {"input": "E", "desc": "Edge: n=1 single E"},
-    {"input": "FW", "desc": "Edge: n=2 FW"},
-    {"input": "WE", "desc": "Edge: n=2 WE"},
-    {"input": "EF", "desc": "Edge: n=2 EF"},
-    {"input": "FF", "desc": "Edge: n=2 same"},
-    {"input": "FWE", "desc": "Standard: n=3 all distinct"},
-    {"input": "FFF", "desc": "Edge: all F"},
-    {"input": "WWWWWWWWWW", "desc": "Edge: n=10 all W"},
-    {"input": "EEEEEEEEEE", "desc": "Edge: n=10 all E"},
-    {"input": "FWEFWE", "desc": "Standard: pattern"},
-    {"input": "FFFFFWWWWW", "desc": "Standard: blocks"},
-    {"input": "FWEWFE", "desc": "Standard: mixed"},
-    {"input": "FFFEEEFFFEEE", "desc": "Standard: F E blocks alternating"},
-    {"input": "WWEEFFWWEEFFWWEEFF", "desc": "Standard: pairs cycling"},
-    {"input": "FWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWE", "desc": "Stress: n=51 FWE pattern"},
-    {"input": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", "desc": "Stress: 30 F"},
-    {"input": "WFEWFEWFEWFEWFEWFEWFEWFEWFEWFE", "desc": "Stress: WFE pattern"},
-    {"input": "FWEEEEEEEEEEEEEEEEEEEEFFFFFFFFFFFFF", "desc": "Standard: F then many E then F block"}
+    {
+      "input": "F",
+      "desc": "Edge: n=1 single F"
+    },
+    {
+      "input": "W",
+      "desc": "Edge: n=1 single W"
+    },
+    {
+      "input": "\"pf\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"od\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"m\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "EF",
+      "desc": "Edge: n=2 EF"
+    },
+    {
+      "input": "FF",
+      "desc": "Edge: n=2 same"
+    },
+    {
+      "input": "FWE",
+      "desc": "Standard: n=3 all distinct"
+    },
+    {
+      "input": "FFF",
+      "desc": "Edge: all F"
+    },
+    {
+      "input": "WWWWWWWWWW",
+      "desc": "Edge: n=10 all W"
+    },
+    {
+      "input": "EEEEEEEEEE",
+      "desc": "Edge: n=10 all E"
+    },
+    {
+      "input": "FWEFWE",
+      "desc": "Standard: pattern"
+    },
+    {
+      "input": "FFFFFWWWWW",
+      "desc": "Standard: blocks"
+    },
+    {
+      "input": "FWEWFE",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "FFFEEEFFFEEE",
+      "desc": "Standard: F E blocks alternating"
+    },
+    {
+      "input": "WWEEFFWWEEFFWWEEFF",
+      "desc": "Standard: pairs cycling"
+    },
+    {
+      "input": "FWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWEFWE",
+      "desc": "Stress: n=51 FWE pattern"
+    },
+    {
+      "input": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "desc": "Stress: 30 F"
+    },
+    {
+      "input": "WFEWFEWFEWFEWFEWFEWFEWFEWFEWFE",
+      "desc": "Stress: WFE pattern"
+    },
+    {
+      "input": "\"oujz\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
