@@ -998,3 +998,18 @@ Audited at: 2026-05-16T15:38:18.396705
 Stuck after 3 regeneration attempts. Final issues:
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:38:18.405395
+
+## PID 367 (minimum-number-of-steps-to-make-two-strings-anagram)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=50000.0)
+Audited at: 2026-05-16T15:38:20.693564
+
+## PID 368 (distinct-points-reachable-after-substring-removal)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:38:20.695328
+
+## PID 369 (fill-a-special-grid)
+Stuck after 3 regeneration attempts. Final issues:
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:20.707140
