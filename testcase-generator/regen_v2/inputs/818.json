@@ -1,27 +1,88 @@
 {
-  "pid": 818, "slug": "next-greater-numerically-balanced-number",
+  "pid": 818,
+  "slug": "next-greater-numerically-balanced-number",
   "inferred_constraints": "0 <= n <= 1e6",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: example1"},
-    {"input": "1000", "desc": "Edge: example2"},
-    {"input": "3000", "desc": "Edge: example3"},
-    {"input": "0", "desc": "Edge: zero"},
-    {"input": "2", "desc": "Edge: 2"},
-    {"input": "22", "desc": "Edge: balanced"},
-    {"input": "100", "desc": "Standard: 100"},
-    {"input": "10", "desc": "Standard: 10"},
-    {"input": "21", "desc": "Standard: 21"},
-    {"input": "23", "desc": "Standard: 23"},
-    {"input": "333", "desc": "Edge: balanced 3"},
-    {"input": "999", "desc": "Standard: 999"},
-    {"input": "12345", "desc": "Standard: 5-digit"},
-    {"input": "99999", "desc": "Standard: all 9"},
-    {"input": "100000", "desc": "Standard: 1e5"},
-    {"input": "500000", "desc": "Standard: 5e5"},
-    {"input": "999998", "desc": "Standard: near max"},
-    {"input": "1000000", "desc": "Edge: max"},
-    {"input": "999999", "desc": "Edge: 6 9s"},
-    {"input": "44444", "desc": "Special: balanced 4"}
+    {
+      "input": "0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "1000",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "1297",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "97",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "1521",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "22",
+      "desc": "Edge: balanced"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: 100"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: 10"
+    },
+    {
+      "input": "21",
+      "desc": "Standard: 21"
+    },
+    {
+      "input": "23",
+      "desc": "Standard: 23"
+    },
+    {
+      "input": "333",
+      "desc": "Edge: balanced 3"
+    },
+    {
+      "input": "999",
+      "desc": "Standard: 999"
+    },
+    {
+      "input": "12345",
+      "desc": "Standard: 5-digit"
+    },
+    {
+      "input": "99999",
+      "desc": "Standard: all 9"
+    },
+    {
+      "input": "100000",
+      "desc": "Standard: 1e5"
+    },
+    {
+      "input": "500000",
+      "desc": "Standard: 5e5"
+    },
+    {
+      "input": "999998",
+      "desc": "Standard: near max"
+    },
+    {
+      "input": "1000000",
+      "desc": "Edge: max"
+    },
+    {
+      "input": "999999",
+      "desc": "Edge: 6 9s"
+    },
+    {
+      "input": "3000",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

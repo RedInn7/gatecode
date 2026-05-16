@@ -1,27 +1,88 @@
 {
-  "pid": 821, "slug": "find-the-minimum-area-to-cover-all-ones-ii",
+  "pid": 821,
+  "slug": "find-the-minimum-area-to-cover-all-ones-ii",
   "inferred_constraints": "1 <= grid.length, grid[i].length <= 30, binary, >= 3 ones",
   "input_format": "line1: grid (JSON 2D)",
   "testcases": [
-    {"input": "[[1,0,1],[1,1,1]]", "desc": "Edge: example1"},
-    {"input": "[[1,0,1,0],[0,1,0,1]]", "desc": "Edge: example2"},
-    {"input": "[[1,1,1]]", "desc": "Edge: 3 ones in row"},
-    {"input": "[[1],[1],[1]]", "desc": "Edge: 3 ones col"},
-    {"input": "[[1,1],[1,1]]", "desc": "Edge: 2x2 4 ones"},
-    {"input": "[[1,0,1],[0,1,0],[1,0,1]]", "desc": "Standard: 5 corners"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1]]", "desc": "Standard: 3x3 all"},
-    {"input": "[[1,0,0,1],[0,0,0,0],[1,0,0,1]]", "desc": "Standard: 4 corners"},
-    {"input": "[[1,1,1,1,1]]", "desc": "Standard: 5 in row"},
-    {"input": "[[1],[1],[1],[1],[1]]", "desc": "Standard: 5 in col"},
-    {"input": "[[1,0,1,0,1],[0,0,0,0,0],[1,0,1,0,1]]", "desc": "Standard: scattered"},
-    {"input": "[[1,1,0,0,1,1],[0,0,1,1,0,0]]", "desc": "Standard: 2 groups + 1"},
-    {"input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]", "desc": "Standard: 3x5 full"},
-    {"input": "[[1,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,1,0]]", "desc": "Standard: spread"},
-    {"input": "[[0,1,0,0,1,0],[1,0,1,1,0,1]]", "desc": "Standard: 6 scattered"},
-    {"input": "[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]]", "desc": "Standard: 1x30 all"},
-    {"input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]]", "desc": "Standard: 3x10"},
-    {"input": "[[1,0,0],[0,1,0],[0,0,1]]", "desc": "Standard: diagonal"},
-    {"input": "[[1,1,1,0,0,0],[0,0,0,1,1,1]]", "desc": "Standard: 2 rectangles"},
-    {"input": "[[0,1,0,1,0,1],[1,0,1,0,1,0]]", "desc": "Special: checkerboard"}
+    {
+      "input": "[[1,0,1],[1,1,1]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[1,0,1,0],[0,1,0,1]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[-975,-98,762],[-139,90,-115]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[-132,753,-396],[-160,68,477]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[1,1],[1,1]]",
+      "desc": "Edge: 2x2 4 ones"
+    },
+    {
+      "input": "[[1,0,1],[0,1,0],[1,0,1]]",
+      "desc": "Standard: 5 corners"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1]]",
+      "desc": "Standard: 3x3 all"
+    },
+    {
+      "input": "[[1,0,0,1],[0,0,0,0],[1,0,0,1]]",
+      "desc": "Standard: 4 corners"
+    },
+    {
+      "input": "[[1,1,1,1,1]]",
+      "desc": "Standard: 5 in row"
+    },
+    {
+      "input": "[[1],[1],[1],[1],[1]]",
+      "desc": "Standard: 5 in col"
+    },
+    {
+      "input": "[[1,0,1,0,1],[0,0,0,0,0],[1,0,1,0,1]]",
+      "desc": "Standard: scattered"
+    },
+    {
+      "input": "[[1,1,0,0,1,1],[0,0,1,1,0,0]]",
+      "desc": "Standard: 2 groups + 1"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
+      "desc": "Standard: 3x5 full"
+    },
+    {
+      "input": "[[1,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,1,0]]",
+      "desc": "Standard: spread"
+    },
+    {
+      "input": "[[0,1,0,0,1,0],[1,0,1,1,0,1]]",
+      "desc": "Standard: 6 scattered"
+    },
+    {
+      "input": "[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]]",
+      "desc": "Standard: 1x30 all"
+    },
+    {
+      "input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]]",
+      "desc": "Standard: 3x10"
+    },
+    {
+      "input": "[[1,0,0],[0,1,0],[0,0,1]]",
+      "desc": "Standard: diagonal"
+    },
+    {
+      "input": "[[1,1,1,0,0,0],[0,0,0,1,1,1]]",
+      "desc": "Standard: 2 rectangles"
+    },
+    {
+      "input": "[[0,1,0,1,0,1],[1,0,1,0,1,0]]",
+      "desc": "Special: checkerboard"
+    }
   ]
 }

@@ -1,27 +1,88 @@
 {
-  "pid": 819, "slug": "out-of-boundary-paths",
+  "pid": 819,
+  "slug": "out-of-boundary-paths",
   "inferred_constraints": "1 <= m, n <= 50, 0 <= maxMove <= 50, 0 <= startRow < m, 0 <= startCol < n",
   "input_format": "line1: m (int); line2: n (int); line3: maxMove (int); line4: startRow (int); line5: startColumn (int)",
   "testcases": [
-    {"input": "2\n2\n2\n0\n0", "desc": "Edge: example1"},
-    {"input": "1\n3\n3\n0\n1", "desc": "Edge: example2"},
-    {"input": "1\n1\n0\n0\n0", "desc": "Edge: 1x1 no moves"},
-    {"input": "1\n1\n1\n0\n0", "desc": "Edge: 1x1 1 move"},
-    {"input": "1\n1\n50\n0\n0", "desc": "Edge: 1x1 50 moves"},
-    {"input": "50\n50\n0\n25\n25", "desc": "Edge: max grid 0 moves"},
-    {"input": "50\n50\n50\n0\n0", "desc": "Edge: max grid corner"},
-    {"input": "50\n50\n50\n25\n25", "desc": "Edge: max grid center"},
-    {"input": "2\n2\n1\n0\n0", "desc": "Standard: small 1 move"},
-    {"input": "3\n3\n3\n1\n1", "desc": "Standard: 3x3 center"},
-    {"input": "5\n5\n5\n0\n0", "desc": "Standard: 5x5 corner"},
-    {"input": "5\n5\n5\n2\n2", "desc": "Standard: 5x5 center"},
-    {"input": "10\n10\n10\n0\n0", "desc": "Standard: 10x10"},
-    {"input": "1\n50\n50\n0\n25", "desc": "Standard: long row"},
-    {"input": "50\n1\n50\n25\n0", "desc": "Standard: long col"},
-    {"input": "4\n4\n4\n2\n2", "desc": "Standard: 4x4 center"},
-    {"input": "20\n20\n20\n10\n10", "desc": "Standard: 20x20"},
-    {"input": "1\n1\n0\n0\n0", "desc": "Edge: 0 moves anywhere"},
-    {"input": "50\n50\n1\n0\n0", "desc": "Edge: corner 1 move"},
-    {"input": "30\n30\n30\n0\n29", "desc": "Special: corner long moves"}
+    {
+      "input": "1\n1\n0\n0\n0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "1\n3\n3\n0\n1",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "2\n3\n39\n0\n0",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "1\n1\n50\n0\n0",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "2\n2\n47\n0\n0",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "50\n50\n0\n25\n25",
+      "desc": "Edge: max grid 0 moves"
+    },
+    {
+      "input": "50\n50\n50\n0\n0",
+      "desc": "Edge: max grid corner"
+    },
+    {
+      "input": "50\n50\n50\n25\n25",
+      "desc": "Edge: max grid center"
+    },
+    {
+      "input": "2\n2\n1\n0\n0",
+      "desc": "Standard: small 1 move"
+    },
+    {
+      "input": "3\n3\n3\n1\n1",
+      "desc": "Standard: 3x3 center"
+    },
+    {
+      "input": "5\n5\n5\n0\n0",
+      "desc": "Standard: 5x5 corner"
+    },
+    {
+      "input": "5\n5\n5\n2\n2",
+      "desc": "Standard: 5x5 center"
+    },
+    {
+      "input": "10\n10\n10\n0\n0",
+      "desc": "Standard: 10x10"
+    },
+    {
+      "input": "1\n50\n50\n0\n25",
+      "desc": "Standard: long row"
+    },
+    {
+      "input": "50\n1\n50\n25\n0",
+      "desc": "Standard: long col"
+    },
+    {
+      "input": "4\n4\n4\n2\n2",
+      "desc": "Standard: 4x4 center"
+    },
+    {
+      "input": "20\n20\n20\n10\n10",
+      "desc": "Standard: 20x20"
+    },
+    {
+      "input": "1\n1\n0\n0\n0",
+      "desc": "Edge: 0 moves anywhere"
+    },
+    {
+      "input": "50\n50\n1\n0\n0",
+      "desc": "Edge: corner 1 move"
+    },
+    {
+      "input": "30\n30\n30\n0\n29",
+      "desc": "Special: corner long moves"
+    }
   ]
 }
