@@ -1,0 +1,28 @@
+{
+  "pid": 489,
+  "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",
+  "inferred_constraints": "1 <= s.length <= 2e5, 1 <= k <= 26, lowercase letters",
+  "input_format": "line1: s (raw string); line2: k (int)",
+  "testcases": [
+    {"input": "bcca\n2", "desc": "Edge: example1"},
+    {"input": "abbcd\n4", "desc": "Edge: example2"},
+    {"input": "a\n1", "desc": "Edge: n=1 k=1"},
+    {"input": "a\n2", "desc": "Edge: k > distinct chars, returns 0"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n26", "desc": "Edge: 26 distinct k=26"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\n1", "desc": "Edge: 26 distinct k=1"},
+    {"input": "aaaa\n1", "desc": "Edge: all same k=1"},
+    {"input": "aaaa\n2", "desc": "Edge: only 1 distinct, k=2 impossible"},
+    {"input": "abab\n2", "desc": "Edge: 2 distinct k=2"},
+    {"input": "aabbcc\n2", "desc": "Standard: 3 distinct each freq 2 k=2"},
+    {"input": "aabbcc\n3", "desc": "Standard: k=3 picks all"},
+    {"input": "aaabbbccc\n2", "desc": "Standard: 3 distinct each freq 3 k=2"},
+    {"input": "aabbccddee\n3", "desc": "Standard: 5 distinct k=3"},
+    {"input": "aabbcccddd\n3", "desc": "Standard: varied frequencies"},
+    {"input": "abcabcabc\n3", "desc": "Standard: 3 distinct each 3x"},
+    {"input": "aaabbcc\n3", "desc": "Standard: 3 distinct varying"},
+    {"input": "a\n26", "desc": "Edge: k=26 only 1 distinct"},
+    {"input": "abcdefghijklmnop\n5", "desc": "Standard: 16 distinct k=5"},
+    {"input": "aaaaabbbbbccccc\n2", "desc": "Standard: 3 distinct equal freq"},
+    {"input": "aaaaabbbbbcccccdddddeeeeeffffff\n3", "desc": "Standard: 6 distinct varying"}
+  ]
+}

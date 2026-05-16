@@ -1,0 +1,28 @@
+{
+  "pid": 484,
+  "slug": "make-array-non-decreasing-or-non-increasing",
+  "inferred_constraints": "1 <= nums.length <= 1000, 1 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON int array)",
+  "testcases": [
+    {"input": "[3,2,4,5,0]", "desc": "Edge: example1 - actually nums[i]>=1, use valid"},
+    {"input": "[3,2,4,5,1]", "desc": "Edge: variation"},
+    {"input": "[2,2,3,4]", "desc": "Edge: already non-decreasing"},
+    {"input": "[1]", "desc": "Edge: n=1"},
+    {"input": "[1,1]", "desc": "Edge: 2 same"},
+    {"input": "[1,2]", "desc": "Edge: 2 ascending"},
+    {"input": "[2,1]", "desc": "Edge: 2 descending"},
+    {"input": "[1,2,3,4,5]", "desc": "Edge: ascending"},
+    {"input": "[5,4,3,2,1]", "desc": "Edge: descending"},
+    {"input": "[1,1,1,1,1]", "desc": "Edge: all same"},
+    {"input": "[1000,1000,1000]", "desc": "Edge: all max"},
+    {"input": "[1,1000,1,1000,1]", "desc": "Edge: extreme alternating"},
+    {"input": "[100,50,75,25,90]", "desc": "Standard: random"},
+    {"input": "[1,2,3,2,1,2,3,2,1]", "desc": "Standard: mountain"},
+    {"input": "[5,3,1,3,5]", "desc": "Standard: valley"},
+    {"input": "[10,5,8,12,15,11,9,6,3]", "desc": "Standard: varied"},
+    {"input": "[1,1000,1,1000,1,1000,1,1000,1,1000]", "desc": "Standard: 10 alt"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: triangle"},
+    {"input": "[500,500,500,500,500]", "desc": "Edge: 5 mid"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1..10"}
+  ]
+}

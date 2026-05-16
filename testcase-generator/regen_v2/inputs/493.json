@@ -1,0 +1,28 @@
+{
+  "pid": 493,
+  "slug": "equal-sum-arrays-with-minimum-number-of-operations",
+  "inferred_constraints": "1 <= nums1.length, nums2.length <= 1e5, 1 <= nums1[i], nums2[i] <= 6",
+  "input_format": "line1: nums1 (JSON int array); line2: nums2 (JSON int array)",
+  "testcases": [
+    {"input": "[1,2,3,4,5,6]\n[1,1,2,2,2,2]", "desc": "Edge: example1"},
+    {"input": "[1,1,1,1,1,1,1]\n[6]", "desc": "Edge: example2"},
+    {"input": "[6,6]\n[1]", "desc": "Edge: example3 impossible"},
+    {"input": "[1]\n[1]", "desc": "Edge: equal min"},
+    {"input": "[6]\n[6]", "desc": "Edge: equal max"},
+    {"input": "[1]\n[6]", "desc": "Edge: gap 5"},
+    {"input": "[6]\n[1]", "desc": "Edge: gap 5 reverse"},
+    {"input": "[1,1,1]\n[6,6,6]", "desc": "Edge: max gap"},
+    {"input": "[1]\n[6,6,6,6,6,6,6]", "desc": "Edge: impossible"},
+    {"input": "[3,3,3,3]\n[3,3,3,3]", "desc": "Edge: equal mid"},
+    {"input": "[1,2,3,4,5,6]\n[6,5,4,3,2,1]", "desc": "Standard: equal sums"},
+    {"input": "[1,1,1,1,1]\n[5,5,5,5,5]", "desc": "Standard: extreme distinct"},
+    {"input": "[2,2,2,2,2]\n[4,4,4,4,4]", "desc": "Standard: simple gap"},
+    {"input": "[3,3,3,3,3,3]\n[6,6,6,6,6,6]", "desc": "Standard: half gap"},
+    {"input": "[6,6,6,6,6]\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Edge: impossible big"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]\n[6,6,6,6,6,6,6,6,6,6]", "desc": "Standard: max difference equal lens"},
+    {"input": "[2,3,4,5,6]\n[3,4,5,6]", "desc": "Standard: sums 20 vs 18"},
+    {"input": "[1,2,3,4,5]\n[5,4,3,2,1]", "desc": "Edge: same sum"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6]\n[6,6,5,5,4,4,3,3,2,2,1,1]", "desc": "Standard: same sum"},
+    {"input": "[1,2,3,4,5,6,6,6,6,6,6,6]\n[1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: complex"}
+  ]
+}

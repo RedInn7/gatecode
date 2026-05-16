@@ -1,0 +1,28 @@
+{
+  "pid": 486,
+  "slug": "longest-well-performing-interval",
+  "inferred_constraints": "1 <= hours.length <= 1e4, 0 <= hours[i] <= 16",
+  "input_format": "line1: hours (JSON int array)",
+  "testcases": [
+    {"input": "[9,9,6,0,6,6,9]", "desc": "Edge: example1"},
+    {"input": "[6,6,6]", "desc": "Edge: example2 all non-tiring"},
+    {"input": "[9]", "desc": "Edge: single tiring"},
+    {"input": "[6]", "desc": "Edge: single non-tiring"},
+    {"input": "[16]", "desc": "Edge: max value tiring"},
+    {"input": "[0]", "desc": "Edge: 0 hours"},
+    {"input": "[9,9,9,9,9]", "desc": "Edge: all tiring"},
+    {"input": "[8,8,8,8]", "desc": "Edge: exactly 8 not tiring"},
+    {"input": "[9,9,8,8,9,9]", "desc": "Standard: mix"},
+    {"input": "[9,9,9,8,8,8,9,9]", "desc": "Standard: tiring rich"},
+    {"input": "[6,9,6,9,6,9]", "desc": "Standard: alternating"},
+    {"input": "[9,6,9,6,9,6]", "desc": "Standard: alternating reverse"},
+    {"input": "[6,6,6,9,6,6,6,6,6,6]", "desc": "Standard: 1 tiring lots of rest"},
+    {"input": "[16,16,16,0,16,16,16]", "desc": "Standard: extreme alternating"},
+    {"input": "[8,9,8,9,8,9,8,9]", "desc": "Standard: boundary"},
+    {"input": "[6,6,6,6,6,9,9,9,9,9]", "desc": "Standard: rest then tiring"},
+    {"input": "[9,9,9,9,9,6,6,6,6,6]", "desc": "Standard: tiring then rest"},
+    {"input": "[10,11,12,13,14,15,16,7,8,9]", "desc": "Standard: many tiring then borderline"},
+    {"input": "[9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]", "desc": "Stress: 20 tiring"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]", "desc": "Standard: ascending"}
+  ]
+}
