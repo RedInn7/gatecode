@@ -5,8 +5,8 @@
   "input_format": "single line: s (raw string)",
   "testcases": [
     {
-      "input": "aaaaabbc",
-      "desc": "Edge: example1"
+      "input": "\"j\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "abcabcab",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"dz\"",
+      "input": "\"koyomqs\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Standard: 7 letters freq=3 odd, h=1 odd — invalid; replaced"
     },
     {
-      "input": "\"rvphiyqraesqhcld\"",
+      "input": "\"mntcibwzqpzwcsxv\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

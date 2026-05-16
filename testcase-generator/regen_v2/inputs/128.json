@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= n <= 150",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: n=1 minimum -> 2"},
-    {"input": "2", "desc": "Edge: n=2 already even -> 2"},
-    {"input": "3", "desc": "Edge: odd small -> 6"},
-    {"input": "4", "desc": "Edge: even small -> 4"},
-    {"input": "5", "desc": "Edge: odd 5 -> 10"},
-    {"input": "6", "desc": "Edge: even 6 -> 6"},
-    {"input": "7", "desc": "Standard: odd prime"},
-    {"input": "8", "desc": "Standard: even power-of-two"},
-    {"input": "9", "desc": "Standard: odd 9"},
-    {"input": "10", "desc": "Standard: even 10"},
-    {"input": "11", "desc": "Standard: odd prime 11"},
-    {"input": "50", "desc": "Standard: even mid"},
-    {"input": "51", "desc": "Standard: odd mid"},
-    {"input": "100", "desc": "Standard: even hundred"},
-    {"input": "101", "desc": "Standard: odd 101"},
-    {"input": "127", "desc": "Standard: odd prime"},
-    {"input": "128", "desc": "Standard: even power-of-two"},
-    {"input": "149", "desc": "Edge: odd near max"},
-    {"input": "150", "desc": "Edge: max even"},
-    {"input": "147", "desc": "Stress: odd near max -> 294"}
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum -> 2"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2 already even -> 2"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: even 6 -> 6"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: odd prime"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: even power-of-two"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: odd 9"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: even 10"
+    },
+    {
+      "input": "11",
+      "desc": "Standard: odd prime 11"
+    },
+    {
+      "input": "50",
+      "desc": "Standard: even mid"
+    },
+    {
+      "input": "51",
+      "desc": "Standard: odd mid"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: even hundred"
+    },
+    {
+      "input": "101",
+      "desc": "Standard: odd 101"
+    },
+    {
+      "input": "127",
+      "desc": "Standard: odd prime"
+    },
+    {
+      "input": "128",
+      "desc": "Standard: even power-of-two"
+    },
+    {
+      "input": "149",
+      "desc": "Edge: odd near max"
+    },
+    {
+      "input": "150",
+      "desc": "Edge: max even"
+    },
+    {
+      "input": "5",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
