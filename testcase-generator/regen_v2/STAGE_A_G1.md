@@ -75,3 +75,29 @@ Context budget approaching limit after generating 105 problems. Each problem req
    - Interactive problems (have explicit "API"/"reader" interfaces in description)
    - JavaScript-only problems (only JS/TS in template_code keys)
    - Codec/Serialize problems with non-unique outputs
+
+## A1-r2 (接力第 2 轮 — 2026-05-15/16)
+
+Generated ~100 problems in [117, 315] range. Many were also picked up and committed
+in parallel by A2-r2 agents (since they share the same `inputs/` directory and one
+A2 agent was inadvertently grabbing all newly-written files regardless of PID range).
+
+New skips added in this round:
+- 148 (query-batching JS async), 172 (codec n-ary tree), 178 (JS only)
+- 185 (word-squares-ii non-unique), 190 (n-ary tree node), 198 (JS only)
+- 230 (generate-schedule non-unique), 232 (letter-case-permutation order)
+- 239 (random-pick-index), 244 (longest-palindromic-substring non-unique)
+- 253 (frequencies-of-shortest-supersequences), 264 (JS generator)
+- 281 (reorganize-string non-unique), 282 (random-flip-matrix)
+- 290 (JS immutable), 317 (longest-happy-string non-unique)
+
+Current state at session end:
+- 353 PIDs in [1, 1909] have inputs JSON
+- ~1430 still TODO in range
+- 16+ skips total
+
+Commits pushed this round:
+- `regen-v2 stage A1-r2: generate inputs for PIDs 226-242 (13 problems, 3 skipped)`
+- `regen-v2 stage A1-r2: generate inputs for PIDs 273-274 (final batch leftover)`
+- `regen-v2 stage A1-r2: generate inputs for PIDs 302-307 (6 problems)`
+- `regen-v2 stage A1-r2: generate inputs for PIDs 308-315 (5 problems committed here)`
