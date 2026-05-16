@@ -5,8 +5,8 @@
   "input_format": "line1: text (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"nlaebolko\"",
-      "desc": "Edge: example1 -> 1"
+      "input": "\"w\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"loonbalxballpoon\"",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"lds\"",
+      "input": "\"dvhxngphkctlsg\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 10 balloons concatenated"
     },
     {
-      "input": "\"iucczpdfuihftkivcslalhtwthyoxwcf\"",
+      "input": "\"iiwgunrjvsvktxggoxvmxjixzmxsqyzz\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

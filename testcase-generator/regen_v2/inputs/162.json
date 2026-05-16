@@ -5,8 +5,8 @@
   "input_format": "line1: word (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"aaAbcBC\"",
-      "desc": "Edge: example1 -> 3"
+      "input": "\"i\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"abc\"",
@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"lzzvh\"",
+      "input": "\"ywfgngk\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: many alternations"
     },
     {
-      "input": "\"ncrtiktgqokqee\"",
+      "input": "\"icvakhmussryhj\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
