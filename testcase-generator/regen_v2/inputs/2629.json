@@ -1,0 +1,28 @@
+{
+  "pid": 2629,
+  "slug": "minimum-adjacent-swaps-to-make-a-valid-array",
+  "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= nums[i] <= 10^5",
+  "input_format": "single line: nums (JSON array)",
+  "testcases": [
+    {"input": "[3,4,5,5,3,1]", "desc": "Edge: example1"},
+    {"input": "[9]", "desc": "Edge: example2 single"},
+    {"input": "[1]", "desc": "Edge: single 1"},
+    {"input": "[1,2]", "desc": "Edge: n=2 already valid"},
+    {"input": "[2,1]", "desc": "Edge: n=2 swap"},
+    {"input": "[1,1]", "desc": "Edge: n=2 same"},
+    {"input": "[1,2,3]", "desc": "Edge: sorted"},
+    {"input": "[3,2,1]", "desc": "Edge: reverse"},
+    {"input": "[5,5,5]", "desc": "Edge: all same"},
+    {"input": "[1,3,5,7,9]", "desc": "Standard: sorted already"},
+    {"input": "[9,7,5,3,1]", "desc": "Standard: full reverse"},
+    {"input": "[5,3,1,4,2]", "desc": "Standard: random"},
+    {"input": "[1,2,3,4,5,1]", "desc": "Standard: 1 at both ends"},
+    {"input": "[5,2,3,4,5]", "desc": "Standard: 5 at both ends"},
+    {"input": "[1,1,1,2,3,4,5]", "desc": "Standard: 1s at front"},
+    {"input": "[5,4,3,2,1,1,1]", "desc": "Standard: reverse with dup 1s"},
+    {"input": "[1,5,5,5,5,5,5,5,5,1]", "desc": "Standard: 1 and 5 at ends"},
+    {"input": "[3,3,3,3,3,3,3,3,3,3]", "desc": "Standard: all 3s"},
+    {"input": "[5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1,5,4,3,2,1]", "desc": "Stress: pattern repeat"},
+    {"input": "[100000,1,100000,1,100000,1,100000,1,100000,1]", "desc": "Killer: max and 1 alternating"}
+  ]
+}

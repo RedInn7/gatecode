@@ -264,6 +264,11 @@
       "pid": 2611,
       "slug": "design-hashmap",
       "reason": "design class MyHashMap stateful put/get/remove"
+    },
+    {
+      "pid": 2633,
+      "slug": "most-common-course-pairs",
+      "reason": "SQL/Pandas problem"
     }
   ]
 }

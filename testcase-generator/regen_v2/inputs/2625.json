@@ -1,0 +1,28 @@
+{
+  "pid": 2625,
+  "slug": "greatest-english-letter-in-upper-and-lower-case",
+  "inferred_constraints": "1 <= s.length <= 1000, s consists of lowercase and uppercase English letters",
+  "input_format": "single line: s",
+  "testcases": [
+    {"input": "lEeTcOdE", "desc": "Edge: example1"},
+    {"input": "arRAzFif", "desc": "Edge: example2"},
+    {"input": "AbCdEfGhIjK", "desc": "Edge: example3"},
+    {"input": "a", "desc": "Edge: single lowercase"},
+    {"input": "A", "desc": "Edge: single uppercase"},
+    {"input": "aA", "desc": "Edge: pair smallest"},
+    {"input": "zZ", "desc": "Edge: pair largest"},
+    {"input": "ab", "desc": "Edge: no upper"},
+    {"input": "AB", "desc": "Edge: no lower"},
+    {"input": "abAB", "desc": "Edge: 2 pairs"},
+    {"input": "abcABC", "desc": "Standard: 3 pairs"},
+    {"input": "AaBbCcDdEeFfGg", "desc": "Standard: 7 pairs all"},
+    {"input": "zZyYxXwWvV", "desc": "Standard: 5 high pairs"},
+    {"input": "qWeRtYuIoP", "desc": "Standard: no pair"},
+    {"input": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", "desc": "Standard: all alpha"},
+    {"input": "AAAAAaaaaa", "desc": "Standard: same letter many times"},
+    {"input": "zzzzzZZZZZ", "desc": "Standard: many Z"},
+    {"input": "mMnNoOpPqQ", "desc": "Standard: middle pairs"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "desc": "Stress: 100 a's"},
+    {"input": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzzAABBCCDDEEFFGGHHIIJJKKLLMMNNOOPPQQRRSSTTUUVVWWXXYYZZ", "desc": "Killer: all pairs doubled"}
+  ]
+}

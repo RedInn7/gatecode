@@ -1,0 +1,28 @@
+{
+  "pid": 2631,
+  "slug": "time-to-cross-a-bridge",
+  "inferred_constraints": "1 <= k <= 10^4, k <= n <= 10^4, time.length == k, time[i].length == 4, 1 <= leftToRight, pickOld, rightToLeft, putNew <= 1000",
+  "input_format": "line1: n (int); line2: k (int); line3: time (JSON 2D array)",
+  "testcases": [
+    {"input": "1\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]", "desc": "Edge: example1"},
+    {"input": "3\n2\n[[1,9,1,8],[10,10,10,10]]", "desc": "Edge: example2"},
+    {"input": "1\n1\n[[1,1,1,1]]", "desc": "Edge: 1 box 1 worker"},
+    {"input": "1\n2\n[[1,1,1,1],[2,2,2,2]]", "desc": "Edge: 1 box 2 workers"},
+    {"input": "2\n1\n[[1,1,1,1]]", "desc": "Edge: 2 boxes 1 worker"},
+    {"input": "1\n1\n[[1000,1000,1000,1000]]", "desc": "Edge: max times"},
+    {"input": "1\n1\n[[1,1,1,1]]", "desc": "Edge: min times"},
+    {"input": "5\n2\n[[1,1,1,1],[1,1,1,1]]", "desc": "Edge: identical workers"},
+    {"input": "2\n2\n[[1,5,1,5],[5,1,5,1]]", "desc": "Standard: complementary"},
+    {"input": "5\n3\n[[1,2,3,4],[5,6,7,8],[9,10,11,12]]", "desc": "Standard: 3 workers"},
+    {"input": "10\n3\n[[1,1,1,1],[2,2,2,2],[3,3,3,3]]", "desc": "Standard: 10 boxes 3 workers"},
+    {"input": "10\n2\n[[5,5,5,5],[1,1,1,1]]", "desc": "Standard: 1 fast 1 slow"},
+    {"input": "20\n5\n[[1,2,3,4],[2,3,4,5],[3,4,5,6],[4,5,6,7],[5,6,7,8]]", "desc": "Standard: ramping"},
+    {"input": "3\n5\n[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]", "desc": "Standard: more workers than boxes"},
+    {"input": "100\n10\n[[10,10,10,10],[20,20,20,20],[30,30,30,30],[40,40,40,40],[50,50,50,50],[60,60,60,60],[70,70,70,70],[80,80,80,80],[90,90,90,90],[100,100,100,100]]", "desc": "Standard: 10 workers"},
+    {"input": "50\n4\n[[100,200,50,150],[200,100,150,50],[50,150,200,100],[150,50,100,200]]", "desc": "Standard: varied"},
+    {"input": "10\n10\n[[1,1,1,1],[2,2,2,2],[3,3,3,3],[4,4,4,4],[5,5,5,5],[6,6,6,6],[7,7,7,7],[8,8,8,8],[9,9,9,9],[10,10,10,10]]", "desc": "Standard: workers = boxes"},
+    {"input": "100\n3\n[[1,1,1,1],[1000,1000,1000,1000],[500,500,500,500]]", "desc": "Standard: extreme spread"},
+    {"input": "1000\n20\n[[10,10,10,10],[20,20,20,20],[30,30,30,30],[40,40,40,40],[50,50,50,50],[60,60,60,60],[70,70,70,70],[80,80,80,80],[90,90,90,90],[100,100,100,100],[110,110,110,110],[120,120,120,120],[130,130,130,130],[140,140,140,140],[150,150,150,150],[160,160,160,160],[170,170,170,170],[180,180,180,180],[190,190,190,190],[200,200,200,200]]", "desc": "Stress: 1000 boxes 20 workers"},
+    {"input": "10000\n1\n[[1000,1000,1000,1000]]", "desc": "Killer: max boxes 1 slow worker"}
+  ]
+}

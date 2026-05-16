@@ -1,0 +1,28 @@
+{
+  "pid": 2634,
+  "slug": "longest-word-in-dictionary",
+  "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 30, lowercase English letters",
+  "input_format": "single line: words (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"w\",\"wo\",\"wor\",\"worl\",\"world\"]", "desc": "Edge: example1"},
+    {"input": "[\"a\",\"banana\",\"app\",\"appl\",\"ap\",\"apply\",\"apple\"]", "desc": "Edge: example2"},
+    {"input": "[\"a\"]", "desc": "Edge: single letter"},
+    {"input": "[\"ab\"]", "desc": "Edge: 2 letters no chain"},
+    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 single chars"},
+    {"input": "[\"a\",\"ab\"]", "desc": "Edge: 2 chain"},
+    {"input": "[\"ab\",\"a\"]", "desc": "Edge: reversed order"},
+    {"input": "[\"a\",\"b\",\"c\"]", "desc": "Edge: 3 singles"},
+    {"input": "[\"a\",\"a\",\"a\"]", "desc": "Edge: duplicates"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard: clean chain"},
+    {"input": "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]", "desc": "Standard: lex test"},
+    {"input": "[\"k\",\"ki\",\"kir\",\"kira\",\"kiran\"]", "desc": "Standard: word chain"},
+    {"input": "[\"hello\",\"world\"]", "desc": "Standard: no chain"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"def\",\"defg\"]", "desc": "Standard: 2 chains"},
+    {"input": "[\"e\",\"ez\",\"ezy\",\"ezyz\",\"ezyzy\"]", "desc": "Standard: weird chain"},
+    {"input": "[\"a\",\"b\",\"ab\",\"ba\",\"abc\",\"bcd\"]", "desc": "Standard: mixed lex"},
+    {"input": "[\"yo\",\"ew\",\"fc\",\"zrc\",\"yodn\",\"fcm\",\"qm\",\"qmo\",\"fcmz\",\"z\",\"ewq\",\"yod\",\"ewqz\",\"y\"]", "desc": "Standard: messy"},
+    {"input": "[\"latte\",\"l\",\"la\",\"lat\",\"latt\",\"latteg\",\"lattegg\",\"lattegga\"]", "desc": "Standard: long chain"},
+    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\",\"abcdefghijk\",\"abcdefghijkl\",\"abcdefghijklm\",\"abcdefghijklmn\",\"abcdefghijklmno\",\"abcdefghijklmnop\",\"abcdefghijklmnopq\",\"abcdefghijklmnopqr\",\"abcdefghijklmnopqrs\",\"abcdefghijklmnopqrst\",\"abcdefghijklmnopqrstu\",\"abcdefghijklmnopqrstuv\",\"abcdefghijklmnopqrstuvw\",\"abcdefghijklmnopqrstuvwx\",\"abcdefghijklmnopqrstuvwxy\",\"abcdefghijklmnopqrstuvwxyz\"]", "desc": "Stress: full alpha chain"},
+    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Killer: all single chars"}
+  ]
+}
