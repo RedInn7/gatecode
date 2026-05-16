@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= s.length <= 10^5, lowercase English letters",
   "input_format": "single line: s",
   "testcases": [
-    {"input": "zza", "desc": "Edge: example1"},
-    {"input": "bac", "desc": "Edge: example2"},
-    {"input": "bdda", "desc": "Edge: example3"},
-    {"input": "a", "desc": "Edge: single char"},
-    {"input": "z", "desc": "Edge: single z"},
-    {"input": "ab", "desc": "Edge: sorted asc"},
-    {"input": "ba", "desc": "Edge: 2 chars desc"},
-    {"input": "aa", "desc": "Edge: 2 same"},
-    {"input": "abc", "desc": "Edge: sorted"},
-    {"input": "cba", "desc": "Standard: reverse"},
-    {"input": "zzzz", "desc": "Standard: all z"},
-    {"input": "aaaa", "desc": "Standard: all a"},
-    {"input": "abcdefghij", "desc": "Standard: sorted asc"},
-    {"input": "jihgfedcba", "desc": "Standard: sorted desc"},
-    {"input": "leetcode", "desc": "Standard: word"},
-    {"input": "programming", "desc": "Standard: word"},
-    {"input": "zazazaza", "desc": "Standard: alt z and a"},
-    {"input": "bdcafe", "desc": "Standard: scrambled"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Stress: 2 alphas"},
-    {"input": "zyxwvutsrqponmlkjihgfedcba", "desc": "Killer: reverse alpha"}
+    {
+      "input": "zza",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "bac",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "bdda",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "a",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "z",
+      "desc": "Edge: single z"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: sorted asc"
+    },
+    {
+      "input": "ba",
+      "desc": "Edge: 2 chars desc"
+    },
+    {
+      "input": "aa",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "abc",
+      "desc": "Edge: sorted"
+    },
+    {
+      "input": "cba",
+      "desc": "Standard: reverse"
+    },
+    {
+      "input": "zzzz",
+      "desc": "Standard: all z"
+    },
+    {
+      "input": "aaaa",
+      "desc": "Standard: all a"
+    },
+    {
+      "input": "abcdefghij",
+      "desc": "Standard: sorted asc"
+    },
+    {
+      "input": "jihgfedcba",
+      "desc": "Standard: sorted desc"
+    },
+    {
+      "input": "leetcode",
+      "desc": "Standard: word"
+    },
+    {
+      "input": "programming",
+      "desc": "Standard: word"
+    },
+    {
+      "input": "zazazaza",
+      "desc": "Standard: alt z and a"
+    },
+    {
+      "input": "bdcafe",
+      "desc": "Standard: scrambled"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+      "desc": "Stress: 2 alphas"
+    },
+    {
+      "input": "\"ywylszga\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

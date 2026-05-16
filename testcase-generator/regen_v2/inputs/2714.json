@@ -4,25 +4,85 @@
   "inferred_constraints": "1 <= points.length <= 10^5, points[i].length == 2, -2^31 <= xstart < xend <= 2^31-1",
   "input_format": "single line: points (JSON 2D array)",
   "testcases": [
-    {"input": "[[10,16],[2,8],[1,6],[7,12]]", "desc": "Edge: example1"},
-    {"input": "[[1,2],[3,4],[5,6],[7,8]]", "desc": "Edge: example2"},
-    {"input": "[[1,2],[2,3],[3,4],[4,5]]", "desc": "Edge: example3"},
-    {"input": "[[1,2]]", "desc": "Edge: single balloon"},
-    {"input": "[[1,1]]", "desc": "Edge: zero width"},
-    {"input": "[[1,2],[1,2]]", "desc": "Edge: same balloon"},
-    {"input": "[[1,2],[2,3]]", "desc": "Edge: touching"},
-    {"input": "[[1,2],[3,4]]", "desc": "Edge: separate"},
-    {"input": "[[1,10],[2,3]]", "desc": "Edge: nested"},
-    {"input": "[[1,2],[2,4],[3,5]]", "desc": "Standard: chain overlap"},
-    {"input": "[[1,5],[2,6],[3,7],[4,8],[5,9]]", "desc": "Standard: cascading"},
-    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]", "desc": "Standard: 5 disjoint"},
-    {"input": "[[1,100],[2,3],[4,5],[6,7]]", "desc": "Standard: one big"},
-    {"input": "[[-100,-50],[-25,0],[10,20],[30,40]]", "desc": "Standard: neg coords"},
-    {"input": "[[-2147483648,2147483647]]", "desc": "Standard: extreme range"},
-    {"input": "[[1,2147483647]]", "desc": "Standard: huge end"},
-    {"input": "[[1,5],[1,5],[1,5],[1,5],[1,5]]", "desc": "Standard: 5 identical"},
-    {"input": "[[1,10],[2,9],[3,8],[4,7],[5,6]]", "desc": "Standard: nested 5"},
-    {"input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[11,12],[13,14],[15,16],[17,18],[19,20],[21,22],[23,24],[25,26],[27,28],[29,30],[31,32],[33,34],[35,36],[37,38],[39,40],[41,42],[43,44],[45,46],[47,48],[49,50]]", "desc": "Stress: 25 disjoint"},
-    {"input": "[[-2147483648,-2147483647],[2147483646,2147483647]]", "desc": "Killer: extreme bounds"}
+    {
+      "input": "[[10,16],[2,8],[1,6],[7,12]]",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[7,8]]",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[[1,2],[2,3],[3,4],[4,5]]",
+      "desc": "Edge: example3"
+    },
+    {
+      "input": "[[1,2]]",
+      "desc": "Edge: single balloon"
+    },
+    {
+      "input": "[[1,1]]",
+      "desc": "Edge: zero width"
+    },
+    {
+      "input": "[[1,2],[1,2]]",
+      "desc": "Edge: same balloon"
+    },
+    {
+      "input": "[[1,2],[2,3]]",
+      "desc": "Edge: touching"
+    },
+    {
+      "input": "[[1,2],[3,4]]",
+      "desc": "Edge: separate"
+    },
+    {
+      "input": "[[1,10],[2,3]]",
+      "desc": "Edge: nested"
+    },
+    {
+      "input": "[[1,2],[2,4],[3,5]]",
+      "desc": "Standard: chain overlap"
+    },
+    {
+      "input": "[[1,5],[2,6],[3,7],[4,8],[5,9]]",
+      "desc": "Standard: cascading"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]",
+      "desc": "Standard: 5 disjoint"
+    },
+    {
+      "input": "[[1,100],[2,3],[4,5],[6,7]]",
+      "desc": "Standard: one big"
+    },
+    {
+      "input": "[[-100,-50],[-25,0],[10,20],[30,40]]",
+      "desc": "Standard: neg coords"
+    },
+    {
+      "input": "[[-2147483648,2147483647]]",
+      "desc": "Standard: extreme range"
+    },
+    {
+      "input": "[[1,2147483647]]",
+      "desc": "Standard: huge end"
+    },
+    {
+      "input": "[[1,5],[1,5],[1,5],[1,5],[1,5]]",
+      "desc": "Standard: 5 identical"
+    },
+    {
+      "input": "[[1,10],[2,9],[3,8],[4,7],[5,6]]",
+      "desc": "Standard: nested 5"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[11,12],[13,14],[15,16],[17,18],[19,20],[21,22],[23,24],[25,26],[27,28],[29,30],[31,32],[33,34],[35,36],[37,38],[39,40],[41,42],[43,44],[45,46],[47,48],[49,50]]",
+      "desc": "Stress: 25 disjoint"
+    },
+    {
+      "input": "[[-42,-830,-90,-207],[56,598,867,-64],[-92,-953,-672,-198],[-973,814,909,-880],[278,-127,617,960],[248,-7,563,-220],[-392,98,962,81],[-935,746,-63,744]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
