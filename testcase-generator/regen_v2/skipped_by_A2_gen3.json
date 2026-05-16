@@ -119,6 +119,11 @@
       "pid": 3292,
       "slug": "maximum-bags-with-full-capacity-of-rocks",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3286,
+      "slug": "kth-largest-sum-in-a-binary-tree",
+      "reason": "ACM mode problem"
     }
   ]
 }

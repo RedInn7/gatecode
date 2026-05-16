@@ -1,0 +1,76 @@
+{
+  "pid": 3271,
+  "slug": "sort-the-jumbled-numbers",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "933686",
+      "desc": "Standard: n=933686"
+    },
+    {
+      "input": "480366",
+      "desc": "Standard: n=480366"
+    },
+    {
+      "input": "880548",
+      "desc": "Standard: n=880548"
+    },
+    {
+      "input": "102168",
+      "desc": "Standard: n=102168"
+    },
+    {
+      "input": "413246",
+      "desc": "Standard: n=413246"
+    },
+    {
+      "input": "706698",
+      "desc": "Standard: n=706698"
+    },
+    {
+      "input": "977749",
+      "desc": "Standard: n=977749"
+    },
+    {
+      "input": "301146",
+      "desc": "Standard: n=301146"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
