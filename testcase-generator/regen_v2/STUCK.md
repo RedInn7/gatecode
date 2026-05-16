@@ -826,3 +826,13 @@ Audited at: 2026-05-16T15:37:45.041771
 Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=100000.0)
 Audited at: 2026-05-16T15:37:47.310111
+
+## PID 322 (as-far-from-land-as-possible)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100.0)
+Audited at: 2026-05-16T15:37:49.416870
+
+## PID 323 (widest-vertical-area-between-two-points-containing-no-points)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:49.443185
