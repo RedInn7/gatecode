@@ -6,7 +6,7 @@
   "testcases": [
     {
       "input": "[-1000]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Regenerated: edge_min at position 0"
     },
     {
       "input": "[5,3,1,2,5,1,2]",

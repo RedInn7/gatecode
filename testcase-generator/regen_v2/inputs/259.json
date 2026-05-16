@@ -5,8 +5,8 @@
   "input_format": "line1: s (string in JSON quotes)",
   "testcases": [
     {
-      "input": "\"abbccccd\"",
-      "desc": "Edge: example1"
+      "input": "\"w\"",
+      "desc": "Edge: n=1 or minimal input"
     },
     {
       "input": "\"aaaa\"",
@@ -81,7 +81,7 @@
       "desc": "Stress: 50 a's"
     },
     {
-      "input": "\"hpplfynwbkxnclsc\"",
+      "input": "\"rbsssceormashthz\"",
       "desc": "Stress: large n near max boundary"
     }
   ]

@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "4\n36",
+      "input": "4\n14",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100th 25-bit"
     },
     {
-      "input": "4\n50",
+      "input": "4\n43",
       "desc": "Stress: large n near max boundary"
     }
   ]

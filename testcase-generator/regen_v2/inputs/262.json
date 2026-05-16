@@ -81,7 +81,7 @@
       "desc": "Stress: 19 chars"
     },
     {
-      "input": "\"rcwxnocftr\"\n2",
+      "input": "\"ovppabjo\"\n2",
       "desc": "Stress: large n near max boundary"
     }
   ]
