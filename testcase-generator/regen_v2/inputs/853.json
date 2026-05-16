@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "8\n4",
+      "input": "6\n5",
       "desc": "Edge: all-equal elements"
     },
     {
