@@ -1041,3 +1041,21 @@ Stuck after 3 regeneration attempts. Final issues:
 - Array length=1000 > max=100.0
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:38:25.316771
+
+## PID 379 (count-nodes-equal-to-average-of-subtree)
+Stuck after 3 regeneration attempts. Final issues:
+- arr[2]=-129 < value_min=0.0
+- arr[3]=-992 < value_min=0.0
+- arr[4]=-483 < value_min=0.0
+- ... and 14 more value violations in this array
+- arr[1]=-553 < value_min=0.0
+- arr[4]=-988 < value_min=0.0
+- arr[6]=-704 < value_min=0.0
+- ... and 47 more value violations in this array
+Audited at: 2026-05-16T15:38:27.554574
+
+## PID 38 (lexicographically-minimum-string-after-removing-stars)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:38:27.557309
