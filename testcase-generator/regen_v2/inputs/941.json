@@ -1,0 +1,28 @@
+{
+  "pid": 941,
+  "slug": "find-the-occurrence-of-first-almost-equal-substring",
+  "inferred_constraints": "1 <= pattern.length < s.length <= 1e5, lowercase letters",
+  "input_format": "line1: s (raw); line2: pattern (raw)",
+  "testcases": [
+    {"input": "abcdefg\nbcdffg", "desc": "Edge: example1 -> 1"},
+    {"input": "ababbababa\nbacaba", "desc": "Edge: example2 -> 4"},
+    {"input": "abcd\ndba", "desc": "Edge: example3 -> -1"},
+    {"input": "dde\nd", "desc": "Edge: example4 -> 0"},
+    {"input": "ab\na", "desc": "Edge: minimal len 1 pattern"},
+    {"input": "ab\nb", "desc": "Edge: minimal pattern at end"},
+    {"input": "aa\nb", "desc": "Edge: 1-char different"},
+    {"input": "abc\nzz", "desc": "Edge: no match"},
+    {"input": "aaaaaaaaaa\naaa", "desc": "Standard: many matches first"},
+    {"input": "abcdefghij\nabcdefghi", "desc": "Standard: prefix match exact"},
+    {"input": "abcdefghij\nzbcdefghi", "desc": "Standard: prefix 1-edit"},
+    {"input": "abcdefghij\nzzcdefghi", "desc": "Standard: prefix 2-edit"},
+    {"input": "leetcoderscoderscoders\ncoders", "desc": "Standard: example-style"},
+    {"input": "zzzzzzzzzz\nyyyyyyyy", "desc": "Standard: many edits needed"},
+    {"input": "abcabcabcabcabc\nabcabd", "desc": "Standard: shifted with 1 edit"},
+    {"input": "xyzabcabcabcabcabcxyz\nabcab", "desc": "Standard: middle match"},
+    {"input": "qwertyuiopasdfghjklzxcvbnm\nasdfghjk", "desc": "Standard: long s pattern in middle"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nbb", "desc": "Standard: 1-edit possible everywhere"},
+    {"input": "abababababababababababababababababababababababab\nbabab", "desc": "Stress: alternating long"},
+    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\nzzzzzzzzz", "desc": "Killer: 9-char pat all z hard"}
+  ]
+}

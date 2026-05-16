@@ -1,0 +1,28 @@
+{
+  "pid": 935,
+  "slug": "subarrays-distinct-element-sum-of-squares-ii",
+  "inferred_constraints": "1 <= nums.length <= 1e5, 1 <= nums[i] <= 1e5, mod 1e9+7",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,1]", "desc": "Edge: example1 -> 15"},
+    {"input": "[2,2]", "desc": "Edge: example2 -> 3"},
+    {"input": "[1]", "desc": "Edge: single element"},
+    {"input": "[100000]", "desc": "Edge: single max value"},
+    {"input": "[1,1]", "desc": "Edge: two same"},
+    {"input": "[1,2]", "desc": "Edge: two distinct"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5]", "desc": "Standard: all same"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: all distinct"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard: alternating two"},
+    {"input": "[1,2,3,1,2,3,1,2,3,1,2,3]", "desc": "Standard: repeating triple"},
+    {"input": "[5,4,3,2,1]", "desc": "Standard: decreasing"},
+    {"input": "[100000,99999,100000,99999,100000]", "desc": "Standard: max alternating"},
+    {"input": "[7,3,7,8,7,3,3,8,8,7]", "desc": "Standard: mixed repeats"},
+    {"input": "[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]", "desc": "Standard: pattern len 5 x 4"},
+    {"input": "[10,20,10,30,10,40,10,50,10,60]", "desc": "Standard: one anchor repeated"},
+    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Standard: pairs"},
+    {"input": "[42,17,99,3,88,21,76,5,33,64,11,55,77,22,88,44,9,1,100,66]", "desc": "Standard: shuffled 20"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]", "desc": "Stress: 30 distinct"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Stress: 50 ones"},
+    {"input": "[3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7,1,6,9,3,9,9,3,7,5,1]", "desc": "Killer: 50 digits of pi"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 932,
+  "slug": "left-and-right-sum-differences",
+  "inferred_constraints": "1 <= nums.length <= 1000, 1 <= nums[i] <= 1e5",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[10,4,8,3]", "desc": "Edge: example1"},
+    {"input": "[1]", "desc": "Edge: example2 single"},
+    {"input": "[1,1]", "desc": "Edge: n=2 minimal pair"},
+    {"input": "[100000]", "desc": "Edge: single max value"},
+    {"input": "[1,100000]", "desc": "Edge: n=2 max/min"},
+    {"input": "[100000,100000,100000]", "desc": "Edge: all max"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: increasing"},
+    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "Standard: decreasing"},
+    {"input": "[5,5,5,5,5,5,5,5]", "desc": "Standard: all equal"},
+    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Standard: alternating small"},
+    {"input": "[100,200,300,400,500]", "desc": "Standard: multiples"},
+    {"input": "[42,17,99,3,88,21,76,5,33,64]", "desc": "Standard: random small"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 20 ones"},
+    {"input": "[99999,1,99999,1,99999,1,99999,1]", "desc": "Standard: extreme alternation"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Standard: longer increasing"},
+    {"input": "[50000,50000,50000,50000,50000,50000,50000,50000]", "desc": "Standard: middle-value all-equal"},
+    {"input": "[100000,99999,99998,99997,99996,99995,99994,99993,99992,99991]", "desc": "Standard: near-max decreasing"},
+    {"input": "[1,2,3]", "desc": "Edge: n=3"},
+    {"input": "[7,3,5,8,1,9,2,4,6,10,11,15,12,13,14]", "desc": "Stress: shuffled larger"},
+    {"input": "[100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000]", "desc": "Killer: 30 max values stress"}
+  ]
+}

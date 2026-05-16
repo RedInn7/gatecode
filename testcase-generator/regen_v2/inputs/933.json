@@ -1,0 +1,28 @@
+{
+  "pid": 933,
+  "slug": "flip-columns-for-maximum-number-of-equal-rows",
+  "inferred_constraints": "1 <= m,n <= 300, matrix[i][j] in {0,1}",
+  "input_format": "line1: matrix (JSON 2D array)",
+  "testcases": [
+    {"input": "[[0,1],[1,1]]", "desc": "Edge: example1 -> 1"},
+    {"input": "[[0,1],[1,0]]", "desc": "Edge: example2 -> 2"},
+    {"input": "[[0,0,0],[0,0,1],[1,1,0]]", "desc": "Edge: example3 -> 2"},
+    {"input": "[[0]]", "desc": "Edge: 1x1 zero"},
+    {"input": "[[1]]", "desc": "Edge: 1x1 one"},
+    {"input": "[[0,0,0,0,0]]", "desc": "Edge: single row all zero"},
+    {"input": "[[1,1,1,1,1]]", "desc": "Edge: single row all one"},
+    {"input": "[[1],[0],[1],[0]]", "desc": "Edge: single column alt"},
+    {"input": "[[0,0],[1,1]]", "desc": "Standard: complement pair"},
+    {"input": "[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0]]", "desc": "Standard: pairs all match"},
+    {"input": "[[1,0,0,1],[0,1,1,0],[1,1,0,0],[0,0,1,1]]", "desc": "Standard: mixed groups"},
+    {"input": "[[0,0,0],[1,1,1],[0,1,0]]", "desc": "Standard: 3x3 mixed"},
+    {"input": "[[1,1,0,0,1,1],[0,0,1,1,0,0],[1,1,0,0,1,1],[0,0,1,1,0,0]]", "desc": "Standard: alternating blocks"},
+    {"input": "[[0,1,1,0,1],[1,0,0,1,0],[0,1,1,0,1],[0,0,1,1,1],[1,1,0,0,0]]", "desc": "Standard: 5x5 random"},
+    {"input": "[[1,0],[1,0],[1,0],[1,0],[0,1]]", "desc": "Standard: 4 same 1 diff"},
+    {"input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1]]", "desc": "Edge: all rows identical all ones"},
+    {"input": "[[0,1,0,1,0,1,0,1,0,1]]", "desc": "Standard: long alt single row"},
+    {"input": "[[1,1,0,0,1,0,1,0,0,1],[0,0,1,1,0,1,0,1,1,0]]", "desc": "Standard: 2 rows complement"},
+    {"input": "[[1,0,1,0,1,0,1,0],[1,0,1,0,1,0,1,0],[1,0,1,0,1,0,1,0],[0,1,0,1,0,1,0,1],[0,1,0,1,0,1,0,1]]", "desc": "Stress: 5 rows two groups"},
+    {"input": "[[1,1,1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,0,0,0,0,0],[1,0,1,0,1,0,1,0,1,0,1,0],[0,1,0,1,0,1,0,1,0,1,0,1],[1,1,0,0,1,1,0,0,1,1,0,0],[0,0,1,1,0,0,1,1,0,0,1,1]]", "desc": "Killer: 6 distinct patterns 12 cols"}
+  ]
+}

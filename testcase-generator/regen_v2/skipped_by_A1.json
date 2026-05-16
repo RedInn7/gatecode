@@ -4,22 +4,22 @@
     {
       "pid": 53,
       "slug": "differences-between-two-objects",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Python templates, cannot run in cross-lang judge pipeline"
+      "reason": "JavaScript/TypeScript only — no C++/Python templates, cannot run in cross-lang judge pipeline"
     },
     {
       "pid": 71,
       "slug": "customer-purchasing-behavior-analysis",
-      "reason": "SQL only \u2014 Python3 template is NULL, not a code judge problem"
+      "reason": "SQL only — Python3 template is NULL, not a code judge problem"
     },
     {
       "pid": 74,
       "slug": "serialize-and-deserialize-n-ary-tree",
-      "reason": "Codec design class for N-ary tree \u2014 output identity makes verification ambiguous (multiple valid serializations); not suitable for standard judge"
+      "reason": "Codec design class for N-ary tree — output identity makes verification ambiguous (multiple valid serializations); not suitable for standard judge"
     },
     {
       "pid": 111,
       "slug": "find-the-index-of-the-large-integer",
-      "reason": "Interactive API problem (ArrayReader) \u2014 not suitable for stdin/stdout judging"
+      "reason": "Interactive API problem (ArrayReader) — not suitable for stdin/stdout judging"
     },
     {
       "pid": 113,
@@ -29,97 +29,52 @@
     {
       "pid": 148,
       "slug": "query-batching",
-      "reason": "JavaScript async/Promise problem \u2014 not amenable to C++/Python judge"
+      "reason": "JavaScript async/Promise problem — not amenable to C++/Python judge"
     },
     {
       "pid": 172,
       "slug": "encode-n-ary-tree-to-binary-tree",
-      "reason": "Codec for N-ary tree \u2014 output identity ambiguous, requires custom round-trip judge"
+      "reason": "Codec for N-ary tree — output identity ambiguous, requires custom round-trip judge"
     },
     {
       "pid": 178,
       "slug": "array-of-objects-to-matrix",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Python templates"
-    },
-    {
-      "pid": 190,
-      "slug": "maximum-depth-of-n-ary-tree",
-      "reason": "N-ary Node class \u2014 non-standard tree serialization, complex parsing"
-    },
-    {
-      "pid": 198,
-      "slug": "array-upper-bound",
-      "reason": "JavaScript/TypeScript only \u2014 Array prototype extension"
+      "reason": "JavaScript/TypeScript only — no C++/Python templates"
     },
     {
       "pid": 185,
       "slug": "word-squares-ii",
-      "reason": "Returns list of word-squares with non-deterministic ordering \u2014 needs SPJ for set equality"
+      "reason": "Returns list of word-squares with non-deterministic ordering — needs SPJ for set equality"
     },
     {
-      "pid": 1881,
-      "slug": "print-in-order",
-      "reason": "Multi-threaded synchronization problem \u2014 not supported by standard judge"
+      "pid": 190,
+      "slug": "maximum-depth-of-n-ary-tree",
+      "reason": "N-ary Node class — non-standard tree serialization, complex parsing"
+    },
+    {
+      "pid": 198,
+      "slug": "array-upper-bound",
+      "reason": "JavaScript/TypeScript only — Array prototype extension"
     },
     {
       "pid": 230,
       "slug": "generate-schedule",
-      "reason": "Multiple valid schedules \u2014 output is non-unique, needs SPJ"
+      "reason": "Multiple valid schedules — output is non-unique, needs SPJ"
     },
     {
       "pid": 232,
       "slug": "letter-case-permutation",
-      "reason": "Output is permutation list \u2014 order may differ between languages, needs sorted comparison"
+      "reason": "Output is permutation list — order may differ between languages, needs sorted comparison"
     },
     {
       "pid": 239,
       "slug": "random-pick-index",
-      "reason": "Randomized algorithm \u2014 output is non-deterministic, requires probabilistic SPJ"
-    },
-    {
-      "pid": 1854,
-      "slug": "the-knights-tour",
-      "reason": "Non-unique output (multiple valid tour orderings); needs SPJ"
-    },
-    {
-      "pid": 1856,
-      "slug": "design-circular-deque",
-      "reason": "Design class with stateful operations and method-call sequence"
-    },
-    {
-      "pid": 1862,
-      "slug": "my-calendar-ii",
-      "reason": "Design class with stateful book/cancel operations"
-    },
-    {
-      "pid": 1853,
-      "slug": "insert-delete-getrandom-o1-duplicates-allowed",
-      "reason": "Design class with randomized getRandom \u2014 non-deterministic output"
-    },
-    {
-      "pid": 1821,
-      "slug": "find-duplicate-file-in-system",
-      "reason": "Returns list of groups where group order and intra-group order are non-deterministic \u2014 needs sorted-set SPJ"
-    },
-    {
-      "pid": 1802,
-      "slug": "array-prototype-last",
-      "reason": "JavaScript only \u2014 Array.prototype extension"
-    },
-    {
-      "pid": 1810,
-      "slug": "flower-planting-with-no-adjacent",
-      "reason": "Multiple valid color assignments \u2014 output is non-unique"
-    },
-    {
-      "pid": 1801,
-      "slug": "convert-object-to-json-string",
-      "reason": "JavaScript only \u2014 JSON.stringify implementation"
+      "reason": "Randomized algorithm — output is non-deterministic, requires probabilistic SPJ"
     },
     {
       "pid": 317,
       "slug": "longest-happy-string",
-      "reason": "Non-unique output (return any longest happy string) \u2014 needs SPJ"
+      "reason": "Non-unique output (return any longest happy string) — needs SPJ"
     },
     {
       "pid": 318,
@@ -129,157 +84,17 @@
     {
       "pid": 328,
       "slug": "deep-object-filter",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
       "pid": 356,
       "slug": "minimum-path-cost-in-a-hidden-grid",
-      "reason": "Interactive problem \u2014 not stdin/stdout judgeable"
+      "reason": "Interactive problem — not stdin/stdout judgeable"
     },
     {
       "pid": 366,
       "slug": "shortest-path-in-a-hidden-grid",
-      "reason": "Interactive problem \u2014 not stdin/stdout judgeable"
-    },
-    {
-      "pid": 482,
-      "slug": "inversion-of-object",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 510,
-      "slug": "timeout-cancellation",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 609,
-      "slug": "compact-object",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 619,
-      "slug": "create-hello-world-function",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 656,
-      "slug": "valid-phone-numbers",
-      "reason": "Bash only \u2014 shell scripting problem"
-    },
-    {
-      "pid": 721,
-      "slug": "return-length-of-arguments-passed",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 758,
-      "slug": "memoize-ii",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 817,
-      "slug": "word-frequency",
-      "reason": "Bash only \u2014 shell scripting problem"
-    },
-    {
-      "pid": 896,
-      "slug": "generate-fibonacci-sequence",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 912,
-      "slug": "array-prototype-foreach",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 922,
-      "slug": "flatten-deeply-nested-array",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1000,
-      "slug": "sleep",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1049,
-      "slug": "convert-json-string-to-object",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1060,
-      "slug": "partial-function-with-placeholders",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1134,
-      "slug": "array-reduce-transformation",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1165,
-      "slug": "is-object-empty",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1212,
-      "slug": "execute-asynchronous-functions-in-parallel",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1250,
-      "slug": "generate-circular-array-values",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1343,
-      "slug": "parallel-execution-of-promises-for-individual-results-retrieval",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1402,
-      "slug": "throttle",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1438,
-      "slug": "infinite-method-object",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1478,
-      "slug": "bind-function-to-context",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1540,
-      "slug": "design-cancellable-function",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1618,
-      "slug": "tenth-line",
-      "reason": "Bash only \u2014 shell scripting problem"
-    },
-    {
-      "pid": 1669,
-      "slug": "delay-the-resolution-of-each-promise",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1689,
-      "slug": "counter",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1710,
-      "slug": "undefined-to-null",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
-    },
-    {
-      "pid": 1737,
-      "slug": "debounce",
-      "reason": "JavaScript/TypeScript only \u2014 no C++/Java/Python templates"
+      "reason": "Interactive problem — not stdin/stdout judgeable"
     },
     {
       "pid": 382,
@@ -299,7 +114,7 @@
     {
       "pid": 395,
       "slug": "find-a-peak-element-ii",
-      "reason": "Returns any peak element \u2014 non-unique output"
+      "reason": "Returns any peak element — non-unique output"
     },
     {
       "pid": 396,
@@ -312,24 +127,34 @@
       "reason": "Interactive API problem (read4)"
     },
     {
+      "pid": 408,
+      "slug": "balanced-k-factor-decomposition",
+      "reason": "Returns any optimal split — non-unique"
+    },
+    {
+      "pid": 439,
+      "slug": "find-the-shortest-superstring-ii",
+      "reason": "Returns any shortest superstring — non-unique"
+    },
+    {
       "pid": 455,
       "slug": "delete-node-in-a-bst",
       "reason": "Returns BST root - multiple valid answers when deleting node with 2 children"
     },
     {
-      "pid": 408,
-      "slug": "balanced-k-factor-decomposition",
-      "reason": "Returns any optimal split \u2014 non-unique"
-    },
-    {
-      "pid": 439,
-      "slug": "find-the-shortest-superstring-ii",
-      "reason": "Returns any shortest superstring \u2014 non-unique"
-    },
-    {
       "pid": 466,
       "slug": "design-task-manager",
       "reason": "Design class with stateful add/edit/rmv/execTop operations"
+    },
+    {
+      "pid": 482,
+      "slug": "inversion-of-object",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 510,
+      "slug": "timeout-cancellation",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
       "pid": 531,
@@ -344,52 +169,32 @@
     {
       "pid": 583,
       "slug": "correct-a-binary-tree",
-      "reason": "Custom binary tree defect insertion with fromNode/toNode pointer modification \u2014 requires custom test driver, not standard tree judge"
+      "reason": "Custom binary tree defect insertion with fromNode/toNode pointer modification — requires custom test driver, not standard tree judge"
     },
     {
       "pid": 585,
       "slug": "serialize-and-deserialize-binary-tree",
-      "reason": "Codec problem with non-unique serialization \u2014 requires roundtrip SPJ"
+      "reason": "Codec problem with non-unique serialization — requires roundtrip SPJ"
     },
     {
       "pid": 598,
       "slug": "find-the-celebrity",
-      "reason": "Interactive problem using helper function knows(a,b) \u2014 not amenable to stdin/stdout judge"
+      "reason": "Interactive problem using helper function knows(a,b) — not amenable to stdin/stdout judge"
     },
     {
       "pid": 601,
       "slug": "shuffle-an-array",
-      "reason": "Design class with randomized shuffle method \u2014 non-deterministic output"
+      "reason": "Design class with randomized shuffle method — non-deterministic output"
     },
     {
-      "pid": 658,
-      "slug": "permutations-ii",
-      "reason": "Permutations list with any order \u2014 non-deterministic, may break sorted comparison on nested arrays"
+      "pid": 609,
+      "slug": "compact-object",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
-      "pid": 690,
-      "slug": "random-pick-with-weight",
-      "reason": "Design class with randomized pickIndex \u2014 non-deterministic"
-    },
-    {
-      "pid": 693,
-      "slug": "iterator-for-combination",
-      "reason": "Iterator design class with next/hasNext stateful methods"
-    },
-    {
-      "pid": 694,
-      "slug": "zigzag-iterator",
-      "reason": "Iterator design class with next/hasNext stateful methods"
-    },
-    {
-      "pid": 710,
-      "slug": "first-unique-number",
-      "reason": "Design class FirstUnique with stateful showFirstUnique/add"
-    },
-    {
-      "pid": 717,
-      "slug": "design-skiplist",
-      "reason": "Skiplist design class with add/erase/search"
+      "pid": 619,
+      "slug": "create-hello-world-function",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
       "pid": 638,
@@ -407,6 +212,31 @@
       "reason": "Design class TwoSum with add/find stateful methods"
     },
     {
+      "pid": 656,
+      "slug": "valid-phone-numbers",
+      "reason": "Bash only — shell scripting problem"
+    },
+    {
+      "pid": 658,
+      "slug": "permutations-ii",
+      "reason": "Permutations list with any order — non-deterministic, may break sorted comparison on nested arrays"
+    },
+    {
+      "pid": 690,
+      "slug": "random-pick-with-weight",
+      "reason": "Design class with randomized pickIndex — non-deterministic"
+    },
+    {
+      "pid": 693,
+      "slug": "iterator-for-combination",
+      "reason": "Iterator design class with next/hasNext stateful methods"
+    },
+    {
+      "pid": 694,
+      "slug": "zigzag-iterator",
+      "reason": "Iterator design class with next/hasNext stateful methods"
+    },
+    {
       "pid": 698,
       "slug": "longest-increasing-subsequence-ii",
       "reason": "ACM mode problem with custom stdin/stdout I/O"
@@ -415,6 +245,21 @@
       "pid": 703,
       "slug": "reformat-the-string",
       "reason": "Returns any valid alphanumeric permutation — non-unique output, needs SPJ"
+    },
+    {
+      "pid": 710,
+      "slug": "first-unique-number",
+      "reason": "Design class FirstUnique with stateful showFirstUnique/add"
+    },
+    {
+      "pid": 717,
+      "slug": "design-skiplist",
+      "reason": "Skiplist design class with add/erase/search"
+    },
+    {
+      "pid": 721,
+      "slug": "return-length-of-arguments-passed",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
       "pid": 735,
@@ -430,6 +275,11 @@
       "pid": 749,
       "slug": "product-of-the-last-k-numbers",
       "reason": "Design class ProductOfNumbers with add/getProduct stateful methods"
+    },
+    {
+      "pid": 758,
+      "slug": "memoize-ii",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
       "pid": 762,
@@ -457,6 +307,11 @@
       "reason": "Design class WordFilter with f method"
     },
     {
+      "pid": 817,
+      "slug": "word-frequency",
+      "reason": "Bash only — shell scripting problem"
+    },
+    {
       "pid": 829,
       "slug": "the-dining-philosophers",
       "reason": "Multithreaded synchronization problem - not amenable to standard I/O testing"
@@ -477,9 +332,19 @@
       "reason": "Design class StreamChecker with stateful query method"
     },
     {
+      "pid": 896,
+      "slug": "generate-fibonacci-sequence",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
       "pid": 910,
       "slug": "design-order-management-system",
       "reason": "Design class with stateful operations"
+    },
+    {
+      "pid": 912,
+      "slug": "array-prototype-foreach",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
     },
     {
       "pid": 921,
@@ -487,9 +352,154 @@
       "reason": "Returns any valid longest subsequence — non-unique"
     },
     {
+      "pid": 922,
+      "slug": "flatten-deeply-nested-array",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
       "pid": 924,
       "slug": "queens-that-can-attack-the-king",
       "reason": "Returns coordinates in any order — non-unique"
+    },
+    {
+      "pid": 947,
+      "slug": "frequency-tracker",
+      "reason": "Design class with stateful add/deleteOne/hasFrequency methods"
+    },
+    {
+      "pid": 949,
+      "slug": "design-hashset",
+      "reason": "Design class MyHashSet — stateful operation sequence"
+    },
+    {
+      "pid": 1000,
+      "slug": "sleep",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1049,
+      "slug": "convert-json-string-to-object",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1060,
+      "slug": "partial-function-with-placeholders",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1134,
+      "slug": "array-reduce-transformation",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1165,
+      "slug": "is-object-empty",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1212,
+      "slug": "execute-asynchronous-functions-in-parallel",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1250,
+      "slug": "generate-circular-array-values",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1343,
+      "slug": "parallel-execution-of-promises-for-individual-results-retrieval",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1402,
+      "slug": "throttle",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1438,
+      "slug": "infinite-method-object",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1478,
+      "slug": "bind-function-to-context",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1540,
+      "slug": "design-cancellable-function",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1618,
+      "slug": "tenth-line",
+      "reason": "Bash only — shell scripting problem"
+    },
+    {
+      "pid": 1669,
+      "slug": "delay-the-resolution-of-each-promise",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1689,
+      "slug": "counter",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1710,
+      "slug": "undefined-to-null",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1737,
+      "slug": "debounce",
+      "reason": "JavaScript/TypeScript only — no C++/Java/Python templates"
+    },
+    {
+      "pid": 1801,
+      "slug": "convert-object-to-json-string",
+      "reason": "JavaScript only — JSON.stringify implementation"
+    },
+    {
+      "pid": 1802,
+      "slug": "array-prototype-last",
+      "reason": "JavaScript only — Array.prototype extension"
+    },
+    {
+      "pid": 1810,
+      "slug": "flower-planting-with-no-adjacent",
+      "reason": "Multiple valid color assignments — output is non-unique"
+    },
+    {
+      "pid": 1821,
+      "slug": "find-duplicate-file-in-system",
+      "reason": "Returns list of groups where group order and intra-group order are non-deterministic — needs sorted-set SPJ"
+    },
+    {
+      "pid": 1853,
+      "slug": "insert-delete-getrandom-o1-duplicates-allowed",
+      "reason": "Design class with randomized getRandom — non-deterministic output"
+    },
+    {
+      "pid": 1854,
+      "slug": "the-knights-tour",
+      "reason": "Non-unique output (multiple valid tour orderings); needs SPJ"
+    },
+    {
+      "pid": 1856,
+      "slug": "design-circular-deque",
+      "reason": "Design class with stateful operations and method-call sequence"
+    },
+    {
+      "pid": 1862,
+      "slug": "my-calendar-ii",
+      "reason": "Design class with stateful book/cancel operations"
+    },
+    {
+      "pid": 1881,
+      "slug": "print-in-order",
+      "reason": "Multi-threaded synchronization problem — not supported by standard judge"
     }
   ]
 }

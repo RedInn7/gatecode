@@ -1,0 +1,28 @@
+{
+  "pid": 950,
+  "slug": "remove-sub-folders-from-the-filesystem",
+  "inferred_constraints": "1 <= n <= 4e4, 2 <= folder[i].length <= 100, lowercase letters and '/'",
+  "input_format": "line1: folder (JSON array of strings)",
+  "testcases": [
+    {"input": "[\"/a\",\"/a/b\",\"/c/d\",\"/c/d/e\",\"/c/f\"]", "desc": "Edge: example1"},
+    {"input": "[\"/a\",\"/a/b/c\",\"/a/b/d\"]", "desc": "Edge: example2"},
+    {"input": "[\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]", "desc": "Edge: example3 no sub"},
+    {"input": "[\"/a\"]", "desc": "Edge: single folder"},
+    {"input": "[\"/ab\"]", "desc": "Edge: single longer name"},
+    {"input": "[\"/a\",\"/b\",\"/c\",\"/d\"]", "desc": "Edge: all top-level disjoint"},
+    {"input": "[\"/a\",\"/ab\",\"/abc\"]", "desc": "Edge: prefix but not subfolder"},
+    {"input": "[\"/a/b\",\"/a\"]", "desc": "Edge: order reversed"},
+    {"input": "[\"/a/b/c/d/e/f\",\"/a\"]", "desc": "Standard: deep sub"},
+    {"input": "[\"/a\",\"/a/b\",\"/a/b/c\",\"/a/b/c/d\",\"/a/b/c/d/e\"]", "desc": "Standard: chain of subfolders"},
+    {"input": "[\"/aa\",\"/aa/bb\",\"/aab\",\"/aab/cc\"]", "desc": "Standard: similar prefix names"},
+    {"input": "[\"/folder1\",\"/folder2\",\"/folder1/sub1\",\"/folder2/sub1\",\"/folder1/sub2\"]", "desc": "Standard: mixed"},
+    {"input": "[\"/a/b/c\",\"/a/b/d\",\"/a/c\",\"/b/c/d\",\"/b/d\"]", "desc": "Standard: tree-like"},
+    {"input": "[\"/x\",\"/y\",\"/z\",\"/x/a\",\"/y/b\",\"/z/c\"]", "desc": "Standard: 3 trees with subs"},
+    {"input": "[\"/abc\",\"/abc/def\",\"/abc/defg\",\"/abc/def/ghi\"]", "desc": "Standard: name boundary"},
+    {"input": "[\"/a/b\",\"/c/d\",\"/e/f\",\"/g/h\",\"/i/j\"]", "desc": "Standard: all 2-level disjoint"},
+    {"input": "[\"/a/b/c/d/e/f/g/h/i/j\",\"/a/b/c\",\"/a/b\",\"/a\"]", "desc": "Standard: nested deep"},
+    {"input": "[\"/aaa\",\"/aaaa\",\"/aaa/aaa\",\"/aaaa/aaa\"]", "desc": "Standard: aaa vs aaaa boundary"},
+    {"input": "[\"/x/y/z\",\"/x/y\",\"/x/y/z/w\",\"/x/y/zw\",\"/x/yz\"]", "desc": "Standard: tricky boundaries"},
+    {"input": "[\"/aa\",\"/aa/bb\",\"/aa/cc\",\"/bb\",\"/bb/aa\",\"/cc\",\"/cc/dd\",\"/cc/dd/ee\",\"/cc/dd/ff\",\"/dd\"]", "desc": "Killer: 10 mixed"}
+  ]
+}

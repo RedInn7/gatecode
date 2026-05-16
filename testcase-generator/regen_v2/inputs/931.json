@@ -1,0 +1,28 @@
+{
+  "pid": 931,
+  "slug": "count-special-subsequences",
+  "inferred_constraints": "7 <= nums.length <= 1000, 1 <= nums[i] <= 1000",
+  "input_format": "line1: nums (JSON array)",
+  "testcases": [
+    {"input": "[1,2,3,4,3,6,1]", "desc": "Edge: example1 -> 1"},
+    {"input": "[3,4,3,4,3,4,3,4]", "desc": "Edge: example2 -> 3"},
+    {"input": "[1,1,1,1,1,1,1]", "desc": "Edge: min length n=7 all ones"},
+    {"input": "[1,2,3,4,5,6,7]", "desc": "Edge: min length all distinct"},
+    {"input": "[1000,1000,1000,1000,1000,1000,1000]", "desc": "Edge: max value all same"},
+    {"input": "[1,1,1,1,1,1,1,1,1,1]", "desc": "Standard: 10 ones"},
+    {"input": "[2,3,2,3,2,3,2,3,2,3]", "desc": "Standard: alternating"},
+    {"input": "[1,2,1,2,1,2,1,2,1,2,1,2]", "desc": "Standard: alternating longer"},
+    {"input": "[6,2,1,3,5,4,9,7,8,10,11,12]", "desc": "Standard: random small"},
+    {"input": "[1,5,2,10,1,2,5,10,1,5,2,10]", "desc": "Standard: multiplicative patterns"},
+    {"input": "[2,4,3,6,2,4,3,6,2,4,3,6]", "desc": "Standard: 2*6=4*3 pattern"},
+    {"input": "[1,2,4,8,16,32,64,128,256,512]", "desc": "Standard: powers of 2"},
+    {"input": "[100,1,1,100,1,1,100,1,1,100]", "desc": "Standard: repeated pattern"},
+    {"input": "[1,1000,1,1000,1,1000,1,1000]", "desc": "Standard: extreme value alternation"},
+    {"input": "[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]", "desc": "Standard: 20 fives all equal"},
+    {"input": "[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: repeating sequence"},
+    {"input": "[7,3,8,2,11,9,1,5,6,4,12,10]", "desc": "Standard: shuffled"},
+    {"input": "[2,3,4,6,2,3,4,6,2,3,4,6,2,3,4,6]", "desc": "Stress: many ratio matches"},
+    {"input": "[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8]", "desc": "Stress: blocks of equal"},
+    {"input": "[12,15,18,20,24,25,30,36,40,45,48,50,60,72,75,80,90,100,120,144]", "desc": "Killer: many multiplicative relations"}
+  ]
+}

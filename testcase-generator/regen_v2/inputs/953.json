@@ -1,0 +1,28 @@
+{
+  "pid": 953,
+  "slug": "percentage-of-letter-in-string",
+  "inferred_constraints": "1 <= s.length <= 100, lowercase letters; letter is lowercase letter",
+  "input_format": "line1: s (raw); line2: letter (single char)",
+  "testcases": [
+    {"input": "foobar\no", "desc": "Edge: example1 -> 33"},
+    {"input": "jjjj\nk", "desc": "Edge: example2 -> 0"},
+    {"input": "a\na", "desc": "Edge: 100% match"},
+    {"input": "a\nb", "desc": "Edge: 0% on length 1"},
+    {"input": "aaaaaaaaaa\na", "desc": "Edge: 100% on 10"},
+    {"input": "aaaaaaaaaa\nb", "desc": "Edge: 0% on 10"},
+    {"input": "ababab\na", "desc": "Standard: 50%"},
+    {"input": "ababab\nb", "desc": "Standard: 50% other"},
+    {"input": "abcdefghij\na", "desc": "Standard: 10%"},
+    {"input": "aabb\na", "desc": "Standard: 50% exact"},
+    {"input": "aaab\nb", "desc": "Standard: 25%"},
+    {"input": "abc\nd", "desc": "Standard: 0% not present"},
+    {"input": "aaaaaaaaaaaaaaaaaaaa\na", "desc": "Standard: 100% on 20"},
+    {"input": "abcdeabcdeabcdeabcde\nc", "desc": "Standard: 20%"},
+    {"input": "abcdefghijklmnopqrstuvwxyz\nz", "desc": "Standard: 3% (1/26 rounds 3)"},
+    {"input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\na", "desc": "Edge: 100 a's"},
+    {"input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabca\na", "desc": "Standard: 100 chars 34 a's = 34%"},
+    {"input": "zaaaaaaaaa\nz", "desc": "Standard: 10%"},
+    {"input": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\ny", "desc": "Standard: 65 y's 100%"},
+    {"input": "qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyq\nq", "desc": "Killer: 102 chars 18 q's"}
+  ]
+}
