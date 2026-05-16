@@ -4,25 +4,85 @@
   "inferred_constraints": "2 <= nums.length <= 50; n is even; 1 <= nums[i] <= 50",
   "input_format": "single line: nums (JSON array)",
   "testcases": [
-    {"input": "[7,8,3,4,15,13,4,1]", "desc": "Standard example 1"},
-    {"input": "[1,9,8,3,10,5]", "desc": "Standard example 2"},
-    {"input": "[1,2,3,7,8,9]", "desc": "Standard example 3"},
-    {"input": "[1,1]", "desc": "Edge: 2 same"},
-    {"input": "[1,2]", "desc": "Edge: 2 distinct"},
-    {"input": "[1,50]", "desc": "Edge: min and max"},
-    {"input": "[50,50]", "desc": "Edge: 2 max"},
-    {"input": "[1,1,1,1]", "desc": "4 same"},
-    {"input": "[1,2,49,50]", "desc": "Spread"},
-    {"input": "[10,20,30,40]", "desc": "Step 10"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "10 asc"},
-    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "10 desc"},
-    {"input": "[5,5,5,5,5,5]", "desc": "All 5"},
-    {"input": "[50,1,50,1,50,1,50,1]", "desc": "Alternating extremes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "20 asc"},
-    {"input": "[25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25]", "desc": "20 mid"},
-    {"input": "[1,50,2,49,3,48,4,47,5,46,6,45,7,44,8,43,9,42,10,41]", "desc": "Pairs alt"},
-    {"input": "[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39]", "desc": "Odds"},
-    {"input": "[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]", "desc": "Evens"},
-    {"input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10]", "desc": "Pairs of 10 first"}
+    {
+      "input": "[7,8,3,4,15,13,4,1]",
+      "desc": "Standard example 1"
+    },
+    {
+      "input": "[1,9,8,3,10,5]",
+      "desc": "Standard example 2"
+    },
+    {
+      "input": "[1,2,3,7,8,9]",
+      "desc": "Standard example 3"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: 2 same"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: 2 distinct"
+    },
+    {
+      "input": "[1,50]",
+      "desc": "Edge: min and max"
+    },
+    {
+      "input": "[50,50]",
+      "desc": "Edge: 2 max"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "desc": "4 same"
+    },
+    {
+      "input": "[1,2,49,50]",
+      "desc": "Spread"
+    },
+    {
+      "input": "[10,20,30,40]",
+      "desc": "Step 10"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "10 asc"
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]",
+      "desc": "10 desc"
+    },
+    {
+      "input": "[5,5,5,5,5,5]",
+      "desc": "All 5"
+    },
+    {
+      "input": "[50,1,50,1,50,1,50,1]",
+      "desc": "Alternating extremes"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
+      "desc": "20 asc"
+    },
+    {
+      "input": "[22,24,26,32,49,47,25,22,26,13,34,29,32,43,6,49,32]",
+      "desc": "Regenerated: standard at position 15"
+    },
+    {
+      "input": "[1,50,2,49,3,48,4,47,5,46,6,45,7,44,8,43,9,42,10,41]",
+      "desc": "Pairs alt"
+    },
+    {
+      "input": "[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39]",
+      "desc": "Odds"
+    },
+    {
+      "input": "[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]",
+      "desc": "Evens"
+    },
+    {
+      "input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10]",
+      "desc": "Pairs of 10 first"
+    }
   ]
 }
