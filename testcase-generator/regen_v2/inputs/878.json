@@ -1,27 +1,88 @@
 {
-  "pid": 878, "slug": "minimum-positive-sum-subarray",
+  "pid": 878,
+  "slug": "minimum-positive-sum-subarray",
   "inferred_constraints": "guess: 1 <= nums.length <= 100, nums in some range, l,r bounds",
   "input_format": "line1: nums (JSON array); line2: l (int); line3: r (int)",
   "testcases": [
-    {"input": "[3,-2,1,4]\n2\n3", "desc": "Edge: example"},
-    {"input": "[-2,2,-3,1]\n2\n3", "desc": "Edge: example2"},
-    {"input": "[1,2,3]\n1\n3", "desc": "Edge: all positive"},
-    {"input": "[1]\n1\n1", "desc": "Edge: single"},
-    {"input": "[-1]\n1\n1", "desc": "Edge: single negative -1"},
-    {"input": "[0]\n1\n1", "desc": "Edge: zero"},
-    {"input": "[1,2,3,4,5]\n2\n4", "desc": "Standard: range 2-4"},
-    {"input": "[-1,-2,-3,-4]\n1\n4", "desc": "Edge: all negative"},
-    {"input": "[0,0,0,0]\n1\n3", "desc": "Edge: all zero"},
-    {"input": "[1,-1,1,-1,1]\n1\n5", "desc": "Standard: alternating"},
-    {"input": "[10,-5,3,7,-2]\n2\n4", "desc": "Standard: mixed"},
-    {"input": "[100,-100,50,-50]\n1\n4", "desc": "Standard: 4 elements"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3\n5", "desc": "Standard: 1-10"},
-    {"input": "[5,5,5,5,5]\n1\n3", "desc": "Standard: all 5"},
-    {"input": "[-10,5,-3,8,-2,4]\n2\n4", "desc": "Standard: mixed 6"},
-    {"input": "[100,200,300,400,500]\n1\n5", "desc": "Standard: hundreds"},
-    {"input": "[-5,-4,-3,-2,-1]\n1\n5", "desc": "Standard: all neg desc"},
-    {"input": "[1,1,1,1,1,1,1,1,1,1]\n5\n10", "desc": "Standard: 10 ones"},
-    {"input": "[1,-10,2,-10,3]\n1\n5", "desc": "Standard: small + bursts"},
-    {"input": "[-100,100,-100,100,-100]\n3\n5", "desc": "Special: alternating extreme"}
+    {
+      "input": "[3,-2,1,4]\n2\n3",
+      "desc": "Edge: example"
+    },
+    {
+      "input": "[-2,2,-3,1]\n2\n3",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "[1,2,3]\n1\n3",
+      "desc": "Edge: all positive"
+    },
+    {
+      "input": "[1]\n1\n1",
+      "desc": "Edge: single"
+    },
+    {
+      "input": "[-1]\n1\n1",
+      "desc": "Edge: single negative -1"
+    },
+    {
+      "input": "[0]\n1\n1",
+      "desc": "Edge: zero"
+    },
+    {
+      "input": "[1,2,3,4,5]\n2\n4",
+      "desc": "Standard: range 2-4"
+    },
+    {
+      "input": "[-1,-2,-3,-4]\n1\n4",
+      "desc": "Edge: all negative"
+    },
+    {
+      "input": "[0,0,0,0]\n1\n3",
+      "desc": "Edge: all zero"
+    },
+    {
+      "input": "[1,-1,1,-1,1]\n1\n5",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "[10,-5,3,7,-2]\n2\n4",
+      "desc": "Standard: mixed"
+    },
+    {
+      "input": "[100,-100,50,-50]\n1\n4",
+      "desc": "Standard: 4 elements"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n3\n5",
+      "desc": "Standard: 1-10"
+    },
+    {
+      "input": "[987,31,601,917,-247,546,-973,-946,-47,-213,980,-737,314,709,125,-544,-256,290,920,100,-836,-312,-845,-248,987,-835,-640,266,-656,311,-750,-57,-785,-203,-232,256,-530,358,891,298,585,-445,-160,-524,-204,80,502,146,-538,987,-177,488,-862,-125,-936,-14,870,-85,395,-350,-773,-789,765,98,-671,142,457,41,894,-284,740,-243,-551,364,-79,-39,-902,-881,-74,-837,875,946,-94,161,-511,448,-406,436,-724,-655,580]\n1\n1",
+      "desc": "Regenerated: diverse at position 13"
+    },
+    {
+      "input": "[-10,5,-3,8,-2,4]\n2\n4",
+      "desc": "Standard: mixed 6"
+    },
+    {
+      "input": "[100,200,300,400,500]\n1\n5",
+      "desc": "Standard: hundreds"
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n1\n5",
+      "desc": "Standard: all neg desc"
+    },
+    {
+      "input": "[-999,777,-868,463,363,-947,725,-904,776,-742,381,373,626,-323,-759,606,-705,493,-464,-309,712,-838,397,-829,-556,-516,-639,-415,-59,666,-242,-18,-438,944,715,496,901,-963,-958,-246,-23,-209,958,-847,-600,-692,-848,876,-207,793,-64,507,188,-551,727,-785,-129,-97,439,-531,-791,-298,-782,-487,-108,102,976,-1000,670,200,753,-205,681,-94,-112,-756,745,-707,-696,-789,-385,-218,-714,561,-336,-948,-446,-236,827,-554,-731,820,549,95,-520,973,-738,735,75,292]\n2\n3",
+      "desc": "Regenerated: stress at position 17"
+    },
+    {
+      "input": "[1,-10,2,-10,3]\n1\n5",
+      "desc": "Standard: small + bursts"
+    },
+    {
+      "input": "[157,561,-484,-94,-682,-734,275,-790,-650,-795,-489,-266,-214,-894,-725,-84,-136,-842,-586,399,449,-836,800,793,950,296,-3,-677,-242,-50,-142,-545,-97,-592,494,-683,453,32,341,981,95,150,492,809,-608,276,11,-449,0,-538,-240,594,447,289,-167,993,-93,441,160,-774,202,-521,61,-158,-529,-955,-159,772,152,-734,-550,870,875,924,840,60,295,-390,-79,156,-608,116,602,-629,-777,161,601,-140,268,811,-805,584,908,560,-393,174,545,344,-838,35]\n2\n3",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
