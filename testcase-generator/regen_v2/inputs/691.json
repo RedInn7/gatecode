@@ -1,0 +1,88 @@
+{
+  "pid": 691,
+  "slug": "first-unique-character-in-a-string",
+  "inferred_constraints": "1 <= s.length <= 1e5; s consists of lowercase English letters",
+  "input_format": "line1: s (string)",
+  "testcases": [
+    {
+      "input": "leetcode",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "loveleetcode",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"zxaa\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"tsufieygug\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"eonckeklrrk\"",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: 2 distinct"
+    },
+    {
+      "input": "z",
+      "desc": "Edge: single z"
+    },
+    {
+      "input": "zz",
+      "desc": "Edge: 2 z's"
+    },
+    {
+      "input": "abc",
+      "desc": "Standard: 3 distinct"
+    },
+    {
+      "input": "aabbcc",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "aabbccd",
+      "desc": "Standard: d unique"
+    },
+    {
+      "input": "abacabad",
+      "desc": "Standard: c first unique"
+    },
+    {
+      "input": "zyxwvutsrqponmlkjihgfedcba",
+      "desc": "Standard: reverse alphabet"
+    },
+    {
+      "input": "thequickbrownfoxjumpsoverthelazydog",
+      "desc": "Standard: pangram"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "desc": "Standard: alphabet"
+    },
+    {
+      "input": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+      "desc": "Standard: all duplicates"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "desc": "Stress: 51 a's"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+      "desc": "Stress: 3 alphabets"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy",
+      "desc": "Stress: alphabet+25 - z unique"
+    },
+    {
+      "input": "\"enhvhhwmdnzyxztinctzzdno\"",
+      "desc": "Stress: large n near max boundary"
+    }
+  ]
+}

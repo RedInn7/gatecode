@@ -1,0 +1,88 @@
+{
+  "pid": 687,
+  "slug": "longest-subsequence-repeated-k-times",
+  "inferred_constraints": "n == s.length; 2 <= n, k <= 2000; lowercase letters; n < k*8",
+  "input_format": "line1: s (string); line2: k (int)",
+  "testcases": [
+    {
+      "input": "letsleetcode\n2",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "bb\n2",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"veuo\"\n2",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"ahwxzlhjqgj\"\n2",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "\"qcwmsmd\"\n2",
+      "desc": "Edge: all-equal elements"
+    },
+    {
+      "input": "aaaa\n2",
+      "desc": "Edge: 4 a's k=2"
+    },
+    {
+      "input": "aaaa\n4",
+      "desc": "Edge: 4 a's k=4"
+    },
+    {
+      "input": "aabb\n2",
+      "desc": "Edge: simple"
+    },
+    {
+      "input": "abab\n2",
+      "desc": "Standard: alternating"
+    },
+    {
+      "input": "abcabc\n2",
+      "desc": "Standard: repeat block"
+    },
+    {
+      "input": "ababab\n3",
+      "desc": "Standard: 3 ababs"
+    },
+    {
+      "input": "aaabbb\n3",
+      "desc": "Standard: 3 a's 3 b's"
+    },
+    {
+      "input": "bababcba\n2",
+      "desc": "Standard: bba twice"
+    },
+    {
+      "input": "abbabaaa\n2",
+      "desc": "Standard: complex"
+    },
+    {
+      "input": "aabbccddee\n2",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "abcdefghij\n2",
+      "desc": "Standard: all distinct no repeat"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n7",
+      "desc": "Stress: 74 a's k=7"
+    },
+    {
+      "input": "abcdefgabcdefgabcdefgabcdefgabcdefg\n5",
+      "desc": "Stress: 5 copies of abcdefg"
+    },
+    {
+      "input": "letsleetcodeletsleetcode\n2",
+      "desc": "Stress: 2 of example string"
+    },
+    {
+      "input": "aabbccddeeffgg\n2",
+      "desc": "Special: pairs of 7 letters killer"
+    }
+  ]
+}
