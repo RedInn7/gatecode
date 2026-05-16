@@ -81,7 +81,7 @@
       "desc": "Stress: many plate groups"
     },
     {
-      "input": "\"iwpfodseapuixuyyzeqwrkywqbfjhrpulhrpbpptiv\"\n[[-342,-81,-766,-728],[143,354,-769,-349],[980,-598,151,-438],[-303,872,-588,694]]",
+      "input": "\"oortpafqrajsnmfblmhjboicbtnbdjmlkvzjbctfis\"\n[[292,444,-215,186],[211,88,618,594],[531,-860,-167,534],[355,247,941,-892]]",
       "desc": "Stress: large n near max boundary"
     }
   ]

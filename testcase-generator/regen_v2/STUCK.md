@@ -604,3 +604,14 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=10000)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:02.065671
+
+## PID 255 (find-the-winning-player-in-coin-game)
+Stuck after 3 regeneration attempts. Final issues:
+- No testcase with n=0 or n=1 (single element / empty array / single-node tree)
+- No all-equal elements testcase
+Audited at: 2026-05-16T15:37:04.832284
+
+## PID 256 (largest-values-from-labels)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=20000.0)
+Audited at: 2026-05-16T15:37:04.836405
