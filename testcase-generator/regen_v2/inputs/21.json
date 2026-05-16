@@ -17,8 +17,8 @@
       "desc": "Edge: n=1, k=1 trivially equal"
     },
     {
-      "input": "[-1]\n1",
-      "desc": "Edge: n=1 single -1"
+      "input": "[790,784,495,-431,-572,-858,-908]\n1",
+      "desc": "Edge: monotone decreasing sequence"
     },
     {
       "input": "[1,1]\n1",

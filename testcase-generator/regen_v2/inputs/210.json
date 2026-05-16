@@ -4,25 +4,85 @@
   "inferred_constraints": "0 <= numOnes,numZeros,numNegOnes <= 50, 0 <= k <= sum of all",
   "input_format": "line1: numOnes (int); line2: numZeros (int); line3: numNegOnes (int); line4: k (int)",
   "testcases": [
-    {"input": "3\n2\n0\n2", "desc": "Edge: example1"},
-    {"input": "3\n2\n0\n4", "desc": "Edge: example2"},
-    {"input": "0\n0\n0\n0", "desc": "Edge: all zeros, k=0"},
-    {"input": "1\n0\n0\n1", "desc": "Edge: one 1 take it"},
-    {"input": "0\n1\n0\n1", "desc": "Edge: one 0 take it"},
-    {"input": "0\n0\n1\n1", "desc": "Edge: one -1 forced"},
-    {"input": "50\n50\n50\n0", "desc": "Edge: max all, k=0"},
-    {"input": "50\n50\n50\n50", "desc": "Edge: take 50 ones"},
-    {"input": "50\n50\n50\n100", "desc": "Edge: take all ones+zeros"},
-    {"input": "50\n50\n50\n150", "desc": "Edge: take everything"},
-    {"input": "0\n50\n50\n50", "desc": "Standard: only zeros first"},
-    {"input": "0\n0\n50\n50", "desc": "Standard: must take all negatives"},
-    {"input": "5\n5\n5\n10", "desc": "Standard: take 5 ones + 5 zeros"},
-    {"input": "5\n5\n5\n15", "desc": "Standard: forced to take negatives"},
-    {"input": "10\n20\n30\n30", "desc": "Standard: take 10 ones + 20 zeros"},
-    {"input": "10\n20\n30\n45", "desc": "Standard: includes 15 negatives"},
-    {"input": "1\n1\n1\n2", "desc": "Standard: take 1 + 0"},
-    {"input": "1\n1\n1\n3", "desc": "Standard: take all 3"},
-    {"input": "50\n0\n50\n51", "desc": "Stress: ones + 1 neg"},
-    {"input": "50\n50\n50\n75", "desc": "Stress: half overshoot, take 50+25 zeros"}
+    {
+      "input": "0\n0\n0\n0",
+      "desc": "Edge: n=1 or minimal input"
+    },
+    {
+      "input": "3\n2\n0\n4",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "2\n2\n0\n3",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "2\n0\n0\n4",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "0\n1\n0\n1",
+      "desc": "Edge: one 0 take it"
+    },
+    {
+      "input": "0\n0\n1\n1",
+      "desc": "Edge: one -1 forced"
+    },
+    {
+      "input": "50\n50\n50\n0",
+      "desc": "Edge: max all, k=0"
+    },
+    {
+      "input": "50\n50\n50\n50",
+      "desc": "Edge: take 50 ones"
+    },
+    {
+      "input": "50\n50\n50\n100",
+      "desc": "Edge: take all ones+zeros"
+    },
+    {
+      "input": "50\n50\n50\n150",
+      "desc": "Edge: take everything"
+    },
+    {
+      "input": "0\n50\n50\n50",
+      "desc": "Standard: only zeros first"
+    },
+    {
+      "input": "0\n0\n50\n50",
+      "desc": "Standard: must take all negatives"
+    },
+    {
+      "input": "5\n5\n5\n10",
+      "desc": "Standard: take 5 ones + 5 zeros"
+    },
+    {
+      "input": "5\n5\n5\n15",
+      "desc": "Standard: forced to take negatives"
+    },
+    {
+      "input": "10\n20\n30\n30",
+      "desc": "Standard: take 10 ones + 20 zeros"
+    },
+    {
+      "input": "10\n20\n30\n45",
+      "desc": "Standard: includes 15 negatives"
+    },
+    {
+      "input": "1\n1\n1\n2",
+      "desc": "Standard: take 1 + 0"
+    },
+    {
+      "input": "1\n1\n1\n3",
+      "desc": "Standard: take all 3"
+    },
+    {
+      "input": "50\n0\n50\n51",
+      "desc": "Stress: ones + 1 neg"
+    },
+    {
+      "input": "50\n50\n50\n75",
+      "desc": "Stress: half overshoot, take 50+25 zeros"
+    }
   ]
 }
