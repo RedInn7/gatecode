@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"ghp\"",
+      "input": "\"zho\"",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 cycled alphabet"
     },
     {
-      "input": "\"gbcyxt\"",
+      "input": "\"qknjog\"",
       "desc": "Stress: large n near max boundary"
     }
   ]
