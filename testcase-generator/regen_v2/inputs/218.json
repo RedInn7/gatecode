@@ -21,7 +21,7 @@
       "desc": "Edge: monotone decreasing sequence"
     },
     {
-      "input": "\"qoxnwcb\"\n2",
+      "input": "\"uzybg\"\n2",
       "desc": "Edge: all-equal elements"
     },
     {
@@ -81,7 +81,7 @@
       "desc": "Stress: 100 vowels window 10"
     },
     {
-      "input": "\"ctjeqgpuugnbfy\"\n2",
+      "input": "\"eghaqbvjjflnaw\"\n2",
       "desc": "Stress: large n near max boundary"
     }
   ]
