@@ -633,3 +633,18 @@ Stuck after 3 regeneration attempts. Final issues:
 - No large-n testcase near max length (array_max_len=2000.0)
 - No all-equal elements testcase
 Audited at: 2026-05-16T15:37:06.972539
+
+## PID 261 (find-the-minimum-and-maximum-number-of-nodes-between-critical-points)
+Stuck after 3 regeneration attempts. Final issues:
+- arr[0]=-1000 < value_min=1.0
+Audited at: 2026-05-16T15:37:09.431356
+
+## PID 262 (smallest-palindromic-rearrangement-ii)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=10000.0)
+Audited at: 2026-05-16T15:37:09.436815
+
+## PID 263 (count-unique-characters-of-all-substrings-of-a-given-string)
+Stuck after 3 regeneration attempts. Final issues:
+- No large-n testcase near max length (array_max_len=100000.0)
+Audited at: 2026-05-16T15:37:09.462395
