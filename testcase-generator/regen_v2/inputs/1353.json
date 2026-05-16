@@ -1,0 +1,88 @@
+{
+  "pid": 1353,
+  "slug": "adding-two-negabinary-numbers",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: n=10"
+    },
+    {
+      "input": "100",
+      "desc": "Edge: n=100"
+    },
+    {
+      "input": "134104",
+      "desc": "Standard: n=134104"
+    },
+    {
+      "input": "36392",
+      "desc": "Standard: n=36392"
+    },
+    {
+      "input": "875887",
+      "desc": "Standard: n=875887"
+    },
+    {
+      "input": "728636",
+      "desc": "Standard: n=728636"
+    },
+    {
+      "input": "984168",
+      "desc": "Standard: n=984168"
+    },
+    {
+      "input": "718543",
+      "desc": "Standard: n=718543"
+    },
+    {
+      "input": "709368",
+      "desc": "Standard: n=709368"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: n=10^5"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: n=10^6"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    }
+  ]
+}
