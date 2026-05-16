@@ -1,27 +1,88 @@
 {
-  "pid": 89, "slug": "maximum-number-of-non-overlapping-substrings",
+  "pid": 89,
+  "slug": "maximum-number-of-non-overlapping-substrings",
   "inferred_constraints": "1 <= s.length <= 1e5, lowercase letters",
   "input_format": "single line: s (raw string)",
   "testcases": [
-    {"input": "adefaddaccc", "desc": "Edge: example1"},
-    {"input": "abbaccd", "desc": "Edge: example2"},
-    {"input": "a", "desc": "Edge: single char"},
-    {"input": "aa", "desc": "Edge: two same"},
-    {"input": "ab", "desc": "Edge: two distinct"},
-    {"input": "aaaa", "desc": "Edge: all same"},
-    {"input": "abcdefg", "desc": "Standard: all distinct"},
-    {"input": "abcabc", "desc": "Standard: repeating"},
-    {"input": "aabbccdd", "desc": "Standard: pairs"},
-    {"input": "aabbccddaabbccdd", "desc": "Standard: 2x pairs"},
-    {"input": "abcdefghijklmnopqrstuvwxyz", "desc": "Standard: alphabet"},
-    {"input": "abacaba", "desc": "Standard: palindrome"},
-    {"input": "leetcode", "desc": "Standard: word"},
-    {"input": "aaaaaaaaaabbbbbbbbbb", "desc": "Edge: two block letters"},
-    {"input": "zzz", "desc": "Edge: 3 same"},
-    {"input": "abacabad", "desc": "Standard: nested"},
-    {"input": "abcdcba", "desc": "Standard: palindrome 7"},
-    {"input": "aabbccddee", "desc": "Standard: 5 pairs"},
-    {"input": "azbycxdwevfugthsi", "desc": "Standard: paired"},
-    {"input": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", "desc": "Stress: 2x alphabet"}
+    {
+      "input": "adefaddaccc",
+      "desc": "Edge: example1"
+    },
+    {
+      "input": "abbaccd",
+      "desc": "Edge: example2"
+    },
+    {
+      "input": "\"rshfgls\"",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "\"dwyzfyem\"",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "ab",
+      "desc": "Edge: two distinct"
+    },
+    {
+      "input": "aaaa",
+      "desc": "Edge: all same"
+    },
+    {
+      "input": "abcdefg",
+      "desc": "Standard: all distinct"
+    },
+    {
+      "input": "abcabc",
+      "desc": "Standard: repeating"
+    },
+    {
+      "input": "aabbccdd",
+      "desc": "Standard: pairs"
+    },
+    {
+      "input": "aabbccddaabbccdd",
+      "desc": "Standard: 2x pairs"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "desc": "Standard: alphabet"
+    },
+    {
+      "input": "abacaba",
+      "desc": "Standard: palindrome"
+    },
+    {
+      "input": "leetcode",
+      "desc": "Standard: word"
+    },
+    {
+      "input": "aaaaaaaaaabbbbbbbbbb",
+      "desc": "Edge: two block letters"
+    },
+    {
+      "input": "zzz",
+      "desc": "Edge: 3 same"
+    },
+    {
+      "input": "abacabad",
+      "desc": "Standard: nested"
+    },
+    {
+      "input": "abcdcba",
+      "desc": "Standard: palindrome 7"
+    },
+    {
+      "input": "aabbccddee",
+      "desc": "Standard: 5 pairs"
+    },
+    {
+      "input": "azbycxdwevfugthsi",
+      "desc": "Standard: paired"
+    },
+    {
+      "input": "\"gxbtxepryzkfufcnfglknn\"",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }

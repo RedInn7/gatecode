@@ -1,27 +1,88 @@
 {
-  "pid": 892, "slug": "sum-of-remoteness-of-all-cells",
+  "pid": 892,
+  "slug": "sum-of-remoteness-of-all-cells",
   "inferred_constraints": "guess: grid 2D, sum unreachable values",
   "input_format": "line1: grid (JSON 2D)",
   "testcases": [
-    {"input": "[[-1,1,-1],[5,-1,4],[-1,3,-1]]", "desc": "Edge: example"},
-    {"input": "[[1,2],[3,4]]", "desc": "Standard: 2x2 all connected"},
-    {"input": "[[-1]]", "desc": "Edge: 1x1 wall"},
-    {"input": "[[5]]", "desc": "Edge: 1x1 single"},
-    {"input": "[[-1,-1],[-1,-1]]", "desc": "Edge: all walls"},
-    {"input": "[[1,1],[1,1]]", "desc": "Edge: all connected"},
-    {"input": "[[1,-1,1],[1,-1,1],[1,-1,1]]", "desc": "Standard: 2 components"},
-    {"input": "[[1,1,1],[1,-1,1],[1,1,1]]", "desc": "Standard: wall in middle"},
-    {"input": "[[1,2,3],[4,-1,6],[7,8,9]]", "desc": "Standard: single wall"},
-    {"input": "[[1,2,3,4,5]]", "desc": "Standard: row"},
-    {"input": "[[1],[2],[3],[4],[5]]", "desc": "Standard: column"},
-    {"input": "[[-1,1,-1,1,-1]]", "desc": "Standard: alternating row"},
-    {"input": "[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]", "desc": "Standard: 3x5 all connected"},
-    {"input": "[[1,-1,-1,-1,1],[-1,1,-1,1,-1],[-1,-1,1,-1,-1],[-1,1,-1,1,-1],[1,-1,-1,-1,1]]", "desc": "Standard: scattered"},
-    {"input": "[[1,-1],[-1,1]]", "desc": "Standard: 2 separate"},
-    {"input": "[[100,200,300],[400,500,600]]", "desc": "Standard: large values"},
-    {"input": "[[1,1,1,1,1,1,1,1,1,1]]", "desc": "Edge: 1x10 connected"},
-    {"input": "[[1,-1,1,-1,1,-1,1,-1,1,-1]]", "desc": "Standard: 1x10 alt"},
-    {"input": "[[1,2,3],[4,5,6],[7,8,9]]", "desc": "Standard: 3x3 all"},
-    {"input": "[[1,-1,1,1],[-1,1,1,-1],[1,1,-1,1],[1,-1,1,1]]", "desc": "Special: complex"}
+    {
+      "input": "[[-1,1,-1],[5,-1,4],[-1,3,-1]]",
+      "desc": "Edge: example"
+    },
+    {
+      "input": "[[1,2],[3,4]]",
+      "desc": "Standard: 2x2 all connected"
+    },
+    {
+      "input": "[[262,143,374],[-853,366,-47],[-662,-867,1]]",
+      "desc": "Edge: monotone increasing sequence"
+    },
+    {
+      "input": "[[-136,350,689],[901,933,684],[75,520,-154]]",
+      "desc": "Edge: monotone decreasing sequence"
+    },
+    {
+      "input": "[[-1,-1],[-1,-1]]",
+      "desc": "Edge: all walls"
+    },
+    {
+      "input": "[[1,1],[1,1]]",
+      "desc": "Edge: all connected"
+    },
+    {
+      "input": "[[1,-1,1],[1,-1,1],[1,-1,1]]",
+      "desc": "Standard: 2 components"
+    },
+    {
+      "input": "[[1,1,1],[1,-1,1],[1,1,1]]",
+      "desc": "Standard: wall in middle"
+    },
+    {
+      "input": "[[1,2,3],[4,-1,6],[7,8,9]]",
+      "desc": "Standard: single wall"
+    },
+    {
+      "input": "[[1,2,3,4,5]]",
+      "desc": "Standard: row"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[5]]",
+      "desc": "Standard: column"
+    },
+    {
+      "input": "[[-1,1,-1,1,-1]]",
+      "desc": "Standard: alternating row"
+    },
+    {
+      "input": "[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]",
+      "desc": "Standard: 3x5 all connected"
+    },
+    {
+      "input": "[[1,-1,-1,-1,1],[-1,1,-1,1,-1],[-1,-1,1,-1,-1],[-1,1,-1,1,-1],[1,-1,-1,-1,1]]",
+      "desc": "Standard: scattered"
+    },
+    {
+      "input": "[[1,-1],[-1,1]]",
+      "desc": "Standard: 2 separate"
+    },
+    {
+      "input": "[[100,200,300],[400,500,600]]",
+      "desc": "Standard: large values"
+    },
+    {
+      "input": "[[1,1,1,1,1,1,1,1,1,1]]",
+      "desc": "Edge: 1x10 connected"
+    },
+    {
+      "input": "[[1,-1,1,-1,1,-1,1,-1,1,-1]]",
+      "desc": "Standard: 1x10 alt"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "desc": "Standard: 3x3 all"
+    },
+    {
+      "input": "[[888,-911,403,-990,-191,-414],[-879,-282,-733,975,-913,588],[874,521,735,-92,-914,844],[487,-503,-509,614,-440,-706],[-137,-837,961,565,577,488],[443,-529,-531,-857,-909,-547]]",
+      "desc": "Stress: large n near max boundary"
+    }
   ]
 }
