@@ -1,0 +1,88 @@
+{
+  "pid": 1276,
+  "slug": "beautiful-arrangement",
+  "inferred_constraints": "0 <= n <= 15",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "15",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "14",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "10",
+      "desc": "Edge: n=10"
+    },
+    {
+      "input": "15",
+      "desc": "Edge: n=100"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10"
+    },
+    {
+      "input": "13",
+      "desc": "Standard: n=13"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: n=7"
+    },
+    {
+      "input": "13",
+      "desc": "Standard: n=13"
+    },
+    {
+      "input": "4",
+      "desc": "Standard: n=4"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: n=12"
+    },
+    {
+      "input": "4",
+      "desc": "Standard: n=4"
+    },
+    {
+      "input": "15",
+      "desc": "Stress: n=10^5"
+    },
+    {
+      "input": "15",
+      "desc": "Stress: n=10^6"
+    },
+    {
+      "input": "15",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "15",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "15",
+      "desc": "Killer: absolute max"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    }
+  ]
+}

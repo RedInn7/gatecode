@@ -14,6 +14,21 @@
       "pid": 1309,
       "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1274,
+      "slug": "traffic-light-controlled-intersection",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1270,
+      "slug": "print-foobar-alternately",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 1268,
+      "slug": "serialize-and-deserialize-bst",
+      "reason": "ACM mode problem"
     }
   ]
 }
