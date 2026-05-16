@@ -1,0 +1,76 @@
+{
+  "pid": 3553,
+  "slug": "design-authentication-manager",
+  "inferred_constraints": "0 <= s.length <= 1000",
+  "input_format": "line1: s (quoted string)",
+  "testcases": [
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty string"
+    },
+    {
+      "input": "\"w\"\n1",
+      "desc": "Edge: single char"
+    },
+    {
+      "input": "\"tt\"\n2",
+      "desc": "Edge: two chars"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all same chars"
+    },
+    {
+      "input": "\"dbcde\"\n4",
+      "desc": "Edge: short string mixed"
+    },
+    {
+      "input": "\"fzeqrhlqyeyvzywgucivlebisohf\"\n25",
+      "desc": "Standard: len=28"
+    },
+    {
+      "input": "\"zmgpcrknhwxhyquoe\"\n4",
+      "desc": "Standard: len=17"
+    },
+    {
+      "input": "\"bpavvmpitfgiehnkpsnnuje\"\n16",
+      "desc": "Standard: len=23"
+    },
+    {
+      "input": "\"mcjouustnhrja\"\n12",
+      "desc": "Standard: len=13"
+    },
+    {
+      "input": "\"logclyxwynmixiotivnlqqigvfrbekkdsbk\"\n3",
+      "desc": "Standard: len=35"
+    },
+    {
+      "input": "\"bvqeylnvwixvklwdcn\"\n18",
+      "desc": "Standard: len=18"
+    },
+    {
+      "input": "\"etapwofmsulzkcz\"\n5",
+      "desc": "Standard: len=15"
+    },
+    {
+      "input": "\"phjenlpkykffpqugtbndgtpznbfgmdfaeehmfyazwjsbdppo\"\n9",
+      "desc": "Standard: len=48"
+    },
+    {
+      "input": "\"tyknmdksnkoxlwarwaqezkazrplsssaaiqpssvnchqycqlghqcsqptwvkvossmkatbefbbmryikjjblzjhofyasrtxamdgyuvxazovxsclfsllanafyjnzdauunwtaddtbenjhfhfrefumhpzthtysfbbkntfeteufrbdxpayogpegqilcfjwetuuxzrmihqfufplnqdemrspiknnrjonchpnbmxbjhwhebtogcovfxtdptwyrqpqtxugbhuxkpekbfhfjcofcttvxtlnfcnnojsrbuimtahcecnfemzrizqoigqszrgbqjkcraptvqnovnvgvkbvyksfosxfmlloyzcjvwwoaopxnxkqzwkrnfpmntlxcxnypzphmdzjtcpsryypmbvxqtquafkkweccgzrwovlwhlarlwdjvgsawbpauqfhqnzbjgbcngiwlsuzafprfieiszyedfaggksgbplqxhnvbinnouuhrtjddhswlmdkobu\"\n198",
+      "desc": "Stress: long string"
+    },
+    {
+      "input": "\"lpeqsdbupmlrxcwhigjrijjscijtxrmxbeduzwjgaemdrvgicrooyyxyhipeygkllzphhsaqxfuosrdrcuzsaxqlqlgxotskelfadmxjsusqgtarmowdyhhxosefxeycfwjnsjstdknxncdkbgadwlcjhbnvagjppflckmaaqypkoacelibwicdhgwbmiebpjltoyptpqsiyvmddfauzzydwpvpgvgmwmfbmugcrhrgdgknrvxhdabyljxvhaycfwscvnkblghkpzezuxktttbdjlkquemmnfczmypvpudzhegihxdzjeiwimotipggaprtwgwmxuegamenoglyqsbabldwamvwrdfbgaslwtxxidnoasomhsqelvxykorleuxymfebkpijmpeghoopivfunxoyjyllylfnzjnmmnuxgpscjymorrecbyajtagixdnqkwwmmtfntundeqemvznqbqmyxjwrrzmphthixzmaptkilrvzzhciqoxdwsbvvrwgfnhwmygvxdikoxlgtxtdubbewlhgawnjchuagkqrkizeaswkfllzwinawmcsygsapmzneqrskgzvffosvbiffvtzkcozxanqcbyumuwxgnmsybjzdiyjotxqyhpgrnoguravuparbohibovvzharndlybvhxkthtqermklktghotdjcrhyeoljzdghwlcsikzawlgfulnyjaongobmdikptbjbxcvgjaxspvffhkyrfichttxbeokizyzjhdexjcizskvscxderoosvhyidgzuhnrdxclotyeniuogqlcramilfyapkztoicybyoehxxdmcpybmfqrcbqhhaodhhheqdianepezigzkzptfgfozglfignjfudlrhkzntddavbebqgxxibiavyvcipxslxhzsapgnoanucmlnahefnwynadlvnohbqgvvclseovpeibbnmehesseyyhtmxdbwxlbnmofdqwbbyukcb\"\n106",
+      "desc": "Stress: max string"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "desc": "Killer: palindrome"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "Killer: all same char max"
+    }
+  ]
+}

@@ -14,6 +14,16 @@
       "pid": 3557,
       "slug": "smallest-greater-multiple-made-of-two-digits",
       "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3552,
+      "slug": "promise-time-limit",
+      "reason": "ACM mode problem"
+    },
+    {
+      "pid": 3537,
+      "slug": "max-stack",
+      "reason": "ACM mode problem"
     }
   ]
 }
