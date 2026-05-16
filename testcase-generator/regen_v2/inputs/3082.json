@@ -1,0 +1,76 @@
+{
+  "pid": 3082,
+  "slug": "paint-fence",
+  "inferred_constraints": "0 <= n <= 50",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "50",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "49",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "13",
+      "desc": "Standard: n=13"
+    },
+    {
+      "input": "12",
+      "desc": "Standard: n=12"
+    },
+    {
+      "input": "48",
+      "desc": "Standard: n=48"
+    },
+    {
+      "input": "22",
+      "desc": "Standard: n=22"
+    },
+    {
+      "input": "18",
+      "desc": "Standard: n=18"
+    },
+    {
+      "input": "21",
+      "desc": "Standard: n=21"
+    },
+    {
+      "input": "43",
+      "desc": "Standard: n=43"
+    },
+    {
+      "input": "26",
+      "desc": "Standard: n=26"
+    },
+    {
+      "input": "50",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "50",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "50",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "50",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}

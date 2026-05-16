@@ -1,0 +1,76 @@
+{
+  "pid": 3092,
+  "slug": "output-contest-matches",
+  "inferred_constraints": "0 <= n <= 1000000000",
+  "input_format": "line1: n",
+  "testcases": [
+    {
+      "input": "1",
+      "desc": "Edge: n=1 minimum"
+    },
+    {
+      "input": "0",
+      "desc": "Edge: n=0"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: n=max"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: n=max-1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2"
+    },
+    {
+      "input": "193951",
+      "desc": "Standard: n=193951"
+    },
+    {
+      "input": "990400",
+      "desc": "Standard: n=990400"
+    },
+    {
+      "input": "570609",
+      "desc": "Standard: n=570609"
+    },
+    {
+      "input": "704599",
+      "desc": "Standard: n=704599"
+    },
+    {
+      "input": "579253",
+      "desc": "Standard: n=579253"
+    },
+    {
+      "input": "192190",
+      "desc": "Standard: n=192190"
+    },
+    {
+      "input": "109437",
+      "desc": "Standard: n=109437"
+    },
+    {
+      "input": "250407",
+      "desc": "Standard: n=250407"
+    },
+    {
+      "input": "1000000",
+      "desc": "Stress: large n"
+    },
+    {
+      "input": "100000000",
+      "desc": "Stress: very large"
+    },
+    {
+      "input": "999999999",
+      "desc": "Killer: near-max"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Killer: absolute max"
+    }
+  ]
+}
