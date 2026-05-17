@@ -1450,5 +1450,11 @@
     "slug": "shift-distance-between-two-strings",
     "fqid": 3361,
     "error": "Testcase 0 failed: RE (exit 1):  in <module>\n    _result = Solution().shiftDistance(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpl97xuihn.py\", line 149, in shiftDistance\n    s2[i + 1] = s2[i] + previousCost[(i + 1) % m]\n                        ~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 2156,
+    "slug": "recover-binary-search-tree",
+    "fqid": 99,
+    "error": "Testcase 0 failed: RE (exit 1): <module>\n    _result = Solution().recoverTree(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmprmuz_uwx.py\", line 166, in recoverTree\n    first.val, second.val = second.val, first.val\n                            ^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'val'\n"
   }
 ]

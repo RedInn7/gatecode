@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= word.length <= 5*10^3, 1 <= numFriends <= word.length, lowercase",
   "input_format": "line1: word (quoted); line2: numFriends (int)",
   "testcases": [
-    {"input": "\"dbca\"\n2", "desc": "Standard: example 1"},
-    {"input": "\"gggg\"\n4", "desc": "Standard: example 2"},
-    {"input": "\"a\"\n1", "desc": "Edge: n=1"},
-    {"input": "\"ab\"\n1", "desc": "Edge: 1 friend"},
-    {"input": "\"ab\"\n2", "desc": "Edge: 2 friends"},
-    {"input": "\"zzzz\"\n1", "desc": "Edge: all z"},
-    {"input": "\"zzzz\"\n4", "desc": "Edge: all z max friends"},
-    {"input": "\"aaaa\"\n2", "desc": "Standard"},
-    {"input": "\"abcd\"\n2", "desc": "Standard"},
-    {"input": "\"dcba\"\n2", "desc": "Standard"},
-    {"input": "\"banana\"\n3", "desc": "Standard"},
-    {"input": "\"mississippi\"\n4", "desc": "Standard"},
-    {"input": "\"thequickbrownfox\"\n5", "desc": "Standard"},
-    {"input": "\"zzzaaazzz\"\n3", "desc": "Standard"},
-    {"input": "\"aaaaaa\"\n6", "desc": "Edge: all same n friends"},
-    {"input": "\"abcdef\"\n6", "desc": "Edge: each gets one"},
-    {"input": "\"abcdefghij\"\n1", "desc": "Edge: 1 friend"},
-    {"input": "\"zabcde\"\n3", "desc": "Standard"},
-    {"input": "\"xyzabc\"\n2", "desc": "Standard"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaa\"\n10", "desc": "Stress"}
+    {
+      "input": "\"dbca\"\n2",
+      "desc": "Standard: example 1",
+      "output": "\"dbc\""
+    },
+    {
+      "input": "\"gggg\"\n4",
+      "desc": "Standard: example 2",
+      "output": "\"g\""
+    },
+    {
+      "input": "\"a\"\n1",
+      "desc": "Edge: n=1",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"ab\"\n1",
+      "desc": "Edge: 1 friend",
+      "output": "\"ab\""
+    },
+    {
+      "input": "\"ab\"\n2",
+      "desc": "Edge: 2 friends",
+      "output": "\"b\""
+    },
+    {
+      "input": "\"zzzz\"\n1",
+      "desc": "Edge: all z",
+      "output": "\"zzzz\""
+    },
+    {
+      "input": "\"zzzz\"\n4",
+      "desc": "Edge: all z max friends",
+      "output": "\"z\""
+    },
+    {
+      "input": "\"aaaa\"\n2",
+      "desc": "Standard",
+      "output": "\"aaa\""
+    },
+    {
+      "input": "\"abcd\"\n2",
+      "desc": "Standard",
+      "output": "\"d\""
+    },
+    {
+      "input": "\"dcba\"\n2",
+      "desc": "Standard",
+      "output": "\"dcb\""
+    },
+    {
+      "input": "\"banana\"\n3",
+      "desc": "Standard",
+      "output": "\"nana\""
+    },
+    {
+      "input": "\"mississippi\"\n4",
+      "desc": "Standard",
+      "output": "\"ssissipp\""
+    },
+    {
+      "input": "\"thequickbrownfox\"\n5",
+      "desc": "Standard",
+      "output": "\"x\""
+    },
+    {
+      "input": "\"zzzaaazzz\"\n3",
+      "desc": "Standard",
+      "output": "\"zzzaaaz\""
+    },
+    {
+      "input": "\"aaaaaa\"\n6",
+      "desc": "Edge: all same n friends",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"abcdef\"\n6",
+      "desc": "Edge: each gets one",
+      "output": "\"f\""
+    },
+    {
+      "input": "\"abcdefghij\"\n1",
+      "desc": "Edge: 1 friend",
+      "output": "\"abcdefghij\""
+    },
+    {
+      "input": "\"zabcde\"\n3",
+      "desc": "Standard",
+      "output": "\"zabc\""
+    },
+    {
+      "input": "\"xyzabc\"\n2",
+      "desc": "Standard",
+      "output": "\"zabc\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaa\"\n10",
+      "desc": "Stress",
+      "output": "\"aaaaaaaaaaaa\""
+    }
   ]
 }

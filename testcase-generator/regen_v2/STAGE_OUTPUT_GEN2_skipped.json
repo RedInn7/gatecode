@@ -340,5 +340,11 @@
     "slug": "number-of-effective-subsequences",
     "fqid": 3757,
     "reason": "No Python3 solution found for fqid=3757"
+  },
+  {
+    "pid": 2183,
+    "slug": "earliest-second-to-mark-indices-ii",
+    "fqid": 3049,
+    "reason": "No Python3 solution found for fqid=3049"
   }
 ]

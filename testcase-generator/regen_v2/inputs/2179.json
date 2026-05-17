@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= courses.length <= 10^4, 1 <= duration, lastDay <= 10^4",
   "input_format": "single line: courses (JSON 2D)",
   "testcases": [
-    {"input": "[[100,200],[200,1300],[1000,1250],[2000,3200]]", "desc": "Standard: example 1"},
-    {"input": "[[1,2]]", "desc": "Edge: single course"},
-    {"input": "[[3,2]]", "desc": "Edge: single duration > lastDay"},
-    {"input": "[[1,1]]", "desc": "Edge: tight single"},
-    {"input": "[[10000,10000]]", "desc": "Edge: max"},
-    {"input": "[[1,2],[2,3]]", "desc": "Standard"},
-    {"input": "[[5,5],[4,6],[2,6]]", "desc": "Standard"},
-    {"input": "[[1,1],[1,2],[1,3]]", "desc": "Standard incremental"},
-    {"input": "[[2,3],[3,4],[1,5]]", "desc": "Standard"},
-    {"input": "[[1,2],[1,2],[1,2]]", "desc": "Standard duplicates"},
-    {"input": "[[5,15],[3,19],[6,7],[2,10],[5,16],[8,14],[10,11],[2,19]]", "desc": "Standard"},
-    {"input": "[[100,200],[200,1300],[1000,1250],[2000,3200]]", "desc": "Standard dup of example"},
-    {"input": "[[7,10],[2,9],[1,3]]", "desc": "Standard"},
-    {"input": "[[100,100],[100,200],[100,300],[100,400]]", "desc": "Standard equal duration"},
-    {"input": "[[1,1],[1,2],[1,3],[1,4],[1,5]]", "desc": "Standard chain"},
-    {"input": "[[10,15],[20,30],[30,40],[40,50]]", "desc": "Standard"},
-    {"input": "[[5,10],[10,15],[15,20],[20,25],[25,30]]", "desc": "Standard chain"},
-    {"input": "[[3,7],[2,8],[5,12],[4,10],[6,15]]", "desc": "Standard"},
-    {"input": "[[1000,2000],[500,3000],[1500,4000],[2500,5000],[3500,6000]]", "desc": "Standard big"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]", "desc": "Standard each tight"}
+    {
+      "input": "[[100,200],[200,1300],[1000,1250],[2000,3200]]",
+      "desc": "Standard: example 1",
+      "output": "3"
+    },
+    {
+      "input": "[[1,2]]",
+      "desc": "Edge: single course",
+      "output": "1"
+    },
+    {
+      "input": "[[3,2]]",
+      "desc": "Edge: single duration > lastDay",
+      "output": "0"
+    },
+    {
+      "input": "[[1,1]]",
+      "desc": "Edge: tight single",
+      "output": "1"
+    },
+    {
+      "input": "[[10000,10000]]",
+      "desc": "Edge: max",
+      "output": "1"
+    },
+    {
+      "input": "[[1,2],[2,3]]",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "[[5,5],[4,6],[2,6]]",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "[[1,1],[1,2],[1,3]]",
+      "desc": "Standard incremental",
+      "output": "3"
+    },
+    {
+      "input": "[[2,3],[3,4],[1,5]]",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "[[1,2],[1,2],[1,2]]",
+      "desc": "Standard duplicates",
+      "output": "2"
+    },
+    {
+      "input": "[[5,15],[3,19],[6,7],[2,10],[5,16],[8,14],[10,11],[2,19]]",
+      "desc": "Standard",
+      "output": "5"
+    },
+    {
+      "input": "[[100,200],[200,1300],[1000,1250],[2000,3200]]",
+      "desc": "Standard dup of example",
+      "output": "3"
+    },
+    {
+      "input": "[[7,10],[2,9],[1,3]]",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "[[100,100],[100,200],[100,300],[100,400]]",
+      "desc": "Standard equal duration",
+      "output": "4"
+    },
+    {
+      "input": "[[1,1],[1,2],[1,3],[1,4],[1,5]]",
+      "desc": "Standard chain",
+      "output": "5"
+    },
+    {
+      "input": "[[10,15],[20,30],[30,40],[40,50]]",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "[[5,10],[10,15],[15,20],[20,25],[25,30]]",
+      "desc": "Standard chain",
+      "output": "2"
+    },
+    {
+      "input": "[[3,7],[2,8],[5,12],[4,10],[6,15]]",
+      "desc": "Standard",
+      "output": "4"
+    },
+    {
+      "input": "[[1000,2000],[500,3000],[1500,4000],[2500,5000],[3500,6000]]",
+      "desc": "Standard big",
+      "output": "3"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]",
+      "desc": "Standard each tight",
+      "output": "1"
+    }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 2*10^5, lowercase",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"abc\"", "desc": "Standard: example 1"},
-    {"input": "\"adcb\"", "desc": "Standard: example 2"},
-    {"input": "\"zadb\"", "desc": "Standard: with wrap"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"aa\"", "desc": "Edge: same"},
-    {"input": "\"ab\"", "desc": "Edge: consecutive"},
-    {"input": "\"az\"", "desc": "Edge: wrap consecutive"},
-    {"input": "\"ba\"", "desc": "Edge: reversed consec"},
-    {"input": "\"za\"", "desc": "Edge: wrap reverse"},
-    {"input": "\"abcd\"", "desc": "Standard"},
-    {"input": "\"abcdefghij\"", "desc": "Standard chain"},
-    {"input": "\"jihgfedcba\"", "desc": "Standard reverse chain"},
-    {"input": "\"acegikmoqsuwy\"", "desc": "Edge: no adjacencies"},
-    {"input": "\"abaababa\"", "desc": "Standard"},
-    {"input": "\"abcba\"", "desc": "Standard"},
-    {"input": "\"aabb\"", "desc": "Standard"},
-    {"input": "\"banana\"", "desc": "Standard"},
-    {"input": "\"mississippi\"", "desc": "Standard"},
-    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
-    {"input": "\"abababababababab\"", "desc": "Stress alternating ab"}
+    {
+      "input": "\"abc\"",
+      "desc": "Standard: example 1",
+      "output": "\"c\""
+    },
+    {
+      "input": "\"adcb\"",
+      "desc": "Standard: example 2",
+      "output": "\"\""
+    },
+    {
+      "input": "\"zadb\"",
+      "desc": "Standard: with wrap",
+      "output": "\"db\""
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: same",
+      "output": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: consecutive",
+      "output": "\"\""
+    },
+    {
+      "input": "\"az\"",
+      "desc": "Edge: wrap consecutive",
+      "output": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "desc": "Edge: reversed consec",
+      "output": "\"\""
+    },
+    {
+      "input": "\"za\"",
+      "desc": "Edge: wrap reverse",
+      "output": "\"\""
+    },
+    {
+      "input": "\"abcd\"",
+      "desc": "Standard",
+      "output": "\"\""
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Standard chain",
+      "output": "\"\""
+    },
+    {
+      "input": "\"jihgfedcba\"",
+      "desc": "Standard reverse chain",
+      "output": "\"\""
+    },
+    {
+      "input": "\"acegikmoqsuwy\"",
+      "desc": "Edge: no adjacencies",
+      "output": "\"acegikmoqsuwy\""
+    },
+    {
+      "input": "\"abaababa\"",
+      "desc": "Standard",
+      "output": "\"aa\""
+    },
+    {
+      "input": "\"abcba\"",
+      "desc": "Standard",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"aabb\"",
+      "desc": "Standard",
+      "output": "\"\""
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard",
+      "output": "\"nana\""
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard",
+      "output": "\"mississippi\""
+    },
+    {
+      "input": "\"thequickbrownfox\"",
+      "desc": "Standard",
+      "output": "\"thequickbrownfox\""
+    },
+    {
+      "input": "\"abababababababab\"",
+      "desc": "Stress alternating ab",
+      "output": "\"\""
+    }
   ]
 }

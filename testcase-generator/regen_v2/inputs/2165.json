@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= height, width <= 100, 0 <= tree/squirrel/nuts coords < height/width, 1 <= nuts.length <= 5000",
   "input_format": "line1: height (int); line2: width (int); line3: tree (JSON array); line4: squirrel (JSON array); line5: nuts (JSON 2D)",
   "testcases": [
-    {"input": "5\n7\n[2,2]\n[4,4]\n[[3,0],[2,5]]", "desc": "Standard: example 1"},
-    {"input": "1\n3\n[0,1]\n[0,0]\n[[0,2]]", "desc": "Standard: example 2"},
-    {"input": "1\n1\n[0,0]\n[0,0]\n[[0,0]]", "desc": "Edge: 1x1 all same"},
-    {"input": "2\n2\n[0,0]\n[1,1]\n[[0,1]]", "desc": "Edge: 2x2"},
-    {"input": "5\n5\n[0,0]\n[4,4]\n[[2,2]]", "desc": "Edge: single nut middle"},
-    {"input": "10\n10\n[5,5]\n[0,0]\n[[1,1],[9,9],[1,9],[9,1]]", "desc": "Standard 4 nuts"},
-    {"input": "10\n10\n[0,0]\n[5,5]\n[[2,2],[3,3],[4,4],[5,5],[6,6],[7,7]]", "desc": "Standard"},
-    {"input": "20\n20\n[10,10]\n[0,0]\n[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Standard"},
-    {"input": "100\n100\n[50,50]\n[0,0]\n[[10,10],[20,20],[30,30],[40,40],[60,60],[70,70],[80,80],[90,90]]", "desc": "Standard 8 nuts"},
-    {"input": "5\n5\n[2,2]\n[2,2]\n[[0,0],[0,4],[4,0],[4,4]]", "desc": "Standard"},
-    {"input": "3\n3\n[1,1]\n[0,0]\n[[2,2],[0,2],[2,0]]", "desc": "Standard"},
-    {"input": "10\n10\n[5,5]\n[5,5]\n[[0,0],[9,9]]", "desc": "Standard"},
-    {"input": "10\n10\n[0,0]\n[9,9]\n[[5,5]]", "desc": "Edge: single nut far"},
-    {"input": "5\n10\n[3,5]\n[1,1]\n[[0,0],[4,9],[2,5],[3,3]]", "desc": "Standard"},
-    {"input": "8\n8\n[4,4]\n[0,4]\n[[1,1],[2,2],[3,3]]", "desc": "Standard"},
-    {"input": "20\n10\n[10,5]\n[19,0]\n[[0,0],[0,9],[19,9],[5,5],[15,5]]", "desc": "Standard"},
-    {"input": "50\n50\n[25,25]\n[0,0]\n[[10,10],[20,20],[30,30],[40,40],[5,45],[45,5]]", "desc": "Standard 6"},
-    {"input": "100\n100\n[99,99]\n[0,0]\n[[50,50]]", "desc": "Edge max range"},
-    {"input": "10\n10\n[5,5]\n[2,2]\n[[1,1],[1,2],[2,1],[3,3],[4,4],[6,6],[7,7],[8,8],[9,9]]", "desc": "Standard"},
-    {"input": "6\n6\n[3,3]\n[1,1]\n[[0,0],[5,5],[0,5],[5,0],[2,4],[4,2]]", "desc": "Standard"}
+    {
+      "input": "5\n7\n[2,2]\n[4,4]\n[[3,0],[2,5]]",
+      "desc": "Standard: example 1",
+      "output": "12"
+    },
+    {
+      "input": "1\n3\n[0,1]\n[0,0]\n[[0,2]]",
+      "desc": "Standard: example 2",
+      "output": "3"
+    },
+    {
+      "input": "1\n1\n[0,0]\n[0,0]\n[[0,0]]",
+      "desc": "Edge: 1x1 all same",
+      "output": "0"
+    },
+    {
+      "input": "2\n2\n[0,0]\n[1,1]\n[[0,1]]",
+      "desc": "Edge: 2x2",
+      "output": "2"
+    },
+    {
+      "input": "5\n5\n[0,0]\n[4,4]\n[[2,2]]",
+      "desc": "Edge: single nut middle",
+      "output": "8"
+    },
+    {
+      "input": "10\n10\n[5,5]\n[0,0]\n[[1,1],[9,9],[1,9],[9,1]]",
+      "desc": "Standard 4 nuts",
+      "output": "58"
+    },
+    {
+      "input": "10\n10\n[0,0]\n[5,5]\n[[2,2],[3,3],[4,4],[5,5],[6,6],[7,7]]",
+      "desc": "Standard",
+      "output": "98"
+    },
+    {
+      "input": "20\n20\n[10,10]\n[0,0]\n[[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "desc": "Standard",
+      "output": "124"
+    },
+    {
+      "input": "100\n100\n[50,50]\n[0,0]\n[[10,10],[20,20],[30,30],[40,40],[60,60],[70,70],[80,80],[90,90]]",
+      "desc": "Standard 8 nuts",
+      "output": "740"
+    },
+    {
+      "input": "5\n5\n[2,2]\n[2,2]\n[[0,0],[0,4],[4,0],[4,4]]",
+      "desc": "Standard",
+      "output": "32"
+    },
+    {
+      "input": "3\n3\n[1,1]\n[0,0]\n[[2,2],[0,2],[2,0]]",
+      "desc": "Standard",
+      "output": "12"
+    },
+    {
+      "input": "10\n10\n[5,5]\n[5,5]\n[[0,0],[9,9]]",
+      "desc": "Standard",
+      "output": "36"
+    },
+    {
+      "input": "10\n10\n[0,0]\n[9,9]\n[[5,5]]",
+      "desc": "Edge: single nut far",
+      "output": "18"
+    },
+    {
+      "input": "5\n10\n[3,5]\n[1,1]\n[[0,0],[4,9],[2,5],[3,3]]",
+      "desc": "Standard",
+      "output": "26"
+    },
+    {
+      "input": "8\n8\n[4,4]\n[0,4]\n[[1,1],[2,2],[3,3]]",
+      "desc": "Standard",
+      "output": "22"
+    },
+    {
+      "input": "20\n10\n[10,5]\n[19,0]\n[[0,0],[0,9],[19,9],[5,5],[15,5]]",
+      "desc": "Standard",
+      "output": "100"
+    },
+    {
+      "input": "50\n50\n[25,25]\n[0,0]\n[[10,10],[20,20],[30,30],[40,40],[5,45],[45,5]]",
+      "desc": "Standard 6",
+      "output": "310"
+    },
+    {
+      "input": "100\n100\n[99,99]\n[0,0]\n[[50,50]]",
+      "desc": "Edge max range",
+      "output": "198"
+    },
+    {
+      "input": "10\n10\n[5,5]\n[2,2]\n[[1,1],[1,2],[2,1],[3,3],[4,4],[6,6],[7,7],[8,8],[9,9]]",
+      "desc": "Standard",
+      "output": "90"
+    },
+    {
+      "input": "6\n6\n[3,3]\n[1,1]\n[[0,0],[5,5],[0,5],[5,0],[2,4],[4,2]]",
+      "desc": "Standard",
+      "output": "44"
+    }
   ]
 }

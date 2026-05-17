@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"NES\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "false"
     },
     {
       "input": "\"NESWW\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "true"
     },
     {
       "input": "\"N\"",
-      "desc": "Edge: single N"
+      "desc": "Edge: single N",
+      "output": "false"
     },
     {
       "input": "\"NS\"",
-      "desc": "Edge: return to origin"
+      "desc": "Edge: return to origin",
+      "output": "true"
     },
     {
       "input": "\"EW\"",
-      "desc": "Edge: return to origin EW"
+      "desc": "Edge: return to origin EW",
+      "output": "true"
     },
     {
       "input": "\"NN\"",
-      "desc": "Edge: no cross"
+      "desc": "Edge: no cross",
+      "output": "false"
     },
     {
       "input": "\"NSEW\"",
-      "desc": "Standard 4 dirs"
+      "desc": "Standard 4 dirs",
+      "output": "true"
     },
     {
       "input": "\"NSEWNSEW\"",
-      "desc": "Standard repeated"
+      "desc": "Standard repeated",
+      "output": "true"
     },
     {
       "input": "\"NNNNN\"",
-      "desc": "Edge: straight line"
+      "desc": "Edge: straight line",
+      "output": "false"
     },
     {
       "input": "\"NESW\"",
-      "desc": "Edge: square crosses"
+      "desc": "Edge: square crosses",
+      "output": "true"
     },
     {
       "input": "\"NNNNSSSS\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"NEEESSSWWWNN\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"NWSE\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"WWWWNNNNEEESSSS\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"NESWNESW\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"EEEE\"",
-      "desc": "Edge: only E"
+      "desc": "Edge: only E",
+      "output": "false"
     },
     {
       "input": "\"NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN\"",
-      "desc": "Edge: 100 N"
+      "desc": "Edge: 100 N",
+      "output": "false"
     },
     {
       "input": "\"NESNESNESNESNESNES\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"WNNSEEWWSE\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"xxdosvcnli\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "true"
     }
   ]
 }

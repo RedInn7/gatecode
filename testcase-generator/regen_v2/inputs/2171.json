@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length == t.length <= 10^5, 0 <= maxCost <= 10^6, lowercase",
   "input_format": "line1: s (quoted); line2: t (quoted); line3: maxCost (int)",
   "testcases": [
-    {"input": "\"abcd\"\n\"bcdf\"\n3", "desc": "Standard: example 1"},
-    {"input": "\"abcd\"\n\"cdef\"\n3", "desc": "Standard: example 2"},
-    {"input": "\"abcd\"\n\"acde\"\n0", "desc": "Standard: example 3"},
-    {"input": "\"a\"\n\"a\"\n0", "desc": "Edge: same n=1"},
-    {"input": "\"a\"\n\"b\"\n1", "desc": "Edge: small cost"},
-    {"input": "\"a\"\n\"z\"\n25", "desc": "Edge: max diff exact"},
-    {"input": "\"a\"\n\"z\"\n24", "desc": "Edge: max diff under"},
-    {"input": "\"abcde\"\n\"abcde\"\n0", "desc": "Edge: identical no cost"},
-    {"input": "\"hello\"\n\"world\"\n100", "desc": "Standard"},
-    {"input": "\"banana\"\n\"banana\"\n100", "desc": "Standard"},
-    {"input": "\"aaaaaaaaaa\"\n\"zzzzzzzzzz\"\n50", "desc": "Standard"},
-    {"input": "\"aaaaaaaaaa\"\n\"zzzzzzzzzz\"\n250", "desc": "Standard"},
-    {"input": "\"abcdef\"\n\"fedcba\"\n10", "desc": "Standard reverse"},
-    {"input": "\"thequick\"\n\"brownfox\"\n50", "desc": "Standard"},
-    {"input": "\"mississippi\"\n\"missippiisi\"\n0", "desc": "Standard"},
-    {"input": "\"abcdefghij\"\n\"jihgfedcba\"\n100", "desc": "Standard"},
-    {"input": "\"aaaa\"\n\"bbbb\"\n4", "desc": "Edge: exact"},
-    {"input": "\"aaaa\"\n\"bbbb\"\n3", "desc": "Edge: just under"},
-    {"input": "\"aaaaaaaaaa\"\n\"aaaaaaaaaa\"\n1000000", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"\n300", "desc": "Standard"}
+    {
+      "input": "\"abcd\"\n\"bcdf\"\n3",
+      "desc": "Standard: example 1",
+      "output": "3"
+    },
+    {
+      "input": "\"abcd\"\n\"cdef\"\n3",
+      "desc": "Standard: example 2",
+      "output": "1"
+    },
+    {
+      "input": "\"abcd\"\n\"acde\"\n0",
+      "desc": "Standard: example 3",
+      "output": "1"
+    },
+    {
+      "input": "\"a\"\n\"a\"\n0",
+      "desc": "Edge: same n=1",
+      "output": "1"
+    },
+    {
+      "input": "\"a\"\n\"b\"\n1",
+      "desc": "Edge: small cost",
+      "output": "1"
+    },
+    {
+      "input": "\"a\"\n\"z\"\n25",
+      "desc": "Edge: max diff exact",
+      "output": "1"
+    },
+    {
+      "input": "\"a\"\n\"z\"\n24",
+      "desc": "Edge: max diff under",
+      "output": "0"
+    },
+    {
+      "input": "\"abcde\"\n\"abcde\"\n0",
+      "desc": "Edge: identical no cost",
+      "output": "5"
+    },
+    {
+      "input": "\"hello\"\n\"world\"\n100",
+      "desc": "Standard",
+      "output": "5"
+    },
+    {
+      "input": "\"banana\"\n\"banana\"\n100",
+      "desc": "Standard",
+      "output": "6"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"\n\"zzzzzzzzzz\"\n50",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"\n\"zzzzzzzzzz\"\n250",
+      "desc": "Standard",
+      "output": "10"
+    },
+    {
+      "input": "\"abcdef\"\n\"fedcba\"\n10",
+      "desc": "Standard reverse",
+      "output": "4"
+    },
+    {
+      "input": "\"thequick\"\n\"brownfox\"\n50",
+      "desc": "Standard",
+      "output": "6"
+    },
+    {
+      "input": "\"mississippi\"\n\"missippiisi\"\n0",
+      "desc": "Standard",
+      "output": "5"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"jihgfedcba\"\n100",
+      "desc": "Standard",
+      "output": "10"
+    },
+    {
+      "input": "\"aaaa\"\n\"bbbb\"\n4",
+      "desc": "Edge: exact",
+      "output": "4"
+    },
+    {
+      "input": "\"aaaa\"\n\"bbbb\"\n3",
+      "desc": "Edge: just under",
+      "output": "3"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"\n\"aaaaaaaaaa\"\n1000000",
+      "desc": "Standard",
+      "output": "10"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"\n300",
+      "desc": "Standard",
+      "output": "24"
+    }
   ]
 }

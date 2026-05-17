@@ -4,25 +4,105 @@
   "inferred_constraints": "0 <= s.length <= 5*10^4, English letters/digits/symbols/spaces",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"abcabcbb\"", "desc": "Standard: example 1"},
-    {"input": "\"bbbbb\"", "desc": "Standard: example 2"},
-    {"input": "\"pwwkew\"", "desc": "Standard: example 3"},
-    {"input": "\"\"", "desc": "Edge: empty"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"ab\"", "desc": "Edge: 2 diff"},
-    {"input": "\"abcdefghij\"", "desc": "Edge: all distinct"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "Edge: all same"},
-    {"input": "\"abcabcabc\"", "desc": "Standard"},
-    {"input": "\"dvdf\"", "desc": "Standard"},
-    {"input": "\"anviaj\"", "desc": "Standard"},
-    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
-    {"input": "\"banana\"", "desc": "Standard"},
-    {"input": "\"mississippi\"", "desc": "Standard"},
-    {"input": "\"!@#$%^&*()\"", "desc": "Edge: symbols"},
-    {"input": "\"abc123 def456\"", "desc": "Edge: with space and digits"},
-    {"input": "\"AaBbCcDdEeFfGg\"", "desc": "Edge: mixed case"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard alphabet"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\"", "desc": "Stress big distinct"}
+    {
+      "input": "\"abcabcbb\"",
+      "desc": "Standard: example 1",
+      "output": "3"
+    },
+    {
+      "input": "\"bbbbb\"",
+      "desc": "Standard: example 2",
+      "output": "1"
+    },
+    {
+      "input": "\"pwwkew\"",
+      "desc": "Standard: example 3",
+      "output": "3"
+    },
+    {
+      "input": "\"\"",
+      "desc": "Edge: empty",
+      "output": "0"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same",
+      "output": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 diff",
+      "output": "2"
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Edge: all distinct",
+      "output": "10"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "Edge: all same",
+      "output": "1"
+    },
+    {
+      "input": "\"abcabcabc\"",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "\"dvdf\"",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "\"anviaj\"",
+      "desc": "Standard",
+      "output": "5"
+    },
+    {
+      "input": "\"thequickbrownfox\"",
+      "desc": "Standard",
+      "output": "14"
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "\"!@#$%^&*()\"",
+      "desc": "Edge: symbols",
+      "output": "10"
+    },
+    {
+      "input": "\"abc123 def456\"",
+      "desc": "Edge: with space and digits",
+      "output": "13"
+    },
+    {
+      "input": "\"AaBbCcDdEeFfGg\"",
+      "desc": "Edge: mixed case",
+      "output": "14"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard alphabet",
+      "output": "26"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\"",
+      "desc": "Stress big distinct",
+      "output": "62"
+    }
   ]
 }

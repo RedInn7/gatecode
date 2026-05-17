@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"i\"",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "1"
     },
     {
       "input": "\"aaaa\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "2"
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: 2 distinct"
+      "desc": "Edge: 2 distinct",
+      "output": "2"
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "2"
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge: 3 distinct"
+      "desc": "Edge: 3 distinct",
+      "output": "3"
     },
     {
       "input": "\"aabb\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4"
     },
     {
       "input": "\"aabbcc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "\"aaabbbccc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4"
     },
     {
       "input": "\"abcabc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "\"abcabcabc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "\"thequickbrownfox\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "16"
     },
     {
       "input": "\"banana\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "5"
     },
     {
       "input": "\"mississippi\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "\"abababab\"",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "4"
     },
     {
       "input": "\"aabbabba\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4"
     },
     {
       "input": "\"aaaaaaaa\"",
-      "desc": "Edge: all same"
+      "desc": "Edge: all same",
+      "output": "2"
     },
     {
       "input": "\"abcdefghij\"",
-      "desc": "Edge: all distinct"
+      "desc": "Edge: all distinct",
+      "output": "10"
     },
     {
       "input": "\"aabbccddeeffgghhiijj\"",
-      "desc": "Standard pairs"
+      "desc": "Standard pairs",
+      "output": "20"
     },
     {
       "input": "\"abcabcabcabcabcabc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "\"xvxhmlufggicoaxn\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "15"
     }
   ]
 }

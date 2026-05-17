@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"thequickbrownfoxjumpsoverthelazydog\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "true"
     },
     {
       "input": "\"leetcode\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "false"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "false"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Edge: alphabet exact"
+      "desc": "Edge: alphabet exact",
+      "output": "true"
     },
     {
       "input": "\"zyxwvutsrqponmlkjihgfedcba\"",
-      "desc": "Edge: alphabet reverse"
+      "desc": "Edge: alphabet reverse",
+      "output": "true"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyzabc\"",
-      "desc": "Edge: alphabet plus extra"
+      "desc": "Edge: alphabet plus extra",
+      "output": "true"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxy\"",
-      "desc": "Edge: missing z"
+      "desc": "Edge: missing z",
+      "output": "false"
     },
     {
       "input": "\"aaaaaaaaaa\"",
-      "desc": "Edge: only a"
+      "desc": "Edge: only a",
+      "output": "false"
     },
     {
       "input": "\"thequickbrownfoxjumpsoverthelazydogab\"",
-      "desc": "Standard pangram extended"
+      "desc": "Standard pangram extended",
+      "output": "true"
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge: 3 chars only"
+      "desc": "Edge: 3 chars only",
+      "output": "false"
     },
     {
       "input": "\"packmyboxwithfivedozenliquorjugs\"",
-      "desc": "Standard pangram"
+      "desc": "Standard pangram",
+      "output": "true"
     },
     {
       "input": "\"thefivepackingboxwasshippedfromthejugjetportforanailingmen\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxz\"",
-      "desc": "Edge: missing y"
+      "desc": "Edge: missing y",
+      "output": "false"
     },
     {
       "input": "\"thequickbrownfoxjumps\"",
-      "desc": "Edge: not pangram"
+      "desc": "Edge: not pangram",
+      "output": "false"
     },
     {
       "input": "\"sphinxofblackquartzjudgemyvow\"",
-      "desc": "Standard pangram"
+      "desc": "Standard pangram",
+      "output": "true"
     },
     {
       "input": "\"howvexinglyquickdaftzebrasjump\"",
-      "desc": "Standard pangram"
+      "desc": "Standard pangram",
+      "output": "true"
     },
     {
       "input": "\"jackdawslovemybigsphinxofquartz\"",
-      "desc": "Standard pangram"
+      "desc": "Standard pangram",
+      "output": "true"
     },
     {
       "input": "\"quickbrownfox\"",
-      "desc": "Edge: short non-pangram"
+      "desc": "Edge: short non-pangram",
+      "output": "false"
     },
     {
       "input": "\"qwertyuiopasdfghjklzxcvbnm\"",
-      "desc": "Edge: keyboard order"
+      "desc": "Edge: keyboard order",
+      "output": "true"
     },
     {
       "input": "\"yqrvtmjtqlzzcucomvevuzemqbiiydzpcftxcwmmlkdzsadbbwgfpcvhlzgjhlrwnpzykh\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "true"
     }
   ]
 }
