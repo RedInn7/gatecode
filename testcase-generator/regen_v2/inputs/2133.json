@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "0"
     },
     {
       "input": "[2,4,6,4]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "1"
     },
     {
       "input": "[3,2,1]",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "0"
     },
     {
       "input": "[1,1,1]",
-      "desc": "Edge: all same"
+      "desc": "Edge: all same",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5]",
-      "desc": "Edge: strictly increasing"
+      "desc": "Edge: strictly increasing",
+      "output": "6"
     },
     {
       "input": "[5,4,3,2,1]",
-      "desc": "Edge: strictly decreasing"
+      "desc": "Edge: strictly decreasing",
+      "output": "0"
     },
     {
       "input": "[100000,100000,100000]",
-      "desc": "Edge: max all same"
+      "desc": "Edge: max all same",
+      "output": "0"
     },
     {
       "input": "[1,100000,100000]",
-      "desc": "Edge: max"
+      "desc": "Edge: max",
+      "output": "0"
     },
     {
       "input": "[1,3,2,4,3,5,4,6]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "0"
     },
     {
       "input": "[5,3,8,1,9,4,7,2,6,10]",
-      "desc": "Standard random"
+      "desc": "Standard random",
+      "output": "1"
     },
     {
       "input": "[1,2,1,2,1,2]",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard 10 inc"
+      "desc": "Standard 10 inc",
+      "output": "16"
     },
     {
       "input": "[10,9,8,7,6,5,4,3,2,1]",
-      "desc": "Standard 10 dec"
+      "desc": "Standard 10 dec",
+      "output": "0"
     },
     {
       "input": "[1,2,3,3,4,5,6,7,8,9]",
-      "desc": "Standard plateau"
+      "desc": "Standard plateau",
+      "output": "12"
     },
     {
       "input": "[2,4,1,3,5,2,6,4,7]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1"
     },
     {
       "input": "[1,5,2,6,3,7,4,8,5,9]",
-      "desc": "Standard zig-zag"
+      "desc": "Standard zig-zag",
+      "output": "0"
     },
     {
       "input": "[100,200,300,400,500,400,300,200,100]",
-      "desc": "Standard peak"
+      "desc": "Standard peak",
+      "output": "3"
     },
     {
       "input": "[1,1,1,2,2,2,3,3,3,4,4,4]",
-      "desc": "Standard groups"
+      "desc": "Standard groups",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5,4,5,6,7,8,9,10]",
-      "desc": "Standard valley"
+      "desc": "Standard valley",
+      "output": "14"
     },
     {
       "input": "[1,100000,50000,99999,2,99998,3,99997,4,99996]",
-      "desc": "Stress mixed extremes"
+      "desc": "Stress mixed extremes",
+      "output": "0"
     }
   ]
 }

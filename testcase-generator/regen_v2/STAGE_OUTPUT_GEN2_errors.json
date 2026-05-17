@@ -1426,5 +1426,29 @@
     "slug": "find-first-palindromic-string-in-the-array",
     "fqid": 2108,
     "error": "Testcase 19 failed: RE (exit 1): (w for w in words if w == w[::-1]), \"\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpdgybsy_h.py\", line 142, in <genexpr>\n    return next((w for w in words if w == w[::-1]), \"\")\n                                          ~^^^^^^\nTypeError: 'int' object is not subscriptable\n"
+  },
+  {
+    "pid": 2131,
+    "slug": "convert-date-to-binary",
+    "fqid": 3280,
+    "error": "Testcase 0 failed: RE (exit 1): (f\"{int(s):b}\" for s in date.split(\"-\"))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpxapl18yc.py\", line 142, in <genexpr>\n    return \"-\".join(f\"{int(s):b}\" for s in date.split(\"-\"))\n                       ^^^^^^\nValueError: invalid literal for int() with base 10: 'w'\n"
+  },
+  {
+    "pid": 2129,
+    "slug": "minimum-suffix-flips",
+    "fqid": 1529,
+    "error": "Testcase 19 failed: RE (exit 1): ):\n  File \"/tmp/tmpl33u1wft.py\", line 279, in <module>\n    _result = Solution().minFlips(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpl33u1wft.py\", line 144, in minFlips\n    if (ans & 1) ^ int(v):\n                   ^^^^^^\nValueError: invalid literal for int() with base 10: 'o'\n"
+  },
+  {
+    "pid": 2152,
+    "slug": "weighted-word-mapping",
+    "fqid": 3838,
+    "error": "Testcase 1 failed: RE (exit 1): le>\n    _result = Solution().mapWordWeights(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpru5vn9y1.py\", line 144, in mapWordWeights\n    s = sum(weights[ord(c) - ord('a')] for c in w)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'int' object is not iterable\n"
+  },
+  {
+    "pid": 2154,
+    "slug": "shift-distance-between-two-strings",
+    "fqid": 3361,
+    "error": "Testcase 0 failed: RE (exit 1):  in <module>\n    _result = Solution().shiftDistance(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpl97xuihn.py\", line 149, in shiftDistance\n    s2[i + 1] = s2[i] + previousCost[(i + 1) % m]\n                        ~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: list index out of range\n"
   }
 ]

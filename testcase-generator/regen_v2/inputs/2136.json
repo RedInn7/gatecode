@@ -4,25 +4,105 @@
   "inferred_constraints": "0 <= big, medium, small <= 1000, carType in {1,2,3}, at most 1000 calls",
   "input_format": "line1: ops (JSON array); line2: args (JSON 2D)",
   "testcases": [
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,0],[1],[2],[3],[1]]", "desc": "Standard: example 1"},
-    {"input": "[\"ParkingSystem\"]\n[[0,0,0]]", "desc": "Edge: empty lot"},
-    {"input": "[\"ParkingSystem\",\"addCar\"]\n[[1,0,0],[1]]", "desc": "Edge: 1 big"},
-    {"input": "[\"ParkingSystem\",\"addCar\"]\n[[0,1,0],[2]]", "desc": "Edge: 1 medium"},
-    {"input": "[\"ParkingSystem\",\"addCar\"]\n[[0,0,1],[3]]", "desc": "Edge: 1 small"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\"]\n[[1,0,0],[1],[1]]", "desc": "Edge: overflow big"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,1],[1],[2],[3]]", "desc": "Edge: 1 each"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,2,2],[1],[1],[2],[2],[3],[3]]", "desc": "Standard fill"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\"]\n[[5,5,5],[1],[2],[3]]", "desc": "Standard"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,0,0],[1],[1],[1],[2],[3]]", "desc": "Standard overflow types"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[3,3,3],[1],[1],[1],[2],[2],[2],[3],[3],[3],[1]]", "desc": "Standard fill all"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1000,1000,1000],[1],[2],[3],[1]]", "desc": "Edge: max capacity"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,1],[1],[2],[3],[1],[2],[3],[1],[3]]", "desc": "Standard"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[5,0,5],[1],[2],[3],[2],[1]]", "desc": "Standard no medium"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[0,5,5],[1],[2],[1],[3],[1]]", "desc": "Standard no big"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[5,5,0],[3],[1],[2],[3],[3]]", "desc": "Standard no small"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\"]\n[[10,10,10],[1],[1],[1]]", "desc": "Standard all big"},
-    {"input": "[\"ParkingSystem\",\"addCar\"]\n[[1000,0,0],[1]]", "desc": "Standard max big"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,2,2],[1],[1],[1],[3]]", "desc": "Standard"},
-    {"input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,2,2],[1],[1],[1],[2],[2],[2],[3],[3],[3],[1],[2],[3]]", "desc": "Standard overflow"}
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,0],[1],[2],[3],[1]]",
+      "desc": "Standard: example 1",
+      "output": "[null, true, true, false, false]"
+    },
+    {
+      "input": "[\"ParkingSystem\"]\n[[0,0,0]]",
+      "desc": "Edge: empty lot",
+      "output": "[null]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\"]\n[[1,0,0],[1]]",
+      "desc": "Edge: 1 big",
+      "output": "[null, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\"]\n[[0,1,0],[2]]",
+      "desc": "Edge: 1 medium",
+      "output": "[null, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\"]\n[[0,0,1],[3]]",
+      "desc": "Edge: 1 small",
+      "output": "[null, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\"]\n[[1,0,0],[1],[1]]",
+      "desc": "Edge: overflow big",
+      "output": "[null, true, false]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,1],[1],[2],[3]]",
+      "desc": "Edge: 1 each",
+      "output": "[null, true, true, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,2,2],[1],[1],[2],[2],[3],[3]]",
+      "desc": "Standard fill",
+      "output": "[null, true, true, true, true, true, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\"]\n[[5,5,5],[1],[2],[3]]",
+      "desc": "Standard",
+      "output": "[null, true, true, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,0,0],[1],[1],[1],[2],[3]]",
+      "desc": "Standard overflow types",
+      "output": "[null, true, true, false, false, false]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[3,3,3],[1],[1],[1],[2],[2],[2],[3],[3],[3],[1]]",
+      "desc": "Standard fill all",
+      "output": "[null, true, true, true, true, true, true, true, true, true, false]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1000,1000,1000],[1],[2],[3],[1]]",
+      "desc": "Edge: max capacity",
+      "output": "[null, true, true, true, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,1],[1],[2],[3],[1],[2],[3],[1],[3]]",
+      "desc": "Standard",
+      "output": "[null, true, true, true, false, false, false, false, false]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[5,0,5],[1],[2],[3],[2],[1]]",
+      "desc": "Standard no medium",
+      "output": "[null, true, false, true, false, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[0,5,5],[1],[2],[1],[3],[1]]",
+      "desc": "Standard no big",
+      "output": "[null, false, true, false, true, false]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[5,5,0],[3],[1],[2],[3],[3]]",
+      "desc": "Standard no small",
+      "output": "[null, false, true, true, false, false]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\"]\n[[10,10,10],[1],[1],[1]]",
+      "desc": "Standard all big",
+      "output": "[null, true, true, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\"]\n[[1000,0,0],[1]]",
+      "desc": "Standard max big",
+      "output": "[null, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,2,2],[1],[1],[1],[3]]",
+      "desc": "Standard",
+      "output": "[null, true, true, false, true]"
+    },
+    {
+      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,2,2],[1],[1],[1],[2],[2],[2],[3],[3],[3],[1],[2],[3]]",
+      "desc": "Standard overflow",
+      "output": "[null, true, true, false, true, true, false, true, true, false, false, false, false]"
+    }
   ]
 }

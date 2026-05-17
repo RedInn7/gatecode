@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,2,3]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "5"
     },
     {
       "input": "[6,5,7,9,2,2]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "23"
     },
     {
       "input": "[5,5]",
-      "desc": "Edge: 2 same no free"
+      "desc": "Edge: 2 same no free",
+      "output": "10"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "1"
     },
     {
       "input": "[100]",
-      "desc": "Edge: max single"
+      "desc": "Edge: max single",
+      "output": "100"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge: 2 cheapest"
+      "desc": "Edge: 2 cheapest",
+      "output": "2"
     },
     {
       "input": "[100,100,100]",
-      "desc": "Edge: 3 max"
+      "desc": "Edge: 3 max",
+      "output": "200"
     },
     {
       "input": "[6,19,58,8,9,11,29,41,13,93,70,91,59,78,84,53,31,45,21,17,86,47,11,60,12,92,85,54,66,15,50,39,36,19,100,79,81,66,18,91,57,6,20,28,26,79,40,84,51,59,32,44,51,86,60,35,3,43,63,64,50,28,53,28,26,75,2,91,58,50,62,18,84,70,92,92,31,10,2,53,53,40,44,31]",
-      "desc": "Regenerated: diverse at position 7"
+      "desc": "Regenerated: diverse at position 7",
+      "output": "2712"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard ascending 10"
+      "desc": "Standard ascending 10",
+      "output": "40"
     },
     {
       "input": "[10,9,8,7,6,5,4,3,2,1]",
-      "desc": "Standard descending 10"
+      "desc": "Standard descending 10",
+      "output": "40"
     },
     {
       "input": "[44,78,85,75,99,72,40,13,43]",
-      "desc": "Regenerated: standard at position 10"
+      "desc": "Regenerated: standard at position 10",
+      "output": "414"
     },
     {
       "input": "[1,2,3]",
-      "desc": "Standard example dup"
+      "desc": "Standard example dup",
+      "output": "5"
     },
     {
       "input": "[5,10,15,20,25,30,35,40,45,50]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "200"
     },
     {
       "input": "[99,1,99,1,99,1,99,1,99,1]",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "399"
     },
     {
       "input": "[50,50,50]",
-      "desc": "Standard triplet"
+      "desc": "Standard triplet",
+      "output": "100"
     },
     {
       "input": "[3,3,3,3,3,3]",
-      "desc": "Standard 6 same"
+      "desc": "Standard 6 same",
+      "output": "12"
     },
     {
       "input": "[1,5,2,8,4,10,3,7,9,6]",
-      "desc": "Standard random"
+      "desc": "Standard random",
+      "output": "40"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
-      "desc": "Standard 20"
+      "desc": "Standard 20",
+      "output": "147"
     },
     {
       "input": "[100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81]",
-      "desc": "Standard 20 dec"
+      "desc": "Standard 20 dec",
+      "output": "1267"
     },
     {
       "input": "[10,20,30,40,50,60,70,80,90,100,1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard mixed"
+      "desc": "Standard mixed",
+      "output": "437"
     }
   ]
 }

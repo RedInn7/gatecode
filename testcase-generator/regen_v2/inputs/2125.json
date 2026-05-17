@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 500",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "4", "desc": "Standard: example 1"},
-    {"input": "2", "desc": "Standard: example 2"},
-    {"input": "7", "desc": "Standard: example 3"},
-    {"input": "1", "desc": "Edge: n=1"},
-    {"input": "3", "desc": "Edge: odd small"},
-    {"input": "5", "desc": "Standard"},
-    {"input": "6", "desc": "Standard"},
-    {"input": "8", "desc": "Standard"},
-    {"input": "10", "desc": "Standard"},
-    {"input": "100", "desc": "Standard"},
-    {"input": "500", "desc": "Edge: max"},
-    {"input": "499", "desc": "Edge: max-1 odd"},
-    {"input": "498", "desc": "Edge: even near max"},
-    {"input": "9", "desc": "Standard"},
-    {"input": "11", "desc": "Standard"},
-    {"input": "12", "desc": "Standard"},
-    {"input": "20", "desc": "Standard"},
-    {"input": "50", "desc": "Standard"},
-    {"input": "250", "desc": "Standard"},
-    {"input": "333", "desc": "Standard"}
+    {
+      "input": "4",
+      "desc": "Standard: example 1",
+      "output": "\"aaab\""
+    },
+    {
+      "input": "2",
+      "desc": "Standard: example 2",
+      "output": "\"ab\""
+    },
+    {
+      "input": "7",
+      "desc": "Standard: example 3",
+      "output": "\"aaaaaaa\""
+    },
+    {
+      "input": "1",
+      "desc": "Edge: n=1",
+      "output": "\"a\""
+    },
+    {
+      "input": "3",
+      "desc": "Edge: odd small",
+      "output": "\"aaa\""
+    },
+    {
+      "input": "5",
+      "desc": "Standard",
+      "output": "\"aaaaa\""
+    },
+    {
+      "input": "6",
+      "desc": "Standard",
+      "output": "\"aaaaab\""
+    },
+    {
+      "input": "8",
+      "desc": "Standard",
+      "output": "\"aaaaaaab\""
+    },
+    {
+      "input": "10",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaab\""
+    },
+    {
+      "input": "100",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\""
+    },
+    {
+      "input": "500",
+      "desc": "Edge: max",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\""
+    },
+    {
+      "input": "499",
+      "desc": "Edge: max-1 odd",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
+    },
+    {
+      "input": "498",
+      "desc": "Edge: even near max",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\""
+    },
+    {
+      "input": "9",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaa\""
+    },
+    {
+      "input": "11",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaaaa\""
+    },
+    {
+      "input": "12",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaaaab\""
+    },
+    {
+      "input": "20",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaaaaaaaaaaaab\""
+    },
+    {
+      "input": "50",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\""
+    },
+    {
+      "input": "250",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\""
+    },
+    {
+      "input": "333",
+      "desc": "Standard",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
+    }
   ]
 }

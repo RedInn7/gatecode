@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"leetcode\"\n\"ee*e\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "true"
     },
     {
       "input": "\"car\"\n\"c*v\"",
-      "desc": "Standard: example 2 false"
+      "desc": "Standard: example 2 false",
+      "output": "false"
     },
     {
       "input": "\"luck\"\n\"u*\"",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "true"
     },
     {
       "input": "\"a\"\n\"*\"",
-      "desc": "Edge: * alone matches all"
+      "desc": "Edge: * alone matches all",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"*\"",
-      "desc": "Edge: empty before/after"
+      "desc": "Edge: empty before/after",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"a*\"",
-      "desc": "Edge: only prefix"
+      "desc": "Edge: only prefix",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"*c\"",
-      "desc": "Edge: only suffix"
+      "desc": "Edge: only suffix",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"a*c\"",
-      "desc": "Edge: surround"
+      "desc": "Edge: surround",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"b*\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"d*\"",
-      "desc": "Edge: prefix not in"
+      "desc": "Edge: prefix not in",
+      "output": "false"
     },
     {
       "input": "\"abc\"\n\"*d\"",
-      "desc": "Edge: suffix not in"
+      "desc": "Edge: suffix not in",
+      "output": "false"
     },
     {
       "input": "\"abcdefghijklmnop\"\n\"a*p\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"hello\"\n\"h*o\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"hello\"\n\"l*l\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"banana\"\n\"b*a\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"mississippi\"\n\"mis*ipp\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"abcabcabc\"\n\"abc*abc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"aaaaaaaaaaaaaa\"\n\"a*a\"",
-      "desc": "Edge: same chars"
+      "desc": "Edge: same chars",
+      "output": "true"
     },
     {
       "input": "\"x\"\n\"x*\"",
-      "desc": "Edge: 1 char"
+      "desc": "Edge: 1 char",
+      "output": "true"
     },
     {
       "input": "\"qnpxssclrurwtpqe\"\n\"ncqapzyf\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "false"
     }
   ]
 }
