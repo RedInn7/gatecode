@@ -736,5 +736,59 @@
     "slug": "beautiful-arrangement-ii",
     "fqid": 667,
     "error": "Testcase 2 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1521,
+    "slug": "maximum-product-of-three-numbers",
+    "fqid": 628,
+    "error": "Testcase 0 failed: RE (exit 1): tmp/tmpbcudry0m.py\", line 278, in <module>\n    _result = Solution().maximumProduct(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpbcudry0m.py\", line 143, in maximumProduct\n    a = nums[-1] * nums[-2] * nums[-3]\n                   ~~~~^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1522,
+    "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+    "fqid": 1334,
+    "error": "Testcase 0 failed: RE (exit 1): \n  File \"/tmp/tmpnxufhvg3.py\", line 300, in <module>\n    _result = Solution().findTheCity(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpnxufhvg3.py\", line 161, in findTheCity\n    for f, t, w in edges:\n        ^^^^^^^\nValueError: not enough values to unpack (expected 3, got 2)\n"
+  },
+  {
+    "pid": 1520,
+    "slug": "shortest-path-to-get-all-keys",
+    "fqid": 864,
+    "error": "Testcase 0 failed: RE (exit 1): gs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp1a83fqne.py\", line 144, in shortestPathAllKeys\n    si, sj = next((i, j) for i in range(m) for j in range(n) if grid[i][j] == '@')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nStopIteration\n"
+  },
+  {
+    "pid": 1513,
+    "slug": "minimum-white-tiles-after-covering-with-carpets",
+    "fqid": 2209,
+    "error": "Testcase 0 failed: RE (exit 1):   return min(1 + dfs(i + 1, j), dfs(i + carpetLen, j - 1))\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^\n  [Previous line repeated 996 more times]\n  File \"/tmp/tmpmtd0vht_.py\", line 148, in dfs\n    if j == 0:\n       ^^^^^^\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  },
+  {
+    "pid": 1527,
+    "slug": "distinct-numbers-in-each-subarray",
+    "fqid": 1852,
+    "error": "Testcase 0 failed: RE (exit 1): cent call last):\n  File \"/tmp/tmp8j09129z.py\", line 283, in <module>\n    _result = Solution().distinctNumbers(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp8j09129z.py\", line 145, in distinctNumbers\n    cnt[nums[i]] += 1\n        ~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1536,
+    "slug": "k-th-smallest-prime-fraction",
+    "fqid": 786,
+    "error": "Testcase 0 failed: RE (exit 1): e 281, in <module>\n    _result = Solution().kthSmallestPrimeFraction(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpo2f65hly.py\", line 148, in kthSmallestPrimeFraction\n    return [arr[h[0][1]], arr[h[0][2]]]\n                ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1535,
+    "slug": "maximum-product-of-first-and-last-elements-of-a-subsequence",
+    "fqid": 3584,
+    "error": "Testcase 0 failed: RE (exit 1):  (most recent call last):\n  File \"/tmp/tmp8lsmwry0.py\", line 283, in <module>\n    _result = Solution().maximumProduct(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp8lsmwry0.py\", line 145, in maximumProduct\n    x = nums[i]\n        ~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1531,
+    "slug": "count-ways-to-build-good-strings",
+    "fqid": 2466,
+    "error": "Testcase 1 failed: RE (exit 1): ^^\n  File \"/tmp/tmpg3rew8bd.py\", line 149, in dfs\n    ans += dfs(i + zero) + dfs(i + one)\n           ^^^^^^^^^^^^^\n  [Previous line repeated 996 more times]\n  File \"/tmp/tmpg3rew8bd.py\", line 144, in dfs\n    if i > high:\n       ^^^^^^^^\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  },
+  {
+    "pid": 1539,
+    "slug": "evaluate-valid-expressions",
+    "fqid": 3749,
+    "error": "Testcase 0 failed: RE (exit 1):               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpnr1_wuiu.py\", line 173, in evaluateExpression\n    return parse(0)[0]\n           ^^^^^^^^\n  File \"/tmp/tmpnr1_wuiu.py\", line 152, in parse\n    while expression[j] != \"(\":\n          ~~~~~~~~~~^^^\nIndexError: string index out of range\n"
   }
 ]

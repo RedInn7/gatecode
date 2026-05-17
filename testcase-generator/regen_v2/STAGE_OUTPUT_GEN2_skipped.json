@@ -232,5 +232,11 @@
     "slug": "sum-of-k-subarrays-with-length-at-least-m",
     "fqid": 3473,
     "reason": "No Python3 solution found for fqid=3473"
+  },
+  {
+    "pid": 1516,
+    "slug": "zero-array-transformation-iv",
+    "fqid": 3489,
+    "reason": "No Python3 solution found for fqid=3489"
   }
 ]

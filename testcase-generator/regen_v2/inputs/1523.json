@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,2,3]",
-      "desc": "Standard: example1=6"
+      "desc": "Standard: example1=6",
+      "output": "6"
     },
     {
       "input": "[-10,9,20,null,null,15,7]",
-      "desc": "Standard: example2=42"
+      "desc": "Standard: example2=42",
+      "output": "42"
     },
     {
       "input": "[1]",
-      "desc": "Edge: single node"
+      "desc": "Edge: single node",
+      "output": "1"
     },
     {
       "input": "[-3]",
-      "desc": "Edge: single negative"
+      "desc": "Edge: single negative",
+      "output": "-3"
     },
     {
       "input": "[-1,-2,-3]",
-      "desc": "Standard: all negative"
+      "desc": "Standard: all negative",
+      "output": "-1"
     },
     {
       "input": "[2,-1]",
-      "desc": "Standard: two nodes"
+      "desc": "Standard: two nodes",
+      "output": "2"
     },
     {
       "input": "[1,null,2,null,3]",
-      "desc": "Standard: right chain"
+      "desc": "Standard: right chain",
+      "output": "6"
     },
     {
       "input": "[3,2,null,1]",
-      "desc": "Standard: left chain"
+      "desc": "Standard: left chain",
+      "output": "6"
     },
     {
       "input": "[5,4,8,11,null,13,4,7,2,null,null,null,1]",
-      "desc": "Stress: complex"
+      "desc": "Stress: complex",
+      "output": "48"
     },
     {
       "input": "[1,2,3,4,5,6,7]",
-      "desc": "Standard: perfect 7"
+      "desc": "Standard: perfect 7",
+      "output": "18"
     },
     {
       "input": "[-1,2,3]",
-      "desc": "Standard: neg root"
+      "desc": "Standard: neg root",
+      "output": "4"
     },
     {
       "input": "[100,50,150]",
-      "desc": "Standard: large positive"
+      "desc": "Standard: large positive",
+      "output": "300"
     },
     {
       "input": "[-50,50,50,100,100]",
-      "desc": "Stress: neg root pos children"
+      "desc": "Stress: neg root pos children",
+      "output": "250"
     },
     {
       "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]",
-      "desc": "Stress: 15 nodes"
+      "desc": "Stress: 15 nodes",
+      "output": "66"
     },
     {
       "input": "[-1000,1000,1000]",
-      "desc": "Killer: extremes"
+      "desc": "Killer: extremes",
+      "output": "1000"
     },
     {
       "input": "[2,null,-1,-2,null,null,-3]",
-      "desc": "Standard: mixed neg"
+      "desc": "Standard: mixed neg",
+      "output": "2"
     },
     {
       "input": "[0,0,0,0,0,0,0]",
-      "desc": "Standard: all zeros"
+      "desc": "Standard: all zeros",
+      "output": "0"
     },
     {
       "input": "[1000,1000,null,1000,null,1000,null,1000]",
-      "desc": "Stress: max values left chain"
+      "desc": "Stress: max values left chain",
+      "output": "5000"
     },
     {
       "input": "[-1000,-1000,-1000,-1000,-1000,-1000,-1000]",
-      "desc": "Killer: all min"
+      "desc": "Killer: all min",
+      "output": "-1000"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
-      "desc": "Stress: 4 levels"
+      "desc": "Stress: 4 levels",
+      "output": "44"
     }
   ]
 }
