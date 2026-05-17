@@ -586,5 +586,47 @@
     "slug": "falling-squares",
     "fqid": 699,
     "error": "Testcase 7 failed: RE (exit 1): ):\n  File \"/tmp/tmp6qd2841i.py\", line 346, in <module>\n    _result = Solution().fallingSquares(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp6qd2841i.py\", line 207, in fallingSquares\n    for l, w in positions:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1417,
+    "slug": "choose-numbers-from-two-arrays-in-range",
+    "fqid": 2143,
+    "error": "Testcase 0 failed: RE (exit 1):  File \"/tmp/tmpiurhknfk.py\", line 290, in <module>\n    _result = Solution().countSubranges(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpiurhknfk.py\", line 156, in countSubranges\n    ans = (ans + f[i][s2]) % mod\n                 ~~~~^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1427,
+    "slug": "find-maximum-area-of-a-triangle",
+    "fqid": 3588,
+    "error": "Testcase 5 failed: RE (exit 1):  _result = Solution().maxArea(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_7trqlzi.py\", line 160, in maxArea\n    ans = calc()\n          ^^^^^^\n  File \"/tmp/tmp_7trqlzi.py\", line 146, in calc\n    for x, y in coords:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1429,
+    "slug": "minimum-operations-to-make-the-array-beautiful",
+    "fqid": 3717,
+    "error": "Testcase 5 failed: RE (exit 1): py\", line 285, in <module>\n    _result = Solution().minOperations(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphv5gvbs5.py\", line 146, in minOperations\n    cur = (x + pre - 1) // pre * pre\n          ~~~~~~~~~~~~~~^^~~~~\nZeroDivisionError: integer division or modulo by zero\n"
+  },
+  {
+    "pid": 1430,
+    "slug": "count-number-of-rectangles-containing-each-point",
+    "fqid": 2250,
+    "error": "Testcase 5 failed: RE (exit 1):  File \"/tmp/tmpxn23p0lx.py\", line 289, in <module>\n    _result = Solution().countRectangles(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpxn23p0lx.py\", line 145, in countRectangles\n    for x, y in rectangles:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1441,
+    "slug": "find-k-length-substrings-with-no-repeated-characters",
+    "fqid": 1100,
+    "error": "Testcase 0 failed: RE (exit 1):   File \"/tmp/tmp_osky3tl.py\", line 283, in <module>\n    _result = Solution().numKLenSubstrNoRepeats(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_osky3tl.py\", line 145, in numKLenSubstrNoRepeats\n    cnt[s[i]] += 1\n        ~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1411,
+    "slug": "number-of-common-factors",
+    "fqid": 2427,
+    "error": "Testcase 0 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1426,
+    "slug": "minimum-swaps-to-sort-by-digit-sum",
+    "fqid": 3551,
+    "error": "Testcase 0 failed: TLE (>15s)"
   }
 ]

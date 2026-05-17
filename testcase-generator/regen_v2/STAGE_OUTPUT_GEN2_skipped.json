@@ -220,5 +220,11 @@
     "slug": "maximum-and-minimum-sums-of-at-most-size-k-subsequences",
     "fqid": 3428,
     "reason": "No Python3 solution found for fqid=3428"
+  },
+  {
+    "pid": 1425,
+    "slug": "permutations-iv",
+    "fqid": 3470,
+    "reason": "No Python3 solution found for fqid=3470"
   }
 ]
