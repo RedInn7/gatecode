@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[\"cd\",\"ac\",\"dc\",\"ca\",\"zz\"]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "2"
     },
     {
       "input": "[\"ab\",\"ba\",\"cc\"]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "1"
     },
     {
       "input": "[\"aa\",\"ab\"]",
-      "desc": "Standard: example 3 no pair"
+      "desc": "Standard: example 3 no pair",
+      "output": "0"
     },
     {
       "input": "[\"ab\"]",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "0"
     },
     {
       "input": "[\"aa\"]",
-      "desc": "Edge: palindrome single"
+      "desc": "Edge: palindrome single",
+      "output": "0"
     },
     {
       "input": "[\"ab\",\"ba\"]",
-      "desc": "Edge: simple pair"
+      "desc": "Edge: simple pair",
+      "output": "1"
     },
     {
       "input": "[\"ab\",\"cd\",\"ef\"]",
-      "desc": "Edge: no pairs"
+      "desc": "Edge: no pairs",
+      "output": "0"
     },
     {
       "input": "[\"ab\",\"ba\",\"cd\",\"dc\"]",
-      "desc": "Standard: 2 pairs"
+      "desc": "Standard: 2 pairs",
+      "output": "2"
     },
     {
       "input": "[\"ab\",\"ba\",\"cd\",\"dc\",\"ef\",\"fe\"]",
-      "desc": "Standard: 3 pairs"
+      "desc": "Standard: 3 pairs",
+      "output": "3"
     },
     {
       "input": "[\"aa\",\"bb\",\"cc\",\"dd\"]",
-      "desc": "Edge: all palindromes no pairs"
+      "desc": "Edge: all palindromes no pairs",
+      "output": "0"
     },
     {
       "input": "[\"ab\",\"ba\",\"ab\"]",
-      "desc": "Edge: duplicates not allowed (must be distinct)"
+      "desc": "Edge: duplicates not allowed (must be distinct)",
+      "output": "2"
     },
     {
       "input": "[\"hi\",\"ih\",\"hl\",\"lh\",\"hn\",\"nh\"]",
-      "desc": "Standard: 3 h-pairs"
+      "desc": "Standard: 3 h-pairs",
+      "output": "3"
     },
     {
       "input": "[\"xy\",\"yx\",\"xz\",\"zx\",\"yz\",\"zy\"]",
-      "desc": "Standard: 3 pairs"
+      "desc": "Standard: 3 pairs",
+      "output": "3"
     },
     {
       "input": "[\"ab\",\"cd\",\"ef\",\"gh\",\"ij\"]",
-      "desc": "Standard: no pairs distinct"
+      "desc": "Standard: no pairs distinct",
+      "output": "0"
     },
     {
       "input": "[\"ab\",\"ba\",\"cd\",\"ef\",\"fe\"]",
-      "desc": "Standard: 2 pairs + odd"
+      "desc": "Standard: 2 pairs + odd",
+      "output": "2"
     },
     {
       "input": "[\"ab\",\"ba\",\"cd\",\"dc\",\"ef\",\"fe\",\"gh\",\"hg\",\"ij\",\"ji\"]",
-      "desc": "Standard: 5 pairs"
+      "desc": "Standard: 5 pairs",
+      "output": "5"
     },
     {
       "input": "[\"za\",\"az\",\"yb\",\"by\",\"xc\",\"cx\",\"wd\",\"dw\",\"ve\",\"ev\"]",
-      "desc": "Standard: 5 reverse pairs"
+      "desc": "Standard: 5 reverse pairs",
+      "output": "5"
     },
     {
       "input": "[\"aa\",\"bb\",\"cc\",\"dd\",\"ee\",\"ff\",\"gg\",\"hh\"]",
-      "desc": "Edge: all palindromes no pairs"
+      "desc": "Edge: all palindromes no pairs",
+      "output": "0"
     },
     {
       "input": "[\"ab\",\"ba\"]",
-      "desc": "Edge: minimal pair"
+      "desc": "Edge: minimal pair",
+      "output": "1"
     },
     {
       "input": "[-24,201,970,327,-904,411,-18,-150,-186,-411,208,918,-357,-454,-78,-257,-434,131,-55,10,-114,749,-855,-744,195,311,-887,608,-336,-749,-765,957,-539,-606,-485,-838,-795,629,425,510,336,-370,526,386,-6,61,177,-839,603,-767]",

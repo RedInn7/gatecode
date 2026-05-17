@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "\"12234\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "1469"
     },
     {
       "input": "\"111\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "11"
     },
     {
       "input": "\"0\"",
-      "desc": "Edge: single zero no primes"
+      "desc": "Edge: single zero no primes",
+      "output": "0"
     },
     {
       "input": "\"1\"",
-      "desc": "Edge: 1 not prime"
+      "desc": "Edge: 1 not prime",
+      "output": "0"
     },
     {
       "input": "\"2\"",
-      "desc": "Edge: single prime"
+      "desc": "Edge: single prime",
+      "output": "2"
     },
     {
       "input": "\"7\"",
-      "desc": "Edge: single prime 7"
+      "desc": "Edge: single prime 7",
+      "output": "7"
     },
     {
       "input": "\"4\"",
-      "desc": "Edge: 4 not prime"
+      "desc": "Edge: 4 not prime",
+      "output": "0"
     },
     {
       "input": "\"23\"",
-      "desc": "Edge: 2,3,23 primes"
+      "desc": "Edge: 2,3,23 primes",
+      "output": "28"
     },
     {
       "input": "\"00\"",
-      "desc": "Edge: leading zeros, 0 not prime"
+      "desc": "Edge: leading zeros, 0 not prime",
+      "output": "0"
     },
     {
       "input": "\"9999999999\"",
-      "desc": "Edge: all 9s"
+      "desc": "Edge: all 9s",
+      "output": "0"
     },
     {
       "input": "\"1234567890\"",
-      "desc": "Standard: all digits"
+      "desc": "Standard: all digits",
+      "output": "23461445"
     },
     {
       "input": "\"5555555555\"",
-      "desc": "Edge: all 5s (5 only)"
+      "desc": "Edge: all 5s (5 only)",
+      "output": "5"
     },
     {
       "input": "\"1111111111\"",
-      "desc": "Edge: all 1s (11,1111111111 check)"
+      "desc": "Edge: all 1s (11,1111111111 check)",
+      "output": "11"
     },
     {
       "input": "\"2357113171\"",
-      "desc": "Standard: prime-heavy digits"
+      "desc": "Standard: prime-heavy digits",
+      "output": "837659"
     },
     {
       "input": "\"0000000000\"",
-      "desc": "Edge: all zeros no primes"
+      "desc": "Edge: all zeros no primes",
+      "output": "0"
     },
     {
       "input": "\"31\"",
-      "desc": "Edge: 3,31 primes"
+      "desc": "Edge: 3,31 primes",
+      "output": "34"
     },
     {
       "input": "\"97\"",
-      "desc": "Edge: 97 prime"
+      "desc": "Edge: 97 prime",
+      "output": "104"
     },
     {
       "input": "\"100\"",
-      "desc": "Edge: 100 not prime, but parts"
+      "desc": "Edge: 100 not prime, but parts",
+      "output": "0"
     },
     {
       "input": "\"1029384756\"",
-      "desc": "Standard: random varied"
+      "desc": "Standard: random varied",
+      "output": "10297987"
     },
     {
       "input": "\"swznrpavoq\"",

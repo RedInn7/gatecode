@@ -6,43 +6,53 @@
   "testcases": [
     {
       "input": "[1,2,4,6,3,5,9,8,7,10]\n[2,3,8,9,4,6,12,11,10,14]\n6",
-      "desc": "Standard: example"
+      "desc": "Standard: example",
+      "output": "5"
     },
     {
       "input": "[1]\n[2]\n1",
-      "desc": "Edge: single profitable"
+      "desc": "Edge: single profitable",
+      "output": "1"
     },
     {
       "input": "[5]\n[2]\n5",
-      "desc": "Edge: single loss"
+      "desc": "Edge: single loss",
+      "output": "0"
     },
     {
       "input": "[1]\n[1]\n0",
-      "desc": "Edge: budget=0"
+      "desc": "Edge: budget=0",
+      "output": "0"
     },
     {
       "input": "[1,2,3]\n[4,5,6]\n3",
-      "desc": "Standard: all profitable buy two"
+      "desc": "Standard: all profitable buy two",
+      "output": "6"
     },
     {
       "input": "[3,2,1]\n[1,2,3]\n3",
-      "desc": "Standard: mixed profit"
+      "desc": "Standard: mixed profit",
+      "output": "2"
     },
     {
       "input": "[10]\n[20]\n5",
-      "desc": "Edge: cannot afford"
+      "desc": "Edge: cannot afford",
+      "output": "0"
     },
     {
       "input": "[1,1,1,1,1]\n[2,2,2,2,2]\n3",
-      "desc": "Standard: buy 3 of 5"
+      "desc": "Standard: buy 3 of 5",
+      "output": "3"
     },
     {
       "input": "[5,5,5]\n[5,5,5]\n15",
-      "desc": "Standard: no profit"
+      "desc": "Standard: no profit",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n[2,3,4,5,6,7,8,9,10,11]\n25",
-      "desc": "Stress: 10 stocks"
+      "desc": "Stress: 10 stocks",
+      "output": "6"
     },
     {
       "input": "[290,-188,-638,-373,-171,-10,-124,439,-626,-659,-86,747,-167,344,884,466,477,736,-775,687,-552,-101,393,-857,182,146,-263,-204,657,206,-201,-569,866,647,536,656,-733,-90,-992,30,921,520,750,239,-515,988,274,317]\n[221,-338,-555,-575,-791,451,-900,619,-415,-907,-266,792,515,404,-885,-524,896,-652,611,562,-232,586,-114,318,-712,646,388,780,752,-829,849,-824,-225,-967,-486,-462,-61,-518,-653,567,-31,-957,486,-132,819,811,-12,953]\n3",
@@ -54,35 +64,43 @@
     },
     {
       "input": "[0,0,0]\n[1000000,1000000,1000000]\n0",
-      "desc": "Edge: free stocks max profit 0 budget"
+      "desc": "Edge: free stocks max profit 0 budget",
+      "output": "3000000"
     },
     {
       "input": "[1000000]\n[1000000]\n1000000",
-      "desc": "Edge: no profit max val"
+      "desc": "Edge: no profit max val",
+      "output": "0"
     },
     {
       "input": "[3,1,2]\n[4,3,5]\n2",
-      "desc": "Standard: pick cheapest profitable"
+      "desc": "Standard: pick cheapest profitable",
+      "output": "3"
     },
     {
       "input": "[1,10,100]\n[5,15,150]\n11",
-      "desc": "Standard: budget limits choices"
+      "desc": "Standard: budget limits choices",
+      "output": "9"
     },
     {
       "input": "[67,100,19,76,5,57,43,33,82,20,77,38,59,27,56,33,39,25,43,82]\n[68,111,62,97,45,95,85,49,82,42,118,53,60,76,96,33,50,62,85,117]\n500",
-      "desc": "Stress: 20 random profitable"
+      "desc": "Stress: 20 random profitable",
+      "output": "445"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3,4,5,6,7,8,9,10]\n100",
-      "desc": "Stress: no profit all"
+      "desc": "Stress: no profit all",
+      "output": "0"
     },
     {
       "input": "[1,1000000]\n[2,999999]\n1000001",
-      "desc": "Killer: buy both or neither"
+      "desc": "Killer: buy both or neither",
+      "output": "1"
     },
     {
       "input": "[0]\n[0]\n0",
-      "desc": "Edge: zero everything"
+      "desc": "Edge: zero everything",
+      "output": "0"
     }
   ]
 }

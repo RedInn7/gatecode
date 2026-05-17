@@ -6,23 +6,28 @@
   "testcases": [
     {
       "input": "[75]",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "true"
     },
     {
       "input": "[-84]",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "true"
     },
     {
       "input": "[78]",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "true"
     },
     {
       "input": "[42]",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "true"
     },
     {
       "input": "[-62]",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "true"
     },
     {
       "input": "[-20,56,87,42,10,-41,-7,54,-97,-9,-12,-84]",
@@ -38,7 +43,8 @@
     },
     {
       "input": "[95,-10,91,66,3,-99,97]",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "false"
     },
     {
       "input": "[-74,26,16,61,-78,20,-74,-11,72]",
@@ -46,23 +52,28 @@
     },
     {
       "input": "[16,55,-74,53,-54,1,24,91]",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "false"
     },
     {
       "input": "[8,-33,-21,-40,1,48,87,18,-48]",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "false"
     },
     {
       "input": "[80,31,84]",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "false"
     },
     {
       "input": "[28,-51,88,29,43,23,-43,-97,46]",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "false"
     },
     {
       "input": "[65,93,-10,26,-49,88,-39,80,-8,-85,-46,-48,57]",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "false"
     },
     {
       "input": "[-56,75,-77,13,-11,-9,77,-87,-67,54,-59,-33,-45,-1,-40]",
@@ -70,7 +81,8 @@
     },
     {
       "input": "[43,-69,12,-64,-95,1,13,-87,-20]",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "false"
     },
     {
       "input": "[-790,-62,381,-289,611,-457,-465,512,927,611,621,217,-731,148,-599,-560,-380,-431,-990,584,-465,-820,316,-96,623,602,-558,416,-956,274,948,527,150,-895,-740,516,724,-38,-474,812,-492,112,682,-446,-671,-461,-520,-571,-209,-174,185,423,-893,653,-978,-774,-860,767,418,199,340,-869,239,475,-851,-554,-914,50,188,774,206,-441,-749,-802,-847,-325,721]",

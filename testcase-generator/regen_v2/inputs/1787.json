@@ -6,59 +6,73 @@
   "testcases": [
     {
       "input": "[1,0,1,0,1]",
-      "desc": "Standard: example1"
+      "desc": "Standard: example1",
+      "output": "[0,3]"
     },
     {
       "input": "[1,1,0,1,1]",
-      "desc": "Standard: impossible"
+      "desc": "Standard: impossible",
+      "output": "[-1,-1]"
     },
     {
       "input": "[1,1,0,0,1]",
-      "desc": "Standard: example3"
+      "desc": "Standard: example3",
+      "output": "[0,2]"
     },
     {
       "input": "[0,0,0]",
-      "desc": "Edge: all zeros"
+      "desc": "Edge: all zeros",
+      "output": "[0,2]"
     },
     {
       "input": "[1,1,1]",
-      "desc": "Edge: all ones"
+      "desc": "Edge: all ones",
+      "output": "[0,2]"
     },
     {
       "input": "[0,0,0,0,0,0,0,0,0]",
-      "desc": "Edge: 9 zeros"
+      "desc": "Edge: 9 zeros",
+      "output": "[0,8]"
     },
     {
       "input": "[1]",
-      "desc": "Edge: single"
+      "desc": "Edge: single",
+      "output": "[-1,-1]"
     },
     {
       "input": "[1,0,0,0,0,0]",
-      "desc": "Standard: one 1 impossible 3-way"
+      "desc": "Standard: one 1 impossible 3-way",
+      "output": "[-1,-1]"
     },
     {
       "input": "[1,0,1,0,1,0,1,0,1]",
-      "desc": "Standard: alternating 9"
+      "desc": "Standard: alternating 9",
+      "output": "[-1,-1]"
     },
     {
       "input": "[1,1,0,0,1,1,0,0,1,1,0,0]",
-      "desc": "Standard: repeating 12"
+      "desc": "Standard: repeating 12",
+      "output": "[3,8]"
     },
     {
       "input": "[0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1]",
-      "desc": "Stress: long with pattern"
+      "desc": "Stress: long with pattern",
+      "output": "[12,21]"
     },
     {
       "input": "[1,1,1,0,0,0,1,1,1,0,0,0,1,1,1]",
-      "desc": "Stress: blocks"
+      "desc": "Stress: blocks",
+      "output": "[2,9]"
     },
     {
       "input": "[0,0,1,0,0,1,0,0,1]",
-      "desc": "Standard: zero-padded equal"
+      "desc": "Standard: zero-padded equal",
+      "output": "[2,6]"
     },
     {
       "input": "[1,0,0,1,0,0,1,0,0]",
-      "desc": "Standard: trailing zeros"
+      "desc": "Standard: trailing zeros",
+      "output": "[2,6]"
     },
     {
       "input": "[730,-737,-862,389,18,142,472,928,662,-230,314,-74,3,611,-307,495,685,-232,795,535,-178,-97,-415,-363,-939,730,-62,-223,-814,735,-888,-171,-8,160,-235,248,-465,855,-371,518,-3,436,-663,-844,-540,-682,-860,-277,572]",
@@ -66,23 +80,28 @@
     },
     {
       "input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]",
-      "desc": "Stress: alternating 30"
+      "desc": "Stress: alternating 30",
+      "output": "[9,20]"
     },
     {
       "input": "[0,1,1,0,1,1,0,1,1]",
-      "desc": "Standard: 3 equal parts"
+      "desc": "Standard: 3 equal parts",
+      "output": "[2,6]"
     },
     {
       "input": "[1,1,1,1,1,1]",
-      "desc": "Standard: 6 ones split 2+2+2"
+      "desc": "Standard: 6 ones split 2+2+2",
+      "output": "[1,4]"
     },
     {
       "input": "[1,0,1,1,0,1,1,0,1]",
-      "desc": "Standard: 10x pattern"
+      "desc": "Standard: 10x pattern",
+      "output": "[2,6]"
     },
     {
       "input": "[0,1,0,0,1,0,0,1,0]",
-      "desc": "Standard: zero-wrapped ones"
+      "desc": "Standard: zero-wrapped ones",
+      "output": "[2,6]"
     }
   ]
 }
