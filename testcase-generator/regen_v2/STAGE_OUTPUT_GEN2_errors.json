@@ -1534,5 +1534,11 @@
     "slug": "kth-smallest-path-xor-sum",
     "fqid": 3590,
     "error": "Testcase 9 failed: RE (exit 1): ost recent call last):\n  File \"/tmp/tmphrgk49jj.py\", line 369, in <module>\n    _result = Solution().kthSmallest(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphrgk49jj.py\", line 197, in kthSmallest\n    tree[par[i]].append(i)\n    ~~~~^^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 2405,
+    "slug": "maximum-points-in-an-archery-competition",
+    "fqid": 2212,
+    "error": "Testcase 2 failed: TLE (>15s)"
   }
 ]

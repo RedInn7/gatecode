@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[3,9,2,1,7]\n3",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "7"
     },
     {
       "input": "[3,9,7,2,1,7]\n4",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "3"
     },
     {
       "input": "[1]\n1",
-      "desc": "Edge: n=k=1"
+      "desc": "Edge: n=k=1",
+      "output": "1"
     },
     {
       "input": "[5]\n1",
-      "desc": "Edge: single value"
+      "desc": "Edge: single value",
+      "output": "5"
     },
     {
       "input": "[1,1,1,1]\n2",
-      "desc": "All same"
+      "desc": "All same",
+      "output": "-1"
     },
     {
       "input": "[1,2,3]\n3",
-      "desc": "k=n"
+      "desc": "k=n",
+      "output": "3"
     },
     {
       "input": "[5,4,3,2,1]\n3",
-      "desc": "Desc"
+      "desc": "Desc",
+      "output": "5"
     },
     {
       "input": "[1,2,3,4,5]\n3",
-      "desc": "Asc"
+      "desc": "Asc",
+      "output": "5"
     },
     {
       "input": "[100,-100,100,-100]\n2",
-      "desc": "Extremes alternating"
+      "desc": "Extremes alternating",
+      "output": "-1"
     },
     {
       "input": "[-50,-30,-10,10,30,50]\n3",
-      "desc": "Negatives and positives"
+      "desc": "Negatives and positives",
+      "output": "50"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n5",
-      "desc": "10 asc k=5"
+      "desc": "10 asc k=5",
+      "output": "10"
     },
     {
       "input": "[7,7,7,7,7,7,7,7]\n3",
-      "desc": "8 sevens"
+      "desc": "8 sevens",
+      "output": "-1"
     },
     {
       "input": "[1,2,1,2,1,2,1,2]\n2",
-      "desc": "Alternating"
+      "desc": "Alternating",
+      "output": "-1"
     },
     {
       "input": "[5,4,3,5,4,3,5,4,3]\n2",
-      "desc": "Pattern"
+      "desc": "Pattern",
+      "output": "-1"
     },
     {
       "input": "[10,20,30,40,50]\n2",
-      "desc": "5 step"
+      "desc": "5 step",
+      "output": "50"
     },
     {
       "input": "[100,99,98,97,96,95]\n3",
-      "desc": "6 desc"
+      "desc": "6 desc",
+      "output": "100"
     },
     {
       "input": "[-1,-2,-3,-4,-5]\n2",
-      "desc": "5 neg"
+      "desc": "5 neg",
+      "output": "-1"
     },
     {
       "input": "[0,0,0,0,0,1]\n3",
-      "desc": "Mostly zero with one 1"
+      "desc": "Mostly zero with one 1",
+      "output": "1"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10",
-      "desc": "20 asc"
+      "desc": "20 asc",
+      "output": "20"
     },
     {
       "input": "[48,-83,-60,20,54,-68,-19,-7,-77,83,66,-64,-54,47,-83,-76,-69,70,62,-6,51,8,68,43,-80,-90,-83,8,-51,-92,81,-56,-86,-34,45,35,-81,-20,-27,-25,-12,49,35,19,6,27,-16,-89,-60,9]\n4",
-      "desc": "Regenerated: stress at position 19"
+      "desc": "Regenerated: stress at position 19",
+      "output": "48"
     }
   ]
 }

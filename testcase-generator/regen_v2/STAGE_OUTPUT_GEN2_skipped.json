@@ -394,5 +394,11 @@
     "slug": "minimum-operations-to-equalize-subarrays",
     "fqid": 3762,
     "reason": "No Python3 solution found for fqid=3762"
+  },
+  {
+    "pid": 2417,
+    "slug": "minimum-partition-score",
+    "fqid": 3826,
+    "reason": "No Python3 solution found for fqid=3826"
   }
 ]

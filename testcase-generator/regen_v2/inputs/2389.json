@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"000111000\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "false"
     },
     {
       "input": "\"00011111222\"",
-      "desc": "Standard example 2 (true)"
+      "desc": "Standard example 2 (true)",
+      "output": "true"
     },
     {
       "input": "\"011100022233\"",
-      "desc": "Standard example 3 false"
+      "desc": "Standard example 3 false",
+      "output": "false"
     },
     {
       "input": "\"00\"",
-      "desc": "Edge: only 2"
+      "desc": "Edge: only 2",
+      "output": "true"
     },
     {
       "input": "\"000\"",
-      "desc": "Edge: only 3"
+      "desc": "Edge: only 3",
+      "output": "false"
     },
     {
       "input": "\"00000\"",
-      "desc": "Edge: 5 zeros (3+2)"
+      "desc": "Edge: 5 zeros (3+2)",
+      "output": "true"
     },
     {
       "input": "\"11\"",
-      "desc": "Edge: 2 ones"
+      "desc": "Edge: 2 ones",
+      "output": "true"
     },
     {
       "input": "\"111\"",
-      "desc": "Edge: 3 ones (no 2-block)"
+      "desc": "Edge: 3 ones (no 2-block)",
+      "output": "false"
     },
     {
       "input": "\"11111\"",
-      "desc": "5 ones (3+2)"
+      "desc": "5 ones (3+2)",
+      "output": "true"
     },
     {
       "input": "\"1\"",
-      "desc": "Edge: single - false"
+      "desc": "Edge: single - false",
+      "output": "false"
     },
     {
       "input": "\"000111\"",
-      "desc": "Two 3-blocks no 2"
+      "desc": "Two 3-blocks no 2",
+      "output": "false"
     },
     {
       "input": "\"00111\"",
-      "desc": "2+3"
+      "desc": "2+3",
+      "output": "true"
     },
     {
       "input": "\"00011\"",
-      "desc": "3+2"
+      "desc": "3+2",
+      "output": "true"
     },
     {
       "input": "\"00011122\"",
-      "desc": "3+3+2"
+      "desc": "3+3+2",
+      "output": "true"
     },
     {
       "input": "\"000111222\"",
-      "desc": "All 3-blocks no 2"
+      "desc": "All 3-blocks no 2",
+      "output": "false"
     },
     {
       "input": "\"99988877766655544433322211100099\"",
-      "desc": "Long mixed false"
+      "desc": "Long mixed false",
+      "output": "true"
     },
     {
       "input": "\"9998887776665554443332221110011\"",
-      "desc": "Multiple 3-blocks + final 2"
+      "desc": "Multiple 3-blocks + final 2",
+      "output": "false"
     },
     {
       "input": "\"000111222333444555666777888999\"",
-      "desc": "10 3-blocks no 2"
+      "desc": "10 3-blocks no 2",
+      "output": "false"
     },
     {
       "input": "\"00011122233344455566677788899\"",
-      "desc": "Nine 3-blocks + 2"
+      "desc": "Nine 3-blocks + 2",
+      "output": "true"
     },
     {
       "input": "\"vvdbfetduvlcfxhebkmznfkb\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "false"
     }
   ]
 }

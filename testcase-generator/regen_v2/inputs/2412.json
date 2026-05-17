@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"LMCT\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "2"
     },
     {
       "input": "\"LCCT\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "4"
     },
     {
       "input": "\"L\"",
-      "desc": "Standard example 3"
+      "desc": "Standard example 3",
+      "output": "0"
     },
     {
       "input": "\"LCT\"",
-      "desc": "Edge: exact"
+      "desc": "Edge: exact",
+      "output": "2"
     },
     {
       "input": "\"CT\"",
-      "desc": "Edge: missing L"
+      "desc": "Edge: missing L",
+      "output": "1"
     },
     {
       "input": "\"LC\"",
-      "desc": "Edge: missing T"
+      "desc": "Edge: missing T",
+      "output": "1"
     },
     {
       "input": "\"LT\"",
-      "desc": "Edge: missing C"
+      "desc": "Edge: missing C",
+      "output": "1"
     },
     {
       "input": "\"LLLCCCTTT\"",
-      "desc": "Many of each"
+      "desc": "Many of each",
+      "output": "36"
     },
     {
       "input": "\"TCLT\"",
-      "desc": "Wrong order plus T"
+      "desc": "Wrong order plus T",
+      "output": "1"
     },
     {
       "input": "\"LLLCCCTTTLLLCCCTTT\"",
-      "desc": "Double pattern"
+      "desc": "Double pattern",
+      "output": "135"
     },
     {
       "input": "\"AAAAA\"",
-      "desc": "All non-LCT"
+      "desc": "All non-LCT",
+      "output": "0"
     },
     {
       "input": "\"LCTLCTLCT\"",
-      "desc": "Repeat LCT"
+      "desc": "Repeat LCT",
+      "output": "16"
     },
     {
       "input": "\"TCLT\"",
-      "desc": "Inverse order with T"
+      "desc": "Inverse order with T",
+      "output": "1"
     },
     {
       "input": "\"LLLLLLLLLLCCCCCCCCCCTTTTTTTTTT\"",
-      "desc": "10 of each"
+      "desc": "10 of each",
+      "output": "1100"
     },
     {
       "input": "\"LCLCTCLCTC\"",
-      "desc": "Mixed"
+      "desc": "Mixed",
+      "output": "22"
     },
     {
       "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
-      "desc": "Alphabet"
+      "desc": "Alphabet",
+      "output": "1"
     },
     {
       "input": "\"LCTABCDEF\"",
-      "desc": "LCT + others"
+      "desc": "LCT + others",
+      "output": "3"
     },
     {
       "input": "\"XLCTY\"",
-      "desc": "Surrounded by other"
+      "desc": "Surrounded by other",
+      "output": "2"
     },
     {
       "input": "\"LLLCCCTTTABCDEF\"",
-      "desc": "Plus other chars"
+      "desc": "Plus other chars",
+      "output": "39"
     },
     {
       "input": "\"lqazmwcp\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "0"
     }
   ]
 }

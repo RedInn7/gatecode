@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"aab\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "0"
     },
     {
       "input": "\"aaabbbcc\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "2"
     },
     {
       "input": "\"ceabaacb\"",
-      "desc": "Standard example 3"
+      "desc": "Standard example 3",
+      "output": "2"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "0"
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "0"
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: 2 distinct (both freq 1, must delete one)"
+      "desc": "Edge: 2 distinct (both freq 1, must delete one)",
+      "output": "1"
     },
     {
       "input": "\"aaa\"",
-      "desc": "All same"
+      "desc": "All same",
+      "output": "0"
     },
     {
       "input": "\"abcdef\"",
-      "desc": "6 distinct freq 1 each"
+      "desc": "6 distinct freq 1 each",
+      "output": "5"
     },
     {
       "input": "\"aabbcc\"",
-      "desc": "3 pairs"
+      "desc": "3 pairs",
+      "output": "3"
     },
     {
       "input": "\"aabbcccdd\"",
-      "desc": "Mixed freqs"
+      "desc": "Mixed freqs",
+      "output": "3"
     },
     {
       "input": "\"aaabbbccc\"",
-      "desc": "Three triples"
+      "desc": "Three triples",
+      "output": "3"
     },
     {
       "input": "\"abcabcabc\"",
-      "desc": "3x 3 chars"
+      "desc": "3x 3 chars",
+      "output": "3"
     },
     {
       "input": "\"aaaaaaaaaa\"",
-      "desc": "10 a's"
+      "desc": "10 a's",
+      "output": "0"
     },
     {
       "input": "\"abcdefghij\"",
-      "desc": "10 distinct"
+      "desc": "10 distinct",
+      "output": "9"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "All 26 distinct"
+      "desc": "All 26 distinct",
+      "output": "25"
     },
     {
       "input": "\"aaaabbbbccccdddd\"",
-      "desc": "4 fours"
+      "desc": "4 fours",
+      "output": "6"
     },
     {
       "input": "\"aabbccddeeffgghhiijjkkllmmnnoopp\"",
-      "desc": "16 pairs"
+      "desc": "16 pairs",
+      "output": "29"
     },
     {
       "input": "\"abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc\"",
-      "desc": "48 chars 3 groups equal"
+      "desc": "48 chars 3 groups equal",
+      "output": "3"
     },
     {
       "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "desc": "50 a's"
+      "desc": "50 a's",
+      "output": "0"
     },
     {
       "input": "\"nvxrtrtoujghrliq\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "10"
     }
   ]
 }

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[504,555,708],[-846,821,-612],[860,-154,-36]]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "false"
     },
     {
       "input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]",
-      "desc": "Checkerboard false"
+      "desc": "Checkerboard false",
+      "output": "false"
     },
     {
       "input": "[[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"B\"]]",
-      "desc": "All black"
+      "desc": "All black",
+      "output": "true"
     },
     {
       "input": "[[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"],[\"W\",\"W\",\"W\"]]",
-      "desc": "All white"
+      "desc": "All white",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"B\",\"W\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]",
-      "desc": "Already 2x2 black"
+      "desc": "Already 2x2 black",
+      "output": "true"
     },
     {
       "input": "[[\"W\",\"W\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"B\",\"B\"]]",
-      "desc": "Already 2x2 white"
+      "desc": "Already 2x2 white",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"W\"]]",
-      "desc": "3 W in corner - 1 swap fixes"
+      "desc": "3 W in corner - 1 swap fixes",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"],[\"B\",\"B\",\"B\"]]",
-      "desc": "2x2 W already true"
+      "desc": "2x2 W already true",
+      "output": "true"
     },
     {
       "input": "[[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"]]",
-      "desc": "Anti-checker false"
+      "desc": "Anti-checker false",
+      "output": "false"
     },
     {
       "input": "[[\"B\",\"B\",\"W\"],[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"B\"]]",
-      "desc": "Mixed need swap"
+      "desc": "Mixed need swap",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"B\",\"B\"],[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"W\"]]",
-      "desc": "Top-right 2x2 black"
+      "desc": "Top-right 2x2 black",
+      "output": "true"
     },
     {
       "input": "[[\"W\",\"W\",\"W\"],[\"B\",\"W\",\"W\"],[\"B\",\"B\",\"B\"]]",
-      "desc": "Top-right 2x2 white"
+      "desc": "Top-right 2x2 white",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"W\",\"B\"],[\"B\",\"B\",\"W\"],[\"W\",\"B\",\"B\"]]",
-      "desc": "Diagonal pattern"
+      "desc": "Diagonal pattern",
+      "output": "true"
     },
     {
       "input": "[[\"W\",\"B\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"W\",\"W\"]]",
-      "desc": "Diff diagonal"
+      "desc": "Diff diagonal",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"W\",\"W\"],[\"W\",\"B\",\"B\"],[\"W\",\"B\",\"B\"]]",
-      "desc": "Bottom-right 2x2 black"
+      "desc": "Bottom-right 2x2 black",
+      "output": "true"
     },
     {
       "input": "[[\"W\",\"B\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]",
-      "desc": "Bottom-right 2x2 white"
+      "desc": "Bottom-right 2x2 white",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"B\",\"W\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]",
-      "desc": "Top-left 2x2 B"
+      "desc": "Top-left 2x2 B",
+      "output": "true"
     },
     {
       "input": "[[\"W\",\"W\",\"B\"],[\"W\",\"W\",\"B\"],[\"B\",\"B\",\"B\"]]",
-      "desc": "Top-left 2x2 W"
+      "desc": "Top-left 2x2 W",
+      "output": "true"
     },
     {
       "input": "[[\"B\",\"B\",\"B\"],[\"B\",\"B\",\"W\"],[\"W\",\"W\",\"W\"]]",
-      "desc": "Top-left 2x2 B exact"
+      "desc": "Top-left 2x2 B exact",
+      "output": "true"
     },
     {
       "input": "[[874,-127,-275,-220,-280,-661],[863,101,-969,-586,-302,900],[607,55,833,221,261,-817],[-991,379,-941,517,-915,-369],[-975,862,-24,-86,-875,909],[410,-285,-185,-927,615,250]]",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "false"
     }
   ]
 }

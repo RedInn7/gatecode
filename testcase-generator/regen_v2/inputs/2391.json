@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= brackets.length <= 100; 1 <= upper_i, percent_i <= 1000; brackets sorted by upper; 0 <= income <= 1000",
   "input_format": "line1: brackets (JSON 2D array); line2: income",
   "testcases": [
-    {"input": "[[3,50],[7,10],[12,25]]\n10", "desc": "Standard example 1"},
-    {"input": "[[1,0],[4,25],[5,50]]\n2", "desc": "Standard example 2"},
-    {"input": "[[2,50]]\n0", "desc": "Edge: zero income"},
-    {"input": "[[1,100]]\n1", "desc": "Edge: full tax"},
-    {"input": "[[1000,0]]\n1000", "desc": "Edge: zero rate"},
-    {"input": "[[1000,100]]\n1000", "desc": "Edge: full 100% rate"},
-    {"input": "[[1,10],[2,20],[3,30]]\n3", "desc": "Stepped 3"},
-    {"input": "[[1,10],[2,20],[3,30]]\n2", "desc": "Partial brackets"},
-    {"input": "[[1,10],[2,20],[3,30]]\n10", "desc": "Beyond top"},
-    {"input": "[[5,100]]\n5", "desc": "Edge: single bracket all taxed"},
-    {"input": "[[10,1],[20,2],[30,3],[40,4],[50,5]]\n50", "desc": "5 brackets ascending rates"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]\n10", "desc": "10 brackets"},
-    {"input": "[[100,50]]\n50", "desc": "Half"},
-    {"input": "[[100,25],[200,50],[300,75]]\n250", "desc": "Mid 3rd bracket"},
-    {"input": "[[1,90],[2,80],[3,70],[4,60],[5,50]]\n5", "desc": "Decreasing rates"},
-    {"input": "[[10,10],[20,10],[30,10],[40,10]]\n30", "desc": "Same rate flat"},
-    {"input": "[[5,0],[10,50],[15,75]]\n12", "desc": "Zero first bracket"},
-    {"input": "[[100,1],[200,2],[300,3],[400,4],[500,5],[600,6],[700,7],[800,8],[900,9],[1000,10]]\n1000", "desc": "10 wide brackets"},
-    {"input": "[[1,100]]\n0", "desc": "Edge: zero income but 100% rate"},
-    {"input": "[[50,20],[100,40],[200,60],[400,80],[1000,100]]\n900", "desc": "Tax escalation 900"}
+    {
+      "input": "[[3,50],[7,10],[12,25]]\n10",
+      "desc": "Standard example 1",
+      "output": "2.65"
+    },
+    {
+      "input": "[[1,0],[4,25],[5,50]]\n2",
+      "desc": "Standard example 2",
+      "output": "0.25"
+    },
+    {
+      "input": "[[2,50]]\n0",
+      "desc": "Edge: zero income",
+      "output": "0.0"
+    },
+    {
+      "input": "[[1,100]]\n1",
+      "desc": "Edge: full tax",
+      "output": "1.0"
+    },
+    {
+      "input": "[[1000,0]]\n1000",
+      "desc": "Edge: zero rate",
+      "output": "0.0"
+    },
+    {
+      "input": "[[1000,100]]\n1000",
+      "desc": "Edge: full 100% rate",
+      "output": "1000.0"
+    },
+    {
+      "input": "[[1,10],[2,20],[3,30]]\n3",
+      "desc": "Stepped 3",
+      "output": "0.6"
+    },
+    {
+      "input": "[[1,10],[2,20],[3,30]]\n2",
+      "desc": "Partial brackets",
+      "output": "0.3"
+    },
+    {
+      "input": "[[1,10],[2,20],[3,30]]\n10",
+      "desc": "Beyond top",
+      "output": "0.6"
+    },
+    {
+      "input": "[[5,100]]\n5",
+      "desc": "Edge: single bracket all taxed",
+      "output": "5.0"
+    },
+    {
+      "input": "[[10,1],[20,2],[30,3],[40,4],[50,5]]\n50",
+      "desc": "5 brackets ascending rates",
+      "output": "1.5"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10]]\n10",
+      "desc": "10 brackets",
+      "output": "0.55"
+    },
+    {
+      "input": "[[100,50]]\n50",
+      "desc": "Half",
+      "output": "25.0"
+    },
+    {
+      "input": "[[100,25],[200,50],[300,75]]\n250",
+      "desc": "Mid 3rd bracket",
+      "output": "112.5"
+    },
+    {
+      "input": "[[1,90],[2,80],[3,70],[4,60],[5,50]]\n5",
+      "desc": "Decreasing rates",
+      "output": "3.5"
+    },
+    {
+      "input": "[[10,10],[20,10],[30,10],[40,10]]\n30",
+      "desc": "Same rate flat",
+      "output": "3.0"
+    },
+    {
+      "input": "[[5,0],[10,50],[15,75]]\n12",
+      "desc": "Zero first bracket",
+      "output": "4.0"
+    },
+    {
+      "input": "[[100,1],[200,2],[300,3],[400,4],[500,5],[600,6],[700,7],[800,8],[900,9],[1000,10]]\n1000",
+      "desc": "10 wide brackets",
+      "output": "55.0"
+    },
+    {
+      "input": "[[1,100]]\n0",
+      "desc": "Edge: zero income but 100% rate",
+      "output": "0.0"
+    },
+    {
+      "input": "[[50,20],[100,40],[200,60],[400,80],[1000,100]]\n900",
+      "desc": "Tax escalation 900",
+      "output": "750.0"
+    }
   ]
 }

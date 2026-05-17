@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= nums.length <= 2000; -10^6 <= nums[i] <= 10^6",
   "input_format": "single line: nums (JSON array)",
   "testcases": [
-    {"input": "[1,3,5,4,7]", "desc": "Standard example 1"},
-    {"input": "[2,2,2,2,2]", "desc": "Standard example 2"},
-    {"input": "[1]", "desc": "Edge: n=1"},
-    {"input": "[1000000]", "desc": "Edge: max"},
-    {"input": "[-1000000]", "desc": "Edge: min"},
-    {"input": "[1,2]", "desc": "Edge: 2 asc"},
-    {"input": "[2,1]", "desc": "Edge: 2 desc"},
-    {"input": "[1,1]", "desc": "Edge: 2 same"},
-    {"input": "[1,2,3,4,5]", "desc": "All asc"},
-    {"input": "[5,4,3,2,1]", "desc": "All desc"},
-    {"input": "[1,2,3,1,2,3]", "desc": "Two parallel LIS"},
-    {"input": "[1,3,2,4,3,5]", "desc": "Multiple paths"},
-    {"input": "[-2,-1,0,1,2]", "desc": "Negative to positive"},
-    {"input": "[1000000,-1000000,1000000,-1000000]", "desc": "Alternating extremes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "10 asc unique"},
-    {"input": "[10,9,8,7,6,5,4,3,2,1]", "desc": "10 desc unique"},
-    {"input": "[1,3,5,7,2,4,6,8]", "desc": "Two interleaved"},
-    {"input": "[5,5,5,5,5,5,5,5]", "desc": "All same"},
-    {"input": "[3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4]", "desc": "20 mixed"},
-    {"input": "[1,5,2,6,3,7,4,8,5,9,6,10,7,11,8,12,9,13,10,14,11,15,12,16,13,17,14,18,15,19]", "desc": "30 interleaved asc"}
+    {
+      "input": "[1,3,5,4,7]",
+      "desc": "Standard example 1",
+      "output": "2"
+    },
+    {
+      "input": "[2,2,2,2,2]",
+      "desc": "Standard example 2",
+      "output": "5"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "[1000000]",
+      "desc": "Edge: max",
+      "output": "1"
+    },
+    {
+      "input": "[-1000000]",
+      "desc": "Edge: min",
+      "output": "1"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: 2 asc",
+      "output": "1"
+    },
+    {
+      "input": "[2,1]",
+      "desc": "Edge: 2 desc",
+      "output": "2"
+    },
+    {
+      "input": "[1,1]",
+      "desc": "Edge: 2 same",
+      "output": "2"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "All asc",
+      "output": "1"
+    },
+    {
+      "input": "[5,4,3,2,1]",
+      "desc": "All desc",
+      "output": "5"
+    },
+    {
+      "input": "[1,2,3,1,2,3]",
+      "desc": "Two parallel LIS",
+      "output": "4"
+    },
+    {
+      "input": "[1,3,2,4,3,5]",
+      "desc": "Multiple paths",
+      "output": "3"
+    },
+    {
+      "input": "[-2,-1,0,1,2]",
+      "desc": "Negative to positive",
+      "output": "1"
+    },
+    {
+      "input": "[1000000,-1000000,1000000,-1000000]",
+      "desc": "Alternating extremes",
+      "output": "1"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "10 asc unique",
+      "output": "1"
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]",
+      "desc": "10 desc unique",
+      "output": "10"
+    },
+    {
+      "input": "[1,3,5,7,2,4,6,8]",
+      "desc": "Two interleaved",
+      "output": "4"
+    },
+    {
+      "input": "[5,5,5,5,5,5,5,5]",
+      "desc": "All same",
+      "output": "8"
+    },
+    {
+      "input": "[3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4]",
+      "desc": "20 mixed",
+      "output": "16"
+    },
+    {
+      "input": "[1,5,2,6,3,7,4,8,5,9,6,10,7,11,8,12,9,13,10,14,11,15,12,16,13,17,14,18,15,19]",
+      "desc": "30 interleaved asc",
+      "output": "15"
+    }
   ]
 }

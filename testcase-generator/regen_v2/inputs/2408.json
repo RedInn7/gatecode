@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"1010\"\n\"0110\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "true"
     },
     {
       "input": "\"11\"\n\"00\"",
-      "desc": "Standard example 2 false"
+      "desc": "Standard example 2 false",
+      "output": "false"
     },
     {
       "input": "\"00\"\n\"11\"",
-      "desc": "Edge: zeros to ones impossible"
+      "desc": "Edge: zeros to ones impossible",
+      "output": "false"
     },
     {
       "input": "\"01\"\n\"10\"",
-      "desc": "Edge: 1 in each"
+      "desc": "Edge: 1 in each",
+      "output": "true"
     },
     {
       "input": "\"11\"\n\"11\"",
-      "desc": "Edge: same with 1s"
+      "desc": "Edge: same with 1s",
+      "output": "true"
     },
     {
       "input": "\"00\"\n\"00\"",
-      "desc": "Edge: both zeros"
+      "desc": "Edge: both zeros",
+      "output": "true"
     },
     {
       "input": "\"10\"\n\"01\"",
-      "desc": "Single 1 each"
+      "desc": "Single 1 each",
+      "output": "true"
     },
     {
       "input": "\"111\"\n\"100\"",
-      "desc": "Triple 1 to single"
+      "desc": "Triple 1 to single",
+      "output": "true"
     },
     {
       "input": "\"100\"\n\"111\"",
-      "desc": "Single 1 to triple"
+      "desc": "Single 1 to triple",
+      "output": "true"
     },
     {
       "input": "\"000\"\n\"111\"",
-      "desc": "All zeros to ones impossible"
+      "desc": "All zeros to ones impossible",
+      "output": "false"
     },
     {
       "input": "\"111\"\n\"000\"",
-      "desc": "All ones to zeros impossible"
+      "desc": "All ones to zeros impossible",
+      "output": "false"
     },
     {
       "input": "\"010101\"\n\"101010\"",
-      "desc": "Alternating swap"
+      "desc": "Alternating swap",
+      "output": "true"
     },
     {
       "input": "\"111111\"\n\"000001\"",
-      "desc": "Reduce ones"
+      "desc": "Reduce ones",
+      "output": "true"
     },
     {
       "input": "\"100000\"\n\"000001\"",
-      "desc": "Move single 1"
+      "desc": "Move single 1",
+      "output": "true"
     },
     {
       "input": "\"110011\"\n\"001100\"",
-      "desc": "Block move"
+      "desc": "Block move",
+      "output": "true"
     },
     {
       "input": "\"00100100\"\n\"01001001\"",
-      "desc": "Different positions"
+      "desc": "Different positions",
+      "output": "true"
     },
     {
       "input": "\"11110000\"\n\"00001111\"",
-      "desc": "Block swap"
+      "desc": "Block swap",
+      "output": "true"
     },
     {
       "input": "\"00000000\"\n\"00000001\"",
-      "desc": "Cannot add 1 from 0"
+      "desc": "Cannot add 1 from 0",
+      "output": "false"
     },
     {
       "input": "\"10101010\"\n\"01010101\"",
-      "desc": "Alt swap"
+      "desc": "Alt swap",
+      "output": "true"
     },
     {
       "input": "\"dljzqtux\"\n\"uqiscqrp\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "true"
     }
   ]
 }
