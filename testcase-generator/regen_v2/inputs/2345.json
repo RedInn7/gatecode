@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[\"John\",\"johnsmith@mail.com\",\"john_newyork@mail.com\"],[\"John\",\"johnsmith@mail.com\",\"john00@mail.com\"],[\"Mary\",\"mary@mail.com\"],[\"John\",\"johnnybravo@mail.com\"]]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "[[\"John\", \"john00@mail.com\", \"john_newyork@mail.com\", \"johnsmith@mail.com\"], [\"Mary\", \"mary@mail.com\"], [\"John\", \"johnnybravo@mail.com\"]]"
     },
     {
       "input": "[[\"Gabe\",\"Gabe0@m.co\",\"Gabe3@m.co\",\"Gabe1@m.co\"],[\"Kevin\",\"Kevin3@m.co\",\"Kevin5@m.co\",\"Kevin0@m.co\"],[\"Ethan\",\"Ethan5@m.co\",\"Ethan4@m.co\",\"Ethan0@m.co\"],[\"Hanzo\",\"Hanzo3@m.co\",\"Hanzo1@m.co\",\"Hanzo0@m.co\"],[\"Fern\",\"Fern5@m.co\",\"Fern1@m.co\",\"Fern0@m.co\"]]",
-      "desc": "Standard example 2 all distinct"
+      "desc": "Standard example 2 all distinct",
+      "output": "[[\"Gabe\", \"Gabe0@m.co\", \"Gabe1@m.co\", \"Gabe3@m.co\"], [\"Kevin\", \"Kevin0@m.co\", \"Kevin3@m.co\", \"Kevin5@m.co\"], [\"Ethan\", \"Ethan0@m.co\", \"Ethan4@m.co\", \"Ethan5@m.co\"], [\"Hanzo\", \"Hanzo0@m.co\", \"Hanzo1@m.co\", \"Hanzo3@m.co\"], [\"Fern\", \"Fern0@m.co\", \"Fern1@m.co\", \"Fern5@m.co\"]]"
     },
     {
       "input": "[[\"A\",\"a@a.com\"]]",
-      "desc": "Edge: single account 1 email"
+      "desc": "Edge: single account 1 email",
+      "output": "[[\"A\", \"a@a.com\"]]"
     },
     {
       "input": "[[\"A\",\"a1@a.com\",\"a2@a.com\"]]",
-      "desc": "Edge: single account 2 emails"
+      "desc": "Edge: single account 2 emails",
+      "output": "[[\"A\", \"a1@a.com\", \"a2@a.com\"]]"
     },
     {
       "input": "[[\"A\",\"a@a.com\"],[\"B\",\"b@b.com\"]]",
-      "desc": "Edge: 2 distinct"
+      "desc": "Edge: 2 distinct",
+      "output": "[[\"A\", \"a@a.com\"], [\"B\", \"b@b.com\"]]"
     },
     {
       "input": "[[\"A\",\"a@a.com\"],[\"A\",\"a@a.com\"]]",
-      "desc": "Edge: duplicate"
+      "desc": "Edge: duplicate",
+      "output": "[[\"A\", \"a@a.com\"]]"
     },
     {
       "input": "[[\"A\",\"x@a.com\"],[\"A\",\"x@a.com\",\"y@a.com\"],[\"A\",\"y@a.com\",\"z@a.com\"]]",
-      "desc": "Chain merge"
+      "desc": "Chain merge",
+      "output": "[[\"A\", \"x@a.com\", \"y@a.com\", \"z@a.com\"]]"
     },
     {
       "input": "[[\"A\",\"a1@a.com\"],[\"A\",\"a2@a.com\"],[\"A\",\"a3@a.com\"]]",
-      "desc": "Same name diff people"
+      "desc": "Same name diff people",
+      "output": "[[\"A\", \"a1@a.com\"], [\"A\", \"a2@a.com\"], [\"A\", \"a3@a.com\"]]"
     },
     {
       "input": "[[\"A\",\"a@a.com\",\"b@a.com\",\"c@a.com\"],[\"B\",\"a@a.com\",\"d@a.com\"]]",
-      "desc": "Different names same email - same person (rule says merge by email)"
+      "desc": "Different names same email - same person (rule says merge by email)",
+      "output": "[[\"A\", \"a@a.com\", \"b@a.com\", \"c@a.com\", \"d@a.com\"]]"
     },
     {
       "input": "[[\"John\",\"j1@m.com\"],[\"John\",\"j2@m.com\"],[\"John\",\"j1@m.com\",\"j2@m.com\"]]",
-      "desc": "Bridge via third account"
+      "desc": "Bridge via third account",
+      "output": "[[\"John\", \"j1@m.com\", \"j2@m.com\"]]"
     },
     {
       "input": "[[\"A\",\"a@a.com\",\"b@a.com\"],[\"A\",\"c@a.com\",\"d@a.com\"],[\"A\",\"e@a.com\",\"f@a.com\"]]",
-      "desc": "All separate"
+      "desc": "All separate",
+      "output": "[[\"A\", \"a@a.com\", \"b@a.com\"], [\"A\", \"c@a.com\", \"d@a.com\"], [\"A\", \"e@a.com\", \"f@a.com\"]]"
     },
     {
       "input": "[[\"X\",\"e1@e.com\",\"e2@e.com\",\"e3@e.com\"],[\"X\",\"e3@e.com\",\"e4@e.com\",\"e5@e.com\"],[\"X\",\"e5@e.com\",\"e6@e.com\",\"e7@e.com\"]]",
-      "desc": "Chain 3 merge"
+      "desc": "Chain 3 merge",
+      "output": "[[\"X\", \"e1@e.com\", \"e2@e.com\", \"e3@e.com\", \"e4@e.com\", \"e5@e.com\", \"e6@e.com\", \"e7@e.com\"]]"
     },
     {
       "input": "[[\"X\",\"e1@e.com\",\"e2@e.com\"],[\"X\",\"e3@e.com\",\"e4@e.com\"],[\"X\",\"e1@e.com\",\"e3@e.com\"]]",
-      "desc": "Y-shape merge"
+      "desc": "Y-shape merge",
+      "output": "[[\"X\", \"e1@e.com\", \"e2@e.com\", \"e3@e.com\", \"e4@e.com\"]]"
     },
     {
       "input": "[[\"Mary\",\"m@a.com\"],[\"Mary\",\"m@a.com\"],[\"Mary\",\"m@a.com\"]]",
-      "desc": "Triple duplicate"
+      "desc": "Triple duplicate",
+      "output": "[[\"Mary\", \"m@a.com\"]]"
     },
     {
       "input": "[[\"A\",\"a1@a.com\"],[\"B\",\"a1@a.com\"],[\"C\",\"a1@a.com\"]]",
-      "desc": "Same email differing names - merged"
+      "desc": "Same email differing names - merged",
+      "output": "[[\"A\", \"a1@a.com\"]]"
     },
     {
       "input": "[[\"P\",\"p1@p.com\",\"p2@p.com\",\"p3@p.com\",\"p4@p.com\",\"p5@p.com\"],[\"P\",\"p3@p.com\",\"p6@p.com\"]]",
-      "desc": "5 emails + 1 extra"
+      "desc": "5 emails + 1 extra",
+      "output": "[[\"P\", \"p1@p.com\", \"p2@p.com\", \"p3@p.com\", \"p4@p.com\", \"p5@p.com\", \"p6@p.com\"]]"
     },
     {
       "input": "[[\"a\",\"a@a.com\"],[\"b\",\"b@a.com\"],[\"c\",\"c@a.com\"],[\"d\",\"d@a.com\"],[\"e\",\"e@a.com\"]]",
-      "desc": "5 distinct accounts"
+      "desc": "5 distinct accounts",
+      "output": "[[\"a\", \"a@a.com\"], [\"b\", \"b@a.com\"], [\"c\", \"c@a.com\"], [\"d\", \"d@a.com\"], [\"e\", \"e@a.com\"]]"
     },
     {
       "input": "[[\"a\",\"x@a.com\"],[\"a\",\"x@a.com\",\"y@a.com\"],[\"a\",\"y@a.com\",\"z@a.com\"],[\"a\",\"z@a.com\",\"w@a.com\"]]",
-      "desc": "Long chain 4"
+      "desc": "Long chain 4",
+      "output": "[[\"a\", \"w@a.com\", \"x@a.com\", \"y@a.com\", \"z@a.com\"]]"
     },
     {
       "input": "[[\"a\",\"a@a.com\"],[\"a\",\"b@b.com\"],[\"a\",\"c@c.com\"],[\"a\",\"a@a.com\",\"b@b.com\"],[\"a\",\"b@b.com\",\"c@c.com\"]]",
-      "desc": "Bridging 3 groups"
+      "desc": "Bridging 3 groups",
+      "output": "[[\"a\", \"a@a.com\", \"b@b.com\", \"c@c.com\"]]"
     },
     {
       "input": "[[-65,-199,-710,-348,-464,657],[169,-2,-659,-495,-855,778],[-428,-365,-407,976,-740,149],[538,69,-301,467,-232,-340],[-771,-685,435,26,846,-318],[86,-52,-413,-239,488,738],[786,-101,51,-647,-23,196],[985,-171,-261,-29,375,-536]]",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "[[-65, -710, -464, -348, -199, 657], [169, -855, -659, -495, -2, 778], [-428, -740, -407, -365, 149, 976], [538, -340, -301, -232, 69, 467], [-771, -685, -318, 26, 435, 846], [86, -413, -239, -52, 488, 738], [786, -647, -101, -23, 51, 196], [985, -536, -261, -171, -29, 375]]"
     }
   ]
 }

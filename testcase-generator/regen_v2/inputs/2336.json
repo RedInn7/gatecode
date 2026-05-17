@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"T?2:3\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "\"2\""
     },
     {
       "input": "\"F?1:T?4:5\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "\"4\""
     },
     {
       "input": "\"T?T?F:5:3\"",
-      "desc": "Standard example 3"
+      "desc": "Standard example 3",
+      "output": "\"F\""
     },
     {
       "input": "\"T?1:0\"",
-      "desc": "Edge: minimal T"
+      "desc": "Edge: minimal T",
+      "output": "\"1\""
     },
     {
       "input": "\"F?1:0\"",
-      "desc": "Edge: minimal F"
+      "desc": "Edge: minimal F",
+      "output": "\"0\""
     },
     {
       "input": "\"T?T:F\"",
-      "desc": "T/F results"
+      "desc": "T/F results",
+      "output": "\"T\""
     },
     {
       "input": "\"F?T:F\"",
-      "desc": "F leads to F"
+      "desc": "F leads to F",
+      "output": "\"F\""
     },
     {
       "input": "\"T?0:T?1:T?2:3\"",
-      "desc": "Nested all T"
+      "desc": "Nested all T",
+      "output": "\"0\""
     },
     {
       "input": "\"F?0:F?1:F?2:3\"",
-      "desc": "Nested all F"
+      "desc": "Nested all F",
+      "output": "\"3\""
     },
     {
       "input": "\"T?F?1:2:3\"",
-      "desc": "Left nest"
+      "desc": "Left nest",
+      "output": "\"2\""
     },
     {
       "input": "\"F?T?1:2:T?3:4\"",
-      "desc": "Both branch nest"
+      "desc": "Both branch nest",
+      "output": "\"3\""
     },
     {
       "input": "\"T?T?T?9:8:7:6\"",
-      "desc": "Triple nest T"
+      "desc": "Triple nest T",
+      "output": "\"9\""
     },
     {
       "input": "\"F?9:F?8:F?7:F?6:5\"",
-      "desc": "Right chain F"
+      "desc": "Right chain F",
+      "output": "\"5\""
     },
     {
       "input": "\"T?T?T?T?T?T?T?T?T?9:8:7:6:5:4:3:2:1:0\"",
-      "desc": "Deep left T"
+      "desc": "Deep left T",
+      "output": "\"9\""
     },
     {
       "input": "\"F?T:F?T:F?T:F?T:9\"",
-      "desc": "Right chain F mixed"
+      "desc": "Right chain F mixed",
+      "output": "\"9\""
     },
     {
       "input": "\"T?2:F?3:T?4:5\"",
-      "desc": "Mixed"
+      "desc": "Mixed",
+      "output": "\"2\""
     },
     {
       "input": "\"T?5:6\"",
-      "desc": "Simple"
+      "desc": "Simple",
+      "output": "\"5\""
     },
     {
       "input": "\"F?5:6\"",
-      "desc": "Simple F"
+      "desc": "Simple F",
+      "output": "\"6\""
     },
     {
       "input": "\"T?F?T?0:1:2:3\"",
-      "desc": "Nested mixed"
+      "desc": "Nested mixed",
+      "output": "\"2\""
     },
     {
       "input": "\"ehzouqydzaxyuzqauv\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"v\""
     }
   ]
 }

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"3+2*2\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "7"
     },
     {
       "input": "\" 3/2 \"",
-      "desc": "Standard example 2 with spaces"
+      "desc": "Standard example 2 with spaces",
+      "output": "1"
     },
     {
       "input": "\" 3+5 / 2 \"",
-      "desc": "Standard example 3"
+      "desc": "Standard example 3",
+      "output": "5"
     },
     {
       "input": "\"0\"",
-      "desc": "Edge: single zero"
+      "desc": "Edge: single zero",
+      "output": "0"
     },
     {
       "input": "\"1\"",
-      "desc": "Edge: single one"
+      "desc": "Edge: single one",
+      "output": "1"
     },
     {
       "input": "\"2147483647\"",
-      "desc": "Edge: INT_MAX"
+      "desc": "Edge: INT_MAX",
+      "output": "2147483647"
     },
     {
       "input": "\"1+1\"",
-      "desc": "Simple addition"
+      "desc": "Simple addition",
+      "output": "2"
     },
     {
       "input": "\"10-5\"",
-      "desc": "Simple subtraction"
+      "desc": "Simple subtraction",
+      "output": "5"
     },
     {
       "input": "\"6*7\"",
-      "desc": "Multiplication"
+      "desc": "Multiplication",
+      "output": "42"
     },
     {
       "input": "\"100/3\"",
-      "desc": "Truncating division"
+      "desc": "Truncating division",
+      "output": "33"
     },
     {
       "input": "\"1+2+3+4+5\"",
-      "desc": "Chain add"
+      "desc": "Chain add",
+      "output": "15"
     },
     {
       "input": "\"100-50-25-12\"",
-      "desc": "Chain subtract"
+      "desc": "Chain subtract",
+      "output": "13"
     },
     {
       "input": "\"2*3*4*5\"",
-      "desc": "Chain multiply"
+      "desc": "Chain multiply",
+      "output": "120"
     },
     {
       "input": "\"100/2/5\"",
-      "desc": "Chain divide"
+      "desc": "Chain divide",
+      "output": "10"
     },
     {
       "input": "\"1+2*3-4/2\"",
-      "desc": "Mixed precedence"
+      "desc": "Mixed precedence",
+      "output": "5"
     },
     {
       "input": "\"14-3/2\"",
-      "desc": "Precedence with division"
+      "desc": "Precedence with division",
+      "output": "13"
     },
     {
       "input": "\"   1   +   2   *   3   \"",
-      "desc": "Lots of spaces"
+      "desc": "Lots of spaces",
+      "output": "7"
     },
     {
       "input": "\"2*3+4*5+6*7+8*9\"",
-      "desc": "Multiple multiplications"
+      "desc": "Multiple multiplications",
+      "output": "140"
     },
     {
       "input": "\"1000000000-999999999\"",
-      "desc": "Large values"
+      "desc": "Large values",
+      "output": "1"
     },
     {
       "input": "\"1+2*3-4*5+6*7-8*9+10+11-12*13+14*15-16+17*18-19+20\"",
-      "desc": "Long mixed expression"
+      "desc": "Long mixed expression",
+      "output": "323"
     }
   ]
 }

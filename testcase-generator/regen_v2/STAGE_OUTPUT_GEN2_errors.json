@@ -1504,5 +1504,23 @@
     "slug": "count-the-number-of-complete-components",
     "fqid": 2685,
     "error": "Testcase 19 failed: RE (exit 1): puv2.py\", line 295, in <module>\n    _result = Solution().countCompleteComponents(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmps4zqpuv2.py\", line 153, in countCompleteComponents\n    for a, b in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 2328,
+    "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
+    "fqid": 2791,
+    "error": "Testcase 7 failed: RE (exit 1): ule>\n    _result = Solution().countPalindromePaths(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp2nfvczxl.py\", line 156, in countPalindromePaths\n    g[p].append((i, 1 << (ord(s[i]) - ord('a'))))\n                              ~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 2324,
+    "slug": "construct-string-with-minimum-cost-easy",
+    "fqid": 3253,
+    "error": "Testcase 15 failed: RE (exit 1):  308, in <module>\n    _result = Solution().minimumCost(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmplb_dtxgy.py\", line 173, in minimumCost\n    trie.insert(word, cost)\n  File \"/tmp/tmplb_dtxgy.py\", line 147, in insert\n    for c in word:\nTypeError: 'int' object is not iterable\n"
+  },
+  {
+    "pid": 2325,
+    "slug": "the-time-when-the-network-becomes-idle",
+    "fqid": 2039,
+    "error": "Testcase 17 failed: RE (exit 1): e \"/tmp/tmp3ndq75l7.py\", line 292, in <module>\n    _result = Solution().networkBecomesIdle(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3ndq75l7.py\", line 143, in networkBecomesIdle\n    for u, v in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
   }
 ]

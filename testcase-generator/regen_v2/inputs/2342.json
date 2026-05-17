@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 500; lowercase English letters",
   "input_format": "single line: s (quoted string)",
   "testcases": [
-    {"input": "\"aabcb\"", "desc": "Standard example 1"},
-    {"input": "\"aabcbaa\"", "desc": "Standard example 2"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"ab\"", "desc": "Edge: n=2"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"abc\"", "desc": "3 distinct"},
-    {"input": "\"aaa\"", "desc": "All same"},
-    {"input": "\"abcabc\"", "desc": "Repeat"},
-    {"input": "\"aabb\"", "desc": "Pairs"},
-    {"input": "\"abab\"", "desc": "Alternating"},
-    {"input": "\"abcdef\"", "desc": "Distinct"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "10 same"},
-    {"input": "\"abababababab\"", "desc": "Long alternating"},
-    {"input": "\"helloworld\"", "desc": "Mixed letters"},
-    {"input": "\"programming\"", "desc": "Word"},
-    {"input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"", "desc": "30 same"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Alphabet"},
-    {"input": "\"aabbccddeeffgg\"", "desc": "Pairs sequence"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Double alphabet"},
-    {"input": "\"aabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabb\"", "desc": "Stress 500 chars"}
+    {
+      "input": "\"aabcb\"",
+      "desc": "Standard example 1",
+      "output": "5"
+    },
+    {
+      "input": "\"aabcbaa\"",
+      "desc": "Standard example 2",
+      "output": "17"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1",
+      "output": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: n=2",
+      "output": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same",
+      "output": "0"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "3 distinct",
+      "output": "0"
+    },
+    {
+      "input": "\"aaa\"",
+      "desc": "All same",
+      "output": "0"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Repeat",
+      "output": "5"
+    },
+    {
+      "input": "\"aabb\"",
+      "desc": "Pairs",
+      "output": "2"
+    },
+    {
+      "input": "\"abab\"",
+      "desc": "Alternating",
+      "output": "2"
+    },
+    {
+      "input": "\"abcdef\"",
+      "desc": "Distinct",
+      "output": "0"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "10 same",
+      "output": "0"
+    },
+    {
+      "input": "\"abababababab\"",
+      "desc": "Long alternating",
+      "output": "30"
+    },
+    {
+      "input": "\"helloworld\"",
+      "desc": "Mixed letters",
+      "output": "34"
+    },
+    {
+      "input": "\"programming\"",
+      "desc": "Word",
+      "output": "33"
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
+      "desc": "30 same",
+      "output": "0"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Alphabet",
+      "output": "0"
+    },
+    {
+      "input": "\"aabbccddeeffgg\"",
+      "desc": "Pairs sequence",
+      "output": "57"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Double alphabet",
+      "output": "350"
+    },
+    {
+      "input": "\"aabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabb\"",
+      "desc": "Stress 500 chars",
+      "output": "78890"
+    }
   ]
 }
