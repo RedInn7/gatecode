@@ -316,5 +316,11 @@
     "slug": "find-the-number-of-copy-arrays",
     "fqid": 3468,
     "reason": "No Python3 solution found for fqid=3468"
+  },
+  {
+    "pid": 2024,
+    "slug": "minimum-time-for-k-virus-variants-to-spread",
+    "fqid": 1956,
+    "reason": "No Python3 solution found for fqid=1956"
   }
 ]

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= t <= 10^9, t strictly increasing, at most 10^4 calls",
   "input_format": "line1: operations (JSON); line2: arguments (JSON)",
   "testcases": [
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002]]", "desc": "Standard: example 1"},
-    {"input": "[\"RecentCounter\",\"ping\"]\n[[],[1]]", "desc": "Edge: single ping"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[1],[2]]", "desc": "Edge: 2 close pings"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[1],[1000000000]]", "desc": "Edge: far apart"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[1000],[2000],[3000],[3001]]", "desc": "Standard: spread"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3],[4],[5]]", "desc": "Edge: all close"},
-    {"input": "[\"RecentCounter\",\"ping\"]\n[[],[1000000000]]", "desc": "Edge: max time single"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[3001],[6002]]", "desc": "Standard: just over window"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[200],[300],[400],[500],[600],[700],[800],[900]]", "desc": "Standard: 10 within window"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[3000],[3001]]", "desc": "Standard: boundary"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[3001],[6001]]", "desc": "Standard: rolling"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[1500],[3000],[4500]]", "desc": "Standard"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3],[3001],[3002]]", "desc": "Standard: cluster then drift"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[100],[200],[300],[400],[3401],[6401]]", "desc": "Standard"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2000],[5000]]", "desc": "Standard: t exits window"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3001],[3002]]", "desc": "Standard: example like"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002],[3003],[3004],[3005]]", "desc": "Standard"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[1],[3002]]", "desc": "Standard: first drops out"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3]]", "desc": "Standard: all within"},
-    {"input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[1000],[2000],[3000],[3001],[3002],[3500],[4000],[5000],[6000],[6500]]", "desc": "Stress: many pings"}
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002]]",
+      "desc": "Standard: example 1",
+      "output": "[null, 1, 2, 3, 3]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\"]\n[[],[1]]",
+      "desc": "Edge: single ping",
+      "output": "[null, 1]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[1],[2]]",
+      "desc": "Edge: 2 close pings",
+      "output": "[null, 1, 2]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[1],[1000000000]]",
+      "desc": "Edge: far apart",
+      "output": "[null, 1, 1]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[1000],[2000],[3000],[3001]]",
+      "desc": "Standard: spread",
+      "output": "[null, 1, 2, 3, 4, 5]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3],[4],[5]]",
+      "desc": "Edge: all close",
+      "output": "[null, 1, 2, 3, 4, 5]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\"]\n[[],[1000000000]]",
+      "desc": "Edge: max time single",
+      "output": "[null, 1]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[3001],[6002]]",
+      "desc": "Standard: just over window",
+      "output": "[null, 1, 2, 1]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[200],[300],[400],[500],[600],[700],[800],[900]]",
+      "desc": "Standard: 10 within window",
+      "output": "[null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[3000],[3001]]",
+      "desc": "Standard: boundary",
+      "output": "[null, 1, 2]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[3001],[6001]]",
+      "desc": "Standard: rolling",
+      "output": "[null, 1, 2, 2]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[1500],[3000],[4500]]",
+      "desc": "Standard",
+      "output": "[null, 1, 2, 3, 3]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3],[3001],[3002]]",
+      "desc": "Standard: cluster then drift",
+      "output": "[null, 1, 2, 3, 4, 4]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[100],[200],[300],[400],[3401],[6401]]",
+      "desc": "Standard",
+      "output": "[null, 1, 2, 3, 4, 1, 2]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2000],[5000]]",
+      "desc": "Standard: t exits window",
+      "output": "[null, 1, 2, 2]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3001],[3002]]",
+      "desc": "Standard: example like",
+      "output": "[null, 1, 2, 3, 3]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002],[3003],[3004],[3005]]",
+      "desc": "Standard",
+      "output": "[null, 1, 2, 3, 3, 4, 5, 6]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\"]\n[[],[1],[3002]]",
+      "desc": "Standard: first drops out",
+      "output": "[null, 1, 1]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[2],[3]]",
+      "desc": "Standard: all within",
+      "output": "[null, 1, 2, 3]"
+    },
+    {
+      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[1000],[2000],[3000],[3001],[3002],[3500],[4000],[5000],[6000],[6500]]",
+      "desc": "Stress: many pings",
+      "output": "[null, 1, 2, 3, 4, 5, 5, 6, 7, 7, 7, 5]"
+    }
   ]
 }

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"abcabcdabc\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "2"
     },
     {
       "input": "\"aaabaab\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "4"
     },
     {
       "input": "\"aaaaa\"",
-      "desc": "Standard: all same"
+      "desc": "Standard: all same",
+      "output": "5"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "1"
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: n=2 distinct"
+      "desc": "Edge: n=2 distinct",
+      "output": "1"
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge: n=2 same"
+      "desc": "Edge: n=2 same",
+      "output": "2"
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge: 3 distinct"
+      "desc": "Edge: 3 distinct",
+      "output": "1"
     },
     {
       "input": "\"abab\"",
-      "desc": "Standard: repeated pair"
+      "desc": "Standard: repeated pair",
+      "output": "2"
     },
     {
       "input": "\"aaaaaaaaaa\"",
-      "desc": "Edge: 10 same"
+      "desc": "Edge: 10 same",
+      "output": "10"
     },
     {
       "input": "\"aabbaabb\"",
-      "desc": "Standard: 2-char repeat"
+      "desc": "Standard: 2-char repeat",
+      "output": "3"
     },
     {
       "input": "\"abcabc\"",
-      "desc": "Standard: 3-char repeat"
+      "desc": "Standard: 3-char repeat",
+      "output": "2"
     },
     {
       "input": "\"abcabcabc\"",
-      "desc": "Standard: 3 reps"
+      "desc": "Standard: 3 reps",
+      "output": "3"
     },
     {
       "input": "\"abcdef\"",
-      "desc": "Standard: all distinct"
+      "desc": "Standard: all distinct",
+      "output": "1"
     },
     {
       "input": "\"xyzxyz\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "\"zzzzzzzzzzzzzzzz\"",
-      "desc": "Edge: 16 same"
+      "desc": "Edge: 16 same",
+      "output": "16"
     },
     {
       "input": "\"abcabcabcabcabc\"",
-      "desc": "Standard: long repeat"
+      "desc": "Standard: long repeat",
+      "output": "5"
     },
     {
       "input": "\"aaaaabbbbbccccc\"",
-      "desc": "Standard: blocks"
+      "desc": "Standard: blocks",
+      "output": "5"
     },
     {
       "input": "\"hello\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1"
     },
     {
       "input": "\"abcdabcd\"",
-      "desc": "Standard: 4-char repeat"
+      "desc": "Standard: 4-char repeat",
+      "output": "2"
     },
     {
       "input": "\"ubcdzykybxfkztivlbeb\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "1"
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= price <= 10^5, at most 10^4 calls",
   "input_format": "line1: operations (JSON); line2: arguments (JSON)",
   "testcases": [
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[100],[80],[60],[70],[60],[75],[85]]", "desc": "Standard: example"},
-    {"input": "[\"StockSpanner\",\"next\"]\n[[],[1]]", "desc": "Edge: single"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\"]\n[[],[1],[1]]", "desc": "Edge: same"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[2],[3],[4],[5]]", "desc": "Standard: ascending"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[5],[4],[3],[2],[1]]", "desc": "Standard: descending"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[5],[5],[5],[5],[5]]", "desc": "Edge: all same"},
-    {"input": "[\"StockSpanner\",\"next\"]\n[[],[100000]]", "desc": "Edge: max value"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\"]\n[[],[100000],[1]]", "desc": "Edge: max then min"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]", "desc": "Standard: 10 ascending"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[10],[9],[8],[7],[6],[5],[4],[3],[2],[1]]", "desc": "Standard: 10 descending"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[3],[2],[5],[4]]", "desc": "Standard: zigzag"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[31],[41],[48],[59],[79],[26],[53]]", "desc": "Standard: example like"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[100],[100],[100],[100],[100]]", "desc": "Standard: all same"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\"]\n[[],[1],[100000],[1]]", "desc": "Standard: spike"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[7],[2],[1],[2],[8],[3],[4],[10]]", "desc": "Standard"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[60],[70],[80],[50],[40],[30]]", "desc": "Standard"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\"]\n[[],[10],[100],[1000],[10000]]", "desc": "Standard: 10x growth"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\"]\n[[],[10000],[1000],[100],[10]]", "desc": "Standard: reverse"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[2],[3],[4],[5],[6],[100],[7],[8],[9],[10],[200]]", "desc": "Standard: with spikes"},
-    {"input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[5],[4],[3],[2],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[100]]", "desc": "Stress: V shape with spike"}
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[100],[80],[60],[70],[60],[75],[85]]",
+      "desc": "Standard: example",
+      "output": "[null, 1, 1, 1, 2, 1, 4, 6]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\"]\n[[],[1]]",
+      "desc": "Edge: single",
+      "output": "[null, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\"]\n[[],[1],[1]]",
+      "desc": "Edge: same",
+      "output": "[null, 1, 2]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[2],[3],[4],[5]]",
+      "desc": "Standard: ascending",
+      "output": "[null, 1, 2, 3, 4, 5]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[5],[4],[3],[2],[1]]",
+      "desc": "Standard: descending",
+      "output": "[null, 1, 1, 1, 1, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[5],[5],[5],[5],[5]]",
+      "desc": "Edge: all same",
+      "output": "[null, 1, 2, 3, 4, 5]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\"]\n[[],[100000]]",
+      "desc": "Edge: max value",
+      "output": "[null, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\"]\n[[],[100000],[1]]",
+      "desc": "Edge: max then min",
+      "output": "[null, 1, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]",
+      "desc": "Standard: 10 ascending",
+      "output": "[null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[10],[9],[8],[7],[6],[5],[4],[3],[2],[1]]",
+      "desc": "Standard: 10 descending",
+      "output": "[null, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[3],[2],[5],[4]]",
+      "desc": "Standard: zigzag",
+      "output": "[null, 1, 2, 1, 4, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[31],[41],[48],[59],[79],[26],[53]]",
+      "desc": "Standard: example like",
+      "output": "[null, 1, 2, 3, 4, 5, 1, 2]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[100],[100],[100],[100],[100]]",
+      "desc": "Standard: all same",
+      "output": "[null, 1, 2, 3, 4, 5]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\"]\n[[],[1],[100000],[1]]",
+      "desc": "Standard: spike",
+      "output": "[null, 1, 2, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[7],[2],[1],[2],[8],[3],[4],[10]]",
+      "desc": "Standard",
+      "output": "[null, 1, 1, 1, 3, 5, 1, 2, 8]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[60],[70],[80],[50],[40],[30]]",
+      "desc": "Standard",
+      "output": "[null, 1, 2, 3, 1, 1, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\"]\n[[],[10],[100],[1000],[10000]]",
+      "desc": "Standard: 10x growth",
+      "output": "[null, 1, 2, 3, 4]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\"]\n[[],[10000],[1000],[100],[10]]",
+      "desc": "Standard: reverse",
+      "output": "[null, 1, 1, 1, 1]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[1],[2],[3],[4],[5],[6],[100],[7],[8],[9],[10],[200]]",
+      "desc": "Standard: with spikes",
+      "output": "[null, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 12]"
+    },
+    {
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[5],[4],[3],[2],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[100]]",
+      "desc": "Stress: V shape with spike",
+      "output": "[null, 1, 1, 1, 1, 1, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]"
+    }
   ]
 }

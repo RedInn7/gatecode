@@ -1330,5 +1330,29 @@
     "slug": "check-if-numbers-are-ascending-in-a-sentence",
     "fqid": 2042,
     "error": "Testcase 9 failed: RE (exit 1): ne 281, in <module>\n    _result = Solution().areNumbersAscending(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmptitrqz29.py\", line 145, in areNumbersAscending\n    if (cur := int(t)) <= pre:\n               ^^^^^^\nValueError: invalid literal for int() with base 10: '2nd'\n"
+  },
+  {
+    "pid": 2015,
+    "slug": "count-unguarded-cells-in-the-grid",
+    "fqid": 2257,
+    "error": "Testcase 19 failed: RE (exit 1): ast):\n  File \"/tmp/tmpkw6rmsl7.py\", line 289, in <module>\n    _result = Solution().countUnguarded(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpkw6rmsl7.py\", line 145, in countUnguarded\n    for i, j in guards:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 2016,
+    "slug": "check-if-two-string-arrays-are-equivalent",
+    "fqid": 1662,
+    "error": "Testcase 19 failed: RE (exit 1):  _result = Solution().arrayStringsAreEqual(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpsdtyvo5o.py\", line 142, in arrayStringsAreEqual\n    return ''.join(word1) == ''.join(word2)\n           ^^^^^^^^^^^^^^\nTypeError: sequence item 0: expected str instance, int found\n"
+  },
+  {
+    "pid": 2025,
+    "slug": "minimum-absolute-distance-between-mirror-pairs",
+    "fqid": 3761,
+    "error": "Testcase 5 failed: RE (exit 1): 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 353, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ^^^^^^^^^^^^^^^^^^^^^^\njson.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 7 (char 6)\n"
+  },
+  {
+    "pid": 2017,
+    "slug": "escape-a-large-maze",
+    "fqid": 1036,
+    "error": "Testcase 19 failed: RE (exit 1): py\", line 292, in <module>\n    _result = Solution().isEscapePossible(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpwcsp5ie1.py\", line 155, in isEscapePossible\n    s = {(x, y) for x, y in blocked}\n                    ^^^^\nValueError: too many values to unpack (expected 2)\n"
   }
 ]
