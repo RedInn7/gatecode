@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"ababcbacadefegdehijhklij\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "[9, 7, 8]"
     },
     {
       "input": "\"eccbbbbdec\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "[10]"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "[1]"
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: 2 distinct"
+      "desc": "Edge: 2 distinct",
+      "output": "[1, 1]"
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "[2]"
     },
     {
       "input": "\"abc\"",
-      "desc": "3 distinct"
+      "desc": "3 distinct",
+      "output": "[1, 1, 1]"
     },
     {
       "input": "\"aaa\"",
-      "desc": "All same 3"
+      "desc": "All same 3",
+      "output": "[3]"
     },
     {
       "input": "\"abab\"",
-      "desc": "Alternating"
+      "desc": "Alternating",
+      "output": "[4]"
     },
     {
       "input": "\"aabb\"",
-      "desc": "Two blocks"
+      "desc": "Two blocks",
+      "output": "[2, 2]"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Alphabet all distinct"
+      "desc": "Alphabet all distinct",
+      "output": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Double alphabet"
+      "desc": "Double alphabet",
+      "output": "[52]"
     },
     {
       "input": "\"zzzaaa\"",
-      "desc": "Blocks"
+      "desc": "Blocks",
+      "output": "[3, 3]"
     },
     {
       "input": "\"abcabcabc\"",
-      "desc": "Repeating 3"
+      "desc": "Repeating 3",
+      "output": "[9]"
     },
     {
       "input": "\"qwerty\"",
-      "desc": "6 distinct"
+      "desc": "6 distinct",
+      "output": "[1, 1, 1, 1, 1, 1]"
     },
     {
       "input": "\"aabbccddeeffgghhiijj\"",
-      "desc": "10 pairs"
+      "desc": "10 pairs",
+      "output": "[2, 2, 2, 2, 2, 2, 2, 2, 2, 2]"
     },
     {
       "input": "\"abacadaeaf\"",
-      "desc": "All meet 'a'"
+      "desc": "All meet 'a'",
+      "output": "[9, 1]"
     },
     {
       "input": "\"qwertyuiopasdfghjklzxcvbnm\"",
-      "desc": "Random alphabet"
+      "desc": "Random alphabet",
+      "output": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
     },
     {
       "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "desc": "Many a's"
+      "desc": "Many a's",
+      "output": "[160]"
     },
     {
       "input": "\"abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc\"",
-      "desc": "500 chars abc repeating"
+      "desc": "500 chars abc repeating",
+      "output": "[510]"
     },
     {
       "input": "\"qexjcqhvrlvgrcewzqhjmfbphgngvoqieunxgfusmvmnhipd\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "[47, 1]"
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "2 <= seats.length <= 2*10^4; seats[i] in {0,1}; at least one 0 and at least one 1",
   "input_format": "single line: seats (JSON array)",
   "testcases": [
-    {"input": "[1,0,0,0,1,0,1]", "desc": "Standard example 1"},
-    {"input": "[1,0,0,0]", "desc": "Standard example 2"},
-    {"input": "[0,1]", "desc": "Standard example 3"},
-    {"input": "[1,0]", "desc": "Edge: 1 at start"},
-    {"input": "[0,0,1]", "desc": "Edge: 1 at end"},
-    {"input": "[1,0,0]", "desc": "Edge: 1 at start (n=3)"},
-    {"input": "[0,1,0]", "desc": "Edge: 1 in middle"},
-    {"input": "[1,0,0,0,0,0,1]", "desc": "Long gap mid"},
-    {"input": "[1,1,0,0,0,1,1]", "desc": "Clustered"},
-    {"input": "[0,0,0,0,1]", "desc": "Empty until end"},
-    {"input": "[1,0,0,0,0,0,0,0,0,0]", "desc": "Long empty after"},
-    {"input": "[0,1,0,1,0,1]", "desc": "Alternating"},
-    {"input": "[1,1,1,1,1,0,1]", "desc": "Few empties"},
-    {"input": "[0,0,1,0,0,0,1,0,0,0,0,1]", "desc": "Mixed gaps"},
-    {"input": "[1,0,0,0,1,0,0,0,1]", "desc": "Equal gaps"},
-    {"input": "[0,0,0,0,0,1,0,0,0,0,0]", "desc": "Center filled"},
-    {"input": "[1,0,0,0,0,0,0,0,0,0,1]", "desc": "Both ends"},
-    {"input": "[1,1,1,0,0,0,0,0,0,1,1,1]", "desc": "Mid gap"},
-    {"input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]", "desc": "20 alt"},
-    {"input": "[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]", "desc": "50 with 2 ones"}
+    {
+      "input": "[1,0,0,0,1,0,1]",
+      "desc": "Standard example 1",
+      "output": "2"
+    },
+    {
+      "input": "[1,0,0,0]",
+      "desc": "Standard example 2",
+      "output": "3"
+    },
+    {
+      "input": "[0,1]",
+      "desc": "Standard example 3",
+      "output": "1"
+    },
+    {
+      "input": "[1,0]",
+      "desc": "Edge: 1 at start",
+      "output": "1"
+    },
+    {
+      "input": "[0,0,1]",
+      "desc": "Edge: 1 at end",
+      "output": "2"
+    },
+    {
+      "input": "[1,0,0]",
+      "desc": "Edge: 1 at start (n=3)",
+      "output": "2"
+    },
+    {
+      "input": "[0,1,0]",
+      "desc": "Edge: 1 in middle",
+      "output": "1"
+    },
+    {
+      "input": "[1,0,0,0,0,0,1]",
+      "desc": "Long gap mid",
+      "output": "3"
+    },
+    {
+      "input": "[1,1,0,0,0,1,1]",
+      "desc": "Clustered",
+      "output": "2"
+    },
+    {
+      "input": "[0,0,0,0,1]",
+      "desc": "Empty until end",
+      "output": "4"
+    },
+    {
+      "input": "[1,0,0,0,0,0,0,0,0,0]",
+      "desc": "Long empty after",
+      "output": "9"
+    },
+    {
+      "input": "[0,1,0,1,0,1]",
+      "desc": "Alternating",
+      "output": "1"
+    },
+    {
+      "input": "[1,1,1,1,1,0,1]",
+      "desc": "Few empties",
+      "output": "1"
+    },
+    {
+      "input": "[0,0,1,0,0,0,1,0,0,0,0,1]",
+      "desc": "Mixed gaps",
+      "output": "2"
+    },
+    {
+      "input": "[1,0,0,0,1,0,0,0,1]",
+      "desc": "Equal gaps",
+      "output": "2"
+    },
+    {
+      "input": "[0,0,0,0,0,1,0,0,0,0,0]",
+      "desc": "Center filled",
+      "output": "5"
+    },
+    {
+      "input": "[1,0,0,0,0,0,0,0,0,0,1]",
+      "desc": "Both ends",
+      "output": "5"
+    },
+    {
+      "input": "[1,1,1,0,0,0,0,0,0,1,1,1]",
+      "desc": "Mid gap",
+      "output": "3"
+    },
+    {
+      "input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]",
+      "desc": "20 alt",
+      "output": "1"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]",
+      "desc": "50 with 2 ones",
+      "output": "19"
+    }
   ]
 }

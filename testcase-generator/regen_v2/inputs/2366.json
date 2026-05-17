@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"aaaa\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "2"
     },
     {
       "input": "\"abcdef\"",
-      "desc": "Standard example 2 no triple"
+      "desc": "Standard example 2 no triple",
+      "output": "-1"
     },
     {
       "input": "\"abcaba\"",
-      "desc": "Standard example 3"
+      "desc": "Standard example 3",
+      "output": "1"
     },
     {
       "input": "\"aaa\"",
-      "desc": "Edge: min len thrice 'a'"
+      "desc": "Edge: min len thrice 'a'",
+      "output": "1"
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge: min len no special triple"
+      "desc": "Edge: min len no special triple",
+      "output": "-1"
     },
     {
       "input": "\"aab\"",
-      "desc": "Edge: only 2 a's"
+      "desc": "Edge: only 2 a's",
+      "output": "-1"
     },
     {
       "input": "\"aaab\"",
-      "desc": "3 a's"
+      "desc": "3 a's",
+      "output": "1"
     },
     {
       "input": "\"aaaaa\"",
-      "desc": "5 a's"
+      "desc": "5 a's",
+      "output": "3"
     },
     {
       "input": "\"aaaaaa\"",
-      "desc": "6 a's (thrice 'aaa')"
+      "desc": "6 a's (thrice 'aaa')",
+      "output": "4"
     },
     {
       "input": "\"aaaaaaa\"",
-      "desc": "7 a's"
+      "desc": "7 a's",
+      "output": "5"
     },
     {
       "input": "\"aabbcc\"",
-      "desc": "Pairs no triple"
+      "desc": "Pairs no triple",
+      "output": "-1"
     },
     {
       "input": "\"aabbaabb\"",
-      "desc": "Pairs alt"
+      "desc": "Pairs alt",
+      "output": "1"
     },
     {
       "input": "\"abcabcabc\"",
-      "desc": "Single chars thrice"
+      "desc": "Single chars thrice",
+      "output": "1"
     },
     {
       "input": "\"aaabbbccc\"",
-      "desc": "Triples each"
+      "desc": "Triples each",
+      "output": "1"
     },
     {
       "input": "\"aabbbcccc\"",
-      "desc": "Varied lengths"
+      "desc": "Varied lengths",
+      "output": "2"
     },
     {
       "input": "\"zzzaaa\"",
-      "desc": "Two triples"
+      "desc": "Two triples",
+      "output": "1"
     },
     {
       "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "desc": "48 a's"
+      "desc": "48 a's",
+      "output": "46"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Alphabet"
+      "desc": "Alphabet",
+      "output": "-1"
     },
     {
       "input": "\"aaaaaaaaaabbbbbbbbbbcccccccccc\"",
-      "desc": "Big blocks"
+      "desc": "Big blocks",
+      "output": "8"
     },
     {
       "input": "\"lzpidhhatssg\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "-1"
     }
   ]
 }

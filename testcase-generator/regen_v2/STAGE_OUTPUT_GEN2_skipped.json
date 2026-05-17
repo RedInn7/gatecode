@@ -382,5 +382,17 @@
     "slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
     "fqid": 3795,
     "reason": "No Python3 solution found for fqid=3795"
+  },
+  {
+    "pid": 2370,
+    "slug": "sum-of-scores-of-built-strings",
+    "fqid": 2223,
+    "reason": "No Python3 solution found for fqid=2223"
+  },
+  {
+    "pid": 2383,
+    "slug": "minimum-operations-to-equalize-subarrays",
+    "fqid": 3762,
+    "reason": "No Python3 solution found for fqid=3762"
   }
 ]

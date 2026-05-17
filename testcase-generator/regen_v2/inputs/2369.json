@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,2,3]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "6"
     },
     {
       "input": "[10,21,31]",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "66"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1 min"
+      "desc": "Edge: n=1 min",
+      "output": "1"
     },
     {
       "input": "[1000]",
-      "desc": "Edge: n=1 max"
+      "desc": "Edge: n=1 max",
+      "output": "1111"
     },
     {
       "input": "[9,9,9]",
-      "desc": "All 9s"
+      "desc": "All 9s",
+      "output": "27"
     },
     {
       "input": "[100,200,300]",
-      "desc": "Hundreds"
+      "desc": "Hundreds",
+      "output": "666"
     },
     {
       "input": "[123,456,789]",
-      "desc": "Mixed digits"
+      "desc": "Mixed digits",
+      "output": "1998"
     },
     {
       "input": "[10,100,1000]",
-      "desc": "Powers"
+      "desc": "Powers",
+      "output": "1233"
     },
     {
       "input": "[5,55,555]",
-      "desc": "Already max-digit"
+      "desc": "Already max-digit",
+      "output": "615"
     },
     {
       "input": "[12,123,987]",
-      "desc": "Increasing digit count plus 3-digit"
+      "desc": "Increasing digit count plus 3-digit",
+      "output": "1354"
     },
     {
       "input": "[12,123,234]",
-      "desc": "Increasing digit count"
+      "desc": "Increasing digit count",
+      "output": "799"
     },
     {
       "input": "[999]",
-      "desc": "All 9 single"
+      "desc": "All 9 single",
+      "output": "999"
     },
     {
       "input": "[1,11,111]",
-      "desc": "Same digit"
+      "desc": "Same digit",
+      "output": "123"
     },
     {
       "input": "[123,321,213,132,231,312]",
-      "desc": "Permutations"
+      "desc": "Permutations",
+      "output": "1998"
     },
     {
       "input": "[100,200,300,400,500,600,700,800,900,1000]",
-      "desc": "10 hundreds"
+      "desc": "10 hundreds",
+      "output": "6106"
     },
     {
       "input": "[101,202,303,404,505,606,707,808,909]",
-      "desc": "Pattern"
+      "desc": "Pattern",
+      "output": "4995"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9]",
-      "desc": "Single digits 1-9"
+      "desc": "Single digits 1-9",
+      "output": "45"
     },
     {
       "input": "[111,222,333,444,555,666,777,888,999]",
-      "desc": "Repdigits"
+      "desc": "Repdigits",
+      "output": "4995"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]",
-      "desc": "50 sequential"
+      "desc": "50 sequential",
+      "output": "2300"
     },
     {
       "input": "[547,662,339,678,129,312,77,443,883,30,388,770,382,68,305,838,272,899,413,916,191,880,574,948,932,898,794,350,578,712,251,640,640,34,792,85,150,977,648,783,946,967,905,805,526,14,203,476,525,743]",
-      "desc": "Regenerated: stress at position 19"
+      "desc": "Regenerated: stress at position 19",
+      "output": "35672"
     }
   ]
 }

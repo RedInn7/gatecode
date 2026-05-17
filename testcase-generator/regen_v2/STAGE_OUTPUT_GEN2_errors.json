@@ -1522,5 +1522,17 @@
     "slug": "the-time-when-the-network-becomes-idle",
     "fqid": 2039,
     "error": "Testcase 17 failed: RE (exit 1): e \"/tmp/tmp3ndq75l7.py\", line 292, in <module>\n    _result = Solution().networkBecomesIdle(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3ndq75l7.py\", line 143, in networkBecomesIdle\n    for u, v in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 2359,
+    "slug": "reorder-data-in-log-files",
+    "fqid": 937,
+    "error": "Testcase 19 failed: RE (exit 1): ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3ocmmrn7.py\", line 146, in reorderLogFiles\n    return sorted(logs, key=f)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3ocmmrn7.py\", line 143, in f\n    id_, rest = log.split(\" \", 1)\n                ^^^^^^^^^\nAttributeError: 'int' object has no attribute 'split'\n"
+  },
+  {
+    "pid": 2375,
+    "slug": "kth-smallest-path-xor-sum",
+    "fqid": 3590,
+    "error": "Testcase 9 failed: RE (exit 1): ost recent call last):\n  File \"/tmp/tmphrgk49jj.py\", line 369, in <module>\n    _result = Solution().kthSmallest(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphrgk49jj.py\", line 197, in kthSmallest\n    tree[par[i]].append(i)\n    ~~~~^^^^^^^^\nIndexError: list index out of range\n"
   }
 ]
