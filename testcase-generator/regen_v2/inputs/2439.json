@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= power.length <= 10^5; 1 <= power[i] <= 10^9",
   "input_format": "single line: power (JSON array)",
   "testcases": [
-    {"input": "[1,1,3,4]", "desc": "Standard example 1"},
-    {"input": "[7,1,6,6]", "desc": "Standard example 2"},
-    {"input": "[1]", "desc": "Edge: n=1"},
-    {"input": "[1000000000]", "desc": "Edge: max"},
-    {"input": "[1,2]", "desc": "Edge: adjacent"},
-    {"input": "[1,3]", "desc": "Edge: 2 apart non-adjacent"},
-    {"input": "[1,1,1,1,1]", "desc": "All same"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "10 consecutive"},
-    {"input": "[1,4,7,10,13]", "desc": "Spaced 3"},
-    {"input": "[1,1,2,2,3,3,4,4,5,5]", "desc": "Pairs"},
-    {"input": "[1000000000,999999998,1000000000,999999998]", "desc": "Big pairs"},
-    {"input": "[1,3,5,7,9,11,13,15,17,19]", "desc": "Odds"},
-    {"input": "[2,4,6,8,10,12,14,16,18,20]", "desc": "Evens"},
-    {"input": "[10,10,10,10,10]", "desc": "5 same"},
-    {"input": "[1,2,3,5,6,7,9,10]", "desc": "Gaps allow skipping"},
-    {"input": "[1,2,1,2,1,2,1,2]", "desc": "Alt 1,2"},
-    {"input": "[5,5,5,5,7,7,7,7]", "desc": "Two groups"},
-    {"input": "[1,3,5,7,9,11,1,3,5,7,9,11]", "desc": "Double pattern"},
-    {"input": "[100,200,100,200,100,200,100,200,100,200]", "desc": "10 alt"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]", "desc": "30 sequential"}
+    {
+      "input": "[1,1,3,4]",
+      "desc": "Standard example 1",
+      "output": "6"
+    },
+    {
+      "input": "[7,1,6,6]",
+      "desc": "Standard example 2",
+      "output": "13"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "[1000000000]",
+      "desc": "Edge: max",
+      "output": "1000000000"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: adjacent",
+      "output": "2"
+    },
+    {
+      "input": "[1,3]",
+      "desc": "Edge: 2 apart non-adjacent",
+      "output": "3"
+    },
+    {
+      "input": "[1,1,1,1,1]",
+      "desc": "All same",
+      "output": "5"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "10 consecutive",
+      "output": "22"
+    },
+    {
+      "input": "[1,4,7,10,13]",
+      "desc": "Spaced 3",
+      "output": "35"
+    },
+    {
+      "input": "[1,1,2,2,3,3,4,4,5,5]",
+      "desc": "Pairs",
+      "output": "14"
+    },
+    {
+      "input": "[1000000000,999999998,1000000000,999999998]",
+      "desc": "Big pairs",
+      "output": "2000000000"
+    },
+    {
+      "input": "[1,3,5,7,9,11,13,15,17,19]",
+      "desc": "Odds",
+      "output": "55"
+    },
+    {
+      "input": "[2,4,6,8,10,12,14,16,18,20]",
+      "desc": "Evens",
+      "output": "60"
+    },
+    {
+      "input": "[10,10,10,10,10]",
+      "desc": "5 same",
+      "output": "50"
+    },
+    {
+      "input": "[1,2,3,5,6,7,9,10]",
+      "desc": "Gaps allow skipping",
+      "output": "20"
+    },
+    {
+      "input": "[1,2,1,2,1,2,1,2]",
+      "desc": "Alt 1,2",
+      "output": "8"
+    },
+    {
+      "input": "[5,5,5,5,7,7,7,7]",
+      "desc": "Two groups",
+      "output": "28"
+    },
+    {
+      "input": "[1,3,5,7,9,11,1,3,5,7,9,11]",
+      "desc": "Double pattern",
+      "output": "42"
+    },
+    {
+      "input": "[100,200,100,200,100,200,100,200,100,200]",
+      "desc": "10 alt",
+      "output": "1500"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]",
+      "desc": "30 sequential",
+      "output": "165"
+    }
   ]
 }

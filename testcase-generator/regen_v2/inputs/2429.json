@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"GGLLGG\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "true"
     },
     {
       "input": "\"GG\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "false"
     },
     {
       "input": "\"GL\"",
-      "desc": "Standard example 3"
+      "desc": "Standard example 3",
+      "output": "true"
     },
     {
       "input": "\"G\"",
-      "desc": "Edge: just G"
+      "desc": "Edge: just G",
+      "output": "false"
     },
     {
       "input": "\"L\"",
-      "desc": "Edge: just L"
+      "desc": "Edge: just L",
+      "output": "true"
     },
     {
       "input": "\"R\"",
-      "desc": "Edge: just R"
+      "desc": "Edge: just R",
+      "output": "true"
     },
     {
       "input": "\"LL\"",
-      "desc": "Edge: 2 lefts"
+      "desc": "Edge: 2 lefts",
+      "output": "true"
     },
     {
       "input": "\"RR\"",
-      "desc": "Edge: 2 rights"
+      "desc": "Edge: 2 rights",
+      "output": "true"
     },
     {
       "input": "\"LR\"",
-      "desc": "Cancel"
+      "desc": "Cancel",
+      "output": "true"
     },
     {
       "input": "\"GLGLGLGL\"",
-      "desc": "Box loop"
+      "desc": "Box loop",
+      "output": "true"
     },
     {
       "input": "\"GLGRGLGR\"",
-      "desc": "Mixed turns"
+      "desc": "Mixed turns",
+      "output": "false"
     },
     {
       "input": "\"GGGGGGGGGG\"",
-      "desc": "All forward (not bounded)"
+      "desc": "All forward (not bounded)",
+      "output": "false"
     },
     {
       "input": "\"LLLL\"",
-      "desc": "4 lefts back to start"
+      "desc": "4 lefts back to start",
+      "output": "true"
     },
     {
       "input": "\"RRRR\"",
-      "desc": "4 rights"
+      "desc": "4 rights",
+      "output": "true"
     },
     {
       "input": "\"GLLLGGLLLG\"",
-      "desc": "Mixed"
+      "desc": "Mixed",
+      "output": "true"
     },
     {
       "input": "\"GGGLGGGGRGGGL\"",
-      "desc": "Complex"
+      "desc": "Complex",
+      "output": "true"
     },
     {
       "input": "\"GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\"",
-      "desc": "100 G's"
+      "desc": "100 G's",
+      "output": "false"
     },
     {
       "input": "\"GRGRGRGR\"",
-      "desc": "Box right"
+      "desc": "Box right",
+      "output": "true"
     },
     {
       "input": "\"LRLRLRLR\"",
-      "desc": "Cancel many"
+      "desc": "Cancel many",
+      "output": "true"
     },
     {
       "input": "\"asvlcngjxavm\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "false"
     }
   ]
 }

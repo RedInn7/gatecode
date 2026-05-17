@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= k <= s.length <= 1000; lowercase letters",
   "input_format": "line1: s (quoted string); line2: k",
   "testcases": [
-    {"input": "\"cba\"\n1", "desc": "Standard example 1"},
-    {"input": "\"baaca\"\n3", "desc": "Standard example 2"},
-    {"input": "\"a\"\n1", "desc": "Edge: n=k=1"},
-    {"input": "\"z\"\n1", "desc": "Edge: n=1 max"},
-    {"input": "\"ab\"\n1", "desc": "Edge: 2 chars k=1"},
-    {"input": "\"ba\"\n1", "desc": "Edge: 2 chars k=1 rotate"},
-    {"input": "\"ab\"\n2", "desc": "Edge: 2 chars k=2 sort"},
-    {"input": "\"cba\"\n3", "desc": "k=n sort"},
-    {"input": "\"abc\"\n1", "desc": "Already sorted k=1"},
-    {"input": "\"zzzzz\"\n1", "desc": "All same"},
-    {"input": "\"zaza\"\n1", "desc": "Pattern k=1"},
-    {"input": "\"zaza\"\n2", "desc": "Pattern k=2 sort"},
-    {"input": "\"dcba\"\n1", "desc": "Strict desc k=1 - rotate"},
-    {"input": "\"dcba\"\n4", "desc": "Strict desc k=n"},
-    {"input": "\"abcabc\"\n1", "desc": "Period"},
-    {"input": "\"helloworld\"\n3", "desc": "Word k=3"},
-    {"input": "\"helloworld\"\n10", "desc": "Word k=n full sort"},
-    {"input": "\"zyxwvutsrq\"\n1", "desc": "Desc 10 k=1"},
-    {"input": "\"zyxwvutsrq\"\n2", "desc": "Desc 10 k=2"},
-    {"input": "\"aabbccdd\"\n4", "desc": "Pairs k=4"}
+    {
+      "input": "\"cba\"\n1",
+      "desc": "Standard example 1",
+      "output": "\"acb\""
+    },
+    {
+      "input": "\"baaca\"\n3",
+      "desc": "Standard example 2",
+      "output": "\"aaabc\""
+    },
+    {
+      "input": "\"a\"\n1",
+      "desc": "Edge: n=k=1",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"z\"\n1",
+      "desc": "Edge: n=1 max",
+      "output": "\"z\""
+    },
+    {
+      "input": "\"ab\"\n1",
+      "desc": "Edge: 2 chars k=1",
+      "output": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n1",
+      "desc": "Edge: 2 chars k=1 rotate",
+      "output": "\"ab\""
+    },
+    {
+      "input": "\"ab\"\n2",
+      "desc": "Edge: 2 chars k=2 sort",
+      "output": "\"ab\""
+    },
+    {
+      "input": "\"cba\"\n3",
+      "desc": "k=n sort",
+      "output": "\"abc\""
+    },
+    {
+      "input": "\"abc\"\n1",
+      "desc": "Already sorted k=1",
+      "output": "\"abc\""
+    },
+    {
+      "input": "\"zzzzz\"\n1",
+      "desc": "All same",
+      "output": "\"zzzzz\""
+    },
+    {
+      "input": "\"zaza\"\n1",
+      "desc": "Pattern k=1",
+      "output": "\"azaz\""
+    },
+    {
+      "input": "\"zaza\"\n2",
+      "desc": "Pattern k=2 sort",
+      "output": "\"aazz\""
+    },
+    {
+      "input": "\"dcba\"\n1",
+      "desc": "Strict desc k=1 - rotate",
+      "output": "\"adcb\""
+    },
+    {
+      "input": "\"dcba\"\n4",
+      "desc": "Strict desc k=n",
+      "output": "\"abcd\""
+    },
+    {
+      "input": "\"abcabc\"\n1",
+      "desc": "Period",
+      "output": "\"abcabc\""
+    },
+    {
+      "input": "\"helloworld\"\n3",
+      "desc": "Word k=3",
+      "output": "\"dehllloorw\""
+    },
+    {
+      "input": "\"helloworld\"\n10",
+      "desc": "Word k=n full sort",
+      "output": "\"dehllloorw\""
+    },
+    {
+      "input": "\"zyxwvutsrq\"\n1",
+      "desc": "Desc 10 k=1",
+      "output": "\"qzyxwvutsr\""
+    },
+    {
+      "input": "\"zyxwvutsrq\"\n2",
+      "desc": "Desc 10 k=2",
+      "output": "\"qrstuvwxyz\""
+    },
+    {
+      "input": "\"aabbccdd\"\n4",
+      "desc": "Pairs k=4",
+      "output": "\"aabbccdd\""
+    }
   ]
 }

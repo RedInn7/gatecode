@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= word.length <= 2000; lowercase letters; mapping a->1, b->1, c->2, ..., z->9 (variant; per problem definition)",
   "input_format": "single line: word (quoted string)",
   "testcases": [
-    {"input": "\"asdf\"", "desc": "Standard example"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"z\"", "desc": "Edge: n=1 max value"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"ab\"", "desc": "Edge: 2 different"},
-    {"input": "\"aaa\"", "desc": "All same"},
-    {"input": "\"abc\"", "desc": "3 distinct"},
-    {"input": "\"helloworld\"", "desc": "Common word"},
-    {"input": "\"abcdefghij\"", "desc": "10 letters asc"},
-    {"input": "\"zyxwvutsrq\"", "desc": "Reverse"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "10 a's"},
-    {"input": "\"zzzzzzzzzz\"", "desc": "10 z's"},
-    {"input": "\"abcabcabc\"", "desc": "Period 3"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Alphabet"},
-    {"input": "\"thequickbrownfox\"", "desc": "Common phrase"},
-    {"input": "\"programming\"", "desc": "Word with repeats"},
-    {"input": "\"aaaabbbbcccc\"", "desc": "Blocks"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Double alphabet"},
-    {"input": "\"abababababababab\"", "desc": "16 alt"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "50 a's"}
+    {
+      "input": "\"asdf\"",
+      "desc": "Standard example",
+      "output": "6"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: n=1 max value",
+      "output": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same",
+      "output": "3"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 different",
+      "output": "3"
+    },
+    {
+      "input": "\"aaa\"",
+      "desc": "All same",
+      "output": "6"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "3 distinct",
+      "output": "4"
+    },
+    {
+      "input": "\"helloworld\"",
+      "desc": "Common word",
+      "output": "22"
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "10 letters asc",
+      "output": "22"
+    },
+    {
+      "input": "\"zyxwvutsrq\"",
+      "desc": "Reverse",
+      "output": "23"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "10 a's",
+      "output": "55"
+    },
+    {
+      "input": "\"zzzzzzzzzz\"",
+      "desc": "10 z's",
+      "output": "55"
+    },
+    {
+      "input": "\"abcabcabc\"",
+      "desc": "Period 3",
+      "output": "12"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Alphabet",
+      "output": "95"
+    },
+    {
+      "input": "\"thequickbrownfox\"",
+      "desc": "Common phrase",
+      "output": "41"
+    },
+    {
+      "input": "\"programming\"",
+      "desc": "Word with repeats",
+      "output": "22"
+    },
+    {
+      "input": "\"aaaabbbbcccc\"",
+      "desc": "Blocks",
+      "output": "46"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Double alphabet",
+      "output": "224"
+    },
+    {
+      "input": "\"abababababababab\"",
+      "desc": "16 alt",
+      "output": "136"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "50 a's",
+      "output": "1275"
+    }
   ]
 }

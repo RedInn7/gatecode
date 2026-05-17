@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"e\"",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "\"\""
     },
     {
       "input": "\"abcd\"",
-      "desc": "Standard example 2 no dup"
+      "desc": "Standard example 2 no dup",
+      "output": "\"\""
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "\"a\""
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: 2 distinct"
+      "desc": "Edge: 2 distinct",
+      "output": "\"\""
     },
     {
       "input": "\"aaa\"",
-      "desc": "All same 3"
+      "desc": "All same 3",
+      "output": "\"aa\""
     },
     {
       "input": "\"aabb\"",
-      "desc": "Two pairs"
+      "desc": "Two pairs",
+      "output": "\"a\""
     },
     {
       "input": "\"abab\"",
-      "desc": "Alternating"
+      "desc": "Alternating",
+      "output": "\"ab\""
     },
     {
       "input": "\"abcabc\"",
-      "desc": "Repeat 3"
+      "desc": "Repeat 3",
+      "output": "\"abc\""
     },
     {
       "input": "\"aaaaaaaaa\"",
-      "desc": "9 same"
+      "desc": "9 same",
+      "output": "\"aaaaaaaa\""
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "All distinct"
+      "desc": "All distinct",
+      "output": "\"\""
     },
     {
       "input": "\"abacaba\"",
-      "desc": "Palindrome"
+      "desc": "Palindrome",
+      "output": "\"aba\""
     },
     {
       "input": "\"mississippi\"",
-      "desc": "Common test"
+      "desc": "Common test",
+      "output": "\"issi\""
     },
     {
       "input": "\"helloworld\"",
-      "desc": "Word"
+      "desc": "Word",
+      "output": "\"l\""
     },
     {
       "input": "\"aabaab\"",
-      "desc": "Period 3"
+      "desc": "Period 3",
+      "output": "\"aab\""
     },
     {
       "input": "\"aabaaabaaaab\"",
-      "desc": "Multiple a-blocks"
+      "desc": "Multiple a-blocks",
+      "output": "\"aabaaa\""
     },
     {
       "input": "\"abcdeabcdeabcde\"",
-      "desc": "Period 5"
+      "desc": "Period 5",
+      "output": "\"abcdeabcde\""
     },
     {
       "input": "\"abracadabra\"",
-      "desc": "Mixed"
+      "desc": "Mixed",
+      "output": "\"abra\""
     },
     {
       "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "desc": "50 a's"
+      "desc": "50 a's",
+      "output": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
     },
     {
       "input": "\"aaaaaabbbbbbccccccdddddd\"",
-      "desc": "Blocks"
+      "desc": "Blocks",
+      "output": "\"aaaaa\""
     },
     {
       "input": "\"ofclgjtmnvvd\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"v\""
     }
   ]
 }

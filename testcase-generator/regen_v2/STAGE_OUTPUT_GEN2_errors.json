@@ -1540,5 +1540,29 @@
     "slug": "maximum-points-in-an-archery-competition",
     "fqid": 2212,
     "error": "Testcase 2 failed: TLE (>15s)"
+  },
+  {
+    "pid": 2433,
+    "slug": "minimum-flips-in-binary-tree-to-get-result",
+    "fqid": 2313,
+    "error": "Testcase 19 failed: RE (exit 1): ne 296, in <module>\n    _result = Solution().minimumFlips(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpjutuj488.py\", line 163, in minimumFlips\n    return dfs(root)[int(result)]\n                     ^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'iofxvpnbql'\n"
+  },
+  {
+    "pid": 2457,
+    "slug": "number-of-days-between-two-dates",
+    "fqid": 1360,
+    "error": "Testcase 0 failed: RE (exit 1): ogzxa.py\", line 172, in daysBetweenDates\n    return abs(calcDays(date1) - calcDays(date2))\n               ^^^^^^^^^^^^^^^\n  File \"/tmp/tmptvoogzxa.py\", line 163, in calcDays\n    year, month, day = map(int, date.split(\"-\"))\n    ^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'l'\n"
+  },
+  {
+    "pid": 2447,
+    "slug": "minimum-number-of-valid-strings-to-form-target-ii",
+    "fqid": 3292,
+    "error": "Testcase 19 failed: RE (exit 1): ^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp02y4qoru.py\", line 170, in minValidStrings\n    m = max(len(w) for w in words)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp02y4qoru.py\", line 170, in <genexpr>\n    m = max(len(w) for w in words)\n            ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+  },
+  {
+    "pid": 2456,
+    "slug": "longest-palindrome-by-concatenating-two-letter-words",
+    "fqid": 2131,
+    "error": "Testcase 19 failed: RE (exit 1): last):\n  File \"/tmp/tmpihk1ma8m.py\", line 284, in <module>\n    _result = Solution().longestPalindrome(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpihk1ma8m.py\", line 145, in longestPalindrome\n    if k[0] == k[1]:\n       ~^^^\nTypeError: 'int' object is not subscriptable\n"
   }
 ]
