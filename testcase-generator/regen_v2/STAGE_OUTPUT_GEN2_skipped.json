@@ -442,5 +442,11 @@
     "slug": "last-remaining-integer-after-alternating-deletion-operations",
     "fqid": 3782,
     "reason": "No Python3 solution found for fqid=3782"
+  },
+  {
+    "pid": 2500,
+    "slug": "longest-palindromic-path-in-graph",
+    "fqid": 3615,
+    "reason": "No Python3 solution found for fqid=3615"
   }
 ]

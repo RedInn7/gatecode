@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[4,5,2,1]\n[3,10,21]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "[2, 3, 4]"
     },
     {
       "input": "[2,3,4,5]\n[1]",
-      "desc": "Edge: example2 empty subseq"
+      "desc": "Edge: example2 empty subseq",
+      "output": "[0]"
     },
     {
       "input": "[1]\n[0]",
-      "desc": "Edge: n=1 q=0 below min"
+      "desc": "Edge: n=1 q=0 below min",
+      "output": "[0]"
     },
     {
       "input": "[1]\n[1]",
-      "desc": "Edge: n=1 q=val"
+      "desc": "Edge: n=1 q=val",
+      "output": "[1]"
     },
     {
       "input": "[1]\n[1000000]",
-      "desc": "Edge: n=1 q=max"
+      "desc": "Edge: n=1 q=max",
+      "output": "[1]"
     },
     {
       "input": "[1000000]\n[1]",
-      "desc": "Edge: n=1 large val low q"
+      "desc": "Edge: n=1 large val low q",
+      "output": "[0]"
     },
     {
       "input": "[1,1,1,1,1]\n[0,1,2,3,4,5]",
-      "desc": "Standard: all ones"
+      "desc": "Standard: all ones",
+      "output": "[0, 1, 2, 3, 4, 5]"
     },
     {
       "input": "[1,2,3,4,5]\n[1,2,3,4,5,15,100]",
-      "desc": "Standard: ascending"
+      "desc": "Standard: ascending",
+      "output": "[1, 1, 2, 2, 2, 5, 5]"
     },
     {
       "input": "[5,4,3,2,1]\n[1,5,10,15]",
-      "desc": "Standard: descending"
+      "desc": "Standard: descending",
+      "output": "[1, 2, 4, 5]"
     },
     {
       "input": "[10,20,30,40,50]\n[10,30,60,100,150]",
-      "desc": "Standard: spaced"
+      "desc": "Standard: spaced",
+      "output": "[1, 2, 3, 4, 5]"
     },
     {
       "input": "[1000000,1000000,1000000]\n[1,1000000,2000000,3000000]",
-      "desc": "Edge: all max"
+      "desc": "Edge: all max",
+      "output": "[0, 1, 2, 3]"
     },
     {
       "input": "[1,2,4,8,16,32,64]\n[1,3,7,15,31,63,127]",
-      "desc": "Standard: powers of 2"
+      "desc": "Standard: powers of 2",
+      "output": "[1, 2, 3, 4, 5, 6, 7]"
     },
     {
       "input": "[3,1,4,1,5,9,2,6,5,3]\n[5,10,20,50]",
-      "desc": "Standard: pi digits"
+      "desc": "Standard: pi digits",
+      "output": "[3, 5, 7, 10]"
     },
     {
       "input": "[100,100,100,100]\n[99,100,200,300,400,500]",
-      "desc": "Standard: same values"
+      "desc": "Standard: same values",
+      "output": "[0, 1, 2, 3, 4, 4]"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n[10,20,30,40,50,55]",
-      "desc": "Standard: increasing nums and queries"
+      "desc": "Standard: increasing nums and queries",
+      "output": "[4, 5, 7, 8, 9, 10]"
     },
     {
       "input": "[7,3,11,9,5]\n[3,8,16,24,35]",
-      "desc": "Standard: random ordered"
+      "desc": "Standard: random ordered",
+      "output": "[1, 2, 3, 4, 5]"
     },
     {
       "input": "[123,-854,-391,799,369,-809,613,-503]\n[-626,-806,892,-696,826,667,-710,-27]",
-      "desc": "Regenerated: diverse at position 16"
+      "desc": "Regenerated: diverse at position 16",
+      "output": "[8, 7, 8, 7, 8, 8, 7, 8]"
     },
     {
       "input": "[100,200,300,400,500,600,700,800,900,1000]\n[100,1000,5000,10000,100000]",
-      "desc": "Stress: 10 values"
+      "desc": "Stress: 10 values",
+      "output": "[1, 4, 9, 10, 10]"
     },
     {
       "input": "[1,1000000,1,1000000,1,1000000]\n[1,2,3,1000000,1000001,2000000]",
-      "desc": "Killer: bimodal extremes"
+      "desc": "Killer: bimodal extremes",
+      "output": "[1, 2, 3, 3, 3, 4]"
     },
     {
       "input": "[999999,999998,999997,999996,999995]\n[999995,1999991,2999986,3999981,4999975]",
-      "desc": "Killer: near-max values"
+      "desc": "Killer: near-max values",
+      "output": "[1, 2, 2, 3, 4]"
     }
   ]
 }
