@@ -244,5 +244,11 @@
     "slug": "maximum-xor-of-subsequences",
     "fqid": 3681,
     "reason": "No Python3 solution found for fqid=3681"
+  },
+  {
+    "pid": 1691,
+    "slug": "merge-operations-for-minimum-travel-time",
+    "fqid": 3538,
+    "reason": "No Python3 solution found for fqid=3538"
   }
 ]

@@ -1006,5 +1006,59 @@
     "slug": "minimum-knight-moves",
     "fqid": 1197,
     "error": "Testcase 0 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1697,
+    "slug": "roman-to-integer",
+    "fqid": 13,
+    "error": "Testcase 0 failed: RE (exit 1): omanToInt(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpvykhj2sr.py\", line 143, in romanToInt\n    return sum((-1 if d[a] < d[b] else 1) * d[a] for a, b in pairwise(s)) + d[s[-1]]\n                                                                            ~^^^^^^^\nKeyError: 'w'\n"
+  },
+  {
+    "pid": 1705,
+    "slug": "maximum-candies-you-can-get-from-boxes",
+    "fqid": 1298,
+    "error": "Testcase 0 failed: RE (exit 1): eback (most recent call last):\n  File \"/tmp/tmps6imznwk.py\", line 307, in <module>\n    _result = Solution().maxCandies(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmps6imznwk.py\", line 154, in maxCandies\n    if status[box]:\n       ~~~~~~^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1698,
+    "slug": "minimum-operations-to-form-subsequence-with-target-sum",
+    "fqid": 2835,
+    "error": "Testcase 4 failed: RE (exit 1): t recent call last):\n  File \"/tmp/tmpbrcdyton.py\", line 301, in <module>\n    _result = Solution().minOperations(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpbrcdyton.py\", line 161, in minOperations\n    while cnt[j] == 0:\n          ~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1708,
+    "slug": "optimize-water-distribution-in-a-village",
+    "fqid": 1168,
+    "error": "Testcase 0 failed: RE (exit 1):     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpjrzjm6_j.py\", line 151, in minCostToSupplyWater\n    pipes.sort(key=lambda x: x[2])\n  File \"/tmp/tmpjrzjm6_j.py\", line 151, in <lambda>\n    pipes.sort(key=lambda x: x[2])\n                             ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1683,
+    "slug": "remove-covered-intervals",
+    "fqid": 1288,
+    "error": "Testcase 5 failed: RE (exit 1): py\", line 282, in <module>\n    _result = Solution().removeCoveredIntervals(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp1oklk6dn.py\", line 145, in removeCoveredIntervals\n    for _, cur in intervals:\n        ^^^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1711,
+    "slug": "network-delay-time",
+    "fqid": 743,
+    "error": "Testcase 0 failed: RE (exit 1): mp6zf1_50h.py\", line 290, in <module>\n    _result = Solution().networkDelayTime(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp6zf1_50h.py\", line 143, in networkDelayTime\n    for u, v, w in times:\n        ^^^^^^^\nValueError: not enough values to unpack (expected 3, got 2)\n"
+  },
+  {
+    "pid": 1706,
+    "slug": "delete-columns-to-make-sorted",
+    "fqid": 944,
+    "error": "Testcase 5 failed: RE (exit 1):  File \"/tmp/tmp9ar0n3fd.py\", line 282, in <module>\n    _result = Solution().minDeletionSize(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp9ar0n3fd.py\", line 146, in minDeletionSize\n    if strs[i][j] < strs[i - 1][j]:\n       ~~~~~~~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1712,
+    "slug": "find-anagram-mappings",
+    "fqid": 760,
+    "error": "Testcase 0 failed: RE (exit 1): ck (most recent call last):\n  File \"/tmp/tmpfzr7fm0r.py\", line 276, in <module>\n    _result = Solution().anagramMappings(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpfzr7fm0r.py\", line 143, in anagramMappings\n    return [d[x] for x in nums1]\n            ~^^^\nKeyError: 87\n"
+  },
+  {
+    "pid": 1707,
+    "slug": "maximize-profit-from-task-assignment",
+    "fqid": 3476,
+    "error": "Testcase 9 failed: RE (exit 1): t):\n  File \"/tmp/tmptkd7n6qc.py\", line 288, in <module>\n    _result = Solution().maxProfit(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmptkd7n6qc.py\", line 143, in maxProfit\n    for skill, profit in tasks:\n        ^^^^^^^^^^^^^\nValueError: too many values to unpack (expected 2)\n"
   }
 ]

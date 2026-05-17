@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[0,2,-5,5,10,-10]",
-      "desc": "Standard: example"
+      "desc": "Standard: example",
+      "output": "[-10, -5, 0, 2, 5, 10]"
     },
     {
       "input": "[1]",
-      "desc": "Edge: single"
+      "desc": "Edge: single",
+      "output": "[1]"
     },
     {
       "input": "[0]",
-      "desc": "Edge: single zero"
+      "desc": "Edge: single zero",
+      "output": "[0]"
     },
     {
       "input": "[-1]",
-      "desc": "Edge: single negative"
+      "desc": "Edge: single negative",
+      "output": "[-1]"
     },
     {
       "input": "[1,2,3,4,5]",
-      "desc": "Standard: all positive sorted"
+      "desc": "Standard: all positive sorted",
+      "output": "[1, 2, 3, 4, 5]"
     },
     {
       "input": "[-5,-4,-3,-2,-1]",
-      "desc": "Standard: all negative"
+      "desc": "Standard: all negative",
+      "output": "[-1, -2, -3, -4, -5]"
     },
     {
       "input": "[0,-1,-2,-3,-4]",
-      "desc": "Standard: zero then negatives"
+      "desc": "Standard: zero then negatives",
+      "output": "[-4, -3, -2, -1, 0]"
     },
     {
       "input": "[1,-1,2,-2,3,-3]",
-      "desc": "Standard: alternating by abs"
+      "desc": "Standard: alternating by abs",
+      "output": "[-3, -2, -1, 1, 2, 3]"
     },
     {
       "input": "[0,1,-1,2,-2,3,-3,5,-5]",
-      "desc": "Stress: mixed"
+      "desc": "Stress: mixed",
+      "output": "[-5, -3, -2, -1, 0, 1, 2, 3, 5]"
     },
     {
       "input": "[1,2,-3,4,-5,6,-7,8,-9,10,-10]",
-      "desc": "Stress: longer"
+      "desc": "Stress: longer",
+      "output": "[-10, -9, -7, -5, -3, 1, 2, 4, 6, 8, 10]"
     },
     {
       "input": "[0,5,-5,10,-10,15,-15,20,-20]",
-      "desc": "Stress: pairs"
+      "desc": "Stress: pairs",
+      "output": "[-20, -15, -10, -5, 0, 5, 10, 15, 20]"
     },
     {
       "input": "[2,3,-4,-4,14,-14,15,27,28,31,32,-33,-39,41,-50]",
-      "desc": "Stress: 15 sorted by abs"
+      "desc": "Stress: 15 sorted by abs",
+      "output": "[-50, -39, -33, -14, -4, -4, 2, 3, 14, 15, 27, 28, 31, 32, 41]"
     },
     {
       "input": "[0,0,0]",
-      "desc": "Edge: all zeros"
+      "desc": "Edge: all zeros",
+      "output": "[0, 0, 0]"
     },
     {
       "input": "[1,2,3,-4,-5,-6,-7,-8,-9,-10]",
-      "desc": "Standard: pos then neg"
+      "desc": "Standard: pos then neg",
+      "output": "[-10, -9, -8, -7, -6, -5, -4, 1, 2, 3]"
     },
     {
       "input": "[-1,1,-2,2,-3,3,-4,4,-5,5,-6,6,-7,7,-8,8,-9,9,-10,10]",
-      "desc": "Killer: 20 paired"
+      "desc": "Killer: 20 paired",
+      "output": "[-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
     },
     {
       "input": "[100,-100,200,-200]",
-      "desc": "Standard: large values"
+      "desc": "Standard: large values",
+      "output": "[-200, -100, 100, 200]"
     },
     {
       "input": "[-2147483648,0,2147483647]",
-      "desc": "Killer: int extremes"
+      "desc": "Killer: int extremes",
+      "output": "[-2147483648, 0, 2147483647]"
     },
     {
       "input": "[1,1,1,-2,-2,-2,3,3,3]",
-      "desc": "Standard: repeated abs"
+      "desc": "Standard: repeated abs",
+      "output": "[-2, -2, -2, 1, 1, 1, 3, 3, 3]"
     },
     {
       "input": "[0,0,0,0,0]",
-      "desc": "Edge: five zeros"
+      "desc": "Edge: five zeros",
+      "output": "[0, 0, 0, 0, 0]"
     },
     {
       "input": "[1,-1]",
-      "desc": "Edge: two pair"
+      "desc": "Edge: two pair",
+      "output": "[-1, 1]"
     }
   ]
 }
