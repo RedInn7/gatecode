@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,2,3,4,4,3,2,1]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "true"
     },
     {
       "input": "[1,1,1,2,2,2,3,3]",
-      "desc": "Standard: example 2 false"
+      "desc": "Standard: example 2 false",
+      "output": "false"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1 false"
+      "desc": "Edge: n=1 false",
+      "output": "false"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge: pair"
+      "desc": "Edge: pair",
+      "output": "true"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge: distinct false"
+      "desc": "Edge: distinct false",
+      "output": "false"
     },
     {
       "input": "[1,1,1]",
-      "desc": "Edge: triple"
+      "desc": "Edge: triple",
+      "output": "true"
     },
     {
       "input": "[1,1,2,2]",
-      "desc": "Standard: 2 pairs"
+      "desc": "Standard: 2 pairs",
+      "output": "true"
     },
     {
       "input": "[0,0,0,0]",
-      "desc": "Edge: 4 zeros"
+      "desc": "Edge: 4 zeros",
+      "output": "true"
     },
     {
       "input": "[9999,9999,9999]",
-      "desc": "Edge: max value triples"
+      "desc": "Edge: max value triples",
+      "output": "true"
     },
     {
       "input": "[1,1,1,2,2,2]",
-      "desc": "Standard: 2 triples"
+      "desc": "Standard: 2 triples",
+      "output": "true"
     },
     {
       "input": "[1,1,1,1,2,2,2,2]",
-      "desc": "Standard: 2 quads"
+      "desc": "Standard: 2 quads",
+      "output": "true"
     },
     {
       "input": "[1,1,2,2,3,3,4,4,5,5]",
-      "desc": "Standard: 5 pairs"
+      "desc": "Standard: 5 pairs",
+      "output": "true"
     },
     {
       "input": "[1,1,1,1,1,1]",
-      "desc": "Standard: 6 same"
+      "desc": "Standard: 6 same",
+      "output": "true"
     },
     {
       "input": "[1,1,1,2,2,3]",
-      "desc": "Standard: false"
+      "desc": "Standard: false",
+      "output": "false"
     },
     {
       "input": "[-604,-718,-327,-126,204,577,496,-446,-138,-30,686,-287,-989,-869,-499,-243,-947,-682,824]",
-      "desc": "Regenerated: standard at position 14"
+      "desc": "Regenerated: standard at position 14",
+      "output": "false"
     },
     {
       "input": "[1,2,3]",
-      "desc": "Edge: 3 distinct false"
+      "desc": "Edge: 3 distinct false",
+      "output": "false"
     },
     {
       "input": "[1,1,1,1,1]",
-      "desc": "Edge: 5 same"
+      "desc": "Edge: 5 same",
+      "output": "true"
     },
     {
       "input": "[1,2,1,2,1,2,1,2,1,2]",
-      "desc": "Standard: 5 each"
+      "desc": "Standard: 5 each",
+      "output": "true"
     },
     {
       "input": "[100,100,100,100,200,200,200,200,300,300,300,300]",
-      "desc": "Standard: 3 groups of 4"
+      "desc": "Standard: 3 groups of 4",
+      "output": "true"
     },
     {
       "input": "[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]",
-      "desc": "Standard: 2 groups of 10"
+      "desc": "Standard: 2 groups of 10",
+      "output": "true"
     }
   ]
 }

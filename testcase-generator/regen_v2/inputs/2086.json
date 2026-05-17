@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 20, lowercase, all same length",
   "input_format": "single line: words (JSON array of strings)",
   "testcases": [
-    {"input": "[\"abcd\",\"cdab\",\"cbad\",\"xyzz\",\"zzxy\",\"zzyx\"]", "desc": "Standard: example 1"},
-    {"input": "[\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]", "desc": "Standard: example 2"},
-    {"input": "[\"a\"]", "desc": "Edge: n=1 single char"},
-    {"input": "[\"a\",\"a\"]", "desc": "Edge: duplicate"},
-    {"input": "[\"ab\"]", "desc": "Edge: length 2"},
-    {"input": "[\"ab\",\"ba\"]", "desc": "Edge: cannot swap (different positions parity)"},
-    {"input": "[\"abc\"]", "desc": "Edge: single 3-char"},
-    {"input": "[\"abcd\",\"badc\"]", "desc": "Edge: special-equivalent pair"},
-    {"input": "[\"aaaa\",\"aaaa\",\"aaaa\"]", "desc": "Edge: all same"},
-    {"input": "[\"aabb\",\"abab\",\"abba\",\"baab\",\"baba\",\"bbaa\"]", "desc": "Standard: anagrams"},
-    {"input": "[\"abcde\",\"acbde\",\"adcbe\",\"aebcd\"]", "desc": "Standard length 5"},
-    {"input": "[\"zyxwv\",\"vxyzw\",\"wxyzv\"]", "desc": "Standard length 5"},
-    {"input": "[\"abcdefghij\",\"acbdefghij\"]", "desc": "Standard length 10"},
-    {"input": "[\"aaaaaaaaaaaaaaaaaaaa\",\"aaaaaaaaaaaaaaaaaaaa\"]", "desc": "Edge: max length identical"},
-    {"input": "[\"abcdabcdabcdabcdabcd\",\"badcbadcbadcbadcbadc\"]", "desc": "Edge: max length swap"},
-    {"input": "[\"aabbccdd\",\"bbaaccdd\",\"ccaabbdd\",\"ddaabbcc\"]", "desc": "Standard length 8"},
-    {"input": "[\"abcabcabc\",\"cbacbacba\",\"acbacbacb\"]", "desc": "Standard length 9 same set"},
-    {"input": "[\"xy\",\"yx\",\"xx\",\"yy\"]", "desc": "Standard short"},
-    {"input": "[\"aabc\",\"bcaa\",\"caab\",\"abca\"]", "desc": "Standard 4-char"},
-    {"input": "[\"abab\",\"baba\",\"abba\",\"baab\",\"aabb\",\"bbaa\"]", "desc": "Standard all permutations"}
+    {
+      "input": "[\"abcd\",\"cdab\",\"cbad\",\"xyzz\",\"zzxy\",\"zzyx\"]",
+      "desc": "Standard: example 1",
+      "output": "3"
+    },
+    {
+      "input": "[\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]",
+      "desc": "Standard: example 2",
+      "output": "3"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: n=1 single char",
+      "output": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "desc": "Edge: duplicate",
+      "output": "1"
+    },
+    {
+      "input": "[\"ab\"]",
+      "desc": "Edge: length 2",
+      "output": "1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "desc": "Edge: cannot swap (different positions parity)",
+      "output": "2"
+    },
+    {
+      "input": "[\"abc\"]",
+      "desc": "Edge: single 3-char",
+      "output": "1"
+    },
+    {
+      "input": "[\"abcd\",\"badc\"]",
+      "desc": "Edge: special-equivalent pair",
+      "output": "2"
+    },
+    {
+      "input": "[\"aaaa\",\"aaaa\",\"aaaa\"]",
+      "desc": "Edge: all same",
+      "output": "1"
+    },
+    {
+      "input": "[\"aabb\",\"abab\",\"abba\",\"baab\",\"baba\",\"bbaa\"]",
+      "desc": "Standard: anagrams",
+      "output": "3"
+    },
+    {
+      "input": "[\"abcde\",\"acbde\",\"adcbe\",\"aebcd\"]",
+      "desc": "Standard length 5",
+      "output": "3"
+    },
+    {
+      "input": "[\"zyxwv\",\"vxyzw\",\"wxyzv\"]",
+      "desc": "Standard length 5",
+      "output": "2"
+    },
+    {
+      "input": "[\"abcdefghij\",\"acbdefghij\"]",
+      "desc": "Standard length 10",
+      "output": "2"
+    },
+    {
+      "input": "[\"aaaaaaaaaaaaaaaaaaaa\",\"aaaaaaaaaaaaaaaaaaaa\"]",
+      "desc": "Edge: max length identical",
+      "output": "1"
+    },
+    {
+      "input": "[\"abcdabcdabcdabcdabcd\",\"badcbadcbadcbadcbadc\"]",
+      "desc": "Edge: max length swap",
+      "output": "2"
+    },
+    {
+      "input": "[\"aabbccdd\",\"bbaaccdd\",\"ccaabbdd\",\"ddaabbcc\"]",
+      "desc": "Standard length 8",
+      "output": "1"
+    },
+    {
+      "input": "[\"abcabcabc\",\"cbacbacba\",\"acbacbacb\"]",
+      "desc": "Standard length 9 same set",
+      "output": "2"
+    },
+    {
+      "input": "[\"xy\",\"yx\",\"xx\",\"yy\"]",
+      "desc": "Standard short",
+      "output": "4"
+    },
+    {
+      "input": "[\"aabc\",\"bcaa\",\"caab\",\"abca\"]",
+      "desc": "Standard 4-char",
+      "output": "2"
+    },
+    {
+      "input": "[\"abab\",\"baba\",\"abba\",\"baab\",\"aabb\",\"bbaa\"]",
+      "desc": "Standard all permutations",
+      "output": "3"
+    }
   ]
 }

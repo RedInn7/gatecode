@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,2,2,3,3,3,3,4]\n2",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "16"
     },
     {
       "input": "[1,2,3,4,5]\n2",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "0"
     },
     {
       "input": "[5,5,5]\n3",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "15"
     },
     {
       "input": "[1]\n1",
-      "desc": "Edge: n=1 k=1"
+      "desc": "Edge: n=1 k=1",
+      "output": "1"
     },
     {
       "input": "[1]\n2",
-      "desc": "Edge: k>freq"
+      "desc": "Edge: k>freq",
+      "output": "0"
     },
     {
       "input": "[1,1]\n1",
-      "desc": "Edge: k=1 all"
+      "desc": "Edge: k=1 all",
+      "output": "2"
     },
     {
       "input": "[1,1]\n2",
-      "desc": "Edge: k=2"
+      "desc": "Edge: k=2",
+      "output": "2"
     },
     {
       "input": "[100]\n1",
-      "desc": "Edge: max value"
+      "desc": "Edge: max value",
+      "output": "100"
     },
     {
       "input": "[1,1,1,1,1]\n1",
-      "desc": "Edge: k=1 all"
+      "desc": "Edge: k=1 all",
+      "output": "5"
     },
     {
       "input": "[1,1,1,1,1]\n5",
-      "desc": "Edge: k=n"
+      "desc": "Edge: k=n",
+      "output": "5"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n1",
-      "desc": "Standard: k=1"
+      "desc": "Standard: k=1",
+      "output": "55"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n10",
-      "desc": "Standard: k=high"
+      "desc": "Standard: k=high",
+      "output": "0"
     },
     {
       "input": "[567,590,699,-333,-853,-600,-631,489,-915,-449,-488,-866,490,-911,769,880,-536,334,-988,-687,-250,-853,85,995,-787,903,-652,458,610,304,589,-640,-22,923,237,-689,770,-949,-197,-784,608,-122,777,902,748,172,823,-659,433,-113,-897,939,-830,63,893,678,-189,-571,70,-506,838,-584,-482,-658,-403,485,893,645,173,759,549,-321]\n3",
-      "desc": "Regenerated: diverse at position 12"
+      "desc": "Regenerated: diverse at position 12",
+      "output": "0"
     },
     {
       "input": "[1,2,2,3,3,3]\n3",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "9"
     },
     {
       "input": "[100,100,100,100,1,1,1,1,1,1]\n3",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "[1,2,3]\n100",
-      "desc": "Edge: k larger than any freq"
+      "desc": "Edge: k larger than any freq",
+      "output": "0"
     },
     {
       "input": "[5,5,5,5,5,5,5,5]\n4",
-      "desc": "Standard: 8 div 4"
+      "desc": "Standard: 8 div 4",
+      "output": "40"
     },
     {
       "input": "[1,1,2,2,3,3,4,4,5,5]\n2",
-      "desc": "Standard: pairs"
+      "desc": "Standard: pairs",
+      "output": "30"
     },
     {
       "input": "[1,1,1,2,2,2,3,3,3]\n3",
-      "desc": "Standard: triples"
+      "desc": "Standard: triples",
+      "output": "18"
     },
     {
       "input": "[10,20,30,40,50,60,70,80,90,100,10,20,30]\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "120"
     }
   ]
 }

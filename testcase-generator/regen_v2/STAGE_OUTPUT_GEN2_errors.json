@@ -1384,5 +1384,29 @@
     "slug": "find-valid-pair-of-adjacent-digits-in-string",
     "fqid": 3438,
     "error": "Testcase 19 failed: RE (exit 1): nt call last):\n  File \"/tmp/tmp7u72mnis.py\", line 281, in <module>\n    _result = Solution().findValidPair(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp7u72mnis.py\", line 143, in findValidPair\n    for x in map(int, s):\nValueError: invalid literal for int() with base 10: 'h'\n"
+  },
+  {
+    "pid": 2073,
+    "slug": "super-ugly-number",
+    "fqid": 313,
+    "error": "Testcase 10 failed: RE (exit 1):  call last):\n  File \"/tmp/tmpvc6fiw9l.py\", line 285, in <module>\n    _result = Solution().nthSuperUglyNumber(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpvc6fiw9l.py\", line 146, in nthSuperUglyNumber\n    x = heappop(q)\n        ^^^^^^^^^^\nIndexError: index out of range\n"
+  },
+  {
+    "pid": 2093,
+    "slug": "student-attendance-record-ii",
+    "fqid": 552,
+    "error": "Testcase 2 failed: RE (exit 1): ^^^^^^\n  File \"/tmp/tmpyfobm6tb.py\", line 151, in dfs\n    ans += dfs(i + 1, j, 0)\n           ^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpyfobm6tb.py\", line 150, in dfs\n    ans += dfs(i + 1, j, k + 1)\n           ^^^^^^^^^^^^^^^^^^^^\nRecursionError: maximum recursion depth exceeded while calling a Python object\n"
+  },
+  {
+    "pid": 2087,
+    "slug": "minimum-path-cost-in-a-grid",
+    "fqid": 2304,
+    "error": "Testcase 8 failed: RE (exit 1): _result = Solution().minPathCost(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpahu0jj7l.py\", line 148, in minPathCost\n    g[j] = min(g[j], f[k] + moveCost[grid[i - 1][k]][j] + grid[i][j])\n                            ~~~~~~~~^^^^^^^^^^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 2090,
+    "slug": "similar-string-groups",
+    "fqid": 839,
+    "error": "Testcase 19 failed: RE (exit 1): \", line 304, in <module>\n    _result = Solution().numSimilarGroups(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphfsy_q7c.py\", line 165, in numSimilarGroups\n    n, m = len(strs), len(strs[0])\n                      ^^^^^^^^^^^^\nTypeError: object of type 'int' has no len()\n"
   }
 ]

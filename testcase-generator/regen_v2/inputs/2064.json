@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[81,781,156,-97],[-97,679,-498,749],[361,101,433,89],[-851,545,-834,390]]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "1396"
     },
     {
       "input": "[[4,3,2],[3,2,1]]",
-      "desc": "Standard: example 2 -1"
+      "desc": "Standard: example 2 -1",
+      "output": "-1"
     },
     {
       "input": "[[1,2],[3,4]]",
-      "desc": "Edge: 2x2"
+      "desc": "Edge: 2x2",
+      "output": "3"
     },
     {
       "input": "[[100000,1],[1,1]]",
-      "desc": "Edge: max value top-left"
+      "desc": "Edge: max value top-left",
+      "output": "0"
     },
     {
       "input": "[[1,100000],[1,100000]]",
-      "desc": "Edge: max bottom"
+      "desc": "Edge: max bottom",
+      "output": "99999"
     },
     {
       "input": "[[100000,100000],[1,100000]]",
-      "desc": "Standard: descend then ascend"
+      "desc": "Standard: descend then ascend",
+      "output": "99999"
     },
     {
       "input": "[[1,1],[1,1]]",
-      "desc": "Edge: all same 2x2"
+      "desc": "Edge: all same 2x2",
+      "output": "0"
     },
     {
       "input": "[[1,2,3],[4,5,6],[7,8,9]]",
-      "desc": "Standard: 3x3 ascending"
+      "desc": "Standard: 3x3 ascending",
+      "output": "8"
     },
     {
       "input": "[[9,8,7],[6,5,4],[3,2,1]]",
-      "desc": "Standard: 3x3 descending"
+      "desc": "Standard: 3x3 descending",
+      "output": "-1"
     },
     {
       "input": "[[1,2,3,4,5],[6,7,8,9,10]]",
-      "desc": "Standard: 2x5"
+      "desc": "Standard: 2x5",
+      "output": "9"
     },
     {
       "input": "[[10,9,8,7,6],[5,4,3,2,1]]",
-      "desc": "Standard: 2x5 desc"
+      "desc": "Standard: 2x5 desc",
+      "output": "-1"
     },
     {
       "input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1]]",
-      "desc": "Edge: all same 3x4"
+      "desc": "Edge: all same 3x4",
+      "output": "0"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5]]",
-      "desc": "Standard: 4x2"
+      "desc": "Standard: 4x2",
+      "output": "4"
     },
     {
       "input": "[[5,4,3],[4,3,2],[3,2,1]]",
-      "desc": "Standard: stepped down"
+      "desc": "Standard: stepped down",
+      "output": "-1"
     },
     {
       "input": "[[1,3,5,7],[2,4,6,8]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "7"
     },
     {
       "input": "[[100,1,100],[1,100,1],[100,1,100]]",
-      "desc": "Standard: checker"
+      "desc": "Standard: checker",
+      "output": "99"
     },
     {
       "input": "[[1,2,3],[2,3,4],[3,4,5]]",
-      "desc": "Standard: linear gradient"
+      "desc": "Standard: linear gradient",
+      "output": "4"
     },
     {
       "input": "[[10,20,30,40,50],[20,30,40,50,60],[30,40,50,60,70]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "60"
     },
     {
       "input": "[[5,5],[5,5],[5,5],[5,5]]",
-      "desc": "Edge: all same 4x2 -1"
+      "desc": "Edge: all same 4x2 -1",
+      "output": "0"
     },
     {
       "input": "[[1,100],[100,1]]",
-      "desc": "Edge: extremes"
+      "desc": "Edge: extremes",
+      "output": "99"
     }
   ]
 }

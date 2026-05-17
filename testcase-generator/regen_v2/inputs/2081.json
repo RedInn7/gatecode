@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 2000, lowercase letters",
   "input_format": "single line: s (string in quotes)",
   "testcases": [
-    {"input": "\"abcd\"", "desc": "Edge: no repeat"},
-    {"input": "\"abbaba\"", "desc": "Standard: example 2"},
-    {"input": "\"aabcaabdaab\"", "desc": "Standard: example 3"},
-    {"input": "\"a\"", "desc": "Edge: single char"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"ab\"", "desc": "Edge: 2 diff"},
-    {"input": "\"aaa\"", "desc": "Edge: 3 same"},
-    {"input": "\"aaaaaaa\"", "desc": "Edge: all same length 7"},
-    {"input": "\"abcabc\"", "desc": "Standard: half repeat"},
-    {"input": "\"abcdefghij\"", "desc": "Edge: all distinct"},
-    {"input": "\"banana\"", "desc": "Standard: classic"},
-    {"input": "\"mississippi\"", "desc": "Standard: many repeats"},
-    {"input": "\"abracadabra\"", "desc": "Standard"},
-    {"input": "\"abababab\"", "desc": "Standard: alternating"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "Standard: 10 a's"},
-    {"input": "\"abcdefghijabcdefghij\"", "desc": "Standard: doubled prefix"},
-    {"input": "\"zyxwvutsrq\"", "desc": "Standard: reverse alphabet"},
-    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Standard pangram"},
-    {"input": "\"aabbccddaabbccdd\"", "desc": "Standard: paired doubled"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress: 100 a's"}
+    {
+      "input": "\"abcd\"",
+      "desc": "Edge: no repeat",
+      "output": "0"
+    },
+    {
+      "input": "\"abbaba\"",
+      "desc": "Standard: example 2",
+      "output": "2"
+    },
+    {
+      "input": "\"aabcaabdaab\"",
+      "desc": "Standard: example 3",
+      "output": "3"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: single char",
+      "output": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same",
+      "output": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 diff",
+      "output": "0"
+    },
+    {
+      "input": "\"aaa\"",
+      "desc": "Edge: 3 same",
+      "output": "2"
+    },
+    {
+      "input": "\"aaaaaaa\"",
+      "desc": "Edge: all same length 7",
+      "output": "6"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Standard: half repeat",
+      "output": "3"
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Edge: all distinct",
+      "output": "0"
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard: classic",
+      "output": "3"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard: many repeats",
+      "output": "4"
+    },
+    {
+      "input": "\"abracadabra\"",
+      "desc": "Standard",
+      "output": "4"
+    },
+    {
+      "input": "\"abababab\"",
+      "desc": "Standard: alternating",
+      "output": "6"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "Standard: 10 a's",
+      "output": "9"
+    },
+    {
+      "input": "\"abcdefghijabcdefghij\"",
+      "desc": "Standard: doubled prefix",
+      "output": "10"
+    },
+    {
+      "input": "\"zyxwvutsrq\"",
+      "desc": "Standard: reverse alphabet",
+      "output": "0"
+    },
+    {
+      "input": "\"thequickbrownfoxjumpsoverthelazydog\"",
+      "desc": "Standard pangram",
+      "output": "3"
+    },
+    {
+      "input": "\"aabbccddaabbccdd\"",
+      "desc": "Standard: paired doubled",
+      "output": "8"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "Stress: 100 a's",
+      "output": "99"
+    }
   ]
 }

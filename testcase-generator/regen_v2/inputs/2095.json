@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,15,6,3]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "9"
     },
     {
       "input": "[1,2,3,4]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "0"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "0"
     },
     {
       "input": "[2000]",
-      "desc": "Edge: n=1 max"
+      "desc": "Edge: n=1 max",
+      "output": "1998"
     },
     {
       "input": "[9]",
-      "desc": "Edge: single digit value"
+      "desc": "Edge: single digit value",
+      "output": "0"
     },
     {
       "input": "[10]",
-      "desc": "Edge: 2-digit"
+      "desc": "Edge: 2-digit",
+      "output": "9"
     },
     {
       "input": "[1,1,1,1,1]",
-      "desc": "Edge: all 1s"
+      "desc": "Edge: all 1s",
+      "output": "0"
     },
     {
       "input": "[9,9,9,9,9]",
-      "desc": "Edge: all 9s"
+      "desc": "Edge: all 9s",
+      "output": "0"
     },
     {
       "input": "[2000,2000,2000,2000,2000]",
-      "desc": "Edge: max"
+      "desc": "Edge: max",
+      "output": "9990"
     },
     {
       "input": "[100,200,300,400,500]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1485"
     },
     {
       "input": "[1234,5678,9012,3456]",
-      "desc": "Standard 4-digit"
+      "desc": "Standard 4-digit",
+      "output": "19314"
     },
     {
       "input": "[1999,2000,1,1234,567]",
-      "desc": "Standard mixed"
+      "desc": "Standard mixed",
+      "output": "5742"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard 10"
+      "desc": "Standard 10",
+      "output": "9"
     },
     {
       "input": "[786,1958,1726,1933,1484,178,812,1133,323,781,1956,960,1752,1239,4,421,352,1559,1245,181,796,1140,261]",
-      "desc": "Regenerated: diverse at position 13"
+      "desc": "Regenerated: diverse at position 13",
+      "output": "22662"
     },
     {
       "input": "[11,22,33,44,55,66,77,88,99]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "405"
     },
     {
       "input": "[10,20,30,40,50,60,70,80,90,100,200,300,400,500,600,700,800,900,1000,2000]",
-      "desc": "Standard 20"
+      "desc": "Standard 20",
+      "output": "7857"
     },
     {
       "input": "[1,10,100,1000]",
-      "desc": "Standard powers of 10"
+      "desc": "Standard powers of 10",
+      "output": "1107"
     },
     {
       "input": "[999,99,9,9999]",
-      "desc": "Standard 9s"
+      "desc": "Standard 9s",
+      "output": "11016"
     },
     {
       "input": "[1357,2468,1029,3847]",
-      "desc": "Standard random"
+      "desc": "Standard random",
+      "output": "8631"
     },
     {
       "input": "[1000,2000,1500,1750,1250,1999,1888,1777,1666,1555,1444,1333,1222,1111,1000,900,800,700,600,500,400,300,200,100,50,25,10,5,1,2]",
-      "desc": "Stress 30"
+      "desc": "Stress 30",
+      "output": "26847"
     }
   ]
 }

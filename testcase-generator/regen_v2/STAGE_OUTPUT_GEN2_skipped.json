@@ -322,5 +322,11 @@
     "slug": "minimum-time-for-k-virus-variants-to-spread",
     "fqid": 1956,
     "reason": "No Python3 solution found for fqid=1956"
+  },
+  {
+    "pid": 2066,
+    "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+    "fqid": 3752,
+    "reason": "No Python3 solution found for fqid=3752"
   }
 ]

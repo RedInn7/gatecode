@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= nodes <= 10^4, -1000 <= Node.val <= 1000",
   "input_format": "single line: tree as JSON array (level-order with null)",
   "testcases": [
-    {"input": "[1,2,3,4]", "desc": "Standard: example with left grandchild"},
-    {"input": "[1,2,3,null,4]", "desc": "Standard: empty () for missing left"},
-    {"input": "[1]", "desc": "Edge: single node"},
-    {"input": "[0]", "desc": "Edge: zero root"},
-    {"input": "[-1000]", "desc": "Edge: min val"},
-    {"input": "[1000]", "desc": "Edge: max val"},
-    {"input": "[1,2]", "desc": "Edge: only left"},
-    {"input": "[1,null,2]", "desc": "Edge: only right"},
-    {"input": "[1,2,3]", "desc": "Standard: both children"},
-    {"input": "[1,null,2,null,3,null,4]", "desc": "Edge: right skew"},
-    {"input": "[1,2,null,3,null,4]", "desc": "Edge: left skew"},
-    {"input": "[5,3,8,1,4,7,9]", "desc": "Standard: full tree"},
-    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: complete depth 3"},
-    {"input": "[100,50,150,25,75,125,175,12,30,60,80,110,130,160,190]", "desc": "Standard: full depth 4"},
-    {"input": "[0,1,2,3,4,5,6,7,8,9]", "desc": "Standard: 10 nodes"},
-    {"input": "[-1,-2,-3,-4,-5,-6,-7]", "desc": "Standard: negatives"},
-    {"input": "[1,2,3,null,null,4,5]", "desc": "Standard: mixed null"},
-    {"input": "[1,2,3,4,null,null,5]", "desc": "Standard"},
-    {"input": "[7,7,7,7,7,7,7]", "desc": "Standard: all same"},
-    {"input": "[1,null,2,3]", "desc": "Edge: missing left has empty paren"}
+    {
+      "input": "[1,2,3,4]",
+      "desc": "Standard: example with left grandchild",
+      "output": "\"1(2(4))(3)\""
+    },
+    {
+      "input": "[1,2,3,null,4]",
+      "desc": "Standard: empty () for missing left",
+      "output": "\"1(2()(4))(3)\""
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single node",
+      "output": "\"1\""
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: zero root",
+      "output": "\"0\""
+    },
+    {
+      "input": "[-1000]",
+      "desc": "Edge: min val",
+      "output": "\"-1000\""
+    },
+    {
+      "input": "[1000]",
+      "desc": "Edge: max val",
+      "output": "\"1000\""
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: only left",
+      "output": "\"1(2)\""
+    },
+    {
+      "input": "[1,null,2]",
+      "desc": "Edge: only right",
+      "output": "\"1()(2)\""
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Standard: both children",
+      "output": "\"1(2)(3)\""
+    },
+    {
+      "input": "[1,null,2,null,3,null,4]",
+      "desc": "Edge: right skew",
+      "output": "\"1()(2()(3()(4)))\""
+    },
+    {
+      "input": "[1,2,null,3,null,4]",
+      "desc": "Edge: left skew",
+      "output": "\"1(2(3(4)))\""
+    },
+    {
+      "input": "[5,3,8,1,4,7,9]",
+      "desc": "Standard: full tree",
+      "output": "\"5(3(1)(4))(8(7)(9))\""
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "desc": "Standard: complete depth 3",
+      "output": "\"1(2(4)(5))(3(6)(7))\""
+    },
+    {
+      "input": "[100,50,150,25,75,125,175,12,30,60,80,110,130,160,190]",
+      "desc": "Standard: full depth 4",
+      "output": "\"100(50(25(12)(30))(75(60)(80)))(150(125(110)(130))(175(160)(190)))\""
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9]",
+      "desc": "Standard: 10 nodes",
+      "output": "\"0(1(3(7)(8))(4(9)))(2(5)(6))\""
+    },
+    {
+      "input": "[-1,-2,-3,-4,-5,-6,-7]",
+      "desc": "Standard: negatives",
+      "output": "\"-1(-2(-4)(-5))(-3(-6)(-7))\""
+    },
+    {
+      "input": "[1,2,3,null,null,4,5]",
+      "desc": "Standard: mixed null",
+      "output": "\"1(2)(3(4)(5))\""
+    },
+    {
+      "input": "[1,2,3,4,null,null,5]",
+      "desc": "Standard",
+      "output": "\"1(2(4))(3()(5))\""
+    },
+    {
+      "input": "[7,7,7,7,7,7,7]",
+      "desc": "Standard: all same",
+      "output": "\"7(7(7)(7))(7(7)(7))\""
+    },
+    {
+      "input": "[1,null,2,3]",
+      "desc": "Edge: missing left has empty paren",
+      "output": "\"1()(2(3))\""
+    }
   ]
 }
