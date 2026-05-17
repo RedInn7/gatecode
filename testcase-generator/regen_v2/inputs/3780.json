@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"getAllTasks\",\"getAllTasks\",\"addTask\",\"getTasksForTag\",\"completeTask\",\"completeTask\",\"getTasksForTag\",\"getAllTasks\"]\n[[],[1,\"Task1\",50,[]],[1,\"Task2\",100,[\"P1\"]],[1],[5],[1,\"Task3\",30,[\"P1\"]],[1,\"P1\"],[5,1],[1,2],[1,\"P1\"],[1]]",
-      "desc": "Example 1"
+      "desc": "Example 1",
+      "output": "[null,1,2,[\"Task1\",\"Task2\"],[],3,[\"Task3\",\"Task2\"],null,null,[\"Task3\"],[\"Task3\",\"Task1\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"getAllTasks\"]\n[[],[1,\"a\",1,[]],[1]]",
-      "desc": "Edge: single task"
+      "desc": "Edge: single task",
+      "output": "[null,1,[\"a\"]]"
     },
     {
       "input": "[\"TodoList\",\"getAllTasks\"]\n[[],[1]]",
-      "desc": "Edge: no tasks"
+      "desc": "Edge: no tasks",
+      "output": "[null,[]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"completeTask\",\"getAllTasks\"]\n[[],[1,\"a\",1,[]],[1,1],[1]]",
-      "desc": "Edge: add complete"
+      "desc": "Edge: add complete",
+      "output": "[null,1,null,[]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"getAllTasks\"]\n[[],[1,\"first\",10,[]],[1,\"second\",5,[]],[1]]",
-      "desc": "Standard order by due"
+      "desc": "Standard order by due",
+      "output": "[null,1,2,[\"second\",\"first\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"getTasksForTag\"]\n[[],[1,\"a\",10,[\"work\"]],[1,\"b\",20,[\"home\"]],[1,\"work\"]]",
-      "desc": "Standard tag filter"
+      "desc": "Standard tag filter",
+      "output": "[null,1,2,[\"a\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"getTasksForTag\"]\n[[],[1,\"a\",10,[\"x\",\"y\"]],[1,\"b\",20,[\"y\"]],[1,\"c\",30,[\"x\"]],[1,\"y\"]]",
-      "desc": "Standard multi tags"
+      "desc": "Standard multi tags",
+      "output": "[null,1,2,3,[\"a\",\"b\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"completeTask\",\"getAllTasks\"]\n[[],[1,\"a\",10,[]],[1,\"b\",20,[]],[1,\"c\",30,[]],[1,2],[1]]",
-      "desc": "Standard complete middle"
+      "desc": "Standard complete middle",
+      "output": "[null,1,2,3,null,[\"a\",\"c\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"getAllTasks\",\"getAllTasks\"]\n[[],[1,\"a\",5,[]],[2,\"b\",3,[]],[1],[2]]",
-      "desc": "Standard multi user"
+      "desc": "Standard multi user",
+      "output": "[null,1,2,[\"a\"],[\"b\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"completeTask\",\"completeTask\"]\n[[],[1,\"a\",1,[]],[1,1],[1,1]]",
-      "desc": "Standard complete twice"
+      "desc": "Standard complete twice",
+      "output": "[null,1,null,null]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"getAllTasks\"]\n[[],[1,\"e\",50,[]],[1,\"d\",40,[]],[1,\"c\",30,[]],[1,\"b\",20,[]],[1,\"a\",10,[]],[1]]",
-      "desc": "Standard 5 reverse order"
+      "desc": "Standard 5 reverse order",
+      "output": "[null,1,2,3,4,5,[\"a\",\"b\",\"c\",\"d\",\"e\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"getTasksForTag\"]\n[[],[1,\"x\",1,[]],[1,\"missing\"]]",
-      "desc": "Standard missing tag"
+      "desc": "Standard missing tag",
+      "output": "[null,1,[]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"completeTask\",\"completeTask\",\"completeTask\",\"getAllTasks\"]\n[[],[1,\"a\",1,[\"t\"]],[1,\"b\",2,[\"t\"]],[1,\"c\",3,[\"t\"]],[1,1],[1,2],[1,3],[1]]",
-      "desc": "Standard all complete"
+      "desc": "Standard all complete",
+      "output": "[null,1,2,3,null,null,null,[]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"getAllTasks\"]\n[[],[1,\"a\",10,[\"x\"]],[1,\"b\",20,[\"y\"]],[1,\"c\",30,[\"z\"]],[1,\"d\",40,[\"x\",\"y\"]],[1,\"e\",50,[\"y\",\"z\"]],[1,\"f\",60,[\"x\",\"z\"]],[1,\"g\",70,[\"x\",\"y\",\"z\"]],[1,\"h\",80,[]],[1,\"i\",90,[\"x\"]],[1,\"j\",100,[\"y\"]],[1]]",
-      "desc": "Standard 10 tasks"
+      "desc": "Standard 10 tasks",
+      "output": "[null,1,2,3,4,5,6,7,8,9,10,[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"getTasksForTag\",\"completeTask\",\"getTasksForTag\"]\n[[],[1,\"first\",1,[\"a\"]],[1,\"second\",2,[\"a\"]],[1,\"a\"],[1,1],[1,\"a\"]]",
-      "desc": "Standard tag after complete"
+      "desc": "Standard tag after complete",
+      "output": "[null,1,2,[\"first\",\"second\"],null,[\"second\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"getTasksForTag\",\"getAllTasks\"]\n[[],[1,\"task1\",50,[\"P1\",\"urgent\"]],[1,\"task2\",10,[\"P2\"]],[1,\"task3\",100,[\"P1\"]],[1,\"task4\",80,[\"urgent\"]],[1,\"task5\",70,[\"P1\",\"urgent\"]],[1,\"P1\"],[1]]",
-      "desc": "Standard mixed tags"
+      "desc": "Standard mixed tags",
+      "output": "[null,1,2,3,4,5,[\"task1\",\"task5\",\"task3\"],[\"task2\",\"task1\",\"task5\",\"task4\",\"task3\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"completeTask\",\"getTasksForTag\"]\n[[],[1,\"a\",5,[\"t1\",\"t2\"]],[1,\"b\",3,[\"t1\"]],[1,\"c\",7,[\"t2\"]],[1,2],[1,\"t1\"]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[null,1,2,3,null,[\"a\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"getAllTasks\",\"addTask\",\"completeTask\",\"getAllTasks\",\"addTask\",\"completeTask\",\"getAllTasks\"]\n[[],[1,\"a\",10,[]],[1],[1,\"b\",5,[]],[1,2],[1],[1,\"c\",20,[]],[1,1],[1]]",
-      "desc": "Standard ops mix"
+      "desc": "Standard ops mix",
+      "output": "[null,1,[\"a\"],2,null,[\"a\"],3,null,[\"c\"]]"
     },
     {
       "input": "[\"TodoList\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"addTask\",\"getAllTasks\",\"completeTask\",\"completeTask\",\"completeTask\",\"getAllTasks\"]\n[[],[1,\"t1\",1,[]],[1,\"t2\",2,[]],[1,\"t3\",3,[]],[1,\"t4\",4,[]],[1,\"t5\",5,[]],[1,\"t6\",6,[]],[1,\"t7\",7,[]],[1,\"t8\",8,[]],[1,\"t9\",9,[]],[1,\"t10\",10,[]],[1,\"t11\",11,[]],[1,\"t12\",12,[]],[1],[1,1],[1,5],[1,12],[1]]",
-      "desc": "Stress 12 tasks"
+      "desc": "Stress 12 tasks",
+      "output": "[null,1,2,3,4,5,6,7,8,9,10,11,12,[\"t1\",\"t2\",\"t3\",\"t4\",\"t5\",\"t6\",\"t7\",\"t8\",\"t9\",\"t10\",\"t11\",\"t12\"],null,null,null,[\"t2\",\"t3\",\"t4\",\"t6\",\"t7\",\"t8\",\"t9\",\"t10\",\"t11\"]]"
     },
     {
       "input": "[825,-816,-882,-289,-764,-49,-125,72,765,-270,-676,208,-175,-439,175,556,594,851,322,-202,-545,-55,585,357,-557,285,27,57,-173,-498,-1000,275,684,-144,571,165,-999,-549,391,-367,-60,378,-478,380,477,-630,88,72,362,368,484,733,-641,729,-831,331,-616,-885,738,-313,-325,476,-246,-527,-565,-24,-798,728,376,963,-421,-100,-594,-79,-588,-904,-81,-626,790,-588,-70,199,400,676,-729,-47,451,-662,-873,-812,837,-367,434,-768,730,187,100,619,630,966]\n[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]",

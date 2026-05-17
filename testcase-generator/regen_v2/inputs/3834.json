@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[2,2,1]]",
-      "desc": "Example 1"
+      "desc": "Example 1",
+      "output": "5"
     },
     {
       "input": "[[2,2,2],[3,4,1]]",
-      "desc": "Example 2"
+      "desc": "Example 2",
+      "output": "16"
     },
     {
       "input": "[[1,1,1]]",
-      "desc": "Edge: minimum r=1 at (1,1)"
+      "desc": "Edge: minimum r=1 at (1,1)",
+      "output": "5"
     },
     {
       "input": "[[100,100,100]]",
-      "desc": "Edge: large radius at max"
+      "desc": "Edge: large radius at max",
+      "output": "31417"
     },
     {
       "input": "[[50,50,50]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "7845"
     },
     {
       "input": "[[10,10,1],[20,20,1],[30,30,1]]",
-      "desc": "Standard disjoint"
+      "desc": "Standard disjoint",
+      "output": "15"
     },
     {
       "input": "[[5,5,5],[10,10,10],[20,20,20]]",
-      "desc": "Standard nested"
+      "desc": "Standard nested",
+      "output": "1327"
     },
     {
       "input": "[[5,5,3],[8,5,3]]",
-      "desc": "Standard overlapping"
+      "desc": "Standard overlapping",
+      "output": "46"
     },
     {
       "input": "[[1,1,1],[2,2,2],[3,3,3]]",
-      "desc": "Standard chain"
+      "desc": "Standard chain",
+      "output": "33"
     },
     {
       "input": "[[50,50,10],[60,50,10],[55,55,5]]",
-      "desc": "Standard cluster"
+      "desc": "Standard cluster",
+      "output": "509"
     },
     {
       "input": "[[10,10,5],[10,10,5],[10,10,5]]",
-      "desc": "Edge: duplicates"
+      "desc": "Edge: duplicates",
+      "output": "81"
     },
     {
       "input": "[[1,1,1],[100,100,1]]",
-      "desc": "Standard far apart"
+      "desc": "Standard far apart",
+      "output": "10"
     },
     {
       "input": "[[50,50,50],[50,50,40],[50,50,30],[50,50,20],[50,50,10]]",
-      "desc": "Standard concentric"
+      "desc": "Standard concentric",
+      "output": "7845"
     },
     {
       "input": "[[10,10,5],[20,10,5],[30,10,5],[40,10,5],[50,10,5]]",
-      "desc": "Standard line"
+      "desc": "Standard line",
+      "output": "401"
     },
     {
       "input": "[[25,25,15],[75,25,15],[25,75,15],[75,75,15]]",
-      "desc": "Standard 4 quadrants"
+      "desc": "Standard 4 quadrants",
+      "output": "2836"
     },
     {
       "input": "[[1,1,1],[3,1,1],[5,1,1],[7,1,1],[9,1,1],[11,1,1],[13,1,1],[15,1,1]]",
-      "desc": "Standard line disjoint 8"
+      "desc": "Standard line disjoint 8",
+      "output": "33"
     },
     {
       "input": "[[50,50,50],[51,50,50],[52,50,50],[53,50,50],[54,50,50]]",
-      "desc": "Standard mostly overlap"
+      "desc": "Standard mostly overlap",
+      "output": "8249"
     },
     {
       "input": "[[20,20,10],[30,20,10],[40,20,10],[50,20,10],[60,20,10],[70,20,10],[80,20,10],[20,30,10],[30,30,10],[40,30,10]]",
-      "desc": "Stress 10 circles"
+      "desc": "Stress 10 circles",
+      "output": "1836"
     },
     {
       "input": "[[10,10,1],[11,11,1],[12,12,1],[13,13,1],[14,14,1],[15,15,1],[16,16,1],[17,17,1],[18,18,1],[19,19,1],[20,20,1],[21,21,1],[22,22,1],[23,23,1],[24,24,1],[25,25,1],[26,26,1],[27,27,1],[28,28,1],[29,29,1]]",
-      "desc": "Stress 20 circles chain"
+      "desc": "Stress 20 circles chain",
+      "output": "62"
     },
     {
       "input": "[[445,10,-550,410,79,265],[47,181,-410,894,-987,-464]]",

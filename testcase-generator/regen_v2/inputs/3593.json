@@ -6,11 +6,13 @@
   "testcases": [
     {
       "input": "1",
-      "desc": "Edge: n=1 minimum"
+      "desc": "Edge: n=1 minimum",
+      "output": "0"
     },
     {
       "input": "0",
-      "desc": "Edge: n=0"
+      "desc": "Edge: n=0",
+      "output": "0"
     },
     {
       "input": "1000000000",
@@ -22,43 +24,53 @@
     },
     {
       "input": "2",
-      "desc": "Edge: n=2"
+      "desc": "Edge: n=2",
+      "output": "1"
     },
     {
       "input": "810801",
-      "desc": "Standard: n=810801"
+      "desc": "Standard: n=810801",
+      "output": "405400"
     },
     {
       "input": "444153",
-      "desc": "Standard: n=444153"
+      "desc": "Standard: n=444153",
+      "output": "222076"
     },
     {
       "input": "85457",
-      "desc": "Standard: n=85457"
+      "desc": "Standard: n=85457",
+      "output": "42728"
     },
     {
       "input": "930948",
-      "desc": "Standard: n=930948"
+      "desc": "Standard: n=930948",
+      "output": "465473"
     },
     {
       "input": "77228",
-      "desc": "Standard: n=77228"
+      "desc": "Standard: n=77228",
+      "output": "38614"
     },
     {
       "input": "240986",
-      "desc": "Standard: n=240986"
+      "desc": "Standard: n=240986",
+      "output": "120492"
     },
     {
       "input": "64104",
-      "desc": "Standard: n=64104"
+      "desc": "Standard: n=64104",
+      "output": "32051"
     },
     {
       "input": "324995",
-      "desc": "Standard: n=324995"
+      "desc": "Standard: n=324995",
+      "output": "162497"
     },
     {
       "input": "1000000",
-      "desc": "Stress: large n"
+      "desc": "Stress: large n",
+      "output": "499999"
     },
     {
       "input": "100000000",

@@ -6,59 +6,73 @@
   "testcases": [
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[10,20],[15,25],[20,30]]",
-      "desc": "Example 1"
+      "desc": "Example 1",
+      "output": "[null,true,false,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\"]\n[[],[0,1]]",
-      "desc": "Edge: single book"
+      "desc": "Edge: single book",
+      "output": "[null,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[0,10],[10,20]]",
-      "desc": "Edge: adjacent (half-open)"
+      "desc": "Edge: adjacent (half-open)",
+      "output": "[null,true,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[10,20],[10,20]]",
-      "desc": "Edge: exact overlap"
+      "desc": "Edge: exact overlap",
+      "output": "[null,true,false]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[5,10],[3,7]]",
-      "desc": "Standard partial overlap"
+      "desc": "Standard partial overlap",
+      "output": "[null,true,false]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[5,10],[7,12]]",
-      "desc": "Standard tail overlap"
+      "desc": "Standard tail overlap",
+      "output": "[null,true,false]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[5,10],[3,15]]",
-      "desc": "Standard contain"
+      "desc": "Standard contain",
+      "output": "[null,true,false]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\"]\n[[],[1,2],[3,4],[5,6],[7,8]]",
-      "desc": "Standard disjoint"
+      "desc": "Standard disjoint",
+      "output": "[null,true,true,true,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[20,30],[30,40],[40,50]]",
-      "desc": "Standard touching"
+      "desc": "Standard touching",
+      "output": "[null,true,true,true,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[0,1000000000],[0,1],[999999999,1000000000]]",
-      "desc": "Edge: max range"
+      "desc": "Edge: max range",
+      "output": "[null,true,false,false]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[30,40],[50,60],[70,80],[15,18]]",
-      "desc": "Standard fits"
+      "desc": "Standard fits",
+      "output": "[null,true,true,true,true,false]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[30,40],[50,60],[70,80],[15,35]]",
-      "desc": "Standard overlap crossing"
+      "desc": "Standard overlap crossing",
+      "output": "[null,true,true,true,true,false]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\"]\n[[],[100,200],[150,160],[180,250],[300,400]]",
-      "desc": "Standard nested overlap"
+      "desc": "Standard nested overlap",
+      "output": "[null,true,false,false,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[5,10],[10,15],[15,20]]",
-      "desc": "Standard chain touch"
+      "desc": "Standard chain touch",
+      "output": "[null,true,true,true]"
     },
     {
       "input": "[-598,390,-307,227,157,674,727,-820,101,344,108,486,237,592,720,457,982,736,-635,671,-113,-226,344,904,-999,363,-970,-395,76,478,694,463,-547,-879,-312,368,626,160,-498,-421,694,415]\n[[],[],[],[]]",
@@ -66,23 +80,28 @@
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[47,50],[33,41],[39,45],[33,42],[25,32]]",
-      "desc": "Killer chain conflicts"
+      "desc": "Killer chain conflicts",
+      "output": "[null,true,true,false,false,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[37,46],[42,47],[7,12],[6,18],[7,11],[44,46],[16,18]]",
-      "desc": "Killer random overlapping"
+      "desc": "Killer random overlapping",
+      "output": "[null,true,false,true,false,false,false,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\"]\n[[],[999999998,999999999]]",
-      "desc": "Edge near max"
+      "desc": "Edge near max",
+      "output": "[null,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\"]\n[[],[0,500000000],[500000000,1000000000]]",
-      "desc": "Standard halves"
+      "desc": "Standard halves",
+      "output": "[null,true,true]"
     },
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[0,10],[10,20],[20,30],[30,40],[40,50],[5,8],[15,18],[25,28],[35,38],[45,48]]",
-      "desc": "Stress 10 ops"
+      "desc": "Stress 10 ops",
+      "output": "[null,true,true,true,true,true,false,false,false,false,false]"
     }
   ]
 }
