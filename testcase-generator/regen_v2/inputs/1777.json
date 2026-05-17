@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "13",
-      "desc": "Standard: example"
+      "desc": "Standard: example",
+      "output": "\"A91P1\""
     },
     {
       "input": "1",
-      "desc": "Edge: min"
+      "desc": "Edge: min",
+      "output": "\"11\""
     },
     {
       "input": "10",
-      "desc": "Standard: n=10"
+      "desc": "Standard: n=10",
+      "output": "\"64RS\""
     },
     {
       "input": "15",
-      "desc": "Standard: 0xF"
+      "desc": "Standard: 0xF",
+      "output": "\"E12LR\""
     },
     {
       "input": "16",
-      "desc": "Standard: 0x10"
+      "desc": "Standard: 0x10",
+      "output": "\"10035S\""
     },
     {
       "input": "35",
-      "desc": "Standard: Z in base36"
+      "desc": "Standard: Z in base36",
+      "output": "\"4C9X2Z\""
     },
     {
       "input": "36",
-      "desc": "Standard: 10 in base36"
+      "desc": "Standard: 10 in base36",
+      "output": "\"5101000\""
     },
     {
       "input": "100",
-      "desc": "Standard: n=100"
+      "desc": "Standard: n=100",
+      "output": "\"2710LFLS\""
     },
     {
       "input": "255",
-      "desc": "Standard: 0xFF"
+      "desc": "Standard: 0xFF",
+      "output": "\"FE019VE9R\""
     },
     {
       "input": "256",
-      "desc": "Standard: 0x100"
+      "desc": "Standard: 0x100",
+      "output": "\"100009ZLDS\""
     },
     {
       "input": "1000",
-      "desc": "Stress: n=1000"
+      "desc": "Stress: n=1000",
+      "output": "\"F4240GJDGXS\""
     },
     {
       "input": "1296",
-      "desc": "Standard: 36^2"
+      "desc": "Standard: 36^2",
+      "output": "\"19A1001000000\""
     },
     {
       "input": "4096",
-      "desc": "Standard: 16^3"
+      "desc": "Standard: 16^3",
+      "output": "\"1000000VKHSVLS\""
     },
     {
       "input": "10000",
-      "desc": "Stress: n=10000"
+      "desc": "Stress: n=10000",
+      "output": "\"5F5E100CRE66I9S\""
     },
     {
       "input": "65535",
-      "desc": "Standard: 0xFFFF"
+      "desc": "Standard: 0xFFFF",
+      "output": "\"FFFE00012RRPWEFZLR\""
     },
     {
       "input": "65536",
-      "desc": "Standard: 0x10000"
+      "desc": "Standard: 0x10000",
+      "output": "\"1000000002RRVTHNXTS\""
     },
     {
       "input": "100000",
-      "desc": "Stress: n=100000"
+      "desc": "Stress: n=100000",
+      "output": "\"2540BE4009UGXNORJLS\""
     },
     {
       "input": "500000",
-      "desc": "Stress: n=500000"
+      "desc": "Stress: n=500000",
+      "output": "\"3A35294400Y6SSV8ZN2M8\""
     },
     {
       "input": "999999",
-      "desc": "Stress: near max"
+      "desc": "Stress: near max",
+      "output": "\"E8D4868B817LIDCNTGDCXR\""
     },
     {
       "input": "1000000",
-      "desc": "Killer: n=10^6 max"
+      "desc": "Killer: n=10^6 max",
+      "output": "\"E8D4A510007LIEEXZX4KXS\""
     }
   ]
 }

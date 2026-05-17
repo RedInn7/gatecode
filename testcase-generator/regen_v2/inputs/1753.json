@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"b\"\n\"q\"",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "\"\""
     },
     {
       "input": "\"h\"\n\"o\"",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "\"\""
     },
     {
       "input": "\"i\"\n\"f\"",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "\"\""
     },
     {
       "input": "\"l\"\n\"h\"",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "\"\""
     },
     {
       "input": "\"w\"\n\"k\"",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "\"\""
     },
     {
       "input": "\"lmhvyjmunb\"\n\"rmf\"",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "\"\""
     },
     {
       "input": "\"easpslyypbn\"\n\"vjpyd\"",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "\"\""
     },
     {
       "input": "\"npdsqgqt\"\n\"rxzfpzwrczi\"",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "\"\""
     },
     {
       "input": "\"asen\"\n\"arznknwproguto\"",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "\"\""
     },
     {
       "input": "\"fpiouznrb\"\n\"wkcyrarc\"",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "\"\""
     },
     {
       "input": "\"liymlxfvvgdic\"\n\"pljkm\"",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "\"\""
     },
     {
       "input": "\"wpq\"\n\"aofewtz\"",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "\"\""
     },
     {
       "input": "\"yapltccoamjai\"\n\"mklla\"",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "\"\""
     },
     {
       "input": "\"xgfrypiszxm\"\n\"rre\"",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "\"\""
     },
     {
       "input": "\"omqfienvcrm\"\n\"qdwceejrk\"",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "\"\""
     },
     {
       "input": "\"ekxafnzt\"\n\"wvagoime\"",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "\"\""
     },
     {
       "input": "\"suzmarwovkwt\"\n\"bdpmjnam\"",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "\"\""
     },
     {
       "input": "\"rypcxof\"\n\"tviuiufykndxi\"",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "\"\""
     },
     {
       "input": "\"dh\"\n\"kzdlwcp\"",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "\"\""
     },
     {
       "input": "\"ck\"\n\"bierxeosdmdtjs\"",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "\"\""
     }
   ]
 }

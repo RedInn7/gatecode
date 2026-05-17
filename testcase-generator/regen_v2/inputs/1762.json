@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"i\"",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "1"
     },
     {
       "input": "\"r\"",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "1"
     },
     {
       "input": "\"z\"",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "1"
     },
     {
       "input": "\"e\"",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "1"
     },
     {
       "input": "\"e\"",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "1"
     },
     {
       "input": "\"bv\"",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "2"
     },
     {
       "input": "\"wiu\"",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "3"
     },
     {
       "input": "\"mi\"",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "2"
     },
     {
       "input": "\"peqm\"",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "4"
     },
     {
       "input": "\"xdnkgcqws\"",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "9"
     },
     {
       "input": "\"yejpsxioege\"",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "11"
     },
     {
       "input": "\"lqtsar\"",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "6"
     },
     {
       "input": "\"pjbceadms\"",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "9"
     },
     {
       "input": "\"kajrobjxnmbpf\"",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "13"
     },
     {
       "input": "\"maupnehtcuf\"",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "11"
     },
     {
       "input": "\"metgbfzlfpxjkow\"",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "15"
     },
     {
       "input": "\"dcauzwydytv\"",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "11"
     },
     {
       "input": "\"zelwobngcxqla\"",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "13"
     },
     {
       "input": "\"jetia\"",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "5"
     },
     {
       "input": "\"eglyzwbvy\"",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "9"
     }
   ]
 }

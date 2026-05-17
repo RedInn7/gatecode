@@ -1078,5 +1078,53 @@
     "slug": "cycle-length-queries-in-a-tree",
     "fqid": 2509,
     "error": "Testcase 5 failed: RE (exit 1): \"/tmp/tmp45idew19.py\", line 285, in <module>\n    _result = Solution().cycleLengthQueries(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp45idew19.py\", line 143, in cycleLengthQueries\n    for a, b in queries:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1747,
+    "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
+    "fqid": 1579,
+    "error": "Testcase 0 failed: RE (exit 1): 4.py\", line 314, in <module>\n    _result = Solution().maxNumEdgesToRemove(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_mritfu4.py\", line 170, in maxNumEdgesToRemove\n    for t, u, v in edges:\n        ^^^^^^^\nValueError: not enough values to unpack (expected 3, got 2)\n"
+  },
+  {
+    "pid": 1763,
+    "slug": "gas-station",
+    "fqid": 134,
+    "error": "Testcase 6 failed: RE (exit 1):  \"/tmp/tmpip5s3ouc.py\", line 286, in <module>\n    _result = Solution().canCompleteCircuit(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpip5s3ouc.py\", line 146, in canCompleteCircuit\n    s += gas[j] - cost[j]\n                  ~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1750,
+    "slug": "match-alphanumerical-pattern-in-matrix-i",
+    "fqid": 3078,
+    "error": "Testcase 19 failed: RE (exit 1): .findPattern(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp0jui9hya.py\", line 164, in findPattern\n    if check(i, j):\n       ^^^^^^^^^^^\n  File \"/tmp/tmp0jui9hya.py\", line 148, in check\n    if pattern[a][b].isdigit():\n       ~~~~~~~~~~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1772,
+    "slug": "longest-path-with-different-adjacent-characters",
+    "fqid": 2246,
+    "error": "Testcase 11 failed: RE (exit 1):  290, in <module>\n    _result = Solution().longestPath(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp5h_o9l2d.py\", line 156, in longestPath\n    dfs(0)\n  File \"/tmp/tmp5h_o9l2d.py\", line 147, in dfs\n    if s[i] != s[j]:\n               ~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1770,
+    "slug": "generate-binary-strings-without-adjacent-zeros",
+    "fqid": 3211,
+    "error": "Testcase 1 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1769,
+    "slug": "find-the-maximum-length-of-a-good-subsequence-ii",
+    "fqid": 3177,
+    "error": "Testcase 2 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1776,
+    "slug": "patching-array",
+    "fqid": 330,
+    "error": "Testcase 2 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1755,
+    "slug": "tallest-billboard",
+    "fqid": 956,
+    "error": "Testcase 18 failed: TLE (>15s)"
   }
 ]

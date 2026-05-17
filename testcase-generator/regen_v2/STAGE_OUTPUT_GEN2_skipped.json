@@ -256,5 +256,17 @@
     "slug": "manhattan-distances-of-all-arrangements-of-pieces",
     "fqid": 3426,
     "reason": "No Python3 solution found for fqid=3426"
+  },
+  {
+    "pid": 1760,
+    "slug": "check-if-digits-are-equal-in-string-after-operations-ii",
+    "fqid": 3463,
+    "reason": "No Python3 solution found for fqid=3463"
+  },
+  {
+    "pid": 1768,
+    "slug": "maximum-partition-factor",
+    "fqid": 3710,
+    "reason": "No Python3 solution found for fqid=3710"
   }
 ]
