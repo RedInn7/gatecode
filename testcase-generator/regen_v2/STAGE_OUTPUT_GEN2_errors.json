@@ -886,5 +886,53 @@
     "slug": "find-the-least-frequent-digit",
     "fqid": 3663,
     "error": "Testcase 0 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1615,
+    "slug": "separate-squares-ii",
+    "fqid": 3454,
+    "error": "Testcase 0 failed: RE (exit 1): rtyvmri.py\", line 349, in <module>\n    _result = Solution().separateSquares(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphrtyvmri.py\", line 190, in separateSquares\n    for x1, y1, l in squares:\n        ^^^^^^^^^\nValueError: not enough values to unpack (expected 3, got 2)\n"
+  },
+  {
+    "pid": 1634,
+    "slug": "meeting-rooms-iii",
+    "fqid": 2402,
+    "error": "Testcase 0 failed: RE (exit 1): all last):\n  File \"/tmp/tmpwzs0puc7.py\", line 295, in <module>\n    _result = Solution().mostBooked(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpwzs0puc7.py\", line 155, in mostBooked\n    time_end, i = heappop(busy)\n                  ^^^^^^^^^^^^^\nIndexError: index out of range\n"
+  },
+  {
+    "pid": 1616,
+    "slug": "maximum-erasure-value",
+    "fqid": 1695,
+    "error": "Testcase 1 failed: RE (exit 1): le \"/tmp/tmpvslntxkt.py\", line 282, in <module>\n    _result = Solution().maximumUniqueSubarray(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpvslntxkt.py\", line 146, in maximumUniqueSubarray\n    j = max(j, d[v])\n               ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1614,
+    "slug": "difference-between-maximum-and-minimum-price-sum",
+    "fqid": 2538,
+    "error": "Testcase 5 failed: RE (exit 1): st recent call last):\n  File \"/tmp/tmpid1ee2lc.py\", line 292, in <module>\n    _result = Solution().maxOutput(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpid1ee2lc.py\", line 154, in maxOutput\n    for a, b in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1640,
+    "slug": "find-the-integer-added-to-array-ii",
+    "fqid": 3132,
+    "error": "Testcase 0 failed: RE (exit 1): tmpjohs188p.py\", line 292, in <module>\n    _result = Solution().minimumAddedInteger(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpjohs188p.py\", line 156, in minimumAddedInteger\n    x = nums2[0] - nums1[i]\n                   ~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1646,
+    "slug": "maximum-difference-between-even-and-odd-frequency-ii",
+    "fqid": 3445,
+    "error": "Testcase 0 failed: RE (exit 1): p/tmprjvj40fr.py\", line 294, in <module>\n    _result = Solution().maxDifference(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmprjvj40fr.py\", line 142, in maxDifference\n    s = list(map(int, S))\n        ^^^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'n'\n"
+  },
+  {
+    "pid": 1645,
+    "slug": "sentence-similarity-ii",
+    "fqid": 737,
+    "error": "Testcase 12 failed: RE (exit 1): .py\", line 307, in <module>\n    _result = Solution().areSentencesSimilarTwo(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpso62yc3n.py\", line 156, in areSentencesSimilarTwo\n    for a, b in similarPairs:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1613,
+    "slug": "determine-the-minimum-sum-of-a-k-avoiding-array",
+    "fqid": 2829,
+    "error": "Testcase 4 failed: TLE (>15s)"
   }
 ]

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[\"pd\"]",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "0"
     },
     {
       "input": "[\"z\"]",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "0"
     },
     {
       "input": "[\"ud\"]",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "0"
     },
     {
       "input": "[\"rlhbq\"]",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "0"
     },
     {
       "input": "[\"yjidd\"]",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "0"
     },
     {
       "input": "[\"pgu\",\"tliss\"]",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "15"
     },
     {
       "input": "[\"dcco\",\"mkw\",\"mm\",\"na\",\"qq\"]",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "12"
     },
     {
       "input": "[\"vozkb\",\"ds\",\"zxra\",\"n\",\"xy\",\"p\",\"npyy\"]",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "20"
     },
     {
       "input": "[\"txvvl\",\"wqsyp\",\"f\",\"rblh\",\"m\",\"mnvmx\"]",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "25"
     },
     {
       "input": "[\"lhw\",\"ct\",\"kin\",\"ldgwh\",\"gmswx\",\"vj\",\"cqni\",\"om\"]",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "20"
     },
     {
       "input": "[\"pf\",\"hmmih\",\"h\",\"kenf\",\"n\",\"hfil\",\"t\",\"myomv\"]",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "20"
     },
     {
       "input": "[\"lb\",\"t\"]",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "2"
     },
     {
       "input": "[\"cfrrl\",\"oy\",\"iarj\",\"ka\",\"aukz\"]",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "20"
     },
     {
       "input": "[\"spjhs\",\"s\"]",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "0"
     },
     {
       "input": "[\"rmx\",\"lyg\",\"vnkc\",\"uc\"]",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "12"
     },
     {
       "input": "[\"hz\",\"xxn\",\"av\"]",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "6"
     },
     {
       "input": "[\"hsdo\",\"tfz\",\"reoo\"]",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "12"
     },
     {
       "input": "[\"cumxd\",\"xvd\",\"dwcs\",\"jkkhe\",\"i\",\"wro\",\"i\"]",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "25"
     },
     {
       "input": "[\"wtz\",\"n\",\"lvjso\"]",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "15"
     },
     {
       "input": "[\"jxxkc\",\"lqhim\"]",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "25"
     }
   ]
 }
