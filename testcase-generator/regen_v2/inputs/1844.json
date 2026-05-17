@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= zero, one, limit <= 1000",
   "input_format": "line1: zero (int)\nline2: one (int)\nline3: limit (int)",
   "testcases": [
-    {"input": "1\n1\n2", "desc": "Edge: example1"},
-    {"input": "1\n2\n1", "desc": "Edge: example2"},
-    {"input": "3\n3\n2", "desc": "Edge: example3"},
-    {"input": "1\n1\n1", "desc": "Edge: minimum all"},
-    {"input": "1\n1\n1000", "desc": "Edge: huge limit"},
-    {"input": "1000\n1\n1", "desc": "Edge: huge zero"},
-    {"input": "1\n1000\n1", "desc": "Edge: huge one"},
-    {"input": "1000\n1000\n1", "desc": "Edge: huge zero+one limit=1"},
-    {"input": "10\n10\n5", "desc": "Standard: small balanced"},
-    {"input": "5\n10\n3", "desc": "Standard: skewed"},
-    {"input": "10\n5\n3", "desc": "Standard: skewed other way"},
-    {"input": "20\n20\n10", "desc": "Standard: 20/20 limit 10"},
-    {"input": "50\n50\n5", "desc": "Standard: medium values"},
-    {"input": "100\n100\n50", "desc": "Standard: 100 each"},
-    {"input": "500\n500\n10", "desc": "Stress: 500 each limit 10"},
-    {"input": "1000\n1000\n500", "desc": "Stress: 1000 each limit 500"},
-    {"input": "1000\n1000\n1000", "desc": "Stress: max all"},
-    {"input": "100\n1000\n1", "desc": "Stress: imbalanced limit=1"},
-    {"input": "1\n1000\n1000", "desc": "Special: 1 zero many ones"},
-    {"input": "1000\n1\n1000", "desc": "Special: many zeros 1 one"}
+    {
+      "input": "1\n1\n2",
+      "desc": "Edge: example1",
+      "output": "2"
+    },
+    {
+      "input": "1\n2\n1",
+      "desc": "Edge: example2",
+      "output": "1"
+    },
+    {
+      "input": "3\n3\n2",
+      "desc": "Edge: example3",
+      "output": "14"
+    },
+    {
+      "input": "1\n1\n1",
+      "desc": "Edge: minimum all",
+      "output": "2"
+    },
+    {
+      "input": "1\n1\n1000",
+      "desc": "Edge: huge limit",
+      "output": "2"
+    },
+    {
+      "input": "1000\n1\n1",
+      "desc": "Edge: huge zero",
+      "output": "0"
+    },
+    {
+      "input": "1\n1000\n1",
+      "desc": "Edge: huge one",
+      "output": "0"
+    },
+    {
+      "input": "1000\n1000\n1",
+      "desc": "Edge: huge zero+one limit=1",
+      "output": "2"
+    },
+    {
+      "input": "10\n10\n5",
+      "desc": "Standard: small balanced",
+      "output": "165114"
+    },
+    {
+      "input": "5\n10\n3",
+      "desc": "Standard: skewed",
+      "output": "546"
+    },
+    {
+      "input": "10\n5\n3",
+      "desc": "Standard: skewed other way",
+      "output": "546"
+    },
+    {
+      "input": "20\n20\n10",
+      "desc": "Standard: 20/20 limit 10",
+      "output": "431683431"
+    },
+    {
+      "input": "50\n50\n5",
+      "desc": "Standard: medium values",
+      "output": "256686735"
+    },
+    {
+      "input": "100\n100\n50",
+      "desc": "Standard: 100 each",
+      "output": "375840050"
+    },
+    {
+      "input": "500\n500\n10",
+      "desc": "Stress: 500 each limit 10",
+      "output": "994316608"
+    },
+    {
+      "input": "1000\n1000\n500",
+      "desc": "Stress: 1000 each limit 500",
+      "output": "591164091"
+    },
+    {
+      "input": "1000\n1000\n1000",
+      "desc": "Stress: max all",
+      "output": "72475738"
+    },
+    {
+      "input": "100\n1000\n1",
+      "desc": "Stress: imbalanced limit=1",
+      "output": "0"
+    },
+    {
+      "input": "1\n1000\n1000",
+      "desc": "Special: 1 zero many ones",
+      "output": "1001"
+    },
+    {
+      "input": "1000\n1\n1000",
+      "desc": "Special: many zeros 1 one",
+      "output": "1001"
+    }
   ]
 }

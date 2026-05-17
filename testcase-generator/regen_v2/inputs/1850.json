@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 100, lowercase letters",
   "input_format": "line1: words (JSON array of strings)",
   "testcases": [
-    {"input": "[\"abbb\",\"ba\",\"aa\"]", "desc": "Edge: example1"},
-    {"input": "[\"abc\",\"ab\"]", "desc": "Edge: example2"},
-    {"input": "[\"cd\",\"ef\",\"a\"]", "desc": "Edge: example3"},
-    {"input": "[\"a\"]", "desc": "Edge: single char single word"},
-    {"input": "[\"aa\"]", "desc": "Edge: pair single word"},
-    {"input": "[\"abc\"]", "desc": "Edge: 3 distinct chars"},
-    {"input": "[\"a\",\"a\",\"a\"]", "desc": "Edge: 3 single-char words"},
-    {"input": "[\"ab\",\"cd\",\"ef\"]", "desc": "Edge: 3 distinct 2-char"},
-    {"input": "[\"aaaa\",\"bbbb\",\"cccc\"]", "desc": "Standard: 3 quad words"},
-    {"input": "[\"abc\",\"def\",\"ghi\"]", "desc": "Standard: 3 3-char distinct"},
-    {"input": "[\"aabb\",\"ccdd\",\"eeff\"]", "desc": "Standard: pairs"},
-    {"input": "[\"abcabc\",\"defdef\",\"ghighi\"]", "desc": "Standard: pairs scattered"},
-    {"input": "[\"abcd\",\"efgh\",\"ijkl\",\"mnop\"]", "desc": "Standard: 4 distinct 4-char"},
-    {"input": "[\"aab\",\"bba\",\"ccd\",\"ddc\"]", "desc": "Standard: 4 3-char"},
-    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Stress: alphabet singles"},
-    {"input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\"]", "desc": "Stress: huge words"},
-    {"input": "[\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\",\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\"]", "desc": "Stress: alphabet variations"},
-    {"input": "[\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\"]", "desc": "Stress: 10 ab's"},
-    {"input": "[\"abc\",\"bca\",\"cab\"]", "desc": "Special: anagrams"},
-    {"input": "[\"racecar\",\"level\",\"hello\"]", "desc": "Special: known palindromes + nonpalindrome"}
+    {
+      "input": "[\"abbb\",\"ba\",\"aa\"]",
+      "desc": "Edge: example1",
+      "output": "3"
+    },
+    {
+      "input": "[\"abc\",\"ab\"]",
+      "desc": "Edge: example2",
+      "output": "2"
+    },
+    {
+      "input": "[\"cd\",\"ef\",\"a\"]",
+      "desc": "Edge: example3",
+      "output": "1"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: single char single word",
+      "output": "1"
+    },
+    {
+      "input": "[\"aa\"]",
+      "desc": "Edge: pair single word",
+      "output": "1"
+    },
+    {
+      "input": "[\"abc\"]",
+      "desc": "Edge: 3 distinct chars",
+      "output": "0"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\"]",
+      "desc": "Edge: 3 single-char words",
+      "output": "3"
+    },
+    {
+      "input": "[\"ab\",\"cd\",\"ef\"]",
+      "desc": "Edge: 3 distinct 2-char",
+      "output": "0"
+    },
+    {
+      "input": "[\"aaaa\",\"bbbb\",\"cccc\"]",
+      "desc": "Standard: 3 quad words",
+      "output": "3"
+    },
+    {
+      "input": "[\"abc\",\"def\",\"ghi\"]",
+      "desc": "Standard: 3 3-char distinct",
+      "output": "0"
+    },
+    {
+      "input": "[\"aabb\",\"ccdd\",\"eeff\"]",
+      "desc": "Standard: pairs",
+      "output": "3"
+    },
+    {
+      "input": "[\"abcabc\",\"defdef\",\"ghighi\"]",
+      "desc": "Standard: pairs scattered",
+      "output": "3"
+    },
+    {
+      "input": "[\"abcd\",\"efgh\",\"ijkl\",\"mnop\"]",
+      "desc": "Standard: 4 distinct 4-char",
+      "output": "0"
+    },
+    {
+      "input": "[\"aab\",\"bba\",\"ccd\",\"ddc\"]",
+      "desc": "Standard: 4 3-char",
+      "output": "4"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]",
+      "desc": "Stress: alphabet singles",
+      "output": "26"
+    },
+    {
+      "input": "[\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\"]",
+      "desc": "Stress: huge words",
+      "output": "2"
+    },
+    {
+      "input": "[\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\",\"abcdefghijklmnopqrstuvwxyz\",\"zyxwvutsrqponmlkjihgfedcba\"]",
+      "desc": "Stress: alphabet variations",
+      "output": "4"
+    },
+    {
+      "input": "[\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\",\"ab\"]",
+      "desc": "Stress: 10 ab's",
+      "output": "10"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "desc": "Special: anagrams",
+      "output": "3"
+    },
+    {
+      "input": "[\"racecar\",\"level\",\"hello\"]",
+      "desc": "Special: known palindromes + nonpalindrome",
+      "output": "3"
+    }
   ]
 }

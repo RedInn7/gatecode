@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "100",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "false"
     },
     {
       "input": "100",
-      "desc": "Edge: example2 false (zeros)"
+      "desc": "Edge: example2 false (zeros)",
+      "output": "false"
     },
     {
       "input": "327",
-      "desc": "Edge: true 327,654,981"
+      "desc": "Edge: true 327,654,981",
+      "output": "true"
     },
     {
       "input": "999",
-      "desc": "Edge: max value"
+      "desc": "Edge: max value",
+      "output": "false"
     },
     {
       "input": "123",
-      "desc": "Standard: small fascinating"
+      "desc": "Standard: small fascinating",
+      "output": "false"
     },
     {
       "input": "111",
-      "desc": "Standard: all same digits false"
+      "desc": "Standard: all same digits false",
+      "output": "false"
     },
     {
       "input": "201",
-      "desc": "Standard: has zero false"
+      "desc": "Standard: has zero false",
+      "output": "false"
     },
     {
       "input": "287",
-      "desc": "Standard: random"
+      "desc": "Standard: random",
+      "output": "false"
     },
     {
       "input": "678",
-      "desc": "Standard: large false"
+      "desc": "Standard: large false",
+      "output": "false"
     },
     {
       "input": "321",
-      "desc": "Standard: 321,642,963 -> false"
+      "desc": "Standard: 321,642,963 -> false",
+      "output": "false"
     },
     {
       "input": "219",
-      "desc": "Standard: 219,438,657"
+      "desc": "Standard: 219,438,657",
+      "output": "true"
     },
     {
       "input": "385",
-      "desc": "Standard: 385,770,1155 -> has 0"
+      "desc": "Standard: 385,770,1155 -> has 0",
+      "output": "false"
     },
     {
       "input": "493",
-      "desc": "Standard: bigger"
+      "desc": "Standard: bigger",
+      "output": "false"
     },
     {
       "input": "147",
-      "desc": "Standard: 147,294,441 -> dup 4"
+      "desc": "Standard: 147,294,441 -> dup 4",
+      "output": "false"
     },
     {
       "input": "294",
-      "desc": "Standard: 294,588,882 -> dup"
+      "desc": "Standard: 294,588,882 -> dup",
+      "output": "false"
     },
     {
       "input": "153",
-      "desc": "Standard: 153,306,459 -> has 0"
+      "desc": "Standard: 153,306,459 -> has 0",
+      "output": "false"
     },
     {
       "input": "234",
-      "desc": "Standard: small"
+      "desc": "Standard: small",
+      "output": "false"
     },
     {
       "input": "789",
-      "desc": "Standard: large"
+      "desc": "Standard: large",
+      "output": "false"
     },
     {
       "input": "500",
-      "desc": "Special: with zeros mid"
+      "desc": "Special: with zeros mid",
+      "output": "false"
     },
     {
       "input": "100",
-      "desc": "Special: min"
+      "desc": "Special: min",
+      "output": "false"
     }
   ]
 }

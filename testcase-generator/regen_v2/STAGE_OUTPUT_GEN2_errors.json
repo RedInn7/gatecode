@@ -1210,5 +1210,29 @@
     "slug": "find-the-sum-of-subsequence-powers",
     "fqid": 3098,
     "error": "Testcase 18 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1851,
+    "slug": "maximize-the-number-of-partitions-after-operations",
+    "fqid": 3003,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1860,
+    "slug": "maximum-odd-binary-number",
+    "fqid": 2864,
+    "error": "Testcase 0 failed: RE (exit 1): __init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 340, in decode\n    raise JSONDecodeError(\"Extra data\", s, end)\njson.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)\n"
+  },
+  {
+    "pid": 1861,
+    "slug": "reverse-letters-then-special-characters-in-a-string",
+    "fqid": 3823,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1870,
+    "slug": "student-attendance-record-i",
+    "fqid": 551,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
   }
 ]

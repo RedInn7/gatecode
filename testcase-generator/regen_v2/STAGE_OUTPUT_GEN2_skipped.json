@@ -280,5 +280,17 @@
     "slug": "maximize-active-section-with-trade-ii",
     "fqid": 3501,
     "reason": "No Python3 solution found for fqid=3501"
+  },
+  {
+    "pid": 1852,
+    "slug": "subtree-removal-game-with-fibonacci-tree",
+    "fqid": 2005,
+    "reason": "No Python3 solution found for fqid=2005"
+  },
+  {
+    "pid": 1843,
+    "slug": "count-substrings-divisible-by-last-digit",
+    "fqid": 3448,
+    "reason": "No Python3 solution found for fqid=3448"
   }
 ]
