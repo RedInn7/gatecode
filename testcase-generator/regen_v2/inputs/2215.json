@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[9,7,5]\n3",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "5"
     },
     {
       "input": "[7,5,9]\n4",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "4"
     },
     {
       "input": "[5,7,9]\n22",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "0"
     },
     {
       "input": "[1]\n1",
-      "desc": "Edge: min"
+      "desc": "Edge: min",
+      "output": "1"
     },
     {
       "input": "[1]\n2",
-      "desc": "Edge: impossible"
+      "desc": "Edge: impossible",
+      "output": "0"
     },
     {
       "input": "[100000]\n1",
-      "desc": "Edge: max single"
+      "desc": "Edge: max single",
+      "output": "100000"
     },
     {
       "input": "[100000]\n100000",
-      "desc": "Edge: max k"
+      "desc": "Edge: max k",
+      "output": "1"
     },
     {
       "input": "[10,10]\n4",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "5"
     },
     {
       "input": "[1,1,1,1,1]\n5",
-      "desc": "Edge: all 1s"
+      "desc": "Edge: all 1s",
+      "output": "1"
     },
     {
       "input": "[100,100,100]\n10",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "25"
     },
     {
       "input": "[100,100,100]\n100",
-      "desc": "Standard tight"
+      "desc": "Standard tight",
+      "output": "2"
     },
     {
       "input": "[100,100,100]\n1000000000",
-      "desc": "Edge: impossible huge k"
+      "desc": "Edge: impossible huge k",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "[50,60,70,80,90,100]\n20",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "20"
     },
     {
       "input": "[10000,10000,10000,10000,10000]\n1000",
-      "desc": "Stress"
+      "desc": "Stress",
+      "output": "50"
     },
     {
       "input": "[87960,22365,73963,70181,17384,68026,26024,70532,57854,55400,57480,27158,44930,42771,96711,40428,91060,39403,39767,20275,30330,37728,67471,18473,77744,85748,85364,99352,11683,63617,52537,55711,90950,5612,46749,52935,24261,64707,39832,40242,49561,81432,60623,11853,31362,47954,25429,25511,58833,24414,43020,54442,72667,61474,22587,90602,1498,99159,27852,96248,97911,93153,26115,87233,3777,98860,16474,38628,15878,86323,10976,57581,95,64942,94121,57567,22810]\n22",
-      "desc": "Regenerated: standard at position 15"
+      "desc": "Regenerated: standard at position 15",
+      "output": "70181"
     },
     {
       "input": "[2,4,8,16,32,64,128]\n10",
-      "desc": "Standard powers"
+      "desc": "Standard powers",
+      "output": "21"
     },
     {
       "input": "[100000,1,1]\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "50000"
     },
     {
       "input": "[7,11,13,17,19,23,29,31]\n10",
-      "desc": "Standard primes"
+      "desc": "Standard primes",
+      "output": "11"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n10",
-      "desc": "Standard 20"
+      "desc": "Standard 20",
+      "output": "11"
     }
   ]
 }

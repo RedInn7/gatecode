@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 10^5, lowercase",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"abcd\"", "desc": "Standard: example 1"},
-    {"input": "\"ooo\"", "desc": "Standard: example 2"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"ab\"", "desc": "Edge: 2 distinct"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"abc\"", "desc": "Standard"},
-    {"input": "\"aaaa\"", "desc": "Edge: all same"},
-    {"input": "\"abcabcabc\"", "desc": "Standard"},
-    {"input": "\"abcdefghij\"", "desc": "Edge: 10 distinct"},
-    {"input": "\"pop\"", "desc": "Standard"},
-    {"input": "\"banana\"", "desc": "Standard"},
-    {"input": "\"mississippi\"", "desc": "Standard"},
-    {"input": "\"abcabcabcabc\"", "desc": "Standard"},
-    {"input": "\"thequickbrownfox\"", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard alphabet"},
-    {"input": "\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard reverse alphabet"},
-    {"input": "\"aaaabbbb\"", "desc": "Standard"},
-    {"input": "\"abacabadabacaba\"", "desc": "Standard"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Standard doubled"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress 30 same"}
+    {
+      "input": "\"abcd\"",
+      "desc": "Standard: example 1",
+      "output": "10"
+    },
+    {
+      "input": "\"ooo\"",
+      "desc": "Standard: example 2",
+      "output": "3"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 distinct",
+      "output": "3"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same",
+      "output": "2"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Standard",
+      "output": "6"
+    },
+    {
+      "input": "\"aaaa\"",
+      "desc": "Edge: all same",
+      "output": "4"
+    },
+    {
+      "input": "\"abcabcabc\"",
+      "desc": "Standard",
+      "output": "24"
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Edge: 10 distinct",
+      "output": "55"
+    },
+    {
+      "input": "\"pop\"",
+      "desc": "Standard",
+      "output": "5"
+    },
+    {
+      "input": "\"banana\"",
+      "desc": "Standard",
+      "output": "12"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard",
+      "output": "20"
+    },
+    {
+      "input": "\"abcabcabcabc\"",
+      "desc": "Standard",
+      "output": "33"
+    },
+    {
+      "input": "\"thequickbrownfox\"",
+      "desc": "Standard",
+      "output": "114"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard alphabet",
+      "output": "351"
+    },
+    {
+      "input": "\"zyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Standard reverse alphabet",
+      "output": "351"
+    },
+    {
+      "input": "\"aaaabbbb\"",
+      "desc": "Standard",
+      "output": "9"
+    },
+    {
+      "input": "\"abacabadabacaba\"",
+      "desc": "Standard",
+      "output": "35"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard doubled",
+      "output": "1027"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "Stress 30 same",
+      "output": "30"
+    }
   ]
 }

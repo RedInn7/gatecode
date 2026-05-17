@@ -346,5 +346,17 @@
     "slug": "earliest-second-to-mark-indices-ii",
     "fqid": 3049,
     "reason": "No Python3 solution found for fqid=3049"
+  },
+  {
+    "pid": 2196,
+    "slug": "once-twice",
+    "fqid": 3595,
+    "reason": "No Python3 solution found for fqid=3595"
+  },
+  {
+    "pid": 2217,
+    "slug": "find-maximum-number-of-non-intersecting-substrings",
+    "fqid": 3557,
+    "reason": "No Python3 solution found for fqid=3557"
   }
 ]

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,3,5,7]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "-4"
     },
     {
       "input": "[100]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "100"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1 min"
+      "desc": "Edge: n=1 min",
+      "output": "1"
     },
     {
       "input": "[100]",
-      "desc": "Edge: n=1 max"
+      "desc": "Edge: n=1 max",
+      "output": "100"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "0"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge: simple"
+      "desc": "Edge: simple",
+      "output": "-1"
     },
     {
       "input": "[5,5,5,5,5]",
-      "desc": "Edge: all same odd len"
+      "desc": "Edge: all same odd len",
+      "output": "5"
     },
     {
       "input": "[10,10,10,10]",
-      "desc": "Edge: all same even len"
+      "desc": "Edge: all same even len",
+      "output": "0"
     },
     {
       "input": "[100,1,100,1]",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "198"
     },
     {
       "input": "[1,100,1,100]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "-198"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard inc"
+      "desc": "Standard inc",
+      "output": "-5"
     },
     {
       "input": "[10,9,8,7,6,5,4,3,2,1]",
-      "desc": "Standard dec"
+      "desc": "Standard dec",
+      "output": "5"
     },
     {
       "input": "[12,14,39,94,42,16,49,1,69,90,36,96,47,69,68,67]",
-      "desc": "Regenerated: diverse at position 12"
+      "desc": "Regenerated: diverse at position 12",
+      "output": "-85"
     },
     {
       "input": "[71,92,39,7,61,96,33,66,94,7,100,29,90,23,80,7,91,3,67,47,51,80,16,19,88,54,60,64,72,1,76,31,78,21,47,73,48,51,86,75,60,80,30,97,74,90,24,40,35,36,23,49,21,46,42,13,73,56,56,77,40,57,50,98,43,59,89,23,48,67,20,9,59,15,33,100,58,72,57,46,63]",
-      "desc": "Regenerated: diverse at position 13"
+      "desc": "Regenerated: diverse at position 13",
+      "output": "370"
     },
     {
       "input": "[77,23,61,84,65,73,48,31,24,75,1,41,92,32,77,18,67,8,3,56,42,3,70,14,21,10,71,62,82,96,69,47,3,43,3,2,48,56,42,3,60,72,4,71,63,24,44,94,40,31,56,8,55,92,62,39,74,14,26,81,60,27,30,44,4,47,73,64,9,57,45,54,32,74,6,69,38,19,91,36,28,47,96,36,26,49,25,17,93]",
-      "desc": "Regenerated: standard at position 14"
+      "desc": "Regenerated: standard at position 14",
+      "output": "163"
     },
     {
       "input": "[3,1,4,1,5,9,2,6,5,3,5]",
-      "desc": "Standard pi"
+      "desc": "Standard pi",
+      "output": "4"
     },
     {
       "input": "[7,11,13,17,19,23,29,31,37,41]",
-      "desc": "Standard primes"
+      "desc": "Standard primes",
+      "output": "-18"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
-      "desc": "Standard 20"
+      "desc": "Standard 20",
+      "output": "-10"
     },
     {
       "input": "[100,1,100,1,100,1,100,1,100,1,100,1,100,1,100,1,100,1,100,1]",
-      "desc": "Standard alternating 20"
+      "desc": "Standard alternating 20",
+      "output": "990"
     },
     {
       "input": "[100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]",
-      "desc": "Stress n=100"
+      "desc": "Stress n=100",
+      "output": "50"
     }
   ]
 }

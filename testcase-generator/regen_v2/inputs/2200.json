@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"aa\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "0"
     },
     {
       "input": "\"abca\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "2"
     },
     {
       "input": "\"cbzxy\"",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "-1"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: n=1 no pair"
+      "desc": "Edge: n=1 no pair",
+      "output": "-1"
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: n=2 no pair"
+      "desc": "Edge: n=2 no pair",
+      "output": "-1"
     },
     {
       "input": "\"aba\"",
-      "desc": "Edge: simple"
+      "desc": "Edge: simple",
+      "output": "1"
     },
     {
       "input": "\"aaa\"",
-      "desc": "Edge: 3 same"
+      "desc": "Edge: 3 same",
+      "output": "1"
     },
     {
       "input": "\"abcdefghij\"",
-      "desc": "Edge: all distinct"
+      "desc": "Edge: all distinct",
+      "output": "-1"
     },
     {
       "input": "\"abcdefghija\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "9"
     },
     {
       "input": "\"banana\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "3"
     },
     {
       "input": "\"mississippi\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "8"
     },
     {
       "input": "\"thequickbrownfox\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "3"
     },
     {
       "input": "\"abcabc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "\"aaaaaaaaaa\"",
-      "desc": "Standard all same"
+      "desc": "Standard all same",
+      "output": "8"
     },
     {
       "input": "\"zabcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Standard z-pair"
+      "desc": "Standard z-pair",
+      "output": "25"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Edge: no repeat"
+      "desc": "Edge: no repeat",
+      "output": "-1"
     },
     {
       "input": "\"aabbccddee\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "0"
     },
     {
       "input": "\"abcdeedcba\"",
-      "desc": "Standard palindrome"
+      "desc": "Standard palindrome",
+      "output": "8"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyza\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "25"
     },
     {
       "input": "\"tndvdbygbd\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "6"
     }
   ]
 }

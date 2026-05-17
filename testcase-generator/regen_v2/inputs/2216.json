@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= jewels.length, stones.length <= 50, English letters, jewels distinct",
   "input_format": "line1: jewels (quoted); line2: stones (quoted)",
   "testcases": [
-    {"input": "\"aA\"\n\"aAAbbbb\"", "desc": "Standard: example 1"},
-    {"input": "\"z\"\n\"ZZ\"", "desc": "Standard: example 2"},
-    {"input": "\"a\"\n\"a\"", "desc": "Edge: single match"},
-    {"input": "\"a\"\n\"b\"", "desc": "Edge: no match"},
-    {"input": "\"A\"\n\"a\"", "desc": "Edge: case sensitive"},
-    {"input": "\"abc\"\n\"abcabcabc\"", "desc": "Standard repeating"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: full alphabet"},
-    {"input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Edge: case differ"},
-    {"input": "\"aA\"\n\"AAAA\"", "desc": "Edge: all match upper"},
-    {"input": "\"aA\"\n\"a\"", "desc": "Edge single stone"},
-    {"input": "\"xyz\"\n\"abcdefghijklmnopqrstuvw\"", "desc": "Edge: no jewels"},
-    {"input": "\"qwerty\"\n\"qwertyuiopasdfghjkl\"", "desc": "Standard"},
-    {"input": "\"AaBb\"\n\"AaBbCcDdEeFfGgHh\"", "desc": "Standard"},
-    {"input": "\"a\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Standard 26 a's"},
-    {"input": "\"Z\"\n\"abcdefghijklmnopqrstuvwxyzZ\"", "desc": "Standard"},
-    {"input": "\"abcde\"\n\"fghij\"", "desc": "Edge: no overlap"},
-    {"input": "\"AaBbCc\"\n\"AAaaBBbbCCcc\"", "desc": "Standard"},
-    {"input": "\"x\"\n\"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\"", "desc": "Stress 50 stones no match"},
-    {"input": "\"abcdefghij\"\n\"jihgfedcba\"", "desc": "Standard all match"},
-    {"input": "\"AB\"\n\"AaBbCcDd\"", "desc": "Standard"}
+    {
+      "input": "\"aA\"\n\"aAAbbbb\"",
+      "desc": "Standard: example 1",
+      "output": "3"
+    },
+    {
+      "input": "\"z\"\n\"ZZ\"",
+      "desc": "Standard: example 2",
+      "output": "0"
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "desc": "Edge: single match",
+      "output": "1"
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "desc": "Edge: no match",
+      "output": "0"
+    },
+    {
+      "input": "\"A\"\n\"a\"",
+      "desc": "Edge: case sensitive",
+      "output": "0"
+    },
+    {
+      "input": "\"abc\"\n\"abcabcabc\"",
+      "desc": "Standard repeating",
+      "output": "9"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Edge: full alphabet",
+      "output": "26"
+    },
+    {
+      "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Edge: case differ",
+      "output": "0"
+    },
+    {
+      "input": "\"aA\"\n\"AAAA\"",
+      "desc": "Edge: all match upper",
+      "output": "4"
+    },
+    {
+      "input": "\"aA\"\n\"a\"",
+      "desc": "Edge single stone",
+      "output": "1"
+    },
+    {
+      "input": "\"xyz\"\n\"abcdefghijklmnopqrstuvw\"",
+      "desc": "Edge: no jewels",
+      "output": "0"
+    },
+    {
+      "input": "\"qwerty\"\n\"qwertyuiopasdfghjkl\"",
+      "desc": "Standard",
+      "output": "6"
+    },
+    {
+      "input": "\"AaBb\"\n\"AaBbCcDdEeFfGgHh\"",
+      "desc": "Standard",
+      "output": "4"
+    },
+    {
+      "input": "\"a\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "Standard 26 a's",
+      "output": "26"
+    },
+    {
+      "input": "\"Z\"\n\"abcdefghijklmnopqrstuvwxyzZ\"",
+      "desc": "Standard",
+      "output": "1"
+    },
+    {
+      "input": "\"abcde\"\n\"fghij\"",
+      "desc": "Edge: no overlap",
+      "output": "0"
+    },
+    {
+      "input": "\"AaBbCc\"\n\"AAaaBBbbCCcc\"",
+      "desc": "Standard",
+      "output": "12"
+    },
+    {
+      "input": "\"x\"\n\"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\"",
+      "desc": "Stress 50 stones no match",
+      "output": "0"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"jihgfedcba\"",
+      "desc": "Standard all match",
+      "output": "10"
+    },
+    {
+      "input": "\"AB\"\n\"AaBbCcDd\"",
+      "desc": "Standard",
+      "output": "2"
+    }
   ]
 }

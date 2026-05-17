@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"Hello\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "\"hello\""
     },
     {
       "input": "\"here\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "\"here\""
     },
     {
       "input": "\"LOVELY\"",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "\"lovely\""
     },
     {
       "input": "\"A\"",
-      "desc": "Edge: n=1 upper"
+      "desc": "Edge: n=1 upper",
+      "output": "\"a\""
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: n=1 lower"
+      "desc": "Edge: n=1 lower",
+      "output": "\"a\""
     },
     {
       "input": "\"1\"",
-      "desc": "Edge: digit"
+      "desc": "Edge: digit",
+      "output": "\"1\""
     },
     {
       "input": "\"!\"",
-      "desc": "Edge: symbol"
+      "desc": "Edge: symbol",
+      "output": "\"!\""
     },
     {
       "input": "\"AaBbCcDdEe\"",
-      "desc": "Standard mixed"
+      "desc": "Standard mixed",
+      "output": "\"aabbccddee\""
     },
     {
       "input": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
-      "desc": "Edge: all upper"
+      "desc": "Edge: all upper",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Edge: all lower"
+      "desc": "Edge: all lower",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
     },
     {
       "input": "\"Hello, World!\"",
-      "desc": "Standard with punct"
+      "desc": "Standard with punct",
+      "output": "\"hello, world!\""
     },
     {
       "input": "\"The Quick Brown Fox\"",
-      "desc": "Standard sentence"
+      "desc": "Standard sentence",
+      "output": "\"the quick brown fox\""
     },
     {
       "input": "\"1234567890\"",
-      "desc": "Edge: digits"
+      "desc": "Edge: digits",
+      "output": "\"1234567890\""
     },
     {
       "input": "\"!@#$%^&*()\"",
-      "desc": "Edge: symbols"
+      "desc": "Edge: symbols",
+      "output": "\"!@#$%^&*()\""
     },
     {
       "input": "\"AABBCCDDEEFFGGHHIIJJKKLLMMNNOOPPQQRRSSTTUUVVWWXXYYZZ\"",
-      "desc": "Standard doubled"
+      "desc": "Standard doubled",
+      "output": "\"aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz\""
     },
     {
       "input": "\"Hello123World\"",
-      "desc": "Standard mixed alphanum"
+      "desc": "Standard mixed alphanum",
+      "output": "\"hello123world\""
     },
     {
       "input": "\"   SPACES   \"",
-      "desc": "Standard with spaces"
+      "desc": "Standard with spaces",
+      "output": "\"   spaces   \""
     },
     {
       "input": "\"MixedCASEString\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"mixedcasestring\""
     },
     {
       "input": "\"A1B2C3D4E5\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"a1b2c3d4e5\""
     },
     {
       "input": "\"nyksgajzbymm\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"nyksgajzbymm\""
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n, m <= 10^5, 1 <= nums1[i], nums2[j] <= 10^6, 1 <= k <= 10^3",
   "input_format": "line1: nums1 (JSON array); line2: nums2 (JSON array); line3: k (int)",
   "testcases": [
-    {"input": "[1,3,4]\n[1,3,4]\n1", "desc": "Standard: example 1"},
-    {"input": "[1,2,4,12]\n[2,4]\n3", "desc": "Standard: example 2"},
-    {"input": "[1]\n[1]\n1", "desc": "Edge: minimal"},
-    {"input": "[1000000]\n[1]\n1", "desc": "Edge: max divisible"},
-    {"input": "[1]\n[1000000]\n1", "desc": "Edge: not divisible"},
-    {"input": "[6,12,18,24]\n[2,3,6]\n1", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3]\n1", "desc": "Standard"},
-    {"input": "[100,200,300]\n[10,20,50,100]\n1", "desc": "Standard"},
-    {"input": "[1,2,3,4,5]\n[1]\n5", "desc": "Edge: k=5"},
-    {"input": "[5,10,15,20,25]\n[5]\n1", "desc": "Standard"},
-    {"input": "[2,4,6,8,10,12]\n[2,4]\n1", "desc": "Standard"},
-    {"input": "[1000000,999999,500000]\n[1,2,3,5]\n10", "desc": "Standard"},
-    {"input": "[1,1,1,1,1]\n[1,1,1,1,1]\n1", "desc": "Edge: all 1s"},
-    {"input": "[100,200,300,400,500]\n[100]\n1", "desc": "Standard"},
-    {"input": "[1,3,5,7,9,11,13,15]\n[1,3,5,7,9]\n1", "desc": "Standard odds"},
-    {"input": "[2,4,8,16,32,64]\n[2]\n1", "desc": "Standard powers"},
-    {"input": "[6,12,18,24,30,36]\n[2,3,6]\n1", "desc": "Standard"},
-    {"input": "[1000000,1000000,1000000]\n[1,2,5,10,100,1000]\n1", "desc": "Standard"},
-    {"input": "[100,200,300]\n[1,2,4,5,10,20,25,50,100]\n1", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[1,2,3,4,5]\n1", "desc": "Standard"}
+    {
+      "input": "[1,3,4]\n[1,3,4]\n1",
+      "desc": "Standard: example 1",
+      "output": "5"
+    },
+    {
+      "input": "[1,2,4,12]\n[2,4]\n3",
+      "desc": "Standard: example 2",
+      "output": "2"
+    },
+    {
+      "input": "[1]\n[1]\n1",
+      "desc": "Edge: minimal",
+      "output": "1"
+    },
+    {
+      "input": "[1000000]\n[1]\n1",
+      "desc": "Edge: max divisible",
+      "output": "1"
+    },
+    {
+      "input": "[1]\n[1000000]\n1",
+      "desc": "Edge: not divisible",
+      "output": "0"
+    },
+    {
+      "input": "[6,12,18,24]\n[2,3,6]\n1",
+      "desc": "Standard",
+      "output": "12"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[1,2,3]\n1",
+      "desc": "Standard",
+      "output": "18"
+    },
+    {
+      "input": "[100,200,300]\n[10,20,50,100]\n1",
+      "desc": "Standard",
+      "output": "12"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[1]\n5",
+      "desc": "Edge: k=5",
+      "output": "1"
+    },
+    {
+      "input": "[5,10,15,20,25]\n[5]\n1",
+      "desc": "Standard",
+      "output": "5"
+    },
+    {
+      "input": "[2,4,6,8,10,12]\n[2,4]\n1",
+      "desc": "Standard",
+      "output": "9"
+    },
+    {
+      "input": "[1000000,999999,500000]\n[1,2,3,5]\n10",
+      "desc": "Standard",
+      "output": "6"
+    },
+    {
+      "input": "[1,1,1,1,1]\n[1,1,1,1,1]\n1",
+      "desc": "Edge: all 1s",
+      "output": "25"
+    },
+    {
+      "input": "[100,200,300,400,500]\n[100]\n1",
+      "desc": "Standard",
+      "output": "5"
+    },
+    {
+      "input": "[1,3,5,7,9,11,13,15]\n[1,3,5,7,9]\n1",
+      "desc": "Standard odds",
+      "output": "15"
+    },
+    {
+      "input": "[2,4,8,16,32,64]\n[2]\n1",
+      "desc": "Standard powers",
+      "output": "6"
+    },
+    {
+      "input": "[6,12,18,24,30,36]\n[2,3,6]\n1",
+      "desc": "Standard",
+      "output": "18"
+    },
+    {
+      "input": "[1000000,1000000,1000000]\n[1,2,5,10,100,1000]\n1",
+      "desc": "Standard",
+      "output": "18"
+    },
+    {
+      "input": "[100,200,300]\n[1,2,4,5,10,20,25,50,100]\n1",
+      "desc": "Standard",
+      "output": "27"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n[1,2,3,4,5]\n1",
+      "desc": "Standard",
+      "output": "45"
+    }
   ]
 }

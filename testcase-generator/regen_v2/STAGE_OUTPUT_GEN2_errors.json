@@ -1456,5 +1456,23 @@
     "slug": "recover-binary-search-tree",
     "fqid": 99,
     "error": "Testcase 0 failed: RE (exit 1): <module>\n    _result = Solution().recoverTree(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmprmuz_uwx.py\", line 166, in recoverTree\n    first.val, second.val = second.val, first.val\n                            ^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'val'\n"
+  },
+  {
+    "pid": 2207,
+    "slug": "fancy-sequence",
+    "fqid": 1622,
+    "error": "Testcase 19 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp0jamdxo4.py\", line 310, in <module>\n    _method = getattr(_obj, _op, None)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: attribute name must be string, not 'int'\n"
+  },
+  {
+    "pid": 2209,
+    "slug": "query-kth-smallest-trimmed-number",
+    "fqid": 2343,
+    "error": "Testcase 19 failed: RE (exit 1): py\", line 281, in <module>\n    _result = Solution().smallestTrimmedNumbers(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp57ke8ph4.py\", line 145, in smallestTrimmedNumbers\n    for k, trim in queries:\n        ^^^^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 2221,
+    "slug": "find-common-characters",
+    "fqid": 1002,
+    "error": "Testcase 19 failed: RE (exit 1):   ^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/collections/__init__.py\", line 607, in __init__\n    self.update(iterable, **kwds)\n  File \"/opt/anaconda3/lib/python3.12/collections/__init__.py\", line 699, in update\n    _count_elements(self, iterable)\nTypeError: 'int' object is not iterable\n"
   }
 ]
