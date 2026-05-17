@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[-1000]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "false"
     },
     {
       "input": "[1,2,10,null,null,2,20]",
-      "desc": "Standard: example false"
+      "desc": "Standard: example false",
+      "output": "false"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge: 2 nodes equal"
+      "desc": "Edge: 2 nodes equal",
+      "output": "false"
     },
     {
       "input": "[1,1]",
-      "desc": "Standard: 2 equal"
+      "desc": "Standard: 2 equal",
+      "output": "true"
     },
     {
       "input": "[1,2,3]",
-      "desc": "Standard: 3 nodes"
+      "desc": "Standard: 3 nodes",
+      "output": "true"
     },
     {
       "input": "[4,2,2]",
-      "desc": "Standard: 3 nodes true"
+      "desc": "Standard: 3 nodes true",
+      "output": "false"
     },
     {
       "input": "[1,null,2,null,3]",
-      "desc": "Standard: right chain"
+      "desc": "Standard: right chain",
+      "output": "true"
     },
     {
       "input": "[10,5,5,5,null,null,5,null,null,null,null,null,null,null,5]",
-      "desc": "Stress: complex"
+      "desc": "Stress: complex",
+      "output": "false"
     },
     {
       "input": "[1,2,3,4,5,6,7]",
-      "desc": "Standard: perfect 7"
+      "desc": "Standard: perfect 7",
+      "output": "false"
     },
     {
       "input": "[1,1,1,1,1,null,1,null,1]",
-      "desc": "Standard: 1s"
+      "desc": "Standard: 1s",
+      "output": "false"
     },
     {
       "input": "[6,3,3]",
-      "desc": "Standard: simple true"
+      "desc": "Standard: simple true",
+      "output": "false"
     },
     {
       "input": "[2,1,1,1,1,1,1]",
-      "desc": "Standard: equal sums"
+      "desc": "Standard: equal sums",
+      "output": "false"
     },
     {
       "input": "[100,50,50,25,25,25,25]",
-      "desc": "Stress: balanced sum"
+      "desc": "Stress: balanced sum",
+      "output": "false"
     },
     {
       "input": "[0,0,0,0,0,0,0]",
-      "desc": "Standard: all zeros"
+      "desc": "Standard: all zeros",
+      "output": "true"
     },
     {
       "input": "[-1,0,1]",
-      "desc": "Standard: sum 0"
+      "desc": "Standard: sum 0",
+      "output": "true"
     },
     {
       "input": "[1,null,2]",
-      "desc": "Standard: two nodes"
+      "desc": "Standard: two nodes",
+      "output": "false"
     },
     {
       "input": "[3,1,2,null,null,null,null]",
-      "desc": "Standard: 3 nodes"
+      "desc": "Standard: 3 nodes",
+      "output": "false"
     },
     {
       "input": "[10,5,5,null,null,3,2]",
-      "desc": "Standard: mixed"
+      "desc": "Standard: mixed",
+      "output": "false"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
-      "desc": "Stress: 15 nodes"
+      "desc": "Stress: 15 nodes",
+      "output": "false"
     },
     {
       "input": "[7,3,4,2,1]",
-      "desc": "Standard: 5 nodes"
+      "desc": "Standard: 5 nodes",
+      "output": "false"
     }
   ]
 }

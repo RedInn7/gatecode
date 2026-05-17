@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[-500,-763],[324,-6]]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "-1269"
     },
     {
       "input": "[[8,9],[7,9]]",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "24"
     },
     {
       "input": "[[5,2],[8,1]]",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "8"
     },
     {
       "input": "[[3,0],[4,1]]",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "4"
     },
     {
       "input": "[[3,6],[1,5]]",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "9"
     },
     {
       "input": "[[2,0,0,8],[8,5,5,7],[4,2,6,2],[8,5,5,1]]",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "16"
     },
     {
       "input": "[[9,4,0],[0,7,8],[8,8,8],[9,6,9],[8,5,3]]",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "38"
     },
     {
       "input": "[[3,4,2,0,2],[4,7,9,9,2],[7,0,9,0,4],[3,9,6,4,7]]",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "24"
     },
     {
       "input": "[[3,4],[9,0],[4,2]]",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "9"
     },
     {
       "input": "[[1,2,0],[8,8,8],[3,1,4],[9,8,0]]",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "15"
     },
     {
       "input": "[[9,4,6],[1,6,8]]",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "24"
     },
     {
       "input": "[[6,5,8,6,1],[0,5,0,7,5],[3,1,7,2,4]]",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "23"
     },
     {
       "input": "[[5,4,5],[4,0,4],[2,5,1],[3,7,5]]",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "19"
     },
     {
       "input": "[[2,2,1,5,6],[5,1,0,8,3],[5,8,6,1,9],[2,2,2,3,6],[5,3,1,6,5]]",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "25"
     },
     {
       "input": "[[5,2,1],[6,7,7],[9,7,0]]",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "15"
     },
     {
       "input": "[[8,1,1,9,3],[0,0,4,8,6],[5,2,9,9,1],[6,9,1,4,2]]",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "26"
     },
     {
       "input": "[[7,3,9,1],[3,6,4,0],[3,0,6,2],[2,6,4,2]]",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "23"
     },
     {
       "input": "[[70,22,91,50,33,60,60,75,78,74,92],[98,11,11,16,77,89,99,66,70,90,39],[89,8,33,8,90,46,97,17,32,51,92],[88,95,5,72,24,32,36,76,78,46,100],[7,39,12,7,12,12,20,32,46,64,21],[73,86,13,77,93,58,22,39,5,27,21]]",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "326"
     },
     {
       "input": "[[56,13,74,80,70,67,77,34,86,32],[76,93,14,91,29,28,71,13,74,42],[100,4,41,92,26,31,58,12,31,44],[99,4,9,82,91,84,36,28,26,79],[44,54,10,14,92,15,86,85,30,57]]",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "542"
     },
     {
       "input": "[[48,29,33,93,55,43,21],[52,43,25,18,9,22,28],[77,80,38,71,20,61,93],[89,61,70,42,40,38,75],[28,50,53,9,34,29,37],[60,80,84,77,100,60,22],[97,2,55,92,32,87,24],[43,31,20,91,39,8,92],[45,67,13,26,61,13,26],[93,81,10,28,94,63,8],[34,58,18,16,30,57,60],[35,84,23,6,45,100,33],[14,70,91,20,2,0,51],[42,35,68,23,99,92,15]]",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "595"
     }
   ]
 }

@@ -934,5 +934,77 @@
     "slug": "determine-the-minimum-sum-of-a-k-avoiding-array",
     "fqid": 2829,
     "error": "Testcase 4 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1651,
+    "slug": "snakes-and-ladders",
+    "fqid": 909,
+    "error": "Testcase 0 failed: RE (exit 1): 9wl7ye.py\", line 295, in <module>\n    _result = Solution().snakesAndLadders(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp4u9wl7ye.py\", line 157, in snakesAndLadders\n    z = y if board[i][j] == -1 else board[i][j]\n             ~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1670,
+    "slug": "maximize-value-of-function-in-a-ball-passing-game",
+    "fqid": 2836,
+    "error": "Testcase 0 failed: RE (exit 1): nb.py\", line 293, in <module>\n    _result = Solution().getMaxFunctionValue(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmptoa02mnb.py\", line 150, in getMaxFunctionValue\n    f[i][j] = f[f[i][j - 1]][j - 1]\n              ~^^^^^^^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1650,
+    "slug": "peaks-in-array",
+    "fqid": 3187,
+    "error": "Testcase 0 failed: RE (exit 1): ast):\n  File \"/tmp/tmpx7sppz2o.py\", line 317, in <module>\n    _result = Solution().countOfPeaks(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpx7sppz2o.py\", line 178, in countOfPeaks\n    idx, val = q[1:]\n    ^^^^^^^^\nValueError: not enough values to unpack (expected 2, got 1)\n"
+  },
+  {
+    "pid": 1659,
+    "slug": "minimum-time-to-finish-the-race",
+    "fqid": 2188,
+    "error": "Testcase 0 failed: RE (exit 1): \"/tmp/tmp8c3hzgb_.py\", line 291, in <module>\n    _result = Solution().minimumFinishTime(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp8c3hzgb_.py\", line 149, in minimumFinishTime\n    cost[i] = min(cost[i], s)\n                  ~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1673,
+    "slug": "rectangle-overlap",
+    "fqid": 836,
+    "error": "Testcase 0 failed: RE (exit 1): l.py\", line 277, in <module>\n    _result = Solution().isRectangleOverlap(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpqge5gowl.py\", line 142, in isRectangleOverlap\n    x1, y1, x2, y2 = rec1\n    ^^^^^^^^^^^^^^\nValueError: not enough values to unpack (expected 4, got 1)\n"
+  },
+  {
+    "pid": 1658,
+    "slug": "cinema-seat-allocation",
+    "fqid": 1386,
+    "error": "Testcase 5 failed: RE (exit 1): __agg21b.py\", line 285, in <module>\n    _result = Solution().maxNumberOfFamilies(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp__agg21b.py\", line 143, in maxNumberOfFamilies\n    for i, j in reservedSeats:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1657,
+    "slug": "smallest-string-starting-from-leaf",
+    "fqid": 988,
+    "error": "Testcase 8 failed: RE (exit 1):            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpaqfoya_0.py\", line 160, in smallestFromLeaf\n    dfs(root, [])\n  File \"/tmp/tmpaqfoya_0.py\", line 153, in dfs\n    path.append(chr(ord('a') + root.val))\n                ^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: chr() arg not in range(0x110000)\n"
+  },
+  {
+    "pid": 1677,
+    "slug": "shuffle-string",
+    "fqid": 1528,
+    "error": "Testcase 0 failed: RE (exit 1): most recent call last):\n  File \"/tmp/tmp_yhzcdi8.py\", line 278, in <module>\n    _result = Solution().restoreString(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_yhzcdi8.py\", line 144, in restoreString\n    ans[j] = c\n    ~~~^^^\nIndexError: list assignment index out of range\n"
+  },
+  {
+    "pid": 1679,
+    "slug": "smallest-good-base",
+    "fqid": 483,
+    "error": "Testcase 0 failed: RE (exit 1): File \"/tmp/tmpkpttildy.py\", line 293, in <module>\n    _result = Solution().smallestGoodBase(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpkpttildy.py\", line 149, in smallestGoodBase\n    num = int(n)\n          ^^^^^^\nValueError: invalid literal for int() with base 10: 'c'\n"
+  },
+  {
+    "pid": 1678,
+    "slug": "number-of-flowers-in-full-bloom",
+    "fqid": 2251,
+    "error": "Testcase 5 failed: RE (exit 1): ers), sorted(b for _, b in flowers)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpmjvinwtu.py\", line 144, in <genexpr>\n    start, end = sorted(a for a, _ in flowers), sorted(b for _, b in flowers)\n                              ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1649,
+    "slug": "group-the-people-given-the-group-size-they-belong-to",
+    "fqid": 1282,
+    "error": "Testcase 16 failed: RE (exit 1):             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpgzmekkwo.py\", line 145, in groupThePeople\n    return [v[j : j + i] for i, v in g.items() for j in range(0, len(v), i)]\n                                                        ^^^^^^^^^^^^^^^^^^^\nValueError: range() arg 3 must not be zero\n"
+  },
+  {
+    "pid": 1660,
+    "slug": "minimum-knight-moves",
+    "fqid": 1197,
+    "error": "Testcase 0 failed: TLE (>15s)"
   }
 ]
