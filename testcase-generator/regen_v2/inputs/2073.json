@@ -4,25 +4,100 @@
   "inferred_constraints": "1 <= n <= 10^5, 1 <= primes.length <= 100, 2 <= primes[i] <= 1000, primes are unique sorted ascending primes",
   "input_format": "line1: n (int); line2: primes (JSON array)",
   "testcases": [
-    {"input": "12\n[2,7,13,19]", "desc": "Standard: example 1"},
-    {"input": "1\n[2,3,5]", "desc": "Standard: example 2 n=1"},
-    {"input": "1\n[2]", "desc": "Edge: n=1 single prime"},
-    {"input": "2\n[2]", "desc": "Edge: n=2 single prime"},
-    {"input": "10\n[2]", "desc": "Edge: powers of 2"},
-    {"input": "5\n[2,3]", "desc": "Edge: standard ugly"},
-    {"input": "100\n[2,3,5]", "desc": "Standard: classic ugly 100"},
-    {"input": "1000\n[2,3,5,7]", "desc": "Standard: 1000th"},
-    {"input": "50\n[3,5,7,11]", "desc": "Standard: no 2"},
-    {"input": "20\n[2,3,5,7,11,13]", "desc": "Standard small with many primes"},
-    {"input": "10000\n[2,3,5,7]", "desc": "Stress: 10k"},
-    {"input": "100000\n[2,3,5,7]", "desc": "Stress: max n with few primes"},
-    {"input": "100000\n[2]", "desc": "Stress: max n single prime"},
-    {"input": "1\n[997]", "desc": "Edge: largest prime, n=1"},
-    {"input": "30\n[2,3]", "desc": "Standard small classic"},
-    {"input": "1\n[2,3,5,7,11,13,17,19,23,29]", "desc": "Edge: n=1 many primes"},
-    {"input": "50000\n[2,3,5]", "desc": "Stress 50k"},
-    {"input": "200\n[5,7]", "desc": "Standard sparse primes"},
-    {"input": "500\n[2,3,5,11,13,17,19]", "desc": "Standard 7 primes"},
-    {"input": "100\n[2,3,5,7,11,13,17,19,23,29,31]", "desc": "Standard 11 primes"}
+    {
+      "input": "12\n[2,7,13,19]",
+      "desc": "Standard: example 1",
+      "output": "32"
+    },
+    {
+      "input": "1\n[2,3,5]",
+      "desc": "Standard: example 2 n=1",
+      "output": "1"
+    },
+    {
+      "input": "1\n[2]",
+      "desc": "Edge: n=1 single prime",
+      "output": "1"
+    },
+    {
+      "input": "2\n[2]",
+      "desc": "Edge: n=2 single prime",
+      "output": "2"
+    },
+    {
+      "input": "10\n[2]",
+      "desc": "Edge: powers of 2",
+      "output": "512"
+    },
+    {
+      "input": "5\n[2,3]",
+      "desc": "Edge: standard ugly",
+      "output": "6"
+    },
+    {
+      "input": "100\n[2,3,5]",
+      "desc": "Standard: classic ugly 100",
+      "output": "1536"
+    },
+    {
+      "input": "1000\n[2,3,5,7]",
+      "desc": "Standard: 1000th",
+      "output": "385875"
+    },
+    {
+      "input": "50\n[3,5,7,11]",
+      "desc": "Standard: no 2",
+      "output": "729"
+    },
+    {
+      "input": "20\n[2,3,5,7,11,13]",
+      "desc": "Standard small with many primes",
+      "output": "22"
+    },
+    {
+      "input": "10000\n[2,3,5,7]",
+      "desc": "Stress: 10k"
+    },
+    {
+      "input": "100000\n[2,3,5,7]",
+      "desc": "Stress: max n with few primes"
+    },
+    {
+      "input": "100000\n[2]",
+      "desc": "Stress: max n single prime"
+    },
+    {
+      "input": "1\n[997]",
+      "desc": "Edge: largest prime, n=1",
+      "output": "1"
+    },
+    {
+      "input": "30\n[2,3]",
+      "desc": "Standard small classic",
+      "output": "324"
+    },
+    {
+      "input": "1\n[2,3,5,7,11,13,17,19,23,29]",
+      "desc": "Edge: n=1 many primes",
+      "output": "1"
+    },
+    {
+      "input": "50000\n[2,3,5]",
+      "desc": "Stress 50k"
+    },
+    {
+      "input": "200\n[5,7]",
+      "desc": "Standard sparse primes"
+    },
+    {
+      "input": "500\n[2,3,5,11,13,17,19]",
+      "desc": "Standard 7 primes",
+      "output": "4160"
+    },
+    {
+      "input": "100\n[2,3,5,7,11,13,17,19,23,29,31]",
+      "desc": "Standard 11 primes",
+      "output": "130"
+    }
   ]
 }

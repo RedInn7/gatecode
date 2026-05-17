@@ -6,71 +6,88 @@
   "testcases": [
     {
       "input": "[93]",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "0"
     },
     {
       "input": "[-8]",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "0"
     },
     {
       "input": "[19]",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "0"
     },
     {
       "input": "[18]",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "0"
     },
     {
       "input": "[-81]",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "0"
     },
     {
       "input": "[-47,-7,-41,-81,12]",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "0"
     },
     {
       "input": "[-83,-42,-82,-76,67,-39,72,-52,-72,89,63,10,0,-64,83]",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "171"
     },
     {
       "input": "[-66,10,-49,-46,2,97,88,79,-84,3,40,90]",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "180"
     },
     {
       "input": "[96,-39,-1,-56,-17,35,84]",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "79"
     },
     {
       "input": "[-85,66,69,55,73,68,2,95,-75,-64,23]",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "191"
     },
     {
       "input": "[-32,-42,19,8,-20,68,-85,-29,80,79,26,8,-5,79,27]",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "193"
     },
     {
       "input": "[-79,-76,-35,-77]",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "0"
     },
     {
       "input": "[1,-83,-83,78,18,14,100,-7,-83,36]",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "114"
     },
     {
       "input": "[-92,50]",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "0"
     },
     {
       "input": "[-84,-66,39,95,-73,-55,-57,-31,30,64,-44,79,-47,-65,66]",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "159"
     },
     {
       "input": "[46,-94,-15,-91,47,99,-45]",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "0"
     },
     {
       "input": "[-74,-51,63,20,-28,51,8,-58,89,80,-91]",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "112"
     },
     {
       "input": "[-522,-162,-259,607,409,464,-12,-746,39,992,123,-150,-552,384,140,-37,846,-665,487,-343,971,803,-547,-247,220,-552,890,-422,824,-378,89,481,643,537,517,-211,-362,26,-194,141,-817,874,-28,-67,-46,-185,-280,511,-541,899,253,-498,633,842,-66,-402,-137,154,-542,63,548,-890,984,982,566,-5,-27,-262,-230,484,800,-114,816,350,235,-237,-576,-638,523,-226,-580,567,-965,502,352,727,-933,-640,-130,415,-164,406,677,450,-405,293,-186,-666,-368,-195,-903,912,621,-508,-264,778,-269,-982,753,937,650,288,-309,498,259,515,-717,61,-645,468,-237,361,383,-812,583,-839]",

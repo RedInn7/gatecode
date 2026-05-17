@@ -10,79 +10,98 @@
     },
     {
       "input": "\"1900-01-01\"",
-      "desc": "Standard: example 2 min year"
+      "desc": "Standard: example 2 min year",
+      "output": "\"11101101100-1-1\""
     },
     {
       "input": "\"9999-12-31\"",
-      "desc": "Edge: max date"
+      "desc": "Edge: max date",
+      "output": "\"10011100001111-1100-11111\""
     },
     {
       "input": "\"2000-01-01\"",
-      "desc": "Standard millennium"
+      "desc": "Standard millennium",
+      "output": "\"11111010000-1-1\""
     },
     {
       "input": "\"2000-02-29\"",
-      "desc": "Edge leap year"
+      "desc": "Edge leap year",
+      "output": "\"11111010000-10-11101\""
     },
     {
       "input": "\"2024-02-29\"",
-      "desc": "Edge recent leap"
+      "desc": "Edge recent leap",
+      "output": "\"11111101000-10-11101\""
     },
     {
       "input": "\"2026-05-15\"",
-      "desc": "Standard today"
+      "desc": "Standard today",
+      "output": "\"11111101010-101-1111\""
     },
     {
       "input": "\"2025-12-25\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"11111101001-1100-11001\""
     },
     {
       "input": "\"1900-01-31\"",
-      "desc": "Edge end Jan"
+      "desc": "Edge end Jan",
+      "output": "\"11101101100-1-11111\""
     },
     {
       "input": "\"1900-12-01\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"11101101100-1100-1\""
     },
     {
       "input": "\"1923-04-05\"",
-      "desc": "Standard arbitrary"
+      "desc": "Standard arbitrary",
+      "output": "\"11110000011-100-101\""
     },
     {
       "input": "\"1999-12-31\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"11111001111-1100-11111\""
     },
     {
       "input": "\"2024-08-15\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"11111101000-1000-1111\""
     },
     {
       "input": "\"2048-03-14\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"100000000000-11-1110\""
     },
     {
       "input": "\"1955-07-04\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"11110100011-111-100\""
     },
     {
       "input": "\"1984-06-30\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"11111000000-110-11110\""
     },
     {
       "input": "\"2018-10-10\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"11111100010-1010-1010\""
     },
     {
       "input": "\"2100-01-01\"",
-      "desc": "Edge non-leap century"
+      "desc": "Edge non-leap century",
+      "output": "\"100000110100-1-1\""
     },
     {
       "input": "\"2200-02-28\"",
-      "desc": "Edge non-leap century Feb"
+      "desc": "Edge non-leap century Feb",
+      "output": "\"100010011000-10-11100\""
     },
     {
       "input": "\"4096-12-31\"",
-      "desc": "Standard pow2 year"
+      "desc": "Standard pow2 year",
+      "output": "\"1000000000000-1100-11111\""
     }
   ]
 }

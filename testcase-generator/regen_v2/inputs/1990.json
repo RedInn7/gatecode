@@ -6,39 +6,48 @@
   "testcases": [
     {
       "input": "\"1 box has 3 blue 4 red 6 green and 12 yellow marbles\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "true"
     },
     {
       "input": "\"hello world 5 x 5\"",
-      "desc": "Standard: example 2 false"
+      "desc": "Standard: example 2 false",
+      "output": "false"
     },
     {
       "input": "\"sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s\"",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "false"
     },
     {
       "input": "\"1\"",
-      "desc": "Edge: single number (no comparison)"
+      "desc": "Edge: single number (no comparison)",
+      "output": "true"
     },
     {
       "input": "\"hello\"",
-      "desc": "Edge: no numbers"
+      "desc": "Edge: no numbers",
+      "output": "true"
     },
     {
       "input": "\"a 1 b 2 c 3 d\"",
-      "desc": "Standard: simple ascending"
+      "desc": "Standard: simple ascending",
+      "output": "true"
     },
     {
       "input": "\"a 5 b 1 c\"",
-      "desc": "Standard: descending fails"
+      "desc": "Standard: descending fails",
+      "output": "false"
     },
     {
       "input": "\"hi 1 lo 1 mid\"",
-      "desc": "Standard: equal fails"
+      "desc": "Standard: equal fails",
+      "output": "false"
     },
     {
       "input": "\"a 1 b 10 c 100 d 1000\"",
-      "desc": "Standard: powers of 10"
+      "desc": "Standard: powers of 10",
+      "output": "true"
     },
     {
       "input": "\"the 2nd time was 99\"",
@@ -46,43 +55,53 @@
     },
     {
       "input": "\"a 1 b 2 c 3 d 4 e 5\"",
-      "desc": "Standard: ascending 5"
+      "desc": "Standard: ascending 5",
+      "output": "true"
     },
     {
       "input": "\"text without numbers at all\"",
-      "desc": "Edge: no numbers"
+      "desc": "Edge: no numbers",
+      "output": "true"
     },
     {
       "input": "\"1 2 3 4 5 6 7 8 9 10\"",
-      "desc": "Standard: all numbers ascending"
+      "desc": "Standard: all numbers ascending",
+      "output": "true"
     },
     {
       "input": "\"10 9 8 7 6 5\"",
-      "desc": "Standard: all descending"
+      "desc": "Standard: all descending",
+      "output": "false"
     },
     {
       "input": "\"a 999 b\"",
-      "desc": "Edge: single number"
+      "desc": "Edge: single number",
+      "output": "true"
     },
     {
       "input": "\"1 a 2 a 3 a 4 a 5\"",
-      "desc": "Standard: numbers with separator"
+      "desc": "Standard: numbers with separator",
+      "output": "true"
     },
     {
       "input": "\"1 2 2 3\"",
-      "desc": "Standard: equal pair fails"
+      "desc": "Standard: equal pair fails",
+      "output": "false"
     },
     {
       "input": "\"a 100 b 200 c 300\"",
-      "desc": "Standard: 3-digit ascending"
+      "desc": "Standard: 3-digit ascending",
+      "output": "true"
     },
     {
       "input": "\"first 1 second 2 third 3 fourth 4\"",
-      "desc": "Standard: with words"
+      "desc": "Standard: with words",
+      "output": "true"
     },
     {
       "input": "\"jchvtaxexmlfyeikqgoavatvkgyhxfeupinhujwouplpivjnsgsdyhplhxuqiqsoglemqgpgirsodunhubnxdnudcucakwufodpnwmjzwxxrceyqjwqdodhhnxgihrfenhgd\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "true"
     }
   ]
 }

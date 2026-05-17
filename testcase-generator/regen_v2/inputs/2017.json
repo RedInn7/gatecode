@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[0,1],[1,0]]\n[0,0]\n[0,2]",
-      "desc": "Standard: example 1 false"
+      "desc": "Standard: example 1 false",
+      "output": "false"
     },
     {
       "input": "[]\n[0,0]\n[999999,999999]",
-      "desc": "Standard: example 2 unblocked"
+      "desc": "Standard: example 2 unblocked",
+      "output": "true"
     },
     {
       "input": "[]\n[0,0]\n[0,1]",
-      "desc": "Edge: empty blocks adjacent"
+      "desc": "Edge: empty blocks adjacent",
+      "output": "true"
     },
     {
       "input": "[]\n[0,0]\n[1,0]",
-      "desc": "Edge: empty adjacent"
+      "desc": "Edge: empty adjacent",
+      "output": "true"
     },
     {
       "input": "[[1,0]]\n[0,0]\n[2,0]",
-      "desc": "Standard: single block detour"
+      "desc": "Standard: single block detour",
+      "output": "true"
     },
     {
       "input": "[[1,0],[0,1]]\n[0,0]\n[1,1]",
-      "desc": "Standard: 2 blocks corner"
+      "desc": "Standard: 2 blocks corner",
+      "output": "false"
     },
     {
       "input": "[[1,0],[0,1],[1,1]]\n[0,0]\n[2,2]",
-      "desc": "Standard: 3 blocks"
+      "desc": "Standard: 3 blocks",
+      "output": "false"
     },
     {
       "input": "[]\n[0,0]\n[500000,500000]",
-      "desc": "Standard: long path no blocks"
+      "desc": "Standard: long path no blocks",
+      "output": "true"
     },
     {
       "input": "[[2,0],[1,1],[0,2]]\n[0,0]\n[3,3]",
-      "desc": "Standard: diagonal blocks"
+      "desc": "Standard: diagonal blocks",
+      "output": "false"
     },
     {
       "input": "[]\n[999998,999998]\n[999999,999999]",
-      "desc": "Edge: near corner"
+      "desc": "Edge: near corner",
+      "output": "true"
     },
     {
       "input": "[[5,5]]\n[0,0]\n[10,10]",
-      "desc": "Standard: 1 block irrelevant"
+      "desc": "Standard: 1 block irrelevant",
+      "output": "true"
     },
     {
       "input": "[[1,0],[0,1],[2,1],[1,2]]\n[0,0]\n[5,5]",
-      "desc": "Standard: 4 blocks around source"
+      "desc": "Standard: 4 blocks around source",
+      "output": "false"
     },
     {
       "input": "[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]\n[0,0]\n[10,10]",
-      "desc": "Standard: diagonal blocks chain"
+      "desc": "Standard: diagonal blocks chain",
+      "output": "true"
     },
     {
       "input": "[[0,1],[1,0],[1,1]]\n[0,0]\n[0,2]",
-      "desc": "Edge: enclosed source"
+      "desc": "Edge: enclosed source",
+      "output": "false"
     },
     {
       "input": "[[0,1],[1,1],[1,0]]\n[0,0]\n[999999,999999]",
-      "desc": "Edge: source fully enclosed"
+      "desc": "Edge: source fully enclosed",
+      "output": "false"
     },
     {
       "input": "[[500,500],[500,501],[501,500]]\n[0,0]\n[999999,999999]",
-      "desc": "Standard: target reachable"
+      "desc": "Standard: target reachable",
+      "output": "true"
     },
     {
       "input": "[[0,2],[1,1],[2,0]]\n[0,0]\n[1,0]",
-      "desc": "Standard: small case"
+      "desc": "Standard: small case",
+      "output": "true"
     },
     {
       "input": "[[10,9],[9,10],[10,11],[11,10]]\n[10,10]\n[10,10]",
-      "desc": "Edge: src=target if allowed (else change)"
+      "desc": "Edge: src=target if allowed (else change)",
+      "output": "false"
     },
     {
       "input": "[]\n[5,5]\n[6,6]",
-      "desc": "Edge: adjacent diagonal no blocks"
+      "desc": "Edge: adjacent diagonal no blocks",
+      "output": "true"
     },
     {
       "input": "[[629,76,517,350],[-369,326,558,-709],[417,127,-679,305],[331,-942,-969,-192]]\n[-617,43,372,-15,-816,116,-308,-247,-803,-939,426,406,-258,616,-713,-934,33,-595,-816,-32,-28,-292,-522,-835,678,960,465,-168,-252,143,130,-107,956,-720,194,-1000,235,-461,552,637,-961,340,272,366,798,-622,463,413,-117,233,97,-317,187,133,-979,105,594,-782,444,-859,-51,-450,-511,544,905,-881,137,-742,252,428,518,-349,950,-923,646,-179,434,-751,543,-385,-576,-800,-624,459,742,691,149,561,-248,-878,-529,-38,469,281,-969,-447,452,71,468,-822,324,-289,-455,-648,278,-874,-98,-231,-904,964,-337,70,122,972,33,286,169,514,989,490,407,-272,383,-791,-98,660,939,30,-266,-719,-291,841,571,726,-867,-623,-819,-279,-310,582,-555,175,-667,-672,295,-631,-910,205,-464,732,959,827,161,924,-903,-682,-787,990,388,349,-234,-977,905,-371,140,268,-229,205,576,-336,-814,7,40,222,-642,246,-113,-666,992,488,220,-379,360,647,-879,624,484,42,613,962,-345,-355,-581,-546,262,121,-119,282,-308,513]\n[-518,-435,-914,511,-465,-890,-232,-552,941,-228,-278,-470,240,890,360,855,989,842,879,-881,-25,-819,966,-938,-496,197,-399,205,317,-83,989,-860,767,-919,-695,-887,484,-949,-674,178,-862,-177,-542,-429,723,254,198,991,-442,722,-415,464,-429,574,795,199,760,810,128,556,132,574,-711,-472,720,-51,225,-125,882,415,-217,-866,754,-936,5,-341,675,554,-331,486,991,360,-144,670,-417,-227,-380,261,411,-868,559,834,-163,337,-773,722,-414,770,-714,727,-587,106,-353,708,469,-779,-839,786,-257,687,278,-943,-991,812,252,-518,910,-553,168,703,-797,-121,932,-354,775,-772,87,-255,762,635,986,-542,390,-816,41,50,-98,-223,564,-153,-566,-646,-456,275,-667,-367,320,-698,-278,-777,316,-800,-732,-386,-873,263,-415,-66,777,-488,-693,-44,430,-859,766,-471,-28,822,711,-608,-186,-182,52,-868,484,-631,683,-12,808,-389,628,-569,-548,342,583,917,-889,510,-862,607,510,532,326,-424,576,766,-535,711,608,-438]",

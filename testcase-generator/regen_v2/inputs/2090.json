@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[\"tars\",\"rats\",\"arts\",\"star\"]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "2"
     },
     {
       "input": "[\"omv\",\"ovm\"]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "1"
     },
     {
       "input": "[\"abc\"]",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "1"
     },
     {
       "input": "[\"a\"]",
-      "desc": "Edge: n=1 single char"
+      "desc": "Edge: n=1 single char",
+      "output": "1"
     },
     {
       "input": "[\"ab\",\"ba\"]",
-      "desc": "Edge: simple swap"
+      "desc": "Edge: simple swap",
+      "output": "1"
     },
     {
       "input": "[\"aa\",\"aa\"]",
-      "desc": "Edge: identical duplicates"
+      "desc": "Edge: identical duplicates",
+      "output": "1"
     },
     {
       "input": "[\"abc\",\"bca\",\"cab\"]",
-      "desc": "Standard: rotations"
+      "desc": "Standard: rotations",
+      "output": "3"
     },
     {
       "input": "[\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]",
-      "desc": "Standard: all perms"
+      "desc": "Standard: all perms",
+      "output": "1"
     },
     {
       "input": "[\"abcd\",\"abdc\",\"acbd\",\"acdb\",\"adbc\",\"adcb\"]",
-      "desc": "Standard: all perms of 4"
+      "desc": "Standard: all perms of 4",
+      "output": "1"
     },
     {
       "input": "[\"abcdef\",\"badcfe\"]",
-      "desc": "Standard pair length 6"
+      "desc": "Standard pair length 6",
+      "output": "2"
     },
     {
       "input": "[\"aaaa\",\"aaaa\",\"aaaa\",\"aaaa\"]",
-      "desc": "Edge: all identical"
+      "desc": "Edge: all identical",
+      "output": "1"
     },
     {
       "input": "[\"aabb\",\"abab\",\"abba\",\"baab\",\"baba\",\"bbaa\"]",
-      "desc": "Standard: 2-letter anagrams"
+      "desc": "Standard: 2-letter anagrams",
+      "output": "1"
     },
     {
       "input": "[\"abcdefgh\",\"abcdefgh\"]",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "1"
     },
     {
       "input": "[\"abcdefghij\",\"bacdefghij\",\"abdcefghij\",\"abcdfeghij\"]",
-      "desc": "Standard length 10 swaps"
+      "desc": "Standard length 10 swaps",
+      "output": "1"
     },
     {
       "input": "[\"xyz\",\"xzy\",\"yxz\",\"yzx\",\"zxy\",\"zyx\"]",
-      "desc": "Standard length 3 all"
+      "desc": "Standard length 3 all",
+      "output": "1"
     },
     {
       "input": "[\"abab\",\"baba\"]",
-      "desc": "Edge palindrome swaps"
+      "desc": "Edge palindrome swaps",
+      "output": "2"
     },
     {
       "input": "[\"aabbcc\",\"bbaacc\",\"ccaabb\",\"aabbcc\"]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "3"
     },
     {
       "input": "[\"aaaabbbb\",\"bbbbaaaa\",\"aabbaabb\",\"bbaabbaa\"]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4"
     },
     {
       "input": "[\"abcdefghijklmnop\",\"bacdefghijklmnop\"]",
-      "desc": "Standard length 16"
+      "desc": "Standard length 16",
+      "output": "1"
     },
     {
       "input": "[-357,-803,-589,-428,-438,-6,-753,341,955,427,-977,-450,841,873,668,900,-535,630,280,-691,-415,-383,-483,-648,-387,939,-861,178,-247,411,-861,499,435,-305,478,483,-534,-986,135,831,-708,358,684,-974,800,936,-232,525,339,357,-415,-418,-47,832,364,-239,-238,788,266,-192,300,586,949,-775,-445,-855,-592,82,44,-397,-959,570,-883,-527,413,-588,-381,-189,-526,-850,90,317,-953,73,820,-586,196,571,267,230,-564,14,631,-527,-646,695,-716,307,-854,90,941,-86,852,-604,629,-73,-923,265,975,660,802,-866,403,-492,-349,716,914,-884,420,-471,336,-76,96,-550,-857,-736,986,943,193,-787,829,297,705,-837,687,15,-877,-675,204,506,695,204,311,-177,-524,204,223,-579,-171,-476,216,759,-7,229,302,403,-429,-648,692,380,58,-241,-546,205,-579,-653,556,-1000,444,848,-820,511,467,-144,964,-356,-602,-171,-499,846,-164,-320,301,-201,276,260,820,550,612,907,-894,-37,-417,809,-937,115,116,-405,433,892,-773,284,-479,91,126,367,325,144,-217,-375,250,246,797,-983,754,-506,313,-286,355,790,664,-307,254,-755,927,-400,972,41,822,-287,303,-129,-900,-763,440,234,-704,17,65,-854,631,-327,75,542,503,219,450,-391,768,939,696,-424,-338,826,298,201,-377,-608,-737,-911,-355,857,-359,-428,-235,-141,-799,97,-586,0,-714,-795,-324,322,5,-63,-430,808,995,625,-59,-347,-399,518,-490,667,44,-880,23,936,-866,-986,132,-61,234,343,-567,-934,-994,720]",

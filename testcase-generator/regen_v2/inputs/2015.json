@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "4\n6\n[[0,0],[1,1],[2,3]]\n[[0,1],[2,2],[1,4]]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "7"
     },
     {
       "input": "3\n3\n[[1,1]]\n[[0,1],[1,0],[2,1],[1,2]]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "4"
     },
     {
       "input": "1\n1\n[]\n[]",
-      "desc": "Edge: empty 1x1"
+      "desc": "Edge: empty 1x1",
+      "output": "1"
     },
     {
       "input": "1\n1\n[[0,0]]\n[]",
-      "desc": "Edge: 1x1 guard"
+      "desc": "Edge: 1x1 guard",
+      "output": "0"
     },
     {
       "input": "1\n1\n[]\n[[0,0]]",
-      "desc": "Edge: 1x1 wall"
+      "desc": "Edge: 1x1 wall",
+      "output": "0"
     },
     {
       "input": "3\n3\n[]\n[]",
-      "desc": "Edge: empty 3x3"
+      "desc": "Edge: empty 3x3",
+      "output": "9"
     },
     {
       "input": "5\n5\n[[2,2]]\n[]",
-      "desc": "Standard: single guard center"
+      "desc": "Standard: single guard center",
+      "output": "16"
     },
     {
       "input": "5\n5\n[[0,0],[0,4],[4,0],[4,4]]\n[]",
-      "desc": "Standard: corner guards"
+      "desc": "Standard: corner guards",
+      "output": "9"
     },
     {
       "input": "5\n5\n[]\n[[0,0],[1,1],[2,2],[3,3],[4,4]]",
-      "desc": "Standard: diagonal walls no guards"
+      "desc": "Standard: diagonal walls no guards",
+      "output": "20"
     },
     {
       "input": "3\n3\n[[0,0]]\n[[0,2]]",
-      "desc": "Standard: small with wall block"
+      "desc": "Standard: small with wall block",
+      "output": "4"
     },
     {
       "input": "10\n10\n[[5,5]]\n[]",
-      "desc": "Standard: single guard 10x10"
+      "desc": "Standard: single guard 10x10",
+      "output": "81"
     },
     {
       "input": "10\n10\n[[0,0],[9,9]]\n[[5,5]]",
-      "desc": "Standard: 2 guards diagonal corners"
+      "desc": "Standard: 2 guards diagonal corners",
+      "output": "63"
     },
     {
       "input": "4\n4\n[[0,0],[3,3]]\n[[1,1],[2,2]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "2\n2\n[]\n[]",
-      "desc": "Edge: empty 2x2"
+      "desc": "Edge: empty 2x2",
+      "output": "4"
     },
     {
       "input": "10\n10\n[]\n[]",
-      "desc": "Edge: empty 10x10"
+      "desc": "Edge: empty 10x10",
+      "output": "100"
     },
     {
       "input": "5\n5\n[[2,2]]\n[[1,2],[3,2],[2,1],[2,3]]",
-      "desc": "Standard: enclosed guard"
+      "desc": "Standard: enclosed guard",
+      "output": "20"
     },
     {
       "input": "5\n5\n[[0,0],[0,4],[4,0],[4,4],[2,2]]\n[]",
-      "desc": "Standard: 5 guards"
+      "desc": "Standard: 5 guards",
+      "output": "4"
     },
     {
       "input": "3\n5\n[[1,2]]\n[[0,1],[2,1],[1,3]]",
-      "desc": "Standard: 3x5"
+      "desc": "Standard: 3x5",
+      "output": "7"
     },
     {
       "input": "10\n10\n[[1,1],[8,8]]\n[[3,3],[5,5],[7,7]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "61"
     },
     {
       "input": "4\n6\n[[-934,430,-162,514],[920,630,941,664],[372,765,-9,607],[-343,-325,267,240],[-771,-931,60,591],[763,222,-709,-892]]\n[[-180,-114,440,798],[-105,-739,-346,369],[-549,397,-733,675],[723,867,-378,-922],[-368,928,496,97],[-528,-707,-308,220]]",

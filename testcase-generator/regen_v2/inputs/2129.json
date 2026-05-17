@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "\"10111\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "3"
     },
     {
       "input": "\"101\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "3"
     },
     {
       "input": "\"00000\"",
-      "desc": "Edge: all zeros"
+      "desc": "Edge: all zeros",
+      "output": "0"
     },
     {
       "input": "\"11111\"",
-      "desc": "Edge: all ones"
+      "desc": "Edge: all ones",
+      "output": "1"
     },
     {
       "input": "\"0\"",
-      "desc": "Edge: n=1 zero"
+      "desc": "Edge: n=1 zero",
+      "output": "0"
     },
     {
       "input": "\"1\"",
-      "desc": "Edge: n=1 one"
+      "desc": "Edge: n=1 one",
+      "output": "1"
     },
     {
       "input": "\"01\"",
-      "desc": "Edge: 2 chars"
+      "desc": "Edge: 2 chars",
+      "output": "1"
     },
     {
       "input": "\"10\"",
-      "desc": "Edge: 2 chars reversed"
+      "desc": "Edge: 2 chars reversed",
+      "output": "2"
     },
     {
       "input": "\"0101\"",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "3"
     },
     {
       "input": "\"1010\"",
-      "desc": "Standard alternating reversed"
+      "desc": "Standard alternating reversed",
+      "output": "4"
     },
     {
       "input": "\"00001111\"",
-      "desc": "Standard blocks"
+      "desc": "Standard blocks",
+      "output": "1"
     },
     {
       "input": "\"11110000\"",
-      "desc": "Standard blocks rev"
+      "desc": "Standard blocks rev",
+      "output": "2"
     },
     {
       "input": "\"10101010\"",
-      "desc": "Standard alternating long"
+      "desc": "Standard alternating long",
+      "output": "8"
     },
     {
       "input": "\"01010101\"",
-      "desc": "Standard alternating long"
+      "desc": "Standard alternating long",
+      "output": "7"
     },
     {
       "input": "\"111000111000\"",
-      "desc": "Standard triple blocks"
+      "desc": "Standard triple blocks",
+      "output": "4"
     },
     {
       "input": "\"00000000001111111111\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1"
     },
     {
       "input": "\"10000000000000000001\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "3"
     },
     {
       "input": "\"11000110011001100110\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "10"
     },
     {
       "input": "\"010101010101010101010101010101\"",
-      "desc": "Standard 30 alt"
+      "desc": "Standard 30 alt",
+      "output": "29"
     },
     {
       "input": "\"oxvducrlyo\"",

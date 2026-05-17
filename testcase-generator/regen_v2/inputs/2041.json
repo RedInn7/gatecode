@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[1,0,0,0],[0,0,0,0],[0,0,2,-1]]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "2"
     },
     {
       "input": "[[1,0,0,0],[0,0,0,0],[0,0,0,2]]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "4"
     },
     {
       "input": "[[0,1],[2,0]]",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "0"
     },
     {
       "input": "[[1,2]]",
-      "desc": "Edge: 1x2 adjacent"
+      "desc": "Edge: 1x2 adjacent",
+      "output": "1"
     },
     {
       "input": "[[1],[2]]",
-      "desc": "Edge: 2x1 adjacent"
+      "desc": "Edge: 2x1 adjacent",
+      "output": "1"
     },
     {
       "input": "[[1,0,2]]",
-      "desc": "Edge: 1x3"
+      "desc": "Edge: 1x3",
+      "output": "1"
     },
     {
       "input": "[[2,0,1]]",
-      "desc": "Edge: 1x3 reversed"
+      "desc": "Edge: 1x3 reversed",
+      "output": "1"
     },
     {
       "input": "[[1,2,0]]",
-      "desc": "Edge: must visit 0 - impossible"
+      "desc": "Edge: must visit 0 - impossible",
+      "output": "0"
     },
     {
       "input": "[[1,-1,2]]",
-      "desc": "Edge: blocked"
+      "desc": "Edge: blocked",
+      "output": "0"
     },
     {
       "input": "[[1,0,0],[0,0,0],[0,0,2]]",
-      "desc": "Standard: 3x3 open"
+      "desc": "Standard: 3x3 open",
+      "output": "2"
     },
     {
       "input": "[[1,0,0,0],[0,-1,-1,0],[0,0,0,2]]",
-      "desc": "Standard: obstacles"
+      "desc": "Standard: obstacles",
+      "output": "0"
     },
     {
       "input": "[[1,0],[0,2]]",
-      "desc": "Edge: 2x2"
+      "desc": "Edge: 2x2",
+      "output": "0"
     },
     {
       "input": "[[1,0,0,0,0,2]]",
-      "desc": "Edge: 1x6 straight"
+      "desc": "Edge: 1x6 straight",
+      "output": "1"
     },
     {
       "input": "[[1,0],[0,0],[0,0],[0,2]]",
-      "desc": "Standard: 4x2"
+      "desc": "Standard: 4x2",
+      "output": "0"
     },
     {
       "input": "[[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,2]]",
-      "desc": "Standard: 4x4"
+      "desc": "Standard: 4x4",
+      "output": "0"
     },
     {
       "input": "[[1,-1,0],[0,0,0],[-1,0,2]]",
-      "desc": "Standard: obstacle pattern"
+      "desc": "Standard: obstacle pattern",
+      "output": "0"
     },
     {
       "input": "[[1,0,0],[-1,-1,0],[0,0,2]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "0"
     },
     {
       "input": "[[1,0,0,0,0],[-1,-1,-1,-1,0],[0,0,0,0,0],[0,-1,-1,-1,-1],[0,0,0,0,2]]",
-      "desc": "Standard: zigzag"
+      "desc": "Standard: zigzag",
+      "output": "1"
     },
     {
       "input": "[[1,0,0,0],[0,-1,0,0],[0,0,2,0]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "0"
     },
     {
       "input": "[[216,-844,540,551,-766,979,170,288],[-644,195,-428,-202,234,273,-478,802],[-211,-352,126,-137,701,-558,741,45],[-708,-964,119,-500,353,196,-102,-639],[835,-496,-161,858,-209,979,-930,739],[-383,128,476,-812,-700,237,459,-543]]",
