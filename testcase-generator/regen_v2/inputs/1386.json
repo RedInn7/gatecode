@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[-10000]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "false"
     },
     {
       "input": "[0,0,0,0]",
-      "desc": "Edge: all zeros -> depends"
+      "desc": "Edge: all zeros -> depends",
+      "output": "false"
     },
     {
       "input": "[1,2,3]",
-      "desc": "Edge: too short -> false"
+      "desc": "Edge: too short -> false",
+      "output": "false"
     },
     {
       "input": "[3,3,3,3]",
-      "desc": "Standard: 4 elements"
+      "desc": "Standard: 4 elements",
+      "output": "false"
     },
     {
       "input": "[0,1,0,1,0,1,0]",
-      "desc": "Standard: alternating 0 1"
+      "desc": "Standard: alternating 0 1",
+      "output": "true"
     },
     {
       "input": "[1,-1,1,-1,1,-1,1]",
-      "desc": "Killer: alternating pos/neg"
+      "desc": "Killer: alternating pos/neg",
+      "output": "true"
     },
     {
       "input": "[1,2,3,4,3,2,1]",
-      "desc": "Standard: palindrome"
+      "desc": "Standard: palindrome",
+      "output": "false"
     },
     {
       "input": "[10,0,0,0,0,0,0]",
-      "desc": "Killer: leading large"
+      "desc": "Killer: leading large",
+      "output": "false"
     },
     {
       "input": "[1,1,1,1,1,1,1]",
-      "desc": "Standard: all ones"
+      "desc": "Standard: all ones",
+      "output": "true"
     },
     {
       "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9]",
-      "desc": "Standard: 1-9"
+      "desc": "Standard: 1-9",
+      "output": "false"
     },
     {
       "input": "[0,0,0,0,0,0,0]",
-      "desc": "Standard: all zero"
+      "desc": "Standard: all zero",
+      "output": "true"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9]",
-      "desc": "Stress: ascending"
+      "desc": "Stress: ascending",
+      "output": "false"
     },
     {
       "input": "[-1,-2,-3,-4,-3,-2,-1]",
-      "desc": "Killer: all negative palindrome"
+      "desc": "Killer: all negative palindrome",
+      "output": "false"
     },
     {
       "input": "[5,4,3,2,1,2,3,4,5]",
-      "desc": "Standard: symmetric 9"
+      "desc": "Standard: symmetric 9",
+      "output": "true"
     },
     {
       "input": "[1,0,1,0,1,0,1]",
-      "desc": "Standard: alternating 1 0"
+      "desc": "Standard: alternating 1 0",
+      "output": "true"
     },
     {
       "input": "[100,-100,100,-100,100,-100,100]",
-      "desc": "Killer: large alternating"
+      "desc": "Killer: large alternating",
+      "output": "true"
     },
     {
       "input": "[0,0,1,0,0,1,0]",
-      "desc": "Standard: sparse ones"
+      "desc": "Standard: sparse ones",
+      "output": "false"
     },
     {
       "input": "[2,2,2,2,2,2,2]",
-      "desc": "Standard: all twos"
+      "desc": "Standard: all twos",
+      "output": "true"
     },
     {
       "input": "[1,2,3,0,3,2,1]",
-      "desc": "Killer: zero center"
+      "desc": "Killer: zero center",
+      "output": "false"
     },
     {
       "input": "[-5,0,5,0,-5,0,5]",
-      "desc": "Stress: neg zero pos"
+      "desc": "Stress: neg zero pos",
+      "output": "false"
     }
   ]
 }

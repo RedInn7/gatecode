@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "3\n[[0,1],[1,2],[0,2]]\n[0.5,0.5,0.2]\n0\n2",
-      "desc": "Edge: example1 -> 0.25000"
+      "desc": "Edge: example1 -> 0.25000",
+      "output": "0.25"
     },
     {
       "input": "3\n[[0,1],[1,2],[0,2]]\n[0.5,0.5,0.3]\n0\n2",
-      "desc": "Edge: example2 -> 0.30000"
+      "desc": "Edge: example2 -> 0.30000",
+      "output": "0.3"
     },
     {
       "input": "3\n[[0,1]]\n[0.5]\n0\n2",
-      "desc": "Edge: example3 -> 0.00000"
+      "desc": "Edge: example3 -> 0.00000",
+      "output": "0"
     },
     {
       "input": "2\n[[0,1]]\n[1.0]\n0\n1",
-      "desc": "Edge: direct edge prob 1"
+      "desc": "Edge: direct edge prob 1",
+      "output": "1.0"
     },
     {
       "input": "2\n[[0,1]]\n[0.0]\n0\n1",
-      "desc": "Edge: prob 0 -> 0"
+      "desc": "Edge: prob 0 -> 0",
+      "output": "0"
     },
     {
       "input": "2\n[]\n[]\n0\n1",
-      "desc": "Edge: no edges -> 0"
+      "desc": "Edge: no edges -> 0",
+      "output": "0"
     },
     {
       "input": "4\n[[0,1],[1,2],[2,3],[0,3]]\n[0.9,0.9,0.9,0.5]\n0\n3",
-      "desc": "Standard: two paths"
+      "desc": "Standard: two paths",
+      "output": "0.7290000000000001"
     },
     {
       "input": "5\n[[0,1],[0,2],[1,3],[2,3],[3,4]]\n[0.8,0.7,0.9,0.6,0.5]\n0\n4",
-      "desc": "Standard: diamond"
+      "desc": "Standard: diamond",
+      "output": "0.36000000000000004"
     },
     {
       "input": "6\n[[0,1],[1,2],[2,5],[0,3],[3,4],[4,5]]\n[0.9,0.8,0.7,0.6,0.5,0.4]\n0\n5",
-      "desc": "Stress: 2 paths"
+      "desc": "Stress: 2 paths",
+      "output": "0.504"
     },
     {
       "input": "3\n[[0,1],[0,2],[1,2]]\n[0.5,0.8,0.3]\n0\n2",
-      "desc": "Standard: triangle"
+      "desc": "Standard: triangle",
+      "output": "0.8"
     },
     {
       "input": "4\n[[0,1],[0,2],[1,2],[2,3]]\n[0.5,0.5,0.5,1.0]\n0\n3",
-      "desc": "Standard: multiple merges"
+      "desc": "Standard: multiple merges",
+      "output": "0.5"
     },
     {
       "input": "10\n[[0,1],[1,2],[2,3],[3,9],[0,4],[4,5],[5,6],[6,9],[0,7],[7,8],[8,9]]\n[0.9,0.9,0.9,0.9,0.7,0.7,0.7,0.7,0.5,0.5,0.5]\n0\n9",
-      "desc": "Stress: 3 parallel paths"
+      "desc": "Stress: 3 parallel paths",
+      "output": "0.6561000000000001"
     },
     {
       "input": "2\n[[0,1],[0,1]]\n[0.3,0.7]\n0\n1",
-      "desc": "Killer: parallel edges"
+      "desc": "Killer: parallel edges",
+      "output": "0.7"
     },
     {
       "input": "5\n[[0,1],[1,2],[2,3],[3,4],[0,4]]\n[0.1,0.1,0.1,0.1,0.9]\n0\n4",
-      "desc": "Killer: direct vs chain"
+      "desc": "Killer: direct vs chain",
+      "output": "0.9"
     },
     {
       "input": "3\n[[0,1],[1,2]]\n[1.0,1.0]\n0\n2",
-      "desc": "Standard: chain prob 1"
+      "desc": "Standard: chain prob 1",
+      "output": "1.0"
     },
     {
       "input": "4\n[[0,1],[1,3],[0,2],[2,3]]\n[0.5,0.5,0.9,0.9]\n0\n3",
-      "desc": "Standard: two paths varied"
+      "desc": "Standard: two paths varied",
+      "output": "0.81"
     },
     {
       "input": "6\n[[0,1],[1,2],[2,3],[3,4],[4,5],[0,5]]\n[0.9,0.9,0.9,0.9,0.9,0.5]\n0\n5",
-      "desc": "Stress: short vs long"
+      "desc": "Stress: short vs long",
+      "output": "0.5904900000000002"
     },
     {
       "input": "5\n[[0,1],[1,4],[0,2],[2,3],[3,4]]\n[0.8,0.8,0.6,0.6,0.6]\n0\n4",
-      "desc": "Standard: two paths"
+      "desc": "Standard: two paths",
+      "output": "0.6400000000000001"
     },
     {
       "input": "3\n[[0,1],[1,2],[0,2]]\n[0.0,1.0,0.0]\n0\n2",
-      "desc": "Killer: only via 1"
+      "desc": "Killer: only via 1",
+      "output": "0"
     },
     {
       "input": "10\n[[0,9]]\n[0.123]\n0\n9",
-      "desc": "Edge: direct edge"
+      "desc": "Edge: direct edge",
+      "output": "0.123"
     }
   ]
 }

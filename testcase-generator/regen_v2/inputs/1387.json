@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[5,5,5,10,20]",
-      "desc": "Edge: example1 -> true"
+      "desc": "Edge: example1 -> true",
+      "output": "true"
     },
     {
       "input": "[5,5,10,10,20]",
-      "desc": "Edge: example2 -> false"
+      "desc": "Edge: example2 -> false",
+      "output": "false"
     },
     {
       "input": "[5]",
-      "desc": "Edge: single 5 -> true"
+      "desc": "Edge: single 5 -> true",
+      "output": "true"
     },
     {
       "input": "[10]",
-      "desc": "Edge: single 10 -> false (no change)"
+      "desc": "Edge: single 10 -> false (no change)",
+      "output": "false"
     },
     {
       "input": "[20]",
-      "desc": "Edge: single 20 -> false"
+      "desc": "Edge: single 20 -> false",
+      "output": "false"
     },
     {
       "input": "[5,5,5,5,5]",
-      "desc": "Standard: all 5s -> true"
+      "desc": "Standard: all 5s -> true",
+      "output": "true"
     },
     {
       "input": "[5,10]",
-      "desc": "Standard: 5 then 10 -> true"
+      "desc": "Standard: 5 then 10 -> true",
+      "output": "true"
     },
     {
       "input": "[5,5,10,20]",
-      "desc": "Standard: enough change"
+      "desc": "Standard: enough change",
+      "output": "true"
     },
     {
       "input": "[10,5]",
-      "desc": "Killer: 10 first -> false"
+      "desc": "Killer: 10 first -> false",
+      "output": "false"
     },
     {
       "input": "[5,5,5,5,10,10,20,20]",
-      "desc": "Standard: progression"
+      "desc": "Standard: progression",
+      "output": "true"
     },
     {
       "input": "[5,5,5,5,5,5,10,10,10,20]",
-      "desc": "Stress: many 5s then mixed"
+      "desc": "Stress: many 5s then mixed",
+      "output": "true"
     },
     {
       "input": "[5,10,5,20]",
-      "desc": "Killer: 20 needs 5+10 or 3x5"
+      "desc": "Killer: 20 needs 5+10 or 3x5",
+      "output": "true"
     },
     {
       "input": "[5,5,20]",
-      "desc": "Killer: 20 needs 3x5 but only have 2 -> false"
+      "desc": "Killer: 20 needs 3x5 but only have 2 -> false",
+      "output": "false"
     },
     {
       "input": "[5,5,5,20]",
-      "desc": "Standard: 20 needs 15 -> 5+10 not available but 3x5 ok -> true"
+      "desc": "Standard: 20 needs 15 -> 5+10 not available but 3x5 ok -> true",
+      "output": "true"
     },
     {
       "input": "[5,10,5,10,5,20]",
-      "desc": "Stress: 20 has 10+5 available -> true"
+      "desc": "Stress: 20 has 10+5 available -> true",
+      "output": "true"
     },
     {
       "input": "[5,5,5,10,5,20,10,5]",
-      "desc": "Killer: complex sequence"
+      "desc": "Killer: complex sequence",
+      "output": "true"
     },
     {
       "input": "[5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]",
-      "desc": "Stress: many customers"
+      "desc": "Stress: many customers",
+      "output": "true"
     },
     {
       "input": "[5,20]",
-      "desc": "Killer: 20 no sufficient change -> false"
+      "desc": "Killer: 20 no sufficient change -> false",
+      "output": "false"
     },
     {
       "input": "[5,5,10,10,5,5,20,20]",
-      "desc": "Standard: mixed sequence"
+      "desc": "Standard: mixed sequence",
+      "output": "true"
     },
     {
       "input": "[5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20, 5, 10, 20]",
-      "desc": "Stress: repeating pattern"
+      "desc": "Stress: repeating pattern",
+      "output": "false"
     }
   ]
 }

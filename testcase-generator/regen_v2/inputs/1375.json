@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1000]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "1000.0"
     },
     {
       "input": "[1000,2000,3000]",
-      "desc": "Edge: example2 -> 2000.00000"
+      "desc": "Edge: example2 -> 2000.00000",
+      "output": "2000.0"
     },
     {
       "input": "[1000,2000,3000,4000,5000]",
-      "desc": "Standard: 5 values"
+      "desc": "Standard: 5 values",
+      "output": "3000.0"
     },
     {
       "input": "[1000,1000000,500000]",
-      "desc": "Killer: min max and mid"
+      "desc": "Killer: min max and mid",
+      "output": "500000.0"
     },
     {
       "input": "[1000,2000,3000,4000,5000,6000,7000]",
-      "desc": "Standard: 7 ascending"
+      "desc": "Standard: 7 ascending",
+      "output": "4000.0"
     },
     {
       "input": "[7000,6000,5000,4000,3000,2000,1000]",
-      "desc": "Standard: 7 descending"
+      "desc": "Standard: 7 descending",
+      "output": "4000.0"
     },
     {
       "input": "[1000,999000,500000,600000,700000]",
-      "desc": "Stress: spread"
+      "desc": "Stress: spread",
+      "output": "600000.0"
     },
     {
       "input": "[50000,60000,70000,80000,90000,100000]",
-      "desc": "Standard: 6 values"
+      "desc": "Standard: 6 values",
+      "output": "75000.0"
     },
     {
       "input": "[1000,1000000,250000,500000,750000]",
-      "desc": "Stress: extremes"
+      "desc": "Stress: extremes",
+      "output": "500000.0"
     },
     {
       "input": "[10000,20000,30000,40000,50000,60000,70000,80000,90000,100000]",
-      "desc": "Stress: 10 values"
+      "desc": "Stress: 10 values",
+      "output": "55000.0"
     },
     {
       "input": "[1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,11000]",
-      "desc": "Standard: 11 values"
+      "desc": "Standard: 11 values",
+      "output": "6000.0"
     },
     {
       "input": "[1001,1002,1003]",
-      "desc": "Edge: 3 close values"
+      "desc": "Edge: 3 close values",
+      "output": "1002.0"
     },
     {
       "input": "[500000,600000,700000]",
-      "desc": "Standard: 3 mid-range"
+      "desc": "Standard: 3 mid-range",
+      "output": "600000.0"
     },
     {
       "input": "[1000,500000,1000000]",
-      "desc": "Killer: spread 3"
+      "desc": "Killer: spread 3",
+      "output": "500000.0"
     },
     {
       "input": "[1000,999999,500000,250000,750000]",
-      "desc": "Standard: 5 spread"
+      "desc": "Standard: 5 spread",
+      "output": "500000.0"
     },
     {
       "input": "[100000,200000,300000,400000,500000,600000,700000,800000,900000,1000000]",
-      "desc": "Stress: 10 spread"
+      "desc": "Stress: 10 spread",
+      "output": "550000.0"
     },
     {
       "input": "[1000,1001,1002,1003,1004,1005]",
-      "desc": "Standard: close values"
+      "desc": "Standard: close values",
+      "output": "1002.5"
     },
     {
       "input": "[500000,500001,500002,500003]",
-      "desc": "Killer: near equal"
+      "desc": "Killer: near equal",
+      "output": "500001.5"
     },
     {
       "input": "[1000,5000,9000,13000,17000]",
-      "desc": "Standard: arithmetic sequence"
+      "desc": "Standard: arithmetic sequence",
+      "output": "9000.0"
     },
     {
       "input": "[250000,500000,750000,1000000,1000]",
-      "desc": "Stress: 5 values mixed"
+      "desc": "Stress: 5 values mixed",
+      "output": "500000.0"
     }
   ]
 }

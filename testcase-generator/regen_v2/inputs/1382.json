@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,1]",
-      "desc": "Edge: example1 -> 2"
+      "desc": "Edge: example1 -> 2",
+      "output": "2"
     },
     {
       "input": "[6,0,3,3,6,7,2,7]",
-      "desc": "Edge: example2 -> 2"
+      "desc": "Edge: example2 -> 2",
+      "output": "3"
     },
     {
       "input": "[0]",
-      "desc": "Edge: single 0 -> 1"
+      "desc": "Edge: single 0 -> 1",
+      "output": "1"
     },
     {
       "input": "[1,0]",
-      "desc": "Edge: two elements"
+      "desc": "Edge: two elements",
+      "output": "1"
     },
     {
       "input": "[0,0,0]",
-      "desc": "Standard: all zeros"
+      "desc": "Standard: all zeros",
+      "output": "1"
     },
     {
       "input": "[1,2]",
-      "desc": "Standard: ascending 2"
+      "desc": "Standard: ascending 2",
+      "output": "1"
     },
     {
       "input": "[0,1,2,3]",
-      "desc": "Standard: 0-3 ascending"
+      "desc": "Standard: 0-3 ascending",
+      "output": "1"
     },
     {
       "input": "[2,2,2,2]",
-      "desc": "Standard: all same"
+      "desc": "Standard: all same",
+      "output": "2"
     },
     {
       "input": "[0,0,1,1,2,2]",
-      "desc": "Standard: pairs"
+      "desc": "Standard: pairs",
+      "output": "1"
     },
     {
       "input": "[3,3,3,3,3,3]",
-      "desc": "Standard: all 3 in 6-array"
+      "desc": "Standard: all 3 in 6-array",
+      "output": "2"
     },
     {
       "input": "[0,1,2]",
-      "desc": "Standard: 0,1,2"
+      "desc": "Standard: 0,1,2",
+      "output": "1"
     },
     {
       "input": "[1,1,1,1,1]",
-      "desc": "Standard: all 1 in 5-array"
+      "desc": "Standard: all 1 in 5-array",
+      "output": "2"
     },
     {
       "input": "[0,0,0,0,0]",
-      "desc": "Stress: all zeros"
+      "desc": "Stress: all zeros",
+      "output": "1"
     },
     {
       "input": "[4,4,4,4,4]",
-      "desc": "Stress: all same mid value"
+      "desc": "Stress: all same mid value",
+      "output": "2"
     },
     {
       "input": "[0,1,1,2,2,3]",
-      "desc": "Standard: increasing pairs"
+      "desc": "Standard: increasing pairs",
+      "output": "1"
     },
     {
       "input": "[5,5,5,5,5,5]",
-      "desc": "Stress: all same at n-1"
+      "desc": "Stress: all same at n-1",
+      "output": "2"
     },
     {
       "input": "[0,2,4,6,8,10]",
-      "desc": "Killer: even values -> some may exceed"
+      "desc": "Killer: even values -> some may exceed",
+      "output": "1"
     },
     {
       "input": "[1,1,2,2,3,3,4,4]",
-      "desc": "Stress: sorted pairs"
+      "desc": "Stress: sorted pairs",
+      "output": "2"
     },
     {
       "input": "[0,0,0,3,3,3]",
-      "desc": "Killer: two groups"
+      "desc": "Killer: two groups",
+      "output": "1"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,0]",
-      "desc": "Stress: all distinct"
+      "desc": "Stress: all distinct",
+      "output": "1"
     }
   ]
 }

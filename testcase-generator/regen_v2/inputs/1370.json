@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[2,2,2,2,5,5,5,8]\n3\n4",
-      "desc": "Edge: example1 -> 3"
+      "desc": "Edge: example1 -> 3",
+      "output": "3"
     },
     {
       "input": "[11,13,17,23,29,31,7,5,2,3]\n3\n5",
-      "desc": "Edge: example2 -> 6"
+      "desc": "Edge: example2 -> 6",
+      "output": "6"
     },
     {
       "input": "[1]\n1\n1",
-      "desc": "Edge: single element equal threshold"
+      "desc": "Edge: single element equal threshold",
+      "output": "1"
     },
     {
       "input": "[1]\n1\n2",
-      "desc": "Edge: single below threshold -> 0"
+      "desc": "Edge: single below threshold -> 0",
+      "output": "0"
     },
     {
       "input": "[5,5,5]\n3\n5",
-      "desc": "Edge: exactly at threshold -> 1"
+      "desc": "Edge: exactly at threshold -> 1",
+      "output": "1"
     },
     {
       "input": "[10000,10000,10000]\n2\n9999",
-      "desc": "Stress: max above threshold"
+      "desc": "Stress: max above threshold",
+      "output": "2"
     },
     {
       "input": "[1,1,1,1,1]\n3\n2",
-      "desc": "Standard: below threshold -> 0"
+      "desc": "Standard: below threshold -> 0",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5]\n2\n3",
-      "desc": "Standard: sliding window"
+      "desc": "Standard: sliding window",
+      "output": "2"
     },
     {
       "input": "[5,4,3,2,1]\n3\n3",
-      "desc": "Standard: descending"
+      "desc": "Standard: descending",
+      "output": "2"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n5\n5",
-      "desc": "Standard: 1-10 window 5"
+      "desc": "Standard: 1-10 window 5",
+      "output": "4"
     },
     {
       "input": "[1000,2000,3000,4000,5000]\n3\n3000",
-      "desc": "Standard: at threshold"
+      "desc": "Standard: at threshold",
+      "output": "2"
     },
     {
       "input": "[4432,8103,6694,2481,2459,5381,180,3129,2866,1210,2985,1329,5217,9684,6758,8099,4555,4278,2222,2539,9116,3492,4700,6754,3705,673,441,1431,9949,4954,8728,6591,4581,3234,5920,668,4839,8614,4298,4680,4571,2412,4269,3398,263,6542,7024,3722,8246,4185,3305,7477,3793,179,6967,8018,1469,9485,4507,3187,9758,6266,9491,6537,7597,5634,7010,5216,373,3672,7520,92,8853,2317,982]\n2\n4",
-      "desc": "Regenerated: standard at position 11"
+      "desc": "Regenerated: standard at position 11",
+      "output": "74"
     },
     {
       "input": "[10000,1,10000,1,10000]\n3\n5000",
-      "desc": "Killer: alternating high low"
+      "desc": "Killer: alternating high low",
+      "output": "2"
     },
     {
       "input": "[3,3,3,3,3]\n2\n3",
-      "desc": "Standard: all same at threshold"
+      "desc": "Standard: all same at threshold",
+      "output": "4"
     },
     {
       "input": "[1,2,3,4,5]\n5\n3",
-      "desc": "Killer: full array window"
+      "desc": "Killer: full array window",
+      "output": "1"
     },
     {
       "input": "[100,200,300,400,500]\n3\n300",
-      "desc": "Standard: multiples of 100"
+      "desc": "Standard: multiples of 100",
+      "output": "2"
     },
     {
       "input": "[1,10000,1,10000,1]\n2\n5000",
-      "desc": "Killer: alternating extremes"
+      "desc": "Killer: alternating extremes",
+      "output": "4"
     },
     {
       "input": "[5000,5000,5000,5000,5000,5000]\n4\n4999",
-      "desc": "Stress: just above"
+      "desc": "Stress: just above",
+      "output": "3"
     },
     {
       "input": "[9999,10000,9998,10000,9997]\n2\n9999",
-      "desc": "Killer: near max threshold"
+      "desc": "Killer: near max threshold",
+      "output": "3"
     },
     {
       "input": "[10000,10000,10000,10000,10000]\n5\n10000",
-      "desc": "Stress: max values full window"
+      "desc": "Stress: max values full window",
+      "output": "1"
     }
   ]
 }

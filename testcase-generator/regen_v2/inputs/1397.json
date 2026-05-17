@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "[\"abba\", \"cd\"]"
     },
     {
       "input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]",
-      "desc": "Edge: all distinct -> no removal"
+      "desc": "Edge: all distinct -> no removal",
+      "output": "[\"a\", \"b\", \"c\", \"d\", \"e\"]"
     },
     {
       "input": "[\"a\"]",
-      "desc": "Edge: single word"
+      "desc": "Edge: single word",
+      "output": "[\"a\"]"
     },
     {
       "input": "[\"ab\",\"ba\"]",
-      "desc": "Edge: two anagrams -> [\"ab\"]"
+      "desc": "Edge: two anagrams -> [\"ab\"]",
+      "output": "[\"ab\"]"
     },
     {
       "input": "[\"abc\",\"bca\",\"cab\",\"xyz\",\"zxy\"]",
-      "desc": "Standard: two groups of anagrams"
+      "desc": "Standard: two groups of anagrams",
+      "output": "[\"abc\", \"xyz\"]"
     },
     {
       "input": "[\"listen\",\"silent\",\"enlist\",\"hello\",\"world\"]",
-      "desc": "Standard: 3 anagrams then 2 distinct"
+      "desc": "Standard: 3 anagrams then 2 distinct",
+      "output": "[\"listen\", \"hello\", \"world\"]"
     },
     {
       "input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]",
-      "desc": "Stress: all same -> [\"a\"]"
+      "desc": "Stress: all same -> [\"a\"]",
+      "output": "[\"a\"]"
     },
     {
       "input": "[\"abc\",\"def\",\"ghi\",\"jkl\"]",
-      "desc": "Standard: no anagrams"
+      "desc": "Standard: no anagrams",
+      "output": "[\"abc\", \"def\", \"ghi\", \"jkl\"]"
     },
     {
       "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
-      "desc": "Killer: classic anagram groups"
+      "desc": "Killer: classic anagram groups",
+      "output": "[\"eat\", \"tan\", \"ate\", \"nat\", \"bat\"]"
     },
     {
       "input": "[\"ab\",\"cd\",\"ba\",\"dc\",\"ef\"]",
-      "desc": "Standard: alternating anagram pairs"
+      "desc": "Standard: alternating anagram pairs",
+      "output": "[\"ab\", \"cd\", \"ba\", \"dc\", \"ef\"]"
     },
     {
       "input": "[\"z\",\"z\",\"z\"]",
-      "desc": "Standard: triple same z"
+      "desc": "Standard: triple same z",
+      "output": "[\"z\"]"
     },
     {
       "input": "[\"abc\",\"bca\",\"cab\",\"bac\",\"acb\",\"cba\"]",
-      "desc": "Stress: 6-way anagram chain"
+      "desc": "Stress: 6-way anagram chain",
+      "output": "[\"abc\"]"
     },
     {
       "input": "[\"aa\",\"aa\"]",
-      "desc": "Edge: double same"
+      "desc": "Edge: double same",
+      "output": "[\"aa\"]"
     },
     {
       "input": "[\"ab\",\"ab\",\"ab\"]",
-      "desc": "Standard: triple same"
+      "desc": "Standard: triple same",
+      "output": "[\"ab\"]"
     },
     {
       "input": "[\"xyz\",\"zyx\",\"abc\",\"cba\",\"mn\",\"nm\"]",
-      "desc": "Standard: 3 pairs"
+      "desc": "Standard: 3 pairs",
+      "output": "[\"xyz\", \"abc\", \"mn\"]"
     },
     {
       "input": "[\"hello\",\"world\",\"dlrow\",\"olleh\"]",
-      "desc": "Killer: two cross-anagram pairs"
+      "desc": "Killer: two cross-anagram pairs",
+      "output": "[\"hello\", \"world\", \"olleh\"]"
     },
     {
       "input": "[\"a\",\"b\",\"a\",\"b\",\"a\"]",
-      "desc": "Standard: alternating with same"
+      "desc": "Standard: alternating with same",
+      "output": "[\"a\", \"b\", \"a\", \"b\", \"a\"]"
     },
     {
       "input": "[\"abcde\",\"edcba\",\"fghij\",\"jihgf\"]",
-      "desc": "Stress: 5-char anagram pairs"
+      "desc": "Stress: 5-char anagram pairs",
+      "output": "[\"abcde\", \"fghij\"]"
     },
     {
       "input": "[\"aab\",\"baa\",\"aba\",\"xyz\"]",
-      "desc": "Standard: 3-way anagram + distinct"
+      "desc": "Standard: 3-way anagram + distinct",
+      "output": "[\"aab\", \"xyz\"]"
     },
     {
       "input": "[\"mn\",\"nm\",\"op\",\"po\",\"qr\",\"rq\"]",
-      "desc": "Stress: 3 consecutive anagram pairs"
+      "desc": "Stress: 3 consecutive anagram pairs",
+      "output": "[\"mn\", \"op\", \"qr\"]"
     }
   ]
 }

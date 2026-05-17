@@ -556,5 +556,35 @@
     "slug": "find-the-maximum-sequence-value-of-array",
     "fqid": 3287,
     "error": "Testcase 6 failed: RE (exit 1): le \"/tmp/tmpsa55bktr.py\", line 300, in <module>\n    _result = Solution().maxValue(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpsa55bktr.py\", line 150, in maxValue\n    f[i + 1][j + 1][x | nums[i]] |= f[i][j][x]\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1371,
+    "slug": "minimum-remove-to-make-valid-parentheses",
+    "fqid": 1249,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1396,
+    "slug": "sentence-similarity-iii",
+    "fqid": 1813,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1391,
+    "slug": "smallest-substring-with-identical-characters-i",
+    "fqid": 3398,
+    "error": "Testcase 0 failed: RE (exit 1): __init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 340, in decode\n    raise JSONDecodeError(\"Extra data\", s, end)\njson.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)\n"
+  },
+  {
+    "pid": 1399,
+    "slug": "length-of-the-longest-alphabetical-continuous-substring",
+    "fqid": 2414,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1406,
+    "slug": "falling-squares",
+    "fqid": 699,
+    "error": "Testcase 7 failed: RE (exit 1): ):\n  File \"/tmp/tmp6qd2841i.py\", line 346, in <module>\n    _result = Solution().fallingSquares(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp6qd2841i.py\", line 207, in fallingSquares\n    for l, w in positions:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
   }
 ]
