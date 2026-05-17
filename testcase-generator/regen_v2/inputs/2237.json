@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"dbca\"\n2",
-      "desc": "Standard example"
+      "desc": "Standard example",
+      "output": "\"dbc\""
     },
     {
       "input": "\"gggg\"\n4",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"g\""
     },
     {
       "input": "\"a\"\n1",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"a\""
     },
     {
       "input": "\"ab\"\n1",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"ab\""
     },
     {
       "input": "\"ab\"\n2",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"b\""
     },
     {
       "input": "\"zzzz\"\n4",
-      "desc": "Edge all z"
+      "desc": "Edge all z",
+      "output": "\"z\""
     },
     {
       "input": "\"abcde\"\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"e\""
     },
     {
       "input": "\"banana\"\n3",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"nana\""
     },
     {
       "input": "\"zabcde\"\n3",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"zabc\""
     },
     {
       "input": "\"zzaaa\"\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"zzaa\""
     },
     {
       "input": "\"aaazzz\"\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"zzz\""
     },
     {
       "input": "\"thequickbrown\"\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"wn\""
     },
     {
       "input": "\"abcdefghij\"\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"j\""
     },
     {
       "input": "\"jihgfedcba\"\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"jihgfe\""
     },
     {
       "input": "\"mississippi\"\n4",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"ssissipp\""
     },
     {
       "input": "\"zzz\"\n1",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"zzz\""
     },
     {
       "input": "\"aaaaa\"\n5",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"a\""
     },
     {
       "input": "\"aabbcc\"\n3",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"cc\""
     },
     {
       "input": "\"xyzabc\"\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"zabc\""
     },
     {
       "input": "\"numsculn\"\n4",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"umscu\""
     }
   ]
 }

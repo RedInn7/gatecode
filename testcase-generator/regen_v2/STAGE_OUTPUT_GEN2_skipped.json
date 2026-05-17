@@ -358,5 +358,17 @@
     "slug": "find-maximum-number-of-non-intersecting-substrings",
     "fqid": 3557,
     "reason": "No Python3 solution found for fqid=3557"
+  },
+  {
+    "pid": 2228,
+    "slug": "find-the-largest-palindrome-divisible-by-k",
+    "fqid": 3260,
+    "reason": "No Python3 solution found for fqid=3260"
+  },
+  {
+    "pid": 2242,
+    "slug": "number-of-perfect-pairs",
+    "fqid": 3649,
+    "reason": "No Python3 solution found for fqid=3649"
   }
 ]

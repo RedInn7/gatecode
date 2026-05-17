@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"onefourthree\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "\"143\""
     },
     {
       "input": "\"ninexsix\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "\"96\""
     },
     {
       "input": "\"one\"",
-      "desc": "Edge: single word"
+      "desc": "Edge: single word",
+      "output": "\"1\""
     },
     {
       "input": "\"zero\"",
-      "desc": "Edge: zero"
+      "desc": "Edge: zero",
+      "output": "\"0\""
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge: no match"
+      "desc": "Edge: no match",
+      "output": "\"\""
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "\"\""
     },
     {
       "input": "\"twothreefourfive\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"2345\""
     },
     {
       "input": "\"oneonefourzero\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"1140\""
     },
     {
       "input": "\"twoxtwoxtwo\"",
-      "desc": "Standard with skip"
+      "desc": "Standard with skip",
+      "output": "\"222\""
     },
     {
       "input": "\"sixsevenninetenttwo\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"6792\""
     },
     {
       "input": "\"eightnineten\"",
-      "desc": "Edge: ten not valid"
+      "desc": "Edge: ten not valid",
+      "output": "\"89\""
     },
     {
       "input": "\"zeroonetwothreefourfivesixseveneightnine\"",
-      "desc": "Edge: all digits"
+      "desc": "Edge: all digits",
+      "output": "\"0123456789\""
     },
     {
       "input": "\"xxx\"",
-      "desc": "Edge: no words"
+      "desc": "Edge: no words",
+      "output": "\"\""
     },
     {
       "input": "\"xy\"",
-      "desc": "Edge: 2 chars no match"
+      "desc": "Edge: 2 chars no match",
+      "output": "\"\""
     },
     {
       "input": "\"twentyone\"",
-      "desc": "Edge: 'one' inside"
+      "desc": "Edge: 'one' inside",
+      "output": "\"1\""
     },
     {
       "input": "\"nineten\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"9\""
     },
     {
       "input": "\"thirteen\"",
-      "desc": "Edge: no match three"
+      "desc": "Edge: no match three",
+      "output": "\"\""
     },
     {
       "input": "\"sixteen\"",
-      "desc": "Edge: 'six' present"
+      "desc": "Edge: 'six' present",
+      "output": "\"6\""
     },
     {
       "input": "\"oneoneone\"",
-      "desc": "Standard 3 ones"
+      "desc": "Standard 3 ones",
+      "output": "\"111\""
     },
     {
       "input": "\"bxafjphpkojzdyndlnqzpyvn\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"\""
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= prices.length <= 10^5, 1 <= queries.length <= 10^5",
   "input_format": "line1: prices (JSON array); line2: queries (JSON 2D)",
   "testcases": [
-    {"input": "[1,9,22,10,19]\n[[18,4],[5,2]]", "desc": "Standard example 1"},
-    {"input": "[1,5,4,3,7,11,9]\n[[5,4],[5,7],[7,3],[4,5]]", "desc": "Standard example 2"},
-    {"input": "[5]\n[[1,1]]", "desc": "Edge"},
-    {"input": "[1]\n[[100,1]]", "desc": "Edge huge k"},
-    {"input": "[100]\n[[1,1]]", "desc": "Edge small k"},
-    {"input": "[1,2,3,4,5]\n[[3,3]]", "desc": "Standard"},
-    {"input": "[1,2,3,4,5]\n[[3,5]]", "desc": "Standard m=5"},
-    {"input": "[1,1,1,1,1]\n[[1,3]]", "desc": "Standard all same"},
-    {"input": "[1,5,10,15,20]\n[[10,3],[5,3],[15,3]]", "desc": "Standard"},
-    {"input": "[100,200,300,400,500]\n[[250,3],[100,2]]", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[5,5],[3,7],[1,10]]", "desc": "Standard"},
-    {"input": "[10,20,30,40,50,60,70,80,90,100]\n[[50,5]]", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[10,5]]", "desc": "Standard"},
-    {"input": "[5,5,5,5,5]\n[[5,3]]", "desc": "Edge same"},
-    {"input": "[100,99,98,97,96,95]\n[[50,3]]", "desc": "Standard"},
-    {"input": "[1,2,4,8,16,32,64]\n[[10,3]]", "desc": "Standard powers"},
-    {"input": "[1,1000,1,1000,1,1000]\n[[500,3]]", "desc": "Standard"},
-    {"input": "[10,20,30,40,50]\n[[25,2],[35,3],[45,4]]", "desc": "Standard"},
-    {"input": "[1,3,5,7,9,11,13,15]\n[[7,4]]", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n[[5,5],[7,3],[2,8]]", "desc": "Standard multi"}
+    {
+      "input": "[1,9,22,10,19]\n[[18,4],[5,2]]",
+      "desc": "Standard example 1",
+      "output": "[34, -21]"
+    },
+    {
+      "input": "[1,5,4,3,7,11,9]\n[[5,4],[5,7],[7,3],[4,5]]",
+      "desc": "Standard example 2",
+      "output": "[4, 16, 7, 1]"
+    },
+    {
+      "input": "[5]\n[[1,1]]",
+      "desc": "Edge",
+      "output": "[-3]"
+    },
+    {
+      "input": "[1]\n[[100,1]]",
+      "desc": "Edge huge k",
+      "output": "[1]"
+    },
+    {
+      "input": "[100]\n[[1,1]]",
+      "desc": "Edge small k",
+      "output": "[-98]"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[[3,3]]",
+      "desc": "Standard",
+      "output": "[4]"
+    },
+    {
+      "input": "[1,2,3,4,5]\n[[3,5]]",
+      "desc": "Standard m=5",
+      "output": "[9]"
+    },
+    {
+      "input": "[1,1,1,1,1]\n[[1,3]]",
+      "desc": "Standard all same",
+      "output": "[3]"
+    },
+    {
+      "input": "[1,5,10,15,20]\n[[10,3],[5,3],[15,3]]",
+      "desc": "Standard",
+      "output": "[6, -15, 16]"
+    },
+    {
+      "input": "[100,200,300,400,500]\n[[250,3],[100,2]]",
+      "desc": "Standard",
+      "output": "[200, -500]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[[5,5],[3,7],[1,10]]",
+      "desc": "Standard",
+      "output": "[6, -8, -35]"
+    },
+    {
+      "input": "[10,20,30,40,50,60,70,80,90,100]\n[[50,5]]",
+      "desc": "Standard",
+      "output": "[60]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[[10,5]]",
+      "desc": "Standard",
+      "output": "[15]"
+    },
+    {
+      "input": "[5,5,5,5,5]\n[[5,3]]",
+      "desc": "Edge same",
+      "output": "[15]"
+    },
+    {
+      "input": "[100,99,98,97,96,95]\n[[50,3]]",
+      "desc": "Standard",
+      "output": "[3]"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64]\n[[10,3]]",
+      "desc": "Standard powers",
+      "output": "[-55]"
+    },
+    {
+      "input": "[1,1000,1,1000,1,1000]\n[[500,3]]",
+      "desc": "Standard",
+      "output": "[0]"
+    },
+    {
+      "input": "[10,20,30,40,50]\n[[25,2],[35,3],[45,4]]",
+      "desc": "Standard",
+      "output": "[10, 50, 100]"
+    },
+    {
+      "input": "[1,3,5,7,9,11,13,15]\n[[7,4]]",
+      "desc": "Standard",
+      "output": "[4]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n[[5,5],[7,3],[2,8]]",
+      "desc": "Standard multi",
+      "output": "[6, 6, -20]"
+    }
   ]
 }

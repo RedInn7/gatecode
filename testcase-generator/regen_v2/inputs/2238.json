@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"ADOBECODEBANC\"\n\"ABC\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"BANC\""
     },
     {
       "input": "\"a\"\n\"a\"",
-      "desc": "Edge same"
+      "desc": "Edge same",
+      "output": "\"a\""
     },
     {
       "input": "\"a\"\n\"aa\"",
-      "desc": "Edge impossible"
+      "desc": "Edge impossible",
+      "output": "\"\""
     },
     {
       "input": "\"ab\"\n\"b\"",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"b\""
     },
     {
       "input": "\"aa\"\n\"aa\"",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"aa\""
     },
     {
       "input": "\"abc\"\n\"abc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"abc\""
     },
     {
       "input": "\"abcdef\"\n\"f\"",
-      "desc": "Edge end"
+      "desc": "Edge end",
+      "output": "\"f\""
     },
     {
       "input": "\"abcdef\"\n\"a\"",
-      "desc": "Edge start"
+      "desc": "Edge start",
+      "output": "\"a\""
     },
     {
       "input": "\"abcdef\"\n\"xyz\"",
-      "desc": "Edge none"
+      "desc": "Edge none",
+      "output": "\"\""
     },
     {
       "input": "\"abcdef\"\n\"af\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"abcdef\""
     },
     {
       "input": "\"thequickbrownfox\"\n\"qbf\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"quickbrownf\""
     },
     {
       "input": "\"mississippi\"\n\"ipss\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"ssip\""
     },
     {
       "input": "\"banana\"\n\"ban\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"ban\""
     },
     {
       "input": "\"aaaa\"\n\"a\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"a\""
     },
     {
       "input": "\"AB\"\n\"BA\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"AB\""
     },
     {
       "input": "\"hello\"\n\"olleh\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"hello\""
     },
     {
       "input": "\"zzzzzz\"\n\"z\"",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "\"z\""
     },
     {
       "input": "\"abcabcabc\"\n\"abc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"abc\""
     },
     {
       "input": "\"abcd\"\n\"dcba\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"abcd\""
     },
     {
       "input": "\"qbrqahytwvpukquklblmfeemqh\"\n\"usueib\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"\""
     }
   ]
 }

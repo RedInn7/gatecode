@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "5\n[[0,1],[1,2],[2,3],[0,2],[1,3],[2,4]]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "43"
     },
     {
       "input": "5\n[[0,3],[2,4],[1,3]]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "20"
     },
     {
       "input": "2\n[[0,1]]",
-      "desc": "Edge: minimal"
+      "desc": "Edge: minimal",
+      "output": "3"
     },
     {
       "input": "3\n[[0,1]]",
-      "desc": "Edge: 3 cities 1 edge"
+      "desc": "Edge: 3 cities 1 edge",
+      "output": "5"
     },
     {
       "input": "3\n[[0,1],[1,2],[0,2]]",
-      "desc": "Edge: triangle"
+      "desc": "Edge: triangle",
+      "output": "12"
     },
     {
       "input": "4\n[[0,1],[0,2],[0,3]]",
-      "desc": "Standard: star"
+      "desc": "Standard: star",
+      "output": "18"
     },
     {
       "input": "5\n[[0,1],[1,2],[2,3],[3,4]]",
-      "desc": "Standard: chain"
+      "desc": "Standard: chain",
+      "output": "27"
     },
     {
       "input": "5\n[[0,1],[0,2],[0,3],[0,4]]",
-      "desc": "Standard: hub at 0"
+      "desc": "Standard: hub at 0",
+      "output": "30"
     },
     {
       "input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]",
-      "desc": "Standard: chain 10"
+      "desc": "Standard: chain 10",
+      "output": "107"
     },
     {
       "input": "10\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9]]",
-      "desc": "Standard: star 10"
+      "desc": "Standard: star 10",
+      "output": "135"
     },
     {
       "input": "6\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0]]",
-      "desc": "Standard: cycle"
+      "desc": "Standard: cycle",
+      "output": "42"
     },
     {
       "input": "5\n[[0,1],[0,2],[1,2],[2,3],[3,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "34"
     },
     {
       "input": "4\n[[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]]",
-      "desc": "Standard: complete K4"
+      "desc": "Standard: complete K4",
+      "output": "30"
     },
     {
       "input": "5\n[[0,1],[1,2],[2,0],[3,4]]",
-      "desc": "Standard: triangle + pair"
+      "desc": "Standard: triangle + pair",
+      "output": "27"
     },
     {
       "input": "8\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
-      "desc": "Standard chain 8"
+      "desc": "Standard chain 8",
+      "output": "69"
     },
     {
       "input": "7\n[[0,1],[0,2],[0,3],[1,4],[1,5],[2,6]]",
-      "desc": "Standard tree"
+      "desc": "Standard tree",
+      "output": "59"
     },
     {
       "input": "5\n[[0,4],[1,3],[2,3]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "20"
     },
     {
       "input": "5\n[[0,4],[1,3]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "14"
     },
     {
       "input": "10\n[[0,1],[1,2],[3,4],[5,6],[7,8],[8,9]]",
-      "desc": "Standard disconnected"
+      "desc": "Standard disconnected",
+      "output": "74"
     },
     {
       "input": "6\n[[0,1],[0,2],[1,3],[1,4],[2,5]]",
-      "desc": "Standard tree"
+      "desc": "Standard tree",
+      "output": "42"
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= word.length <= 20, English letters/digits/@/#/$",
   "input_format": "single line: word (quoted)",
   "testcases": [
-    {"input": "\"234Adas\"", "desc": "Standard true"},
-    {"input": "\"b3\"", "desc": "Standard false short"},
-    {"input": "\"a3$e\"", "desc": "Standard false symbol"},
-    {"input": "\"a\"", "desc": "Edge too short"},
-    {"input": "\"ab\"", "desc": "Edge too short"},
-    {"input": "\"abc\"", "desc": "Standard valid"},
-    {"input": "\"aei\"", "desc": "Edge no consonant"},
-    {"input": "\"bcd\"", "desc": "Edge no vowel"},
-    {"input": "\"a1b\"", "desc": "Standard"},
-    {"input": "\"1234\"", "desc": "Edge no letters"},
-    {"input": "\"@#$\"", "desc": "Edge symbols"},
-    {"input": "\"aAa\"", "desc": "Edge all vowels"},
-    {"input": "\"hello\"", "desc": "Standard valid"},
-    {"input": "\"HELLO\"", "desc": "Standard valid upper"},
-    {"input": "\"He1lo\"", "desc": "Standard valid mixed"},
-    {"input": "\"He$lo\"", "desc": "Standard false"},
-    {"input": "\"abcdefghijklmnopqrst\"", "desc": "Edge max len 20"},
-    {"input": "\"1234567890abcdefghij\"", "desc": "Edge"},
-    {"input": "\"aeiou\"", "desc": "Edge no consonant"},
-    {"input": "\"bcdfg\"", "desc": "Edge no vowel"}
+    {
+      "input": "\"234Adas\"",
+      "desc": "Standard true",
+      "output": "true"
+    },
+    {
+      "input": "\"b3\"",
+      "desc": "Standard false short",
+      "output": "false"
+    },
+    {
+      "input": "\"a3$e\"",
+      "desc": "Standard false symbol",
+      "output": "false"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge too short",
+      "output": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge too short",
+      "output": "false"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Standard valid",
+      "output": "true"
+    },
+    {
+      "input": "\"aei\"",
+      "desc": "Edge no consonant",
+      "output": "false"
+    },
+    {
+      "input": "\"bcd\"",
+      "desc": "Edge no vowel",
+      "output": "false"
+    },
+    {
+      "input": "\"a1b\"",
+      "desc": "Standard",
+      "output": "true"
+    },
+    {
+      "input": "\"1234\"",
+      "desc": "Edge no letters",
+      "output": "false"
+    },
+    {
+      "input": "\"@#$\"",
+      "desc": "Edge symbols",
+      "output": "false"
+    },
+    {
+      "input": "\"aAa\"",
+      "desc": "Edge all vowels",
+      "output": "false"
+    },
+    {
+      "input": "\"hello\"",
+      "desc": "Standard valid",
+      "output": "true"
+    },
+    {
+      "input": "\"HELLO\"",
+      "desc": "Standard valid upper",
+      "output": "true"
+    },
+    {
+      "input": "\"He1lo\"",
+      "desc": "Standard valid mixed",
+      "output": "true"
+    },
+    {
+      "input": "\"He$lo\"",
+      "desc": "Standard false",
+      "output": "false"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrst\"",
+      "desc": "Edge max len 20",
+      "output": "true"
+    },
+    {
+      "input": "\"1234567890abcdefghij\"",
+      "desc": "Edge",
+      "output": "true"
+    },
+    {
+      "input": "\"aeiou\"",
+      "desc": "Edge no consonant",
+      "output": "false"
+    },
+    {
+      "input": "\"bcdfg\"",
+      "desc": "Edge no vowel",
+      "output": "false"
+    }
   ]
 }

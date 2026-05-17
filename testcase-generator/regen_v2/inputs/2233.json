@@ -4,25 +4,105 @@
   "inferred_constraints": "2 <= numbers.length <= 3*10^4, -1000 <= numbers[i] <= 1000, sorted, exactly one solution",
   "input_format": "line1: numbers (JSON array sorted); line2: target (int)",
   "testcases": [
-    {"input": "[2,7,11,15]\n9", "desc": "Standard: example 1"},
-    {"input": "[2,3,4]\n6", "desc": "Standard: example 2"},
-    {"input": "[-1,0]\n-1", "desc": "Standard: example 3"},
-    {"input": "[1,2]\n3", "desc": "Edge: minimal"},
-    {"input": "[-1000,1000]\n0", "desc": "Edge: extreme"},
-    {"input": "[1,2,3,4,5]\n7", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n11", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n3", "desc": "Standard early"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n19", "desc": "Standard late"},
-    {"input": "[-5,-3,-1,0,2,4,6,8]\n3", "desc": "Standard mixed"},
-    {"input": "[-1000,-500,0,500,1000]\n0", "desc": "Standard symmetric"},
-    {"input": "[1,1,2,3,4]\n2", "desc": "Standard duplicates"},
-    {"input": "[2,5,5,11]\n10", "desc": "Standard pair of same"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n21", "desc": "Standard"},
-    {"input": "[-10,-5,1,2,3,4,5,6,7,8,9,10]\n0", "desc": "Standard wide"},
-    {"input": "[100,200,300,400,500]\n900", "desc": "Standard"},
-    {"input": "[1,3,5,7,9,11,13,15,17,19]\n20", "desc": "Standard odds"},
-    {"input": "[-1000,-999,-998,-997,-996]\n-1999", "desc": "Standard neg pair"},
-    {"input": "[0,0,1,1,2,2,3,3,4,4]\n1", "desc": "Standard zeros and pairs"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]\n31", "desc": "Stress 30"}
+    {
+      "input": "[2,7,11,15]\n9",
+      "desc": "Standard: example 1",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "[2,3,4]\n6",
+      "desc": "Standard: example 2",
+      "output": "[1, 3]"
+    },
+    {
+      "input": "[-1,0]\n-1",
+      "desc": "Standard: example 3",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "[1,2]\n3",
+      "desc": "Edge: minimal",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "[-1000,1000]\n0",
+      "desc": "Edge: extreme",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "[1,2,3,4,5]\n7",
+      "desc": "Standard",
+      "output": "[2, 5]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n11",
+      "desc": "Standard",
+      "output": "[1, 10]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n3",
+      "desc": "Standard early",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "desc": "Standard late",
+      "output": "[9, 10]"
+    },
+    {
+      "input": "[-5,-3,-1,0,2,4,6,8]\n3",
+      "desc": "Standard mixed",
+      "output": "[1, 8]"
+    },
+    {
+      "input": "[-1000,-500,0,500,1000]\n0",
+      "desc": "Standard symmetric",
+      "output": "[1, 5]"
+    },
+    {
+      "input": "[1,1,2,3,4]\n2",
+      "desc": "Standard duplicates",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "[2,5,5,11]\n10",
+      "desc": "Standard pair of same",
+      "output": "[2, 3]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n21",
+      "desc": "Standard",
+      "output": "[1, 20]"
+    },
+    {
+      "input": "[-10,-5,1,2,3,4,5,6,7,8,9,10]\n0",
+      "desc": "Standard wide",
+      "output": "[1, 12]"
+    },
+    {
+      "input": "[100,200,300,400,500]\n900",
+      "desc": "Standard",
+      "output": "[4, 5]"
+    },
+    {
+      "input": "[1,3,5,7,9,11,13,15,17,19]\n20",
+      "desc": "Standard odds",
+      "output": "[1, 10]"
+    },
+    {
+      "input": "[-1000,-999,-998,-997,-996]\n-1999",
+      "desc": "Standard neg pair",
+      "output": "[1, 2]"
+    },
+    {
+      "input": "[0,0,1,1,2,2,3,3,4,4]\n1",
+      "desc": "Standard zeros and pairs",
+      "output": "[1, 3]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]\n31",
+      "desc": "Stress 30",
+      "output": "[1, 30]"
+    }
   ]
 }

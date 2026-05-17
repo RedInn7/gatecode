@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= num1 <= num2 <= 10^22, 1 <= min_sum <= max_sum <= 400",
   "input_format": "line1: num1 (quoted); line2: num2 (quoted); line3: min_sum (int); line4: max_sum (int)",
   "testcases": [
-    {"input": "\"1\"\n\"12\"\n1\n8", "desc": "Standard example 1"},
-    {"input": "\"1\"\n\"5\"\n1\n5", "desc": "Standard example 2"},
-    {"input": "\"1\"\n\"1\"\n1\n1", "desc": "Edge min"},
-    {"input": "\"9\"\n\"9\"\n9\n9", "desc": "Edge single"},
-    {"input": "\"10\"\n\"10\"\n1\n1", "desc": "Edge"},
-    {"input": "\"100\"\n\"200\"\n1\n10", "desc": "Standard"},
-    {"input": "\"1\"\n\"100\"\n1\n5", "desc": "Standard"},
-    {"input": "\"1\"\n\"1000\"\n10\n20", "desc": "Standard"},
-    {"input": "\"1\"\n\"10000\"\n1\n400", "desc": "Standard"},
-    {"input": "\"1\"\n\"10000000000\"\n50\n100", "desc": "Stress 10 digits"},
-    {"input": "\"99999999999999999999\"\n\"99999999999999999999\"\n180\n180", "desc": "Edge max digits"},
-    {"input": "\"1\"\n\"9999999999999999999999\"\n1\n400", "desc": "Stress max"},
-    {"input": "\"500\"\n\"1000\"\n5\n10", "desc": "Standard"},
-    {"input": "\"123\"\n\"456\"\n6\n12", "desc": "Standard"},
-    {"input": "\"7\"\n\"49\"\n7\n13", "desc": "Standard"},
-    {"input": "\"100\"\n\"999\"\n10\n27", "desc": "Standard"},
-    {"input": "\"1\"\n\"1000000000\"\n1\n1", "desc": "Stress only powers 10"},
-    {"input": "\"1\"\n\"100\"\n10\n10", "desc": "Edge"},
-    {"input": "\"10\"\n\"100\"\n3\n5", "desc": "Standard"},
-    {"input": "\"42\"\n\"420\"\n4\n8", "desc": "Standard"}
+    {
+      "input": "\"1\"\n\"12\"\n1\n8",
+      "desc": "Standard example 1",
+      "output": "11"
+    },
+    {
+      "input": "\"1\"\n\"5\"\n1\n5",
+      "desc": "Standard example 2",
+      "output": "5"
+    },
+    {
+      "input": "\"1\"\n\"1\"\n1\n1",
+      "desc": "Edge min",
+      "output": "1"
+    },
+    {
+      "input": "\"9\"\n\"9\"\n9\n9",
+      "desc": "Edge single",
+      "output": "1"
+    },
+    {
+      "input": "\"10\"\n\"10\"\n1\n1",
+      "desc": "Edge",
+      "output": "1"
+    },
+    {
+      "input": "\"100\"\n\"200\"\n1\n10",
+      "desc": "Standard",
+      "output": "56"
+    },
+    {
+      "input": "\"1\"\n\"100\"\n1\n5",
+      "desc": "Standard",
+      "output": "21"
+    },
+    {
+      "input": "\"1\"\n\"1000\"\n10\n20",
+      "desc": "Standard",
+      "output": "696"
+    },
+    {
+      "input": "\"1\"\n\"10000\"\n1\n400",
+      "desc": "Standard",
+      "output": "10000"
+    },
+    {
+      "input": "\"1\"\n\"10000000000\"\n50\n100",
+      "desc": "Stress 10 digits",
+      "output": "125528034"
+    },
+    {
+      "input": "\"99999999999999999999\"\n\"99999999999999999999\"\n180\n180",
+      "desc": "Edge max digits",
+      "output": "1"
+    },
+    {
+      "input": "\"1\"\n\"9999999999999999999999\"\n1\n400",
+      "desc": "Stress max",
+      "output": "489999"
+    },
+    {
+      "input": "\"500\"\n\"1000\"\n5\n10",
+      "desc": "Standard",
+      "output": "55"
+    },
+    {
+      "input": "\"123\"\n\"456\"\n6\n12",
+      "desc": "Standard",
+      "output": "185"
+    },
+    {
+      "input": "\"7\"\n\"49\"\n7\n13",
+      "desc": "Standard",
+      "output": "25"
+    },
+    {
+      "input": "\"100\"\n\"999\"\n10\n27",
+      "desc": "Standard",
+      "output": "735"
+    },
+    {
+      "input": "\"1\"\n\"1000000000\"\n1\n1",
+      "desc": "Stress only powers 10",
+      "output": "10"
+    },
+    {
+      "input": "\"1\"\n\"100\"\n10\n10",
+      "desc": "Edge",
+      "output": "9"
+    },
+    {
+      "input": "\"10\"\n\"100\"\n3\n5",
+      "desc": "Standard",
+      "output": "12"
+    },
+    {
+      "input": "\"42\"\n\"420\"\n4\n8",
+      "desc": "Standard",
+      "output": "98"
+    }
   ]
 }

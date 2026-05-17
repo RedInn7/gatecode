@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= m, n <= 100, 0 <= grid[i][j] <= 10^9",
   "input_format": "single line: grid (JSON 2D)",
   "testcases": [
-    {"input": "[[5,4,5],[1,2,6],[7,4,6]]", "desc": "Standard"},
-    {"input": "[[2,2,1,2,2,2],[1,2,2,2,1,2]]", "desc": "Standard"},
-    {"input": "[[3,4,6,3,4],[0,2,1,1,7],[8,8,3,2,7],[3,2,4,9,8],[4,1,2,0,0],[4,6,5,4,3]]", "desc": "Standard"},
-    {"input": "[[0]]", "desc": "Edge 1x1 zero"},
-    {"input": "[[1000000000]]", "desc": "Edge max"},
-    {"input": "[[1,2],[3,4]]", "desc": "Edge 2x2"},
-    {"input": "[[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5]]", "desc": "Edge all same"},
-    {"input": "[[10,0,10],[10,0,10],[10,10,10]]", "desc": "Edge with zeros"},
-    {"input": "[[1,2,3,4,5,6,7,8,9,10]]", "desc": "Edge 1 row"},
-    {"input": "[[1],[2],[3],[4],[5]]", "desc": "Edge 1 col"},
-    {"input": "[[100,200,300],[400,500,600],[700,800,900]]", "desc": "Standard"},
-    {"input": "[[1,1,1],[1,9,1],[1,1,1]]", "desc": "Standard center high"},
-    {"input": "[[9,1,9],[1,9,1],[9,1,9]]", "desc": "Standard checker"},
-    {"input": "[[0,1,2],[3,4,5],[6,7,8]]", "desc": "Standard ascending"},
-    {"input": "[[8,7,6],[5,4,3],[2,1,0]]", "desc": "Standard descending"},
-    {"input": "[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]", "desc": "Standard 4x4"},
-    {"input": "[[1000000000,1],[1,1000000000]]", "desc": "Edge extremes"},
-    {"input": "[[1,1,1,1,1],[1,2,2,2,1],[1,2,3,2,1],[1,2,2,2,1],[1,1,1,1,1]]", "desc": "Standard"},
-    {"input": "[[0,0,0],[0,0,0],[0,0,0]]", "desc": "Edge all zero"},
-    {"input": "[[7,7,7,7,7,7,7,7,7,7]]", "desc": "Edge wide same"}
+    {
+      "input": "[[5,4,5],[1,2,6],[7,4,6]]",
+      "desc": "Standard",
+      "output": "4"
+    },
+    {
+      "input": "[[2,2,1,2,2,2],[1,2,2,2,1,2]]",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "[[3,4,6,3,4],[0,2,1,1,7],[8,8,3,2,7],[3,2,4,9,8],[4,1,2,0,0],[4,6,5,4,3]]",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "[[0]]",
+      "desc": "Edge 1x1 zero",
+      "output": "0"
+    },
+    {
+      "input": "[[1000000000]]",
+      "desc": "Edge max",
+      "output": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]",
+      "desc": "Edge 2x2",
+      "output": "1"
+    },
+    {
+      "input": "[[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5]]",
+      "desc": "Edge all same",
+      "output": "5"
+    },
+    {
+      "input": "[[10,0,10],[10,0,10],[10,10,10]]",
+      "desc": "Edge with zeros",
+      "output": "10"
+    },
+    {
+      "input": "[[1,2,3,4,5,6,7,8,9,10]]",
+      "desc": "Edge 1 row",
+      "output": "1"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[5]]",
+      "desc": "Edge 1 col",
+      "output": "1"
+    },
+    {
+      "input": "[[100,200,300],[400,500,600],[700,800,900]]",
+      "desc": "Standard",
+      "output": "100"
+    },
+    {
+      "input": "[[1,1,1],[1,9,1],[1,1,1]]",
+      "desc": "Standard center high",
+      "output": "1"
+    },
+    {
+      "input": "[[9,1,9],[1,9,1],[9,1,9]]",
+      "desc": "Standard checker",
+      "output": "1"
+    },
+    {
+      "input": "[[0,1,2],[3,4,5],[6,7,8]]",
+      "desc": "Standard ascending",
+      "output": "0"
+    },
+    {
+      "input": "[[8,7,6],[5,4,3],[2,1,0]]",
+      "desc": "Standard descending",
+      "output": "0"
+    },
+    {
+      "input": "[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]",
+      "desc": "Standard 4x4",
+      "output": "1"
+    },
+    {
+      "input": "[[1000000000,1],[1,1000000000]]",
+      "desc": "Edge extremes",
+      "output": "1"
+    },
+    {
+      "input": "[[1,1,1,1,1],[1,2,2,2,1],[1,2,3,2,1],[1,2,2,2,1],[1,1,1,1,1]]",
+      "desc": "Standard",
+      "output": "1"
+    },
+    {
+      "input": "[[0,0,0],[0,0,0],[0,0,0]]",
+      "desc": "Edge all zero",
+      "output": "0"
+    },
+    {
+      "input": "[[7,7,7,7,7,7,7,7,7,7]]",
+      "desc": "Edge wide same",
+      "output": "7"
+    }
   ]
 }
