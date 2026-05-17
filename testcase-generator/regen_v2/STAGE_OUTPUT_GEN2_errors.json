@@ -652,5 +652,89 @@
     "slug": "loud-and-rich",
     "fqid": 851,
     "error": "Testcase 1 failed: RE (exit 1): Rich(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpxawzzs7w.py\", line 157, in loudAndRich\n    dfs(i)\n  File \"/tmp/tmpxawzzs7w.py\", line 147, in dfs\n    dfs(j)\n  File \"/tmp/tmpxawzzs7w.py\", line 143, in dfs\n    if ans[i] != -1:\n       ~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1491,
+    "slug": "minimum-number-of-people-to-teach",
+    "fqid": 1733,
+    "error": "Testcase 0 failed: RE (exit 1):            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp8ia90f7f.py\", line 153, in minimumTeachings\n    if not check(u, v):\n           ^^^^^^^^^^^\n  File \"/tmp/tmp8ia90f7f.py\", line 145, in check\n    for x in languages[u - 1]:\n             ~~~~~~~~~^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1498,
+    "slug": "paint-house",
+    "fqid": 256,
+    "error": "Testcase 0 failed: RE (exit 1): last):\n  File \"/tmp/tmp1q8x590_.py\", line 278, in <module>\n    _result = Solution().minCost(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp1q8x590_.py\", line 143, in minCost\n    for ca, cb, cc in costs:\n        ^^^^^^^^^^\nValueError: not enough values to unpack (expected 3, got 2)\n"
+  },
+  {
+    "pid": 1479,
+    "slug": "k-empty-slots",
+    "fqid": 683,
+    "error": "Testcase 0 failed: RE (exit 1):  <module>\n    _result = Solution().kEmptySlots(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpddnujl27.py\", line 164, in kEmptySlots\n    tree.update(x, 1)\n  File \"/tmp/tmpddnujl27.py\", line 147, in update\n    self.c[x] += delta\n    ~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1504,
+    "slug": "count-substrings-that-satisfy-k-constraint-ii",
+    "fqid": 3261,
+    "error": "Testcase 0 failed: RE (exit 1): , in <module>\n    _result = Solution().countKConstraintSubstrings(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpuivs3_7m.py\", line 148, in countKConstraintSubstrings\n    for j, x in enumerate(map(int, s)):\nValueError: invalid literal for int() with base 10: 'n'\n"
+  },
+  {
+    "pid": 1503,
+    "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+    "fqid": 2379,
+    "error": "Testcase 1 failed: RE (exit 1): t):\n  File \"/tmp/tmpgzuzcq23.py\", line 280, in <module>\n    _result = Solution().minimumRecolors(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpgzuzcq23.py\", line 144, in minimumRecolors\n    cnt += blocks[i] == 'W'\n           ~~~~~~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1507,
+    "slug": "minimum-weighted-subgraph-with-the-required-paths",
+    "fqid": 2203,
+    "error": "Testcase 0 failed: RE (exit 1): e \"/tmp/tmpbmxwkpr0.py\", line 300, in <module>\n    _result = Solution().minimumWeight(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpbmxwkpr0.py\", line 160, in minimumWeight\n    for f, t, w in edges:\n        ^^^^^^^\nValueError: not enough values to unpack (expected 3, got 2)\n"
+  },
+  {
+    "pid": 1508,
+    "slug": "find-all-duplicates-in-an-array",
+    "fqid": 442,
+    "error": "Testcase 0 failed: RE (exit 1): h58.py\", line 278, in <module>\n    _result = Solution().findDuplicates(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpmvtnsh58.py\", line 143, in findDuplicates\n    while nums[i] != nums[nums[i] - 1]:\n                     ~~~~^^^^^^^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1487,
+    "slug": "find-the-maximum-number-of-fruits-collected",
+    "fqid": 3363,
+    "error": "Testcase 6 failed: RE (exit 1): .py\", line 289, in <module>\n    _result = Solution().maxCollectedFruits(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpap1obvsv.py\", line 144, in maxCollectedFruits\n    f[0][n - 1] = fruits[0][n - 1]\n                  ~~~~~~~~~^^^^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1474,
+    "slug": "maximum-length-of-pair-chain",
+    "fqid": 646,
+    "error": "Testcase 7 failed: RE (exit 1): \n  File \"/tmp/tmp2lit2cbt.py\", line 281, in <module>\n    _result = Solution().findLongestChain(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp2lit2cbt.py\", line 144, in findLongestChain\n    for a, b in pairs:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1512,
+    "slug": "count-the-number-of-inversions",
+    "fqid": 3193,
+    "error": "Testcase 2 failed: RE (exit 1): ile \"/tmp/tmpqasyf28y.py\", line 292, in <module>\n    _result = Solution().numberOfPermutations(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpqasyf28y.py\", line 144, in numberOfPermutations\n    req[end] = cnt\n    ~~~^^^^^\nIndexError: list assignment index out of range\n"
+  },
+  {
+    "pid": 1505,
+    "slug": "pseudo-palindromic-paths-in-a-binary-tree",
+    "fqid": 1457,
+    "error": "Testcase 13 failed: RE (exit 1): root, 0)\n           ^^^^^^^^^^^^\n  File \"/tmp/tmphijfzu6i.py\", line 154, in dfs\n    return dfs(root.left, mask) + dfs(root.right, mask)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphijfzu6i.py\", line 151, in dfs\n    mask ^= 1 << root.val\n            ~~^^~~~~~~~~~\nValueError: negative shift count\n"
+  },
+  {
+    "pid": 1492,
+    "slug": "maximize-score-after-n-operations",
+    "fqid": 1799,
+    "error": "Testcase 17 failed: RE (exit 1): ast):\n  File \"/tmp/tmp3t6xb2m6.py\", line 291, in <module>\n    _result = Solution().maxScore(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3t6xb2m6.py\", line 143, in maxScore\n    f = [0] * (1 << m)\n        ~~~~^~~~~~~~~~\nOverflowError: cannot fit 'int' into an index-sized integer\n"
+  },
+  {
+    "pid": 1502,
+    "slug": "sum-of-digits-in-the-minimum-number",
+    "fqid": 1085,
+    "error": "Testcase 0 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1476,
+    "slug": "beautiful-arrangement-ii",
+    "fqid": 667,
+    "error": "Testcase 2 failed: TLE (>15s)"
   }
 ]
