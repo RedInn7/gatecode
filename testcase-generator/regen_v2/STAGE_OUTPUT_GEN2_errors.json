@@ -1234,5 +1234,35 @@
     "slug": "student-attendance-record-i",
     "fqid": 551,
     "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1886,
+    "slug": "zigzag-conversion",
+    "fqid": 6,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1874,
+    "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+    "fqid": 1689,
+    "error": "Testcase 0 failed: RE (exit 1): call last):\n  File \"/tmp/tmpy9ggehho.py\", line 275, in <module>\n    _result = Solution().minPartitions(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpy9ggehho.py\", line 142, in minPartitions\n    return int(max(n))\n               ^^^^^^\nTypeError: 'int' object is not iterable\n"
+  },
+  {
+    "pid": 1891,
+    "slug": "hash-divided-string",
+    "fqid": 3271,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1883,
+    "slug": "find-all-anagrams-in-a-string",
+    "fqid": 438,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1901,
+    "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
+    "fqid": 1963,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
   }
 ]

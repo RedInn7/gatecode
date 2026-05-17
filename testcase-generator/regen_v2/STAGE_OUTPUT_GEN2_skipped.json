@@ -292,5 +292,11 @@
     "slug": "count-substrings-divisible-by-last-digit",
     "fqid": 3448,
     "reason": "No Python3 solution found for fqid=3448"
+  },
+  {
+    "pid": 1890,
+    "slug": "sum-of-perfect-square-ancestors",
+    "fqid": 3715,
+    "reason": "No Python3 solution found for fqid=3715"
   }
 ]
