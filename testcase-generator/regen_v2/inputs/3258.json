@@ -10,11 +10,13 @@
     },
     {
       "input": "\"q\"\n1",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "false"
     },
     {
       "input": "\"nb\"\n1",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "true"
     },
     {
       "input": "\"aaaaa\"",
@@ -22,47 +24,58 @@
     },
     {
       "input": "\"bacce\"\n4",
-      "desc": "Edge: short string mixed"
+      "desc": "Edge: short string mixed",
+      "output": "false"
     },
     {
       "input": "\"xvmtd\"\n4",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"siess\"\n3",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"rufjj\"\n4",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"znmzn\"\n3",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"bdafg\"\n4",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"bnedl\"\n4",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"txrgw\"\n3",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"lvhlm\"\n3",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "false"
     },
     {
       "input": "\"nvvya\"\n1",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "false"
     },
     {
       "input": "\"nozbg\"\n4",
-      "desc": "Stress: max string"
+      "desc": "Stress: max string",
+      "output": "false"
     },
     {
       "input": "\"abcdeedcba\"",

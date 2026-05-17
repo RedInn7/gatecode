@@ -10,67 +10,83 @@
     },
     {
       "input": "[44]",
-      "desc": "Edge: root only"
+      "desc": "Edge: root only",
+      "output": "true"
     },
     {
       "input": "[51,71,null]",
-      "desc": "Edge: root with left only"
+      "desc": "Edge: root with left only",
+      "output": "false"
     },
     {
       "input": "[61,null,81]",
-      "desc": "Edge: root with right only"
+      "desc": "Edge: root with right only",
+      "output": "false"
     },
     {
       "input": "[43,100,37]",
-      "desc": "Edge: complete tree depth-1"
+      "desc": "Edge: complete tree depth-1",
+      "output": "false"
     },
     {
       "input": "[4,null,28,null,15,null,1,null,31,null,81]",
-      "desc": "Edge: left-skewed tree"
+      "desc": "Edge: left-skewed tree",
+      "output": "false"
     },
     {
       "input": "[38,34,21,32,68,88]",
-      "desc": "Edge: right-skewed tree"
+      "desc": "Edge: right-skewed tree",
+      "output": "false"
     },
     {
       "input": "[39,74,30,66,51,84,5,29,63,10,64]",
-      "desc": "Standard: complete n=11"
+      "desc": "Standard: complete n=11",
+      "output": "false"
     },
     {
       "input": "[88,67,31,86,19,23,19,5,24,4,79,25,84,100,43,87,17,42,29,96]",
-      "desc": "Standard: complete n=20"
+      "desc": "Standard: complete n=20",
+      "output": "false"
     },
     {
       "input": "[68,69,4,100,79,36,66,88,89,9,35,74]",
-      "desc": "Standard: complete n=12"
+      "desc": "Standard: complete n=12",
+      "output": "false"
     },
     {
       "input": "[47,25,5,46,78,33,86,61]",
-      "desc": "Standard: complete n=8"
+      "desc": "Standard: complete n=8",
+      "output": "false"
     },
     {
       "input": "[38,23,63,62,54,87,35,7,32,0,81,89,74,51,28,64]",
-      "desc": "Standard: complete n=16"
+      "desc": "Standard: complete n=16",
+      "output": "false"
     },
     {
       "input": "[35,3,85,59,6,6,23,51,18,62,74]",
-      "desc": "Standard: complete n=11"
+      "desc": "Standard: complete n=11",
+      "output": "false"
     },
     {
       "input": "[88,40,36,20,44,94,9,95,19,93,22,63,32,73,16,76,64,9,5,79,97,94,9,27,42,13,65,95,24,87,88,63,92,12,25,67,49,94,3,57,24,99,64,7,50,64,32,65,61,51,64,87,54,92,81,78,2,8,40,45,28,45,24,52,21,28,59,53,58,15,15,40,74,0,85,65,30,59,81,2,84,89,82,90,69,30,76,35,69,78,18,12,5,57,80,73,70,23,66,89]",
-      "desc": "Stress: right-skew 100"
+      "desc": "Stress: right-skew 100",
+      "output": "false"
     },
     {
       "input": "[40,14,4,58,36,29,15,49,14,80,44,93,29,92,4,33,25,3,50,22,30,68,65,34,43,31,93,33,97,48,61,26,0,89,21,55,73,95,30,49,31,59,68,46,76,80,3,64,58,20,27,59,97,94,77,42,70,4,100,18,31,58,3,19,14,24,84,35,10,6,84,47,31,77,53,83,67,48,11,56,44,85,85,64,2,9,22,67,100,93,16,31,71,64,80,68,0,16,31,65,93,28,93,80,10,33,46,2,79,27,20,51,32,51,41,10,15,56,77,12,77,30,61,24,6,97,13]",
-      "desc": "Stress: complete 127-node"
+      "desc": "Stress: complete 127-node",
+      "output": "false"
     },
     {
       "input": "[83,null,90,null,60,null,95,null,86,null,18,null,49,null,36,null,37,null,57,null,19,null,70,null,44,null,50,null,15,null,94,null,41,null,76,null,52,null,67,null,81,null,73,null,48,null,0,null,21,null,90,null,71,null,82,null,84,null,10,null,64,null,28,null,56,null,52,null,20,null,23,null,75,null,83,null,87,null,22,null,60,null,76,null,21,null,32,null,33,null,55,null,37,null,6,null,7,null,1,null,28,null,50,null,34,null,45,null,98,null,78,null,72,null,41,null,18,null,68,null,19,null,78,null,68,null,8,null,60,null,34,null,88,null,51,null,33,null,20,null,80,null,63,null,7,null,38,null,20,null,37,null,78,null,4,null,10,null,62,null,66,null,43,null,88,null,99,null,51,null,78,null,96,null,20,null,75,null,19,null,7,null,88,null,15,null,84,null,15,null,29,null,86,null,69,null,25,null,75,null,57,null,98,null,49,null,23,null,97,null,0,null,4,null,65,null,59,null,19,null,22,null,89,null,92,null,58,null,92,null,41,null,83,null,87,null,35,null,31,null,43,null,84,null,25,null,83,null,55,null,45,null,7,null,26,null,95,null,39,null,23,null,4,null,2,null,71,null,70,null,0,null,55,null,59,null,30,null,30,null,4,null,77,null,29,null,8,null,68,null,97,null,14,null,80,null,20,null,74,null,40,null,89,null,63,null,20,null,100,null,86,null,94,null,61,null,17,null,43,null,58,null,13,null,72,null,6,null,97,null,62,null,11,null,32,null,71,null,100,null,45,null,57,null,21,null,84,null,71,null,82,null,80,null,31,null,49,null,66,null,32,null,54,null,94,null,24,null,65,null,57,null,84,null,10,null,56,null,5,null,35,null,88,null,6,null,86,null,85,null,29,null,87,null,64,null,42,null,82,null,66,null,82,null,72,null,46,null,3,null,93,null,6,null,26,null,2,null,90,null,75,null,78,null,17,null,67,null,3,null,10,null,69,null,63,null,29,null,52,null,60,null,58,null,27,null,0,null,69,null,82,null,39,null,83,null,73,null,28,null,89,null,45,null,11,null,86,null,87,null,12,null,98,null,72,null,78,null,28,null,23,null,52,null,2,null,74,null,70,null,26,null,26,null,47,null,32,null,47,null,40,null,28,null,53,null,0,null,87,null,61,null,56,null,21,null,62,null,42,null,6,null,21,null,51,null,19,null,27,null,54,null,28,null,8,null,84,null,15,null,88,null,34,null,66,null,69,null,88,null,95,null,90,null,69,null,77,null,47,null,75,null,30,null,86,null,60,null,31,null,12,null,96,null,60,null,37,null,9,null,3,null,36,null,4,null,80,null,38,null,45,null,32,null,76,null,59,null,11,null,28,null,15,null,60,null,29,null,7,null,25,null,14,null,65,null,30,null,86,null,83,null,54,null,36,null,93,null,95,null,3,null,66,null,79,null,75,null,58,null,70,null,82,null,42,null,58,null,96,null,44,null,12,null,31,null,63,null,39,null,92,null,71,null,66,null,22,null,9,null,19,null,14,null,100,null,22,null,5,null,3,null,10,null,4,null,12,null,48,null,43,null,8,null,68,null,38,null,48,null,13,null,99,null,76,null,60,null,16,null,23,null,90,null,69,null,11,null,61,null,22,null,64,null,51,null,4,null,56,null,8,null,11,null,92,null,55,null,18,null,22,null,59,null,25,null,1,null,36,null,80,null,73,null,7,null,53,null,97,null,31,null,21,null,47,null,43,null,59,null,59,null,79,null,40,null,15,null,92,null,37,null,0,null,30,null,33,null,0,null,10,null,57,null,69,null,29,null,20,null,18,null,50,null,20,null,15,null,36,null,53,null,47,null,26,null,81,null,56,null,72,null,39,null,46,null,11,null,44,null,64,null,40,null,63,null,31,null,50,null,41,null,5,null,97,null,10,null,89,null,97,null,51,null,7,null,10,null,81,null,31,null,74,null,68,null,5,null,46,null,40,null,33,null,42,null,5,null,78,null,60,null,35,null,74,null,20,null,85,null,73,null,65,null,74,null,35,null,31,null,88,null,72,null,34,null,89,null,13,null,52,null,81,null,31,null,37,null,74,null,100,null,60,null,31,null,80,null,67,null,35,null,85,null,73,null,63,null,10,null,45,null,8,null,67,null,94,null,49,null,12,null,8,null,76,null,92,null,18,null,28,null,57,null,51,null,43,null,71,null,45,null,72,null,77,null,2,null,33,null,70,null,76,null,69,null,93,null,49,null,61,null,78,null,57,null,12,null,28,null,100,null,73,null,58,null,97,null,13,null,65,null,28,null,91,null,83,null,8,null,74,null,62,null,88,null,54,null,76,null,28,null,72,null,82,null,49,null,15,null,22,null,1,null,64,null,19,null,70,null,12,null,23,null,84,null,24,null,53,null,23,null,73,null,51,null,67,null,65,null,66,null,84,null,72,null,68,null,22,null,53,null,33,null,65,null,91,null,70,null,95,null,80,null,73,null,18,null,42,null,15,null,9,null,57,null,66,null,70,null,21,null,56,null,17,null,12,null,39,null,42,null,100,null,77,null,45,null,72,null,87,null,40,null,67,null,26,null,1,null,43,null,59,null,1,null,91,null,75,null,4,null,90,null,47,null,34,null,31,null,42,null,55,null,7,null,11,null,41,null,74,null,83,null,23,null,46,null,93,null,59,null,94,null,10,null,11,null,73,null,16,null,38,null,56,null,70,null,68,null,15,null,98,null,48,null,99,null,82,null,47,null,20,null,19,null,45,null,65,null,42,null,98,null,55,null,10,null,43,null,40,null,88,null,52,null,17,null,60,null,48,null,37,null,79,null,15,null,77,null,5,null,86,null,78,null,77,null,11,null,69,null,22,null,58,null,52,null,5,null,3,null,74,null,36,null,58,null,73,null,67,null,84,null,26,null,69,null,1,null,54,null,2,null,94,null,90,null,21,null,29,null,30,null,34,null,17,null,61,null,53,null,57,null,33,null,42,null,10,null,17,null,86,null,93,null,55,null,80,null,67,null,15,null,28,null,99,null,84,null,77,null,30,null,22,null,70,null,31,null,28,null,35,null,20,null,57,null,61,null,83,null,80,null,4,null,19,null,29,null,72,null,40,null,44,null,56,null,81,null,41,null,45,null,54,null,4,null,41,null,51,null,25,null,25,null,16,null,97,null,61,null,2,null,78,null,8,null,54,null,68,null,96,null,56,null,62,null,46,null,50,null,42,null,6,null,1,null,99,null,79,null,53,null,37,null,80,null,73,null,42,null,6,null,49,null,8,null,38,null,66,null,6,null,77,null,97,null,98,null,11,null,44,null,11,null,86,null,82,null,29,null,42,null,90,null,14,null,89,null,69,null,69,null,84,null,70,null,59,null,39,null,32,null,46,null,51,null,61,null,63,null,2,null,16,null,1,null,34,null,58,null,5,null,68,null,14,null,3,null,60,null,16,null,75,null,6,null,17,null,88,null,57,null,12,null,5,null,84,null,81,null,29,null,42,null,60,null,10,null,87,null,61,null,94,null,11,null,14,null,75,null,93,null,16,null,47,null,14,null,52,null,37,null,61,null,79,null,91,null,23,null,47,null,62,null,54,null,28,null,75,null,52,null,71,null,21,null,65,null,57,null,1,null,79,null,31,null,48,null,12,null,19,null,64,null,74,null,75,null,56,null,3,null,6,null,85,null,54,null,92,null,88,null,40,null,20,null,40,null,70,null,27,null,70,null,35,null,2,null,79,null,88,null,10,null,54,null,29,null,1,null,27,null,53,null,80,null,65,null,77,null,48,null,68,null,43,null,46,null,55,null,46,null,10,null,57,null,29,null,83,null,92,null,66,null,0,null,40,null,67,null,76,null,78,null,32,null,8,null,29,null,40,null,49,null,82,null,60,null,52,null,38,null,54,null,83,null,33,null,12,null,35,null,45,null,66,null,60,null,75,null,93,null,20,null,80,null,12,null,28,null,8,null,37,null,17,null,79,null,34,null,44,null,8,null,3,null,63,null,93,null,66,null,66,null,94,null,64,null,0,null,4,null,25,null,42,null,27,null,32,null,20,null,2,null,27,null,1,null,64,null,72,null,55,null,41,null,85,null,3,null,54,null,13,null,23,null,99,null,13,null,18,null,37,null,7,null,2,null,66,null,31,null,23,null,23,null,69,null,78,null,94,null,74,null,25,null,46,null,88,null,80,null,82,null,56,null,22,null,41,null,98,null,52,null,51,null,38,null,31,null,44,null,87,null,1,null,69,null,27,null,81,null,57,null,36,null,90,null,56,null,12,null,35,null,4,null,5,null,74,null,57,null,1,null,2,null,100,null,36,null,79,null,2,null,31,null,20,null,36,null,4,null,12,null,82,null,55,null,17,null,32,null,22,null,15,null,57,null,1,null,50,null,50,null,82,null,53,null,56,null,95,null,82,null,82,null,66,null,37,null,87,null,96,null,66,null,87,null,73,null,71,null,62,null,33,null,31,null,64,null,89,null,18,null,88,null,79,null,35,null,49,null,55,null,54,null,6]",
-      "desc": "Killer: max left-skew"
+      "desc": "Killer: max left-skew",
+      "output": "false"
     },
     {
       "input": "[18,80,4,3,52,37,14,98,1,96,25,67,80,52,72,14,51,19,75,99,93,92,25,90,30,50,91,23,100,39,18,74,49,58,55,91,20,32,17,41,7,26,5,59,28,87,43,24,31,52,73,56,20,91,38,94,6,81,73,29,46,44,61,4,31,35,58,18,69,72,52,29,67,26,9,16,28,65,97,5,83,7,25,26,2,47,5,65,27,47,75,48,80,25,9,63,81,78,85,75,23,81,71,11,29,90,50,64,75,94,80,54,83,54,40,90,95,76,70,67,82,20,11,4,12,26,38,63,72,10,5,79,34,34,52,61,80,26,18,61,88,18,32,0,81,67,74,4,60,53,9,83,78,42,81,81,84,62,75,71,38,35,4,44,78,23,88,59,97,2,51,21,79,15,5,16,9,77,35,46,99,24,21,2,35,53,86,25,72,50,86,95,5,26,54,81,60,98,33,47,25,0,25,58,36,45,9,32,80,94,48,47,75,35,86,46,14,72,15,28,56,53,8,26,9,82,5,48,25,84,75,51,61,38,59,48,93,7,7,17,60,66,82,53,93,27,40,9,66,46,15,42,95,20,56,57,38,2,63,67,12,63,99,97,96,68,98,78,59,42,57,38,8,65,51,72,20,57,44,77,3,17,29,93,15,88,11,94,84,3,52,94,80,59,84,9,43,38,60,52,98,58,48,0,67,14,23,0,89,15,35,86,58,78,61,17,49,78,55,3,52,29,54,47,31,71,85,24,67,68,80,31,71,19,35,26,66,56,36,31,53,73,81,43,6,16,53,77,29,47,0,33,80,33,79,100,10,51,84,59,61,10,10,58,14,30,13,26,100,16,39,81,36,93,12,92,29,47,50,51,84,26,43,46,83,68,41,12,18,33,66,24,72,27,47,84,94,99,14,20,12,87,83,40,81,12,17,79,42,62,30,60,43,32,75,50,78,3,94,88,33,81,63,54,67,99,38,29,97,26,42,32,83,29,25,51,0,78,80,6,39,66,32,19,19,41,38,45,19,35,93,16,35,89,89,34,23,46,93,54,70,39,61,76,6,17,14,48,72,78,64,13,71,16,6,60,14,82,66,8,16,82,95,72,26,25,8,20,70,32,55,81,23,55,75,100,14,45,10,6,56,31,90,29,15,66,52,24,16,52,13,69,27,21,83,99,23,9,10,73,39,56,91,10,75,49,46,91,66,68,20,52,41,56,64,61,4,5,44,17,35,62,3,13,30,64,4,78,8,95,8,75,44,22,55,50,2,52,70,80,72,21,0,0,7,20,32,53,7,10,62,77,81,2,84,94,84,22,94,14,4,85,96,2,72,78,35,36,57,4,94,61,53,7,69,46,79,91,11,9,61,68,74,21,79,22,1,19,4,48,78,87,68,52,40,6,74,58,89,96,80,10,91,25,34,94,65,55,25,97,94,95,49,97,40,100,23,6,77,11,13,19,65,17,29,19,21,54,68,74,74,10,11,20,39,30,75,21,10,23,24,98,0,21,67,34,75,13,63,31,72,35,52,91,32,96,96,23,88,21,9,34,48,19,42,33,29,19,68,70,27,61,17,84,64,69,84,34,84,44,27,89,58,92,5,70,45,77,41,63,38,13,74,8,67,5,67,51,83,74,40,79,18,34,94,13,16,14,77,34,2,62,76,78,81,15,70,86,96,46,8,83,0,22,82,91,92,75,79,84,39,37,9,15,63,72,19,80,65,79,46,81,46,30,91,10,66,26,24,10,14,47,54,73,38,13,7,79,51,57,82,11,42,84,42,32,72,62,76,49,81,25,87,64,51,27,49,69,18,5,12,39,52,81,78,97,72,49,71,57,35,19,100,60,46,86,87,34,91,99,1,96,19,28,82,3,59,59,21,2,68,47,75,93,84,73,89,1,81,44,71,20,56,41,57,50,7,19,53,93,3,20,53,76,99,82,1,40,2,38,1,15,26,76,20,66,19,42,96,47,92,35,87,96,21,98,84,57,30,72,17,76,26,95,81,68,1,82,68,69,83,48,77,10,54,1,73,83,96,96,29,64,44,26,5,70,26,38,48,64,3,54,61,59,92,65,57,5,24,25,83,84,11,49,27,3,81,66,17,40,7,48,11,72,84,100,36,32,93,34,29,6,63,69,30,97,75,88,96,74,98,37,60,4,45,27,14,67,79,84,100,80,97,42,62,17,26,82,39,45,88,93,76,15,86,72,37,44,66,45,60,24,4,7,53,67,96,98,12,57,46,34,45,66,88,59,64,92,82,56]",
-      "desc": "Killer: max complete"
+      "desc": "Killer: max complete",
+      "output": "false"
     }
   ]
 }

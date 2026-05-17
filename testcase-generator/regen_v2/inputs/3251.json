@@ -10,79 +10,98 @@
     },
     {
       "input": "\"i\"",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "1"
     },
     {
       "input": "\"lm\"",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "2"
     },
     {
       "input": "\"aaaaa\"",
-      "desc": "Edge: all same chars"
+      "desc": "Edge: all same chars",
+      "output": "1"
     },
     {
       "input": "\"acbda\"",
-      "desc": "Edge: short string mixed"
+      "desc": "Edge: short string mixed",
+      "output": "5"
     },
     {
       "input": "\"snumcvbehymjiybqjpazjugyoaqfpmlwvzqdzdp\"",
-      "desc": "Standard: len=39"
+      "desc": "Standard: len=39",
+      "output": "39"
     },
     {
       "input": "\"bewhblycdlsrnanjrsxtizhpfhtblmesuxt\"",
-      "desc": "Standard: len=35"
+      "desc": "Standard: len=35",
+      "output": "35"
     },
     {
       "input": "\"lpqlndeixbbtieddpiagzzvudjeyahzxtniymml\"",
-      "desc": "Standard: len=39"
+      "desc": "Standard: len=39",
+      "output": "31"
     },
     {
       "input": "\"faeblqyawdxnotefvumktxnjcavcaqhghprvuiew\"",
-      "desc": "Standard: len=40"
+      "desc": "Standard: len=40",
+      "output": "40"
     },
     {
       "input": "\"nsdlnnrihjjhsxxlgwewxzvgnnkjaxjrywsgtzkpcz\"",
-      "desc": "Standard: len=42"
+      "desc": "Standard: len=42",
+      "output": "34"
     },
     {
       "input": "\"sqrywqkvfqqyhmrf\"",
-      "desc": "Standard: len=16"
+      "desc": "Standard: len=16",
+      "output": "14"
     },
     {
       "input": "\"scbbgwuixxhqhvmghhorzdgh\"",
-      "desc": "Standard: len=24"
+      "desc": "Standard: len=24",
+      "output": "18"
     },
     {
       "input": "\"qhljtcgvfslzupkpkwqauclpfhuqznjxuivgz\"",
-      "desc": "Standard: len=37"
+      "desc": "Standard: len=37",
+      "output": "37"
     },
     {
       "input": "\"tlbmxtcmoawokcmdyxsgldlzekukprfwermjisjiiguejcgdriyyqastrkdgnsuffxhjojvftszcmrprcctqbdfreqncmwyfivelxpcaxrchrxqxeomqooklcjpgrlirsbuuzsvixqidlrsihdpmcaawienyaeqevvyhmsiqzesuqifgucxbwjdaofdvlznvqwsalvojyjwcwqbmlsabfwituyangdnxehbkwsukxwxqvyvkyyvomxktwcmoezfksihdxixmngrvzuviebwwvwetqmanswchdxurukanbnsxyllamfwcixkdfexcbgzmmdiekrtwfspguovsropunkzqivllyfefiukaxnderkvchiizsuxcraynidxqqutormpuaubibemohxosgbevcicweahtslxcowyhlbeyrgcfgrpviietufdrezurjfoqbeuyalqsonayebbwxjdqmeyvjevzfvxkqbeznqdsvqphhtbcjrkb\"",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "464"
     },
     {
       "input": "\"bqjdghbtjhkbyzsvylolltfjjfgmqleohchcfkpyjubvsoqiyfnszjhflyhzrwtsinkifzyvietyjemjiusnefljozehohdonwrizsukuhktpgmokeheuofpiwqvolwhyqlhbwxuvphvbqejaxswjsjrwnvhmkkygyebynugsujgztrursbhiymyuisdecrqrhfeowelmdjblzmszzsillfzjgxoqqnzolgnuyrbtosqptffjdbpcrnmunnaovwuythcnydghqnhpxkgttyhzxbdfndrltfkgvufqwcmaddcwdviqfqjklhboodtdgtekpuvgrxzwceccujyglxdqrdfflcltdearcaddhuwvgpxjskdzbjrdwwgqngrlzhmifnmfoeaqfdkwadfgdmhtgjhpsdafqwdelkcevjfvophmzoicynsuxvdfvvkmderpgqdjkoyevbqicekoykeitmkjkysgphirjnfmcdlxxcunthsfpoljubaqgwfvixwdxxszwimldbtswvzlftwredtnugglhogooetqefxotlbhrqjbogmubjtkticjfqpjzgjfgvcfkbbaymfskgytqtdurbdrxvfsijvctuxhzebodheukztcjmjuavitfegluwtkmglijgdmoorsblknvniimdaxempfsypitvsrfclrikovbwnqbbhlytgmndnjvjljhbawwagulxxmlzdwmypvzefacyhlfjzdtcqmpxnudbvxbrlucbytnthcpklhysluqhccpdqqeuzhpyzanzrlzccrfdtdckjgwehripvxevkynvslshlijfkbenxxkjkokwpgwtvidlxbdsijpffyslzdivbkymnqrmoixawlvrzmilftzuvgattlncfommtyrbavdfxcdogpqzlveyurjnzxrvtpzspnnpjqvfkyllxdiujjsudivgtharejukavzdotavicniklbwnqsbcsxixxrmjthbiloiw\"",
-      "desc": "Stress: max string"
+      "desc": "Stress: max string",
+      "output": "926"
     },
     {
       "input": "\"abcdeedcba\"",
-      "desc": "Killer: palindrome"
+      "desc": "Killer: palindrome",
+      "output": "8"
     },
     {
       "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"",
-      "desc": "Killer: all same char max"
+      "desc": "Killer: all same char max",
+      "output": "1"
     },
     {
       "input": "\"bqjhhhekzx\"",
-      "desc": "Generated: stress at position 17"
+      "desc": "Generated: stress at position 17",
+      "output": "7"
     },
     {
       "input": "\"gwhevrjrth\"",
-      "desc": "Generated: stress at position 18"
+      "desc": "Generated: stress at position 18",
+      "output": "10"
     },
     {
       "input": "\"tnijzmlpwa\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "10"
     }
   ]
 }
