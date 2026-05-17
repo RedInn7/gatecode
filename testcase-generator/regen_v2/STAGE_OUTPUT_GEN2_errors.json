@@ -1264,5 +1264,29 @@
     "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
     "fqid": 1963,
     "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1907,
+    "slug": "lowest-common-ancestor-of-a-binary-tree-ii",
+    "fqid": 1644,
+    "error": "Testcase 2 failed: RE (exit 1):  line 155, in dfs\n    l = dfs(root.left, p, q)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp3bof598f.py\", line 162, in dfs\n    return l or r or root.val == p.val or root.val == q.val\n                                                      ^^^^^\nAttributeError: 'NoneType' object has no attribute 'val'\n"
+  },
+  {
+    "pid": 1918,
+    "slug": "minimize-the-total-price-of-the-trips",
+    "fqid": 2646,
+    "error": "Testcase 9 failed: RE (exit 1): t recent call last):\n  File \"/tmp/tmp_o8r34td.py\", line 303, in <module>\n    _result = Solution().minimumTotalPrice(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_o8r34td.py\", line 165, in minimumTotalPrice\n    g[a].append(b)\n    ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1911,
+    "slug": "kill-process",
+    "fqid": 582,
+    "error": "Testcase 5 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpx0_ncdkf.py\", line 145, in dfs\n    dfs(j)\n  File \"/tmp/tmpx0_ncdkf.py\", line 145, in dfs\n    dfs(j)\n  File \"/tmp/tmpx0_ncdkf.py\", line 145, in dfs\n    dfs(j)\n  [Previous line repeated 997 more times]\nRecursionError: maximum recursion depth exceeded\n"
+  },
+  {
+    "pid": 1933,
+    "slug": "sum-of-largest-prime-substrings",
+    "fqid": 3556,
+    "error": "Testcase 19 failed: RE (exit 1): , line 288, in <module>\n    _result = Solution().sumOfLargestPrimes(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpk80bb4ek.py\", line 152, in sumOfLargestPrimes\n    x = x * 10 + int(s[j])\n                 ^^^^^^^^^\nValueError: invalid literal for int() with base 10: 's'\n"
   }
 ]

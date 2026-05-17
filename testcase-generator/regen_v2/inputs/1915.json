@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= nums.length == n <= 10^5, 1 <= nums[i] <= 10^5, 1 <= k <= min(n*(n+1)/2, 10^9), answer mod 10^9+7",
   "input_format": "line1: nums (JSON array); line2: k (int)",
   "testcases": [
-    {"input": "[8,3,9,3,8]\n2", "desc": "Standard: example 1"},
-    {"input": "[19,12,14,6,10,18]\n3", "desc": "Standard: example 2"},
-    {"input": "[1]\n1", "desc": "Edge: n=1"},
-    {"input": "[2]\n1", "desc": "Edge: n=1 prime"},
-    {"input": "[100000]\n1", "desc": "Edge: max value single"},
-    {"input": "[1,1,1,1,1]\n5", "desc": "Edge: all ones prime score 0"},
-    {"input": "[2,2,2,2,2]\n3", "desc": "Edge: all same prime"},
-    {"input": "[2,3,5,7,11,13]\n6", "desc": "Standard: primes only"},
-    {"input": "[30,30,30,30]\n4", "desc": "Standard: same composite"},
-    {"input": "[6,10,15,21]\n4", "desc": "Standard: semi-primes"},
-    {"input": "[2,4,8,16,32]\n5", "desc": "Standard: powers of 2"},
-    {"input": "[12,8,6,4,2]\n3", "desc": "Standard: descending"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n10", "desc": "Standard: 1..10 all ops"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n55", "desc": "Standard: 1..10 max subarrays"},
-    {"input": "[99991,99989,99971,99961]\n4", "desc": "Edge: large primes"},
-    {"input": "[100,200,300,400,500]\n5", "desc": "Standard: composites"},
-    {"input": "[210,420,630,840]\n4", "desc": "Standard: high prime-score numbers"},
-    {"input": "[2,3,2,3,2,3,2,3]\n8", "desc": "Standard: alternating primes"},
-    {"input": "[1,2,1,2,1,2,1,2,1,2]\n10", "desc": "Standard: alternating 1-prime"},
-    {"input": "[97,89,83,79,73,71,67,61,59,53,47,43,41,37,31,29,23,19,17,13,11,7,5,3,2]\n100", "desc": "Stress: 25 primes high k"}
+    {
+      "input": "[8,3,9,3,8]\n2",
+      "desc": "Standard: example 1",
+      "output": "81"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n3",
+      "desc": "Standard: example 2",
+      "output": "4788"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "[2]\n1",
+      "desc": "Edge: n=1 prime",
+      "output": "2"
+    },
+    {
+      "input": "[100000]\n1",
+      "desc": "Edge: max value single",
+      "output": "100000"
+    },
+    {
+      "input": "[1,1,1,1,1]\n5",
+      "desc": "Edge: all ones prime score 0",
+      "output": "1"
+    },
+    {
+      "input": "[2,2,2,2,2]\n3",
+      "desc": "Edge: all same prime",
+      "output": "8"
+    },
+    {
+      "input": "[2,3,5,7,11,13]\n6",
+      "desc": "Standard: primes only",
+      "output": "539539"
+    },
+    {
+      "input": "[30,30,30,30]\n4",
+      "desc": "Standard: same composite",
+      "output": "810000"
+    },
+    {
+      "input": "[6,10,15,21]\n4",
+      "desc": "Standard: semi-primes",
+      "output": "47250"
+    },
+    {
+      "input": "[2,4,8,16,32]\n5",
+      "desc": "Standard: powers of 2",
+      "output": "524288"
+    },
+    {
+      "input": "[12,8,6,4,2]\n3",
+      "desc": "Standard: descending",
+      "output": "1728"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n10",
+      "desc": "Standard: 1..10 all ops",
+      "output": "975679993"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n55",
+      "desc": "Standard: 1..10 max subarrays",
+      "output": "544963780"
+    },
+    {
+      "input": "[99991,99989,99971,99961]\n4",
+      "desc": "Edge: large primes",
+      "output": "960377448"
+    },
+    {
+      "input": "[100,200,300,400,500]\n5",
+      "desc": "Standard: composites",
+      "output": "999949607"
+    },
+    {
+      "input": "[210,420,630,840]\n4",
+      "desc": "Standard: high prime-score numbers",
+      "output": "26319020"
+    },
+    {
+      "input": "[2,3,2,3,2,3,2,3]\n8",
+      "desc": "Standard: alternating primes",
+      "output": "6561"
+    },
+    {
+      "input": "[1,2,1,2,1,2,1,2,1,2]\n10",
+      "desc": "Standard: alternating 1-prime",
+      "output": "1024"
+    },
+    {
+      "input": "[97,89,83,79,73,71,67,61,59,53,47,43,41,37,31,29,23,19,17,13,11,7,5,3,2]\n100",
+      "desc": "Stress: 25 primes high k",
+      "output": "211083469"
+    }
   ]
 }

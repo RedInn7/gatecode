@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= words.length <= 2000, 1 <= words[i].length <= 7, lowercase letters",
   "input_format": "single line: words (JSON array of strings)",
   "testcases": [
-    {"input": "[\"time\",\"me\",\"bell\"]", "desc": "Standard: example 1"},
-    {"input": "[\"t\"]", "desc": "Edge: single 1-char word"},
-    {"input": "[\"abcdefg\"]", "desc": "Edge: single max-length word"},
-    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: 5 distinct 1-chars"},
-    {"input": "[\"a\",\"a\",\"a\",\"a\"]", "desc": "Edge: all same word"},
-    {"input": "[\"abc\",\"bc\",\"c\"]", "desc": "Standard: nested suffixes"},
-    {"input": "[\"abcd\",\"bcd\",\"cd\",\"d\"]", "desc": "Standard: chain suffix"},
-    {"input": "[\"hello\",\"world\"]", "desc": "Standard: 2 distinct words"},
-    {"input": "[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\"]", "desc": "Standard: 5 distinct"},
-    {"input": "[\"apple\",\"ple\",\"le\",\"e\"]", "desc": "Standard: shared suffix chain"},
-    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard: prefix chain (no suffix share)"},
-    {"input": "[\"abcdefg\",\"bcdefg\",\"cdefg\",\"defg\",\"efg\",\"fg\",\"g\"]", "desc": "Standard: all 7-suffix chain"},
-    {"input": "[\"me\",\"time\"]", "desc": "Standard: order shouldn't matter"},
-    {"input": "[\"feipyxx\",\"e\"]", "desc": "Standard: no shared suffix"},
-    {"input": "[\"aa\",\"aa\",\"aa\"]", "desc": "Edge: duplicates 2-char"},
-    {"input": "[\"abcdefg\",\"abcdefg\",\"abcdefg\"]", "desc": "Edge: duplicate max-len"},
-    {"input": "[\"cat\",\"bat\",\"rat\",\"hat\",\"mat\",\"sat\",\"pat\"]", "desc": "Standard: 7 distinct ending in 'at'"},
-    {"input": "[\"abc\",\"abd\",\"abe\",\"abf\",\"abg\"]", "desc": "Standard: same prefix, no suffix share"},
-    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]", "desc": "Stress: all 26 single letters"},
-    {"input": "[\"world\",\"orld\",\"rld\",\"ld\",\"d\",\"hello\",\"ello\",\"llo\",\"lo\",\"o\"]", "desc": "Standard: two suffix chains"}
+    {
+      "input": "[\"time\",\"me\",\"bell\"]",
+      "desc": "Standard: example 1",
+      "output": "10"
+    },
+    {
+      "input": "[\"t\"]",
+      "desc": "Edge: single 1-char word",
+      "output": "2"
+    },
+    {
+      "input": "[\"abcdefg\"]",
+      "desc": "Edge: single max-length word",
+      "output": "8"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]",
+      "desc": "Standard: 5 distinct 1-chars",
+      "output": "10"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\",\"a\"]",
+      "desc": "Edge: all same word",
+      "output": "2"
+    },
+    {
+      "input": "[\"abc\",\"bc\",\"c\"]",
+      "desc": "Standard: nested suffixes",
+      "output": "4"
+    },
+    {
+      "input": "[\"abcd\",\"bcd\",\"cd\",\"d\"]",
+      "desc": "Standard: chain suffix",
+      "output": "5"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "desc": "Standard: 2 distinct words",
+      "output": "12"
+    },
+    {
+      "input": "[\"abc\",\"def\",\"ghi\",\"jkl\",\"mno\"]",
+      "desc": "Standard: 5 distinct",
+      "output": "20"
+    },
+    {
+      "input": "[\"apple\",\"ple\",\"le\",\"e\"]",
+      "desc": "Standard: shared suffix chain",
+      "output": "6"
+    },
+    {
+      "input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]",
+      "desc": "Standard: prefix chain (no suffix share)",
+      "output": "20"
+    },
+    {
+      "input": "[\"abcdefg\",\"bcdefg\",\"cdefg\",\"defg\",\"efg\",\"fg\",\"g\"]",
+      "desc": "Standard: all 7-suffix chain",
+      "output": "8"
+    },
+    {
+      "input": "[\"me\",\"time\"]",
+      "desc": "Standard: order shouldn't matter",
+      "output": "5"
+    },
+    {
+      "input": "[\"feipyxx\",\"e\"]",
+      "desc": "Standard: no shared suffix",
+      "output": "10"
+    },
+    {
+      "input": "[\"aa\",\"aa\",\"aa\"]",
+      "desc": "Edge: duplicates 2-char",
+      "output": "3"
+    },
+    {
+      "input": "[\"abcdefg\",\"abcdefg\",\"abcdefg\"]",
+      "desc": "Edge: duplicate max-len",
+      "output": "8"
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\",\"hat\",\"mat\",\"sat\",\"pat\"]",
+      "desc": "Standard: 7 distinct ending in 'at'",
+      "output": "28"
+    },
+    {
+      "input": "[\"abc\",\"abd\",\"abe\",\"abf\",\"abg\"]",
+      "desc": "Standard: same prefix, no suffix share",
+      "output": "20"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\"u\",\"v\",\"w\",\"x\",\"y\",\"z\"]",
+      "desc": "Stress: all 26 single letters",
+      "output": "52"
+    },
+    {
+      "input": "[\"world\",\"orld\",\"rld\",\"ld\",\"d\",\"hello\",\"ello\",\"llo\",\"lo\",\"o\"]",
+      "desc": "Standard: two suffix chains",
+      "output": "12"
+    }
   ]
 }

@@ -298,5 +298,11 @@
     "slug": "sum-of-perfect-square-ancestors",
     "fqid": 3715,
     "reason": "No Python3 solution found for fqid=3715"
+  },
+  {
+    "pid": 1913,
+    "slug": "minimum-swaps-to-avoid-forbidden-values",
+    "fqid": 3785,
+    "reason": "No Python3 solution found for fqid=3785"
   }
 ]

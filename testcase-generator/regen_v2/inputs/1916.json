@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= tiles.length <= 7, uppercase English letters",
   "input_format": "single line: tiles (JSON string)",
   "testcases": [
-    {"input": "\"AAB\"", "desc": "Standard: example 1"},
-    {"input": "\"AAABBC\"", "desc": "Standard: example 2"},
-    {"input": "\"V\"", "desc": "Edge: n=1"},
-    {"input": "\"A\"", "desc": "Edge: n=1 alt"},
-    {"input": "\"AA\"", "desc": "Edge: n=2 duplicates"},
-    {"input": "\"AB\"", "desc": "Edge: n=2 distinct"},
-    {"input": "\"AAA\"", "desc": "Edge: all same n=3"},
-    {"input": "\"ABC\"", "desc": "Standard: 3 distinct"},
-    {"input": "\"AAAA\"", "desc": "Edge: all same n=4"},
-    {"input": "\"ABCD\"", "desc": "Standard: 4 distinct"},
-    {"input": "\"AAAAA\"", "desc": "Edge: all same n=5"},
-    {"input": "\"ABCDE\"", "desc": "Standard: 5 distinct"},
-    {"input": "\"AAAAAA\"", "desc": "Edge: all same n=6"},
-    {"input": "\"ABCDEF\"", "desc": "Standard: 6 distinct"},
-    {"input": "\"AAAAAAA\"", "desc": "Edge: all same max n=7"},
-    {"input": "\"ABCDEFG\"", "desc": "Stress: 7 distinct max"},
-    {"input": "\"AABBCC\"", "desc": "Standard: pairs"},
-    {"input": "\"AABBCCD\"", "desc": "Standard: pairs plus extra"},
-    {"input": "\"AAABBB\"", "desc": "Standard: triples"},
-    {"input": "\"XYZXYZ\"", "desc": "Standard: repeat pattern"}
+    {
+      "input": "\"AAB\"",
+      "desc": "Standard: example 1",
+      "output": "8"
+    },
+    {
+      "input": "\"AAABBC\"",
+      "desc": "Standard: example 2",
+      "output": "188"
+    },
+    {
+      "input": "\"V\"",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "\"A\"",
+      "desc": "Edge: n=1 alt",
+      "output": "1"
+    },
+    {
+      "input": "\"AA\"",
+      "desc": "Edge: n=2 duplicates",
+      "output": "2"
+    },
+    {
+      "input": "\"AB\"",
+      "desc": "Edge: n=2 distinct",
+      "output": "4"
+    },
+    {
+      "input": "\"AAA\"",
+      "desc": "Edge: all same n=3",
+      "output": "3"
+    },
+    {
+      "input": "\"ABC\"",
+      "desc": "Standard: 3 distinct",
+      "output": "15"
+    },
+    {
+      "input": "\"AAAA\"",
+      "desc": "Edge: all same n=4",
+      "output": "4"
+    },
+    {
+      "input": "\"ABCD\"",
+      "desc": "Standard: 4 distinct",
+      "output": "64"
+    },
+    {
+      "input": "\"AAAAA\"",
+      "desc": "Edge: all same n=5",
+      "output": "5"
+    },
+    {
+      "input": "\"ABCDE\"",
+      "desc": "Standard: 5 distinct",
+      "output": "325"
+    },
+    {
+      "input": "\"AAAAAA\"",
+      "desc": "Edge: all same n=6",
+      "output": "6"
+    },
+    {
+      "input": "\"ABCDEF\"",
+      "desc": "Standard: 6 distinct",
+      "output": "1956"
+    },
+    {
+      "input": "\"AAAAAAA\"",
+      "desc": "Edge: all same max n=7",
+      "output": "7"
+    },
+    {
+      "input": "\"ABCDEFG\"",
+      "desc": "Stress: 7 distinct max",
+      "output": "13699"
+    },
+    {
+      "input": "\"AABBCC\"",
+      "desc": "Standard: pairs",
+      "output": "270"
+    },
+    {
+      "input": "\"AABBCCD\"",
+      "desc": "Standard: pairs plus extra",
+      "output": "1840"
+    },
+    {
+      "input": "\"AAABBB\"",
+      "desc": "Standard: triples",
+      "output": "68"
+    },
+    {
+      "input": "\"XYZXYZ\"",
+      "desc": "Standard: repeat pattern",
+      "output": "270"
+    }
   ]
 }

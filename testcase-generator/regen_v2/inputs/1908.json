@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,1,0]",
-      "desc": "Edge: example1 true"
+      "desc": "Edge: example1 true",
+      "output": "true"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge: example2 true"
+      "desc": "Edge: example2 true",
+      "output": "true"
     },
     {
       "input": "[1,0]",
-      "desc": "Edge: example3 false (odd ones)"
+      "desc": "Edge: example3 false (odd ones)",
+      "output": "false"
     },
     {
       "input": "[0]",
-      "desc": "Edge: n=1 zero -> true"
+      "desc": "Edge: n=1 zero -> true",
+      "output": "true"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1 one -> false"
+      "desc": "Edge: n=1 one -> false",
+      "output": "false"
     },
     {
       "input": "[0,0]",
-      "desc": "Edge: two zeros -> true"
+      "desc": "Edge: two zeros -> true",
+      "output": "true"
     },
     {
       "input": "[1,1,1,1]",
-      "desc": "Edge: all ones even -> true"
+      "desc": "Edge: all ones even -> true",
+      "output": "true"
     },
     {
       "input": "[1,1,1]",
-      "desc": "Edge: all ones odd -> false"
+      "desc": "Edge: all ones odd -> false",
+      "output": "false"
     },
     {
       "input": "[431,-883,-674,-735,758,-97,-95,539,494,-77,500,654,-190,827,961,349,-445,-297,-791,-66,671,161,269,-551,-837,314,49,-24,185,816,-155,172,-157,885,-404,460,-492,82,587,690,-660,584,-212,172,-352,-665,-40,-261,-217,-348,638,990,673,900,258,326,463,-669,262,-301,-764,326,-95,-393,890,-472,-743,-850,-732,565,209,-759,-651,483,688,834,-428,-362,750,-360,782,-664,364,-95,851]",
-      "desc": "Regenerated: standard at position 8"
+      "desc": "Regenerated: standard at position 8",
+      "output": "false"
     },
     {
       "input": "[1,0,1,0,1,0,1,0,1,0]",
-      "desc": "Standard: alternating starting 1"
+      "desc": "Standard: alternating starting 1",
+      "output": "false"
     },
     {
       "input": "[0,1,0,1,0,1,0,1,0,1]",
-      "desc": "Standard: alternating starting 0"
+      "desc": "Standard: alternating starting 0",
+      "output": "false"
     },
     {
       "input": "[1,1,0,0,1,1,0,0,1,1]",
-      "desc": "Standard: pairs alternating"
+      "desc": "Standard: pairs alternating",
+      "output": "true"
     },
     {
       "input": "[1,0,0,1,1,0,0,1,1,0]",
-      "desc": "Standard: random pattern"
+      "desc": "Standard: random pattern",
+      "output": "false"
     },
     {
       "input": "[-240,-699,862,453,-53,-79,402,-472,867,867,-356,-58,-2,247,-364,-972,442,-932,-560,964,795,46,-797,-590,-287,24,196,-36,9,-920,-756,465,-29,242,902,245,639,556,754,597,-824,635,193,-636,-102,-87,-317,906,424,232,-723,-917,897,990,335,-842,730,-216,-659,-125,88,-125,-349,580,-448,725,515,349,679,-407,-914,947,-380,128,-336,199,630,-93,-519,-27,-454,604,-534,999,972,-207,954,-995,-543,-199,109,266,988,-699,19,-38]",
-      "desc": "Regenerated: diverse at position 13"
+      "desc": "Regenerated: diverse at position 13",
+      "output": "false"
     },
     {
       "input": "[-88,-695,366,252,413,755,-933,-273,-321,380,307,-362,697,-566,-697,-378,579,12,-770,964,423,-541,-726,765,950,-614,-909,155,-890,951,65,490,144,-660,363,-939,352,672]",
-      "desc": "Regenerated: standard at position 14"
+      "desc": "Regenerated: standard at position 14",
+      "output": "false"
     },
     {
       "input": "[835,541,929,424,-163,-997,697,-877,-579,935,-76,863,887,-531,-245,193,594,60,-353,-316,173,-837,-607,700,-135,-868,402,-654,303,-94,120,106,-954,-733,200,611,567,-480,-962,-2,-907,307,543,-578,258,456,191,201,74,-286,828,-482,-79,-263,-781,-718,76,-620,-192,70,113,-804,-856,-624,610,491,722,-498,-434,921,246,94,-65,-952,372,-617,856,576,-335,-280,56,585,-288,-236,88,100]",
-      "desc": "Regenerated: standard at position 15"
+      "desc": "Regenerated: standard at position 15",
+      "output": "false"
     },
     {
       "input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]",
-      "desc": "Stress: 50 alternating (25 ones)"
+      "desc": "Stress: 50 alternating (25 ones)",
+      "output": "false"
     },
     {
       "input": "[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]",
-      "desc": "Stress: 100 alternating"
+      "desc": "Stress: 100 alternating",
+      "output": "true"
     },
     {
       "input": "[1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0]",
-      "desc": "Special: blocks of 5"
+      "desc": "Special: blocks of 5",
+      "output": "true"
     },
     {
       "input": "[0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1]",
-      "desc": "Special: triple pattern"
+      "desc": "Special: triple pattern",
+      "output": "true"
     }
   ]
 }

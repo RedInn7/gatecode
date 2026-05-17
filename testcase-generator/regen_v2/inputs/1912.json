@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= nums.length <= 300, 1 <= nums[i].length <= 500, 0 <= nums[i][j] <= 10^3",
   "input_format": "single line: nums (JSON 2D array of ints)",
   "testcases": [
-    {"input": "[[7,2,1],[6,4,2],[6,5,3],[3,2,1]]", "desc": "Standard: example 1"},
-    {"input": "[[1]]", "desc": "Edge: 1x1"},
-    {"input": "[[0]]", "desc": "Edge: 1x1 zero"},
-    {"input": "[[1000]]", "desc": "Edge: 1x1 max value"},
-    {"input": "[[1,2,3,4,5]]", "desc": "Edge: single row"},
-    {"input": "[[1],[2],[3],[4],[5]]", "desc": "Edge: single column"},
-    {"input": "[[1,1,1],[1,1,1],[1,1,1]]", "desc": "Edge: all same value"},
-    {"input": "[[0,0,0],[0,0,0]]", "desc": "Edge: all zeros"},
-    {"input": "[[1,2],[3,4]]", "desc": "Standard: small 2x2"},
-    {"input": "[[1000,1000,1000],[1000,1000,1000],[1000,1000,1000]]", "desc": "Edge: all maxima"},
-    {"input": "[[5,4,3,2,1],[10,9,8,7,6],[15,14,13,12,11]]", "desc": "Standard: descending rows"},
-    {"input": "[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]", "desc": "Standard: ascending rows"},
-    {"input": "[[100,200],[300,400],[500,600]]", "desc": "Standard: 3x2"},
-    {"input": "[[1,1000],[1000,1],[500,500]]", "desc": "Standard: mixed extremes"},
-    {"input": "[[9,8,7,6,5,4,3,2,1,0],[0,1,2,3,4,5,6,7,8,9]]", "desc": "Standard: mixed orders"},
-    {"input": "[[1,2,3,4,5,6,7,8,9,10],[10,9,8,7,6,5,4,3,2,1],[5,5,5,5,5,5,5,5,5,5],[1,1,1,1,1,1,1,1,1,1],[10,10,10,10,10,10,10,10,10,10]]", "desc": "Standard: varied"},
-    {"input": "[[2,3,1],[4,5,6],[7,9,8]]", "desc": "Standard: 3x3 distinct"},
-    {"input": "[[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]]", "desc": "Standard: 6x3"},
-    {"input": "[[999,1000,998,997],[1000,999,996,995],[998,997,994,993]]", "desc": "Standard: near-max values"},
-    {"input": "[[500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500],[500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500]]", "desc": "Stress: all equal medium grid"}
+    {
+      "input": "[[7,2,1],[6,4,2],[6,5,3],[3,2,1]]",
+      "desc": "Standard: example 1",
+      "output": "15"
+    },
+    {
+      "input": "[[1]]",
+      "desc": "Edge: 1x1",
+      "output": "1"
+    },
+    {
+      "input": "[[0]]",
+      "desc": "Edge: 1x1 zero",
+      "output": "0"
+    },
+    {
+      "input": "[[1000]]",
+      "desc": "Edge: 1x1 max value",
+      "output": "1000"
+    },
+    {
+      "input": "[[1,2,3,4,5]]",
+      "desc": "Edge: single row",
+      "output": "15"
+    },
+    {
+      "input": "[[1],[2],[3],[4],[5]]",
+      "desc": "Edge: single column",
+      "output": "5"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1],[1,1,1]]",
+      "desc": "Edge: all same value",
+      "output": "3"
+    },
+    {
+      "input": "[[0,0,0],[0,0,0]]",
+      "desc": "Edge: all zeros",
+      "output": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]",
+      "desc": "Standard: small 2x2",
+      "output": "7"
+    },
+    {
+      "input": "[[1000,1000,1000],[1000,1000,1000],[1000,1000,1000]]",
+      "desc": "Edge: all maxima",
+      "output": "3000"
+    },
+    {
+      "input": "[[5,4,3,2,1],[10,9,8,7,6],[15,14,13,12,11]]",
+      "desc": "Standard: descending rows",
+      "output": "65"
+    },
+    {
+      "input": "[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]",
+      "desc": "Standard: ascending rows",
+      "output": "65"
+    },
+    {
+      "input": "[[100,200],[300,400],[500,600]]",
+      "desc": "Standard: 3x2",
+      "output": "1100"
+    },
+    {
+      "input": "[[1,1000],[1000,1],[500,500]]",
+      "desc": "Standard: mixed extremes",
+      "output": "1500"
+    },
+    {
+      "input": "[[9,8,7,6,5,4,3,2,1,0],[0,1,2,3,4,5,6,7,8,9]]",
+      "desc": "Standard: mixed orders",
+      "output": "45"
+    },
+    {
+      "input": "[[1,2,3,4,5,6,7,8,9,10],[10,9,8,7,6,5,4,3,2,1],[5,5,5,5,5,5,5,5,5,5],[1,1,1,1,1,1,1,1,1,1],[10,10,10,10,10,10,10,10,10,10]]",
+      "desc": "Standard: varied",
+      "output": "100"
+    },
+    {
+      "input": "[[2,3,1],[4,5,6],[7,9,8]]",
+      "desc": "Standard: 3x3 distinct",
+      "output": "24"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]]",
+      "desc": "Standard: 6x3",
+      "output": "51"
+    },
+    {
+      "input": "[[999,1000,998,997],[1000,999,996,995],[998,997,994,993]]",
+      "desc": "Standard: near-max values",
+      "output": "3994"
+    },
+    {
+      "input": "[[500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500],[500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500]]",
+      "desc": "Stress: all equal medium grid",
+      "output": "10000"
+    }
   ]
 }

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"madxa\"\n\"madam\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "4"
     },
     {
       "input": "\"leetcode\"\n\"eetcode\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "7"
     },
     {
       "input": "\"one\"\n\"one\"",
-      "desc": "Standard: identical"
+      "desc": "Standard: identical",
+      "output": "3"
     },
     {
       "input": "\"a\"\n\"b\"",
-      "desc": "Edge: n=1 no match"
+      "desc": "Edge: n=1 no match",
+      "output": "0"
     },
     {
       "input": "\"a\"\n\"a\"",
-      "desc": "Edge: n=1 match"
+      "desc": "Edge: n=1 match",
+      "output": "1"
     },
     {
       "input": "\"ab\"\n\"a\"",
-      "desc": "Edge: t shorter"
+      "desc": "Edge: t shorter",
+      "output": "1"
     },
     {
       "input": "\"a\"\n\"ab\"",
-      "desc": "Edge: s shorter"
+      "desc": "Edge: s shorter",
+      "output": "1"
     },
     {
       "input": "\"abcdefg\"\n\"abcdefg\"",
-      "desc": "Standard: full match"
+      "desc": "Standard: full match",
+      "output": "7"
     },
     {
       "input": "\"xabcdef\"\n\"abcdef\"",
-      "desc": "Standard: remove first char"
+      "desc": "Standard: remove first char",
+      "output": "6"
     },
     {
       "input": "\"abcXdef\"\n\"abcdef\"",
-      "desc": "Standard: remove middle"
+      "desc": "Standard: remove middle",
+      "output": "6"
     },
     {
       "input": "\"abcdefx\"\n\"abcdef\"",
-      "desc": "Standard: remove last extra"
+      "desc": "Standard: remove last extra",
+      "output": "6"
     },
     {
       "input": "\"abc\"\n\"xyz\"",
-      "desc": "Standard: no common prefix"
+      "desc": "Standard: no common prefix",
+      "output": "0"
     },
     {
       "input": "\"aaaaa\"\n\"aaaaa\"",
-      "desc": "Edge: all same chars match"
+      "desc": "Edge: all same chars match",
+      "output": "5"
     },
     {
       "input": "\"aaaab\"\n\"aaaba\"",
-      "desc": "Standard: divergent at idx 3"
+      "desc": "Standard: divergent at idx 3",
+      "output": "4"
     },
     {
       "input": "\"abcabcabc\"\n\"abcabcabc\"",
-      "desc": "Standard: repeated pattern"
+      "desc": "Standard: repeated pattern",
+      "output": "9"
     },
     {
       "input": "\"zzzzzy\"\n\"zzzzzy\"",
-      "desc": "Standard: same with trailing diff"
+      "desc": "Standard: same with trailing diff",
+      "output": "6"
     },
     {
       "input": "\"hello\"\n\"hxello\"",
-      "desc": "Edge: t has extra (not allowed to remove from t)"
+      "desc": "Edge: t has extra (not allowed to remove from t)",
+      "output": "1"
     },
     {
       "input": "\"prefixmismatchhere\"\n\"prefixmatchnow\"",
-      "desc": "Standard: long mismatch later"
+      "desc": "Standard: long mismatch later",
+      "output": "7"
     },
     {
       "input": "\"abcdefghij\"\n\"bcdefghijk\"",
-      "desc": "Standard: shifted"
+      "desc": "Standard: shifted",
+      "output": "9"
     },
     {
       "input": "\"vmznjuobkeolprmq\"\n\"rahwuaxgtdqpmg\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "0"
     }
   ]
 }
