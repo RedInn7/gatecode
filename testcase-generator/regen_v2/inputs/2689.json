@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[3,2],[4,3],[4,4],[2,5]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "5"
     },
     {
       "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "7"
     },
     {
       "input": "[[1,1]]",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "1"
     },
     {
       "input": "[[100000,1]]",
-      "desc": "Edge: max single"
+      "desc": "Edge: max single",
+      "output": "100000"
     },
     {
       "input": "[[1,100000]]",
-      "desc": "Edge: extreme brain"
+      "desc": "Edge: extreme brain",
+      "output": "1"
     },
     {
       "input": "[[1,1],[1,1]]",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "1"
     },
     {
       "input": "[[100,1],[100,1]]",
-      "desc": "Edge: 2 high score"
+      "desc": "Edge: 2 high score",
+      "output": "100"
     },
     {
       "input": "[[100,5],[1,1]]",
-      "desc": "Edge: skip second"
+      "desc": "Edge: skip second",
+      "output": "100"
     },
     {
       "input": "[[1,5],[100,1]]",
-      "desc": "Edge: prefer second"
+      "desc": "Edge: prefer second",
+      "output": "100"
     },
     {
       "input": "[[1,1],[2,2],[3,3]]",
-      "desc": "Standard: 3 inc"
+      "desc": "Standard: 3 inc",
+      "output": "4"
     },
     {
       "input": "[[3,2],[1,3],[5,1],[4,2]]",
-      "desc": "Standard: mixed"
+      "desc": "Standard: mixed",
+      "output": "7"
     },
     {
       "input": "[[100,100000]]",
-      "desc": "Standard: max brain"
+      "desc": "Standard: max brain",
+      "output": "100"
     },
     {
       "input": "[[5,1],[5,1],[5,1],[5,1],[5,1]]",
-      "desc": "Standard: skip alt"
+      "desc": "Standard: skip alt",
+      "output": "15"
     },
     {
       "input": "[[1,5],[2,4],[3,3],[4,2],[5,1]]",
-      "desc": "Standard: decreasing brain"
+      "desc": "Standard: decreasing brain",
+      "output": "5"
     },
     {
       "input": "[[10,10],[20,20],[30,30],[40,40],[50,50]]",
-      "desc": "Standard: inc both"
+      "desc": "Standard: inc both",
+      "output": "50"
     },
     {
       "input": "[[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1]]",
-      "desc": "Standard: 10 same"
+      "desc": "Standard: 10 same",
+      "output": "5"
     },
     {
       "input": "[[1000,1],[1,1000],[1000,1],[1,1000]]",
-      "desc": "Standard: alt extreme"
+      "desc": "Standard: alt extreme",
+      "output": "2000"
     },
     {
       "input": "[[100,5],[200,3],[300,1],[150,2],[250,4]]",
-      "desc": "Standard: random"
+      "desc": "Standard: random",
+      "output": "550"
     },
     {
       "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12],[13,13],[14,14],[15,15],[16,16],[17,17],[18,18],[19,19],[20,20],[21,21],[22,22],[23,23],[24,24],[25,25],[26,26],[27,27],[28,28],[29,29],[30,30],[31,31],[32,32],[33,33],[34,34],[35,35],[36,36],[37,37],[38,38],[39,39],[40,40],[41,41],[42,42],[43,43],[44,44],[45,45],[46,46],[47,47],[48,48],[49,49],[50,50]]",
-      "desc": "Stress: 50 inc"
+      "desc": "Stress: 50 inc",
+      "output": "92"
     },
     {
       "input": "[[-198,-884,145,313],[-818,752,345,314],[220,-187,652,-731],[-658,-862,741,748],[-472,794,-888,8],[584,541,602,-848],[879,-828,637,245],[606,-376,-966,549]]",

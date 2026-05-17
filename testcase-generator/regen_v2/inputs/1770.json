@@ -6,7 +6,8 @@
   "testcases": [
     {
       "input": "-1",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "[\"\"]"
     },
     {
       "input": "100",
@@ -14,19 +15,23 @@
     },
     {
       "input": "-100",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "[\"\"]"
     },
     {
       "input": "-100",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "[\"\"]"
     },
     {
       "input": "1",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "[\"0\",\"1\"]"
     },
     {
       "input": "-109",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "[\"\"]"
     },
     {
       "input": "122",
@@ -34,7 +39,8 @@
     },
     {
       "input": "-652",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "[\"\"]"
     },
     {
       "input": "874",
@@ -42,7 +48,8 @@
     },
     {
       "input": "-581",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "[\"\"]"
     },
     {
       "input": "332",
@@ -54,7 +61,8 @@
     },
     {
       "input": "-321",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "[\"\"]"
     },
     {
       "input": "881",
@@ -66,23 +74,28 @@
     },
     {
       "input": "-973",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "[\"\"]"
     },
     {
       "input": "-87",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "[\"\"]"
     },
     {
       "input": "-287",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "[\"\"]"
     },
     {
       "input": "-66",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "[\"\"]"
     },
     {
       "input": "-607",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "[\"\"]"
     }
   ]
 }

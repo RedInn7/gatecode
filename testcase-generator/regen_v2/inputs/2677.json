@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[1,1],[-1,1]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "true"
     },
     {
       "input": "[[1,1],[-1,-1]]",
-      "desc": "Edge: example2 false"
+      "desc": "Edge: example2 false",
+      "output": "false"
     },
     {
       "input": "[[0,0]]",
-      "desc": "Edge: single point"
+      "desc": "Edge: single point",
+      "output": "true"
     },
     {
       "input": "[[1,0],[-1,0]]",
-      "desc": "Edge: symmetric pair"
+      "desc": "Edge: symmetric pair",
+      "output": "true"
     },
     {
       "input": "[[1,0],[1,0]]",
-      "desc": "Edge: duplicate"
+      "desc": "Edge: duplicate",
+      "output": "true"
     },
     {
       "input": "[[0,0],[0,0]]",
-      "desc": "Edge: 2 origin"
+      "desc": "Edge: 2 origin",
+      "output": "true"
     },
     {
       "input": "[[1,1],[1,1],[-1,1],[-1,1]]",
-      "desc": "Edge: 2 each dup symmetric"
+      "desc": "Edge: 2 each dup symmetric",
+      "output": "true"
     },
     {
       "input": "[[5,5]]",
-      "desc": "Edge: single non-origin"
+      "desc": "Edge: single non-origin",
+      "output": "true"
     },
     {
       "input": "[[1,2],[3,2],[5,2]]",
-      "desc": "Edge: 3 along x"
+      "desc": "Edge: 3 along x",
+      "output": "true"
     },
     {
       "input": "[[0,0],[1,0],[-1,0]]",
-      "desc": "Standard: 3 sym"
+      "desc": "Standard: 3 sym",
+      "output": "true"
     },
     {
       "input": "[[1,1],[2,1],[3,1],[4,1]]",
-      "desc": "Standard: 4 along x"
+      "desc": "Standard: 4 along x",
+      "output": "true"
     },
     {
       "input": "[[1,1],[2,2],[3,3],[4,4]]",
-      "desc": "Standard: diagonal"
+      "desc": "Standard: diagonal",
+      "output": "false"
     },
     {
       "input": "[[0,0],[1,1],[-1,1]]",
-      "desc": "Standard: 3 sym y axis"
+      "desc": "Standard: 3 sym y axis",
+      "output": "true"
     },
     {
       "input": "[[1,1],[3,1],[5,1],[2,1],[4,1]]",
-      "desc": "Standard: 5 along x"
+      "desc": "Standard: 5 along x",
+      "output": "true"
     },
     {
       "input": "[[1,2],[2,2],[3,2],[4,2],[5,2]]",
-      "desc": "Standard: 5 along x sym at 3"
+      "desc": "Standard: 5 along x sym at 3",
+      "output": "true"
     },
     {
       "input": "[[1,1],[-1,1],[2,2],[-2,2],[3,3],[-3,3]]",
-      "desc": "Standard: 6 sym"
+      "desc": "Standard: 6 sym",
+      "output": "true"
     },
     {
       "input": "[[1,1],[-1,1],[2,2],[-2,2],[3,3],[4,3]]",
-      "desc": "Standard: false"
+      "desc": "Standard: false",
+      "output": "false"
     },
     {
       "input": "[[100000000,1],[-100000000,1]]",
-      "desc": "Standard: extreme"
+      "desc": "Standard: extreme",
+      "output": "true"
     },
     {
       "input": "[[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1],[10,1],[11,1],[12,1],[13,1],[14,1],[15,1],[16,1],[17,1],[18,1],[19,1],[20,1]]",
-      "desc": "Stress: 20 along x"
+      "desc": "Stress: 20 along x",
+      "output": "true"
     },
     {
       "input": "[[-526,-151,758,-827],[-473,944,423,-289],[704,377,336,612],[-65,500,-567,-308]]",

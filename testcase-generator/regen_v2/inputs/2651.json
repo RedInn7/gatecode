@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[\"9001 discuss.leetcode.com\"]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "[\"9001 discuss.leetcode.com\",\"9001 leetcode.com\",\"9001 com\"]"
     },
     {
       "input": "[\"900 google.mail.com\",\"50 yahoo.com\",\"1 intel.mail.com\",\"5 wiki.org\"]",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "[\"900 google.mail.com\",\"901 mail.com\",\"951 com\",\"50 yahoo.com\",\"1 intel.mail.com\",\"5 wiki.org\",\"5 org\"]"
     },
     {
       "input": "[\"1 a.b\"]",
-      "desc": "Edge: minimal"
+      "desc": "Edge: minimal",
+      "output": "[\"1 a.b\",\"1 b\"]"
     },
     {
       "input": "[\"1 a.b.c\"]",
-      "desc": "Edge: 3 levels"
+      "desc": "Edge: 3 levels",
+      "output": "[\"1 a.b.c\",\"1 b.c\",\"1 c\"]"
     },
     {
       "input": "[\"1 a\"]",
-      "desc": "Edge: single domain"
+      "desc": "Edge: single domain",
+      "output": "[\"1 a\"]"
     },
     {
       "input": "[\"100 com\"]",
-      "desc": "Edge: just TLD"
+      "desc": "Edge: just TLD",
+      "output": "[\"100 com\"]"
     },
     {
       "input": "[\"5 a.b\",\"3 a.b\"]",
-      "desc": "Edge: dup domain"
+      "desc": "Edge: dup domain",
+      "output": "[\"8 a.b\",\"8 b\"]"
     },
     {
       "input": "[\"5 a.b\",\"3 c.b\"]",
-      "desc": "Edge: share TLD"
+      "desc": "Edge: share TLD",
+      "output": "[\"5 a.b\",\"8 b\",\"3 c.b\"]"
     },
     {
       "input": "[\"10 mail.google.com\",\"20 mail.google.com\"]",
-      "desc": "Edge: same full"
+      "desc": "Edge: same full",
+      "output": "[\"30 mail.google.com\",\"30 google.com\",\"30 com\"]"
     },
     {
       "input": "[\"1 a.b\",\"2 c.b\",\"3 d.b\",\"4 e.b\"]",
-      "desc": "Standard: shared TLD"
+      "desc": "Standard: shared TLD",
+      "output": "[\"1 a.b\",\"10 b\",\"2 c.b\",\"3 d.b\",\"4 e.b\"]"
     },
     {
       "input": "[\"100 mail.com\",\"200 inbox.com\",\"300 search.com\"]",
-      "desc": "Standard: 3 com"
+      "desc": "Standard: 3 com",
+      "output": "[\"100 mail.com\",\"600 com\",\"200 inbox.com\",\"300 search.com\"]"
     },
     {
       "input": "[\"1 a.b.c\",\"2 d.e.f\",\"3 g.h.i\"]",
-      "desc": "Standard: 3 distinct"
+      "desc": "Standard: 3 distinct",
+      "output": "[\"1 a.b.c\",\"1 b.c\",\"1 c\",\"2 d.e.f\",\"2 e.f\",\"2 f\",\"3 g.h.i\",\"3 h.i\",\"3 i\"]"
     },
     {
       "input": "[\"1 a.b.c.d.e\"]",
-      "desc": "Standard: deep nesting wait max 3 levels per LeetCode but ok"
+      "desc": "Standard: deep nesting wait max 3 levels per LeetCode but ok",
+      "output": "[\"1 a.b.c.d.e\",\"1 b.c.d.e\",\"1 c.d.e\",\"1 d.e\",\"1 e\"]"
     },
     {
       "input": "[\"500 cdn.example.com\",\"100 example.com\",\"50 www.example.com\"]",
-      "desc": "Standard: same root"
+      "desc": "Standard: same root",
+      "output": "[\"500 cdn.example.com\",\"650 example.com\",\"650 com\",\"50 www.example.com\"]"
     },
     {
       "input": "[\"1 a.com\",\"2 b.com\",\"3 c.com\",\"4 d.com\",\"5 e.com\"]",
-      "desc": "Standard: 5 com"
+      "desc": "Standard: 5 com",
+      "output": "[\"1 a.com\",\"15 com\",\"2 b.com\",\"3 c.com\",\"4 d.com\",\"5 e.com\"]"
     },
     {
       "input": "[\"10 a.org\",\"20 b.org\",\"30 c.org\",\"40 d.net\",\"50 e.net\"]",
-      "desc": "Standard: 2 TLDs"
+      "desc": "Standard: 2 TLDs",
+      "output": "[\"10 a.org\",\"60 org\",\"20 b.org\",\"30 c.org\",\"40 d.net\",\"90 net\",\"50 e.net\"]"
     },
     {
       "input": "[\"1 sub1.example.com\",\"2 sub2.example.com\",\"3 sub3.example.com\"]",
-      "desc": "Standard: sub-domains"
+      "desc": "Standard: sub-domains",
+      "output": "[\"1 sub1.example.com\",\"6 example.com\",\"6 com\",\"2 sub2.example.com\",\"3 sub3.example.com\"]"
     },
     {
       "input": "[\"1000 a.b\",\"2000 a.b\",\"3000 a.b\"]",
-      "desc": "Standard: large counts"
+      "desc": "Standard: large counts",
+      "output": "[\"6000 a.b\",\"6000 b\"]"
     },
     {
       "input": "[\"1 a.b.c\",\"2 a.b.c\",\"3 a.b.c\",\"4 a.b.c\",\"5 a.b.c\",\"6 a.b.c\",\"7 a.b.c\",\"8 a.b.c\",\"9 a.b.c\",\"10 a.b.c\",\"11 a.b.c\",\"12 a.b.c\",\"13 a.b.c\",\"14 a.b.c\",\"15 a.b.c\",\"16 a.b.c\",\"17 a.b.c\",\"18 a.b.c\",\"19 a.b.c\",\"20 a.b.c\"]",
-      "desc": "Stress: dup same"
+      "desc": "Stress: dup same",
+      "output": "[\"210 a.b.c\",\"210 b.c\",\"210 c\"]"
     },
     {
       "input": "[-184,657,-840,-147,-843,-877,753,-389,-920,742,211,583,587,926,-289,53,-343,-699,-188,-192,-327,-106,-873,-64,910,765,-859,777,-822,-672,-217,-199,163,251,-782,620,-355,42,502,501,-687,830,-361,-576,-707,73,-955,-637,71,-295,-956,606,-578,-902,-708,368,-705,112,-11,-693,800,-945,-161,660,-313,-339,8,-28,817,-739,670,-7,-644,720,561,-587,237,469,-318,829,404,-521,-463,298,177,490,-830,542,286,159,-22,-190,677,753,-193,1000,-135,136,310,130]",

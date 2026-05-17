@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "2\n[[1,2]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "2"
     },
     {
       "input": "3\n[[1,3],[2,3]]",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "3"
     },
     {
       "input": "3\n[[1,3],[2,3],[3,1]]",
-      "desc": "Edge: example3 -1"
+      "desc": "Edge: example3 -1",
+      "output": "-1"
     },
     {
       "input": "1\n[]",
-      "desc": "Edge: single person"
+      "desc": "Edge: single person",
+      "output": "1"
     },
     {
       "input": "2\n[]",
-      "desc": "Edge: no trust"
+      "desc": "Edge: no trust",
+      "output": "-1"
     },
     {
       "input": "2\n[[2,1]]",
-      "desc": "Edge: 2 people other way"
+      "desc": "Edge: 2 people other way",
+      "output": "1"
     },
     {
       "input": "3\n[[1,2],[2,3]]",
-      "desc": "Edge: chain no judge"
+      "desc": "Edge: chain no judge",
+      "output": "-1"
     },
     {
       "input": "3\n[[1,3]]",
-      "desc": "Edge: only one trusts judge"
+      "desc": "Edge: only one trusts judge",
+      "output": "-1"
     },
     {
       "input": "4\n[[1,3],[1,4],[2,3]]",
-      "desc": "Edge: 4 ppl no full judge"
+      "desc": "Edge: 4 ppl no full judge",
+      "output": "-1"
     },
     {
       "input": "4\n[[1,4],[2,4],[3,4]]",
-      "desc": "Standard: 4 ppl judge 4"
+      "desc": "Standard: 4 ppl judge 4",
+      "output": "4"
     },
     {
       "input": "5\n[[1,3],[2,3],[4,3],[5,3]]",
-      "desc": "Standard: 5 ppl judge 3"
+      "desc": "Standard: 5 ppl judge 3",
+      "output": "3"
     },
     {
       "input": "5\n[[1,3],[2,3],[4,3]]",
-      "desc": "Standard: incomplete"
+      "desc": "Standard: incomplete",
+      "output": "-1"
     },
     {
       "input": "6\n[[1,5],[2,5],[3,5],[4,5],[6,5]]",
-      "desc": "Standard: 6 ppl judge 5"
+      "desc": "Standard: 6 ppl judge 5",
+      "output": "5"
     },
     {
       "input": "5\n[[1,3],[2,3],[3,1],[4,3],[5,3]]",
-      "desc": "Standard: judge trusts"
+      "desc": "Standard: judge trusts",
+      "output": "-1"
     },
     {
       "input": "10\n[[1,5],[2,5],[3,5],[4,5],[6,5],[7,5],[8,5],[9,5],[10,5]]",
-      "desc": "Standard: 10 ppl judge 5"
+      "desc": "Standard: 10 ppl judge 5",
+      "output": "5"
     },
     {
       "input": "10\n[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]",
-      "desc": "Standard: chain"
+      "desc": "Standard: chain",
+      "output": "-1"
     },
     {
       "input": "20\n[[1,10],[2,10],[3,10],[4,10],[5,10],[6,10],[7,10],[8,10],[9,10],[11,10],[12,10],[13,10],[14,10],[15,10],[16,10],[17,10],[18,10],[19,10],[20,10]]",
-      "desc": "Standard: 20 ppl judge 10"
+      "desc": "Standard: 20 ppl judge 10",
+      "output": "10"
     },
     {
       "input": "3\n[[1,2],[2,3],[3,1]]",
-      "desc": "Standard: cycle no judge"
+      "desc": "Standard: cycle no judge",
+      "output": "-1"
     },
     {
       "input": "100\n[[1,50],[2,50],[3,50],[4,50],[5,50],[6,50],[7,50],[8,50],[9,50],[10,50],[11,50],[12,50],[13,50],[14,50],[15,50],[16,50],[17,50],[18,50],[19,50],[20,50],[21,50],[22,50],[23,50],[24,50],[25,50],[26,50],[27,50],[28,50],[29,50],[30,50],[31,50],[32,50],[33,50],[34,50],[35,50],[36,50],[37,50],[38,50],[39,50],[40,50],[41,50],[42,50],[43,50],[44,50],[45,50],[46,50],[47,50],[48,50],[49,50],[51,50],[52,50],[53,50],[54,50],[55,50],[56,50],[57,50],[58,50],[59,50],[60,50],[61,50],[62,50],[63,50],[64,50],[65,50],[66,50],[67,50],[68,50],[69,50],[70,50],[71,50],[72,50],[73,50],[74,50],[75,50],[76,50],[77,50],[78,50],[79,50],[80,50],[81,50],[82,50],[83,50],[84,50],[85,50],[86,50],[87,50],[88,50],[89,50],[90,50],[91,50],[92,50],[93,50],[94,50],[95,50],[96,50],[97,50],[98,50],[99,50],[100,50]]",
-      "desc": "Stress: 100 ppl judge 50"
+      "desc": "Stress: 100 ppl judge 50",
+      "output": "50"
     },
     {
       "input": "3\n[[313,-676,-994,998],[321,76,-319,390]]",

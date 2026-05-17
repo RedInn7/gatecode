@@ -4,25 +4,103 @@
   "inferred_constraints": "1 <= darts.length <= 100, -10^4 <= darts[i][0], darts[i][1] <= 10^4, 1 <= r <= 5000",
   "input_format": "line1: darts (JSON 2D array); line2: r (int)",
   "testcases": [
-    {"input": "[[-2,0],[2,0],[0,2],[0,-2]]\n2", "desc": "Edge: example1"},
-    {"input": "[[-3,0],[3,0],[2,6],[5,4],[0,9],[7,8]]\n5", "desc": "Edge: example2"},
-    {"input": "[[0,0]]\n1", "desc": "Edge: single dart"},
-    {"input": "[[0,0],[1,0]]\n1", "desc": "Edge: 2 darts"},
-    {"input": "[[0,0],[0,0]]\n1", "desc": "Edge: 2 same dart"},
-    {"input": "[[0,0],[10,10]]\n1", "desc": "Edge: far apart"},
-    {"input": "[[0,0],[0,0],[0,0]]\n1", "desc": "Edge: 3 same"},
-    {"input": "[[-1,-1],[1,1],[1,-1],[-1,1]]\n2", "desc": "Edge: 4 square corners"},
-    {"input": "[[0,0]]\n5000", "desc": "Edge: max r"},
-    {"input": "[[0,0],[1,0],[0,1],[1,1]]\n1", "desc": "Standard: 4 in unit square"},
-    {"input": "[[0,0],[0,2],[2,0],[2,2],[1,1]]\n1", "desc": "Standard: square + center"},
-    {"input": "[[1,2],[3,5],[1,-1],[2,3],[4,1],[1,3]]\n2", "desc": "Standard: scattered"},
-    {"input": "[[0,0],[5,0],[10,0],[15,0],[20,0]]\n5", "desc": "Standard: aligned"},
-    {"input": "[[0,0],[10,10],[20,20],[30,30],[40,40]]\n5", "desc": "Standard: diagonal"},
-    {"input": "[[-10,-10],[10,10],[-10,10],[10,-10],[0,0]]\n5", "desc": "Standard: corners + center"},
-    {"input": "[[0,0],[1,1],[2,2],[3,3],[4,4],[5,5]]\n3", "desc": "Standard: diag chain"},
-    {"input": "[[100,100],[100,101],[101,100],[101,101]]\n1", "desc": "Standard: tight cluster"},
-    {"input": "[[1000,1000],[-1000,-1000]]\n1414", "desc": "Standard: large coords"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12],[13,13],[14,14],[15,15],[16,16],[17,17],[18,18],[19,19],[20,20]]\n10", "desc": "Stress: 20 darts diag"},
-    {"input": "[[10000,10000],[-10000,-10000],[10000,-10000],[-10000,10000],[0,0]]\n5000", "desc": "Killer: extreme corners"}
+    {
+      "input": "[[-2,0],[2,0],[0,2],[0,-2]]\n2",
+      "desc": "Edge: example1",
+      "output": "4"
+    },
+    {
+      "input": "[[-3,0],[3,0],[2,6],[5,4],[0,9],[7,8]]\n5",
+      "desc": "Edge: example2",
+      "output": "5"
+    },
+    {
+      "input": "[[0,0]]\n1",
+      "desc": "Edge: single dart",
+      "output": "1"
+    },
+    {
+      "input": "[[0,0],[1,0]]\n1",
+      "desc": "Edge: 2 darts",
+      "output": "2"
+    },
+    {
+      "input": "[[0,0],[0,0]]\n1",
+      "desc": "Edge: 2 same dart"
+    },
+    {
+      "input": "[[0,0],[10,10]]\n1",
+      "desc": "Edge: far apart",
+      "output": "1"
+    },
+    {
+      "input": "[[0,0],[0,0],[0,0]]\n1",
+      "desc": "Edge: 3 same"
+    },
+    {
+      "input": "[[-1,-1],[1,1],[1,-1],[-1,1]]\n2",
+      "desc": "Edge: 4 square corners",
+      "output": "4"
+    },
+    {
+      "input": "[[0,0]]\n5000",
+      "desc": "Edge: max r",
+      "output": "1"
+    },
+    {
+      "input": "[[0,0],[1,0],[0,1],[1,1]]\n1",
+      "desc": "Standard: 4 in unit square",
+      "output": "4"
+    },
+    {
+      "input": "[[0,0],[0,2],[2,0],[2,2],[1,1]]\n1",
+      "desc": "Standard: square + center",
+      "output": "3"
+    },
+    {
+      "input": "[[1,2],[3,5],[1,-1],[2,3],[4,1],[1,3]]\n2",
+      "desc": "Standard: scattered",
+      "output": "4"
+    },
+    {
+      "input": "[[0,0],[5,0],[10,0],[15,0],[20,0]]\n5",
+      "desc": "Standard: aligned",
+      "output": "3"
+    },
+    {
+      "input": "[[0,0],[10,10],[20,20],[30,30],[40,40]]\n5",
+      "desc": "Standard: diagonal",
+      "output": "1"
+    },
+    {
+      "input": "[[-10,-10],[10,10],[-10,10],[10,-10],[0,0]]\n5",
+      "desc": "Standard: corners + center",
+      "output": "1"
+    },
+    {
+      "input": "[[0,0],[1,1],[2,2],[3,3],[4,4],[5,5]]\n3",
+      "desc": "Standard: diag chain",
+      "output": "5"
+    },
+    {
+      "input": "[[100,100],[100,101],[101,100],[101,101]]\n1",
+      "desc": "Standard: tight cluster",
+      "output": "4"
+    },
+    {
+      "input": "[[1000,1000],[-1000,-1000]]\n1414",
+      "desc": "Standard: large coords",
+      "output": "1"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12],[13,13],[14,14],[15,15],[16,16],[17,17],[18,18],[19,19],[20,20]]\n10",
+      "desc": "Stress: 20 darts diag",
+      "output": "15"
+    },
+    {
+      "input": "[[10000,10000],[-10000,-10000],[10000,-10000],[-10000,10000],[0,0]]\n5000",
+      "desc": "Killer: extreme corners",
+      "output": "1"
+    }
   ]
 }

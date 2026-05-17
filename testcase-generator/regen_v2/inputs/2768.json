@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "5\n[[0,1],[0,2],[0,3],[1,4]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "true"
     },
     {
       "input": "5\n[[0,1],[1,2],[2,3],[1,3],[1,4]]",
-      "desc": "Edge: example2 cycle"
+      "desc": "Edge: example2 cycle",
+      "output": "false"
     },
     {
       "input": "1\n[]",
-      "desc": "Edge: single node"
+      "desc": "Edge: single node",
+      "output": "true"
     },
     {
       "input": "2\n[[0,1]]",
-      "desc": "Edge: 2 nodes connected"
+      "desc": "Edge: 2 nodes connected",
+      "output": "true"
     },
     {
       "input": "2\n[]",
-      "desc": "Edge: 2 nodes disconnected"
+      "desc": "Edge: 2 nodes disconnected",
+      "output": "false"
     },
     {
       "input": "3\n[[0,1],[2,1]]",
-      "desc": "Edge: 3 nodes tree"
+      "desc": "Edge: 3 nodes tree",
+      "output": "true"
     },
     {
       "input": "3\n[[0,1],[1,2],[2,0]]",
-      "desc": "Edge: 3 nodes cycle"
+      "desc": "Edge: 3 nodes cycle",
+      "output": "false"
     },
     {
       "input": "4\n[[0,1],[1,2],[2,3]]",
-      "desc": "Edge: chain"
+      "desc": "Edge: chain",
+      "output": "true"
     },
     {
       "input": "4\n[[0,1],[2,3]]",
-      "desc": "Edge: disconnected"
+      "desc": "Edge: disconnected",
+      "output": "false"
     },
     {
       "input": "5\n[[0,1],[0,2],[1,3],[2,4]]",
-      "desc": "Standard: balanced"
+      "desc": "Standard: balanced",
+      "output": "true"
     },
     {
       "input": "5\n[[0,1],[0,2],[1,3],[2,4],[3,4]]",
-      "desc": "Standard: cycle"
+      "desc": "Standard: cycle",
+      "output": "false"
     },
     {
       "input": "6\n[[0,1],[0,2],[0,3],[0,4],[0,5]]",
-      "desc": "Standard: star"
+      "desc": "Standard: star",
+      "output": "true"
     },
     {
       "input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]]",
-      "desc": "Standard: 10 chain"
+      "desc": "Standard: 10 chain",
+      "output": "true"
     },
     {
       "input": "10\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9]]",
-      "desc": "Standard: 10 star"
+      "desc": "Standard: 10 star",
+      "output": "true"
     },
     {
       "input": "10\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[3,8],[4,9]]",
-      "desc": "Standard: binary tree"
+      "desc": "Standard: binary tree",
+      "output": "true"
     },
     {
       "input": "10\n[[0,1],[1,2],[2,3],[3,4],[5,6],[6,7],[7,8],[8,9]]",
-      "desc": "Standard: 2 components"
+      "desc": "Standard: 2 components",
+      "output": "false"
     },
     {
       "input": "5\n[[0,1],[1,2],[2,3],[3,4],[4,0]]",
-      "desc": "Standard: cycle"
+      "desc": "Standard: cycle",
+      "output": "false"
     },
     {
       "input": "5\n[]",
-      "desc": "Standard: no edges"
+      "desc": "Standard: no edges",
+      "output": "false"
     },
     {
       "input": "20\n[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19]]",
-      "desc": "Stress: 20 star"
+      "desc": "Stress: 20 star",
+      "output": "true"
     },
     {
       "input": "5\n[[-604,-526,-960,81],[-366,-858,-864,931],[-841,-519,27,459],[-564,-641,398,-57],[-393,-647,-930,-372],[127,643,-663,-754],[-657,366,39,371],[-564,137,-759,-887]]",

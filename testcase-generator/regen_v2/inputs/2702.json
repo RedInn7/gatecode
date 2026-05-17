@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]"
     },
     {
       "input": "[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"]]",
-      "desc": "Edge: single"
+      "desc": "Edge: single",
+      "output": "[\"JFK\",\"AAA\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"JFK\"]]",
-      "desc": "Edge: cycle"
+      "desc": "Edge: cycle",
+      "output": "[\"JFK\",\"AAA\",\"JFK\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"AAA\",\"JFK\"]]",
-      "desc": "Edge: choose AAA first"
+      "desc": "Edge: choose AAA first",
+      "output": "[\"JFK\",\"AAA\",\"JFK\",\"BBB\"]"
     },
     {
       "input": "[[\"JFK\",\"ABC\"],[\"ABC\",\"DEF\"]]",
-      "desc": "Edge: 3 stops"
+      "desc": "Edge: 3 stops",
+      "output": "[\"JFK\",\"ABC\",\"DEF\"]"
     },
     {
       "input": "[[\"JFK\",\"BBB\"],[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"]]",
-      "desc": "Edge: lex order matters"
+      "desc": "Edge: lex order matters",
+      "output": "[\"JFK\",\"BBB\",\"AAA\",\"BBB\"]"
     },
     {
       "input": "[[\"JFK\",\"ATL\"],[\"ATL\",\"JFK\"]]",
-      "desc": "Edge: 2 cities cycle"
+      "desc": "Edge: 2 cities cycle",
+      "output": "[\"JFK\",\"ATL\",\"JFK\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"CCC\"]]",
-      "desc": "Edge: linear"
+      "desc": "Edge: linear",
+      "output": "[\"JFK\",\"AAA\",\"BBB\",\"CCC\"]"
     },
     {
       "input": "[[\"JFK\",\"KUL\"],[\"JFK\",\"NRT\"],[\"NRT\",\"JFK\"]]",
-      "desc": "Standard: branch"
+      "desc": "Standard: branch",
+      "output": "[\"JFK\",\"NRT\",\"JFK\",\"KUL\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"AAA\"],[\"AAA\",\"CCC\"]]",
-      "desc": "Standard: cycle back"
+      "desc": "Standard: cycle back",
+      "output": "[\"JFK\",\"AAA\",\"BBB\",\"AAA\",\"CCC\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"AAA\",\"JFK\"],[\"BBB\",\"JFK\"]]",
-      "desc": "Standard: 2 cycles"
+      "desc": "Standard: 2 cycles",
+      "output": "[\"JFK\",\"AAA\",\"JFK\",\"BBB\",\"JFK\"]"
     },
     {
       "input": "[[\"JFK\",\"ABC\"],[\"ABC\",\"DEF\"],[\"DEF\",\"GHI\"],[\"GHI\",\"JKL\"]]",
-      "desc": "Standard: 5 stops"
+      "desc": "Standard: 5 stops",
+      "output": "[\"JFK\",\"ABC\",\"DEF\",\"GHI\",\"JKL\"]"
     },
     {
       "input": "[[\"JFK\",\"NYC\"],[\"NYC\",\"LAX\"],[\"LAX\",\"NYC\"],[\"NYC\",\"BOS\"]]",
-      "desc": "Standard: back to NYC"
+      "desc": "Standard: back to NYC",
+      "output": "[\"JFK\",\"NYC\",\"LAX\",\"NYC\",\"BOS\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"JFK\",\"BBB\"],[\"JFK\",\"CCC\"],[\"AAA\",\"JFK\"],[\"BBB\",\"JFK\"],[\"CCC\",\"JFK\"]]",
-      "desc": "Standard: triangle"
+      "desc": "Standard: triangle",
+      "output": "[\"JFK\",\"AAA\",\"JFK\",\"BBB\",\"JFK\",\"CCC\",\"JFK\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"AAA\"],[\"AAA\",\"JFK\"]]",
-      "desc": "Standard: nested"
+      "desc": "Standard: nested",
+      "output": "[\"JFK\",\"AAA\",\"BBB\",\"AAA\",\"JFK\"]"
     },
     {
       "input": "[[\"JFK\",\"LGA\"],[\"LGA\",\"JFK\"],[\"JFK\",\"BOS\"]]",
-      "desc": "Standard: 2-way then 1-way"
+      "desc": "Standard: 2-way then 1-way",
+      "output": "[\"JFK\",\"LGA\",\"JFK\",\"BOS\"]"
     },
     {
       "input": "[[\"JFK\",\"A\"],[\"A\",\"B\"],[\"B\",\"C\"],[\"C\",\"D\"],[\"D\",\"E\"]]",
-      "desc": "Standard: chain"
+      "desc": "Standard: chain",
+      "output": "[\"JFK\",\"A\",\"B\",\"C\",\"D\",\"E\"]"
     },
     {
       "input": "[[\"JFK\",\"AAA\"],[\"AAA\",\"BBB\"],[\"BBB\",\"CCC\"],[\"CCC\",\"DDD\"],[\"DDD\",\"EEE\"],[\"EEE\",\"FFF\"],[\"FFF\",\"GGG\"],[\"GGG\",\"HHH\"],[\"HHH\",\"III\"],[\"III\",\"JJJ\"]]",
-      "desc": "Stress: 10 stops"
+      "desc": "Stress: 10 stops",
+      "output": "[\"JFK\",\"AAA\",\"BBB\",\"CCC\",\"DDD\",\"EEE\",\"FFF\",\"GGG\",\"HHH\",\"III\",\"JJJ\"]"
     },
     {
       "input": "[[-15,-108,129,-299],[-920,971,338,-483],[-597,-217,957,894],[961,-721,260,970],[-698,610,-814,-806],[918,-714,262,843],[-305,684,-855,-65],[-387,797,-426,819]]",

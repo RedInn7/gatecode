@@ -4,25 +4,99 @@
   "inferred_constraints": "1 <= n <= 10^5",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: example1"},
-    {"input": "2", "desc": "Edge: example2"},
-    {"input": "4", "desc": "Edge: example3"},
-    {"input": "3", "desc": "Edge: n=3"},
-    {"input": "5", "desc": "Edge: n=5"},
-    {"input": "6", "desc": "Edge: n=6"},
-    {"input": "7", "desc": "Edge: n=7"},
-    {"input": "8", "desc": "Edge: n=8"},
-    {"input": "9", "desc": "Edge: n=9 square"},
-    {"input": "10", "desc": "Standard: n=10"},
-    {"input": "16", "desc": "Standard: 16 = 4^2"},
-    {"input": "25", "desc": "Standard: 25 = 5^2"},
-    {"input": "100", "desc": "Standard: 100"},
-    {"input": "1000", "desc": "Standard: 1K"},
-    {"input": "10000", "desc": "Standard: 10K"},
-    {"input": "50000", "desc": "Standard: 50K"},
-    {"input": "99999", "desc": "Standard: near max"},
-    {"input": "100000", "desc": "Standard: max"},
-    {"input": "99000", "desc": "Stress: large"},
-    {"input": "100000", "desc": "Killer: max"}
+    {
+      "input": "1",
+      "desc": "Edge: example1",
+      "output": "true"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: example2",
+      "output": "false"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: example3",
+      "output": "true"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: n=3",
+      "output": "true"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: n=5",
+      "output": "false"
+    },
+    {
+      "input": "6",
+      "desc": "Edge: n=6",
+      "output": "true"
+    },
+    {
+      "input": "7",
+      "desc": "Edge: n=7",
+      "output": "false"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: n=8",
+      "output": "true"
+    },
+    {
+      "input": "9",
+      "desc": "Edge: n=9 square",
+      "output": "true"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10",
+      "output": "false"
+    },
+    {
+      "input": "16",
+      "desc": "Standard: 16 = 4^2",
+      "output": "true"
+    },
+    {
+      "input": "25",
+      "desc": "Standard: 25 = 5^2",
+      "output": "true"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: 100",
+      "output": "true"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard: 1K",
+      "output": "true"
+    },
+    {
+      "input": "10000",
+      "desc": "Standard: 10K"
+    },
+    {
+      "input": "50000",
+      "desc": "Standard: 50K"
+    },
+    {
+      "input": "99999",
+      "desc": "Standard: near max"
+    },
+    {
+      "input": "100000",
+      "desc": "Standard: max"
+    },
+    {
+      "input": "99000",
+      "desc": "Stress: large"
+    },
+    {
+      "input": "100000",
+      "desc": "Killer: max"
+    }
   ]
 }

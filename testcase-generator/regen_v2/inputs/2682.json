@@ -4,25 +4,103 @@
   "inferred_constraints": "2 <= nums.length <= 100, 1 <= nums[i].length <= 100, 2 <= target.length <= 100, digit strings",
   "input_format": "line1: nums (JSON array of strings); line2: target",
   "testcases": [
-    {"input": "[\"777\",\"7\",\"77\",\"77\"]\n7777", "desc": "Edge: example1"},
-    {"input": "[\"123\",\"4\",\"12\",\"34\"]\n1234", "desc": "Edge: example2"},
-    {"input": "[\"1\",\"1\",\"1\"]\n11", "desc": "Edge: example3"},
-    {"input": "[\"1\",\"2\"]\n12", "desc": "Edge: minimum"},
-    {"input": "[\"1\",\"2\"]\n21", "desc": "Edge: reverse"},
-    {"input": "[\"1\",\"1\"]\n11", "desc": "Edge: dup"},
-    {"input": "[\"0\",\"0\"]\n00", "desc": "Edge: zeros"},
-    {"input": "[\"1\",\"23\"]\n123", "desc": "Edge: 1+23"},
-    {"input": "[\"1\",\"23\"]\n231", "desc": "Edge: 23+1"},
-    {"input": "[\"123\",\"456\"]\n123456", "desc": "Standard: simple"},
-    {"input": "[\"1\",\"2\",\"3\",\"4\"]\n12", "desc": "Standard: small target"},
-    {"input": "[\"1\",\"2\",\"3\",\"4\"]\n1234", "desc": "Standard: 4 nums"},
-    {"input": "[\"12\",\"34\",\"1\",\"2\",\"3\",\"4\"]\n1234", "desc": "Standard: mixed"},
-    {"input": "[\"0\",\"00\",\"000\",\"0000\"]\n0000", "desc": "Standard: zero strings"},
-    {"input": "[\"9\",\"99\",\"999\",\"9999\"]\n9999", "desc": "Standard: nines"},
-    {"input": "[\"1\",\"2\",\"12\",\"21\",\"3\",\"4\",\"34\",\"43\"]\n1234", "desc": "Standard: many options"},
-    {"input": "[\"11\",\"22\",\"33\",\"44\"]\n1122", "desc": "Standard: 11+22"},
-    {"input": "[\"5\",\"5\",\"5\",\"5\",\"5\"]\n55", "desc": "Standard: 5 fives"},
-    {"input": "[\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\"]\n11", "desc": "Stress: 20 ones"},
-    {"input": "[\"12\",\"34\",\"12\",\"34\",\"12\",\"34\",\"12\",\"34\",\"12\",\"34\"]\n1234", "desc": "Killer: many same"}
+    {
+      "input": "[\"777\",\"7\",\"77\",\"77\"]\n7777",
+      "desc": "Edge: example1",
+      "output": "0"
+    },
+    {
+      "input": "[\"123\",\"4\",\"12\",\"34\"]\n1234",
+      "desc": "Edge: example2",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"1\",\"1\"]\n11",
+      "desc": "Edge: example3",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"2\"]\n12",
+      "desc": "Edge: minimum",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"2\"]\n21",
+      "desc": "Edge: reverse",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"1\"]\n11",
+      "desc": "Edge: dup",
+      "output": "0"
+    },
+    {
+      "input": "[\"0\",\"0\"]\n00",
+      "desc": "Edge: zeros"
+    },
+    {
+      "input": "[\"1\",\"23\"]\n123",
+      "desc": "Edge: 1+23",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"23\"]\n231",
+      "desc": "Edge: 23+1",
+      "output": "0"
+    },
+    {
+      "input": "[\"123\",\"456\"]\n123456",
+      "desc": "Standard: simple",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"2\",\"3\",\"4\"]\n12",
+      "desc": "Standard: small target",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"2\",\"3\",\"4\"]\n1234",
+      "desc": "Standard: 4 nums",
+      "output": "0"
+    },
+    {
+      "input": "[\"12\",\"34\",\"1\",\"2\",\"3\",\"4\"]\n1234",
+      "desc": "Standard: mixed",
+      "output": "0"
+    },
+    {
+      "input": "[\"0\",\"00\",\"000\",\"0000\"]\n0000",
+      "desc": "Standard: zero strings"
+    },
+    {
+      "input": "[\"9\",\"99\",\"999\",\"9999\"]\n9999",
+      "desc": "Standard: nines",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"2\",\"12\",\"21\",\"3\",\"4\",\"34\",\"43\"]\n1234",
+      "desc": "Standard: many options",
+      "output": "0"
+    },
+    {
+      "input": "[\"11\",\"22\",\"33\",\"44\"]\n1122",
+      "desc": "Standard: 11+22",
+      "output": "0"
+    },
+    {
+      "input": "[\"5\",\"5\",\"5\",\"5\",\"5\"]\n55",
+      "desc": "Standard: 5 fives",
+      "output": "0"
+    },
+    {
+      "input": "[\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\"]\n11",
+      "desc": "Stress: 20 ones",
+      "output": "0"
+    },
+    {
+      "input": "[\"12\",\"34\",\"12\",\"34\",\"12\",\"34\",\"12\",\"34\",\"12\",\"34\"]\n1234",
+      "desc": "Killer: many same",
+      "output": "0"
+    }
   ]
 }

@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[1,0],[0,3]]\n[0,1]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "true"
     },
     {
       "input": "[[1,0]]\n[2,0]",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "false"
     },
     {
       "input": "[[2,0]]\n[1,0]",
-      "desc": "Edge: example3"
+      "desc": "Edge: example3",
+      "output": "false"
     },
     {
       "input": "[[0,0]]\n[1,1]",
-      "desc": "Edge: ghost at origin"
+      "desc": "Edge: ghost at origin",
+      "output": "false"
     },
     {
       "input": "[[1,0]]\n[0,1]",
-      "desc": "Edge: ghost adjacent"
+      "desc": "Edge: ghost adjacent",
+      "output": "true"
     },
     {
       "input": "[[100,100]]\n[1,1]",
-      "desc": "Edge: far ghost"
+      "desc": "Edge: far ghost",
+      "output": "true"
     },
     {
       "input": "[[5,5]]\n[10,10]",
-      "desc": "Edge: ghost far away"
+      "desc": "Edge: ghost far away",
+      "output": "false"
     },
     {
       "input": "[[10000,10000]]\n[10000,10000]",
-      "desc": "Edge: ghost at target"
+      "desc": "Edge: ghost at target",
+      "output": "false"
     },
     {
       "input": "[[0,1]]\n[0,2]",
-      "desc": "Edge: ghost between"
+      "desc": "Edge: ghost between",
+      "output": "false"
     },
     {
       "input": "[[2,0],[-2,0]]\n[5,5]",
-      "desc": "Standard: 2 ghosts"
+      "desc": "Standard: 2 ghosts",
+      "output": "false"
     },
     {
       "input": "[[1,1],[1,-1],[-1,1],[-1,-1]]\n[3,3]",
-      "desc": "Standard: 4 corners"
+      "desc": "Standard: 4 corners",
+      "output": "false"
     },
     {
       "input": "[[5,5],[-5,-5],[5,-5],[-5,5]]\n[0,10]",
-      "desc": "Standard: 4 ghosts"
+      "desc": "Standard: 4 ghosts",
+      "output": "false"
     },
     {
       "input": "[[100,100],[200,200],[300,300]]\n[1000,1000]",
-      "desc": "Standard: far ghosts"
+      "desc": "Standard: far ghosts",
+      "output": "false"
     },
     {
       "input": "[[-100,-100]]\n[100,100]",
-      "desc": "Standard: opposite ghost"
+      "desc": "Standard: opposite ghost",
+      "output": "true"
     },
     {
       "input": "[[0,0],[0,0]]\n[1,1]",
-      "desc": "Standard: dup ghost"
+      "desc": "Standard: dup ghost",
+      "output": "false"
     },
     {
       "input": "[[10,0],[0,10],[-10,0],[0,-10]]\n[5,5]",
-      "desc": "Standard: surrounding"
+      "desc": "Standard: surrounding",
+      "output": "false"
     },
     {
       "input": "[[1,1]]\n[10000,10000]",
-      "desc": "Standard: far target"
+      "desc": "Standard: far target",
+      "output": "false"
     },
     {
       "input": "[[-10000,-10000]]\n[10000,10000]",
-      "desc": "Standard: extreme bounds"
+      "desc": "Standard: extreme bounds",
+      "output": "true"
     },
     {
       "input": "[[0,1],[1,0],[1,2],[2,1],[0,3],[3,0],[3,2],[2,3]]\n[5,5]",
-      "desc": "Stress: many close ghosts"
+      "desc": "Stress: many close ghosts",
+      "output": "false"
     },
     {
       "input": "[[-789,440,-120,637],[-733,543,-654,-766],[-946,850,-565,-660],[527,293,510,-121]]\n[259,374,0,-576,-793,254,260,-864,-67,-112,-155,-468,366,-484,496,-875,45,714,447,570,177,208,494,829,522,-908,-57,914,-324,-526,-842,151,-766,-394,-190,-530,925,-346,-177,-326,-818,6,958,79,532,-572,83,375,-109,-790,422,440,-415,-555,550,341,184,-454,-130,-445,-638,720,-128,707,945,-49,-745,699,-229,721,-324,-653,-691,34,163,-96,-166,-251,853,-803,-655,-854,497,-717,51,-530,-455,-763,908,274,-770,-124,-393,-376,882,-234,917,456,-758,353]",
