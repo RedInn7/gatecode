@@ -628,5 +628,29 @@
     "slug": "minimum-swaps-to-sort-by-digit-sum",
     "fqid": 3551,
     "error": "Testcase 0 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1442,
+    "slug": "count-the-repetitions",
+    "fqid": 466,
+    "error": "Testcase 1 failed: RE (exit 1): p/tmp8icl7w1s.py\", line 293, in <module>\n    _result = Solution().getMaxRepetitions(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp8icl7w1s.py\", line 160, in getMaxRepetitions\n    return ans // n2\n           ~~~~^^~~~\nZeroDivisionError: integer division or modulo by zero\n"
+  },
+  {
+    "pid": 1464,
+    "slug": "divide-array-into-arrays-with-max-difference",
+    "fqid": 2966,
+    "error": "Testcase 1 failed: RE (exit 1): eback (most recent call last):\n  File \"/tmp/tmp1jt0vuab.py\", line 283, in <module>\n    _result = Solution().divideArray(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp1jt0vuab.py\", line 147, in divideArray\n    if t[2] - t[0] > k:\n       ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1453,
+    "slug": "super-palindromes",
+    "fqid": 906,
+    "error": "Testcase 0 failed: RE (exit 1): <module>\n    _result = Solution().superpalindromesInRange(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpm1zm4wpr.py\", line 158, in superpalindromesInRange\n    l, r = int(left), int(right)\n           ^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'j'\n"
+  },
+  {
+    "pid": 1470,
+    "slug": "loud-and-rich",
+    "fqid": 851,
+    "error": "Testcase 1 failed: RE (exit 1): Rich(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpxawzzs7w.py\", line 157, in loudAndRich\n    dfs(i)\n  File \"/tmp/tmpxawzzs7w.py\", line 147, in dfs\n    dfs(j)\n  File \"/tmp/tmpxawzzs7w.py\", line 143, in dfs\n    if ans[i] != -1:\n       ~~~^^^\nIndexError: list index out of range\n"
   }
 ]

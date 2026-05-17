@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "-1\n0",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "0"
     },
     {
       "input": "9223372036854775807\n1",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "0"
     },
     {
       "input": "-1\n-1000000000",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "0"
     },
     {
       "input": "-1000000000\n1000000000",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "40051494"
     },
     {
       "input": "-1\n-1000000000",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "0"
     },
     {
       "input": "-377663013\n-134979010",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "0"
     },
     {
       "input": "189178224\n304602038",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "5391423"
     },
     {
       "input": "-496568732\n-252677445",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "0"
     },
     {
       "input": "955653765\n-809786713",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "0"
     },
     {
       "input": "-945294664\n262787384",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "12406381"
     },
     {
       "input": "-879842705\n-595059720",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "0"
     },
     {
       "input": "-528519873\n571650680",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "25729302"
     },
     {
       "input": "-193308244\n-26494744",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "0"
     },
     {
       "input": "219876974\n-996615513",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "0"
     },
     {
       "input": "798954501\n-245387712",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "0"
     },
     {
       "input": "969446640\n746221040",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "-6785641"
     },
     {
       "input": "-803134745\n791372706",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "33871491"
     },
     {
       "input": "-403853281\n-9352045",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "0"
     },
     {
       "input": "602449859\n-677491468",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "0"
     },
     {
       "input": "-619483798\n-988323115",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "0"
     }
   ]
 }

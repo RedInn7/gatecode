@@ -226,5 +226,11 @@
     "slug": "permutations-iv",
     "fqid": 3470,
     "reason": "No Python3 solution found for fqid=3470"
+  },
+  {
+    "pid": 1447,
+    "slug": "sum-of-k-subarrays-with-length-at-least-m",
+    "fqid": 3473,
+    "reason": "No Python3 solution found for fqid=3473"
   }
 ]

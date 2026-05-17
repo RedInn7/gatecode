@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[5,3,6,2,4,null,7]\n9",
-      "desc": "Standard: example1 true"
+      "desc": "Standard: example1 true",
+      "output": "true"
     },
     {
       "input": "[5,3,6,2,4,null,7]\n28",
-      "desc": "Standard: example2 false"
+      "desc": "Standard: example2 false",
+      "output": "false"
     },
     {
       "input": "[2,1,3]\n4",
-      "desc": "Standard: 3 nodes true"
+      "desc": "Standard: 3 nodes true",
+      "output": "true"
     },
     {
       "input": "[2,1,3]\n5",
-      "desc": "Standard: 3 nodes false"
+      "desc": "Standard: 3 nodes false",
+      "output": "true"
     },
     {
       "input": "[1]\n2",
-      "desc": "Edge: single node"
+      "desc": "Edge: single node",
+      "output": "false"
     },
     {
       "input": "[1,null,2]\n3",
-      "desc": "Edge: two nodes"
+      "desc": "Edge: two nodes",
+      "output": "true"
     },
     {
       "input": "[4,2,6,1,3,5,7]\n8",
-      "desc": "Standard: 7 nodes true"
+      "desc": "Standard: 7 nodes true",
+      "output": "true"
     },
     {
       "input": "[4,2,6,1,3,5,7]\n15",
-      "desc": "Standard: 7 nodes false"
+      "desc": "Standard: 7 nodes false",
+      "output": "false"
     },
     {
       "input": "[4,2,6,1,3,5,7]\n3",
-      "desc": "Standard: small target"
+      "desc": "Standard: small target",
+      "output": "true"
     },
     {
       "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n20",
-      "desc": "Stress: 15 nodes"
+      "desc": "Stress: 15 nodes",
+      "output": "true"
     },
     {
       "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]\n30",
-      "desc": "Stress: target sum larger"
+      "desc": "Stress: target sum larger",
+      "output": "false"
     },
     {
       "input": "[10,5,15,3,7,null,18]\n22",
-      "desc": "Standard: 7 nodes"
+      "desc": "Standard: 7 nodes",
+      "output": "true"
     },
     {
       "input": "[1,null,2,null,3,null,4,null,5]\n3",
-      "desc": "Standard: right chain"
+      "desc": "Standard: right chain",
+      "output": "true"
     },
     {
       "input": "[5,4,null,3,null,2,null,1]\n5",
-      "desc": "Standard: left chain"
+      "desc": "Standard: left chain",
+      "output": "true"
     },
     {
       "input": "[1,null,2,null,3,null,4,null,5]\n9",
-      "desc": "Stress: right chain large"
+      "desc": "Stress: right chain large",
+      "output": "true"
     },
     {
       "input": "[100,50,200]\n250",
-      "desc": "Standard: large values"
+      "desc": "Standard: large values",
+      "output": "true"
     },
     {
       "input": "[10,5,15]\n20",
-      "desc": "Standard: 3 node sum"
+      "desc": "Standard: 3 node sum",
+      "output": "true"
     },
     {
       "input": "[4,2,6,1,3,5,7]\n2",
-      "desc": "Killer: target < 2*min"
+      "desc": "Killer: target < 2*min",
+      "output": "false"
     },
     {
       "input": "[50,25,75,10,30,60,90]\n100",
-      "desc": "Stress: 7 balanced"
+      "desc": "Stress: 7 balanced",
+      "output": "true"
     },
     {
       "input": "[3,1,4,null,2]\n5",
-      "desc": "Standard: 5 nodes"
+      "desc": "Standard: 5 nodes",
+      "output": "true"
     }
   ]
 }
