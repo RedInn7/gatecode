@@ -376,5 +376,11 @@
     "slug": "next-special-palindrome-number",
     "fqid": 3646,
     "reason": "No Python3 solution found for fqid=3646"
+  },
+  {
+    "pid": 2299,
+    "slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+    "fqid": 3795,
+    "reason": "No Python3 solution found for fqid=3795"
   }
 ]

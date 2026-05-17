@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[1,1],[1,2]]\n0\n0\n3",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "[[3, 3], [3, 2]]"
     },
     {
       "input": "[[1,2,2],[2,3,2]]\n0\n1\n3",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "[[1, 3, 3], [2, 3, 3]]"
     },
     {
       "input": "[[1,1,1],[1,1,1],[1,1,1]]\n1\n1\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[2, 2, 2], [2, 1, 2], [2, 2, 2]]"
     },
     {
       "input": "[[1]]\n0\n0\n2",
-      "desc": "Edge 1x1"
+      "desc": "Edge 1x1",
+      "output": "[[2]]"
     },
     {
       "input": "[[1,1]]\n0\n0\n2",
-      "desc": "Edge 1x2"
+      "desc": "Edge 1x2",
+      "output": "[[2, 2]]"
     },
     {
       "input": "[[1],[1]]\n0\n0\n2",
-      "desc": "Edge 2x1"
+      "desc": "Edge 2x1",
+      "output": "[[2], [2]]"
     },
     {
       "input": "[[5,5,5],[5,5,5]]\n1\n1\n10",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[10, 10, 10], [10, 10, 10]]"
     },
     {
       "input": "[[1,2,3],[4,5,6],[7,8,9]]\n1\n1\n100",
-      "desc": "Standard all distinct"
+      "desc": "Standard all distinct",
+      "output": "[[1, 2, 3], [4, 100, 6], [7, 8, 9]]"
     },
     {
       "input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]\n2\n2\n5",
-      "desc": "Standard 4x4"
+      "desc": "Standard 4x4",
+      "output": "[[5, 5, 5, 5], [5, 1, 1, 5], [5, 1, 1, 5], [5, 5, 5, 5]]"
     },
     {
       "input": "[[1,1,1,1,1],[1,2,2,2,1],[1,2,3,2,1],[1,2,2,2,1],[1,1,1,1,1]]\n2\n2\n9",
-      "desc": "Standard nested"
+      "desc": "Standard nested",
+      "output": "[[1, 1, 1, 1, 1], [1, 2, 2, 2, 1], [1, 2, 9, 2, 1], [1, 2, 2, 2, 1], [1, 1, 1, 1, 1]]"
     },
     {
       "input": "[[1,1,1],[1,2,1],[1,1,1]]\n0\n0\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[5, 5, 5], [5, 2, 5], [5, 5, 5]]"
     },
     {
       "input": "[[3,3],[3,3]]\n0\n0\n7",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "[[7, 7], [7, 7]]"
     },
     {
       "input": "[[1,1,1,1,1,1,1,1,1,1]]\n0\n5\n2",
-      "desc": "Edge 1 row"
+      "desc": "Edge 1 row",
+      "output": "[[2, 2, 2, 2, 2, 2, 2, 2, 2, 2]]"
     },
     {
       "input": "[[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]]\n2\n1\n8",
-      "desc": "Standard 5x3"
+      "desc": "Standard 5x3",
+      "output": "[[8, 8, 8], [8, 1, 8], [8, 1, 8], [8, 1, 8], [8, 8, 8]]"
     },
     {
       "input": "[[1,2,1,2,1],[2,1,2,1,2],[1,2,1,2,1]]\n1\n2\n9",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "[[1, 2, 1, 2, 1], [2, 1, 9, 1, 2], [1, 2, 1, 2, 1]]"
     },
     {
       "input": "[[5,5,5,5],[5,1,1,5],[5,1,1,5],[5,5,5,5]]\n2\n2\n6",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[5, 5, 5, 5], [5, 6, 6, 5], [5, 6, 6, 5], [5, 5, 5, 5]]"
     },
     {
       "input": "[[1,1,1,1,1,1],[1,2,2,2,2,1],[1,2,3,3,2,1],[1,2,3,3,2,1],[1,2,2,2,2,1],[1,1,1,1,1,1]]\n3\n3\n4",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[1, 1, 1, 1, 1, 1], [1, 2, 2, 2, 2, 1], [1, 2, 4, 4, 2, 1], [1, 2, 4, 4, 2, 1], [1, 2, 2, 2, 2, 1], [1, 1, 1, 1, 1, 1]]"
     },
     {
       "input": "[[1,1],[1,1]]\n0\n0\n1",
-      "desc": "Edge same color"
+      "desc": "Edge same color",
+      "output": "[[1, 1], [1, 1]]"
     },
     {
       "input": "[[7,7,7,7,7],[7,7,7,7,7],[7,7,7,7,7]]\n1\n2\n3",
-      "desc": "Standard 3x5"
+      "desc": "Standard 3x5",
+      "output": "[[3, 3, 3, 3, 3], [3, 7, 7, 7, 3], [3, 3, 3, 3, 3]]"
     },
     {
       "input": "[[317,220,-283,-157],[-642,829,-763,559],[630,-360,-654,-70],[422,-122,421,-306]]\n1\n1\n3",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "[[317, 220, -283, -157], [-642, 3, -763, 559], [630, -360, -654, -70], [422, -122, 421, -306]]"
     }
   ]
 }

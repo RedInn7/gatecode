@@ -4,25 +4,105 @@
   "inferred_constraints": "0 <= num <= 10^6",
   "input_format": "single line: num (int)",
   "testcases": [
-    {"input": "14", "desc": "Standard example 1"},
-    {"input": "8", "desc": "Standard example 2"},
-    {"input": "123", "desc": "Standard example 3"},
-    {"input": "0", "desc": "Edge zero"},
-    {"input": "1", "desc": "Edge"},
-    {"input": "2", "desc": "Edge"},
-    {"input": "3", "desc": "Edge"},
-    {"input": "16", "desc": "Edge pow2"},
-    {"input": "1024", "desc": "Edge pow2"},
-    {"input": "100", "desc": "Standard"},
-    {"input": "1000", "desc": "Standard"},
-    {"input": "10000", "desc": "Standard"},
-    {"input": "100000", "desc": "Standard"},
-    {"input": "1000000", "desc": "Edge max"},
-    {"input": "999999", "desc": "Edge near max"},
-    {"input": "65535", "desc": "Standard pow2-1"},
-    {"input": "65536", "desc": "Standard pow2"},
-    {"input": "12345", "desc": "Standard"},
-    {"input": "54321", "desc": "Standard"},
-    {"input": "987654", "desc": "Standard"}
+    {
+      "input": "14",
+      "desc": "Standard example 1",
+      "output": "6"
+    },
+    {
+      "input": "8",
+      "desc": "Standard example 2",
+      "output": "4"
+    },
+    {
+      "input": "123",
+      "desc": "Standard example 3",
+      "output": "12"
+    },
+    {
+      "input": "0",
+      "desc": "Edge zero",
+      "output": "0"
+    },
+    {
+      "input": "1",
+      "desc": "Edge",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge",
+      "output": "2"
+    },
+    {
+      "input": "3",
+      "desc": "Edge",
+      "output": "3"
+    },
+    {
+      "input": "16",
+      "desc": "Edge pow2",
+      "output": "5"
+    },
+    {
+      "input": "1024",
+      "desc": "Edge pow2",
+      "output": "11"
+    },
+    {
+      "input": "100",
+      "desc": "Standard",
+      "output": "9"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard",
+      "output": "15"
+    },
+    {
+      "input": "10000",
+      "desc": "Standard",
+      "output": "18"
+    },
+    {
+      "input": "100000",
+      "desc": "Standard",
+      "output": "22"
+    },
+    {
+      "input": "1000000",
+      "desc": "Edge max",
+      "output": "26"
+    },
+    {
+      "input": "999999",
+      "desc": "Edge near max",
+      "output": "31"
+    },
+    {
+      "input": "65535",
+      "desc": "Standard pow2-1",
+      "output": "31"
+    },
+    {
+      "input": "65536",
+      "desc": "Standard pow2",
+      "output": "17"
+    },
+    {
+      "input": "12345",
+      "desc": "Standard",
+      "output": "19"
+    },
+    {
+      "input": "54321",
+      "desc": "Standard",
+      "output": "22"
+    },
+    {
+      "input": "987654",
+      "desc": "Standard",
+      "output": "27"
+    }
   ]
 }

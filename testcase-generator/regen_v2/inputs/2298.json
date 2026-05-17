@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,1]",
-      "desc": "Standard example"
+      "desc": "Standard example",
+      "output": "2"
     },
     {
       "input": "[1]",
-      "desc": "Edge n=1"
+      "desc": "Edge n=1",
+      "output": "1"
     },
     {
       "input": "[2]",
-      "desc": "Edge even single"
+      "desc": "Edge even single",
+      "output": "0"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "2"
     },
     {
       "input": "[1,1,1,1,1]",
-      "desc": "Standard all odd"
+      "desc": "Standard all odd",
+      "output": "16"
     },
     {
       "input": "[2,2,2,2,2]",
-      "desc": "Standard all even"
+      "desc": "Standard all even",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "16"
     },
     {
       "input": "[1000000000]",
-      "desc": "Edge max"
+      "desc": "Edge max",
+      "output": "0"
     },
     {
       "input": "[409119669,652792618,300554062,568531497,620069491,496202422,744262923,344988675,341231476,82057514,101018176,290697063,170825049,681440894,306593144,339453944,152674527,670457755,518769454,127108038,601488346,880031958,721837761,554558695,86981183,203610753,869983879,977695589,436068908,483243290,127352859,144252084,788400561,799569788,152640493,172224853,840705909,903173200,771037585,755500658,763994786,823600187,711150161,177896602,415517790,172714271,136593524,710546078,8139189,340767075,898142001,565057188,455856346,486567746,747979641,865764848,984104625,112362872,316322843,32295568,835459330,5432474,506545261,396794418,400948676,358301140,874258158,515816317,963137437]",
-      "desc": "Regenerated: standard at position 8"
+      "desc": "Regenerated: standard at position 8",
+      "output": "317504065"
     },
     {
       "input": "[2,4,6,8,10,12,14,16,18,20]",
-      "desc": "Standard 10 even"
+      "desc": "Standard 10 even",
+      "output": "0"
     },
     {
       "input": "[1,3,5,7,9]",
-      "desc": "Standard odds"
+      "desc": "Standard odds",
+      "output": "16"
     },
     {
       "input": "[2,4,6,8,10]",
-      "desc": "Standard evens"
+      "desc": "Standard evens",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "512"
     },
     {
       "input": "[100,99,98,97,96]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "16"
     },
     {
       "input": "[7,11,13,17,19]",
-      "desc": "Standard primes"
+      "desc": "Standard primes",
+      "output": "16"
     },
     {
       "input": "[1,1,2,2,3,3]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "32"
     },
     {
       "input": "[999999999,1000000000]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[1,2,1,2,1,2,1,2]",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "128"
     },
     {
       "input": "[5,5,5,5,5,5]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "32"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
-      "desc": "Standard 15"
+      "desc": "Standard 15",
+      "output": "16384"
     }
   ]
 }

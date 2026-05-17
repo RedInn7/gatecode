@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[-415,201,706],[-495,-552,113],[806,-953,-349]]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "false"
     },
     {
       "input": "[[1,1,1],[1,0,1],[1,1,1]]",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "false"
     },
     {
       "input": "[[1,1],[1,1]]",
-      "desc": "Edge 2x2"
+      "desc": "Edge 2x2",
+      "output": "false"
     },
     {
       "input": "[[1,1],[0,1]]",
-      "desc": "Edge 2x2 path"
+      "desc": "Edge 2x2 path",
+      "output": "true"
     },
     {
       "input": "[[1,0],[0,1]]",
-      "desc": "Edge already disconnected"
+      "desc": "Edge already disconnected",
+      "output": "true"
     },
     {
       "input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]",
-      "desc": "Edge full 4x4"
+      "desc": "Edge full 4x4",
+      "output": "false"
     },
     {
       "input": "[[1,1,1],[1,1,1],[1,1,1]]",
-      "desc": "Standard 3x3 full"
+      "desc": "Standard 3x3 full",
+      "output": "false"
     },
     {
       "input": "[[1,0,1],[0,1,0],[1,0,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
-      "desc": "Standard 3x5"
+      "desc": "Standard 3x5",
+      "output": "false"
     },
     {
       "input": "[[1,1,1,1,1],[0,0,0,0,1],[1,1,1,1,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[[1,1],[1,0],[1,1]]",
-      "desc": "Standard 3x2"
+      "desc": "Standard 3x2",
+      "output": "true"
     },
     {
       "input": "[[1,1],[1,0]]",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "true"
     },
     {
       "input": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[[1,1,1],[1,1,0],[0,1,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[[1,1,1,1,1,1],[1,0,0,0,0,1],[1,1,1,1,1,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[[1,1,1,1],[1,0,0,1],[1,1,1,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]]",
-      "desc": "Standard 2x10"
+      "desc": "Standard 2x10",
+      "output": "false"
     },
     {
       "input": "[[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,0]]",
-      "desc": "Edge 2x10 end blocked"
+      "desc": "Edge 2x10 end blocked",
+      "output": "true"
     },
     {
       "input": "[[1,1,1],[1,0,1],[1,1,1],[1,0,1],[1,1,1]]",
-      "desc": "Standard 5x3"
+      "desc": "Standard 5x3",
+      "output": "false"
     },
     {
       "input": "[[965,-519,347,28,-377,-677],[-508,-64,-469,-198,386,-380],[-965,685,545,-396,-146,-790],[645,-577,722,-690,995,130],[509,47,173,-900,133,26],[185,122,-727,-385,-841,11]]",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "false"
     }
   ]
 }

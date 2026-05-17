@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"(()())(())\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "\"()()()\""
     },
     {
       "input": "\"(()())(())(()(()))\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "\"()()()()(())\""
     },
     {
       "input": "\"()()\"",
-      "desc": "Standard example 3"
+      "desc": "Standard example 3",
+      "output": "\"\""
     },
     {
       "input": "\"()\"",
-      "desc": "Edge single empty"
+      "desc": "Edge single empty",
+      "output": "\"\""
     },
     {
       "input": "\"(())\"",
-      "desc": "Edge nested"
+      "desc": "Edge nested",
+      "output": "\"()\""
     },
     {
       "input": "\"(((())))\"",
-      "desc": "Edge deep"
+      "desc": "Edge deep",
+      "output": "\"((()))\""
     },
     {
       "input": "\"()()()()()\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"\""
     },
     {
       "input": "\"(()(()))\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"()(())\""
     },
     {
       "input": "\"(()())\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"()()\""
     },
     {
       "input": "\"((()))(())\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"(())()\""
     },
     {
       "input": "\"((((((((()))))))))\"",
-      "desc": "Edge very deep"
+      "desc": "Edge very deep",
+      "output": "\"(((((((())))))))\""
     },
     {
       "input": "\"()()()()()()()()()()\"",
-      "desc": "Standard 10"
+      "desc": "Standard 10",
+      "output": "\"\""
     },
     {
       "input": "\"(())(())(())(())(())\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"()()()()()\""
     },
     {
       "input": "\"((((()()))))\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"(((()())))\""
     },
     {
       "input": "\"()(())(()())((())(()))\"",
-      "desc": "Standard complex"
+      "desc": "Standard complex",
+      "output": "\"()()()(())(())\""
     },
     {
       "input": "\"(()(())(())())\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"()(())(())()\""
     },
     {
       "input": "\"()(()()()())\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"()()()()\""
     },
     {
       "input": "\"(((()))((())))(()())\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"((()))((()))()()\""
     },
     {
       "input": "\"(()()()()())\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"()()()()()\""
     },
     {
       "input": "\"gawqnskiskzdwihwnawwpyynjzbzqjhoguxb\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"\""
     }
   ]
 }

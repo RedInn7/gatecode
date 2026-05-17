@@ -1498,5 +1498,11 @@
     "slug": "minimum-falling-path-sum",
     "fqid": 931,
     "error": "Testcase 10 failed: RE (exit 1): :\n  File \"/tmp/tmp4trlky5l.py\", line 283, in <module>\n    _result = Solution().minFallingPathSum(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp4trlky5l.py\", line 148, in minFallingPathSum\n    g[j] = min(f[l:r]) + x\n    ~^^^\nIndexError: list assignment index out of range\n"
+  },
+  {
+    "pid": 2293,
+    "slug": "count-the-number-of-complete-components",
+    "fqid": 2685,
+    "error": "Testcase 19 failed: RE (exit 1): puv2.py\", line 295, in <module>\n    _result = Solution().countCompleteComponents(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmps4zqpuv2.py\", line 153, in countCompleteComponents\n    for a, b in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
   }
 ]
