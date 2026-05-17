@@ -1,0 +1,760 @@
+{
+  "skipped": [
+    {
+      "file_pid": 1735,
+      "slug": "manhattan-distances-of-all-arrangements-of-pieces",
+      "real_pid": 3426,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1691,
+      "slug": "merge-operations-for-minimum-travel-time",
+      "real_pid": 3538,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1760,
+      "slug": "check-if-digits-are-equal-in-string-after-operations-ii",
+      "real_pid": 3463,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1768,
+      "slug": "maximum-partition-factor",
+      "real_pid": 3710,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1805,
+      "slug": "maximum-product-of-two-integers-with-no-common-bits",
+      "real_pid": 3670,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1807,
+      "slug": "maximize-active-section-with-trade-ii",
+      "real_pid": 3501,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1819,
+      "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+      "real_pid": 1960,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 1820,
+      "slug": "find-minimum-diameter-after-merging-two-trees",
+      "real_pid": 3203,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 1843,
+      "slug": "count-substrings-divisible-by-last-digit",
+      "real_pid": 3448,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1858,
+      "slug": "merge-nodes-in-between-zeros",
+      "real_pid": 2181,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 1859,
+      "slug": "find-if-path-exists-in-graph",
+      "real_pid": 1971,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 1852,
+      "slug": "subtree-removal-game-with-fibonacci-tree",
+      "real_pid": 2005,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1890,
+      "slug": "sum-of-perfect-square-ancestors",
+      "real_pid": 3715,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1896,
+      "slug": "the-number-of-ways-to-make-the-sum",
+      "real_pid": 3183,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 1913,
+      "slug": "minimum-swaps-to-avoid-forbidden-values",
+      "real_pid": 3785,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1948,
+      "slug": "minimum-time-to-activate-string",
+      "real_pid": 3639,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 1988,
+      "slug": "minimum-operations-to-reduce-an-integer-to-0",
+      "real_pid": 2571,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 1989,
+      "slug": "count-number-of-balanced-permutations",
+      "real_pid": 3343,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 1996,
+      "slug": "find-the-number-of-copy-arrays",
+      "real_pid": 3468,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2024,
+      "slug": "minimum-time-for-k-virus-variants-to-spread",
+      "real_pid": 1956,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2030,
+      "slug": "inorder-successor-in-bst",
+      "real_pid": 285,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2037,
+      "slug": "construct-2d-grid-matching-graph-layout",
+      "real_pid": 3311,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2046,
+      "slug": "unique-substrings-with-equal-digit-frequency",
+      "real_pid": 2168,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2066,
+      "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+      "real_pid": 3752,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2076,
+      "slug": "find-the-largest-area-of-square-inside-two-rectangles",
+      "real_pid": 3047,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2094,
+      "slug": "find-beautiful-indices-in-the-given-array-i",
+      "real_pid": 3006,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2102,
+      "slug": "subarrays-with-xor-at-least-k",
+      "real_pid": 3632,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2141,
+      "slug": "number-of-effective-subsequences",
+      "real_pid": 3757,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2160,
+      "slug": "range-product-queries-of-powers",
+      "real_pid": 2438,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2169,
+      "slug": "implement-trie-ii-prefix-tree",
+      "real_pid": 1804,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2174,
+      "slug": "convert-doubly-linked-list-to-array-ii",
+      "real_pid": 3294,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2176,
+      "slug": "total-distance-traveled",
+      "real_pid": 2739,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2159,
+      "slug": "convert-doubly-linked-list-to-array-i",
+      "real_pid": 3263,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2188,
+      "slug": "minimum-amount-of-time-to-fill-cups",
+      "real_pid": 2335,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2217,
+      "slug": "find-maximum-number-of-non-intersecting-substrings",
+      "real_pid": 3557,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2196,
+      "slug": "once-twice",
+      "real_pid": 3595,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2220,
+      "slug": "find-the-k-beauty-of-a-number",
+      "real_pid": 2269,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2219,
+      "slug": "the-k-weakest-rows-in-a-matrix",
+      "real_pid": 1337,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2183,
+      "slug": "earliest-second-to-mark-indices-ii",
+      "real_pid": 3049,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2228,
+      "slug": "find-the-largest-palindrome-divisible-by-k",
+      "real_pid": 3260,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2254,
+      "slug": "maximum-and-sum-of-array",
+      "real_pid": 2172,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2242,
+      "slug": "number-of-perfect-pairs",
+      "real_pid": 3649,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2274,
+      "slug": "movement-of-robots",
+      "real_pid": 2731,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2273,
+      "slug": "next-special-palindrome-number",
+      "real_pid": 3646,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2291,
+      "slug": "maximum-product-after-k-increments",
+      "real_pid": 2233,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2299,
+      "slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+      "real_pid": 3795,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2305,
+      "slug": "number-of-senior-citizens",
+      "real_pid": 2678,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2370,
+      "slug": "sum-of-scores-of-built-strings",
+      "real_pid": 2223,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2374,
+      "slug": "delete-node-in-a-linked-list",
+      "real_pid": 237,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2378,
+      "slug": "cells-in-a-range-on-an-excel-sheet",
+      "real_pid": 2194,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2383,
+      "slug": "minimum-operations-to-equalize-subarrays",
+      "real_pid": 3762,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2397,
+      "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+      "real_pid": 235,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2414,
+      "slug": "find-a-safe-walk-through-a-grid",
+      "real_pid": 3286,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2417,
+      "slug": "minimum-partition-score",
+      "real_pid": 3826,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2445,
+      "slug": "longest-semi-repeating-subarray",
+      "real_pid": 3641,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2449,
+      "slug": "maximum-value-sum-by-placing-three-rooks-ii",
+      "real_pid": 3257,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2452,
+      "slug": "add-minimum-number-of-rungs",
+      "real_pid": 1936,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2459,
+      "slug": "check-if-an-original-string-exists-given-two-encoded-strings",
+      "real_pid": 2060,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2461,
+      "slug": "count-paths-with-the-given-xor-value",
+      "real_pid": 3393,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2465,
+      "slug": "maximum-score-from-grid-operations",
+      "real_pid": 3225,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2466,
+      "slug": "last-remaining-integer-after-alternating-deletion-operations",
+      "real_pid": 3782,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2462,
+      "slug": "smallest-divisible-digit-product-ii",
+      "real_pid": 3348,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2473,
+      "slug": "equal-sum-grid-partition-ii",
+      "real_pid": 3548,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2500,
+      "slug": "longest-palindromic-path-in-graph",
+      "real_pid": 3615,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2515,
+      "slug": "critical-connections-in-a-network",
+      "real_pid": 1192,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2528,
+      "slug": "minimum-unique-word-abbreviation",
+      "real_pid": 411,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2536,
+      "slug": "minimum-cost-to-equalize-array",
+      "real_pid": 3139,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2573,
+      "slug": "minimize-the-maximum-adjacent-element-difference",
+      "real_pid": 3357,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2576,
+      "slug": "split-and-merge-array-transformation",
+      "real_pid": 3690,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2600,
+      "slug": "find-the-number-of-ways-to-place-people-i",
+      "real_pid": 3025,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2616,
+      "slug": "the-maze-iii",
+      "real_pid": 499,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2712,
+      "slug": "minimum-cost-to-buy-apples",
+      "real_pid": 2473,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2754,
+      "slug": "number-of-zigzag-arrays-i",
+      "real_pid": 3699,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2760,
+      "slug": "partition-array-for-maximum-xor-and-and",
+      "real_pid": 3630,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2767,
+      "slug": "string-compression-iii",
+      "real_pid": 3163,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2775,
+      "slug": "find-missing-and-repeated-values",
+      "real_pid": 2965,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2825,
+      "slug": "find-x-value-of-array-ii",
+      "real_pid": 3525,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2854,
+      "slug": "longest-common-prefix-of-k-strings-after-removal",
+      "real_pid": 3485,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2880,
+      "slug": "length-of-the-longest-increasing-path",
+      "real_pid": 3288,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2923,
+      "slug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+      "real_pid": 3629,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2926,
+      "slug": "minimum-cost-to-divide-array-into-subarrays",
+      "real_pid": 3500,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2930,
+      "slug": "minimum-score-after-removals-on-a-tree",
+      "real_pid": 2322,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 2954,
+      "slug": "number-of-ways-to-assign-edge-weights-i",
+      "real_pid": 3558,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 2990,
+      "slug": "maximize-consecutive-elements-in-an-array-after-modification",
+      "real_pid": 3041,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3042,
+      "slug": "lexicographically-smallest-permutation-greater-than-target",
+      "real_pid": 3720,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3124,
+      "slug": "find-the-number-of-subsequences-with-equal-gcd",
+      "real_pid": 3336,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3125,
+      "slug": "minimum-operations-to-equalize-binary-string",
+      "real_pid": 3666,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3136,
+      "slug": "group-sold-products-by-the-date",
+      "real_pid": 1484,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3152,
+      "slug": "number-of-unique-xor-triplets-ii",
+      "real_pid": 3514,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3164,
+      "slug": "chunk-array",
+      "real_pid": 2677,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3169,
+      "slug": "count-bowl-subarrays",
+      "real_pid": 3676,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3175,
+      "slug": "maximize-the-minimum-game-score",
+      "real_pid": 3449,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3177,
+      "slug": "path-existence-queries-in-a-graph-ii",
+      "real_pid": 3534,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3194,
+      "slug": "transpose-file",
+      "real_pid": 194,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3200,
+      "slug": "apply-transform-over-each-element-in-array",
+      "real_pid": 2635,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3212,
+      "slug": "remove-9",
+      "real_pid": 660,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3231,
+      "slug": "minimum-sum-after-divisible-sum-deletions",
+      "real_pid": 3654,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3299,
+      "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
+      "real_pid": 3768,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3318,
+      "slug": "cache-with-time-limit",
+      "real_pid": 2622,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3322,
+      "slug": "custom-interval",
+      "real_pid": 2805,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3367,
+      "slug": "count-array-pairs-divisible-by-k",
+      "real_pid": 2183,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3370,
+      "slug": "maximum-good-subtree-score",
+      "real_pid": 3575,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3373,
+      "slug": "number-of-atoms",
+      "real_pid": 726,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3395,
+      "slug": "twisted-mirror-path-count",
+      "real_pid": 3665,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3459,
+      "slug": "factorial-generator",
+      "real_pid": 2803,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3478,
+      "slug": "subtree-inversion-sum",
+      "real_pid": 3544,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3495,
+      "slug": "minimum-operations-to-make-character-frequencies-equal",
+      "real_pid": 3389,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3554,
+      "slug": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+      "real_pid": 2030,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3565,
+      "slug": "maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
+      "real_pid": 3410,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3573,
+      "slug": "date-range-generator",
+      "real_pid": 2777,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3616,
+      "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+      "real_pid": 3734,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3624,
+      "slug": "count-prime-gap-balanced-subarrays",
+      "real_pid": 3589,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3626,
+      "slug": "minimum-increments-for-target-multiples-in-an-array",
+      "real_pid": 3444,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3631,
+      "slug": "join-two-arrays-by-id",
+      "real_pid": 2722,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3664,
+      "slug": "shortest-path-in-a-weighted-tree",
+      "real_pid": 3515,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3671,
+      "slug": "minimum-cost-good-caption",
+      "real_pid": 3441,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3708,
+      "slug": "count-substrings-with-k-frequency-characters-ii",
+      "real_pid": 3329,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 3710,
+      "slug": "time-taken-to-mark-all-nodes",
+      "real_pid": 3241,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3715,
+      "slug": "longest-special-path",
+      "real_pid": 3425,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3718,
+      "slug": "count-almost-equal-pairs-i",
+      "real_pid": 3265,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 3768,
+      "slug": "check-balanced-string",
+      "real_pid": 3340,
+      "reason": "acm_mode"
+    },
+    {
+      "file_pid": 3781,
+      "slug": "network-recovery-pathways",
+      "real_pid": 3620,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3783,
+      "slug": "count-routes-to-climb-a-rectangular-grid",
+      "real_pid": 3797,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3801,
+      "slug": "subsequences-with-a-unique-middle-mode-ii",
+      "real_pid": 3416,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3810,
+      "slug": "maximize-the-distance-between-points-on-a-square",
+      "real_pid": 3464,
+      "reason": "no_python_solution"
+    },
+    {
+      "file_pid": 3815,
+      "slug": "strange-printer-ii",
+      "real_pid": 1591,
+      "reason": "no_python_solution"
+    }
+  ]
+}
