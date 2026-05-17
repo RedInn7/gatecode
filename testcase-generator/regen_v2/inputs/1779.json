@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "2\n3\n1",
-      "desc": "Standard: n=2 m=3 k=1"
+      "desc": "Standard: n=2 m=3 k=1",
+      "output": "6"
     },
     {
       "input": "5\n2\n3",
-      "desc": "Standard: n=5 m=2 k=3"
+      "desc": "Standard: n=5 m=2 k=3",
+      "output": "0"
     },
     {
       "input": "9\n1\n1",
-      "desc": "Standard: all same"
+      "desc": "Standard: all same",
+      "output": "1"
     },
     {
       "input": "1\n1\n1",
-      "desc": "Edge: n=m=k=1"
+      "desc": "Edge: n=m=k=1",
+      "output": "1"
     },
     {
       "input": "1\n2\n1",
-      "desc": "Edge: n=1 m=2"
+      "desc": "Edge: n=1 m=2",
+      "output": "2"
     },
     {
       "input": "2\n2\n2",
-      "desc": "Standard: n=m=2 k=2"
+      "desc": "Standard: n=m=2 k=2",
+      "output": "1"
     },
     {
       "input": "50\n100\n50",
-      "desc": "Stress: max params"
+      "desc": "Stress: max params",
+      "output": "538992043"
     },
     {
       "input": "50\n100\n1",
-      "desc": "Stress: k=1 large"
+      "desc": "Stress: k=1 large",
+      "output": "435886633"
     },
     {
       "input": "50\n100\n25",
-      "desc": "Stress: mid k"
+      "desc": "Stress: mid k",
+      "output": "34549172"
     },
     {
       "input": "10\n10\n10",
-      "desc": "Stress: n=m=k=10"
+      "desc": "Stress: n=m=k=10",
+      "output": "1"
     },
     {
       "input": "3\n3\n1",
-      "desc": "Standard: k=1"
+      "desc": "Standard: k=1",
+      "output": "14"
     },
     {
       "input": "3\n3\n2",
-      "desc": "Standard: k=2"
+      "desc": "Standard: k=2",
+      "output": "12"
     },
     {
       "input": "3\n3\n3",
-      "desc": "Standard: k=3"
+      "desc": "Standard: k=3",
+      "output": "1"
     },
     {
       "input": "1\n50\n1",
-      "desc": "Edge: n=1 large m"
+      "desc": "Edge: n=1 large m",
+      "output": "50"
     },
     {
       "input": "50\n1\n1",
-      "desc": "Stress: m=1 all same"
+      "desc": "Stress: m=1 all same",
+      "output": "1"
     },
     {
       "input": "5\n10\n5",
-      "desc": "Standard: strictly increasing"
+      "desc": "Standard: strictly increasing",
+      "output": "252"
     },
     {
       "input": "7\n7\n4",
-      "desc": "Standard: mid range"
+      "desc": "Standard: mid range",
+      "output": "54880"
     },
     {
       "input": "50\n50\n50",
-      "desc": "Killer: n=m=k=50"
+      "desc": "Killer: n=m=k=50",
+      "output": "1"
     },
     {
       "input": "2\n10\n2",
-      "desc": "Standard: small n large m k=2"
+      "desc": "Standard: small n large m k=2",
+      "output": "45"
     },
     {
       "input": "20\n50\n10",
-      "desc": "Stress: mid params"
+      "desc": "Stress: mid params",
+      "output": "360181678"
     }
   ]
 }

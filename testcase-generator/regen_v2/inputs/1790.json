@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[3]",
-      "desc": "Edge: single positive"
+      "desc": "Edge: single positive",
+      "output": "3"
     },
     {
       "input": "[-5]",
-      "desc": "Edge: single negative"
+      "desc": "Edge: single negative",
+      "output": "-5"
     },
     {
       "input": "[0]",
-      "desc": "Edge: single zero"
+      "desc": "Edge: single zero",
+      "output": "0"
     },
     {
       "input": "[-1,-2]",
-      "desc": "Edge: two negatives product positive"
+      "desc": "Edge: two negatives product positive",
+      "output": "2"
     },
     {
       "input": "[3,-1,-5,2,5,-9]",
-      "desc": "Standard: mixed example"
+      "desc": "Standard: mixed example",
+      "output": "1350"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9]",
-      "desc": "Standard: all positive 1-9"
+      "desc": "Standard: all positive 1-9",
+      "output": "362880"
     },
     {
       "input": "[-9,-8,-7,-6,-5,-4,-3,-2,-1]",
-      "desc": "Standard: all negative odd count"
+      "desc": "Standard: all negative odd count",
+      "output": "362880"
     },
     {
       "input": "[-9,-8,-7,-6,-5,-4,-3,-2]",
-      "desc": "Standard: all negative even count"
+      "desc": "Standard: all negative even count",
+      "output": "362880"
     },
     {
       "input": "[0,0,0,0]",
-      "desc": "Edge: all zeros"
+      "desc": "Edge: all zeros",
+      "output": "0"
     },
     {
       "input": "[0,1,2,3]",
-      "desc": "Standard: zero and positives"
+      "desc": "Standard: zero and positives",
+      "output": "6"
     },
     {
       "input": "[-1,0,1]",
-      "desc": "Standard: neg zero pos"
+      "desc": "Standard: neg zero pos",
+      "output": "1"
     },
     {
       "input": "[1,-4,8,9,-1,-4,3,-4,-6,0]",
-      "desc": "Regenerated: standard at position 11"
+      "desc": "Regenerated: standard at position 11",
+      "output": "82944"
     },
     {
       "input": "[7,-7,3]",
-      "desc": "Regenerated: diverse at position 12"
+      "desc": "Regenerated: diverse at position 12",
+      "output": "21"
     },
     {
       "input": "[1]",
-      "desc": "Edge: one"
+      "desc": "Edge: one",
+      "output": "1"
     },
     {
       "input": "[-1]",
-      "desc": "Edge: neg one"
+      "desc": "Edge: neg one",
+      "output": "-1"
     },
     {
       "input": "[-1,1]",
-      "desc": "Standard: pair neg pos"
+      "desc": "Standard: pair neg pos",
+      "output": "1"
     },
     {
       "input": "[2,-3,4,-5,6,-7]",
-      "desc": "Standard: alternating signs"
+      "desc": "Standard: alternating signs",
+      "output": "1680"
     },
     {
       "input": "[0,0,9,9,-9,-9]",
-      "desc": "Killer: zeros mixed extremes"
+      "desc": "Killer: zeros mixed extremes",
+      "output": "6561"
     },
     {
       "input": "[-9,9]",
-      "desc": "Standard: two extremes"
+      "desc": "Standard: two extremes",
+      "output": "9"
     },
     {
       "input": "[1,-1,2,-2,3,-3,4,-4,5,-5,6,-6,7]",
-      "desc": "Stress: 13 alternating"
+      "desc": "Stress: 13 alternating",
+      "output": "3628800"
     }
   ]
 }

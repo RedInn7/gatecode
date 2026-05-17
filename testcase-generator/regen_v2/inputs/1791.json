@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[\"alice\",\"0800\"]]",
-      "desc": "Edge: single access"
+      "desc": "Edge: single access",
+      "output": "[]"
     },
     {
       "input": "[[\"alice\",\"0900\"],[\"alice\",\"0930\"],[\"alice\",\"0959\"]]",
-      "desc": "Standard: 3 in window (high)"
+      "desc": "Standard: 3 in window (high)",
+      "output": "[\"alice\"]"
     },
     {
       "input": "[[\"alice\",\"0800\"],[\"alice\",\"0900\"],[\"alice\",\"1000\"]]",
-      "desc": "Standard: exactly 1hr apart (not high)"
+      "desc": "Standard: exactly 1hr apart (not high)",
+      "output": "[]"
     },
     {
       "input": "[[\"a\",\"0000\"],[\"a\",\"0030\"],[\"a\",\"0059\"],[\"b\",\"1200\"],[\"b\",\"1300\"]]",
-      "desc": "Standard: only a is high"
+      "desc": "Standard: only a is high",
+      "output": "[\"a\"]"
     },
     {
       "input": "[[\"alice\",\"0800\"],[\"bob\",\"0800\"],[\"carol\",\"0800\"]]",
-      "desc": "Edge: same time diff employees"
+      "desc": "Edge: same time diff employees",
+      "output": "[]"
     },
     {
       "input": "[[\"alice\",\"2300\"],[\"alice\",\"2330\"],[\"alice\",\"2359\"]]",
-      "desc": "Edge: late night cluster"
+      "desc": "Edge: late night cluster",
+      "output": "[\"alice\"]"
     },
     {
       "input": "[[\"e\",\"0000\"],[\"e\",\"0001\"],[\"e\",\"0002\"]]",
-      "desc": "Edge: back-to-back accesses"
+      "desc": "Edge: back-to-back accesses",
+      "output": "[\"e\"]"
     },
     {
       "input": "[[\"alice\",\"0100\"],[\"alice\",\"0500\"],[\"alice\",\"0900\"],[\"alice\",\"1300\"],[\"alice\",\"1700\"]]",
-      "desc": "Standard: spread throughout day"
+      "desc": "Standard: spread throughout day",
+      "output": "[]"
     },
     {
       "input": "[[\"alice\",\"0800\"],[\"alice\",\"0830\"],[\"alice\",\"0900\"],[\"bob\",\"0810\"],[\"bob\",\"0850\"],[\"bob\",\"0920\"]]",
-      "desc": "Standard: two overlapping employees"
+      "desc": "Standard: two overlapping employees",
+      "output": "[]"
     },
     {
       "input": "[[\"a\",\"0000\"],[\"b\",\"0100\"],[\"c\",\"0200\"],[\"d\",\"0300\"],[\"e\",\"0400\"]]",
-      "desc": "Standard: all diff at diff times"
+      "desc": "Standard: all diff at diff times",
+      "output": "[]"
     },
     {
       "input": "[[\"emp00\",\"0000\"],[\"emp00\",\"0800\"],[\"emp00\",\"1600\"],[\"emp01\",\"0000\"],[\"emp01\",\"0800\"],[\"emp01\",\"1600\"],[\"emp02\",\"0000\"],[\"emp02\",\"0800\"],[\"emp02\",\"1600\"],[\"emp03\",\"0000\"],[\"emp03\",\"0800\"],[\"emp03\",\"1600\"],[\"emp04\",\"0000\"],[\"emp04\",\"0800\"],[\"emp04\",\"1600\"],[\"emp05\",\"0000\"],[\"emp05\",\"0800\"],[\"emp05\",\"1600\"],[\"emp06\",\"0000\"],[\"emp06\",\"0800\"],[\"emp06\",\"1600\"],[\"emp07\",\"0000\"],[\"emp07\",\"0800\"],[\"emp07\",\"1600\"],[\"emp08\",\"0000\"],[\"emp08\",\"0800\"],[\"emp08\",\"1600\"],[\"emp09\",\"0000\"],[\"emp09\",\"0800\"],[\"emp09\",\"1600\"]]",
-      "desc": "Stress: 10 employees 3 accesses each"
+      "desc": "Stress: 10 employees 3 accesses each",
+      "output": "[]"
     },
     {
       "input": "[[\"alice\",\"0900\"],[\"alice\",\"0905\"],[\"alice\",\"0910\"],[\"alice\",\"0915\"],[\"alice\",\"0920\"],[\"alice\",\"0925\"],[\"alice\",\"0930\"],[\"alice\",\"0935\"],[\"alice\",\"0940\"],[\"alice\",\"0945\"],[\"alice\",\"0950\"],[\"alice\",\"0955\"]]",
-      "desc": "Stress: alice 12 accesses in 1 hour"
+      "desc": "Stress: alice 12 accesses in 1 hour",
+      "output": "[\"alice\"]"
     },
     {
       "input": "[[\"alice\",\"0859\"],[\"alice\",\"0900\"],[\"alice\",\"0959\"],[\"alice\",\"1000\"]]",
-      "desc": "Killer: boundary at 59min"
+      "desc": "Killer: boundary at 59min",
+      "output": "[]"
     },
     {
       "input": "[[\"x\",\"1200\"],[\"x\",\"1201\"],[\"x\",\"1259\"],[\"x\",\"1300\"]]",
-      "desc": "Killer: 4 accesses in window"
+      "desc": "Killer: 4 accesses in window",
+      "output": "[\"x\"]"
     },
     {
       "input": "[[\"a\",\"0000\"],[\"a\",\"2359\"]]",
-      "desc": "Edge: two accesses far apart"
+      "desc": "Edge: two accesses far apart",
+      "output": "[]"
     },
     {
       "input": "[[\"a\",\"0800\"],[\"a\",\"0800\"],[\"a\",\"0800\"]]",
-      "desc": "Standard: duplicate times"
+      "desc": "Standard: duplicate times",
+      "output": "[\"a\"]"
     },
     {
       "input": "[[\"e0\",\"0900\"],[\"e1\",\"0900\"],[\"e2\",\"0900\"],[\"e3\",\"0900\"],[\"e4\",\"0900\"],[\"e5\",\"0900\"],[\"e6\",\"0900\"],[\"e7\",\"0900\"],[\"e8\",\"0900\"],[\"e9\",\"0900\"],[\"e10\",\"0900\"],[\"e11\",\"0900\"],[\"e12\",\"0900\"],[\"e13\",\"0900\"],[\"e14\",\"0900\"],[\"e15\",\"0900\"],[\"e16\",\"0900\"],[\"e17\",\"0900\"],[\"e18\",\"0900\"],[\"e19\",\"0900\"]]",
-      "desc": "Stress: 20 employees same time"
+      "desc": "Stress: 20 employees same time",
+      "output": "[]"
     },
     {
       "input": "[[\"alice\",\"0000\"],[\"alice\",\"0059\"],[\"alice\",\"0100\"],[\"alice\",\"0159\"]]",
-      "desc": "Killer: two overlapping windows"
+      "desc": "Killer: two overlapping windows",
+      "output": "[]"
     },
     {
       "input": "[[\"a\",\"0900\"],[\"b\",\"0901\"],[\"c\",\"0902\"],[\"d\",\"0903\"],[\"e\",\"0904\"]]",
-      "desc": "Standard: 5 diff employees close times"
+      "desc": "Standard: 5 diff employees close times",
+      "output": "[]"
     },
     {
       "input": "[[\"z\",\"1159\"],[\"z\",\"1200\"],[\"z\",\"1259\"]]",
-      "desc": "Standard: straddles noon"
+      "desc": "Standard: straddles noon",
+      "output": "[]"
     }
   ]
 }

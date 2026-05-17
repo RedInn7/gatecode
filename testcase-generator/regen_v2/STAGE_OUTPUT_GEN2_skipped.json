@@ -268,5 +268,17 @@
     "slug": "maximum-partition-factor",
     "fqid": 3710,
     "reason": "No Python3 solution found for fqid=3710"
+  },
+  {
+    "pid": 1805,
+    "slug": "maximum-product-of-two-integers-with-no-common-bits",
+    "fqid": 3670,
+    "reason": "No Python3 solution found for fqid=3670"
+  },
+  {
+    "pid": 1807,
+    "slug": "maximize-active-section-with-trade-ii",
+    "fqid": 3501,
+    "reason": "No Python3 solution found for fqid=3501"
   }
 ]

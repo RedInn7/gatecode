@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[-881,-810],[-781,-433],[-681,636],[-722,-111]]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "0"
     },
     {
       "input": "[[0,0],[2,0],[0,1],[2,1]]",
-      "desc": "Edge: rectangle 2x1"
+      "desc": "Edge: rectangle 2x1",
+      "output": "1"
     },
     {
       "input": "[[0,0],[1,0],[2,0],[0,1]]",
-      "desc": "Edge: 4 pts L-shape"
+      "desc": "Edge: 4 pts L-shape",
+      "output": "0"
     },
     {
       "input": "[[0,0],[1,0],[2,0],[3,0]]",
-      "desc": "Edge: 4 collinear"
+      "desc": "Edge: 4 collinear",
+      "output": "0"
     },
     {
       "input": "[[0,0],[1,0],[0,1],[1,1],[2,2]]",
-      "desc": "Edge: 5 pts"
+      "desc": "Edge: 5 pts",
+      "output": "1"
     },
     {
       "input": "[[-100000000,-100000000],[100000000,-100000000],[100000000,100000000],[-100000000,100000000]]",
-      "desc": "Edge: extreme corners"
+      "desc": "Edge: extreme corners",
+      "output": "1"
     },
     {
       "input": "[[0,0],[1,0],[2,0],[3,0],[0,1],[1,1],[2,1],[3,1]]",
-      "desc": "Edge: 2x4 grid"
+      "desc": "Edge: 2x4 grid",
+      "output": "36"
     },
     {
       "input": "[[0,0],[1,0],[2,0],[0,5],[1,5],[2,5]]",
-      "desc": "Standard: 3x2 grid"
+      "desc": "Standard: 3x2 grid",
+      "output": "9"
     },
     {
       "input": "[[0,0],[1,0],[2,0],[3,0],[4,0],[0,1],[1,1],[2,1],[3,1],[4,1]]",
-      "desc": "Standard: 2x5 grid"
+      "desc": "Standard: 2x5 grid",
+      "output": "100"
     },
     {
       "input": "[[0,0],[2,1],[4,2],[6,3],[8,4],[10,5],[0,5],[2,4],[4,3],[6,2]]",
-      "desc": "Standard: parallel slopes"
+      "desc": "Standard: parallel slopes",
+      "output": "6"
     },
     {
       "input": "[[0,0],[1,1],[2,2],[3,3],[0,1],[1,2],[2,3],[3,4]]",
-      "desc": "Standard: 2 parallel lines"
+      "desc": "Standard: 2 parallel lines",
+      "output": "3"
     },
     {
       "input": "[[0,0],[1,0],[0,1],[1,1],[2,0],[2,1],[3,0],[3,1],[4,0],[4,1]]",
-      "desc": "Standard: 2x5 again"
+      "desc": "Standard: 2x5 again",
+      "output": "100"
     },
     {
       "input": "[[0,0],[5,0],[10,0],[0,5],[5,5],[10,5],[0,10],[5,10],[10,10]]",
-      "desc": "Standard: 3x3 grid"
+      "desc": "Standard: 3x3 grid",
+      "output": "27"
     },
     {
       "input": "[[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0],[0,1],[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1]]",
-      "desc": "Standard: 2x8 grid"
+      "desc": "Standard: 2x8 grid",
+      "output": "784"
     },
     {
       "input": "[[1,2],[3,4],[5,6],[7,8],[2,1],[4,3],[6,5],[8,7]]",
-      "desc": "Standard: 8 spread"
+      "desc": "Standard: 8 spread",
+      "output": "0"
     },
     {
       "input": "[[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0],[8,0],[9,0],[0,1],[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1]]",
-      "desc": "Stress: 2x10 grid"
+      "desc": "Stress: 2x10 grid",
+      "output": "2025"
     },
     {
       "input": "[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[1,2],[2,3],[3,4],[4,5],[5,6]]",
-      "desc": "Stress: 2 lines"
+      "desc": "Stress: 2 lines",
+      "output": "10"
     },
     {
       "input": "[[0,0],[100000000,0],[0,100000000],[100000000,100000000],[50000000,0],[50000000,100000000]]",
-      "desc": "Stress: extreme rectangle + mids"
+      "desc": "Stress: extreme rectangle + mids",
+      "output": "9"
     },
     {
       "input": "[[0,0],[1,0],[0,1],[2,0],[0,2],[3,0],[0,3]]",
-      "desc": "Special: L-shape"
+      "desc": "Special: L-shape",
+      "output": "0"
     },
     {
       "input": "[[-5,-5],[-5,5],[5,-5],[5,5]]",
-      "desc": "Special: square at origin"
+      "desc": "Special: square at origin",
+      "output": "1"
     }
   ]
 }

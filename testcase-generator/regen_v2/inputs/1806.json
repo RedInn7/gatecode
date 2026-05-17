@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[0,1,0],[1,0,1]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "6"
     },
     {
       "input": "[[1,0],[0,0]]",
-      "desc": "Edge: single 1"
+      "desc": "Edge: single 1",
+      "output": "1"
     },
     {
       "input": "[[1]]",
-      "desc": "Edge: 1x1 single 1"
+      "desc": "Edge: 1x1 single 1",
+      "output": "1"
     },
     {
       "input": "[[1,1]]",
-      "desc": "Edge: 1x2 two 1s"
+      "desc": "Edge: 1x2 two 1s",
+      "output": "2"
     },
     {
       "input": "[[1],[1]]",
-      "desc": "Edge: 2x1 two 1s"
+      "desc": "Edge: 2x1 two 1s",
+      "output": "2"
     },
     {
       "input": "[[1,0,0,0,1]]",
-      "desc": "Edge: 1x5 corners"
+      "desc": "Edge: 1x5 corners",
+      "output": "5"
     },
     {
       "input": "[[1],[0],[0],[0],[1]]",
-      "desc": "Edge: 5x1 corners"
+      "desc": "Edge: 5x1 corners",
+      "output": "5"
     },
     {
       "input": "[[1,1,1],[1,1,1],[1,1,1]]",
-      "desc": "Edge: 3x3 all ones"
+      "desc": "Edge: 3x3 all ones",
+      "output": "9"
     },
     {
       "input": "[[1,0,0],[0,0,0],[0,0,1]]",
-      "desc": "Edge: 3x3 diagonal corners"
+      "desc": "Edge: 3x3 diagonal corners",
+      "output": "9"
     },
     {
       "input": "[[1,0,0,0,0,0,0,0,0,1]]",
-      "desc": "Edge: 1x10 corners"
+      "desc": "Edge: 1x10 corners",
+      "output": "10"
     },
     {
       "input": "[[0,1,0],[0,1,0],[0,1,0]]",
-      "desc": "Standard: 3x3 column"
+      "desc": "Standard: 3x3 column",
+      "output": "3"
     },
     {
       "input": "[[1,1,1,0,0],[1,1,1,0,0],[0,0,0,0,0]]",
-      "desc": "Standard: 3x3 block top-left"
+      "desc": "Standard: 3x3 block top-left",
+      "output": "6"
     },
     {
       "input": "[[0,0,0,0,0],[0,1,1,1,0],[0,1,1,1,0],[0,0,0,0,0]]",
-      "desc": "Standard: centered 3x3 block"
+      "desc": "Standard: centered 3x3 block",
+      "output": "6"
     },
     {
       "input": "[[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]",
-      "desc": "Standard: 5x5 diagonal 1s"
+      "desc": "Standard: 5x5 diagonal 1s",
+      "output": "25"
     },
     {
       "input": "[[1,0,1,0,1],[0,1,0,1,0],[1,0,1,0,1]]",
-      "desc": "Standard: 3x5 checkerboard"
+      "desc": "Standard: 3x5 checkerboard",
+      "output": "15"
     },
     {
       "input": "[[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]]",
-      "desc": "Stress: 1x20 corners"
+      "desc": "Stress: 1x20 corners",
+      "output": "20"
     },
     {
       "input": "[[-160,42,135],[-349,-647,-368]]",
-      "desc": "Regenerated: diverse at position 16"
+      "desc": "Regenerated: diverse at position 16",
+      "output": "Infinity"
     },
     {
       "input": "[[648,-156,118,467,285,-219],[-69,-677,890,-41,-222,-390],[251,696,-758,-171,143,-307],[-305,-424,-45,-915,947,-303]]",
-      "desc": "Regenerated: stress at position 17"
+      "desc": "Regenerated: stress at position 17",
+      "output": "Infinity"
     },
     {
       "input": "[[-99,226,-153,-282,-212,522],[-468,-379,297,768,-78,885],[-252,329,765,-300,-667,-830],[444,854,-299,-216,-72,-545]]",
-      "desc": "Regenerated: stress at position 18"
+      "desc": "Regenerated: stress at position 18",
+      "output": "Infinity"
     },
     {
       "input": "[[0,0,0,1,0],[0,0,1,1,1],[0,0,0,1,0]]",
-      "desc": "Special: plus shape"
+      "desc": "Special: plus shape",
+      "output": "9"
     }
   ]
 }

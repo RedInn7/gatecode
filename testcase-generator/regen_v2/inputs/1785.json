@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "1",
-      "desc": "n=1"
+      "desc": "n=1",
+      "output": "9"
     },
     {
       "input": "2",
-      "desc": "n=2"
+      "desc": "n=2",
+      "output": "987"
     },
     {
       "input": "3",
-      "desc": "n=3"
+      "desc": "n=3",
+      "output": "123"
     },
     {
       "input": "4",
-      "desc": "n=4"
+      "desc": "n=4",
+      "output": "597"
     },
     {
       "input": "5",
-      "desc": "n=5"
+      "desc": "n=5",
+      "output": "677"
     },
     {
       "input": "6",
-      "desc": "n=6"
+      "desc": "n=6",
+      "output": "1218"
     },
     {
       "input": "7",
-      "desc": "n=7"
+      "desc": "n=7",
+      "output": "877"
     },
     {
       "input": "8",
-      "desc": "n=8"
+      "desc": "n=8",
+      "output": "475"
     },
     {
       "input": "1",
-      "desc": "n=1"
+      "desc": "n=1",
+      "output": "9"
     },
     {
       "input": "2",
-      "desc": "n=2"
+      "desc": "n=2",
+      "output": "987"
     },
     {
       "input": "3",
-      "desc": "n=3"
+      "desc": "n=3",
+      "output": "123"
     },
     {
       "input": "4",
-      "desc": "n=4"
+      "desc": "n=4",
+      "output": "597"
     },
     {
       "input": "5",
-      "desc": "n=5"
+      "desc": "n=5",
+      "output": "677"
     },
     {
       "input": "6",
-      "desc": "n=6"
+      "desc": "n=6",
+      "output": "1218"
     },
     {
       "input": "7",
-      "desc": "n=7"
+      "desc": "n=7",
+      "output": "877"
     },
     {
       "input": "8",
-      "desc": "n=8"
+      "desc": "n=8",
+      "output": "475"
     },
     {
       "input": "2",
-      "desc": "n=2"
+      "desc": "n=2",
+      "output": "987"
     },
     {
       "input": "4",
-      "desc": "n=4"
+      "desc": "n=4",
+      "output": "597"
     },
     {
       "input": "6",
-      "desc": "n=6"
+      "desc": "n=6",
+      "output": "1218"
     },
     {
       "input": "5",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "677"
     }
   ]
 }

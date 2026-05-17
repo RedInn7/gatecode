@@ -1126,5 +1126,53 @@
     "slug": "tallest-billboard",
     "fqid": 956,
     "error": "Testcase 18 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1782,
+    "slug": "maximum-number-of-operations-with-the-same-score-ii",
+    "fqid": 3040,
+    "error": "Testcase 0 failed: RE (exit 1): ywf7.py\", line 292, in <module>\n    _result = Solution().maxOperations(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpj24oywf7.py\", line 156, in maxOperations\n    a = dfs(2, n - 1, nums[0] + nums[1])\n                                ~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1794,
+    "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+    "fqid": 1111,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1792,
+    "slug": "smallest-common-region",
+    "fqid": 1257,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1784,
+    "slug": "word-pattern",
+    "fqid": 290,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1800,
+    "slug": "reverse-string-prefix",
+    "fqid": 3794,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1803,
+    "slug": "word-ladder",
+    "fqid": 127,
+    "error": "Testcase 0 failed: RE (exit 1): e(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  },
+  {
+    "pid": 1787,
+    "slug": "three-equal-parts",
+    "fqid": 927,
+    "error": "Testcase 14 failed: RE (exit 1): module>\n    _result = Solution().threeEqualParts(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpxul5y394.py\", line 157, in threeEqualParts\n    while k < n and arr[i] == arr[j] == arr[k]:\n          ^^^^^\nTypeError: '<' not supported between instances of 'NoneType' and 'int'\n"
+  },
+  {
+    "pid": 1786,
+    "slug": "maximum-profit-from-trading-stocks",
+    "fqid": 2291,
+    "error": "Testcase 10 failed: RE (exit 1): dule>\n    _result = Solution().maximumProfit(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpe7v9llll.py\", line 147, in maximumProfit\n    f[i][j] = max(f[i][j], f[i - 1][j - w] + future[i - 1] - w)\n                           ~~~~~~~~^^^^^^^\nIndexError: list index out of range\n"
   }
 ]
