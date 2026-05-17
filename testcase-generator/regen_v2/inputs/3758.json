@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[0,-1],[1,0],[2,0],[4,1],[3,2]]",
-      "desc": "Example 1: true"
+      "desc": "Example 1: true",
+      "output": "false"
     },
     {
       "input": "[[0,-1],[1,0],[2,0],[4,1],[5,2],[3,4]]",
-      "desc": "Example 2: false"
+      "desc": "Example 2: false",
+      "output": "false"
     },
     {
       "input": "[[0,-1]]",
-      "desc": "Edge: single root"
+      "desc": "Edge: single root",
+      "output": "true"
     },
     {
       "input": "[[1,-1]]",
-      "desc": "Edge: single root id=1"
+      "desc": "Edge: single root id=1",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0]]",
-      "desc": "Edge: 2 nodes"
+      "desc": "Edge: 2 nodes",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,0]]",
-      "desc": "Standard 1 root 2 children"
+      "desc": "Standard 1 root 2 children",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,1]]",
-      "desc": "Standard chain"
+      "desc": "Standard chain",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[2,0],[1,0]]",
-      "desc": "Standard 2 children order matters"
+      "desc": "Standard 2 children order matters",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,1],[3,1],[4,0],[5,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[3,1],[2,1],[4,0]]",
-      "desc": "Standard false?"
+      "desc": "Standard false?",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,0],[3,0],[4,0],[5,0]]",
-      "desc": "Standard wide tree"
+      "desc": "Standard wide tree",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,1],[3,2],[4,3],[5,4]]",
-      "desc": "Standard deep chain"
+      "desc": "Standard deep chain",
+      "output": "true"
     },
     {
       "input": "[[5,-1],[3,5],[2,3],[7,5],[6,7],[8,7]]",
-      "desc": "Standard non-sequential ids"
+      "desc": "Standard non-sequential ids",
+      "output": "true"
     },
     {
       "input": "[[10,-1],[5,10],[3,5],[2,3],[4,3],[15,10],[12,15],[20,15]]",
-      "desc": "Standard BST shape"
+      "desc": "Standard BST shape",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,0],[3,0]]",
-      "desc": "Standard 3 children root"
+      "desc": "Standard 3 children root",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,1],[3,2],[4,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[2,0],[1,2],[3,0]]",
-      "desc": "Standard depth then sibling"
+      "desc": "Standard depth then sibling",
+      "output": "true"
     },
     {
       "input": "[[100,-1],[50,100],[25,50],[10,25],[5,10],[1,5]]",
-      "desc": "Standard deep left"
+      "desc": "Standard deep left",
+      "output": "true"
     },
     {
       "input": "[[0,-1],[1,0],[2,1],[3,1],[4,0],[5,4],[6,4],[7,0],[8,7],[9,7]]",
-      "desc": "Standard binary tree 10 nodes"
+      "desc": "Standard binary tree 10 nodes",
+      "output": "true"
     },
     {
       "input": "[[-693,756,-285,-779],[644,-379,-908,-565],[-815,-974,-157,568],[-928,-847,515,958],[920,-721,654,-362],[203,-79,-416,568],[-240,-841,584,-56],[-598,-97,343,-603],[311,26,591,-69],[-741,369,21,663]]",

@@ -10,11 +10,13 @@
     },
     {
       "input": "\"z\"\n1",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "1"
     },
     {
       "input": "\"br\"\n1",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "2"
     },
     {
       "input": "\"aaaaa\"",
@@ -22,47 +24,58 @@
     },
     {
       "input": "\"cdcee\"\n4",
-      "desc": "Edge: short string mixed"
+      "desc": "Edge: short string mixed",
+      "output": "0"
     },
     {
       "input": "\"xpmmgcmhntjihhshhs\"\n16",
-      "desc": "Standard: len=18"
+      "desc": "Standard: len=18",
+      "output": "0"
     },
     {
       "input": "\"xvcksfvu\"\n4",
-      "desc": "Standard: len=8"
+      "desc": "Standard: len=8",
+      "output": "0"
     },
     {
       "input": "\"ifzayqjanfydjjezqwtflxwntqudv\"\n12",
-      "desc": "Standard: len=29"
+      "desc": "Standard: len=29",
+      "output": "0"
     },
     {
       "input": "\"csnipntasuebcvnbishbpddfprbewqieuvvcrjrvlzhiowdy\"\n48",
-      "desc": "Standard: len=48"
+      "desc": "Standard: len=48",
+      "output": "0"
     },
     {
       "input": "\"enndituqjskokigttivh\"\n14",
-      "desc": "Standard: len=20"
+      "desc": "Standard: len=20",
+      "output": "0"
     },
     {
       "input": "\"rwpzcrrfnq\"\n1",
-      "desc": "Standard: len=10"
+      "desc": "Standard: len=10",
+      "output": "10"
     },
     {
       "input": "\"hmkumvbctsswpogwjonppdrwuxye\"\n7",
-      "desc": "Standard: len=28"
+      "desc": "Standard: len=28",
+      "output": "0"
     },
     {
       "input": "\"mcpvmhoqcdjtspmjkcjwoxvmrnjyhjehkcblryj\"\n1",
-      "desc": "Standard: len=39"
+      "desc": "Standard: len=39",
+      "output": "46"
     },
     {
       "input": "\"iydvfmieyqcnjxcluaxhvmwpuciogmvbqqipfzklehxizkzwdpxabsljzvpojaazuirsfestevcdncjojhsjeelzohmjqlalpdzgzcvaxretwhhofjubkgplqspneyjvwybvzuwcvsmkawrkqyfsmiroypgyvmeuckforqdvxqvsjhkoimcxsrniwpxjuuyydrhlsarizhtbdwhjitxshpckdeamhnuugejwajjduihmbfrlbmfqnrwkgzubnclzabkfgmeosdsujuhbsdkunzfmxovndlhbfqbsplhmgsljzyfptuucbxyiphtovbrtocxfgsaagbxfjoqxlsxtjxisbnizczgvurksxnpcuoxqcgdecekswynfhdifoeqxdzoklwsctboborhdqcpwtznuuyqzkazvejuapxgilpeccuaezidyiswogektbzxxzcpydgadztdnfapubzaconhdqxpoisbwkitlwvaqjvryhwaivhnv\"\n82",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "0"
     },
     {
       "input": "\"vhwsxfjbxemhwtlqchspqpdtcahrfztpbvwihushdeerivzxsvwjtlpkhxnvurzujeinrkpncsfdutscgczimmrjjlorjenqkirafyoqkkynmcpyydqpkedvrfhjqxhttgcvdrulxiqawjubxcsifgbbbsoaivndzaixhddwghowlipzpmkohwhraasvptftqduhkvuxgvgahvbsrafdshuxkujucvzxrbodtthlbvvmxyvqvetcycljxrztbhdwiuarxsrldxezfnmngttpwmtiiwdmojhdevmkzvfwmmlepjgevxfmvwgtuuasqrebjraxnwwerdqttfeywiwxppgegfnftargtjmjcevvneamcmluuguskcgvtoeouoyzwqgugfhnmxlmolynwxbjbtcafwkoxxlvwunbbxvpmfegmwqpfaefefgakljxaktqjvqauxlwwdqkvyycfhyydpvtlvhpzhporplhgjdjxbrnljblaslyvevixiroxnwyzynjzzyfayjxmflmqvmafrosdasvvoyxtqyuibhpcypwwpzuofdjtjhnrwoydpaqnoxnyevxodnjdxnmkaaglgnfggtpgwsuvuitjxquuayvtqvqbowjvlxezumkweqwzclelkfbtngohqpyhwdewzdthwzymgzbbroxaqaizkeoqkpthpgkartzvdgeeulmojacmaofsuxokbmlmqbtwdjaqhwysavvuootfzcwxivnvoqpwhvfvhutsjlxgqzbrrjgqkysosahiyqvzdweackvhwqxbugbvpgcexghvyhdlnsktbhlboisrueozezcjzfurgljuqvqelorjdeiyyerxybgrhoxjztlznlhkfelorlwvbxigujyuphvxdckuwiwfyjimhatduoxsmisdalmoqwvquzcaadsnhtauxlspbhfwnandgbpyajxuviovpryjdedfjrvoleteelgwbriqqjjpqzyrlizryxx\"\n384",
-      "desc": "Stress: max string"
+      "desc": "Stress: max string",
+      "output": "0"
     },
     {
       "input": "\"abcdeedcba\"",
@@ -74,15 +87,18 @@
     },
     {
       "input": "\"zidybphivz\"\n4",
-      "desc": "Generated: stress at position 17"
+      "desc": "Generated: stress at position 17",
+      "output": "0"
     },
     {
       "input": "\"ymusxrzsel\"\n4",
-      "desc": "Generated: stress at position 18"
+      "desc": "Generated: stress at position 18",
+      "output": "0"
     },
     {
       "input": "\"aoemaoprqd\"\n4",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "0"
     }
   ]
 }

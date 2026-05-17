@@ -10,11 +10,13 @@
     },
     {
       "input": "\"z\"\n1",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "\"\""
     },
     {
       "input": "\"yy\"\n2",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "\"\""
     },
     {
       "input": "\"aaaaa\"",
@@ -22,47 +24,58 @@
     },
     {
       "input": "\"cccee\"\n3",
-      "desc": "Edge: short string mixed"
+      "desc": "Edge: short string mixed",
+      "output": "\"\""
     },
     {
       "input": "\"prwqhrakwdwumbqskwcufjapaeyezn\"\n14",
-      "desc": "Standard: len=30"
+      "desc": "Standard: len=30",
+      "output": "\"\""
     },
     {
       "input": "\"gnxbaendmafqbolnqoejwpdcsmxxagcjwxnenspssslihp\"\n8",
-      "desc": "Standard: len=46"
+      "desc": "Standard: len=46",
+      "output": "\"\""
     },
     {
       "input": "\"nqavgcvztnulnpqlkq\"\n8",
-      "desc": "Standard: len=18"
+      "desc": "Standard: len=18",
+      "output": "\"\""
     },
     {
       "input": "\"ignlwgekdpyffrowemohfyo\"\n5",
-      "desc": "Standard: len=23"
+      "desc": "Standard: len=23",
+      "output": "\"\""
     },
     {
       "input": "\"ndzlnvjxndlkjnilcrztpqqriyadphixxdqkrnhlnpguu\"\n15",
-      "desc": "Standard: len=45"
+      "desc": "Standard: len=45",
+      "output": "\"\""
     },
     {
       "input": "\"stvcbgnbwmcjosludiaiesntqyphi\"\n13",
-      "desc": "Standard: len=29"
+      "desc": "Standard: len=29",
+      "output": "\"\""
     },
     {
       "input": "\"tuoqvobluowglttdsvgkekglryomuxwxotdjmncaqyduexrdrz\"\n28",
-      "desc": "Standard: len=50"
+      "desc": "Standard: len=50",
+      "output": "\"\""
     },
     {
       "input": "\"watmbwldmpjdgshbz\"\n15",
-      "desc": "Standard: len=17"
+      "desc": "Standard: len=17",
+      "output": "\"\""
     },
     {
       "input": "\"fdfahofxsrltpjbobwftxorstffmilehxaoelilhwllyrbdwpcofosmsfrnfgzilfhzwelvcnowlmaivjqniieadfhhizatqqrbn\"\n5",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "\"\""
     },
     {
       "input": "\"athlaagqkfjbuotcwprnnryffeytzlzwtyzytncveltyunipkhqyturkqqytrxmkszsbsuvmjrrudpwwwblpajbixctmfvfnhpsf\"\n25",
-      "desc": "Stress: max string"
+      "desc": "Stress: max string",
+      "output": "\"\""
     },
     {
       "input": "\"abcdeedcba\"",

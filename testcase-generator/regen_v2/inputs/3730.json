@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[1,3],[2,3],[3,6],[5,6],[5,7],[4,5],[4,8],[4,9],[10,4],[10,9]]",
-      "desc": "Example 1"
+      "desc": "Example 1",
+      "output": "[[1,2,10],[4,5,7,8]]"
     },
     {
       "input": "[[2,3],[1,3],[5,4],[6,4]]",
-      "desc": "Example 2"
+      "desc": "Example 2",
+      "output": "[[1,2,5,6],[]]"
     },
     {
       "input": "[[1,2]]",
-      "desc": "Edge: single match"
+      "desc": "Edge: single match",
+      "output": "[[1],[2]]"
     },
     {
       "input": "[[1,2],[2,1]]",
-      "desc": "Edge: each loses once"
+      "desc": "Edge: each loses once",
+      "output": "[[],[1,2]]"
     },
     {
       "input": "[[1,2],[3,4]]",
-      "desc": "Edge: 2 disjoint"
+      "desc": "Edge: 2 disjoint",
+      "output": "[[1,3],[2,4]]"
     },
     {
       "input": "[[1,2],[1,3],[1,4]]",
-      "desc": "Standard 1 wins all"
+      "desc": "Standard 1 wins all",
+      "output": "[[1],[2,3,4]]"
     },
     {
       "input": "[[2,1],[3,1],[4,1]]",
-      "desc": "Standard 1 loses all"
+      "desc": "Standard 1 loses all",
+      "output": "[[2,3,4],[]]"
     },
     {
       "input": "[[1,2],[2,3],[3,4]]",
-      "desc": "Standard chain"
+      "desc": "Standard chain",
+      "output": "[[1],[2,3,4]]"
     },
     {
       "input": "[[1,2],[3,4],[5,6],[7,8],[9,10]]",
-      "desc": "Standard 5 disjoint"
+      "desc": "Standard 5 disjoint",
+      "output": "[[1,3,5,7,9],[2,4,6,8,10]]"
     },
     {
       "input": "[[100,50],[50,100]]",
-      "desc": "Edge: mutual loss"
+      "desc": "Edge: mutual loss",
+      "output": "[[],[50,100]]"
     },
     {
       "input": "[[100000,1],[1,2]]",
-      "desc": "Edge: max values"
+      "desc": "Edge: max values",
+      "output": "[[100000],[1,2]]"
     },
     {
       "input": "[[1,2],[2,1],[3,1],[1,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[3],[2,4]]"
     },
     {
       "input": "[[5,1],[5,2],[5,3],[5,4],[1,6],[2,6],[3,6],[4,6]]",
-      "desc": "Standard 2 winners"
+      "desc": "Standard 2 winners",
+      "output": "[[5],[1,2,3,4]]"
     },
     {
       "input": "[[1,2],[1,3],[2,3],[1,4],[2,4],[3,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[1],[2]]"
     },
     {
       "input": "[[100,200],[200,300],[300,400],[400,500]]",
-      "desc": "Standard chain"
+      "desc": "Standard chain",
+      "output": "[[100],[200,300,400,500]]"
     },
     {
       "input": "[[1,2],[3,2],[4,2],[5,2],[6,2]]",
-      "desc": "Standard 1 loses lots"
+      "desc": "Standard 1 loses lots",
+      "output": "[[1,3,4,5,6],[]]"
     },
     {
       "input": "[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11]]",
-      "desc": "Standard 1 wins 10"
+      "desc": "Standard 1 wins 10",
+      "output": "[[1],[2,3,4,5,6,7,8,9,10,11]]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,1]]",
-      "desc": "Standard cycle"
+      "desc": "Standard cycle",
+      "output": "[[],[1,2,3,4,5,6,7,8,9,10]]"
     },
     {
       "input": "[[1,2],[3,4],[5,6],[7,8],[9,10],[2,3],[4,5],[6,7],[8,9],[10,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[],[1,2,3,4,5,6,7,8,9,10]]"
     },
     {
       "input": "[[317,736,-437,-327],[-721,-113,337,-625],[966,-76,810,286],[-254,-231,-7,623],[-37,-644,-203,250],[319,230,-952,793],[101,-809,-97,-948],[-275,786,245,854],[-103,-561,-820,-485],[-462,626,-66,-832],[401,-68,249,488],[-643,-300,918,206],[-811,-837,-252,61],[44,530,964,598],[584,-753,-753,463],[590,-735,539,3],[389,590,110,-667],[556,-961,-446,138],[775,46,-586,-162],[-551,-949,-951,540]]",

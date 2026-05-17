@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[1,2,3],[0,2],[0,1,3],[0,2]]",
-      "desc": "Example 1: false"
+      "desc": "Example 1: false",
+      "output": "false"
     },
     {
       "input": "[[1,3],[0,2],[1,3],[0,2]]",
-      "desc": "Example 2: true"
+      "desc": "Example 2: true",
+      "output": "true"
     },
     {
       "input": "[[]]",
-      "desc": "Edge: single node no edges"
+      "desc": "Edge: single node no edges",
+      "output": "true"
     },
     {
       "input": "[[1],[0]]",
-      "desc": "Edge: 2 nodes 1 edge"
+      "desc": "Edge: 2 nodes 1 edge",
+      "output": "true"
     },
     {
       "input": "[[1,2],[0,2],[0,1]]",
-      "desc": "Edge: triangle false"
+      "desc": "Edge: triangle false",
+      "output": "false"
     },
     {
       "input": "[[1],[0,2],[1,3],[2]]",
-      "desc": "Standard chain bipartite"
+      "desc": "Standard chain bipartite",
+      "output": "true"
     },
     {
       "input": "[[1],[0,2],[1,3],[2,4],[3]]",
-      "desc": "Standard chain 5"
+      "desc": "Standard chain 5",
+      "output": "true"
     },
     {
       "input": "[[1,2],[0,3],[0,3],[1,2]]",
-      "desc": "Standard square bipartite"
+      "desc": "Standard square bipartite",
+      "output": "true"
     },
     {
       "input": "[[],[],[],[]]",
-      "desc": "Standard disconnected"
+      "desc": "Standard disconnected",
+      "output": "true"
     },
     {
       "input": "[[1],[0],[3],[2]]",
-      "desc": "Standard 2 components"
+      "desc": "Standard 2 components",
+      "output": "true"
     },
     {
       "input": "[[1,2,3],[0],[0],[0]]",
-      "desc": "Standard star bipartite"
+      "desc": "Standard star bipartite",
+      "output": "true"
     },
     {
       "input": "[[1,4],[0,2],[1,3],[2,4],[3,0]]",
-      "desc": "Standard 5-cycle false"
+      "desc": "Standard 5-cycle false",
+      "output": "false"
     },
     {
       "input": "[[2,4],[3,5],[0,4],[1,5],[0,2],[1,3]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[[1,3],[0,2,4],[1,3],[0,2,4],[1,3]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[[1],[0,3],[3],[1,2]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[[1,2],[0,3],[0,3],[1,2,4],[3]]",
-      "desc": "Standard 5 nodes"
+      "desc": "Standard 5 nodes",
+      "output": "true"
     },
     {
       "input": "[[1,2,3,4,5],[0],[0],[0],[0],[0]]",
-      "desc": "Standard star 6"
+      "desc": "Standard star 6",
+      "output": "true"
     },
     {
       "input": "[[1,2,3,4,5,6,7,8,9],[0],[0],[0],[0],[0],[0],[0],[0],[0]]",
-      "desc": "Stress 10-node star"
+      "desc": "Stress 10-node star",
+      "output": "true"
     },
     {
       "input": "[[1],[0,2],[1,3],[2,4],[3,5],[4,6],[5,7],[6,8],[7,9],[8]]",
-      "desc": "Stress chain 10"
+      "desc": "Stress chain 10",
+      "output": "true"
     },
     {
       "input": "[[359,398,-798,758,-344,-788],[-383,658,-398,699,987,-534],[760,118,-816,429,525,-883],[31,-62,968,771,-14,71],[-233,169,-331,376,-789,-740],[333,24,843,657,138,-494],[579,681,23,-401,943,-712],[640,239,151,253,875,51]]",
