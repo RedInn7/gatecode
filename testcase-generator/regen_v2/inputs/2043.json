@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"ac\"\n\"b\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "false"
     },
     {
       "input": "\"abcc\"\n\"aab\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "true"
     },
     {
       "input": "\"abcde\"\n\"fghij\"",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "true"
     },
     {
       "input": "\"a\"\n\"a\"",
-      "desc": "Edge: both single same"
+      "desc": "Edge: both single same",
+      "output": "true"
     },
     {
       "input": "\"a\"\n\"b\"",
-      "desc": "Edge: single diff"
+      "desc": "Edge: single diff",
+      "output": "true"
     },
     {
       "input": "\"ab\"\n\"ab\"",
-      "desc": "Standard: identical"
+      "desc": "Standard: identical",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"abc\"",
-      "desc": "Standard: identical 3"
+      "desc": "Standard: identical 3",
+      "output": "true"
     },
     {
       "input": "\"aa\"\n\"bb\"",
-      "desc": "Standard: both 1 distinct"
+      "desc": "Standard: both 1 distinct",
+      "output": "true"
     },
     {
       "input": "\"aab\"\n\"abb\"",
-      "desc": "Standard: both 2 distinct"
+      "desc": "Standard: both 2 distinct",
+      "output": "true"
     },
     {
       "input": "\"aaa\"\n\"bbb\"",
-      "desc": "Edge: 1 distinct each"
+      "desc": "Edge: 1 distinct each",
+      "output": "true"
     },
     {
       "input": "\"abc\"\n\"def\"",
-      "desc": "Standard: equal counts"
+      "desc": "Standard: equal counts",
+      "output": "true"
     },
     {
       "input": "\"aabbcc\"\n\"ddee\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "\"aaaaa\"\n\"abcde\"",
-      "desc": "Standard: 1 vs 5"
+      "desc": "Standard: 1 vs 5",
+      "output": "false"
     },
     {
       "input": "\"abc\"\n\"abcd\"",
-      "desc": "Standard: 3 vs 4"
+      "desc": "Standard: 3 vs 4",
+      "output": "true"
     },
     {
       "input": "\"abcdef\"\n\"a\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "\"hello\"\n\"world\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"xy\"\n\"yz\"",
-      "desc": "Standard: small overlap"
+      "desc": "Standard: small overlap",
+      "output": "true"
     },
     {
       "input": "\"aaabbb\"\n\"ccddee\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "\"abcdefghij\"\n\"klmnopqrst\"",
-      "desc": "Standard: 10 distinct each"
+      "desc": "Standard: 10 distinct each",
+      "output": "true"
     },
     {
       "input": "\"etgruhrvbf\"\n\"uoohdexmgo\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "true"
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= days <= 10^9, 1 <= meetings.length <= 10^5, 1 <= start <= end <= days",
   "input_format": "line1: days (int); line2: meetings (JSON 2D)",
   "testcases": [
-    {"input": "10\n[[5,7],[1,3],[9,10]]", "desc": "Standard: example 1"},
-    {"input": "5\n[[2,4],[1,3]]", "desc": "Standard: example 2"},
-    {"input": "6\n[[1,6]]", "desc": "Standard: example 3 fully booked"},
-    {"input": "1\n[]", "desc": "Edge: no meetings"},
-    {"input": "1\n[[1,1]]", "desc": "Edge: single day booked"},
-    {"input": "1000000000\n[]", "desc": "Edge: max days no meetings"},
-    {"input": "10\n[[1,1]]", "desc": "Edge: single day meeting"},
-    {"input": "10\n[[10,10]]", "desc": "Edge: last day meeting"},
-    {"input": "100\n[[1,50],[51,100]]", "desc": "Standard: full coverage 2 mtgs"},
-    {"input": "100\n[[1,30],[40,60],[70,100]]", "desc": "Standard: gaps"},
-    {"input": "10\n[[1,5],[3,7],[5,10]]", "desc": "Standard: overlapping"},
-    {"input": "20\n[[1,2],[5,7],[10,12],[15,16]]", "desc": "Standard: spaced"},
-    {"input": "1000000\n[[500000,500001]]", "desc": "Edge: small mtg large range"},
-    {"input": "10\n[[3,5]]", "desc": "Standard: single mtg"},
-    {"input": "50\n[[1,10],[10,20],[20,30],[30,40],[40,50]]", "desc": "Standard: chain"},
-    {"input": "100\n[[1,1],[2,2],[3,3],[4,4],[5,5]]", "desc": "Standard: 5 individual"},
-    {"input": "20\n[[5,10]]", "desc": "Standard: single mid"},
-    {"input": "1000000000\n[[1,1000000000]]", "desc": "Edge: full booking max"},
-    {"input": "10\n[[1,10],[1,10],[1,10]]", "desc": "Edge: duplicates full"},
-    {"input": "30\n[[1,5],[10,15],[20,25]]", "desc": "Standard: 3 even gaps"}
+    {
+      "input": "10\n[[5,7],[1,3],[9,10]]",
+      "desc": "Standard: example 1",
+      "output": "2"
+    },
+    {
+      "input": "5\n[[2,4],[1,3]]",
+      "desc": "Standard: example 2",
+      "output": "1"
+    },
+    {
+      "input": "6\n[[1,6]]",
+      "desc": "Standard: example 3 fully booked",
+      "output": "0"
+    },
+    {
+      "input": "1\n[]",
+      "desc": "Edge: no meetings",
+      "output": "1"
+    },
+    {
+      "input": "1\n[[1,1]]",
+      "desc": "Edge: single day booked",
+      "output": "0"
+    },
+    {
+      "input": "1000000000\n[]",
+      "desc": "Edge: max days no meetings",
+      "output": "1000000000"
+    },
+    {
+      "input": "10\n[[1,1]]",
+      "desc": "Edge: single day meeting",
+      "output": "9"
+    },
+    {
+      "input": "10\n[[10,10]]",
+      "desc": "Edge: last day meeting",
+      "output": "9"
+    },
+    {
+      "input": "100\n[[1,50],[51,100]]",
+      "desc": "Standard: full coverage 2 mtgs",
+      "output": "0"
+    },
+    {
+      "input": "100\n[[1,30],[40,60],[70,100]]",
+      "desc": "Standard: gaps",
+      "output": "18"
+    },
+    {
+      "input": "10\n[[1,5],[3,7],[5,10]]",
+      "desc": "Standard: overlapping",
+      "output": "0"
+    },
+    {
+      "input": "20\n[[1,2],[5,7],[10,12],[15,16]]",
+      "desc": "Standard: spaced",
+      "output": "10"
+    },
+    {
+      "input": "1000000\n[[500000,500001]]",
+      "desc": "Edge: small mtg large range",
+      "output": "999998"
+    },
+    {
+      "input": "10\n[[3,5]]",
+      "desc": "Standard: single mtg",
+      "output": "7"
+    },
+    {
+      "input": "50\n[[1,10],[10,20],[20,30],[30,40],[40,50]]",
+      "desc": "Standard: chain",
+      "output": "0"
+    },
+    {
+      "input": "100\n[[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "desc": "Standard: 5 individual",
+      "output": "95"
+    },
+    {
+      "input": "20\n[[5,10]]",
+      "desc": "Standard: single mid",
+      "output": "14"
+    },
+    {
+      "input": "1000000000\n[[1,1000000000]]",
+      "desc": "Edge: full booking max",
+      "output": "0"
+    },
+    {
+      "input": "10\n[[1,10],[1,10],[1,10]]",
+      "desc": "Edge: duplicates full",
+      "output": "0"
+    },
+    {
+      "input": "30\n[[1,5],[10,15],[20,25]]",
+      "desc": "Standard: 3 even gaps",
+      "output": "13"
+    }
   ]
 }

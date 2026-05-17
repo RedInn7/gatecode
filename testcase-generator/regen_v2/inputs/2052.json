@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[10,10,10,10,10]\n5",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "50"
     },
     {
       "input": "[1,10,3,3,3]\n3",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "17"
     },
     {
       "input": "[1]\n1",
-      "desc": "Edge: n=1 k=1"
+      "desc": "Edge: n=1 k=1",
+      "output": "1"
     },
     {
       "input": "[1]\n10",
-      "desc": "Edge: k > n"
+      "desc": "Edge: k > n",
+      "output": "10"
     },
     {
       "input": "[1000000000]\n1",
-      "desc": "Edge: max value"
+      "desc": "Edge: max value",
+      "output": "1000000000"
     },
     {
       "input": "[1000000000]\n100",
-      "desc": "Edge: max repeated picks"
+      "desc": "Edge: max repeated picks",
+      "output": "1500000092"
     },
     {
       "input": "[1,1,1,1,1]\n10",
-      "desc": "Edge: all small k > n"
+      "desc": "Edge: all small k > n",
+      "output": "10"
     },
     {
       "input": "[100,100,100,100,100]\n3",
-      "desc": "Standard: same max picks"
+      "desc": "Standard: same max picks",
+      "output": "300"
     },
     {
       "input": "[100,1,1,1,1]\n5",
-      "desc": "Standard: greedy"
+      "desc": "Standard: greedy",
+      "output": "152"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "40"
     },
     {
       "input": "[1000000000,1000000000,1000000000]\n10",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4370370376"
     },
     {
       "input": "[3,9,27,81]\n4",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "144"
     },
     {
       "input": "[406298669,356075605,811026585,654312572,638462574,456969467,599456317,889119940,102958919,522249859,115351220,738885719,592344716,191735703,275666559,144448281,566167105,339819120,462589624,906280321,31873501,693671783,184049146,265987632,743081162]\n4",
-      "desc": "Regenerated: diverse at position 12"
+      "desc": "Regenerated: diverse at position 12",
+      "output": "3349508008"
     },
     {
       "input": "[729,243,81,27,9,3,1]\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1377"
     },
     {
       "input": "[100,99,98,97,96]\n10",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "655"
     },
     {
       "input": "[1000000000,1,1,1,1]\n50",
-      "desc": "Edge: 50 ops on one large"
+      "desc": "Edge: 50 ops on one large",
+      "output": "1500000042"
     },
     {
       "input": "[2,4,6,8,10]\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "32"
     },
     {
       "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "40"
     },
     {
       "input": "[100,200,300,400,500]\n3",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1200"
     },
     {
       "input": "[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]\n10",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1050"
     }
   ]
 }

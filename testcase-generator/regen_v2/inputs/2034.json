@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"abcbdd\"",
-      "desc": "Standard: example 1 true"
+      "desc": "Standard: example 1 true",
+      "output": "true"
     },
     {
       "input": "\"bcbddxy\"",
-      "desc": "Standard: example 2 false"
+      "desc": "Standard: example 2 false",
+      "output": "false"
     },
     {
       "input": "\"aaa\"",
-      "desc": "Edge: minimum n=3"
+      "desc": "Edge: minimum n=3",
+      "output": "true"
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge: 3 distinct, true (each char)"
+      "desc": "Edge: 3 distinct, true (each char)",
+      "output": "true"
     },
     {
       "input": "\"aab\"",
-      "desc": "Edge: a,a,b"
+      "desc": "Edge: a,a,b",
+      "output": "true"
     },
     {
       "input": "\"abb\"",
-      "desc": "Edge: a,b,b"
+      "desc": "Edge: a,b,b",
+      "output": "true"
     },
     {
       "input": "\"aba\"",
-      "desc": "Edge: a,b,a (each palindrome)"
+      "desc": "Edge: a,b,a (each palindrome)",
+      "output": "true"
     },
     {
       "input": "\"aaaa\"",
-      "desc": "Edge: 4 a's"
+      "desc": "Edge: 4 a's",
+      "output": "true"
     },
     {
       "input": "\"aaaaa\"",
-      "desc": "Edge: 5 a's"
+      "desc": "Edge: 5 a's",
+      "output": "true"
     },
     {
       "input": "\"abcde\"",
-      "desc": "Standard: all distinct n=5"
+      "desc": "Standard: all distinct n=5",
+      "output": "false"
     },
     {
       "input": "\"racecar\"",
-      "desc": "Standard: palindrome"
+      "desc": "Standard: palindrome",
+      "output": "true"
     },
     {
       "input": "\"aabaa\"",
-      "desc": "Standard: palindrome n=5"
+      "desc": "Standard: palindrome n=5",
+      "output": "true"
     },
     {
       "input": "\"abcba\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"aabbccdd\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "\"aaabbbccc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"abcdefghi\"",
-      "desc": "Standard: 9 distinct"
+      "desc": "Standard: 9 distinct",
+      "output": "false"
     },
     {
       "input": "\"zzzzzzzzzzz\"",
-      "desc": "Edge: all same long"
+      "desc": "Edge: all same long",
+      "output": "true"
     },
     {
       "input": "\"abcbabcba\"",
-      "desc": "Standard: complex"
+      "desc": "Standard: complex",
+      "output": "true"
     },
     {
       "input": "\"abacabadaba\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "\"oaymonsorgljau\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "false"
     }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 2*10^4",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Standard: example 1"},
-    {"input": "2", "desc": "Standard: example 2"},
-    {"input": "5", "desc": "Standard: example 3"},
-    {"input": "3", "desc": "Standard"},
-    {"input": "4", "desc": "Standard"},
-    {"input": "10", "desc": "Standard"},
-    {"input": "20", "desc": "Standard"},
-    {"input": "50", "desc": "Standard"},
-    {"input": "100", "desc": "Standard"},
-    {"input": "500", "desc": "Standard"},
-    {"input": "1000", "desc": "Standard"},
-    {"input": "5000", "desc": "Standard"},
-    {"input": "10000", "desc": "Standard"},
-    {"input": "20000", "desc": "Edge: max"},
-    {"input": "19999", "desc": "Edge: max-1"},
-    {"input": "7", "desc": "Standard"},
-    {"input": "15", "desc": "Standard"},
-    {"input": "25", "desc": "Standard"},
-    {"input": "144", "desc": "Standard"},
-    {"input": "12345", "desc": "Standard"}
+    {
+      "input": "1",
+      "desc": "Standard: example 1",
+      "output": "5"
+    },
+    {
+      "input": "2",
+      "desc": "Standard: example 2",
+      "output": "10"
+    },
+    {
+      "input": "5",
+      "desc": "Standard: example 3",
+      "output": "68"
+    },
+    {
+      "input": "3",
+      "desc": "Standard",
+      "output": "19"
+    },
+    {
+      "input": "4",
+      "desc": "Standard",
+      "output": "35"
+    },
+    {
+      "input": "10",
+      "desc": "Standard",
+      "output": "1739"
+    },
+    {
+      "input": "20",
+      "desc": "Standard",
+      "output": "1151090"
+    },
+    {
+      "input": "50",
+      "desc": "Standard",
+      "output": "227130014"
+    },
+    {
+      "input": "100",
+      "desc": "Standard",
+      "output": "173981881"
+    },
+    {
+      "input": "500",
+      "desc": "Standard",
+      "output": "518032023"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard",
+      "output": "89945857"
+    },
+    {
+      "input": "5000",
+      "desc": "Standard",
+      "output": "598627501"
+    },
+    {
+      "input": "10000",
+      "desc": "Standard",
+      "output": "76428576"
+    },
+    {
+      "input": "20000",
+      "desc": "Edge: max",
+      "output": "759959057"
+    },
+    {
+      "input": "19999",
+      "desc": "Edge: max-1",
+      "output": "706457669"
+    },
+    {
+      "input": "7",
+      "desc": "Standard",
+      "output": "249"
+    },
+    {
+      "input": "15",
+      "desc": "Standard",
+      "output": "44779"
+    },
+    {
+      "input": "25",
+      "desc": "Standard",
+      "output": "29599477"
+    },
+    {
+      "input": "144",
+      "desc": "Standard",
+      "output": "18208803"
+    },
+    {
+      "input": "12345",
+      "desc": "Standard",
+      "output": "480007966"
+    }
   ]
 }

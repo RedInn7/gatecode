@@ -1354,5 +1354,35 @@
     "slug": "escape-a-large-maze",
     "fqid": 1036,
     "error": "Testcase 19 failed: RE (exit 1): py\", line 292, in <module>\n    _result = Solution().isEscapePossible(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpwcsp5ie1.py\", line 155, in isEscapePossible\n    s = {(x, y) for x, y in blocked}\n                    ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 2035,
+    "slug": "spiral-matrix-iv",
+    "fqid": 2326,
+    "error": "Testcase 3 failed: RE (exit 1): \"/tmp/tmpr1rwrcbr.py\", line 294, in <module>\n    _result = Solution().spiralMatrix(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpr1rwrcbr.py\", line 151, in spiralMatrix\n    ans[i][j] = head.val\n                ^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'val'\n"
+  },
+  {
+    "pid": 2041,
+    "slug": "unique-paths-iii",
+    "fqid": 980,
+    "error": "Testcase 19 failed: RE (exit 1): quePathsIII(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphfpdch0l.py\", line 155, in uniquePathsIII\n    start = next((i, j) for i in range(m) for j in range(n) if grid[i][j] == 1)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nStopIteration\n"
+  },
+  {
+    "pid": 2027,
+    "slug": "before-and-after-puzzle",
+    "fqid": 1181,
+    "error": "Testcase 19 failed: RE (exit 1): gnvld5y.py\", line 285, in <module>\n    _result = Solution().beforeAndAfterPuzzles(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpygnvld5y.py\", line 144, in beforeAndAfterPuzzles\n    ws = p.split()\n         ^^^^^^^\nAttributeError: 'int' object has no attribute 'split'\n"
+  },
+  {
+    "pid": 2051,
+    "slug": "maximum-score-of-a-node-sequence",
+    "fqid": 2242,
+    "error": "Testcase 18 failed: RE (exit 1):  call last):\n  File \"/tmp/tmpehaf6kzd.py\", line 288, in <module>\n    _result = Solution().maximumScore(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpehaf6kzd.py\", line 143, in maximumScore\n    for a, b in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 2055,
+    "slug": "find-valid-pair-of-adjacent-digits-in-string",
+    "fqid": 3438,
+    "error": "Testcase 19 failed: RE (exit 1): nt call last):\n  File \"/tmp/tmp7u72mnis.py\", line 281, in <module>\n    _result = Solution().findValidPair(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp7u72mnis.py\", line 143, in findValidPair\n    for x in map(int, s):\nValueError: invalid literal for int() with base 10: 'h'\n"
   }
 ]

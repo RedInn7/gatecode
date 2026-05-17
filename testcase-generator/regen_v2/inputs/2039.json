@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"o\"",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "1"
     },
     {
       "input": "\"abba\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "4"
     },
     {
       "input": "\"zzabba\"",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "5"
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: n=2"
+      "desc": "Edge: n=2",
+      "output": "2"
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge: n=2 same (still almost-palindrome)"
+      "desc": "Edge: n=2 same (still almost-palindrome)",
+      "output": "2"
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge: n=3"
+      "desc": "Edge: n=3",
+      "output": "2"
     },
     {
       "input": "\"abcd\"",
-      "desc": "Standard: 4 distinct"
+      "desc": "Standard: 4 distinct",
+      "output": "2"
     },
     {
       "input": "\"aaaa\"",
-      "desc": "Edge: all same"
+      "desc": "Edge: all same",
+      "output": "4"
     },
     {
       "input": "\"racecar\"",
-      "desc": "Standard: full palindrome"
+      "desc": "Standard: full palindrome",
+      "output": "7"
     },
     {
       "input": "\"abacaba\"",
-      "desc": "Standard: palindrome"
+      "desc": "Standard: palindrome",
+      "output": "7"
     },
     {
       "input": "\"abcdefg\"",
-      "desc": "Standard: no almost-palindrome longer than 2"
+      "desc": "Standard: no almost-palindrome longer than 2",
+      "output": "2"
     },
     {
       "input": "\"abcabc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4"
     },
     {
       "input": "\"abccba\"",
-      "desc": "Standard: palindrome"
+      "desc": "Standard: palindrome",
+      "output": "6"
     },
     {
       "input": "\"abcdcba\"",
-      "desc": "Standard: palindrome odd"
+      "desc": "Standard: palindrome odd",
+      "output": "7"
     },
     {
       "input": "\"hello\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "3"
     },
     {
       "input": "\"world\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "\"abcdedcba\"",
-      "desc": "Standard: long palindrome"
+      "desc": "Standard: long palindrome",
+      "output": "9"
     },
     {
       "input": "\"banana\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "6"
     },
     {
       "input": "\"ababababab\"",
-      "desc": "Standard: alternating"
+      "desc": "Standard: alternating",
+      "output": "10"
     },
     {
       "input": "\"xcsnqnzsrfkg\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "6"
     }
   ]
 }
