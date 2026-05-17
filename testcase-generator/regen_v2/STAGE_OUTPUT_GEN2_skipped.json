@@ -250,5 +250,11 @@
     "slug": "merge-operations-for-minimum-travel-time",
     "fqid": 3538,
     "reason": "No Python3 solution found for fqid=3538"
+  },
+  {
+    "pid": 1735,
+    "slug": "manhattan-distances-of-all-arrangements-of-pieces",
+    "fqid": 3426,
+    "reason": "No Python3 solution found for fqid=3426"
   }
 ]

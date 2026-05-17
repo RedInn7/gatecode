@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[20,15,1],[20,17,0],[50,20,1],[50,80,0],[80,19,1]]",
-      "desc": "Standard: example1"
+      "desc": "Standard: example1",
+      "output": "[50, 20, 80, 15, 17, 19]"
     },
     {
       "input": "[[1,2,1],[2,3,0],[3,4,1]]",
-      "desc": "Standard: chain"
+      "desc": "Standard: chain",
+      "output": "[1, 2, null, null, 3, 4]"
     },
     {
       "input": "[[5,3,1]]",
-      "desc": "Edge: single pair root+child"
+      "desc": "Edge: single pair root+child",
+      "output": "[5, 3]"
     },
     {
       "input": "[[10,5,1],[10,15,0]]",
-      "desc": "Edge: root with two children"
+      "desc": "Edge: root with two children",
+      "output": "[10, 5, 15]"
     },
     {
       "input": "[[1,2,1],[1,3,0],[2,4,1],[2,5,0],[3,6,1],[3,7,0]]",
-      "desc": "Standard: full binary tree 7"
+      "desc": "Standard: full binary tree 7",
+      "output": "[1, 2, 3, 4, 5, 6, 7]"
     },
     {
       "input": "[[100,50,1],[50,25,1],[50,75,0],[25,10,1]]",
-      "desc": "Standard: BST-like"
+      "desc": "Standard: BST-like",
+      "output": "[100, 50, null, 25, 75, 10]"
     },
     {
       "input": "[[1,2,1],[2,3,1],[3,4,1],[4,5,1]]",
-      "desc": "Standard: left chain"
+      "desc": "Standard: left chain",
+      "output": "[1, 2, null, 3, null, 4, null, 5]"
     },
     {
       "input": "[[1,2,0],[2,3,0],[3,4,0],[4,5,0]]",
-      "desc": "Standard: right chain"
+      "desc": "Standard: right chain",
+      "output": "[1, null, 2, null, 3, null, 4, null, 5]"
     },
     {
       "input": "[[10,5,1],[5,3,1],[5,7,0],[10,15,0],[15,13,1],[15,20,0]]",
-      "desc": "Stress: balanced"
+      "desc": "Stress: balanced",
+      "output": "[10, 5, 15, 3, 7, 13, 20]"
     },
     {
       "input": "[[1,2,0],[2,3,1],[1,4,0],[1,5,0],[2,6,1],[4,7,1],[2,8,0],[3,9,1],[1,10,1],[10,11,0]]",
-      "desc": "Stress: random tree 11 nodes"
+      "desc": "Stress: random tree 11 nodes",
+      "output": "[1, 10, 5, null, 11]"
     },
     {
       "input": "[[50,30,1],[30,20,1],[30,40,0],[50,70,0],[70,60,1],[70,80,0]]",
-      "desc": "Stress: full tree 7"
+      "desc": "Stress: full tree 7",
+      "output": "[50, 30, 70, 20, 40, 60, 80]"
     },
     {
       "input": "[[1,2,1]]",
-      "desc": "Edge: root left child"
+      "desc": "Edge: root left child",
+      "output": "[1, 2]"
     },
     {
       "input": "[[1,2,0]]",
-      "desc": "Edge: root right child"
+      "desc": "Edge: root right child",
+      "output": "[1, null, 2]"
     },
     {
       "input": "[[10,5,1],[10,15,0],[5,3,1],[5,7,0],[15,12,1],[15,20,0],[3,1,1],[3,4,0]]",
-      "desc": "Standard: larger tree"
+      "desc": "Standard: larger tree",
+      "output": "[10, 5, 15, 3, 7, 12, 20, 1, 4]"
     },
     {
       "input": "[[100,200,1],[100,300,0],[200,400,1],[200,500,0],[300,600,1],[300,700,0]]",
-      "desc": "Standard: large values"
+      "desc": "Standard: large values",
+      "output": "[100, 200, 300, 400, 500, 600, 700]"
     },
     {
       "input": "[[1,2,1],[2,4,1],[4,8,1],[8,16,1],[16,32,1]]",
-      "desc": "Killer: left-skewed deep"
+      "desc": "Killer: left-skewed deep",
+      "output": "[1, 2, null, 4, null, 8, null, 16, null, 32]"
     },
     {
       "input": "[[1,2,0],[2,4,0],[4,8,0],[8,16,0],[16,32,0]]",
-      "desc": "Killer: right-skewed deep"
+      "desc": "Killer: right-skewed deep",
+      "output": "[1, null, 2, null, 4, null, 8, null, 16, null, 32]"
     },
     {
       "input": "[[5,3,1],[5,7,0],[3,2,1],[3,4,0],[7,6,1],[7,8,0],[2,1,1]]",
-      "desc": "Stress: near-complete"
+      "desc": "Stress: near-complete",
+      "output": "[5, 3, 7, 2, 4, 6, 8, 1]"
     },
     {
       "input": "[[1000,500,1],[500,250,1],[500,750,0],[1000,1500,0]]",
-      "desc": "Standard: large node values"
+      "desc": "Standard: large node values",
+      "output": "[1000, 500, 1500, 250, 750]"
     }
   ]
 }

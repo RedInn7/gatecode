@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[10,5,15,3,7,null,18]\n7\n15",
-      "desc": "Standard: example1=32"
+      "desc": "Standard: example1=32",
+      "output": "32"
     },
     {
       "input": "[10,5,15,3,7,13,18,1,null,6]\n6\n10",
-      "desc": "Standard: example2=23"
+      "desc": "Standard: example2=23",
+      "output": "23"
     },
     {
       "input": "[1]\n1\n1",
-      "desc": "Edge: single node in range"
+      "desc": "Edge: single node in range",
+      "output": "1"
     },
     {
       "input": "[1]\n2\n5",
-      "desc": "Edge: single node out of range"
+      "desc": "Edge: single node out of range",
+      "output": "0"
     },
     {
       "input": "[5,3,7,1,4,6,9]\n1\n9",
-      "desc": "Standard: all in range"
+      "desc": "Standard: all in range",
+      "output": "35"
     },
     {
       "input": "[5,3,7,1,4,6,9]\n10\n20",
-      "desc": "Standard: none in range"
+      "desc": "Standard: none in range",
+      "output": "0"
     },
     {
       "input": "[5,3,7,1,4,6,9]\n4\n6",
-      "desc": "Standard: middle range"
+      "desc": "Standard: middle range",
+      "output": "15"
     },
     {
       "input": "[20,10,30,5,15,25,35,1,7,12,18]\n10\n25",
-      "desc": "Stress: complex tree"
+      "desc": "Stress: complex tree",
+      "output": "100"
     },
     {
       "input": "[100,50,150,25,75,125,175]\n50\n150",
-      "desc": "Stress: wide range"
+      "desc": "Stress: wide range",
+      "output": "500"
     },
     {
       "input": "[1,null,2,null,3,null,4,null,5]\n2\n4",
-      "desc": "Killer: right-skewed"
+      "desc": "Killer: right-skewed",
+      "output": "9"
     },
     {
       "input": "[5,4,null,3,null,2,null,1]\n2\n4",
-      "desc": "Killer: left-skewed"
+      "desc": "Killer: left-skewed",
+      "output": "9"
     },
     {
       "input": "[10,5,15,3,7,null,18]\n1\n18",
-      "desc": "Standard: full range"
+      "desc": "Standard: full range",
+      "output": "58"
     },
     {
       "input": "[50,25,75,10,30,60,90,5,15,27,35,55,65,85,95]\n25\n75",
-      "desc": "Stress: 15 nodes"
+      "desc": "Stress: 15 nodes",
+      "output": "422"
     },
     {
       "input": "[8,4,12,2,6,10,14]\n5\n11",
-      "desc": "Standard: straddling"
+      "desc": "Standard: straddling",
+      "output": "24"
     },
     {
       "input": "[1000,500,2000000]\n100\n2000000",
-      "desc": "Killer: max val=2*10^6"
+      "desc": "Killer: max val=2*10^6",
+      "output": "2001500"
     },
     {
       "input": "[10,5,15,3,7,null,18]\n7\n7",
-      "desc": "Standard: exact node"
+      "desc": "Standard: exact node",
+      "output": "7"
     },
     {
       "input": "[3,1,4,null,2]\n2\n3",
-      "desc": "Standard: two nodes"
+      "desc": "Standard: two nodes",
+      "output": "5"
     },
     {
       "input": "[6,3,9,1,4,7,10,null,2,null,5,null,null,null,null]\n3\n9",
-      "desc": "Stress: deep tree"
+      "desc": "Stress: deep tree",
+      "output": "34"
     },
     {
       "input": "[1000000]\n1\n1000000",
-      "desc": "Edge: single max node in range"
+      "desc": "Edge: single max node in range",
+      "output": "1000000"
     },
     {
       "input": "[5,3,7]\n4\n6",
-      "desc": "Standard: gaps in range"
+      "desc": "Standard: gaps in range",
+      "output": "5"
     }
   ]
 }

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "1",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "true"
     },
     {
       "input": "-100",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "false"
     },
     {
       "input": "-100",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "false"
     },
     {
       "input": "0",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "false"
     },
     {
       "input": "0",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "false"
     },
     {
       "input": "823",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "true"
     },
     {
       "input": "-918",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "true"
     },
     {
       "input": "615",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "true"
     },
     {
       "input": "-636",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "false"
     },
     {
       "input": "172",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "false"
     },
     {
       "input": "-382",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "true"
     },
     {
       "input": "-713",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "true"
     },
     {
       "input": "-775",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "true"
     },
     {
       "input": "453",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "true"
     },
     {
       "input": "-898",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "true"
     },
     {
       "input": "875",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "true"
     },
     {
       "input": "666",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "true"
     },
     {
       "input": "-455",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "true"
     },
     {
       "input": "-228",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "false"
     },
     {
       "input": "-307",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "true"
     }
   ]
 }

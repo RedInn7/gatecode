@@ -1060,5 +1060,23 @@
     "slug": "maximize-profit-from-task-assignment",
     "fqid": 3476,
     "error": "Testcase 9 failed: RE (exit 1): t):\n  File \"/tmp/tmptkd7n6qc.py\", line 288, in <module>\n    _result = Solution().maxProfit(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmptkd7n6qc.py\", line 143, in maxProfit\n    for skill, profit in tasks:\n        ^^^^^^^^^^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1726,
+    "slug": "find-x-sum-of-all-k-long-subarrays-i",
+    "fqid": 3318,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpspt97_e6.py\", line 323, in <module>\n    _result = Solution().findXSum(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpspt97_e6.py\", line 187, in findXSum\n    remove(nums[j])\n           ~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1727,
+    "slug": "1-bit-and-2-bit-characters",
+    "fqid": 717,
+    "error": "Testcase 5 failed: RE (exit 1): all last):\n  File \"/tmp/tmpiliig0nz.py\", line 278, in <module>\n    _result = Solution().isOneBitCharacter(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpiliig0nz.py\", line 144, in isOneBitCharacter\n    i += bits[i] + 1\n         ~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1718,
+    "slug": "cycle-length-queries-in-a-tree",
+    "fqid": 2509,
+    "error": "Testcase 5 failed: RE (exit 1): \"/tmp/tmp45idew19.py\", line 285, in <module>\n    _result = Solution().cycleLengthQueries(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp45idew19.py\", line 143, in cycleLengthQueries\n    for a, b in queries:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
   }
 ]
