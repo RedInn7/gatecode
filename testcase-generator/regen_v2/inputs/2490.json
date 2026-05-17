@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "1"
     },
     {
       "input": "[7,7,7,7,7,7]",
-      "desc": "Edge: example2 all same"
+      "desc": "Edge: example2 all same",
+      "output": "1"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge: n=2 distinct"
+      "desc": "Edge: n=2 distinct",
+      "output": "1"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge: n=2 same"
+      "desc": "Edge: n=2 same",
+      "output": "1"
     },
     {
       "input": "[1,2,3,4]",
-      "desc": "Edge: all distinct n=4"
+      "desc": "Edge: all distinct n=4",
+      "output": "2"
     },
     {
       "input": "[1,1,2,2]",
-      "desc": "Edge: balanced n=4"
+      "desc": "Edge: balanced n=4",
+      "output": "1"
     },
     {
       "input": "[100000,100000,100000,100000]",
-      "desc": "Edge: max value all same"
+      "desc": "Edge: max value all same",
+      "output": "1"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard: all distinct"
+      "desc": "Standard: all distinct",
+      "output": "5"
     },
     {
       "input": "[1,1,1,2,2,3,3,4,4,5]",
-      "desc": "Standard: frequency mix"
+      "desc": "Standard: frequency mix",
+      "output": "2"
     },
     {
       "input": "[15826,75241,13923,23711,63731,53962,10738,66536,18204,67516,73475,86763,14343,36911,98255,61529,66153,25629,26289,21005,2313,14263,42114,52575,59833,75405,75813,45419,90184,68631,2674,66360,67469,33114,13405,97205,63627,41497,82407,4449,90383,95406,52576,12291,27116,80130,93975,99011,26936,68069,68893,28458,59905,40816,5562,9063,40981,57606,38504,35346,75646,70803,76712,77969,66636,48339,68989]",
-      "desc": "Regenerated: standard at position 9"
+      "desc": "Regenerated: standard at position 9",
+      "output": "34"
     },
     {
       "input": "[1,2,2,3,3,3,4,4,4,4]",
-      "desc": "Standard: triangular freq"
+      "desc": "Standard: triangular freq",
+      "output": "2"
     },
     {
       "input": "[1000,2000,3000,4000,1000,2000,3000,4000]",
-      "desc": "Standard: balanced 4 values"
+      "desc": "Standard: balanced 4 values",
+      "output": "2"
     },
     {
       "input": "[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4]",
-      "desc": "Standard: 4 equal groups"
+      "desc": "Standard: 4 equal groups",
+      "output": "2"
     },
     {
       "input": "[100000,100000,1,1,2,2,3,3]",
-      "desc": "Standard: pair freq"
+      "desc": "Standard: pair freq",
+      "output": "2"
     },
     {
       "input": "[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1]",
-      "desc": "Standard: cycle 1 wins"
+      "desc": "Standard: cycle 1 wins",
+      "output": "3"
     },
     {
       "input": "[7,7,7,7,7,7,7,7,7,7,1,2,3,4,5,6]",
-      "desc": "Standard: 10 of 16"
+      "desc": "Standard: 10 of 16",
+      "output": "1"
     },
     {
       "input": "[5,5,5,5,5,5,5,5,5,5,5,5,1,2,3,4]",
-      "desc": "Standard: 12 same"
+      "desc": "Standard: 12 same",
+      "output": "1"
     },
     {
       "input": "[1,1,1,1,2,2,2,2,3,3,3,3]",
-      "desc": "Standard: balanced triple"
+      "desc": "Standard: balanced triple",
+      "output": "2"
     },
     {
       "input": "[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10]",
-      "desc": "Stress: all paired"
+      "desc": "Stress: all paired",
+      "output": "5"
     },
     {
       "input": "[100000,99999,100000,99999,100000,99999,1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Killer: max values dominant"
+      "desc": "Killer: max values dominant",
+      "output": "4"
     }
   ]
 }

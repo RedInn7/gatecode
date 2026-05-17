@@ -4,25 +4,105 @@
   "inferred_constraints": "s1.length == s2.length == n, 1 <= n <= 10^5, lowercase letters",
   "input_format": "line1: s1 (JSON string); line2: s2 (JSON string)",
   "testcases": [
-    {"input": "\"abc\"\n\"xya\"", "desc": "Edge: example1 true"},
-    {"input": "\"abe\"\n\"acd\"", "desc": "Edge: example2 false"},
-    {"input": "\"leetcodee\"\n\"interview\"", "desc": "Edge: example3 true"},
-    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 same"},
-    {"input": "\"a\"\n\"b\"", "desc": "Edge: n=1 diff"},
-    {"input": "\"z\"\n\"a\"", "desc": "Edge: extreme z vs a"},
-    {"input": "\"aaaa\"\n\"aaaa\"", "desc": "Edge: identical"},
-    {"input": "\"zzzz\"\n\"zzzz\"", "desc": "Edge: both max"},
-    {"input": "\"abcd\"\n\"dcba\"", "desc": "Standard: reversed"},
-    {"input": "\"hello\"\n\"world\"", "desc": "Standard: random words"},
-    {"input": "\"abcde\"\n\"edcba\"", "desc": "Standard: 5-char reversed"},
-    {"input": "\"aabb\"\n\"ccdd\"", "desc": "Standard: clear winner"},
-    {"input": "\"mnop\"\n\"abcd\"", "desc": "Standard: m..p beats a..d"},
-    {"input": "\"zzzaaa\"\n\"aaazzz\"", "desc": "Standard: mirror"},
-    {"input": "\"aezzz\"\n\"zzzab\"", "desc": "Standard: scattered"},
-    {"input": "\"qwertyuiop\"\n\"poiuytrewq\"", "desc": "Standard: keyboard reverse"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard: alphabet vs reverse"},
-    {"input": "\"abcdefghij\"\n\"abcdefghij\"", "desc": "Standard: equal long"},
-    {"input": "\"yyyyyyyyyy\"\n\"zzzzzzzzzz\"", "desc": "Stress: y vs z all max-1 vs max"},
-    {"input": "\"abababababababababab\"\n\"babababababababababa\"", "desc": "Killer: alternating swap"}
+    {
+      "input": "\"abc\"\n\"xya\"",
+      "desc": "Edge: example1 true",
+      "output": "true"
+    },
+    {
+      "input": "\"abe\"\n\"acd\"",
+      "desc": "Edge: example2 false",
+      "output": "false"
+    },
+    {
+      "input": "\"leetcodee\"\n\"interview\"",
+      "desc": "Edge: example3 true",
+      "output": "true"
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "desc": "Edge: n=1 same",
+      "output": "true"
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "desc": "Edge: n=1 diff",
+      "output": "true"
+    },
+    {
+      "input": "\"z\"\n\"a\"",
+      "desc": "Edge: extreme z vs a",
+      "output": "true"
+    },
+    {
+      "input": "\"aaaa\"\n\"aaaa\"",
+      "desc": "Edge: identical",
+      "output": "true"
+    },
+    {
+      "input": "\"zzzz\"\n\"zzzz\"",
+      "desc": "Edge: both max",
+      "output": "true"
+    },
+    {
+      "input": "\"abcd\"\n\"dcba\"",
+      "desc": "Standard: reversed",
+      "output": "true"
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "desc": "Standard: random words",
+      "output": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"edcba\"",
+      "desc": "Standard: 5-char reversed",
+      "output": "true"
+    },
+    {
+      "input": "\"aabb\"\n\"ccdd\"",
+      "desc": "Standard: clear winner",
+      "output": "true"
+    },
+    {
+      "input": "\"mnop\"\n\"abcd\"",
+      "desc": "Standard: m..p beats a..d",
+      "output": "true"
+    },
+    {
+      "input": "\"zzzaaa\"\n\"aaazzz\"",
+      "desc": "Standard: mirror",
+      "output": "true"
+    },
+    {
+      "input": "\"aezzz\"\n\"zzzab\"",
+      "desc": "Standard: scattered",
+      "output": "true"
+    },
+    {
+      "input": "\"qwertyuiop\"\n\"poiuytrewq\"",
+      "desc": "Standard: keyboard reverse",
+      "output": "true"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Standard: alphabet vs reverse",
+      "output": "true"
+    },
+    {
+      "input": "\"abcdefghij\"\n\"abcdefghij\"",
+      "desc": "Standard: equal long",
+      "output": "true"
+    },
+    {
+      "input": "\"yyyyyyyyyy\"\n\"zzzzzzzzzz\"",
+      "desc": "Stress: y vs z all max-1 vs max",
+      "output": "true"
+    },
+    {
+      "input": "\"abababababababababab\"\n\"babababababababababa\"",
+      "desc": "Killer: alternating swap",
+      "output": "true"
+    }
   ]
 }

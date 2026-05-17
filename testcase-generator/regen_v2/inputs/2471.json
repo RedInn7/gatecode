@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= deadends.length <= 500, deadends[i].length == 4, target.length == 4, target consists of digits, target not in deadends",
   "input_format": "line1: deadends (JSON array of strings); line2: target (JSON string)",
   "testcases": [
-    {"input": "[\"0201\",\"0101\",\"0102\",\"1212\",\"2002\"]\n\"0202\"", "desc": "Edge: example1"},
-    {"input": "[\"8888\"]\n\"0009\"", "desc": "Edge: example2"},
-    {"input": "[\"8887\",\"8889\",\"8878\",\"8898\",\"8788\",\"8988\",\"7888\",\"9888\"]\n\"8888\"", "desc": "Edge: target surrounded by deadends -1"},
-    {"input": "[\"0001\"]\n\"0000\"", "desc": "Edge: target=start 0 moves"},
-    {"input": "[\"1234\"]\n\"0001\"", "desc": "Edge: trivial 1 move"},
-    {"input": "[\"0000\"]\n\"0001\"", "desc": "Edge: start in deadends -1"},
-    {"input": "[\"9999\"]\n\"0001\"", "desc": "Standard: 1 move avoid far deadend"},
-    {"input": "[\"0102\",\"0201\"]\n\"0202\"", "desc": "Standard: 2-deadend path"},
-    {"input": "[]\n\"5555\"", "desc": "Edge: no deadends"},
-    {"input": "[\"1111\",\"2222\",\"3333\",\"4444\",\"5555\",\"6666\",\"7777\",\"8888\",\"9999\"]\n\"5432\"", "desc": "Standard: diagonal deadends"},
-    {"input": "[\"0001\",\"0010\",\"0100\",\"1000\",\"9000\",\"0900\",\"0090\",\"0009\"]\n\"0000\"", "desc": "Edge: start=target moves=0"},
-    {"input": "[\"0001\",\"0010\",\"0100\",\"1000\"]\n\"1234\"", "desc": "Standard: all single-step deadends from start"},
-    {"input": "[\"1000\",\"0900\",\"0090\",\"0009\"]\n\"1000\"", "desc": "Edge: target=deadend -1"},
-    {"input": "[\"5000\"]\n\"5001\"", "desc": "Standard: 5 turns then 1"},
-    {"input": "[\"0000\",\"9999\",\"0001\",\"1000\",\"0010\",\"0100\"]\n\"4444\"", "desc": "Edge: start in deadends -1"},
-    {"input": "[\"1234\",\"5678\",\"4321\",\"8765\"]\n\"9876\"", "desc": "Standard: random deadends far"},
-    {"input": "[\"0123\",\"1234\",\"2345\",\"3456\",\"4567\",\"5678\",\"6789\",\"7890\",\"8901\",\"9012\"]\n\"1111\"", "desc": "Standard: sequential deadends"},
-    {"input": "[\"0000\"]\n\"5000\"", "desc": "Edge: 0000 deadend can't move"},
-    {"input": "[\"1111\",\"1112\",\"1121\",\"1211\",\"2111\"]\n\"1111\"", "desc": "Edge: target deadend -1"},
-    {"input": "[\"5000\",\"0500\",\"0050\",\"0005\",\"5555\",\"0000\"]\n\"5005\"", "desc": "Killer: many strategic deadends"}
+    {
+      "input": "[\"0201\",\"0101\",\"0102\",\"1212\",\"2002\"]\n\"0202\"",
+      "desc": "Edge: example1",
+      "output": "6"
+    },
+    {
+      "input": "[\"8888\"]\n\"0009\"",
+      "desc": "Edge: example2",
+      "output": "1"
+    },
+    {
+      "input": "[\"8887\",\"8889\",\"8878\",\"8898\",\"8788\",\"8988\",\"7888\",\"9888\"]\n\"8888\"",
+      "desc": "Edge: target surrounded by deadends -1",
+      "output": "-1"
+    },
+    {
+      "input": "[\"0001\"]\n\"0000\"",
+      "desc": "Edge: target=start 0 moves",
+      "output": "0"
+    },
+    {
+      "input": "[\"1234\"]\n\"0001\"",
+      "desc": "Edge: trivial 1 move",
+      "output": "1"
+    },
+    {
+      "input": "[\"0000\"]\n\"0001\"",
+      "desc": "Edge: start in deadends -1",
+      "output": "-1"
+    },
+    {
+      "input": "[\"9999\"]\n\"0001\"",
+      "desc": "Standard: 1 move avoid far deadend",
+      "output": "1"
+    },
+    {
+      "input": "[\"0102\",\"0201\"]\n\"0202\"",
+      "desc": "Standard: 2-deadend path",
+      "output": "6"
+    },
+    {
+      "input": "[]\n\"5555\"",
+      "desc": "Edge: no deadends",
+      "output": "20"
+    },
+    {
+      "input": "[\"1111\",\"2222\",\"3333\",\"4444\",\"5555\",\"6666\",\"7777\",\"8888\",\"9999\"]\n\"5432\"",
+      "desc": "Standard: diagonal deadends",
+      "output": "14"
+    },
+    {
+      "input": "[\"0001\",\"0010\",\"0100\",\"1000\",\"9000\",\"0900\",\"0090\",\"0009\"]\n\"0000\"",
+      "desc": "Edge: start=target moves=0",
+      "output": "0"
+    },
+    {
+      "input": "[\"0001\",\"0010\",\"0100\",\"1000\"]\n\"1234\"",
+      "desc": "Standard: all single-step deadends from start",
+      "output": "12"
+    },
+    {
+      "input": "[\"1000\",\"0900\",\"0090\",\"0009\"]\n\"1000\"",
+      "desc": "Edge: target=deadend -1",
+      "output": "1"
+    },
+    {
+      "input": "[\"5000\"]\n\"5001\"",
+      "desc": "Standard: 5 turns then 1",
+      "output": "6"
+    },
+    {
+      "input": "[\"0000\",\"9999\",\"0001\",\"1000\",\"0010\",\"0100\"]\n\"4444\"",
+      "desc": "Edge: start in deadends -1",
+      "output": "-1"
+    },
+    {
+      "input": "[\"1234\",\"5678\",\"4321\",\"8765\"]\n\"9876\"",
+      "desc": "Standard: random deadends far",
+      "output": "10"
+    },
+    {
+      "input": "[\"0123\",\"1234\",\"2345\",\"3456\",\"4567\",\"5678\",\"6789\",\"7890\",\"8901\",\"9012\"]\n\"1111\"",
+      "desc": "Standard: sequential deadends",
+      "output": "4"
+    },
+    {
+      "input": "[\"0000\"]\n\"5000\"",
+      "desc": "Edge: 0000 deadend can't move",
+      "output": "-1"
+    },
+    {
+      "input": "[\"1111\",\"1112\",\"1121\",\"1211\",\"2111\"]\n\"1111\"",
+      "desc": "Edge: target deadend -1",
+      "output": "4"
+    },
+    {
+      "input": "[\"5000\",\"0500\",\"0050\",\"0005\",\"5555\",\"0000\"]\n\"5005\"",
+      "desc": "Killer: many strategic deadends",
+      "output": "-1"
+    }
   ]
 }

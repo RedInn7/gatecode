@@ -1564,5 +1564,11 @@
     "slug": "longest-palindrome-by-concatenating-two-letter-words",
     "fqid": 2131,
     "error": "Testcase 19 failed: RE (exit 1): last):\n  File \"/tmp/tmpihk1ma8m.py\", line 284, in <module>\n    _result = Solution().longestPalindrome(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpihk1ma8m.py\", line 145, in longestPalindrome\n    if k[0] == k[1]:\n       ~^^^\nTypeError: 'int' object is not subscriptable\n"
+  },
+  {
+    "pid": 2487,
+    "slug": "the-maze",
+    "fqid": 490,
+    "error": "Testcase 18 failed: RE (exit 1): , line 292, in <module>\n    _result = Solution().hasPath(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp5b82ph8e.py\", line 158, in hasPath\n    dfs(start[0], start[1])\n  File \"/tmp/tmp5b82ph8e.py\", line 145, in dfs\n    if vis[i][j]:\n       ~~~^^^\nIndexError: list index out of range\n"
   }
 ]

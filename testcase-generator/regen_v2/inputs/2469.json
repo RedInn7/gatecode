@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= word.length <= 250, word lowercase letters, ch lowercase letter",
   "input_format": "line1: word (JSON string); line2: ch (JSON string single char)",
   "testcases": [
-    {"input": "\"abcdefd\"\n\"d\"", "desc": "Edge: example1"},
-    {"input": "\"xyxzxe\"\n\"z\"", "desc": "Edge: example2"},
-    {"input": "\"abcd\"\n\"z\"", "desc": "Edge: char not present"},
-    {"input": "\"a\"\n\"a\"", "desc": "Edge: n=1 match"},
-    {"input": "\"a\"\n\"b\"", "desc": "Edge: n=1 no match"},
-    {"input": "\"aaaaa\"\n\"a\"", "desc": "Edge: all same ch first"},
-    {"input": "\"zaaaa\"\n\"z\"", "desc": "Edge: ch at start"},
-    {"input": "\"aaaaz\"\n\"z\"", "desc": "Edge: ch at end"},
-    {"input": "\"abcdefghij\"\n\"j\"", "desc": "Standard: ch at last position"},
-    {"input": "\"abcdefghij\"\n\"a\"", "desc": "Standard: ch at first"},
-    {"input": "\"hello\"\n\"l\"", "desc": "Standard: l in middle"},
-    {"input": "\"programming\"\n\"m\"", "desc": "Standard: word with m"},
-    {"input": "\"abcabcabc\"\n\"c\"", "desc": "Standard: repeating"},
-    {"input": "\"qwertyuiop\"\n\"t\"", "desc": "Standard: keyboard string"},
-    {"input": "\"mississippi\"\n\"i\"", "desc": "Standard: repeated letters"},
-    {"input": "\"abracadabra\"\n\"r\"", "desc": "Standard: classic"},
-    {"input": "\"aaabbbccc\"\n\"c\"", "desc": "Standard: grouped letters"},
-    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"\n\"q\"", "desc": "Standard: pangram-ish"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"\n\"y\"", "desc": "Stress: max length 250 ch in middle"},
-    {"input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"", "desc": "Killer: all z length 250"}
+    {
+      "input": "\"abcdefd\"\n\"d\"",
+      "desc": "Edge: example1",
+      "output": "\"dcbaefd\""
+    },
+    {
+      "input": "\"xyxzxe\"\n\"z\"",
+      "desc": "Edge: example2",
+      "output": "\"zxyxxe\""
+    },
+    {
+      "input": "\"abcd\"\n\"z\"",
+      "desc": "Edge: char not present",
+      "output": "\"abcd\""
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "desc": "Edge: n=1 match",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "desc": "Edge: n=1 no match",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"a\"",
+      "desc": "Edge: all same ch first",
+      "output": "\"aaaaa\""
+    },
+    {
+      "input": "\"zaaaa\"\n\"z\"",
+      "desc": "Edge: ch at start",
+      "output": "\"zaaaa\""
+    },
+    {
+      "input": "\"aaaaz\"\n\"z\"",
+      "desc": "Edge: ch at end",
+      "output": "\"zaaaa\""
+    },
+    {
+      "input": "\"abcdefghij\"\n\"j\"",
+      "desc": "Standard: ch at last position",
+      "output": "\"jihgfedcba\""
+    },
+    {
+      "input": "\"abcdefghij\"\n\"a\"",
+      "desc": "Standard: ch at first",
+      "output": "\"abcdefghij\""
+    },
+    {
+      "input": "\"hello\"\n\"l\"",
+      "desc": "Standard: l in middle",
+      "output": "\"lehlo\""
+    },
+    {
+      "input": "\"programming\"\n\"m\"",
+      "desc": "Standard: word with m",
+      "output": "\"margorpming\""
+    },
+    {
+      "input": "\"abcabcabc\"\n\"c\"",
+      "desc": "Standard: repeating",
+      "output": "\"cbaabcabc\""
+    },
+    {
+      "input": "\"qwertyuiop\"\n\"t\"",
+      "desc": "Standard: keyboard string",
+      "output": "\"trewqyuiop\""
+    },
+    {
+      "input": "\"mississippi\"\n\"i\"",
+      "desc": "Standard: repeated letters",
+      "output": "\"imssissippi\""
+    },
+    {
+      "input": "\"abracadabra\"\n\"r\"",
+      "desc": "Standard: classic",
+      "output": "\"rbaacadabra\""
+    },
+    {
+      "input": "\"aaabbbccc\"\n\"c\"",
+      "desc": "Standard: grouped letters",
+      "output": "\"cbbbaaacc\""
+    },
+    {
+      "input": "\"thequickbrownfoxjumpsoverthelazydog\"\n\"q\"",
+      "desc": "Standard: pangram-ish",
+      "output": "\"qehtuickbrownfoxjumpsoverthelazydog\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"\n\"y\"",
+      "desc": "Stress: max length 250 ch in middle",
+      "output": "\"yxwvutsrqponmlkjihgfedcbazabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\""
+    },
+    {
+      "input": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\"\n\"z\"",
+      "desc": "Killer: all z length 250",
+      "output": "\"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\""
+    }
   ]
 }

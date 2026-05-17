@@ -406,5 +406,41 @@
     "slug": "maximum-value-sum-by-placing-three-rooks-ii",
     "fqid": 3257,
     "reason": "No Python3 solution found for fqid=3257"
+  },
+  {
+    "pid": 2465,
+    "slug": "maximum-score-from-grid-operations",
+    "fqid": 3225,
+    "reason": "No Python3 solution found for fqid=3225"
+  },
+  {
+    "pid": 2459,
+    "slug": "check-if-an-original-string-exists-given-two-encoded-strings",
+    "fqid": 2060,
+    "reason": "No Python3 solution found for fqid=2060"
+  },
+  {
+    "pid": 2461,
+    "slug": "count-paths-with-the-given-xor-value",
+    "fqid": 3393,
+    "reason": "No Python3 solution found for fqid=3393"
+  },
+  {
+    "pid": 2462,
+    "slug": "smallest-divisible-digit-product-ii",
+    "fqid": 3348,
+    "reason": "No Python3 solution found for fqid=3348"
+  },
+  {
+    "pid": 2473,
+    "slug": "equal-sum-grid-partition-ii",
+    "fqid": 3548,
+    "reason": "No Python3 solution found for fqid=3548"
+  },
+  {
+    "pid": 2466,
+    "slug": "last-remaining-integer-after-alternating-deletion-operations",
+    "fqid": 3782,
+    "reason": "No Python3 solution found for fqid=3782"
   }
 ]
