@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 45",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: minimum"},
-    {"input": "2", "desc": "Edge: n=2 -> 2"},
-    {"input": "3", "desc": "Edge: n=3 -> 3"},
-    {"input": "4", "desc": "Edge: n=4 -> 5"},
-    {"input": "5", "desc": "Edge: n=5 -> 8"},
-    {"input": "6", "desc": "Standard: n=6"},
-    {"input": "10", "desc": "Standard: n=10"},
-    {"input": "15", "desc": "Standard: n=15"},
-    {"input": "20", "desc": "Standard: n=20"},
-    {"input": "25", "desc": "Standard: n=25"},
-    {"input": "30", "desc": "Standard: n=30"},
-    {"input": "35", "desc": "Standard: n=35"},
-    {"input": "40", "desc": "Standard: n=40"},
-    {"input": "42", "desc": "Standard: n=42"},
-    {"input": "43", "desc": "Stress: n=43"},
-    {"input": "44", "desc": "Stress: n=44"},
-    {"input": "45", "desc": "Stress: max n=45"},
-    {"input": "7", "desc": "Special: small odd"},
-    {"input": "8", "desc": "Special: small even"},
-    {"input": "9", "desc": "Special: 9"}
+    {
+      "input": "1",
+      "desc": "Edge: minimum",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2 -> 2",
+      "output": "2"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: n=3 -> 3",
+      "output": "3"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: n=4 -> 5",
+      "output": "5"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: n=5 -> 8",
+      "output": "8"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6",
+      "output": "13"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: n=10",
+      "output": "89"
+    },
+    {
+      "input": "15",
+      "desc": "Standard: n=15",
+      "output": "987"
+    },
+    {
+      "input": "20",
+      "desc": "Standard: n=20",
+      "output": "10946"
+    },
+    {
+      "input": "25",
+      "desc": "Standard: n=25",
+      "output": "121393"
+    },
+    {
+      "input": "30",
+      "desc": "Standard: n=30",
+      "output": "1346269"
+    },
+    {
+      "input": "35",
+      "desc": "Standard: n=35",
+      "output": "14930352"
+    },
+    {
+      "input": "40",
+      "desc": "Standard: n=40",
+      "output": "165580141"
+    },
+    {
+      "input": "42",
+      "desc": "Standard: n=42",
+      "output": "433494437"
+    },
+    {
+      "input": "43",
+      "desc": "Stress: n=43",
+      "output": "701408733"
+    },
+    {
+      "input": "44",
+      "desc": "Stress: n=44",
+      "output": "1134903170"
+    },
+    {
+      "input": "45",
+      "desc": "Stress: max n=45",
+      "output": "1836311903"
+    },
+    {
+      "input": "7",
+      "desc": "Special: small odd",
+      "output": "21"
+    },
+    {
+      "input": "8",
+      "desc": "Special: small even",
+      "output": "34"
+    },
+    {
+      "input": "9",
+      "desc": "Special: 9",
+      "output": "55"
+    }
   ]
 }

@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 1000",
   "input_format": "line1: n (int)",
   "testcases": [
-    {"input": "1", "desc": "Edge: minimum n=1 -> 0"},
-    {"input": "2", "desc": "Edge: n=2 -> 2"},
-    {"input": "3", "desc": "Edge: n=3 -> 3"},
-    {"input": "4", "desc": "Edge: n=4 -> 4"},
-    {"input": "5", "desc": "Edge: prime n=5"},
-    {"input": "6", "desc": "Standard: n=6 -> 5"},
-    {"input": "7", "desc": "Standard: prime 7"},
-    {"input": "8", "desc": "Standard: power of 2"},
-    {"input": "9", "desc": "Standard: square"},
-    {"input": "16", "desc": "Standard: power of 2"},
-    {"input": "17", "desc": "Standard: prime"},
-    {"input": "24", "desc": "Standard: composite 24=2^3*3"},
-    {"input": "30", "desc": "Standard: 2*3*5"},
-    {"input": "100", "desc": "Standard: 100"},
-    {"input": "97", "desc": "Standard: prime 97"},
-    {"input": "500", "desc": "Stress: half max"},
-    {"input": "997", "desc": "Stress: prime near max"},
-    {"input": "999", "desc": "Stress: 999=3^3*37"},
-    {"input": "1000", "desc": "Stress: max"},
-    {"input": "64", "desc": "Special: 2^6"}
+    {
+      "input": "1",
+      "desc": "Edge: minimum n=1 -> 0",
+      "output": "0"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: n=2 -> 2",
+      "output": "2"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: n=3 -> 3",
+      "output": "3"
+    },
+    {
+      "input": "4",
+      "desc": "Edge: n=4 -> 4",
+      "output": "4"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: prime n=5",
+      "output": "5"
+    },
+    {
+      "input": "6",
+      "desc": "Standard: n=6 -> 5",
+      "output": "5"
+    },
+    {
+      "input": "7",
+      "desc": "Standard: prime 7",
+      "output": "7"
+    },
+    {
+      "input": "8",
+      "desc": "Standard: power of 2",
+      "output": "6"
+    },
+    {
+      "input": "9",
+      "desc": "Standard: square",
+      "output": "6"
+    },
+    {
+      "input": "16",
+      "desc": "Standard: power of 2",
+      "output": "8"
+    },
+    {
+      "input": "17",
+      "desc": "Standard: prime",
+      "output": "17"
+    },
+    {
+      "input": "24",
+      "desc": "Standard: composite 24=2^3*3",
+      "output": "9"
+    },
+    {
+      "input": "30",
+      "desc": "Standard: 2*3*5",
+      "output": "10"
+    },
+    {
+      "input": "100",
+      "desc": "Standard: 100",
+      "output": "14"
+    },
+    {
+      "input": "97",
+      "desc": "Standard: prime 97",
+      "output": "97"
+    },
+    {
+      "input": "500",
+      "desc": "Stress: half max",
+      "output": "19"
+    },
+    {
+      "input": "997",
+      "desc": "Stress: prime near max",
+      "output": "997"
+    },
+    {
+      "input": "999",
+      "desc": "Stress: 999=3^3*37",
+      "output": "46"
+    },
+    {
+      "input": "1000",
+      "desc": "Stress: max",
+      "output": "21"
+    },
+    {
+      "input": "64",
+      "desc": "Special: 2^6",
+      "output": "12"
+    }
   ]
 }
