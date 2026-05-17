@@ -10,11 +10,13 @@
     },
     {
       "input": "\"x\"\n1",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "0"
     },
     {
       "input": "\"bg\"\n1",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "Infinity"
     },
     {
       "input": "\"aaaaa\"",
@@ -22,47 +24,58 @@
     },
     {
       "input": "\"deaca\"\n1",
-      "desc": "Edge: short string mixed"
+      "desc": "Edge: short string mixed",
+      "output": "Infinity"
     },
     {
       "input": "\"krlmtnolf\"\n7",
-      "desc": "Standard: len=9"
+      "desc": "Standard: len=9",
+      "output": "Infinity"
     },
     {
       "input": "\"bofbrllhlosxqhjppqsvzzqposjuozvtmkpjkt\"\n24",
-      "desc": "Standard: len=38"
+      "desc": "Standard: len=38",
+      "output": "Infinity"
     },
     {
       "input": "\"qpyeynzvwizphxurzamdr\"\n8",
-      "desc": "Standard: len=21"
+      "desc": "Standard: len=21",
+      "output": "Infinity"
     },
     {
       "input": "\"zqximcjjwvlrxxrakejhgnrwnmbzfha\"\n18",
-      "desc": "Standard: len=31"
+      "desc": "Standard: len=31",
+      "output": "Infinity"
     },
     {
       "input": "\"ymplmagotfimnenghougkgoarf\"\n12",
-      "desc": "Standard: len=26"
+      "desc": "Standard: len=26",
+      "output": "Infinity"
     },
     {
       "input": "\"svcpswoth\"\n4",
-      "desc": "Standard: len=9"
+      "desc": "Standard: len=9",
+      "output": "Infinity"
     },
     {
       "input": "\"nandauhbgwaiemaiqfguavobgaimgjp\"\n10",
-      "desc": "Standard: len=31"
+      "desc": "Standard: len=31",
+      "output": "Infinity"
     },
     {
       "input": "\"txboweupeinjfgvnmxsgyhzlinpawhmupvjblkskttjrsyf\"\n19",
-      "desc": "Standard: len=47"
+      "desc": "Standard: len=47",
+      "output": "Infinity"
     },
     {
       "input": "\"thnucgkocroyfyimvyuydqayijjmgbxsmlfvffttraytvuhknoqyrpmqdxnmjwhnuakzdrdylqvdtvwnxcrcqpbfbafhmoqahznexwwncxcijjmdjiydvbngheldmzkvavjbrxkxylqkwwggwzhfdfqxjikfapqvizsksrvvwmittlzoeymvmvvzliqjkxbytczvocsrgtvskjwqjecmygaqrvvakhbljgfyibcsxpclpitoabydftkccjfysswfyvtjncbajsypndkjvnjiknrutvjyvjheuxprualvslaeywobrjwvupudsfidyeoneqwcpkalwjwezivetxakyeqvtkynbqvcoszuwlegxnvpghpqnpfmwgroeuglsdbobilnjfcmfpbitbclofvebkdnuamnnalawocionufyathxqcertjwrdyslbwzfhxdcznheoxwdmruyfeztqqhofnguobdjwxxoekwawapxfmzlxgoupak\"\n181",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "Infinity"
     },
     {
       "input": "\"rqgbpfokjljkpxoygnkvimcrznrovosjpbxqaambegnphdypfptlwsuxawbelsefjagjeuiehqmksshhdosryerxfbaxganaekyiuerhkjrfvawmimjlslfkzramtydurdxsqnoogcgyldlcrwaqndmxrcwckzdlxqgfjkvlhgreizklqlsvtdjxstneyrresbtixbftequrlchcmahjeaoexjkmvemgieahmfffrcajfkpkedofsbetzszjwazsqqlwyjkiwpqktppncqmeoebnwlufuivbuossarzkqzasxrrymrieiuxnnqpihkjggdmzolhvctcrbjszbvlofphmxqukffjbibypxoviegfpqkwrgjvxbprtuvpqvddfprbwsznzsditxmzoeczkwwrqhvttxqqvowjtvcdebwqdzisbdylnxesieaadvuddrkpuqdrzwxgwusnijnyamoidtcetxcgghdhyelqyjlvjgdcemcrwkhmckpadshepbkdjthusdhsrwixzihlmmtfbuonqbzlyjjjpwvxninmsbfkpoepjlwwkbryeemseseqsnqdenpwvvrkuwdovsveefekvdygdqilzjcxjshjyqzokzkpeucxnzkpedwxbrjoajzmvjpmvxgeeakdbgipiksiukqbnyghrjlmeighdxmfmgqnqyhiyspmcsbrvgglltwfphsmclkuxvkutnivveyzdsdyolnysgjhzlsokomfgrodvwszyzqupajecyxiuytugoavucmjzdrospgjqwvirubzhbmiyojukcuntvqkpqdmzkxmfjlwkqgrjgfepofnntekqhetfpweuaevykjipbfynumpppowctmikaoyeujusfvnaxskzbeuxcosxieegmhtwueannarhsneciejiixozqwfwbpmwisodqyrjgusnmpqjrmgcuxwnchpecmozneeesrkvllidhrabzlczcpeukizpslsa\"\n887",
-      "desc": "Stress: max string"
+      "desc": "Stress: max string",
+      "output": "Infinity"
     },
     {
       "input": "\"abcdeedcba\"",
@@ -74,15 +87,18 @@
     },
     {
       "input": "\"huuvtimkms\"\n1",
-      "desc": "Generated: stress at position 17"
+      "desc": "Generated: stress at position 17",
+      "output": "Infinity"
     },
     {
       "input": "\"vgkokyfvpw\"\n1",
-      "desc": "Generated: stress at position 18"
+      "desc": "Generated: stress at position 18",
+      "output": "Infinity"
     },
     {
       "input": "\"xznmmtuhye\"\n1",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "Infinity"
     }
   ]
 }

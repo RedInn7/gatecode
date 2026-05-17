@@ -10,11 +10,13 @@
     },
     {
       "input": "\"o\"\n1",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "0"
     },
     {
       "input": "\"zi\"\n2",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "0"
     },
     {
       "input": "\"aaaaa\"",
@@ -22,47 +24,58 @@
     },
     {
       "input": "\"abcae\"\n4",
-      "desc": "Edge: short string mixed"
+      "desc": "Edge: short string mixed",
+      "output": "0"
     },
     {
       "input": "\"sjvgbfcagmivdgeenfkriscjbbqibhkqubgpred\"\n37",
-      "desc": "Standard: len=39"
+      "desc": "Standard: len=39",
+      "output": "0"
     },
     {
       "input": "\"fpdfkawolhqshvpjsdlodmaexyfnxowjigcbggoskul\"\n9",
-      "desc": "Standard: len=43"
+      "desc": "Standard: len=43",
+      "output": "0"
     },
     {
       "input": "\"riuxyycnvlqcjojdwopjlmii\"\n16",
-      "desc": "Standard: len=24"
+      "desc": "Standard: len=24",
+      "output": "0"
     },
     {
       "input": "\"xfhhmpblirnmlxsynozjvkkuaggomzqa\"\n24",
-      "desc": "Standard: len=32"
+      "desc": "Standard: len=32",
+      "output": "0"
     },
     {
       "input": "\"wzfpcvtrpwzrvtpkhjdwahjecqk\"\n6",
-      "desc": "Standard: len=27"
+      "desc": "Standard: len=27",
+      "output": "0"
     },
     {
       "input": "\"rqbihededyuhnhskqdma\"\n17",
-      "desc": "Standard: len=20"
+      "desc": "Standard: len=20",
+      "output": "0"
     },
     {
       "input": "\"pjzwecoxgixtcjlcunqjjug\"\n18",
-      "desc": "Standard: len=23"
+      "desc": "Standard: len=23",
+      "output": "0"
     },
     {
       "input": "\"sosaxhvtssqmnuucwpukdjfzvixxicljfciaxawax\"\n12",
-      "desc": "Standard: len=41"
+      "desc": "Standard: len=41",
+      "output": "0"
     },
     {
       "input": "\"dlqjavnogoutewufkluardylgiukjdlwkdvnxukcxfuimudpixinppglsspvnouxyzdiiuctyrzjleizlkjcvjqvetivgnvljnuizgfknqrcacyozmkvjorpddzpkffxlaemdqpnkjxbcsxrxxeyctkiyyhrnlajostcbsjjwmkeyalnnmijwsaqzvlhuhscimcyewvfasysatkwazpfjmlidiggjesmlplwiicxagushggsvrflnprsajbtnaicnwarhrvzwrsyfirriwenjilfmbhisacgtcbhysmtsibghppropncmscfvcrbhhuizmyezwqmcoxbktsnuzniphoxxkygvdswglljdkajoycpdyycjdrhxvhkxqtkkbxmuesifwrsrrbpszdvhzrlouiynqoycavpkistagbubavvwtvcmtpgnfdrxmskwxjohzzudertthjxobyvxgaksjkioptzbqwflbbebcvgkvieqwhgwkrs\"\n273",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "0"
     },
     {
       "input": "\"cnnalynhtvddwwrvpggllqjqayfpztnomddbmhhnbfyypwlmxftadywugoffabertqrlhcrukxqsrbdwrqfjijvvzrkeyftwmzjfkfrycpixcmddlscaksaxqbtrtkhdjqhedrgcssyyfocgtttxsqpvukdmifusyhtxvqdykgslivjaztxvdjjymrxdvsnohfszmzfzpyakqcpqvksvagelojwuxxpnfsyqgsirymyjfvrwmmawcyldwuzsmghgnzifosregdpdgsylxmlpkfeojejmdnerphfvkuwevcukziittbegwuhznxhfiwqeubznzbbxroeebactmkltiobeqhehbtoysburketcenjzkzayzdpuqjoiohiogqdhhwhthfudkztzklkuqtotwemacwkjebbdzbcamqqfesosrxrivpfxrgmbrnrladsymxnebdmjonzrarqrzoysbbhnpcbldbeaetuwpwjsxksysvduhuicmepphdfrgoofciifjrbpwfjdiioodmfsjsyfzabvajodvthfbrjnwlpzfsnneopvqnxhzancrkbaggysudjggadtiukcajjkymptkjackvdsrwinwfodzmbpjmkzjxjiudtxjrulatiegdrwdnkhheranvfyktosoqrjbqrfalgmpjkbbtkhljjionaygqaoekxqvpwtouomrqjpbqzgcjxlqpaclqvqvpfwvptcniiwddpqhqcwgppzkdeeeakvwmdoobsdevdriqhhhnfrglhfolwdlonvaluyzddsjjxzlgdxwnuzmrvpgbyvoowtussejsylycfkwlyhfvmbftwvvjcpptlhksvdnkwqjnujlqmqxhowpqdocetxuuckinwmqjmjcxituqttscbitystqsneehacuxprpbhvexnktrvkbkofgqmhdbjlktkhuezxxdfpcvvfpxrxovyxvorobsyispepemkkgjobsqksejsxlrkf\"\n722",
-      "desc": "Stress: max string"
+      "desc": "Stress: max string",
+      "output": "0"
     },
     {
       "input": "\"abcdeedcba\"",
@@ -74,15 +87,18 @@
     },
     {
       "input": "\"tacpztylzi\"\n4",
-      "desc": "Generated: stress at position 17"
+      "desc": "Generated: stress at position 17",
+      "output": "0"
     },
     {
       "input": "\"wujhqgmdxd\"\n4",
-      "desc": "Generated: stress at position 18"
+      "desc": "Generated: stress at position 18",
+      "output": "0"
     },
     {
       "input": "\"tlggjkwnli\"\n4",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "0"
     }
   ]
 }

@@ -10,11 +10,13 @@
     },
     {
       "input": "\"n\"\n1",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "1"
     },
     {
       "input": "\"eo\"\n1",
-      "desc": "Edge: two chars"
+      "desc": "Edge: two chars",
+      "output": "1"
     },
     {
       "input": "\"aaaaa\"",
@@ -22,47 +24,58 @@
     },
     {
       "input": "\"abbdc\"\n2",
-      "desc": "Edge: short string mixed"
+      "desc": "Edge: short string mixed",
+      "output": "2"
     },
     {
       "input": "\"uxouwqedxmdxrtcgtnewqabwnqsdlm\"\n12",
-      "desc": "Standard: len=30"
+      "desc": "Standard: len=30",
+      "output": "12"
     },
     {
       "input": "\"oilin\"\n3",
-      "desc": "Standard: len=5"
+      "desc": "Standard: len=5",
+      "output": "3"
     },
     {
       "input": "\"lhpmvqhhvhhpqjdwvsetjzpnbxpzmcxzihcxkhjuf\"\n27",
-      "desc": "Standard: len=41"
+      "desc": "Standard: len=41",
+      "output": "27"
     },
     {
       "input": "\"rkvrxjgtkygiryfucqlxtpdmrwds\"\n4",
-      "desc": "Standard: len=28"
+      "desc": "Standard: len=28",
+      "output": "4"
     },
     {
       "input": "\"klkvnonnkkzyrwuwhgedktjrtdgndehvh\"\n22",
-      "desc": "Standard: len=33"
+      "desc": "Standard: len=33",
+      "output": "22"
     },
     {
       "input": "\"ruoighyepamkwyqdrvuoqhzeyxbxsbr\"\n15",
-      "desc": "Standard: len=31"
+      "desc": "Standard: len=31",
+      "output": "15"
     },
     {
       "input": "\"ieoqrqv\"\n6",
-      "desc": "Standard: len=7"
+      "desc": "Standard: len=7",
+      "output": "6"
     },
     {
       "input": "\"viqptvoqqlzkojjsxgnlejqsugtpclbixjosujf\"\n5",
-      "desc": "Standard: len=39"
+      "desc": "Standard: len=39",
+      "output": "5"
     },
     {
       "input": "\"jnwslvzbjcjedbqlvtdyiywftpkuqqnajffjupjyssomiawnglqnvnzxhemnoyeyzepxdpcjysztuadcuifmghdusxoxkdhutabwmzjzlwkhvxwmdbsbigeeyoveerhvhlsgccbyrnpsndsqclyhkffxfxsofycovwbegoidpeslkefqwqtkygtemrmujyfyhoswmybxehuegkceirfvoknexbrzmrsedgqzidwmqyxwjbkygfomvskngaakjxquksnzhbqxtdfulhmvgblxmgkyajpicjsdzbxcaecbpgsuypbyipjwkredpzshoalayjdvjsfbsrnxgakpshusdqldxpcptmloxkmgxagpugsymadflqmnokajzmchvphvpypgpqcfkpjxbfeqhakfhwvktowtuzmmcdqwwfzafnuqsjsjwaolnyjanbmuzqrzcholyelmughbjlculjhetxxhozpzohtbwcfgsbumevpkxksqcpip\"\n448",
-      "desc": "Stress: long string"
+      "desc": "Stress: long string",
+      "output": "448"
     },
     {
       "input": "\"qmhmllkswgkiisnngszosoocgjvjgwvlqqjsyruduqqzyqfvjxmluxrhcxzukcxjtwypslszrpcoebqpskyjtzmievaglsjruftlrttjrezsuxllldzekkutokdcnqqxckxzweodcaxqpktmxghwaqvdeefbkosvjwsdzwqbfxmwodcdjnvzxthfcmivfijufadgzzwmttkammwaevoocskkyanmrjbmpajpqhlguzqcmyptznmpydyqcqxmhksufnodalvijhtdnwrpfgudmzergbrpyrtrzvriofnklanjeqmffloqygdpagesfrbswsmtcmutblectygjvsnuvbkmdpuhsbbhvvvbaxqvllegpopsysoqbniqtxmnepnvqlstnqoraypqvqzyzfpxxtjinuqhbhvbyunzthpuszmgdkujfodfqfbhamqouwnylhooxpttztsuklibxawmjqwdnrmkmfwcprofkuatynwonjnnwbgmrjxqbfpozyfoyzpcmajsvgwcbfwmppvelnwuyhwcxgkacnzmjtjwhqarsoxvnwvedqkowezhxmhlhyzbiwtwbawtoelrnedxahhpcbqpwhefgwsjqjsvxzanhnuxugrtchwaovoxcijkbfadfcgfrbvdqotnqgofzzseosgydjjqsislmfqscuthipblghrmbauwxazgvvfahwkxeuohxsczeohvwyvxtokrjplsksohynfrhsmaaeeiygcyiiufkqpigrhdaucocxvhvdnqgaxegzlvwbypyfmqtaepfemklgogbapfrsmufuolhsmxdjupydjlbarkwzxnzncsvufizdvlmzdbauldhgwuafigechjhwhlpasbtkiqfdlvgbqtgfaxvpvdvgzahgtyfwhjsjgsozkmehzdmsbzrzgfoczdjimfukcqkbgcvgigwxouludtbkioczaahmvphjpiuqtqdxycnldosfrjhuhmbgysavxw\"\n528",
-      "desc": "Stress: max string"
+      "desc": "Stress: max string",
+      "output": "528"
     },
     {
       "input": "\"abcdeedcba\"",
@@ -74,15 +87,18 @@
     },
     {
       "input": "\"kamvfkjzwy\"\n2",
-      "desc": "Generated: stress at position 17"
+      "desc": "Generated: stress at position 17",
+      "output": "2"
     },
     {
       "input": "\"cevacacpud\"\n2",
-      "desc": "Generated: stress at position 18"
+      "desc": "Generated: stress at position 18",
+      "output": "2"
     },
     {
       "input": "\"loiuesnuui\"\n2",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "2"
     }
   ]
 }
