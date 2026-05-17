@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"abc\"\n\"ababc\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "[1, 0, 2]"
     },
     {
       "input": "\"abca\"\n\"aabcaca\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "[2, 3, 0, 1]"
     },
     {
       "input": "\"a\"\n\"a\"",
-      "desc": "Edge: minimum"
+      "desc": "Edge: minimum",
+      "output": "[0]"
     },
     {
       "input": "\"a\"\n\"aaaaa\"",
-      "desc": "Edge: single char repeated"
+      "desc": "Edge: single char repeated",
+      "output": "[4, 3, 2, 1, 0]"
     },
     {
       "input": "\"ab\"\n\"ab\"",
-      "desc": "Edge: exact match"
+      "desc": "Edge: exact match",
+      "output": "[0]"
     },
     {
       "input": "\"ab\"\n\"abab\"",
-      "desc": "Standard: 2 stamps"
+      "desc": "Standard: 2 stamps",
+      "output": "[1, 2, 0]"
     },
     {
       "input": "\"abc\"\n\"abcabc\"",
-      "desc": "Standard: 2 stamps adjacent"
+      "desc": "Standard: 2 stamps adjacent",
+      "output": "[2, 1, 3, 0]"
     },
     {
       "input": "\"abc\"\n\"abc\"",
-      "desc": "Edge: single stamp"
+      "desc": "Edge: single stamp",
+      "output": "[0]"
     },
     {
       "input": "\"abc\"\n\"xyz\"",
-      "desc": "Edge: impossible"
+      "desc": "Edge: impossible",
+      "output": "[]"
     },
     {
       "input": "\"abc\"\n\"abcabcabc\"",
-      "desc": "Standard: 3 stamps"
+      "desc": "Standard: 3 stamps",
+      "output": "[5, 4, 2, 1, 6, 3, 0]"
     },
     {
       "input": "\"abcd\"\n\"abcdabcd\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[3, 2, 1, 4, 0]"
     },
     {
       "input": "\"ab\"\n\"aabb\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[2, 0, 1]"
     },
     {
       "input": "\"abc\"\n\"aabcaabcaabc\"",
-      "desc": "Standard: overlap stamps"
+      "desc": "Standard: overlap stamps",
+      "output": "[7, 6, 3, 2, 8, 4, 0, 9, 5, 1]"
     },
     {
       "input": "\"aa\"\n\"aaaa\"",
-      "desc": "Standard: same chars"
+      "desc": "Standard: same chars",
+      "output": "[2, 1, 0]"
     },
     {
       "input": "\"abca\"\n\"abcaabcaabcaabca\"",
-      "desc": "Standard: repeated stamp"
+      "desc": "Standard: repeated stamp",
+      "output": "[11, 10, 9, 7, 6, 5, 3, 2, 1, 12, 8, 4, 0]"
     },
     {
       "input": "\"abc\"\n\"aaaaa\"",
-      "desc": "Edge: impossible mismatch"
+      "desc": "Edge: impossible mismatch",
+      "output": "[]"
     },
     {
       "input": "\"abc\"\n\"abcbabc\"",
-      "desc": "Standard: overlap stamps"
+      "desc": "Standard: overlap stamps",
+      "output": "[3, 1, 2, 4, 0]"
     },
     {
       "input": "\"hello\"\n\"hellohello\"",
-      "desc": "Standard: longer stamp"
+      "desc": "Standard: longer stamp",
+      "output": "[4, 3, 2, 1, 5, 0]"
     },
     {
       "input": "\"abc\"\n\"cab\"",
-      "desc": "Edge: impossible only stamp endings"
+      "desc": "Edge: impossible only stamp endings",
+      "output": "[]"
     },
     {
       "input": "\"tuproiuv\"\n\"dneqvrcxgzbbjv\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "[]"
     }
   ]
 }

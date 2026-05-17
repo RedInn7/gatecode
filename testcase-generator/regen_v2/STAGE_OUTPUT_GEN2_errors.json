@@ -1312,5 +1312,23 @@
     "slug": "validate-binary-tree-nodes",
     "fqid": 1361,
     "error": "Testcase 19 failed: RE (exit 1): yamn.py\", line 292, in <module>\n    _result = Solution().validateBinaryTreeNodes(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpz0myyamn.py\", line 154, in validateBinaryTreeNodes\n    if vis[j] or find(i) == find(j):\n       ~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1984,
+    "slug": "find-maximum-number-of-string-pairs",
+    "fqid": 2744,
+    "error": "Testcase 19 failed: RE (exit 1):  280, in <module>\n    _result = Solution().maximumNumberOfStringPairs(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpy1fxu59z.py\", line 145, in maximumNumberOfStringPairs\n    ans += cnt[w[::-1]]\n               ~^^^^^^\nTypeError: 'int' object is not subscriptable\n"
+  },
+  {
+    "pid": 1982,
+    "slug": "palindrome-pairs",
+    "fqid": 336,
+    "error": "Testcase 19 failed: RE (exit 1): /tmpxbk6hwv5.py\", line 285, in <module>\n    _result = Solution().palindromePairs(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpxbk6hwv5.py\", line 145, in palindromePairs\n    for j in range(len(w) + 1):\n                   ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+  },
+  {
+    "pid": 1990,
+    "slug": "check-if-numbers-are-ascending-in-a-sentence",
+    "fqid": 2042,
+    "error": "Testcase 9 failed: RE (exit 1): ne 281, in <module>\n    _result = Solution().areNumbersAscending(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmptitrqz29.py\", line 145, in areNumbersAscending\n    if (cur := int(t)) <= pre:\n               ^^^^^^\nValueError: invalid literal for int() with base 10: '2nd'\n"
   }
 ]

@@ -4,25 +4,105 @@
   "inferred_constraints": "0 <= n <= 10^5, -1000 <= node.val <= 1000",
   "input_format": "single line: root (JSON array, nulls for missing)",
   "testcases": [
-    {"input": "[3,9,20,null,null,15,7]", "desc": "Standard: example 1"},
-    {"input": "[2,null,3,null,4,null,5,null,6]", "desc": "Standard: example 2 right chain"},
-    {"input": "[]", "desc": "Edge: empty"},
-    {"input": "[1]", "desc": "Edge: single node"},
-    {"input": "[1,2]", "desc": "Edge: 2 nodes left"},
-    {"input": "[1,null,2]", "desc": "Edge: 2 nodes right"},
-    {"input": "[1,2,3]", "desc": "Edge: 3 nodes balanced"},
-    {"input": "[1,2,3,4,5,6,7]", "desc": "Standard: full bin n=7"},
-    {"input": "[1,2,null,3,null,4,null,5]", "desc": "Standard: left chain"},
-    {"input": "[1,null,2,null,3,null,4,null,5]", "desc": "Standard: right chain"},
-    {"input": "[1,2,3,4,null,null,null,5]", "desc": "Standard: deep left"},
-    {"input": "[1,2,3,null,4,null,5]", "desc": "Standard: mixed"},
-    {"input": "[5,4,8,11,null,13,4,7,2,null,null,null,1]", "desc": "Standard: complex tree"},
-    {"input": "[0]", "desc": "Edge: single zero"},
-    {"input": "[-1000]", "desc": "Edge: min value single"},
-    {"input": "[1000]", "desc": "Edge: max value single"},
-    {"input": "[1,2,3,4,5,null,null,6,7]", "desc": "Standard: nested left"},
-    {"input": "[1,2,2,3,3,3,3,4,4,4,4,4,4,4,4]", "desc": "Standard: full n=15"},
-    {"input": "[1,2,3,null,null,4,5]", "desc": "Standard: short left"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]", "desc": "Stress: 20 nodes"}
+    {
+      "input": "[3,9,20,null,null,15,7]",
+      "desc": "Standard: example 1",
+      "output": "2"
+    },
+    {
+      "input": "[2,null,3,null,4,null,5,null,6]",
+      "desc": "Standard: example 2 right chain",
+      "output": "5"
+    },
+    {
+      "input": "[]",
+      "desc": "Edge: empty",
+      "output": "0"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: single node",
+      "output": "1"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: 2 nodes left",
+      "output": "2"
+    },
+    {
+      "input": "[1,null,2]",
+      "desc": "Edge: 2 nodes right",
+      "output": "2"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Edge: 3 nodes balanced",
+      "output": "2"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "desc": "Standard: full bin n=7",
+      "output": "3"
+    },
+    {
+      "input": "[1,2,null,3,null,4,null,5]",
+      "desc": "Standard: left chain",
+      "output": "5"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]",
+      "desc": "Standard: right chain",
+      "output": "5"
+    },
+    {
+      "input": "[1,2,3,4,null,null,null,5]",
+      "desc": "Standard: deep left",
+      "output": "2"
+    },
+    {
+      "input": "[1,2,3,null,4,null,5]",
+      "desc": "Standard: mixed",
+      "output": "3"
+    },
+    {
+      "input": "[5,4,8,11,null,13,4,7,2,null,null,null,1]",
+      "desc": "Standard: complex tree",
+      "output": "3"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: single zero",
+      "output": "1"
+    },
+    {
+      "input": "[-1000]",
+      "desc": "Edge: min value single",
+      "output": "1"
+    },
+    {
+      "input": "[1000]",
+      "desc": "Edge: max value single",
+      "output": "1"
+    },
+    {
+      "input": "[1,2,3,4,5,null,null,6,7]",
+      "desc": "Standard: nested left",
+      "output": "2"
+    },
+    {
+      "input": "[1,2,2,3,3,3,3,4,4,4,4,4,4,4,4]",
+      "desc": "Standard: full n=15",
+      "output": "4"
+    },
+    {
+      "input": "[1,2,3,null,null,4,5]",
+      "desc": "Standard: short left",
+      "output": "2"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
+      "desc": "Stress: 20 nodes",
+      "output": "4"
+    }
   ]
 }

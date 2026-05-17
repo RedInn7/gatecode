@@ -310,5 +310,11 @@
     "slug": "minimum-time-to-activate-string",
     "fqid": 3639,
     "reason": "No Python3 solution found for fqid=3639"
+  },
+  {
+    "pid": 1996,
+    "slug": "find-the-number-of-copy-arrays",
+    "fqid": 3468,
+    "reason": "No Python3 solution found for fqid=3468"
   }
 ]

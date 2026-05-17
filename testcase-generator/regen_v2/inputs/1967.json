@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= nums.length <= 1000, -2^31 <= nums[i] <= 2^31-1, answer fits in 32-bit",
   "input_format": "single line: nums (JSON array)",
   "testcases": [
-    {"input": "[2,4,6,8,10]", "desc": "Standard: example 1"},
-    {"input": "[7,7,7,7,7]", "desc": "Standard: example 2 all same"},
-    {"input": "[1]", "desc": "Edge: n=1"},
-    {"input": "[1,2]", "desc": "Edge: n=2"},
-    {"input": "[1,2,3]", "desc": "Edge: minimum length AP"},
-    {"input": "[0,0,0]", "desc": "Edge: all zeros n=3"},
-    {"input": "[1,3,5,7,9]", "desc": "Standard: AP n=5"},
-    {"input": "[9,7,5,3,1]", "desc": "Standard: descending AP"},
-    {"input": "[0,0,0,0,0,0,0,0]", "desc": "Edge: 8 zeros"},
-    {"input": "[1,2,4,8,16]", "desc": "Standard: not AP"},
-    {"input": "[3,-1,-5,-9]", "desc": "Standard: descending AP n=4"},
-    {"input": "[2147483647,2147483646,2147483645]", "desc": "Edge: near max int"},
-    {"input": "[-2147483648,-2147483647,-2147483646]", "desc": "Edge: near min int"},
-    {"input": "[2,4,6,8,10,12,14,16,18,20]", "desc": "Standard: long AP"},
-    {"input": "[1,1,2,5,7]", "desc": "Standard: contains short AP only"},
-    {"input": "[1,3,5,2,4,6,3,5,7]", "desc": "Standard: mixed"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]", "desc": "Standard: 1..10"},
-    {"input": "[0,1,2,2,2,3]", "desc": "Standard: with duplicates"},
-    {"input": "[-1,1,3,5,7,9,11,-3,-5]", "desc": "Standard: pos and neg"},
-    {"input": "[100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500]", "desc": "Stress: long AP n=15"}
+    {
+      "input": "[2,4,6,8,10]",
+      "desc": "Standard: example 1",
+      "output": "7"
+    },
+    {
+      "input": "[7,7,7,7,7]",
+      "desc": "Standard: example 2 all same",
+      "output": "16"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1",
+      "output": "0"
+    },
+    {
+      "input": "[1,2]",
+      "desc": "Edge: n=2",
+      "output": "0"
+    },
+    {
+      "input": "[1,2,3]",
+      "desc": "Edge: minimum length AP",
+      "output": "1"
+    },
+    {
+      "input": "[0,0,0]",
+      "desc": "Edge: all zeros n=3",
+      "output": "1"
+    },
+    {
+      "input": "[1,3,5,7,9]",
+      "desc": "Standard: AP n=5",
+      "output": "7"
+    },
+    {
+      "input": "[9,7,5,3,1]",
+      "desc": "Standard: descending AP",
+      "output": "7"
+    },
+    {
+      "input": "[0,0,0,0,0,0,0,0]",
+      "desc": "Edge: 8 zeros",
+      "output": "219"
+    },
+    {
+      "input": "[1,2,4,8,16]",
+      "desc": "Standard: not AP",
+      "output": "0"
+    },
+    {
+      "input": "[3,-1,-5,-9]",
+      "desc": "Standard: descending AP n=4",
+      "output": "3"
+    },
+    {
+      "input": "[2147483647,2147483646,2147483645]",
+      "desc": "Edge: near max int",
+      "output": "1"
+    },
+    {
+      "input": "[-2147483648,-2147483647,-2147483646]",
+      "desc": "Edge: near min int",
+      "output": "1"
+    },
+    {
+      "input": "[2,4,6,8,10,12,14,16,18,20]",
+      "desc": "Standard: long AP",
+      "output": "55"
+    },
+    {
+      "input": "[1,1,2,5,7]",
+      "desc": "Standard: contains short AP only",
+      "output": "0"
+    },
+    {
+      "input": "[1,3,5,2,4,6,3,5,7]",
+      "desc": "Standard: mixed",
+      "output": "15"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]",
+      "desc": "Standard: 1..10",
+      "output": "55"
+    },
+    {
+      "input": "[0,1,2,2,2,3]",
+      "desc": "Standard: with duplicates",
+      "output": "10"
+    },
+    {
+      "input": "[-1,1,3,5,7,9,11,-3,-5]",
+      "desc": "Standard: pos and neg",
+      "output": "21"
+    },
+    {
+      "input": "[100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500]",
+      "desc": "Stress: long AP n=15",
+      "output": "164"
+    }
   ]
 }

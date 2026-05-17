@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[-100000]",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "0"
     },
     {
       "input": "[2,4,9,24,2,1,10]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "68"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge: n=2 minimum"
+      "desc": "Edge: n=2 minimum",
+      "output": "1"
     },
     {
       "input": "[100000,-100000]",
-      "desc": "Edge: max extremes"
+      "desc": "Edge: max extremes",
+      "output": "200000"
     },
     {
       "input": "[5,5,5,5,5]",
-      "desc": "Edge: all same"
+      "desc": "Edge: all same",
+      "output": "0"
     },
     {
       "input": "[-89919,-92640,-13199]",
-      "desc": "Regenerated: negative at position 5"
+      "desc": "Regenerated: negative at position 5",
+      "output": "156161"
     },
     {
       "input": "[1,2,3,4,5]",
-      "desc": "Standard: ascending"
+      "desc": "Standard: ascending",
+      "output": "8"
     },
     {
       "input": "[5,4,3,2,1]",
-      "desc": "Standard: descending"
+      "desc": "Standard: descending",
+      "output": "8"
     },
     {
       "input": "[100000,100000,100000,100000]",
-      "desc": "Edge: all max"
+      "desc": "Edge: all max",
+      "output": "0"
     },
     {
       "input": "[-100000,-100000,-100000,-100000]",
-      "desc": "Edge: all min"
+      "desc": "Edge: all min",
+      "output": "0"
     },
     {
       "input": "[1,-100000,100000,-100000,100000]",
-      "desc": "Standard: oscillating extremes"
+      "desc": "Standard: oscillating extremes",
+      "output": "700001"
     },
     {
       "input": "[10,2,30,4,50,6,70,8]",
-      "desc": "Standard: zigzag"
+      "desc": "Standard: zigzag",
+      "output": "278"
     },
     {
       "input": "[1,2,1,2,1,2,1,2]",
-      "desc": "Standard: alternating"
+      "desc": "Standard: alternating",
+      "output": "7"
     },
     {
       "input": "[10,100,1000,10000]",
-      "desc": "Standard: increasing magnitudes"
+      "desc": "Standard: increasing magnitudes",
+      "output": "19890"
     },
     {
       "input": "[0,0,0,0,0]",
-      "desc": "Edge: all zeros"
+      "desc": "Edge: all zeros",
+      "output": "0"
     },
     {
       "input": "[100000,1,2,3,4,5]",
-      "desc": "Standard: spike then small"
+      "desc": "Standard: spike then small",
+      "output": "200000"
     },
     {
       "input": "[1,2,3,4,5,100000]",
-      "desc": "Standard: spike at end"
+      "desc": "Standard: spike at end",
+      "output": "199997"
     },
     {
       "input": "[1,3,5,7,9,11,13,15,17,19]",
-      "desc": "Standard: odd progression"
+      "desc": "Standard: odd progression",
+      "output": "46"
     },
     {
       "input": "[19,17,15,13,11,9,7,5,3,1]",
-      "desc": "Standard: descending odd"
+      "desc": "Standard: descending odd",
+      "output": "46"
     },
     {
       "input": "[7,84,38,15,53,7,30,89,38,15,53]",
-      "desc": "Standard: random"
+      "desc": "Standard: random",
+      "output": "447"
     }
   ]
 }

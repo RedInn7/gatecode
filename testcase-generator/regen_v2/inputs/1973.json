@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 1000, -1000 <= node.val <= 1000",
   "input_format": "single line: head (JSON array of node values)",
   "testcases": [
-    {"input": "[1,2,-3,3,1]", "desc": "Standard: example 1"},
-    {"input": "[1,2,3,-3,4]", "desc": "Standard: example 2"},
-    {"input": "[1,2,3,-3,-2]", "desc": "Standard: example 3"},
-    {"input": "[1]", "desc": "Edge: n=1"},
-    {"input": "[0]", "desc": "Edge: single zero -> empty"},
-    {"input": "[1,-1]", "desc": "Edge: pair cancels"},
-    {"input": "[0,0,0]", "desc": "Edge: all zeros"},
-    {"input": "[1,2,3,4,5]", "desc": "Standard: no zero sums"},
-    {"input": "[-1,1,-1,1,-1,1]", "desc": "Standard: alternating cancels"},
-    {"input": "[1000,-1000]", "desc": "Edge: max cancel"},
-    {"input": "[-1000,-1000,1000,1000]", "desc": "Standard: cancel pairs"},
-    {"input": "[1,2,-3]", "desc": "Standard: full cancel"},
-    {"input": "[5,5,-10,3,2,-5]", "desc": "Standard: multiple cancels"},
-    {"input": "[1,2,3,-6,4,5,-9]", "desc": "Standard: chained zero sums"},
-    {"input": "[1,3,2,-3,-2,5,5,-5,1]", "desc": "Standard: complex"},
-    {"input": "[10,-3,-7,5,-5,1]", "desc": "Standard"},
-    {"input": "[1,2,3,4,5,-1,-2,-3,-4,-5]", "desc": "Standard: full half cancel"},
-    {"input": "[1,1,1,1,1]", "desc": "Standard: all ones no cancel"},
-    {"input": "[-1,-1,-1,-1,-1]", "desc": "Standard: all negative"},
-    {"input": "[0,1,0,2,0,3,0]", "desc": "Standard: zeros interspersed"}
+    {
+      "input": "[1,2,-3,3,1]",
+      "desc": "Standard: example 1",
+      "output": "[3, 1]"
+    },
+    {
+      "input": "[1,2,3,-3,4]",
+      "desc": "Standard: example 2",
+      "output": "[1, 2, 4]"
+    },
+    {
+      "input": "[1,2,3,-3,-2]",
+      "desc": "Standard: example 3",
+      "output": "[1]"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1",
+      "output": "[1]"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: single zero -> empty",
+      "output": "null"
+    },
+    {
+      "input": "[1,-1]",
+      "desc": "Edge: pair cancels",
+      "output": "null"
+    },
+    {
+      "input": "[0,0,0]",
+      "desc": "Edge: all zeros",
+      "output": "null"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "desc": "Standard: no zero sums",
+      "output": "[1, 2, 3, 4, 5]"
+    },
+    {
+      "input": "[-1,1,-1,1,-1,1]",
+      "desc": "Standard: alternating cancels",
+      "output": "null"
+    },
+    {
+      "input": "[1000,-1000]",
+      "desc": "Edge: max cancel",
+      "output": "null"
+    },
+    {
+      "input": "[-1000,-1000,1000,1000]",
+      "desc": "Standard: cancel pairs",
+      "output": "null"
+    },
+    {
+      "input": "[1,2,-3]",
+      "desc": "Standard: full cancel",
+      "output": "null"
+    },
+    {
+      "input": "[5,5,-10,3,2,-5]",
+      "desc": "Standard: multiple cancels",
+      "output": "null"
+    },
+    {
+      "input": "[1,2,3,-6,4,5,-9]",
+      "desc": "Standard: chained zero sums",
+      "output": "null"
+    },
+    {
+      "input": "[1,3,2,-3,-2,5,5,-5,1]",
+      "desc": "Standard: complex",
+      "output": "[1, 5, 1]"
+    },
+    {
+      "input": "[10,-3,-7,5,-5,1]",
+      "desc": "Standard",
+      "output": "[1]"
+    },
+    {
+      "input": "[1,2,3,4,5,-1,-2,-3,-4,-5]",
+      "desc": "Standard: full half cancel",
+      "output": "null"
+    },
+    {
+      "input": "[1,1,1,1,1]",
+      "desc": "Standard: all ones no cancel",
+      "output": "[1, 1, 1, 1, 1]"
+    },
+    {
+      "input": "[-1,-1,-1,-1,-1]",
+      "desc": "Standard: all negative",
+      "output": "[-1, -1, -1, -1, -1]"
+    },
+    {
+      "input": "[0,1,0,2,0,3,0]",
+      "desc": "Standard: zeros interspersed",
+      "output": "[1, 2, 3]"
+    }
   ]
 }

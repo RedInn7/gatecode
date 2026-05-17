@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"ch   ie   pr\"\n3",
-      "desc": "Standard: example 1 (rows=3 'cipher')"
+      "desc": "Standard: example 1 (rows=3 'cipher')",
+      "output": "\"cipher\""
     },
     {
       "input": "\"iveo    eed   l te   olc\"\n4",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "\"i love leetcode\""
     },
     {
       "input": "\"ab\"\n2",
-      "desc": "Edge: min rows=2"
+      "desc": "Edge: min rows=2",
+      "output": "\"a\""
     },
     {
       "input": "\"abcdef\"\n3",
-      "desc": "Edge: rows=3 simple"
+      "desc": "Edge: rows=3 simple",
+      "output": "\"adb\""
     },
     {
       "input": "\"a\"\n1",
-      "desc": "Edge: rows must be >=2, skip if invalid"
+      "desc": "Edge: rows must be >=2, skip if invalid",
+      "output": "\"a\""
     },
     {
       "input": "\"abcd\"\n2",
-      "desc": "Standard: 2x2"
+      "desc": "Standard: 2x2",
+      "output": "\"adb\""
     },
     {
       "input": "\"aabbcc\"\n2",
-      "desc": "Standard: 2x3"
+      "desc": "Standard: 2x3",
+      "output": "\"acacb\""
     },
     {
       "input": "\"abcdefghij\"\n5",
-      "desc": "Standard: 5 rows"
+      "desc": "Standard: 5 rows",
+      "output": "\"adb\""
     },
     {
       "input": "\"helloworld    \"\n3",
-      "desc": "Standard: padded"
+      "desc": "Standard: padded",
+      "output": "\"hw eo lrl\""
     },
     {
       "input": "\"      \"\n2",
-      "desc": "Edge: all spaces"
+      "desc": "Edge: all spaces",
+      "output": "\"\""
     },
     {
       "input": "\"abcdefghijklmnopqr\"\n3",
-      "desc": "Standard: 3x6"
+      "desc": "Standard: 3x6",
+      "output": "\"ahobipcjqdkrelf\""
     },
     {
       "input": "\"xyzxyzxyz\"\n3",
-      "desc": "Standard: 3x3"
+      "desc": "Standard: 3x3",
+      "output": "\"xyzyzz\""
     },
     {
       "input": "\"a b c d e f\"\n2",
-      "desc": "Standard: spaces in middle"
+      "desc": "Standard: spaces in middle",
+      "output": "\"ad  be  c\""
     },
     {
       "input": "\"hello world\"\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"hweolrllo\""
     },
     {
       "input": "\"testing testing 1 2 3\"\n5",
-      "desc": "Standard: longer"
+      "desc": "Standard: longer",
+      "output": "\"tns egts t\""
     },
     {
       "input": "\"abcde abcde\"\n2",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"aabbccdde\""
     },
     {
       "input": "\"  hello  \"\n3",
-      "desc": "Edge: leading/trailing spaces"
+      "desc": "Edge: leading/trailing spaces",
+      "output": "\" l  lh\""
     },
     {
       "input": "\"abcdefghijklmnopqrst\"\n4",
-      "desc": "Standard: 4x5"
+      "desc": "Standard: 4x5",
+      "output": "\"agmsbhntciodje\""
     },
     {
       "input": "\"a               \"\n4",
-      "desc": "Edge: mostly empty"
+      "desc": "Edge: mostly empty",
+      "output": "\"a\""
     },
     {
       "input": "\"kyoxxzyakzrcfvdueydlzdwrzazkgsfbvohtpphtvuodhgqd\"\n4",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"kvztydkvouguxesoxyfdzdbhylvgazoqkdhdzwtrrc\""
     }
   ]
 }

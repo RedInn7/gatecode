@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "4",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "false"
     },
     {
       "input": "4",
-      "desc": "Standard: example 2 minimum"
+      "desc": "Standard: example 2 minimum",
+      "output": "false"
     },
     {
       "input": "5",
-      "desc": "Edge: smallest"
+      "desc": "Edge: smallest",
+      "output": "false"
     },
     {
       "input": "6",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "false"
     },
     {
       "input": "7",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "false"
     },
     {
       "input": "8",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "false"
     },
     {
       "input": "10",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "100",
-      "desc": "Standard: medium"
+      "desc": "Standard: medium",
+      "output": "false"
     },
     {
       "input": "1000",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "10000",
-      "desc": "Standard: large"
+      "desc": "Standard: large",
+      "output": "false"
     },
     {
       "input": "100000",
-      "desc": "Edge: max"
+      "desc": "Edge: max",
+      "output": "false"
     },
     {
       "input": "50",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "99",
-      "desc": "Standard: just under 100"
+      "desc": "Standard: just under 100",
+      "output": "false"
     },
     {
       "input": "999",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "99999",
-      "desc": "Standard: near max"
+      "desc": "Standard: near max",
+      "output": "false"
     },
     {
       "input": "12",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "16",
-      "desc": "Standard: power of 2"
+      "desc": "Standard: power of 2",
+      "output": "false"
     },
     {
       "input": "27",
-      "desc": "Standard: power of 3"
+      "desc": "Standard: power of 3",
+      "output": "false"
     },
     {
       "input": "256",
-      "desc": "Standard: power"
+      "desc": "Standard: power",
+      "output": "false"
     },
     {
       "input": "65536",
-      "desc": "Standard: 2^16"
+      "desc": "Standard: 2^16",
+      "output": "false"
     }
   ]
 }

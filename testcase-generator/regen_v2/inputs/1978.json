@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "2\n2",
-      "desc": "Edge: n=1 or minimal input"
+      "desc": "Edge: n=1 or minimal input",
+      "output": "0"
     },
     {
       "input": "5\n7",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "23"
     },
     {
       "input": "2\n3",
-      "desc": "Edge: smallest primes"
+      "desc": "Edge: smallest primes",
+      "output": "1"
     },
     {
       "input": "3\n2",
-      "desc": "Edge: order shouldn't matter"
+      "desc": "Edge: order shouldn't matter",
+      "output": "1"
     },
     {
       "input": "2\n7",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "5"
     },
     {
       "input": "3\n5",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "7"
     },
     {
       "input": "3\n7",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "11"
     },
     {
       "input": "7\n11",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "59"
     },
     {
       "input": "11\n13",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "119"
     },
     {
       "input": "13\n17",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "191"
     },
     {
       "input": "97\n101",
-      "desc": "Standard: 2-digit primes"
+      "desc": "Standard: 2-digit primes",
+      "output": "9599"
     },
     {
       "input": "2\n4999",
-      "desc": "Edge: large 2nd"
+      "desc": "Edge: large 2nd",
+      "output": "4997"
     },
     {
       "input": "3\n3329",
-      "desc": "Edge: large"
+      "desc": "Edge: large",
+      "output": "6655"
     },
     {
       "input": "5\n1999",
-      "desc": "Edge: 5*1999"
+      "desc": "Edge: 5*1999",
+      "output": "7991"
     },
     {
       "input": "7\n1429",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "8567"
     },
     {
       "input": "11\n911",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "9099"
     },
     {
       "input": "31\n313",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "9359"
     },
     {
       "input": "29\n331",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "9239"
     },
     {
       "input": "97\n103",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "9791"
     },
     {
       "input": "61\n163",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "9719"
     }
   ]
 }

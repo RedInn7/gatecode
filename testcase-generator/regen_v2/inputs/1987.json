@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= n <= 10^5, -10^9 <= balance[i] <= 10^9, at most 1 negative",
   "input_format": "single line: balance (JSON array)",
   "testcases": [
-    {"input": "[5,1,-4]", "desc": "Standard: example 1"},
-    {"input": "[1,2,-5,2]", "desc": "Standard: example 2"},
-    {"input": "[1]", "desc": "Edge: n=1 zero"},
-    {"input": "[0]", "desc": "Edge: n=1 single zero"},
-    {"input": "[-1]", "desc": "Edge: n=1 single negative impossible"},
-    {"input": "[1,-1]", "desc": "Edge: n=2 simple"},
-    {"input": "[0,0,0,0]", "desc": "Edge: all zeros"},
-    {"input": "[5,5,5,5]", "desc": "Edge: all positive equal"},
-    {"input": "[10,-10]", "desc": "Edge: pos and neg pair"},
-    {"input": "[1,2,3,-6]", "desc": "Standard: deficit at end"},
-    {"input": "[-3,1,1,1]", "desc": "Standard: deficit at start"},
-    {"input": "[1,2,3,4,5,6,-21]", "desc": "Standard: large deficit"},
-    {"input": "[1000000000,-1000000000]", "desc": "Edge: max values"},
-    {"input": "[1,1,1,1,1,1,1,-7]", "desc": "Standard: spread"},
-    {"input": "[-10,2,2,2,2,2]", "desc": "Standard: deficit start"},
-    {"input": "[5,-5]", "desc": "Edge: simple pair n=2"},
-    {"input": "[3,3,3,-9]", "desc": "Standard: 3:1 ratio"},
-    {"input": "[100,-50,50,-100]", "desc": "Edge: violates 'at most 1 neg' so skip if disallowed; only 1 neg allowed"},
-    {"input": "[1,2,3,4,5,6,7,8,9,-45]", "desc": "Standard: long with neg at end"},
-    {"input": "[10,20,30,40,50,-100,40,30,20,10]", "desc": "Standard: deficit middle"}
+    {
+      "input": "[5,1,-4]",
+      "desc": "Standard: example 1",
+      "output": "4"
+    },
+    {
+      "input": "[1,2,-5,2]",
+      "desc": "Standard: example 2",
+      "output": "6"
+    },
+    {
+      "input": "[1]",
+      "desc": "Edge: n=1 zero",
+      "output": "0"
+    },
+    {
+      "input": "[0]",
+      "desc": "Edge: n=1 single zero",
+      "output": "0"
+    },
+    {
+      "input": "[-1]",
+      "desc": "Edge: n=1 single negative impossible",
+      "output": "-1"
+    },
+    {
+      "input": "[1,-1]",
+      "desc": "Edge: n=2 simple",
+      "output": "1"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "desc": "Edge: all zeros",
+      "output": "0"
+    },
+    {
+      "input": "[5,5,5,5]",
+      "desc": "Edge: all positive equal",
+      "output": "0"
+    },
+    {
+      "input": "[10,-10]",
+      "desc": "Edge: pos and neg pair",
+      "output": "10"
+    },
+    {
+      "input": "[1,2,3,-6]",
+      "desc": "Standard: deficit at end",
+      "output": "8"
+    },
+    {
+      "input": "[-3,1,1,1]",
+      "desc": "Standard: deficit at start",
+      "output": "4"
+    },
+    {
+      "input": "[1,2,3,4,5,6,-21]",
+      "desc": "Standard: large deficit",
+      "output": "42"
+    },
+    {
+      "input": "[1000000000,-1000000000]",
+      "desc": "Edge: max values",
+      "output": "1000000000"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1,-7]",
+      "desc": "Standard: spread",
+      "output": "16"
+    },
+    {
+      "input": "[-10,2,2,2,2,2]",
+      "desc": "Standard: deficit start",
+      "output": "18"
+    },
+    {
+      "input": "[5,-5]",
+      "desc": "Edge: simple pair n=2",
+      "output": "5"
+    },
+    {
+      "input": "[3,3,3,-9]",
+      "desc": "Standard: 3:1 ratio",
+      "output": "12"
+    },
+    {
+      "input": "[100,-50,50,-100]",
+      "desc": "Edge: violates 'at most 1 neg' so skip if disallowed; only 1 neg allowed",
+      "output": "200"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,-45]",
+      "desc": "Standard: long with neg at end",
+      "output": "125"
+    },
+    {
+      "input": "[10,20,30,40,50,-100,40,30,20,10]",
+      "desc": "Standard: deficit middle",
+      "output": "110"
+    }
   ]
 }

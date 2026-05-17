@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,2,3,4,5,6,7,8]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "true"
     },
     {
       "input": "[3,1]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "false"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1 (can't split into non-empty)"
+      "desc": "Edge: n=1 (can't split into non-empty)",
+      "output": "false"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge: n=2 equal"
+      "desc": "Edge: n=2 equal",
+      "output": "true"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge: n=2 unequal"
+      "desc": "Edge: n=2 unequal",
+      "output": "false"
     },
     {
       "input": "[0,0,0,0,0]",
-      "desc": "Edge: all zeros"
+      "desc": "Edge: all zeros",
+      "output": "true"
     },
     {
       "input": "[5600,9175,1280,6047,4545]",
-      "desc": "Regenerated: diverse at position 6"
+      "desc": "Regenerated: diverse at position 6",
+      "output": "false"
     },
     {
       "input": "[10000,10000,10000]",
-      "desc": "Edge: max same"
+      "desc": "Edge: max same",
+      "output": "true"
     },
     {
       "input": "[10000,0]",
-      "desc": "Edge: extremes"
+      "desc": "Edge: extremes",
+      "output": "false"
     },
     {
       "input": "[3,3,3,3,3,3,3]",
-      "desc": "Edge: all same n=7"
+      "desc": "Edge: all same n=7",
+      "output": "true"
     },
     {
       "input": "[1,2,3,4,5]",
-      "desc": "Standard: 1..5 sum=15 avg=3, splittable [3] [1,2,4,5]"
+      "desc": "Standard: 1..5 sum=15 avg=3, splittable [3] [1,2,4,5]",
+      "output": "true"
     },
     {
       "input": "[5,4,3,2,1]",
-      "desc": "Standard: reversed"
+      "desc": "Standard: reversed",
+      "output": "true"
     },
     {
       "input": "[2,0,5,6,4,3,1,9,7,8]",
-      "desc": "Standard: 0..9 shuffled"
+      "desc": "Standard: 0..9 shuffled",
+      "output": "true"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
-      "desc": "Standard: 1..20"
+      "desc": "Standard: 1..20",
+      "output": "true"
     },
     {
       "input": "[0,0,0,1]",
-      "desc": "Standard: small with imbalance"
+      "desc": "Standard: small with imbalance",
+      "output": "false"
     },
     {
       "input": "[2,2]",
-      "desc": "Edge: equal pair"
+      "desc": "Edge: equal pair",
+      "output": "true"
     },
     {
       "input": "[1,3]",
-      "desc": "Edge: avg 2 unsplittable"
+      "desc": "Edge: avg 2 unsplittable",
+      "output": "false"
     },
     {
       "input": "[1,2,3]",
-      "desc": "Standard: small n=3"
+      "desc": "Standard: small n=3",
+      "output": "true"
     },
     {
       "input": "[6,8,18,3,1]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]",
-      "desc": "Stress: 1..30"
+      "desc": "Stress: 1..30",
+      "output": "true"
     }
   ]
 }

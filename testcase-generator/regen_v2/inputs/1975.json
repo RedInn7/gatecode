@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= k <= 10^9",
   "input_format": "single line: k (int)",
   "testcases": [
-    {"input": "7", "desc": "Standard: example 1"},
-    {"input": "10", "desc": "Standard: example 2"},
-    {"input": "19", "desc": "Standard: example 3"},
-    {"input": "1", "desc": "Edge: k=1"},
-    {"input": "2", "desc": "Edge: k=2 (one fib)"},
-    {"input": "3", "desc": "Edge: k=3"},
-    {"input": "4", "desc": "Standard: 4=3+1"},
-    {"input": "5", "desc": "Edge: 5 is fib"},
-    {"input": "8", "desc": "Edge: 8 is fib"},
-    {"input": "13", "desc": "Edge: 13 is fib"},
-    {"input": "100", "desc": "Standard"},
-    {"input": "1000", "desc": "Standard"},
-    {"input": "1000000", "desc": "Standard: 10^6"},
-    {"input": "999999937", "desc": "Standard: prime near 10^9"},
-    {"input": "1000000000", "desc": "Edge: max k"},
-    {"input": "999999999", "desc": "Edge: max-1"},
-    {"input": "832040", "desc": "Edge: F_30 a fib"},
-    {"input": "39088169", "desc": "Edge: F_38 a fib"},
-    {"input": "701408733", "desc": "Edge: F_44 fib"},
-    {"input": "433494437", "desc": "Edge: F_43 fib"}
+    {
+      "input": "7",
+      "desc": "Standard: example 1",
+      "output": "2"
+    },
+    {
+      "input": "10",
+      "desc": "Standard: example 2",
+      "output": "2"
+    },
+    {
+      "input": "19",
+      "desc": "Standard: example 3",
+      "output": "3"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: k=1",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "desc": "Edge: k=2 (one fib)",
+      "output": "1"
+    },
+    {
+      "input": "3",
+      "desc": "Edge: k=3",
+      "output": "1"
+    },
+    {
+      "input": "4",
+      "desc": "Standard: 4=3+1",
+      "output": "2"
+    },
+    {
+      "input": "5",
+      "desc": "Edge: 5 is fib",
+      "output": "1"
+    },
+    {
+      "input": "8",
+      "desc": "Edge: 8 is fib",
+      "output": "1"
+    },
+    {
+      "input": "13",
+      "desc": "Edge: 13 is fib",
+      "output": "1"
+    },
+    {
+      "input": "100",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "1000000",
+      "desc": "Standard: 10^6",
+      "output": "5"
+    },
+    {
+      "input": "999999937",
+      "desc": "Standard: prime near 10^9",
+      "output": "13"
+    },
+    {
+      "input": "1000000000",
+      "desc": "Edge: max k",
+      "output": "14"
+    },
+    {
+      "input": "999999999",
+      "desc": "Edge: max-1",
+      "output": "13"
+    },
+    {
+      "input": "832040",
+      "desc": "Edge: F_30 a fib",
+      "output": "1"
+    },
+    {
+      "input": "39088169",
+      "desc": "Edge: F_38 a fib",
+      "output": "1"
+    },
+    {
+      "input": "701408733",
+      "desc": "Edge: F_44 fib",
+      "output": "1"
+    },
+    {
+      "input": "433494437",
+      "desc": "Edge: F_43 fib",
+      "output": "1"
+    }
   ]
 }

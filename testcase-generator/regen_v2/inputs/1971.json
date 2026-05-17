@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 5*10^5, lowercase English",
   "input_format": "single line: s (JSON string)",
   "testcases": [
-    {"input": "\"yz\"", "desc": "Standard: example 1"},
-    {"input": "\"a\"", "desc": "Standard: example 2"},
-    {"input": "\"b\"", "desc": "Edge: single char b"},
-    {"input": "\"z\"", "desc": "Edge: single z (1 op)"},
-    {"input": "\"aaaaa\"", "desc": "Edge: all a"},
-    {"input": "\"zzzzz\"", "desc": "Edge: all z"},
-    {"input": "\"ab\"", "desc": "Edge: a + b"},
-    {"input": "\"ba\"", "desc": "Edge: b + a same set"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: all 26"},
-    {"input": "\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard: reversed alphabet"},
-    {"input": "\"hello\"", "desc": "Standard: typical word"},
-    {"input": "\"abcabc\"", "desc": "Standard: 3 distinct repeated"},
-    {"input": "\"zabczabc\"", "desc": "Standard: with z"},
-    {"input": "\"abcdef\"", "desc": "Standard: 6 distinct"},
-    {"input": "\"zzazzzazzz\"", "desc": "Standard: mostly z some a"},
-    {"input": "\"aaaazzzzaaaa\"", "desc": "Standard: a and z mixed"},
-    {"input": "\"qwertyuiop\"", "desc": "Standard: top row"},
-    {"input": "\"theperfectstorm\"", "desc": "Standard: phrase"},
-    {"input": "\"mississippi\"", "desc": "Standard: with repeats"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"", "desc": "Stress: double alphabet"}
+    {
+      "input": "\"yz\"",
+      "desc": "Standard: example 1",
+      "output": "2"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Standard: example 2",
+      "output": "0"
+    },
+    {
+      "input": "\"b\"",
+      "desc": "Edge: single char b",
+      "output": "25"
+    },
+    {
+      "input": "\"z\"",
+      "desc": "Edge: single z (1 op)",
+      "output": "1"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "desc": "Edge: all a",
+      "output": "0"
+    },
+    {
+      "input": "\"zzzzz\"",
+      "desc": "Edge: all z",
+      "output": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: a + b",
+      "output": "25"
+    },
+    {
+      "input": "\"ba\"",
+      "desc": "Edge: b + a same set",
+      "output": "25"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard: all 26",
+      "output": "25"
+    },
+    {
+      "input": "\"zyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Standard: reversed alphabet",
+      "output": "25"
+    },
+    {
+      "input": "\"hello\"",
+      "desc": "Standard: typical word",
+      "output": "22"
+    },
+    {
+      "input": "\"abcabc\"",
+      "desc": "Standard: 3 distinct repeated",
+      "output": "25"
+    },
+    {
+      "input": "\"zabczabc\"",
+      "desc": "Standard: with z",
+      "output": "25"
+    },
+    {
+      "input": "\"abcdef\"",
+      "desc": "Standard: 6 distinct",
+      "output": "25"
+    },
+    {
+      "input": "\"zzazzzazzz\"",
+      "desc": "Standard: mostly z some a",
+      "output": "1"
+    },
+    {
+      "input": "\"aaaazzzzaaaa\"",
+      "desc": "Standard: a and z mixed",
+      "output": "1"
+    },
+    {
+      "input": "\"qwertyuiop\"",
+      "desc": "Standard: top row",
+      "output": "22"
+    },
+    {
+      "input": "\"theperfectstorm\"",
+      "desc": "Standard: phrase",
+      "output": "24"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard: with repeats",
+      "output": "18"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Stress: double alphabet",
+      "output": "25"
+    }
   ]
 }

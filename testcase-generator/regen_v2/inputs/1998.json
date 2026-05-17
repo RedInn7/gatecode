@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]\n\"makes\"\n\"coding\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "1"
     },
     {
       "input": "[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]\n\"makes\"\n\"makes\"",
-      "desc": "Standard: example 2 same word"
+      "desc": "Standard: example 2 same word",
+      "output": "3"
     },
     {
       "input": "[\"a\"]\n\"a\"\n\"a\"",
-      "desc": "Edge: must be >=2 occurrences if same word; skip if invalid"
+      "desc": "Edge: must be >=2 occurrences if same word; skip if invalid",
+      "output": "1"
     },
     {
       "input": "[\"a\",\"b\"]\n\"a\"\n\"b\"",
-      "desc": "Edge: minimal distinct"
+      "desc": "Edge: minimal distinct",
+      "output": "1"
     },
     {
       "input": "[\"a\",\"a\"]\n\"a\"\n\"a\"",
-      "desc": "Edge: same word twice"
+      "desc": "Edge: same word twice",
+      "output": "1"
     },
     {
       "input": "[\"a\",\"b\",\"a\"]\n\"a\"\n\"a\"",
-      "desc": "Edge: same word with gap"
+      "desc": "Edge: same word with gap",
+      "output": "2"
     },
     {
       "input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]\n\"a\"\n\"e\"",
-      "desc": "Standard: distance 4"
+      "desc": "Standard: distance 4",
+      "output": "4"
     },
     {
       "input": "[\"a\",\"b\",\"c\",\"d\",\"a\"]\n\"a\"\n\"a\"",
-      "desc": "Standard: same word at ends"
+      "desc": "Standard: same word at ends",
+      "output": "4"
     },
     {
       "input": "[\"hello\",\"world\",\"hello\",\"world\"]\n\"hello\"\n\"world\"",
-      "desc": "Standard: alternating"
+      "desc": "Standard: alternating",
+      "output": "1"
     },
     {
       "input": "[\"foo\",\"bar\",\"baz\",\"foo\",\"bar\"]\n\"foo\"\n\"bar\"",
-      "desc": "Standard: multi occurrences"
+      "desc": "Standard: multi occurrences",
+      "output": "1"
     },
     {
       "input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]\n\"a\"\n\"a\"",
-      "desc": "Standard: all same word"
+      "desc": "Standard: all same word",
+      "output": "1"
     },
     {
       "input": "[\"x\",\"y\",\"x\",\"y\",\"x\"]\n\"x\"\n\"y\"",
-      "desc": "Standard: dense interleave"
+      "desc": "Standard: dense interleave",
+      "output": "1"
     },
     {
       "input": "[\"x\",\"y\",\"z\",\"x\",\"y\",\"z\",\"x\",\"y\",\"z\"]\n\"x\"\n\"z\"",
-      "desc": "Standard: triples"
+      "desc": "Standard: triples",
+      "output": "1"
     },
     {
       "input": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"a\"]\n\"a\"\n\"a\"",
-      "desc": "Standard: a at ends gap 5"
+      "desc": "Standard: a at ends gap 5",
+      "output": "5"
     },
     {
       "input": "[\"a\",\"x\",\"y\",\"a\",\"x\",\"y\",\"a\"]\n\"a\"\n\"a\"",
-      "desc": "Standard: same word distance 3"
+      "desc": "Standard: same word distance 3",
+      "output": "3"
     },
     {
       "input": "[\"one\",\"two\",\"three\",\"four\",\"five\"]\n\"two\"\n\"four\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[\"a\",\"b\",\"a\",\"b\",\"a\",\"b\",\"a\"]\n\"a\"\n\"b\"",
-      "desc": "Standard: alternating"
+      "desc": "Standard: alternating",
+      "output": "1"
     },
     {
       "input": "[\"hello\",\"hello\",\"world\"]\n\"hello\"\n\"hello\"",
-      "desc": "Edge: adjacent same"
+      "desc": "Edge: adjacent same",
+      "output": "1"
     },
     {
       "input": "[\"abc\",\"def\",\"abc\",\"ghi\",\"abc\"]\n\"abc\"\n\"abc\"",
-      "desc": "Standard: same word 3 times"
+      "desc": "Standard: same word 3 times",
+      "output": "2"
     },
     {
       "input": "[330,-670,661,272,105,708,816,427,-928,-633]\n\"fcjuhzznva\"\n\"rjfdidmwyfim\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "10"
     }
   ]
 }
