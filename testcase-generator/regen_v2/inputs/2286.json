@@ -4,25 +4,105 @@
   "inferred_constraints": "MM-DD format dates, all 2021",
   "input_format": "line1: arriveAlice (quoted MM-DD); line2: leaveAlice (quoted); line3: arriveBob (quoted); line4: leaveBob (quoted)",
   "testcases": [
-    {"input": "\"08-15\"\n\"08-18\"\n\"08-16\"\n\"08-19\"", "desc": "Standard example 1"},
-    {"input": "\"10-01\"\n\"10-31\"\n\"11-01\"\n\"12-31\"", "desc": "Standard example 2"},
-    {"input": "\"01-01\"\n\"01-01\"\n\"01-01\"\n\"01-01\"", "desc": "Edge single day"},
-    {"input": "\"01-01\"\n\"12-31\"\n\"01-01\"\n\"12-31\"", "desc": "Edge full year"},
-    {"input": "\"01-01\"\n\"06-30\"\n\"07-01\"\n\"12-31\"", "desc": "Edge halves no overlap"},
-    {"input": "\"02-01\"\n\"02-28\"\n\"02-15\"\n\"03-15\"", "desc": "Standard Feb"},
-    {"input": "\"02-01\"\n\"02-28\"\n\"02-28\"\n\"03-15\"", "desc": "Edge 1 day overlap"},
-    {"input": "\"03-15\"\n\"03-20\"\n\"03-17\"\n\"03-18\"", "desc": "Edge contained"},
-    {"input": "\"06-15\"\n\"06-15\"\n\"06-15\"\n\"06-15\"", "desc": "Edge same day"},
-    {"input": "\"12-25\"\n\"12-31\"\n\"12-26\"\n\"12-30\"", "desc": "Standard end year"},
-    {"input": "\"01-01\"\n\"01-15\"\n\"01-10\"\n\"01-20\"", "desc": "Standard partial"},
-    {"input": "\"07-04\"\n\"07-25\"\n\"07-04\"\n\"07-25\"", "desc": "Edge identical"},
-    {"input": "\"04-15\"\n\"05-15\"\n\"04-15\"\n\"04-16\"", "desc": "Standard"},
-    {"input": "\"08-01\"\n\"08-31\"\n\"08-15\"\n\"08-15\"", "desc": "Standard contained 1 day"},
-    {"input": "\"01-31\"\n\"02-01\"\n\"02-01\"\n\"02-02\"", "desc": "Edge boundary"},
-    {"input": "\"02-28\"\n\"03-01\"\n\"02-28\"\n\"03-01\"", "desc": "Standard"},
-    {"input": "\"05-10\"\n\"06-20\"\n\"06-15\"\n\"07-10\"", "desc": "Standard"},
-    {"input": "\"09-01\"\n\"09-30\"\n\"10-01\"\n\"10-30\"", "desc": "Edge no overlap adjacent"},
-    {"input": "\"11-15\"\n\"11-20\"\n\"11-18\"\n\"11-22\"", "desc": "Standard"},
-    {"input": "\"01-01\"\n\"12-31\"\n\"06-15\"\n\"06-20\"", "desc": "Edge full year covers"}
+    {
+      "input": "\"08-15\"\n\"08-18\"\n\"08-16\"\n\"08-19\"",
+      "desc": "Standard example 1",
+      "output": "3"
+    },
+    {
+      "input": "\"10-01\"\n\"10-31\"\n\"11-01\"\n\"12-31\"",
+      "desc": "Standard example 2",
+      "output": "0"
+    },
+    {
+      "input": "\"01-01\"\n\"01-01\"\n\"01-01\"\n\"01-01\"",
+      "desc": "Edge single day",
+      "output": "1"
+    },
+    {
+      "input": "\"01-01\"\n\"12-31\"\n\"01-01\"\n\"12-31\"",
+      "desc": "Edge full year",
+      "output": "365"
+    },
+    {
+      "input": "\"01-01\"\n\"06-30\"\n\"07-01\"\n\"12-31\"",
+      "desc": "Edge halves no overlap",
+      "output": "0"
+    },
+    {
+      "input": "\"02-01\"\n\"02-28\"\n\"02-15\"\n\"03-15\"",
+      "desc": "Standard Feb",
+      "output": "14"
+    },
+    {
+      "input": "\"02-01\"\n\"02-28\"\n\"02-28\"\n\"03-15\"",
+      "desc": "Edge 1 day overlap",
+      "output": "1"
+    },
+    {
+      "input": "\"03-15\"\n\"03-20\"\n\"03-17\"\n\"03-18\"",
+      "desc": "Edge contained",
+      "output": "2"
+    },
+    {
+      "input": "\"06-15\"\n\"06-15\"\n\"06-15\"\n\"06-15\"",
+      "desc": "Edge same day",
+      "output": "1"
+    },
+    {
+      "input": "\"12-25\"\n\"12-31\"\n\"12-26\"\n\"12-30\"",
+      "desc": "Standard end year",
+      "output": "5"
+    },
+    {
+      "input": "\"01-01\"\n\"01-15\"\n\"01-10\"\n\"01-20\"",
+      "desc": "Standard partial",
+      "output": "6"
+    },
+    {
+      "input": "\"07-04\"\n\"07-25\"\n\"07-04\"\n\"07-25\"",
+      "desc": "Edge identical",
+      "output": "22"
+    },
+    {
+      "input": "\"04-15\"\n\"05-15\"\n\"04-15\"\n\"04-16\"",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "\"08-01\"\n\"08-31\"\n\"08-15\"\n\"08-15\"",
+      "desc": "Standard contained 1 day",
+      "output": "1"
+    },
+    {
+      "input": "\"01-31\"\n\"02-01\"\n\"02-01\"\n\"02-02\"",
+      "desc": "Edge boundary",
+      "output": "1"
+    },
+    {
+      "input": "\"02-28\"\n\"03-01\"\n\"02-28\"\n\"03-01\"",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "\"05-10\"\n\"06-20\"\n\"06-15\"\n\"07-10\"",
+      "desc": "Standard",
+      "output": "6"
+    },
+    {
+      "input": "\"09-01\"\n\"09-30\"\n\"10-01\"\n\"10-30\"",
+      "desc": "Edge no overlap adjacent",
+      "output": "0"
+    },
+    {
+      "input": "\"11-15\"\n\"11-20\"\n\"11-18\"\n\"11-22\"",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "\"01-01\"\n\"12-31\"\n\"06-15\"\n\"06-20\"",
+      "desc": "Edge full year covers",
+      "output": "6"
+    }
   ]
 }

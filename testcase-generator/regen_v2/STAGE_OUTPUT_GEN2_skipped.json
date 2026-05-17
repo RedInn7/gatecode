@@ -370,5 +370,11 @@
     "slug": "number-of-perfect-pairs",
     "fqid": 3649,
     "reason": "No Python3 solution found for fqid=3649"
+  },
+  {
+    "pid": 2273,
+    "slug": "next-special-palindrome-number",
+    "fqid": 3646,
+    "reason": "No Python3 solution found for fqid=3646"
   }
 ]

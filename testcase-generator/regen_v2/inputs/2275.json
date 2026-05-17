@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[1,1,0],[1,1,0],[0,0,1]]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "2"
     },
     {
       "input": "[[1,0,0],[0,1,0],[0,0,1]]",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "3"
     },
     {
       "input": "[[1]]",
-      "desc": "Edge n=1"
+      "desc": "Edge n=1",
+      "output": "1"
     },
     {
       "input": "[[1,1],[1,1]]",
-      "desc": "Edge 2 connected"
+      "desc": "Edge 2 connected",
+      "output": "1"
     },
     {
       "input": "[[1,0],[0,1]]",
-      "desc": "Edge 2 isolated"
+      "desc": "Edge 2 isolated",
+      "output": "2"
     },
     {
       "input": "[[1,1,1],[1,1,1],[1,1,1]]",
-      "desc": "Edge all connected"
+      "desc": "Edge all connected",
+      "output": "1"
     },
     {
       "input": "[[1,0,0,0,0],[0,1,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,0,0,0,1]]",
-      "desc": "Standard all isolated"
+      "desc": "Standard all isolated",
+      "output": "5"
     },
     {
       "input": "[[1,1,0,0,0],[1,1,1,0,0],[0,1,1,0,0],[0,0,0,1,1],[0,0,0,1,1]]",
-      "desc": "Standard 2 groups"
+      "desc": "Standard 2 groups",
+      "output": "2"
     },
     {
       "input": "[[1,1,1,0,0,0],[1,1,1,0,0,0],[1,1,1,0,0,0],[0,0,0,1,1,1],[0,0,0,1,1,1],[0,0,0,1,1,1]]",
-      "desc": "Standard 2x3"
+      "desc": "Standard 2x3",
+      "output": "2"
     },
     {
       "input": "[[1,0,1],[0,1,0],[1,0,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[[1,1,0,1],[1,1,0,0],[0,0,1,0],[1,0,0,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
-      "desc": "Edge fully connected"
+      "desc": "Edge fully connected",
+      "output": "1"
     },
     {
       "input": "[[-356,-495,-888],[236,-288,-943],[-398,122,783]]",
-      "desc": "Regenerated: diverse at position 12"
+      "desc": "Regenerated: diverse at position 12",
+      "output": "1"
     },
     {
       "input": "[[1,1,0,0],[1,1,0,0],[0,0,1,1],[0,0,1,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[[1,1,0,0,1],[1,1,0,0,0],[0,0,1,1,0],[0,0,1,1,0],[1,0,0,0,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[[1,0,1,0,1],[0,1,0,1,0],[1,0,1,0,1],[0,1,0,1,0],[1,0,1,0,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[[1,1,1,0,0,0,0],[1,1,1,0,0,0,0],[1,1,1,0,0,0,0],[0,0,0,1,1,0,0],[0,0,0,1,1,0,0],[0,0,0,0,0,1,1],[0,0,0,0,0,1,1]]",
-      "desc": "Standard 3 groups"
+      "desc": "Standard 3 groups",
+      "output": "3"
     },
     {
       "input": "[[1,1,1,1,0],[1,1,1,1,0],[1,1,1,1,0],[1,1,1,1,0],[0,0,0,0,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[[1,0,0,0,0,0,0,0],[0,1,1,0,0,0,0,0],[0,1,1,1,0,0,0,0],[0,0,1,1,0,0,0,0],[0,0,0,0,1,1,1,0],[0,0,0,0,1,1,1,0],[0,0,0,0,1,1,1,0],[0,0,0,0,0,0,0,1]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4"
     },
     {
       "input": "[[-327,809,-211,767,419,-963],[513,-900,-602,810,16,-987],[834,-252,780,-199,-923,711],[7,-22,48,-309,-741,639],[972,254,-124,-958,721,456],[286,-665,996,-725,785,183]]",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "1"
     }
   ]
 }

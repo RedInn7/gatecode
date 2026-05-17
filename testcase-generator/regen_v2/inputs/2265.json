@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= queries.length <= 10^5, 1 <= l <= r <= 10^9",
   "input_format": "single line: queries (JSON 2D)",
   "testcases": [
-    {"input": "[[1,2],[2,4]]", "desc": "Standard example"},
-    {"input": "[[1,1]]", "desc": "Edge l==r"},
-    {"input": "[[1,4]]", "desc": "Standard"},
-    {"input": "[[1,16]]", "desc": "Standard pow4"},
-    {"input": "[[4,16]]", "desc": "Standard"},
-    {"input": "[[1,100]]", "desc": "Standard"},
-    {"input": "[[1,1000]]", "desc": "Standard"},
-    {"input": "[[1,1000000000]]", "desc": "Edge max"},
-    {"input": "[[1000000000,1000000000]]", "desc": "Edge l=r max"},
-    {"input": "[[1,2],[3,4],[5,6]]", "desc": "Standard multi"},
-    {"input": "[[1,1],[2,2],[3,3]]", "desc": "Standard single each"},
-    {"input": "[[1,100],[100,200],[200,300]]", "desc": "Standard chain"},
-    {"input": "[[1,4],[4,16],[16,64]]", "desc": "Standard pow4 chain"},
-    {"input": "[[1,2]]", "desc": "Edge tiny"},
-    {"input": "[[5,10]]", "desc": "Standard"},
-    {"input": "[[1,1000000],[1,100000]]", "desc": "Standard"},
-    {"input": "[[10,20],[30,40],[50,60],[70,80]]", "desc": "Standard"},
-    {"input": "[[100,200],[300,400],[500,600]]", "desc": "Standard"},
-    {"input": "[[1,3]]", "desc": "Standard"},
-    {"input": "[[999999999,1000000000]]", "desc": "Stress max"}
+    {
+      "input": "[[1,2],[2,4]]",
+      "desc": "Standard example",
+      "output": "3"
+    },
+    {
+      "input": "[[1,1]]",
+      "desc": "Edge l==r",
+      "output": "1"
+    },
+    {
+      "input": "[[1,4]]",
+      "desc": "Standard",
+      "output": "3"
+    },
+    {
+      "input": "[[1,16]]",
+      "desc": "Standard pow4",
+      "output": "15"
+    },
+    {
+      "input": "[[4,16]]",
+      "desc": "Standard",
+      "output": "14"
+    },
+    {
+      "input": "[[1,100]]",
+      "desc": "Standard",
+      "output": "160"
+    },
+    {
+      "input": "[[1,1000]]",
+      "desc": "Standard",
+      "output": "2332"
+    },
+    {
+      "input": "[[1,1000000000]]",
+      "desc": "Edge max",
+      "output": "7321043037"
+    },
+    {
+      "input": "[[1000000000,1000000000]]",
+      "desc": "Edge l=r max",
+      "output": "15"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6]]",
+      "desc": "Standard multi",
+      "output": "5"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3]]",
+      "desc": "Standard single each",
+      "output": "3"
+    },
+    {
+      "input": "[[1,100],[100,200],[200,300]]",
+      "desc": "Standard chain",
+      "output": "587"
+    },
+    {
+      "input": "[[1,4],[4,16],[16,64]]",
+      "desc": "Standard pow4 chain",
+      "output": "91"
+    },
+    {
+      "input": "[[1,2]]",
+      "desc": "Edge tiny",
+      "output": "1"
+    },
+    {
+      "input": "[[5,10]]",
+      "desc": "Standard",
+      "output": "6"
+    },
+    {
+      "input": "[[1,1000000],[1,100000]]",
+      "desc": "Standard",
+      "output": "5231557"
+    },
+    {
+      "input": "[[10,20],[30,40],[50,60],[70,80]]",
+      "desc": "Standard",
+      "output": "70"
+    },
+    {
+      "input": "[[100,200],[300,400],[500,600]]",
+      "desc": "Standard",
+      "output": "708"
+    },
+    {
+      "input": "[[1,3]]",
+      "desc": "Standard",
+      "output": "2"
+    },
+    {
+      "input": "[[999999999,1000000000]]",
+      "desc": "Stress max",
+      "output": "15"
+    }
   ]
 }

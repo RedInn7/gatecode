@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"too hot\"",
-      "desc": "Standard example"
+      "desc": "Standard example",
+      "output": "18"
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge same"
+      "desc": "Edge same",
+      "output": "1"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge n=1"
+      "desc": "Edge n=1",
+      "output": "1"
     },
     {
       "input": "\"a b\"",
-      "desc": "Edge 2 single chars"
+      "desc": "Edge 2 single chars",
+      "output": "1"
     },
     {
       "input": "\"abc def\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "36"
     },
     {
       "input": "\"hello world\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "7200"
     },
     {
       "input": "\"abc abc abc\"",
-      "desc": "Standard same words"
+      "desc": "Standard same words",
+      "output": "216"
     },
     {
       "input": "\"a a a a a\"",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "1"
     },
     {
       "input": "\"banana\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "60"
     },
     {
       "input": "\"thequickbrownfox\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "394870773"
     },
     {
       "input": "\"abcdefghijklmnop\"",
-      "desc": "Edge all distinct"
+      "desc": "Edge all distinct",
+      "output": "789741546"
     },
     {
       "input": "\"aaaa bbbb cccc\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1"
     },
     {
       "input": "\"hello hello hello\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "216000"
     },
     {
       "input": "\"abcd dcba\"",
-      "desc": "Standard anagram pair"
+      "desc": "Standard anagram pair",
+      "output": "576"
     },
     {
       "input": "\"thequick brownfox jumpsover thelazydog\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "487840760"
     },
     {
       "input": "\"aabbcc ddeeff\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "8100"
     },
     {
       "input": "\"a aa aaa aaaa\"",
-      "desc": "Standard inc"
+      "desc": "Standard inc",
+      "output": "1"
     },
     {
       "input": "\"abcd efgh ijkl mnop\"",
-      "desc": "Standard distinct words"
+      "desc": "Standard distinct words",
+      "output": "331776"
     },
     {
       "input": "\"mississippi\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "34650"
     },
     {
       "input": "\"osouzgadnezwqk\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "794572653"
     }
   ]
 }

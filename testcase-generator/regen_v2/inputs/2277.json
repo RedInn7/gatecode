@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"horse\"\n\"ros\"",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "3"
     },
     {
       "input": "\"intention\"\n\"execution\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "5"
     },
     {
       "input": "\"\"\n\"\"",
-      "desc": "Edge both empty"
+      "desc": "Edge both empty",
+      "output": "0"
     },
     {
       "input": "\"a\"\n\"\"",
-      "desc": "Edge one empty"
+      "desc": "Edge one empty",
+      "output": "1"
     },
     {
       "input": "\"\"\n\"abc\"",
-      "desc": "Edge other empty"
+      "desc": "Edge other empty",
+      "output": "3"
     },
     {
       "input": "\"a\"\n\"a\"",
-      "desc": "Edge same"
+      "desc": "Edge same",
+      "output": "0"
     },
     {
       "input": "\"a\"\n\"b\"",
-      "desc": "Edge diff char"
+      "desc": "Edge diff char",
+      "output": "1"
     },
     {
       "input": "\"abc\"\n\"abc\"",
-      "desc": "Standard same"
+      "desc": "Standard same",
+      "output": "0"
     },
     {
       "input": "\"abc\"\n\"def\"",
-      "desc": "Standard fully different"
+      "desc": "Standard fully different",
+      "output": "3"
     },
     {
       "input": "\"abcdef\"\n\"fedcba\"",
-      "desc": "Standard reverse"
+      "desc": "Standard reverse",
+      "output": "6"
     },
     {
       "input": "\"hello\"\n\"world\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "4"
     },
     {
       "input": "\"abcdefghij\"\n\"jihgfedcba\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "10"
     },
     {
       "input": "\"banana\"\n\"banana\"",
-      "desc": "Standard same"
+      "desc": "Standard same",
+      "output": "0"
     },
     {
       "input": "\"banana\"\n\"bananas\"",
-      "desc": "Standard add"
+      "desc": "Standard add",
+      "output": "1"
     },
     {
       "input": "\"bananas\"\n\"banana\"",
-      "desc": "Standard remove"
+      "desc": "Standard remove",
+      "output": "1"
     },
     {
       "input": "\"mississippi\"\n\"mississipi\"",
-      "desc": "Standard 1 diff"
+      "desc": "Standard 1 diff",
+      "output": "1"
     },
     {
       "input": "\"thequickbrownfox\"\n\"thequickfox\"",
-      "desc": "Standard subset"
+      "desc": "Standard subset",
+      "output": "5"
     },
     {
       "input": "\"aaaaa\"\n\"bbbbb\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "5"
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"\n\"zyxwvutsrqponmlkjihgfedcba\"",
-      "desc": "Standard reverse alphabet"
+      "desc": "Standard reverse alphabet",
+      "output": "26"
     },
     {
       "input": "\"qwpwxltocltwhwvvux\"\n\"zszndifuritxsrvlfn\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "16"
     }
   ]
 }

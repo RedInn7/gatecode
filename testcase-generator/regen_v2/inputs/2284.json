@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[3,1],[2,5]]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "[[2, 1], [1, 2]]"
     },
     {
       "input": "[[10]]",
-      "desc": "Edge 1x1"
+      "desc": "Edge 1x1",
+      "output": "[[1]]"
     },
     {
       "input": "[[1,2],[3,4]]",
-      "desc": "Standard 2x2"
+      "desc": "Standard 2x2",
+      "output": "[[1, 2], [2, 3]]"
     },
     {
       "input": "[[4,3,2,1]]",
-      "desc": "Edge 1 row"
+      "desc": "Edge 1 row",
+      "output": "[[4, 3, 2, 1]]"
     },
     {
       "input": "[[1],[2],[3],[4]]",
-      "desc": "Edge 1 col"
+      "desc": "Edge 1 col",
+      "output": "[[1], [2], [3], [4]]"
     },
     {
       "input": "[[2,4,5],[7,3,9]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[1, 2, 3], [2, 1, 4]]"
     },
     {
       "input": "[[1,5,10],[20,15,8]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[1, 2, 3], [4, 3, 1]]"
     },
     {
       "input": "[[1,2,3],[4,5,6],[7,8,9]]",
-      "desc": "Standard inc"
+      "desc": "Standard inc",
+      "output": "[[1, 2, 3], [2, 3, 4], [3, 4, 5]]"
     },
     {
       "input": "[[9,8,7],[6,5,4],[3,2,1]]",
-      "desc": "Standard dec"
+      "desc": "Standard dec",
+      "output": "[[5, 4, 3], [4, 3, 2], [3, 2, 1]]"
     },
     {
       "input": "[[100,50,25],[75,200,125],[150,175,300]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[3, 2, 1], [1, 6, 2], [4, 5, 6]]"
     },
     {
       "input": "[[1,1000000],[500000,999999]]",
-      "desc": "Edge wide range"
+      "desc": "Edge wide range",
+      "output": "[[1, 4], [2, 3]]"
     },
     {
       "input": "[[10,20,30,40,50]]",
-      "desc": "Edge 1x5 sorted"
+      "desc": "Edge 1x5 sorted",
+      "output": "[[1, 2, 3, 4, 5]]"
     },
     {
       "input": "[[50,40,30,20,10]]",
-      "desc": "Edge 1x5 rev"
+      "desc": "Edge 1x5 rev",
+      "output": "[[5, 4, 3, 2, 1]]"
     },
     {
       "input": "[[5,9,3,4],[6,2,1,8],[10,11,12,7]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[4, 5, 2, 3], [5, 2, 1, 6], [6, 7, 8, 4]]"
     },
     {
       "input": "[[1,3,5,7],[2,4,6,8]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[1, 2, 3, 4], [2, 3, 4, 5]]"
     },
     {
       "input": "[[100,200,300],[400,500,600]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[1, 2, 3], [2, 3, 4]]"
     },
     {
       "input": "[[1,2,3,4,5,6,7,8,9,10]]",
-      "desc": "Edge wide"
+      "desc": "Edge wide",
+      "output": "[[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]]"
     },
     {
       "input": "[[1,4,7,10],[2,5,8,11],[3,6,9,12]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[[1, 2, 3, 4], [2, 3, 4, 5], [3, 4, 5, 6]]"
     },
     {
       "input": "[[7,1,4],[2,5,8],[6,3,9]]",
-      "desc": "Standard 3x3"
+      "desc": "Standard 3x3",
+      "output": "[[4, 1, 2], [1, 3, 4], [3, 2, 5]]"
     },
     {
       "input": "[[986,858,-101,442],[28,-360,469,464],[839,-97,551,883],[-972,-410,953,407]]",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "[[9, 5, 1, 4], [4, 3, 6, 5], [8, 4, 7, 9], [1, 2, 8, 3]]"
     }
   ]
 }

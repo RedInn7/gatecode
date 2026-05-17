@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "4",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "2"
     },
     {
       "input": "8",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "2"
     },
     {
       "input": "0",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "0"
     },
     {
       "input": "1",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "1"
     },
     {
       "input": "2",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "1"
     },
     {
       "input": "3",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "1"
     },
     {
       "input": "9",
-      "desc": "Edge perfect sq"
+      "desc": "Edge perfect sq",
+      "output": "3"
     },
     {
       "input": "16",
-      "desc": "Edge perfect sq"
+      "desc": "Edge perfect sq",
+      "output": "4"
     },
     {
       "input": "100",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "10"
     },
     {
       "input": "1000",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "31"
     },
     {
       "input": "10000",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "100"
     },
     {
       "input": "1000000",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1000"
     },
     {
       "input": "2147483647",
-      "desc": "Edge max"
+      "desc": "Edge max",
+      "output": "46340"
     },
     {
       "input": "2147395600",
-      "desc": "Edge near max perfect"
+      "desc": "Edge near max perfect",
+      "output": "46340"
     },
     {
       "input": "999999999",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "31622"
     },
     {
       "input": "65536",
-      "desc": "Standard pow2"
+      "desc": "Standard pow2",
+      "output": "256"
     },
     {
       "input": "65537",
-      "desc": "Standard pow2+1"
+      "desc": "Standard pow2+1",
+      "output": "256"
     },
     {
       "input": "123456789",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "11111"
     },
     {
       "input": "144",
-      "desc": "Standard perfect"
+      "desc": "Standard perfect",
+      "output": "12"
     },
     {
       "input": "145",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "12"
     }
   ]
 }

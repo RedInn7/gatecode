@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[2,7,4,1,8,1]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "1"
     },
     {
       "input": "[31,26,33,21,40]",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "5"
     },
     {
       "input": "[1]",
-      "desc": "Edge n=1"
+      "desc": "Edge n=1",
+      "output": "1"
     },
     {
       "input": "[100]",
-      "desc": "Edge max single"
+      "desc": "Edge max single",
+      "output": "100"
     },
     {
       "input": "[1,1]",
-      "desc": "Edge cancel"
+      "desc": "Edge cancel",
+      "output": "0"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "1"
     },
     {
       "input": "[100,100]",
-      "desc": "Edge cancel max"
+      "desc": "Edge cancel max",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1"
     },
     {
       "input": "[5,4,3,2,1]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1"
     },
     {
       "input": "[1,1,1,1,1]",
-      "desc": "Edge same"
+      "desc": "Edge same",
+      "output": "1"
     },
     {
       "input": "[100,100,100,100,100]",
-      "desc": "Edge all max"
+      "desc": "Edge all max",
+      "output": "100"
     },
     {
       "input": "[10,20,30,40,50]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "10"
     },
     {
       "input": "[1,2,4,8,16,32,64]",
-      "desc": "Standard powers"
+      "desc": "Standard powers",
+      "output": "1"
     },
     {
       "input": "[7,11,13,17,19,23,29]",
-      "desc": "Standard primes"
+      "desc": "Standard primes",
+      "output": "1"
     },
     {
       "input": "[50,50,50,50,50,50]",
-      "desc": "Standard equal"
+      "desc": "Standard equal",
+      "output": "0"
     },
     {
       "input": "[1,3,5,7,9,11,13,15,17,19]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "0"
     },
     {
       "input": "[2,4,6,8,10,12,14,16,18,20]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",
-      "desc": "Standard 20"
+      "desc": "Standard 20",
+      "output": "0"
     },
     {
       "input": "[100,99,98,97,96,95,94,93,92,91,90]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "65"
     },
     {
       "input": "[76,85,80,44,62,36,73,92,83,93,93,54,75,64,8,97,66,95,44,40,86,49,89,18,56,98,64,25,12,27]",
-      "desc": "Regenerated: stress at position 19"
+      "desc": "Regenerated: stress at position 19",
+      "output": "0"
     }
   ]
 }

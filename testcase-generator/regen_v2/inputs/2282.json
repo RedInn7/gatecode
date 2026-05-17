@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"code\"",
-      "desc": "Standard false"
+      "desc": "Standard false",
+      "output": "false"
     },
     {
       "input": "\"aab\"",
-      "desc": "Standard true"
+      "desc": "Standard true",
+      "output": "true"
     },
     {
       "input": "\"carerac\"",
-      "desc": "Standard true"
+      "desc": "Standard true",
+      "output": "true"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "true"
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "true"
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge false"
+      "desc": "Edge false",
+      "output": "false"
     },
     {
       "input": "\"aba\"",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "true"
     },
     {
       "input": "\"abc\"",
-      "desc": "Edge false"
+      "desc": "Edge false",
+      "output": "false"
     },
     {
       "input": "\"aaaa\"",
-      "desc": "Edge all same"
+      "desc": "Edge all same",
+      "output": "true"
     },
     {
       "input": "\"abab\"",
-      "desc": "Standard true"
+      "desc": "Standard true",
+      "output": "true"
     },
     {
       "input": "\"abcd\"",
-      "desc": "Standard false"
+      "desc": "Standard false",
+      "output": "false"
     },
     {
       "input": "\"abcba\"",
-      "desc": "Standard true"
+      "desc": "Standard true",
+      "output": "true"
     },
     {
       "input": "\"abccba\"",
-      "desc": "Standard true"
+      "desc": "Standard true",
+      "output": "true"
     },
     {
       "input": "\"banana\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "\"mississippi\"",
-      "desc": "Standard false"
+      "desc": "Standard false",
+      "output": "true"
     },
     {
       "input": "\"aabbccdd\"",
-      "desc": "Standard true"
+      "desc": "Standard true",
+      "output": "true"
     },
     {
       "input": "\"aabbccdde\"",
-      "desc": "Standard true odd"
+      "desc": "Standard true odd",
+      "output": "true"
     },
     {
       "input": "\"AaBbCc\"",
-      "desc": "Standard case sensitive"
+      "desc": "Standard case sensitive",
+      "output": "false"
     },
     {
       "input": "\"thequickbrownfox\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "\"xmnukczozlnaiz\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "false"
     }
   ]
 }

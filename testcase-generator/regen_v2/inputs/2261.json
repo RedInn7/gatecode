@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= nums.length <= 10^5, 1 <= nums[i], k <= 10^9",
   "input_format": "line1: nums (JSON array); line2: k (int)",
   "testcases": [
-    {"input": "[1,4,25,10,25]\n2", "desc": "Standard example 1"},
-    {"input": "[5,6]\n6", "desc": "Standard example 2"},
-    {"input": "[1]\n1", "desc": "Edge"},
-    {"input": "[1000000000]\n1", "desc": "Edge huge nums"},
-    {"input": "[1]\n1000000000", "desc": "Edge huge k"},
-    {"input": "[5]\n5", "desc": "Standard"},
-    {"input": "[10,20,30]\n5", "desc": "Standard"},
-    {"input": "[1,2,3,4,5]\n5", "desc": "Standard"},
-    {"input": "[1,2,3,4,5]\n10", "desc": "Standard"},
-    {"input": "[100]\n10", "desc": "Standard"},
-    {"input": "[1,1,1,1,1]\n5", "desc": "Edge dups"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10]\n10", "desc": "Standard"},
-    {"input": "[5,5,5,5,5]\n5", "desc": "Standard same"},
-    {"input": "[1000000000,500000000]\n5", "desc": "Standard big"},
-    {"input": "[1,3,5,7,9]\n5", "desc": "Standard odds"},
-    {"input": "[2,4,6,8,10]\n5", "desc": "Standard evens"},
-    {"input": "[10]\n10", "desc": "Standard"},
-    {"input": "[100,200,300,400,500]\n10", "desc": "Standard"},
-    {"input": "[7,11,13,17,19,23]\n10", "desc": "Standard"},
-    {"input": "[1,2,4,8,16,32,64,128]\n10", "desc": "Standard powers"}
+    {
+      "input": "[1,4,25,10,25]\n2",
+      "desc": "Standard example 1",
+      "output": "5"
+    },
+    {
+      "input": "[5,6]\n6",
+      "desc": "Standard example 2",
+      "output": "25"
+    },
+    {
+      "input": "[1]\n1",
+      "desc": "Edge",
+      "output": "2"
+    },
+    {
+      "input": "[1000000000]\n1",
+      "desc": "Edge huge nums",
+      "output": "1"
+    },
+    {
+      "input": "[1]\n1000000000",
+      "desc": "Edge huge k",
+      "output": "500000001500000000"
+    },
+    {
+      "input": "[5]\n5",
+      "desc": "Standard",
+      "output": "16"
+    },
+    {
+      "input": "[10,20,30]\n5",
+      "desc": "Standard",
+      "output": "15"
+    },
+    {
+      "input": "[1,2,3,4,5]\n5",
+      "desc": "Standard",
+      "output": "40"
+    },
+    {
+      "input": "[1,2,3,4,5]\n10",
+      "desc": "Standard",
+      "output": "105"
+    },
+    {
+      "input": "[100]\n10",
+      "desc": "Standard",
+      "output": "55"
+    },
+    {
+      "input": "[1,1,1,1,1]\n5",
+      "desc": "Edge dups",
+      "output": "20"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n10",
+      "desc": "Standard",
+      "output": "155"
+    },
+    {
+      "input": "[5,5,5,5,5]\n5",
+      "desc": "Standard same",
+      "output": "16"
+    },
+    {
+      "input": "[1000000000,500000000]\n5",
+      "desc": "Standard big",
+      "output": "15"
+    },
+    {
+      "input": "[1,3,5,7,9]\n5",
+      "desc": "Standard odds",
+      "output": "30"
+    },
+    {
+      "input": "[2,4,6,8,10]\n5",
+      "desc": "Standard evens",
+      "output": "25"
+    },
+    {
+      "input": "[10]\n10",
+      "desc": "Standard",
+      "output": "56"
+    },
+    {
+      "input": "[100,200,300,400,500]\n10",
+      "desc": "Standard",
+      "output": "55"
+    },
+    {
+      "input": "[7,11,13,17,19,23]\n10",
+      "desc": "Standard",
+      "output": "60"
+    },
+    {
+      "input": "[1,2,4,8,16,32,64,128]\n10",
+      "desc": "Standard powers",
+      "output": "90"
+    }
   ]
 }

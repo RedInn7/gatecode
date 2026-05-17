@@ -1474,5 +1474,29 @@
     "slug": "find-common-characters",
     "fqid": 1002,
     "error": "Testcase 19 failed: RE (exit 1):   ^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.12/collections/__init__.py\", line 607, in __init__\n    self.update(iterable, **kwds)\n  File \"/opt/anaconda3/lib/python3.12/collections/__init__.py\", line 699, in update\n    _count_elements(self, iterable)\nTypeError: 'int' object is not iterable\n"
+  },
+  {
+    "pid": 2271,
+    "slug": "zero-array-transformation-i",
+    "fqid": 3355,
+    "error": "Testcase 15 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp1je5o7_6.py\", line 284, in <module>\n    _result = Solution().isZeroArray(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp1je5o7_6.py\", line 144, in isZeroArray\n    d[l] += 1\n    ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 2258,
+    "slug": "number-of-valid-words-for-each-puzzle",
+    "fqid": 1178,
+    "error": "Testcase 19 failed: RE (exit 1): ost recent call last):\n  File \"/tmp/tmp6gyw0t0r.py\", line 293, in <module>\n    _result = Solution().findNumOfValidWords(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp6gyw0t0r.py\", line 145, in findNumOfValidWords\n    for c in w:\nTypeError: 'int' object is not iterable\n"
+  },
+  {
+    "pid": 2266,
+    "slug": "longest-common-prefix",
+    "fqid": 14,
+    "error": "Testcase 19 failed: RE (exit 1): ne 279, in <module>\n    _result = Solution().longestCommonPrefix(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_1dsszep.py\", line 142, in longestCommonPrefix\n    for i in range(len(strs[0])):\n                   ^^^^^^^^^^^^\nTypeError: object of type 'int' has no len()\n"
+  },
+  {
+    "pid": 2278,
+    "slug": "minimum-falling-path-sum",
+    "fqid": 931,
+    "error": "Testcase 10 failed: RE (exit 1): :\n  File \"/tmp/tmp4trlky5l.py\", line 283, in <module>\n    _result = Solution().minFallingPathSum(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp4trlky5l.py\", line 148, in minFallingPathSum\n    g[j] = min(f[l:r]) + x\n    ~^^^\nIndexError: list assignment index out of range\n"
   }
 ]
