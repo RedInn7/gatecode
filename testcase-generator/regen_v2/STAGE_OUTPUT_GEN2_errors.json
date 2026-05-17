@@ -790,5 +790,47 @@
     "slug": "evaluate-valid-expressions",
     "fqid": 3749,
     "error": "Testcase 0 failed: RE (exit 1):               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpnr1_wuiu.py\", line 173, in evaluateExpression\n    return parse(0)[0]\n           ^^^^^^^^\n  File \"/tmp/tmpnr1_wuiu.py\", line 152, in parse\n    while expression[j] != \"(\":\n          ~~~~~~~~~~^^^\nIndexError: string index out of range\n"
+  },
+  {
+    "pid": 1561,
+    "slug": "minimum-number-of-primes-to-sum-to-target",
+    "fqid": 3610,
+    "error": "Testcase 0 failed: RE (exit 1): tmpuf1omn99.py\", line 296, in <module>\n    _result = Solution().minNumberOfPrimes(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpuf1omn99.py\", line 163, in minNumberOfPrimes\n    return f[n] if f[n] < inf else -1\n                   ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1556,
+    "slug": "minimum-cost-to-reach-destination-in-time",
+    "fqid": 1928,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmp6z46elg_.py\", line 286, in <module>\n    _result = Solution().minCost(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp6z46elg_.py\", line 146, in minCost\n    f[0][0] = passingFees[0]\n    ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1569,
+    "slug": "minimum-time-difference",
+    "fqid": 539,
+    "error": "Testcase 0 failed: RE (exit 1): :]) for x in timePoints)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpwpoav3mp.py\", line 144, in <genexpr>\n    nums = sorted(int(x[:2]) * 60 + int(x[3:]) for x in timePoints)\n                  ^^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'mg'\n"
+  },
+  {
+    "pid": 1574,
+    "slug": "day-of-the-year",
+    "fqid": 1154,
+    "error": "Testcase 0 failed: RE (exit 1): ^^^^^^^\n  File \"/tmp/tmp2ivdyao4.py\", line 142, in dayOfYear\n    y, m, d = (int(s) for s in date.split('-'))\n    ^^^^^^^\n  File \"/tmp/tmp2ivdyao4.py\", line 142, in <genexpr>\n    y, m, d = (int(s) for s in date.split('-'))\n               ^^^^^^\nValueError: invalid literal for int() with base 10: 'p'\n"
+  },
+  {
+    "pid": 1563,
+    "slug": "armstrong-number",
+    "fqid": 1134,
+    "error": "Testcase 0 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1568,
+    "slug": "minimum-addition-to-make-integer-beautiful",
+    "fqid": 2457,
+    "error": "Testcase 1 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1578,
+    "slug": "pascals-triangle-ii",
+    "fqid": 119,
+    "error": "Testcase 4 failed: TLE (>15s)"
   }
 ]

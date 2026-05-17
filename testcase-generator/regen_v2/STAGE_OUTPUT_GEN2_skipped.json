@@ -238,5 +238,11 @@
     "slug": "zero-array-transformation-iv",
     "fqid": 3489,
     "reason": "No Python3 solution found for fqid=3489"
+  },
+  {
+    "pid": 1580,
+    "slug": "maximum-xor-of-subsequences",
+    "fqid": 3681,
+    "reason": "No Python3 solution found for fqid=3681"
   }
 ]

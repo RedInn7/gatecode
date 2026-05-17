@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"t\"",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "true"
     },
     {
       "input": "\"j\"",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "true"
     },
     {
       "input": "\"x\"",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "true"
     },
     {
       "input": "\"r\"",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "true"
     },
     {
       "input": "\"p\"",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "true"
     },
     {
       "input": "\"ixjgnwfy\"",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "false"
     },
     {
       "input": "\"oszbawdqzgndu\"",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "false"
     },
     {
       "input": "\"hmp\"",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "false"
     },
     {
       "input": "\"gzbxgvnsqlss\"",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "false"
     },
     {
       "input": "\"mlapyqocxrd\"",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "false"
     },
     {
       "input": "\"hlu\"",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "false"
     },
     {
       "input": "\"wkdstkrxcom\"",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "false"
     },
     {
       "input": "\"xuvfyhvayg\"",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "false"
     },
     {
       "input": "\"ikeumxhclsqn\"",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "false"
     },
     {
       "input": "\"si\"",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "false"
     },
     {
       "input": "\"lpa\"",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "false"
     },
     {
       "input": "\"mtakuovrrtl\"",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "false"
     },
     {
       "input": "\"cxsazoesflild\"",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "false"
     },
     {
       "input": "\"gmrbgksynt\"",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "false"
     },
     {
       "input": "\"zlzrrwvec\"",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "false"
     }
   ]
 }

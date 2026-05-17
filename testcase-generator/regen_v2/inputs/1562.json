@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"l\"",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "1"
     },
     {
       "input": "\"j\"",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "1"
     },
     {
       "input": "\"m\"",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "1"
     },
     {
       "input": "\"g\"",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "1"
     },
     {
       "input": "\"s\"",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "1"
     },
     {
       "input": "\"zx\"",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "1"
     },
     {
       "input": "\"eehftuuddy\"",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "1"
     },
     {
       "input": "\"hinqxcavgosk\"",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "1"
     },
     {
       "input": "\"qmdiu\"",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "1"
     },
     {
       "input": "\"ratcx\"",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "1"
     },
     {
       "input": "\"lokctveleqevj\"",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "1"
     },
     {
       "input": "\"yqvtsqqah\"",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "1"
     },
     {
       "input": "\"smcywpkxqrj\"",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "1"
     },
     {
       "input": "\"dqtiae\"",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "1"
     },
     {
       "input": "\"qksm\"",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "1"
     },
     {
       "input": "\"eeo\"",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "1"
     },
     {
       "input": "\"fdj\"",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "1"
     },
     {
       "input": "\"cydtkvemyzn\"",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "1"
     },
     {
       "input": "\"xx\"",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "2"
     },
     {
       "input": "\"yieslehw\"",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "1"
     }
   ]
 }

@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[\"x\"]",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "[]"
     },
     {
       "input": "[\"pcr\"]",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "[]"
     },
     {
       "input": "[\"nn\"]",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "[]"
     },
     {
       "input": "[\"dsfw\"]",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "[]"
     },
     {
       "input": "[\"punn\"]",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "[]"
     },
     {
       "input": "[\"i\",\"jcw\",\"fc\",\"smdg\",\"bdft\",\"nl\"]",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "[]"
     },
     {
       "input": "[\"m\",\"uepjv\",\"pphta\",\"an\",\"th\"]",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "[]"
     },
     {
       "input": "[\"n\",\"fj\"]",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "[]"
     },
     {
       "input": "[\"g\",\"lzo\"]",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "[]"
     },
     {
       "input": "[\"idikr\",\"izmq\",\"xwsva\",\"j\",\"wz\",\"ohx\",\"mn\"]",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "[]"
     },
     {
       "input": "[\"nvr\",\"id\",\"t\",\"osi\"]",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "[]"
     },
     {
       "input": "[\"ge\",\"xx\",\"vivhf\",\"ohjpl\",\"tab\",\"hbhu\",\"jkasl\",\"osb\"]",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "[]"
     },
     {
       "input": "[\"nqge\",\"s\",\"she\",\"y\"]",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "[\"s\"]"
     },
     {
       "input": "[\"o\",\"u\"]",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "[]"
     },
     {
       "input": "[\"ui\",\"ohfl\",\"s\",\"jd\",\"flt\"]",
-      "desc": "Standard: case 10"
+      "desc": "Standard: case 10",
+      "output": "[]"
     },
     {
       "input": "[\"jb\",\"q\",\"xtvm\",\"eqkj\",\"y\",\"evz\",\"cjcdx\"]",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "[\"q\"]"
     },
     {
       "input": "[\"n\",\"bkbb\",\"yju\"]",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "[]"
     },
     {
       "input": "[\"yaks\",\"uzadr\",\"pxkc\",\"km\",\"vbmxl\"]",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "[]"
     },
     {
       "input": "[\"ds\",\"g\"]",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "[]"
     },
     {
       "input": "[\"uvp\",\"djb\",\"k\",\"dgf\",\"pfeuq\",\"msz\"]",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "[]"
     }
   ]
 }
