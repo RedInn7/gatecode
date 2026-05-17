@@ -4,25 +4,95 @@
   "inferred_constraints": "1 <= n <= 10^5",
   "input_format": "single line: n (int)",
   "testcases": [
-    {"input": "2", "desc": "Standard: example 1"},
-    {"input": "1", "desc": "Edge: example 2 n=1"},
-    {"input": "10101", "desc": "Standard: example 3"},
-    {"input": "3", "desc": "Standard"},
-    {"input": "4", "desc": "Standard"},
-    {"input": "5", "desc": "Standard"},
-    {"input": "10", "desc": "Standard 10"},
-    {"input": "100", "desc": "Standard 100"},
-    {"input": "1000", "desc": "Standard 1000"},
-    {"input": "10000", "desc": "Standard 10000"},
-    {"input": "100000", "desc": "Stress: max n"},
-    {"input": "99999", "desc": "Stress: near max"},
-    {"input": "50000", "desc": "Standard half max"},
-    {"input": "12345", "desc": "Standard arbitrary"},
-    {"input": "23456", "desc": "Standard arbitrary"},
-    {"input": "65535", "desc": "Standard pow2-1"},
-    {"input": "65536", "desc": "Standard pow2"},
-    {"input": "8", "desc": "Standard small"},
-    {"input": "20", "desc": "Standard"},
-    {"input": "77777", "desc": "Stress"}
+    {
+      "input": "2",
+      "desc": "Standard: example 1",
+      "output": "8"
+    },
+    {
+      "input": "1",
+      "desc": "Edge: example 2 n=1",
+      "output": "3"
+    },
+    {
+      "input": "10101",
+      "desc": "Standard: example 3"
+    },
+    {
+      "input": "3",
+      "desc": "Standard",
+      "output": "19"
+    },
+    {
+      "input": "4",
+      "desc": "Standard",
+      "output": "43"
+    },
+    {
+      "input": "5",
+      "desc": "Standard",
+      "output": "94"
+    },
+    {
+      "input": "10",
+      "desc": "Standard 10",
+      "output": "3536"
+    },
+    {
+      "input": "100",
+      "desc": "Standard 100",
+      "output": "985598218"
+    },
+    {
+      "input": "1000",
+      "desc": "Standard 1000",
+      "output": "250434094"
+    },
+    {
+      "input": "10000",
+      "desc": "Standard 10000"
+    },
+    {
+      "input": "100000",
+      "desc": "Stress: max n"
+    },
+    {
+      "input": "99999",
+      "desc": "Stress: near max"
+    },
+    {
+      "input": "50000",
+      "desc": "Standard half max"
+    },
+    {
+      "input": "12345",
+      "desc": "Standard arbitrary"
+    },
+    {
+      "input": "23456",
+      "desc": "Standard arbitrary"
+    },
+    {
+      "input": "65535",
+      "desc": "Standard pow2-1"
+    },
+    {
+      "input": "65536",
+      "desc": "Standard pow2"
+    },
+    {
+      "input": "8",
+      "desc": "Standard small",
+      "output": "861"
+    },
+    {
+      "input": "20",
+      "desc": "Standard",
+      "output": "2947811"
+    },
+    {
+      "input": "77777",
+      "desc": "Stress"
+    }
   ]
 }

@@ -10,79 +10,98 @@
     },
     {
       "input": "\"2020-01-15\"\n\"2019-12-31\"",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "15"
     },
     {
       "input": "\"1971-01-01\"\n\"1971-01-01\"",
-      "desc": "Edge: same min date"
+      "desc": "Edge: same min date",
+      "output": "0"
     },
     {
       "input": "\"2100-12-31\"\n\"2100-12-31\"",
-      "desc": "Edge: same max date"
+      "desc": "Edge: same max date",
+      "output": "0"
     },
     {
       "input": "\"1971-01-01\"\n\"2100-12-31\"",
-      "desc": "Edge: full range"
+      "desc": "Edge: full range",
+      "output": "47481"
     },
     {
       "input": "\"2020-02-28\"\n\"2020-03-01\"",
-      "desc": "Leap year Feb 29"
+      "desc": "Leap year Feb 29",
+      "output": "2"
     },
     {
       "input": "\"2020-02-29\"\n\"2020-03-01\"",
-      "desc": "Leap day"
+      "desc": "Leap day",
+      "output": "1"
     },
     {
       "input": "\"2019-02-28\"\n\"2019-03-01\"",
-      "desc": "Non-leap year"
+      "desc": "Non-leap year",
+      "output": "1"
     },
     {
       "input": "\"2000-02-28\"\n\"2000-03-01\"",
-      "desc": "Year 2000 leap"
+      "desc": "Year 2000 leap",
+      "output": "2"
     },
     {
       "input": "\"1971-12-31\"\n\"1972-01-01\"",
-      "desc": "New year boundary"
+      "desc": "New year boundary",
+      "output": "1"
     },
     {
       "input": "\"2099-12-31\"\n\"2100-01-01\"",
-      "desc": "Year boundary"
+      "desc": "Year boundary",
+      "output": "1"
     },
     {
       "input": "\"1985-04-12\"\n\"1975-11-05\"",
-      "desc": "Older to newer (within range)"
+      "desc": "Older to newer (within range)",
+      "output": "3446"
     },
     {
       "input": "\"1985-04-12\"\n\"1972-11-05\"",
-      "desc": "Older to newer"
+      "desc": "Older to newer",
+      "output": "4541"
     },
     {
       "input": "\"2000-01-01\"\n\"2000-12-31\"",
-      "desc": "Full year"
+      "desc": "Full year",
+      "output": "365"
     },
     {
       "input": "\"2020-07-15\"\n\"2020-08-15\"",
-      "desc": "Month apart"
+      "desc": "Month apart",
+      "output": "31"
     },
     {
       "input": "\"2019-01-01\"\n\"2020-01-01\"",
-      "desc": "Year apart"
+      "desc": "Year apart",
+      "output": "365"
     },
     {
       "input": "\"2050-06-15\"\n\"2050-06-15\"",
-      "desc": "Same future date"
+      "desc": "Same future date",
+      "output": "0"
     },
     {
       "input": "\"1980-05-20\"\n\"2020-05-20\"",
-      "desc": "40 years"
+      "desc": "40 years",
+      "output": "14610"
     },
     {
       "input": "\"1971-02-28\"\n\"1971-03-01\"",
-      "desc": "1971 Feb boundary"
+      "desc": "1971 Feb boundary",
+      "output": "1"
     },
     {
       "input": "\"2004-02-29\"\n\"2005-02-28\"",
-      "desc": "Year after leap"
+      "desc": "Year after leap",
+      "output": "365"
     }
   ]
 }

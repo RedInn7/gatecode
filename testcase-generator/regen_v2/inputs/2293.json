@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "6\n[[0,1],[0,2],[1,2],[3,4]]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "3"
     },
     {
       "input": "6\n[[0,1],[0,2],[1,2],[3,4],[3,5]]",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "1"
     },
     {
       "input": "1\n[]",
-      "desc": "Edge n=1"
+      "desc": "Edge n=1",
+      "output": "1"
     },
     {
       "input": "2\n[]",
-      "desc": "Edge 2 nodes no edge"
+      "desc": "Edge 2 nodes no edge",
+      "output": "2"
     },
     {
       "input": "2\n[[0,1]]",
-      "desc": "Edge 2 nodes 1 edge"
+      "desc": "Edge 2 nodes 1 edge",
+      "output": "1"
     },
     {
       "input": "3\n[[0,1],[1,2],[0,2]]",
-      "desc": "Edge triangle"
+      "desc": "Edge triangle",
+      "output": "1"
     },
     {
       "input": "3\n[[0,1],[1,2]]",
-      "desc": "Edge incomplete"
+      "desc": "Edge incomplete",
+      "output": "0"
     },
     {
       "input": "5\n[[0,1],[2,3],[3,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "1"
     },
     {
       "input": "4\n[]",
-      "desc": "Edge 4 isolated"
+      "desc": "Edge 4 isolated",
+      "output": "4"
     },
     {
       "input": "4\n[[0,1],[2,3]]",
-      "desc": "Edge 2 pairs"
+      "desc": "Edge 2 pairs",
+      "output": "2"
     },
     {
       "input": "5\n[[0,1],[0,2],[1,2],[3,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "10\n[[0,1],[1,2],[2,3],[3,4],[4,0],[5,6],[6,7],[7,5]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "3"
     },
     {
       "input": "6\n[[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]]",
-      "desc": "Edge K4"
+      "desc": "Edge K4",
+      "output": "3"
     },
     {
       "input": "7\n[[0,1],[0,2],[1,2],[3,4],[3,5],[4,5]]",
-      "desc": "Standard 6 connected"
+      "desc": "Standard 6 connected",
+      "output": "3"
     },
     {
       "input": "5\n[[0,1],[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]",
-      "desc": "Edge K5"
+      "desc": "Edge K5",
+      "output": "1"
     },
     {
       "input": "10\n[[0,1],[0,2],[1,2],[3,4],[3,5],[4,5],[6,7],[7,8],[8,9]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "8\n[[0,1],[2,3],[4,5],[6,7]]",
-      "desc": "Standard 4 pairs"
+      "desc": "Standard 4 pairs",
+      "output": "4"
     },
     {
       "input": "5\n[[0,1],[1,2],[2,0],[2,3],[3,4],[4,2]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "0"
     },
     {
       "input": "20\n[[0,1],[0,2],[1,2],[3,4],[3,5],[4,5],[6,7],[6,8],[7,8],[9,10],[9,11],[10,11]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "12"
     },
     {
       "input": "6\n[[-999,568,-813,-530],[478,-539,-746,674],[-485,-748,293,98],[6,-852,682,485],[519,346,-457,255],[-223,708,372,-523],[-217,-373,619,895],[-734,505,946,500]]",

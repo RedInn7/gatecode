@@ -6,63 +6,78 @@
   "testcases": [
     {
       "input": "[1,0,1]\n[[0,2]]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "true"
     },
     {
       "input": "[4,3,2,1]\n[[1,3],[0,2]]",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "false"
     },
     {
       "input": "[0]\n[[0,0]]",
-      "desc": "Edge already zero"
+      "desc": "Edge already zero",
+      "output": "true"
     },
     {
       "input": "[1]\n[[0,0]]",
-      "desc": "Edge single one"
+      "desc": "Edge single one",
+      "output": "true"
     },
     {
       "input": "[1,1]\n[[0,1]]",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "true"
     },
     {
       "input": "[1,1,1,1,1]\n[[0,4]]",
-      "desc": "Standard all 1"
+      "desc": "Standard all 1",
+      "output": "true"
     },
     {
       "input": "[5]\n[[0,0]]",
-      "desc": "Edge"
+      "desc": "Edge",
+      "output": "false"
     },
     {
       "input": "[100000]\n[[0,0]]",
-      "desc": "Edge max"
+      "desc": "Edge max",
+      "output": "false"
     },
     {
       "input": "[1,2,3]\n[[0,2],[0,2],[0,2]]",
-      "desc": "Standard repeated"
+      "desc": "Standard repeated",
+      "output": "true"
     },
     {
       "input": "[0,0,0]\n[[0,2]]",
-      "desc": "Edge already"
+      "desc": "Edge already",
+      "output": "true"
     },
     {
       "input": "[1,2,3,4,5]\n[[0,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[1,2,3,4,5]\n[[0,4],[0,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[1,2,3,4,5]\n[[0,4],[0,4],[0,4],[0,4],[0,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[5,5,5,5,5]\n[[0,4],[0,4],[0,4],[0,4],[0,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "true"
     },
     {
       "input": "[10,20,30,40,50]\n[[0,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[21598,2168,42804,665,48393,81400,90788,61753,62094,48516,47883,20669,56558,90697,66795,83251,30255,81289,96346,60138,72821,90573,74709,65244,86582,95973,1005,87749,13371,23011,24779,37266,12035,79397,8029,2689,35807,7935]\n[[65012,46893]]",
@@ -70,19 +85,23 @@
     },
     {
       "input": "[3,2,1,0,1,2,3]\n[[0,6],[0,3],[3,6]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[1,2,1,2,1,2,1,2]\n[[0,3],[4,7]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[100,200,300,400,500]\n[[0,4]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     },
     {
       "input": "[1,2,3,4,5,4,3,2,1]\n[[0,8],[0,4],[4,8]]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "false"
     }
   ]
 }

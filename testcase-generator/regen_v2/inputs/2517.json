@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "5\n[[0,0,1],[0,2,2],[1,3,2]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "3"
     },
     {
       "input": "5\n[[0,0,1],[0,2,10],[1,3,2]]",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "10"
     },
     {
       "input": "1\n[[0,0,1]]",
-      "desc": "Edge: n=1 1 house"
+      "desc": "Edge: n=1 1 house",
+      "output": "1"
     },
     {
       "input": "1\n[[0,0,1000]]",
-      "desc": "Edge: max gold n=1"
+      "desc": "Edge: max gold n=1",
+      "output": "1000"
     },
     {
       "input": "2\n[[0,0,5],[1,1,3]]",
-      "desc": "Edge: 2 distinct"
+      "desc": "Edge: 2 distinct",
+      "output": "8"
     },
     {
       "input": "2\n[[0,1,10]]",
-      "desc": "Edge: single covering"
+      "desc": "Edge: single covering",
+      "output": "10"
     },
     {
       "input": "3\n[[0,2,5],[0,2,3]]",
-      "desc": "Edge: 2 offers same range"
+      "desc": "Edge: 2 offers same range",
+      "output": "5"
     },
     {
       "input": "5\n[[0,0,1],[1,1,1],[2,2,1],[3,3,1],[4,4,1]]",
-      "desc": "Standard: all singles"
+      "desc": "Standard: all singles",
+      "output": "5"
     },
     {
       "input": "5\n[[0,4,10]]",
-      "desc": "Standard: single covers all"
+      "desc": "Standard: single covers all",
+      "output": "10"
     },
     {
       "input": "10\n[[0,2,5],[3,5,5],[6,9,5]]",
-      "desc": "Standard: disjoint"
+      "desc": "Standard: disjoint",
+      "output": "15"
     },
     {
       "input": "10\n[[0,4,10],[3,7,15],[6,9,8]]",
-      "desc": "Standard: overlapping"
+      "desc": "Standard: overlapping",
+      "output": "18"
     },
     {
       "input": "10\n[[0,1,2],[1,2,2],[2,3,2],[3,4,2],[4,5,2],[5,6,2],[6,7,2],[7,8,2],[8,9,2]]",
-      "desc": "Standard: chain overlaps"
+      "desc": "Standard: chain overlaps",
+      "output": "10"
     },
     {
       "input": "20\n[[0,5,10],[6,10,8],[11,15,12],[16,19,7]]",
-      "desc": "Standard: 4 disjoint"
+      "desc": "Standard: 4 disjoint",
+      "output": "37"
     },
     {
       "input": "100\n[[0,99,500]]",
-      "desc": "Standard: 1 big offer"
+      "desc": "Standard: 1 big offer",
+      "output": "500"
     },
     {
       "input": "10\n[[0,9,100],[0,4,50],[5,9,50]]",
-      "desc": "Standard: split competing"
+      "desc": "Standard: split competing",
+      "output": "100"
     },
     {
       "input": "10\n[[0,9,1],[0,9,2],[0,9,3]]",
-      "desc": "Standard: same range diff gold"
+      "desc": "Standard: same range diff gold",
+      "output": "3"
     },
     {
       "input": "50\n[[0,9,10],[10,19,10],[20,29,10],[30,39,10],[40,49,10]]",
-      "desc": "Standard: 5 segments"
+      "desc": "Standard: 5 segments",
+      "output": "50"
     },
     {
       "input": "20\n[[0,5,100],[3,8,100],[6,11,100],[9,14,100],[12,17,100],[15,19,100]]",
-      "desc": "Standard: overlapping segments"
+      "desc": "Standard: overlapping segments",
+      "output": "300"
     },
     {
       "input": "100\n[[0,9,5],[10,19,5],[20,29,5],[30,39,5],[40,49,5],[50,59,5],[60,69,5],[70,79,5],[80,89,5],[90,99,5]]",
-      "desc": "Stress: 10 disjoint"
+      "desc": "Stress: 10 disjoint",
+      "output": "50"
     },
     {
       "input": "5\n[[-129,-343,560,214,483,894],[430,-62,290,-512,-175,-568],[-822,-466,421,-669,57,-235],[-534,-779,-732,848,315,-674],[742,256,-36,204,487,-867],[280,-912,-96,3,-400,-48]]",

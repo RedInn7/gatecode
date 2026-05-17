@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[\"dig1 8 1 5 1\",\"let1 art can\",\"dig2 3 6\",\"let2 own kit dig\",\"let3 art zero\"]",
-      "desc": "Standard example 1"
+      "desc": "Standard example 1",
+      "output": "[\"let1 art can\",\"let3 art zero\",\"let2 own kit dig\",\"dig1 8 1 5 1\",\"dig2 3 6\"]"
     },
     {
       "input": "[\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]",
-      "desc": "Standard example 2"
+      "desc": "Standard example 2",
+      "output": "[\"g1 act car\",\"a8 act zoo\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]"
     },
     {
       "input": "[\"a1 a\"]",
-      "desc": "Edge: single letter log"
+      "desc": "Edge: single letter log",
+      "output": "[\"a1 a\"]"
     },
     {
       "input": "[\"d1 1\"]",
-      "desc": "Edge: single digit log"
+      "desc": "Edge: single digit log",
+      "output": "[\"d1 1\"]"
     },
     {
       "input": "[\"a1 abc\",\"a2 abc\"]",
-      "desc": "Same content sort by id"
+      "desc": "Same content sort by id",
+      "output": "[\"a1 abc\",\"a2 abc\"]"
     },
     {
       "input": "[\"d1 1\",\"d2 2\",\"d3 3\"]",
-      "desc": "All digit logs"
+      "desc": "All digit logs",
+      "output": "[\"d1 1\",\"d2 2\",\"d3 3\"]"
     },
     {
       "input": "[\"a1 abc\",\"a2 def\",\"a3 ghi\"]",
-      "desc": "All letter logs distinct"
+      "desc": "All letter logs distinct",
+      "output": "[\"a1 abc\",\"a2 def\",\"a3 ghi\"]"
     },
     {
       "input": "[\"a1 z\",\"a2 y\",\"a3 x\"]",
-      "desc": "Reverse alphabetical"
+      "desc": "Reverse alphabetical",
+      "output": "[\"a3 x\",\"a2 y\",\"a1 z\"]"
     },
     {
       "input": "[\"d1 5 6\",\"l1 apple\",\"d2 1 2\",\"l2 banana\",\"d3 3 4\"]",
-      "desc": "Mixed"
+      "desc": "Mixed",
+      "output": "[\"l1 apple\",\"l2 banana\",\"d1 5 6\",\"d2 1 2\",\"d3 3 4\"]"
     },
     {
       "input": "[\"a x y\",\"b x y\",\"c x y\"]",
-      "desc": "All same content"
+      "desc": "All same content",
+      "output": "[\"a x y\",\"b x y\",\"c x y\"]"
     },
     {
       "input": "[\"a1 b a\",\"a2 a a\",\"a3 a b\"]",
-      "desc": "Sort by content order"
+      "desc": "Sort by content order",
+      "output": "[\"a2 a a\",\"a3 a b\",\"a1 b a\"]"
     },
     {
       "input": "[\"l1 alpha beta gamma\",\"l2 alpha beta gamma\",\"l3 alpha beta gamma\"]",
-      "desc": "Long same content"
+      "desc": "Long same content",
+      "output": "[\"l1 alpha beta gamma\",\"l2 alpha beta gamma\",\"l3 alpha beta gamma\"]"
     },
     {
       "input": "[\"d1 9\",\"l1 a\",\"d2 8\",\"l2 b\",\"d3 7\"]",
-      "desc": "Alternating"
+      "desc": "Alternating",
+      "output": "[\"l1 a\",\"l2 b\",\"d1 9\",\"d2 8\",\"d3 7\"]"
     },
     {
       "input": "[\"x1 aa\",\"x2 bb\",\"x3 cc\",\"x4 dd\",\"x5 ee\"]",
-      "desc": "5 letter logs"
+      "desc": "5 letter logs",
+      "output": "[\"x1 aa\",\"x2 bb\",\"x3 cc\",\"x4 dd\",\"x5 ee\"]"
     },
     {
       "input": "[\"a1 z\",\"a2 y\",\"a3 x\",\"a4 w\",\"a5 v\",\"a6 u\",\"a7 t\",\"a8 s\",\"a9 r\",\"a10 q\"]",
-      "desc": "10 reverse"
+      "desc": "10 reverse",
+      "output": "[\"a10 q\",\"a9 r\",\"a8 s\",\"a7 t\",\"a6 u\",\"a5 v\",\"a4 w\",\"a3 x\",\"a2 y\",\"a1 z\"]"
     },
     {
       "input": "[\"j1 1 2 3 4 5\",\"j2 6 7 8 9 0\"]",
-      "desc": "All digit"
+      "desc": "All digit",
+      "output": "[\"j1 1 2 3 4 5\",\"j2 6 7 8 9 0\"]"
     },
     {
       "input": "[\"id1 word\",\"id2 word\",\"id3 word\",\"id4 word\"]",
-      "desc": "Same content multi"
+      "desc": "Same content multi",
+      "output": "[\"id1 word\",\"id2 word\",\"id3 word\",\"id4 word\"]"
     },
     {
       "input": "[\"z1 hello world\",\"a1 hello world\",\"m1 hello world\"]",
-      "desc": "Same content multi"
+      "desc": "Same content multi",
+      "output": "[\"a1 hello world\",\"m1 hello world\",\"z1 hello world\"]"
     },
     {
       "input": "[\"abc a a a\",\"abd a a a\",\"abe a a a\",\"abf a a a\"]",
-      "desc": "Same content varied id"
+      "desc": "Same content varied id",
+      "output": "[\"abc a a a\",\"abd a a a\",\"abe a a a\",\"abf a a a\"]"
     },
     {
       "input": "[-197,654,307,-15,180,-284,899,404,225,-230,628,389,-134,497,821,-933,-662,-525,-364,-83,896,-674,-828,792,-434,648,947,389,-790,276,-352,277,308,-301,18,-150,707,-386,-146,-686,646,747,423,606,-178,-411,697,-82,537,551,437,-612,-98,-877,245,574,-623,347,-694,3,981,925,-249,35,-827,265,-691,685,791,-96,701,112,854,620,-178,812,-596,904,270,744,453,856,227,-653,257,444,-171,500,-717,-819,-580,-19,198,11,37,-414,-451,-780,-606,999]",
