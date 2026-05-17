@@ -6,51 +6,63 @@
   "testcases": [
     {
       "input": "[\"qkz\"]\n[\"nwq\"]\n[[\"gzj\",\"jdo\"],[\"mvk\",\"o\"]]",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "false"
     },
     {
       "input": "[\"e\"]\n[\"oao\"]\n[[\"uyo\",\"l\"],[\"gr\",\"donc\"]]",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "false"
     },
     {
       "input": "[\"g\"]\n[\"g\"]\n[[\"mckc\",\"j\"],[\"g\",\"gmk\"]]",
-      "desc": "Edge: case 3"
+      "desc": "Edge: case 3",
+      "output": "true"
     },
     {
       "input": "[\"exs\"]\n[\"uewtl\"]\n[[\"sh\",\"fqk\"],[\"jenl\",\"pgax\"]]",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "false"
     },
     {
       "input": "[\"dewk\"]\n[\"jf\"]\n[[\"bsk\",\"cchf\"],[\"m\",\"vqhd\"]]",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "false"
     },
     {
       "input": "[\"l\",\"n\",\"fq\",\"pkv\",\"jx\",\"ybm\",\"syx\",\"blfu\"]\n[\"odrd\",\"qnukp\",\"ztrx\",\"txw\",\"b\",\"pleos\",\"tdm\"]\n[[\"rvw\",\"s\",\"tk\"],[\"sf\",\"qwjw\",\"zf\"]]",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "false"
     },
     {
       "input": "[\"anmxm\",\"j\"]\n[\"qlcu\",\"dsda\",\"pb\",\"ayc\"]\n[[\"poi\",\"hq\"],[\"yq\",\"hlm\"],[\"japn\",\"wrx\"]]",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "false"
     },
     {
       "input": "[\"z\",\"yt\",\"mh\"]\n[\"zh\",\"yqdjk\",\"dkkx\",\"qtrmj\",\"lvli\"]\n[[\"fg\",\"xq\"],[\"izuq\",\"tyok\"],[\"zbk\",\"dkfs\"]]",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "false"
     },
     {
       "input": "[\"ywcwz\",\"gsdp\",\"qaeq\",\"fpdh\",\"o\"]\n[\"y\",\"ol\",\"kc\",\"nh\"]\n[[\"tz\",\"h\"],[\"my\",\"zn\"],[\"tq\",\"jfm\"]]",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "false"
     },
     {
       "input": "[\"vssab\",\"yocga\",\"x\"]\n[\"px\",\"lugd\",\"fy\",\"bxzx\"]\n[[\"lrp\",\"b\",\"dbe\"],[\"aqrc\",\"aekv\",\"zp\"],[\"wa\",\"fgm\",\"xrb\"]]",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "false"
     },
     {
       "input": "[\"lsifr\",\"c\",\"hj\",\"etqan\"]\n[\"cin\",\"uh\",\"drgjx\"]\n[[\"h\",\"tekp\",\"pe\"],[\"eud\",\"ocm\",\"zgwi\"]]",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "false"
     },
     {
       "input": "[\"i\",\"zssfs\",\"fthvn\",\"fqt\",\"ajuc\",\"hvmll\"]\n[\"kt\",\"fhsjc\",\"c\",\"i\",\"eo\",\"lrhv\"]\n[[\"q\",\"yl\"],[\"bdau\",\"ps\"]]",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "false"
     },
     {
       "input": "[\"wjz\",\"jnbhe\",\"t\",\"gdml\",\"lakn\"]\n[\"uj\",\"sj\",\"s\",\"ywlpw\",\"v\"]\n[[\"z\",\"fd\",\"etm\"],[\"jm\",\"c\",\"k\"]]",
@@ -58,7 +70,8 @@
     },
     {
       "input": "[\"ajrgv\",\"ou\",\"monp\",\"qcz\",\"szqo\"]\n[\"w\",\"hoxx\",\"qmziz\",\"vt\",\"oyud\",\"nyjwf\",\"fcyb\"]\n[[\"kg\",\"oxsj\"],[\"dte\",\"d\"]]",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "false"
     },
     {
       "input": "[\"xdjbg\",\"fm\",\"pepa\",\"grgxf\",\"cclq\"]\n[\"utwbf\",\"mkpem\",\"omjj\",\"oz\",\"uuov\"]\n[[\"j\",\"ohdp\",\"hyy\"],[\"ny\",\"lsv\",\"ven\"],[\"m\",\"i\",\"smk\"]]",
@@ -66,15 +79,18 @@
     },
     {
       "input": "[\"wcn\",\"kz\",\"wyvc\"]\n[\"gfkp\",\"kvuq\",\"ur\",\"pa\",\"kdlxe\",\"g\",\"j\"]\n[[\"knwy\",\"bcp\"],[\"r\",\"hh\"]]",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "false"
     },
     {
       "input": "[\"bq\",\"bup\",\"rpehy\",\"cojes\",\"kgz\"]\n[\"n\",\"ujo\",\"rqll\",\"bmyz\",\"ijl\",\"grvq\",\"i\",\"hevr\"]\n[[\"wfvn\",\"rbxd\",\"kcx\"],[\"g\",\"tvoy\",\"jvo\"],[\"yo\",\"me\",\"cb\"]]",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "false"
     },
     {
       "input": "[\"swr\",\"xisfj\",\"xvyrt\",\"ppdv\",\"hzpd\"]\n[\"o\",\"p\",\"flx\",\"i\",\"nrf\"]\n[[\"wg\",\"bigh\"],[\"ac\",\"aqf\"]]",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "false"
     },
     {
       "input": "[\"t\",\"rmcuo\",\"al\"]\n[\"w\",\"q\",\"cmaha\"]\n[[\"juyl\",\"ueem\",\"i\"],[\"z\",\"abs\",\"ofzp\"],[\"ne\",\"iyn\",\"ksg\"]]",

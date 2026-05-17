@@ -30,35 +30,43 @@
     },
     {
       "input": "\"erzwarildeg\"",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "\"erzwarildeg\""
     },
     {
       "input": "\"shftgclxvnuds\"",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "\"shftgclxvnuds\""
     },
     {
       "input": "\"drcpzfikzs\"",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "\"drcpzfikzs\""
     },
     {
       "input": "\"ybiai\"",
-      "desc": "Standard: case 5"
+      "desc": "Standard: case 5",
+      "output": "\"ybiai\""
     },
     {
       "input": "\"pdtusjrclxhmwu\"",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "\"pdtusjrclxhmwu\""
     },
     {
       "input": "\"hegqfnr\"",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "\"hegqfnr\""
     },
     {
       "input": "\"znrjzqtg\"",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "\"znrjzqtg\""
     },
     {
       "input": "\"lgfyxs\"",
-      "desc": "Standard: case 9"
+      "desc": "Standard: case 9",
+      "output": "\"lgfyxs\""
     },
     {
       "input": "\"yed\"",
@@ -66,7 +74,8 @@
     },
     {
       "input": "\"qhcpl\"",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "\"qhcpl\""
     },
     {
       "input": "\"qm\"",
@@ -74,15 +83,18 @@
     },
     {
       "input": "\"hgjupzf\"",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "\"hgjupzf\""
     },
     {
       "input": "\"nztttmcumjt\"",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "\"nztttmcumjt\""
     },
     {
       "input": "\"ipskafkwbr\"",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "\"ipskafkwbr\""
     }
   ]
 }

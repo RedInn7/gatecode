@@ -6,7 +6,8 @@
   "testcases": [
     {
       "input": "\"c\"\n1",
-      "desc": "Edge: case 1"
+      "desc": "Edge: case 1",
+      "output": "0"
     },
     {
       "input": "\"s\"\n0",
@@ -18,7 +19,8 @@
     },
     {
       "input": "\"c\"\n1",
-      "desc": "Edge: case 4"
+      "desc": "Edge: case 4",
+      "output": "0"
     },
     {
       "input": "\"n\"\n-2147483648",
@@ -26,7 +28,8 @@
     },
     {
       "input": "\"pgrfouxg\"\n117",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "-1"
     },
     {
       "input": "\"lorpajwfgvrzqk\"\n-290",
@@ -34,7 +37,8 @@
     },
     {
       "input": "\"rr\"\n123",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "-1"
     },
     {
       "input": "\"pkxptgkmdevfi\"\n-284",
@@ -50,11 +54,13 @@
     },
     {
       "input": "\"gborzytnield\"\n104",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "-1"
     },
     {
       "input": "\"borqffbhxd\"\n445",
-      "desc": "Standard: case 8"
+      "desc": "Standard: case 8",
+      "output": "-1"
     },
     {
       "input": "\"mzvcanawowkvyz\"\n-152",
@@ -66,19 +72,23 @@
     },
     {
       "input": "\"jw\"\n305",
-      "desc": "Standard: case 11"
+      "desc": "Standard: case 11",
+      "output": "-1"
     },
     {
       "input": "\"toh\"\n907",
-      "desc": "Standard: case 12"
+      "desc": "Standard: case 12",
+      "output": "-1"
     },
     {
       "input": "\"qoswdvcdqrjbps\"\n153",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "-1"
     },
     {
       "input": "\"wjrvertxotbsvr\"\n264",
-      "desc": "Stress: large case 2"
+      "desc": "Stress: large case 2",
+      "output": "-1"
     },
     {
       "input": "\"kdrstik\"\n-7",

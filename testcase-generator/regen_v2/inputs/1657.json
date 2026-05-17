@@ -6,35 +6,43 @@
   "testcases": [
     {
       "input": "[0,1,2,3,4,3,4]",
-      "desc": "Standard: example1"
+      "desc": "Standard: example1",
+      "output": "\"dba\""
     },
     {
       "input": "[25,1,3,1,3,0,2]",
-      "desc": "Standard: example2"
+      "desc": "Standard: example2",
+      "output": "\"adz\""
     },
     {
       "input": "[2,2,1,null,1,0,null,0]",
-      "desc": "Standard: example3"
+      "desc": "Standard: example3",
+      "output": "\"abc\""
     },
     {
       "input": "[0]",
-      "desc": "Edge: single leaf"
+      "desc": "Edge: single leaf",
+      "output": "\"a\""
     },
     {
       "input": "[1,0,2]",
-      "desc": "Standard: 3 nodes"
+      "desc": "Standard: 3 nodes",
+      "output": "\"ab\""
     },
     {
       "input": "[0,null,1,null,2,null,3]",
-      "desc": "Standard: right chain"
+      "desc": "Standard: right chain",
+      "output": "\"dcba\""
     },
     {
       "input": "[0,1,null,2,null,3]",
-      "desc": "Standard: left chain"
+      "desc": "Standard: left chain",
+      "output": "\"dcba\""
     },
     {
       "input": "[25,24,23,22,21,20,19]",
-      "desc": "Standard: 7 z-y-x..."
+      "desc": "Standard: 7 z-y-x...",
+      "output": "\"txz\""
     },
     {
       "input": "[-590,699,867,724,-946,32,907,433,-125,-253,-891,678,-836,-840,-737,106,761,-658,350,352,290]",
@@ -42,7 +50,8 @@
     },
     {
       "input": "[1,0,1,0,null,0,null,0,null,null,null,0]",
-      "desc": "Stress: mixed"
+      "desc": "Stress: mixed",
+      "output": "\"aaaab\""
     },
     {
       "input": "[-365,901,-544,-277,664,672,-179,943,181,978,713,-500,845,744,-543,-161,372,-747,-601,614,-972,775,112,-679,-524,359,873,-655,-322,793,947,612,-99,67,621,442,92,978,-238,-733]",
@@ -50,39 +59,48 @@
     },
     {
       "input": "[5,5,5,5,5,null,null,5,null,null,5,null,null,null,null,5]",
-      "desc": "Standard: deep left"
+      "desc": "Standard: deep left",
+      "output": "\"ff\""
     },
     {
       "input": "[3,7,4,2,null,1,4,4,1,null,null,null,null,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]",
-      "desc": "Stress: complex"
+      "desc": "Stress: complex",
+      "output": "\"bchd\""
     },
     {
       "input": "[0,1]",
-      "desc": "Edge: root with left child"
+      "desc": "Edge: root with left child",
+      "output": "\"ba\""
     },
     {
       "input": "[1,null,0]",
-      "desc": "Edge: root with right child"
+      "desc": "Edge: root with right child",
+      "output": "\"ab\""
     },
     {
       "input": "[24,23,22,21,20]",
-      "desc": "Standard: 5 nodes desc"
+      "desc": "Standard: 5 nodes desc",
+      "output": "\"uxy\""
     },
     {
       "input": "[0,25,0,null,null,25,0]",
-      "desc": "Killer: a vs z paths"
+      "desc": "Killer: a vs z paths",
+      "output": "\"aaa\""
     },
     {
       "input": "[4,3,5,2,4,null,null,1,null,null,3]",
-      "desc": "Stress: deeper"
+      "desc": "Stress: deeper",
+      "output": "\"bcde\""
     },
     {
       "input": "[5,4,6,3,null,null,7,2,null,null,null,null,null,null,8]",
-      "desc": "Stress: 8 levels"
+      "desc": "Stress: 8 levels",
+      "output": "\"cdef\""
     },
     {
       "input": "[0,0,0,0,0,0,0,0,0]",
-      "desc": "Standard: 9 zeros"
+      "desc": "Standard: 9 zeros",
+      "output": "\"aaa\""
     }
   ]
 }

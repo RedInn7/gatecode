@@ -10,7 +10,8 @@
     },
     {
       "input": "1\n0",
-      "desc": "Edge: case 2"
+      "desc": "Edge: case 2",
+      "output": "3"
     },
     {
       "input": "2147483647\n-100",
@@ -22,23 +23,28 @@
     },
     {
       "input": "100\n0",
-      "desc": "Edge: case 5"
+      "desc": "Edge: case 5",
+      "output": "50"
     },
     {
       "input": "-221\n67",
-      "desc": "Standard: case 1"
+      "desc": "Standard: case 1",
+      "output": "112"
     },
     {
       "input": "-490\n496",
-      "desc": "Standard: case 2"
+      "desc": "Standard: case 2",
+      "output": "330"
     },
     {
       "input": "176\n-394",
-      "desc": "Standard: case 3"
+      "desc": "Standard: case 3",
+      "output": "198"
     },
     {
       "input": "342\n220",
-      "desc": "Standard: case 4"
+      "desc": "Standard: case 4",
+      "output": "188"
     },
     {
       "input": "-67\n789",
@@ -46,11 +52,13 @@
     },
     {
       "input": "141\n-66",
-      "desc": "Standard: case 6"
+      "desc": "Standard: case 6",
+      "output": "71"
     },
     {
       "input": "-261\n289",
-      "desc": "Standard: case 7"
+      "desc": "Standard: case 7",
+      "output": "184"
     },
     {
       "input": "-745\n-132",
@@ -74,7 +82,8 @@
     },
     {
       "input": "-509\n95",
-      "desc": "Stress: large case 1"
+      "desc": "Stress: large case 1",
+      "output": "256"
     },
     {
       "input": "-862\n934",
@@ -82,7 +91,8 @@
     },
     {
       "input": "299\n720",
-      "desc": "Stress: large case 3"
+      "desc": "Stress: large case 3",
+      "output": "361"
     }
   ]
 }
