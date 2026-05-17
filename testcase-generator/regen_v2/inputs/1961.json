@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[0,1],[0,2],[2,3],[2,4]]\n[[0,1],[0,2],[0,3],[2,7],[1,4],[4,5],[4,6]]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "[8, 7, 7, 8, 8]"
     },
     {
       "input": "[[0,1],[0,2],[0,3],[0,4]]\n[[0,1],[1,2],[2,3]]",
-      "desc": "Standard: example 2 star + chain"
+      "desc": "Standard: example 2 star + chain",
+      "output": "[3, 6, 6, 6, 6]"
     },
     {
       "input": "[[0,1]]\n[[0,1]]",
-      "desc": "Edge: n=m=2"
+      "desc": "Edge: n=m=2",
+      "output": "[2, 2]"
     },
     {
       "input": "[[0,1],[1,2]]\n[[0,1]]",
-      "desc": "Edge: chain + n=2"
+      "desc": "Edge: chain + n=2",
+      "output": "[3, 2, 3]"
     },
     {
       "input": "[[0,1]]\n[[0,1],[0,2],[0,3],[0,4]]",
-      "desc": "Edge: n=2 + star"
+      "desc": "Edge: n=2 + star",
+      "output": "[5, 5]"
     },
     {
       "input": "[[0,1],[1,2],[2,3]]\n[[0,1],[1,2],[2,3]]",
-      "desc": "Standard: equal chains"
+      "desc": "Standard: equal chains",
+      "output": "[4, 4, 4, 4]"
     },
     {
       "input": "[[0,1],[0,2],[0,3]]\n[[0,1],[0,2],[0,3]]",
-      "desc": "Standard: equal stars"
+      "desc": "Standard: equal stars",
+      "output": "[4, 6, 6, 6]"
     },
     {
       "input": "[[0,1],[1,2],[2,3],[3,4]]\n[[0,1],[0,2],[0,3],[0,4]]",
-      "desc": "Standard: chain + star"
+      "desc": "Standard: chain + star",
+      "output": "[7, 6, 7, 6, 7]"
     },
     {
       "input": "[[0,1],[1,2],[1,3]]\n[[0,1],[1,2],[1,3]]",
-      "desc": "Standard: Y-shape both"
+      "desc": "Standard: Y-shape both",
+      "output": "[6, 4, 6, 6]"
     },
     {
       "input": "[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]\n[[0,1],[0,2],[1,3],[1,4]]",
-      "desc": "Standard: binary trees"
+      "desc": "Standard: binary trees",
+      "output": "[8, 5, 5, 8, 8, 8, 8]"
     },
     {
       "input": "[[0,1],[1,2],[2,3],[3,4],[4,5]]\n[[0,1]]",
-      "desc": "Standard: long chain + tiny"
+      "desc": "Standard: long chain + tiny",
+      "output": "[4, 4, 4, 4, 4, 4]"
     },
     {
       "input": "[[0,1],[0,2],[0,3],[0,4],[0,5]]\n[[0,1],[1,2],[2,3],[3,4],[4,5]]",
-      "desc": "Standard: star + chain"
+      "desc": "Standard: star + chain",
+      "output": "[4, 8, 8, 8, 8, 8]"
     },
     {
       "input": "[[0,1],[1,2],[2,3],[2,4],[2,5]]\n[[0,1],[1,2]]",
-      "desc": "Standard: asymmetric"
+      "desc": "Standard: asymmetric",
+      "output": "[4, 6, 4, 6, 6, 6]"
     },
     {
       "input": "[[0,1],[0,2],[1,3]]\n[[0,1],[1,2],[1,3],[1,4]]",
-      "desc": "Standard: 4 and 5 nodes"
+      "desc": "Standard: 4 and 5 nodes",
+      "output": "[6, 6, 6, 6]"
     },
     {
       "input": "[[0,1],[1,2],[2,3]]\n[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]",
-      "desc": "Standard: small + larger"
+      "desc": "Standard: small + larger",
+      "output": "[7, 7, 7, 7]"
     },
     {
       "input": "[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]\n[[0,1],[0,2]]",
-      "desc": "Standard: chain n=8 + V"
+      "desc": "Standard: chain n=8 + V",
+      "output": "[6, 6, 6, 6, 6, 6, 6, 6]"
     },
     {
       "input": "[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[3,8]]\n[[0,1],[0,2],[1,3]]",
-      "desc": "Standard: deeper tree"
+      "desc": "Standard: deeper tree",
+      "output": "[7, 6, 6, 7, 7, 7, 7, 6, 6]"
     },
     {
       "input": "[[0,1],[1,2]]\n[[0,1],[0,2],[1,3],[1,4]]",
-      "desc": "Standard: chain + tree"
+      "desc": "Standard: chain + tree",
+      "output": "[5, 4, 5]"
     },
     {
       "input": "[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7]]\n[[0,1]]",
-      "desc": "Standard: large star + n=2"
+      "desc": "Standard: large star + n=2",
+      "output": "[2, 8, 8, 8, 8, 8, 8, 8]"
     },
     {
       "input": "[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10]]\n[[0,1],[1,2],[2,3]]",
-      "desc": "Stress: long chain + small"
+      "desc": "Stress: long chain + small",
+      "output": "[8, 7, 8, 7, 8, 7, 8, 7, 8, 7, 8]"
     }
   ]
 }

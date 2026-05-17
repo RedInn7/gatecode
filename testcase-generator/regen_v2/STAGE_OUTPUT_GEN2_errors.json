@@ -1288,5 +1288,29 @@
     "slug": "sum-of-largest-prime-substrings",
     "fqid": 3556,
     "error": "Testcase 19 failed: RE (exit 1): , line 288, in <module>\n    _result = Solution().sumOfLargestPrimes(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpk80bb4ek.py\", line 152, in sumOfLargestPrimes\n    x = x * 10 + int(s[j])\n                 ^^^^^^^^^\nValueError: invalid literal for int() with base 10: 's'\n"
+  },
+  {
+    "pid": 1945,
+    "slug": "minimum-time-to-visit-a-cell-in-a-grid",
+    "fqid": 2577,
+    "error": "Testcase 13 failed: RE (exit 1): last):\n  File \"/tmp/tmpdhxl84m3.py\", line 294, in <module>\n    _result = Solution().minimumTime(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpdhxl84m3.py\", line 142, in minimumTime\n    if grid[0][1] > 1 and grid[1][0] > 1:\n       ~~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1954,
+    "slug": "all-ancestors-of-a-node-in-a-directed-acyclic-graph",
+    "fqid": 2192,
+    "error": "Testcase 19 failed: RE (exit 1):  call last):\n  File \"/tmp/tmp6vbkxggn.py\", line 292, in <module>\n    _result = Solution().getAncestors(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp6vbkxggn.py\", line 154, in getAncestors\n    for u, v in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1960,
+    "slug": "count-number-of-possible-root-nodes",
+    "fqid": 2581,
+    "error": "Testcase 19 failed: RE (exit 1): st recent call last):\n  File \"/tmp/tmp2yoirgnt.py\", line 304, in <module>\n    _result = Solution().rootCount(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp2yoirgnt.py\", line 163, in rootCount\n    for a, b in edges:\n        ^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "pid": 1964,
+    "slug": "validate-binary-tree-nodes",
+    "fqid": 1361,
+    "error": "Testcase 19 failed: RE (exit 1): yamn.py\", line 292, in <module>\n    _result = Solution().validateBinaryTreeNodes(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpz0myyamn.py\", line 154, in validateBinaryTreeNodes\n    if vis[j] or find(i) == find(j):\n       ~~~^^^\nIndexError: list index out of range\n"
   }
 ]

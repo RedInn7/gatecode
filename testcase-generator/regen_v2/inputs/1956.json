@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"Hello, my name is John\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "5"
     },
     {
       "input": "\"Hello\"",
-      "desc": "Standard: example 2 single word"
+      "desc": "Standard: example 2 single word",
+      "output": "1"
     },
     {
       "input": "\"\"",
-      "desc": "Edge: empty"
+      "desc": "Edge: empty",
+      "output": "0"
     },
     {
       "input": "\" \"",
-      "desc": "Edge: single space"
+      "desc": "Edge: single space",
+      "output": "0"
     },
     {
       "input": "\"   \"",
-      "desc": "Edge: multiple spaces"
+      "desc": "Edge: multiple spaces",
+      "output": "0"
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "1"
     },
     {
       "input": "\" a \"",
-      "desc": "Edge: leading/trailing space"
+      "desc": "Edge: leading/trailing space",
+      "output": "1"
     },
     {
       "input": "\"a b\"",
-      "desc": "Standard: 2 words"
+      "desc": "Standard: 2 words",
+      "output": "2"
     },
     {
       "input": "\"a b c d e\"",
-      "desc": "Standard: 5 single-char words"
+      "desc": "Standard: 5 single-char words",
+      "output": "5"
     },
     {
       "input": "\"hello world\"",
-      "desc": "Standard: 2 words"
+      "desc": "Standard: 2 words",
+      "output": "2"
     },
     {
       "input": "\"  hello world  \"",
-      "desc": "Standard: extra spaces"
+      "desc": "Standard: extra spaces",
+      "output": "2"
     },
     {
       "input": "\"a  b\"",
-      "desc": "Standard: double space between"
+      "desc": "Standard: double space between",
+      "output": "2"
     },
     {
       "input": "\"!@#$%^&*()\"",
-      "desc": "Edge: only special chars"
+      "desc": "Edge: only special chars",
+      "output": "1"
     },
     {
       "input": "\"1234567890\"",
-      "desc": "Edge: only digits"
+      "desc": "Edge: only digits",
+      "output": "1"
     },
     {
       "input": "\"a 1 b 2 c 3\"",
-      "desc": "Standard: mixed"
+      "desc": "Standard: mixed",
+      "output": "6"
     },
     {
       "input": "\"Hello World!\"",
-      "desc": "Standard: with punctuation"
+      "desc": "Standard: with punctuation",
+      "output": "2"
     },
     {
       "input": "\"a,b,c,d,e\"",
-      "desc": "Edge: no spaces single segment"
+      "desc": "Edge: no spaces single segment",
+      "output": "1"
     },
     {
       "input": "\"one two three four five six seven eight nine ten\"",
-      "desc": "Standard: 10 words"
+      "desc": "Standard: 10 words",
+      "output": "10"
     },
     {
       "input": "\"123 abc 456 def\"",
-      "desc": "Standard: alphanumeric mixed"
+      "desc": "Standard: alphanumeric mixed",
+      "output": "4"
     },
     {
       "input": "\"kjpqpksiwdogyofmjzrjejymsazxtnayieusibeqszyi\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "1"
     }
   ]
 }

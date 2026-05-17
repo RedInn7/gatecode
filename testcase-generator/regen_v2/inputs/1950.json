@@ -4,25 +4,105 @@
   "inferred_constraints": "n is odd, 1 <= n <= 100, tree given as level-order array with nulls",
   "input_format": "line1: root (JSON array, nulls for missing); line2: n (int); line3: x (int)",
   "testcases": [
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11]\n11\n3", "desc": "Standard: example 1"},
-    {"input": "[1,2,3]\n3\n1", "desc": "Standard: example 2 (player 1 picks root)"},
-    {"input": "[1]\n1\n1", "desc": "Edge: n=1 (only one node, no y available -> impossible)"},
-    {"input": "[1,2,3]\n3\n2", "desc": "Edge: n=3 picks leaf"},
-    {"input": "[1,2,3]\n3\n3", "desc": "Edge: n=3 picks other leaf"},
-    {"input": "[1,2,3,4,5,6,7]\n7\n1", "desc": "Standard: full bin n=7 root"},
-    {"input": "[1,2,3,4,5,6,7]\n7\n4", "desc": "Standard: full bin n=7 leaf"},
-    {"input": "[1,2,3,4,5,6,7]\n7\n2", "desc": "Standard: full bin n=7 internal"},
-    {"input": "[1,2,null,3,null,4,null,5]\n5\n1", "desc": "Edge: left chain root"},
-    {"input": "[1,2,null,3,null,4,null,5]\n5\n3", "desc": "Edge: left chain middle"},
-    {"input": "[1,null,2,null,3,null,4,null,5]\n5\n1", "desc": "Edge: right chain root"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n15\n1", "desc": "Standard: full bin n=15"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n15\n8", "desc": "Standard: leaf in larger tree"},
-    {"input": "[1,2,3,4,5,6,7,8,9]\n9\n5", "desc": "Standard: random tree"},
-    {"input": "[1,2,3,4,5,6,7,8,9]\n9\n1", "desc": "Standard: root choice"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13]\n13\n7", "desc": "Standard: 13 nodes"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]\n21\n11", "desc": "Standard: n=21 middle"},
-    {"input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]\n21\n1", "desc": "Standard: n=21 root"},
-    {"input": "[1,2,3,4,5]\n5\n1", "desc": "Edge: n=5 root pick"},
-    {"input": "[1,2,3,4,5]\n5\n2", "desc": "Edge: n=5 internal"}
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11]\n11\n3",
+      "desc": "Standard: example 1",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3]\n3\n1",
+      "desc": "Standard: example 2 (player 1 picks root)",
+      "output": "false"
+    },
+    {
+      "input": "[1]\n1\n1",
+      "desc": "Edge: n=1 (only one node, no y available -> impossible)",
+      "output": "false"
+    },
+    {
+      "input": "[1,2,3]\n3\n2",
+      "desc": "Edge: n=3 picks leaf",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3]\n3\n3",
+      "desc": "Edge: n=3 picks other leaf",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n7\n1",
+      "desc": "Standard: full bin n=7 root",
+      "output": "false"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n7\n4",
+      "desc": "Standard: full bin n=7 leaf",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n7\n2",
+      "desc": "Standard: full bin n=7 internal",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,null,3,null,4,null,5]\n5\n1",
+      "desc": "Edge: left chain root",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,null,3,null,4,null,5]\n5\n3",
+      "desc": "Edge: left chain middle",
+      "output": "false"
+    },
+    {
+      "input": "[1,null,2,null,3,null,4,null,5]\n5\n1",
+      "desc": "Edge: right chain root",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n15\n1",
+      "desc": "Standard: full bin n=15",
+      "output": "false"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]\n15\n8",
+      "desc": "Standard: leaf in larger tree",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9]\n9\n5",
+      "desc": "Standard: random tree",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9]\n9\n1",
+      "desc": "Standard: root choice",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13]\n13\n7",
+      "desc": "Standard: 13 nodes",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]\n21\n11",
+      "desc": "Standard: n=21 middle",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]\n21\n1",
+      "desc": "Standard: n=21 root",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5]\n5\n1",
+      "desc": "Edge: n=5 root pick",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,4,5]\n5\n2",
+      "desc": "Edge: n=5 internal",
+      "output": "false"
+    }
   ]
 }

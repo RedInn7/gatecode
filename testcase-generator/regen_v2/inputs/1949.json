@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= rooms.length <= 10^5, 1 <= queries.length <= 10^4, 1 <= roomId, size, preferred, minSize <= 10^7",
   "input_format": "line1: rooms (JSON 2D); line2: queries (JSON 2D)",
   "testcases": [
-    {"input": "[[2,2],[1,2],[3,2]]\n[[3,1],[3,3],[5,2]]", "desc": "Standard: example 1"},
-    {"input": "[[1,4],[2,3],[3,5],[4,1],[5,2]]\n[[2,3],[2,4],[2,5]]", "desc": "Standard: example 2"},
-    {"input": "[[1,1]]\n[[1,1]]", "desc": "Edge: single room single query"},
-    {"input": "[[1,1]]\n[[1,2]]", "desc": "Edge: room too small"},
-    {"input": "[[10000000,10000000]]\n[[1,1]]", "desc": "Edge: max values"},
-    {"input": "[[1,5],[2,5],[3,5],[4,5],[5,5]]\n[[1,5]]", "desc": "Standard: tie pick smallest"},
-    {"input": "[[1,5],[2,5],[3,5]]\n[[5,5]]", "desc": "Standard: pick closest larger"},
-    {"input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]\n[[3,3]]", "desc": "Standard: exact match"},
-    {"input": "[[100,10]]\n[[1,1]]", "desc": "Edge: distant single room"},
-    {"input": "[[1,10],[100,10]]\n[[50,5]]", "desc": "Standard: equidistant pick smaller id"},
-    {"input": "[[1,1],[2,2],[3,3]]\n[[3,3],[2,2],[1,1]]", "desc": "Standard: multiple queries"},
-    {"input": "[[5,5],[10,10],[15,15]]\n[[1,1],[1,10],[1,15],[1,16]]", "desc": "Standard: varying minSize"},
-    {"input": "[[1,100],[2,100],[3,100],[4,100],[5,100]]\n[[3,50]]", "desc": "Standard: all rooms big"},
-    {"input": "[[1,1],[2,1],[3,1]]\n[[1,100],[2,100],[3,100]]", "desc": "Edge: all too small"},
-    {"input": "[[1,5],[2,10],[3,15],[4,20],[5,25]]\n[[3,12]]", "desc": "Standard: filter by minSize"},
-    {"input": "[[7,3],[1,8],[3,5],[9,2],[5,6]]\n[[4,5]]", "desc": "Standard: random rooms"},
-    {"input": "[[1,10],[10,1],[5,5]]\n[[7,4]]", "desc": "Standard: mixed sizes"},
-    {"input": "[[100,1],[200,2],[300,3]]\n[[150,2],[250,3]]", "desc": "Standard: spaced ids"},
-    {"input": "[[1,1],[1000000,1]]\n[[500000,1]]", "desc": "Edge: pick smaller id when equidistant"},
-    {"input": "[[5,5],[6,5],[7,5],[8,5],[9,5],[10,5]]\n[[100,5]]", "desc": "Standard: all far, pick closest"}
+    {
+      "input": "[[2,2],[1,2],[3,2]]\n[[3,1],[3,3],[5,2]]",
+      "desc": "Standard: example 1",
+      "output": "[3, -1, 3]"
+    },
+    {
+      "input": "[[1,4],[2,3],[3,5],[4,1],[5,2]]\n[[2,3],[2,4],[2,5]]",
+      "desc": "Standard: example 2",
+      "output": "[2, 1, 3]"
+    },
+    {
+      "input": "[[1,1]]\n[[1,1]]",
+      "desc": "Edge: single room single query",
+      "output": "[1]"
+    },
+    {
+      "input": "[[1,1]]\n[[1,2]]",
+      "desc": "Edge: room too small",
+      "output": "[-1]"
+    },
+    {
+      "input": "[[10000000,10000000]]\n[[1,1]]",
+      "desc": "Edge: max values",
+      "output": "[10000000]"
+    },
+    {
+      "input": "[[1,5],[2,5],[3,5],[4,5],[5,5]]\n[[1,5]]",
+      "desc": "Standard: tie pick smallest",
+      "output": "[1]"
+    },
+    {
+      "input": "[[1,5],[2,5],[3,5]]\n[[5,5]]",
+      "desc": "Standard: pick closest larger",
+      "output": "[3]"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]\n[[3,3]]",
+      "desc": "Standard: exact match",
+      "output": "[3]"
+    },
+    {
+      "input": "[[100,10]]\n[[1,1]]",
+      "desc": "Edge: distant single room",
+      "output": "[100]"
+    },
+    {
+      "input": "[[1,10],[100,10]]\n[[50,5]]",
+      "desc": "Standard: equidistant pick smaller id",
+      "output": "[1]"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3]]\n[[3,3],[2,2],[1,1]]",
+      "desc": "Standard: multiple queries",
+      "output": "[3, 2, 1]"
+    },
+    {
+      "input": "[[5,5],[10,10],[15,15]]\n[[1,1],[1,10],[1,15],[1,16]]",
+      "desc": "Standard: varying minSize",
+      "output": "[5, 10, 15, -1]"
+    },
+    {
+      "input": "[[1,100],[2,100],[3,100],[4,100],[5,100]]\n[[3,50]]",
+      "desc": "Standard: all rooms big",
+      "output": "[3]"
+    },
+    {
+      "input": "[[1,1],[2,1],[3,1]]\n[[1,100],[2,100],[3,100]]",
+      "desc": "Edge: all too small",
+      "output": "[-1, -1, -1]"
+    },
+    {
+      "input": "[[1,5],[2,10],[3,15],[4,20],[5,25]]\n[[3,12]]",
+      "desc": "Standard: filter by minSize",
+      "output": "[3]"
+    },
+    {
+      "input": "[[7,3],[1,8],[3,5],[9,2],[5,6]]\n[[4,5]]",
+      "desc": "Standard: random rooms",
+      "output": "[3]"
+    },
+    {
+      "input": "[[1,10],[10,1],[5,5]]\n[[7,4]]",
+      "desc": "Standard: mixed sizes",
+      "output": "[5]"
+    },
+    {
+      "input": "[[100,1],[200,2],[300,3]]\n[[150,2],[250,3]]",
+      "desc": "Standard: spaced ids",
+      "output": "[200, 300]"
+    },
+    {
+      "input": "[[1,1],[1000000,1]]\n[[500000,1]]",
+      "desc": "Edge: pick smaller id when equidistant",
+      "output": "[1]"
+    },
+    {
+      "input": "[[5,5],[6,5],[7,5],[8,5],[9,5],[10,5]]\n[[100,5]]",
+      "desc": "Standard: all far, pick closest",
+      "output": "[10]"
+    }
   ]
 }

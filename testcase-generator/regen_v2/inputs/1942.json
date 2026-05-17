@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= words.length <= 1000, 1 <= words[i].length <= 16, lowercase English",
   "input_format": "single line: words (JSON array of strings)",
   "testcases": [
-    {"input": "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]", "desc": "Standard: example 1"},
-    {"input": "[\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]", "desc": "Standard: example 2"},
-    {"input": "[\"abcd\",\"dbqca\"]", "desc": "Standard: example 3"},
-    {"input": "[\"a\"]", "desc": "Edge: n=1"},
-    {"input": "[\"aa\"]", "desc": "Edge: n=1 length 2"},
-    {"input": "[\"a\",\"b\"]", "desc": "Edge: 2 same length"},
-    {"input": "[\"a\",\"ab\"]", "desc": "Edge: chain 2"},
-    {"input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]", "desc": "Standard: simple chain 5"},
-    {"input": "[\"abc\",\"abc\",\"abc\"]", "desc": "Edge: all same word"},
-    {"input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]", "desc": "Standard: all distinct len 1"},
-    {"input": "[\"abcdefghijklmnop\",\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\",\"abcdefghijk\",\"abcdefghijkl\",\"abcdefghijklm\",\"abcdefghijklmn\",\"abcdefghijklmno\"]", "desc": "Standard: chain to max length"},
-    {"input": "[\"a\",\"bc\",\"def\",\"ghij\",\"klmno\"]", "desc": "Standard: no chain possible"},
-    {"input": "[\"ab\",\"ba\",\"abc\",\"bca\",\"bac\"]", "desc": "Standard: same letters reorder"},
-    {"input": "[\"xyz\",\"xy\",\"x\"]", "desc": "Standard: reverse order chain 3"},
-    {"input": "[\"a\",\"ab\",\"ac\",\"bc\",\"abc\",\"abd\"]", "desc": "Standard: branching"},
-    {"input": "[\"abcd\",\"abcde\",\"abcdf\",\"abcdef\"]", "desc": "Standard: short chain"},
-    {"input": "[\"ksqvsyq\",\"ks\",\"kss\",\"czvh\",\"zczpzvdhx\",\"zczpzvh\",\"zczpzvhx\",\"zcpzvh\",\"zczvh\",\"gr\",\"grukmj\",\"ksqvsq\",\"gruj\",\"kssq\",\"ksqsq\",\"grukkmj\",\"grukj\",\"zczpzfvdhx\",\"gru\"]", "desc": "Stress: complex multiple chains"},
-    {"input": "[\"a\",\"a\",\"a\"]", "desc": "Edge: all duplicates"},
-    {"input": "[\"abcdefghijklmnop\"]", "desc": "Edge: single max-length word"},
-    {"input": "[\"a\",\"b\",\"ab\",\"ba\",\"abc\",\"bca\",\"acb\",\"bac\",\"cab\",\"cba\"]", "desc": "Standard: many permutations"}
+    {
+      "input": "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]",
+      "desc": "Standard: example 1",
+      "output": "4"
+    },
+    {
+      "input": "[\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]",
+      "desc": "Standard: example 2",
+      "output": "5"
+    },
+    {
+      "input": "[\"abcd\",\"dbqca\"]",
+      "desc": "Standard: example 3",
+      "output": "1"
+    },
+    {
+      "input": "[\"a\"]",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "[\"aa\"]",
+      "desc": "Edge: n=1 length 2",
+      "output": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "desc": "Edge: 2 same length",
+      "output": "1"
+    },
+    {
+      "input": "[\"a\",\"ab\"]",
+      "desc": "Edge: chain 2",
+      "output": "2"
+    },
+    {
+      "input": "[\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\"]",
+      "desc": "Standard: simple chain 5",
+      "output": "5"
+    },
+    {
+      "input": "[\"abc\",\"abc\",\"abc\"]",
+      "desc": "Edge: all same word",
+      "output": "1"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\",\"e\"]",
+      "desc": "Standard: all distinct len 1",
+      "output": "1"
+    },
+    {
+      "input": "[\"abcdefghijklmnop\",\"a\",\"ab\",\"abc\",\"abcd\",\"abcde\",\"abcdef\",\"abcdefg\",\"abcdefgh\",\"abcdefghi\",\"abcdefghij\",\"abcdefghijk\",\"abcdefghijkl\",\"abcdefghijklm\",\"abcdefghijklmn\",\"abcdefghijklmno\"]",
+      "desc": "Standard: chain to max length",
+      "output": "16"
+    },
+    {
+      "input": "[\"a\",\"bc\",\"def\",\"ghij\",\"klmno\"]",
+      "desc": "Standard: no chain possible",
+      "output": "1"
+    },
+    {
+      "input": "[\"ab\",\"ba\",\"abc\",\"bca\",\"bac\"]",
+      "desc": "Standard: same letters reorder",
+      "output": "2"
+    },
+    {
+      "input": "[\"xyz\",\"xy\",\"x\"]",
+      "desc": "Standard: reverse order chain 3",
+      "output": "3"
+    },
+    {
+      "input": "[\"a\",\"ab\",\"ac\",\"bc\",\"abc\",\"abd\"]",
+      "desc": "Standard: branching",
+      "output": "3"
+    },
+    {
+      "input": "[\"abcd\",\"abcde\",\"abcdf\",\"abcdef\"]",
+      "desc": "Standard: short chain",
+      "output": "3"
+    },
+    {
+      "input": "[\"ksqvsyq\",\"ks\",\"kss\",\"czvh\",\"zczpzvdhx\",\"zczpzvh\",\"zczpzvhx\",\"zcpzvh\",\"zczvh\",\"gr\",\"grukmj\",\"ksqvsq\",\"gruj\",\"kssq\",\"ksqsq\",\"grukkmj\",\"grukj\",\"zczpzfvdhx\",\"gru\"]",
+      "desc": "Stress: complex multiple chains",
+      "output": "7"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\"]",
+      "desc": "Edge: all duplicates",
+      "output": "1"
+    },
+    {
+      "input": "[\"abcdefghijklmnop\"]",
+      "desc": "Edge: single max-length word",
+      "output": "1"
+    },
+    {
+      "input": "[\"a\",\"b\",\"ab\",\"ba\",\"abc\",\"bca\",\"acb\",\"bac\",\"cab\",\"cba\"]",
+      "desc": "Standard: many permutations",
+      "output": "3"
+    }
   ]
 }

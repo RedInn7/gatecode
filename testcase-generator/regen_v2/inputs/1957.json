@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"cat and mice\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "\"cat dna mice\""
     },
     {
       "input": "\"book is nice\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "\"book is ecin\""
     },
     {
       "input": "\"banana healthy\"",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "\"banana healthy\""
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: single vowel word"
+      "desc": "Edge: single vowel word",
+      "output": "\"a\""
     },
     {
       "input": "\"b\"",
-      "desc": "Edge: single consonant word"
+      "desc": "Edge: single consonant word",
+      "output": "\"b\""
     },
     {
       "input": "\"a b\"",
-      "desc": "Edge: two 1-char words"
+      "desc": "Edge: two 1-char words",
+      "output": "\"a b\""
     },
     {
       "input": "\"a c\"",
-      "desc": "Edge: vowel + non-vowel"
+      "desc": "Edge: vowel + non-vowel",
+      "output": "\"a c\""
     },
     {
       "input": "\"hello world\"",
-      "desc": "Standard: same vowel count 1+1, world->dlrow"
+      "desc": "Standard: same vowel count 1+1, world->dlrow",
+      "output": "\"hello world\""
     },
     {
       "input": "\"aeiou xyz\"",
-      "desc": "Standard: many vowels first, no match"
+      "desc": "Standard: many vowels first, no match",
+      "output": "\"aeiou xyz\""
     },
     {
       "input": "\"xyz xyz\"",
-      "desc": "Standard: 0 vowels both"
+      "desc": "Standard: 0 vowels both",
+      "output": "\"xyz zyx\""
     },
     {
       "input": "\"apple banana cherry\"",
-      "desc": "Standard: 2 vowels each, all reverse"
+      "desc": "Standard: 2 vowels each, all reverse",
+      "output": "\"apple banana cherry\""
     },
     {
       "input": "\"aaa bbb\"",
-      "desc": "Standard: 3v first, 0v second"
+      "desc": "Standard: 3v first, 0v second",
+      "output": "\"aaa bbb\""
     },
     {
       "input": "\"aei aei aei\"",
-      "desc": "Standard: all match all reverse"
+      "desc": "Standard: all match all reverse",
+      "output": "\"aei iea iea\""
     },
     {
       "input": "\"the quick brown fox jumps over lazy dog\"",
-      "desc": "Standard: pangram"
+      "desc": "Standard: pangram",
+      "output": "\"the quick nworb xof spmuj over yzal god\""
     },
     {
       "input": "\"i\"",
-      "desc": "Edge: single vowel"
+      "desc": "Edge: single vowel",
+      "output": "\"i\""
     },
     {
       "input": "\"oh oh\"",
-      "desc": "Standard: same word same vowels"
+      "desc": "Standard: same word same vowels",
+      "output": "\"oh ho\""
     },
     {
       "input": "\"car bar far jar\"",
-      "desc": "Standard: all 1 vowel"
+      "desc": "Standard: all 1 vowel",
+      "output": "\"car rab raf raj\""
     },
     {
       "input": "\"strength rhythm\"",
-      "desc": "Standard: low vowel words"
+      "desc": "Standard: low vowel words",
+      "output": "\"strength rhythm\""
     },
     {
       "input": "\"queue queue queue\"",
-      "desc": "Standard: many vowels"
+      "desc": "Standard: many vowels",
+      "output": "\"queue eueuq eueuq\""
     },
     {
       "input": "\"egnlijakimhylqhvfbdxxajmvkyb\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"egnlijakimhylqhvfbdxxajmvkyb\""
     }
   ]
 }

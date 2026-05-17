@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"abacaba\"\n3",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "2"
     },
     {
       "input": "\"abacaba\"\n4",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "1"
     },
     {
       "input": "\"abcbabcd\"\n2",
-      "desc": "Standard: example 3"
+      "desc": "Standard: example 3",
+      "output": "4"
     },
     {
       "input": "\"a\"\n1",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "1"
     },
     {
       "input": "\"ab\"\n1",
-      "desc": "Edge: n=2 k=1"
+      "desc": "Edge: n=2 k=1",
+      "output": "2"
     },
     {
       "input": "\"ab\"\n2",
-      "desc": "Edge: n=2 k=n"
+      "desc": "Edge: n=2 k=n",
+      "output": "1"
     },
     {
       "input": "\"aaaaa\"\n1",
-      "desc": "Edge: all same k=1"
+      "desc": "Edge: all same k=1",
+      "output": "1"
     },
     {
       "input": "\"aaaaa\"\n5",
-      "desc": "Edge: all same k=n"
+      "desc": "Edge: all same k=n",
+      "output": "1"
     },
     {
       "input": "\"abcdefghij\"\n1",
-      "desc": "Standard: all distinct k=1"
+      "desc": "Standard: all distinct k=1",
+      "output": "10"
     },
     {
       "input": "\"abcdefghij\"\n10",
-      "desc": "Edge: k=n"
+      "desc": "Edge: k=n",
+      "output": "1"
     },
     {
       "input": "\"abcdefghij\"\n5",
-      "desc": "Standard: k=n/2"
+      "desc": "Standard: k=n/2",
+      "output": "2"
     },
     {
       "input": "\"abab\"\n2",
-      "desc": "Standard: repeat pattern"
+      "desc": "Standard: repeat pattern",
+      "output": "1"
     },
     {
       "input": "\"abcabc\"\n3",
-      "desc": "Standard: repeat unit"
+      "desc": "Standard: repeat unit",
+      "output": "1"
     },
     {
       "input": "\"abcabcabc\"\n3",
-      "desc": "Standard: 3 repeats"
+      "desc": "Standard: 3 repeats",
+      "output": "1"
     },
     {
       "input": "\"xyzxyzxyz\"\n6",
-      "desc": "Standard: k > unit length"
+      "desc": "Standard: k > unit length",
+      "output": "1"
     },
     {
       "input": "\"zzzzzzzzz\"\n3",
-      "desc": "Edge: all same medium"
+      "desc": "Edge: all same medium",
+      "output": "1"
     },
     {
       "input": "\"abcdefghijabcdefghij\"\n10",
-      "desc": "Standard: half match"
+      "desc": "Standard: half match",
+      "output": "1"
     },
     {
       "input": "\"aabbccddeeffgghhiijj\"\n2",
-      "desc": "Standard: pairs k=2"
+      "desc": "Standard: pairs k=2",
+      "output": "10"
     },
     {
       "input": "\"abcdefghijklmnopqrst\"\n4",
-      "desc": "Standard: long distinct"
+      "desc": "Standard: long distinct",
+      "output": "5"
     },
     {
       "input": "\"xvnolkaajuitlvzb\"\n4",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "4"
     }
   ]
 }

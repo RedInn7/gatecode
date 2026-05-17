@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 500, lowercase English",
   "input_format": "single line: s (JSON string)",
   "testcases": [
-    {"input": "\"aaaabbbbcccc\"", "desc": "Standard: example 1"},
-    {"input": "\"rat\"", "desc": "Standard: example 2"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"ab\"", "desc": "Edge: n=2 ordered"},
-    {"input": "\"ba\"", "desc": "Edge: n=2 reverse"},
-    {"input": "\"aaaa\"", "desc": "Edge: all same"},
-    {"input": "\"zzzzz\"", "desc": "Edge: all z"},
-    {"input": "\"abcdef\"", "desc": "Standard: 6 distinct ascending"},
-    {"input": "\"fedcba\"", "desc": "Standard: 6 distinct descending"},
-    {"input": "\"abcdefghijklmnopqrstuvwxyz\"", "desc": "Standard: all 26"},
-    {"input": "\"zyxwvutsrqponmlkjihgfedcba\"", "desc": "Standard: reversed alphabet"},
-    {"input": "\"leetcode\"", "desc": "Standard: typical word"},
-    {"input": "\"ggggggg\"", "desc": "Edge: all g"},
-    {"input": "\"abababab\"", "desc": "Standard: alternating ab"},
-    {"input": "\"aaabbbccc\"", "desc": "Standard: triples"},
-    {"input": "\"spo\"", "desc": "Standard: 3 distinct unsorted"},
-    {"input": "\"hello\"", "desc": "Standard: with repeats"},
-    {"input": "\"abcdefghij\"", "desc": "Standard: 10 distinct"},
-    {"input": "\"aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeee\"", "desc": "Stress: 50 chars 5 groups"},
-    {"input": "\"qwertyuiopasdfghjklzxcvbnm\"", "desc": "Standard: scrambled alphabet"}
+    {
+      "input": "\"aaaabbbbcccc\"",
+      "desc": "Standard: example 1",
+      "output": "\"abccbaabccba\""
+    },
+    {
+      "input": "\"rat\"",
+      "desc": "Standard: example 2",
+      "output": "\"art\""
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1",
+      "output": "\"a\""
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: n=2 ordered",
+      "output": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "desc": "Edge: n=2 reverse",
+      "output": "\"ab\""
+    },
+    {
+      "input": "\"aaaa\"",
+      "desc": "Edge: all same",
+      "output": "\"aaaa\""
+    },
+    {
+      "input": "\"zzzzz\"",
+      "desc": "Edge: all z",
+      "output": "\"zzzzz\""
+    },
+    {
+      "input": "\"abcdef\"",
+      "desc": "Standard: 6 distinct ascending",
+      "output": "\"abcdef\""
+    },
+    {
+      "input": "\"fedcba\"",
+      "desc": "Standard: 6 distinct descending",
+      "output": "\"abcdef\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "desc": "Standard: all 26",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
+    },
+    {
+      "input": "\"zyxwvutsrqponmlkjihgfedcba\"",
+      "desc": "Standard: reversed alphabet",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
+    },
+    {
+      "input": "\"leetcode\"",
+      "desc": "Standard: typical word",
+      "output": "\"cdelotee\""
+    },
+    {
+      "input": "\"ggggggg\"",
+      "desc": "Edge: all g",
+      "output": "\"ggggggg\""
+    },
+    {
+      "input": "\"abababab\"",
+      "desc": "Standard: alternating ab",
+      "output": "\"abbaabba\""
+    },
+    {
+      "input": "\"aaabbbccc\"",
+      "desc": "Standard: triples",
+      "output": "\"abccbaabc\""
+    },
+    {
+      "input": "\"spo\"",
+      "desc": "Standard: 3 distinct unsorted",
+      "output": "\"ops\""
+    },
+    {
+      "input": "\"hello\"",
+      "desc": "Standard: with repeats",
+      "output": "\"ehlol\""
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Standard: 10 distinct",
+      "output": "\"abcdefghij\""
+    },
+    {
+      "input": "\"aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeee\"",
+      "desc": "Stress: 50 chars 5 groups",
+      "output": "\"abcdeedcbaabcdeedcbaabcdeedcbaabcdeedcbaabcdeedcba\""
+    },
+    {
+      "input": "\"qwertyuiopasdfghjklzxcvbnm\"",
+      "desc": "Standard: scrambled alphabet",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
+    }
   ]
 }

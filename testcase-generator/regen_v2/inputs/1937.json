@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
-      "desc": "Standard: valid"
+      "desc": "Standard: valid",
+      "output": "true"
     },
     {
       "input": "\"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
-      "desc": "Standard: valid CDATA"
+      "desc": "Standard: valid CDATA",
+      "output": "true"
     },
     {
       "input": "\"<A>  <B> </A>   </B>\"",
-      "desc": "Standard: invalid mismatched nesting"
+      "desc": "Standard: invalid mismatched nesting",
+      "output": "false"
     },
     {
       "input": "\"<DIV>  div tag is not closed  <DIV>\"",
-      "desc": "Standard: invalid unclosed"
+      "desc": "Standard: invalid unclosed",
+      "output": "false"
     },
     {
       "input": "\"<DIV>  unmatched <  </DIV>\"",
-      "desc": "Standard: valid unmatched <"
+      "desc": "Standard: valid unmatched <",
+      "output": "false"
     },
     {
       "input": "\"<DIV> closed tags with invalid tag name  <b>123</b> </DIV>\"",
-      "desc": "Standard: invalid lowercase"
+      "desc": "Standard: invalid lowercase",
+      "output": "false"
     },
     {
       "input": "\"<DIV> unmatched tags with invalid tag name  </1234567890> and <CDATA[[]]>  </DIV>\"",
-      "desc": "Standard: invalid tag name"
+      "desc": "Standard: invalid tag name",
+      "output": "false"
     },
     {
       "input": "\"<DIV>  unmatched start tag <B>  and unmatched end tag </C>  </DIV>\"",
-      "desc": "Standard: invalid"
+      "desc": "Standard: invalid",
+      "output": "false"
     },
     {
       "input": "\"<A></A>\"",
-      "desc": "Edge: minimal valid"
+      "desc": "Edge: minimal valid",
+      "output": "true"
     },
     {
       "input": "\"<A>B</A>\"",
-      "desc": "Edge: minimal with content"
+      "desc": "Edge: minimal with content",
+      "output": "true"
     },
     {
       "input": "\"<>\"",
-      "desc": "Edge: invalid empty tag name"
+      "desc": "Edge: invalid empty tag name",
+      "output": "false"
     },
     {
       "input": "\"<A></B>\"",
-      "desc": "Edge: invalid mismatch"
+      "desc": "Edge: invalid mismatch",
+      "output": "false"
     },
     {
       "input": "\"<ABCDEFGHI></ABCDEFGHI>\"",
-      "desc": "Edge: max tag name 9"
+      "desc": "Edge: max tag name 9",
+      "output": "true"
     },
     {
       "input": "\"<ABCDEFGHIJ></ABCDEFGHIJ>\"",
-      "desc": "Edge: invalid 10-letter tag"
+      "desc": "Edge: invalid 10-letter tag",
+      "output": "false"
     },
     {
       "input": "\"<A><B><C></C></B></A>\"",
-      "desc": "Standard: nested valid"
+      "desc": "Standard: nested valid",
+      "output": "true"
     },
     {
       "input": "\"<A><B></A></B>\"",
-      "desc": "Standard: crossed invalid"
+      "desc": "Standard: crossed invalid",
+      "output": "false"
     },
     {
       "input": "\"text only\"",
-      "desc": "Edge: invalid no root"
+      "desc": "Edge: invalid no root",
+      "output": "false"
     },
     {
       "input": "\"<A><![CDATA[content]]></A>\"",
-      "desc": "Standard: CDATA valid"
+      "desc": "Standard: CDATA valid",
+      "output": "true"
     },
     {
       "input": "\"<A><![CDATA[unclosed</A>\"",
-      "desc": "Standard: invalid CDATA unclosed"
+      "desc": "Standard: invalid CDATA unclosed",
+      "output": "false"
     },
     {
       "input": "\"<DIV>123!@#$%^&*()</DIV>\"",
-      "desc": "Standard: special chars in content"
+      "desc": "Standard: special chars in content",
+      "output": "true"
     }
   ]
 }

@@ -304,5 +304,11 @@
     "slug": "minimum-swaps-to-avoid-forbidden-values",
     "fqid": 3785,
     "reason": "No Python3 solution found for fqid=3785"
+  },
+  {
+    "pid": 1948,
+    "slug": "minimum-time-to-activate-string",
+    "fqid": 3639,
+    "reason": "No Python3 solution found for fqid=3639"
   }
 ]
