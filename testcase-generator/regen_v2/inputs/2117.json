@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"aabcbbca\"",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "\"ba\""
     },
     {
       "input": "\"abcd\"",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "\"abcd\""
     },
     {
       "input": "\"a\"",
-      "desc": "Edge: single char"
+      "desc": "Edge: single char",
+      "output": "\"a\""
     },
     {
       "input": "\"aa\"",
-      "desc": "Edge: 2 same"
+      "desc": "Edge: 2 same",
+      "output": "\"a\""
     },
     {
       "input": "\"ab\"",
-      "desc": "Edge: 2 diff"
+      "desc": "Edge: 2 diff",
+      "output": "\"ab\""
     },
     {
       "input": "\"abcabc\"",
-      "desc": "Standard repeating"
+      "desc": "Standard repeating",
+      "output": "\"abc\""
     },
     {
       "input": "\"aaaaaaaaaa\"",
-      "desc": "Edge: 10 same"
+      "desc": "Edge: 10 same",
+      "output": "\"a\""
     },
     {
       "input": "\"abcdefghij\"",
-      "desc": "Edge: 10 distinct"
+      "desc": "Edge: 10 distinct",
+      "output": "\"abcdefghij\""
     },
     {
       "input": "\"zzzzzzzzzzzzzzzzzz\"",
-      "desc": "Standard all z"
+      "desc": "Standard all z",
+      "output": "\"z\""
     },
     {
       "input": "\"banana\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"a\""
     },
     {
       "input": "\"mississippi\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"si\""
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Standard alphabet"
+      "desc": "Standard alphabet",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
     },
     {
       "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
-      "desc": "Standard doubled alphabet"
+      "desc": "Standard doubled alphabet",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
     },
     {
       "input": "\"aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz\"",
-      "desc": "Standard paired alphabet"
+      "desc": "Standard paired alphabet",
+      "output": "\"abcdefghijklmnopqrstuvwxyz\""
     },
     {
       "input": "\"thequickbrownfoxjumpsoverthelazydog\"",
-      "desc": "Standard pangram"
+      "desc": "Standard pangram",
+      "output": "\"o\""
     },
     {
       "input": "\"abababababababab\"",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "\"ab\""
     },
     {
       "input": "\"aaaaaaaaaab\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"a\""
     },
     {
       "input": "\"bbbbbbbbbba\"",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "\"b\""
     },
     {
       "input": "\"aaabbbcccdddeeefff\"",
-      "desc": "Standard triple groups"
+      "desc": "Standard triple groups",
+      "output": "\"abcdef\""
     },
     {
       "input": "\"tjlltxfzjpcpoxfw\"",
-      "desc": "Stress: large n near max boundary"
+      "desc": "Stress: large n near max boundary",
+      "output": "\"ltjpxf\""
     }
   ]
 }

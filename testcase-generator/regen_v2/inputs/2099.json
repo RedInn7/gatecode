@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "\"babacc\"\n\"bcb\"\n[1,3,3]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "[3, 3, 4]"
     },
     {
       "input": "\"abyzz\"\n\"aa\"\n[2,1]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "[2, 3]"
     },
     {
       "input": "\"a\"\n\"b\"\n[0]",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "[1]"
     },
     {
       "input": "\"a\"\n\"a\"\n[0]",
-      "desc": "Edge: no change"
+      "desc": "Edge: no change",
+      "output": "[1]"
     },
     {
       "input": "\"ab\"\n\"a\"\n[1]",
-      "desc": "Edge: 2 chars"
+      "desc": "Edge: 2 chars",
+      "output": "[2]"
     },
     {
       "input": "\"aaaa\"\n\"b\"\n[2]",
-      "desc": "Edge: break"
+      "desc": "Edge: break",
+      "output": "[2]"
     },
     {
       "input": "\"abcd\"\n\"a\"\n[1]",
-      "desc": "Edge: form pair"
+      "desc": "Edge: form pair",
+      "output": "[2]"
     },
     {
       "input": "\"aaaaaaaaaa\"\n\"b\"\n[5]",
-      "desc": "Standard split"
+      "desc": "Standard split",
+      "output": "[5]"
     },
     {
       "input": "\"abcabcabc\"\n\"a\"\n[1]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[2]"
     },
     {
       "input": "\"aaaabbbb\"\n\"ab\"\n[3,4]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[4, 4]"
     },
     {
       "input": "\"abcdefghij\"\n\"aaaaa\"\n[0,1,2,3,4]",
-      "desc": "Standard build"
+      "desc": "Standard build",
+      "output": "[1, 2, 3, 4, 5]"
     },
     {
       "input": "\"zzzzzzzzzz\"\n\"a\"\n[5]",
-      "desc": "Standard split z"
+      "desc": "Standard split z",
+      "output": "[5]"
     },
     {
       "input": "\"aaaa\"\n\"aaaa\"\n[0,1,2,3]",
-      "desc": "Edge: same char"
+      "desc": "Edge: same char",
+      "output": "[4, 4, 4, 4]"
     },
     {
       "input": "\"abababab\"\n\"a\"\n[1]",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "[3]"
     },
     {
       "input": "\"aabb\"\n\"ab\"\n[1,2]",
-      "desc": "Standard swap"
+      "desc": "Standard swap",
+      "output": "[2, 2]"
     },
     {
       "input": "\"aaaaaa\"\n\"bb\"\n[2,3]",
-      "desc": "Standard split middle"
+      "desc": "Standard split middle",
+      "output": "[3, 2]"
     },
     {
       "input": "\"hello\"\n\"l\"\n[0]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[2]"
     },
     {
       "input": "\"abcabcabcabc\"\n\"aaaa\"\n[1,4,7,10]",
-      "desc": "Standard transform"
+      "desc": "Standard transform",
+      "output": "[2, 2, 2, 2]"
     },
     {
       "input": "\"zzzzzzzzzz\"\n\"abcabcabca\"\n[0,1,2,3,4,5,6,7,8,9]",
-      "desc": "Standard rebuild"
+      "desc": "Standard rebuild",
+      "output": "[9, 8, 7, 6, 5, 4, 3, 2, 1, 1]"
     },
     {
       "input": "\"abcdefghijklmnopqrst\"\n\"aaaaa\"\n[5,6,7,8,9]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "[1, 2, 3, 4, 5]"
     }
   ]
 }

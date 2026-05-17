@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "2"
     },
     {
       "input": "[[1,1]]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "2"
     },
     {
       "input": "[[0]]",
-      "desc": "Edge: 1x1 water"
+      "desc": "Edge: 1x1 water",
+      "output": "0"
     },
     {
       "input": "[[1]]",
-      "desc": "Edge: 1x1 land"
+      "desc": "Edge: 1x1 land",
+      "output": "1"
     },
     {
       "input": "[[0,0,0]]",
-      "desc": "Edge: all water"
+      "desc": "Edge: all water",
+      "output": "0"
     },
     {
       "input": "[[1,1,1]]",
-      "desc": "Edge: row of land"
+      "desc": "Edge: row of land",
+      "output": "1"
     },
     {
       "input": "[[1],[1],[1]]",
-      "desc": "Edge: column of land"
+      "desc": "Edge: column of land",
+      "output": "1"
     },
     {
       "input": "[[1,1],[1,1]]",
-      "desc": "Edge: 2x2 full"
+      "desc": "Edge: 2x2 full",
+      "output": "2"
     },
     {
       "input": "[[1,0],[0,1]]",
-      "desc": "Edge: already 2 islands"
+      "desc": "Edge: already 2 islands",
+      "output": "0"
     },
     {
       "input": "[[1,1,1],[1,1,1],[1,1,1]]",
-      "desc": "Standard 3x3 full"
+      "desc": "Standard 3x3 full",
+      "output": "2"
     },
     {
       "input": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
-      "desc": "Standard 5x5"
+      "desc": "Standard 5x5",
+      "output": "2"
     },
     {
       "input": "[[1,0,1],[0,0,0],[1,0,1]]",
-      "desc": "Edge: 4 isolated"
+      "desc": "Edge: 4 isolated",
+      "output": "0"
     },
     {
       "input": "[[1,1,0],[0,1,1]]",
-      "desc": "Standard L-shape"
+      "desc": "Standard L-shape",
+      "output": "1"
     },
     {
       "input": "[[1,1,1,1],[0,0,0,1],[1,1,1,1]]",
-      "desc": "Standard U-shape"
+      "desc": "Standard U-shape",
+      "output": "1"
     },
     {
       "input": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]",
-      "desc": "Standard frame"
+      "desc": "Standard frame",
+      "output": "0"
     },
     {
       "input": "[[0,0,0],[0,1,0],[0,0,0]]",
-      "desc": "Edge: single cell island"
+      "desc": "Edge: single cell island",
+      "output": "1"
     },
     {
       "input": "[[0,0,0,0,0],[0,1,1,1,0],[0,1,1,1,0],[0,1,1,1,0],[0,0,0,0,0]]",
-      "desc": "Standard inner block"
+      "desc": "Standard inner block",
+      "output": "2"
     },
     {
       "input": "[[1,1,1,0,0],[0,1,0,0,0],[0,1,1,1,0],[0,0,0,1,0],[0,0,0,1,1]]",
-      "desc": "Standard snake"
+      "desc": "Standard snake",
+      "output": "1"
     },
     {
       "input": "[[1,0,1,0,1,0,1,0,1,0],[0,1,0,1,0,1,0,1,0,1]]",
-      "desc": "Standard checker"
+      "desc": "Standard checker",
+      "output": "0"
     },
     {
       "input": "[[661,-637,-131,-506,-141,-917,984,-117],[-3,567,-699,-115,682,719,202,800],[-540,-78,-241,-885,501,-120,-994,-820],[514,-675,864,734,-174,32,-571,-517],[-511,186,-363,553,700,-192,-320,-345],[1000,-968,379,31,712,-945,-924,-528]]",
-      "desc": "Regenerated: stress at position 19"
+      "desc": "Regenerated: stress at position 19",
+      "output": "0"
     }
   ]
 }

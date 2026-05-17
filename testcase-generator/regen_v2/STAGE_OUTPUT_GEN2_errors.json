@@ -1408,5 +1408,23 @@
     "slug": "similar-string-groups",
     "fqid": 839,
     "error": "Testcase 19 failed: RE (exit 1): \", line 304, in <module>\n    _result = Solution().numSimilarGroups(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmphfsy_q7c.py\", line 165, in numSimilarGroups\n    n, m = len(strs), len(strs[0])\n                      ^^^^^^^^^^^^\nTypeError: object of type 'int' has no len()\n"
+  },
+  {
+    "pid": 2097,
+    "slug": "new-21-game",
+    "fqid": 837,
+    "error": "Testcase 5 failed: RE (exit 1): xPts + 1)) / maxPts\n           ^^^^^^^^^^\n  File \"/tmp/tmp1xged1x0.py\", line 148, in dfs\n    return dfs(i + 1) + (dfs(i + 1) - dfs(i + maxPts + 1)) / maxPts\n           ^^^^^^^^^^\n  [Previous line repeated 997 more times]\nRecursionError: maximum recursion depth exceeded while calling a Python object\n"
+  },
+  {
+    "pid": 2115,
+    "slug": "longest-cycle-in-a-graph",
+    "fqid": 2360,
+    "error": "Testcase 19 failed: RE (exit 1): ile \"/tmp/tmpmqgnur9s.py\", line 292, in <module>\n    _result = Solution().longestCycle(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpmqgnur9s.py\", line 150, in longestCycle\n    while j != -1 and not vis[j]:\n                          ~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 2110,
+    "slug": "find-first-palindromic-string-in-the-array",
+    "fqid": 2108,
+    "error": "Testcase 19 failed: RE (exit 1): (w for w in words if w == w[::-1]), \"\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpdgybsy_h.py\", line 142, in <genexpr>\n    return next((w for w in words if w == w[::-1]), \"\")\n                                          ~^^^^^^\nTypeError: 'int' object is not subscriptable\n"
   }
 ]

@@ -328,5 +328,11 @@
     "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
     "fqid": 3752,
     "reason": "No Python3 solution found for fqid=3752"
+  },
+  {
+    "pid": 2102,
+    "slug": "subarrays-with-xor-at-least-k",
+    "fqid": 3632,
+    "reason": "No Python3 solution found for fqid=3632"
   }
 ]

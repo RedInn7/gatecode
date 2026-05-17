@@ -4,25 +4,105 @@
   "inferred_constraints": "1 <= s.length <= 1000, lowercase letters",
   "input_format": "single line: s (quoted)",
   "testcases": [
-    {"input": "\"aaaba\"", "desc": "Standard: example 1"},
-    {"input": "\"aaaaaaaaaa\"", "desc": "Standard: example 2"},
-    {"input": "\"a\"", "desc": "Edge: n=1"},
-    {"input": "\"ab\"", "desc": "Edge: 2 diff"},
-    {"input": "\"aa\"", "desc": "Edge: 2 same"},
-    {"input": "\"abc\"", "desc": "Edge: 3 diff"},
-    {"input": "\"abcdefghij\"", "desc": "Edge: 10 distinct"},
-    {"input": "\"aaabbbccc\"", "desc": "Standard groups"},
-    {"input": "\"aabbaabb\"", "desc": "Standard alternating pairs"},
-    {"input": "\"abababab\"", "desc": "Edge: alternating singles"},
-    {"input": "\"aaaaaaaab\"", "desc": "Standard"},
-    {"input": "\"baaaaaaaa\"", "desc": "Standard"},
-    {"input": "\"zzzzzzzzzz\"", "desc": "Standard all z"},
-    {"input": "\"mississippi\"", "desc": "Standard"},
-    {"input": "\"abcabcabc\"", "desc": "Standard rotating"},
-    {"input": "\"thequickbrownfoxjumpsoverthelazydog\"", "desc": "Standard pangram"},
-    {"input": "\"aaaaabbbbbccccc\"", "desc": "Standard 3 groups"},
-    {"input": "\"aabbccddeeff\"", "desc": "Standard 6 pairs"},
-    {"input": "\"qqqqwwwweeeerrrrtttt\"", "desc": "Standard quartets"},
-    {"input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"", "desc": "Stress 100 a's"}
+    {
+      "input": "\"aaaba\"",
+      "desc": "Standard: example 1",
+      "output": "8"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "desc": "Standard: example 2",
+      "output": "55"
+    },
+    {
+      "input": "\"a\"",
+      "desc": "Edge: n=1",
+      "output": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "desc": "Edge: 2 diff",
+      "output": "2"
+    },
+    {
+      "input": "\"aa\"",
+      "desc": "Edge: 2 same",
+      "output": "3"
+    },
+    {
+      "input": "\"abc\"",
+      "desc": "Edge: 3 diff",
+      "output": "3"
+    },
+    {
+      "input": "\"abcdefghij\"",
+      "desc": "Edge: 10 distinct",
+      "output": "10"
+    },
+    {
+      "input": "\"aaabbbccc\"",
+      "desc": "Standard groups",
+      "output": "18"
+    },
+    {
+      "input": "\"aabbaabb\"",
+      "desc": "Standard alternating pairs",
+      "output": "12"
+    },
+    {
+      "input": "\"abababab\"",
+      "desc": "Edge: alternating singles",
+      "output": "8"
+    },
+    {
+      "input": "\"aaaaaaaab\"",
+      "desc": "Standard",
+      "output": "37"
+    },
+    {
+      "input": "\"baaaaaaaa\"",
+      "desc": "Standard",
+      "output": "37"
+    },
+    {
+      "input": "\"zzzzzzzzzz\"",
+      "desc": "Standard all z",
+      "output": "55"
+    },
+    {
+      "input": "\"mississippi\"",
+      "desc": "Standard",
+      "output": "14"
+    },
+    {
+      "input": "\"abcabcabc\"",
+      "desc": "Standard rotating",
+      "output": "9"
+    },
+    {
+      "input": "\"thequickbrownfoxjumpsoverthelazydog\"",
+      "desc": "Standard pangram",
+      "output": "35"
+    },
+    {
+      "input": "\"aaaaabbbbbccccc\"",
+      "desc": "Standard 3 groups",
+      "output": "45"
+    },
+    {
+      "input": "\"aabbccddeeff\"",
+      "desc": "Standard 6 pairs",
+      "output": "18"
+    },
+    {
+      "input": "\"qqqqwwwweeeerrrrtttt\"",
+      "desc": "Standard quartets",
+      "output": "50"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "desc": "Stress 100 a's",
+      "output": "5050"
+    }
   ]
 }

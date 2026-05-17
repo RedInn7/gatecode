@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,3,5,2,1,3,1]",
-      "desc": "Standard: example 1"
+      "desc": "Standard: example 1",
+      "output": "4"
     },
     {
       "input": "[1,2,3,4]",
-      "desc": "Standard: example 2"
+      "desc": "Standard: example 2",
+      "output": "3"
     },
     {
       "input": "[1]",
-      "desc": "Edge: n=1"
+      "desc": "Edge: n=1",
+      "output": "0"
     },
     {
       "input": "[0]",
-      "desc": "Edge: zero"
+      "desc": "Edge: zero",
+      "output": "0"
     },
     {
       "input": "[1000000000]",
-      "desc": "Edge: max single"
+      "desc": "Edge: max single",
+      "output": "0"
     },
     {
       "input": "[5,5]",
-      "desc": "Edge: pair equal"
+      "desc": "Edge: pair equal",
+      "output": "0"
     },
     {
       "input": "[1,2]",
-      "desc": "Edge: pair distinct"
+      "desc": "Edge: pair distinct",
+      "output": "1"
     },
     {
       "input": "[2,1]",
-      "desc": "Edge: pair reverse"
+      "desc": "Edge: pair reverse",
+      "output": "1"
     },
     {
       "input": "[0,0,0,0,0]",
-      "desc": "Edge: all zero"
+      "desc": "Edge: all zero",
+      "output": "0"
     },
     {
       "input": "[1,1,1,1,1]",
-      "desc": "Edge: all same"
+      "desc": "Edge: all same",
+      "output": "0"
     },
     {
       "input": "[1000000000,1000000000,1000000000]",
-      "desc": "Edge: all max"
+      "desc": "Edge: all max",
+      "output": "0"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]",
-      "desc": "Standard increasing"
+      "desc": "Standard increasing",
+      "output": "9"
     },
     {
       "input": "[10,9,8,7,6,5,4,3,2,1]",
-      "desc": "Standard decreasing"
+      "desc": "Standard decreasing",
+      "output": "9"
     },
     {
       "input": "[432117440,473448113,398330620,437516217,538860758,919757895,342578191,478057603,18497709,889314733,512457940,672537785,691064218,63933296,671350192,612858188,775834924,982310810,856978440,856497450,902553049,124173668,214224967,585969449,704634097,115095246,203064260,528295978,910690012,38182436,33914840,142326337,10321918,529895069,432223474,94855287,259276798,41103149,999820624,273231397,215995756,428957128,81953138,392570375,981503782,667017961,809346066,725978337,671865686,457663186,126231443,485305299,605996558,588416118,102169496,253933281,36897919,226284245,174831686,859565394,328386802,201209076,141464450,875475336,789439613,974975770,686743527]",
-      "desc": "Regenerated: diverse at position 13"
+      "desc": "Regenerated: diverse at position 13",
+      "output": "66"
     },
     {
       "input": "[1,2,1,2,1,2,1,2]",
-      "desc": "Standard alternating"
+      "desc": "Standard alternating",
+      "output": "4"
     },
     {
       "input": "[100,1,100,1,100,1]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "3"
     },
     {
       "input": "[1,1,1,1,2,2,2,2,3,3]",
-      "desc": "Standard groups"
+      "desc": "Standard groups",
+      "output": "6"
     },
     {
       "input": "[3,1,4,1,5,9,2,6,5,3,5]",
-      "desc": "Standard pi digits"
+      "desc": "Standard pi digits",
+      "output": "8"
     },
     {
       "input": "[1000000000,1,1000000000,1,1000000000]",
-      "desc": "Standard"
+      "desc": "Standard",
+      "output": "2"
     },
     {
       "input": "[7,3,9,2,5,1,8,4,6,10,12,11,15,13,14,20,18,17,19,16]",
-      "desc": "Standard 20"
+      "desc": "Standard 20",
+      "output": "19"
     }
   ]
 }
