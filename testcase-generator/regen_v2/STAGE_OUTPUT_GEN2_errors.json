@@ -832,5 +832,59 @@
     "slug": "pascals-triangle-ii",
     "fqid": 119,
     "error": "Testcase 4 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1586,
+    "slug": "latest-time-by-replacing-hidden-digits",
+    "fqid": 1736,
+    "error": "Testcase 0 failed: RE (exit 1): Traceback (most recent call last):\n  File \"/tmp/tmpjmthhx9e.py\", line 284, in <module>\n    _result = Solution().maximumTime(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpjmthhx9e.py\", line 145, in maximumTime\n    if t[1] == '?':\n       ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1593,
+    "slug": "count-the-number-of-k-free-subsets",
+    "fqid": 2638,
+    "error": "Testcase 0 failed: RE (exit 1): te6hrz_0.py\", line 291, in <module>\n    _result = Solution().countTheNumOfKFreeSubsets(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpte6hrz_0.py\", line 145, in countTheNumOfKFreeSubsets\n    g[x % k].append(x)\n      ~~^~~\nZeroDivisionError: integer modulo by zero\n"
+  },
+  {
+    "pid": 1585,
+    "slug": "count-distinct-integers-after-removing-zeros",
+    "fqid": 3747,
+    "error": "Testcase 0 failed: RE (exit 1): ^^^^^^^^^^^^^\n  File \"/tmp/tmpmft9x3v3.py\", line 156, in countDistinct\n    return dfs(0, False, True, True)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpmft9x3v3.py\", line 146, in dfs\n    up = int(s[i]) if lim else 9\n         ^^^^^^^^^\nValueError: invalid literal for int() with base 10: '-'\n"
+  },
+  {
+    "pid": 1587,
+    "slug": "minimum-number-of-operations-to-make-word-k-periodic",
+    "fqid": 3137,
+    "error": "Testcase 1 failed: RE (exit 1): s)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpn1jjq431.py\", line 143, in minimumOperationsToMakeKPeriodic\n    return n // k - max(Counter(word[i : i + k] for i in range(0, n, k)).values())\n           ~~^^~~\nZeroDivisionError: integer division or modulo by zero\n"
+  },
+  {
+    "pid": 1608,
+    "slug": "parallel-courses-ii",
+    "fqid": 1494,
+    "error": "Testcase 0 failed: RE (exit 1): call last):\n  File \"/tmp/tmpgcv1syzu.py\", line 299, in <module>\n    _result = Solution().minNumberOfSemesters(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmpgcv1syzu.py\", line 144, in minNumberOfSemesters\n    d[y] |= 1 << x\n    ~^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1610,
+    "slug": "minimum-moves-to-spread-stones-over-grid",
+    "fqid": 2850,
+    "error": "Testcase 1 failed: RE (exit 1): most recent call last):\n  File \"/tmp/tmp_xrl44ez.py\", line 297, in <module>\n    _result = Solution().minimumMoves(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp_xrl44ez.py\", line 153, in minimumMoves\n    if cur[i][j] > 1:\n       ~~~~~~^^^\nIndexError: tuple index out of range\n"
+  },
+  {
+    "pid": 1611,
+    "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
+    "fqid": 1439,
+    "error": "Testcase 2 failed: RE (exit 1): ack (most recent call last):\n  File \"/tmp/tmp2t7cwvfi.py\", line 278, in <module>\n    _result = Solution().kthSmallest(*_args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp2t7cwvfi.py\", line 145, in kthSmallest\n    return pre[-1]\n           ~~~^^^^\nIndexError: list index out of range\n"
+  },
+  {
+    "pid": 1584,
+    "slug": "separate-the-digits-in-an-array",
+    "fqid": 2553,
+    "error": "Testcase 0 failed: TLE (>15s)"
+  },
+  {
+    "pid": 1603,
+    "slug": "find-the-least-frequent-digit",
+    "fqid": 3663,
+    "error": "Testcase 0 failed: TLE (>15s)"
   }
 ]

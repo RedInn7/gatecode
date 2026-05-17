@@ -6,83 +6,103 @@
   "testcases": [
     {
       "input": "[1,3,2,5,3,null,9]",
-      "desc": "Standard: example1"
+      "desc": "Standard: example1",
+      "output": "[1, 3, 9]"
     },
     {
       "input": "[1,2,3]",
-      "desc": "Standard: 3 nodes"
+      "desc": "Standard: 3 nodes",
+      "output": "[1, 3]"
     },
     {
       "input": "[1]",
-      "desc": "Edge: single"
+      "desc": "Edge: single",
+      "output": "[1]"
     },
     {
       "input": "[]",
-      "desc": "Edge: empty"
+      "desc": "Edge: empty",
+      "output": "[]"
     },
     {
       "input": "[1,null,2,null,3,null,4]",
-      "desc": "Standard: right chain"
+      "desc": "Standard: right chain",
+      "output": "[1, 2, 3, 4]"
     },
     {
       "input": "[4,3,null,2,null,1]",
-      "desc": "Standard: left chain"
+      "desc": "Standard: left chain",
+      "output": "[4, 3, 2, 1]"
     },
     {
       "input": "[1,2,3,4,5,6,7]",
-      "desc": "Standard: perfect 7"
+      "desc": "Standard: perfect 7",
+      "output": "[1, 3, 7]"
     },
     {
       "input": "[8,4,12,2,6,10,14,1,3,5,7,9,11,13,15]",
-      "desc": "Stress: 15 nodes"
+      "desc": "Stress: 15 nodes",
+      "output": "[8, 12, 14, 15]"
     },
     {
       "input": "[-1,-2,-3,-4,-5,-6,-7]",
-      "desc": "Standard: all negative"
+      "desc": "Standard: all negative",
+      "output": "[-1, -2, -4]"
     },
     {
       "input": "[0,1,-1,2,-2,3,-3]",
-      "desc": "Standard: mixed"
+      "desc": "Standard: mixed",
+      "output": "[0, 1, 3]"
     },
     {
       "input": "[100,50,150,25,75,125,175]",
-      "desc": "Standard: large positive"
+      "desc": "Standard: large positive",
+      "output": "[100, 150, 175]"
     },
     {
       "input": "[-648,380,169,415,143,-268,423,112,-797,-367,-471,-37,-582,773,-36,-305,-40,646,760,-312,-807,299,-345,-592,257,-542,-986,-378,948,366,770,-366,794,661,220,99,-774,-172,306,36,-491,-365,-580,-748,-166,-457,264,773,-177,710,876,861,685,-629,528,482,515,887,632]",
-      "desc": "Regenerated: standard at position 11"
+      "desc": "Regenerated: standard at position 11",
+      "output": "[-648, 380, 423, 773, 948, 887]"
     },
     {
       "input": "[1,null,3,null,null,null,null,null,5]",
-      "desc": "Standard: right path"
+      "desc": "Standard: right path",
+      "output": "[1, 3]"
     },
     {
       "input": "[3,1,5,0,2,4,6,-1,null,null,null,null,null,null,null,null,-1]",
-      "desc": "Stress: 8 levels"
+      "desc": "Stress: 8 levels",
+      "output": "[3, 5, 6, -1, -1]"
     },
     {
       "input": "[10000,-10000,10000,-10000,null,null,-10000,null,null,null,null,null,null,null,10000]",
-      "desc": "Killer: extremes"
+      "desc": "Killer: extremes",
+      "output": "[10000, 10000, -10000]"
     },
     {
       "input": "[2,1,3]",
-      "desc": "Standard: simple"
+      "desc": "Standard: simple",
+      "output": "[2, 3]"
     },
     {
       "input": "[1,2,null,4,null,8,null,16]",
-      "desc": "Stress: left chain powers"
+      "desc": "Stress: left chain powers",
+      "output": "[1, 2, 4, 8, 16]"
     },
     {
       "input": "[9,5,null,4,7,null,null,3,null,6,8]",
-      "desc": "Standard: complex"
+      "desc": "Standard: complex",
+      "output": "[9, 5, 7, 3, 8]"
     },
     {
       "input": "[5,3,8,1,4,6,9,0,2,null,null,null,null,null,null]",
-      "desc": "Stress: 15 BST"
+      "desc": "Stress: 15 BST",
+      "output": "[5, 8, 9, 2]"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]",
-      "desc": "Stress: 4 levels complete"
+      "desc": "Stress: 4 levels complete",
+      "output": "[1, 3, 7, 15]"
     }
   ]
 }
