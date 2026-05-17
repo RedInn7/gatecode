@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[[1,2],[1,3],[2,3]]",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "[2,3]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[1,4],[1,5]]",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "[1,4]"
     },
     {
       "input": "[[1,2],[2,3],[1,3]]",
-      "desc": "Edge: minimal triangle"
+      "desc": "Edge: minimal triangle",
+      "output": "[1,3]"
     },
     {
       "input": "[[1,2],[1,3],[1,4],[3,4]]",
-      "desc": "Edge: 4 nodes"
+      "desc": "Edge: 4 nodes",
+      "output": "[3,4]"
     },
     {
       "input": "[[1,2],[2,3],[1,4],[4,5],[3,5]]",
-      "desc": "Edge: 5-cycle"
+      "desc": "Edge: 5-cycle",
+      "output": "[3,5]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5],[1,5]]",
-      "desc": "Edge: 5-cycle simple"
+      "desc": "Edge: 5-cycle simple",
+      "output": "[1,5]"
     },
     {
       "input": "[[3,4],[1,2],[2,4],[3,1],[1,4]]",
-      "desc": "Standard: out of order"
+      "desc": "Standard: out of order",
+      "output": "[3,1]"
     },
     {
       "input": "[[1,2],[1,3],[2,3]]",
-      "desc": "Standard: triangle"
+      "desc": "Standard: triangle",
+      "output": "[2,3]"
     },
     {
       "input": "[[1,2],[1,3],[1,4],[1,5],[5,2]]",
-      "desc": "Standard: star + extra"
+      "desc": "Standard: star + extra",
+      "output": "[5,2]"
     },
     {
       "input": "[[1,4],[3,4],[1,3],[1,2],[4,5]]",
-      "desc": "Standard: small"
+      "desc": "Standard: small",
+      "output": "[1,3]"
     },
     {
       "input": "[[2,1],[3,1],[4,2],[1,4]]",
-      "desc": "Standard: 4-cycle"
+      "desc": "Standard: 4-cycle",
+      "output": "[1,4]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[1,7]]",
-      "desc": "Standard: 7-cycle"
+      "desc": "Standard: 7-cycle",
+      "output": "[1,7]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,1]]",
-      "desc": "Standard: 8-cycle"
+      "desc": "Standard: 8-cycle",
+      "output": "[8,1]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5],[5,1]]",
-      "desc": "Standard: 5-pure-cycle"
+      "desc": "Standard: 5-pure-cycle",
+      "output": "[5,1]"
     },
     {
       "input": "[[1,2],[1,3],[2,3],[3,4],[4,5]]",
-      "desc": "Standard: triangle + chain"
+      "desc": "Standard: triangle + chain",
+      "output": "[2,3]"
     },
     {
       "input": "[[1,3],[2,3],[3,4],[2,4]]",
-      "desc": "Standard: small dense"
+      "desc": "Standard: small dense",
+      "output": "[2,4]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[1,10]]",
-      "desc": "Stress: 10-cycle"
+      "desc": "Stress: 10-cycle",
+      "output": "[1,10]"
     },
     {
       "input": "[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[10,2]]",
-      "desc": "Stress: star + back-edge"
+      "desc": "Stress: star + back-edge",
+      "output": "[10,2]"
     },
     {
       "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[1,15]]",
-      "desc": "Stress: 15-cycle"
+      "desc": "Stress: 15-cycle",
+      "output": "[1,15]"
     },
     {
       "input": "[[650,-473,-856,612],[153,-879,-166,-318],[-308,371,-135,-453],[-949,-58,365,-998],[-384,-89,367,717],[-325,913,487,406]]",

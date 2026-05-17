@@ -6,19 +6,23 @@
   "testcases": [
     {
       "input": "[\"E23\",\"2X2\",\"12S\"]",
-      "desc": "Edge: 3x3 example"
+      "desc": "Edge: 3x3 example",
+      "output": "[7,1]"
     },
     {
       "input": "[\"E12\",\"1X1\",\"21S\"]",
-      "desc": "Edge: 3x3 small"
+      "desc": "Edge: 3x3 small",
+      "output": "[4,2]"
     },
     {
       "input": "[\"E11\",\"XXX\",\"11S\"]",
-      "desc": "Edge: blocked middle"
+      "desc": "Edge: blocked middle",
+      "output": "[0,0]"
     },
     {
       "input": "[\"ES\"]",
-      "desc": "Edge: 1x2 minimal"
+      "desc": "Edge: 1x2 minimal",
+      "output": "[0,1]"
     },
     {
       "input": "[\"E\",\"S\"]",
@@ -26,59 +30,73 @@
     },
     {
       "input": "[\"E1\",\"1S\"]",
-      "desc": "Edge: 2x2 simple"
+      "desc": "Edge: 2x2 simple",
+      "output": "[1,2]"
     },
     {
       "input": "[\"EX\",\"XS\"]",
-      "desc": "Edge: 2x2 blocked"
+      "desc": "Edge: 2x2 blocked",
+      "output": "[0,1]"
     },
     {
       "input": "[\"E11\",\"111\",\"11S\"]",
-      "desc": "Standard: 3x3 all 1s"
+      "desc": "Standard: 3x3 all 1s",
+      "output": "[3,6]"
     },
     {
       "input": "[\"E99\",\"99X\",\"99S\"]",
-      "desc": "Standard: 9s with X"
+      "desc": "Standard: 9s with X",
+      "output": "[27,3]"
     },
     {
       "input": "[\"E123\",\"4567\",\"89XS\"]",
-      "desc": "Standard: 3x4? - need square so 4x4 needed"
+      "desc": "Standard: 3x4? - need square so 4x4 needed",
+      "output": "[21,1]"
     },
     {
       "input": "[\"E1234\",\"56789\",\"12345\",\"6789X\",\"12345\"]",
-      "desc": "Standard: 5x5 - need to be square (but boards must be square per problem)"
+      "desc": "Standard: 5x5 - need to be square (but boards must be square per problem)",
+      "output": "[48,1]"
     },
     {
       "input": "[\"E12\",\"345\",\"67S\"]",
-      "desc": "Standard: 3x3 distinct"
+      "desc": "Standard: 3x3 distinct",
+      "output": "[16,1]"
     },
     {
       "input": "[\"E12\",\"3X4\",\"56S\"]",
-      "desc": "Standard: 3x3 X mid"
+      "desc": "Standard: 3x3 X mid",
+      "output": "[14,1]"
     },
     {
       "input": "[\"E1XX\",\"1234\",\"5678\",\"XX9S\"]",
-      "desc": "Standard: 4x4 corners blocked"
+      "desc": "Standard: 4x4 corners blocked",
+      "output": "[28,1]"
     },
     {
       "input": "[\"E111\",\"1111\",\"1111\",\"111S\"]",
-      "desc": "Standard: 4x4 all 1s"
+      "desc": "Standard: 4x4 all 1s",
+      "output": "[5,20]"
     },
     {
       "input": "[\"E1234\",\"5678X\",\"X9123\",\"4567X\",\"X123S\"]",
-      "desc": "Standard: 5x5 mixed"
+      "desc": "Standard: 5x5 mixed",
+      "output": "[41,1]"
     },
     {
       "input": "[\"E5X5\",\"5X55\",\"55X5\",\"X55S\"]",
-      "desc": "Stress: many X"
+      "desc": "Stress: many X",
+      "output": "[25,1]"
     },
     {
       "input": "[\"E11111\",\"11111\",\"11111\",\"11111\",\"1111S\"]",
-      "desc": "Stress: 5x5 all 1s"
+      "desc": "Stress: 5x5 all 1s",
+      "output": "[7,70]"
     },
     {
       "input": "[\"E99999\",\"99999\",\"99999\",\"99999\",\"9999S\"]",
-      "desc": "Stress: 5x5 all 9s"
+      "desc": "Stress: 5x5 all 9s",
+      "output": "[63,70]"
     },
     {
       "input": "[-156,-762,250,189,390,942,-490,-968,-315,-311,543,-82,47,-487,619,-655,205,-675,-808,-947,137,-532,-380,903,231,721,263,-704,396,529,-984,216,-706,35,-664,-931,373,-502,-870,-6,391,-927,-904,-355,-693,-966,701,353,-131,692,749,217,662,-759,-176,-272,-742,17,662,-406,366,368,-259,-117,923,-653,930,-247,-61,-776,756,-400,-820,-754,-106,-905,-675,-785,177,8,-563,870,87,-192,962,-617,499,653,458,-982,760,835,-196,654,451,-894,610,434,-664,478]",

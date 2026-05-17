@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[\"1\",\"2\",\"4\",\"3\"]",
-      "desc": "Edge: example1 distinct singles"
+      "desc": "Edge: example1 distinct singles",
+      "output": "true"
     },
     {
       "input": "[\"001\",\"007\",\"15\",\"00153\"]",
-      "desc": "Edge: example2 has prefix"
+      "desc": "Edge: example2 has prefix",
+      "output": "false"
     },
     {
       "input": "[\"1\",\"2\"]",
-      "desc": "Edge: minimal n=2"
+      "desc": "Edge: minimal n=2",
+      "output": "true"
     },
     {
       "input": "[\"1\",\"1\"]",
-      "desc": "Edge: duplicates (each is prefix of other)"
+      "desc": "Edge: duplicates (each is prefix of other)",
+      "output": "false"
     },
     {
       "input": "[\"1\",\"12\"]",
-      "desc": "Edge: short is prefix"
+      "desc": "Edge: short is prefix",
+      "output": "false"
     },
     {
       "input": "[\"12\",\"1\"]",
-      "desc": "Edge: reversed order"
+      "desc": "Edge: reversed order",
+      "output": "false"
     },
     {
       "input": "[\"123\",\"456\"]",
-      "desc": "Edge: equal length distinct"
+      "desc": "Edge: equal length distinct",
+      "output": "true"
     },
     {
       "input": "[\"0\",\"00\",\"000\"]",
-      "desc": "Standard: chain of zeros"
+      "desc": "Standard: chain of zeros",
+      "output": "false"
     },
     {
       "input": "[\"9876543210\",\"123\",\"456\"]",
-      "desc": "Standard: no prefix overlap"
+      "desc": "Standard: no prefix overlap",
+      "output": "true"
     },
     {
       "input": "[\"100\",\"200\",\"300\",\"400\"]",
-      "desc": "Standard: distinct same-len"
+      "desc": "Standard: distinct same-len",
+      "output": "true"
     },
     {
       "input": "[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"]",
-      "desc": "Standard: all single digits"
+      "desc": "Standard: all single digits",
+      "output": "true"
     },
     {
       "input": "[\"10\",\"11\",\"12\",\"100\"]",
-      "desc": "Standard: 10 is prefix of 100"
+      "desc": "Standard: 10 is prefix of 100",
+      "output": "false"
     },
     {
       "input": "[\"5555555555\",\"4444444444\",\"3333333333\"]",
-      "desc": "Standard: repeating digits"
+      "desc": "Standard: repeating digits",
+      "output": "true"
     },
     {
       "input": "[\"123\",\"124\",\"125\",\"126\"]",
-      "desc": "Standard: same prefix diff last"
+      "desc": "Standard: same prefix diff last",
+      "output": "true"
     },
     {
       "input": "[\"1\",\"23\",\"456\",\"7890\"]",
-      "desc": "Standard: increasing length"
+      "desc": "Standard: increasing length",
+      "output": "true"
     },
     {
       "input": "[\"99999\",\"9\",\"99\"]",
-      "desc": "Standard: 9 prefix chain"
+      "desc": "Standard: 9 prefix chain",
+      "output": "false"
     },
     {
       "input": "[\"12345\",\"67890\",\"00000\",\"11111\",\"22222\",\"33333\",\"44444\",\"55555\",\"66666\",\"77777\"]",
-      "desc": "Stress: 10 distinct same-len"
+      "desc": "Stress: 10 distinct same-len",
+      "output": "true"
     },
     {
       "input": "[\"1\",\"12\",\"123\",\"1234\",\"12345\",\"123456\",\"1234567\",\"12345678\",\"123456789\",\"1234567890\"]",
-      "desc": "Stress: chain of prefixes"
+      "desc": "Stress: chain of prefixes",
+      "output": "false"
     },
     {
       "input": "[\"12345678901234567890123456789012345678901234567890\",\"1234567890123456789012345678901234567890123456789\"]",
-      "desc": "Stress: max length pair"
+      "desc": "Stress: max length pair",
+      "output": "false"
     },
     {
       "input": "[922,793,-149,-955,766,145,-933,-798,405,973,-732,573,-477,-489,-525,913,957,62,-953,-241,-183,0,-697,348,-668,-260,1000,571,-919,-560,-317,503,-598,201,-33,176,-103,785,-996,872,-160,49,-43,-919,-847,-249,565,300,-12,567]",

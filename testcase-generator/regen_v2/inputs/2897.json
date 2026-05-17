@@ -6,79 +6,98 @@
   "testcases": [
     {
       "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
-      "desc": "Edge: example1"
+      "desc": "Edge: example1",
+      "output": "[true,false,true,true,false]"
     },
     {
       "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBa\"",
-      "desc": "Edge: example2"
+      "desc": "Edge: example2",
+      "output": "[true,false,true,false,false]"
     },
     {
       "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBaT\"",
-      "desc": "Edge: example3"
+      "desc": "Edge: example3",
+      "output": "[false,true,false,false,false]"
     },
     {
       "input": "[\"A\"]\n\"A\"",
-      "desc": "Edge: single char match"
+      "desc": "Edge: single char match",
+      "output": "[true]"
     },
     {
       "input": "[\"a\"]\n\"a\"",
-      "desc": "Edge: lowercase match"
+      "desc": "Edge: lowercase match",
+      "output": "[true]"
     },
     {
       "input": "[\"a\"]\n\"A\"",
-      "desc": "Edge: case mismatch (no)"
+      "desc": "Edge: case mismatch (no)",
+      "output": "[false]"
     },
     {
       "input": "[\"A\"]\n\"\"",
-      "desc": "Edge: empty pattern with upper - no"
+      "desc": "Edge: empty pattern with upper - no",
+      "output": "[false]"
     },
     {
       "input": "[\"abc\"]\n\"\"",
-      "desc": "Edge: empty pattern lowercase - yes"
+      "desc": "Edge: empty pattern lowercase - yes",
+      "output": "[true]"
     },
     {
       "input": "[\"AbCd\",\"ABCD\",\"abcd\"]\n\"AC\"",
-      "desc": "Standard: caps separated"
+      "desc": "Standard: caps separated",
+      "output": "[true,false,false]"
     },
     {
       "input": "[\"Hello\",\"hello\",\"HELLO\"]\n\"H\"",
-      "desc": "Standard: single upper"
+      "desc": "Standard: single upper",
+      "output": "[true,false,false]"
     },
     {
       "input": "[\"camelCase\",\"CamelCase\",\"camelcase\"]\n\"cC\"",
-      "desc": "Standard: cC mixed"
+      "desc": "Standard: cC mixed",
+      "output": "[true,false,false]"
     },
     {
       "input": "[\"abcXYZ\",\"abcxyz\",\"XYZabc\"]\n\"XYZ\"",
-      "desc": "Standard: 3 caps"
+      "desc": "Standard: 3 caps",
+      "output": "[true,false,true]"
     },
     {
       "input": "[\"FooBar\",\"FooBaz\",\"FooBat\"]\n\"FB\"",
-      "desc": "Standard: same pattern multi-match"
+      "desc": "Standard: same pattern multi-match",
+      "output": "[true,true,true]"
     },
     {
       "input": "[\"FooBarBaz\",\"FooBaz\"]\n\"FBB\"",
-      "desc": "Standard: chain caps"
+      "desc": "Standard: chain caps",
+      "output": "[true,false]"
     },
     {
       "input": "[\"ABCDEF\"]\n\"AC\"",
-      "desc": "Standard: no lowers - need adjacent caps"
+      "desc": "Standard: no lowers - need adjacent caps",
+      "output": "[false]"
     },
     {
       "input": "[\"aaaaaaaA\",\"aA\"]\n\"A\"",
-      "desc": "Standard: trailing cap"
+      "desc": "Standard: trailing cap",
+      "output": "[true,true]"
     },
     {
       "input": "[\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"]\n\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
-      "desc": "Stress: long alphabet"
+      "desc": "Stress: long alphabet",
+      "output": "[true]"
     },
     {
       "input": "[\"FooBarTestBaz\",\"FooBarTest\",\"FooBar\",\"Foo\",\"\"]\n\"FB\"",
-      "desc": "Stress: varied lengths"
+      "desc": "Stress: varied lengths",
+      "output": "[false,false,true,false,false]"
     },
     {
       "input": "[\"AaAaAaAaAaAaAaAa\"]\n\"AAAAAAAA\"",
-      "desc": "Stress: 8 As exact"
+      "desc": "Stress: 8 As exact",
+      "output": "[true]"
     },
     {
       "input": "[-581,-38,-183,781,-213,377,-477,-870,-409,-360,-293,-350,734,173,-14,122,-289,258,141,650,296,-255,-394,119,256,-971,217,75,-194,-130,942,188,782,976,-502,109,948,-582,-712,701,460,9,-482,-396,708,284,14,-686,-827,797,658,-59,877,745,-44,-978,-380,-129,944,-43,-627,727,-961,-429,551,607,45,-229,318,9,504,-224,-903,-789,-435,-897,434,803,-115,-234,-406,-2,824,282,252,-238,447,445,234,-837,418,996,795,832,-47,-77,760,-507,-928,-354]\n\"zydpsteobz\"",
